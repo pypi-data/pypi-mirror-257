@@ -1,0 +1,10 @@
+README.md
+setup.py
+bc_en_de_coder.egg-info/PKG-INFO
+bc_en_de_coder.egg-info/SOURCES.txt
+bc_en_de_coder.egg-info/dependency_links.txt
+bc_en_de_coder.egg-info/requires.txt
+bc_en_de_coder.egg-info/top_level.txt
+bc_endecoder/__init__.py
+bc_endecoder/extract.py
+bc_endecoder/replace.py
