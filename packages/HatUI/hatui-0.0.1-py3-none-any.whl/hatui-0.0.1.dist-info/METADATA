@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: HatUI
+Version: 0.0.1
+Project-URL: Documentation, https://github.com/hasansezertasan/hatui#readme
+Project-URL: Issues, https://github.com/hasansezertasan/hatui/issues
+Project-URL: Source, https://github.com/hasansezertasan/hatui
+Author-email: Hasan Sezer Taşan <hasansezertasan@gmail.com>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# HatUI
+
+[![PyPI - Version](https://img.shields.io/pypi/v/hatui.svg)](https://pypi.org/project/hatui)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/hatui.svg)](https://pypi.org/project/hatui)
+
+-----
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install hatui
+```
+
+## License
+
+`hatui` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
