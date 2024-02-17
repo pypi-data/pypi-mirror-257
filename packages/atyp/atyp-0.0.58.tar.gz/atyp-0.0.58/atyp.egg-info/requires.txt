@@ -1,0 +1,13 @@
+nchr
+nlit
+uscr
+astr
+pdec
+itry
+matr
+ptyp
+ltyp
+
+[dev]
+numpy
+pandas
