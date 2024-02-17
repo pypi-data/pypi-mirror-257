@@ -1,0 +1,7 @@
+[codemods]
+core = core_codemods:registry
+sonar = core_codemods:sonar_registry
+
+[console_scripts]
+codemodder = codemodder.codemodder:main
+generate-docs = codemodder.scripts.generate_docs:main
