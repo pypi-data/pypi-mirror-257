@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/Browse_win.egg-info/PKG-INFO
+src/Browse_win.egg-info/SOURCES.txt
+src/Browse_win.egg-info/dependency_links.txt
+src/Browse_win.egg-info/entry_points.txt
+src/Browse_win.egg-info/top_level.txt
+src/Browse_win_package/__init__.py
+src/Browse_win_package/main.py
