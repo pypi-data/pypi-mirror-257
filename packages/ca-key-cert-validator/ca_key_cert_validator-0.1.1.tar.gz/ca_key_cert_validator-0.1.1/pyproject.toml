@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "ca-key-cert-validator"
+version = "0.1.1"
+description = "Toolset for validation of CA Key & Cert pair"
+authors = ["Volkov Mykhailo <mvolkov83@gmail.com>"]
+license = "GPL"
+readme = "README.md"
+packages = [{include = "ca_key_cert_validator"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+cryptography = "^42.0.2"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
