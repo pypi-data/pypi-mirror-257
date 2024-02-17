@@ -1,0 +1,135 @@
+/* General Styling */
+body {
+  background-color: #1e1e1e;
+  color: #f8f8f2;
+}
+
+/* Buttons */
+button {
+  background-color: #44475a;
+  color: #f8f8f2;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #6272a4;
+}
+
+#button_green {
+  background-color: #2c7c40;
+  color: #f8f8f2;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+}
+
+#button_green:hover {
+  background-color: #588b64;
+}
+
+/* Input Fields */
+textview,
+text {
+  font-family: 'Droid Sans Mono', monospace;
+  background-color: #282a36;
+  color: #f8f8f2;
+  border: none;
+  border-radius: 4px;
+  padding: 4px;
+  caret-color: #f8f8f2;
+}
+
+entry:focus,
+textview:focus,
+text:focus {
+  border-color: #bd93f9;
+}
+
+/* Scrollbars */
+scrollbar {
+  color: #f8f8f2;
+}
+
+scrollbar slider {
+  background-color: #44475a;
+}
+
+scrollbar.slider:hover {
+  background-color: #6272a4;
+}
+
+scrollbar.slider.active {
+  background-color: #bd93f9;
+}
+
+/* Code Highlighting */
+sourceview,
+text {
+  font-family: 'Droid Sans Mono', monospace;
+}
+
+keyword {
+  color: #ff79c6;
+}
+
+comment {
+  color: #6272a4;
+}
+
+string,
+character,
+string-value {
+  color: #f1fa8c;
+}
+
+number {
+  color: #bd93f9;
+}
+
+function,
+class,
+type,
+builtin-name {
+  color: #50fa7b;
+}
+
+/* Sidebar */
+sidebar {
+  background-color: #282a36;
+  color: #f8f8f2;
+}
+
+/* Header Bar */
+headerbar {
+  background-color: #282a36;
+  color: #f8f8f2;
+}
+
+/* Menubar */
+menubar,
+menu {
+  background-color: #44475a;
+  color: #f8f8f2;
+}
+
+menuitem {
+  background-color: #44475a;
+  color: #f8f8f2;
+}
+
+/* Popovers and Tooltips */
+popover,
+tooltip {
+  background-color: #44475a;
+  color: #f8f8f2;
+  border: 1px solid #44475a;
+  border-radius: 4px;
+}
+
+/* Statusbar */
+statusbar {
+  background-color: #282a36;
+  color: #f8f8f2;
+}

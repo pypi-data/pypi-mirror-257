@@ -1,0 +1,15 @@
+requests
+torch
+numpy
+matplotlib
+tensorboard
+optuna
+optuna-dashboard
+progressbar2
+trsfile
+h5py
+PyGObject
+SQLAlchemy
+
+[:python_version >= "3.10"]
+importlib-metadata

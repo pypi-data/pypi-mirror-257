@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+  <gresource>
+    <file>org/gnome/escapydl/icons/64x64/apps/escapydl-icon.png</file>
+    <file>org/gnome/escapydl/icons/128x128/apps/escapydl-icon.png</file>
+    <file>org/gnome/escapydl/icons/scalable/apps/escapydl-icon.svg</file>
+    <file>org/gnome/escapydl/themes/dark-theme.css</file>
+  </gresource>
+</gresources>

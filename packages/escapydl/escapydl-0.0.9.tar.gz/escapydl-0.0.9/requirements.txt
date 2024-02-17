@@ -1,0 +1,16 @@
+build
+torch
+numpy
+matplotlib
+tensorboard
+optuna
+optuna-dashboard
+progressbar2
+trsfile
+h5py
+PyGObject
+SQLAlchemy
+setuptools
+setuptools-scm
+myst_parser
+sphinx_rtd_theme
