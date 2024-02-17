@@ -1,0 +1,62 @@
+
+# 2024-02-08 14:02:50.913606
++/add rdflib_sqlalchemy/store.py
+
+# 2024-02-08 14:03:04.196112
++update this file to use SQLALchemy 2.0 instead of 1.5
+
+# 2024-02-08 14:06:31.131192
++/remove
+
+# 2024-02-08 14:06:32.891768
++/undo
+
+# 2024-02-08 14:06:56.840932
++/add rdflib_sqlalchemy/sql.py
+
+# 2024-02-08 14:08:18.412038
++Fix this error: ' ImportError: cannot import name 'union_select' from 'rdflib_sqlalchemy.sql''
+
+# 2024-02-08 14:10:25.263648
++/add rdflib_sqlalchemy/sql.py
+
+# 2024-02-08 14:10:48.894359
++Migrate usage of the SQLalchemy API to use 2.0 instead of the old 1.5
+
+# 2024-02-08 14:12:48.637781
++Fix this error, caused by the last commit: sqlalchemy.exc.ArgumentError: Column expression, FROM clause, or other columns clause element expected, got [Column('id', Integer(), table=<asserted>, primary_key=True, nullable=False), Column('subject'
++, TermType(), table=<asserted>, nullable=False), Column('predicate', TermType(), table=<asserted>, nullable=False), Column('object', TermType(), table=<asserted>, nullable=False), Column('context', TermType(), 
++table=<asserted>, nullable=False), Column('termcomb', Integer(), table=<asserted>, key='termComb', nullable=False), <sqlalchemy.sql.elements.Label at 0x1039d2900; objlanguage>, <sqlalchemy.sql.elements.Label at
++ 0x1039d28d0; objdatatype>]. Did you mean to say select(Column('id', Integer(), table=<asserted>, primary_key=True, nullable=False), Column('subject', TermType(), table=<asserted>, nullable=False), Column('pred
++icate', TermType(), table=<asserted>, nullable=False), Column('object', TermType(), table=<asserted>, nullable=False), Column('context', TermType(), table=<asserted>, nullable=False), Column('termcomb', Integer
++(), table=<asserted>, key='termComb', nullable=False), <sqlalchemy.sql.elements.Label at 0x1039d2900; objlanguage>, <sqlalchemy.sql.elements.Label at 0x1039d28d0; objdatatype>)?
+
+# 2024-02-08 14:32:57.458989
++fix this error on line 757: 'ypeError: TableClause.delete() takes 1 positional argument but 2 were given'
+
+# 2024-02-08 14:33:15.048312
++Fix this error: "ypeError: TableClause.delete() takes 1 positional argument but 2 were given"
+
+# 2024-02-08 14:58:08.219602
++/add rdflib_sqlalchemy/store.py
+
+# 2024-02-08 14:58:16.827517
++/stop
+
+# 2024-02-08 14:58:19.159103
++/clear
+
+# 2024-02-08 14:58:42.331336
++explain where adding a new context/identifier graph would be handled in the store.py implementation
+
+# 2024-02-09 15:35:39.096166
++/add rdflib_sqlalchemy/sql.py
+
+# 2024-02-09 15:35:58.723804
++adjust the `union_select` method so that if `whereClause` is empty, the `.where()` functions are never called on the select objects
+
+# 2024-02-09 15:38:52.930227
++/undo
+
+# 2024-02-09 15:38:56.485378
++y
