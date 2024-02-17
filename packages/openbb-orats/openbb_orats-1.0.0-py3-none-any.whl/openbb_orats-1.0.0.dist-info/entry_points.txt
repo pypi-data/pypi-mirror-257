@@ -1,0 +1,6 @@
+[openbb_core_extension]
+openbb_orats=openbb_orats.router:router
+
+[openbb_provider_extension]
+openbb_orats=openbb_orats.provider:provider
+
