@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+pyproject.toml
+tp_but_ge2i/TP BUT GE2I.ipynb
+tp_but_ge2i/__init__.py
+tp_but_ge2i.egg-info/PKG-INFO
+tp_but_ge2i.egg-info/SOURCES.txt
+tp_but_ge2i.egg-info/dependency_links.txt
+tp_but_ge2i.egg-info/requires.txt
+tp_but_ge2i.egg-info/top_level.txt
+tp_but_ge2i/data/Data TP BUT GE2I.xlsx
+tp_but_ge2i/data/Sujet TP BUT GE2I.docx
+tp_but_ge2i/data/fiche technique transformateur 36MVA.pdf
