@@ -1,0 +1,64 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2024-02-15 06:02+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: DOMAIN\n"
+
+#: collective/plausible/controlpanels/plausible_control_panel/controlpanel.py:24
+msgid "Example : imio.be"
+msgstr "Exemple : imio.be"
+
+#: collective/plausible/controlpanels/plausible_control_panel/controlpanel.py:16
+msgid "Example : plausible.imio.be"
+msgstr "Exemple : plausible.imio.be"
+
+#: collective/plausible/configure.zcml:27
+msgid "Installs the collective.plausible add-on."
+msgstr "Installe le module collective.plausible."
+
+#: collective/plausible/controlpanels/plausible_control_panel/controlpanel.py:42
+#: collective/plausible/profiles/default/controlpanel.xml
+msgid "Plausible Control Panel"
+msgstr "Panneau de configuration Plausible"
+
+#: collective/plausible/controlpanels/plausible_control_panel/controlpanel.py:23
+msgid "Plausible Site"
+msgstr "Site Plausible"
+
+#: collective/plausible/controlpanels/plausible_control_panel/controlpanel.py:15
+msgid "Plausible URL"
+msgstr "URL de l'instance Plausible"
+
+#: collective/plausible/views/plausible_view.pt:43
+msgid "Plausible analytics is not set"
+msgstr "Plausible analytics n'est pas configuré"
+
+#: collective/plausible/controlpanels/plausible_control_panel/controlpanel.py:32
+msgid "Plausible authentification token"
+msgstr "Token d'authentification Plausible"
+
+#: collective/plausible/controlpanels/plausible_control_panel/controlpanel.py:31
+msgid "Plausible token"
+msgstr "Token Plausible"
+
+#: collective/plausible/configure.zcml:36
+msgid "Uninstalls the collective.plausible add-on."
+msgstr "Désinstalle le module collective.plausible."
+
+#: collective/plausible/configure.zcml:27
+msgid "collective.plausible"
+msgstr "collective.plausible"
+
+#: collective/plausible/configure.zcml:36
+msgid "collective.plausible (uninstall)"
+msgstr "collective.plausible (désinstallation)"

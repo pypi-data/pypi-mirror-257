@@ -1,0 +1,5 @@
+==============
+collective.plausible
+==============
+
+User documentation
