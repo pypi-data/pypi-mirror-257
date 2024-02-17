@@ -1,0 +1,5 @@
+pydantic
+requests
+pyyaml
+python-dotenv
+neo4j
