@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: autoed
+Version: 0.0.17
+Requires-Dist: watchdog
+Requires-Dist: numpy>=1.10.0
+Requires-Dist: nexgen==0.7.3
+Requires-Dist: h5py
+Requires-Dist: argparse
+Requires-Dist: python-daemon
+Requires-Dist: pathlib
+Requires-Dist: argcomplete
+Requires-Dist: psutil
