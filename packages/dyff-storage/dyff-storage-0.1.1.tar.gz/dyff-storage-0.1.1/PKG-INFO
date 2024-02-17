@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: dyff-storage
+Version: 0.1.1
+Summary: Python storage API for the Dyff AI auditing platform.
+License: Apache-2.0
+Requires-Python: >=3.9
+License-File: LICENSE
+License-File: NOTICE
+Requires-Dist: confluent-kafka
+Requires-Dist: dyff-schema
+Requires-Dist: google-cloud-storage
+Requires-Dist: minio
+Requires-Dist: pydantic<2
+Requires-Dist: pymongo[srv]
