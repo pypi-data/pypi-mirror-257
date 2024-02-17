@@ -1,0 +1,11 @@
+lick/__init__.py,sha256=FZKUxfQOsZVZE6fd_JwQAOGql6AUUJw_zPWRRmQVtRI,97
+lick/__version__.py,sha256=pZzEdsuAE3uDnTsMODkFABqmk03QJAN-SEFrFRq4y1U,23
+lick/lick.py,sha256=lGbvDwzeSSJzQIRwprM6w43RCuYX2jmZnmjRIy5Ooxg,7664
+lick/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lick/_vendor/vectorplot/core.cp39-win_amd64.pyd,sha256=xht0jeDf1t1DuC6UY2CC_ekDWi6bQJEUVj9Z8KolD2M,176128
+lick-0.5.0.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+lick-0.5.0.dist-info/METADATA,sha256=jKQy_hwakCnLjAGS4EBTcF0B_UCUFzlSJ4j6uRbbucM,3010
+lick-0.5.0.dist-info/WHEEL,sha256=GZFS91_ufm4WrNPBaFVPB9MvOXR6bMZQhPcZRRTN5YM,100
+lick-0.5.0.dist-info/entry_points.txt,sha256=htA8ypbyM6Y5dPIhFVbzczFqcdrsbEGPgeK1K2N_-VU,40
+lick-0.5.0.dist-info/top_level.txt,sha256=OamAjU-xaiaKmBZ4J_2cg0Q55ERMn9L8QeoA8hWn2os,5
+lick-0.5.0.dist-info/RECORD,,
