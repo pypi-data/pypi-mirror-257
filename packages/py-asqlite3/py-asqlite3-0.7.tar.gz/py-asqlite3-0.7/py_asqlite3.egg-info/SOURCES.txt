@@ -1,0 +1,11 @@
+LICENCE
+MANIFEST.in
+README.rst
+setup.py
+asqlite3/__init__.py
+asqlite3/asqlite3.py
+py_asqlite3.egg-info/PKG-INFO
+py_asqlite3.egg-info/SOURCES.txt
+py_asqlite3.egg-info/dependency_links.txt
+py_asqlite3.egg-info/top_level.txt
+tests/test_asqlite3.py

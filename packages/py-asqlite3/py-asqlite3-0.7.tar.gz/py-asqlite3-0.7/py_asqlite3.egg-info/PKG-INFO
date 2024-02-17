@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: py-asqlite3
+Version: 0.7
+Summary: Async wrapper for sqlite3
+Home-page: https://github.com/kyuupichan/asqlite3
+Download-URL: https://github.com/kyuupichan/asqlite3/archive/0.7.tar.gz
+Author: Neil Booth
+Author-email: kyuupichan@pm.me
+License: MIT Licence
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: AsyncIO
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Database
+Requires-Python: >=3.8
+License-File: LICENCE
+
+Async wrapper for sqlite3
