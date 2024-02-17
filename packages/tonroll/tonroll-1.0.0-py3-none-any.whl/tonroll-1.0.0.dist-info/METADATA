@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: tonroll
+Version: 1.0.0
+Summary: A library for handling tonrolling
+Home-page: https://github.com/therudevich/tonroll
+Author: Rude
+Author-email: rude.rudevich@mail.ru
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+
