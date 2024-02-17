@@ -1,0 +1,6 @@
+README.md
+setup.py
+yandex_templater_processor_python.egg-info/PKG-INFO
+yandex_templater_processor_python.egg-info/SOURCES.txt
+yandex_templater_processor_python.egg-info/dependency_links.txt
+yandex_templater_processor_python.egg-info/top_level.txt
