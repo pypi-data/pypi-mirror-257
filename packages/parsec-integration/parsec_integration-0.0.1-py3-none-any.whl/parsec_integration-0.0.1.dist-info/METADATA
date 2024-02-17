@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: parsec-integration
+Version: 0.0.1
+Summary: This is the package for integration of ASBP with Parsec
+Home-page: https://github.com/FuR1DeV
+Author: FuR1DeV
+Author-email: vasia19rus@bk.ru
+Project-URL: GitHub, https://github.com/FuR1DeV
+Keywords: parsec integration asbp
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: pydantic (>=2.5.3)
+Requires-Dist: zeep (>=4.2.1)
+
+Parsec Integration for ASBP
+
+version 0.0.1
+
+by FuR1DeV
