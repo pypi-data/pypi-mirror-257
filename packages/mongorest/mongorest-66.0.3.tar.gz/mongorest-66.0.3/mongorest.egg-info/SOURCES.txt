@@ -1,0 +1,6 @@
+README.md
+setup.py
+mongorest.egg-info/PKG-INFO
+mongorest.egg-info/SOURCES.txt
+mongorest.egg-info/dependency_links.txt
+mongorest.egg-info/top_level.txt
