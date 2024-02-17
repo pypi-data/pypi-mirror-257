@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+Labelme2YOLOv8.egg-info/PKG-INFO
+Labelme2YOLOv8.egg-info/SOURCES.txt
+Labelme2YOLOv8.egg-info/dependency_links.txt
+Labelme2YOLOv8.egg-info/requires.txt
+Labelme2YOLOv8.egg-info/top_level.txt
+labelme2yolov8/__about__.py
+labelme2yolov8/__init__.py
+labelme2yolov8/__main__.py
+labelme2yolov8/l2y.py
+labelme2yolov8/cli/__init__.py
