@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: eindir
+Version: 0.1.0
+Summary: A set of "particles" or components mainly focused on working with functions in ND.
+Keywords: library tools structures
+Author-Email: Rohit Goswami <rgoswami@ieee.org>, Ruhila S <ruhila@ieee.org>, Amrita Goswami <amrita@hi.is>, Sonaly Goswami <sonaly@iitk.ac.in>, Debabrata Goswami <dgoswami@iitk.ac.in>
+Maintainer-Email: Rohit Goswami <rgoswami@ieee.org>, Ruhila S <ruhila@ieee.org>, Amrita Goswami <amrita@hi.is>
+License: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Project-URL: Homepage, https://github.com/HaoZeke/eindir
+Project-URL: Bug tracker, https://github.com/HaoZeke/eindir/issues
+Requires-Python: >=3.10.1
+Requires-Dist: numpy>=1.26.4
+Requires-Dist: matplotlib>=3.8.3; extra == "plotter"
+Requires-Dist: cmcrameri>=1.8; extra == "plotter"
+Requires-Dist: pytest>=8.0.0; extra == "testing"
+Requires-Dist: pytest-cov>=4.1.0; extra == "testing"
+Provides-Extra: plotter
+Provides-Extra: testing
+Description-Content-Type: text/markdown
+
+![Logo](./branding/logo/eindir_logo.png)
+
+# eindir
+
+A set of "particles" or components mainly focused on working with functions in ND.
+
+## Development
+
+We use `towncrier` for managing newsworthy contributions. Also the easiest
+development environment is probably with `pixi` and `hatch`:
+
+``` sh
+pixi shell
+pdm install
+```
+
+Now we have certain commands to help with development:
+
+``` sh
+pdm run lint
+pdm run mkdoc
+```
+
+## License
+MIT
