@@ -1,0 +1,1 @@
+Transform the `cryonirsp_linearization_polyfit_coeffs_ci` and `cryonirsp_linearization_polyfit_coeffs_sp` parameters storage from being a file to json.
