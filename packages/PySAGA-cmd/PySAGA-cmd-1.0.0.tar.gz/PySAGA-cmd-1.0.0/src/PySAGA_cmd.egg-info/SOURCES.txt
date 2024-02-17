@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/PySAGA_cmd.egg-info/PKG-INFO
+src/PySAGA_cmd.egg-info/SOURCES.txt
+src/PySAGA_cmd.egg-info/dependency_links.txt
+src/PySAGA_cmd.egg-info/requires.txt
+src/PySAGA_cmd.egg-info/top_level.txt
