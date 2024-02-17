@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: tracking-lib
+Version: 0.1.13
+Summary: A library for tracking transactions in Flask and FastAPI applications.
+Home-page: https://github.com/thinkdigitalgroupprojectagora/team-moc-tracking-lib
+Author: Damianos Damianidis
+Author-email: damianosd@projectagora.com
+Description-Content-Type: text/markdown
+Requires-Dist: fastapi >=0.103.1
+Requires-Dist: Flask >=2.2.3
+Requires-Dist: google-cloud-pubsub >=2.18.4
+
+# team-moc-tracking-lib
