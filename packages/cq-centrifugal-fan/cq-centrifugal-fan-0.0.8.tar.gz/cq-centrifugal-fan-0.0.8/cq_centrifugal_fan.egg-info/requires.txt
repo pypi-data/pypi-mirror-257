@@ -1,0 +1,7 @@
+numpy
+cadquery>=2
+cqkit
+
+[dev]
+ocp_vscode
+jupyter-cadquery

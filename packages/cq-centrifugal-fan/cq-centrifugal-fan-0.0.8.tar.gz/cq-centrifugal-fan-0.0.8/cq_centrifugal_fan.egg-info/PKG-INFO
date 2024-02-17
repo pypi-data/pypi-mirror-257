@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: cq-centrifugal-fan
+Version: 0.0.8
+Summary: Fully parametric centrifugal fan builder in CadQuery
+Home-page: https://github.com/farnasirim/cq-centrifugal-fan
+Author: farnasirim
+Author-email: Mohammad Nasirifar <farnasirim@gmail.com>
+Maintainer-email: Mohammad Nasirifar <farnasirim@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2024 Mohammad Nasirifar
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/farnasirim/cq-centrifugal-fan
+Project-URL: Bug Reports, https://github.com/farnasirim/cq-centrifugal-fan/issues
+Project-URL: Funding, https://farnasirim.com
+Project-URL: Say Thanks!, https://farnasirim.com/thanks
+Project-URL: Source, https://github.com/farnasirim/cq-centrifugal-fan
+Keywords: cad,cadquery
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: cadquery>=2
+Requires-Dist: cqkit
+Provides-Extra: dev
+Requires-Dist: ocp_vscode; extra == "dev"
+Requires-Dist: jupyter-cadquery; extra == "dev"
+
+# CadQuery Centrifugal Fan Builder
+
+![cq-centrifugal-fan](https://github.com/farnasirim/cq-centrifugal-fan/assets/8123364/b78fca85-f5bb-4bd4-8e88-affff62adfcb)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+
+Fully parametric centrifugal fan builder in CadQuery

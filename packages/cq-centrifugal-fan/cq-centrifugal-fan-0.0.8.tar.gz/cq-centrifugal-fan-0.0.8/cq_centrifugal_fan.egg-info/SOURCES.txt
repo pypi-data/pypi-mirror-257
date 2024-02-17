@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+requirements-dev.txt
+requirements.txt
+setup.py
+cq_centrifugal_fan/__init__.py
+cq_centrifugal_fan/debug.py
+cq_centrifugal_fan/errors.py
+cq_centrifugal_fan/shapes.py
+cq_centrifugal_fan.egg-info/PKG-INFO
+cq_centrifugal_fan.egg-info/SOURCES.txt
+cq_centrifugal_fan.egg-info/dependency_links.txt
+cq_centrifugal_fan.egg-info/requires.txt
+cq_centrifugal_fan.egg-info/top_level.txt
+cq_centrifugal_fan/use_cases/__init__.py
+cq_centrifugal_fan/use_cases/default.py
