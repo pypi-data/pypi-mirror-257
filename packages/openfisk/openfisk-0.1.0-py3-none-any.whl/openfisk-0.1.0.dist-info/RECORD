@@ -1,0 +1,12 @@
+openfisk/__init__.py,sha256=8qzT1d0wOIXjzms7BzMeDPfs9T_yiJ8MFPjc-_RVQT8,36
+openfisk/nl/__init__.py,sha256=rI4iBeHkcmLUQSH29n4WjD2CQVEM9LB9hoIDbCfatl8,55
+openfisk/nl/asset/__init__.py,sha256=ArhFlnLhREZragSFLL191emcAcVLnARb2RvndE58lCI,171
+openfisk/nl/asset/calculate_asset_tax.py,sha256=780QaBNNDvUsxJXnuocO4dS-PKIIFrJ_qlpTRXvtGqg,1350
+openfisk/nl/asset/test__calculate_asset_tax.py,sha256=ccVxw0C6BKfdEgWpC1xcepSRT5nqh3f_glzy5fLss64,2209
+openfisk/nl/income/__init__.py,sha256=P5fCr2TlyGbCGebw3jA2MzoDURuVJBPeCMb0tyjBpQE,310
+openfisk/nl/income/calculate_income_tax.py,sha256=E0-2oMJ98GGXFZ55qJ0D3uPtWjXe8Xayk7InmxTO__k,3309
+openfisk/nl/income/test__calculate_income_tax.py,sha256=6351c62vidoT2RQsuI9c5_Y7C04ARtNEEJ_tOLL8E7w,3608
+openfisk-0.1.0.dist-info/LICENSE,sha256=nnZ6LuoXisC34EtoY06-pVKbMRkJceJDVBz8-yGTVks,1068
+openfisk-0.1.0.dist-info/METADATA,sha256=E7r0JuyxVLKcantI5GMlSHjS5GI04AjCu5cWvDFOOh8,2061
+openfisk-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+openfisk-0.1.0.dist-info/RECORD,,
