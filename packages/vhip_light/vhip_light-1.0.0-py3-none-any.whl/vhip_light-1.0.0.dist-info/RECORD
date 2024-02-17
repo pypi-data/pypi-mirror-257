@@ -1,0 +1,17 @@
+vhip_light/__init__.py,sha256=v4KRPcxsVHDVsglU5Uk7peNSeX3z0OtbtZPQNtX4KxI,762
+vhip_light/balancer.py,sha256=1fj-Zje7kBsDOmFYgJj8FzUrhqOEb0yeEangp8N0ez8,2173
+vhip_light/contact.py,sha256=Jp5L3gaj6nCIj_sbmQ-oWVZXvtUyHT-V4-kUOKCXDO8,863
+vhip_light/gravity.py,sha256=BJlpZf7_M-0EB9kbUmdfyUPQ95g3fuFL3yxXfybdLzI,153
+vhip_light/inverted_pendulum.py,sha256=LktvEZfUbENPRH6hm2OmrqzS6yvE38I-B9N6bDuQl3E,3854
+vhip_light/plotter.py,sha256=RXquETTdZTYd6wMmCgdPpCdpFKL1-xhzkfL0oJ0AfVk,3379
+vhip_light/point.py,sha256=jT-V15DJL3AP8cDAqBypoB8XhLPonuQqRploFiAtVWA,561
+vhip_light/pole_placement_balancer.py,sha256=AVz7ReNoZafmZ_Gxgki8OVrgaMr3NNe8eXiYXzSzD2k,5053
+vhip_light/process.py,sha256=r9tCcuPZGjMlG4BmI4SjYsAW2-9tUcBg01CC8XWvcVA,286
+vhip_light/pusher.py,sha256=e9LiYirMjEJRPjk_5ggBUIsfnDUK3rU5xSSBSQzaloE,1318
+vhip_light/vhip_balancer.py,sha256=uxuF33lDJvTaFKgIqp5uhN0XxtYer_b48kHg6VUHgQQ,4734
+vhip_light/vhip_qp_balancer.py,sha256=262C-jIkw_8eB70N0VUjd85Sbau8nM1yZTnxESxIDMo,6436
+vhip_light/vrp_balancer.py,sha256=d1RVfcXRjaW4UN1EjSpBapRomgbnFoNHpqAsRMv3trU,1881
+vhip_light-1.0.0.dist-info/LICENSE,sha256=WJ7YI-moTFb-uVrFjnzzhGJrnL9P2iqQe8NuED3hutI,35141
+vhip_light-1.0.0.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+vhip_light-1.0.0.dist-info/METADATA,sha256=qGcW5r7uQmsEEZvLaTYVnTG7OLnI3CMYOkJxmDHGzFE,2724
+vhip_light-1.0.0.dist-info/RECORD,,
