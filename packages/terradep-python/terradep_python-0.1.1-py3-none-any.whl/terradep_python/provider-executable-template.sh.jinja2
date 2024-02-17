@@ -1,0 +1,265 @@
+#!/bin/bash
+set -e
+
+# this is just for testing, allowing insertion of PATH overrides etc.
+eval "$TERRADEP_PRE"
+
+echo "terradep provider launcher (Python variant) starting..." 1>&2
+
+required_python_version="{{ required_python_version }}"
+provider_fqname="{{ provider_fqname }}"
+provider_main_module="{{ provider_main_module }}"
+provider_package_name="{{ provider_package_name }}"
+
+function log_n() {
+  echo -n "$1" 1>&2
+}
+
+function log() {
+  log_n "$1"
+  echo 1>&2
+}
+
+function print_err_n() {
+  for word in $1; do
+    echo -ne "\033[1;31m$word "
+  done
+  echo -ne "\033[0m"
+}
+
+function print_deletion_suggestion_n() {
+  print_err_n "The easiest way to fix this is probably to delete the "
+  print_err_n "directory, rerun Terraform and follow terradep's instructions "
+  print_err_n "to reinstall the venv. "
+}
+
+function print_tf_log_suggestion_n() {
+  if [ "$TF_LOG" != "trace" -a "$TF_LOG" != "debug" ]; then
+    print_err_n "Rerun with TF_LOG=debug to see detailed error messages. "
+  else
+    print_err_n "See log entries above for detailed error messages. "
+    print_err_n "If it looks like a bug, report it to the authors of the "
+    print_err_n "provider or terradep."
+  fi
+}
+
+function print_helper_script_python_version_reqs_n() {
+  print_err_n "terradep requires Python versions in the range >= 3.7, < 4. "
+  print_err_n "Please install a matching version (e.g. using pyenv) and/or "
+  print_err_n "provide a path of one in the TERRADEP_PYTHON env var. "
+}
+
+function finalize_err_end_and_exit() {
+  print_err_n "Ignore what Terraform says below about this plugin being "
+  print_err_n "invalid (pure slander)."
+  echo
+  exit 1
+}
+
+function can_python_executable_run_terradep_helpers() {
+  "$1" -c 'from sys import version_info as v; print(v >= (3, 7) and v < (4,))'
+}
+
+# figure out the directory this script is running from (= provider directory)
+provider_source_dir=$(dirname $(realpath -s $0)) || {
+  print_err_n "Error trying to locate provider dir. Make sure you have the "
+  print_err_n "dirname and realpath utilities installed. "
+  print_tf_log_suggestion_n
+  finalize_err_and_exit
+}
+
+# first, find a Python interpreter that can run our helper scripts / one-liners
+if [ -n "$TERRADEP_PYTHON" ]; then
+  can_run_helpers="$(
+    can_python_executable_run_terradep_helpers "$TERRADEP_PYTHON"
+  )" || {
+    print_err_n "Error trying to find out if Python interpreter "
+    print_err_n "$TERRADEP_PYTHON (from the TERRADEP_PYTHON env var) is able "
+    print_err_n "to run terradep helper scripts. "
+    print_tf_log_suggestion_n
+    finalize_err_end_and_exit
+  }
+  if [ "$can_run_helpers" = "True" ]; then
+    helper_python="$TERRADEP_PYTHON"
+  else
+    print_err_n "Python interpreter $TERRADEP_PYTHON (from the "
+    print_err_n "TERRADEP_PYTHON env var) is not able to run terradep helper "
+    print_err_n "scripts because of a version mismatch. "
+    print_helper_script_python_version_reqs_n
+    finalize_err_end_and_exit
+  fi
+else
+  for python_executable in python3 "$HOME"/.pyenv/versions/*/bin/python; do
+    can_run_helpers="$(
+      can_python_executable_run_terradep_helpers "$python_executable"
+    )" || {
+      log_n "Error trying to find out if Python interpreter "
+      log_n "$python_executable is able to run terradep helper scripts. "
+      log "Moving on."
+      continue
+    }
+    if [ "$can_run_helpers" = "True" ]; then
+      helper_python="$python_executable"
+      break
+    else
+      log_n "Python interpreter $python_executable is not able to run "
+      log_n "terradep helper scripts because of a version mismatch. "
+      log "Moving on."
+      continue
+    fi
+  done
+  if [ -z "$helper_python" ]; then
+    print_err_n "Did not find any Python interpreter that is able to run "
+    print_err_n "terradep helper scripts. "
+    print_helper_script_python_version_reqs_n
+    print_tf_log_suggestion_n
+    finalize_err_end_and_exit
+  fi
+fi
+log "Using Python interpreter $helper_python to run terradep helper scripts."
+
+# because running anything in the provider source dir will create __pycache__
+# dirs which cause Terraform to fail due to changed checksums, we ensure
+# everything happens inside a copy of the provider source dir:
+provider_env_dir=".terradep/python/providers/$provider_fqname"
+if [ ! -e "$provider_env_dir" ]; then
+  mkdir -p "$provider_env_dir" || {
+    print_err_n "Error creating provider env dir $provider_env_dir. "
+    print_tf_log_suggestion_n
+    finalize_err_end_and_exit
+  }
+  cp -r "$provider_source_dir"/* "$provider_env_dir" || {
+    print_err_n "Error copying provider source dir $provider_source_dir to "
+    print_err_n "provider env dir $provider_env_dir. "
+    print_tf_log_suggestion_n
+    finalize_err_end_and_exit
+  }
+fi
+
+# new idea: provider may ship with a relocatable virtualenv that has dependencies
+# installed, this is copied into terradep dir on first install (can't use from
+# provider dir directly because that messes with TF's checksum verification)
+provider_source_venv_dir="$provider_source_dir/venv"
+# check if an environment for our provider has been set up already.
+provider_venv_dir="$provider_env_dir/venv"
+provider_venv_py_executable="$provider_venv_dir/bin/python"
+if [ -d "$provider_venv_dir" ]; then
+  if [ -e "$provider_venv_py_executable" ]; then
+    # check if its Python version matches our expectations (because it can
+    # change if it's a symlink to the system version that gets updated)
+    provider_venv_py_ver="$(
+      "$provider_venv_py_executable" -c \
+        'from sys import version_info as v; print(str(v[0])+"."+str(v[1]))'
+    )" || {
+      print_err_n "Error retrieving version of Python executable "
+      print_err_n "$provider_venv_py_executable. "
+      print_tf_log_suggestion_n
+      finalize_err_end_and_exit
+    }
+    # TODO make the `packaging` package available to system Python (=> include
+    #   in provider dir, then set PYTHONPATH)
+    version_ok="$(
+      PYTHONPATH="$provider_env_dir:$PYTHONPATH" "$helper_python" -c \
+        "from sys import version_info as v; from packaging.specifiers import Specifier as S; print(S('$required_python_version').contains('$provider_venv_py_ver'))"
+    )" || {
+      print_err_n "Error comparing version of Python executable "
+      print_err_n "$provider_venv_py_executable to requirements. "
+      print_tf_log_suggestion_n
+      finalize_err_end_and_exit
+    }
+    if [ "$version_ok" != "True" ]; then
+      print_err_n "Provider venv's Python interpreter "
+      print_err_n "$provider_venv_py_executable has version "
+      print_err_n "$provider_venv_py_ver, which is incompatible with the "
+      print_err_n "provider's requirement of $required_python_version. "
+      print_deletion_suggestion_n
+      finalize_err_end_and_exit
+    fi
+  else
+    print_err_n "Provider venv $provider_venv_dir exists, but does not "
+    print_err_n "contain a working Python venv. "
+    print_deletion_suggestion_n
+    finalize_err_end_and_exit
+  fi
+else
+  # install provider or print instructions to do so
+  if [ -z "$TERRADEP_INSTALL" -o "$TERRADEP_INSTALL" = "0" ]; then
+    print_err_n "The provider $provider_fqname is a Python provider managed "
+    print_err_n "by terradep and needs an additional installation step to "
+    print_err_n "download and set up its dependencies. Rerun with the env var "
+    print_err_n "TERRADEP_INSTALL=1 (or any other non-empty value) set to do "
+    print_err_n "this now. You should probably also set TF_LOG=debug so you "
+    print_err_n "can monitor its progress. Alternatively, you can download "
+    print_err_n "and run the terradep CLI tool to perform such installations "
+    print_err_n "without running Terraform. "
+    finalize_err_end_and_exit
+  else
+    log "Trying to find provider-compatible Python version..."
+    for py_executable in python3 "$HOME"/.pyenv/versions/*/bin/python; do
+      py_ver="$(
+        "$py_executable" -c \
+          'from sys import version_info as v; print(str(v[0])+"."+str(v[1]))'
+      )" || {
+        log_n "Error retrieving version of Python executable "
+        log "$py_executable. Moving on."
+        continue
+      }
+      version_ok="$(
+        PYTHONPATH="$provider_source_dir:$PYTHONPATH" "$helper_python" -c \
+          "from sys import version_info as v; from packaging.specifiers import Specifier as S; print(S('$required_python_version').contains('$py_ver'))"
+      )" || {
+        log_n "Error comparing version of Python executable $py_executable to "
+        log "requirements. Moving on."
+        continue
+      }
+      if [ "$version_ok" = "True" ]; then
+        provider_venv_setup_executable="$py_executable"
+        break
+      else
+        log_n "Python interpreter $py_executable has version $py_ver, "
+        log_n "which is incompatible with the provider's requirement of "
+        log "$required_python_version. Moving on."
+        continue
+      fi
+    done
+    if [ -z "$provider_venv_setup_executable" ]; then
+      print_err_n "Did not find any Python interpreter that fulfills the "
+      print_err_n "provider's version requirement of "
+      print_err_n "$required_python_version. "
+      print_err_n "Please install a matching version (e.g. using pyenv). "
+      # TODO ... or set via env var (similar to helper Python version)
+      print_tf_log_suggestion_n
+      finalize_err_end_and_exit
+    fi
+    log "Setting up venv for provider using $provider_venv_setup_executable..."
+    "$provider_venv_setup_executable" -m venv "$provider_venv_dir" 1>&2 || {
+      print_err_n "Error setting up venv for provider using "
+      print_err_n "$provider_venv_setup_executable. "
+      print_tf_log_suggestion_n
+      finalize_err_end_and_exit
+    }
+    (
+      log "Installing provider Python package..." 1>&2
+      . "$provider_venv_dir/bin/activate" 1>&2
+      pip install "$provider_source_dir"/"$provider_package_name" 1>&2
+    ) || {
+      print_err_n "Error installing provider $provider_fqname. "
+      print_tf_log_suggestion_n
+      finalize_err_end_and_exit
+    }
+  fi
+fi
+
+"$provider_venv_py_executable" -m "$provider_main_module" || {
+  print_err_n "Error running provider main module $provider_main_module. "
+  print_tf_log_suggestion_n
+  finalize_err_end_and_exit
+}
+
+# TODO this used to be required but now it isn't for some reason; in fact,
+#   putting it back in makes Terraform freeze with real providers, but not
+#   tests... investigate?
+#echo "terradep provider launcher now idle until killed" 1>&2
+#while true; do
+  #sleep 999999
+#done

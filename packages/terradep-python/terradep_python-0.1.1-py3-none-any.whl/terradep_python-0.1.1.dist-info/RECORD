@@ -1,0 +1,9 @@
+terradep_python/__init__.py,sha256=phOEEjk7dr-yOGCnr3lLwhB0HkEqqNgS6Ajitjj2Vbc,352
+terradep_python/__main__.py,sha256=ZElfyfW-hiKjONhyl2LKl7gKnj8GEBtLAlcYM57tSmg,84
+terradep_python/cli.py,sha256=pJYN3M_10rmsLc3cporudhU0u8lkyQj_IaemZRoYaLk,2807
+terradep_python/core.py,sha256=bSZqOjb49Clz4ZikeOvc8vglbRcdJrXVgaOSp_wkN30,2313
+terradep_python/provider-executable-template.sh.jinja2,sha256=ih-524WGGT-miYvAkxk8HKedCtZqk51E4Ot8DRGe16k,10435
+terradep_python-0.1.1.dist-info/METADATA,sha256=2rsLX5X2Gx9de6pSJwe6PaD1-QG6X8h3-AozoqDsi_c,1122
+terradep_python-0.1.1.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+terradep_python-0.1.1.dist-info/entry_points.txt,sha256=jhYEfEF58H82t0KRn0y8O_dJfKOzaDOaMkhC6ucMV2w,60
+terradep_python-0.1.1.dist-info/RECORD,,

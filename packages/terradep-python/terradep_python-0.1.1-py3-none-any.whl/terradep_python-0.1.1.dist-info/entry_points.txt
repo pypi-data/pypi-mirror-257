@@ -1,0 +1,3 @@
+[console_scripts]
+terradep-python=terradep_python.cli:main
+
