@@ -1,0 +1,12 @@
+{
+    "options": {
+        "step": {
+            "reboot_menu": {
+                "menu_options": {
+                    "reboot_later": "Reiniciar manualmente mais tarde",
+                    "reboot_now": "Reiniciar agora"
+                }
+            }
+        }
+    }
+}

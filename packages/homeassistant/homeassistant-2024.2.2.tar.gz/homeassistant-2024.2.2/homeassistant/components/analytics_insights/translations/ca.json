@@ -1,0 +1,33 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "El servei ja est\u00e0 configurat",
+            "cannot_connect": "Ha fallat la connexi\u00f3"
+        },
+        "error": {
+            "cannot_connect": "Ha fallat la connexi\u00f3",
+            "unknown": "Error inesperat"
+        },
+        "step": {
+            "user": {
+                "data_description": {
+                    "tracked_custom_integrations": "Selecciona les integracions personalitzades a monitorar",
+                    "tracked_integrations": "Selecciona les integracions a monitorar"
+                }
+            }
+        }
+    },
+    "options": {
+        "abort": {
+            "cannot_connect": "Ha fallat la connexi\u00f3"
+        },
+        "step": {
+            "init": {
+                "data_description": {
+                    "tracked_custom_integrations": "Selecciona les integracions personalitzades a monitorar",
+                    "tracked_integrations": "Selecciona les integracions a monitorar"
+                }
+            }
+        }
+    }
+}
