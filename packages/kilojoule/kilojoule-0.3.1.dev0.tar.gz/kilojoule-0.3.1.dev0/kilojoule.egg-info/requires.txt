@@ -1,0 +1,16 @@
+coolprop
+emoji
+icecream
+matplotlib
+numpy
+pandas
+pint-pandas
+pint==0.20.1
+pyromat
+regex
+rich
+schemdraw
+scipy
+sigfig
+sympy
+uncertainties
