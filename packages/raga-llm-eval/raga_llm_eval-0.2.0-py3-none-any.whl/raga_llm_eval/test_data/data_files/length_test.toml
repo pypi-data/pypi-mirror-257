@@ -1,0 +1,19 @@
+[1]
+response = "Hello!"
+expected_response = {"response": "Hello!", "length": 1}
+
+[2]
+response = "This is a sample sentence."
+expected_response = {"response": "This is a sample sentence.", "length": 5}
+
+[3]
+response = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+expected_response = {"response": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", "length": 20}
+
+[4]
+response = ""
+expected_response = {"response": "", "length": 0}
+
+[5]
+response = "This is the first sentence. Here is the second one."
+expected_response = {"response": "This is the first sentence. Here is the second one.", "length": 10}
