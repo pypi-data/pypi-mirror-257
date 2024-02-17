@@ -1,0 +1,8 @@
+del_fem-0.1.0.dist-info/METADATA,sha256=Pl68O53ebfAQjdnRA9uxqFu-ll4mxWKTaQGycJxcE-4,807
+del_fem-0.1.0.dist-info/WHEEL,sha256=keLBtIOE7ZgLyd8Cijw37iqv72a2jhfxMdDu8Unr7zo,96
+del_fem-0.1.0.dist-info/license_files/LICENSE,sha256=mrQHZw4bKvCcFVw-t_z_EqXTT5DNz_DXKuDBeUNDCR0,1094
+del_fem/Arap.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+del_fem/Laplacian.py,sha256=UUsMggnkOaY7s5R_U-Ek0JYflyoAmovT9Y3BPVTF3VY,375
+del_fem/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+del_fem/del_fem.cp310-win_amd64.pyd,sha256=XMurYotV-Hu68XCJseHiIVusvL3ReYEGZ_9fZYEFrOw,331264
+del_fem-0.1.0.dist-info/RECORD,,
