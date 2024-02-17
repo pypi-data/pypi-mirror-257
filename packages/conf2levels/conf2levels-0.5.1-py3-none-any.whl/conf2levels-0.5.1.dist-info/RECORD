@@ -1,0 +1,14 @@
+conf2levels/__init__.py,sha256=UtWY8446piIGqHuJR0TdnaF3PBL67tu4vSNSC7aWvRQ,7128
+conf2levels/argparse_reader.py,sha256=BUwwULITyal6N2XEbcyXs-B0XGRKSk_ROGx1u-JQYoU,1756
+conf2levels/dictonary_reader.py,sha256=l5ns-tJKpXwekhryO4m4NQWCplfYIJ0Rsx3NkvQ-nlk,846
+conf2levels/environ_reader.py,sha256=mQlMZCRFMisy0Dc0Yv-PyoR1BCSzQ5ucFOn22fxiNN0,1103
+conf2levels/exceptions.py,sha256=Pfta_ltSaBd4AyO6y4O5dasBlEegPS8BK6PhHnInff4,441
+conf2levels/ini_reader.py,sha256=G-ytYdXMkDK4_FMx0GvzwWNROZXhWcpeR5RrGzktLGM,1231
+conf2levels/py.typed,sha256=fTZxIEqDNB02iQ4gJI00cUs5AkemOkUF555psIWfiGA,94
+conf2levels/reader_base.py,sha256=270WunIoWC49D5RTiE9NJBNcMsZ2KwmBkBj5QvTdtPo,459
+conf2levels/spec_reader.py,sha256=tMDboRp-dBY1emB91s_EYPAjltNH5IkGu0BE8OwHBCY,918
+conf2levels/types.py,sha256=U5HStpkWjGKeqrZAwALJNGRG3zGh287DqylZTKPesCU,622
+conf2levels-0.5.1.dist-info/LICENSE,sha256=ejqFH_nPFaJO1iQ8-bQJcoUWk2DlhJmsmTlmcB9bb2s,1096
+conf2levels-0.5.1.dist-info/METADATA,sha256=8udEiDSf_1X3HPoXO8AqiyCNDUGdfnpOhlYo6imfSZo,3750
+conf2levels-0.5.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+conf2levels-0.5.1.dist-info/RECORD,,
