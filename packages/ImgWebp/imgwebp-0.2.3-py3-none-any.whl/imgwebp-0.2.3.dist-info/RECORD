@@ -1,0 +1,17 @@
+ImgWebp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ImgWebp/__main__.py,sha256=U6u97r19SudCWF-ceXBOQ9HVoQ9m4c25kwtD5Hl35XE,147
+ImgWebp/console/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ImgWebp/console/application.py,sha256=bNuoMBudFURxef6phuElnw_KIegC39AAYFMi2h4LnPw,1006
+ImgWebp/console/command_loader.py,sha256=DsX5cubYe6OQkHZrUfGIqT8haow9QXjNJmLZxMQ1bcY,615
+ImgWebp/console/commands/command.py,sha256=yi2_RT_K7_DY3CUj45x-hvwBwsNn10AqcqGceoqLdr4,727
+ImgWebp/console/commands/version.py,sha256=Gci3g9H0n9yzzLEuOnuf4SmEWPZhVPYhXtFU-HdmdNA,629
+ImgWebp/console/exceptions.py,sha256=IE6zM-5JVccvSGSK2J-usmjuJR3b01tvvPqsIkFhJkM,170
+ImgWebp/utils/CustomPath.py,sha256=jDrfGzI8IXCMKd3dgYgtYFiNyptlP_0CXe9puh6yP8w,892
+ImgWebp/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ImgWebp/utils/download_libwebp.py,sha256=vNPWpVVqpRJq0ANqFocwEx5ddMLQM35k2jReWuYi_0o,8136
+ImgWebp/utils/log.py,sha256=MoYExE6O85Y3Mad9fJmymVKWjtx1BIBpR8bXyIFErck,773
+ImgWebp/utils/style.qss,sha256=aRmLUU4XUOCIdY_bN320r5WLd_enTmpd80f6wjirDVE,232
+imgwebp-0.2.3.dist-info/METADATA,sha256=en5uuqmNHSTjdeAZ5DTYHP-zOKoIsPHHLcTGqGvLxzw,736
+imgwebp-0.2.3.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+imgwebp-0.2.3.dist-info/entry_points.txt,sha256=UL1gOCLfK_9ndEquWHbxD8VdmucLNpp0mwxfTvjfuBs,57
+imgwebp-0.2.3.dist-info/RECORD,,
