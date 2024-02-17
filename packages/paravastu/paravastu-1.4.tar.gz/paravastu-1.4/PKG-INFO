@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: paravastu
+Version: 1.4
+Author: Paravastu Lab
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: biopandas
+
+lab package
