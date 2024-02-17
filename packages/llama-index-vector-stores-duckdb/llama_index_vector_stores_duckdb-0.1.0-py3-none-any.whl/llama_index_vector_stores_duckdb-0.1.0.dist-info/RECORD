@@ -1,0 +1,5 @@
+llama_index/vector_stores/duckdb/__init__.py,sha256=zkkd8jhbB5Ju2VRUTXK8Nb91ce1RQGzJm3qedw0ZrHY,102
+llama_index/vector_stores/duckdb/base.py,sha256=1vQasBbssDA8Uko3E6yOT7Dv7fEdjUnCZ48opv73NJw,13219
+llama_index_vector_stores_duckdb-0.1.0.dist-info/METADATA,sha256=zOr26rxPsXFtFUb-pJaUrrQdI8lBoZgn5iMsEdb5qhE,652
+llama_index_vector_stores_duckdb-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+llama_index_vector_stores_duckdb-0.1.0.dist-info/RECORD,,
