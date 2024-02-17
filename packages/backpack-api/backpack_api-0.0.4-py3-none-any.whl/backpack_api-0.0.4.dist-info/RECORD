@@ -1,0 +1,13 @@
+backpack/__init__.py,sha256=jSHL006FukiZuGVb8Znf-YUV5Zh2js6dlImQ3qvqKtw,68
+backpack/async_api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+backpack/async_api/private/__init__.py,sha256=FpA9G_PHkLUT5qWRIdPb4wVBsopQExX1ECoCiFpBzLg,79
+backpack/async_api/private/private.py,sha256=ftArx-TI1ZbyGMlC5IPISiIAcia9tXe0ctjKDTgNuU0,11659
+backpack/async_api/public/__init__.py,sha256=QB-cJ69q7ioj0sC75ductFnoY4wS2DaWM0p14ax-VPM,78
+backpack/async_api/public/public.py,sha256=pTLftfl1KFpmcFZLJs-jQtNLjrnXT6N6TsUEvUEhsVA,4996
+backpack/async_api/rest_api.py,sha256=sKCCz1Qnr4pMgKUdBaJw42Lv49K4Yu0XEik-aDrb-S0,464
+backpack/base/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+backpack/base/models.py,sha256=HMcu2scPz2-nYk8sEAPmwMUz6KfpgbZ5hgCcEFBQbIk,2919
+backpack_api-0.0.4.dist-info/LICENSE,sha256=sOZ_Wlz0vmPhfC4m212erhkaDlBxjkomFyQXwgmiR-w,1067
+backpack_api-0.0.4.dist-info/METADATA,sha256=HRZJDY6CsiPctSsasaLxFM4ne26aC7vyK0JYwW4fgaI,2141
+backpack_api-0.0.4.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+backpack_api-0.0.4.dist-info/RECORD,,
