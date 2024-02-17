@@ -1,0 +1,10 @@
+akmaddition/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+akmaddition/addition.py,sha256=Mkox57t1IK3l0lcNQCtYW4XEDd6nlQcLzU5lU8ejQ24,1105
+akmaddition/operations.py,sha256=naRuTpv4b4TxfL6cctZL-fgi-p1bZcjHAHjOxQgW01I,673
+akmoperations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+akmoperations/operations.py,sha256=naRuTpv4b4TxfL6cctZL-fgi-p1bZcjHAHjOxQgW01I,673
+akmoperations-2.0.0.dist-info/LICENSE,sha256=KldHbYyfpjAyHdNgPosM96fSBMrfdfh31J1pDG_OWu8,1071
+akmoperations-2.0.0.dist-info/METADATA,sha256=IYa4KAYsMRfN2D9u_-D8sRu6-tQCBs9AZj2DtKnq7ZQ,436
+akmoperations-2.0.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+akmoperations-2.0.0.dist-info/top_level.txt,sha256=zNrwIV-tlY20r6X_piUHqlfEESI1dgiS2ecI1_1AA6k,14
+akmoperations-2.0.0.dist-info/RECORD,,
