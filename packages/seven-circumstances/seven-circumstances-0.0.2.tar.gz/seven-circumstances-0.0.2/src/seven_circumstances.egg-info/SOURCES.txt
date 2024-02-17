@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/seven_circumstances/__init__.py
+src/seven_circumstances.egg-info/PKG-INFO
+src/seven_circumstances.egg-info/SOURCES.txt
+src/seven_circumstances.egg-info/dependency_links.txt
+src/seven_circumstances.egg-info/top_level.txt
