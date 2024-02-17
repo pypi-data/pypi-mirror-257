@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: ImgWebp
+Version: 0.2.2
+Summary: 
+Author: yuanhang
+Author-email: 295043131@qq.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: cleo (>=2.1.0,<3.0.0)
+Requires-Dist: pyqt5 (>=5.15.10,<6.0.0)
+Requires-Dist: wget (>=3.2,<4.0)
+Description-Content-Type: text/markdown
+
+上传pypi，poetry设置
+poetry config http-basic.pypi __token__ pypi-AgEIcHlwaS5vcmcCJGI5ODI2OTY0LTg4MDYtNDYzYy1iNTc5LWYyNDRhZjVjYzc4OQACKlszLCIyODJjMWU0OC01ODUyLTRhNzMtYjYzYS0xNTE4ZTBkYjI1NTEiXQAABiD7EZcPX_gCKZ38DgoY9uyUIw4YUFeEBDUQzTg5d90urg
