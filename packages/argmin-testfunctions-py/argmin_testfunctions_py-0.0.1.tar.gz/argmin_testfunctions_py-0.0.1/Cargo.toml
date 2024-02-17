@@ -1,0 +1,8 @@
+[workspace]
+resolver = "2"
+
+members = ["crates/*", "python/argmin-testfunctions-py"]
+
+exclude = [
+    "media/book/tests",
+]
