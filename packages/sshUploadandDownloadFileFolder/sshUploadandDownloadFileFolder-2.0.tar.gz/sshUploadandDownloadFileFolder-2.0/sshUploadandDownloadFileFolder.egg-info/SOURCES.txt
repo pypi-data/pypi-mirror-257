@@ -1,0 +1,6 @@
+setup.py
+sshUploadandDownloadFileFolder.py
+sshUploadandDownloadFileFolder.egg-info/PKG-INFO
+sshUploadandDownloadFileFolder.egg-info/SOURCES.txt
+sshUploadandDownloadFileFolder.egg-info/dependency_links.txt
+sshUploadandDownloadFileFolder.egg-info/top_level.txt
