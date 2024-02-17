@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: llm-templates
+Version: 0.1.0
+Summary: Instruction/chat prompts creation library for text generation LLM. It supports local and Hugging Face models.
+Home-page: https://github.com/jpmanson/llm-templates
+Author: Juan Pablo Manson
+Author-email: jpmanson@gmail.com
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests >=2.31.0
+Requires-Dist: Jinja2 ==3.1.3
+
