@@ -1,0 +1,6 @@
+click<9,>=8.1.7
+filelock<4,>=3.13.1
+imageio<3,>=2.34.0
+no_vtf<6,>=5.0.0
+pip
+pyxdg<1,>=0.28
