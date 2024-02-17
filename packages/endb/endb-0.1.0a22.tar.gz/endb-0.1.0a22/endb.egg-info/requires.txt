@@ -1,0 +1,6 @@
+
+[pyarrow]
+pyarrow>=15
+
+[websockets]
+websockets>=12
