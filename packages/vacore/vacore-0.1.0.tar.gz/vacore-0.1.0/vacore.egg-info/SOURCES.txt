@@ -1,0 +1,5 @@
+setup.py
+vacore.egg-info/PKG-INFO
+vacore.egg-info/SOURCES.txt
+vacore.egg-info/dependency_links.txt
+vacore.egg-info/top_level.txt
