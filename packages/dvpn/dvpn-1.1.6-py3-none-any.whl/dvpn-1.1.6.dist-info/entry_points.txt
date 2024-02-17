@@ -1,0 +1,2 @@
+[console_scripts]
+dvpn = dvpn.main:main
