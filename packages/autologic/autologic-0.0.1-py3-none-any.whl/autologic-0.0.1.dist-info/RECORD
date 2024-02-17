@@ -1,0 +1,13 @@
+autologic/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+autologic/cli.py,sha256=lN5F9voqcKHlTneF0DLgxFTcmsE_zm25KtiVotzVEGc,4979
+autologic/config.py,sha256=BUrRBt9YSsGS-JX7r2Ac5hMGpq5x3_hdu6WHz5py4x4,11340
+autologic/gemini.py,sha256=EMNCy7J_KwOmzEICJsRKq9ANC_BARs5WKqFp3lA6wN8,1110
+autologic/localLLM.py,sha256=U-9L9HEvhcaBtI0gZErYbhqb0k6h74YH0AgDMnTVqVc,822
+autologic/reasoningEngine.py,sha256=UoP41_xGM0YjXg1X0cC6HCFots_ctQqii-J34KjNpSU,12131
+autologic/utils.py,sha256=W4w1bdSaVy-Bgy36JI4UDBXLreV_qQ4iRdIurojp4CU,1656
+autologic-0.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+autologic-0.0.1.dist-info/METADATA,sha256=3wQsAFx3W8EP53fvAZ92BdF7472eRhTTjzqsFV9Klv4,12814
+autologic-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+autologic-0.0.1.dist-info/entry_points.txt,sha256=z0sar8Wj5C_jeT6TPccAgL57j4GmpkRp0vf452NGAhA,49
+autologic-0.0.1.dist-info/top_level.txt,sha256=79KppUrsHHqUwkjeDohCDe3O4XghT50Hyzo4kE-BCFs,10
+autologic-0.0.1.dist-info/RECORD,,
