@@ -1,0 +1,11 @@
+{
+  "service": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/services/1",
+  "inputs": {
+    "in": [
+      "eopaas://outputProduct/5719e770-d2dd-421e-a911-a75aa190e98c/masks/T32TNP_20240205T102129_calrefbyt_lndstlk_SIAMCr_nocl_CAV_HazePentarnaryMask.dat,eopaas://outputProduct/1d156c7c-73cf-4012-b7d0-0095736c2109/masks/T32TNP_20240207T101201_calrefbyt_lndstlk_SIAMCr_nocl_CAV_HazePentarnaryMask.dat,eopaas://outputProduct/1d156c7c-73cf-4012-b7d0-0095736c2109/masks/T32TNP_20240207T101201_calrefbyt_lndstlk_SIAMCr_nocl_CAV_HazePentarnaryMask.hdr,eopaas://outputProduct/1d156c7c-73cf-4012-b7d0-0095736c2109/pct_full/T32TNP_20240207T101201_calrefbyt_lndstlk_SIAMCr_nocl_96SpCt_r88v8.tif,eopaas://outputProduct/5719e770-d2dd-421e-a911-a75aa190e98c/pct_full/T32TNP_20240205T102129_calrefbyt_lndstlk_SIAMCr_nocl_96SpCt_r88v8.tif,eopaas://outputProduct/5719e770-d2dd-421e-a911-a75aa190e98c/masks/T32TNP_20240205T102129_calrefbyt_lndstlk_SIAMCr_nocl_CAV_HazePentarnaryMask.hdr"
+    ],
+    "collection": [
+      "{\"output\":\"iridelot3f3b7b5c0c6394039bcea6ba038eace72\"}"
+    ]
+  }
+}

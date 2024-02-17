@@ -1,0 +1,31 @@
+name: wf_siam_20231126_20231202
+type: workflow
+version: beta/1
+
+configuration:
+  max_parallel_jobs: 1
+  continue_on_error: true
+  delete_workflow_log: false
+
+steps:
+  - - name: fast_copier
+      service_id: '1'
+      type: processor
+      params:
+        - name: in
+          values:
+            - 'https://img.gruppomol.it/articoli/image/casa/1200x1200_1x1_Depositphotos_26486959_xl-2015.jpg'
+        - name: collection
+          values:
+            - '{"output":"iridelot3f3b7b5c0c6394039bcea6ba038eace72"}'
+  - - name: fast_copier_2
+      service_id: '1'
+      type: processor
+      params:
+        - name: in
+          values:
+            - ${workflow.step.fast_copier} $[(.*_96SpCt_.*\.tif$)|(.*HazePentarnaryMask.*)]
+        - name: collection
+          values:
+            - '{"output":"iridelot3f3b7b5c0c6394039bcea6ba038eace72"}'
+

@@ -1,0 +1,1991 @@
+{
+  "_embedded": {
+    "platformFiles": [
+      {
+        "owner": {
+          "role": "EXPERT_USER",
+          "name": "cgi.campaign.bot",
+          "id": 32,
+          "_links": {
+            "self": {
+              "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/users/32{?projection}",
+              "templated": true
+            }
+          }
+        },
+        "metadata": {
+          "type": "Feature",
+          "properties": {
+            "collection": "iridelot3f3b7b5c0c6394039bcea6ba038eace72",
+            "license": {
+              "licenseId": "unlicensed",
+              "hasToBeSigned": "never",
+              "grantedCountries": null,
+              "grantedOrganizationCountries": null,
+              "grantedFlags": null,
+              "viewService": "public",
+              "signatureQuota": -1,
+              "description": {
+                "shortName": "No license"
+              }
+            },
+            "productIdentifier": "1d156c7c-73cf-4012-b7d0-0095736c2109_pct_full/T32TNP_20240207T101201_calrefbyt_lndstlk_SIAMCr_nocl_96SpCt_r88v8.tif.aux.xml",
+            "parentIdentifier": null,
+            "title": "1d156c7c-73cf-4012-b7d0-0095736c2109_pct_full/T32TNP_20240207T101201_calrefbyt_lndstlk_SIAMCr_nocl_96SpCt_r88v8.tif.aux.xml",
+            "description": null,
+            "organisationName": null,
+            "startDate": "Z",
+            "completionDate": "Z",
+            "productType": null,
+            "processingLevel": null,
+            "platform": null,
+            "instrument": null,
+            "resolution": 0,
+            "sensorMode": null,
+            "orbitNumber": 0,
+            "quicklook": null,
+            "thumbnail": null,
+            "updated": "2024-02-13T15:01:56.80459Z",
+            "published": "2024-02-13T15:01:56.80459Z",
+            "snowCover": 0,
+            "cloudCover": 0,
+            "keywords": [],
+            "centroid": {
+              "type": "Point",
+              "coordinates": [
+                0,
+                0
+              ]
+            },
+            "platformFileType": "OUTPUT_PRODUCT",
+            "services": {
+              "download": {
+                "url": "http://eopaas-resto-iride-lot3/resto/collections/iridelot3f3b7b5c0c6394039bcea6ba038eace72/23fd60d2-26b1-5e9e-b4a7-fe77f0c2f0b0/download",
+                "mimeType": "application/unknown",
+                "size": 8871,
+                "checksum": "sha256=d9ba203258d614f796162b293918a69fb811cfc969c7585bdbf3194a1492f1cd"
+              }
+            },
+            "links": [
+              {
+                "rel": "self",
+                "type": "application/json",
+                "title": "GeoJSON link for 23fd60d2-26b1-5e9e-b4a7-fe77f0c2f0b0",
+                "href": "http://eopaas-resto-iride-lot3/resto/collections/iridelot3f3b7b5c0c6394039bcea6ba038eace72/23fd60d2-26b1-5e9e-b4a7-fe77f0c2f0b0.json?&lang=en"
+              }
+            ]
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              0.0,
+              0.0
+            ]
+          },
+          "id": "23fd60d2-26b1-5e9e-b4a7-fe77f0c2f0b0"
+        },
+        "uri": "eopaas://outputProduct/1d156c7c-73cf-4012-b7d0-0095736c2109/pct_full/T32TNP_20240207T101201_calrefbyt_lndstlk_SIAMCr_nocl_96SpCt_r88v8.tif.aux.xml",
+        "filename": "1d156c7c-73cf-4012-b7d0-0095736c2109/pct_full/T32TNP_20240207T101201_calrefbyt_lndstlk_SIAMCr_nocl_96SpCt_r88v8.tif.aux.xml",
+        "restoId": "23fd60d2-26b1-5e9e-b4a7-fe77f0c2f0b0",
+        "access": {
+          "published": false,
+          "publishRequested": false,
+          "currentLevel": "ADMIN"
+        },
+        "type": "OUTPUT_PRODUCT",
+        "id": 4615,
+        "_links": {
+          "self": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4615"
+          },
+          "file": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4615{?projection}",
+            "templated": true
+          },
+          "download": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4615/dl"
+          },
+          "platform": {
+            "href": "eopaas://outputProduct/1d156c7c-73cf-4012-b7d0-0095736c2109/pct_full/T32TNP_20240207T101201_calrefbyt_lndstlk_SIAMCr_nocl_96SpCt_r88v8.tif.aux.xml"
+          },
+          "jobs": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4615/jobs"
+          },
+          "owner": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4615/owner"
+          },
+          "collection": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4615/collection"
+          }
+        }
+      },
+      {
+        "owner": {
+          "role": "EXPERT_USER",
+          "name": "cgi.campaign.bot",
+          "id": 32,
+          "_links": {
+            "self": {
+              "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/users/32{?projection}",
+              "templated": true
+            }
+          }
+        },
+        "metadata": {
+          "type": "Feature",
+          "properties": {
+            "collection": "iridelot3f3b7b5c0c6394039bcea6ba038eace72",
+            "license": {
+              "licenseId": "unlicensed",
+              "hasToBeSigned": "never",
+              "grantedCountries": null,
+              "grantedOrganizationCountries": null,
+              "grantedFlags": null,
+              "viewService": "public",
+              "signatureQuota": -1,
+              "description": {
+                "shortName": "No license"
+              }
+            },
+            "productIdentifier": "5719e770-d2dd-421e-a911-a75aa190e98c_masks/T32TNP_20240205T102129_calrefbyt_lndstlk_SIAMCr_nocl_CAV_ShadowTrinaryMask.dat",
+            "parentIdentifier": null,
+            "title": "5719e770-d2dd-421e-a911-a75aa190e98c_masks/T32TNP_20240205T102129_calrefbyt_lndstlk_SIAMCr_nocl_CAV_ShadowTrinaryMask.dat",
+            "description": null,
+            "organisationName": null,
+            "startDate": "Z",
+            "completionDate": "Z",
+            "productType": null,
+            "processingLevel": null,
+            "platform": null,
+            "instrument": null,
+            "resolution": 0,
+            "sensorMode": null,
+            "orbitNumber": 0,
+            "quicklook": null,
+            "thumbnail": null,
+            "updated": "2024-02-13T15:02:55.871165Z",
+            "published": "2024-02-13T15:02:55.871165Z",
+            "snowCover": 0,
+            "cloudCover": 0,
+            "keywords": [],
+            "centroid": {
+              "type": "Point",
+              "coordinates": [
+                0,
+                0
+              ]
+            },
+            "platformFileType": "OUTPUT_PRODUCT",
+            "services": {
+              "download": {
+                "url": "http://eopaas-resto-iride-lot3/resto/collections/iridelot3f3b7b5c0c6394039bcea6ba038eace72/c8f653fd-108a-5ed4-923a-3e7b0863f4a0/download",
+                "mimeType": "application/unknown",
+                "size": 120560400,
+                "checksum": "sha256=b9c90b079a8a82981344c633a1056b1830496628ab223fd3a6ed24653a2ca547"
+              }
+            },
+            "links": [
+              {
+                "rel": "self",
+                "type": "application/json",
+                "title": "GeoJSON link for c8f653fd-108a-5ed4-923a-3e7b0863f4a0",
+                "href": "http://eopaas-resto-iride-lot3/resto/collections/iridelot3f3b7b5c0c6394039bcea6ba038eace72/c8f653fd-108a-5ed4-923a-3e7b0863f4a0.json?&lang=en"
+              }
+            ]
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              0.0,
+              0.0
+            ]
+          },
+          "id": "c8f653fd-108a-5ed4-923a-3e7b0863f4a0"
+        },
+        "uri": "eopaas://outputProduct/5719e770-d2dd-421e-a911-a75aa190e98c/masks/T32TNP_20240205T102129_calrefbyt_lndstlk_SIAMCr_nocl_CAV_ShadowTrinaryMask.dat",
+        "filename": "5719e770-d2dd-421e-a911-a75aa190e98c/masks/T32TNP_20240205T102129_calrefbyt_lndstlk_SIAMCr_nocl_CAV_ShadowTrinaryMask.dat",
+        "restoId": "c8f653fd-108a-5ed4-923a-3e7b0863f4a0",
+        "access": {
+          "published": false,
+          "publishRequested": false,
+          "currentLevel": "ADMIN"
+        },
+        "type": "OUTPUT_PRODUCT",
+        "id": 4628,
+        "_links": {
+          "self": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4628"
+          },
+          "file": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4628{?projection}",
+            "templated": true
+          },
+          "download": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4628/dl"
+          },
+          "platform": {
+            "href": "eopaas://outputProduct/5719e770-d2dd-421e-a911-a75aa190e98c/masks/T32TNP_20240205T102129_calrefbyt_lndstlk_SIAMCr_nocl_CAV_ShadowTrinaryMask.dat"
+          },
+          "jobs": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4628/jobs"
+          },
+          "owner": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4628/owner"
+          },
+          "collection": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4628/collection"
+          }
+        }
+      },
+      {
+        "owner": {
+          "role": "EXPERT_USER",
+          "name": "cgi.campaign.bot",
+          "id": 32,
+          "_links": {
+            "self": {
+              "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/users/32{?projection}",
+              "templated": true
+            }
+          }
+        },
+        "metadata": {
+          "type": "Feature",
+          "properties": {
+            "collection": "iridelot3f3b7b5c0c6394039bcea6ba038eace72",
+            "license": {
+              "licenseId": "unlicensed",
+              "hasToBeSigned": "never",
+              "grantedCountries": null,
+              "grantedOrganizationCountries": null,
+              "grantedFlags": null,
+              "viewService": "public",
+              "signatureQuota": -1,
+              "description": {
+                "shortName": "No license"
+              }
+            },
+            "productIdentifier": "5719e770-d2dd-421e-a911-a75aa190e98c_masks/T32TNP_20240205T102129_calrefbyt_lndstlk_SIAMCr_nocl_CAV_HazePentarnaryMask.dat",
+            "parentIdentifier": null,
+            "title": "5719e770-d2dd-421e-a911-a75aa190e98c_masks/T32TNP_20240205T102129_calrefbyt_lndstlk_SIAMCr_nocl_CAV_HazePentarnaryMask.dat",
+            "description": null,
+            "organisationName": null,
+            "startDate": "Z",
+            "completionDate": "Z",
+            "productType": null,
+            "processingLevel": null,
+            "platform": null,
+            "instrument": null,
+            "resolution": 0,
+            "sensorMode": null,
+            "orbitNumber": 0,
+            "quicklook": null,
+            "thumbnail": null,
+            "updated": "2024-02-13T15:02:50.269814Z",
+            "published": "2024-02-13T15:02:50.269814Z",
+            "snowCover": 0,
+            "cloudCover": 0,
+            "keywords": [],
+            "centroid": {
+              "type": "Point",
+              "coordinates": [
+                0,
+                0
+              ]
+            },
+            "platformFileType": "OUTPUT_PRODUCT",
+            "services": {
+              "download": {
+                "url": "http://eopaas-resto-iride-lot3/resto/collections/iridelot3f3b7b5c0c6394039bcea6ba038eace72/6ef7e8be-3a7c-51d7-b782-9f597b712e39/download",
+                "mimeType": "application/unknown",
+                "size": 120560400,
+                "checksum": "sha256=4684b48902d1e9a1efa0ef21dc46f34227a2a097df60759c7ecc15f8967a7c98"
+              }
+            },
+            "links": [
+              {
+                "rel": "self",
+                "type": "application/json",
+                "title": "GeoJSON link for 6ef7e8be-3a7c-51d7-b782-9f597b712e39",
+                "href": "http://eopaas-resto-iride-lot3/resto/collections/iridelot3f3b7b5c0c6394039bcea6ba038eace72/6ef7e8be-3a7c-51d7-b782-9f597b712e39.json?&lang=en"
+              }
+            ]
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              0.0,
+              0.0
+            ]
+          },
+          "id": "6ef7e8be-3a7c-51d7-b782-9f597b712e39"
+        },
+        "uri": "eopaas://outputProduct/5719e770-d2dd-421e-a911-a75aa190e98c/masks/T32TNP_20240205T102129_calrefbyt_lndstlk_SIAMCr_nocl_CAV_HazePentarnaryMask.dat",
+        "filename": "5719e770-d2dd-421e-a911-a75aa190e98c/masks/T32TNP_20240205T102129_calrefbyt_lndstlk_SIAMCr_nocl_CAV_HazePentarnaryMask.dat",
+        "restoId": "6ef7e8be-3a7c-51d7-b782-9f597b712e39",
+        "access": {
+          "published": false,
+          "publishRequested": false,
+          "currentLevel": "ADMIN"
+        },
+        "type": "OUTPUT_PRODUCT",
+        "id": 4626,
+        "_links": {
+          "self": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4626"
+          },
+          "file": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4626{?projection}",
+            "templated": true
+          },
+          "download": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4626/dl"
+          },
+          "platform": {
+            "href": "eopaas://outputProduct/5719e770-d2dd-421e-a911-a75aa190e98c/masks/T32TNP_20240205T102129_calrefbyt_lndstlk_SIAMCr_nocl_CAV_HazePentarnaryMask.dat"
+          },
+          "jobs": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4626/jobs"
+          },
+          "owner": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4626/owner"
+          },
+          "collection": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4626/collection"
+          }
+        }
+      },
+      {
+        "owner": {
+          "role": "EXPERT_USER",
+          "name": "cgi.campaign.bot",
+          "id": 32,
+          "_links": {
+            "self": {
+              "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/users/32{?projection}",
+              "templated": true
+            }
+          }
+        },
+        "metadata": {
+          "type": "Feature",
+          "properties": {
+            "collection": "iridelot3f3b7b5c0c6394039bcea6ba038eace72",
+            "license": {
+              "licenseId": "unlicensed",
+              "hasToBeSigned": "never",
+              "grantedCountries": null,
+              "grantedOrganizationCountries": null,
+              "grantedFlags": null,
+              "viewService": "public",
+              "signatureQuota": -1,
+              "description": {
+                "shortName": "No license"
+              }
+            },
+            "productIdentifier": "1d156c7c-73cf-4012-b7d0-0095736c2109_masks/T32TNP_20240207T101201_calrefbyt_lndstlk_SIAMCr_nocl_CAV_HazePentarnaryMask.dat",
+            "parentIdentifier": null,
+            "title": "1d156c7c-73cf-4012-b7d0-0095736c2109_masks/T32TNP_20240207T101201_calrefbyt_lndstlk_SIAMCr_nocl_CAV_HazePentarnaryMask.dat",
+            "description": null,
+            "organisationName": null,
+            "startDate": "Z",
+            "completionDate": "Z",
+            "productType": null,
+            "processingLevel": null,
+            "platform": null,
+            "instrument": null,
+            "resolution": 0,
+            "sensorMode": null,
+            "orbitNumber": 0,
+            "quicklook": null,
+            "thumbnail": null,
+            "updated": "2024-02-13T15:02:14.16979Z",
+            "published": "2024-02-13T15:02:14.16979Z",
+            "snowCover": 0,
+            "cloudCover": 0,
+            "keywords": [],
+            "centroid": {
+              "type": "Point",
+              "coordinates": [
+                0,
+                0
+              ]
+            },
+            "platformFileType": "OUTPUT_PRODUCT",
+            "services": {
+              "download": {
+                "url": "http://eopaas-resto-iride-lot3/resto/collections/iridelot3f3b7b5c0c6394039bcea6ba038eace72/da6dec77-cfa5-5372-b22b-100dda4db4c4/download",
+                "mimeType": "application/unknown",
+                "size": 120560400,
+                "checksum": "sha256=06c78b51fd2a2e99c08b4c0c22486872e86378060baac4f189fee5d2f85b2872"
+              }
+            },
+            "links": [
+              {
+                "rel": "self",
+                "type": "application/json",
+                "title": "GeoJSON link for da6dec77-cfa5-5372-b22b-100dda4db4c4",
+                "href": "http://eopaas-resto-iride-lot3/resto/collections/iridelot3f3b7b5c0c6394039bcea6ba038eace72/da6dec77-cfa5-5372-b22b-100dda4db4c4.json?&lang=en"
+              }
+            ]
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              0.0,
+              0.0
+            ]
+          },
+          "id": "da6dec77-cfa5-5372-b22b-100dda4db4c4"
+        },
+        "uri": "eopaas://outputProduct/1d156c7c-73cf-4012-b7d0-0095736c2109/masks/T32TNP_20240207T101201_calrefbyt_lndstlk_SIAMCr_nocl_CAV_HazePentarnaryMask.dat",
+        "filename": "1d156c7c-73cf-4012-b7d0-0095736c2109/masks/T32TNP_20240207T101201_calrefbyt_lndstlk_SIAMCr_nocl_CAV_HazePentarnaryMask.dat",
+        "restoId": "da6dec77-cfa5-5372-b22b-100dda4db4c4",
+        "access": {
+          "published": false,
+          "publishRequested": false,
+          "currentLevel": "ADMIN"
+        },
+        "type": "OUTPUT_PRODUCT",
+        "id": 4618,
+        "_links": {
+          "self": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4618"
+          },
+          "file": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4618{?projection}",
+            "templated": true
+          },
+          "download": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4618/dl"
+          },
+          "platform": {
+            "href": "eopaas://outputProduct/1d156c7c-73cf-4012-b7d0-0095736c2109/masks/T32TNP_20240207T101201_calrefbyt_lndstlk_SIAMCr_nocl_CAV_HazePentarnaryMask.dat"
+          },
+          "jobs": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4618/jobs"
+          },
+          "owner": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4618/owner"
+          },
+          "collection": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4618/collection"
+          }
+        }
+      },
+      {
+        "owner": {
+          "role": "EXPERT_USER",
+          "name": "cgi.campaign.bot",
+          "id": 32,
+          "_links": {
+            "self": {
+              "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/users/32{?projection}",
+              "templated": true
+            }
+          }
+        },
+        "metadata": {
+          "type": "Feature",
+          "properties": {
+            "collection": "iridelot3f3b7b5c0c6394039bcea6ba038eace72",
+            "license": {
+              "licenseId": "unlicensed",
+              "hasToBeSigned": "never",
+              "grantedCountries": null,
+              "grantedOrganizationCountries": null,
+              "grantedFlags": null,
+              "viewService": "public",
+              "signatureQuota": -1,
+              "description": {
+                "shortName": "No license"
+              }
+            },
+            "productIdentifier": "1d156c7c-73cf-4012-b7d0-0095736c2109_pct_33/T32TNP_20240207T101201_calrefbyt_lndstlk_SIAMCr_nocl_33SharedSpCt_r88v8.tif.aux.xml",
+            "parentIdentifier": null,
+            "title": "1d156c7c-73cf-4012-b7d0-0095736c2109_pct_33/T32TNP_20240207T101201_calrefbyt_lndstlk_SIAMCr_nocl_33SharedSpCt_r88v8.tif.aux.xml",
+            "description": null,
+            "organisationName": null,
+            "startDate": "Z",
+            "completionDate": "Z",
+            "productType": null,
+            "processingLevel": null,
+            "platform": null,
+            "instrument": null,
+            "resolution": 0,
+            "sensorMode": null,
+            "orbitNumber": 0,
+            "quicklook": null,
+            "thumbnail": null,
+            "updated": "2024-02-13T15:02:09.023341Z",
+            "published": "2024-02-13T15:02:09.023341Z",
+            "snowCover": 0,
+            "cloudCover": 0,
+            "keywords": [],
+            "centroid": {
+              "type": "Point",
+              "coordinates": [
+                0,
+                0
+              ]
+            },
+            "platformFileType": "OUTPUT_PRODUCT",
+            "services": {
+              "download": {
+                "url": "http://eopaas-resto-iride-lot3/resto/collections/iridelot3f3b7b5c0c6394039bcea6ba038eace72/ed68602d-d06d-55e9-90aa-2d05b957910b/download",
+                "mimeType": "application/unknown",
+                "size": 8630,
+                "checksum": "sha256=6ce825f348d5ab7bb3d6157c77876055554f55eedab7337e4a4689b482bf3993"
+              }
+            },
+            "links": [
+              {
+                "rel": "self",
+                "type": "application/json",
+                "title": "GeoJSON link for ed68602d-d06d-55e9-90aa-2d05b957910b",
+                "href": "http://eopaas-resto-iride-lot3/resto/collections/iridelot3f3b7b5c0c6394039bcea6ba038eace72/ed68602d-d06d-55e9-90aa-2d05b957910b.json?&lang=en"
+              }
+            ]
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              0.0,
+              0.0
+            ]
+          },
+          "id": "ed68602d-d06d-55e9-90aa-2d05b957910b"
+        },
+        "uri": "eopaas://outputProduct/1d156c7c-73cf-4012-b7d0-0095736c2109/pct_33/T32TNP_20240207T101201_calrefbyt_lndstlk_SIAMCr_nocl_33SharedSpCt_r88v8.tif.aux.xml",
+        "filename": "1d156c7c-73cf-4012-b7d0-0095736c2109/pct_33/T32TNP_20240207T101201_calrefbyt_lndstlk_SIAMCr_nocl_33SharedSpCt_r88v8.tif.aux.xml",
+        "restoId": "ed68602d-d06d-55e9-90aa-2d05b957910b",
+        "access": {
+          "published": false,
+          "publishRequested": false,
+          "currentLevel": "ADMIN"
+        },
+        "type": "OUTPUT_PRODUCT",
+        "id": 4617,
+        "_links": {
+          "self": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4617"
+          },
+          "file": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4617{?projection}",
+            "templated": true
+          },
+          "download": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4617/dl"
+          },
+          "platform": {
+            "href": "eopaas://outputProduct/1d156c7c-73cf-4012-b7d0-0095736c2109/pct_33/T32TNP_20240207T101201_calrefbyt_lndstlk_SIAMCr_nocl_33SharedSpCt_r88v8.tif.aux.xml"
+          },
+          "jobs": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4617/jobs"
+          },
+          "owner": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4617/owner"
+          },
+          "collection": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4617/collection"
+          }
+        }
+      },
+      {
+        "owner": {
+          "role": "EXPERT_USER",
+          "name": "cgi.campaign.bot",
+          "id": 32,
+          "_links": {
+            "self": {
+              "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/users/32{?projection}",
+              "templated": true
+            }
+          }
+        },
+        "metadata": {
+          "type": "Feature",
+          "properties": {
+            "collection": "iridelot3f3b7b5c0c6394039bcea6ba038eace72",
+            "license": {
+              "licenseId": "unlicensed",
+              "hasToBeSigned": "never",
+              "grantedCountries": null,
+              "grantedOrganizationCountries": null,
+              "grantedFlags": null,
+              "viewService": "public",
+              "signatureQuota": -1,
+              "description": {
+                "shortName": "No license"
+              }
+            },
+            "productIdentifier": "5719e770-d2dd-421e-a911-a75aa190e98c_masks/T32TNP_20240205T102129_calrefbyt_lndstlk_SIAMCr_nocl_CAV_ShadowTrinaryMask.hdr",
+            "parentIdentifier": null,
+            "title": "5719e770-d2dd-421e-a911-a75aa190e98c_masks/T32TNP_20240205T102129_calrefbyt_lndstlk_SIAMCr_nocl_CAV_ShadowTrinaryMask.hdr",
+            "description": null,
+            "organisationName": null,
+            "startDate": "Z",
+            "completionDate": "Z",
+            "productType": null,
+            "processingLevel": null,
+            "platform": null,
+            "instrument": null,
+            "resolution": 0,
+            "sensorMode": null,
+            "orbitNumber": 0,
+            "quicklook": null,
+            "thumbnail": null,
+            "updated": "2024-02-13T15:02:56.313632Z",
+            "published": "2024-02-13T15:02:56.313632Z",
+            "snowCover": 0,
+            "cloudCover": 0,
+            "keywords": [],
+            "centroid": {
+              "type": "Point",
+              "coordinates": [
+                0,
+                0
+              ]
+            },
+            "platformFileType": "OUTPUT_PRODUCT",
+            "services": {
+              "download": {
+                "url": "http://eopaas-resto-iride-lot3/resto/collections/iridelot3f3b7b5c0c6394039bcea6ba038eace72/2a89e343-4d03-5d9d-ad56-8f4cee850985/download",
+                "mimeType": "application/unknown",
+                "size": 317,
+                "checksum": "sha256=374e04ccf23347365c45e9346e30ef21a25fa0cace538be8173d892e7020ce3b"
+              }
+            },
+            "links": [
+              {
+                "rel": "self",
+                "type": "application/json",
+                "title": "GeoJSON link for 2a89e343-4d03-5d9d-ad56-8f4cee850985",
+                "href": "http://eopaas-resto-iride-lot3/resto/collections/iridelot3f3b7b5c0c6394039bcea6ba038eace72/2a89e343-4d03-5d9d-ad56-8f4cee850985.json?&lang=en"
+              }
+            ]
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              0.0,
+              0.0
+            ]
+          },
+          "id": "2a89e343-4d03-5d9d-ad56-8f4cee850985"
+        },
+        "uri": "eopaas://outputProduct/5719e770-d2dd-421e-a911-a75aa190e98c/masks/T32TNP_20240205T102129_calrefbyt_lndstlk_SIAMCr_nocl_CAV_ShadowTrinaryMask.hdr",
+        "filename": "5719e770-d2dd-421e-a911-a75aa190e98c/masks/T32TNP_20240205T102129_calrefbyt_lndstlk_SIAMCr_nocl_CAV_ShadowTrinaryMask.hdr",
+        "restoId": "2a89e343-4d03-5d9d-ad56-8f4cee850985",
+        "access": {
+          "published": false,
+          "publishRequested": false,
+          "currentLevel": "ADMIN"
+        },
+        "type": "OUTPUT_PRODUCT",
+        "id": 4629,
+        "_links": {
+          "self": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4629"
+          },
+          "file": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4629{?projection}",
+            "templated": true
+          },
+          "download": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4629/dl"
+          },
+          "platform": {
+            "href": "eopaas://outputProduct/5719e770-d2dd-421e-a911-a75aa190e98c/masks/T32TNP_20240205T102129_calrefbyt_lndstlk_SIAMCr_nocl_CAV_ShadowTrinaryMask.hdr"
+          },
+          "jobs": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4629/jobs"
+          },
+          "owner": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4629/owner"
+          },
+          "collection": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4629/collection"
+          }
+        }
+      },
+      {
+        "owner": {
+          "role": "EXPERT_USER",
+          "name": "cgi.campaign.bot",
+          "id": 32,
+          "_links": {
+            "self": {
+              "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/users/32{?projection}",
+              "templated": true
+            }
+          }
+        },
+        "metadata": {
+          "type": "Feature",
+          "properties": {
+            "collection": "iridelot3f3b7b5c0c6394039bcea6ba038eace72",
+            "license": {
+              "licenseId": "unlicensed",
+              "hasToBeSigned": "never",
+              "grantedCountries": null,
+              "grantedOrganizationCountries": null,
+              "grantedFlags": null,
+              "viewService": "public",
+              "signatureQuota": -1,
+              "description": {
+                "shortName": "No license"
+              }
+            },
+            "productIdentifier": "1d156c7c-73cf-4012-b7d0-0095736c2109_masks/T32TNP_20240207T101201_calrefbyt_lndstlk_SIAMCr_nocl_CAV_ShadowTrinaryMask.hdr",
+            "parentIdentifier": null,
+            "title": "1d156c7c-73cf-4012-b7d0-0095736c2109_masks/T32TNP_20240207T101201_calrefbyt_lndstlk_SIAMCr_nocl_CAV_ShadowTrinaryMask.hdr",
+            "description": null,
+            "organisationName": null,
+            "startDate": "Z",
+            "completionDate": "Z",
+            "productType": null,
+            "processingLevel": null,
+            "platform": null,
+            "instrument": null,
+            "resolution": 0,
+            "sensorMode": null,
+            "orbitNumber": 0,
+            "quicklook": null,
+            "thumbnail": null,
+            "updated": "2024-02-13T15:02:20.425671Z",
+            "published": "2024-02-13T15:02:20.425671Z",
+            "snowCover": 0,
+            "cloudCover": 0,
+            "keywords": [],
+            "centroid": {
+              "type": "Point",
+              "coordinates": [
+                0,
+                0
+              ]
+            },
+            "platformFileType": "OUTPUT_PRODUCT",
+            "services": {
+              "download": {
+                "url": "http://eopaas-resto-iride-lot3/resto/collections/iridelot3f3b7b5c0c6394039bcea6ba038eace72/40d2e6c6-7dbe-5b33-b27a-23840104d014/download",
+                "mimeType": "application/unknown",
+                "size": 317,
+                "checksum": "sha256=374e04ccf23347365c45e9346e30ef21a25fa0cace538be8173d892e7020ce3b"
+              }
+            },
+            "links": [
+              {
+                "rel": "self",
+                "type": "application/json",
+                "title": "GeoJSON link for 40d2e6c6-7dbe-5b33-b27a-23840104d014",
+                "href": "http://eopaas-resto-iride-lot3/resto/collections/iridelot3f3b7b5c0c6394039bcea6ba038eace72/40d2e6c6-7dbe-5b33-b27a-23840104d014.json?&lang=en"
+              }
+            ]
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              0.0,
+              0.0
+            ]
+          },
+          "id": "40d2e6c6-7dbe-5b33-b27a-23840104d014"
+        },
+        "uri": "eopaas://outputProduct/1d156c7c-73cf-4012-b7d0-0095736c2109/masks/T32TNP_20240207T101201_calrefbyt_lndstlk_SIAMCr_nocl_CAV_ShadowTrinaryMask.hdr",
+        "filename": "1d156c7c-73cf-4012-b7d0-0095736c2109/masks/T32TNP_20240207T101201_calrefbyt_lndstlk_SIAMCr_nocl_CAV_ShadowTrinaryMask.hdr",
+        "restoId": "40d2e6c6-7dbe-5b33-b27a-23840104d014",
+        "access": {
+          "published": false,
+          "publishRequested": false,
+          "currentLevel": "ADMIN"
+        },
+        "type": "OUTPUT_PRODUCT",
+        "id": 4621,
+        "_links": {
+          "self": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4621"
+          },
+          "file": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4621{?projection}",
+            "templated": true
+          },
+          "download": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4621/dl"
+          },
+          "platform": {
+            "href": "eopaas://outputProduct/1d156c7c-73cf-4012-b7d0-0095736c2109/masks/T32TNP_20240207T101201_calrefbyt_lndstlk_SIAMCr_nocl_CAV_ShadowTrinaryMask.hdr"
+          },
+          "jobs": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4621/jobs"
+          },
+          "owner": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4621/owner"
+          },
+          "collection": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4621/collection"
+          }
+        }
+      },
+      {
+        "owner": {
+          "role": "EXPERT_USER",
+          "name": "cgi.campaign.bot",
+          "id": 32,
+          "_links": {
+            "self": {
+              "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/users/32{?projection}",
+              "templated": true
+            }
+          }
+        },
+        "metadata": {
+          "type": "Feature",
+          "properties": {
+            "collection": "iridelot3f3b7b5c0c6394039bcea6ba038eace72",
+            "license": {
+              "licenseId": "unlicensed",
+              "hasToBeSigned": "never",
+              "grantedCountries": null,
+              "grantedOrganizationCountries": null,
+              "grantedFlags": null,
+              "viewService": "public",
+              "signatureQuota": -1,
+              "description": {
+                "shortName": "No license"
+              }
+            },
+            "productIdentifier": "5719e770-d2dd-421e-a911-a75aa190e98c_pct_33/T32TNP_20240205T102129_calrefbyt_lndstlk_SIAMCr_nocl_33SharedSpCt_r88v8.tif",
+            "parentIdentifier": null,
+            "title": "5719e770-d2dd-421e-a911-a75aa190e98c_pct_33/T32TNP_20240205T102129_calrefbyt_lndstlk_SIAMCr_nocl_33SharedSpCt_r88v8.tif",
+            "description": null,
+            "organisationName": null,
+            "startDate": "Z",
+            "completionDate": "Z",
+            "productType": null,
+            "processingLevel": null,
+            "platform": null,
+            "instrument": null,
+            "resolution": 0,
+            "sensorMode": null,
+            "orbitNumber": 0,
+            "quicklook": null,
+            "thumbnail": null,
+            "updated": "2024-02-13T15:02:41.006313Z",
+            "published": "2024-02-13T15:02:41.006313Z",
+            "snowCover": 0,
+            "cloudCover": 0,
+            "keywords": [],
+            "centroid": {
+              "type": "Point",
+              "coordinates": [
+                9.687344766432,
+                43.755105937174
+              ]
+            },
+            "platformFileType": "OUTPUT_PRODUCT",
+            "services": {
+              "download": {
+                "url": "http://eopaas-resto-iride-lot3/resto/collections/iridelot3f3b7b5c0c6394039bcea6ba038eace72/1c531f80-cb03-59e2-b02e-6ca0da153624/download",
+                "mimeType": "application/unknown",
+                "size": 167918166,
+                "checksum": "sha256=3dbcce521da4c466754e352cbbb0f671096c9739e4147399a900135942805498"
+              }
+            },
+            "links": [
+              {
+                "rel": "self",
+                "type": "application/json",
+                "title": "GeoJSON link for 1c531f80-cb03-59e2-b02e-6ca0da153624",
+                "href": "http://eopaas-resto-iride-lot3/resto/collections/iridelot3f3b7b5c0c6394039bcea6ba038eace72/1c531f80-cb03-59e2-b02e-6ca0da153624.json?&lang=en"
+              }
+            ]
+          },
+          "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+              [
+                [
+                  8.9997494741209,
+                  43.256794293739
+                ],
+                [
+                  10.374940058743,
+                  43.256794293739
+                ],
+                [
+                  10.374940058743,
+                  44.25341758061
+                ],
+                [
+                  8.9997494741209,
+                  44.25341758061
+                ],
+                [
+                  8.9997494741209,
+                  43.256794293739
+                ]
+              ]
+            ]
+          },
+          "id": "1c531f80-cb03-59e2-b02e-6ca0da153624"
+        },
+        "uri": "eopaas://outputProduct/5719e770-d2dd-421e-a911-a75aa190e98c/pct_33/T32TNP_20240205T102129_calrefbyt_lndstlk_SIAMCr_nocl_33SharedSpCt_r88v8.tif",
+        "filename": "5719e770-d2dd-421e-a911-a75aa190e98c/pct_33/T32TNP_20240205T102129_calrefbyt_lndstlk_SIAMCr_nocl_33SharedSpCt_r88v8.tif",
+        "restoId": "1c531f80-cb03-59e2-b02e-6ca0da153624",
+        "access": {
+          "published": false,
+          "publishRequested": false,
+          "currentLevel": "ADMIN"
+        },
+        "type": "OUTPUT_PRODUCT",
+        "id": 4624,
+        "_links": {
+          "self": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4624"
+          },
+          "file": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4624{?projection}",
+            "templated": true
+          },
+          "download": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4624/dl"
+          },
+          "wms": {
+            "href": "https://iride-lot3.geoserver.ope.insula.earth/geoserver/iridelot3f3b7b5c0c6394039bcea6ba038eace72/wms?service=WMS&version=1.1.0&layers=iridelot3f3b7b5c0c6394039bcea6ba038eace72:5719e770-d2dd-421e-a911-a75aa190e98c_pct_33_T32TNP_20240205T102129_calrefbyt_lndstlk_SIAMCr_nocl_33SharedSpCt_r88v8"
+          },
+          "platform": {
+            "href": "eopaas://outputProduct/5719e770-d2dd-421e-a911-a75aa190e98c/pct_33/T32TNP_20240205T102129_calrefbyt_lndstlk_SIAMCr_nocl_33SharedSpCt_r88v8.tif"
+          },
+          "jobs": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4624/jobs"
+          },
+          "owner": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4624/owner"
+          },
+          "collection": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4624/collection"
+          }
+        }
+      },
+      {
+        "owner": {
+          "role": "EXPERT_USER",
+          "name": "cgi.campaign.bot",
+          "id": 32,
+          "_links": {
+            "self": {
+              "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/users/32{?projection}",
+              "templated": true
+            }
+          }
+        },
+        "metadata": {
+          "type": "Feature",
+          "properties": {
+            "collection": "iridelot3f3b7b5c0c6394039bcea6ba038eace72",
+            "license": {
+              "licenseId": "unlicensed",
+              "hasToBeSigned": "never",
+              "grantedCountries": null,
+              "grantedOrganizationCountries": null,
+              "grantedFlags": null,
+              "viewService": "public",
+              "signatureQuota": -1,
+              "description": {
+                "shortName": "No license"
+              }
+            },
+            "productIdentifier": "5719e770-d2dd-421e-a911-a75aa190e98c_pct_full/T32TNP_20240205T102129_calrefbyt_lndstlk_SIAMCr_nocl_96SpCt_r88v8.tif.aux.xml",
+            "parentIdentifier": null,
+            "title": "5719e770-d2dd-421e-a911-a75aa190e98c_pct_full/T32TNP_20240205T102129_calrefbyt_lndstlk_SIAMCr_nocl_96SpCt_r88v8.tif.aux.xml",
+            "description": null,
+            "organisationName": null,
+            "startDate": "Z",
+            "completionDate": "Z",
+            "productType": null,
+            "processingLevel": null,
+            "platform": null,
+            "instrument": null,
+            "resolution": 0,
+            "sensorMode": null,
+            "orbitNumber": 0,
+            "quicklook": null,
+            "thumbnail": null,
+            "updated": "2024-02-13T15:02:32.604812Z",
+            "published": "2024-02-13T15:02:32.604812Z",
+            "snowCover": 0,
+            "cloudCover": 0,
+            "keywords": [],
+            "centroid": {
+              "type": "Point",
+              "coordinates": [
+                0,
+                0
+              ]
+            },
+            "platformFileType": "OUTPUT_PRODUCT",
+            "services": {
+              "download": {
+                "url": "http://eopaas-resto-iride-lot3/resto/collections/iridelot3f3b7b5c0c6394039bcea6ba038eace72/1820bc46-db92-5e04-baf1-fdf29485991d/download",
+                "mimeType": "application/unknown",
+                "size": 8871,
+                "checksum": "sha256=d9ba203258d614f796162b293918a69fb811cfc969c7585bdbf3194a1492f1cd"
+              }
+            },
+            "links": [
+              {
+                "rel": "self",
+                "type": "application/json",
+                "title": "GeoJSON link for 1820bc46-db92-5e04-baf1-fdf29485991d",
+                "href": "http://eopaas-resto-iride-lot3/resto/collections/iridelot3f3b7b5c0c6394039bcea6ba038eace72/1820bc46-db92-5e04-baf1-fdf29485991d.json?&lang=en"
+              }
+            ]
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              0.0,
+              0.0
+            ]
+          },
+          "id": "1820bc46-db92-5e04-baf1-fdf29485991d"
+        },
+        "uri": "eopaas://outputProduct/5719e770-d2dd-421e-a911-a75aa190e98c/pct_full/T32TNP_20240205T102129_calrefbyt_lndstlk_SIAMCr_nocl_96SpCt_r88v8.tif.aux.xml",
+        "filename": "5719e770-d2dd-421e-a911-a75aa190e98c/pct_full/T32TNP_20240205T102129_calrefbyt_lndstlk_SIAMCr_nocl_96SpCt_r88v8.tif.aux.xml",
+        "restoId": "1820bc46-db92-5e04-baf1-fdf29485991d",
+        "access": {
+          "published": false,
+          "publishRequested": false,
+          "currentLevel": "ADMIN"
+        },
+        "type": "OUTPUT_PRODUCT",
+        "id": 4623,
+        "_links": {
+          "self": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4623"
+          },
+          "file": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4623{?projection}",
+            "templated": true
+          },
+          "download": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4623/dl"
+          },
+          "platform": {
+            "href": "eopaas://outputProduct/5719e770-d2dd-421e-a911-a75aa190e98c/pct_full/T32TNP_20240205T102129_calrefbyt_lndstlk_SIAMCr_nocl_96SpCt_r88v8.tif.aux.xml"
+          },
+          "jobs": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4623/jobs"
+          },
+          "owner": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4623/owner"
+          },
+          "collection": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4623/collection"
+          }
+        }
+      },
+      {
+        "owner": {
+          "role": "EXPERT_USER",
+          "name": "cgi.campaign.bot",
+          "id": 32,
+          "_links": {
+            "self": {
+              "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/users/32{?projection}",
+              "templated": true
+            }
+          }
+        },
+        "metadata": {
+          "type": "Feature",
+          "properties": {
+            "collection": "iridelot3f3b7b5c0c6394039bcea6ba038eace72",
+            "license": {
+              "licenseId": "unlicensed",
+              "hasToBeSigned": "never",
+              "grantedCountries": null,
+              "grantedOrganizationCountries": null,
+              "grantedFlags": null,
+              "viewService": "public",
+              "signatureQuota": -1,
+              "description": {
+                "shortName": "No license"
+              }
+            },
+            "productIdentifier": "5719e770-d2dd-421e-a911-a75aa190e98c_pct_33/T32TNP_20240205T102129_calrefbyt_lndstlk_SIAMCr_nocl_33SharedSpCt_r88v8.tif.aux.xml",
+            "parentIdentifier": null,
+            "title": "5719e770-d2dd-421e-a911-a75aa190e98c_pct_33/T32TNP_20240205T102129_calrefbyt_lndstlk_SIAMCr_nocl_33SharedSpCt_r88v8.tif.aux.xml",
+            "description": null,
+            "organisationName": null,
+            "startDate": "Z",
+            "completionDate": "Z",
+            "productType": null,
+            "processingLevel": null,
+            "platform": null,
+            "instrument": null,
+            "resolution": 0,
+            "sensorMode": null,
+            "orbitNumber": 0,
+            "quicklook": null,
+            "thumbnail": null,
+            "updated": "2024-02-13T15:02:45.117136Z",
+            "published": "2024-02-13T15:02:45.117136Z",
+            "snowCover": 0,
+            "cloudCover": 0,
+            "keywords": [],
+            "centroid": {
+              "type": "Point",
+              "coordinates": [
+                0,
+                0
+              ]
+            },
+            "platformFileType": "OUTPUT_PRODUCT",
+            "services": {
+              "download": {
+                "url": "http://eopaas-resto-iride-lot3/resto/collections/iridelot3f3b7b5c0c6394039bcea6ba038eace72/c3b6e7da-4283-5684-98c2-684c697e74d3/download",
+                "mimeType": "application/unknown",
+                "size": 8630,
+                "checksum": "sha256=6ce825f348d5ab7bb3d6157c77876055554f55eedab7337e4a4689b482bf3993"
+              }
+            },
+            "links": [
+              {
+                "rel": "self",
+                "type": "application/json",
+                "title": "GeoJSON link for c3b6e7da-4283-5684-98c2-684c697e74d3",
+                "href": "http://eopaas-resto-iride-lot3/resto/collections/iridelot3f3b7b5c0c6394039bcea6ba038eace72/c3b6e7da-4283-5684-98c2-684c697e74d3.json?&lang=en"
+              }
+            ]
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              0.0,
+              0.0
+            ]
+          },
+          "id": "c3b6e7da-4283-5684-98c2-684c697e74d3"
+        },
+        "uri": "eopaas://outputProduct/5719e770-d2dd-421e-a911-a75aa190e98c/pct_33/T32TNP_20240205T102129_calrefbyt_lndstlk_SIAMCr_nocl_33SharedSpCt_r88v8.tif.aux.xml",
+        "filename": "5719e770-d2dd-421e-a911-a75aa190e98c/pct_33/T32TNP_20240205T102129_calrefbyt_lndstlk_SIAMCr_nocl_33SharedSpCt_r88v8.tif.aux.xml",
+        "restoId": "c3b6e7da-4283-5684-98c2-684c697e74d3",
+        "access": {
+          "published": false,
+          "publishRequested": false,
+          "currentLevel": "ADMIN"
+        },
+        "type": "OUTPUT_PRODUCT",
+        "id": 4625,
+        "_links": {
+          "self": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4625"
+          },
+          "file": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4625{?projection}",
+            "templated": true
+          },
+          "download": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4625/dl"
+          },
+          "platform": {
+            "href": "eopaas://outputProduct/5719e770-d2dd-421e-a911-a75aa190e98c/pct_33/T32TNP_20240205T102129_calrefbyt_lndstlk_SIAMCr_nocl_33SharedSpCt_r88v8.tif.aux.xml"
+          },
+          "jobs": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4625/jobs"
+          },
+          "owner": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4625/owner"
+          },
+          "collection": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4625/collection"
+          }
+        }
+      },
+      {
+        "owner": {
+          "role": "EXPERT_USER",
+          "name": "cgi.campaign.bot",
+          "id": 32,
+          "_links": {
+            "self": {
+              "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/users/32{?projection}",
+              "templated": true
+            }
+          }
+        },
+        "metadata": {
+          "type": "Feature",
+          "properties": {
+            "collection": "iridelot3f3b7b5c0c6394039bcea6ba038eace72",
+            "license": {
+              "licenseId": "unlicensed",
+              "hasToBeSigned": "never",
+              "grantedCountries": null,
+              "grantedOrganizationCountries": null,
+              "grantedFlags": null,
+              "viewService": "public",
+              "signatureQuota": -1,
+              "description": {
+                "shortName": "No license"
+              }
+            },
+            "productIdentifier": "1d156c7c-73cf-4012-b7d0-0095736c2109_masks/T32TNP_20240207T101201_calrefbyt_lndstlk_SIAMCr_nocl_CAV_HazePentarnaryMask.hdr",
+            "parentIdentifier": null,
+            "title": "1d156c7c-73cf-4012-b7d0-0095736c2109_masks/T32TNP_20240207T101201_calrefbyt_lndstlk_SIAMCr_nocl_CAV_HazePentarnaryMask.hdr",
+            "description": null,
+            "organisationName": null,
+            "startDate": "Z",
+            "completionDate": "Z",
+            "productType": null,
+            "processingLevel": null,
+            "platform": null,
+            "instrument": null,
+            "resolution": 0,
+            "sensorMode": null,
+            "orbitNumber": 0,
+            "quicklook": null,
+            "thumbnail": null,
+            "updated": "2024-02-13T15:02:14.757803Z",
+            "published": "2024-02-13T15:02:14.757803Z",
+            "snowCover": 0,
+            "cloudCover": 0,
+            "keywords": [],
+            "centroid": {
+              "type": "Point",
+              "coordinates": [
+                0,
+                0
+              ]
+            },
+            "platformFileType": "OUTPUT_PRODUCT",
+            "services": {
+              "download": {
+                "url": "http://eopaas-resto-iride-lot3/resto/collections/iridelot3f3b7b5c0c6394039bcea6ba038eace72/5bb48e50-2d1d-5454-b93f-fde612524a79/download",
+                "mimeType": "application/unknown",
+                "size": 317,
+                "checksum": "sha256=374e04ccf23347365c45e9346e30ef21a25fa0cace538be8173d892e7020ce3b"
+              }
+            },
+            "links": [
+              {
+                "rel": "self",
+                "type": "application/json",
+                "title": "GeoJSON link for 5bb48e50-2d1d-5454-b93f-fde612524a79",
+                "href": "http://eopaas-resto-iride-lot3/resto/collections/iridelot3f3b7b5c0c6394039bcea6ba038eace72/5bb48e50-2d1d-5454-b93f-fde612524a79.json?&lang=en"
+              }
+            ]
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              0.0,
+              0.0
+            ]
+          },
+          "id": "5bb48e50-2d1d-5454-b93f-fde612524a79"
+        },
+        "uri": "eopaas://outputProduct/1d156c7c-73cf-4012-b7d0-0095736c2109/masks/T32TNP_20240207T101201_calrefbyt_lndstlk_SIAMCr_nocl_CAV_HazePentarnaryMask.hdr",
+        "filename": "1d156c7c-73cf-4012-b7d0-0095736c2109/masks/T32TNP_20240207T101201_calrefbyt_lndstlk_SIAMCr_nocl_CAV_HazePentarnaryMask.hdr",
+        "restoId": "5bb48e50-2d1d-5454-b93f-fde612524a79",
+        "access": {
+          "published": false,
+          "publishRequested": false,
+          "currentLevel": "ADMIN"
+        },
+        "type": "OUTPUT_PRODUCT",
+        "id": 4619,
+        "_links": {
+          "self": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4619"
+          },
+          "file": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4619{?projection}",
+            "templated": true
+          },
+          "download": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4619/dl"
+          },
+          "platform": {
+            "href": "eopaas://outputProduct/1d156c7c-73cf-4012-b7d0-0095736c2109/masks/T32TNP_20240207T101201_calrefbyt_lndstlk_SIAMCr_nocl_CAV_HazePentarnaryMask.hdr"
+          },
+          "jobs": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4619/jobs"
+          },
+          "owner": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4619/owner"
+          },
+          "collection": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4619/collection"
+          }
+        }
+      },
+      {
+        "owner": {
+          "role": "EXPERT_USER",
+          "name": "cgi.campaign.bot",
+          "id": 32,
+          "_links": {
+            "self": {
+              "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/users/32{?projection}",
+              "templated": true
+            }
+          }
+        },
+        "metadata": {
+          "type": "Feature",
+          "properties": {
+            "collection": "iridelot3f3b7b5c0c6394039bcea6ba038eace72",
+            "license": {
+              "licenseId": "unlicensed",
+              "hasToBeSigned": "never",
+              "grantedCountries": null,
+              "grantedOrganizationCountries": null,
+              "grantedFlags": null,
+              "viewService": "public",
+              "signatureQuota": -1,
+              "description": {
+                "shortName": "No license"
+              }
+            },
+            "productIdentifier": "1d156c7c-73cf-4012-b7d0-0095736c2109_masks/T32TNP_20240207T101201_calrefbyt_lndstlk_SIAMCr_nocl_CAV_ShadowTrinaryMask.dat",
+            "parentIdentifier": null,
+            "title": "1d156c7c-73cf-4012-b7d0-0095736c2109_masks/T32TNP_20240207T101201_calrefbyt_lndstlk_SIAMCr_nocl_CAV_ShadowTrinaryMask.dat",
+            "description": null,
+            "organisationName": null,
+            "startDate": "Z",
+            "completionDate": "Z",
+            "productType": null,
+            "processingLevel": null,
+            "platform": null,
+            "instrument": null,
+            "resolution": 0,
+            "sensorMode": null,
+            "orbitNumber": 0,
+            "quicklook": null,
+            "thumbnail": null,
+            "updated": "2024-02-13T15:02:20.010986Z",
+            "published": "2024-02-13T15:02:20.010986Z",
+            "snowCover": 0,
+            "cloudCover": 0,
+            "keywords": [],
+            "centroid": {
+              "type": "Point",
+              "coordinates": [
+                0,
+                0
+              ]
+            },
+            "platformFileType": "OUTPUT_PRODUCT",
+            "services": {
+              "download": {
+                "url": "http://eopaas-resto-iride-lot3/resto/collections/iridelot3f3b7b5c0c6394039bcea6ba038eace72/6e55ea62-4442-551a-8b01-00dd2d3a17b7/download",
+                "mimeType": "application/unknown",
+                "size": 120560400,
+                "checksum": "sha256=14355edb839cb5297b57f2248c82e05478ced19cbcc6534d5a8c8e60e7c2ebe1"
+              }
+            },
+            "links": [
+              {
+                "rel": "self",
+                "type": "application/json",
+                "title": "GeoJSON link for 6e55ea62-4442-551a-8b01-00dd2d3a17b7",
+                "href": "http://eopaas-resto-iride-lot3/resto/collections/iridelot3f3b7b5c0c6394039bcea6ba038eace72/6e55ea62-4442-551a-8b01-00dd2d3a17b7.json?&lang=en"
+              }
+            ]
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              0.0,
+              0.0
+            ]
+          },
+          "id": "6e55ea62-4442-551a-8b01-00dd2d3a17b7"
+        },
+        "uri": "eopaas://outputProduct/1d156c7c-73cf-4012-b7d0-0095736c2109/masks/T32TNP_20240207T101201_calrefbyt_lndstlk_SIAMCr_nocl_CAV_ShadowTrinaryMask.dat",
+        "filename": "1d156c7c-73cf-4012-b7d0-0095736c2109/masks/T32TNP_20240207T101201_calrefbyt_lndstlk_SIAMCr_nocl_CAV_ShadowTrinaryMask.dat",
+        "restoId": "6e55ea62-4442-551a-8b01-00dd2d3a17b7",
+        "access": {
+          "published": false,
+          "publishRequested": false,
+          "currentLevel": "ADMIN"
+        },
+        "type": "OUTPUT_PRODUCT",
+        "id": 4620,
+        "_links": {
+          "self": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4620"
+          },
+          "file": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4620{?projection}",
+            "templated": true
+          },
+          "download": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4620/dl"
+          },
+          "platform": {
+            "href": "eopaas://outputProduct/1d156c7c-73cf-4012-b7d0-0095736c2109/masks/T32TNP_20240207T101201_calrefbyt_lndstlk_SIAMCr_nocl_CAV_ShadowTrinaryMask.dat"
+          },
+          "jobs": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4620/jobs"
+          },
+          "owner": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4620/owner"
+          },
+          "collection": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4620/collection"
+          }
+        }
+      },
+      {
+        "owner": {
+          "role": "EXPERT_USER",
+          "name": "cgi.campaign.bot",
+          "id": 32,
+          "_links": {
+            "self": {
+              "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/users/32{?projection}",
+              "templated": true
+            }
+          }
+        },
+        "metadata": {
+          "type": "Feature",
+          "properties": {
+            "collection": "iridelot3f3b7b5c0c6394039bcea6ba038eace72",
+            "license": {
+              "licenseId": "unlicensed",
+              "hasToBeSigned": "never",
+              "grantedCountries": null,
+              "grantedOrganizationCountries": null,
+              "grantedFlags": null,
+              "viewService": "public",
+              "signatureQuota": -1,
+              "description": {
+                "shortName": "No license"
+              }
+            },
+            "productIdentifier": "1d156c7c-73cf-4012-b7d0-0095736c2109_pct_33/T32TNP_20240207T101201_calrefbyt_lndstlk_SIAMCr_nocl_33SharedSpCt_r88v8.tif",
+            "parentIdentifier": null,
+            "title": "1d156c7c-73cf-4012-b7d0-0095736c2109_pct_33/T32TNP_20240207T101201_calrefbyt_lndstlk_SIAMCr_nocl_33SharedSpCt_r88v8.tif",
+            "description": null,
+            "organisationName": null,
+            "startDate": "Z",
+            "completionDate": "Z",
+            "productType": null,
+            "processingLevel": null,
+            "platform": null,
+            "instrument": null,
+            "resolution": 0,
+            "sensorMode": null,
+            "orbitNumber": 0,
+            "quicklook": null,
+            "thumbnail": null,
+            "updated": "2024-02-13T15:02:05.098878Z",
+            "published": "2024-02-13T15:02:05.098878Z",
+            "snowCover": 0,
+            "cloudCover": 0,
+            "keywords": [],
+            "centroid": {
+              "type": "Point",
+              "coordinates": [
+                9.687344766432,
+                43.755105937174
+              ]
+            },
+            "platformFileType": "OUTPUT_PRODUCT",
+            "services": {
+              "download": {
+                "url": "http://eopaas-resto-iride-lot3/resto/collections/iridelot3f3b7b5c0c6394039bcea6ba038eace72/d394eb39-f401-53d9-a6e3-c779c647615f/download",
+                "mimeType": "application/unknown",
+                "size": 167918166,
+                "checksum": "sha256=f505ea6c018eca9d3c4a35801316a30fb38760376c71030559ade2c508da9850"
+              }
+            },
+            "links": [
+              {
+                "rel": "self",
+                "type": "application/json",
+                "title": "GeoJSON link for d394eb39-f401-53d9-a6e3-c779c647615f",
+                "href": "http://eopaas-resto-iride-lot3/resto/collections/iridelot3f3b7b5c0c6394039bcea6ba038eace72/d394eb39-f401-53d9-a6e3-c779c647615f.json?&lang=en"
+              }
+            ]
+          },
+          "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+              [
+                [
+                  8.9997494741209,
+                  43.256794293739
+                ],
+                [
+                  10.374940058743,
+                  43.256794293739
+                ],
+                [
+                  10.374940058743,
+                  44.25341758061
+                ],
+                [
+                  8.9997494741209,
+                  44.25341758061
+                ],
+                [
+                  8.9997494741209,
+                  43.256794293739
+                ]
+              ]
+            ]
+          },
+          "id": "d394eb39-f401-53d9-a6e3-c779c647615f"
+        },
+        "uri": "eopaas://outputProduct/1d156c7c-73cf-4012-b7d0-0095736c2109/pct_33/T32TNP_20240207T101201_calrefbyt_lndstlk_SIAMCr_nocl_33SharedSpCt_r88v8.tif",
+        "filename": "1d156c7c-73cf-4012-b7d0-0095736c2109/pct_33/T32TNP_20240207T101201_calrefbyt_lndstlk_SIAMCr_nocl_33SharedSpCt_r88v8.tif",
+        "restoId": "d394eb39-f401-53d9-a6e3-c779c647615f",
+        "access": {
+          "published": false,
+          "publishRequested": false,
+          "currentLevel": "ADMIN"
+        },
+        "type": "OUTPUT_PRODUCT",
+        "id": 4616,
+        "_links": {
+          "self": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4616"
+          },
+          "file": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4616{?projection}",
+            "templated": true
+          },
+          "download": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4616/dl"
+          },
+          "wms": {
+            "href": "https://iride-lot3.geoserver.ope.insula.earth/geoserver/iridelot3f3b7b5c0c6394039bcea6ba038eace72/wms?service=WMS&version=1.1.0&layers=iridelot3f3b7b5c0c6394039bcea6ba038eace72:1d156c7c-73cf-4012-b7d0-0095736c2109_pct_33_T32TNP_20240207T101201_calrefbyt_lndstlk_SIAMCr_nocl_33SharedSpCt_r88v8"
+          },
+          "platform": {
+            "href": "eopaas://outputProduct/1d156c7c-73cf-4012-b7d0-0095736c2109/pct_33/T32TNP_20240207T101201_calrefbyt_lndstlk_SIAMCr_nocl_33SharedSpCt_r88v8.tif"
+          },
+          "jobs": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4616/jobs"
+          },
+          "owner": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4616/owner"
+          },
+          "collection": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4616/collection"
+          }
+        }
+      },
+      {
+        "owner": {
+          "role": "EXPERT_USER",
+          "name": "cgi.campaign.bot",
+          "id": 32,
+          "_links": {
+            "self": {
+              "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/users/32{?projection}",
+              "templated": true
+            }
+          }
+        },
+        "metadata": {
+          "type": "Feature",
+          "properties": {
+            "collection": "iridelot3f3b7b5c0c6394039bcea6ba038eace72",
+            "license": {
+              "licenseId": "unlicensed",
+              "hasToBeSigned": "never",
+              "grantedCountries": null,
+              "grantedOrganizationCountries": null,
+              "grantedFlags": null,
+              "viewService": "public",
+              "signatureQuota": -1,
+              "description": {
+                "shortName": "No license"
+              }
+            },
+            "productIdentifier": "1d156c7c-73cf-4012-b7d0-0095736c2109_pct_full/T32TNP_20240207T101201_calrefbyt_lndstlk_SIAMCr_nocl_96SpCt_r88v8.tif",
+            "parentIdentifier": null,
+            "title": "1d156c7c-73cf-4012-b7d0-0095736c2109_pct_full/T32TNP_20240207T101201_calrefbyt_lndstlk_SIAMCr_nocl_96SpCt_r88v8.tif",
+            "description": null,
+            "organisationName": null,
+            "startDate": "Z",
+            "completionDate": "Z",
+            "productType": null,
+            "processingLevel": null,
+            "platform": null,
+            "instrument": null,
+            "resolution": 0,
+            "sensorMode": null,
+            "orbitNumber": 0,
+            "quicklook": null,
+            "thumbnail": null,
+            "updated": "2024-02-13T15:01:52.829175Z",
+            "published": "2024-02-13T15:01:52.829175Z",
+            "snowCover": 0,
+            "cloudCover": 0,
+            "keywords": [],
+            "centroid": {
+              "type": "Point",
+              "coordinates": [
+                9.687344766432,
+                43.755105937174
+              ]
+            },
+            "platformFileType": "OUTPUT_PRODUCT",
+            "services": {
+              "download": {
+                "url": "http://eopaas-resto-iride-lot3/resto/collections/iridelot3f3b7b5c0c6394039bcea6ba038eace72/39e84036-6908-5cb7-ac80-b128224a5eb0/download",
+                "mimeType": "application/unknown",
+                "size": 167918166,
+                "checksum": "sha256=03b1ea1691ba467b68a08c9c6311b63fbc2412ad0e7088cf588a96f036b7acc2"
+              }
+            },
+            "links": [
+              {
+                "rel": "self",
+                "type": "application/json",
+                "title": "GeoJSON link for 39e84036-6908-5cb7-ac80-b128224a5eb0",
+                "href": "http://eopaas-resto-iride-lot3/resto/collections/iridelot3f3b7b5c0c6394039bcea6ba038eace72/39e84036-6908-5cb7-ac80-b128224a5eb0.json?&lang=en"
+              }
+            ]
+          },
+          "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+              [
+                [
+                  8.9997494741209,
+                  43.256794293739
+                ],
+                [
+                  10.374940058743,
+                  43.256794293739
+                ],
+                [
+                  10.374940058743,
+                  44.25341758061
+                ],
+                [
+                  8.9997494741209,
+                  44.25341758061
+                ],
+                [
+                  8.9997494741209,
+                  43.256794293739
+                ]
+              ]
+            ]
+          },
+          "id": "39e84036-6908-5cb7-ac80-b128224a5eb0"
+        },
+        "uri": "eopaas://outputProduct/1d156c7c-73cf-4012-b7d0-0095736c2109/pct_full/T32TNP_20240207T101201_calrefbyt_lndstlk_SIAMCr_nocl_96SpCt_r88v8.tif",
+        "filename": "1d156c7c-73cf-4012-b7d0-0095736c2109/pct_full/T32TNP_20240207T101201_calrefbyt_lndstlk_SIAMCr_nocl_96SpCt_r88v8.tif",
+        "restoId": "39e84036-6908-5cb7-ac80-b128224a5eb0",
+        "access": {
+          "published": false,
+          "publishRequested": false,
+          "currentLevel": "ADMIN"
+        },
+        "type": "OUTPUT_PRODUCT",
+        "id": 4614,
+        "_links": {
+          "self": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4614"
+          },
+          "file": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4614{?projection}",
+            "templated": true
+          },
+          "download": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4614/dl"
+          },
+          "wms": {
+            "href": "https://iride-lot3.geoserver.ope.insula.earth/geoserver/iridelot3f3b7b5c0c6394039bcea6ba038eace72/wms?service=WMS&version=1.1.0&layers=iridelot3f3b7b5c0c6394039bcea6ba038eace72:1d156c7c-73cf-4012-b7d0-0095736c2109_pct_full_T32TNP_20240207T101201_calrefbyt_lndstlk_SIAMCr_nocl_96SpCt_r88v8"
+          },
+          "platform": {
+            "href": "eopaas://outputProduct/1d156c7c-73cf-4012-b7d0-0095736c2109/pct_full/T32TNP_20240207T101201_calrefbyt_lndstlk_SIAMCr_nocl_96SpCt_r88v8.tif"
+          },
+          "jobs": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4614/jobs"
+          },
+          "owner": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4614/owner"
+          },
+          "collection": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4614/collection"
+          }
+        }
+      },
+      {
+        "owner": {
+          "role": "EXPERT_USER",
+          "name": "cgi.campaign.bot",
+          "id": 32,
+          "_links": {
+            "self": {
+              "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/users/32{?projection}",
+              "templated": true
+            }
+          }
+        },
+        "metadata": {
+          "type": "Feature",
+          "properties": {
+            "collection": "iridelot3f3b7b5c0c6394039bcea6ba038eace72",
+            "license": {
+              "licenseId": "unlicensed",
+              "hasToBeSigned": "never",
+              "grantedCountries": null,
+              "grantedOrganizationCountries": null,
+              "grantedFlags": null,
+              "viewService": "public",
+              "signatureQuota": -1,
+              "description": {
+                "shortName": "No license"
+              }
+            },
+            "productIdentifier": "5719e770-d2dd-421e-a911-a75aa190e98c_pct_full/T32TNP_20240205T102129_calrefbyt_lndstlk_SIAMCr_nocl_96SpCt_r88v8.tif",
+            "parentIdentifier": null,
+            "title": "5719e770-d2dd-421e-a911-a75aa190e98c_pct_full/T32TNP_20240205T102129_calrefbyt_lndstlk_SIAMCr_nocl_96SpCt_r88v8.tif",
+            "description": null,
+            "organisationName": null,
+            "startDate": "Z",
+            "completionDate": "Z",
+            "productType": null,
+            "processingLevel": null,
+            "platform": null,
+            "instrument": null,
+            "resolution": 0,
+            "sensorMode": null,
+            "orbitNumber": 0,
+            "quicklook": null,
+            "thumbnail": null,
+            "updated": "2024-02-13T15:02:29.010865Z",
+            "published": "2024-02-13T15:02:29.010865Z",
+            "snowCover": 0,
+            "cloudCover": 0,
+            "keywords": [],
+            "centroid": {
+              "type": "Point",
+              "coordinates": [
+                9.687344766432,
+                43.755105937174
+              ]
+            },
+            "platformFileType": "OUTPUT_PRODUCT",
+            "services": {
+              "download": {
+                "url": "http://eopaas-resto-iride-lot3/resto/collections/iridelot3f3b7b5c0c6394039bcea6ba038eace72/56b34536-8d03-5b25-b6bd-e3415bce988a/download",
+                "mimeType": "application/unknown",
+                "size": 167918166,
+                "checksum": "sha256=137e9fa01a081a312aabbab3a34ca68004212960d34b6938ddec63f4cd98cd1f"
+              }
+            },
+            "links": [
+              {
+                "rel": "self",
+                "type": "application/json",
+                "title": "GeoJSON link for 56b34536-8d03-5b25-b6bd-e3415bce988a",
+                "href": "http://eopaas-resto-iride-lot3/resto/collections/iridelot3f3b7b5c0c6394039bcea6ba038eace72/56b34536-8d03-5b25-b6bd-e3415bce988a.json?&lang=en"
+              }
+            ]
+          },
+          "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+              [
+                [
+                  8.9997494741209,
+                  43.256794293739
+                ],
+                [
+                  10.374940058743,
+                  43.256794293739
+                ],
+                [
+                  10.374940058743,
+                  44.25341758061
+                ],
+                [
+                  8.9997494741209,
+                  44.25341758061
+                ],
+                [
+                  8.9997494741209,
+                  43.256794293739
+                ]
+              ]
+            ]
+          },
+          "id": "56b34536-8d03-5b25-b6bd-e3415bce988a"
+        },
+        "uri": "eopaas://outputProduct/5719e770-d2dd-421e-a911-a75aa190e98c/pct_full/T32TNP_20240205T102129_calrefbyt_lndstlk_SIAMCr_nocl_96SpCt_r88v8.tif",
+        "filename": "5719e770-d2dd-421e-a911-a75aa190e98c/pct_full/T32TNP_20240205T102129_calrefbyt_lndstlk_SIAMCr_nocl_96SpCt_r88v8.tif",
+        "restoId": "56b34536-8d03-5b25-b6bd-e3415bce988a",
+        "access": {
+          "published": false,
+          "publishRequested": false,
+          "currentLevel": "ADMIN"
+        },
+        "type": "OUTPUT_PRODUCT",
+        "id": 4622,
+        "_links": {
+          "self": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4622"
+          },
+          "file": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4622{?projection}",
+            "templated": true
+          },
+          "download": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4622/dl"
+          },
+          "wms": {
+            "href": "https://iride-lot3.geoserver.ope.insula.earth/geoserver/iridelot3f3b7b5c0c6394039bcea6ba038eace72/wms?service=WMS&version=1.1.0&layers=iridelot3f3b7b5c0c6394039bcea6ba038eace72:5719e770-d2dd-421e-a911-a75aa190e98c_pct_full_T32TNP_20240205T102129_calrefbyt_lndstlk_SIAMCr_nocl_96SpCt_r88v8"
+          },
+          "platform": {
+            "href": "eopaas://outputProduct/5719e770-d2dd-421e-a911-a75aa190e98c/pct_full/T32TNP_20240205T102129_calrefbyt_lndstlk_SIAMCr_nocl_96SpCt_r88v8.tif"
+          },
+          "jobs": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4622/jobs"
+          },
+          "owner": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4622/owner"
+          },
+          "collection": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4622/collection"
+          }
+        }
+      },
+      {
+        "owner": {
+          "role": "EXPERT_USER",
+          "name": "cgi.campaign.bot",
+          "id": 32,
+          "_links": {
+            "self": {
+              "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/users/32{?projection}",
+              "templated": true
+            }
+          }
+        },
+        "metadata": {
+          "type": "Feature",
+          "properties": {
+            "collection": "iridelot3f3b7b5c0c6394039bcea6ba038eace72",
+            "license": {
+              "licenseId": "unlicensed",
+              "hasToBeSigned": "never",
+              "grantedCountries": null,
+              "grantedOrganizationCountries": null,
+              "grantedFlags": null,
+              "viewService": "public",
+              "signatureQuota": -1,
+              "description": {
+                "shortName": "No license"
+              }
+            },
+            "productIdentifier": "5719e770-d2dd-421e-a911-a75aa190e98c_masks/T32TNP_20240205T102129_calrefbyt_lndstlk_SIAMCr_nocl_CAV_HazePentarnaryMask.hdr",
+            "parentIdentifier": null,
+            "title": "5719e770-d2dd-421e-a911-a75aa190e98c_masks/T32TNP_20240205T102129_calrefbyt_lndstlk_SIAMCr_nocl_CAV_HazePentarnaryMask.hdr",
+            "description": null,
+            "organisationName": null,
+            "startDate": "Z",
+            "completionDate": "Z",
+            "productType": null,
+            "processingLevel": null,
+            "platform": null,
+            "instrument": null,
+            "resolution": 0,
+            "sensorMode": null,
+            "orbitNumber": 0,
+            "quicklook": null,
+            "thumbnail": null,
+            "updated": "2024-02-13T15:02:50.767018Z",
+            "published": "2024-02-13T15:02:50.767018Z",
+            "snowCover": 0,
+            "cloudCover": 0,
+            "keywords": [],
+            "centroid": {
+              "type": "Point",
+              "coordinates": [
+                0,
+                0
+              ]
+            },
+            "platformFileType": "OUTPUT_PRODUCT",
+            "services": {
+              "download": {
+                "url": "http://eopaas-resto-iride-lot3/resto/collections/iridelot3f3b7b5c0c6394039bcea6ba038eace72/2de6b332-5a65-54b8-8f63-440505db1998/download",
+                "mimeType": "application/unknown",
+                "size": 317,
+                "checksum": "sha256=374e04ccf23347365c45e9346e30ef21a25fa0cace538be8173d892e7020ce3b"
+              }
+            },
+            "links": [
+              {
+                "rel": "self",
+                "type": "application/json",
+                "title": "GeoJSON link for 2de6b332-5a65-54b8-8f63-440505db1998",
+                "href": "http://eopaas-resto-iride-lot3/resto/collections/iridelot3f3b7b5c0c6394039bcea6ba038eace72/2de6b332-5a65-54b8-8f63-440505db1998.json?&lang=en"
+              }
+            ]
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              0.0,
+              0.0
+            ]
+          },
+          "id": "2de6b332-5a65-54b8-8f63-440505db1998"
+        },
+        "uri": "eopaas://outputProduct/5719e770-d2dd-421e-a911-a75aa190e98c/masks/T32TNP_20240205T102129_calrefbyt_lndstlk_SIAMCr_nocl_CAV_HazePentarnaryMask.hdr",
+        "filename": "5719e770-d2dd-421e-a911-a75aa190e98c/masks/T32TNP_20240205T102129_calrefbyt_lndstlk_SIAMCr_nocl_CAV_HazePentarnaryMask.hdr",
+        "restoId": "2de6b332-5a65-54b8-8f63-440505db1998",
+        "access": {
+          "published": false,
+          "publishRequested": false,
+          "currentLevel": "ADMIN"
+        },
+        "type": "OUTPUT_PRODUCT",
+        "id": 4627,
+        "_links": {
+          "self": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4627"
+          },
+          "file": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4627{?projection}",
+            "templated": true
+          },
+          "download": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4627/dl"
+          },
+          "platform": {
+            "href": "eopaas://outputProduct/5719e770-d2dd-421e-a911-a75aa190e98c/masks/T32TNP_20240205T102129_calrefbyt_lndstlk_SIAMCr_nocl_CAV_HazePentarnaryMask.hdr"
+          },
+          "jobs": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4627/jobs"
+          },
+          "owner": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4627/owner"
+          },
+          "collection": {
+            "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4627/collection"
+          }
+        }
+      }
+    ]
+  },
+  "_links": {
+    "self": {
+      "href": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/jobs/793/outputFiles?projection=detailedPlatformFile"
+    }
+  }
+}

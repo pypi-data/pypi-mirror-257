@@ -1,0 +1,11 @@
+{
+  "service": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/services/1",
+  "inputs": {
+    "in": [
+      "https://img.gruppomol.it/articoli/image/casa/1200x1200_1x1_Depositphotos_26486959_xl-2015.jpg"
+    ],
+    "collection": [
+      "{\"output\":\"iridelot3f3b7b5c0c6394039bcea6ba038eace72\"}"
+    ]
+  }
+}

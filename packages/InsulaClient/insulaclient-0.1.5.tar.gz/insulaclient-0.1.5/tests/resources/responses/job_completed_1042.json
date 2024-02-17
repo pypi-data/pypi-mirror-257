@@ -1,0 +1,110 @@
+{
+  "id" : 1042,
+  "extId" : "a5fcf301-f6aa-40e5-afc8-17fda70f3afa",
+  "startTime" : "2024-02-10T13:19:17.964",
+  "endTime" : "2024-02-10T13:48:46.119",
+  "status" : "COMPLETED",
+  "phase" : "OUTPUT_LIST",
+  "workerId" : "LOCAL1",
+  "stage" : "Step 3 of 3: Output-List",
+  "guiUrl" : null,
+  "guiEndpoint" : null,
+  "queuePosition" : -1,
+  "outputs" : {
+    "out" : [ "eopaas://outputProduct/a5fcf301-f6aa-40e5-afc8-17fda70f3afa/out/1200x1200_1x1_Depositphotos_26486959_xl-2015.jpg" ]
+  },
+  "parent" : false,
+  "costQuotation" : {
+    "cost" : 1,
+    "recurrence" : "HOURLY"
+  },
+  "inputTile" : null,
+  "inputDate" : null,
+  "_embedded" : {
+    "owner" : {
+      "role" : "EXPERT_USER",
+      "name" : "cgi.campaign.bot",
+      "id" : 32,
+      "_links" : {
+        "self" : {
+          "href" : "https://iride-lot3.ope.insula.earth/secure/api/v2.0/users/32{?projection}",
+          "templated" : true
+        }
+      }
+    },
+    "outputFiles" : [ {
+      "owner" : {
+        "role" : "EXPERT_USER",
+        "name" : "cgi.campaign.bot",
+        "id" : 32,
+        "_links" : {
+          "self" : {
+            "href" : "https://iride-lot3.ope.insula.earth/secure/api/v2.0/users/32{?projection}",
+            "templated" : true
+          }
+        }
+      },
+      "filename" : "a5fcf301-f6aa-40e5-afc8-17fda70f3afa/out/1200x1200_1x1_Depositphotos_26486959_xl-2015.jpg",
+      "restoId" : "db6f0e93-a386-5ef6-b821-26bf7dba1aee",
+      "access" : {
+        "published" : false,
+        "publishRequested" : false,
+        "currentLevel" : "ADMIN"
+      },
+      "type" : "OUTPUT_PRODUCT",
+      "id" : 1817,
+      "_links" : {
+        "self" : {
+          "href" : "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/1817{?projection}",
+          "templated" : true
+        },
+        "jobs" : {
+          "href" : "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/1817/jobs"
+        },
+        "owner" : {
+          "href" : "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/1817/owner"
+        },
+        "collection" : {
+          "href" : "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/1817/collection"
+        },
+        "download" : {
+          "href" : "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/1817{?projection}",
+          "templated" : true
+        }
+      }
+    } ]
+  },
+  "_links" : {
+    "self" : {
+      "href" : "https://iride-lot3.ope.insula.earth/secure/api/v2.0/jobs/793"
+    },
+    "job" : {
+      "href" : "https://iride-lot3.ope.insula.earth/secure/api/v2.0/jobs/793{?projection}",
+      "templated" : true
+    },
+    "logs" : {
+      "href" : "https://iride-lot3.ope.insula.earth/secure/api/v2.0/jobs/793/logs"
+    },
+    "output-out" : {
+      "href" : "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/1817"
+    },
+    "owner" : {
+      "href" : "https://iride-lot3.ope.insula.earth/secure/api/v2.0/jobs/793/owner"
+    },
+    "outputFiles" : {
+      "href" : "https://iride-lot3.ope.insula.earth/secure/api/v2.0/jobs/793/outputFiles"
+    },
+    "jobProcessings" : {
+      "href" : "https://iride-lot3.ope.insula.earth/secure/api/v2.0/jobs/793/jobProcessings"
+    },
+    "config" : {
+      "href" : "https://iride-lot3.ope.insula.earth/secure/api/v2.0/jobs/793/config"
+    },
+    "parentJob" : {
+      "href" : "https://iride-lot3.ope.insula.earth/secure/api/v2.0/jobs/793/parentJob"
+    },
+    "subJobs" : {
+      "href" : "https://iride-lot3.ope.insula.earth/secure/api/v2.0/jobs/793/subJobs"
+    }
+  }
+}

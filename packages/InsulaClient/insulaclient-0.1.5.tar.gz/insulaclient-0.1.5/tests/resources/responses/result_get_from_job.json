@@ -1,0 +1,14 @@
+[
+  {
+    "download": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4615/dl",
+    "id": 4615,
+    "output_id": "pct_full",
+    "uri": "eopaas://outputProduct/1d156c7c-73cf-4012-b7d0-0095736c2109/pct_full/T32TNP_20240207T101201_calrefbyt_lndstlk_SIAMCr_nocl_96SpCt_r88v8.tif.aux.xml"
+  },
+  {
+    "download": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/platformFiles/4628/dl",
+    "id": 4628,
+    "output_id": "masks",
+    "uri": "eopaas://outputProduct/5719e770-d2dd-421e-a911-a75aa190e98c/masks/T32TNP_20240205T102129_calrefbyt_lndstlk_SIAMCr_nocl_CAV_ShadowTrinaryMask.dat"
+  }
+]
