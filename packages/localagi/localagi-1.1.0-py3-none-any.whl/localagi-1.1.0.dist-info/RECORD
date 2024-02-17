@@ -1,0 +1,10 @@
+localagi/__init__.py,sha256=w7-mBF2v3JMjs5EmlnVeaJzHZsX43Y2rWfpzY3Klow0,24
+localagi/__main__.py,sha256=-THhzmWg97-VN5ZiD_iftsFiuyPkd_3rK9cImdAPo88,9812
+localagi/model.py,sha256=smaLyh5yJWCKXwtLnXFGlXyxFJpcMhF82iTaqp3fF8E,2291
+localagi/parameters.h5,sha256=hPZTjSczvYr9SJTRX9lMDvOj__ak3CbhO6CGSleuKvI,3
+localagi-1.1.0.dist-info/LICENSE,sha256=F8LQAHWSaKtig_b77UYrc4KItWgU-qvMJTJGJ1-ZBAw,1080
+localagi-1.1.0.dist-info/METADATA,sha256=wNbWQDXU3AvKIIAx_uTbHYi76E4MnwxIZYTIdkPUZ4Y,1541
+localagi-1.1.0.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+localagi-1.1.0.dist-info/entry_points.txt,sha256=02jMwSjSiM3bM3JofRBw28_9q2eme2RFCuvHo8zB3fM,52
+localagi-1.1.0.dist-info/top_level.txt,sha256=BtNsIB9rIg7U_ELWSbCyEsZmK19V-pRuAajpP2Sdebs,9
+localagi-1.1.0.dist-info/RECORD,,
