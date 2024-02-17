@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "russborrow"
+version = "0.0.6"
+description = "Analyzing Russian text to identify and extract borrowed words from other languages. The package uses the pymorphy2 library to normalize words, and it includes a dictionary of borrowed words for comparison."
+authors = ["DannyMcWhopper"]
+license = "MIT"
+readme = "README.rst"
+include = ["src/RussBorrow/borrowed_dictionary.csv"]
+
+[tool.poetry.dependencies]
+python = ">=3.6"
+pymorphy2 = "^0.8"  
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.5"  
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
