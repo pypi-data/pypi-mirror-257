@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: pyL33-rotect
+Version: 0.1
+Requires-Dist: psutil
+Requires-Dist: uuid
+Requires-Dist: wmi
+Requires-Dist: requests
+Requires-Dist: urllib3
+
