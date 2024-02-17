@@ -1,0 +1,9 @@
+data_fetcher/__init__.py,sha256=phWaa1ma8f2H10t-sneKJjz9xj2w8P-hEaN_CoRjDiE,352
+data_fetcher/core.py,sha256=xWZlYTjrg12qkHw62rA9_tQ_HiUoZoeVSpuzl42zpFw,2632
+data_fetcher/extras.py,sha256=7_I0qkLSzA_eSUGXKZCtD_J67ud9-zHTXFtKQhKyrfI,2879
+data_fetcher/shorthand_fetcher_classes.py,sha256=43ULH9xtHTZmBrLqiDY8jdzKtQ57rl3g33OWS7rWxp4,1980
+data_fetcher/util.py,sha256=XV-6xnAbQeJwipvE-POwzL3ZGxZXUKm7cqFLvQkePCw,799
+django_data_fetcher-1.1.0.dist-info/METADATA,sha256=lPtzADXCtyU3R1pbWuCT4VYZpMOriGv5FORpYZL0MIM,8505
+django_data_fetcher-1.1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+django_data_fetcher-1.1.0.dist-info/top_level.txt,sha256=TBKXQtxl87JxtHau5Dqv7OIrrkNEvUBV1C6q28QEqOg,13
+django_data_fetcher-1.1.0.dist-info/RECORD,,
