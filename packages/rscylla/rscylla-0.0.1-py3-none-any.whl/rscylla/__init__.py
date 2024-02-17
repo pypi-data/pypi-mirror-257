@@ -1,0 +1,1 @@
+from rscylla.cql import Cql

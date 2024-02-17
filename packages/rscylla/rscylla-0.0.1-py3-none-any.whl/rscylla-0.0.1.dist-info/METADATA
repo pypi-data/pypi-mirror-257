@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: rscylla
+Version: 0.0.1
+Summary: Insert records into cassandra db.
+Author: Reeya Patel and Meet Rathod
+Author-email: 
+Description-Content-Type: text/markdown
+Requires-Dist: pandas >=2.2.0
+Requires-Dist: numpy >=1.26.4
+Requires-Dist: pyarrow >=15.0.0
+Requires-Dist: cassandra-driver >=3.29.0
+
+Insert batch records from .csv in the scylladb/cassandra
