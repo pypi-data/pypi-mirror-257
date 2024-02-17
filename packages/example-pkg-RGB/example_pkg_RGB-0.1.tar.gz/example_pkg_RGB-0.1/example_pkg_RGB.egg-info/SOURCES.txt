@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+example_pkg_RGB.egg-info/PKG-INFO
+example_pkg_RGB.egg-info/SOURCES.txt
+example_pkg_RGB.egg-info/dependency_links.txt
+example_pkg_RGB.egg-info/top_level.txt
+src/__init__.py
+src/example.py
