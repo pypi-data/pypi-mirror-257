@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: devpi-mirror-index-acl
+Version: 1.0.0
+Summary: Add command line option to limit mirror index creation to specific users.
+Maintainer-email: Florian Schulze <mail@pyfidelity.com>
+License: MIT License
+        
+        Copyright (c) 2023 Florian Schulze
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: devpi-server>=6.9.0
+
+========================================================
+devpi-mirror-index-acl: limit who can add mirror indexes
+========================================================
+
+This plugin adds the ``--acl-mirror-index-create`` command line option to `devpi-server`_.
+The option takes a list of user and group names which are allowed to create mirror indexes.
+
+.. _devpi-server: http://pypi.python.org/pypi/devpi-server
+
+
+Installation
+============
+
+``devpi-mirror-index-acl`` needs to be installed alongside ``devpi-server`` to enable the command line option.
+
+You can install it with::
+
+    pip install devpi-mirror-index-acl
+
+There is no configuration needed as ``devpi-server`` will automatically discover the plugin through calling hooks using the setuptools entry points mechanism.
+
+
+Motivation
+==========
+
+Mirror indexes can take up a lot of resources in both storage and CPU.
+Especially mirroring PyPI and other indexes with a lot of packages and releases.
+This package allows limiting who can add such mirrors to prevent accidental or malicious resource exhaustion.
+
+
+Usage
+=====
+
+When using the ``--acl-mirror-index-create`` command line option, you provide a comma separated list of user or group names.
+
+The same applies when using the ``DEVPISERVER_ACL_MIRROR_INDEX_CREATE`` environment variable.
+
+When using a configuration yaml file you can use an explicit list::
+
+    devpi-server:
+      acl-mirror-index-create:
+        - "root"

@@ -1,0 +1,10 @@
+LICENSE
+README.rst
+devpi_mirror_index_acl.py
+pyproject.toml
+devpi_mirror_index_acl.egg-info/PKG-INFO
+devpi_mirror_index_acl.egg-info/SOURCES.txt
+devpi_mirror_index_acl.egg-info/dependency_links.txt
+devpi_mirror_index_acl.egg-info/entry_points.txt
+devpi_mirror_index_acl.egg-info/requires.txt
+devpi_mirror_index_acl.egg-info/top_level.txt
