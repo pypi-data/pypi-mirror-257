@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+w3tm.egg-info/PKG-INFO
+w3tm.egg-info/SOURCES.txt
+w3tm.egg-info/dependency_links.txt
+w3tm.egg-info/entry_points.txt
+w3tm.egg-info/requires.txt
+w3tm.egg-info/top_level.txt
