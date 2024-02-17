@@ -1,0 +1,10 @@
+LICENSE
+README.rst
+setup.py
+willofsteel/__init__.py
+willofsteel/wrapper.py
+willofsteel.egg-info/PKG-INFO
+willofsteel.egg-info/SOURCES.txt
+willofsteel.egg-info/dependency_links.txt
+willofsteel.egg-info/requires.txt
+willofsteel.egg-info/top_level.txt
