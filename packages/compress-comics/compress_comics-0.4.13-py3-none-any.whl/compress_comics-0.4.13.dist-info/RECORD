@@ -1,0 +1,10 @@
+compress_comics/__init__.py,sha256=r64Vq0nJbYAFs4LXckVTD9SMNdkk5L4Zu-yM1nRiHXg,34
+compress_comics/argument_parser.py,sha256=IrgcDeQywRBcRmHe6uOASBykDSObWroIR1FKvFqAqBg,5790
+compress_comics/comic_compressor.py,sha256=ofmgaDEw09131XCoufiTATrxkXEc4geZU5s3xKvAPJ4,8580
+compress_comics/compress_comics.py,sha256=A8R3A46L7rB4QU5jhHjfut_MAM5QM5W6RKEil-Ipm24,2432
+compress_comics/text_bar.py,sha256=ZS1wfUXhg4wz_3bfJfC5gSTfCbtRiplatq_YmHrjbws,6841
+compress_comics-0.4.13.dist-info/METADATA,sha256=rhwBn1UAwcFw7Hfl2DY2_2kGH7foG8SE2KyjCZClhd0,1198
+compress_comics-0.4.13.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+compress_comics-0.4.13.dist-info/entry_points.txt,sha256=0nMG190yqk0vApRt9Bb1y5yBlV4ICOD8Q1Y06c4nOB4,57
+compress_comics-0.4.13.dist-info/licenses/LICENSE,sha256=awOCsWJ58m_2kBQwBUGWejVqZm6wuRtCL2hi9rfa0X4,1211
+compress_comics-0.4.13.dist-info/RECORD,,
