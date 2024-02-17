@@ -1,0 +1,3 @@
+include regex4numbers/requirements.txt
+include regex4numbers/thirdparty.json
+include regex4numbers/README.MD

@@ -1,0 +1,13 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+regex4numbers/README.MD
+regex4numbers/__init__.py
+regex4numbers/requirements.txt
+regex4numbers/thirdparty.json
+regex4numbers.egg-info/PKG-INFO
+regex4numbers.egg-info/SOURCES.txt
+regex4numbers.egg-info/dependency_links.txt
+regex4numbers.egg-info/top_level.txt
