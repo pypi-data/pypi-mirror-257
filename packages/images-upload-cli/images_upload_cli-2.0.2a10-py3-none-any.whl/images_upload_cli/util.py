@@ -1,0 +1,77 @@
+"""Utility functions for the package."""
+
+from os import getenv
+from pathlib import Path
+from shutil import which
+from subprocess import Popen
+
+import click
+
+from images_upload_cli.error import GetEnvError
+
+
+def get_config_path() -> Path:
+    """
+    Get the path to the app config file.
+
+    Returns:
+        Path: The path to the app config file as a Path object.
+    """
+    app_dir = click.get_app_dir("images-upload-cli")
+    return Path(app_dir) / ".env"
+
+
+def get_env(variable: str) -> str:
+    """
+    Get the value of an environment variable.
+
+    Args:
+        variable (str): The name of the environment variable to retrieve.
+
+    Returns:
+        str: The value of the environment variable, if found.
+
+    Raises:
+        GetEnvError: If the environment variable is not found.
+    """
+    if value := getenv(variable):
+        return value
+
+    msg = f"Please setup {variable} in environment variables or in '{get_config_path()}'."
+    raise GetEnvError(msg)
+
+
+def human_size(num: float, suffix: str = "B") -> str:
+    """
+    Convert bytes to human-readable format.
+
+    Args:
+        num (float): The number of bytes to be converted.
+        suffix (str, optional): The suffix to be appended to the converted size. Defaults to "B".
+
+    Returns:
+        str: The human-readable size with the appropriate unit and suffix.
+    """
+    units = ["", "Ki", "Mi", "Gi", "Ti", "Pi", "Ei", "Zi"]
+    round_num = 1024.0
+
+    for unit in units:
+        if abs(num) < round_num:
+            return f"{num:3.1f} {unit}{suffix}"
+        num /= round_num
+
+    return f"{num:.1f} Yi{suffix}"
+
+
+def notify_send(text_to_print: str) -> None:
+    """
+    Send desktop notifications via libnotify.
+
+    Args:
+        text_to_print: The text to be displayed in the desktop notification.
+
+    Returns:
+        None
+    """
+    if notify_send := which("notify-send"):
+        Popen([notify_send, "-a", "images-upload-cli", text_to_print])
