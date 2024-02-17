@@ -1,0 +1,13 @@
+ezstorage/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ezstorage/decorators.py,sha256=Rw9kGptiPaVUoDavUtyzo-xV9zGHHawNJZXP1WY8ceI,274
+ezstorage/table.py,sha256=0uYvezPI-85vLCCpKDb4n6B9v7JdHWg5DzA9wKziWdE,553
+ezstorage/providers/__init__.py,sha256=c6V9h41GFW_B3KdNnACHKbFqs7T5lJ58urkhT03ZMto,34
+ezstorage/providers/__template__.py,sha256=977NF43u8z9bpHO3OustddEDCzhAYTc9qp2VKGD6oy4,386
+ezstorage/providers/sqlite.py,sha256=n0cqtOikSqW4kpRa9FFAPQi5j4m4aviGeNM-TKqqkx4,195
+ezstorage/types/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ezstorage/types/__template__.py,sha256=NORmuYgQxIaODbkN1uPPcO-3EMPDpJqYYuQi3zyUnPc,216
+ezstorages-0.0.5.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ezstorages-0.0.5.dist-info/METADATA,sha256=bDhJ615AJzrYosoocsmijQL5b_nulibsf3s-bSHuoCc,540
+ezstorages-0.0.5.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+ezstorages-0.0.5.dist-info/top_level.txt,sha256=bLycYePSukgmzqeeBY35hU3U3tpZ7g3ib_7AxflciMI,10
+ezstorages-0.0.5.dist-info/RECORD,,
