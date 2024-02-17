@@ -1,0 +1,9 @@
+haystack_integrations/components/embedders/fastembed/__init__.py,sha256=2BCcZK6NHl5_NYcRd_urua-OOr-4xt468Z2-jsp4CVA,302
+haystack_integrations/components/embedders/fastembed/fastembed_document_embedder.py,sha256=y9XZoQsuiNEh4WM5_p2RmFjvd8nbeUhkfuKJoW6xp_A,6338
+haystack_integrations/components/embedders/fastembed/fastembed_text_embedder.py,sha256=2W8HUM55lWxf5inhbW19u3eMucwGGC559NFCUBCF9sE,3729
+haystack_integrations/components/embedders/fastembed/embedding_backend/__init__.py,sha256=6GZ8Y3Lw0rLOsOAqi6Tu5mZC977UzQvgDxKpOWr8IQw,110
+haystack_integrations/components/embedders/fastembed/embedding_backend/fastembed_backend.py,sha256=qJ0wdR7EJaOytrNUqeOfy0dy5KhJl5RWLMNzAhFYGmA,1310
+fastembed_haystack-0.0.4.dist-info/METADATA,sha256=SM7qGOtk4XjYD6ZwDufIEpZf5InYNQSDOwXlKVNZM8g,2512
+fastembed_haystack-0.0.4.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+fastembed_haystack-0.0.4.dist-info/licenses/LICENSE.txt,sha256=B05uMshqTA74s-0ltyHKI6yoPfJ3zYgQbvcXfDVGFf8,10280
+fastembed_haystack-0.0.4.dist-info/RECORD,,
