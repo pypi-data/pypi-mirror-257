@@ -1,0 +1,6 @@
+numpy>=1.22
+matplotlib==3.8.2
+xarray
+Cartopy>=0.22.0
+geopandas
+jupyterlab
