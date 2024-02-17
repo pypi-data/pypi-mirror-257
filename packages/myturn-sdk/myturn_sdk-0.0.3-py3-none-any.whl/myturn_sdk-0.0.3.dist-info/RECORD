@@ -1,0 +1,13 @@
+myturn_sdk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+myturn_sdk/browser.py,sha256=3gsdGtAs1kxRUKz3IP0c2jaqSQjK61PCr_YjmiHsPjw,7659
+myturn_sdk/myturn_authenticator.py,sha256=hk9nw_zaP9aBXOywNqXjqmwY_BRBIjpwbuWAJqiFI8A,3333
+myturn_sdk/myturn_client.py,sha256=Gw5x6uRRFa_wWVHa4tIDQrmuIa-nUneb75_us9rIA7k,698
+myturn_sdk/myturn_my_account.py,sha256=vv7vcZMpZTBmVF2SgIH9dJODEIPu7JH4uOey713sw8A,3172
+myturn_sdk/myturn_service_base.py,sha256=OOamdT_QpFBVIstCWTtn4JlSsHJV1DsjVDCuA1bYOj0,589
+myturn_sdk/myturn_users.py,sha256=5CwFpJAmj4TOYqnhTgLdrrTiwrULaDVGBUEvjW34Sy0,10532
+myturn_sdk-0.0.3.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+myturn_sdk-0.0.3.dist-info/METADATA,sha256=lZUvbxeAOp0whij0qh4uIxXI_O8Kd9ah3CkHw9ElN7c,558
+myturn_sdk-0.0.3.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+myturn_sdk-0.0.3.dist-info/entry_points.txt,sha256=CBWG0Kl36-Z0LSl3c6xHe7QHpZXY6N85QxbDKfOFDCA,65
+myturn_sdk-0.0.3.dist-info/top_level.txt,sha256=pR0cjAfxxC1xyq5694Wh09emrspGNvlEg19bkzFm-XE,11
+myturn_sdk-0.0.3.dist-info/RECORD,,
