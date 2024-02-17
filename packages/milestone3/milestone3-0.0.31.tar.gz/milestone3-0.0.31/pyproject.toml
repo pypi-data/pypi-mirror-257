@@ -1,0 +1,18 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "milestone3"
+version = "0.0.31"
+authors = [
+  { name="Leo Irakliotis", email="leo@cs.luc.edu" },
+]
+description = "Ingest a SODA object into a pandas.df"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
