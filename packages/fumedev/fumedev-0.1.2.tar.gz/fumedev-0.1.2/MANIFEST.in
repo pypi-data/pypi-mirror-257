@@ -1,0 +1,3 @@
+include fumedev/my-languages.so
+include fumedev/LICENSE
+include fumedev/coder/LICENSE.txt
