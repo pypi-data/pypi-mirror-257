@@ -1,0 +1,100 @@
+Metadata-Version: 2.1
+Name: precision-recall-gain
+Version: 0.1.1
+Summary: Precision-recall-gain curves for Python
+Home-page: https://github.com/crypdick/precision-recall-gain
+Author: Richard Decal
+Author-email: public@richarddecal.com
+License: MIT
+Project-URL: Documentation, https://precision-recall-gain.readthedocs.io/
+Project-URL: Changelog, https://precision-recall-gain.readthedocs.io/en/latest/changelog.html
+Project-URL: Issue Tracker, https://github.com/crypdick/precision-recall-gain/issues
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Utilities
+Requires-Python: >=3.9
+License-File: LICENSE
+License-File: AUTHORS.rst
+Requires-Dist: scikit-learn>=1.1
+
+========
+Overview
+========
+
+
+
+Precision-recall-gain curves for Python
+
+* Free software: MIT license
+
+Installation
+============
+
+::
+
+    pip install precision-recall-gain
+
+You can also install the in-development version with::
+
+    pip install https://github.com/crypdick/precision-recall-gain/archive/master.zip
+
+
+Documentation
+=============
+
+
+https://precision-recall-gain.readthedocs.io/
+
+
+Development
+===========
+
+To run all the tests run::
+
+    tox
+
+Note, to combine the coverage data from all the tox environments run:
+
+.. list-table::
+    :widths: 10 90
+    :stub-columns: 1
+
+    - - Windows
+      - ::
+
+            set PYTEST_ADDOPTS=--cov-append
+            tox
+
+    - - Other
+      - ::
+
+            PYTEST_ADDOPTS=--cov-append tox
+
+References
+===========
+* [Precision-Recall-Gain Curves: PR Analysis Done Right (2015) by Peter A. Flach and Meelis Kull](https://papers.nips.cc/paper/2015/file/33e8075e9970de0cfea955afd4644bb2-Paper.pdf)
+* [sklearn-compatible implementation](https://github.com/scikit-learn/scikit-learn/pull/24121) by [Bradley Fowler](https://github.com/bradleyfowler123)
+* [PRG curves](https://www.biostat.wisc.edu/~page/rocprg.pdf) by [David Page](https://www.biostat.wisc.edu/~page/)
+* [Blog post by Bradley Fowler](https://snorkel.ai/improving-upon-precision-recall-and-f1-with-gain-metrics/)
+* [Original implementation](https://github.com/meeliskull/prg) by [Meelis Kull](https://github.com/meeliskull)
+
+
+Changelog
+=========
+
+0.0.0 (2021-03-20)
+------------------
+
+* First release on PyPI.
