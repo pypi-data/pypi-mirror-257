@@ -1,0 +1,12 @@
+ovos_mark1/__init__.py,sha256=jHBi8miVQozjcQH0eKto15MwX9TiPST5GJQez0vWY_w,140
+ovos_mark1/version.py,sha256=zOJeNQ9ZvupbnO6nKjZ9fOsy5FoHjNTZI49FtiETb1I,72
+ovos_mark1/eyes/__init__.py,sha256=3CvFMG7CDDaX-a8uz1eNnUtR-aXloUnHHhYQS962FhQ,14100
+ovos_mark1/faceplate/__init__.py,sha256=SRMXNN0EAYlJf5Kvm9lTQSlgwxFtBJXqX-oy5AbW78c,13250
+ovos_mark1/faceplate/animations.py,sha256=E5qONFVeqg2Vvc5nHsCMEqR72gSnVzGDnL3y-s1Gx4Y,19808
+ovos_mark1/faceplate/cellular_automaton.py,sha256=8G-0MbXk4c3o-ltsDlCh8BLykuDBk1r5ssKwY2YRCcw,15029
+ovos_mark1/faceplate/icons.py,sha256=lxRDM0ZAYwB7GGTKafS11IiK-v4P48SrTAy9delzQpw,5526
+ovos_mark1_utils-0.0.0a1.dist-info/LICENSE,sha256=Tu7uLIJNXIqD0iZ3wpowWsAnSQIxnzqbLZ3TxTWRyHw,11349
+ovos_mark1_utils-0.0.0a1.dist-info/METADATA,sha256=85hTsPy_g0UYIfSVIbEo-WqX4CWEVW-4oRxufhFstn4,2495
+ovos_mark1_utils-0.0.0a1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+ovos_mark1_utils-0.0.0a1.dist-info/top_level.txt,sha256=q27BG1wW5APYq2GK231aDveCe7tQCTHmTsWTJtDdfqI,11
+ovos_mark1_utils-0.0.0a1.dist-info/RECORD,,
