@@ -1,0 +1,10 @@
+siconv/__init__.py,sha256=j1MqzEJyw5UhXJYIg1OICGHAZmVAmxYKV1K3zRS_FHc,84
+siconv/siconv.py,sha256=hxZ75evWR2nBE6OY3rrsxhdo_zhJ5BcK2JNSvg5EGtM,1393
+siconv/test.py,sha256=e6eodU0tXAlsfVYFwBC49hMCY1rNFc95syxYaXpu8YA,74
+siconv/to_sinhala.py,sha256=fGO4RLF66jtR7TQ-dbByMt5S_jHgWA5aITUrlpBQQVg,6614
+siconv/util_array.py,sha256=xXs0wpM9fiBlYzX8SpRTeISeQex1we9yyPKx4q63ZHU,1426
+siconv-0.1.2.6.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+siconv-0.1.2.6.dist-info/METADATA,sha256=ZSOGEXjAQ1YAgh4NdxTCW2NaZyavl5kDsrUMCZ1WvLE,1510
+siconv-0.1.2.6.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+siconv-0.1.2.6.dist-info/top_level.txt,sha256=Vn0ypPaMmehglelYd-Ec4cBcphMUyWQX4rjx0wMJDEk,7
+siconv-0.1.2.6.dist-info/RECORD,,
