@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: syncaudio
+Version: 0.1.0
+Summary: Synchronize WAV audio files
+Author: M. "Aryan" Farahmand
+Author-email: m.farahmand.ac@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: scipy
+
+# SyncAudio
+
+This is a simple tool to synchronize audio files. The tool is based on Allison Deal's [algorithm](https://github.com/allisonnicoledeal/VideoSync).
+
+![Allison Deal's Audio Sync Algorithm](https://github.com/allisonnicoledeal/VideoSync/raw/master/screenshots/diagram.png)
+
+## Installation
+
+```bash
+pip install syncaudio
+```
+
+## Usage
+
+```bash
+syncaudio audio1.wav audio2.wav
+```
+
+## API
+
+```python
+from syncaudio import synchronize
+from syncaudio import read_audio
+
+self = read_audio('audio1.wav')
+other = read_audio('audio2.wav')
+
+delay = synchronize(self, other, window_size=1024, overlap=0, spectral_band=512, temporal_band=43, peaks_per_bin=7)
+
+print(delay, 'seconds')
+```
