@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: smart_energy.data_vald3nir
+Version: 1.0.0
+Summary: A small example package
+Project-URL: Homepage, https://github.com/vald3nir/Smart-Energy-Data
+Project-URL: Issues, https://github.com/vald3nir/Smart-Energy-Data/issues
+Author-email: Valdenir Severino <vald3nir@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# Smart Energy Data
+Repository of data models, DAOs and APIs for the CICI core system

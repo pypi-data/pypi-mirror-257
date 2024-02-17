@@ -1,0 +1,6 @@
+[submodule "libs/keys"]
+	path = libs/keys
+	url = https://github.com/vald3nir/Project-Keys.git
+[submodule "libs/toolkit"]
+	path = libs/toolkit
+	url = https://github.com/vald3nir/Python-Toolkit.git
