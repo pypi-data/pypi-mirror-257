@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: tm_parser
+Version: 0.9.0
+Summary: Parse Troopmaster export files into TOML, YAML, or JSON
+Project-URL: Repository, https://gitlab.com/perkinsms/tm_parser
+Author-email: Michael Perkins <perkinsms@gmail.com>
+Maintainer-email: Michael Perkins <perkinsms@gmail.com>
+License: MIT License
+License-File: LICENSE
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >3.9
+Requires-Dist: click~=8.1
+Requires-Dist: more-itertools
+Requires-Dist: pymupdf
+Requires-Dist: python-dotenv
+Requires-Dist: pyyaml~=6.0
+Requires-Dist: toml~=0.10
