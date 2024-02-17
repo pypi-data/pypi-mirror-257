@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: deksoftware
+Version: 0.1.36
+Author-Email: sanzenwin <sanzenwin@gmail.com>
+License: MIT
+Requires-Python: >=3.10
+Requires-Dist: dektools<1.0.0
+Requires-Dist: dekartifacts<1.0.0
+Description-Content-Type: text/markdown
+
+```shell
+python3 -m pip install deksoftware -i https://mirrors.jlu.edu.cn/pypi/simple
+```
