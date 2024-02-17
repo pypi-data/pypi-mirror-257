@@ -1,0 +1,10 @@
+QProgressBar {
+    border: 2px solid grey;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    text-align: center;
+}
+
+QProgressBar::chunk {
+    background:QLinearGradient(x1:0,y1:0,x2:2,y2:0,stop:0 #666699,stop:1  #DB7093);
+}
