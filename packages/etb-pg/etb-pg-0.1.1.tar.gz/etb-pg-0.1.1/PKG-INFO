@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: etb-pg
+Version: 0.1.1
+Summary: Interface for PostgreSQL databases
+Author: Tate Button
+Author-email: yg3bpwn0or679hau8fxi@duck.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: psycopg (>=3.1.18,<4.0.0)
