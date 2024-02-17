@@ -1,0 +1,10 @@
+powerchord/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+powerchord/__main__.py,sha256=O2PxjR3s4C7crGxhOw-JioJNm2xGrIllhOyYJTCwiTs,43
+powerchord/formatting.py,sha256=iD-9p1xNWVF7sqKCjA7ArlXw3NykOwlnPqMEXn0EMHQ,1047
+powerchord/runner.py,sha256=f4AAfA0N2v0RwcqabcShjOcz8fZaFSWE0W_SX1uLAk0,3258
+powerchord/utils.py,sha256=PMzdU36OGpIB3Tv9I_EwtWyHE-DCxBktNUkQrrpTuao,2251
+powerchord-0.0.7.dist-info/LICENSE,sha256=AiLKFkKmi1rRDFhGw_dyTjCRoIHYZ7S8Wr--WRIKFDg,1071
+powerchord-0.0.7.dist-info/METADATA,sha256=rq-ghmSuWrVT7qQwJiSObK-4tMjM4_Tr1A5ngum0RWo,1582
+powerchord-0.0.7.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+powerchord-0.0.7.dist-info/entry_points.txt,sha256=Tk21Elh-3CoKDzhoax5Rrt2T0XPkhcpC9CGUPAhqPB0,58
+powerchord-0.0.7.dist-info/RECORD,,

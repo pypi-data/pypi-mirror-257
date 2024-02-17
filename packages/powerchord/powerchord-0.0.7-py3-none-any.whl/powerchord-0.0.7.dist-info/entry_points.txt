@@ -1,0 +1,3 @@
+[console_scripts]
+powerchord=powerchord.runner:run_tasks
+
