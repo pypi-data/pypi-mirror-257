@@ -1,0 +1,6 @@
+README.md
+setup.py
+pysandbox.egg-info/PKG-INFO
+pysandbox.egg-info/SOURCES.txt
+pysandbox.egg-info/dependency_links.txt
+pysandbox.egg-info/top_level.txt
