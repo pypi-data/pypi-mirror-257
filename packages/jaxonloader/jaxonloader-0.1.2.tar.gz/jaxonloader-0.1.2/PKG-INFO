@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: jaxonloader
+Version: 0.1.2
+Summary: A dataloader, but for JAX
+License: MIT
+Author: Artur A. Galstyan
+Author-email: galstyan.artu@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: beartype (>=0.17.2,<0.18.0)
+Requires-Dist: jax (>=0.4.24,<0.5.0)
+Requires-Dist: jaxlib (>=0.4.24,<0.5.0)
+Requires-Dist: jaxtyping (>=0.2.25,<0.3.0)
+Requires-Dist: tqdm (>=4.66.2,<5.0.0)
+Description-Content-Type: text/markdown
+
+# jaxonloader
+
+A dataloader, but for Jax
+
+The idea of this package is to have a DataLoader similar to the PyTorch one. To ensure that you don't have to learn anything new to use this package, the same API is chosen here (PyTorch's API actually a very good).
+
+Unfortunately, this also means that this package does _not_ follow the functional programming paradigm, because neither does the PyTorch DataLoader API. While in that regard this DataLoader is not _functional_ per se, it still allows for reproducability since you provide a random key to shuffle the data (if you want to).
+
+At the moment, this package is not yet a 1:1 mapping from PyTorch's DataLoader, but one day, we will! \**holding up arm and clenching fist\**
+
+## Installation
+
+Install this package using pip like so:
+
+```
+pip install jaxonloader
+```
+
+## Usage
+
+Pretty much exactly as you would use PyTorch's DataLoader. Create a dataset class by inheriting
+from the `jaxonloader` dataset and implement the `__len__` and `__getitem__` functions. Then simply pass that to the DataLoader class as argument.
+
+Examples coming soon.
+
