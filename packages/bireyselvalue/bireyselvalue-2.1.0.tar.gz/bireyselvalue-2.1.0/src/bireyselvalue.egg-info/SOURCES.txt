@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/bireyselvalue/__init__.py
+src/bireyselvalue/bireyselvalue.py
+src/bireyselvalue.egg-info/PKG-INFO
+src/bireyselvalue.egg-info/SOURCES.txt
+src/bireyselvalue.egg-info/dependency_links.txt
+src/bireyselvalue.egg-info/top_level.txt
+tests/test_bp_a.py
