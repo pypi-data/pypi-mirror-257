@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: rh-test-grnotebook
+Version: 0.0.1
+Summary: Notebook for interacting with models in AIConfig
+Author: LastMile AI
+License-Expression: MIT
+License-File: LICENSE
+Keywords: aiconfig,gradio-custom-component,gradio-template-Fallback,notebook,workbook
+Requires-Python: >=3.10
+Requires-Dist: aiconfig-extension-hugging-face>=0.0.13
+Requires-Dist: asyncio
+Requires-Dist: boto3
+Requires-Dist: botocore
+Requires-Dist: gradio==4.16.0
+Requires-Dist: python-aiconfig>=1.1.25
+Requires-Dist: requests
+Provides-Extra: dev
+Requires-Dist: build; extra == 'dev'
+Requires-Dist: twine; extra == 'dev'
+Description-Content-Type: text/markdown
+
+# Gradio Notebooks
+
+[Gradio Notebook](https://huggingface.co/spaces/lastmileai/gradio-notebook-quickstart) is a Gradio custom component that creates a notebook playground on Hugging Face Spaces with only [8-lines of code](https://huggingface.co/spaces/lastmileai/gradio-notebook-quickstart/blob/main/app.py)!
+
+You can use this in your Hugging Face space by adding `gradio-notebook` to your Space's [`requirements.txt`](https://huggingface.co/spaces/lastmileai/gradio-notebook-quickstart/blob/main/requirements.txt) file, and then the following lines to your [`app.py`](https://huggingface.co/spaces/lastmileai/gradio-notebook-quickstart/blob/main/app.py) file:
+
+```python
+import gradio as gr
+from gradio_notebook import GradioNotebook
+
+# AICONFIG_FILE_PATH also be empty or None if you don't have an AIConfig file!
+AICONFIG_FILE_PATH = "./my_app.aiconfig.json"
+with gr.Blocks() as demo:
+    GradioNotebook(config_path=AICONFIG_FILE_PATH)
+
+demo.queue().launch()
+```
+
+Please see our [documentation page](https://aiconfig.lastmileai.dev/docs/gradio-notebook) for full details.
+
+For the remaining commands for local development, please follow the
+instructions from the [`README-dev.md`](https://github.com/lastmile-ai/gradio-workbook/blob/main/gradioworkbook/README-dev.md) file!
