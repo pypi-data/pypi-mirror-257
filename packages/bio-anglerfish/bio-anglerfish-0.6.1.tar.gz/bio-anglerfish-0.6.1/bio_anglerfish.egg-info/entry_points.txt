@@ -1,0 +1,3 @@
+[console_scripts]
+anglerfish = anglerfish.anglerfish:anglerfish
+anglerfish-explore = anglerfish.explore.cli:main
