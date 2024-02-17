@@ -1,0 +1,8 @@
+pydantic
+requests
+
+[all]
+fore[extras]
+
+[extras]
+pandas
