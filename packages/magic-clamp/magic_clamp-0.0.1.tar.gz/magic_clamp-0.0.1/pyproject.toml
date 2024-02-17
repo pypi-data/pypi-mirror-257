@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "magic_clamp"
+version = "0.0.1"
+description = "Magic clamp with conditional straight-through estimator for PyTorch"
+authors = [
+  { name = "Ben Hayes", email = "ben@benhayes.net" } 
+]
+readme = "README.md"
