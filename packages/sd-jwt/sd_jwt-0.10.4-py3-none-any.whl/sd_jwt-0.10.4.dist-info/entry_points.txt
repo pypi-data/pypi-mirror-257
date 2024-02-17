@@ -1,0 +1,4 @@
+[console_scripts]
+sd-jwt-demo=sd_jwt.bin.demo:run
+sd-jwt-generate=sd_jwt.bin.generate:run
+
