@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+lindle/__init__.py
+lindle.egg-info/PKG-INFO
+lindle.egg-info/SOURCES.txt
+lindle.egg-info/dependency_links.txt
+lindle.egg-info/top_level.txt
