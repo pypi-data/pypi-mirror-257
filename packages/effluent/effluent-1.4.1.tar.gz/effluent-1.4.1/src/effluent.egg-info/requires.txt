@@ -1,0 +1,12 @@
+numpy
+xarray
+pandas
+netcdf4
+scipy
+tomli
+
+[dev]
+pytest
+matplotlib
+sphinx
+sphinx-autoapi
