@@ -1,0 +1,9 @@
+# Rust build artifacts
+/target
+
+# Python virtual environment
+.venv
+
+# Emoji kitchen metadata
+emojikitchen.json
+src/kitchen/paw_prints_kitchen_data.json
