@@ -1,0 +1,62 @@
+groups:
+  - name: kypo-sandbox-internal-sg
+    rules:
+      - direction: egress
+        type: IPv4
+        protocol: any
+        port_range: any
+        remote_ip: 0.0.0.0/0
+      - direction: egress
+        type: IPv6
+        protocol: any
+        port_range: any
+        remote_ip: ::/0
+      - direction: ingress
+        type: IPv4
+        protocol: any
+        port_range: any
+        remote_ip: 0.0.0.0/0
+  - name: kypo-sandbox-man-int-sg
+    rules:
+      - direction: egress
+        type: IPv4
+        protocol: TCP
+        port_range: '515'
+        remote_group: kypo-sandbox-man-sg
+      - direction: egress  # might not be neede in AWS env
+        type: IPv4
+        protocol: UDP
+        port_range: '67'
+        remote_ip: 0.0.0.0/0
+      - direction: ingress
+        type: IPv4
+        protocol: icmp
+        port_range: any
+        remote_group: kypo-sandbox-man-sg
+      - direction: ingress
+        type: IPv4
+        protocol: TCP
+        port_range: '22'
+        remote_group: kypo-sandbox-man-sg
+      - direction: ingress
+        type: IPv4
+        protocol: TCP
+        port_range: '5986'
+        remote_group: kypo-sandbox-man-sg
+  - name: kypo-sandbox-man-sg
+    rules:
+      - direction: egress
+        type: IPv4
+        protocol: any
+        port_range: any
+        remote_ip: 0.0.0.0/0
+      - direction: egress
+        type: IPv6
+        protocol: any
+        port_range: any
+        remote_ip: ::/0
+      - direction: ingress
+        type: IPv4
+        protocol: TCP
+        port_range: '515'
+        remote_group: kypo-sandbox-man-int-sg
