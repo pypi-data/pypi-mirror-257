@@ -1,0 +1,14 @@
+include *.py
+include */*.py
+recursive-include cubicweb_notebooks *.py
+recursive-include cubicweb_notebooks/data *.gif *.png *.ico *.css *.js
+recursive-include cubicweb_notebooks/i18n *.po
+recursive-include cubicweb_notebooks/wdoc *
+recursive-include cubicweb_notebooks/data/lab *
+recursive-include cubicweb_notebooks/lab *.yml
+recursive-include test/data bootstrap_cubes *.py
+include *.ini
+exclude .gitlab-ci.yml
+exclude .yamllint
+exclude Dockerfile
+exclude cubicweb_notebooks/lab/.jupyterlite.doit.db
