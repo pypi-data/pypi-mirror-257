@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: sapui5-xml-linter
+Version: 0.0.2
+Summary: Checks SAPUI5 XML views for unnecessary attributes and empty tags
+Home-page: https://gitlab.com/danielkullmann/sapui5-xml-linter
+Author: Daniel Kullmann
+Author-email: python@danielkullmann.de
+License: MIT
+Requires: lxml
+Requires: config_path
+Description-Content-Type: text/markdown
+
+# SAP UI5 View XML Linter
+
+This is a Python script that checks your view XML files and removes attributes
+that have the default value set. This can happen when your view files come out
+of a design platform like SAP Build.
+
+Usage:
+
+TODO
+
