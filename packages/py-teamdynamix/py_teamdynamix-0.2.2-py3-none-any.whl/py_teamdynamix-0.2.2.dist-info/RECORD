@@ -1,0 +1,16 @@
+pytdx/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+pytdx/tdx.py,sha256=u8T1e9iaSQ8osH4qzp91FPjHvMjiQ5E0FoCM1w-y0sY,16943
+pytdx/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytdx/models/asset.py,sha256=Ed8nCh_uXNgS09BLzeeYG5GSG_SZNoJ2hdUJVGe-T2k,7897
+pytdx/models/attribute.py,sha256=VlkoyLEuWAzDxsI-osip6uyJS0cq4gd9uEVbwblSzIA,658
+pytdx/models/knowledge_article.py,sha256=1vHphLlo5GpE8FXsqHWs9u6lhz8hVsQTAPoS5B46uWo,3294
+pytdx/models/ticket.py,sha256=OEWTfNgDmfU6PwGgnFZ_c6On0rWOWtawVWdzbqq-ytk,17113
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/asset_tests.py,sha256=zK1Z_ZuK2oA57yIOfrHfxGulWxLct00-NFKg7PbhKRc,454
+tests/test_tdx.py,sha256=D2ivxnxuT1XaLVW-O3aJwVyrT87-lnizwkd6FVZTr8Q,1611
+tests/ticket_tests.py,sha256=_9PUICd8EO2KLfmbHiM8H-APyLEl9IPwghPDcYD6ucA,671
+py_teamdynamix-0.2.2.dist-info/LICENSE,sha256=WVRYkVb86LwEHpdyADjWoJ7gdF0rU0cE__6wyOWn1qE,1064
+py_teamdynamix-0.2.2.dist-info/METADATA,sha256=0n_oV1ln2Ine_vDsGEdargjTI7ZlXOsDGbPkqn-bCDk,484
+py_teamdynamix-0.2.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+py_teamdynamix-0.2.2.dist-info/top_level.txt,sha256=UissaImq9Pa5uI8S7Zpbo9ErqZ0X8q0x2JA9cU0XWG8,12
+py_teamdynamix-0.2.2.dist-info/RECORD,,
