@@ -1,0 +1,17 @@
+tocky/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tocky/bulk_processor.py,sha256=Em_krTvBPd_SBSTRQ1XHkKlB9cMHqvlYkGuFnKebxu4,5802
+tocky/detector/__init__.py,sha256=7UYWf93ekci0DVRrXtdoz4O2-6r_QlPL-HAzgsOtmN8,9672
+tocky/detector/tests.py,sha256=Ojo2ql9SuSIJeMY-vLU8MMWNu2hG9fjAjxCQQtqHj_4,6774
+tocky/extractor/__init__.py,sha256=jWr8B-xYq_qY8Ynb1gxPbnnf32kExIxFlAoEuKgfc6o,3560
+tocky/ia.py,sha256=s3abjNtg8DyU8jLKUTg8K0sMUMq0EvjOWi9Ki35gi6M,2111
+tocky/ocr/__init__.py,sha256=bqNSOOj3js-VgpygpIleVZ2MWaTelQqxtOLpBJzd1y8,498
+tocky/ocr/easyocr.py,sha256=ECSs2Co6pLNXRDQRGV473Nuc3VvSeQP9YTVc-Vx6DVI,3739
+tocky/ocr/printer.py,sha256=hr4LVAG4RmCvLm-yhIRMg1ZKkTth1DaQ7NCqnkOQ2As,5259
+tocky/ocr/tesseract/__init__.py,sha256=U_Q6S1CrLqWIMloTi0_V6I6BjyyPmBVOBDl7eTp4pAw,2915
+tocky/ocr/tesseract/preprocessing.py,sha256=r4w_PSxhoobPzMfoNABJducW6WM7rbuQGTfLI25hnZM,4295
+tocky/utils.py,sha256=WIKX4tYlCQdOyVnIt7RuQAraSvJye-TyO3-xvn-OJ6M,2205
+tocky/validator.py,sha256=hEt-f3kUkThWV_D4zJx5-kEcLpKCpm0nChAdLwdJ-ro,2265
+tocky-0.0.13.dist-info/LICENSE,sha256=U1ise5JMvR8_pNxPoWqZSjd3mNQ-7jJbqjAFr5j7AWI,1088
+tocky-0.0.13.dist-info/METADATA,sha256=-ZiOkEZ1HAcYrBt0jNcOckXUz9BTYcKtPRsp_7QKAtY,1043
+tocky-0.0.13.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+tocky-0.0.13.dist-info/RECORD,,
