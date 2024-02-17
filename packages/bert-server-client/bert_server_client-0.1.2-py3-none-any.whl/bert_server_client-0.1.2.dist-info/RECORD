@@ -1,0 +1,12 @@
+bert_server_client/__init__.py,sha256=Y64Bx4he6Cn6E314tEu8DMwAu-ziddTpHlmZ22Ik13U,31
+bert_server_client/client.py,sha256=VYkv7ao_q_Quicmj8vIEOjXdrPaFqnFvix6NWFFacOA,2264
+bert_server_client/schema/__init__.py,sha256=0q74I6CSZHivGuUFBHJqjyPL9zht9D5bEI3FeH1Olus,161
+bert_server_client/schema/base.py,sha256=1ZaYeKnYaF8iCY2zeLbBxJ0eFIteoVM21o1sK_fSLXE,4291
+bert_server_client/schema/embedding.py,sha256=5qXZsCEYdnt4IK71TceVggJnYzpxzKMPerKiKDyOpuM,887
+bert_server_client/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bert_server_client/tests/client_integration_tests.py,sha256=a-q5LtGNFDuQsUSTbgKfetAz3YJJiTO4ex30UqUT5t4,736
+bert_server_client/tests/client_tests.py,sha256=hje9itvWeAnXqGaERMN8X5Ll16oXso_3MF37-2W9CT8,2092
+bert_server_client-0.1.2.dist-info/METADATA,sha256=r8iWjOXARADmiSQcheCZlzEoDYnYA9CpaqU0gzo_cYQ,572
+bert_server_client-0.1.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+bert_server_client-0.1.2.dist-info/top_level.txt,sha256=qVN3_vgOKRJsXpKm05X1pbQoMbHvvMKtcvyszauk8F0,19
+bert_server_client-0.1.2.dist-info/RECORD,,
