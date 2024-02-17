@@ -1,0 +1,8 @@
+cricguru/__init__.py,sha256=7igjXwoJDsyobGZy9APT6CtKIOMbT9CsdCfPweVa4FY,273
+cricguru/player.py,sha256=eRTjfKcdGyxwqf0OBxOU7eq90-4_xOTb0FkvsbOVlq0,20915
+cricguru/scraper.py,sha256=a1qgw3AiTSdPumY9BcDFiE1NpxZ25RKHPfU_UzNDIP8,5009
+cricguru/team.py,sha256=ae3mCGMrq23g6A77nlv8ZHGeBL9RxPbRUad74CmrIZE,11472
+cricguru-2.1.1.dist-info/LICENSE.md,sha256=kIeLJ8v1PhH6KTrlHxRU0q-JUgomdQ5JehX7xaSuOWY,1087
+cricguru-2.1.1.dist-info/METADATA,sha256=E7G6iFBSWIcxR3JJpvkB4p8zlqNV3GfsOO6KpoiIeLw,4900
+cricguru-2.1.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+cricguru-2.1.1.dist-info/RECORD,,
