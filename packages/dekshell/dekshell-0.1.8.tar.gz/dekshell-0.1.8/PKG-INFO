@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: dekshell
+Version: 0.1.8
+Summary: Being shell by mixing python and bash and cmd
+Author-Email: sanzenwin <sanzenwin@gmail.com>
+License: MIT
+Requires-Python: >=3.10
+Requires-Dist: beepy<=1.0.7
+Requires-Dist: packaging<=23.1
+Requires-Dist: dektools<1.0.0
+Description-Content-Type: text/markdown
+
+Being shell by mixing python and bash and cmd
+
+```shell
+# run on windows when finishing installation
+dekshell reg
+```
