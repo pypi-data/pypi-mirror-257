@@ -1,0 +1,6 @@
+README.md
+setup.py
+alexeyshesh_test_package.egg-info/PKG-INFO
+alexeyshesh_test_package.egg-info/SOURCES.txt
+alexeyshesh_test_package.egg-info/dependency_links.txt
+alexeyshesh_test_package.egg-info/top_level.txt
