@@ -1,0 +1,3 @@
+[console_scripts]
+lightningrobot=lightningrobot_cli.main:cli
+
