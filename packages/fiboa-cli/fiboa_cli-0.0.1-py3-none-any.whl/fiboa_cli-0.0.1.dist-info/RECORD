@@ -1,0 +1,12 @@
+fiboa_cli/__init__.py,sha256=TXhmNJHyZiC_AwU9NJ_qOYQkzAt0uTc02yD-gMPkpVE,2541
+fiboa_cli/const.py,sha256=ZJrK011LtNyAgLQsbtKHEgIahPfsLJreY93x8PCBmfE,1974
+fiboa_cli/create.py,sha256=nOgXXTeVe3xj1ihGrGIl8UR_Luz9r1vl3SUNmjIJfi4,3665
+fiboa_cli/util.py,sha256=nSGBrVpeYoblk_GCYsqf_RYKLR3RUNsZiV6bh9snXqs,2549
+fiboa_cli/validate.py,sha256=Q4TFWnEhC88wl8bm5U1I0fnclUhQY7LytQjenGy8e7I,4323
+fiboa_cli/version.py,sha256=ugyuFliEqtAwQmH4sTlc16YXKYbFWDmfyk87fErB8-8,21
+fiboa_cli-0.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+fiboa_cli-0.0.1.dist-info/METADATA,sha256=mLZ24R87dP2EgYGBZdHHJ9XreU0Beyl7d_ivcEq2kzs,507
+fiboa_cli-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+fiboa_cli-0.0.1.dist-info/entry_points.txt,sha256=X2hJRsKj6w08SpzIbGmp6AEskum2SlZ-5b_Y_YmWzGM,40
+fiboa_cli-0.0.1.dist-info/top_level.txt,sha256=A0evX59vq8rP_toQ70mdv2haxhdAAzWxDrcAQSxVokA,10
+fiboa_cli-0.0.1.dist-info/RECORD,,

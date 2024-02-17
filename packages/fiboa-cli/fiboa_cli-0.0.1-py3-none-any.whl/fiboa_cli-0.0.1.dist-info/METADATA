@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: fiboa-cli
+Version: 0.0.1
+Summary: CLI tools such as validation and file format conversion for fiboa.
+Home-page: https://github.com/fiboa/cli
+Author: Matthias Mohr
+License: Apache-2.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
+Requires-Dist: jsonschema >=4.4
+Requires-Dist: pyyaml >=5.1
+Requires-Dist: pyarrow >=7.0
+Requires-Dist: fsspec >=2022.3
+Requires-Dist: click >=8.1
+Requires-Dist: geopandas >=0.14.1
+
