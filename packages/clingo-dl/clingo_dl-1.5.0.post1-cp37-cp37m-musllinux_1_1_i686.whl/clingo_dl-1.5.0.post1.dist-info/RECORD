@@ -1,0 +1,12 @@
+clingodl/__init__.py,sha256=ABrDEzCxBvJg3xlOYHHKi-hvz5_u70XBbHXhXWGCHDw,320
+clingodl/clingo-dl.h,sha256=r0TaRuKZuau7b0vM7PyfvUbI2MgyarMRcGYQvE45KUQ,6350
+clingodl/__main__.py,sha256=DctsyK3FgcTpwWZQxNOPSfJATOsVgHhAerJCHwQqBFs,3159
+clingodl/_clingodl.cpython-37m-i386-linux-gnu.so,sha256=LGuZLZqgaQ9Y9gu6Yhya8zyHG5E0IBRxUeoHt4DKHpQ,426421
+clingodl/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+clingo_dl.libs/libstdc++-8baf04f9.so.6.0.28,sha256=yrzOxg1heyJ9Y-43YCLLn04Cpl_A68FN0D2Q1iBTMcY,2428961
+clingo_dl.libs/libgcc_s-8b50eaaa.so.1,sha256=WXj_FYQE1MDIyb-nN8siUALdxit6NHma0p9UxemQV8o,101649
+clingo_dl-1.5.0.post1.dist-info/WHEEL,sha256=M55LwAtPvT7QP2mnqI2PWj39RcY2glpEEHX-3fJvUoY,104
+clingo_dl-1.5.0.post1.dist-info/METADATA,sha256=77BPfUHWNEKueZICtIQx2_wpMt689Oej95QKLyhILlg,545
+clingo_dl-1.5.0.post1.dist-info/LICENSE.md,sha256=FkS__z6N7hEwdWeIE0v3bs56yAcOxcvoAdRrOig5O-s,1101
+clingo_dl-1.5.0.post1.dist-info/top_level.txt,sha256=0gvC0C9AqC1c40t9uqwsrFcNu0kUas8VoudB8kGNLU0,9
+clingo_dl-1.5.0.post1.dist-info/RECORD,,
