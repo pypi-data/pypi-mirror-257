@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "squiz"
+version = "0.1.0"
+description = "View a Python object's direct and nested attributes."
+authors = ["morefigs"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
