@@ -1,0 +1,11 @@
+odoo/addons/ssi_field_service_work_log/README.rst,sha256=Ny6X_8JTfui8TfX9_ZQGawvqtk26E9pzpsI6IAgysus,1279
+odoo/addons/ssi_field_service_work_log/__init__.py,sha256=JhPhaZHX2EaxlVGYxnTiJXb4lOWip7fiumVfTPQGruo,200
+odoo/addons/ssi_field_service_work_log/__manifest__.py,sha256=XnRIPkBv2V7RGfOEdIDilat09rHDgX2edVflEuIeQ8U,553
+odoo/addons/ssi_field_service_work_log/models/__init__.py,sha256=fFlUWxvN3zgYB8LX9qLhv5ICZLQyWHuRyUYvVMFD6VU,244
+odoo/addons/ssi_field_service_work_log/models/field_service_order.py,sha256=8ai8Vx41j0rhC_6LFMqRenlTT8qtPfNfnpxHN3AXW94,387
+odoo/addons/ssi_field_service_work_log/models/group_field_service_order.py,sha256=TorIu8U6sV0HeOqALnJe8oqjy7hfbY9KVdK5Ur_LO_4,404
+odoo/addons/ssi_field_service_work_log/static/description/icon.png,sha256=lNGJOSg4cMRfwPTfFKVT6d5B2N1N83iVpEEN1blqu1I,48333
+odoo14_addon_ssi_field_service_work_log-14.0.1.0.0.dist-info/METADATA,sha256=97iXa6ACpzngCSrKrCD9GacobIBJMgf3TB5r5IH_CYs,1889
+odoo14_addon_ssi_field_service_work_log-14.0.1.0.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+odoo14_addon_ssi_field_service_work_log-14.0.1.0.0.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo14_addon_ssi_field_service_work_log-14.0.1.0.0.dist-info/RECORD,,
