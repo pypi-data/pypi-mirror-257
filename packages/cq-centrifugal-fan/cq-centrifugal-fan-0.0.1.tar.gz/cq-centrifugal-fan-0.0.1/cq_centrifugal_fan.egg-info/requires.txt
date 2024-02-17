@@ -1,0 +1,5 @@
+numpy
+cadquery>=2
+cqkit
+
+[dev]
