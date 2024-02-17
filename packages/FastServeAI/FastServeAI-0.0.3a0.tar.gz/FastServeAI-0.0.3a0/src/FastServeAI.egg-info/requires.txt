@@ -1,0 +1,5 @@
+fastapi[all]
+llama-cpp-python
+transformers
+diffusers
+uactor
