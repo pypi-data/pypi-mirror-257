@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "lightningrobot-cli"
+version = "0.1.4"
+description = "LightningRobot's cli."
+authors = ["MeowSauce <meowsauce@hotmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+lightningrobot = "lightningrobot_cli.main:cli"
