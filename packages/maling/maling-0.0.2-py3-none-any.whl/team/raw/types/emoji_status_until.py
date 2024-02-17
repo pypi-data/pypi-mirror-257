@@ -1,0 +1,64 @@
+#  Library Team
+
+from io import BytesIO
+
+from team.raw.core.primitives import Int, Long, Int128, Int256, Bool, Bytes, String, Double, Vector
+from team.raw.core import TLObject
+from team import raw
+from typing import List, Optional, Any
+
+# # # # # # # # # # # # # # # # # # # # # # # #
+#               !!! WARNING !!!               #
+#          This is a generated file!          #
+# All changes made in this file will be lost! #
+# # # # # # # # # # # # # # # # # # # # # # # #
+
+
+class EmojiStatusUntil(TLObject):  # type: ignore
+    """Telegram API type.
+
+    Constructor of :obj:`~team.raw.base.EmojiStatus`.
+
+    Details:
+        - Layer: ``158``
+        - ID: ``FA30A8C7``
+
+    Parameters:
+        document_id (``int`` ``64-bit``):
+            N/A
+
+        until (``int`` ``32-bit``):
+            N/A
+
+    """
+
+    __slots__: List[str] = ["document_id", "until"]
+
+    ID = 0xfa30a8c7
+    QUALNAME = "types.EmojiStatusUntil"
+
+    def __init__(self, *, document_id: int, until: int) -> None:
+        self.document_id = document_id  # long
+        self.until = until  # int
+
+    @staticmethod
+    def read(b: BytesIO, *args: Any) -> "EmojiStatusUntil":
+        # No flags
+        
+        document_id = Long.read(b)
+        
+        until = Int.read(b)
+        
+        return EmojiStatusUntil(document_id=document_id, until=until)
+
+    def write(self, *args) -> bytes:
+        b = BytesIO()
+        b.write(Int(self.ID, False))
+
+        # No flags
+        
+        b.write(Long(self.document_id))
+        
+        b.write(Int(self.until))
+        
+        return b.getvalue()

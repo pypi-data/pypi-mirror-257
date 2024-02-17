@@ -1,0 +1,51 @@
+#  Library Team
+
+from io import BytesIO
+
+from team.raw.core.primitives import Int, Long, Int128, Int256, Bool, Bytes, String, Double, Vector
+from team.raw.core import TLObject
+from team import raw
+from typing import List, Optional, Any
+
+# # # # # # # # # # # # # # # # # # # # # # # #
+#               !!! WARNING !!!               #
+#          This is a generated file!          #
+# All changes made in this file will be lost! #
+# # # # # # # # # # # # # # # # # # # # # # # #
+
+
+class InputReportReasonFake(TLObject):  # type: ignore
+    """Telegram API type.
+
+    Constructor of :obj:`~team.raw.base.ReportReason`.
+
+    Details:
+        - Layer: ``158``
+        - ID: ``F5DDD6E7``
+
+    Parameters:
+        No parameters required.
+
+    """
+
+    __slots__: List[str] = []
+
+    ID = 0xf5ddd6e7
+    QUALNAME = "types.InputReportReasonFake"
+
+    def __init__(self) -> None:
+        pass
+
+    @staticmethod
+    def read(b: BytesIO, *args: Any) -> "InputReportReasonFake":
+        # No flags
+        
+        return InputReportReasonFake()
+
+    def write(self, *args) -> bytes:
+        b = BytesIO()
+        b.write(Int(self.ID, False))
+
+        # No flags
+        
+        return b.getvalue()

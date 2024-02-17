@@ -1,0 +1,38 @@
+#  Library Team
+
+# # # # # # # # # # # # # # # # # # # # # # # #
+#               !!! WARNING !!!               #
+#          This is a generated file!          #
+# All changes made in this file will be lost! #
+# # # # # # # # # # # # # # # # # # # # # # # #
+
+from typing import Union
+from team import raw
+from team.raw.core import TLObject
+
+BotApp = Union[raw.types.BotApp, raw.types.BotAppNotModified]
+
+
+# noinspection PyRedeclaration
+class BotApp:  # type: ignore
+    """Telegram API base type.
+
+    Constructors:
+        This base type has 2 constructors available.
+
+        .. currentmodule:: team.raw.types
+
+        .. autosummary::
+            :nosignatures:
+
+            BotApp
+            BotAppNotModified
+    """
+
+    QUALNAME = "team.raw.base.BotApp"
+
+    def __init__(self):
+        raise TypeError("Base types can only be used for type checking purposes: "
+                        "you tried to use a base type instance as argument, "
+                        "but you need to instantiate one of its constructors instead. "
+                        "More info: https://docs.team.org/telegram/base/bot-app")

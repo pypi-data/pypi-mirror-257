@@ -1,0 +1,64 @@
+#  Library Team
+
+from io import BytesIO
+
+from team.raw.core.primitives import Int, Long, Int128, Int256, Bool, Bytes, String, Double, Vector
+from team.raw.core import TLObject
+from team import raw
+from typing import List, Optional, Any
+
+# # # # # # # # # # # # # # # # # # # # # # # #
+#               !!! WARNING !!!               #
+#          This is a generated file!          #
+# All changes made in this file will be lost! #
+# # # # # # # # # # # # # # # # # # # # # # # #
+
+
+class InputEncryptedFileLocation(TLObject):  # type: ignore
+    """Telegram API type.
+
+    Constructor of :obj:`~team.raw.base.InputFileLocation`.
+
+    Details:
+        - Layer: ``158``
+        - ID: ``F5235D55``
+
+    Parameters:
+        id (``int`` ``64-bit``):
+            N/A
+
+        access_hash (``int`` ``64-bit``):
+            N/A
+
+    """
+
+    __slots__: List[str] = ["id", "access_hash"]
+
+    ID = 0xf5235d55
+    QUALNAME = "types.InputEncryptedFileLocation"
+
+    def __init__(self, *, id: int, access_hash: int) -> None:
+        self.id = id  # long
+        self.access_hash = access_hash  # long
+
+    @staticmethod
+    def read(b: BytesIO, *args: Any) -> "InputEncryptedFileLocation":
+        # No flags
+        
+        id = Long.read(b)
+        
+        access_hash = Long.read(b)
+        
+        return InputEncryptedFileLocation(id=id, access_hash=access_hash)
+
+    def write(self, *args) -> bytes:
+        b = BytesIO()
+        b.write(Int(self.ID, False))
+
+        # No flags
+        
+        b.write(Long(self.id))
+        
+        b.write(Long(self.access_hash))
+        
+        return b.getvalue()
