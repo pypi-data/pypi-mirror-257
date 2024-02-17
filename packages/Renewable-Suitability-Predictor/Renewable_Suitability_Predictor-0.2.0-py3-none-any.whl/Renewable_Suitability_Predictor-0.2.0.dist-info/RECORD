@@ -1,0 +1,10 @@
+Renewable_Suitability_Predictor/Interface.py,sha256=66LlB-axHGhD5wXhXft3RUTHTdKKQXTEnVTsTIGsbOo,7253
+Renewable_Suitability_Predictor/__init__.py,sha256=M1AxzvJIoKNrg30wEcyL5hSO6j4ee5LDYbUFBHvlt6Y,109
+Renewable_Suitability_Predictor/backend_methods.py,sha256=rXStBJmq7hHsmPafRwjNkMgcRJP3rHNZzZO5DEJYyVg,4787
+Renewable_Suitability_Predictor/solar_dataset.csv,sha256=H-KPX039A3GyYDtMj3FYJ-UXs7JxDbrVJo0SqgB1vvk,124475
+Renewable_Suitability_Predictor/wind_dataset.csv,sha256=C3UnBPsEBPAgn7snsO4AKFk_wHKlR0LDN5mo3xTUZA8,124399
+Renewable_Suitability_Predictor-0.2.0.dist-info/LICENSE.txt,sha256=LcKNAnHxVWM6_bDkXTqvuown32N1-KXUPoppINz4XuE,1074
+Renewable_Suitability_Predictor-0.2.0.dist-info/METADATA,sha256=Oaf6XPqfAYCez3a7t-sv2FcH3I6f9zHWlxV6isesw3M,715
+Renewable_Suitability_Predictor-0.2.0.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+Renewable_Suitability_Predictor-0.2.0.dist-info/top_level.txt,sha256=rD9M5dLxN3x0GVasMpWrxhRDIWHhprrpWc76hHbGqRs,32
+Renewable_Suitability_Predictor-0.2.0.dist-info/RECORD,,
