@@ -1,0 +1,68 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Caches
+#*.db
+#*.sqlite3
+#*.log
+
+# Environment variables
+.env
+
+# Virtual environment
+env/
+venv/
+venv3/
+
+# Local development settings
+local_settings.py
+
+# Media files
+media/uploads/*
+uploads/*
+
+# Static files
+# staticfiles/
+# static/
+
+# Site-specific configurations
+*.ini
+
+# IDE settings
+.idea/
+.vscode/
+
+# # Database migration files
+# /migrations/
+
+# # Dependency directories
+# bin/
+# lib/
+# include/
+
+# Compiled Python files
+*.pyc
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+#webdrivers
+webdrivers/
+
+#data
+Data/
+
+#Log
+file.log
+
+#Dist
+dist/
+
+#Proj PyPi
+pyproject.toml

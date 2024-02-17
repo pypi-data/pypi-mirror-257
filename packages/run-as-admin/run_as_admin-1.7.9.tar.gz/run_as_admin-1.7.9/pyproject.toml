@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "run_as_admin"
+version = "1.7.9"
+authors = [
+  { name="Barno Chakraborty", email="barno.baptu@gmail.com" },
+]
+description = "This script provides a simple way to execute a file as an administrator on Windows systems."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: Microsoft :: Windows",
+]
+
+[project.urls]
+Homepage = "https://github.com/barno1994/runasadmin"
+Issues = "https://github.com/barno1994/runasadmin/issues"
