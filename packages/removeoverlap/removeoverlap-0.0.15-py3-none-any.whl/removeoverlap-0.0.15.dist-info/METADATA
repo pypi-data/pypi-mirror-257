@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: removeoverlap
+Version: 0.0.15
+Summary: Decompose intersecting hyperrectangles
+Project-URL: Homepage, https://github.com/assimhabeek/remove-overlap
+Project-URL: Issues, https://github.com/assimhabeek/remove-overlap/issues
+Author-email: Assem Hebik <assimhabe@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+## Decompose Hyperrectangles in d-dimensional space
