@@ -1,0 +1,7 @@
+[console_scripts]
+all=scripts:test_all
+obs=scripts:ex_obs
+sends=scripts:ex_sends
+x32=scripts:test_x32
+xair=scripts:test_xair
+
