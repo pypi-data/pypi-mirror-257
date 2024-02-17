@@ -1,0 +1,2 @@
+[console_scripts]
+simulatorpy = montecarlo:monte_carlo_pi
