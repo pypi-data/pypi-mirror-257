@@ -1,0 +1,14 @@
+README
+setup.py
+cyp2d6_parser/__init__.py
+cyp2d6_parser/__main__.py
+cyp2d6_parser/common.py
+cyp2d6_parser/cyp2d6_parser.py
+cyp2d6_parser/genotype.py
+cyp2d6_parser/utils.py
+cyp2d6_parser.egg-info/PKG-INFO
+cyp2d6_parser.egg-info/SOURCES.txt
+cyp2d6_parser.egg-info/dependency_links.txt
+cyp2d6_parser.egg-info/entry_points.txt
+cyp2d6_parser.egg-info/requires.txt
+cyp2d6_parser.egg-info/top_level.txt

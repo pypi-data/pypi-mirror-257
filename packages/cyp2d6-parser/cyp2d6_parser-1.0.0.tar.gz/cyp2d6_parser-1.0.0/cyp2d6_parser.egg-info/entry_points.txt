@@ -1,0 +1,3 @@
+[console_scripts]
+cyp2d6_parser = cyp2d6_parser.__main__:main
+
