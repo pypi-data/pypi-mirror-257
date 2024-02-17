@@ -1,0 +1,81 @@
+Metadata-Version: 2.1
+Name: evidi_fabric
+Version: 0.1.21
+Summary: 
+Author: Uffe Friis Torlyn
+Author-email: uft@cloud-agility.com
+Requires-Python: >=3.10,<3.12
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: delta (>=0.4.2,<0.5.0)
+Requires-Dist: delta-spark (>=3.1.0,<4.0.0)
+Requires-Dist: dynaconf (>=3.2.4,<4.0.0)
+Requires-Dist: pandas (==2.0.3)
+Requires-Dist: pyodbc (==4.0.39)
+Requires-Dist: semantic-link (>=0.5.1,<0.6.0)
+Requires-Dist: twine (>=5.0.0,<6.0.0)
+Description-Content-Type: text/markdown
+
+# Introduction 
+This repo tracks the evidi_fabric package which is intended to collect useful helper when working with fabric
+
+# Build and Test
+
+    poetry build
+    poetry config repositories.evidi_fabric https://pkgs.dev.azure.com/cloud-agility/5a74dae0-b39a-4e4d-85cf-bf150f827302/_packaging/evidi_fabric/pypi/upload/
+
+Generate a Personal Access Token in Azure DevOps and use it here
+
+    poetry config http-basic.evidi_fabric INITIALS PAT
+
+where INITIALS can be anything and PAT is your new token.
+You need to have Contributor access to the python_packages feed.
+
+    poetry publish --repository evidi_fabric
+
+Make sure to bump the version number for each publish. Consider using release candidates when testing stuff e.g.
+
+    0.0.3
+    0.1.0-alpha.0
+    0.1.0-alpha.1
+    ...
+    0.1.0
+
+This can be semi-automated with poetry by using these commands:
+
+    poetry version prerelease
+
+and
+
+    poetry version patch
+
+In this case the first command will create a new prerelease version for a patch update.
+You can run the first command several times while you iterate your fixes.
+Once you are satisfied you can run poetry version patch to make a new patch release.
+Then when you merge to master this release will be automatically published to inspari-ai pypi feed.
+
+Note that you cannot upload the same package version twice.
+Thus you need to bump some part of the version everytime you want to publish.
+The suggested workflow is that prereleases are published manually while "production" releases
+are only done by the pipeline to make sure that master branch and latest published version tracks each other.
+
+See the [docs](https://python-poetry.org/docs/cli/#version) for details.
+See also the [possible improvement](https://mestrak.com/blog/semantic-release-with-python-poetry-github-actions-20nn).
+
+For fast patch, build and publish, you can use the following command:
+
+```poetry version patch && poetry build && poetry publish --repository evidi_fabric```
+
+The same as the above, but publishing the packge directly to PyPi (hence open source!)
+
+```poetry version patch && poetry build && python3 -m twine upload dist/*```
+
+To upgrade your local repositories with the latest version of the package with pip, run:
+
+```pip install --upgrade evidi_fabric```
+
+
+## find a specific line of code in all scripts:
+run below in a bash terminal
+```./helpers/find_file_with_line_of_code.sh "TEXT YOU WANT TO FIND"```
