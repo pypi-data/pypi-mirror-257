@@ -1,0 +1,9 @@
+redis_json_dict/__init__.py,sha256=Q71X73uSy1G4eAJziR30THY_yez7VEGwXRlnldYgQEc,380
+redis_json_dict/_version.py,sha256=H-qsvrxCpdhaQzyddR-yajEqI71hPxLa4KxzpP3uS1g,411
+redis_json_dict/_version.pyi,sha256=j5kbzfm6lOn8BzASXWjGIA1yT0OlHTWqlbyZ8Si_o0E,118
+redis_json_dict/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+redis_json_dict/redis_json_dict.py,sha256=BrhpBh8YmRS6NJ_Kn5URoWxRDLNht9qjHbJUC-SEJKI,5179
+redis_json_dict-0.2.0.dist-info/METADATA,sha256=q8UBk2APANda2hDhyVIoHkbvs7nkbVXopiaN6hpFg8s,6178
+redis_json_dict-0.2.0.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+redis_json_dict-0.2.0.dist-info/licenses/LICENSE,sha256=xbjUzckVxfwzRdAB3H6z8BPTXKM_vLVcWTkEry79mis,1540
+redis_json_dict-0.2.0.dist-info/RECORD,,
