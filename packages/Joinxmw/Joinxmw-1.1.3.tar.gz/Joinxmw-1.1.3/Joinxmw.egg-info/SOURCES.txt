@@ -1,0 +1,8 @@
+setup.py
+Joinxmw/Account.py
+Joinxmw/__init__.py
+Joinxmw/help.py
+Joinxmw.egg-info/PKG-INFO
+Joinxmw.egg-info/SOURCES.txt
+Joinxmw.egg-info/dependency_links.txt
+Joinxmw.egg-info/top_level.txt
