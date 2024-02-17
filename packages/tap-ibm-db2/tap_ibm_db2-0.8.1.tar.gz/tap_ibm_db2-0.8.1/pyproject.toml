@@ -1,0 +1,80 @@
+[tool.poetry]
+name = "tap-ibm-db2"
+version = "0.8.1"
+description = "`Tap-DB2` is a Singer tap for IBM DB2 data sources."
+readme = "README.md"
+authors = ["Daniel Purtov"]
+keywords = [
+    "ELT",
+    "IBM DB2",
+    "DB2"
+]
+classifiers = [
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: Implementation :: CPython",
+]
+license = "MIT"
+packages = [
+    { include = "tap_db2" },
+]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.12"
+singer-sdk = { version=">=0.31.1,<0.36.0" }
+ibm-db-sa = "0.4.0"
+sqlalchemy = "2.0.27"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "8.0.0"
+singer-sdk = { version=">=0.31.1,<0.36.0", extras = ["testing"] }
+black = "24.2.0"
+deptry = "0.12.0"
+faker = "23.2.1"
+isort = "5.13.2"
+tox = "4.12.1"
+
+[tool.mypy]
+python_version = "3.9"
+warn_unused_configs = true
+plugins = "sqlmypy"
+
+[tool.black]
+line-length = 120
+
+[tool.ruff]
+ignore = [
+    "ANN101",  # missing-type-self
+    "ANN102",  # missing-type-cls
+]
+select = ["ALL"]
+src = ["tap_db2"]
+target-version = "py37"
+
+
+[tool.ruff.flake8-annotations]
+allow-star-arg-any = true
+
+[tool.ruff.isort]
+known-first-party = ["tap_db2"]
+
+[tool.ruff.pydocstyle]
+convention = "google"
+
+[build-system]
+requires = ["poetry-core==1.8.1", "poetry-dynamic-versioning==1.2.0"]
+build-backend = "poetry_dynamic_versioning.backend"
+
+[tool.poetry-dynamic-versioning]
+enable = false
+vcs = "git"
+style = "semver"
+
+[tool.poetry.scripts]
+# CLI declaration
+tap-db2 = 'tap_db2.tap:TapDB2.cli'
