@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: readDiag
+Version: 1.2.3
+Summary: A Python class to read and plot the Gridpoint Statistical Interpolation diagnostics files.
+Author: Joao Gerd Z. de Mattos
+Author-email: joao.gerd@inpe.br
+License: CC BY-NC-SA-4.0
+Project-URL: Source, https://github.com/GAD-DIMNT-CPTEC/readDiag
+Project-URL: Documentation, https://gad-dimnt-cptec.github.io/readDiag/
+Platform: any
+Requires-Python: >=3.9.18
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: numpy >=1.22
+Requires-Dist: matplotlib ==3.8.2
+Requires-Dist: xarray
+Requires-Dist: Cartopy >=0.22.0
+Requires-Dist: geopandas
+Requires-Dist: jupyterlab
+
+# readDiag
+
+readDiag is a Python package that provides a class to read and plot the [Gridpoint Statistical Interpolation](https://dtcenter.org/community-code/gridpoint-statistical-interpolation-gsi) diagnostics files. It can be used to retrieve and investigate important information from the data assimilation process:
+
+![image](https://user-images.githubusercontent.com/6088258/183511751-21032794-b38c-44c0-8719-103ed1b98547.png)
+
+## Installation
+
+Use either `conda` or `python -m venv` to setup a virtual environment to install readDiag:
+
+```
+conda create -n readDiag python=3.9.18
+conda activate readDiag
+pip install readDiag
+```
+
+or
+
+```
+python -m venv readDiag
+source readDiag/bin/activate
+pip install readDiag
+```
+
+**Note:** When using `python -m venv` make sure to have Python >=3.9.18 installed on your system. For more information on how to use readDiag, take a look at the project's [documentation](https://gad-dimnt-cptec.github.io/readDiag/).
+
+<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode" target="_blank"><img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-sa.png" alt="CC-BY-NC-SA" width="100"/></a>

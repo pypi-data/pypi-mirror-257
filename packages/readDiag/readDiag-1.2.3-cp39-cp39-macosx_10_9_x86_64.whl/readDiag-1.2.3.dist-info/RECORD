@@ -1,0 +1,10 @@
+diag2python.cpython-39-darwin.so,sha256=VV2WVFRjRoDry_y9V69RSlRCq7tjSopjdX0leF1Lcys,218848
+gsidiag/__init__.py,sha256=c8To7Wmhdcl-D6T-rPlCLyQfm-H9B0KbrrUiBEx0nSU,845
+gsidiag/__main__.py,sha256=LHkpXw4E0uIxz1GEsQgTM4xGPSKKcknL8Unl_rS4MOU,75694
+gsidiag/datasources.py,sha256=ERtqciOcITdVMGm3BUIiZ7jiLLmFbcD8LOD5RgQwevE,2151
+gsidiag/table,sha256=ptVEjcGxp1YQgi-NXz8vz8EPVn8HP3tu-H2mjq6ddHU,8433
+readDiag-1.2.3.dist-info/LICENSE.md,sha256=EZIN-954VWuSynmBoEBqs-Jeqxp6tXN53zOm6LJmLH0,217
+readDiag-1.2.3.dist-info/METADATA,sha256=3e4VmcPHgl2pSj-KhpcdzwQcihlBP9M1ljgvUp9cVoQ,1815
+readDiag-1.2.3.dist-info/WHEEL,sha256=iG8A0NTh07TTUrjuItt5jQWSaCWls4bkT_lqUuVXNGc,109
+readDiag-1.2.3.dist-info/top_level.txt,sha256=IjCxIMVPTFXAcCA3ucwMOryNcayXTmiLrD0bwWMHgLU,20
+readDiag-1.2.3.dist-info/RECORD,,
