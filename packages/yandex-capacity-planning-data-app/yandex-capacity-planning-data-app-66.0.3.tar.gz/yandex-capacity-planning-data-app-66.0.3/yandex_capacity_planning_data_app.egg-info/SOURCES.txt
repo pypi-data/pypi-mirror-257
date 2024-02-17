@@ -1,0 +1,6 @@
+README.md
+setup.py
+yandex_capacity_planning_data_app.egg-info/PKG-INFO
+yandex_capacity_planning_data_app.egg-info/SOURCES.txt
+yandex_capacity_planning_data_app.egg-info/dependency_links.txt
+yandex_capacity_planning_data_app.egg-info/top_level.txt
