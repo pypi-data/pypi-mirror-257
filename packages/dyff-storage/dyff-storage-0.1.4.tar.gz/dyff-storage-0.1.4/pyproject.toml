@@ -1,0 +1,44 @@
+# SPDX-FileCopyrightText: 2024 UL Research Institutes
+# SPDX-License-Identifier: Apache-2.0
+
+[build-system]
+requires = [
+    "setuptools>=60",
+    "setuptools-scm>=8.0",
+    "wheel",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dyff-storage"
+description = "Python storage API for the Dyff AI auditing platform."
+
+dependencies = [
+    "confluent-kafka",
+    "dyff-schema",
+    "google-cloud-storage",
+    "minio",
+    "pydantic<2",
+    "pymongo[srv]",
+]
+
+dynamic = ["version"]
+
+license = {"text" = "Apache-2.0"}
+
+readme = "README.md"
+
+requires-python = ">=3.9"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = [
+    "dyff.storage*",
+]
+namespaces = true
+
+[tool.setuptools_scm]
+
+[tool.isort]
+known_first_party = ["dyff"]
+profile = "black"
