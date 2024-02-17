@@ -1,0 +1,3 @@
+[console_scripts]
+isoclassify = isoclassify.isoclassify:main
+
