@@ -1,0 +1,3 @@
+[console_scripts]
+idt=indy_dev_tools.main:main
+
