@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: multi-sum-calc
+Version: 0.1
+Summary: a simple python library for calculating the sum and the product of two numeric values.
+Author: Daniel Huber
+
