@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+snailpy/__init__.py
+snailpy/goobert.poo
+snailpy/snailpy.py
+snailpy.egg-info/PKG-INFO
+snailpy.egg-info/SOURCES.txt
+snailpy.egg-info/dependency_links.txt
+snailpy.egg-info/entry_points.txt
+snailpy.egg-info/requires.txt
+snailpy.egg-info/top_level.txt

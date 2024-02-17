@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "snailpy"
+version = "1.0.7"
+dependencies = [
+  "requests",
+]
+requires-python = ">=3.7"
+authors = [
+  {name = "Nolan Simpson", email = "nmsderp@gmail.com"},
+]
+maintainers = [
+  {name = "Nolan Simpson", email = "nmsderp@gmail.com"}
+]
+description = "Use the Snail IDE API in your python scripts."
+readme = "README.md"
+license = {file = "LICENSE"}
+keywords = ["scratch", "api"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Programming Language :: Python"
+]
+
+[project.urls]
+Homepage = "https://snail-ide.js.org/SnailPy"
+Repository = "https://github.com/Snail-IDE/SnailPy.git"
+"Bug Tracker" = "https://github.com/Snail-IDE/SnailPy/issues"
+
+[project.scripts]
+spam-cli = "spam:main_cli"
+
+[project.gui-scripts]
+spam-gui = "spam:main_gui"
+
+[project.entry-points."spam.magical"]
+tomatoes = "spam:main_tomatoes"
