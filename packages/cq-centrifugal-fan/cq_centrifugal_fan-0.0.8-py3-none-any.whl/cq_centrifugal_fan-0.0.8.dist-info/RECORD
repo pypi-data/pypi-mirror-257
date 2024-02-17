@@ -1,0 +1,11 @@
+cq_centrifugal_fan/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cq_centrifugal_fan/debug.py,sha256=OOF9PN5uX5gScrpLifJ_EEkULWaKmu8Qr4YVqcD1SHk,3338
+cq_centrifugal_fan/errors.py,sha256=eihWH6xViq_E6F5mnbX8J4EMzS27GYcTjAq3-yCnz70,936
+cq_centrifugal_fan/shapes.py,sha256=AHUlvD-2szX-Oky6reU_WEa2w6eO1uTxEh4by2s-wMU,27068
+cq_centrifugal_fan/use_cases/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cq_centrifugal_fan/use_cases/default.py,sha256=yD1I4rt9ij4FhenlomZLrpojSkEnxpP8gOUJ1ALwoJY,1489
+cq_centrifugal_fan-0.0.8.dist-info/LICENSE,sha256=pfXzK08c_Oe2Fu0i2DJnfwFPKL-5zTeaXlpwKRJLZpM,1075
+cq_centrifugal_fan-0.0.8.dist-info/METADATA,sha256=wgelD2kzYYJ_C9VCu7iJ3Uyar0nnU02EJSEU89c4qKQ,2955
+cq_centrifugal_fan-0.0.8.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+cq_centrifugal_fan-0.0.8.dist-info/top_level.txt,sha256=HciYOqwl-qmi4yk6AJANSG7PGRhdfJb9upeCzHS2iok,19
+cq_centrifugal_fan-0.0.8.dist-info/RECORD,,
