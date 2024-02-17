@@ -1,0 +1,46 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = ["setuptools >= 61.0.0"]
+
+[project]
+classifiers = [
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11"
+]
+dependencies = []  # TODO: Add dependencies
+dynamic = ["version"]
+license = {text = "MIT"}  # TODO: Choose license
+name = "minimal_python_project_skeleton"  # TODO: Change package name
+readme = "README.md"
+requires-python = ">=3.7, <3.12"
+
+[project.optional-dependencies]
+develop = [
+  'python_project_skeleton[test]',
+  'ipykernel',
+  'pre-commit',
+  'python-lsp-ruff',
+  'python-lsp-server[all]',
+  'ruff'
+]
+test = [
+  'pytest',
+  'pytest-xdist'
+]
+
+[project.urls]
+Homepage = "https://github.com/MArpogaus/minimal-python-project-skeleton"  # TODO: Change project homepage
+
+[tool.ruff]
+indent-width = 4
+line-length = 88
+target-version = "py37"
+
+[tool.ruff.lint]
+select = ["I", "E", "F"]
+
+[tool.setuptools.dynamic]
+version = {attr = "minimal_python_project_skeleton.__version__"}  # TODO: Change package name
