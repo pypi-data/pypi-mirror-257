@@ -1,0 +1,11 @@
+components:
+  StableDiffusionTextEncoder: model.text_encoder
+  StableDiffusionVAEDecoder: model.vae_decoder
+  StableDiffusionUNet: model.unet
+  StableDiffusonVAEEncoder: model.vae_encoder
+default_components:
+  - text_encoder
+  - vae_decoder
+  - unet
+tflite_export_failure_reason: "Consumes too much RAM and crashes CI machine."
+qnn_export_failure_reason: "Compilation fails https://dev.qaihub.qualcomm.com/jobs/j7gjqldv5 (VAE decoder) and https://dev.qaihub.qualcomm.com/jobs/jz5w49wmg (UNet)"
