@@ -1,0 +1,17 @@
+adix/__init__.py,sha256=wFmOkWaWgyPohYhh6MOLG8801nY3MiPGDcGcxlezjZM,112
+adix/configs.py,sha256=oqtbj9OngZ5GZdVDXnNfDGW2XoU0lXVFjKOy86MeG7w,7459
+adix/datahub.py,sha256=HLwnFavnQdF5Gt3GGMGEVAAr4SR82EayuZlz1L2Swus,472
+adix/dtype.py,sha256=vzyZ0wnREfgseYBhGXsI7r5qc1AX9e1UPOC1zelDlow,1753
+adix/wizrenderer.py,sha256=ttWbY3PHTYcnLF1K14Aij8O3VWCSk0BZdzm6YuqfjMU,5863
+adix/datasets/__init__.py,sha256=d1La5M3jYxvBUx_r7Y1Qx9PeKMr6AgYZ73AhNPO7VUY,1620
+adix/datasets/titanic.csv,sha256=nFGuKr2n6jsnVTpem2jSd404w9wgjbpCteyK071hoWU,60301
+adix/processing/__init__.py,sha256=X5MKl4QBZnUtIoN7xdTUj5hX-6H1-z3vBLJ48ZNgoh4,2040
+adix/processing/tables.py,sha256=04fBmTdKJZVDUwAK0k6xKda-FbF93au2eoNSXhfu_Gk,13058
+adix/processing/wiz.py,sha256=duaO0ZmcW1fiR6MOETPXjUqTZ7a2xq1oSCMtPcsPjo4,65539
+adix/processing/calc/__init__.py,sha256=sjgGV8QAHEgMgr_PRRC3ZuJ5h_x_vfkkReRPu9HaKJY,25
+adix/processing/calc/operations.py,sha256=AnaEA-MVEAhVtECl5JUMHzBQR85qO7wQfP1BiaBUGFQ,10219
+adix-0.2.4.dist-info/LICENSE.txt,sha256=T5vla5g9RbJSxbOOkl0zizDiHKEQXcifcpCgVFypE60,1067
+adix-0.2.4.dist-info/METADATA,sha256=SLt_rOxS0t-RSOHeO_PhqTPfWI4RmxV5LmOrO0vubkw,9309
+adix-0.2.4.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+adix-0.2.4.dist-info/top_level.txt,sha256=TGWHijlDLRBXcuNO_8lSgHqY9KyiUbYcR8WJA0nVy0E,5
+adix-0.2.4.dist-info/RECORD,,
