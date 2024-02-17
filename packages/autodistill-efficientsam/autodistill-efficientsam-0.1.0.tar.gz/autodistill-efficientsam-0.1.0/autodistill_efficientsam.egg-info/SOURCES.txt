@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+autodistill_efficientsam/__init__.py
+autodistill_efficientsam/efficientsam_model.py
+autodistill_efficientsam.egg-info/PKG-INFO
+autodistill_efficientsam.egg-info/SOURCES.txt
+autodistill_efficientsam.egg-info/dependency_links.txt
+autodistill_efficientsam.egg-info/requires.txt
+autodistill_efficientsam.egg-info/top_level.txt
