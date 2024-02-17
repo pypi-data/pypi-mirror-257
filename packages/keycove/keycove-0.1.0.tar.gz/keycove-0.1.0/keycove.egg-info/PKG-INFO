@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: keycove
+Version: 0.1.0
+Summary: An API key authorization library
+License-File: LICENSE
