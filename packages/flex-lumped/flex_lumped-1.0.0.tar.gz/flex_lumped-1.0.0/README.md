@@ -1,0 +1,52 @@
+# FLEX-L BMI
+
+[![PyPI](https://img.shields.io/pypi/v/FLEX-lumped)](https://pypi.org/project/FLEX-lumped/)
+
+Basic Model Interface (BMI) FLEX-lumped model intended for use with [eWaterCycle](https://github.com/eWaterCycle). See said repo for installation instructions. 
+
+FLEX-L is a lumped conceptual hydrological model. Similar to that shown in this [paper](https://hess.copernicus.org/articles/18/1895/2014/hess-18-1895-2014.pdf).
+
+Based on model is from the course ENVM1502 - river basin Hydrology (Markus Hrachowitz).
+
+[![model_layout](https://raw.githubusercontent.com/Daafip/Flex-lumped-bmi/main/images/model_layout.png)](https://github.com/Daafip/Flex-lumped-bmi/blob/main/images/model_layout.png)
+
+This current implementation is _without_ a snow reservoir. 
+
+Actual eWatercycle model wrapper can be found on [GitHub](https://github.com/Daafip/ewatercycle-flexlumped)
+
+Feel free to fork/duplicate this repo and publish your own (better) version.
+
+
+## separate use
+Can also be used as a standalone package _in theory_ - not advised:
+
+```console
+pip install FLEX-lumped
+```
+
+Then HBV becomes available as one of the eWaterCycle models
+
+```python
+from FLEX-lumped import FLEXL
+
+model = FLEXL()
+
+```
+
+Be aware of the non-intuitive [BMI](https://github.com/eWaterCycle/grpc4bmi) implementation as this package is designed to run in a [docker](https://github.com/Daafip/Flex-lumped-bmi/pkgs/container/Flex-lumped-bmi-grpc4bmi) container. 
+
+
+## Changelog
+
+### Pre v1.0.0 
+- working basic version after various [testing versions](https://test.pypi.org/project/HBV/)
+- various bug fixes etc. (last time using live as a dev branch -> bad practice)
+- added support for updating memory vector on the fly for Data assimilation.
+- bug fix in `T_lag` value: can now only be set an integer larger than 1: otherwise makes no physical sense
+- bug fix where wrong types were given, warning messages cleaned up and code attempted to be made more readable
+- pretty big issue with setting values fixed - won't affect most use but will cause issues for Data Assimilation
+- use opportunity to name all HBV packages/naming/images to 1.2.0 
+
+### v1.0.0
+
+- release

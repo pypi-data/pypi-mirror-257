@@ -1,0 +1,5 @@
+exclude Dockerfile
+exclude *.ipynb
+exclude *.txt
+exclude *.json
+exclude *.nc
