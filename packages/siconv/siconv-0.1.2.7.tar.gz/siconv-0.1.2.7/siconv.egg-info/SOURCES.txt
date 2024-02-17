@@ -1,0 +1,10 @@
+README.md
+setup.py
+siconv/__init__.py
+siconv/test.py
+siconv/to_singlish.py
+siconv/to_sinhala.py
+siconv.egg-info/PKG-INFO
+siconv.egg-info/SOURCES.txt
+siconv.egg-info/dependency_links.txt
+siconv.egg-info/top_level.txt
