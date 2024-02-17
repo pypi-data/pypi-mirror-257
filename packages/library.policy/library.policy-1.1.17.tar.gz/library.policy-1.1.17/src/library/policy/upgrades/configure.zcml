@@ -1,0 +1,64 @@
+<configure
+  xmlns="http://namespaces.zope.org/zope"
+  xmlns:genericsetup="http://namespaces.zope.org/genericsetup">
+
+  <!-- -*- extra stuff goes here -*- -->
+  <!--<genericsetup:upgradeStep
+    source="*"
+    destination="1001"
+    title="Reload GS profiles"
+    description=""
+    profile="library.policy:default"
+    handler=".upgrades.reload_gs_profile"
+    />-->
+  <genericsetup:registerProfile
+    name="upgrade_1003_to_1004"
+    title="Upgrade from 1003 to 1004"
+    directory="profiles/1003_to_1004"
+    description="Change value of Plone.thumb_scale_listing to display bigger picture in library folders views"
+    provides="Products.GenericSetup.interfaces.EXTENSION"
+  />
+
+  <genericsetup:upgradeStep
+    source="*"
+    destination="1002"
+    title="Change language"
+    description="Change objects (and root) language fr-be to fr"
+    profile="library.policy:default"
+    handler=".upgrades.change_language"
+  />
+
+  <genericsetup:upgradeStep
+    source="1002"
+    destination="1003"
+    title="reimport faceted"
+    description="Reimport faceted explorer configuration"
+    profile="library.policy:default"
+    handler=".upgrades.configure_faceted"
+  />
+
+  <genericsetup:upgradeSteps
+    source="1003"
+    destination="1004"
+    profile="library.policy:default">
+    <genericsetup:upgradeDepends
+      title="Change value of Plone.thumb_scale_listing to display bigger picture in library folders views"
+      import_profile="library.policy.upgrades:upgrade_1003_to_1004"
+    />
+  </genericsetup:upgradeSteps>
+
+  <genericsetup:upgradeSteps
+      source="1004"
+      destination="1005"
+      profile="library.policy:default">
+    <genericsetup:upgradeDepends
+        title="Install collective.plausible add-on"
+        import_profile="collective.plausible:default"
+        />
+    <genericsetup:upgradeStep
+        title="Install and configure collective.plausible add-on"
+        handler=".upgrades.upgrade_1004_to_1005"
+        />
+  </genericsetup:upgradeSteps>
+
+</configure>
