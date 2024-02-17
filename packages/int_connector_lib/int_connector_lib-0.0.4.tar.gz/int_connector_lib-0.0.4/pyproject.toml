@@ -1,0 +1,87 @@
+[tool.poetry]
+name = "int_connector_lib"
+version = "0.0.4"
+description = "Description"
+authors = []
+license = "closed"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "~3.11"
+
+grpcio = "^1.60.1"
+grpcio-health-checking = "^1.60.1"
+pydantic = "^2.6.1"
+
+[tool.poetry.group.dev.dependencies]
+# Tests
+pytest = "^8.0.0"
+pytest-cov = "^4.1.0"
+pytest-random-order = "^1.1.1"
+
+# Style
+ruff = "^0.1.2"
+pre-commit = "^3.6.1"
+
+# Tools
+grpcio-tools = "^1.60.1"
+bump2version = "^1.0.1"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "--random-order"
+
+[tool.coverage.report]
+sort = "cover"
+fail_under = 99
+show_missing = true
+skip_covered = true
+exclude_lines = [
+    "pragma: no cover",
+    "if __name__ == '__main__':",
+    "@abc.abstractmethod",
+    "if typing.TYPE_CHECKING:",
+    "typing.Annotated",
+]
+
+[tool.coverage.run]
+branch = true
+source = ["src/int_connector_lib"]
+omit = ["src/int_connector_lib/proto/*"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 120
+select = ["ALL"]
+ignore = [
+    "D100",
+    "D104",
+    "D107",
+    "ARG002",  # proto methods always pass request/context regardless of if used.
+    "TD003",  # allow TODO without links
+    "FIX002",  # allow TODO
+    "N802",  # protobufs methods do not follow python convention
+]
+
+[tool.ruff.per-file-ignores]
+"tasks.py" = ["ANN", "E501", "INP001", "S"]
+"src/int_connector_lib/proto/*" = ["ALL"]
+"tests/*" = ["ANN", "D", "S", "PLR0913", "SLF001"]
+
+[tool.ruff.format]
+line-ending = "lf"
+quote-style = "double"
+
+[tool.ruff.flake8-quotes]
+docstring-quotes = "double"
+
+[tool.ruff.isort]
+known-first-party = ["int_connector_lib"]
+
+[tool.ruff.pydocstyle]
+convention = "google"
+[tool.ruff.pep8-naming]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
