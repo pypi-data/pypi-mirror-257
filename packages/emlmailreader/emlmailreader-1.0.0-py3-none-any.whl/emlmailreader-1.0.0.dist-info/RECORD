@@ -1,0 +1,16 @@
+EMLMailReader/Content_Disposition.py,sha256=xmlhgs0ZNbV-E8X0F3irEbI3mPvKaxMxbO03LxYL4bQ,2993
+EMLMailReader/Content_Type.py,sha256=29urCNpEiL0hLS2WcsyW-McTLl19VjqoIe4tSQ0JB3w,2586
+EMLMailReader/Custom_Exceptions.py,sha256=Y1YIplDkPqlUIYBvG7GF8pEVVWilTNrMmUc_83vjquY,1772
+EMLMailReader/Enumerations.py,sha256=FMEc534koash5NVEyxQa5anyF8cuXG9dIL-mzbiVLVM,847
+EMLMailReader/Mail_Address.py,sha256=oEK0SUqPQKQ7LbxLpKetH2GruCjhWXA5QHRHbMfPcGs,2628
+EMLMailReader/Mail_Attachment.py,sha256=0Gb2GIu49Xc_qZeSOW65OSupeVG7phCXuE8LylMqrx4,2904
+EMLMailReader/Mail_Reader.py,sha256=GhPCxP-s07Jxs00MT-q6JVtx1JrhSydOSw54RpY5Jlg,13277
+EMLMailReader/Processing_Logs.py,sha256=rg8X4o_iUa09Le63Lz0X69hL7Ix-RdzwQ9bVzjyru-E,2445
+EMLMailReader/Rx_Mail_Message.py,sha256=gTtYmBwyl09jCe7QE3BqhdE3cME6UuafPekZcmB6_D8,7645
+EMLMailReader/Text_Encoding.py,sha256=eXyvIH0RckneB8gVQxUIa1Y-rlo51K_8U9XBCEV5Wa0,3073
+EMLMailReader/__init__.py,sha256=v24ot4tSEeokSVujLgjFkJZ0SuKi1cFUQhmD8V5n1A8,566
+emlmailreader-1.0.0.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+emlmailreader-1.0.0.dist-info/METADATA,sha256=-rCgVBdZoa1e0Zj3cjSNYYZbuE122KqcKCO-xR0dLPA,20743
+emlmailreader-1.0.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+emlmailreader-1.0.0.dist-info/top_level.txt,sha256=gQAhy6i7oS79zvglZVKvEycg8r3VFfsD0mKLITwKi7Y,14
+emlmailreader-1.0.0.dist-info/RECORD,,
