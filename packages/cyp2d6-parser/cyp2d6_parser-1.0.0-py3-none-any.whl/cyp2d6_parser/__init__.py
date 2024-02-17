@@ -1,0 +1,1 @@
+from cyp2d6_parser import parse_genotype, get_phenotype, get_activity_score
