@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: email-expose
+Version: 0.1.0
+Summary: 
+Author: Cristiano Henrique
+Author-email: cristianovisk@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: httpx (>=0.26.0,<0.27.0)
+Requires-Dist: lxml (>=5.1.0,<6.0.0)
+Requires-Dist: pandas (>=2.2.0,<3.0.0)
+Requires-Dist: pyarrow (>=15.0.0,<16.0.0)
+Requires-Dist: rich (>=13.7.0,<14.0.0)
+Requires-Dist: typer (>=0.9.0,<0.10.0)
+Description-Content-Type: text/markdown
+
+# EmailExpose
+
+EmailExpose é uma ferramenta de linha de comando que verifica rapidamente se uma lista de e-mails foi exposta em vazamentos online. Proteja sua privacidade e segurança digital com essa solução eficiente e fácil de usar.
+
+Os dados utilizados pela EmailExpose são retirados do site [Hotsheet](https://www.hotsheet.com/inoitsu/), uma fonte confiável de informações sobre vazamentos de dados na web.
+
+Para utilizar a EmailExpose, basta fornecer uma lista de e-mails e deixar que a ferramenta faça o resto. Mantenha-se informado sobre possíveis exposições de dados e tome medidas proativas para proteger suas informações pessoais.
+
+Exemplo de uso:
+
+```shell
+email_expose --file /home/user/EmailExpose/list_emails.txt
+```
+
