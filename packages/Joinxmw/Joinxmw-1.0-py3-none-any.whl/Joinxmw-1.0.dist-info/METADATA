@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: Joinxmw
+Version: 1.0
+Summary: Joinxmw
+Author: Hagkiest
+Author-email: hagkiest@outlook.com
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: Joinxmw
+
+This is a module that can call the programming website small code King, which can obtain the amount of user works, attention, etc., please check the official document for details
