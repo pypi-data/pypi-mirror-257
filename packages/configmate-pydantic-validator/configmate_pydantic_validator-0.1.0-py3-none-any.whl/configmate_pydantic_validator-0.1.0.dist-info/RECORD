@@ -1,0 +1,5 @@
+configmate_plugins/pydantic_validator/__init__.py,sha256=aw-Mv5Vy_BuXdeTcMc_cL7q3yH1Yxso06nSsvbaRp1E,303
+configmate_plugins/pydantic_validator/pydantic_validator.py,sha256=Qmuw2J1xhWWtQ8AUdPmD57hKsDGk2W-gH2pzTlKHfZ0,1027
+configmate_pydantic_validator-0.1.0.dist-info/METADATA,sha256=FpnEAC7Qrp_wBmkeQoQ8LdDP5PlZWYUnO5aQVuC09Jo,1944
+configmate_pydantic_validator-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+configmate_pydantic_validator-0.1.0.dist-info/RECORD,,
