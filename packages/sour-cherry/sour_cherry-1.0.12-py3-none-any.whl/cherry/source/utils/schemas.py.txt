@@ -1,0 +1,8 @@
+from pydantic import BaseModel, EmailStr
+from typing import Optional
+
+# Define your pydantic models here.
+
+class Example(BaseModel):
+    example1: str
+    example2: str

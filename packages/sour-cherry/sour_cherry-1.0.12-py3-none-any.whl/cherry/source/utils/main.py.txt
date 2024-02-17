@@ -1,0 +1,10 @@
+from fastapi import FastAPI
+from .routers import route   #replace these with the appropriate routes being imported.
+
+app = FastAPI()
+
+app.include_router(route.router) # replace with appropriate route.
+
+@app.get("/")
+async def root():
+    return {"message": "Hello World!"}

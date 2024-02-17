@@ -1,0 +1,20 @@
+from fastapi import Depends, HTTPException, status, APIRouter
+from ..db import get_db
+from sqlalchemy.orm import Session
+from .. import models, schemas, utils, config
+
+
+router = APIRouter(
+    prefix="/example",
+    tags=["Example"]
+)
+
+@router.get("/", response_model=list[schemas.ExampleReturn])
+def get_examples(db: Session = Depends(get_db)):
+    """
+    Get all the examples. 
+    """
+
+    # Define your route logic here.
+
+    return examples

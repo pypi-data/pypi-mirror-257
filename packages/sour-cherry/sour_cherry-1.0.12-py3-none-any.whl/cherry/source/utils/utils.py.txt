@@ -1,0 +1,4 @@
+# Any utility functions can be defined here example:
+
+def calculate_colume(length: int, height: int, width: int):
+    return length*width*height
