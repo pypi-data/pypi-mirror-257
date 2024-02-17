@@ -1,0 +1,7 @@
+sphinx_rtd_theme
+sphinx_autodoc_typehints
+
+typing-extensions>=4.6.0
+typing-validation>=1.1.0
+numpy >= 1.26.1
+optmanage >= 1.1.1

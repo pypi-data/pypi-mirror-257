@@ -1,0 +1,16 @@
+{
+    "Shape": "q1ss.binalg.base.Shape",
+    "Bit": "q1ss.binalg.binvec.Bit",
+    "binmat": "q1ss.binalg.binmat.binmat",
+    "MatBitIdx": "q1ss.binalg.binmat.MatBitIdx",
+    "MatSubvecIdx": "q1ss.binalg.binmat.MatSubvecIdx",
+    "MatSubmatIdx": "q1ss.binalg.binmat.MatSubmatIdx",
+    "HypercubeAxes": "q1ss.binalg.affine.HypercubeAxes",
+    "UInt8Vec": "q1ss.binalg.vectorized.UInt8Vec",
+    "BinVec": "q1ss.binalg.vectorized.BinVec",
+    "BinMat": "q1ss.binalg.vectorized.BinMat",
+    "BinVecOrMat": "q1ss.binalg.vectorized.BinVecOrMat",
+    "BinTensor": "q1ss.binalg.vectorized.BinTensor",
+    "IntVec": "q1ss.binalg.vectorized.IntVec",
+    "ExplicitAP": "q1ss.ap.explicit.ExplicitAP"
+}

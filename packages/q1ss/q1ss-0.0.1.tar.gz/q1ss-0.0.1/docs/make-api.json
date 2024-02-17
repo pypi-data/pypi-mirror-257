@@ -1,0 +1,34 @@
+{
+    "pkg_name": "q1ss",
+    "pkg_path": "..",
+    "apidocs_folder": "api",
+    "toc_filename": "api-toc.rst",
+    "type_alias_dict_filename": "autodoc-type-aliases.json",
+    "include_members": {},
+    "type_aliases": {
+        "q1ss.binalg.base": ["Shape"],
+        "q1ss.binalg.binvec": ["Bit"],
+        "q1ss.binalg.binmat": [
+            "binmat",
+            "MatBitIdx", "MatSubvecIdx", "MatSubmatIdx"
+        ],
+        "q1ss.binalg.affine": ["HypercubeAxes"],
+        "q1ss.binalg.vectorized": [
+            "UInt8Vec",
+            "BinVec",
+            "BinMat",
+            "BinVecOrMat",
+            "BinTensor",
+            "IntVec"
+        ],
+        "q1ss.ap.explicit": ["ExplicitAP"]
+    },
+    "exclude_members": {
+        "q1ss.binalg.binvec": ["TYPE_CHECKING"],
+        "q1ss.ap.base": ["TYPE_CHECKING"]
+    },
+    "include_modules": [],
+    "exclude_modules": [],
+    "member_fullnames": {},
+    "special_class_members": {}
+}
