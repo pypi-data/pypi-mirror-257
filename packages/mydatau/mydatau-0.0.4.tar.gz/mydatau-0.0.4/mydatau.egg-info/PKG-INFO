@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: mydatau
+Version: 0.0.4
+Summary: Expandable module of statistical data utilities
+Home-page: https://github.com/econcz/mydatau
+Download-URL: https://github.com/econcz/mydatau/archive/pypi-0_0_4.tar.gz
+Author: econcz
+Author-email: 29724411+econcz@users.noreply.github.com
+License: MIT
+Keywords: statistical data,utilities,Jupyter,R,Stata,Julia,GAMS,AMPL,Octave,Matlab
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
+Requires-Dist: stata-kernel
+Requires-Dist: r2py
+Requires-Dist: oct2py
+
+# Expandable module of statistical data utilities
+
+## Requirements:  
+- **Jupyter Notebook**, **R**, **Stata**, **Julia**, **GAMS**, **AMPL**, and **Octave/Matlab** (at least some of
+the mentioned)
+- installed **stata-kernel**, **r2py**, and **oct2py** from PyPi
+- **julia**, **gams**, and **ampl** in PATH
+
+## Functions:
+`autorun(path_data='...', pattern='...')`  
+
+Cross-platform .ipynb, .R, .do, .jl, .gms, .run, and .m file **batch runner**.

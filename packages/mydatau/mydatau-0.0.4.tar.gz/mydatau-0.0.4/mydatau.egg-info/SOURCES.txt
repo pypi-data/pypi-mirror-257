@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+mydatau/__init__.py
+mydatau/mydatau.py
+mydatau.egg-info/PKG-INFO
+mydatau.egg-info/SOURCES.txt
+mydatau.egg-info/dependency_links.txt
+mydatau.egg-info/requires.txt
+mydatau.egg-info/top_level.txt
