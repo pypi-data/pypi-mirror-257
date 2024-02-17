@@ -1,0 +1,10 @@
+approck_services/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+approck_services/base.py,sha256=U8VxBgkPO51I_tzJ4NadnDApKndjKY6ly6dg9Z3v0VI,28
+approck_services/fastapi.py,sha256=7aDt1djksfg73lcH9oyivCQ2QElkrtB0qyT2sqWEVHQ,367
+approck_services/integrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+approck_services/integrations/term.py,sha256=ZZV1TSfiLwmhvzdhvUcDN3tUp62hMjvuM6b3AC3aznw,3230
+approck_services/integrations/upload.py,sha256=K7Psmq2if8IOYdP5nqB9dTLnVO99SpFXALJ9KOpsvJs,1216
+approck_services/sqlalchemy.py,sha256=p7f2kSALHvg_qV0W7gMeakY7CZ_OQMeKGxb_vDgg1Y4,3318
+approck_services-0.1.0.dist-info/METADATA,sha256=es4Bmb3JZzx_u2-sHK2nlLU5rx4J8Btj_WVj3MDVPsc,877
+approck_services-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+approck_services-0.1.0.dist-info/RECORD,,
