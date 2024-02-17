@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: key_craftsman
+Version: 1.0.0
+Summary: A versatile key generation utility designed for generating secure keys with customizable features.
+Home-page: https://github.com/yousefabuz17/KeyCraftsman
+Download-URL: https://github.com/yousefabuz17/KeyCraftsman.git
+Author: Yousef Abuzahrieh
+Author-email: yousefzahrieh17@gmail.com
+License: Apache Software License
+Platform: Windows
+Platform: Linux
+Platform: MacOS
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
