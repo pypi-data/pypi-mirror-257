@@ -1,0 +1,10 @@
+clingcon-5.2.1.post1.dist-info/WHEEL,sha256=lZp-5V164V7cqXbr4SjV-1_FbRKugqWzNgSb_8dE3X0,158
+clingcon-5.2.1.post1.dist-info/METADATA,sha256=QLj18r_KHvCGeRiurcZXbssy25V1CBuPrItDMzzEReE,542
+clingcon-5.2.1.post1.dist-info/LICENSE.md,sha256=jeAcSPCt8knNYx5zIPv08VtvXCXdsYzfFBDJXJ8MRF0,1080
+clingcon-5.2.1.post1.dist-info/top_level.txt,sha256=1OHIz7uELjvCtuJtUSnZEBIp5diK-t1nMxXeVL7NCpE,9
+clingcon-5.2.1.post1.dist-info/RECORD,,
+clingcon/clingcon.h,sha256=W5DSuZkBcEWMIlDJftNCwV-tspbcdP5u47ijE9qa1Rk,6791
+clingcon/_clingcon.pypy38-pp73-aarch64-linux-gnu.so,sha256=UHAfQsc7mq2gghrVbzsrCJYCpK53l7IfpGZqoJOfhg0,596512
+clingcon/__init__.py,sha256=RA-T_9iJB9-GwlhKJX3LNRfIhmVDnEAc1HTOZlCXylM,345
+clingcon/__main__.py,sha256=pZ8COhDYOSytj5lpHLENds-n7MA2RAzVEhlr4StXFTA,3298
+clingcon/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
