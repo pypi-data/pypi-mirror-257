@@ -1,0 +1,9 @@
+README.md
+setup.py
+helpfulReviewPredictor/__init__.py
+helpfulReviewPredictor/predictor.py
+helpful_review_predictor.egg-info/PKG-INFO
+helpful_review_predictor.egg-info/SOURCES.txt
+helpful_review_predictor.egg-info/dependency_links.txt
+helpful_review_predictor.egg-info/requires.txt
+helpful_review_predictor.egg-info/top_level.txt
