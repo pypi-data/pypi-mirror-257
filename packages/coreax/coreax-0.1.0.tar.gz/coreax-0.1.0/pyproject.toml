@@ -1,0 +1,96 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "coreax"
+dynamic = ["version"]
+description = "Jax coreset algorithms."
+readme = "README.md"
+requires-python = ">=3.9"
+keywords = [
+    "coreset",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Typing :: Typed",
+]
+license = {file = "LICENSE"}
+authors = [
+    {name = "GCHQ", email = "oss@gchq.gov.uk"},
+]
+dependencies = [
+    "flax",
+    "jax",
+    "jaxopt",
+    "optax",
+    "scikit-learn",
+    "tqdm",
+    "typing-extensions",
+]
+
+[project.optional-dependencies]
+# Run unit tests with coverage assessment
+test = [
+    "imageio",
+    "matplotlib",
+    "numpy",
+    "opencv-python",
+    "pyqt5",
+    "pytest-cov",
+    "scipy",
+]
+# Compile documentation
+doc = [
+    "coreax[test]",
+    "furo",
+    "myst-parser",
+    "sphinx",
+    "sphinx-autodoc-typehints",
+    "sphinxcontrib-bibtex",
+]
+# All tools for a developer including those for running pylint
+dev = [
+    "coreax[doc, test]",
+    "black",
+    "isort",
+    "pre-commit",
+    "pydocstyle",
+    "pylint",
+    "pyroma",
+]
+
+[project.urls]
+Documentation = "https://coreax.readthedocs.io/en/latest/"
+Repository = "https://github.com/gchq/coreax"
+Issues = "https://github.com/gchq/coreax/issues"
+Changelog = "https://github.com/gchq/coreax/blob/main/CHANGELOG.md"
+
+[tool.isort]
+known_first_party = ["coreax", "examples"]
+profile = "black"
+
+[tool.setuptools]
+packages = ["coreax"]
+
+[tool.setuptools.dynamic]
+version = {attr = "coreax.__version__"}
+
+[tool.coverage.run]
+command_line = "-m pytest tests/unit --cov"
+branch = true
+relative_files = true
+source = ["coreax"]
+
+[tool.coverage.report]
+show_missing = true
+sort = "Cover"
+exclude_lines = [
+    "pass",
+    "raise RuntimeError",
+    "if TYPE_CHECKING:",
+]
