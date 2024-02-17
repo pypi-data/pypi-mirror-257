@@ -1,0 +1,11 @@
+[Unit]
+Description=Service to export S.M.A.R.T. and partition data as Prometheus metrics
+Documentation=https://github.com/pbogre/prometheus-disk-exporter
+
+[Service]
+ExecStart=/opt/prometheus-disk-exporter/bin/prometheus_disk_exporter
+Restart=always
+User=prometheus
+
+[Install]
+WantedBy=multi-user.target
