@@ -1,0 +1,9 @@
+name: vhip_light
+channels:
+    - https://conda.anaconda.org/conda-forge
+dependencies:
+    - cvxpy
+    - ipython
+    - matplotlib
+    - qpsolvers
+    - scipy
