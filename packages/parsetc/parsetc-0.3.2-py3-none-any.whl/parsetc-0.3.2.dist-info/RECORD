@@ -1,0 +1,13 @@
+parsetc/__init__.py,sha256=vNiWJ14r_cw5t_7UDqDQIVZvladKFGyHH2avsLpN7Vg,22
+parsetc/common.lark,sha256=waggrSRKib3CdMzl3ckAVGPACDOFOqsSaESdqXH7lwk,2070
+parsetc/extends.json,sha256=VCCCIksEZEZFsQ1T0yC7Oh5r-EWOZ3-_GeF6Mer5OOI,353
+parsetc/mergers.json,sha256=5p1EvlOIsHp3RSslvuTuuWpqhMfYdez84ZOwwEj7Swc,534
+parsetc/parsetc.py,sha256=To-vv6AnG-F11tLbBmF-Neq2LDx6lhyezKycuXC7O0o,10228
+parsetc/terminals.json,sha256=B0K4gcYUM47Vk75mvPwGfaZbbfQNA_yjb0DGLOtweMo,5379
+parsetc/translit.py,sha256=bvk3wvMU81Q4LnC6yJlTaq_2hDm6IIgGMGq2rptgXiQ,17217
+parsetc-0.3.2.dist-info/LICENSE,sha256=DrAkXMJn2Isl6DmqZqc-DSLZt9stvzc6ItxOp1x5gCA,1100
+parsetc-0.3.2.dist-info/METADATA,sha256=elqk48GquI3EHgGN_YVJvw6RrVq_UZicoDHLQjm9w8E,6062
+parsetc-0.3.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+parsetc-0.3.2.dist-info/entry_points.txt,sha256=8ae916LiF2qEcZIZDAaKacUBw4wBGF7_sumSAknwYN8,49
+parsetc-0.3.2.dist-info/top_level.txt,sha256=tRg3lsiV6sI4d2xdys5me1IhLWXteHRGKfYOuvikePo,8
+parsetc-0.3.2.dist-info/RECORD,,
