@@ -1,0 +1,17 @@
+Sports2D/Sports2D.py,sha256=qUp3kSCAxfIJjC8xXm88A2MaJXnWqcap1EQL-ctpuiE,8370
+Sports2D/__init__.py,sha256=8RotP0-RGl7BSLqfuxTa7XZ2Vt0D-bjMwRROBYAxyno,103
+Sports2D/compute_angles.py,sha256=J44YaTVF99IRtV-FqxFY0pdpgwwx3gGYrIRMJsPF584,22590
+Sports2D/detect_pose.py,sha256=ZyxQdPqE8a2WwxBgNc99_5t9Qh8gQh7acc1coqQF1ag,24337
+Sports2D/Demo/Config_demo.toml,sha256=Q2oSmsGrNwURmUT6xXPQm5BOCMJ81NELhimFpluid6E,3274
+Sports2D/Demo/demo.mp4,sha256=Ig_WCI5M-ltWRqxKCUI5YtZMDbiBPoGmnyS8JKmOLts,2539508
+Sports2D/Utilities/Blazepose_runsave.py,sha256=7qY-vivR8lfiwaXRaXc2uMQykJ8lRsjAJziqUgUokcg,11033
+Sports2D/Utilities/__init__.py,sha256=PWi66FMPz5vZ-7gsTvpTZhQODRM1qaGhhuL5l43nmoQ,102
+Sports2D/Utilities/common.py,sha256=DkLJ-ABTPvqligJXnZcoC4DnJuMOEuJz3dJoYxiue_Q,4379
+Sports2D/Utilities/filter.py,sha256=V1pahxZPVzccYp5pz4FZzFqqYDxkfPwaIPpfzRS6kNg,4914
+Sports2D/Utilities/skeletons.py,sha256=7BM8NgB_iRuZT15M2vkANs9Cu5HNrtgMYY-oK955wQQ,15306
+Sports2D/Utilities/test_with_blazepose.py,sha256=D_UAAPgp7WttR66zxcY6wG2j6GC5gcjtjb3XKtxTAew,268
+sports2d-0.3.2.dist-info/LICENSE,sha256=f4qe3nE0Y7ltJho5w-xAR0jI5PUox5Xl-MsYiY7ZRM8,1521
+sports2d-0.3.2.dist-info/METADATA,sha256=rLpXmysOW7r90b2gdh59DaspgxQvzwWKHHi8iP9bi3Y,17345
+sports2d-0.3.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+sports2d-0.3.2.dist-info/top_level.txt,sha256=DoURf9UDB8lQ_9lMUPQMQqhXCvWPFFjJco9NzPlHJ6I,9
+sports2d-0.3.2.dist-info/RECORD,,
