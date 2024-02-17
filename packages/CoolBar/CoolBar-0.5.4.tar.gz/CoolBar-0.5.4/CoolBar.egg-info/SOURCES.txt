@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+CoolBar.egg-info/PKG-INFO
+CoolBar.egg-info/SOURCES.txt
+CoolBar.egg-info/dependency_links.txt
+CoolBar.egg-info/top_level.txt
