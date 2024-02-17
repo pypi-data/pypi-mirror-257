@@ -1,0 +1,218 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-16 10:08-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: zut/django/celery/views.py:32
+msgid "Celery is not working."
+msgstr "Celery ne fonctionne pas."
+
+#: zut/django/celery/views.py:36 zut/django/celery/views.py:40
+#, python-format
+msgid "Missing: %s."
+msgstr "Manquant : %s."
+
+#: zut/django/celery/views.py:45
+msgid "Termination request sent."
+msgstr "Requête d'interruption envoyée."
+
+#: zut/django/celery/views.py:50
+msgid "Revocation request sent."
+msgstr "Requête de révocation envoyée."
+
+#: zut/django/celery/views.py:54
+msgid "Forget request sent."
+msgstr "Requête d'oubli envoyée."
+
+#: zut/django/celery/views.py:57
+#, python-format
+msgid "Invalid action: %s."
+msgstr "Action invalide : %s."
+
+#: zut/django/celery/views.py:76
+#, python-format
+msgid "Created task %s."
+msgstr "Tâche %s créée."
+
+#: zut/django/templates/zut/_lang.html:6
+msgid "Language"
+msgstr "Langue"
+
+#: zut/django/templates/zut/_lang.html:6 zut/django/templates/zut/login.html:29
+msgid ":"
+msgstr " :"
+
+#: zut/django/templates/zut/_messages.html:4
+msgid "Close all"
+msgstr "Fermer tout "
+
+#: zut/django/templates/zut/celery_task_detail.html:4
+#: zut/django/templates/zut/celery_task_detail.html:7
+msgid "Task"
+msgstr "Tâche"
+
+#: zut/django/templates/zut/celery_task_detail.html:11
+msgid "View all tasks"
+msgstr "Voir toutes les tâches"
+
+#: zut/django/templates/zut/celery_task_detail.html:16
+#: zut/django/templates/zut/celery_task_list.html:33
+msgid "Id"
+msgstr "Id"
+
+#: zut/django/templates/zut/celery_task_detail.html:19
+#: zut/django/templates/zut/celery_task_list.html:34
+#: zut/django/templates/zut/celery_task_list.html:54
+#: zut/django/templates/zut/celery_task_list.html:55
+msgid "Name"
+msgstr "Nom"
+
+#: zut/django/templates/zut/celery_task_detail.html:22
+#: zut/django/templates/zut/celery_task_list.html:35
+msgid "Params"
+msgstr "Paramètres"
+
+#: zut/django/templates/zut/celery_task_detail.html:25
+#: zut/django/templates/zut/celery_task_list.html:36
+msgid "Worker"
+msgstr "Worker"
+
+#: zut/django/templates/zut/celery_task_detail.html:28
+#: zut/django/templates/zut/celery_task_list.html:37
+msgid "State"
+msgstr "Etat"
+
+#: zut/django/templates/zut/celery_task_detail.html:31
+#: zut/django/templates/zut/celery_task_list.html:38
+msgid "Progress"
+msgstr "Progression"
+
+#: zut/django/templates/zut/celery_task_detail.html:34
+#: zut/django/templates/zut/celery_task_list.html:39
+msgid "Details"
+msgstr "Détails"
+
+#: zut/django/templates/zut/celery_task_detail.html:37
+#: zut/django/templates/zut/celery_task_list.html:40
+msgid "Start"
+msgstr "Début"
+
+#: zut/django/templates/zut/celery_task_detail.html:40
+#: zut/django/templates/zut/celery_task_list.html:41
+msgid "End"
+msgstr "Fin"
+
+#: zut/django/templates/zut/celery_task_detail.html:43
+#: zut/django/templates/zut/celery_task_list.html:42
+msgid "Duration"
+msgstr "Durée"
+
+#: zut/django/templates/zut/celery_task_list.html:4
+#: zut/django/templates/zut/celery_task_list.html:7
+msgid "Tasks"
+msgstr "Tâches"
+
+#: zut/django/templates/zut/celery_task_list.html:14
+#: zut/django/templates/zut/celery_task_list.html:16
+msgid "Action"
+msgstr "Action"
+
+#: zut/django/templates/zut/celery_task_list.html:17
+msgid "Terminate selected tasks"
+msgstr "Interrompre les tâches selectionnées"
+
+#: zut/django/templates/zut/celery_task_list.html:18
+msgid "Revokate selected tasks"
+msgstr "Révoquer les tâches selectionnées"
+
+#: zut/django/templates/zut/celery_task_list.html:19
+msgid "Forget selected tasks"
+msgstr "Oublier les tâches selectionnées"
+
+#: zut/django/templates/zut/celery_task_list.html:24
+msgid "Submit"
+msgstr "Soumettre"
+
+#: zut/django/templates/zut/celery_task_list.html:48
+msgid "Launch a task"
+msgstr "Lancer une tâche"
+
+#: zut/django/templates/zut/celery_task_list.html:64
+#: zut/django/templates/zut/celery_task_list.html:65
+msgid "Arguments"
+msgstr "Arguments"
+
+#: zut/django/templates/zut/celery_task_list.html:69
+#: zut/django/templates/zut/celery_task_list.html:70
+msgid "Delay"
+msgstr "Délai"
+
+#: zut/django/templates/zut/celery_task_list.html:74
+msgid "Launch"
+msgstr "Lancer"
+
+#: zut/django/templates/zut/index.html:3
+#: zut/django/templates/zut/layout.html:28
+#: zut/django/templates/zut/layout.html:31
+msgid "Home"
+msgstr "Accueil"
+
+#: zut/django/templates/zut/index.html:7
+msgid "Welcome"
+msgstr "Bienvenue"
+
+#: zut/django/templates/zut/layout.html:45
+msgid "Administration panel"
+msgstr "Panneau d'administration"
+
+#: zut/django/templates/zut/layout.html:49
+msgid "Log out"
+msgstr "Déconnexion"
+
+#: zut/django/templates/zut/layout.html:53
+#: zut/django/templates/zut/login.html:4 zut/django/templates/zut/login.html:7
+#: zut/django/templates/zut/login.html:37
+msgid "Log in"
+msgstr "Connexion"
+
+#: zut/django/templates/zut/logged_out.html:4
+#: zut/django/templates/zut/logged_out.html:7
+msgid "Logged out"
+msgstr "Déconnecté"
+
+#: zut/django/templates/zut/logged_out.html:9
+msgid "You have been logged out of the web site."
+msgstr "Vous avez été déconnecté du site."
+
+#: zut/django/templates/zut/logged_out.html:11
+msgid "Log in again"
+msgstr "Se connecter à nouveau"
+
+#: zut/django/templates/zut/login.html:12
+#, python-format
+msgid ""
+"You are logged in as <b>%(username)s</b>, but you are not authorized to "
+"access this page. Do you want to log in as another user?"
+msgstr ""
+"Vous êtes connecté en tant que <b>%(username)s</b>, mais vous n’êtes pas "
+"autorisé à accéder à cette page. Souhaitez-vous vous connecter avec un autre "
+"compte utilisateur ?"
+
+#: zut/django/templates/zut/login.html:16
+msgid "You must log in to access this page."
+msgstr "Vous devez vous connecter pour acceder à cette page."

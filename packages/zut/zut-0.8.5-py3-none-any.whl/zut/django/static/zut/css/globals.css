@@ -1,0 +1,14 @@
+#messages.fixed-messages {
+    /* Applied automatically if scrolling above a given height (75px by default). */
+    position: fixed;
+    z-index: 1000;
+    top: 10.5px;
+    left: 10.5px;
+    right: 10.5px;
+}
+
+#messages-close-all {
+    text-align: right;
+    font-size: 90%;
+    padding-bottom: 5px;
+}

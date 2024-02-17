@@ -1,0 +1,65 @@
+{% extends 'zut/layout.html' %}
+{% load zut_tags i18n %}
+
+{% block title %}{{ _("Log in") }}{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-6" id="login-col1">
+        <h1 class="mb-3">{{ _("Log in") }}</h1>
+
+        {% if next and request.method == 'GET' %}
+            {% if user.is_authenticated %}
+            <div class="alert alert-warning">
+                {% blocktrans with username=request.user.username %}You are logged in as <b>{{ username }}</b>, but you are not authorized to access this page. Do you want to log in as another user?{% endblocktrans %}
+            </div>
+            {% else %}
+            <div class="alert alert-warning">
+                {{ _("You must log in to access this page.") }}
+            </div>
+            {% endif %}
+        {% endif %}
+
+        <form action="{% url 'zut:login' %}" method="post">
+            {% csrf_token %}
+
+            <input type="hidden" name="next" value="{% if next != '/logout' %}{{ next }}{% endif %}" />
+
+            {% if form.non_field_errors %}
+            <div class="alert alert-danger" role="alert">
+                {% for error in form.non_field_errors %}
+                {% if not forloop.first %}<br />{% endif %}{{ error }}
+                {% endfor %}
+            </div>
+            {% endif %}
+
+            {% for field in form %}
+            <div class="row mb-3">
+                <label for="{{ field.auto_id }}" class="col-sm-5 col-form-label">{{ field.label }}{{ _(":") }}</label>
+                <div class="col-sm-7 ">
+                {% if field.errors %}            
+                    {{ field | field_attr:'form-control is-invalid' }}
+                    <div class="invalid-feedback">
+                        {% for error in field.errors %}
+                        {% if not forloop.first %}<br />{% endif %}{{ error }}
+                        {% endfor %}        
+                    </div>
+                {% else %}
+                    {{ field | field_attr:'form-control' }}
+                {% endif %}
+                </div>
+            </div>
+            {% endfor %}
+
+            <div class="row mb-3">
+                <div class="col-sm-5"></div>
+                <div class="col-sm-7">
+                    <button type="submit" class="btn btn-primary">{{ _("Log in") }}</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="col-md-6" id="login-col2">
+    </div>
+</div>
+{% endblock %}

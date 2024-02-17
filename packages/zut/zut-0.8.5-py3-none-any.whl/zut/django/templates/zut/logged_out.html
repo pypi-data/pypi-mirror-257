@@ -1,0 +1,12 @@
+{% extends 'zut/layout.html' %}
+{% load i18n %}
+
+{% block title %}{{ _("Logged out") }}{% endblock %}
+
+{% block content %}
+<h1>{{ _("Logged out") }}</h1>
+
+<p>{{ _("You have been logged out of the web site.") }}</p>
+
+<p><a href="{% url 'zut:login' %}">{{ _("Log in again") }}</a></p>
+{% endblock %}

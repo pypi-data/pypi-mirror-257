@@ -1,0 +1,14 @@
+{% load i18n %}
+
+<div id="messages">
+    <div id="messages-close-all" class="d-none"><a href="#">{{ _("Close all") }}</a></div>
+
+    <div id="messages-content">
+    {% for message in messages %}
+    <div class="alert alert-{% if message.level == DEFAULT_MESSAGE_LEVELS.ERROR %}danger{% elif message.level == DEFAULT_MESSAGE_LEVELS.WARNING %}warning{% elif message.level == DEFAULT_MESSAGE_LEVELS.SUCCESS %}success{% elif message.level == DEFAULT_MESSAGE_LEVELS.INFO %}info{% elif message.level == DEFAULT_MESSAGE_LEVELS.DEBUG %}secondary{% else %}primary{% endif %} alert-dismissible fade show" role="alert">
+        {{ message }}
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+    {% endfor %}
+    </div>
+</div>

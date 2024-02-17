@@ -1,0 +1,50 @@
+{% extends 'zut/layout.html' %}
+{% load zut_tags i18n static %}
+
+{% block title %}{{ _("Task") }} {{ object.id }}{% endblock %}
+
+{% block content %}
+<h1>{{ _("Task") }} {{ object.id }}</h1>
+
+<p>
+    {% if request.user.is_superuser %}
+    <a href="{% url 'zut:celery_task_list' %}"><i class="bi-list"></i> {{ _("View all tasks") }}</a>
+    {% endif %}
+</p>
+
+<dl class="row" id="task-detail" data-task-id="{{ object.id }}">
+    <dt class="col-sm-3">{{ _("Id") }}</dt>
+    <dd class="col-sm-9" data-field="id">{{ object.id }}</dd>
+    
+    <dt class="col-sm-3">{{ _("Name") }}</dt>
+    <dd class="col-sm-9" data-field="name"></dd>
+    
+    <dt class="col-sm-3">{{ _("Params") }}</dt>
+    <dd class="col-sm-9" data-field="params"></dd>
+    
+    <dt class="col-sm-3">{{ _("Worker") }}</dt>
+    <dd class="col-sm-9" data-field="worker"></dd>
+    
+    <dt class="col-sm-3">{{ _("State") }}</dt>
+    <dd class="col-sm-9" data-field="state"></dd>
+    
+    <dt class="col-sm-3">{{ _("Progress") }}</dt>
+    <dd class="col-sm-9" data-field="progress"></dd>
+    
+    <dt class="col-sm-3">{{ _("Details") }}</dt>
+    <dd class="col-sm-9" data-field="details"></dd>
+    
+    <dt class="col-sm-3">{{ _("Start") }}</dt>
+    <dd class="col-sm-9" data-field="start"></dd>
+    
+    <dt class="col-sm-3">{{ _("End") }}</dt>
+    <dd class="col-sm-9" data-field="end"></dd>
+    
+    <dt class="col-sm-3">{{ _("Duration") }}</dt>
+    <dd class="col-sm-9" data-field="duration"></dd>
+</dl>
+{% endblock %}
+
+{% block script %}
+{% script_min '{page}' %}
+{% endblock %}
