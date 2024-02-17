@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+example_pkg_RGB2BGR.egg-info/PKG-INFO
+example_pkg_RGB2BGR.egg-info/SOURCES.txt
+example_pkg_RGB2BGR.egg-info/dependency_links.txt
+example_pkg_RGB2BGR.egg-info/top_level.txt
