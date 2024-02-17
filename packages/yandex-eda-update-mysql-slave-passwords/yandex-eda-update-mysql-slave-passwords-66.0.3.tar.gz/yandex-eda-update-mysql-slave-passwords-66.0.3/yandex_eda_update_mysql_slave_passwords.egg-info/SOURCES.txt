@@ -1,0 +1,6 @@
+README.md
+setup.py
+yandex_eda_update_mysql_slave_passwords.egg-info/PKG-INFO
+yandex_eda_update_mysql_slave_passwords.egg-info/SOURCES.txt
+yandex_eda_update_mysql_slave_passwords.egg-info/dependency_links.txt
+yandex_eda_update_mysql_slave_passwords.egg-info/top_level.txt
