@@ -1,0 +1,8 @@
+mb/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mb/__main__.py,sha256=0s3HYmUcKLMG1UTphLzzY1p7OZ3jrBFNEBy3kWlV5po,187
+mb/commands/jobs.py,sha256=apOMRJ5thLTEMqUSEi9A1mj5uxDz38Rwt1n01gE3aCY,665
+mb/commands/robots.py,sha256=wwIlD3Zgyswv-V_GS0-6NFW0g5LnCErsZaLRAD6TBm8,654
+mb/settings.py,sha256=fxJcfRoKVptQFQ9IXhjAbmUzDhqtFrIOzlP9O_4ljMY,364
+mb_cli-0.1.1.dist-info/METADATA,sha256=1jNaWA5wBIZTQI9d1VpVsDNnE5mjAlHE4rPCLQ7ebVg,755
+mb_cli-0.1.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+mb_cli-0.1.1.dist-info/RECORD,,
