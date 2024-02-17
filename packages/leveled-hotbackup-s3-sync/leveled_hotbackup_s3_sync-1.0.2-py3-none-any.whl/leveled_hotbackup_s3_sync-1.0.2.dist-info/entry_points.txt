@@ -1,0 +1,4 @@
+[console_scripts]
+s3retrieve=leveled_hotbackup_s3_sync.retrieve:console_command
+s3sync=leveled_hotbackup_s3_sync.app:console_command
+
