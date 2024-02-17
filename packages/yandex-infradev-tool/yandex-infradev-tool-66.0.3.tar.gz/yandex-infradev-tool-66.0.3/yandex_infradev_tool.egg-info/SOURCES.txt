@@ -1,0 +1,6 @@
+README.md
+setup.py
+yandex_infradev_tool.egg-info/PKG-INFO
+yandex_infradev_tool.egg-info/SOURCES.txt
+yandex_infradev_tool.egg-info/dependency_links.txt
+yandex_infradev_tool.egg-info/top_level.txt
