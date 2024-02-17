@@ -1,0 +1,7 @@
+
+[error.prop]
+type = "{0} default value has incorrect type {1}"
+set = "{0} attempted to set value {1} which doesn't match property type {2}"
+
+[error.model]
+schema = "Schema definition is not possible to be created for Model {0}"
