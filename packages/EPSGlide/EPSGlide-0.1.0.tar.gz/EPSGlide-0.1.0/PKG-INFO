@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: EPSGlide
+Version: 0.1.0
+Summary: Efficient great circle computation and projection library with access to EPSG dataset public API
+Home-page: https://github.com/Moustikitos/python-epsg
+Author: Bruno THOORENS
+Author-email: moustikitos@gmail.com
+Maintainer: Bruno THOORENS
+Maintainer-email: moustikitos@gmail.com
+License: Copyright 2024, THOORENS Bruno, BSD licence
+Keywords: epsg,projection,great,circle,geohash,georef,GARS,maidenhead,dataset
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: C
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: GIS
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+
+# Python `epsglide` package
+
+This package aims to perform simple requests to [`EPSG Registry API`](https://apps.epsg.org/api/swagger/ui/index) and provides associated geodesic computation and map projection.
+
+## EPSG dataset requests and projection
+
+```python
+>>> import math, epsglide
+>>> crs = epsglide.ProjectedCoordRefSystem(26730)
+>>> crs
+<ProjectedCoordRefSystem #26730: NAD27 / Alabama West>
+>>> point = epsglide.Geodesic(math.degrees(crs.lambda0), math.degrees(crs.phi0))
+>>> crs(point)
+<US survey foot:3.281[X=152400.305 Y=0.000] alt=0.000>
+>>> crs(crs(point))
+<lon=-087Â°18'0.00000" lat=+030Â°00'0.00000" alt=0.0>
+```
+
+## Great circle computation
+
+```python
+>>> wgs84 = epsglide.dataset.Ellipsoid(7030)
+>>> dublin = epsglide.Geodesic(-6.272877, 53.344606, 105.)
+>>> london = epsglide.Geodesic(-0.127005, 51.518602, 0.)
+>>> dist = wgs84.distance(dublin, london) 
+>>> dist
+<464.572km initial bearing=113.5Â° final bearing118.3Â°>
+>>> wgs84.destination(dublin, dist) 
+<lon=-000Â°07'37.21798" lat=+051Â°31'6.96719" end bearing=118.3Â°>
+>>> london
+<lon=-000Â°07'37.21800" lat=+051Â°31'6.96720" alt=0.0>
+```
