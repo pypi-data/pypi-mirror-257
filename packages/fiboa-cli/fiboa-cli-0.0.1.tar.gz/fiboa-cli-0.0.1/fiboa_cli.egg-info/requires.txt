@@ -1,0 +1,6 @@
+jsonschema>=4.4
+pyyaml>=5.1
+pyarrow>=7.0
+fsspec>=2022.3
+click>=8.1
+geopandas>=0.14.1
