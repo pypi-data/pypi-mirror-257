@@ -1,0 +1,13 @@
+cyp2d6_parser/__init__.py,sha256=NrFvkwf3_9cXgFQkW_aNK5Jycx0p8dH-G5sJXM0sB2s,76
+cyp2d6_parser/__main__.py,sha256=U6vVAf-XjFWDandcTnwGVxWHZMHNbblC17ukqkEM-XY,1412
+cyp2d6_parser/allele_fxn.csv,sha256=DpaMGKBG36xLIkNibJhjSzu3_5xwmxwPzofXMoXfkpA,1595
+cyp2d6_parser/common.py,sha256=2JpbrKbfx_vu-DbRqFjoH_8cx1ztESLFbylBWCpy-GI,197
+cyp2d6_parser/cyp2d6_parser.py,sha256=x5XVr4zo1nWVM93TvNiLqCq7ava74YzIQUoZJLNhw7w,2983
+cyp2d6_parser/genotype.py,sha256=q1JA_UGWeUpo5IIvxEeN7e3x-udbRgG8OdSJx2ip1oQ,18176
+cyp2d6_parser/parser.py,sha256=x5XVr4zo1nWVM93TvNiLqCq7ava74YzIQUoZJLNhw7w,2983
+cyp2d6_parser/utils.py,sha256=Ulq37Yd0De8P7RsBWrx-MNsgNCVs5AY7atmopAn4GSU,5971
+cyp2d6_parser-0.0.1.dist-info/METADATA,sha256=Gu0tOfog1NYX0FhqLnLPzHW0Mn0P8dVTniJIpN2PKrA,244
+cyp2d6_parser-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+cyp2d6_parser-0.0.1.dist-info/entry_points.txt,sha256=UHdBq-yum_kBQkSd88_Bzdgm7oFf6X95_7TxzRIv-bM,63
+cyp2d6_parser-0.0.1.dist-info/top_level.txt,sha256=g20XumG1lnxz-yDr9NvR9_f28PepAcQ-qZ79Y-afuww,14
+cyp2d6_parser-0.0.1.dist-info/RECORD,,
