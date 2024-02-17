@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: w3tm
+Version: 1.0.9
+Summary: W3TM command line tool
+Author: alexzshl
+Author-email: alexzshl@126.com
+License-File: LICENSE
+Requires-Dist: pillow~=10.2.0
+Requires-Dist: argparse~=1.4.0
