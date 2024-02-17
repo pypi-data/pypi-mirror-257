@@ -1,0 +1,6 @@
+signalflow
+signalflow-stubs
+signalflow_analysis
+signalflow_examples
+signalflow_midi
+signalflow_visualisation
