@@ -1,0 +1,9 @@
+gemini/__init__.py,sha256=QdY6QpEivwzeRVshHSw_tOpHfM4jdGhpv7SjEwX1g4Y,101
+gemini/client.py,sha256=Q7eXtS7s2kzAQ4X3ZRcnyRtd8Q22bARbxpadxhUaDak,13155
+gemini/consts.py,sha256=fM-qSEWK9wDBy_kTyl7_KZtxSVyF48KZucsujs26og8,365
+gemini/types.py,sha256=sPj7hwq1d76PHTWGabeQ7-Us2oAZg16D6IDSC4_6gdQ,6306
+gemini_webapi-0.2.1.dist-info/LICENSE,sha256=syoVjv1ye4WBYEgJOlRkRE8trYjBMFnqz2kP7ta9934,1082
+gemini_webapi-0.2.1.dist-info/METADATA,sha256=Zgk5DTPiflpqpw6xfXNX26OLoGia5sUu97LIGXdkO2Y,7383
+gemini_webapi-0.2.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+gemini_webapi-0.2.1.dist-info/top_level.txt,sha256=HC3nun2yFuNkNiRuKIq3MP_Izk5CqGNHxn2nl0-ozn0,7
+gemini_webapi-0.2.1.dist-info/RECORD,,
