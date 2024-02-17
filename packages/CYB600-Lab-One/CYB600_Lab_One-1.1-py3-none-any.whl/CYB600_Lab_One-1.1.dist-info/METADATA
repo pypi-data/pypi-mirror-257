@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: CYB600-Lab-One
+Version: 1.1
+Author: Trueye Tafese
+Author-email: tafeset@gmail.com
+License: Apache License Version 2.0
+Requires-Dist: Flask
+

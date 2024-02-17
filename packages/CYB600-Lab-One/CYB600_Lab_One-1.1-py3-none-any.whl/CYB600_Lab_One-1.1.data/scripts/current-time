@@ -1,0 +1,4 @@
+#!python
+from csc_cyb600 import main
+
+main.main()
