@@ -1,0 +1,7 @@
+LICENSE.txt
+README.md
+setup.py
+easytexts.egg-info/PKG-INFO
+easytexts.egg-info/SOURCES.txt
+easytexts.egg-info/dependency_links.txt
+easytexts.egg-info/top_level.txt

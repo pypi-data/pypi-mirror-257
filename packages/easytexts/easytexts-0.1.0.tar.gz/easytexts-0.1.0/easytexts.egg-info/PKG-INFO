@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: easytexts
+Version: 0.1.0
+Summary: manage text files easily with Easytexts! Great for small and simple projects.
+Home-page: https://github.com/Katzover/Easytexts
+Author: Itamar Katzover
+Author-email: itamar43.katzover43@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.10, <4
+License-File: LICENSE.txt
