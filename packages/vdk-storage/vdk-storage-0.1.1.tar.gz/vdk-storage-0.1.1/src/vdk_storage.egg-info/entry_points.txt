@@ -1,0 +1,2 @@
+[vdk.plugin.run]
+vdk-storage = vdk.plugin.storage.plugin_entry
