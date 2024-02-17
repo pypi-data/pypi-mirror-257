@@ -1,0 +1,6 @@
+LICENSE.md
+README.md
+PSID.egg-info/PKG-INFO
+PSID.egg-info/SOURCES.txt
+PSID.egg-info/dependency_links.txt
+PSID.egg-info/top_level.txt
