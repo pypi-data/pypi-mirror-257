@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: FinRecipes
+Version: 0.0.5
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: progressbar
+Requires-Dist: yfinance
+Requires-Dist: stockstats
+Requires-Dist: datetime
+Requires-Dist: pytz
+Requires-Dist: numpy
+Requires-Dist: tables
+
+# FinRecipes
+
+```
+from FinRecipes import Load_n_Preprocess
+
+TICKERS_LIST_WORLD = ['AIT']
+START_DATE = '2023-01-01'
+END_DATE = '2024-12-01'
+PATH_DAILY_DATA = "examples/df_ohlcv_daily.h5"
+LP = Load_n_Preprocess(TICKERS_LIST_WORLD, START_DATE, END_DATE, path_daily_data = PATH_DAILY_DATA)
+df_tics_daily = LP.load_daily_data()
+print(df_tics_daily)
+
+```

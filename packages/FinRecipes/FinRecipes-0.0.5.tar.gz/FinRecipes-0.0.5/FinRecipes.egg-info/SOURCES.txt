@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+FinRecipes/__init__.py
+FinRecipes/main.py
+FinRecipes.egg-info/PKG-INFO
+FinRecipes.egg-info/SOURCES.txt
+FinRecipes.egg-info/dependency_links.txt
+FinRecipes.egg-info/requires.txt
+FinRecipes.egg-info/top_level.txt

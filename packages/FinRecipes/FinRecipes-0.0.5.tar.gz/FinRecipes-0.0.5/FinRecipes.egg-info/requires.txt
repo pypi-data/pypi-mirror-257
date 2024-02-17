@@ -1,0 +1,8 @@
+pandas
+progressbar
+yfinance
+stockstats
+datetime
+pytz
+numpy
+tables
