@@ -1,0 +1,12 @@
+kano/file_utils.py,sha256=n7QIv2FvRil83-Nms8i5FjWlvtB5aVm8jEispPumjNA,3537
+kano/image_utils.py,sha256=yAPShzHRv_R-eQg5GZUGmawAnd8gfNk80g_pCHben0E,2775
+kano/video_utils.py,sha256=4l6k7FchDa53Om7bMlsJmB1_naxqJGtgJhJG-Ug7I_Q,1475
+kano/complex/detection.py,sha256=PWuPePzdXETuQhV3niKP83N0HLQxV1Vzqfq1pxl2rpg,124
+kano/complex/geometry.py,sha256=cC86DxC4EUqkBE5hogAi1CFiaMZok4gwB-T3_G8O5FM,194
+kano/complex/roboflow.py,sha256=VPLUGr-Svuf1Agza8Yj2eD_XXhJ78oqCg-_H3XQZ8ac,4369
+kano/complex/segmentation.py,sha256=oiavSd1dLkqzL-BM4OQhUeC2nOVqtMudKJtFIHmisFQ,659
+kano_cv-1.8.7.dist-info/LICENSE,sha256=dOWH5TP09gmi-ePA_t01XH92g5B6aZ07yJVuN1XNl-4,1072
+kano_cv-1.8.7.dist-info/METADATA,sha256=DhrG0GiW1J_QJ4C8HfUVeKKZFZHBuA5jydvBGqe0ImI,7083
+kano_cv-1.8.7.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+kano_cv-1.8.7.dist-info/top_level.txt,sha256=_rJboIUjIIO_9V-_dW3toNGqxI6iMD06_lyNictCIyk,5
+kano_cv-1.8.7.dist-info/RECORD,,
