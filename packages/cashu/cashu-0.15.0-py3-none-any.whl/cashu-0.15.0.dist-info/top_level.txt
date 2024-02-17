@@ -1,0 +1,10 @@
+NULL
+backup
+benchmark
+cashu
+data
+db_tools
+dev
+dockerhub
+test_data
+tests
