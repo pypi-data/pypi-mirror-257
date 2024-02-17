@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: django-oscar-iyzipay
+Version: 0.1.0
+Summary: This package provides integration between django-oscar and iyzipay, a payment gateway
+Author: Bahadır Özkan
+Author-email: bahadirozkan@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: django-ipware (>=6.0.3,<7.0.0)
+Requires-Dist: django-oscar (>=3.2.2,<4.0.0)
+Requires-Dist: iyzipay (>=1.0.42,<2.0.0)
+Requires-Dist: ujson (>=5.9.0,<6.0.0)
+Description-Content-Type: text/markdown
+
+
