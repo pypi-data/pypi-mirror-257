@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/pandas_plots/__init__.py
+src/pandas_plots/plt.py
+src/pandas_plots/sql.py
+src/pandas_plots/tbl.py
+src/pandas_plots/ven.py
+src/pandas_plots.egg-info/PKG-INFO
+src/pandas_plots.egg-info/SOURCES.txt
+src/pandas_plots.egg-info/dependency_links.txt
+src/pandas_plots.egg-info/requires.txt
+src/pandas_plots.egg-info/top_level.txt
