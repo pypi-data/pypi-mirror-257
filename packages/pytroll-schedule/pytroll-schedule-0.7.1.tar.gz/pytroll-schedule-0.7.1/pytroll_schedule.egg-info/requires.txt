@@ -1,0 +1,5 @@
+numpy
+pyresample
+pyorbital
+pyyaml
+defusedxml

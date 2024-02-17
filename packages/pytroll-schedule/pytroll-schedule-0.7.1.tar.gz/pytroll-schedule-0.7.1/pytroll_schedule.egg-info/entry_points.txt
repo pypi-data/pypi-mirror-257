@@ -1,0 +1,3 @@
+[console_scripts]
+compare_scheds = trollsched.compare:run
+schedule = trollsched.schedule:run

@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pytroll-schedule
+Version: 0.7.1
+Summary: Scheduling satellite passes in Python
+Author: Martin Raspaud
+Author-email: martin.raspaud@smhi.se
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pyresample
+Requires-Dist: pyorbital
+Requires-Dist: pyyaml
+Requires-Dist: defusedxml
