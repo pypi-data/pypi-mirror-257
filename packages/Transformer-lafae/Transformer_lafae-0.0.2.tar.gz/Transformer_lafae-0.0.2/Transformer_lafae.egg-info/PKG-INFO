@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: Transformer-lafae
+Version: 0.0.2
+Summary: Vanilla Regression Transformer
+Home-page: UNKNOWN
+Author: Luan Lopes
+Author-email: luansantos@poli.ufrj.br
+License: UNKNOWN
+Description: Vanilla Regression Transformer of general purpose
+Keywords: python,transformer,Machine Learning
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
