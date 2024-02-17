@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: ecv-python-helpers
+Version: 1.0.12
+Summary: ECV Python Helpers Package
+Home-page: https://git-codecommit.ap-southeast-1.amazonaws.com/v1/repos/ecv-python-helpers
+Author: Warren Ezra Bruce Jaudian
+Author-email: warren.jaudian@ecloudvalley.com
+License: MIT
+Description: # ECV Python Helpers
+        
+        These are modules which does common functionalities all throughout the ECV's Python Serverless Framework.
+        
+        Modules should not have any business logic, no data awareness, and must work independently.
+        
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
