@@ -1,0 +1,8 @@
+rulebase_symbols_detector/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rulebase_symbols_detector/init_data.json,sha256=gssVmABpWnRvIZD6G8YkcIYDsVwM44O3p0uHnTdhi80,216714
+rulebase_symbols_detector/init_data.py,sha256=zzRrlZOC3k8yvOsOUtowmuJcJKKR89IbixoENd4CgvY,219975
+rulebase_symbols_detector/question_symbol_detector.py,sha256=1wTwRMi-LDOscS2mArnQDJ5TXZKt7xT0r6bHZ2Q-vg8,29071
+rulebase_symbols_detector/symbol_detector.py,sha256=MH_YKiuHOAn6aQT-7Ayoc0bUmF5c2AR-tykpVmXbkrg,21578
+rulebase_symbols_detector-0.1.23.dist-info/METADATA,sha256=c2WeBJEHxyuNzV9izLYWbCDKfjQ6ewAQ7dFPN4aSEwg,2974
+rulebase_symbols_detector-0.1.23.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+rulebase_symbols_detector-0.1.23.dist-info/RECORD,,
