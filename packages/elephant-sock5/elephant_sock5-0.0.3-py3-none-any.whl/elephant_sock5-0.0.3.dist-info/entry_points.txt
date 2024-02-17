@@ -1,0 +1,2 @@
+[console_scripts]
+elephant = elephant_sock5.__init__:_run
