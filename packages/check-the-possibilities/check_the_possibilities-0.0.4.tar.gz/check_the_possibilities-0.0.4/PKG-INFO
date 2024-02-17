@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: check_the_possibilities
+Version: 0.0.4
+Summary: This is the simplest module for print some text
+Home-page: https://github.com/AlexanderPetrenko83/prototype_python_library.git
+Author: alexander_petrenko
+Author-email: gd@reseco.ru
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: pandas>=2.2.0
+
+# prototype_python_library
