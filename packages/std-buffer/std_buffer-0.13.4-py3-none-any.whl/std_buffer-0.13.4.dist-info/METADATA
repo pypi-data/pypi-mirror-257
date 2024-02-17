@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: std-buffer
+Version: 0.13.4
+Summary: Standard DAQ buffer interface
+Author: Paul Scherrer Institute
+Author-email: daq@psi.ch
+Maintainer: Paul Scherrer Institute
+Maintainer-email: daq@psi.ch
+License: GPL3
+
