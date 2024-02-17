@@ -1,0 +1,9 @@
+gemnine/__init__.py,sha256=YrJUIpYRRKOk2eYnG--OpC-GB7W7JgWoGXE4m42gNuo,68
+gemnine/__main__.py,sha256=ONKfQ-ARoqDDJydmkfCdOGcX8Mwe7C3ABm-rnuo53nU,10095
+gemnine/bot.py,sha256=-SAryy0Cns79FRu0aFNvBpfQEdw-gTTnW2Z_tuYCKxc,14750
+gemnine/cli.py,sha256=YRrtGYCenfA15lTK4SHWsQf8-ARtRGc3X7G15mgjN_w,47
+gemnine-0.1.0.dist-info/LICENSE,sha256=-JoQY3e1FD1pJ78H_5cK2bYq6PqxfrwvLPzCBHyw4Nw,1061
+gemnine-0.1.0.dist-info/METADATA,sha256=OKqE3yNTDyvRNa9bkyKQl1qA3bcFXdumnhpoBQyinrE,3484
+gemnine-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+gemnine-0.1.0.dist-info/entry_points.txt,sha256=D8b-QXhlqpofgVfV93VHbEA2-BORPQxo0DfDXCrS-b0,43
+gemnine-0.1.0.dist-info/RECORD,,
