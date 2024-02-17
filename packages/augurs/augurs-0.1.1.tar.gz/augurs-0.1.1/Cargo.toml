@@ -1,0 +1,37 @@
+[workspace]
+members = ["crates/*"]
+resolver = "2"
+
+[workspace.package]
+license = "MIT OR Apache-2.0"
+authors = [
+  "Ben Sully <ben.sully@grafana.com",
+]
+documentation = "https://docs.rs/crate/augurs"
+repository = "https://github.com/grafana/augurs"
+version = "0.1.1"
+edition = "2021"
+keywords = [
+  "analysis",
+  "forecasting",
+  "time-series",
+]
+
+[workspace.dependencies]
+
+augurs-core = { version = "0.1.1", path = "crates/augurs-core" }
+augurs-ets = { version = "0.1.1", path = "crates/augurs-ets" }
+augurs-mstl = { version = "0.1.1", path = "crates/augurs-mstl" }
+augurs-seasons = { version = "0.1.1", path = "crates/augurs-seasons" }
+augurs-testing = { version = "0.1.1", path = "crates/augurs-testing" }
+
+distrs = "0.2.1"
+itertools = "0.12.0"
+serde = { version = "1.0.166", features = ["derive"] }
+thiserror = "1.0.40"
+tracing = "0.1.37"
+
+assert_approx_eq = "1.1.0"
+criterion = "0.5.1"
+iai = "0.1.1"
+pprof = { version = "0.13.0", features = ["criterion", "frame-pointer", "prost-codec"] }
