@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: shadow4-hybrid
+Version: 0.0.7
+Summary: shadow/hybrid implementation in python
+Home-page: https://github.com/oasys-kit/shadow4-hybrid/
+Author: Manuel Sanchez del Rio, Luca Rebuffi, Xianbo Shi
+Author-email: lrebuffi@anl.gov
+License-File: LICENSE

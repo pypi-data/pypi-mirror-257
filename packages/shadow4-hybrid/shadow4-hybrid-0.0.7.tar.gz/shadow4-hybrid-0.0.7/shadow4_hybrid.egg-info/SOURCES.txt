@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+shadow4_hybrid/__init__.py
+shadow4_hybrid/s4_hybrid_screen.py
+shadow4_hybrid.egg-info/PKG-INFO
+shadow4_hybrid.egg-info/SOURCES.txt
+shadow4_hybrid.egg-info/dependency_links.txt
+shadow4_hybrid.egg-info/requires.txt
+shadow4_hybrid.egg-info/top_level.txt
