@@ -1,0 +1,9 @@
+README.md
+setup.py
+translate_by_country/__init__.py
+translate_by_country/translate_by_country.py
+translate_by_country.egg-info/PKG-INFO
+translate_by_country.egg-info/SOURCES.txt
+translate_by_country.egg-info/dependency_links.txt
+translate_by_country.egg-info/requires.txt
+translate_by_country.egg-info/top_level.txt
