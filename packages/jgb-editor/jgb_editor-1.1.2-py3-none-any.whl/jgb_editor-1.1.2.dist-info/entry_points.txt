@@ -1,0 +1,5 @@
+[console_scripts]
+jgb-editor = jgb_editor.main:main
+
+[gui_scripts]
+jgb-editor = jgb_editor.main:main
