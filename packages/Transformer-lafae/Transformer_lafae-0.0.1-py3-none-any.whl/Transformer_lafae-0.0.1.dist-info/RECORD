@@ -1,0 +1,17 @@
+Transformer/BaseAttention.py,sha256=z09auOFH-b8bPjVo9B_nPbNtDg-OcvUzO3QJyClzwsY,1294
+Transformer/CausalSelfAttention.py,sha256=-OZzM1L1OA1LKPbDzl-cu5NqRtqwQ2C56XG9sfQnivQ,1109
+Transformer/CrossAttention.py,sha256=BYksTMQJ74PhbZW7oaRrFkCZAFHhRrSVrGZR45t6nT0,1516
+Transformer/FeedForward.py,sha256=zdYw6EBY2nk9LwjpnszlAofVRoP67CgiADXrv4Pqztc,1669
+Transformer/GlobalAttention.py,sha256=iUjxX82Dr_Bf-ptPe0EUifvewVh0cargLA_7Bode9-Y,1151
+Transformer/PositionalEmbedding.py,sha256=miMoAIzESZW-pfHzE67Q4oxVLP06BC-uICg8B6yYW1o,2269
+Transformer/Transformer.py,sha256=OiuAwshEbRq-n1ZbfRwrwb7_POAqgRKV9UCRRXtHq08,1850
+Transformer/__init__.py,sha256=FdvTARTx1VUqYYOpOXly42arsYHFHlYBvnkLqgVMMEo,594
+Transformer/aux_functions.py,sha256=DEaTeyTvjLVzPd22CUaxglW_hfQwHJDGE9s3XYF2HGU,843
+Transformer/decoder.py,sha256=ETOiupazsdJnTyW5RJdO9-xiaK5Bep_2dSaONSMP7cU,2773
+Transformer/decoderLayer.py,sha256=gFCNYildUO_xSjU6tnEYsUux_cYjmsQ16iZRrCQJqVU,2228
+Transformer/encoder.py,sha256=9pz5LRUMGisP0i3A6kXBFpsrAD3j7AsR3iJAP5GoCIM,2572
+Transformer/encoderLayer.py,sha256=ek9XJk7uNlZK-9dTjHmsKawpBl8VO2aCCyU-mMa0tdE,1623
+Transformer_lafae-0.0.1.dist-info/METADATA,sha256=qTRQBZVXq9OO63wC8lKC-Yj5CeLF8ojW_fj1q7pBbIE,616
+Transformer_lafae-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+Transformer_lafae-0.0.1.dist-info/top_level.txt,sha256=vlSdpmrhsn9rrUPGswj3l_SutR0bzZE0AuOSFTOiuZY,12
+Transformer_lafae-0.0.1.dist-info/RECORD,,
