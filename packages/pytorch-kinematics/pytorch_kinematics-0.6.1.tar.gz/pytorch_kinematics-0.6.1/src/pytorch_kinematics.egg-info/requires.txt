@@ -1,0 +1,12 @@
+absl-py
+lxml
+mujoco
+numpy
+pyyaml
+torch
+matplotlib
+pytorch_seed
+
+[test]
+pytest
+pybullet
