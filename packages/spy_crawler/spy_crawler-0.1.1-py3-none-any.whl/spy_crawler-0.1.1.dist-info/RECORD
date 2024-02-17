@@ -1,0 +1,7 @@
+spy_crawler/__init__.py,sha256=4VUHQaFccRgRgjZSQqn42m9gfJ6vicRsbzBo7_nhVys,18
+spy_crawler/spy.py,sha256=RKAVDgb1SahgLFxgSHxw_GccZLVqrXcshiFrY5-1_rc,875
+spy_crawler/web_crawler.py,sha256=ci95TU1H1FbJPRWipyc3z0Mi4YLaABHkiQmGavoUwcU,666
+spy_crawler/web_parser.py,sha256=Lyb4_-dm-RDe6-PA4EyJaYdlN60dTADvHwnWSD3Een8,294
+spy_crawler-0.1.1.dist-info/METADATA,sha256=0E2r0ZBokFZbL1Nvvvh48-V16kOQlNhZYqgqSLW2pEU,513
+spy_crawler-0.1.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+spy_crawler-0.1.1.dist-info/RECORD,,
