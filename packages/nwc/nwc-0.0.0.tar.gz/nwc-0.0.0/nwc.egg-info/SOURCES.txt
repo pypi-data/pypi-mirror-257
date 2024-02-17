@@ -1,0 +1,6 @@
+pyproject.toml
+nwc/__init__.py
+nwc.egg-info/PKG-INFO
+nwc.egg-info/SOURCES.txt
+nwc.egg-info/dependency_links.txt
+nwc.egg-info/top_level.txt
