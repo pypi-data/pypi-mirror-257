@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: rosinenpicker
+Version: 0.0.5
+Summary: A package for picking the juciest text morsels out of a pile of documents.
+Project-URL: Homepage, https://github.com/joheli/rosinenpicker
+Project-URL: Issues, https://github.com/joheli/rosinenpicker/issues
+Author-email: Johannes Elias <joheli@gmx.net>
+License-File: LICENSE
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.11
+Requires-Dist: pandas>=2.2.0
+Requires-Dist: pydantic>=2.6.1
+Requires-Dist: pymupdf>=1.23.22
+Requires-Dist: pyyaml>=6.0.1
+Requires-Dist: sqlalchemy>=2.0.27
+Description-Content-Type: text/markdown
+
+# rosinenpicker
+
+![Python Packaging](https://github.com/joheli/rosinenpicker/workflows/Packaging/badge.svg) ![PyPI](https://img.shields.io/pypi/v/rosinenpicker?label=PyPI) ![PyPI - Downloads](https://img.shields.io/pypi/dm/rosinenpicker)
+
+'Rosinenpicker' is German for 'cherry picker' (never mind that 'Rosine' actually means *raisin*). Be it as it may - cherry picking is what `rosinenpicker` has been designed to do. It goes through a list of documents to extract *just those juicy bits* **you** are interested in. It uses regular expressions to accomplish this. But please do read on to learn how to use the program. 
+
+# Installation
+
+Please fire up your console and type:
+
+```
+pip install rosinenpicker
+```
+
+This should add the executable `rosinenpicker` to `PATH`, making it accessible from the console.
+
+# Usage
+
+Please type
+
+```
+rosenpicker -c config_file -d database_file
+```
+
+where `config_file` (default: `config.yml`) and `database_file` (default: `matches.db`) represent a yml-formatted configuration file (please see sample [config.yml](configs/config.yml), which is more or less self-explanatory) and a sqlite database file (automatically created if not present), respectively.
+
+For help type
+
+```
+rosenpicker -h
+```
