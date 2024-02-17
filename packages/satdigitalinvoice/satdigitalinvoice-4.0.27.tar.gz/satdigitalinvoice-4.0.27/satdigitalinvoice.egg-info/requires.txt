@@ -1,0 +1,13 @@
+satcfdi==4.3.5
+diskcache
+num2words
+PyYAML
+babel
+markdown2
+PySimpleGUI<5.0.0
+XlsxWriter
+jsonschema
+
+[test]
+coverage
+pytest
