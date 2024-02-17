@@ -1,0 +1,17 @@
+cmdstanpy>=1.0.4
+numpy>=1.18
+pandas>=1.0.3
+tqdm>=4.36.1
+importlib_resources
+matplotlib>=3.3.2
+scipy>=1.4.1
+torch>=1.11.0
+seaborn>=0.10.0
+pyro-ppl>=1.4.0
+arviz
+
+[dev]
+setuptools>=64
+wheel
+pytest
+black
