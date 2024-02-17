@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/knowing_machine/__init__.py
+src/knowing_machine/answer.py
+src/knowing_machine.egg-info/PKG-INFO
+src/knowing_machine.egg-info/SOURCES.txt
+src/knowing_machine.egg-info/dependency_links.txt
+src/knowing_machine.egg-info/top_level.txt
