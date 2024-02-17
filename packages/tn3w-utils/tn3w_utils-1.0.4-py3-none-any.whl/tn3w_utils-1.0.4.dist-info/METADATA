@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: tn3w_utils
+Version: 1.0.4
+Summary: A consolidation of all tools created so far as a Python package
+Home-page: https://github.com/tn3w/tn3w_utils
+Author: TN3W
+Author-email: tn3wA8xxfuVMs2@proton.me
+License: MIT
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: cryptography
+Requires-Dist: ipaddress
+Requires-Dist: requests
+Requires-Dist: googletrans ==3.1.0a0
+Requires-Dist: bs4
+Requires-Dist: pillow
+Requires-Dist: python-magic
+Requires-Dist: distro
+Requires-Dist: captcha
+
+# TN3W_Utils
+A consolidation of all tools created so far as a Python package
