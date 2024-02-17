@@ -1,0 +1,3 @@
+[console_scripts]
+tls-scan=tls_scan:main
+
