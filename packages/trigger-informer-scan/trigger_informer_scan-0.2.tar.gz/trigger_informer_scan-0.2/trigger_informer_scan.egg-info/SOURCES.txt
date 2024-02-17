@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+trigger_informer_scan/__init__.py
+trigger_informer_scan/trigger.py
+trigger_informer_scan.egg-info/PKG-INFO
+trigger_informer_scan.egg-info/SOURCES.txt
+trigger_informer_scan.egg-info/dependency_links.txt
+trigger_informer_scan.egg-info/entry_points.txt
+trigger_informer_scan.egg-info/requires.txt
+trigger_informer_scan.egg-info/top_level.txt

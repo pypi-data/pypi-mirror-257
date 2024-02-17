@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: trigger_informer_scan
+Version: 0.2
+Summary: Trigger scans in Informer via your CI/CD pipeline
+Home-page: UNKNOWN
+Author: Paul Collingwood
+Author-email: paul.collingwood@informer.io
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Informer.io Scan Trigger Library
+
+This library is designed to trigger scans in the Informer.io platform. It supports automated workflows by allowing users to initiate scans programmatically using an API key, an optional test UUID, and a list of assets.
+Features
+
+    API Key Authorization: Securely trigger scans using an API key.
+    Optional Test UUID: Specify a test UUID for targeted scanning.
+    Asset List Scanning: Initiate scans on a list of specified assets.
+    Error Logging: Errors and failures are logged for troubleshooting, without halting execution.
+
+Setting Up the Environment:
+
+To use the library, you need to provide an API key. You can pass this as a command-line argument or set it as an environment variable.
+
+export INFORMER_API_KEY=your-api-key
+
+Triggering a Scan
+1. Using Command-Line Arguments
+
+You can pass the API key, an optional TEST_UUID, and a list of assets directly as arguments:
+
+    triggerInformerScan --api_key your-api-key --assets "a.b.com,b.com,example.com"
+
+Optionally, you can include a TEST_UUID. Scans will then start on both the assets in the test and the named assets:
+
+    triggerInformerScan --api_key your-api-key --test_uuid your-test-uuid --assets "a.b.com,b.com,example.com"
+
+2. Using Environment Variables
+
+If INFORMER_API_KEY is set, you can trigger the scan by just providing the assets:
+
+bash
+
+    triggerInformerScan --assets "a.b.com,b.com,example.com"
+
+And optionally the TEST_UUID:
+
+    triggerInformerScan --test_uuid your-test-uuid --assets "a.b.com,b.com,example.com"
+
+Limitations
+
+    Frequency of Scans: Only one "once" scan can be triggered per 24-hour period per asset or test.
+    Error Reporting: Errors are reported through logs and do not halt the script execution.
+
+Finding the Test UUID
+
+If you have a specific test in Informer.io for which you want to trigger a scan:
+
+    Navigate to the test detail pane in the Informer.io platform.
+    Locate the UUID, uniquely identifying each test.
+    Use this UUID with the library for targeted scanning of related assets.
+

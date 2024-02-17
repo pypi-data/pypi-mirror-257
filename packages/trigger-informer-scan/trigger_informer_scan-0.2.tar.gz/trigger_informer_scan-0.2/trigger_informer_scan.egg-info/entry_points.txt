@@ -1,0 +1,3 @@
+[console_scripts]
+triggerInformerScan = trigger_informer_scan.trigger:main
+
