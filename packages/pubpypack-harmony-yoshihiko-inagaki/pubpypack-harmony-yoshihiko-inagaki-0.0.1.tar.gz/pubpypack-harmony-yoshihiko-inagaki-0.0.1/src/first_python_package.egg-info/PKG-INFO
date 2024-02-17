@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: first-python-package
+Version: 0.0.1
+Summary: This package does amazing things.
+Home-page: https://github.com/gakkykun/publishing-python-packages
+Author: Yoshihiko Inagaki
+Author-email: "Yoshihiko Inagaki" <w-inagaki@ruri.waseda.jp>
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+Requires-Dist: termcolor<2,>=1.1.0
+
+# first-python-package
+
+This package does amazing things.
+
+## Installation
+
+```shell
+$ python -m pip install first-python-package
+```
