@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: magic_clamp
+Version: 0.0.1
+Summary: Magic clamp with conditional straight-through estimator for PyTorch
+Author-email: Ben Hayes <ben@benhayes.net>
+Description-Content-Type: text/markdown
+
+# Magic Parameter Constraints with Conditional Straight-Through Estimator
