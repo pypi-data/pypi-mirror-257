@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: orchestra-llm
+Version: 0.1.0
+Summary: 
+Author: hermansh-id
+Author-email: hermansh.id@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: fastapi (>=0.109.2,<0.110.0)
+Requires-Dist: langchain (>=0.1.7,<0.2.0)
+Description-Content-Type: text/markdown
+
+
