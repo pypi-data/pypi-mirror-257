@@ -1,0 +1,15 @@
+OID,Lon,Lat,Name,Abbrev,Address,City,State,Zip,Cone,CurrentlyOpen
+1,-79.787606999999994,36.088020000000000,Community Health & Wellness,CHW,201 Wendover Ave E,Greensboro,NC,27401,1,1
+2,-79.783929999999998,36.090890000000002,Internal Medicine,IM,1121 N Church St,Greensboro,NC,27401,1,1
+3,-79.783882000000006,36.091194000000002,Family Medicine,FM, 1125 N Church St,Greensboro,NC,27401,1,1
+4,-79.786447999999993,36.087955000000001,Tim and Carolynn Rice Center,Rice,301 Wendover Ave E,Greensboro,NC,27401,1,1
+5,-79.757683999999998,36.073054999999997,Mustard Seed,Mustard,238 S English St,Greensboro,NC,27401,0,1
+6,-79.744570999999993,36.094718000000000,Renaissance Family Medicine,RFM,2525 Phillips Ave,Greensboro,NC,27405,1,1
+7,-79.774531999999994,36.087845000000002,TAPM - Pediatrics at Wendover,TAPM,1046 E Wendover Ave,Greensboro,NC,27405,0,1
+8,-79.779549000000003,36.089506999999998,MedCenter for Women,MC_Women,930 Third Street,Greensboro,NC,27405,1,0
+9,-79.779591999999994,36.089697000000001,Behavioral Health Urgent Care,BH_UC,931 Third Street ,Greensboro,NC,27405,1,0
+10,-79.776173000000000,36.085959000000003,Oak Street Health,Oak,1007 Summit Ave,Greensboro,NC,27405,0,1
+11,-79.793092000000001,36.003145000000004,Primary Care at Elmsley Square,PCE,3711 Elmsley Ct,Greensboro,NC,27406,1,1
+12,-79.774812999999995,36.047314999999998,Evans Blount,Evans,2031 Martin Luther King Jr Dr,Greensboro,NC,27406,0,1
+13,-79.793229999999994,36.063836000000002,TAPM - Family at Eugene,TAPM,1002 S Eugene St,Greensboro,NC,27406,0,1
+14,-79.790133999999995,36.056384000000001,TAPM - Family at Arlington,TAPM,1205 Arlington St,Greensboro,NC,27406,0,1
