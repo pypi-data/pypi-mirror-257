@@ -1,0 +1,11 @@
+uvicorn
+fastapi
+fastapi-versioning
+starlette[full]
+cryptography
+boto3
+geojson>=3.0.0
+osml-imagery-toolkit>=1.2
+
+[test]
+tox
