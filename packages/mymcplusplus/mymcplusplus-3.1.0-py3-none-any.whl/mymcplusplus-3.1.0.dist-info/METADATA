@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: mymcplusplus
+Version: 3.1.0
+Summary: A PlayStation 2 memory card manager
+Home-page: https://github.com/Adubbz/mymcplusplus
+Author: Adubbz
+License: GPLv3
+Keywords: playstation ps2 mymc memory card save
+Requires-Python: >=3.4
+Description-Content-Type: text/plain
+License-File: LICENSE
+Provides-Extra: gui
+Requires-Dist: wxPython ; extra == 'gui'
+Requires-Dist: pyopengl ; extra == 'gui'
+
+mymc++ is a PlayStation 2 memory card manager for to be used with .ps2 images as created by the PCSX2 emulator for example.
+It is based on mymc+ by Florian Märkl and the classic mymc utility created by Ross Ridge.
