@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: spamige
+Version: 0.0.3.dev0
+Summary: Spam wrapper used at IGE
+Home-page: https://gricad-gitlab.univ-grenoble-alpes.fr/mecaiceige/tools/lib_python/spamige
+Author: Thomas Chauve
+Author-email: thomas.chauve@univ-grenoble-alpes.fr
+License: GPL-3.0
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.11
+Requires-Dist: spam
+
+Spam wrapper used at IGE
