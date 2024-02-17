@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "cyvidia-ai-utils"
+version = "1.0.4"
+description = ""
+authors = ["nvjoshi2 <nvj1300@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+datasets = "^2.17.0"
+scikit-learn = "^1.4.0"
+transformers = {extras = ["torch"], version = "^4.37.2"}
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0.0"
+transformers = "^4.37.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
