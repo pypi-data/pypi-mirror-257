@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: polars_ml
+Version: 0.1.0
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Dist: polars >=0.20.7
+Requires-Python: >=3.8
