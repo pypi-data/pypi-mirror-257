@@ -1,0 +1,8 @@
+setup.py
+multi_sum_calc/__init__.py
+multi_sum_calc/multicalc.py
+multi_sum_calc/sumcalc.py
+multi_sum_calc.egg-info/PKG-INFO
+multi_sum_calc.egg-info/SOURCES.txt
+multi_sum_calc.egg-info/dependency_links.txt
+multi_sum_calc.egg-info/top_level.txt
