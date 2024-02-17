@@ -1,0 +1,2 @@
+[console_scripts]
+copyriot = copyriot.__main__:main
