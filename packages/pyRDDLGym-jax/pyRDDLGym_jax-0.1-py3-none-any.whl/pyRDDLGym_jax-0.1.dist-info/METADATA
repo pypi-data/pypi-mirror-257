@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: pyRDDLGym-jax
+Version: 0.1
+Summary: pyRDDLGym-jax: JAX compilation of RDDL description files, and a differentiable planner in JAX.
+Home-page: https://github.com/pyrddlgym-project/pyRDDLGym-jax
+Author: Michael Gimelfarb, Ayal Taitler, Scott Sanner
+Author-email: mike.gimelfarb@mail.utoronto.ca, ataitler@gmail.com, ssanner@mie.utoronto.ca
+License: MIT License
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: pyRDDLGym >=2.0
+Requires-Dist: tqdm >=4.66
+Requires-Dist: bayesian-optimization >=1.4.3
+Requires-Dist: jax >=0.4.12
+Requires-Dist: optax >=0.1.9
+Requires-Dist: dm-haiku >=0.0.10
+Requires-Dist: tensorflow >=2.13.0
+Requires-Dist: tensorflow-probability >=0.21.0
+
