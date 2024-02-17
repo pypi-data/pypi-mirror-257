@@ -1,0 +1,13 @@
+gcloud/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gcloud/rest/bigquery/__init__.py,sha256=6tKphiMlsIbukAnrk6gx3AL9M2fAwh-ASHawz8tYRRI,1217
+gcloud/rest/bigquery/bigquery.py,sha256=0pk8fHeD_c9cghrFMhRjMiDKfFf5Rj1GveAsGO1xJGE,4665
+gcloud/rest/bigquery/dataset.py,sha256=jxM9wQd0v8fQvg93wOcnpNrWSW_kVUtoP12fKn_-5II,3882
+gcloud/rest/bigquery/job.py,sha256=ndrPQau4tuXN16RAESQ_MpJFnssg2Go4fC683gfngvY,7002
+gcloud/rest/bigquery/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gcloud/rest/bigquery/table.py,sha256=W2R2SSRqEuOrxuuxcRsTL4vrqScgmprMRqPOxPU7wYo,13540
+gcloud/rest/bigquery/utils.py,sha256=sW7hnq-ppjzoExiv5QeY7SIxtfO-lLflYAzAb6AStrs,4454
+gcloud/rest/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gcloud_rest_bigquery-7.1.0.dist-info/LICENSE,sha256=5BNZKnocORweIzozcY2dB5Mf_d0MJP5VbpwdzL4ZjoM,1063
+gcloud_rest_bigquery-7.1.0.dist-info/METADATA,sha256=fDi-aMeGeUQwS9LUVw002WgjkbG4DoZvS2OvP_ciqL8,1952
+gcloud_rest_bigquery-7.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+gcloud_rest_bigquery-7.1.0.dist-info/RECORD,,
