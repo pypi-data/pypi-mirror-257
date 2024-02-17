@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+wordslab_llms/__init__.py
+wordslab_llms/_modidx.py
+wordslab_llms/models.py
+wordslab_llms.egg-info/PKG-INFO
+wordslab_llms.egg-info/SOURCES.txt
+wordslab_llms.egg-info/dependency_links.txt
+wordslab_llms.egg-info/entry_points.txt
+wordslab_llms.egg-info/not-zip-safe
+wordslab_llms.egg-info/requires.txt
+wordslab_llms.egg-info/top_level.txt
