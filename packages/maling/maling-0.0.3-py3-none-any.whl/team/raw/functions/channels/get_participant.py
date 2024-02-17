@@ -1,0 +1,64 @@
+#  Library Team
+
+from io import BytesIO
+
+from team.raw.core.primitives import Int, Long, Int128, Int256, Bool, Bytes, String, Double, Vector
+from team.raw.core import TLObject
+from team import raw
+from typing import List, Optional, Any
+
+# # # # # # # # # # # # # # # # # # # # # # # #
+#               !!! WARNING !!!               #
+#          This is a generated file!          #
+# All changes made in this file will be lost! #
+# # # # # # # # # # # # # # # # # # # # # # # #
+
+
+class GetParticipant(TLObject):  # type: ignore
+    """Telegram API function.
+
+    Details:
+        - Layer: ``158``
+        - ID: ``A0AB6CC6``
+
+    Parameters:
+        channel (:obj:`InputChannel <team.raw.base.InputChannel>`):
+            N/A
+
+        participant (:obj:`InputPeer <team.raw.base.InputPeer>`):
+            N/A
+
+    Returns:
+        :obj:`channels.ChannelParticipant <team.raw.base.channels.ChannelParticipant>`
+    """
+
+    __slots__: List[str] = ["channel", "participant"]
+
+    ID = 0xa0ab6cc6
+    QUALNAME = "functions.channels.GetParticipant"
+
+    def __init__(self, *, channel: "raw.base.InputChannel", participant: "raw.base.InputPeer") -> None:
+        self.channel = channel  # InputChannel
+        self.participant = participant  # InputPeer
+
+    @staticmethod
+    def read(b: BytesIO, *args: Any) -> "GetParticipant":
+        # No flags
+        
+        channel = TLObject.read(b)
+        
+        participant = TLObject.read(b)
+        
+        return GetParticipant(channel=channel, participant=participant)
+
+    def write(self, *args) -> bytes:
+        b = BytesIO()
+        b.write(Int(self.ID, False))
+
+        # No flags
+        
+        b.write(self.channel.write())
+        
+        b.write(self.participant.write())
+        
+        return b.getvalue()

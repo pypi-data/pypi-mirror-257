@@ -1,0 +1,56 @@
+#  Library Team
+
+from io import BytesIO
+
+from team.raw.core.primitives import Int, Long, Int128, Int256, Bool, Bytes, String, Double, Vector
+from team.raw.core import TLObject
+from team import raw
+from typing import List, Optional, Any
+
+# # # # # # # # # # # # # # # # # # # # # # # #
+#               !!! WARNING !!!               #
+#          This is a generated file!          #
+# All changes made in this file will be lost! #
+# # # # # # # # # # # # # # # # # # # # # # # #
+
+
+class InputThemeSlug(TLObject):  # type: ignore
+    """Telegram API type.
+
+    Constructor of :obj:`~team.raw.base.InputTheme`.
+
+    Details:
+        - Layer: ``158``
+        - ID: ``F5890DF1``
+
+    Parameters:
+        slug (``str``):
+            N/A
+
+    """
+
+    __slots__: List[str] = ["slug"]
+
+    ID = 0xf5890df1
+    QUALNAME = "types.InputThemeSlug"
+
+    def __init__(self, *, slug: str) -> None:
+        self.slug = slug  # string
+
+    @staticmethod
+    def read(b: BytesIO, *args: Any) -> "InputThemeSlug":
+        # No flags
+        
+        slug = String.read(b)
+        
+        return InputThemeSlug(slug=slug)
+
+    def write(self, *args) -> bytes:
+        b = BytesIO()
+        b.write(Int(self.ID, False))
+
+        # No flags
+        
+        b.write(String(self.slug))
+        
+        return b.getvalue()
