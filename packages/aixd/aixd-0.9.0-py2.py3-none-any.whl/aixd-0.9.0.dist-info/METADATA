@@ -1,0 +1,93 @@
+Metadata-Version: 2.1
+Name: aixd
+Version: 0.9.0
+Summary: AI-eXtended Design (AIXD)
+Home-page: https://gitlab.renkulab.io/ai-augmented-design/aixd
+Author: ETH Zurich (Gramazio Kohler Research and IBK) & Swiss Data Science Center
+Author-email: sluis@ethz.ch
+License: MIT license
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Scientific/Engineering
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: AUTHORS.md
+Requires-Dist: pandas (>=2.1.0)
+Requires-Dist: numpy (>=1.22.4)
+Requires-Dist: scipy (>=1.8.1)
+Requires-Dist: scikit-learn (>=0.23.0)
+Requires-Dist: plotly (>=5.15)
+Requires-Dist: torch (>=2.0.0)
+Requires-Dist: wandb
+Requires-Dist: pytorch-lightning (>=2.0.0)
+Requires-Dist: bayesian-optimization
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: bump2version (>=1.0.1) ; extra == 'dev'
+Requires-Dist: compas-invocations (>=1.0.0) ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: invoke (>=0.14) ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: nbsphinx ; extra == 'dev'
+Requires-Dist: pytest (>=6.0) ; extra == 'dev'
+Requires-Dist: sphinx ; extra == 'dev'
+Requires-Dist: pydata-sphinx-theme ; extra == 'dev'
+Requires-Dist: check-manifest (>=0.36) ; extra == 'dev'
+Requires-Dist: scp ; extra == 'dev'
+Requires-Dist: paramiko ; extra == 'dev'
+Provides-Extra: examples
+Requires-Dist: ipython (>=5.8) ; extra == 'examples'
+Requires-Dist: ipykernel ; extra == 'examples'
+Requires-Dist: pythreejs ; extra == 'examples'
+Requires-Dist: matplotlib ; extra == 'examples'
+Requires-Dist: rich (>=10.2.2) ; extra == 'examples'
+
+# AI-eXtended Design (AIXD)
+
+## Introduction
+
+In the current repository we collect the code for the general methodology for AI-augmented generative design. This methodology allows to invert the standard paradigm of parametric modelling, where the designer needs to tweak and tune the input parameters, iteratively or through trial and error, for achieving some desired performance values. 
+
+Instead, this method allows to, by just specifying the requirements' values, obtain a range of designs that closely approximate those. Besides, the present methodology allows the user to explore the design space, understand how different parameters relate to each other, areas of feasible and unfeasible designs, etc.
+
+## Documentation
+
+A detailed documentation of the ``aixd`` library is provided [here](https://docs.gramaziokohler.arch.ethz.ch/aixd/docs/). The documentation includes detailed installation instructions, API references, a user guide, application examples and more.
+
+## Installation
+
+Install using `conda`:
+
+    conda env create -f environment.yml
+
+This creates a conda environment called `aixd` with python 3.9 and all the dependencies defined in `requirements.txt` as well as installing the `aixd` package itself in editable mode.
+
+## Development
+
+If you are going to develop on this repository, also install the development requirements:
+
+    pip install -e ".[examples, dev]"
+
+Check the [contribution guidelines](CONTRIBUTING.md) for more details.
+
+## Folders and structure
+
+The structure we follow on the current repo is as follows:
+
+* `examples` : all example applications of the `aixd` toolbox
+* `src` : for all source code. It can be structure following the next structures
+    * `src/aixd` : source code of `aixd` toolbox
+
+## Known issues
+
+* Plotly image export can cause a hang of the system. This is due to a bug in Kaleido (the library
+  used by Plotly for image export) reported in [here](https://github.com/plotly/Kaleido/issues/134). A workaround is to
+  downgrade Kaleido to version `0.1.0.post1`, which can be done by running `pip install kaleido==0.1.0.post1`. 
+
