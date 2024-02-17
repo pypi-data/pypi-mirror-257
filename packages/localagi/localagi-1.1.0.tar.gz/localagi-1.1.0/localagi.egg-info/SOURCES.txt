@@ -1,0 +1,13 @@
+LICENSE
+README.txt
+setup.py
+localagi/__init__.py
+localagi/__main__.py
+localagi/model.py
+localagi/parameters.h5
+localagi.egg-info/PKG-INFO
+localagi.egg-info/SOURCES.txt
+localagi.egg-info/dependency_links.txt
+localagi.egg-info/entry_points.txt
+localagi.egg-info/requires.txt
+localagi.egg-info/top_level.txt

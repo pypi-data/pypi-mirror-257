@@ -1,0 +1,2 @@
+[console_scripts]
+localagi = localagi.__main__:main
