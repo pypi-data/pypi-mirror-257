@@ -1,0 +1,32 @@
+name: wf_siam_20231126_20231202
+type: workflow
+version: beta/1
+
+configuration:
+  max_parallel_jobs: 1
+  continue_on_error: true
+  delete_workflow_log: false
+
+parameters:
+  param_1: value_param_will_be_replaced
+  param_3:
+    - casa
+    - saka
+    - pocker
+  collection: '{"output":"iridelot3f3b7b5c0c6394039bcea6ba038eace72"}'
+
+steps:
+  - - name: fast_copier
+      service_id: '1'
+      type: processor
+      params:
+        - name: pollo
+          values:
+            - '${workflow.param.param_2}'
+        - name: in
+          values:
+            - '${workflow.param.param_1}'
+            - '${workflow.param.param_3}'
+        - name: collection
+          values:
+            - '${workflow.param.collection}'

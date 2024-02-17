@@ -1,0 +1,30 @@
+Mock
+
+mock request
+1) https://github.com/getsentry/responses#basics
+2) https://stackoverflow.com/questions/15753390/how-can-i-mock-requests-and-the-response
+
+
+email:
+
+1) https://realpython.com/python-send-email/
+2)
+
+
+packaging:
+    https://packaging.python.org/en/latest/tutorials/packaging-projects/
+
+    win:
+        py -m pip install --upgrade build
+        py -m build
+
+
+
+    linux:
+        python3 -m pip install --upgrade build
+        python3 -m build
+
+
+
+
+

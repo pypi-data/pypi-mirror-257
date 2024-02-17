@@ -1,0 +1,14 @@
+{
+  "service": "https://iride-lot3.ope.insula.earth/secure/api/v2.0/services/1",
+  "inputs": {
+    "pollo": [
+      "value_param2"
+    ],
+    "in": [
+      "value_param1,casa,saka,pocker"
+    ],
+    "collection": [
+      "{\"output\":\"iridelot3f3b7b5c0c6394039bcea6ba038eace72\"}"
+    ]
+  }
+}

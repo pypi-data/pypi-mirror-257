@@ -1,0 +1,6 @@
+.venv
+venv
+__pycache__
+insula_run
+.idea
+the_results

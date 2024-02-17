@@ -1,0 +1,38 @@
+{
+  "content" : {
+    "id" : 1042,
+    "extId" : "a5fcf301-f6aa-40e5-afc8-17fda70f3afa",
+    "startTime" : null,
+    "endTime" : null,
+    "status" : "PENDING",
+    "phase" : "CREATED",
+    "workerId" : null,
+    "stage" : null,
+    "guiUrl" : null,
+    "guiEndpoint" : null,
+    "queuePosition" : -1,
+    "outputs" : null,
+    "parent" : false,
+    "costQuotation" : {
+      "cost" : 1,
+      "recurrence" : "HOURLY"
+    },
+    "inputTile" : null,
+    "inputDate" : null
+  },
+  "_links" : {
+    "self" : {
+      "href" : "https://iride-lot3.ope.insula.earth/secure/api/v2.0/jobs/793"
+    },
+    "job" : {
+      "href" : "https://iride-lot3.ope.insula.earth/secure/api/v2.0/jobs/793{?projection}",
+      "templated" : true
+    },
+    "logs" : {
+      "href" : "https://iride-lot3.ope.insula.earth/secure/api/v2.0/jobs/793/logs"
+    },
+    "cancel" : {
+      "href" : "https://iride-lot3.ope.insula.earth/secure/api/v2.0/jobs/793/cancel"
+    }
+  }
+}

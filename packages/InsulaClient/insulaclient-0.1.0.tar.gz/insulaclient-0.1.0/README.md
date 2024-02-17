@@ -1,0 +1,80 @@
+# Insula Client
+
+## Example
+
+Two workflows
+
+```yaml
+name: wf_siam_20231126_20231202
+type: workflow
+version: beta/1
+
+configuration:
+  max_parallel_jobs: 1
+  continue_on_error: true
+  delete_workflow_log: false
+
+parameters:
+  param_1: 'https://img.gruppomol.it/articoli/image/casa/1200x1200_1x1_Depositphotos_26486959_xl-2015.jpg'
+  param_2: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Palazzo_Madama_%28Roma%29.jpg/1200px-Palazzo_Madama_%28Roma%29.jpg'
+  collection: '{"out":"iridelot3f3b7b5c0c6394039bcea6ba038eace72"}'
+
+
+steps:
+  - - name: fast_copier
+      template: template_1
+  - - name: fast_copier_download
+      continue_on_error: true
+      create_folder_if_not_exits: true
+      type: downloader
+      params:
+        - name: in
+          values:
+            - '${workflow.step.fast_copier.out} $[.*Palazzo.*]'
+          save_in: 'the_results'
+
+templates:
+  - name: template_1
+    service_id: '1'
+    type: processor
+    params:
+      - name: in
+        values:
+          - '${workflow.param.param_1}'
+          - '${workflow.param.param_2}'
+      - name: collection
+        values:
+          - '${workflow.param.collection}'
+
+```
+
+Workflow download with requirements:
+
+```yaml
+name: wf_siam_20231126_20231202
+type: workflow
+version: beta/1
+
+requirements:
+  jobs:
+    - name: fast_copier
+      id: 1441
+
+
+configuration:
+  max_parallel_jobs: 1
+  continue_on_error: true
+  delete_workflow_log: false
+
+steps:
+  - - name: fast_copier_download
+      continue_on_error: true
+      create_folder_if_not_exits: true
+      type: downloader
+      params:
+        - name: in
+          values:
+            - '${workflow.step.fast_copier}$[.*Palazzo.*]'
+          save_in: 'the_results'
+
+```
