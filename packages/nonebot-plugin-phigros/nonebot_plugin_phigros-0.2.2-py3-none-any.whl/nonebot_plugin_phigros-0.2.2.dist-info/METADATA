@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: nonebot-plugin-phigros
+Version: 0.2.2
+Summary: 一个简单的基于PhigrosLibrary的Phigros查分插件
+Home-page: https://github.com/XTxiaoting14332/nonebot-plugin-phigros
+Author: NightWind
+Author-email: 2125714976@qq.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: Pillow
+Requires-Dist: httpx
+Requires-Dist: nonebot-adapter-qq
+Requires-Dist: nonebot-plugin-send-anything-anywhere
+Requires-Dist: nonebot-plugin-session
+Requires-Dist: nonebot2
+Requires-Dist: pydantic (~=1.10)
+
+UNKNOWN
+
