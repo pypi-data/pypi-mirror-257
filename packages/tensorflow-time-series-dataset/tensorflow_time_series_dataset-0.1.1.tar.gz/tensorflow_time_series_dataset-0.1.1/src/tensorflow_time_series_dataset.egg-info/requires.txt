@@ -1,0 +1,15 @@
+tensorflow>=2.5
+pandas>=1.1.0
+matplotlib>=3.5
+
+[develop]
+python_project_skeleton[test]
+ipykernel
+pre-commit
+python-lsp-ruff
+python-lsp-server[all]
+ruff
+
+[test]
+pytest
+pytest-xdist
