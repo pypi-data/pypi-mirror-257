@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: PyParrotSay
+Version: 0.0.3
+Home-page: https://github.com/DevHollo/pyparrotsay
+Author: Hollo
+Author-email: colin.boyett10@gmail.com
+Description-Content-Type: text/markdown
+Requires-Dist: colorama ==0.4.6
+
+# PyParrotSay
+Make a funny parrot say anything!
+Usage:
+```py
+from pyparrotsay import Parrotsay
+
+parrot = ParrotSay()
+
+parrot.say("Hello!")
+```
