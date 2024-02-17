@@ -1,0 +1,12 @@
+tox_uv/__init__.py,sha256=zB4HY7F50nWzf0FqqsE9qp-MTdhgwNYxx8w8kyDMNyg,149
+tox_uv/_installer.py,sha256=gITVorMkqtiVqMRciGzLbwi_QLN8auK_YlpNF0eoJRY,4788
+tox_uv/_run.py,sha256=Un9nAbzJGKMu70rZCb9xP7mEJqLKx3W0D5bW7fO8NpI,862
+tox_uv/_venv.py,sha256=WuwZDFsMrxxWIUGeOGUsN2_ydhlOuGZ_6RPVfHS6tqc,4344
+tox_uv/plugin.py,sha256=xqgOYJ5m-Onacje5F3eiVZ-kmtxaeXRa8ylbAXTSr1k,453
+tox_uv/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tox_uv/version.py,sha256=BGgbj7AHZwtVw29XgDIjcG5woR-f3jQy2X-ArcRT22E,411
+tox_uv-1.0.2.dist-info/METADATA,sha256=_3HAkrJWjgQC4e4o9laMazHXmpZCYg2fYWs4MPcLbvc,2584
+tox_uv-1.0.2.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+tox_uv-1.0.2.dist-info/entry_points.txt,sha256=NdbZYEUAq47Yh77-tuEOWa6m9D-vMYag5qOiENTwZUk,29
+tox_uv-1.0.2.dist-info/licenses/LICENSE,sha256=kOJeH68qSq6o2V7o5_VziwUqGswMnFgGgQH5Mahr1Yg,1023
+tox_uv-1.0.2.dist-info/RECORD,,
