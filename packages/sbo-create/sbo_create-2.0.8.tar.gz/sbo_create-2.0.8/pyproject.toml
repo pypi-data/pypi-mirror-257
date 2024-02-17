@@ -1,0 +1,41 @@
+[build-system]
+requires = ["flit_core>=3.2.0,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "sbo-create"
+version = "2.0.8"
+authors = [
+    {name = "Dimitris Zlatanidis", email = "dslackw@gmail.com"},
+]
+maintainers = [
+    {name = "Dimitris Zlatanidis", email = "dslackw@gmail.com"},
+]
+description = "SBo tool for creating SlackBuilds."
+readme = "README.md"
+requires-python = ">=3.9"
+keywords = ["sbo", "templates", "slackbuild"]
+license = {text = "GNU General Public License v3 (GPLv3)"}
+classifiers = [
+        "Development Status :: 5 - Production/Stable",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: Unix",
+        "Programming Language :: Python",
+        "Programming Language :: Python :: 3",
+        ]
+
+dependencies = [
+    "pythondialog>=3.5.3",
+]
+
+[tool.flit_core]
+name = "sbo-create"
+
+[project.urls]
+Homepage = "https://dslackw.gitlab.io/sbo-create/"
+Documentation = "https://dslackw.gitlab.io/sbo-create/"
+Repository = "https://gitlab.com/dslackw/sbo-create.git"
+Changelog = "https://gitlab.com/dslackw/sbo-create/-/blob/main/ChangeLog.txt"
+
+[project.scripts]
+sbo-create = "sbo_create.main:main"
