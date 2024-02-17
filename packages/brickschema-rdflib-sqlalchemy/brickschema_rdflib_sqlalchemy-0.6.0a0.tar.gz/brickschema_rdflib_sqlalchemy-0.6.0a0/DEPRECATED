@@ -1,0 +1,209 @@
+[1m============================= test session starts ==============================[0m
+platform darwin -- Python 3.12.0, pytest-8.0.0, pluggy-1.4.0 -- /Users/gabe/src/rdflib-sqlalchemy/.venv/bin/python
+cachedir: .pytest_cache
+rootdir: /Users/gabe/src/rdflib-sqlalchemy
+configfile: pytest.ini
+testpaths: test
+[1mcollecting ... [0mcollected 45 items / 3 skipped
+
+test/test_aggregate_graphs.py::GraphAggregates1::testAggregateRaw [32mPASSED[0m
+test/test_aggregate_graphs.py::GraphAggregates3::testDefaultGraph [32mPASSED[0m
+test/test_sqlalchemy.py::ConfigTest::test_no_url [32mPASSED[0m
+test/test_sqlalchemy.py::ConfigTest::test_success [32mPASSED[0m
+test/test_sqlalchemy.py::SQLATestCase::test__len [32mPASSED[0m
+test/test_sqlalchemy.py::SQLATestCase::test__remove_context [32mPASSED[0m
+test/test_sqlalchemy.py::SQLATestCase::test_contexts_result [32mPASSED[0m
+test/test_sqlalchemy.py::SQLATestCase::test_contexts_with_triple [32mPASSED[0m
+test/test_sqlalchemy.py::SQLATestCase::test_contexts_without_triple [32mPASSED[0m
+test/test_sqlalchemy.py::SQLATestCase::test_namespaces [32mPASSED[0m
+test/test_sqlalchemy.py::SQLATestCase::test_quoted_statements [32mPASSED[0m
+test/test_sqlalchemy.py::SQLATestCase::test_registerplugins [32mPASSED[0m
+test/test_sqlalchemy.py::SQLATestCase::test_triples_choices [32mPASSED[0m
+test/test_sqlalchemy_sqlite.py::SQLASQLiteGraphTestCase::testAdd <- test/graph_case.py [32mPASSED[0m
+test/test_sqlalchemy_sqlite.py::SQLASQLiteGraphTestCase::testBindNamespace <- test/graph_case.py [32mPASSED[0m
+test/test_sqlalchemy_sqlite.py::SQLASQLiteGraphTestCase::testConnected <- test/graph_case.py [32mPASSED[0m
+test/test_sqlalchemy_sqlite.py::SQLASQLiteGraphTestCase::testGraphAdd <- test/graph_case.py [32mPASSED[0m
+test/test_sqlalchemy_sqlite.py::SQLASQLiteGraphTestCase::testGraphIntersection <- test/graph_case.py [32mPASSED[0m
+test/test_sqlalchemy_sqlite.py::SQLASQLiteGraphTestCase::testRemove <- test/graph_case.py [32mPASSED[0m
+test/test_sqlalchemy_sqlite.py::SQLASQLiteGraphTestCase::testStoreLiterals <- test/graph_case.py [32mPASSED[0m
+test/test_sqlalchemy_sqlite.py::SQLASQLiteGraphTestCase::testStoreLiteralsXml <- test/graph_case.py [32mPASSED[0m
+test/test_sqlalchemy_sqlite.py::SQLASQLiteGraphTestCase::testStoreLiteralsXmlQuote <- test/graph_case.py [32mPASSED[0m
+test/test_sqlalchemy_sqlite.py::SQLASQLiteGraphTestCase::testSub <- test/graph_case.py [32mPASSED[0m
+test/test_sqlalchemy_sqlite.py::SQLASQLiteGraphTestCase::testTriples <- test/graph_case.py [32mPASSED[0m
+test/test_sqlalchemy_sqlite.py::SQLASQLiteGraphTestCase::testTriplesChoices <- test/graph_case.py [32mPASSED[0m
+test/test_sqlalchemy_sqlite.py::SQLASQLiteGraphTestCase::test_add <- test/graph_case.py [32mPASSED[0m
+test/test_sqlalchemy_sqlite.py::SQLASQLiteGraphTestCase::test_add_duplicate_length <- test/graph_case.py [32mPASSED[0m
+test/test_sqlalchemy_sqlite.py::SQLASQLiteGraphTestCase::test_addn <- test/graph_case.py [32mPASSED[0m
+test/test_sqlalchemy_sqlite.py::SQLASQLiteGraphTestCase::test_namespace_change_prefix_binding <- test/graph_case.py [32mPASSED[0m
+test/test_sqlalchemy_sqlite.py::SQLASQLiteGraphTestCase::test_namespace_rebind_prefix <- test/graph_case.py [32mPASSED[0m
+test/test_sqlalchemy_sqlite.py::SQLASQLiteGraphTestCase::test_type_add <- test/graph_case.py [32mPASSED[0m
+test/test_sqlalchemy_sqlite.py::SQLASQLiteGraphTestCase::test_type_addn <- test/graph_case.py [32mPASSED[0m
+test/test_sqlalchemy_sqlite.py::SQLASQLiteContextTestCase::testAdd <- test/context_case.py [32mPASSED[0m
+test/test_sqlalchemy_sqlite.py::SQLASQLiteContextTestCase::testConjunction <- test/context_case.py [32mPASSED[0m
+test/test_sqlalchemy_sqlite.py::SQLASQLiteContextTestCase::testContexts <- test/context_case.py [32mPASSED[0m
+test/test_sqlalchemy_sqlite.py::SQLASQLiteContextTestCase::testLenInMultipleContexts [33mSKIPPED[0m
+test/test_sqlalchemy_sqlite.py::SQLASQLiteContextTestCase::testLenInOneContext <- test/context_case.py [32mPASSED[0m
+test/test_sqlalchemy_sqlite.py::SQLASQLiteContextTestCase::testRemove <- test/context_case.py [32mPASSED[0m
+test/test_sqlalchemy_sqlite.py::SQLASQLiteContextTestCase::testRemoveAny <- test/context_case.py [32mPASSED[0m
+test/test_sqlalchemy_sqlite.py::SQLASQLiteContextTestCase::testRemoveContext <- test/context_case.py [32mPASSED[0m
+test/test_sqlalchemy_sqlite.py::SQLASQLiteContextTestCase::testRemoveInMultipleContexts <- test/context_case.py [32mPASSED[0m
+test/test_sqlalchemy_sqlite.py::SQLASQLiteContextTestCase::testTriples <- test/context_case.py [32mPASSED[0m
+test/test_store_performance.py::StoreTestCase::testTime "Load None": [
+Loaded   691 triples in 0.00287s
+Loaded  1285 triples in 0.00543s
+Loaded  2006 triples in 0.00839s
+Loaded  3095 triples in 0.0131s
+Loaded  5223 triples in 0.0256s
+Loaded 10303 triples in 0.0471s
+Loaded 25161 triples in 0.118s
+],
+"Read None": [
+0.0138s
+],
+"Delete None": [
+0.0989 
+],
+[32mPASSED[0m
+test/test_store_performance.py::SQLAlchemyStoreTestCase::testTime "Load SQLAlchemy": [
+Loaded   691 triples in 0.0102s
+Loaded  1285 triples in 0.0165s
+Loaded  2006 triples in 0.0285s
+Loaded  3095 triples in 0.0435s
+Loaded  5223 triples in 0.0743s
+Loaded 10303 triples in 0.145s
+Loaded 25161 triples in 0.378s
+],
+"Read SQLAlchemy": [
+0.198s
+],
+"Delete SQLAlchemy": [
+0.193 
+],
+[32mPASSED[0m
+test/test_type_to_term_combination.py::TypeToTermCombinationTestCase::test_luuu [32mPASSED[0m
+
+[33m=============================== warnings summary ===============================[0m
+rdflib_sqlalchemy/__init__.py:4
+  /Users/gabe/src/rdflib-sqlalchemy/rdflib_sqlalchemy/__init__.py:4: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+    from pkg_resources import get_distribution
+
+.venv/lib/python3.12/site-packages/_pytest/compat.py:303
+  /Users/gabe/src/rdflib-sqlalchemy/.venv/lib/python3.12/site-packages/_pytest/compat.py:303: UserWarning: Code: _pytestfixturefunction is not defined in namespace SDO
+    return getattr(object, name, default)
+
+test/test_aggregate_graphs.py: 225 warnings
+test/test_sqlalchemy.py: 119 warnings
+test/test_sqlalchemy_sqlite.py: 215 warnings
+  /Users/gabe/src/rdflib-sqlalchemy/rdflib_sqlalchemy/store.py:671: RemovedIn20Warning: The legacy calling style of select() is deprecated and will be removed in SQLAlchemy 2.0.  Please use the new calling style described at select(). (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+    s = select([nb_table.c.uri]).where(nb_table.c.prefix == prefix_val)
+
+test/test_aggregate_graphs.py: 225 warnings
+test/test_sqlalchemy.py: 119 warnings
+test/test_sqlalchemy_sqlite.py: 216 warnings
+  /Users/gabe/src/rdflib-sqlalchemy/rdflib_sqlalchemy/store.py:657: RemovedIn20Warning: The legacy calling style of select() is deprecated and will be removed in SQLAlchemy 2.0.  Please use the new calling style described at select(). (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+    s = select([nb_table.c.prefix]).where(nb_table.c.uri == namespace)
+
+test/test_aggregate_graphs.py: 13 warnings
+test/test_sqlalchemy_sqlite.py: 78 warnings
+test/test_store_performance.py: 1 warning
+  /Users/gabe/src/rdflib-sqlalchemy/rdflib_sqlalchemy/sql.py:72: RemovedIn20Warning: The legacy calling style of select() is deprecated and will be removed in SQLAlchemy 2.0.  Please use the new calling style described at select(). (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+    select_clause = expression.select(
+
+test/test_aggregate_graphs.py: 30 warnings
+test/test_sqlalchemy_sqlite.py: 219 warnings
+test/test_store_performance.py: 2 warnings
+  /Users/gabe/src/rdflib-sqlalchemy/rdflib_sqlalchemy/sql.py:70: RemovedIn20Warning: The FromClause.select().whereclause parameter is deprecated and will be removed in version 2.0.  Please make use of the Select.where() method to add WHERE criteria to the SELECT statement. (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+    select_clause = table.select(whereClause)
+
+test/test_aggregate_graphs.py: 30 warnings
+test/test_sqlalchemy_sqlite.py: 219 warnings
+test/test_store_performance.py: 2 warnings
+  /Users/gabe/src/rdflib-sqlalchemy/rdflib_sqlalchemy/sql.py:70: RemovedIn20Warning: The legacy calling style of select() is deprecated and will be removed in SQLAlchemy 2.0.  Please use the new calling style described at select(). (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+    select_clause = table.select(whereClause)
+
+test/test_aggregate_graphs.py: 19 warnings
+test/test_sqlalchemy.py: 5 warnings
+test/test_sqlalchemy_sqlite.py: 139 warnings
+test/test_store_performance.py: 1 warning
+  /Users/gabe/src/rdflib-sqlalchemy/rdflib_sqlalchemy/sql.py:100: RemovedIn20Warning: Set functions such as union(), union_all(), extract(), etc. in SQLAlchemy 2.0 will accept a series of SELECT statements only. Please use generative methods such as order_by() for additional modifications to this CompoundSelect. (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+    return expression.union(*selects, **{"order_by": order_statement})
+
+test/test_aggregate_graphs.py: 12 warnings
+test/test_sqlalchemy.py: 2 warnings
+test/test_sqlalchemy_sqlite.py: 135 warnings
+test/test_store_performance.py: 1 warning
+  /Users/gabe/src/rdflib-sqlalchemy/rdflib_sqlalchemy/sql.py:83: RemovedIn20Warning: The legacy calling style of select() is deprecated and will be removed in SQLAlchemy 2.0.  Please use the new calling style described at select(). (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+    select_clause = expression.select(
+
+test/test_aggregate_graphs.py::GraphAggregates3::testDefaultGraph
+test/test_aggregate_graphs.py::GraphAggregates3::testDefaultGraph
+test/test_sqlalchemy.py::SQLATestCase::test_namespaces
+test/test_sqlalchemy_sqlite.py::SQLASQLiteGraphTestCase::test_namespace_change_prefix_binding
+  /Users/gabe/src/rdflib-sqlalchemy/rdflib_sqlalchemy/store.py:682: RemovedIn20Warning: The FromClause.select() method will no longer accept keyword arguments in version 2.0.  Please use generative methods from the Select construct in order to apply additional modifications. (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+    res = connection.execute(self.tables["namespace_binds"].select(distinct=True))
+
+test/test_aggregate_graphs.py::GraphAggregates3::testDefaultGraph
+test/test_aggregate_graphs.py::GraphAggregates3::testDefaultGraph
+test/test_sqlalchemy.py::SQLATestCase::test_namespaces
+test/test_sqlalchemy_sqlite.py::SQLASQLiteGraphTestCase::test_namespace_change_prefix_binding
+  /Users/gabe/src/rdflib-sqlalchemy/rdflib_sqlalchemy/store.py:682: RemovedIn20Warning: The legacy calling style of select() is deprecated and will be removed in SQLAlchemy 2.0.  Please use the new calling style described at select(). (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+    res = connection.execute(self.tables["namespace_binds"].select(distinct=True))
+
+test/test_sqlalchemy.py: 3 warnings
+test/test_sqlalchemy_sqlite.py: 47 warnings
+test/test_store_performance.py: 36 warnings
+  /Users/gabe/src/rdflib-sqlalchemy/rdflib_sqlalchemy/sql.py:65: RemovedIn20Warning: The legacy calling style of select() is deprecated and will be removed in SQLAlchemy 2.0.  Please use the new calling style described at select(). (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+    select_clause = expression.select([functions.count().label('aCount')]).select_from(
+
+test/test_sqlalchemy.py: 3 warnings
+test/test_sqlalchemy_sqlite.py: 47 warnings
+test/test_store_performance.py: 36 warnings
+  /Users/gabe/src/rdflib-sqlalchemy/rdflib_sqlalchemy/sql.py:66: RemovedIn20Warning: The legacy calling style of select() is deprecated and will be removed in SQLAlchemy 2.0.  Please use the new calling style described at select(). (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+    expression.select(cols, whereClause).distinct().select_from(table))
+
+test/test_sqlalchemy.py: 3 warnings
+test/test_sqlalchemy_sqlite.py: 47 warnings
+test/test_store_performance.py: 36 warnings
+  /Users/gabe/src/rdflib-sqlalchemy/rdflib_sqlalchemy/sql.py:65: SADeprecationWarning: Implicit coercion of SELECT and textual SELECT constructs into FROM clauses is deprecated; please call .subquery() on any Core select or ORM Query object in order to produce a subquery object.
+    select_clause = expression.select([functions.count().label('aCount')]).select_from(
+
+test/test_sqlalchemy.py: 1 warning
+test/test_sqlalchemy_sqlite.py: 13 warnings
+test/test_store_performance.py: 9 warnings
+  /Users/gabe/src/rdflib-sqlalchemy/rdflib_sqlalchemy/sql.py:102: RemovedIn20Warning: Set functions such as union(), union_all(), extract(), etc. in SQLAlchemy 2.0 will accept a series of SELECT statements only. Please use generative methods such as order_by() for additional modifications to this CompoundSelect. (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+    return expression.union_all(*selects, **{"order_by": order_statement})
+
+test/test_sqlalchemy.py::SQLATestCase::test__remove_context
+test/test_sqlalchemy.py::SQLATestCase::test__remove_context
+test/test_sqlalchemy.py::SQLATestCase::test__remove_context
+test/test_sqlalchemy.py::SQLATestCase::test__remove_context
+  /Users/gabe/src/rdflib-sqlalchemy/rdflib_sqlalchemy/store.py:757: RemovedIn20Warning: The delete.whereclause parameter will be removed in SQLAlchemy 2.0.  Please refer to the Delete.where() method. (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+    connection.execute(table.delete(clause))
+
+test/test_sqlalchemy.py: 15 warnings
+test/test_sqlalchemy_sqlite.py: 15 warnings
+  /Users/gabe/src/rdflib-sqlalchemy/rdflib_sqlalchemy/sql.py:68: RemovedIn20Warning: The legacy calling style of select() is deprecated and will be removed in SQLAlchemy 2.0.  Please use the new calling style described at select(). (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+    select_clause = expression.select([table.c.context], whereClause)
+
+test/test_sqlalchemy_sqlite.py: 35 warnings
+test/test_store_performance.py: 8 warnings
+  /Users/gabe/src/rdflib-sqlalchemy/rdflib_sqlalchemy/store.py:399: RemovedIn20Warning: The delete.whereclause parameter will be removed in SQLAlchemy 2.0.  Please refer to the Delete.where() method. (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+    connection.execute(literal_table.delete(clause))
+
+test/test_sqlalchemy_sqlite.py: 70 warnings
+test/test_store_performance.py: 16 warnings
+  /Users/gabe/src/rdflib-sqlalchemy/rdflib_sqlalchemy/store.py:408: RemovedIn20Warning: The delete.whereclause parameter will be removed in SQLAlchemy 2.0.  Please refer to the Delete.where() method. (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+    connection.execute(table.delete(clause))
+
+test/test_sqlalchemy_sqlite.py: 3 warnings
+test/test_store_performance.py: 8 warnings
+  /Users/gabe/src/rdflib-sqlalchemy/rdflib_sqlalchemy/store.py:414: RemovedIn20Warning: The delete.whereclause parameter will be removed in SQLAlchemy 2.0.  Please refer to the Delete.where() method. (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+    connection.execute(asserted_type_table.delete(clause))
+
+test/test_sqlalchemy_sqlite.py: 3 warnings
+test/test_store_performance.py: 8 warnings
+  /Users/gabe/src/rdflib-sqlalchemy/rdflib_sqlalchemy/store.py:417: RemovedIn20Warning: The delete.whereclause parameter will be removed in SQLAlchemy 2.0.  Please refer to the Delete.where() method. (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+    connection.execute(quoted_table.delete(clause))
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+[33m================= [32m44 passed[0m, [33m[1m4 skipped[0m, [33m[1m2503 warnings[0m[33m in 4.21s[0m[33m =================[0m

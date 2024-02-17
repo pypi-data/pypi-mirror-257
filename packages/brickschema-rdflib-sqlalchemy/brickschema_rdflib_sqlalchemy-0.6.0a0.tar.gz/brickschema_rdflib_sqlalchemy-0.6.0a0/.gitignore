@@ -1,0 +1,20 @@
+.tox
+.noseids
+rdflib_sqlalchemy.egg-info
+/build/
+*.pyc
+/__pycache__/
+*.project
+*.pydevproject
+*.egg-info/
+/.eggs/
+/dist/
+/venv/
+.venv*
+docs/api
+
+# JetBrains IDE files
+/.idea/
+
+# Test outcomes
+test/tmpdb.sqlite
