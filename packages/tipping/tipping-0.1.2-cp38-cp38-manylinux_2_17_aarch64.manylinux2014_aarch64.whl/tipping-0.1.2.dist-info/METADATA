@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: tipping
+Version: 0.1.2
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Dist: pytest ; extra == 'tests'
+Requires-Dist: version ; extra == 'dynamic'
+Provides-Extra: tests
+Provides-Extra: dynamic
+License-File: LICENSE
+Summary: A python binding for the Rust implementation of Tipping algorithm (tipping-rs)
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+# Tipping
+
