@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: viur-shop
+Version: 0.1.0.dev5
+Summary: A ViUR-shop
+Home-page: https://github.com/viur-framework/viur-shop
+Author: Sven Eberth
+Author-email: se@mausbrand.de
+Maintainer: Sven Eberth
+Maintainer-email: se@mausbrand.de
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: unzer
+Requires-Dist: unzer ~=1.0.0.dev3 ; extra == 'unzer'
+
+# viur-shop (WIP)
