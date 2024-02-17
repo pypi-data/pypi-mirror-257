@@ -1,0 +1,11 @@
+openbb_orats/__init__.py,sha256=ThWqMGBlPt2nkCjdKj29l1GTumIT98qh2m8Xv5HU-_M,1417
+openbb_orats/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+openbb_orats/models/tickers.py,sha256=v1U4Q1qqLd2s6tkS1_1lnKISZ9knO929hBSoRkTyOyQ,4309
+openbb_orats/provider.py,sha256=dg63aEjWzh6bjcue8_lnS9Ks0f0RX-pOFOhXAa5ZWhY,716
+openbb_orats/router.py,sha256=MLUzmcodUF3BT6buMXb4WZLWqrv5ljIdykjxkc4XDVM,1651
+openbb_orats/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+openbb_orats/utils/helpers.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+openbb_orats-1.0.1.dist-info/entry_points.txt,sha256=ZlUd2rFtqvYc3oYuJqgh8h5n-P7_P21fAoCGUz_Dujw,138
+openbb_orats-1.0.1.dist-info/METADATA,sha256=vGy2RKyzFc89nH8PSLv_cPvuXxQkyMz-fXtMmES81xg,1669
+openbb_orats-1.0.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+openbb_orats-1.0.1.dist-info/RECORD,,
