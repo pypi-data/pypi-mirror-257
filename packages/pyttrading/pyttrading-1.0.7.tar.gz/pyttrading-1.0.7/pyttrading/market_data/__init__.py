@@ -1,0 +1,1 @@
+from .opensearch_collector import *
