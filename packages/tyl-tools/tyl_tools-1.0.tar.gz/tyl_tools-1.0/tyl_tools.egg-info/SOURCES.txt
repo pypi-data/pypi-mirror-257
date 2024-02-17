@@ -1,0 +1,6 @@
+setup.py
+tyl_tools.py
+tyl_tools.egg-info/PKG-INFO
+tyl_tools.egg-info/SOURCES.txt
+tyl_tools.egg-info/dependency_links.txt
+tyl_tools.egg-info/top_level.txt
