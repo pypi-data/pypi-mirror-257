@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: terradep-python
+Version: 0.1.1
+Summary: Terraform provider dependency management (Python version)
+Home-page: https://smheidrich.gitlab.io/terradep-python/
+License: MIT
+Author: smheidrich
+Author-email: smheidrich@weltenfunktion.de
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: casefy (>=0.1.7,<0.2.0)
+Requires-Dist: jinja2 (>=3.1.2,<4.0.0)
+Requires-Dist: typer (>=0.9.0,<0.10.0)
+Project-URL: Documentation, https://smheidrich.gitlab.io/terradep-python/
+Project-URL: Repository, https://gitlab.com/smheidrich/terradep-python
+Description-Content-Type: text/markdown
+
+# terradep-python
+
+Launcher for Python Terraform providers ensuring dependencies are fulfilled.
+
+DON'T USE THIS YET IF YOU'RE NOT ME! Will hopefully be ready for others to use
+at some point. If you're interested in it, let me know and I'll see what I can
+do.
+
+Providers themselves can be implemented using e.g.
+[tfprovider-python](https://gitlab.com/smheidrich/tfprovider-python).
+
