@@ -1,0 +1,6 @@
+README.md
+setup.py
+yandex_theauth_sdk_flask_helper.egg-info/PKG-INFO
+yandex_theauth_sdk_flask_helper.egg-info/SOURCES.txt
+yandex_theauth_sdk_flask_helper.egg-info/dependency_links.txt
+yandex_theauth_sdk_flask_helper.egg-info/top_level.txt
