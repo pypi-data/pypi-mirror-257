@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*.nc
+.ipynb_checkpoints
+/old
+/__pycache__
+/preprocessed_data
+*Copy*
+# *.fif
+*perso*
+/perso
+/dist
+*egg*
+!tutorials/sample_data/sample_data.nc
+.DS_Store
+.vscode
