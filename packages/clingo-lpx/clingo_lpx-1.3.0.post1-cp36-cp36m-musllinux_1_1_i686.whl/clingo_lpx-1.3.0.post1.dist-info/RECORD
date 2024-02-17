@@ -1,0 +1,12 @@
+clingo_lpx-1.3.0.post1.dist-info/LICENSE,sha256=Xn_GLMCpm5CYLVPW0INBUOeNFMHg6L8CW9P4qb0LyJs,1072
+clingo_lpx-1.3.0.post1.dist-info/WHEEL,sha256=-1NQEQkltTWx0VEwfZngXWtcZX7JI4KG7gMxdNWi-04,104
+clingo_lpx-1.3.0.post1.dist-info/METADATA,sha256=fW3s9O1ZXKczq1q0cl_yni2RXi4SQTwQKQstTajYpbA,569
+clingo_lpx-1.3.0.post1.dist-info/top_level.txt,sha256=b9n0d58tZljKslFS9aOPaivOPHUW5eoK6_kjcx8-KSU,10
+clingo_lpx-1.3.0.post1.dist-info/RECORD,,
+clingo_lpx.libs/libstdc++-8baf04f9.so.6.0.28,sha256=yrzOxg1heyJ9Y-43YCLLn04Cpl_A68FN0D2Q1iBTMcY,2428961
+clingo_lpx.libs/libgcc_s-8b50eaaa.so.1,sha256=WXj_FYQE1MDIyb-nN8siUALdxit6NHma0p9UxemQV8o,101649
+clingolpx/_clingolpx.cpython-36m-i386-linux-gnu.so,sha256=Df-CVgo09GJcjLq5VcdHt2OUzefx9byX6dLP8dVosss,656229
+clingolpx/__init__.py,sha256=bQMCEThQBCbCbe1Q8rqdaFhzkVP6BG7pfnERsze856U,324
+clingolpx/clingo-lpx.h,sha256=2sV3VWoaVctlECXdx9uC2OdM0wpoF211KaOC6X_mwnI,6472
+clingolpx/__main__.py,sha256=Y-YEXsnhazI9r_U2yHaE5_deD57J19DfhiPY2WpBKw0,2927
+clingolpx/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
