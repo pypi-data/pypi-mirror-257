@@ -1,0 +1,11 @@
+{
+    "[python]": {
+        "editor.codeActionsOnSave": {
+            "source.fixAll": "explicit"
+        },
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.formatOnSave": true
+    },
+    "esbonio.sphinx.confDir": "",
+    "rewrap.wrappingColumn": 79
+}
