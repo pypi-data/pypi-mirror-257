@@ -1,0 +1,129 @@
+Metadata-Version: 2.1
+Name: redis-json-dict
+Version: 0.2.0
+Summary: A Redis-backed persistent Python dictionary
+Project-URL: Homepage, https://github.com/NSLS2/redis-json-dict
+Project-URL: Bug Tracker, https://github.com/NSLS2/redis-json-dict/issues
+Project-URL: Discussions, https://github.com/NSLS2/redis-json-dict/discussions
+Project-URL: Changelog, https://github.com/NSLS2/redis-json-dict/releases
+Author-email: Brookhaven National Laboratory <wwijesing1@bnl.gov>
+License: BSD 3-Clause License
+        
+        Copyright (c) 2024, Brookhaven National Laboratory.
+        All rights reserved.
+        
+        Redistribution and use in source and binary forms, with or without
+        modification, are permitted provided that the following conditions are met:
+        
+        * Redistributions of source code must retain the above copyright notice, this
+          list of conditions and the following disclaimer.
+        
+        * Redistributions in binary form must reproduce the above copyright notice,
+          this list of conditions and the following disclaimer in the documentation
+          and/or other materials provided with the distribution.
+        
+        * Neither the name of the vector package developers nor the names of its
+          contributors may be used to endorse or promote products derived from
+          this software without specific prior written permission.
+        
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+        AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+        IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+        DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+        FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+        DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+        SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+        CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+        OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+        OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+License-File: LICENSE
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering
+Classifier: Typing :: Typed
+Requires-Python: >=3.8
+Requires-Dist: orjson>=3.9
+Requires-Dist: redis>=5.0
+Provides-Extra: dev
+Requires-Dist: pre-commit; extra == 'dev'
+Requires-Dist: pytest-cov>=3; extra == 'dev'
+Requires-Dist: pytest>=6; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: furo>=2023.08.17; extra == 'docs'
+Requires-Dist: myst-parser>=0.13; extra == 'docs'
+Requires-Dist: sphinx-autodoc-typehints; extra == 'docs'
+Requires-Dist: sphinx-copybutton; extra == 'docs'
+Requires-Dist: sphinx>=7.0; extra == 'docs'
+Provides-Extra: test
+Requires-Dist: pytest-cov>=3; extra == 'test'
+Requires-Dist: pytest>=6; extra == 'test'
+Description-Content-Type: text/markdown
+
+# redis-json-dict
+
+[![Actions Status][actions-badge]][actions-link]
+[![Documentation Status][rtd-badge]][rtd-link]
+
+[![PyPI version][pypi-version]][pypi-link]
+[![Conda-Forge][conda-badge]][conda-link]
+[![PyPI platforms][pypi-platforms]][pypi-link]
+
+[![GitHub Discussion][github-discussions-badge]][github-discussions-link]
+
+<!-- SPHINX-START -->
+
+## Usage
+
+```pycon
+>>> import redis
+... redis_client = redis.Redis("localhost", 6379)
+... d = RedisJSONDict(redis_client, prefix="my_dict")
+... d
+{}
+```
+
+All user modifications, including mutation of nested lists or dicts, are
+immediately synchronized to the Redis server.
+
+## Design Requirements
+
+- The dictionary implements Python's `collections.abc.MutableMapping` interface.
+- All values stored in Redis are JSON-encoded, readily inspected with developer
+  eyeballs and possible to operate on from clients in languages other than
+  Python.
+- Keys may be prefixed to reduce the likelihood of collisions when one Redis is
+  shared by multiple applications.
+- No data is cached locally, so it is impossible to obtain a stale result.
+  However, the dictionary may be _composed_ with other libraries, such as
+  `cachetools`, to implement TTL caching for example.
+- Top-level items like `d['sample']` may be accessed without synchronizing the
+  entire dictionary. Nested objects like `d['sample']['color']` are supported
+  (but may be less efficient).
+- Mutating nested items, with operations like `d['sample']['color'] = 'red'` or
+  `d['sample']['positions'].append(3)` triggers synchronization.
+
+<!-- prettier-ignore-start -->
+[actions-badge]:            https://github.com/NSLS2/redis-json-dict/workflows/CI/badge.svg
+[actions-link]:             https://github.com/NSLS2/redis-json-dict/actions
+[conda-badge]:              https://img.shields.io/conda/vn/conda-forge/redis-json-dict
+[conda-link]:               https://github.com/conda-forge/redis-json-dict-feedstock
+[github-discussions-badge]: https://img.shields.io/static/v1?label=Discussions&message=Ask&color=blue&logo=github
+[github-discussions-link]:  https://github.com/NSLS2/redis-json-dict/discussions
+[pypi-link]:                https://pypi.org/project/redis-json-dict/
+[pypi-platforms]:           https://img.shields.io/pypi/pyversions/redis-json-dict
+[pypi-version]:             https://img.shields.io/pypi/v/redis-json-dict
+[rtd-badge]:                https://readthedocs.org/projects/redis-json-dict/badge/?version=latest
+[rtd-link]:                 https://redis-json-dict.readthedocs.io/en/latest/?badge=latest
+
+<!-- prettier-ignore-end -->
