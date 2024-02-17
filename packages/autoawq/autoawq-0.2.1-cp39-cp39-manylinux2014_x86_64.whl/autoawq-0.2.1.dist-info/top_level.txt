@@ -1,0 +1,2 @@
+__build_artifact_for_awq_kernel_targeting
+awq
