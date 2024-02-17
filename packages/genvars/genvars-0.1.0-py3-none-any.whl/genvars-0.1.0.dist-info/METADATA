@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: genvars
+Version: 0.1.0
+Summary: Generate description tables for your Pydantic's BaseSettings
+Author: Mikhail Liamets
+Author-email: mikhail@liamets.dev
+Requires-Python: >=3.10,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pydantic (>=2.6.1,<3.0.0)
+Requires-Dist: pydantic-settings (>=2.1.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+# GenVars
+
+Generate description tables for your Pydantic BaseSettings models in Markdown.
+
+```shell
+Usage: poetry run python3 -m genvars [-h] [--output OUTPUT] modules [modules ...]
+
+positional arguments:
+  modules          Modules with settings to describe, e.g. common.settings config <...>
+
+options:
+  -h, --help       show this help message and exit
+  --output OUTPUT  Output file in Markdown.
+```
+
