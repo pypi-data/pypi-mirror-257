@@ -1,0 +1,9 @@
+gptbot/__init__.py,sha256=NlSr6mvzaETOGPUqLXUUQ8T-8R3KrtRLaaFF9FNPCic,68
+gptbot/__main__.py,sha256=x8QakaEONBuQ665jxiaslcKIUhfJQ9M2xnzOr1Etc8A,10174
+gptbot/bot.py,sha256=0SKjR9imLd9qM26_lLJVpafFUWeQhUM0N68LebIy82Y,24189
+gptbot/cli.py,sha256=YRrtGYCenfA15lTK4SHWsQf8-ARtRGc3X7G15mgjN_w,47
+ngptbot-0.3.1.dist-info/LICENSE,sha256=-JoQY3e1FD1pJ78H_5cK2bYq6PqxfrwvLPzCBHyw4Nw,1061
+ngptbot-0.3.1.dist-info/METADATA,sha256=S7DWEvzP4IqiLSECoMzvE09eq_Zjq8Oja45g4lqws-E,4098
+ngptbot-0.3.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+ngptbot-0.3.1.dist-info/entry_points.txt,sha256=k_2cN6hu8_M0e9-5XfXokFr7g4Qt_YbHOZHsTja06pE,41
+ngptbot-0.3.1.dist-info/RECORD,,
