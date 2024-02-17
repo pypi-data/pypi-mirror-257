@@ -1,0 +1,14 @@
+click
+
+[dev]
+black
+build
+pip-tools
+pytest
+pytest-cov
+
+[release]
+twine
+
+[test]
+pytest
