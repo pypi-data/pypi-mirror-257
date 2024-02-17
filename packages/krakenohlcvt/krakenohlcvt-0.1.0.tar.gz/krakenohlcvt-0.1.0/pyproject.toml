@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "krakenohlcvt"
+version = "0.1.0"
+description = "Extract symbol data as pandas data frames from the Kraken_OHLCVT.zip file of the Kraken exchange"
+authors = ["gwangjinkim <gwang.jin.kim.phd@gmail.com>"]
+readme = "README.md"
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+pandas = "*"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
