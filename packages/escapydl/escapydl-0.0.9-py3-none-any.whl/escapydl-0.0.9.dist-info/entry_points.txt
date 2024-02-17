@@ -1,0 +1,7 @@
+[console_scripts]
+escapydl = escapydl.main:main
+escapydl-optimize = escapydl.optimize:main
+escapydl-train = escapydl.train:main
+
+[gui_scripts]
+escapydl-gui = escapydl.gui:main
