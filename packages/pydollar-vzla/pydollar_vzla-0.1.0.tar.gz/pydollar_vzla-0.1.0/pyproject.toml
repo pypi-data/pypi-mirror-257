@@ -1,0 +1,29 @@
+[project]
+name = "pydollar_vzla"
+version = "0.1.0"
+description = "Una librería en Python para obtener el precio del dólar de diferentes fuentes."
+authors = [
+  { name = "Antonio Vila", email = "vila.antoniojose@gmail.com"},
+]
+keywords = [
+  "dolar",
+  "price",
+  "vzla",
+  "venezuela",
+  "divisa",
+]
+classifiers = [
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+]
+license = { file = "LICENSE" }
+dependencies =[
+    "beautifulsoup4>=4.12.3",
+    "requests>=2.31.0",
+    "selenium>=4.17.2",
+    "lxml>=5.1.0",
+]
+dynamic = ["requires-python"]
