@@ -1,0 +1,85 @@
+[tool.poetry]
+name = "knowt"
+version = "0.1.0"
+description = "Private, personalized searchable knowledge base, from your own notes."
+authors = ["hobs <git@totalgood.com>"]
+license = "GPL-3.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+ipython = "*"
+joblib = "^1.3.2"
+jsonlines = "*"
+jupyter = "*"
+pandas = "^2.2.0"
+py-lsh = "*"
+python = "^3.10"
+numpy = "^1.26.2"
+scikit-learn = "^1.3.2"
+sentence-transformers = "^2.2.2"
+spacy = "^3.7.2"
+vaex = "^4.17.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+[tool.ruff]
+# Exclude a variety of commonly ignored directories.
+exclude = [
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".git-rewrite",
+    ".hg",
+    ".ipynb_checkpoints",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".pyenv",
+    ".venv",
+    ".pytest_cache",
+    ".pytype",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    ".vscode",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "site-packages",
+    "venv",
+    ".venv",
+]
+
+line-length = 125  # black line-length=88
+indent-width = 4
+target-version = "py39"
+
+[tool.ruff.lint]
+# Enable Pyflakes (`F`) and a subset of the pycodestyle (`E`)  codes by default.
+select = ["E", "F"] # default: ["E4", "E7", "E9", "F"]
+ignore = []
+fixable = ["ALL"]
+unfixable = []
+# Allow unused variables when underscore-prefixed.
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+
+[tool.ruff.format]
+# # Like Black, use double quotes for strings.
+# quote-style = "double"
+# Like Black, indent with spaces, rather than tabs.
+indent-style = "space"
+# # Like Black, respect magic trailing commas.
+# skip-magic-trailing-comma = false
+# Like Black, automatically detect the appropriate line ending.
+line-ending = "auto"
+
+
