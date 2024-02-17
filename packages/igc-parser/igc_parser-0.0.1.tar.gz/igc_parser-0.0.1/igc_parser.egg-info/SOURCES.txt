@@ -1,0 +1,14 @@
+LICENSE.txt
+README.md
+pyproject.toml
+igc_parser/__init__.py
+igc_parser/exceptions.py
+igc_parser/igc_parser.py
+igc_parser/latlng.py
+igc_parser.egg-info/PKG-INFO
+igc_parser.egg-info/SOURCES.txt
+igc_parser.egg-info/dependency_links.txt
+igc_parser.egg-info/top_level.txt
+igc_parser/tests/__init__.py
+igc_parser/tests/unit/__init__.py
+igc_parser/tests/unit/test_igc_parser.py
