@@ -1,0 +1,10 @@
+clingodl/_clingodl.cpython-311-i386-linux-gnu.so,sha256=v8HpbXbBvorRA_iePI53inunSVx7M1ysv9bETzqV-YA,497240
+clingodl/__init__.py,sha256=ABrDEzCxBvJg3xlOYHHKi-hvz5_u70XBbHXhXWGCHDw,320
+clingodl/clingo-dl.h,sha256=r0TaRuKZuau7b0vM7PyfvUbI2MgyarMRcGYQvE45KUQ,6350
+clingodl/__main__.py,sha256=DctsyK3FgcTpwWZQxNOPSfJATOsVgHhAerJCHwQqBFs,3159
+clingodl/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+clingo_dl-1.5.0.post1.dist-info/WHEEL,sha256=tbPudOL6kXksNdmfEWAWcaw8ePpxEUYPSSe8UtFVUAQ,142
+clingo_dl-1.5.0.post1.dist-info/METADATA,sha256=77BPfUHWNEKueZICtIQx2_wpMt689Oej95QKLyhILlg,545
+clingo_dl-1.5.0.post1.dist-info/LICENSE.md,sha256=FkS__z6N7hEwdWeIE0v3bs56yAcOxcvoAdRrOig5O-s,1101
+clingo_dl-1.5.0.post1.dist-info/top_level.txt,sha256=0gvC0C9AqC1c40t9uqwsrFcNu0kUas8VoudB8kGNLU0,9
+clingo_dl-1.5.0.post1.dist-info/RECORD,,
