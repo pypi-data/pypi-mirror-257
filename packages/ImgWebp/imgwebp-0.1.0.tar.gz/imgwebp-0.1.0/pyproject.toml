@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "ImgWebp"
+version = "0.1.0"
+description = ""
+authors = ["yuanhang <295043131@qq.com>"]
+readme = "README.md"
+packages = [{include = "ImgWebp", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+wget = "^3.2"
+cleo = "^2.1.0"
+
+
+[tool.poetry.scripts]
+imgc = "ImgWebp.console.application:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
