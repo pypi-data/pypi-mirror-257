@@ -1,0 +1,8 @@
+helpfulReviewPredictor/__init__.py,sha256=fpR4lEWxJeHF2ioZiquhibf5OE5sBvRIuuLNmqbZ9mw,63
+helpfulReviewPredictor/best_model.pkl,sha256=AtN2ZNg3deQZOg53jebjuwPVYE8_EePVaRDq9Kei0Zs,8975
+helpfulReviewPredictor/predictor.py,sha256=b23jtmUYsnvimz2AbT1L0uI5b1T5aXe9s7w9IyrxQxk,3180
+helpfulReviewPredictor/vectorizer.pkl,sha256=n-g1Ki6RDD4evEbujs4g-aaK3nwWqLxeTiccUabzL2A,4483610
+helpful_review_predictor-6.dist-info/METADATA,sha256=hZd-CaS0uslE7sI440KMC5hqpqzZQGGALPxInQcK2SQ,3587
+helpful_review_predictor-6.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+helpful_review_predictor-6.dist-info/top_level.txt,sha256=O-ShRl0uNq3VceI6A-Fz6m6CFvWu-ON7SSWdTh1SSJw,23
+helpful_review_predictor-6.dist-info/RECORD,,
