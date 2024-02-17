@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: reduce-smell-detector
+Version: 0.3
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: PyYAML (==6.0.1)
+Requires-Dist: requests (==2.31.0)
+Requires-Dist: urllib3 (==2.2.0)
+
+UNKNOWN
+
+
