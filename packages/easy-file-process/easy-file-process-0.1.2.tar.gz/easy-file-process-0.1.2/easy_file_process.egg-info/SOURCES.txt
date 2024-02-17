@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+easy_file_process.egg-info/PKG-INFO
+easy_file_process.egg-info/SOURCES.txt
+easy_file_process.egg-info/dependency_links.txt
+easy_file_process.egg-info/requires.txt
+easy_file_process.egg-info/top_level.txt
+file/__init__.py

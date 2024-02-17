@@ -1,0 +1,6 @@
+moviepy
+opencv-python
+ffmpeg
+pypdf2
+magika
+requests

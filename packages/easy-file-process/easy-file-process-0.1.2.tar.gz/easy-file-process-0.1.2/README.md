@@ -1,0 +1,1 @@
+A simple encapsulation of basic file operations
