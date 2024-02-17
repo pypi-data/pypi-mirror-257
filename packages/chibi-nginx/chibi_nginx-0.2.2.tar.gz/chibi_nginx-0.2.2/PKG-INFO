@@ -1,0 +1,125 @@
+Metadata-Version: 2.1
+Name: chibi_nginx
+Version: 0.2.2
+Summary: python lib for parse nginx conf files
+Home-page: https://github.com/dem4ply/chibi_nginx
+Author: dem4ply
+Author-email: dem4ply@gmail.com
+License: WTFPL
+Keywords: chibi_nginx
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: Public Domain
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+License-File: LICENSE
+License-File: AUTHORS.rst
+Requires-Dist: chibi>=0.11.7
+
+===========
+chibi_nginx
+===========
+
+
+.. image:: https://img.shields.io/pypi/v/chibi_nginx.svg
+        :target: https://pypi.python.org/pypi/chibi_nginx
+
+.. image:: https://img.shields.io/travis/dem4ply/chibi_nginx.svg
+        :target: https://travis-ci.org/dem4ply/chibi_nginx
+
+.. image:: https://readthedocs.org/projects/chibi-nginx/badge/?version=latest
+        :target: https://chibi-nginx.readthedocs.io/en/latest/?badge=latest
+        :alt: Documentation Status
+
+
+python lib for parse nginx conf files
+
+
+* Free software: WTFPL
+* Documentation: https://chibi-nginx.readthedocs.io.
+
+
+=======
+Install
+=======
+
+
+.. code-block:: bash
+
+	pip install chibi-nginx
+
+
+=====
+Usage
+=====
+
+
+.. code-block:: bash
+
+	cat > /etc/nginx/sites_available/default.conf << 'endmsg'
+	# vi: set ft=nginx:
+	server {
+			server_name $hostname nginx;
+			listen 80;
+
+			access_log /var/log/nginx/default_access.log;
+			error_log /var/log/nginx/default_error.log;
+
+			root /var/www/default/;
+			index index.html;
+	}
+	endmsg
+
+
+.. code-block:: python
+
+	from chibi_nginx import Chibi_nginx
+
+	tmp = Chibi_nginx( '/etc/nginx/sites_available/default.conf' )
+	result = tmp.read()
+	expected = {
+		'server': {
+			'server_name': '$hostname nginx',
+			'listen': '80',
+			'access_log': '/var/log/nginx/default_access.log',
+			'error_log': '/var/log/nginx/default_error.log',
+			'root': '/var/www/default/',
+			'index': 'index.html'}
+	}
+	assert result == expected
+	result[ 'server' ][ 'root' ] = '/home/user/default_site/'
+	tmp.write( result )
+	new_result = tmp.read()
+	assert new_result[ 'server' ][ 'root' ] = '/home/user/default_site/'
+
+
+Features
+--------
+
+* read and write config files of nginx
+
+
+=======
+History
+=======
+
+0.2.1 (2022-03-24)
+------------------
+
+* a more proper readme
+
+0.2.0 (2022-03-19)
+------------------
+
+* improvent in the output when write or change a .conf file
+
+0.1.0 (2022-01-25)
+------------------
+
+* read and write .conf files of nginx
+
+0.1.0 (2021-10-25)
+------------------
+
+* First release on PyPI.
