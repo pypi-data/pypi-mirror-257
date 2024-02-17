@@ -1,0 +1,9 @@
+systema/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+systema/__main__.py,sha256=Qd-f8z2Q2vpiEP2x6PBFsJrpACWDVxFKQk820MhFmHo,59
+systema/__version__.py,sha256=PS0k6-Ci30dE_Nsmj4Ud5HkeeS0C778G78NsBdlUuyg,18
+systema/cli.py,sha256=7TkLJG42e7Qhu1FQ_DtrTpKK21B0o7XfYTE8v_3rkB4,286
+systema/server/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+systema/server/main.py,sha256=6YJO7G_rz366kIXoMyzQyR4EBDdtcwXSJfxJjCdqbZA,368
+systema-0.4.0.dist-info/METADATA,sha256=r4kcpL5x-oY60peSAGjK-DOQP_lR0cd1grjWg-ACJGw,882
+systema-0.4.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+systema-0.4.0.dist-info/RECORD,,
