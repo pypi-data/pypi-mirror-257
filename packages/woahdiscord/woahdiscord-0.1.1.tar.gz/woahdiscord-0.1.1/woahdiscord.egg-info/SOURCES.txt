@@ -1,0 +1,13 @@
+README.md
+setup.py
+woahdiscord/__init__.py
+woahdiscord/discord_script.py
+woahdiscord/file_jpg.py
+woahdiscord/merge_chunk.py
+woahdiscord/osmosis.py
+woahdiscord/splitting_chunk.py
+woahdiscord.egg-info/PKG-INFO
+woahdiscord.egg-info/SOURCES.txt
+woahdiscord.egg-info/dependency_links.txt
+woahdiscord.egg-info/requires.txt
+woahdiscord.egg-info/top_level.txt
