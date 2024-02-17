@@ -1,0 +1,11 @@
+clingodl/__init__.py,sha256=4J3RgPGRvAdclHI1fSq99X6wCRAAYlaKBJZVHpiwwGI,336
+clingodl/__main__.py,sha256=sU723dGp7QxtTavPumZgYjM28ikfwXgo3NXyokwPiIw,3262
+clingodl/_clingodl.cp39-win_amd64.pyd,sha256=HvuI9RYioOehPv-_ISBGjSLFhHaWNjShpEv-f_fkeK4,238080
+clingodl/clingo-dl.h,sha256=0OWSpEVLn8lRfw6eTIl9iwSbC__2KI3xpmP8BRIwVsM,6514
+clingodl/import__clingodl.lib,sha256=f1O4nRakRlfccd6HH3vxUl72uGdTmhuMpw26uhQhnIs,6234
+clingodl/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+clingo_dl-1.5.0.post1.dist-info/LICENSE.md,sha256=W7j9vPSqJXY-JkCb6DX9EB8IPsv__lAP44edHRp_Ky8,1122
+clingo_dl-1.5.0.post1.dist-info/METADATA,sha256=oQK9IRL-VNlED0JcFJfEz-tw8KSsO3S0uaSPuVdx2vo,565
+clingo_dl-1.5.0.post1.dist-info/WHEEL,sha256=aFh_uQusBybh-RCXOkSlg-ycdQBtqU_JDPyXfjBBBgs,94
+clingo_dl-1.5.0.post1.dist-info/top_level.txt,sha256=0gvC0C9AqC1c40t9uqwsrFcNu0kUas8VoudB8kGNLU0,9
+clingo_dl-1.5.0.post1.dist-info/RECORD,,
