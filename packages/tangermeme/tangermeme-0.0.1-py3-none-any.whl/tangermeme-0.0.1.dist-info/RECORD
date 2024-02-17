@@ -1,0 +1,16 @@
+tangermeme/__init__.py,sha256=MvdDsRTVfYBZIojopRLYlRuSBJqP97CZJnlsPZXNmOM,111
+tangermeme/ersatz.py,sha256=jkHQwLIxpxhM5Xl7Bdaw6kNFAk99J7wA072Ilc9pG5A,17308
+tangermeme/io.py,sha256=VAavK9xWh5p2AeN8bYz4xoEVnDVq7SdMECA5io5PkHY,13628
+tangermeme/ism.py,sha256=vefX6oGDn9Qtt-m0xeAW1BtR8OISpudPUCA2vAyFCOI,3418
+tangermeme/marginalize.py,sha256=k7jPbxDbcjrh1N7Rl_T-3Ec4c4f-2yAUToCjJ4nlRPw,6991
+tangermeme/match.py,sha256=1paR8mNm_R_Pvu5VsCoiwGbvIf0X7rr6lQkqvjIMAuk,12384
+tangermeme/plot.py,sha256=-6zMHEjD7kAkKuT3Dhchat9ftmSJu21NenZI2oTWr9U,5018
+tangermeme/predict.py,sha256=webi5TfD53g2OyptfU86MK4Rivfgk5IHcmjHs4jsLn8,5880
+tangermeme/utils.py,sha256=OtezXOq1D3HwrCOuvpwVRsMeAv6btcfXubF9XlIlXQk,9101
+tangermeme/tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tangermeme/tools/fimo.py,sha256=RUJ7qYZTJDahlM9zlZZkYNzUBqZovmFelW3owe_k3XE,12612
+tangermeme-0.0.1.dist-info/LICENSE,sha256=5VUv3Ddcw3w-J9x3cZFA3PP713b0zcPmO4L-iXlxj3k,1072
+tangermeme-0.0.1.dist-info/METADATA,sha256=xl5PQ7noSbtDrGLaEVdrjaeSIL4GHVeuieArhWU8qIQ,566
+tangermeme-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+tangermeme-0.0.1.dist-info/top_level.txt,sha256=kHEmEaqY9vJyIyl2sz_Kol7EXYyq8WbFe8CYV49cKuk,28
+tangermeme-0.0.1.dist-info/RECORD,,
