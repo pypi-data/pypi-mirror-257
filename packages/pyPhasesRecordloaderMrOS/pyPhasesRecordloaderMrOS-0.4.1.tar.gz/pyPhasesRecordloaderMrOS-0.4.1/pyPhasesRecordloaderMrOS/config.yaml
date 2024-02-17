@@ -1,0 +1,226 @@
+# this file contains all relevant configuration taht are used by pyPhasesRecordLoader
+
+loader:
+
+  mros: &mros
+    dataBase: mros
+    dataBaseVersion: 1.0.0 # needs to be raised every time new data is added
+
+    filePath: ./datasets/mros
+    copyRawDataToLocal: True
+
+    dataset:
+      loaderName: RecordLoaderMrOS
+      fromFiles: True # if the records are read from files or sql-database
+      downloader:
+        type: nsrr
+        listFilter: null
+        canReadRemote: False
+        basePath: shhs\polysomnography\edfs\visit1
+        extensions: [.edf, -nsrr.xml, .edf, -nsrr.xml]
+        basePathExtensionwise:
+          [
+            polysomnography\edfs\visit1,
+            polysomnography\annotations-events-nsrr\visit1,
+            polysomnography\edfs\visit2,
+            polysomnography\annotations-events-nsrr\visit2,
+          ]
+        force: False
+        idPattern: .*/(.*).edf
+      filePattern: "*.edf"
+
+    sourceChannels:
+      - name: C3
+        type: eeg
+        optional: True
+      - name: C4
+        type: eeg
+        optional: True
+      - name: A1
+        type: eeg
+        aliases: [M1]
+        optional: True
+      - name: A2
+        type: eeg
+        aliases: [M2]
+        optional: True
+      - name: Position
+        type: body
+        optional: True
+      - name: Leg L
+        type: emg
+        aliases: [LegL]
+      - name: Leg R
+        type: emg
+        aliases: [LegR]
+      - name: ROC
+        type: eog
+        optional: True
+      - name: LOC
+        type: eog
+        optional: True
+      - name: ECG L
+        type: ecg
+        aliases: [ECGL]
+        optional: True
+      - name: ECG R
+        type: ecg
+        aliases: [ECGR]
+        optional: True
+      - name: L Chin
+        type: emg
+        aliases: [LChin]
+        optional: True
+      - name: R Chin
+        type: emg
+        aliases: [RChin]
+        optional: True
+      - name: Airflow
+        type: flow
+      - name: Thoracic
+        type: effort
+        aliases: [Chest]
+      - name: Abdominal
+        type: effort
+        aliases: [ABD]
+      - name: SaO2
+        type: sao2
+        aliases: [SpO2]
+      - name: HR
+        type: hr
+        optional: True
+      - name: Cannula Flow
+        type: flow
+        optional: True
+        aliases: [CannulaFlow]
+    combineChannels: []
+
+  # inherit from mros
+  mros-der: 
+    <<: *mros
+    dataBase: mros-der
+    # the channels that should be extracted from the edf files
+    # there some records (mros-visit1-aa3370.edf) that derived the channels by default, making
+    # most of the L/R channels optional
+    sourceChannels:
+      - name: C3
+        type: eeg
+        optional: True
+      - name: C4
+        type: eeg
+        optional: True
+      - name: A1
+        type: eeg
+        aliases: [M1]
+        optional: True
+      - name: A2
+        type: eeg
+        aliases: [M2]
+        optional: True
+      - name: Position
+        type: body
+        optional: True
+      - name: Leg L
+        type: emg
+        aliases: [LegL]
+      - name: Leg R
+        type: emg
+        aliases: [LegR]
+      - name: ROC
+        type: eog
+        optional: True
+      - name: LOC
+        type: eog
+        optional: True
+      - name: ECG L
+        type: ecg
+        aliases: [ECGL]
+        optional: True
+      - name: ECG R
+        type: ecg
+        aliases: [ECGR]
+        optional: True
+      - name: L Chin
+        type: emg
+        aliases: [LChin]
+        optional: True
+      - name: R Chin
+        type: emg
+        aliases: [RChin]
+        optional: True
+      - name: Airflow
+        type: flow
+      - name: Thoracic
+        type: effort
+        aliases: [Chest]
+      - name: Abdominal
+        type: effort
+        aliases: [ABD]
+      - name: SaO2
+        type: sao2
+        aliases: [SpO2]
+      - name: HR
+        type: hr
+        optional: True
+      - name: Cannula Flow
+        type: flow
+        optional: True
+        aliases: [CannulaFlow]
+      - name: C4-A1
+        optional: True # is used if its present, or generated
+        type: eeg
+      - name: C3-A2
+        optional: True # is used if its present, or generated
+        type: eeg
+      - name: ECG L-ECG R
+        optional: True # is used if its present, or generated
+        type: ecg
+      - name: Leg
+        generated: True
+        type: emg
+      - name: L Chin-R Chin
+        generated: True
+        type: emg
+      # - name: DHR
+      #   type: ?
+      # - name: SUM
+      #   type: ?
+
+    combineChannels:
+      - name: C4-A1
+        combineType: derived
+        type: eeg
+        channel: [C4, A1]
+        overwrite: False
+      - name: C3-A2
+        combineType: derived
+        type: eeg
+        channel: [C3, A2]
+        overwrite: False
+      - name: ECG L-A2
+        combineType: derived
+        type: ecg
+        channel: [ECG L, A2]
+        overwrite: False
+      - name: ECG R-A1
+        combineType: derived
+        type: ecg
+        channel: [ECG R, A1]
+        overwrite: False
+      - name: Leg L-A2
+        combineType: derived
+        type: emg
+        channel: [Leg L, A2]
+        overwrite: False
+      - name: Leg R-A1
+        combineType: derived
+        type: emg
+        channel: [Leg R, A1]
+        overwrite: False
+      - name: L Chin-R Chin
+        combineType: derived
+        type: emg
+        channel: [L Chin, R Chin]
+        overwrite: False
+
+mros-path: datasets/mros
