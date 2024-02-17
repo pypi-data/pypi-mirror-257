@@ -1,0 +1,11 @@
+Makefile
+README.md
+setup.py
+.github/publish.yml
+autodistill_siglip/__init__.py
+autodistill_siglip/siglip_model.py
+autodistill_siglip.egg-info/PKG-INFO
+autodistill_siglip.egg-info/SOURCES.txt
+autodistill_siglip.egg-info/dependency_links.txt
+autodistill_siglip.egg-info/requires.txt
+autodistill_siglip.egg-info/top_level.txt
