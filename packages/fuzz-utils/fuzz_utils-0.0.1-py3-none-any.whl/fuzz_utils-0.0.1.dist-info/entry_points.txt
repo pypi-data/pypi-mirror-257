@@ -1,0 +1,2 @@
+[console_scripts]
+fuzz-utils = fuzz_utils.main:main
