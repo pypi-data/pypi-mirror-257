@@ -1,0 +1,14 @@
+LICENCE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+copyriot/__init__.py
+copyriot/__main__.py
+copyriot/copyriot.py
+copyriot.egg-info/PKG-INFO
+copyriot.egg-info/SOURCES.txt
+copyriot.egg-info/dependency_links.txt
+copyriot.egg-info/entry_points.txt
+copyriot.egg-info/not-zip-safe
+copyriot.egg-info/top_level.txt
