@@ -1,0 +1,2 @@
+[console_scripts]
+autov = main:main
