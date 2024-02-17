@@ -1,0 +1,39 @@
+# Python SpaceCAN
+
+The CAN bus is a robust vehicle bus standard designed to allow microcontrollers and devices to communicate with each other. It is a message-based protocol, designed originally for multiplex electrical wiring within automobiles and is also heavily used in robotics and aerospace. CAN has many years of heritage and is also qualified for space use. In particular, ECSS has developed the CANbus Extenstion Protocol Standard [ECSS-E-ST-50-15C](https://ecss.nl/standard/ecss-e-st-50-15c-space-engineering-canbus-extension-protocol-1-may-2015/) specifically for spacecraft projects that opt to use the CAN Network for on-board communications and control. It also defines the optional use of the CANopen standard as an application layer protocol operating in conjunction with the CAN Network data link layer.
+
+For LibreCube's purpose however, the ECSS CANbus is deemed too complex in terms of implementation and usage. Thus we have further modified the ECSS CANbus Standard to fit the needs of typical spacecraft (and robotics, drone, etc.) projects, while being easy to use and implement. This is what we call the SpaceCAN bus. 
+
+We consider that the SpaceCAN bus is used for control and monitoring, allowing the exchange of commands and telemetry among spacecraft subsystems. Typically, a central processing unit is commanding other intelligent nodes (such as the power system, communication system, and payloads) and collects status information from them. The data to be exchanged on this bus is of moderate volume but must be transmitted in a reliable way. The bus us not intended to route high-volume data, such as science data, but to ensure reliable and robust communication between controller and responder nodes of the network. For this, small messages are sent between nodes that must arrive without error and with very little delay.
+
+More details can be found in the [SpaceCAN documentation](https://librecube.gitlab.io/standards/spacecan/).
+
+## Installation
+
+Install via pip:
+
+```
+pip install spacecan
+```
+
+## Example
+
+See the examples folder on how to create and operate a SpaceCAN network.
+
+## Contribute
+
+- Issue Tracker: https://gitlab.com/librecube/lib/python-spacecan/-/issues
+- Source Code: https://gitlab.com/librecube/lib/python-spacecan
+
+To learn more on how to successfully contribute please read the contributing
+information in the [LibreCube documentation](https://librecube.gitlab.io/).
+
+## Support
+
+If you are having issues, please let us know. Reach us at
+[Matrix](https://app.element.io/#/room/#librecube.org:matrix.org)
+or via [Email](mailto:info@librecube.org).
+
+## License
+
+The project is licensed under the MIT license. See the [LICENSE](./LICENSE.txt) file for details.
