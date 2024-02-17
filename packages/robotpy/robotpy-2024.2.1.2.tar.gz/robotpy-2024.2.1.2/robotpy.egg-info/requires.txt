@@ -1,0 +1,107 @@
+robotpy-wpiutil==2024.2.1.2
+robotpy-wpinet==2024.2.1.2
+robotpy-wpimath==2024.2.1.2
+pyntcore==2024.2.1.2
+robotpy-hal==2024.2.1.2
+wpilib==2024.2.1.2
+robotpy-wpilib-utilities<2025.0.0,>=2024.0.0
+robotpy-cli<2025.0.0,>=2024.0.0
+
+[:platform_machine != "roborio" and platform_machine != "armv7l" and platform_machine != "aarch64"]
+robotpy-halsim-gui==2024.2.1.2
+robotpy-installer<2025.0.0,>=2024.2.0
+pyfrc<2025.0.0,>=2024.0.0
+
+[all]
+robotpy-wpiutil==2024.2.1.2
+robotpy-wpinet==2024.2.1.2
+robotpy-wpimath==2024.2.1.2
+pyntcore==2024.2.1.2
+robotpy-hal==2024.2.1.2
+wpilib==2024.2.1.2
+robotpy-wpilib-utilities<2025.0.0,>=2024.0.0
+robotpy-cli<2025.0.0,>=2024.0.0
+robotpy-apriltag==2024.2.1.2
+robotpy-commands-v2<2025.0.0,>=2024.2.1
+robotpy-cscore==2024.2.1.2
+robotpy-navx<2025.0.0,>=2024.1.0
+robotpy-pathplannerlib<2025.0.0,>=2024.1.1
+photonlibpy<2025.0.0,>=2024.2.2
+robotpy-playingwithfusion<2025.0.0,>=2024.0.0
+robotpy-rev<2025.0.0,>=2024.2.0
+
+[all:platform_machine != "roborio"]
+robotpy-romi==2024.2.1.2
+robotpy-xrp==2024.2.1.2
+
+[all:platform_machine != "roborio" and platform_machine != "armv7l" and platform_machine != "aarch64"]
+robotpy-halsim-gui==2024.2.1.2
+robotpy-installer<2025.0.0,>=2024.2.0
+pyfrc<2025.0.0,>=2024.0.0
+robotpy-halsim-ds-socket==2024.2.1.2
+robotpy-halsim-ws==2024.2.1.2
+
+[all:platform_machine == "roborio"]
+numpy==1.25.2
+robotpy-opencv
+
+[all:python_version >= "3.9" and platform_machine != "armv7l" and platform_machine != "aarch64"]
+robotpy-ctre<2025.0.0,>=2024.1.1
+phoenix6~=24.1
+
+[apriltag]
+robotpy-apriltag==2024.2.1.2
+
+[apriltag:platform_machine == "roborio"]
+numpy==1.25.2
+
+[commands2]
+robotpy-commands-v2<2025.0.0,>=2024.2.1
+
+[cscore]
+robotpy-cscore==2024.2.1.2
+
+[cscore:platform_machine == "roborio"]
+numpy==1.25.2
+robotpy-opencv
+
+[navx]
+robotpy-navx<2025.0.0,>=2024.1.0
+
+[pathplannerlib]
+robotpy-pathplannerlib<2025.0.0,>=2024.1.1
+
+[phoenix5]
+
+[phoenix5:python_version >= "3.9" and platform_machine != "armv7l" and platform_machine != "aarch64"]
+robotpy-ctre<2025.0.0,>=2024.1.1
+
+[phoenix6]
+
+[phoenix6:python_version >= "3.9" and platform_machine != "armv7l" and platform_machine != "aarch64"]
+phoenix6~=24.1
+
+[photonvision]
+photonlibpy<2025.0.0,>=2024.2.2
+
+[playingwithfusion]
+robotpy-playingwithfusion<2025.0.0,>=2024.0.0
+
+[rev]
+robotpy-rev<2025.0.0,>=2024.2.0
+
+[romi]
+
+[romi:platform_machine != "roborio"]
+robotpy-romi==2024.2.1.2
+
+[sim]
+
+[sim:platform_machine != "roborio" and platform_machine != "armv7l" and platform_machine != "aarch64"]
+robotpy-halsim-ds-socket==2024.2.1.2
+robotpy-halsim-ws==2024.2.1.2
+
+[xrp]
+
+[xrp:platform_machine != "roborio"]
+robotpy-xrp==2024.2.1.2
