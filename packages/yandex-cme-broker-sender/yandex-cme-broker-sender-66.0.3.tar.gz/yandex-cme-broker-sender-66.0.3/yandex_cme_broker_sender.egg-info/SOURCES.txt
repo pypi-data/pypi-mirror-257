@@ -1,0 +1,6 @@
+README.md
+setup.py
+yandex_cme_broker_sender.egg-info/PKG-INFO
+yandex_cme_broker_sender.egg-info/SOURCES.txt
+yandex_cme_broker_sender.egg-info/dependency_links.txt
+yandex_cme_broker_sender.egg-info/top_level.txt
