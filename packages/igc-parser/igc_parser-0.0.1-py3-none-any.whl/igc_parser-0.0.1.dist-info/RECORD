@@ -1,0 +1,12 @@
+igc_parser/__init__.py,sha256=Y_OGTYqBNXv_SsYvDKsfl74bNhrdDsPnK5wmnezQg5w,343
+igc_parser/exceptions.py,sha256=hHwgAqsZcVsNu2t8UEDg3ZCMl44UgRKSw8yBxWYjElY,152
+igc_parser/igc_parser.py,sha256=1LQ1NXWPX_yvljieiv4RD9wH7L-Agcl3-CF_A0HFIiw,2898
+igc_parser/latlng.py,sha256=Ztor7ooRXmMXxqTVyAKnTUZMS_0hfriYdVN42SSBjA4,663
+igc_parser/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+igc_parser/tests/unit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+igc_parser/tests/unit/test_igc_parser.py,sha256=ilIVATtouGoblOwjuLlU12U-wxWhQoKxTM-_z1Jo3oE,2173
+igc_parser-0.0.1.dist-info/LICENSE.txt,sha256=rlB8FK1v6v9i3YujNeITo7XwLdn-hqDGue9eI6RLQmc,1057
+igc_parser-0.0.1.dist-info/METADATA,sha256=rfdfKA1CalpLiFwp6irWt-pfCSVoLldpDyxqVq_wKH4,309
+igc_parser-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+igc_parser-0.0.1.dist-info/top_level.txt,sha256=He7VdfqqzMBd9eb3_wEgX6QGT1onD-8jXspExHZoq9Y,11
+igc_parser-0.0.1.dist-info/RECORD,,
