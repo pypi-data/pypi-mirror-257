@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: systema
+Version: 0.3.0
+Summary: 
+Author: Rodrigo Eiti Kimura
+Author-email: rodrigoeitikimura@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: fastapi[all] (>=0.109.2,<0.110.0)
+Requires-Dist: sqlmodel[all] (>=0.0.14,<0.0.15)
+Requires-Dist: typer[all] (>=0.9.0,<0.10.0)
+Description-Content-Type: text/markdown
+
+# Systema (Work-in-Progress)
+
+## Summary
+
+> "You do not rise to the level of your goals. You fall to the level of your systems."
+>
+> - James Clear
+
+This project is intended to be my "Productivity System".
+
+## Planned components
+
+- Web server
+  - FastAPI
+  - SQLModel
+  - FastUI
+- CLI client and manager
+  - Typer
+- TUI client
+  - Textual
+
+## Planned features
+
+- Project Manager
+- Diagrams
+
