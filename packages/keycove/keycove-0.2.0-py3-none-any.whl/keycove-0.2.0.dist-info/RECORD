@@ -1,0 +1,9 @@
+keycove/__init__.py,sha256=iGCQZtTdN4rNV03cqTgQ3f63OWnhZlU7EjMHxqA8Wgg,64
+keycove/generate.py,sha256=1XwOccdXW8V7wG0RfI8yJtvD_NlERkwQfDZYwZwsoC4,696
+keycove/security.py,sha256=9FoeooYl-cbGh4ZmFcvwEuffTYJM8DKBlAW3TCQgBdY,533
+keycove/utils.py,sha256=Qwt2X5qs1Le2ukwPn9un7w41dpKd4ABAU80ILLN2WiA,912
+keycove-0.2.0.dist-info/LICENSE,sha256=Eu_wZ_swCmhpr0vGWGZ_W-jj74p2uj_jtX0YjtTtHu4,1065
+keycove-0.2.0.dist-info/METADATA,sha256=t-lTBAVmP7hApVOxNyjSiRix7OnyQODBUSodCM-l-nk,116
+keycove-0.2.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+keycove-0.2.0.dist-info/top_level.txt,sha256=uMsfw9upGV3CL5ACnkmZsegyJJONZ264_144KK_gxfo,8
+keycove-0.2.0.dist-info/RECORD,,
