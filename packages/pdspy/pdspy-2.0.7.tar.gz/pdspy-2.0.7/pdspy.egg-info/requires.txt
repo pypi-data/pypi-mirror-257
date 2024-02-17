@@ -1,0 +1,13 @@
+numpy
+scipy
+matplotlib
+emcee
+corner
+hyperion
+h5py
+mpi4py
+Cython
+astropy
+schwimmbad
+dynesty
+scikit-learn
