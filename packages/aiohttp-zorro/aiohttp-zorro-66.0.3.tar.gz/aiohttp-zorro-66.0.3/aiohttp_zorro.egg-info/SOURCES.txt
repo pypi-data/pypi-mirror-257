@@ -1,0 +1,6 @@
+README.md
+setup.py
+aiohttp_zorro.egg-info/PKG-INFO
+aiohttp_zorro.egg-info/SOURCES.txt
+aiohttp_zorro.egg-info/dependency_links.txt
+aiohttp_zorro.egg-info/top_level.txt
