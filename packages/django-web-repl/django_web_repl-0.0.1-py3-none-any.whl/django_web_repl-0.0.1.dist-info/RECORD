@@ -1,0 +1,13 @@
+django_web_repl/__init__.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+django_web_repl/apps.py,sha256=5lH-l1XOPk94oyZJTxFWOcZXyLHp79Qzxe-4VFbfUEU,273
+django_web_repl/models.py,sha256=DuQzAHQX3730qYZ2un7zNgnw0UfBsdw0jpGXBROlRJk,31
+django_web_repl/signals.py,sha256=npbvFGS-fupCM6P8id8dRbKxkeKXQrHMaAiJ3pcrcnw,38
+django_web_repl/static/django_web_shell/css/.gitkeep,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_web_repl/static/django_web_shell/images/.gitkeep,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_web_repl/static/django_web_shell/js/.gitkeep,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_web_repl/templates/django_web_shell/.gitkeep,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_web_repl/urls.py,sha256=Y7kO-WVCi6ZKKM7RCHegSMX6yUd0JOo3x649nw8ehys,78
+django_web_repl-0.0.1.dist-info/LICENSE,sha256=9YF_9CCaJ5MlkxvOF2x7VDx77h-II3cXK1nI4o_6USg,1069
+django_web_repl-0.0.1.dist-info/METADATA,sha256=LmcC_kgTE6WRZPH0gun5tkVYpT0rIg-TK3j3EDuaXKQ,527
+django_web_repl-0.0.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+django_web_repl-0.0.1.dist-info/RECORD,,
