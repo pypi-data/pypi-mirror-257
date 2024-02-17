@@ -1,0 +1,10 @@
+isip/__init__.py,sha256=lH_xrEaZjR5awQ63N6eEwsrJDMBmrdRrtS7nRLi4bZI,98
+isip/client.py,sha256=zIJer2acJV0EXwlerfeVU92nAVSNBC1EmrpyhFfPfxY,4496
+isip/holder.py,sha256=4amxMLxBez3AydO23T707TL60JtAK7t6PRY0HFlbo_E,3435
+isip/parser.py,sha256=miGS1Hzn5Y_D-m7flPDLTqdPS-x2nnTBhrs-gQ1CrP4,6052
+isip/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+isip/utils.py,sha256=9CySTLNDwUnu9BPrIj8tfECqAgSGLuMrerNCMPsuWe4,1700
+isip_client-0.1.0.dist-info/METADATA,sha256=Dvl_zxtr9AB_75x-zyR3_evJL4F2eInyOEYjPEr9U_Q,181
+isip_client-0.1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+isip_client-0.1.0.dist-info/top_level.txt,sha256=89MAq4ftkk55c6tm3_YMDxUfwIzMmkgEc2kWm1m6HDE,5
+isip_client-0.1.0.dist-info/RECORD,,
