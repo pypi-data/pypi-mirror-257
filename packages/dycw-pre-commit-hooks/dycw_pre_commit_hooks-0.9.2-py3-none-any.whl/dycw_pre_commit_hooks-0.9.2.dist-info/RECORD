@@ -1,0 +1,17 @@
+pre_commit_hooks/__init__.py,sha256=iZ1OcZe42bQZb9oA1f0_HW5i54wXaDPK7b3xmB3C08I,58
+pre_commit_hooks/common.py,sha256=6Kzni2V87kR9rJ7utC8vgTAsbeHDaqyVY-3D8hbXxh8,2600
+pre_commit_hooks/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pre_commit_hooks/run_bump2version/__init__.py,sha256=IN7eDW_w8uW7KHWZEEi1CiWXoKYeMKEM1AfXOLZ2BoY,1595
+pre_commit_hooks/run_bump2version/__main__.py,sha256=BZy8mDElAK3-X2iKvqg1XnGbCiYXcLoMDefaPanWx4g,153
+pre_commit_hooks/run_dockfmt/__init__.py,sha256=TohCB-YiXLTNK3Z-Wg-REOjPJ3MpO4ua1UUALuyko4o,1043
+pre_commit_hooks/run_dockfmt/__main__.py,sha256=aE0DIrzWy4mnQ04_n5U6znbmJwJBkjZUXv9Th3OqQ7Y,148
+pre_commit_hooks/run_hatch_version/__init__.py,sha256=Ctb1GYz3XTB4vE2gOV_zGVDtDIdM7Heajb25tF19TzA,1723
+pre_commit_hooks/run_hatch_version/__main__.py,sha256=XeMLmgm1HMujkYhaF9LcMygBrwa2KqIGMzznY106gd8,154
+pre_commit_hooks/run_ruff_format/__init__.py,sha256=LSUrwgg4TkpqV-DhG4HS3yhqlHxofwVm73ZIRgZjMGg,2094
+pre_commit_hooks/run_ruff_format/__main__.py,sha256=faesqqpMaesg5r-LvkkQt1W9kahvNr-60K3SMYv1NgY,152
+pre_commit_hooks/run_uv_pip_compile/__init__.py,sha256=aHICzKk-l8HiQItQmjnP49MtuR_JrkUKLUE1ZoCbvTk,2502
+pre_commit_hooks/run_uv_pip_compile/__main__.py,sha256=LLlM3xVN7l5cxZ0yD_8He8n_GEmQqn_d-2wl6BQtqoA,155
+dycw_pre_commit_hooks-0.9.2.dist-info/METADATA,sha256=snlGe6YaMIajmiRjeyYi0nYZxrgk2KGdesrTseuZKsc,1041
+dycw_pre_commit_hooks-0.9.2.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+dycw_pre_commit_hooks-0.9.2.dist-info/entry_points.txt,sha256=E5ZGYo3x6IF71IHDEhXJYfTHRRIrjzzuxsiYgVkCDQE,302
+dycw_pre_commit_hooks-0.9.2.dist-info/RECORD,,
