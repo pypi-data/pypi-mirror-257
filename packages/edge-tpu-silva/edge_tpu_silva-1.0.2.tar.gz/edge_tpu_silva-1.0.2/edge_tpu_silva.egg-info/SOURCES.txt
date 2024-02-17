@@ -1,0 +1,9 @@
+README.md
+setup.py
+edge_tpu_silva/__init__.py
+edge_tpu_silva/__main__.py
+edge_tpu_silva.egg-info/PKG-INFO
+edge_tpu_silva.egg-info/SOURCES.txt
+edge_tpu_silva.egg-info/dependency_links.txt
+edge_tpu_silva.egg-info/entry_points.txt
+edge_tpu_silva.egg-info/top_level.txt
