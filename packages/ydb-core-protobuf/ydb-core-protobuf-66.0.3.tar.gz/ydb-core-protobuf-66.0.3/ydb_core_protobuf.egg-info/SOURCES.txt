@@ -1,0 +1,6 @@
+README.md
+setup.py
+ydb_core_protobuf.egg-info/PKG-INFO
+ydb_core_protobuf.egg-info/SOURCES.txt
+ydb_core_protobuf.egg-info/dependency_links.txt
+ydb_core_protobuf.egg-info/top_level.txt
