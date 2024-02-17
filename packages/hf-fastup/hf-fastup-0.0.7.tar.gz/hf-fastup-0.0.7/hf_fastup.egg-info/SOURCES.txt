@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+hf_fastup.egg-info/PKG-INFO
+hf_fastup.egg-info/SOURCES.txt
+hf_fastup.egg-info/dependency_links.txt
+hf_fastup.egg-info/requires.txt
+hf_fastup.egg-info/top_level.txt
+hffastup/__init__.py
+hffastup/push_utils.py
