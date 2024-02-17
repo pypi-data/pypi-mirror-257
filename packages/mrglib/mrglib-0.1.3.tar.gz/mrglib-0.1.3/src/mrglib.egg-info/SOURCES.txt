@@ -1,0 +1,16 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/mrglib/Experiment.py
+src/mrglib/Manager.py
+src/mrglib/Project.py
+src/mrglib/User.py
+src/mrglib.egg-info/PKG-INFO
+src/mrglib.egg-info/SOURCES.txt
+src/mrglib.egg-info/dependency_links.txt
+src/mrglib.egg-info/requires.txt
+src/mrglib.egg-info/top_level.txt
+src/tests/__init__.py
+src/tests/test_user.py

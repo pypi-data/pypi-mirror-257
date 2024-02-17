@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: mrglib
+Version: 0.1.3
+Summary: Library wrapping many mrg functionalities
+Home-page: https://github.com/STEELISI/mrglib
+Author: Jelena Mirkovic, USC/ISI
+Author-email: mirkovic@isi.edu
+License: MIT
+Download-URL: https://github.com/STEELISI/mrglib/archive/refs/tags/0.1.3.tar.gz
+Keywords: mrg,SPHERE,mrglib,merge
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+License-File: LICENSE.txt
+
+UNKNOWN
+
