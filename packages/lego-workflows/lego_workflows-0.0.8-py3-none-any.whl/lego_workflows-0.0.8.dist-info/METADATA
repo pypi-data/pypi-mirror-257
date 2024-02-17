@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: lego-workflows
+Version: 0.0.8
+Project-URL: Documentation, https://github.com/Tomperez98/lego-workflows#readme
+Project-URL: Issues, https://github.com/Tomperez98/lego-workflows/issues
+Project-URL: Source, https://github.com/Tomperez98/lego-workflows
+Author-email: Tomas Perez Alvarez <tomasperezalvarez@gmail.com>
+License-File: LICENSE
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.9
+Provides-Extra: dev
+Requires-Dist: pyrgo<3; extra == 'dev'
+Requires-Dist: pytest-asyncio; extra == 'dev'
+Requires-Dist: pytest-cov; extra == 'dev'
+Requires-Dist: types-toml; extra == 'dev'
+Description-Content-Type: text/markdown
+
+# lego-workflows

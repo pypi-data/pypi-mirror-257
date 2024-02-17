@@ -1,0 +1,8 @@
+lego_workflows/__init__.py,sha256=qmXFKEMpdvGP_bSvKKmdGFf4_wAbNHM-i0g_oGCcptQ,1560
+lego_workflows/components.py,sha256=2TTOGK6oULqrY9aA8BJVi_PSBHcZ8_dRhWWb8dFqu-w,733
+lego_workflows/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lego_workflows/transactions.py,sha256=tKoyiLN-aTpEN8kMWcn9wgEImq6CQhZk5aT2NlHFC6Q,448
+lego_workflows-0.0.8.dist-info/METADATA,sha256=YVsrOSstSeRG7RwpvwmKCoGkiAg528VQ2RtjAT1TVYk,773
+lego_workflows-0.0.8.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+lego_workflows-0.0.8.dist-info/licenses/LICENSE,sha256=JOhGXjQzaPzdX7-kp-16wgaESe8ZxJJzvamcvg1ZDsE,1076
+lego_workflows-0.0.8.dist-info/RECORD,,
