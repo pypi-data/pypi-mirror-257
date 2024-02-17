@@ -1,0 +1,15 @@
+vecs2pauli-0.0.1.dist-info/METADATA,sha256=Hj4IBFOLb3yUgR9RXCGfi666a3RK7lOi9ezHkQ16NYI,8277
+vecs2pauli-0.0.1.dist-info/top_level.txt,sha256=uc4tlLOJJPnVnZCKhwzA97PdFuigdiI6P4XiLc4daWY,11
+vecs2pauli-0.0.1.dist-info/WHEEL,sha256=cZD3AxNZGsjPCekEAmlYcUV9UgztdTKcl7wjnCwCzbE,156
+vecs2pauli-0.0.1.dist-info/RECORD,,
+vecs2pauli-0.0.1.dist-info/LICENSE.md,sha256=LxzmViOihZemLQUfm4Zmkkcy3v1mpa_eDeVL1Yzv2hI,1073
+vecs2pauli/_vecs2pauli.cpython-38-x86_64-linux-gnu.so,sha256=eLMmlLJtGRgCk__q3fv1fcfEbv-f96AL7MSJ3LDcYxo,356984
+vecs2pauli/_vecs2pauli.pypy38-pp73-x86_64-linux-gnu.so,sha256=7Uh2iXyluIU_77o4hPZdsQtR15YxKWVjvHfRbyG7Ff4,356984
+vecs2pauli/__init__.py,sha256=CYquQJG9cKX64PK1IxDQ1Re3hdMFJPor-XbDBjt0yWQ,346
+vecs2pauli/stabilizers2vectors.py,sha256=JcEdKSWE2yabGGCIKK1sf2yoeZvvrQuX4UdnnKBfQ2Y,2514
+vecs2pauli/vecs2pauli.py,sha256=dgKPHRFQnHnUtRfhHbw0IwL7CctDueebjUDr8cRjjR8,2614
+vecs2pauli/converter.py,sha256=rrfrLILRKAOb3g8BGK7Hn-N5L2bh7eF8voIy9srzYkE,12297
+vecs2pauli/include/vecs2pauli.hpp,sha256=8QmbxHRNICKKbXHzyvMZBhC9Cyshp0f3VajxIfTU-cE,2808
+vecs2pauli/lib64/libvecs2pauli.a,sha256=c7uQjwUJLOZK7aoUjkIN24zR0D_3EmuCDercPJamSvU,196246
+vecs2pauli/lib64/cmake/vecs2pauli/vecs2pauli-config-release.cmake,sha256=VtmpuI9lbpa-6zUCch-r1P7pIr4Z600-Z_yw6ZWDvIY,895
+vecs2pauli/lib64/cmake/vecs2pauli/vecs2pauli-config.cmake,sha256=qCPc_E1m1-0N1WrGZ1jVybCUTRUZOEJjP9EwxdGIfd8,3934
