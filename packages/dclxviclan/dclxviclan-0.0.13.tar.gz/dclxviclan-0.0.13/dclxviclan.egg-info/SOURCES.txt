@@ -1,0 +1,5 @@
+setup.py
+dclxviclan.egg-info/PKG-INFO
+dclxviclan.egg-info/SOURCES.txt
+dclxviclan.egg-info/dependency_links.txt
+dclxviclan.egg-info/top_level.txt
