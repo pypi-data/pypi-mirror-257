@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: reskyblock
+Version: 0.1.0
+Summary: Python API wrapper for Hypixel SkyBlock
+Author-Email: ch-iv <alicesummer38@gmail.com>
+License: MIT
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+
+# reskyblock
