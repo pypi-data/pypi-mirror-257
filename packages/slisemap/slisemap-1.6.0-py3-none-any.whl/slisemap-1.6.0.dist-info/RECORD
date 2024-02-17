@@ -1,0 +1,16 @@
+slisemap/__init__.py,sha256=s00RTd6OlEF9mIa3j0PVTNB056KmdyRQDqhr1x2v_p8,2321
+slisemap/diagnostics.py,sha256=sNeg78AO_qpLn9KbhOtPF4HvhW0VKHyaGR48iwwf5qs,12357
+slisemap/escape.py,sha256=_XPQKK96uz9MqjQjWc4I8iBNoVc4FXnxPhrwqZXQ4bQ,8734
+slisemap/local_models.py,sha256=R-XEn5qjj6wy6Ma9QYVuapZ06YP9JDtQ9tYScIT1Sno,13588
+slisemap/loss.py,sha256=JG76YmtV21Fg-ZQaeB8Spk8LK3aFOAvEGSFBnxvfGXE,510
+slisemap/metrics.py,sha256=n3r9WTdlhNo4iRl-0IUbdxFQzoxo5r7Leh9I-iOOum0,21745
+slisemap/plot.py,sha256=kwR5ztwH1QHbPBPRqkM_DwHGHZ-U7SHt-Dqe9mCZL3Q,19086
+slisemap/slipmap.py,sha256=HboLTgoYqUA3hAuKXivnPCVXvR4o9LwoMdzp3sE-EaI,49751
+slisemap/slisemap.py,sha256=Lrx_2Yoi3sHgYagLtAnOZYaCCYB1fg8_39u9vZ_Q8vM,67245
+slisemap/tuning.py,sha256=tciAB1JHgNdjUyHS7OVqbe-dTqI0AvrxI0FFUT3IoXk,21561
+slisemap/utils.py,sha256=uH_Jdv98IRhotHkCYpe2wcZM2JyeMsGy0zqWqEUrM2k,29781
+slisemap-1.6.0.dist-info/LICENSE,sha256=4KAbMI40vBHlMb8fgIMJCj4pYMN6KfjVm0gSAX8pY5g,1109
+slisemap-1.6.0.dist-info/METADATA,sha256=Nxm6A4h_2vbwaQ-QyJkl0MXvuD3kuLv32uViYm9jav0,7470
+slisemap-1.6.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+slisemap-1.6.0.dist-info/top_level.txt,sha256=JZ59V342kJanWhofv7olngzCSv1AowNOY60y6UP2D1o,9
+slisemap-1.6.0.dist-info/RECORD,,
