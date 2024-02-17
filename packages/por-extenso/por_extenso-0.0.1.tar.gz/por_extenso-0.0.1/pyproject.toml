@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "por_extenso"
+version = "0.0.1"
+authors = [
+  { name="Rafael Leite", email="rafxel@gmail.com" },
+]
+description = "Transforma algarismos em texto por extenso, observando as regras gramaticais"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/rafxel/por_extenso"
+"Bug Tracker" = "https://github.com/rafxel/por_extenso/issues"
