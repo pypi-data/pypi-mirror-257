@@ -1,0 +1,15 @@
+pyvns/LICENSE,sha256=f_4ZVFh8d9-6HPjrmy6nQ2cfpuY_nnovJYEZ1C4U7v4,27030
+pyvns/README.md,sha256=Ni_A0dJN7RDt57f2CEIDkTDZg9jHAjrMQ6qKVjnJDs0,6159
+pyvns/__init__.cpython-310-x86_64-linux-gnu.so,sha256=eWQ8FIxVWfu9mojUAx4X3ZQWS4UcUwIlx_uO8Z9Lh7k,68672
+pyvns/__init__.pyi,sha256=V2dswMrbDzQWqtNyF1DoOc2OaOdAMH8x6qflTGi-rMY,131
+pyvns/py.typed,sha256=RxJgqoQChUi8A6fZfTyam0HPL_37tczQDMUkZHNCc1Y,117
+pyvns/vns_python_wrapper.cpython-312-x86_64-linux-gnu.so,sha256=uS0VidS6ziUObrA41k1ZVIUEc-dXm31yYcnSS_0kJtY,1466632
+pyvns/vns_python_wrapper.pyi,sha256=5wVZ2ulXrOUPueT4Cl50nP84p7EuQfMFvZpvkSEuc2o,9273
+pyvns/__pyinstaller/__init__.py,sha256=bqrSMt3YYOZGCGfWJmVuXNV5C6EyRMxN9BowgZHgHKk,90
+pyvns/__pyinstaller/hook-pyvns.py,sha256=S1RTJibZnJqGn5iGISltqIFcyrjCMq_eGMcv-tCbXWQ,928
+pyvns-2.1.dist-info/LICENSE,sha256=f_4ZVFh8d9-6HPjrmy6nQ2cfpuY_nnovJYEZ1C4U7v4,27030
+pyvns-2.1.dist-info/METADATA,sha256=4NwamudY50EzK9xXCDMUZ3HVc6hz_UTStkoJaSbChc0,6687
+pyvns-2.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+pyvns-2.1.dist-info/entry_points.txt,sha256=AZT6SILopvb_7x8jlIiH1FsdEoojBPo8b6FGy_VfdGM,62
+pyvns-2.1.dist-info/top_level.txt,sha256=77EmcIhXvwvuP3z0eOUfe4La0IwQb8OLFpW9ihqqBYg,6
+pyvns-2.1.dist-info/RECORD,,
