@@ -1,0 +1,2 @@
+[console_scripts]
+mypackage_cli = mypackage.main:main
