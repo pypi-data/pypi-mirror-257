@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: optimal_splitk
+Version: 0.0.1
+Summary: DOE library for optimal split^k-plot designs with the coordinate exchange algorithm
+Author: Mathias Born
+Author-email: mathias.born@kuleuven.be
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numba==0.55.1
+Requires-Dist: numpy==1.21.5
+Requires-Dist: tqdm==4.64.0
+Requires-Dist: scipy==1.8.0
+Provides-Extra: dev
+Requires-Dist: sphinx~=4.4; extra == "dev"
+Requires-Dist: docutils<0.18; extra == "dev"
+Requires-Dist: numpydoc~=1.2; extra == "dev"
+Requires-Dist: pydata_sphinx_theme~=0.7; extra == "dev"
+Requires-Dist: sphinx-copybutton~=0.5; extra == "dev"
+Provides-Extra: examples
+Requires-Dist: pandas==1.5.0; extra == "examples"
+Requires-Dist: openpyxl==3.0.10; extra == "examples"
+
+## optimal_splitk: Optimal split^k-plot designs with the coordinate exchange algorithm
+**optimal_splitk** is a Python library design for creating generalized split-plot models.
+It includes the fast-update procedures outlined in the accompanying article.
+
+### Information
+All the information can be found in the html documentation (docs/out/html/index.html)
