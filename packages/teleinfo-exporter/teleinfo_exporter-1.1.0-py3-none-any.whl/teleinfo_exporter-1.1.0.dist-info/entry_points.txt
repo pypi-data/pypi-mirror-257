@@ -1,0 +1,2 @@
+[console_scripts]
+teleinfo-exporter = teleinfo_exporter.app:main

@@ -1,0 +1,122 @@
+Metadata-Version: 2.1
+Name: teleinfo-exporter
+Version: 1.1.0
+Summary: Simple prometheus exporter for Linky teleinfo.
+Author-email: d3vyce <contact@d3vyce.fr>
+License: MIT License
+        
+        Copyright (c) 2023 d3vyce
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/d3vyce/teleinfo-exporter
+Project-URL: Repository, https://github.com/d3vyce/teleinfo-exporter.git
+Project-URL: Issues, https://github.com/d3vyce/teleinfo-exporter/issues
+Project-URL: Changelog, https://github.com/d3vyce/teleinfo-exporter/blob/main/CHANGELOG.md
+Keywords: teleinfo,linky,prometheus,exporter
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: bcrypt ~=4.1
+Requires-Dist: configargparse ~=1.7
+Requires-Dist: flask ~=3.0
+Requires-Dist: flask-httpauth ~=4.8
+Requires-Dist: paho-mqtt ~=1.6
+Requires-Dist: prometheus-client ~=0.19
+
+# Teleinfo Exporter
+
+![Grafana Dashboard](https://grafana.com/api/dashboards/20182/images/15332/image)
+
+Simple prometheus exporter for Linky teleinfo.
+Teleinfo Tasmota project :
+https://github.com/NicolasBernaerts/tasmota/tree/master/teleinfo
+Grafana Dashboard:
+https://grafana.com/grafana/dashboards/20182-linky-teleinfo/
+
+## Installation
+### Pip
+```
+python3 -m pip install teleinfo-exporter
+teleinfo-exporter --help
+```
+
+### Docker
+Minimal Docker compose:
+```yaml
+services:
+  web:
+    image: ghcr.io/d3vyce/teleinfo-exporter:latest
+    environment:
+      - BROKER_HOSTNAME=10.10.0.10
+    ports: 
+      - 8000:8000
+    restart: always
+```
+
+#### Architectures
+| Architecture | Available | Tag                     |
+| ------------ | --------- | ----------------------- |
+| x86-64       | ✅        | amd64-\<version tag\>   |
+| arm64        | ✅        | arm64-\<version tag\> |
+
+#### Version Tags
+| Tag    | Available | Description                                          |
+| ------ | --------- | ---------------------------------------------------- |
+| latest | ✅        | Latest version                                       |
+
+#### Variables
+| Argument            | Variable             | Description        | Default                |
+| ------------------- | -------------------- | ------------------ | ---------------------- |
+| `--http_port`       | `-e HTTP_PORT`       | HTTP Port          | `8000`                 |
+| `--auth_user`       | `-e AUTH_USER`       | Basic Auth User    |                        |
+| `--auth_hash`       | `-e AUTH_HASH`       | Basic Auth Hash    |                        |
+| `--http_cert`       | `-e HTTP_CERT`       | HTTP Certificate   |                        |
+| `--http_key`        | `-e HTTP_KEY`        | HTTP Key           |                        |
+| `--broker_host`     | `-e BROKER_HOST` | MQTT Host          |                        |
+| `--broker_port`     | `-e BROKER_PORT`     | MQTT Port          | `1883`                 |
+| `--broker_user`     | `-e BROKER_USER`     | MQTT User          |                        |
+| `--broker_password` | `-e BROKER_PASSWORD` | MQTT Password      |                        |
+| `--broker_topic`    | `-e BROKER_TOPIC`    | Teleinfo Topic     | `teleinfo/tele/SENSOR` |
+
+## Configuration
+### HTTP Authentication
+To generate the password hash use the following command:
+```bash
+htpasswd -bnBC 10 "" PASSWORD | tr -d ':'
+```
+
+### Prometheus
+Config example:
+```yaml
+scrape_configs:
+  - job_name: 'Teleinfo'
+    scheme: https
+    tls_config:
+      ca_file: teleinfo.crt
+    basic_auth:
+      username: USER
+      password: PASSWORD
+    static_configs:
+      - targets:
+        - 192.168.1.2:8000
+```
