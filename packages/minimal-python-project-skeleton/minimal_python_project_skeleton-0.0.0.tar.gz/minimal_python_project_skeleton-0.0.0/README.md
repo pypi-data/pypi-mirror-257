@@ -1,0 +1,97 @@
+[![img](https://img.shields.io/github/contributors/MArpogaus/python-project-skeleton.svg?style=flat-square)](https://github.com/MArpogaus/python-project-skeleton/graphs/contributors)
+[![img](https://img.shields.io/github/forks/MArpogaus/python-project-skeleton.svg?style=flat-square)](https://github.com/MArpogaus/python-project-skeleton/network/members)
+[![img](https://img.shields.io/github/stars/MArpogaus/python-project-skeleton.svg?style=flat-square)](https://github.com/MArpogaus/python-project-skeleton/stargazers)
+[![img](https://img.shields.io/github/issues/MArpogaus/python-project-skeleton.svg?style=flat-square)](https://github.com/MArpogaus/python-project-skeleton/issues)
+[![img](https://img.shields.io/github/license/MArpogaus/python-project-skeleton.svg?style=flat-square)](https://github.com/MArpogaus/python-project-skeleton/blob/main/LICENSE)
+[![img](https://img.shields.io/github/actions/workflow/status/MArpogaus/python-project-skeleton/test.yaml.svg?label=test&style=flat-square)](https://github.com/MArpogaus/python-project-skeleton/actions/workflows/test.yaml)
+[![img](https://img.shields.io/badge/pre--commit-enabled-brightgreen.svg?logo=pre-commit&style=flat-square)](https://github.com/MArpogaus/python-project-skeleton/blob/main/.pre-commit-config.yaml)
+[![img](https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555)](https://linkedin.com/in/MArpogaus)
+
+
+# Minimal Python Project Skeleton
+
+1.  [About The Project](#org2121e60)
+2.  [Getting Started](#org2df6f87)
+    1.  [Installation](#org5e9e93a)
+3.  [Contributing](#orgb7a9b89)
+4.  [License](#org88e44c9)
+5.  [Contact](#orgbea8ea4)
+6.  [Acknowledgments](#orgc53060b)
+
+
+<a id="org2121e60"></a>
+
+## About The Project
+
+This folder structure should act as a simple starting point for your next python project.
+
+    .
+    ├── .github
+    │   └── workflows
+    │       ├── pre-commit.yaml
+    │       └── test.yaml
+    ├── .gitignore
+    ├── .pre-commit-config.yaml
+    ├── CONTRIBUTING.md
+    ├── LICENSE
+    ├── README.md
+    ├── README.org
+    ├── pyproject.toml
+    ├── src
+    │   └── python_project_skeleton
+    │       └── __init__.py
+    └── test
+        └── test_func.py
+
+    6 directories, 11 files
+
+It contains just the minimum to get you started with a ready configured GitHub actions for automated [linting](<https://github.com/MArpogaus/minimal-python-project-skeleton/blob/main/.github/workflows/pre-commit.yaml>), [testing](<https://github.com/MArpogaus/minimal-python-project-skeleton/blob/main/.github/workflows/test.yaml>), and [releasing](<https://github.com/MArpogaus/minimal-python-project-skeleton/blob/main/.github/workflows/release.yaml>) on PiPy.
+
+
+<a id="org2df6f87"></a>
+
+## Getting Started
+
+Use this template directly to [create a new GitHub repository](<https://github.com/new?template_name=minimal-python-project-skeleton&template_owner=MArpogaus>) or just clone the repository to your desired destination and start working on your new project.
+
+**Pro-Tipp:** If you later want to update the template, keep a separate branch (i.e. `skeleton`) around and `cherry-pick` the changes you would like to keep for future projects.
+This way you can also pull the latest version from upstream and `checkout` the new files you would like to use in your project.
+
+
+<a id="org5e9e93a"></a>
+
+### Installation
+
+    pip install .
+
+
+<a id="orgb7a9b89"></a>
+
+## Contributing
+
+Any Contributions are greatly appreciated! If you have a question, an issue or would like to contribute, please read our [contributing guidelines](CONTRIBUTING.md).
+
+
+<a id="org88e44c9"></a>
+
+## License
+
+Distributed under the [MIT License](LICENSE)
+
+
+<a id="orgbea8ea4"></a>
+
+## Contact
+
+[Marcel Arpogaus](https://github.com/MArpogaus/) - [znepry.necbtnhf@tznvy.pbz](mailto:znepry.necbtnhf@tznvy.pbz)
+
+Project Link:
+<https://github.com/MArpogaus/python-project-skeleton>
+
+
+<a id="orgc53060b"></a>
+
+## Acknowledgments
+
+-   README inspired by [othneildrew/Best-README-Template](https://github.com/othneildrew/Best-README-Template)
+-   Contribution guidelines inspired by [probabilists/zuko:](https://github.com/probabilists/zuko/)
