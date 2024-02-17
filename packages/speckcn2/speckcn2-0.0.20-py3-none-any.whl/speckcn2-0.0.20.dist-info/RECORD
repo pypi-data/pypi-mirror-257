@@ -1,0 +1,15 @@
+speckcn2/__init__.py,sha256=JeCsNAIaUVw8AuvOmF0AqcVQ-RxpZLH7c1vqFsf3vW8,646
+speckcn2/io.py,sha256=r4S5we08ymnr3DANQHlRB_9dfk3LSc20szxr6FFu6fY,3366
+speckcn2/mlmodels.py,sha256=vzeY91lLdcLNwxbseH_m0jBu5JSCdgL6OdFAhfENyW0,4222
+speckcn2/mlops.py,sha256=5ZUyG54V-8-bWrGOW-sMR_69yXdWBrneGG9yEbuaIEo,5585
+speckcn2/plots.py,sha256=K3KsfmaskNwkglZdiNs1koSJ2epa3gSEHCKxRn6E9lg,5856
+speckcn2/postprocess.py,sha256=iofV6SfG6sW5-Dr6DUvJgmd3Uv6aikx7zylMCN8a01M,3328
+speckcn2/preprocess.py,sha256=_e_MaHITedrhMvdAhA7t6RrZbl5FKhHpDBPj01T9EFE,16957
+speckcn2/scnn.py,sha256=xFxR3GG_q3g5-olmC9Pg5bBHIA3sSS8xcRmMJYDbyng,20440
+speckcn2/transformations.py,sha256=JH1-uMWQKJYWP4yGzAVhnxB0UuhtVX1Qtcjtg6X4fE4,3769
+speckcn2/utils.py,sha256=mtaroAcHc76iQdya5istx0wCotqdErarzGk_b4fe4co,5268
+speckcn2-0.0.20.dist-info/LICENSE,sha256=Uu7IrT6S_AZUAFXO0QzonBQHXkk6CfnoY4XLZAspy0w,1070
+speckcn2-0.0.20.dist-info/METADATA,sha256=JSM5sUw65sa_zjiw1H1JPBtJUndMrDXJ3e45B4yEaCs,956
+speckcn2-0.0.20.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+speckcn2-0.0.20.dist-info/top_level.txt,sha256=DfKRgbPKpdJS7gL-cnCsf26qvyMNySRtLu4EE06wgEk,9
+speckcn2-0.0.20.dist-info/RECORD,,
