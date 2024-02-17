@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: ezstorages
+Version: 0.0.5
+Summary: Easy storage handler
+Author: Sau1707
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+```python
+@useTable("example_str")
+class TExampleStr(EZsqlite):
+    id : key.str
+    string : str = None
+    integer : int
+    number : float
+    boolean : bool
+    date : datetime
+
+
+@useTable("example_auto")
+class TExampleAuto(EZsqlite):
+    id : key.auto
+    string : str
+    integer : int
+    number : float
+    boolean : bool
+    date : datetime
+```
