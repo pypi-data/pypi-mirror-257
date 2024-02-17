@@ -1,0 +1,10 @@
+merrymake/__init__.py,sha256=DdUTOI0t_0D9m0z2YFa1dfNGgom3wx-AWVcKzaLHe6M,229
+merrymake/envelope.py,sha256=lrbeZ3T0UXTbnxidbKpdRx3-yP9wgndJAuCFkf3XrPE,129
+merrymake/imerrymake.py,sha256=iciGvD0D3LvRMnvf1fhbKiIRjZU-a_3AE2mT5vQQMe0,887
+merrymake/merrymake.py,sha256=1d0tYRgQIcIHY6wNwh6B0-eAE6ywOl_3oKwKki_FIlo,5122
+merrymake/merrymimetypes.py,sha256=gqJom4cKBO26lxV17T3Wj3wP6BiF4us8Ru39drANyvE,4712
+merrymake/nullmerrymake.py,sha256=_Ga2HzWMoXHxEnRYOSn5t0bLumqAsDYijt6_ddtclHI,183
+merrymake/streamhelper.py,sha256=HQMGTtqaFyHGClL9vTNQ-nLClJ5MqIs5G-BQs27Xd24,191
+merrymake-3.0.0.dist-info/METADATA,sha256=5wSgkm-D5_279x1g87xUHbmz3AWWPj8yEELXWe9wACA,1296
+merrymake-3.0.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+merrymake-3.0.0.dist-info/RECORD,,
