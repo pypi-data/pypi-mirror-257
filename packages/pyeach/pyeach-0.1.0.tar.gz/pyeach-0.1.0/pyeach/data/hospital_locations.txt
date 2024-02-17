@@ -1,0 +1,10 @@
+Hospital,Lat,Lon
+Moses Cone Memorial Hospital,36.092,-79.786
+Wesley Long Hospital,36.084,-79.826
+Annie Penn Hospital,36.354,-79.668
+Alamance Regional Medical Center,36.062,-79.501
+MedCenter High Point,36.044,-79.965
+MedCenter Mebane,36.075,-79.271
+MedCenter Kernersville,36.081,-80.063
+Green Valley Campus,36.093,-79.818
+Behavioral Health Hospital,36.083,-79.823

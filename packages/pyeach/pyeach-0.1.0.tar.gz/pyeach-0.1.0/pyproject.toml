@@ -1,0 +1,36 @@
+[build-system]
+requires = [
+  "hatchling", "pandas", "numpy", "pyodbc", "sodapy", "folium", "pyshp",
+  "pygris", "contextily", "geopandas", "matplotlib", "arviz", "scipy"
+]
+build-backend = "hatchling.build"
+
+[project]
+name = "pyeach"
+version = "0.1.0"
+authors = [
+  { name="Tyler Ursuy", email="tyler.ursuy@conehealth.com" },
+  { name="Luke Brantley", email="luke.brantley@conehealth.com" },
+]
+description = "A Cone Health Enterprise Analytics package."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  "pandas", "numpy", "pyodbc", "sodapy", "folium", "pyshp",
+  "pygris", "contextily", "geopandas", "matplotlib", "arviz",
+  "scipy"
+]
+
+[project.urls]
+Homepage = "https://conehealth-ea@dev.azure.com/conehealth-ea/EA%20Data%20Science/_git/pyeach"
+
+[tool.setuptools.packages.find]
+where = ["pyeach"]
+
+[tool.setuptools.package-data]
+"pyeach.data" = ["*.txt"]
