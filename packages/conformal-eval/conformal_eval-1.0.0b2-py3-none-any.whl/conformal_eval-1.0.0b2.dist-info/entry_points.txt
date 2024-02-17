@@ -1,0 +1,3 @@
+[console_scripts]
+cpsign-report=conf_eval.cpsign.report.html:main
+
