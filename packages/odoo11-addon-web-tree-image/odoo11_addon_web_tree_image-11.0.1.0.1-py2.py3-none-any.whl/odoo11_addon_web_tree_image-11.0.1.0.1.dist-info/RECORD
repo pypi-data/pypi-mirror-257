@@ -1,0 +1,12 @@
+odoo/addons/web_tree_image/README.rst,sha256=GAg8PyVuk0fbVWn5_EktYsFkq6PM3rF6DrhjwgaRuL8,1903
+odoo/addons/web_tree_image/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+odoo/addons/web_tree_image/__manifest__.py,sha256=guAxOgsZxX9UglQTBdkKBSka_pFqUExHtAhwx51L3AA,811
+odoo/addons/web_tree_image/i18n/web_tree_image.pot,sha256=N54JHX-XC2BQOfdHJah2y4SvlTwG7A9vY8R52uQgoMU,344
+odoo/addons/web_tree_image/static/description/icon.png,sha256=6xBPJauaFOF0KDHfHgQopSc28kKvxMaeoQFQWZtfZDo,9455
+odoo/addons/web_tree_image/static/src/js/tooltip.js,sha256=DEE5hFLV87E1AXR7FLPIQyJ0OPVyoYgz_oQbLFLMIBY,529
+odoo/addons/web_tree_image/static/src/less/common.less,sha256=Ou522ItDnYX7ZqejQ0h7V1EMXJ9QsT29Mem1pT4X67k,52
+odoo/addons/web_tree_image/view/assets.xml,sha256=Svn9pp2GHXe-x8XSwEHTcRY4X4M5aVMkgkv67kQQTUg,403
+odoo11_addon_web_tree_image-11.0.1.0.1.dist-info/METADATA,sha256=S3U52OQ08K-ewb0ThVf8Ygt4k6_-TEISvxaHq6OZdgo,2527
+odoo11_addon_web_tree_image-11.0.1.0.1.dist-info/WHEEL,sha256=-G_t0oGuE7UD0DrSpVZnq1hHMBV9DD2XkS5v7XpmTnk,110
+odoo11_addon_web_tree_image-11.0.1.0.1.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo11_addon_web_tree_image-11.0.1.0.1.dist-info/RECORD,,
