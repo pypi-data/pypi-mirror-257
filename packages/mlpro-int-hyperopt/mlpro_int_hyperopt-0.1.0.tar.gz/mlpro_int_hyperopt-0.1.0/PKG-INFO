@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: mlpro_int_hyperopt
+Version: 0.1.0
+Summary: MLPro: Integration Hyperopt
+Home-page: https://mlpro-int-hyperopt.readthedocs.io
+Author: MLPro Team
+Author-email: mlpro@listen.fh-swf.de
+Project-URL: Bug Tracker, https://mlpro-int-hyperopt.readthedocs.io
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: full
+Requires-Dist: dill; extra == "full"
+Requires-Dist: numpy; extra == "full"
+Requires-Dist: matplotlib; extra == "full"
+Requires-Dist: multiprocess; extra == "full"
+Requires-Dist: mlpro[full]; extra == "full"
+Requires-Dist: hyperopt; extra == "full"
+Requires-Dist: pandas; extra == "full"
+
+# MLPro-Extension
+MLPro - Template for 3rd party extensions

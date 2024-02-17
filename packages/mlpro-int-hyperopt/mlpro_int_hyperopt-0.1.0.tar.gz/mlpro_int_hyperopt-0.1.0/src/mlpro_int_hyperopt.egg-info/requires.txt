@@ -1,0 +1,9 @@
+
+[full]
+dill
+numpy
+matplotlib
+multiprocess
+mlpro[full]
+hyperopt
+pandas
