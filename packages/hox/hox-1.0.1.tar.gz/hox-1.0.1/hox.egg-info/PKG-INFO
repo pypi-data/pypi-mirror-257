@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: hox
+Version: 1.0.1
+Summary: Lightweight nn library project.
+Home-page: https://github.com/usedToBeTomas/hox
+Author: usedToBeTomas
+License: MIT
+Keywords: neural network,ml,ai,machine learning,vanilla,nn
+Requires-Python: >=3.6
+Requires-Dist: numpy
+Requires-Dist: tqdm
