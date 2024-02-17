@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: wultiplexor
+Version: 0.0.5
+Summary: This tool is for forwarding TCP or SOCK connections from one computer to another using a central web socket server.
+Keywords: proxy gate gateway websocket network networking websockets tcp socks forward forwarding tunnel tunneling tunnelling multiplex multiplexing multiplexer
+Home-page: https://github.com/vd2org/wultiplexor
+Author-Email: Vd <wultiplexor@vd2.org>
+License: Copyright 2024 Vd
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy of
+        this software and associated documentation files (the "Software"), to deal in
+        the Software without restriction, including without limitation the rights to
+        use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+        the Software, and to permit persons to whom the Software is furnished to do so,
+        subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+        FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+        COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+        IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+        CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: Topic :: Internet :: Proxy Servers
+Classifier: Topic :: System :: Networking
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Project-URL: Homepage, https://github.com/vd2org/wultiplexor
+Project-URL: Repository, https://github.com/vd2org/wultiplexor.git
+Project-URL: Issues, https://github.com/vd2org/wultiplexor/issues
+Requires-Python: <3.13,>=3.8
+Requires-Dist: websockets~=12.0
+Description-Content-Type: text/markdown
+
+# Wultiplexor
+
+
+## Deploy server using docker compose
+
+```shell
+docker network create wultiplexor
+DOMAIN=wultiplexor.example.com ACME_EMAIL=acme@example.com SECRET=sEcReTkEy docker compose -p wultiplexor -f compose.yaml up --build -d
+```

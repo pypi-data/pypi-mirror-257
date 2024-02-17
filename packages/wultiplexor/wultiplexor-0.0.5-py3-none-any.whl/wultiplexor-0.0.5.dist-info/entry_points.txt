@@ -1,0 +1,4 @@
+[console_scripts]
+whannel = wultiplexor.whannel:main
+wultiplexor = wultiplexor.wultiplexor:main
+
