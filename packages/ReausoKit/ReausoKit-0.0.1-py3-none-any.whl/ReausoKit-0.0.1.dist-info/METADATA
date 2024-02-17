@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: ReausoKit
+Version: 0.0.1
+Summary: Some util functionality for Python Projects.
+Home-page: https://github.com/reauso/ReausoKit
+Author: Rene Ebertowski
+Author-email: r.ebertowski@gmx.de
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: parameterized
+
+# PythonUtil
+Some util functionality for Python Projects.
