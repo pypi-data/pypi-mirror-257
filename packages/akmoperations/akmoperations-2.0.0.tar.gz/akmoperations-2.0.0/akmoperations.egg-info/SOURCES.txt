@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+akmoperations/__init__.py
+akmoperations/operations.py
+akmoperations.egg-info/PKG-INFO
+akmoperations.egg-info/SOURCES.txt
+akmoperations.egg-info/dependency_links.txt
+akmoperations.egg-info/top_level.txt
