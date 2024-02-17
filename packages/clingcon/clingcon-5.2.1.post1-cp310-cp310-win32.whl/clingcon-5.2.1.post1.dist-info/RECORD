@@ -1,0 +1,11 @@
+clingcon/__init__.py,sha256=CMb55CPSGc6GBbugxmXEzFnqh-ByHPnPEo1z3Liyrhs,361
+clingcon/__main__.py,sha256=UUV9cYFC6FMbADxjHclYYlpuNZWyFzhYcb6HH6g1pcs,3408
+clingcon/_clingcon.cp310-win32.pyd,sha256=czr_-0k0q6r2x38YtNTV6fS0pyAix7tIpSFWaGBj6FM,281088
+clingcon/clingcon.h,sha256=o_MQ0ZO3nW-umCu17yCD-0YptaRvslFCJWf1Gu07xVk,6976
+clingcon/import__clingcon.lib,sha256=IW7jvBFs44PLgGAuGaMhxN8RNvPwmf_YYlYx3WSBvSk,6224
+clingcon/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+clingcon-5.2.1.post1.dist-info/LICENSE.md,sha256=GHmQAHYAUbQDGravkSJBd_CyCtUikVL4sbgfqx34NA8,1101
+clingcon-5.2.1.post1.dist-info/METADATA,sha256=HBP6PnA9BYnBFt2ZD5dyeVPQhjgbfdjNoXYPmQCOSSI,562
+clingcon-5.2.1.post1.dist-info/WHEEL,sha256=GoHzm3fGjM6xfq5kqlEmimxBk4PVbypdokBEv0wvK_A,92
+clingcon-5.2.1.post1.dist-info/top_level.txt,sha256=1OHIz7uELjvCtuJtUSnZEBIp5diK-t1nMxXeVL7NCpE,9
+clingcon-5.2.1.post1.dist-info/RECORD,,
