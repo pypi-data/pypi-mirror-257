@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: squad-django-monaco
+Version: 1.2.0
+Summary: Monaco editor widgets in the Django Admin
+Home-page: UNKNOWN
+Author: Ayush Shanker
+License: MIT
+Description: # Django Monaco Editor
+        
+        This works with django 1.9 & 1.11
+        
+        ## Installation
+        
+        To install the package by `pip` run following command
+        
+        ```sh
+        $ pip install squad-django-monaco
+        ```
+        
+Keywords: monaco
+Platform: OS Independent
+Description-Content-Type: text/markdown
