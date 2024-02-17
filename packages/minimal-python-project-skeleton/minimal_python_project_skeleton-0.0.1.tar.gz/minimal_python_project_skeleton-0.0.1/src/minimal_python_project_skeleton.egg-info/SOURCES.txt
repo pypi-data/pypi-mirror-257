@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/minimal_python_project_skeleton/__init__.py
+src/minimal_python_project_skeleton.egg-info/PKG-INFO
+src/minimal_python_project_skeleton.egg-info/SOURCES.txt
+src/minimal_python_project_skeleton.egg-info/dependency_links.txt
+src/minimal_python_project_skeleton.egg-info/requires.txt
+src/minimal_python_project_skeleton.egg-info/top_level.txt
+test/test_func.py
