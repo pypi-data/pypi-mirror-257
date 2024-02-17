@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: deeplay
+Version: 0.0.6
+Summary: An AI-powered platform for advancing deep learning research and applications, developed by DeepTrackAI.
+Home-page: https://github.com/DeepTrackAI/deeplay
+Author: Benjamin Midtvedt, Jesus Pineda, Henrik Klein Moberg, Harshith Bachimanchi, Carlo Manzo, Giovanni Volpe
+License: MIT
+Keywords: AI,Deep Learning,Machine Learning,Data Science,Research Platform,Artificial Intelligence,Technology
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: lightning
+Requires-Dist: torchmetrics
+Requires-Dist: torchvision
+Requires-Dist: kornia
+Requires-Dist: scipy
+Requires-Dist: scikit-image
+
