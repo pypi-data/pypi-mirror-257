@@ -1,0 +1,5 @@
+s5cmdpy/__init__.py,sha256=hOB6o_NskQoMoXpzBgPWPwAQP0CM1Zv0EX3x-pqoQnY,37
+s5cmdpy/s5cmd_runner.py,sha256=enyk3zGHaUjSoomFo0pUgZYSd_7461jCrwjsT8yta_4,11740
+s5cmdpy-0.1.10.dist-info/METADATA,sha256=0soZNu0yF-Y_lTn0LTm0vTDzLx7sz23oEqxMSMeKiBQ,2938
+s5cmdpy-0.1.10.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+s5cmdpy-0.1.10.dist-info/RECORD,,
