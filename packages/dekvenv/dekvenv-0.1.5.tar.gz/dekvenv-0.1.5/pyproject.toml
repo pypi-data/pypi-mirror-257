@@ -1,0 +1,37 @@
+[project]
+name = "dekvenv"
+version = "0.1.5"
+description = ""
+authors = [
+    { name = "sanzenwin", email = "sanzenwin@gmail.com" },
+]
+dependencies = [
+    "virtualenv<21.0.0",
+    "typer<=0.9.0",
+    "build<=0.10.0",
+    "twine<=4.0.2",
+    "toml<=0.10.2",
+    "packaging<24.0",
+]
+requires-python = ">=3.10"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[project.scripts]
+dekvenv = "dekvenv.__entry__:main"
+
+[project.entry-points."dekshell.plugins"]
+dekvenv = "dekvenv.dekshellplugin:plugin"
+
+[tool.pdm.build]
+includes = [
+    "dekvenv",
+]
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
