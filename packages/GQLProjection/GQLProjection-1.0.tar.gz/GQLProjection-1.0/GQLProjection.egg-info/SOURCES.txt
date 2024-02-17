@@ -1,0 +1,11 @@
+README.md
+setup.py
+GQLProjection/__init__.py
+GQLProjection/projection.py
+GQLProjection.egg-info/PKG-INFO
+GQLProjection.egg-info/SOURCES.txt
+GQLProjection.egg-info/dependency_links.txt
+GQLProjection.egg-info/requires.txt
+GQLProjection.egg-info/top_level.txt
+tests/__init__.py
+tests/test_projection.py

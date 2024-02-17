@@ -1,0 +1,2 @@
+numpy
+dedalus>=3.0

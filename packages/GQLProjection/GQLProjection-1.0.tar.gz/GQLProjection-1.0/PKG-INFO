@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: GQLProjection
+Version: 1.0
+Summary: A tool to do GQL projection in Dedalus
+Home-page: https://github.com/jsoishi/GQLProjection
+Author: J. S. Oishi
+Author-email: jsoishi@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: dedalus>=3.0
+
+# GQLProjection
+
+A simple tool for generalized quasilinear (GQL) models in Dedalus.
