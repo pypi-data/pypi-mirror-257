@@ -1,0 +1,21 @@
+[build-system]
+requires = [
+    "setuptools",
+    "wheel",
+]
+
+[project]
+name = "gnar"
+version = "0.1.2"
+
+dynamic = ["readme"]
+dependencies = []
+
+[tool.setuptools.dynamic]
+readme = {file = ["README.md"], content-type = "text/markdown"}
+
+[tool.setuptools.packages.find]
+where = [
+    "src",
+]
+

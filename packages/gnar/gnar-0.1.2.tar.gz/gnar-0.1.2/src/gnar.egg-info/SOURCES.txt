@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/gnar/__init__.py
+src/gnar/__main__.py
+src/gnar/core.py
+src/gnar/shell.py
+src/gnar.egg-info/PKG-INFO
+src/gnar.egg-info/SOURCES.txt
+src/gnar.egg-info/dependency_links.txt
+src/gnar.egg-info/top_level.txt
+src/gnar/builtins/__init__.py
+src/gnar/builtins/str.py
