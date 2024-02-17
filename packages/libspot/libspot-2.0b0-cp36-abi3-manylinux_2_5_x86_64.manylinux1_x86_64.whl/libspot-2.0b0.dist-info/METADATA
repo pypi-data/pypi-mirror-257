@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: libspot
+Version: 2.0b0
+Summary: Born to flag outliers (from python)
+Author-email: Alban Siffer <alban.siffer@irisa.fr>
+Maintainer-email: Alban Siffer <alban.siffer@irisa.fr>
+License: LGPLv3
+Project-URL: Homepage, https://asiffer.github.io/libspot
+Project-URL: Repository, https://github.com/asiffer/libspot.git
+Project-URL: Issues, https://github.com/asiffer/libspot/issues
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Programming Language :: C
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Requires-Python: >=3.8
+
