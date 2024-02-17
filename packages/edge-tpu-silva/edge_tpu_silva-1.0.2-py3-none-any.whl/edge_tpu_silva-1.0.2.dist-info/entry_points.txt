@@ -1,0 +1,3 @@
+[console_scripts]
+silvatpu = edge_tpu_silva:main
+
