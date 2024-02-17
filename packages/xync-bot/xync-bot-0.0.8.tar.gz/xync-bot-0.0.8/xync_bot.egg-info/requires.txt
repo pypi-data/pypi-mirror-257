@@ -1,0 +1,5 @@
+aiogram
+antifragility-schema
+python-dotenv
+tortoise-api-model
+python-wireguard

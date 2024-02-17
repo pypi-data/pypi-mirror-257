@@ -1,0 +1,25 @@
+[project]
+name = "xync-bot"
+requires-python = ">=3.11"
+authors = [
+    {name = "Artemiev", email = "mixartemev@gmail.com"},
+]
+keywords = ["aiogram", "xync-net"]
+description = "Telegram bot with web app for xync net"
+readme = "README.md"
+license = {text = "MIT"}
+dependencies = [
+    "aiogram",
+    "antifragility-schema",
+    "python-dotenv",
+    "tortoise-api-model",
+    "python-wireguard"
+]
+version = "0.0.8"
+
+[project.urls]
+Homepage = "https://gitlab.com/xync/back/tg-bot"
+Repository = "https://gitlab.com/xync/back/tg-bot"
+
+[tool.setuptools]
+packages = ["xync_bot"]
