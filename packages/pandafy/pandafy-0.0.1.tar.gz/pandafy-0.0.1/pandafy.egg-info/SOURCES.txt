@@ -1,0 +1,10 @@
+README.md
+setup.py
+pandafy/__init__.py
+pandafy/bag_to_df.py
+pandafy/path_utils.py
+pandafy.egg-info/PKG-INFO
+pandafy.egg-info/SOURCES.txt
+pandafy.egg-info/dependency_links.txt
+pandafy.egg-info/requires.txt
+pandafy.egg-info/top_level.txt

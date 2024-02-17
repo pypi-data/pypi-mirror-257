@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: pandafy
+Version: 0.0.1
+Summary: A simple library designed to turn ROS2 .db3 files into regular pd.DataFrame
+Home-page: https://github.com/DanielZamanski/bag_to_df
+Author: Daniel Zamanski
+Author-email: daniel.zamanski@gmail.com
