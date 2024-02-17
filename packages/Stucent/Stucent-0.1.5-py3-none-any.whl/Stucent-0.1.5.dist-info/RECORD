@@ -1,0 +1,9 @@
+stucent/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+stucent/client.py,sha256=9J3MVu2oZ2AeiYvTrAMqOBkLXbR60-eioKLmn4yEkBM,1190
+stucent/models.py,sha256=h5R42Nh66bphHwc2K56NKYrDq9ZGY7hfXdM4kYkQ8x4,6777
+stucent/services.py,sha256=lXNRRgVLBM7mcmGeRucwkrvlDjYd1BRE8cdLCBKHIOo,18695
+Stucent-0.1.5.dist-info/LICENSE,sha256=QwcOLU5TJoTeUhuIXzhdCEEDDvorGiC6-3YTOl4TecE,11356
+Stucent-0.1.5.dist-info/METADATA,sha256=8VwJK1lJJevRHaJP-bw6cBXfF2vls6NLlxBJK8_QjR8,176
+Stucent-0.1.5.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+Stucent-0.1.5.dist-info/top_level.txt,sha256=BX8aS006Qu5jL44Hnf06iw5ZM5qUMIn7ZmJk8_ew-Yc,8
+Stucent-0.1.5.dist-info/RECORD,,
