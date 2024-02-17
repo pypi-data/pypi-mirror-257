@@ -1,0 +1,6 @@
+aiofiles
+aiohttp
+
+[test]
+coverage
+pytest
