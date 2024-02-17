@@ -1,0 +1,13 @@
+MediaSwift/__init__.py,sha256=-PPJ5xGRTQb44CSz0imO28MbtIN5vlstCEW6DIPiTgg,442
+MediaSwift/ffpe.py,sha256=gao5UK40IwT4fBSW2ASknOowlNiybrVMFTkMyHnaCRY,17760
+MediaSwift/ffpl.py,sha256=NR0XKeG4kdowataUP-C1-Of4d16A7zKydhQQKx14fa4,2523
+MediaSwift/ffpr.py,sha256=9QdfnHlXEt91jOEVRIfgIpg8luBaxZJTYrq0_9-_vc8,8228
+MediaSwift/bin/ffmpeg.exe,sha256=Rg4ut-zZhEzLBmXMlSUNvsDZIkubnxj_8cjhpT11gtM,21697536
+MediaSwift/bin/ffplay.exe,sha256=_ottYMupITR023wufqhMbAJ5a0YehsIPIhk0F-jrgIc,21621760
+MediaSwift/bin/ffprobe.exe,sha256=qtgo1se7eMApW3rcZMV_pNpgvcLJCSmV8Vi_kIKlmpc,21629440
+MediaSwift-2.1.3.dist-info/METADATA,sha256=MbYHbMbGIwTcyc0GJ3_X7z-1RKLDfXmsJQOU1zLdGoE,6300
+MediaSwift-2.1.3.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+MediaSwift-2.1.3.dist-info/entry_points.txt,sha256=o8qrnbEa46QkhLcGSXL8KSRt1iwzLwHLS07SVI5wUyk,102
+MediaSwift-2.1.3.dist-info/license.txt,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+MediaSwift-2.1.3.dist-info/top_level.txt,sha256=pqOTNQ9ZpB5-xqqKtEdkXbY3nY3zTKEvBI4oxAp-QmE,11
+MediaSwift-2.1.3.dist-info/RECORD,,
