@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: rain-netbox-documents
+Version: 0.1
+Summary: Simple document manager for rain NetBox
+Home-page: UNKNOWN
+Author: Gabri Botha
+Author-email: gabri.botha@rain.co.za
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+
+UNKNOWN
+
