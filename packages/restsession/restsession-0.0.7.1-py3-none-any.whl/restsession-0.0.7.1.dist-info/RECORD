@@ -1,0 +1,14 @@
+restsession/__init__.py,sha256=iXaysmHwshbF_QPRllEQniGLVEzbNUUmeTpAgkYEuqY,187
+restsession/default_hooks.py,sha256=_SJyjgzBh_nH6mau3A57PyI3YauJZtUf4SOUfLHUqjE,4724
+restsession/defaults.py,sha256=pydIQjvaEtCYnfbWcbHQsKuu1cv80tqWC2-xOXJ2Pbw,1919
+restsession/exceptions.py,sha256=gs-hzO6ttdhiZ8X6TueV8FAI65k9huXuJUVGu9FD0Ao,2111
+restsession/metaclass.py,sha256=KS0wLczlYhsrcaiykOffCjkMD_EjtC7Ywokr12USvns,549
+restsession/models.py,sha256=K3Fd2L8KCymdF2_dknNhjTilEEO8l37UJLWtyMwEE64,2431
+restsession/newmodels.py,sha256=tm-C94_XE51ofRv_bCYJS5KqjPibWeWPC4o97uzCKL4,10437
+restsession/session.py,sha256=wh8Vb5KchC3eRllqtnOxzIXbQ_QgPOtLOe5ssuEUz9A,28924
+restsession/session_singleton.py,sha256=xQFl2sgjMtsGxX6JtFNpIoXvb6AVbvsMj2Bfhef5pq0,1097
+restsession-0.0.7.1.dist-info/LICENSE,sha256=R-wqv45T-jEk6WpXFcB_SF2Rjs1xrRLRYHNetiSp2Ow,1070
+restsession-0.0.7.1.dist-info/METADATA,sha256=kH7783Gm2t-AUkIDyCGOsyECaKWWQ5cKs0Rd1Ls8930,961
+restsession-0.0.7.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+restsession-0.0.7.1.dist-info/top_level.txt,sha256=CCYJJP35woGw9J8wS9vDBs6yzp7jLUZfI20Vy_WN64U,12
+restsession-0.0.7.1.dist-info/RECORD,,
