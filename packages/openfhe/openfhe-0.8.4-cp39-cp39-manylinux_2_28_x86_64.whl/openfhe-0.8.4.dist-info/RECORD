@@ -1,0 +1,13 @@
+openfhe/__init__.pyi,sha256=hUyXMtSyGxQwjOoqG34n2TfiDy7Ve3wvmmPsl3-ZwRo,10857
+openfhe/openfhe.pyi,sha256=Ijda1onjXCglIidVLWPkjNia1Zr3el0XC9kQhox0xLA,133483
+openfhe/__init__.py,sha256=7HyxxLXDiWhMdPEJhBt8hK1CCEY2_tXisve7MYD8TS0,22
+openfhe/openfhe.so,sha256=x3eRenSfhUp5OPCy_j7eQR8SUCYyTsJI4Gg9DD4bkTM,2220393
+openfhe-0.8.4.dist-info/RECORD,,
+openfhe-0.8.4.dist-info/WHEEL,sha256=JfkX_eSPpJ51o4lPVW-z6zIfLh8AgItfT6glxWHbUfg,112
+openfhe-0.8.4.dist-info/top_level.txt,sha256=2fEbi0-LDVr4kp6aHgc8DUvgstRBxSHXujetr7Phm-Q,8
+openfhe-0.8.4.dist-info/LICENSE,sha256=SMWCmXUafzQxDtgK9ddOz8-9bVNW-FMV11nhYZOkMwg,1296
+openfhe-0.8.4.dist-info/METADATA,sha256=8Z4jGs2gfMZGt-twOmeMCbZyf7dxsHo-wCaMXdharug,366
+openfhe.libs/libOPENFHEbinfhe-d4cee906.so.1.1.2,sha256=R2d1FFrMhgiZIaQVi_PZCljDAI46IT8AF1h-qxGq8pc,576513
+openfhe.libs/libOPENFHEcore-32e09900.so.1.1.2,sha256=h-r0Hl5dpEmZNZczQtj3DkEuHjkgJ65borzvOUDqRwk,2845441
+openfhe.libs/libgomp-a97153a2.so.1.0.0,sha256=LWXTqDp3BiW-9Bh938MaOkMwACpGIVrJLHixAegKjac,253289
+openfhe.libs/libOPENFHEpke-40c0571d.so.1.1.2,sha256=UgOY8l3VMJXxNIjFKe8T9IAglCHOT71W_wnw8VFBCCQ,3798673
