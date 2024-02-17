@@ -1,0 +1,11 @@
+casoar/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+casoar/cli.py,sha256=zF9-KZbqJgsDyoHp71Ar3jhJhLWOiUqConGUOpdAuZw,3580
+casoar/main.py,sha256=NsBsgk60ShCAhKltRchn04GdVa5gO-PLQ39_wMLEqU0,1525
+casoar/models/__init__.py,sha256=Z39Y2qA2Iug0LbKm2Z5btEB_LNnQOGQxmJ7GQMGk3k4,111
+casoar/models/command.py,sha256=KQZrjZx4B2wawespQ6ST7_PR0yN0WCkdUTvvL6bDb_s,340
+casoar/models/hook.py,sha256=ypIFaZJRrjdMHMYKJZNr2I2XZCgYmBEFsISVmFz0qA0,1160
+casoar/writer.py,sha256=lKZPZ-Wcnh7UYZ5OzI15LAxaWv6nzf-cNIVQ7ofBMVQ,1367
+casoar-0.1.0.dist-info/METADATA,sha256=OY-MyddRp9cW09C8RfFov0aiSfxAe8emKC89CgxO_l0,806
+casoar-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+casoar-0.1.0.dist-info/entry_points.txt,sha256=NPEweKQma8IF4e8uEwjYMnDv2tyvu_meklueYFHjcNA,45
+casoar-0.1.0.dist-info/RECORD,,
