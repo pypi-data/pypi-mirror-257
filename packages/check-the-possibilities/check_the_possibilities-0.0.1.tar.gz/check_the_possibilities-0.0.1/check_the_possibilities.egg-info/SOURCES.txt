@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+check_the_possibilities.egg-info/PKG-INFO
+check_the_possibilities.egg-info/SOURCES.txt
+check_the_possibilities.egg-info/dependency_links.txt
+check_the_possibilities.egg-info/top_level.txt
+prototype_python_library/__init__.py
+prototype_python_library/print_text.py
