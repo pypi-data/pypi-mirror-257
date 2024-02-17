@@ -1,0 +1,13 @@
+.gitignore
+LICENSE
+README.md
+setup.py
+guedesmoney/__init__.py
+guedesmoney/controllers.py
+guedesmoney/main.py
+guedesmoney/utils.py
+guedesmoney.egg-info/PKG-INFO
+guedesmoney.egg-info/SOURCES.txt
+guedesmoney.egg-info/dependency_links.txt
+guedesmoney.egg-info/entry_points.txt
+guedesmoney.egg-info/top_level.txt
