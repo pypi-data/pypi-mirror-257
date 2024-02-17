@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: milestone3
+Version: 0.0.1
+Summary: Ingest a SODA object into a pandas.df
+Author-email: Leo Irakliotis <leo@cs.luc.edu>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# COMP 306/406 Spring 2024 Milestone 3
+
+This package hides some implementation details from Leo's Milestone 3 project. These are details that everyone is expected to implement on their own.
