@@ -1,0 +1,8 @@
+LICENSE
+setup.py
+auto_reversion.egg-info/PKG-INFO
+auto_reversion.egg-info/SOURCES.txt
+auto_reversion.egg-info/dependency_links.txt
+auto_reversion.egg-info/entry_points.txt
+auto_reversion.egg-info/requires.txt
+auto_reversion.egg-info/top_level.txt

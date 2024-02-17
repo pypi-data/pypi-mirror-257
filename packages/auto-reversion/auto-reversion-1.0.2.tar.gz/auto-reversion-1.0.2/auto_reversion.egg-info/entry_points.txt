@@ -1,0 +1,2 @@
+[console_scripts]
+auto-reversion = main:main
