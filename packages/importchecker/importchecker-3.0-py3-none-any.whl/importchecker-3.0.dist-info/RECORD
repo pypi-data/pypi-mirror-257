@@ -1,0 +1,17 @@
+importchecker/__init__.py,sha256=MsSFjiLMLJZ7QhUPpVBWKiyDnCzryquRyr329NoCACI,2
+importchecker/importchecker.py,sha256=V_ye8V4I9nAm1WginknR9dz5jOBiUpkyp6ZcCuiwYdE,10426
+importchecker/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+importchecker/tests/test_importchecker.py,sha256=M7vrqnmPu0w9lmNiCR45JiyPfe0gF3rydJEhgzixtSY,4185
+importchecker/tests/fixture/absimport.py,sha256=o_U8nm2FipPE38VZigns6jqXDfh1lGagb0khtd9r0do,29
+importchecker/tests/fixture/absimportattrassignment.py,sha256=bAfn_65CL8PcPq8da1WTGhoJbLFW0Z7zBE0M32fXDqw,47
+importchecker/tests/fixture/absimportinfunction.py,sha256=UgXMhl3vFuZq5g-SRRzIdlx8dRmB0EeGMDhNgZtA1JM,143
+importchecker/tests/fixture/attrassignment.py,sha256=QtA8Fc8GW4PF_aMgSQQAkpG51PirLT8-qKiHhkiWyMI,48
+importchecker/tests/fixture/callimportedname.py,sha256=tVRFCfv_Zn0kWX0pO3LdpLHHQ-lA5S36w5W9Y1wg7ic,52
+importchecker/tests/fixture/fromimport.py,sha256=Z8Mxt69L6KuL_ovbU9jWwv5bsWG9WYsWq-fL6i3lsTY,23
+importchecker/tests/fixture/fromimportas.py,sha256=Da3GzwxrLj1d7uxArR313evcq6mPN2Zgw03jZqSb3YQ,41
+importchecker-3.0.dist-info/LICENSE.rst,sha256=KByDJIKX7SBwouYawUDnB2l1EaagZbo4CMv6beW7VhE,2179
+importchecker-3.0.dist-info/METADATA,sha256=PT2Gt2olMsNi4Vc0UBgqMYvqJ8l7oZ9dnxPT7dQMT0A,3508
+importchecker-3.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+importchecker-3.0.dist-info/entry_points.txt,sha256=Q8Rus7PeWnhK78fQO1Pp0RwcfHm2Ztus0tqvtAF4FWk,67
+importchecker-3.0.dist-info/top_level.txt,sha256=V-ynBH3epJkuUTZvofC7bW_hr90kl3L23j7Y56AN1eA,14
+importchecker-3.0.dist-info/RECORD,,
