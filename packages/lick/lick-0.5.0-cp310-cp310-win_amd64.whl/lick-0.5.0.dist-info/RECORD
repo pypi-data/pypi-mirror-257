@@ -1,0 +1,11 @@
+lick/__init__.py,sha256=FZKUxfQOsZVZE6fd_JwQAOGql6AUUJw_zPWRRmQVtRI,97
+lick/__version__.py,sha256=pZzEdsuAE3uDnTsMODkFABqmk03QJAN-SEFrFRq4y1U,23
+lick/lick.py,sha256=lGbvDwzeSSJzQIRwprM6w43RCuYX2jmZnmjRIy5Ooxg,7664
+lick/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lick/_vendor/vectorplot/core.cp310-win_amd64.pyd,sha256=meLDytObKK5N4dd8LYAR63MguunFtnIHtcTWGnKgfNc,175616
+lick-0.5.0.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+lick-0.5.0.dist-info/METADATA,sha256=jKQy_hwakCnLjAGS4EBTcF0B_UCUFzlSJ4j6uRbbucM,3010
+lick-0.5.0.dist-info/WHEEL,sha256=5JPYeYl5ZdvdSkrGS4u21mmpPzpFx42qrXOSIgWf4pg,102
+lick-0.5.0.dist-info/entry_points.txt,sha256=htA8ypbyM6Y5dPIhFVbzczFqcdrsbEGPgeK1K2N_-VU,40
+lick-0.5.0.dist-info/top_level.txt,sha256=OamAjU-xaiaKmBZ4J_2cg0Q55ERMn9L8QeoA8hWn2os,5
+lick-0.5.0.dist-info/RECORD,,
