@@ -1,0 +1,5 @@
+encrypted_datasets/__init__.py,sha256=sL67yMLVCMdF5gfJ53lDpKBIhV1AuFgifoFe0nvDfbo,5540
+encrypted_datasets/src/serializer.py,sha256=ANQeaHwI1JStsJO_4zU89LFtzipfd_WkaGU_M3rh92M,3782
+encrypted_datasets-1.0.8.dist-info/METADATA,sha256=4CKBgRDFlzDJQVfOPDk5qr3Es9tgVZVi3HE-aQTVf64,2571
+encrypted_datasets-1.0.8.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+encrypted_datasets-1.0.8.dist-info/RECORD,,
