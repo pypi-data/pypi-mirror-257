@@ -1,0 +1,44 @@
+[tool.poetry]
+name = "dreamai-gen"
+version = "0.1.5"
+description = ""
+authors = ["Hamza Farhan <thehamza96@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11,<=3.12"
+notebook = "^7.0.6"
+ipython = "^8.18.1"
+ipywidgets = "^8.1.1"
+pytest = "^7.4.3"
+openai = "^1.5.0"
+tiktoken = "^0.5.2"
+streamlit = "^1.29.0"
+unstructured = {extras = ["pdf"], version = "^0.11.6"}
+chromadb = "^0.4.21"
+langchain = "^0.0.352"
+tenacity = "^8.2.3"
+open-clip-torch = "^2.23.0"
+google-generativeai = "^0.3.2"
+termcolor = "^2.4.0"
+anthropic = "^0.9.0"
+duckduckgo-search = "^4.2"
+demoji = "^1.1.0"
+google-api-python-client = "^2.114.0"
+google-cloud-api-keys = "^0.5.5"
+pyngrok = "^7.0.5"
+marvin = "^2.1.2"
+litellm = {extras = ["proxy"], version = "^1.20.6"}
+sentence-transformers = "^2.3.1"
+ruff = "^0.2.0"
+fastcore = "^1.5.29"
+python-dotenv = "^1.0.1"
+opencv-python-headless = "^4.9.0.80"
+openpyxl = "^3.1.2"
+instructor = "^0.5.2"
+google-auth-oauthlib = "^1.2.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
