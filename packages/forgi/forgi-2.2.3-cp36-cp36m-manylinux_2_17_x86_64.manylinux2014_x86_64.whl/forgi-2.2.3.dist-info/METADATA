@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: forgi
+Version: 2.2.3
+Summary: RNA Graph Library
+Home-page: http://www.tbi.univie.ac.at/~pkerp/forgi/
+Author: Bernhard Thiel, Peter Kerpedjiev
+Author-email: thiel@tbi.univie.ac.at
+License: GNU GPL 3.0
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+License-File: LICENSE
+License-File: CREDITS
+Requires-Dist: numpy (>=1.10.0)
+Requires-Dist: scipy (>=0.19.1)
+Requires-Dist: pandas (>=0.20)
+Requires-Dist: future
+Requires-Dist: networkx (>=2.0)
+Requires-Dist: biopython
+Requires-Dist: appdirs (>=1.4)
+Requires-Dist: logging-exceptions (>=0.1.9)
+Requires-Dist: cython
+Provides-Extra: all
+Requires-Dist: matplotlib (>=2.0) ; extra == 'all'
+Requires-Dist: cython ; extra == 'all'
+Requires-Dist: scikit-learn ; extra == 'all'
+Requires-Dist: beautifulsoup4 (>=4.6) ; extra == 'all'
+Requires-Dist: ddt ; extra == 'all'
+Requires-Dist: hypothesis ; extra == 'all'
+Requires-Dist: nose2 ; extra == 'all'
+Provides-Extra: classification
+Requires-Dist: scikit-learn ; extra == 'classification'
+Provides-Extra: development
+Requires-Dist: cython ; extra == 'development'
+Provides-Extra: forgi.visual
+Requires-Dist: matplotlib (>=2.0) ; extra == 'forgi.visual'
+Provides-Extra: pdbechem
+Requires-Dist: beautifulsoup4 (>=4.6) ; extra == 'pdbechem'
+Provides-Extra: tests
+Requires-Dist: ddt ; extra == 'tests'
+Requires-Dist: hypothesis ; extra == 'tests'
+Requires-Dist: nose2 ; extra == 'tests'
+
+UNKNOWN
+
