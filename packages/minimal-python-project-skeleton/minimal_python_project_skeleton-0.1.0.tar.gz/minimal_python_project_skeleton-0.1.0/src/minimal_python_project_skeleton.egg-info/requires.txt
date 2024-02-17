@@ -1,0 +1,13 @@
+
+[develop]
+python_project_skeleton[test]
+commitizen
+ipykernel
+pre-commit
+python-lsp-ruff
+python-lsp-server[all]
+ruff
+
+[test]
+pytest
+pytest-xdist
