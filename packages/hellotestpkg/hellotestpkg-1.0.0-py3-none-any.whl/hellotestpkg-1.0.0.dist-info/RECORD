@@ -1,0 +1,7 @@
+hellotestpkg/__init__.py,sha256=QICjXZomVBqKyEgzgt8Ag6f4jfHHW9TYwD9_6NKhTCA,27
+hellotestpkg/hellotestpkg.py,sha256=eXzeiUyFjyvJbR3fWlsQG2TgfbQ6GpC3zp3ODZLdpnY,49
+hellotestpkg-1.0.0.dist-info/METADATA,sha256=7csklTLBzX6GQVdedlp8EdDWfkP3lr4nr_FDnEYuonQ,214
+hellotestpkg-1.0.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+hellotestpkg-1.0.0.dist-info/entry_points.txt,sha256=52bKaibC51pwg9B7onuvA_UxfuqGZk20ppPGNkhE8Tg,61
+hellotestpkg-1.0.0.dist-info/top_level.txt,sha256=mZH7AJ5rDuAWJxBs0fqs8EskgmBFv4A8hBDbm5wT3vw,13
+hellotestpkg-1.0.0.dist-info/RECORD,,

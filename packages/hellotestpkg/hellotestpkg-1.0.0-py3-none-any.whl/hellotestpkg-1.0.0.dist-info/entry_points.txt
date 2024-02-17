@@ -1,0 +1,3 @@
+[console_scripts]
+hellotestpkg = hellotestpkg.__main__:main
+
