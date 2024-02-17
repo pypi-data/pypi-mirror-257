@@ -1,0 +1,6 @@
+bracelet
+ships
+somatic
+rich
+tinydb
+click
