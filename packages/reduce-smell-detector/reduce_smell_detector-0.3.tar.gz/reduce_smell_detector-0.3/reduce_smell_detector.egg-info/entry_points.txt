@@ -1,0 +1,3 @@
+[console_scripts]
+detect_all_smells = reduce_smell_detector:detect_all
+
