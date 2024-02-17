@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: pytroll-collectors
+Version: 0.16.0
+Summary: Pytroll data collectors
+Home-page: https://github.com/pytroll/pytroll-collectors
+Author: Martin Raspaud
+Author-email: martin.raspaud@smhi.se
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.9
+License-File: LICENSE
+Requires-Dist: posttroll>=1.3.0
+Requires-Dist: trollsift
+Requires-Dist: pyyaml
+Provides-Extra: geographic-gatherer
+Requires-Dist: pyresample; extra == "geographic-gatherer"
+Requires-Dist: pytroll-schedule; extra == "geographic-gatherer"
+Requires-Dist: watchdog; extra == "geographic-gatherer"
+Provides-Extra: s3stalker
+Requires-Dist: s3fs; extra == "s3stalker"
+Requires-Dist: python-dateutil; extra == "s3stalker"
+Provides-Extra: scisys-receiver
+Requires-Dist: netifaces; extra == "scisys-receiver"
+Provides-Extra: trollstalker
+Requires-Dist: watchdog!=4.0.0; extra == "trollstalker"
+Provides-Extra: s3-segment-gatherer
+Requires-Dist: fsspec; extra == "s3-segment-gatherer"
+Provides-Extra: all
+Requires-Dist: netifaces; extra == "all"
+Requires-Dist: pytroll-schedule; extra == "all"
+Requires-Dist: pyresample; extra == "all"
+Requires-Dist: s3fs; extra == "all"
+Requires-Dist: watchdog; extra == "all"
+Requires-Dist: python-dateutil; extra == "all"
+Requires-Dist: watchdog!=4.0.0; extra == "all"
+Requires-Dist: fsspec; extra == "all"
