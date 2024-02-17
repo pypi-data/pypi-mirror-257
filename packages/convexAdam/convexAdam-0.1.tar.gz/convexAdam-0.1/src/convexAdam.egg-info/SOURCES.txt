@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/convexAdam/convex_adam_MIND.py
+src/convexAdam/convex_adam_nnUNet.py
+src/convexAdam/convex_adam_utils.py
+src/convexAdam.egg-info/PKG-INFO
+src/convexAdam.egg-info/SOURCES.txt
+src/convexAdam.egg-info/dependency_links.txt
+src/convexAdam.egg-info/not-zip-safe
+src/convexAdam.egg-info/requires.txt
+src/convexAdam.egg-info/top_level.txt
