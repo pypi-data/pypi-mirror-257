@@ -1,0 +1,13 @@
+LICENSE.txt
+README.rst
+setup.cfg
+setup.py
+qshader/__init__.py
+qshader/_effects.py
+qshader/_parser.py
+qshader/_shader_builtins.py
+qshader/_utils.py
+qshader.egg-info/PKG-INFO
+qshader.egg-info/SOURCES.txt
+qshader.egg-info/dependency_links.txt
+qshader.egg-info/top_level.txt
