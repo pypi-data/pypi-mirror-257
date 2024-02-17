@@ -1,0 +1,6 @@
+README.md
+setup.py
+run_as_admin.egg-info/PKG-INFO
+run_as_admin.egg-info/SOURCES.txt
+run_as_admin.egg-info/dependency_links.txt
+run_as_admin.egg-info/top_level.txt
