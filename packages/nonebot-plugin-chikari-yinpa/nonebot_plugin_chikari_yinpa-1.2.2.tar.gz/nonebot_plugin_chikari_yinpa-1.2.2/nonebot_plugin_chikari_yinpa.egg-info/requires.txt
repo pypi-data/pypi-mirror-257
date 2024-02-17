@@ -1,0 +1,4 @@
+Pillow
+nonebot2>=2.0.0
+nonebot-adapter-onebot
+nonebot-plugin-localstore
