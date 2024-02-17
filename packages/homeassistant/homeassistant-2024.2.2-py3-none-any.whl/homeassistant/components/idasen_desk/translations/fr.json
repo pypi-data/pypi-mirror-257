@@ -1,0 +1,19 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "L'appareil est d\u00e9j\u00e0 configur\u00e9",
+            "not_supported": "Appareil non pris en charge"
+        },
+        "error": {
+            "auth_failed": "Impossible de s'authentifier aupr\u00e8s du bureau. Ce probl\u00e8me est g\u00e9n\u00e9ralement r\u00e9solu par l'utilisation d'un proxy Bluetooth ESPHome. Veuillez consulter la documentation d'int\u00e9gration pour des solutions alternatives.",
+            "cannot_connect": "Impossible de se connecter. Assurez-vous que le bureau est en mode d'appairage Bluetooth. Si ce n'est pas d\u00e9j\u00e0 fait, vous pouvez \u00e9galement utiliser un proxy Bluetooth ESPHome, qui assure une meilleure connexion."
+        }
+    },
+    "entity": {
+        "sensor": {
+            "height": {
+                "name": "Hauteur"
+            }
+        }
+    }
+}
