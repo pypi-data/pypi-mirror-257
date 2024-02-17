@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: myturn-sdk
+Version: 0.0.3
+Summary: An SDK for the MyTurn website.  Selenium based as there is no REST API.
+Home-page: https://github.com/aweddle2/myturn-sdk
+Project-URL: Bug Tracker, https://github.com/aweddle2/myturn-sdk/issues
+Project-URL: Changelog, https://github.com/aweddle2/myturn-sdk/releases
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
