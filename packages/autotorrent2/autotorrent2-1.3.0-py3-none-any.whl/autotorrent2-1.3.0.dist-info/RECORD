@@ -1,0 +1,15 @@
+autotorrent/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+autotorrent/__main__.py,sha256=BtklCDLsUJu0eFTOboSuwhGmXA8II_U3xgsmc8PJRPQ,27773
+autotorrent/__version__.py,sha256=F5mW07pSyGrqDNY2Ehr-UpDzpBtN-FsYU0QGZWf6PJE,22
+autotorrent/db.py,sha256=XpUr8yfe-lXPwZf3KczAWQ3EMsXx4ChfDOOsGXqcXRc,9622
+autotorrent/exceptions.py,sha256=-_Kcmv4NEp8KNv8KM5vBfmQEEW3Y1dwhYXiKacEgxho,191
+autotorrent/indexer.py,sha256=rJIqcy0ccMwBie0COERbHzOgEC739flXGT__zlUMS2A,8698
+autotorrent/matcher.py,sha256=Rnf0ZNI8X-CJyQ44v0yh1oYzaJZS2SU6uPJ87ovb2_I,19026
+autotorrent/rw_cache.py,sha256=A1aodMfeeF9QjERkMR9QoujyZwo2Add33mi0YjOns1g,2847
+autotorrent/utils.py,sha256=toEzlz49NEzmgU39W4e0tvOPq0_wSSsjyIgc4Zie9DA,27984
+autotorrent2-1.3.0.dist-info/LICENSE,sha256=RkGhE4DgH25CdUn2_6XMiiYQUjv-I7gYPdgyC5RjKbk,1056
+autotorrent2-1.3.0.dist-info/METADATA,sha256=AvHZt8PeIM6CYSt1GCUMx0HQF22ugWwh3qaojbM_J_4,4149
+autotorrent2-1.3.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+autotorrent2-1.3.0.dist-info/entry_points.txt,sha256=WBl8B3THLf51kNKxqy6yWgD2pQAKIofxlGf3yG0oY5U,49
+autotorrent2-1.3.0.dist-info/top_level.txt,sha256=MSWD3yW-DEUTeYVGCzVldhTWR1PIRuu_maczs2Zi0PE,12
+autotorrent2-1.3.0.dist-info/RECORD,,
