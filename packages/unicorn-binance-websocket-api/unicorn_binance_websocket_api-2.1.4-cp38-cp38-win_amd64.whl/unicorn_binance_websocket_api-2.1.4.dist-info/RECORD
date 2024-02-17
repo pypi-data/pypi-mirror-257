@@ -1,0 +1,14 @@
+unicorn_binance_websocket_api/__init__.cp38-win_amd64.pyd,sha256=NvMBdT1Ashyr3a9anYLGGaYIrO9fMDTX_8EuKPT5_Jo,22528
+unicorn_binance_websocket_api/api.cp38-win_amd64.pyd,sha256=qs6uKJNuCvzs8MDZiblY4qoyHG3E4myYiv0gU91ljKE,275968
+unicorn_binance_websocket_api/connection.cp38-win_amd64.pyd,sha256=B39BgptCtwx9vELrNfzCDxY4NPfvEbz8Zu441Of_1yE,253440
+unicorn_binance_websocket_api/connection_settings.cp38-win_amd64.pyd,sha256=lHz4LZQUaCQmHapNcqS7dCsUur2h-rJ4vxPLtJCeCqM,41984
+unicorn_binance_websocket_api/exceptions.cp38-win_amd64.pyd,sha256=Bf9jHD_bCkS29yHn5R3xjaEkttyQer39oazqYTbKIvo,25600
+unicorn_binance_websocket_api/manager.cp38-win_amd64.pyd,sha256=XwZEl_uWvQXlryitMbC4MOAjTQMZvEIRGV_76epa9Ww,1083904
+unicorn_binance_websocket_api/restclient.cp38-win_amd64.pyd,sha256=hQNbsbjPsaFPoZb7vqneBgmrcEX2arOeu5Tnu_ghYHg,126464
+unicorn_binance_websocket_api/restserver.cp38-win_amd64.pyd,sha256=dr5X-e8x9A-NdET--SU5wrV6hYdJt0MEQNnBrBXgc-s,48640
+unicorn_binance_websocket_api/sockets.cp38-win_amd64.pyd,sha256=gNUFsk3JihD-DmoyJ8GeSn1pghveBRMa2vbPJkD4TSI,151552
+unicorn_binance_websocket_api-2.1.4.dist-info/LICENSE,sha256=kh3DBTSXFPuaEKA_Jz-E0eYI7ZSA-rDV7BjXovscHz8,4340
+unicorn_binance_websocket_api-2.1.4.dist-info/METADATA,sha256=7V_HpATUnqE_WnkqXxc54UdZjf5MkSVk8mNZO2PHyd0,52613
+unicorn_binance_websocket_api-2.1.4.dist-info/WHEEL,sha256=3SeyPJ5-Us2Ct5GSftUVKtLSlm-bNefW4m5qd0GLzww,100
+unicorn_binance_websocket_api-2.1.4.dist-info/top_level.txt,sha256=805jzwlIjaJ8D50zJxQsRgRosB3WaNnU676MR03tSM0,30
+unicorn_binance_websocket_api-2.1.4.dist-info/RECORD,,
