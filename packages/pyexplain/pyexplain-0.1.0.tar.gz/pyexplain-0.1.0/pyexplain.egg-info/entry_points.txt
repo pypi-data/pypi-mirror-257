@@ -1,0 +1,2 @@
+[console_scripts]
+pyexplain-interact = pyexplain.main:main
