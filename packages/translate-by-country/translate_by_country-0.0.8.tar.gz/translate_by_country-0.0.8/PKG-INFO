@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: translate_by_country
+Version: 0.0.8
+Summary: A library to translate text by country information
+Home-page: https://github.com/Sina157/translate-by-country
+Author: Sina157
+Author-email: sina.shams@yahoo.com
+License: UNKNOWN
+Platform: UNKNOWN
+
+translate-by-country
+====================
+
+With this library, you can translate the text without choosing the language and with the characteristics of the countries
+
+installation:
+-------------
+
+.. code-block:: text
+
+    pip install translate-by-country
+
+Usage:
+------
+
+Translates text based on country alpha2
+
+.. code-block:: python
+
+    from translate_by_country import translate_text_by_alpha2
+    print(translate_text_by_alpha2("translate by country","ax")) 
+
+
+Translates text based on country alpha3
+
+.. code-block:: python
+
+    from translate_by_country import translate_text_by_alpha3
+    print(translate_text_by_alpha3("translate by country","aut")) 
+
+Translates text based on country code
+
+.. code-block:: python
+
+    from translate_by_country import translate_text_by_code
+    print(translate_text_by_code("translate by country",98)) 
+
+Translates text based on country name
+
+.. code-block:: python
+
+    from translate_by_country import translate_text_by_name
+    print(translate_text_by_name("translate by country","albania")) 
+
+Translates text based on country emoji
+
+.. code-block:: python
+
+    from translate_by_country import translate_text_by_emoji
+    print(translate_text_by_emoji("translate by country",flag_emoji)) 
+
+If there was any problem, please `open an issue`_ for them on github.
+
+.. _open an issue: https://github.com/Sina157/translate-by-country/issues
+
