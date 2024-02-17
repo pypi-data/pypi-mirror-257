@@ -1,0 +1,3 @@
+PyCO2SYS
+autograd
+numpy
