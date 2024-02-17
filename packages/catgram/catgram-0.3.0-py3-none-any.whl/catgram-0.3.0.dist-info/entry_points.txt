@@ -1,0 +1,4 @@
+[console_scripts]
+ccg_depeval=catgram.cli.ccg_depeval:main
+ccg_roots=catgram.cli.ccg_roots:main
+

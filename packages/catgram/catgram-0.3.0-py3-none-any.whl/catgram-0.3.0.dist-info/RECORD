@@ -1,0 +1,15 @@
+catgram/__init__.py,sha256=tQolBvPYXALZ0BfDAxifQSmrmo9UbId7mM6YJbne_e8,112
+catgram/category_tree.py,sha256=Tokn7Lhf67CbFQr4nazkqJTb4Y5leACeUqMSE8yCKwE,16815
+catgram/ccg/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+catgram/ccg/candc_ignore.py,sha256=BBWbmi0PfxvbehPDmfbGgd7HtzEYB9u3A_8Q_297d8Q,11310
+catgram/ccg/dependencies.py,sha256=gZZ-sczKgIo3mt6Qwotbc_Ykqq6MeWhfzuOts7xu46k,13739
+catgram/ccg/heads.py,sha256=VZbUYulkMs15Eu7v7bselQG7DY8VlsB_fRQXb7uhQMU,12542
+catgram/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+catgram/cli/ccg_depeval.py,sha256=mj5A5tUVDrF-2Z7Tb_sqUEHTd6xsb2EzFYMWAumZnDI,5032
+catgram/cli/ccg_roots.py,sha256=lAAwMqJNOesEpSzEj3RX2RBMBgWrBvk-b8_DlOdaSmM,1827
+catgram/term_graph.py,sha256=wETkCrelbPBAf9-kgxmG_UvjqW4uOE9XD9oOs8zvdLU,9638
+catgram-0.3.0.dist-info/LICENSE,sha256=psuoW8kuDP96RQsdhzwOqi6fyWv0ct8CR6Jr7He_P_k,10173
+catgram-0.3.0.dist-info/METADATA,sha256=X_HwVvuqGG--qFLzM6DcIZqIf3JdBhgHTFgI6BX2szI,8778
+catgram-0.3.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+catgram-0.3.0.dist-info/entry_points.txt,sha256=l8uURdSkfgl83knLmTWxoo-9JFbCHt1l3VR3899SUHQ,97
+catgram-0.3.0.dist-info/RECORD,,
