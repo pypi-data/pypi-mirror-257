@@ -1,0 +1,5 @@
+[console_scripts]
+flake8-qiskit-migration = flake8_qiskit_migration.command:cli
+
+[flake8.extension]
+QKT100 = flake8_qiskit_migration.plugin:Plugin
