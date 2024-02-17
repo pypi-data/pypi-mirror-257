@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: cbvfastapi
+Version: 0.7.0
+Summary: 
+Author: Никита Есипов
+Author-email: dasaderto@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pydantic (>=2.0,<3.0)
+Requires-Dist: sqlalchemy (>=2.0.25,<3.0.0)
+Description-Content-Type: text/markdown
+
+Just CBV for fastapi

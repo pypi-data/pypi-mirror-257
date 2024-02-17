@@ -1,0 +1,1 @@
+Just CBV for fastapi
