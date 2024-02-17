@@ -1,0 +1,2 @@
+[console_scripts]
+esmecata = esmecata.__main__:main
