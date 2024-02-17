@@ -1,0 +1,11 @@
+LICENCE
+README.md
+setup.py
+encurtanet/__init__.py
+encurtanet/ads_types.py
+encurtanet/shortener.py
+encurtanet.egg-info/PKG-INFO
+encurtanet.egg-info/SOURCES.txt
+encurtanet.egg-info/dependency_links.txt
+encurtanet.egg-info/requires.txt
+encurtanet.egg-info/top_level.txt
