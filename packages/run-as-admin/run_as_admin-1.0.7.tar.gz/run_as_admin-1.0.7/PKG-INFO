@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: run_as_admin
+Version: 1.0.7
+Summary: This script provides a simple way to execute a file as an administrator on Windows systems.
+Home-page: https://github.com/barno1994/runasadmin
+Author: Barno Chakraborty
+Author-email: barno.baptu@gmail.com
