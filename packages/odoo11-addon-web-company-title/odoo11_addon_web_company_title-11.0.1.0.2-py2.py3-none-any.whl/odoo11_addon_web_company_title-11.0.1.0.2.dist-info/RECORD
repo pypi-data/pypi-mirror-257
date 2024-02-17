@@ -1,0 +1,13 @@
+odoo/addons/web_company_title/README.rst,sha256=TlSTEKH-DNw5_bEuNUJJq1roSIPtElp_8X7fny5YSts,2673
+odoo/addons/web_company_title/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+odoo/addons/web_company_title/__manifest__.py,sha256=9uokB91j87RyedZnjDj6rJOnG1p56bXYM7f_5V2t9L4,529
+odoo/addons/web_company_title/i18n/web_company_title.pot,sha256=N54JHX-XC2BQOfdHJah2y4SvlTwG7A9vY8R52uQgoMU,344
+odoo/addons/web_company_title/readme/DESCRIPTION.rst,sha256=jtv0-Ogmw8dF-vU_vBkQ3SPb3OqY1DDylvNEDwgVX9o,60
+odoo/addons/web_company_title/static/description/icon.png,sha256=6xBPJauaFOF0KDHfHgQopSc28kKvxMaeoQFQWZtfZDo,9455
+odoo/addons/web_company_title/static/description/index.html,sha256=IoZwRkHDiQWZpFZnYvjDnNLmMP4ACrVUziv3TCZIXEY,11602
+odoo/addons/web_company_title/static/src/js/web_company_title.js,sha256=Is_vC3Am6rAu8f7qPcQiWjwGUcaD5r6Trmm3KkxV0ac,710
+odoo/addons/web_company_title/views/assets.xml,sha256=SHBrJ1jk12WHUvwG9AoVQJHccefI2rVcBEI2KJU_IQ8,342
+odoo11_addon_web_company_title-11.0.1.0.2.dist-info/METADATA,sha256=CN0iXXpEvnMsSvRGTpBMXeCuIY9jC-zTqmDJprSYBYc,3245
+odoo11_addon_web_company_title-11.0.1.0.2.dist-info/WHEEL,sha256=-G_t0oGuE7UD0DrSpVZnq1hHMBV9DD2XkS5v7XpmTnk,110
+odoo11_addon_web_company_title-11.0.1.0.2.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo11_addon_web_company_title-11.0.1.0.2.dist-info/RECORD,,
