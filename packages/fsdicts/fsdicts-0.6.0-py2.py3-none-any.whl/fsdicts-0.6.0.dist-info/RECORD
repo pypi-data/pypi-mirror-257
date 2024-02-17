@@ -1,0 +1,13 @@
+fsdicts/__init__.py,sha256=mICXLqwsonHV6oOoG9gA0NSsy1WW6aUJW2t91U0J0yg,493
+fsdicts/bunch.py,sha256=GCibLisgQTWmdR5w1e1jDD8Lg8q3-bENGMr53nVIwr8,1430
+fsdicts/database.py,sha256=eq-o0tn4FfQiYqyFnPmupS8bVPGTzZxtArHhWCDbBTc,1118
+fsdicts/dictionary.py,sha256=ZdW9ORfF563CxA7aTceVEl4AV-aL-bT29_Lsg_88cdI,8675
+fsdicts/encoders.py,sha256=D0-kx-aSg8UMfYN3d_MPZY6WGpjC2kPLXMD7Zt3yMHY,212
+fsdicts/lock.py,sha256=gBifRAtQAsxHIu1Wu8OIP1CuWgPQguM_Jj1ARTaaz4A,4242
+fsdicts/mapping.py,sha256=-Vt8EdylCg3ySE4eBc5mWGOWA2UPc1VllAA2woXcuJY,1057
+fsdicts/storage.py,sha256=3EJj3i_U9AwdL6EmHQCiqqTVQ8A1RT_TPEAbYOabJJQ,12666
+fsdicts-0.6.0.dist-info/LICENSE,sha256=QuuXMJetK3RMJRK8bKvDYMsm-3-J57aw1E97UxAsoo4,1069
+fsdicts-0.6.0.dist-info/METADATA,sha256=PE6_LeASOGwLyLtTeimCENHwdnmnXDDUnVq6_q1iuv8,1762
+fsdicts-0.6.0.dist-info/WHEEL,sha256=-G_t0oGuE7UD0DrSpVZnq1hHMBV9DD2XkS5v7XpmTnk,110
+fsdicts-0.6.0.dist-info/top_level.txt,sha256=E5Zy7cOcbqCh00cX1_mTLhsSrIHxv0-QrJJECgFW44Q,8
+fsdicts-0.6.0.dist-info/RECORD,,
