@@ -1,0 +1,44 @@
+{% extends "../body.html" %}
+{% load static %}
+{% load util %}
+{% block content %}
+<script src="{% static 'js/jobs/logs.js' %}"></script>
+<a href="/ui/jobs/manage">
+    <button class="btn btn-info aw-btn-action" title="Manage">
+        {% include "../button/icon/return.html" %}
+    </button>
+</a>
+{% include "../button/refresh.html" %}
+<div class="table-responsive aw-data">
+    <table class="table table-striped aw-text-responsive" id="aw-api-data-table">
+        <tr>
+            <th>Run</th>
+            <th>Job</th>
+            <th>Comment</th>
+            <th>Show Logs</th>
+        </tr>
+    </table>
+    <div id="aw-api-data-tmpl-actions" hidden="hidden">
+        <button class="btn btn-info aw-btn-action aw-btn-expand aw-log-read" title="Show Logs"
+                aw-expand="aw-spoiler-${ID}" aw-log="aw-execution-logs-${ID}"
+                aw-job="${JOB_ID}" aw-exec="${ID}" aw-log-line="0"
+                aw-log-end="aw-log-end-${ID}">
+            {% include "../button/icon/expand.html" %}
+        </button>
+    </div>
+    <div id="aw-api-data-tmpl-logs" hidden="hidden">
+        <div>
+            <b>LOG FILES</b>:
+            <a href="${LOG_STDOUT_URL}" title="${LOG_STDOUT}" download>Output</a>,
+            <a href="${LOG_STDERR_URL}" title="${LOG_STDERR}" download>Error</a>
+        </div>
+        <div id="aw-execution-logs-${ID}" class="aw-execution-logs"></div>
+        <div>
+            <button type="submit" title="Collapse" class="btn btn-info aw-btn-action aw-btn-collapse" aw-collapse="aw-spoiler-${ID}"
+            id="aw-log-end-${ID}">
+                {% include "../button/icon/collapse.html" %}
+            </button>
+        </div>
+    </div>
+</div>
+{% endblock %}
