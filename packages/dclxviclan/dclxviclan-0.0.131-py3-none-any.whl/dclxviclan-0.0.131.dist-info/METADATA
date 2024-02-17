@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: dclxviclan
+Version: 0.0.131
+Summary: Stupid gamedeveloper games example
+Author: dclxviclan (dclxviclan)
+Author-email: <dclxviclan@gmail.com>
+Keywords: python,game,video,stream,video stream,camera stream,sockets
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+
