@@ -1,0 +1,11 @@
+README.md
+setup.py
+softwaretoolparra/Expintegral.py
+softwaretoolparra/NewtonQuadra.py
+softwaretoolparra/__init__.py
+softwaretoolparra/matrix_dot.py
+softwaretoolparra/ols.py
+softwaretoolparra.egg-info/PKG-INFO
+softwaretoolparra.egg-info/SOURCES.txt
+softwaretoolparra.egg-info/dependency_links.txt
+softwaretoolparra.egg-info/top_level.txt
