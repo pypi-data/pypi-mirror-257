@@ -1,0 +1,8 @@
+jyutping/__init__.py,sha256=5qNI8VXkcJiKgZKSTBy161GX09pR3wfh-NIKmPhpjVo,42
+jyutping/dictionary.py,sha256=HTycxPbF1j8-R6ObKhP-wioyo--_bbO2SOqW7VHgXrM,1034
+jyutping/jyutping.py,sha256=CEhRbLDZ3-zhVqiTouFKuMN9iAXMRoiBIW9OGQrPpfY,896
+jyutping/logger.py,sha256=Yxj9-z0t-txMq0uqU0HQQH5U95b7q02IE7HzGcCzSTc,93
+jyutping/data/zidian_zhyue-ft-kfcd-yp-2013122.txt,sha256=m3XQ83ifemDciaNqMUiSMjve430yWDB3b8ziQoBzLm4,79084
+jyutping-0.3.3.dist-info/METADATA,sha256=4LgSGp_9noDsN1TDiDgx6VhvgWq2mLSsd3OyM3l5Vlk,735
+jyutping-0.3.3.dist-info/WHEEL,sha256=ccEkY-EGGllEs7ySpwBlD8G4u70wR77CNej8Q6tzIqA,105
+jyutping-0.3.3.dist-info/RECORD,,
