@@ -1,0 +1,6 @@
+sqlmodel
+polars
+
+[front]
+ipyvuetable
+ipyevents
