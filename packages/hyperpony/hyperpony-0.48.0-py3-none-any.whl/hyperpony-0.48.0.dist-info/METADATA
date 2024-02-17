@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: hyperpony
+Version: 0.48.0
+Summary: Django Function Views
+Home-page: https://github.com/romanroe/dfv
+License: MIT
+Keywords: django,python
+Author: Roman Roelofsen
+Author-email: romanroe@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Provides-Extra: docs
+Requires-Dist: django (>=4,<6)
+Requires-Dist: django-htmx (>=1.14.0,<2.0.0)
+Requires-Dist: lxml (>=4.9.2,<5.0.0)
+Requires-Dist: typeguard
+Requires-Dist: wrapt (>=1.15.0,<2.0.0)
+Project-URL: Repository, https://github.com/romanroe/dfv
+Description-Content-Type: text/markdown
+
+# Django Function Views
+
