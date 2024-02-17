@@ -1,0 +1,42 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.sdist]
+include = [
+  "src"
+]
+exclude = [
+  "src/cherry/venv*",
+  "src/cherry/.venv*",
+]
+
+[tool.hatch.include.files]
+txt_files = "cherry/sources/utils/*.txt"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/cherry"]
+
+[project]
+name = "sour-cherry"
+version = "1.0.12"
+authors = [
+  { name="Yony Kibiwot", email="limzyon@gmail.com" },
+]
+description = "A CLI tool to build essentials for FastAPI development."
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = ["click"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+
+[project.scripts]
+cherry="cherry.cherrypie:cherrypie"
+
+[project.urls]
+Homepage = "https://github.com/CheruiyotLimo/project-cherry"

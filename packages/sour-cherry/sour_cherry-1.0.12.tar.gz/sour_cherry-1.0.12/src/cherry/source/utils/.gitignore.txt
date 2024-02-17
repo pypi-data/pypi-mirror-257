@@ -1,0 +1,3 @@
+venv  # Replace this with your virtual environment name
+__pycache__
+.env
