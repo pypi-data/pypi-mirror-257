@@ -1,0 +1,16 @@
+#dirs
+experiments/
+__pycache__/
+.vscode/
+
+#files
+cassandra_*.json
+secure-connect-cassandra-*.zip
+test_package.py
+mongo_creds.*
+*.pyc
+*.pyo
+*-firebase-adminsdk-*.json
+firebase_realtime_params.yaml
+firebase_test.py
+.directory
