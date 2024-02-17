@@ -1,0 +1,2 @@
+[console_scripts]
+hello = brickschema-rdflib-sqlalchemy:hello
