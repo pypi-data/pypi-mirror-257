@@ -1,0 +1,63 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.version]
+path = "idp_authentication/__init__.py"
+
+[tool.poetry]
+name = "idp_authentication"
+version = "0.1.8"
+description = "IDP Authentication - Hexagonal Architecture Implementation"
+readme = "README.md"
+authors = ["Lirim Shala <lirim.shala@cardoai.com>", "Klajdi Çaushi <klajdi.caushi@cardoai.com>"]
+classifiers = [
+    "Intended Audience :: Information Technology",
+    "Intended Audience :: System Administrators",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+SQLAlchemy="1.4.46"
+pydantic="1.10.4"
+dependency-injector="4.41.0"
+
+[tool.poetry.urls]
+homepage = "https://github.com/CardoAI/idp-authentication"
+repository = "https://github.com/CardoAI/idp-authentication"
+documentation = "https://github.com/CardoAI/idp-authentication/blob/main/README.md"
+bugs = "https://github.com/CardoAI/idp-authentication/issues"
+
+[tool.poetry.group.dev.dependencies]
+pytest="7.2.0"
+black="^22.10.0"
+isort="5.11.3"
+pytest-cov="4.0.0"
+autoflake="2.0.0"
+Faker="15.3.4"
+mkdocs-material="8.5.11"
+mkdocstrings="0.19.1"
+
+[tool.black]
+line-length = 88
+target-version = ['py39', 'py310', 'py311']
+include = '\.pyi?$'
+exclude = '''
+/(
+  # The following are specific to Black, you probably don't want those.
+  | blib2to3
+  | tests/data
+  | profiling
+  | migrations
+)/
+'''
+
+[tool.isort]
+profile = "black"
