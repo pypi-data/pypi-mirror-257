@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: auto-rev
+Version: 1.0.3
+Summary: auto reversion tool
+Author: alexzshl
+Author-email: alexzshl@126.com
+License-File: LICENSE
+Requires-Dist: argparse~=1.4.0

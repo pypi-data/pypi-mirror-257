@@ -1,0 +1,9 @@
+LICENSE
+main.py
+setup.py
+auto_rev.egg-info/PKG-INFO
+auto_rev.egg-info/SOURCES.txt
+auto_rev.egg-info/dependency_links.txt
+auto_rev.egg-info/entry_points.txt
+auto_rev.egg-info/requires.txt
+auto_rev.egg-info/top_level.txt
