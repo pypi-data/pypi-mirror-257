@@ -1,0 +1,6 @@
+[airflow.plugins]
+onetable_airflow_plugin=onetable_py.airflow_plugin:OnetablePlugin
+
+[console_scripts]
+onetable_py=onetable_py.cli:app
+
