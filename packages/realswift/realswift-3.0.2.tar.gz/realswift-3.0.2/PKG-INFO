@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: realswift
+Version: 3.0.2
+Summary: AI automation tool leverages a cognitive approach inspired by the human brain's intuitive understanding of web interfaces
+Home-page: https://github.com/jagadish165/realswift
+Author: Jagadish Dabbiru
+Author-email: jagadish.dabbiru@gmail.com
+License: BSD-2-Clause
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: Internet :: WWW/HTTP :: Browsers
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+This project performs user interactions with OpenCV2 by integrating the PyAutoGUI library alongside custom utility functions. The script offers a range of functionalities, including simulating user actions like typing, clicking, scrolling, and hovering. These actions are executed within a defined window or specific area, enhancing the automation of user interactions
