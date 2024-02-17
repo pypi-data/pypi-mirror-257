@@ -1,0 +1,8 @@
+sbo_create/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sbo_create/__metadata__.py,sha256=68RCWl3FQa2hPJ8Ae37MlsPqGGuVvqv_AoBjlZwrIHQ,384
+sbo_create/main.py,sha256=fXD1PP2TGKr4ISwcW7HhojObRzcKhLLf3ozzKK7CtW0,48037
+sbo_create/templates.py,sha256=ye_HM6Van-c1fnFxxi0qjNX_zpsKjg9DLQomjbAV3zs,36965
+sbo_create-2.0.8.dist-info/entry_points.txt,sha256=bNsXS2GGghwMlcUgOOOz7m0PGfORfIPe2KFLzdJe2ts,51
+sbo_create-2.0.8.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+sbo_create-2.0.8.dist-info/METADATA,sha256=GoE_sYizTGqojwrEblMZdwWaZ0qgnlHyG-W5FLdMUUU,1640
+sbo_create-2.0.8.dist-info/RECORD,,

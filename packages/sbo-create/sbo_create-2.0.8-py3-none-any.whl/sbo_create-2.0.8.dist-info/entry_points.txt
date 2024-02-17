@@ -1,0 +1,3 @@
+[console_scripts]
+sbo-create=sbo_create.main:main
+
