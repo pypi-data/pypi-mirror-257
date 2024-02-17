@@ -1,0 +1,14 @@
+# Requirements needed in tox lint environment
+
+# pinned tuf runtime dependencies
+-r pinned.txt
+
+# Lint tools
+# (We are not so interested in the specific versions of the tools: the versions
+# are pinned to prevent unexpected linting failures when tools update)
+black==23.9.1
+isort==5.12.0
+pylint==3.0.1
+mypy==1.6.0
+bandit==1.7.5
+pydocstyle==6.3.0
