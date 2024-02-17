@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: easy-file-process
+Version: 0.1.2
+Summary: A simple encapsulation of basic file operations
+Home-page: https://github.com/caojiachen1/easy-file-process
+Author: Billy Cao
+Author-email: caojiachen1@outlook.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.10.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: moviepy
+Requires-Dist: opencv-python
+Requires-Dist: ffmpeg
+Requires-Dist: pypdf2
+Requires-Dist: magika
+Requires-Dist: requests
+
+
+A simple encapsulation of basic file operations
