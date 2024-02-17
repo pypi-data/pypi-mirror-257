@@ -1,0 +1,8 @@
+README.md
+setup.py
+techgium/__init__.py
+techgium/main.py
+techgium.egg-info/PKG-INFO
+techgium.egg-info/SOURCES.txt
+techgium.egg-info/dependency_links.txt
+techgium.egg-info/top_level.txt
