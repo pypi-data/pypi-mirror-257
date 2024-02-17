@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: utility-sentry
+Version: 1.0.0
+Summary: Utility Sentry provides common components for software development to reduce developers efforts.
+Home-page: UNKNOWN
+Author: Ankit Prajapat
+Author-email: ankitprajapat948@gmail.com
+License: UNKNOWN
+Description: # utility-sentry
+        
+        Utility Sentry provides common components for software development to reduce developers efforts, allowing them to focus on creating robust software.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
