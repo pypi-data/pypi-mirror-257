@@ -1,0 +1,8 @@
+llsd
+starlette
+
+[dev]
+pytest>6
+pytest-cov
+pytest-asyncio
+httpx
