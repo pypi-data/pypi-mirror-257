@@ -1,0 +1,6 @@
+[console_scripts]
+
+
+[nbdev]
+wordslab_llms = wordslab_llms._modidx:d
+
