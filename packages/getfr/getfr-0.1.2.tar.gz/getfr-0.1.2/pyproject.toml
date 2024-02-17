@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "getfr"
+version = "0.1.2"
+description = "get fossology report for a given folder id"
+authors = ["dineshr93gmail.com"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "readmeProcess"}]
+
+[tool.poetry.scripts]
+getfr = 'readmeProcess:main'
+
+[tool.poetry.dependencies]
+python = "^3.9"
+easy-fossy = "^2.0.11"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
