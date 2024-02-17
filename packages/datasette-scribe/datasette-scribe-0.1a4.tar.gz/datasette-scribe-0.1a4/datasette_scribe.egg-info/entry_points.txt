@@ -1,0 +1,2 @@
+[datasette]
+scribe = datasette_scribe

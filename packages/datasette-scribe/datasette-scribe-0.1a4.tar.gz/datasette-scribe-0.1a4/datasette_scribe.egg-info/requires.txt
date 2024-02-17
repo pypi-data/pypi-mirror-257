@@ -1,0 +1,9 @@
+datasette
+sqlite-utils
+python-ulid
+
+[test]
+pytest
+pytest-asyncio
+pytest-httpx
+starlette
