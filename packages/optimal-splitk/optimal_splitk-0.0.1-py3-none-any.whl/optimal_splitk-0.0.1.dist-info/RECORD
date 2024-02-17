@@ -1,0 +1,15 @@
+optimal_splitk/__init__.py,sha256=07NzQXBgNlnw5kSN6ZYxE9By-_RuH3Jyy58Z74sIio0,21
+optimal_splitk/doe.py,sha256=zSGOjRpqHQc_30FnNt_YKt9RXG1pBjAH3aAUufbATXk,13607
+optimal_splitk/encode.py,sha256=t-eeeprOkM3NA9H6E8CQ1Glz4r03keEPOzqomomJUlQ,4661
+optimal_splitk/init.py,sha256=28JXwLs3OeARBrF6ihpYz1JGBPutxoeIEQLFQz-4b1c,4388
+optimal_splitk/optimizers.py,sha256=a7o7lOZDwsOOHOf6D_k_mFB_vczv0TlBbLE3pjWCfx8,6424
+optimal_splitk/utils.py,sha256=VzG6BYRMTSL7Z4dj9y4XS8eoOzOUORz1bmO2PKCyqSw,3397
+optimal_splitk/validation.py,sha256=e1RD626xzY1E1gmG8Tnm9P_L5jpyVOIMn5RoJO-5uZM,3906
+optimal_splitk/optim/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+optimal_splitk/optim/doptim.py,sha256=shalrQMSu4HGhI1N3zyem7pembFqMOzD49St26jBe6k,4311
+optimal_splitk/optim/ioptim.py,sha256=VpcHPwRajdwIiapnQzFzRQpY2e98gJyq65YJB1WXegU,6446
+optimal_splitk-0.0.1.dist-info/LICENSE,sha256=zkuaKWt7GsG6lIDkUcIJ473fOG-SxgMZMODXRTGjNCU,1495
+optimal_splitk-0.0.1.dist-info/METADATA,sha256=bCiqZJINEeixOUYIg8JDlR97Jz0cXd8RiB43QFdZzS8,1272
+optimal_splitk-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+optimal_splitk-0.0.1.dist-info/top_level.txt,sha256=QlryGn5EZ37MxTt2OkqFKzr69cITAYtSyWRjxB10Tgk,15
+optimal_splitk-0.0.1.dist-info/RECORD,,
