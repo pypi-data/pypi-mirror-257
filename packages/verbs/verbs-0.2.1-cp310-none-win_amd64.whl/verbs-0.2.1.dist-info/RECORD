@@ -1,0 +1,11 @@
+verbs-0.2.1.dist-info/METADATA,sha256=rvoClgSQbQ2fBeBs0amo6GMXLxKlezAU9nhlGdQ8D8o,3144
+verbs-0.2.1.dist-info/WHEEL,sha256=S0rB2hDy1vo9ABZi7A01rQ8AAoGmft-elqksCH-s-Bw,95
+verbs-0.2.1.dist-info/license_files/LICENSE,sha256=7ikA10RZO1S-AH9ksAzcciFmk69i6zbwQeY9PJG6d4I,1087
+verbs/abi.py,sha256=a3AmijGaMU8kv00Ky5Ia3Rf0EWZ7NQ7DrJwBrEZwup8,13655
+verbs/batch_runner.py,sha256=MlPKjEeaJhzqzCwIe0VgaWiEOL6y-eC7p1c0qA1yV-E,4078
+verbs/sim.py,sha256=ijYKY_xsyTdfVVEmNmVcg7QZGTR0dBSf9Ol9GVLLPsg,8416
+verbs/types.py,sha256=wZqaNwLQx3hdkO58DNitrr-r4_U2gXJXVey-Tch52wM,368
+verbs/utils.py,sha256=7VH7NGVAWHPLlwLsLNPgEpvKiYTA2rmJ_UmbiNs_kt0,5899
+verbs/__init__.py,sha256=mT1AhlRLpWYmZ4vDoCScH3ik9d-XsUP8Q0vQ1KhiCWQ,62
+verbs/envs.cp310-win_amd64.pyd,sha256=YpSpit8fiS74YohjZjUDSmasA9RV93dTxYE1rRFH_38,7709184
+verbs-0.2.1.dist-info/RECORD,,
