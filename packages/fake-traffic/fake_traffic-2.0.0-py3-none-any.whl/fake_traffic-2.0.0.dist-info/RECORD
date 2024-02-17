@@ -1,0 +1,10 @@
+fake_traffic/__init__.py,sha256=6r1Amof0HVsTXOMRr4kbGZ35P-pspOHlBBznI7qhRZo,70
+fake_traffic/cli.py,sha256=sGm8cKjx4NymR_-YYu_CeQCv4QuR-T_xTPnOIwuuWps,2640
+fake_traffic/fake_traffic.py,sha256=d0Y4dXKyuowiA3bzPPaWda3tjN2aLT5ixhcqDjvNoPY,6538
+fake_traffic/version.py,sha256=jfMYUkKiruYd9cM9tY-_mLygW0fRj75GOhW2tEhKhOI,21
+fake_traffic-2.0.0.dist-info/LICENSE,sha256=Cc7NBh_Q-BurCa-lL4c6s_FG4Z5P7CHJldeJYje_9H0,1063
+fake_traffic-2.0.0.dist-info/METADATA,sha256=HzUjwCDvjcZAqn2ssgzRJUahfYSsRBoxgkd1vBme0oA,5311
+fake_traffic-2.0.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+fake_traffic-2.0.0.dist-info/entry_points.txt,sha256=bnNoe6FqzL_r8QX1zFVMhTOsLmJaHsWfKk-ps_RxhsY,63
+fake_traffic-2.0.0.dist-info/top_level.txt,sha256=OkdEBnhIRzpu_9UnbXkFLIFvN92yHLGZInKqjFBDOAg,13
+fake_traffic-2.0.0.dist-info/RECORD,,
