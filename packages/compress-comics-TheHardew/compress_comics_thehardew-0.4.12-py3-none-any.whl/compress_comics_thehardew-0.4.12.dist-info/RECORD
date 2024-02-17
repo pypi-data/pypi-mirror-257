@@ -1,0 +1,10 @@
+compress_comics_TheHardew/__init__.py,sha256=r64Vq0nJbYAFs4LXckVTD9SMNdkk5L4Zu-yM1nRiHXg,34
+compress_comics_TheHardew/argument_parser.py,sha256=IrgcDeQywRBcRmHe6uOASBykDSObWroIR1FKvFqAqBg,5790
+compress_comics_TheHardew/comic_compressor.py,sha256=ofmgaDEw09131XCoufiTATrxkXEc4geZU5s3xKvAPJ4,8580
+compress_comics_TheHardew/compress_comics.py,sha256=A8R3A46L7rB4QU5jhHjfut_MAM5QM5W6RKEil-Ipm24,2432
+compress_comics_TheHardew/text_bar.py,sha256=_REDXhlzz7ax9HKeSfNiPDd-E8YiIxkjD6h76KNDmwM,6840
+compress_comics_thehardew-0.4.12.dist-info/METADATA,sha256=BgJmBmLfq4U3woKJWOs9dNqNonlD7EJYRX0HLrOZwG8,1208
+compress_comics_thehardew-0.4.12.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+compress_comics_thehardew-0.4.12.dist-info/entry_points.txt,sha256=uXiruAS_yc6t9CiJaA4sID4obSKmrkV4UDpPgrpsrJw,67
+compress_comics_thehardew-0.4.12.dist-info/licenses/LICENSE,sha256=awOCsWJ58m_2kBQwBUGWejVqZm6wuRtCL2hi9rfa0X4,1211
+compress_comics_thehardew-0.4.12.dist-info/RECORD,,
