@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: elephant-sock5
+Version: 0.0.3
+Summary: Elephant sock5 tunnel client
+Home-page: https://github.com/ruanhao/elephant-sock5-client-py
+Author: Hao Ruan
+Author-email: ruanhao1116@gmail.com
+License: MIT
+Keywords: proxy,http,non-blocking,py-netty,socks5
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.7, <4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# elephant-sock5-client-py
+python client of Elephant(L4) tunnel for SOCK5 
