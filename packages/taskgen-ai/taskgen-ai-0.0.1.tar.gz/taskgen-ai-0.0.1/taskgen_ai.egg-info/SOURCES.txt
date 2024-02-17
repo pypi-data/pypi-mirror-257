@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+taskgen/__init__.py
+taskgen/agent.py
+taskgen/base.py
+taskgen_ai.egg-info/PKG-INFO
+taskgen_ai.egg-info/SOURCES.txt
+taskgen_ai.egg-info/dependency_links.txt
+taskgen_ai.egg-info/requires.txt
+taskgen_ai.egg-info/top_level.txt
