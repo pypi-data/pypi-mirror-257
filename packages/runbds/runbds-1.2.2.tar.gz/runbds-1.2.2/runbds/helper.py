@@ -1,0 +1,6 @@
+AUTHOR="Galaxy"
+AUTHOR_EMAIL="dhjfirst@hotmail.com"
+AUTHOR_GITHUB="https://github.com/RIMING01"
+ARTHOR_TWITTER="https://twitter.com/RimingD83734"
+ARTHOR_FACEBOOK="https://www.facebook.com/profile.php?id=61556021296021"
+AUTHOR_SO="https://stackoverflow.com/users/23380694/galaxy"
