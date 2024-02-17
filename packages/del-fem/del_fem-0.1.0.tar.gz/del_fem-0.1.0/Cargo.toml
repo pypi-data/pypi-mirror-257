@@ -1,0 +1,20 @@
+[package]
+name = "pydel-fem"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "del_fem"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.20.2", features = ["extension-module"] }
+nalgebra = "0.32.3"
+numpy = "0.20.0"
+num-traits = "0.2.18"
+#
+#del-fem = {path="../del-fem"}
+#del-geo = {path="../del-geo"}
+del-fem = "0.1.1"
+del-geo = "0.1.18"
