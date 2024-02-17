@@ -1,0 +1,9 @@
+geoca/__init__.py,sha256=WyAsSdh14C_Tby2kv8s98eLnLGr0Xg1oTQ4YO2nq59g,124
+geoca/common.py,sha256=9ejUu9pg1xGYJaD4hZh7z4uTNpDMbSSq2ZUGh_zBrgM,255
+geoca/geoca.py,sha256=h0hwdogXGFqerm-5ZPeT-irPn91pCcQRjiHThXsRzEk,19
+geoca-0.0.2.dist-info/LICENSE,sha256=yVMmT5dZMVdkU2-rukTFNat-OReQxuqw8c-U-kGndQI,1069
+geoca-0.0.2.dist-info/METADATA,sha256=QtMyRDxhsyIhPEDxrjGtvq-FeW6xGu5bwF-5Ejao8Ps,1248
+geoca-0.0.2.dist-info/WHEEL,sha256=-G_t0oGuE7UD0DrSpVZnq1hHMBV9DD2XkS5v7XpmTnk,110
+geoca-0.0.2.dist-info/entry_points.txt,sha256=lfYD0b7XIQ7xCW-9Ut-1GAtnkF33IJBEmeV06mCxjh8,41
+geoca-0.0.2.dist-info/top_level.txt,sha256=iMu9zJaVkGTM-MNSdpIyXP4Nbpt1WlCWTb88GQK2j9E,6
+geoca-0.0.2.dist-info/RECORD,,

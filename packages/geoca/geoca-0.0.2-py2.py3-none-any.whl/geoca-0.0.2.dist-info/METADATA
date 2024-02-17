@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: geoca
+Version: 0.0.2
+Summary: A Python module for CA models based on geo-raster data
+Author-email: Haorui Jiang <jianghr0321@163.com>
+License: MIT License
+Project-URL: Homepage, https://github.com/Haorui-Jiang/geoca
+Keywords: geoca
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Provides-Extra: all
+Requires-Dist: geoca[extra] ; extra == 'all'
+Provides-Extra: extra
+Requires-Dist: pandas ; extra == 'extra'
+
+# geoca
+
+[![image](https://img.shields.io/pypi/v/geoca.svg)](https://pypi.python.org/pypi/geoca)
+[![image](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+**A Python module for CA models based on geo-raster data**
+
+- Free software: MIT License
+- Documentation: <https://Haorui-Jiang.github.io/geoca>
+
+## Features
+
+- TODO
