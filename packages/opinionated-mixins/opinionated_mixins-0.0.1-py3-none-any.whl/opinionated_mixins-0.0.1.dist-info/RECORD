@@ -1,0 +1,13 @@
+opinionated_mixins/__about__.py,sha256=HJuNwAu4nH4-W_Fxx-93vPBZZ91XHfW58BUyQfclXK0,142
+opinionated_mixins/__init__.py,sha256=WCrhw5AsjeVBd72LovKxPLW5A4Xqsm90zGpsYw77t7c,119
+opinionated_mixins/contrib/dataclasses/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+opinionated_mixins/contrib/mongoengine/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+opinionated_mixins/contrib/odmantic/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+opinionated_mixins/contrib/pydantic/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+opinionated_mixins/contrib/sqlalchemy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+opinionated_mixins/contrib/sqlmodel/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+opinionated_mixins/contrib/wtforms/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+opinionated_mixins-0.0.1.dist-info/METADATA,sha256=ctcvKn4GvNIuf86srH-GQF5SrHDJD5DMuFJWWrgel8c,1749
+opinionated_mixins-0.0.1.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+opinionated_mixins-0.0.1.dist-info/licenses/LICENSE,sha256=ZiiZJy3m8D0f1iJt2ockxCGWWff2EpfiXsSLLjVUF0U,1096
+opinionated_mixins-0.0.1.dist-info/RECORD,,
