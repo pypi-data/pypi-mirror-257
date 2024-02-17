@@ -1,0 +1,12 @@
+__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+inferent/__init__.py,sha256=T284-81eeedyRNoTAhb-sJZ3Ut37c36p9ulKYjb350w,38
+inferent/base_scraper.py,sha256=ZcqoB2StSZ_il4FAaoRXBYPcK0oCNh8cJqwLJY52WUg,3188
+inferent/training.py,sha256=nTNf_m3d_KKA8DExvfwFCh-1YeDUKKCX5gyLPXZiPbI,12055
+inferent/utils.py,sha256=ZR_liNk6eV5mne8tC_6QdHgAcIvMNZf-jhDchiUXMKQ,343
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_utils.py,sha256=E0XbTfHczgRP0aN-Gy3eNgOab5Ymc9mJLtlSHDya0Mg,612
+inferent-0.0.3.dist-info/LICENSE,sha256=dgCtF2YDy_Rdq4y8Iz906JHeTx9AFrwFay3BbPaFls8,1065
+inferent-0.0.3.dist-info/METADATA,sha256=KaDVWX7Mh4yMwGRcbxVLM_VH0PrjK-MxSt6KJJ72wR4,654
+inferent-0.0.3.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+inferent-0.0.3.dist-info/top_level.txt,sha256=cL7s-R7FuHmRMZE7-EWdwOgXYB9mLqSSuNYHOGCAoPk,24
+inferent-0.0.3.dist-info/RECORD,,
