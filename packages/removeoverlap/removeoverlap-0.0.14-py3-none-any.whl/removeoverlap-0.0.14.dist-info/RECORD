@@ -1,0 +1,17 @@
+removeoverlap/__init__.py,sha256=ipDR5508wvhhpLUggu6QhsoscSv8u7CyNY_GfHdyjf8,339
+removeoverlap/chan.py,sha256=zdSiqADaCu_BJWc4q1-qMT9CDq9l0chrZWQ8U4JytCc,2208
+removeoverlap/cut_bounding_box.py,sha256=ndKlTMWrksWnleM7yd23tENUveyci9f0suzbFjdlkJ4,1719
+removeoverlap/edge.py,sha256=At93fTBvU_X-RxfuxBzFHQcBqQxoxAak7efYNj0teqs,421
+removeoverlap/event.py,sha256=JRzJYDK75Z4iZBSPRcbY43doNit5zMgxqpEOmNJVTeA,771
+removeoverlap/event_pool.py,sha256=alBrCU0oGh14gdtIrYXRYgJ-QQ3ScMMooo-P-5rykks,11343
+removeoverlap/event_type.py,sha256=rRE9xGaOknyy3NizwDLRmu-LZIlAJ8ze6ziM2twGeOA,159
+removeoverlap/hrectangle.py,sha256=6PkO7ISgc1gxsHT5S8StKa5VgxjS99wnCJSS3bi9TrQ,530
+removeoverlap/overlap.py,sha256=Jn0ovZhVqdXhbdIlb4kQw4U8Q3XbpoJuCuTKSQE2Rr0,1081
+removeoverlap/plot.py,sha256=Joo75aaBizEbhKPblLH1-JoWsWmgkyvFjrwot5l67LY,1234
+removeoverlap/print.py,sha256=drnNg68tsPbGKVay79FBIiRhwOV5tl4m6tQALyX5038,400
+removeoverlap/remove_overlap.py,sha256=mDUagq-1bCR1tOdwB4uSzYAZIvB2x8K-_HLyuzFQM9c,2570
+removeoverlap/split_boxes.py,sha256=ywdOcBVHpekoZJD6Bz4CI3uovaUZ95ObZxAbTTVtAVI,1408
+removeoverlap-0.0.14.dist-info/METADATA,sha256=T_WWBkmi4cr4WT7goBShi2Lp1mzpuNszcVWnwR8Fv8s,581
+removeoverlap-0.0.14.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+removeoverlap-0.0.14.dist-info/licenses/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+removeoverlap-0.0.14.dist-info/RECORD,,
