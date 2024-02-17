@@ -1,0 +1,15 @@
+krakenapi/__init__.py,sha256=4s_xy4xmjT-uWKThh2WwWW5TQ8hoxGQqpi7g2PCzxcA,76
+krakenapi/kraken_api.py,sha256=pX224SpavRMkEw4hTROyeMJQ1e4_nQuTCC1QideHLqo,13044
+krakenapi/utils.py,sha256=7cahAkz0dGALpO8pZeZEl3P1ZuSglcHZGbab7TPO5yU,480
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/conftest.py,sha256=IDFCspxQ96bshICBs0c3N-4zyZC4bF5woWQVCqggNa0,704
+tests/test_kraken_api.py,sha256=iZwxlBIQrUnVCH1ng4mfiQlMJHPZCj2fwtlv_2f5Fro,12942
+tests/test_utils.py,sha256=GoxksA4Rf1b1VELhPJQsjsvbc7M2H36S2dJID3yeALg,851
+tests/fixtures/__init__.py,sha256=jCMz2dbPev4-hFN0H5rL848dNSuUzJ1tkj5cksJoF54,27
+tests/fixtures/trades.py,sha256=1Z_cYXyd1FcEopmeCL5f6-G7gZ6yhm2okG4DpAINcY8,65900
+krakenapi-1.0.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+krakenapi-1.0.1.dist-info/METADATA,sha256=Is0nkpgDV2oJnRr1w6WSJF9tljdPiGFU2IdW7eTfFt4,2624
+krakenapi-1.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+krakenapi-1.0.1.dist-info/top_level.txt,sha256=hJlZua_g9DWpwapfMPbFtsMZ-nkUS_KD0gLGr-0C2-Q,16
+krakenapi-1.0.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+krakenapi-1.0.1.dist-info/RECORD,,
