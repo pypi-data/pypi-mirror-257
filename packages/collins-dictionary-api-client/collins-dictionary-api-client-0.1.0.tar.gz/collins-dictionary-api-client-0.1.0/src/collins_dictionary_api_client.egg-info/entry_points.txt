@@ -1,0 +1,2 @@
+[console_scripts]
+collins-dictionary-api-client = danoan.dictionaries.collins.cli.cli:main
