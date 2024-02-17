@@ -1,0 +1,6 @@
+README.md
+setup.py
+yandex_conversion.egg-info/PKG-INFO
+yandex_conversion.egg-info/SOURCES.txt
+yandex_conversion.egg-info/dependency_links.txt
+yandex_conversion.egg-info/top_level.txt
