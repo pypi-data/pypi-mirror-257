@@ -1,0 +1,16 @@
+openpyxl
+numpy
+packaging
+pandas<3.0.0
+requests
+sodapy
+tqdm
+typing-extensions
+xlrd
+
+[optional]
+rapidfuzz
+msoffcrypto-tool
+
+[test]
+pytest
