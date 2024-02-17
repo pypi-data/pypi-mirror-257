@@ -1,0 +1,89 @@
+[tool.poetry]
+name = "tensora-taco"
+version = "0.1.2"
+description = "Python wrapper around the TACO CLI as an alternative kernel generator for Tensora"
+authors = ["David Hagen <david@drhagen.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/drhagen/tensora-taco"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: MacOS",
+]
+
+# sdist include must be included here because Poetry makes the sdist
+# wheel include must be in build.py because Setuptools makes the wheel
+include = [{ path = "src/taco", format = "sdist" }]
+
+# TACO will not build if it finds a broken git install
+exclude = ["**/.git*"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+returns = ">=0.20"
+
+[tool.poetry.dev-dependencies]
+# Cannot use nox-poetry because it does not support build.py
+# https://github.com/cjolowicz/nox-poetry/issues/1188
+nox = ">=2023"
+
+# Build
+cmake = "^3"
+
+# Test
+pytest = "~7.3"
+pytest-cov = "*"
+
+# Lint
+ruff = "^0.1"
+
+# Docs
+mkdocs-material = "^9"
+
+[tool.poetry.build]
+script = "build.py"
+# Required for `poetry build` to invoke the `build.py` script
+# https://github.com/python-poetry/poetry/issues/7470#issuecomment-1422050643
+generate-setup-file = true
+
+[tool.coverage.run]
+branch = true
+
+[tool.coverage.paths]
+source = [
+    "src/",
+    ".nox/test*/lib/python*/site-packages/",
+    ".nox/test*/Lib/site-packages/",
+    "*/tensora-taco/src/",
+]
+
+[tool.ruff]
+src = ["src"]
+line-length = 99
+
+extend-exclude = ["src/taco/**"]
+
+extend-select = [
+    "I",   # isort
+    "N",   # pep8-naming
+    "RUF", # ruff
+    "B",   # flake8-bugbear
+    "N",   # flake8-broken-line
+    "C4",  # flake8-comprehensions
+    "PIE", # flake8-pie
+    "PT",  # flake8-pytest-style
+    "PTH", # flake8-use-pathlib
+    "ERA", # flake8-eradicate
+]
+
+[tool.ruff.per-file-ignores]
+# F401: Allow unused imports in __init__.py
+"__init__.py" = ["F401"]
+
+[build-system]
+requires = ["poetry-core>=1.0.0", "cmake~=3.13", "setuptools"]
+build-backend = "poetry.core.masonry.api"
