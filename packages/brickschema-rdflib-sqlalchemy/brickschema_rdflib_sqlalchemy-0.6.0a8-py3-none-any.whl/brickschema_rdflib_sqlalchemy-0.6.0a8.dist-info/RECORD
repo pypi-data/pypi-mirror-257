@@ -1,0 +1,15 @@
+rdflib_sqlalchemy/__init__.py,sha256=8YxzhvYtpjiUs8qRivDOarAE-CdehYRiPjYSfeUOw7A,1276
+rdflib_sqlalchemy/base.py,sha256=wipfM5FdsUQsoXMUUpV6o9qn35Z3hdIrKb3GrrFK2XY,8328
+rdflib_sqlalchemy/constants.py,sha256=Iyt6ve2peKEcjn-mGYz0zfO6AQCjpJEUmqD9cRrUbw0,2130
+rdflib_sqlalchemy/sql.py,sha256=dnfWbD1JDdm7oXm65MbaoXItrX0BmG9PgazD2DBvDuk,4519
+rdflib_sqlalchemy/statistics.py,sha256=EdREBfLBrpK2NZmhqPup93ECBliTPYMGaNhvgevmtDw,1722
+rdflib_sqlalchemy/store.py,sha256=WIUmZDphe0AaWOfnEzVY2icea57lnoENjTpwPYSSXxE,33687
+rdflib_sqlalchemy/tables.py,sha256=tr3DEJ45ww9gumgRtKVQhyMDcSdKUfYxpbhYLursJ6s,7254
+rdflib_sqlalchemy/termutils.py,sha256=h0a51-f-HlVZ6AoZWCSWiwnqvG1X6AJuQCZjz39wJns,9323
+rdflib_sqlalchemy/types.py,sha256=6H9qv-HCv06V_k0J83WDcLsd-0Xiy4-8YyN1rHcliVM,540
+brickschema_rdflib_sqlalchemy-0.6.0a8.dist-info/LICENSE.txt,sha256=ts1C7QMBnVw2M7r9W-E_5OG2vTz0dUqjfyYVso1eQzA,1735
+brickschema_rdflib_sqlalchemy-0.6.0a8.dist-info/METADATA,sha256=VJdGqYQEKtP8qCZHXGjzy4ZdX1l1ndpOtGNHcg-zALY,5092
+brickschema_rdflib_sqlalchemy-0.6.0a8.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+brickschema_rdflib_sqlalchemy-0.6.0a8.dist-info/entry_points.txt,sha256=_k_MHSAGaotrI_MIBa_RmRT6UV6_D9pKIrUXTllGRAc,80
+brickschema_rdflib_sqlalchemy-0.6.0a8.dist-info/top_level.txt,sha256=SXWctlJf-coEXBoPOA_MmdFnzEoRHEawOST2f47Kh7E,18
+brickschema_rdflib_sqlalchemy-0.6.0a8.dist-info/RECORD,,
