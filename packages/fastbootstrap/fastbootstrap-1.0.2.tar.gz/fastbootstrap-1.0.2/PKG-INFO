@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: fastbootstrap
+Version: 1.0.2
+Summary: Fast Python implementation of statistical bootstrap
+Home-page: https://github.com/timofeytkachenko/fastbootstrap
+Author: Timofey Tkachenko
+Author-email: timofey_tkachenko@pm.me
+Keywords: bootstrap resampling fast_bootstrap,fast_resampling
+Requires-Python: >=3.10.12
+Description-Content-Type: text/markdown
+
+# fastbootstrap
+Fast Python implementation of statistical bootstrap
+___
+## Installation
+```bash
+pip install fastbootstrap
+```
+___
+Check interactive notebook [here](https://nbviewer.org/github/timofeytkachenko/bootstrap/blob/main/bootstrap_experiment.ipynb)
