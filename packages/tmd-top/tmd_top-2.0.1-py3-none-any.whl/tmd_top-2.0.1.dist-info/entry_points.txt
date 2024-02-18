@@ -1,0 +1,3 @@
+[console_scripts]
+tmd-top = tmd_top.main:main
+
