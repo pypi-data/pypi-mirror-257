@@ -1,0 +1,3 @@
+[console_scripts]
+pytaxon = pytaxon.main:main
+pytaxonGUI = pytaxon.pytaxon_gui:pytaxon_gui
