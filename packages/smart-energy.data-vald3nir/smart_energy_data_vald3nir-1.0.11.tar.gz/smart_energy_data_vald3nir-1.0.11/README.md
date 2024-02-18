@@ -1,0 +1,50 @@
+# Smart Energy Data
+
+Repository of data models, DAOs and APIs for the CICI core system
+
+## Overview
+
+    ─── src  
+        └── smart_energy_data
+            ├── datasets
+            │   ├── base_dataset.py
+            │   ├── data
+            │   │   ├── address.csv
+            │   │   ├── energy_consumption.csv
+            │   │   ├── energy_generated.csv
+            │   │   ├── environment.csv
+            │   │   ├── sensors.csv
+            │   │   └── users.json
+            │   ├── datasets.py        │   
+            ├── __pycache__
+            └── repository
+                ├── address
+                │   ├── address_dao.py
+                │   ├── address_dto.py
+                │   ├── address_mapper.py
+                ├── consumption
+                │   ├── consumption_api.py
+                │   ├── consumption_dao.py
+                │   ├── consumption_dto.py
+                │   ├── consumption_mapper.py
+                │   ├── consumption_pipeline.py
+                ├── env_conditions
+                │   ├── env_conditions_api.py
+                │   ├── env_conditions_dao.py
+                │   ├── env_conditions_dto.py
+                │   ├── env_conditions_mapper.py
+                │   ├── env_conditions_pipeline.py
+                ├── generation
+                │   ├── generation_api.py
+                │   ├── generation_dao.py
+                │   ├── generation_dto.py
+                │   ├── generation_mapper.py
+                │   ├── generation_pipeline.py
+                ├── sensor
+                │   ├── sensor_dao.py
+                │   ├── sensor_dto.py
+                │   └── sensor_mapper.py
+                └── user
+                    ├── user_dao.py
+                    ├── user_dto.py
+                    └── user_mapper.py
