@@ -1,0 +1,11 @@
+yandex_delivery/__init__.py,sha256=FpwFC3GAWgdCpxMsXnug3I06OA48jVJLWoYb-FUIEO0,253
+yandex_delivery/base_methods.py,sha256=DQQIQy898xDt-Yds8UDdizQfLiZ4bWD4uncVHQ5wdg4,6258
+yandex_delivery/delivery_api.py,sha256=2MZIL8vNHqLnt-dHQpdhDBaMxtCW3CdgkZc7kgXRv1E,6407
+yandex_delivery/exceptions.py,sha256=3PUnhvzOZTLqMVBLnEyG-B-0tyy4fxVxraiU1bubdbk,164
+yandex_delivery/rest_adapter.py,sha256=FVBmQubrFHmUIad3CMqRcW6NAdjY4mEzeM3TptSRNYQ,5077
+yandex_delivery/rest_result.py,sha256=bN5UP5-0FmJ7MOlQIpoxLvx2byBfTDHokq7RfqDCToA,849
+yandex_delivery_api-1.0.2.1.dist-info/LICENSE,sha256=wN6qG4lXFZxSVMR0OXw0Ajsjx5BEJ0Ja2TCmuEtgoxQ,1059
+yandex_delivery_api-1.0.2.1.dist-info/METADATA,sha256=YFrX7mrTPeY-QjIALmolhequB8rpwtjF2pT0PJ-ygoo,172
+yandex_delivery_api-1.0.2.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+yandex_delivery_api-1.0.2.1.dist-info/top_level.txt,sha256=z00N_uv11cbKqlU0RhpQwWO9IxgR4A2tGfRAWFGIYT0,16
+yandex_delivery_api-1.0.2.1.dist-info/RECORD,,
