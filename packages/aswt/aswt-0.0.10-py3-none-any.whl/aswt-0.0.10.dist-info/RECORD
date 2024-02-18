@@ -1,0 +1,11 @@
+aswt.py,sha256=2Shvb6rYFpUSbXL6dxRohgLjNJbSQLrwm4njuufobPM,15135
+aswt/__init__.py,sha256=A8DWSk3VSs_M8gPN8875uu_ZOX89dIVaiHAExGxQCIA,82
+aswt/__main__.py,sha256=tSzxISi1u0qYVjaPYzMJfyRZ_jF_q-it0BIav7udQ40,1946
+aswt/flask.py,sha256=2ZKQgXF_aBebdCz62-ufdy7iuil6eTLbXH4bKO-UFQA,1481
+aswt/require.py,sha256=Wvj-cXTOIBl3G1TGJb3vMXVnL7yMME_Kzrw9OiDaznM,4428
+aswt/starlette.py,sha256=nqOSGC-T8eqKR4Zz1zltJBxmHA4pjQHhon_6f2MgLds,1709
+aswt/token.py,sha256=DxbkFx5gp5r-4ldmFeQOObHU8RsGyi3bYbkvbUJdWUE,9395
+aswt-0.0.10.dist-info/METADATA,sha256=cW09NwKj69Dx2afPFibjo4NOwq5OQaY3sP9IGLtFvHg,91
+aswt-0.0.10.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+aswt-0.0.10.dist-info/top_level.txt,sha256=jF9JEf-5K7yjVjPtv-l82iaOBjX7i857JFcEtc8Kicc,5
+aswt-0.0.10.dist-info/RECORD,,

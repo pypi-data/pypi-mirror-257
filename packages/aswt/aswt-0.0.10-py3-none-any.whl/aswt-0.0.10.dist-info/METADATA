@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: aswt
+Version: 0.0.10
+Requires-Dist: pycryptodome >=3.9.8
+
