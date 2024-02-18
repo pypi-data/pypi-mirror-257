@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/ezstorage/__init__.py
+src/ezstorage/constants.py
+src/ezstorage/table.py
+src/ezstorage/providers/__init__.py
+src/ezstorage/providers/__template__.py
+src/ezstorage/providers/sqlite.py
+src/ezstorages.egg-info/PKG-INFO
+src/ezstorages.egg-info/SOURCES.txt
+src/ezstorages.egg-info/dependency_links.txt
+src/ezstorages.egg-info/top_level.txt
