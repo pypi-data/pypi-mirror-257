@@ -1,0 +1,6 @@
+llm
+transformers
+torch
+
+[test]
+pytest
