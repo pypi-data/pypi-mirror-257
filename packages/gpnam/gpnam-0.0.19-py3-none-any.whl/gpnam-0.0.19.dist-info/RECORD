@@ -1,0 +1,12 @@
+gpnam/__init__.py,sha256=Q2seVkxQqMBTHHm2JLd0amPo3mKxLHHD6N8anF9nYEY,184
+gpnam/data.py,sha256=55Zo7Aj_1lDwGxiJ0YbfdQkaC2gnyBvgQf6j5x2xmgY,2660
+gpnam/download_datasets.py,sha256=AU6xQSblVTHSkG0GTigQciHXt4LvZ-Phtzh0N19O_YA,4823
+gpnam/model.py,sha256=Mn15Y9MegSzOLbO-Xeupa0IJk37t7pRimVx-7x9EyYc,2988
+gpnam/sklearn.py,sha256=0MtTIArAM_79AVpuCuUo6Yf5z9Oqy32kfyyR5_1tcNo,5261
+gpnam/trainer.py,sha256=Ab4XcamC0tZWqoFMU6IjT6osf93wokj258ejk6IZuBk,7051
+gpnam/utils.py,sha256=4qvvJKoaoBENTowJY6iM_KZ-DyvcGBgLlMiPS_sSkzA,4400
+gpnam-0.0.19.dist-info/LICENSE,sha256=kNofvnyAJoyxwL-rM9cSNXawWAOChP3t4fHvSGq9HwU,1066
+gpnam-0.0.19.dist-info/METADATA,sha256=BlcS1W3nfPIB-uoqgOx3duF8YFNbAh4D-3mRecO2fc0,2475
+gpnam-0.0.19.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+gpnam-0.0.19.dist-info/top_level.txt,sha256=XeeIilHZcG28JqTlfZwJGfE2abIJAAxQCv4_Z8llh_s,6
+gpnam-0.0.19.dist-info/RECORD,,
