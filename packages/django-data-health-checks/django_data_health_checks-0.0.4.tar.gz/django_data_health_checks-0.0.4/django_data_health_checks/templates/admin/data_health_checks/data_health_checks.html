@@ -1,0 +1,101 @@
+{% extends "admin/base_site.html" %}
+
+{% load tz %}
+{% load static %}
+
+{% block title %}
+  Data Health Checks
+{% endblock %}
+
+{% block extrastyle %}
+  <style>
+    .h1 {
+      font-weight: bold;
+      font-size: 1.5em;
+    }
+    .h2 {
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+    .icon-text {
+      display: flex;
+      align-items: center;
+    }
+    .legend {
+      margin: 20px 0;
+      padding-top: 20px;
+      border-top: 1px solid;
+    }
+    .card {
+      padding: 10px;
+      border: 1px solid;
+      border-radius: 15px;
+      margin-bottom: 15px;
+      width: 600px;
+    }
+    .link {
+      background: none;
+      border: none;
+      color: rgb(101, 155, 226);
+      cursor: pointer;
+    }
+    details {
+      padding-bottom: 10px;
+    }
+
+    details summary {
+      cursor: pointer;
+      margin-bottom: -10px;
+      transition: margin-bottom 150ms ease-out;
+    }
+
+    details[open] summary {
+      margin-bottom: 10px;
+    }
+  </style>
+{% endblock %}
+
+{% block content %}
+  <h1 class="h1 icon-text"><span class="material-symbols-outlined mr-1">vital_signs</span> Data Health Checks</h1>
+  <p>Checks are designed to help identify potential data integrity issues.</p>
+  <div class="mt-2">
+    🔴 -> Failed<br>
+    🟢 -> Passed<br>
+  </div>
+  <div class="legend">
+    <h2 class="h2">Results:</h2>
+    Number of checks executed: <b>{{ checks|length }}</b><br>
+    On: <b>{% now "Y-m-d H:i:s" %}</b><br>
+    <a class="link icon-text" href=""><span class="material-symbols-outlined mr-1">refresh</span>Re-run checks</a>
+  </div>
+
+  {% for check in checks %}
+    <div class="card">
+      {% if check.success %}
+        <h2 class="h2">🟢 {{ check.name }}</h2>
+        <p>{{ check.description }}</p>
+      {% else %}
+        <h2 class="h2">🔴 {{ check.name }}</h2>
+        <p>{{ check.description }}</p><br>
+        {% if check.error_message %}
+          <div>
+            {{ check.error_message }}
+          </div>
+        {% endif %}
+        {% if check.has_fix %}
+          <form action="#" method="post">
+            {% csrf_token %}
+            <input type="hidden" name="slug" value='{{ check.slug }}'>
+            <button type="submit" class="icon-text link"><span class="material-symbols-outlined mr-1">fast_forward</span>Run fix</button>
+          </form>
+        {% endif %}
+        <details>
+          <summary>Failing {{ check.get_object_name }}s</summary>
+          {% for obj in check.failing_objects %}
+            <pre>{{ obj.id }}</pre>
+          {% endfor %}
+        </details>
+      {% endif %}
+    </div>
+  {% endfor %}
+{% endblock content %}
