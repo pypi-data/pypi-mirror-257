@@ -1,0 +1,16 @@
+beanstalk_dispatch/__init__.py,sha256=Sq4E4B3mzVJYI-4wMZt4-pr0kt1yCPmYHL7nXayXuKY,651
+beanstalk_dispatch/client.py,sha256=8-SZ_C_eKAX00CC-rd6DJJ_Rv_DnRedIxaf0IZ6ZUMk,949
+beanstalk_dispatch/common.py,sha256=rWi1wznOx8G0MB49TlKF5QHAOM60c_SrIPD3AErlVuo,255
+beanstalk_dispatch/execution.py,sha256=z4S3YoPG8US7LvrLu8LYlHkKFjypzoB1Lv1W1DddoE4,1767
+beanstalk_dispatch/safe_task.py,sha256=Vl4DuKIXUByCxeDCdkdlPp_WIZDzpvjRydnrHIgscS0,2143
+beanstalk_dispatch/urls.py,sha256=BvETLlgRlprYdSJ3RYoMnVNYrOYiR5ZFra0A5KxarZA,141
+beanstalk_dispatch/views.py,sha256=b1jJO4cmdwKHiI7DN8bsSkz0fCWjxtVONoy0dpYPAnQ,685
+beanstalk_dispatch/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+beanstalk_dispatch/tests/test_client.py,sha256=2b-_qr6vKmM-W094zSo_m06pBktjMwap_FmJYybp-FM,1901
+beanstalk_dispatch/tests/test_dispatcher.py,sha256=j_EtQyB3-XvVADNInxn8cHeAT7LFzK58NCe0Fedgl_I,6336
+beanstalk_dispatch/tests/test_safe_task.py,sha256=a8jXrtBKiXg1XiA26sjF2W6x-GUx69oqyv7PWGhYzQ4,3025
+beanstalk_dispatch-0.1.dist-info/LICENSE,sha256=PqHltj0au3pBFgBC15IVFSOE6pWzchi8sgmJkUm-pyQ,11365
+beanstalk_dispatch-0.1.dist-info/METADATA,sha256=giKobAwOj8Wwkm9ORmsP8Lixn-iKXKzISMIzPE0uUwo,1161
+beanstalk_dispatch-0.1.dist-info/WHEEL,sha256=-G_t0oGuE7UD0DrSpVZnq1hHMBV9DD2XkS5v7XpmTnk,110
+beanstalk_dispatch-0.1.dist-info/top_level.txt,sha256=9H237BfNkS9ompJ4Il3HHfppYyyjbEczmpw87H0KcBo,19
+beanstalk_dispatch-0.1.dist-info/RECORD,,
