@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+nobar.egg-info/PKG-INFO
+nobar.egg-info/SOURCES.txt
+nobar.egg-info/dependency_links.txt
+nobar.egg-info/requires.txt
+nobar.egg-info/top_level.txt
+package/__init__.py
+package/nobar.py
