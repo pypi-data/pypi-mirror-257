@@ -1,0 +1,11 @@
+README.md
+setup.py
+calcpy/__init__.py
+calcpy/sequence.py
+calcpy/version.py
+calcpy.egg-info/PKG-INFO
+calcpy.egg-info/SOURCES.txt
+calcpy.egg-info/dependency_links.txt
+calcpy.egg-info/top_level.txt
+calcpy/tests/__init__.py
+calcpy/tests/test_all.py
