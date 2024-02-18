@@ -1,0 +1,11 @@
+whinesnips/__init__.py,sha256=-WsCa65Ucphfov40OLaDiGScUtT4P5HwWbn_wIMfTeY,1762
+whinesnips/constants/const.mp,sha256=z5xh_0KMCjwCBjVs-vMvocO0s8ajcQrqKCr9leotmmw,3118
+whinesnips/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+whinesnips/utils/base_exc.py,sha256=ppikD8mdw2pxXjDAVodJ1orYyT-ksKi3JYQCtXo7qjo,2475
+whinesnips/utils/cfg.py,sha256=6rxNvSCQONnwZWCeg1n_mzvKFTB2j4VDleG4khho9Qo,2819
+whinesnips/utils/exceptions.py,sha256=dcZb_eXQepEr2BdOmCFlF1JsYjyWJjBL1T8c4JJjvWY,8860
+whinesnips/utils/types.py,sha256=bwmyWUMWKoui-5sjlV5Lta4yWGPo8dhG9nl38M0Ho8o,666
+whinesnips/utils/utils.py,sha256=HJvwPXAmexW4jlNWAljvfHdZ-tqGOnACF1FI0L92w6Q,19465
+whinesnips-0.0.0.0a4.dist-info/METADATA,sha256=030NHPCE2uGolC8VH-t7mLjDOQJJUzTj_QEJfl6BQPo,19971
+whinesnips-0.0.0.0a4.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+whinesnips-0.0.0.0a4.dist-info/RECORD,,
