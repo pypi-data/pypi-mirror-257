@@ -1,0 +1,13 @@
+__pycache__
+bin
+data/output.yaml
+lib
+lib64
+output.yaml
+pyvenv.cfg
+output.toml
+output.json
+tm_data.pdf
+build
+dist
+main.spec
