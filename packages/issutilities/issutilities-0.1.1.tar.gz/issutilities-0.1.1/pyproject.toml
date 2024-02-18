@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "issutilities"
+version = "0.1.1"
+description = "A small utilities file made for issu's Discord bots."
+readme = "README.md"
+requires-python = ">=3.12"
+license = {file = "LICENSE"}
+authors = [
+    {name = "issu"},
+]
+maintainers = [
+    {name = "issu"},
+]
+classifiers = [
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+    "discord>=2.3.2",
+    "wavelink>=3.2.0",
+    "roblox==2.0.0",
+]
+
+[project.urls]
+GitHub = "https://github.com/TheLivingPepsi/issutilities"
