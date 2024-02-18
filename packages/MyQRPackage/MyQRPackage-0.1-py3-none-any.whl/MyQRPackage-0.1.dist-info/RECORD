@@ -1,0 +1,11 @@
+MyQRPackage/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+MyQRPackage/QRDecomposition/__init__.py,sha256=tsu61Ge3FfgmmG69kkrn2zAMegryH4b4VKsDsjpUzlM,93
+MyQRPackage/QRDecomposition/household.py,sha256=aXReieorprO5HPk6AW8kr4BJSbw1JtFM4JBYB-rqPn0,245
+MyQRPackage/QRDecomposition/qr_decomposition.py,sha256=g47XrNa0fvdnEFIvPCoY3-2gDEW5kMgI0jZCNIziIWA,473
+MyQRPackage/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+MyQRPackage/tests/test_household.py,sha256=3f_XFofXh-2ZqBdOxOSuCm3K6pVBKL-oE_ioei8XP7s,1753
+MyQRPackage/tests/test_qr_decomposition.py,sha256=EPuP5OZEiSMsMxC-gs47CVSjMTNi4BXq7SiTSlqnt0s,1811
+MyQRPackage-0.1.dist-info/METADATA,sha256=T-hsLvPBCvPTvqs0WJ46SkqMc1oloNbnU7dk04PzbeE,470
+MyQRPackage-0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+MyQRPackage-0.1.dist-info/top_level.txt,sha256=WXIbasSeTy7qx375pMVmExCweqgb61Dt7zlGNibGYUM,12
+MyQRPackage-0.1.dist-info/RECORD,,
