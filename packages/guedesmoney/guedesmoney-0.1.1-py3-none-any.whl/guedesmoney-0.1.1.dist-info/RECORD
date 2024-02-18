@@ -1,0 +1,10 @@
+src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/controllers.py,sha256=Mey8XCyEgVua080hNS6OPoShDDoUhosMyb60PjNRvGE,501
+src/main.py,sha256=RrTP16f4oVP_n6t8Zj1dSaG2Z8jMGIuY47qhCHcf9Z4,1221
+src/utils.py,sha256=ZNpeLYkYg3lfamQfn2oyr81BudsUleimESDy_E1na68,3162
+guedesmoney-0.1.1.dist-info/LICENSE,sha256=hKl32hYU5LrLfL8KElXNhi8AhOTYhGUS5wSH6uIhtyk,1069
+guedesmoney-0.1.1.dist-info/METADATA,sha256=IQcMc0uaXps2BPAxXtjFuYXc2iiaAUgGxtIREYPCELU,1985
+guedesmoney-0.1.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+guedesmoney-0.1.1.dist-info/entry_points.txt,sha256=mmy7b4m-MjU3OgpBNuqUt88zU4ic6n42hvy646HDU0U,46
+guedesmoney-0.1.1.dist-info/top_level.txt,sha256=74rtVfumQlgAPzR5_2CgYN24MB0XARCg0t-gzk6gTrM,4
+guedesmoney-0.1.1.dist-info/RECORD,,
