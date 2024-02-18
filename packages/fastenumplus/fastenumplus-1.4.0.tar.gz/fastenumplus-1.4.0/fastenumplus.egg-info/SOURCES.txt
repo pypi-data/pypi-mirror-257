@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+fast_enum/__init__.py
+fast_enum/fastenum.py
+fastenumplus.egg-info/PKG-INFO
+fastenumplus.egg-info/SOURCES.txt
+fastenumplus.egg-info/dependency_links.txt
+fastenumplus.egg-info/top_level.txt
+test/test_01_fastenum.py
