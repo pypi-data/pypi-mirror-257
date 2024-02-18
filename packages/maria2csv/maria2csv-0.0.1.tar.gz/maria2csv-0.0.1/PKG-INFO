@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: maria2csv
+Version: 0.0.1
+Summary: Pipe a MariaDB dump to commandline
+Home-page: https://github.com/athalhammer/maria2csv
+Author: Andreas Thalhammer
+Author-email: andreas@thalhammer.bayern
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Database
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# maria2csv

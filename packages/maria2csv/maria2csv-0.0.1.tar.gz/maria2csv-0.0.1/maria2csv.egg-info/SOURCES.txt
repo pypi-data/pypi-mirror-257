@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+maria2csv/maria2csv.py
+maria2csv.egg-info/PKG-INFO
+maria2csv.egg-info/SOURCES.txt
+maria2csv.egg-info/dependency_links.txt
+maria2csv.egg-info/entry_points.txt
+maria2csv.egg-info/top_level.txt
