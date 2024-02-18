@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: tsk
+Version: 0.1.0
+Summary: Notify the user when a command completes.
+Author-email: Alex Lowe <alex@lowe.dev>
+Project-URL: Homepage, https://github.com/lengau/tsk
+Project-URL: Issues, https://github.com/lengau/tsk/issues
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# tell
+Tell the user (via desktop notification) when a command completes.
+
+Requires the notify2 package (python3-notify2 on Ubuntu).
+
+## Example Usage
+Quick alert for 5 minutes from now:
+`tell sleep 300`
+
+Ping machines from a list and fail if one of them is offline.
+```
+tell 'while read machine;
+do
+  ping -c 1 $machine || exit 1
+done < machines'
+```
