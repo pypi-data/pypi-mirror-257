@@ -1,0 +1,10 @@
+setup.py
+GTDMfunctions.egg-info/PKG-INFO
+GTDMfunctions.egg-info/SOURCES.txt
+GTDMfunctions.egg-info/dependency_links.txt
+GTDMfunctions.egg-info/requires.txt
+GTDMfunctions.egg-info/top_level.txt
+dibujos/__init__.py
+dibujos/funciones_dibujos.py
+matematicas/__init__.py
+matematicas/funciones_matematicas.py
