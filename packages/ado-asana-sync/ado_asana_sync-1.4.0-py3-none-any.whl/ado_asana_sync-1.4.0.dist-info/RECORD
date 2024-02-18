@@ -1,0 +1,15 @@
+ado_asana_sync/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ado_asana_sync/sync/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ado_asana_sync/sync/__main__.py,sha256=PRLZRgwu_Qeerx4qbWLoXc-ZGh-YLZjNDkOnY8Y7IuE,770
+ado_asana_sync/sync/app.py,sha256=xghGXc4FH-nsVPBIP5NLh-20g8y0xgbhOtkHCeZm0g8,5710
+ado_asana_sync/sync/asana.py,sha256=E6gYco68FYe5cgi47wphWSeC7d_9Uv6LdWGtAU7dA2k,1813
+ado_asana_sync/sync/sync.py,sha256=DFC6UMVQYe77nVm-aeR-w9rjj-HscqKy2vJkeAUJ1Mo,27901
+ado_asana_sync/sync/task_item.py,sha256=JpacHSLmBvjhrvWLTe6VjONpnmpBxE1g2N71WjJSuik,7031
+ado_asana_sync/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ado_asana_sync/utils/date.py,sha256=SofypF0YMTx0dVDo3a4KR-A9bmJtAo9s5_6Y18egFO0,760
+ado_asana_sync/utils/logging_tracing.py,sha256=gzI7hAujUPwbaANi9w4jIp-wClHsX9L4URdUi7YwmPc,1153
+ado_asana_sync/utils/utils.py,sha256=RySRumUl8auKQPcTuRKZS5llGBGRon-uKfAONWaMX6g,671
+ado_asana_sync-1.4.0.dist-info/LICENSE,sha256=zviG-ql08liZUu3uFb9lZz7e4QxxMfCKRlci_Wexi-U,1088
+ado_asana_sync-1.4.0.dist-info/METADATA,sha256=ZvWT1IqkHI6Xv-d5J6e7wjSWLDfYEKPyuw0LrzLxRqs,4491
+ado_asana_sync-1.4.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+ado_asana_sync-1.4.0.dist-info/RECORD,,
