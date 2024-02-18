@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/allPrint.py
+src/allPrint.egg-info/PKG-INFO
+src/allPrint.egg-info/SOURCES.txt
+src/allPrint.egg-info/dependency_links.txt
+src/allPrint.egg-info/top_level.txt
