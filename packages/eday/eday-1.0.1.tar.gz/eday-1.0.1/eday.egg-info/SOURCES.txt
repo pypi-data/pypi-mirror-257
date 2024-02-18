@@ -1,0 +1,10 @@
+LICENSE
+README.rst
+setup.py
+eday/__init__.py
+eday.egg-info/PKG-INFO
+eday.egg-info/SOURCES.txt
+eday.egg-info/dependency_links.txt
+eday.egg-info/not-zip-safe
+eday.egg-info/requires.txt
+eday.egg-info/top_level.txt
