@@ -1,0 +1,8 @@
+cat_aspect_extraction/__init__.py,sha256=kpTUBUF8CwMF5LxyothQsmdLesxgThZANJUVmR4IKrQ,293
+cat_aspect_extraction/attention.py,sha256=CK3b3u6GQkBzxEjSntHqJSg4P-Nr9cwbDLtXfICMkik,2249
+cat_aspect_extraction/cat.py,sha256=MTChGBoJ-3VVYDVgWkiR3yxtJZsSbBE_QOJgh7CjKgA,3421
+cat_aspect_extraction-1.4.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+cat_aspect_extraction-1.4.1.dist-info/METADATA,sha256=uFq0WlSLI26FYMDK1_jXNoVBTxUil3MBW5Ql908_m8w,3395
+cat_aspect_extraction-1.4.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+cat_aspect_extraction-1.4.1.dist-info/top_level.txt,sha256=WtlgoJlFMP9WtpgI1napJE5SJWydAH291IlEWZqLShE,22
+cat_aspect_extraction-1.4.1.dist-info/RECORD,,
