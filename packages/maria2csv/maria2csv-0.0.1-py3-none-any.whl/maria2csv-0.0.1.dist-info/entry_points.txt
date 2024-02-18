@@ -1,0 +1,2 @@
+[console_scripts]
+maria2csv = maria2csv.maria2csv:main_wrapper
