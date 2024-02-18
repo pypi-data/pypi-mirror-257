@@ -1,0 +1,29 @@
+version: 1
+disable_existing_loggers: false
+
+formatters:
+  default:
+    (): kast.utils.log.UtcFormatter.UtcFormatter
+    format: '[%(asctime)s][%(levelname)-8.8s][Thread: %(threadName)s][%(name)s]: %(message)s'
+    datefmt: '%d/%m/%Y %H:%M:%S %Z'
+
+handlers:
+  file:
+    class: logging.handlers.RotatingFileHandler
+    formatter: default
+    filename: '{logFilePath}'
+    maxBytes: 100000
+    backupCount: 3
+  queue:
+    (): kast.utils.log.NonBlockingLogHandler.DictCfgNonBlockingLogHandler
+    respect_handler_level: true
+    allHandlers: cfg://handlers # TODO: Remove when support dropped for: Python < 3.12
+    handlers:
+      - file
+
+loggers:
+  root: &root
+    level: INFO
+    handlers:
+      - queue
+  '': *root

@@ -1,0 +1,119 @@
+# Kast
+---
+Seamlessly cast your local video files to chromecast type devices.
+Regardless of media containers, codecs or subtitles formats.
+
+## Features:
+---
+- Detect cast devices in your local network.
+- Cast right away video files compliant with chromecast supported formats.
+- Automatically transcode and remux incompatible video files before casting.
+- Automatically convert subtitles.
+- Display local preview of streamed video.
+- Thanks to the OS media integration, control your stream with a regular remote media control applications intended for your platform.
+(e.g. KDE Connect for Plasma linux desktop)
+
+## Installation:
+---
+
+### Binary release:
+- Windows - Download installer from [here](https://bitbucket.org/massultidev/kast/downloads/).
+- Linux Generic - Download installation script from [here](https://bitbucket.org/massultidev/kast/downloads/).
+- Linux Arch - Available at AUR under name `kast-bin`.
+
+### PyPI release:
+For satisfying user experience it is recommended to install the application in a separate virtual environment.
+You can use your favorite env creation method like conda or venv.
+
+Installation from PyPI using venv:
+```sh
+python -m venv /path/to/your/venv
+cd /path/to/your/venv
+source bin/activate
+python -m pip install kast
+```
+
+### Changelog:
+---
+- Version: 1.3.0
+    - Alternative local player backend. (Experimental)(Windows)
+    - Made new experimental local player backends into defaults. (Linux/Windows)
+    - Improved local player backend switching stability.
+    - Improved logger performance by making all prints non-blocking.
+    - Dropped support for: Python < 3.10
+- Version: 1.2.0
+    - Local player subtitles support.
+    - Option to disable local player.
+    - Alternative local player backend. (Experimental)(Linux)
+    - Improved subtitles extraction and conversions.
+    - Improved performance and stability of the UI.
+- Version: 1.1.1
+    - Silent fail with 4K videos fixed. - Most chromecast devices support resolution up to Full HD. All videos are now converted to satisfy that constraint. Full support for 4K devices coming in the future.
+- Version: 1.1.0
+    - Taskbar progress support. (Windows/Linux)
+    - Taskbar preview media controls. (Windows)
+
+### FAQ:
+---
+
+#### Device search or stream start does not succeed at first try.
+> It has been noticed that PCs connected via Wi-Fi might encounter this issue.
+Scenario is the cast device is present in local network.
+However the application is unable to find or connect to it.
+Usually succeeding on second or consecutive trial.
+Easy solution seems to be using Ethernet connection if possible.
+It is planned to improve on the matter in upcoming releases.
+
+#### I have a black screen on a local preview on Windows. (Qt backend related)
+> **Easiest solution:**
+Switch to PyAV based player backend.
+And/or use the binary release which comes with preinstalled fix for Qt backend.
+
+> **Easy solution:**
+Install codec pack like K-Lite or similar.
+
+> **Advanced solution:**
+(Read until the end!) Download `widows_qt_media_tweak.py` and run on your venv.
+Keep in mind that it is a destructive patch.
+Use it only if you have a separate venv for the application.
+
+> **Explanation:**
+PyQt for Windows comes with support for two different media renderers.
+Direct Show and Windows Media Foundation.
+The former is older and does not support proprietary codecs.
+Unfortunately it's used by default and not switchable for: Qt < 5.15.5
+Patch from advanced solution removes Direct Show DLL to prevent Qt from loading it.
+
+#### I hear no sound locally on Linux. (Qt backend related)
+> **Easiest solution:**
+Switch to WinRT based player backend.
+
+> **Easy solution:**
+Install gstreamer codec pack on your platform.
+
+> **Explanation:**
+PyQt for Linux uses gstreamer as a backend engine for its media player.
+If you have no sound you're probably just missing a required audio codec.
+
+#### I see no progress on taskbar on Linux.
+> Taskbar progress on Linux is supported only by selected desktop environments. (Like KDE or Unity.)
+Furthermore, the application would have to be installed in either of root or user environment.
+However both approaches are discouraged and binary installation is recommended.
+If you don't want the binary package, please use venv.
+In which case best approach would be to:
+> ```sh
+> # Copy desktop and icon files to user environment:
+> cp -fv ${your_venv_prefix}/share/applications/* ~/.local/share/applications/
+> cp -fv ${your_venv_prefix}/share/pixmaps/* ~/.local/share/pixmaps/
+>
+> # Create launcher script:
+> echo "#!/usr/bin/sh" > ~/.local/bin/kast
+> echo "source ${your_venv_prefix}/bin/activate" >> ~/.local/bin/kast
+> echo "python -m kast" >> ~/.local/bin/kast
+> chmod +x ~/.local/bin/kast
+>
+> # Remember to replace all occurrences of the "${your_venv_prefix}" with an actual path to your env directory!
+> ```
+
+## License
+MIT
