@@ -1,0 +1,12 @@
+README.md
+setup.py
+akatsuki_proto/__init__.py
+akatsuki_proto.egg-info/PKG-INFO
+akatsuki_proto.egg-info/SOURCES.txt
+akatsuki_proto.egg-info/dependency_links.txt
+akatsuki_proto.egg-info/top_level.txt
+akatsuki_proto/messages/__init__.py
+akatsuki_proto/messages/example_enum_pb2.py
+akatsuki_proto/messages/example_enum_pb2.pyi
+akatsuki_proto/messages/test_message_pb2.py
+akatsuki_proto/messages/test_message_pb2.pyi
