@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: distance_loss_torch
+Version: 0.0.6
+Summary: Distance Loss function package for pytorch
+Home-page: https://github.com/9tailwolf/distance_loss_torch
+Author: 9tailwolf
+Author-email: doryeon514@gmail.com
+Keywords: loss funtion,deep learning,pytorch
+Requires-Python: >=3.6
+Requires-Dist: torch
+
