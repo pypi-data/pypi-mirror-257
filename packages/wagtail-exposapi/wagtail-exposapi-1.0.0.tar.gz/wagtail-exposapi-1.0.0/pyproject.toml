@@ -1,0 +1,56 @@
+[project]
+name = "wagtail-exposapi"
+version = "1.0.0"
+description = "Expose Wagtail internals via a REST API for use while developing and testing Wagtail sites."
+readme = "README.md"
+authors = [
+    {name = "Nick Moreton", email = "nickmoreton@me.com"}
+]
+license = {file = "LICENSE"}
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Framework :: Django",
+    "Framework :: Django :: 3.2",
+    "Framework :: Django :: 4.1",
+    "Framework :: Django :: 4.2",
+    "Framework :: Django :: 5.0",
+    "Framework :: Wagtail",
+    "Framework :: Wagtail :: 4",
+    "Framework :: Wagtail :: 5",
+    "Framework :: Wagtail :: 6",
+]
+requires-python = ">=3.8"
+dependencies =[
+    "Wagtail>=4.1,<6.1",
+    "Django>=3.2,<5.1",
+]
+
+[project.optional-dependencies]
+development = [
+    "black==24.2.0",
+    "flake8==7.0.0",
+    "isort==5.13.2",
+]
+testing = [
+    "coverage==7.4.1",
+    "responses==0.24.1"
+]
+modeladmin2 = [
+    "wagtail-modeladmin>=2.0,<3.0",
+]
+
+[tool.setuptools.packages.find]
+include = ["exposapi"]
+exclude = ["tests*"]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"

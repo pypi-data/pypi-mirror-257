@@ -1,0 +1,14 @@
+Wagtail<6.1,>=4.1
+Django<5.1,>=3.2
+
+[development]
+black==24.2.0
+flake8==7.0.0
+isort==5.13.2
+
+[modeladmin2]
+wagtail-modeladmin<3.0,>=2.0
+
+[testing]
+coverage==7.4.1
+responses==0.24.1
