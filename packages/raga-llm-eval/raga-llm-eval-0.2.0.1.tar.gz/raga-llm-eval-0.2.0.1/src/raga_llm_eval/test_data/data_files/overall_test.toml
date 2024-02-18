@@ -1,0 +1,29 @@
+[1]
+response = "The quick brown fox jumps over the lazy dog."
+gt = "The quick brown fox jumps over the lazy dog."
+concept_set = ["quick", "brown", "fox", "jumps", "lazy", "dog"]
+expected_result = "The overall_score should be high, indicating a perfect match between the response and ground_truth. The model evaluated with should be mentioned, and it should be clear that this model performed exceptionally well."
+
+[2]
+response = "A brown fox quickly jumps over a sleeping dog."
+gt = "The quick brown fox jumps over the lazy dog."
+concept_set = ["quick", "brown", "fox", "jumps", "lazy", "dog"]
+expected_result = "The overall_score should be moderately high, indicating a partial match. The model evaluated with should be mentioned, and it should be clear that this model performed reasonably well but with some differences."
+
+[3]
+response = "A cat jumps over a dog."
+gt = "The quick brown fox jumps over the lazy dog."
+concept_set = ["quick", "brown", "fox", "jumps", "lazy", "dog"]
+expected_result = "The overall_score should be low, indicating no match. The model evaluated with should be mentioned, and it should be clear that this model did not perform well on the task."
+
+[4]
+response = "The quick brown fox jumps over the lazy dog."
+gt = "The quick brown fox jumps over the lazy dog."
+concept_set = ["fast", "brown", "fox", "jumps", "lazy", "dog"]
+expected_result = "The overall_score should be affected due to a concept mismatch. The model evaluated with should be mentioned, and it should be clear that this model struggled because some key concepts didn't match."
+
+[5]
+response = "A quick brown fox jumps over the lazy dog."
+gt = "The quick brown fox jumps over the lazy dog."
+concept_set = ["quick", "brown", "fox", "jumps", "lazy", "dog"]
+expected_result = "The overall_score should be affected by the difference in length. The model evaluated with should be mentioned, and it should be clear that this model had difficulty due to variations in the length of the response."
