@@ -1,0 +1,4 @@
+openai
+configparser
+inquirer
+ollama
