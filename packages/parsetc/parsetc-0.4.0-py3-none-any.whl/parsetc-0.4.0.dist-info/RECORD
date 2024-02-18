@@ -1,0 +1,14 @@
+parsetc/__init__.py,sha256=42STGor_9nKYXumfeV5tiyD_M8VdcddX7CEexmibPBk,22
+parsetc/parsetc.py,sha256=W6Aat7mKyVscYQpzT604A728Y7PCa3rVz1yjvpGBJ64,9634
+parsetc/Teochew/extends.json,sha256=IdMCdxf7PgKZB8Y8QvKQSPvkVANAaavuJmou_xtUELA,541
+parsetc/Teochew/mergers.json,sha256=5p1EvlOIsHp3RSslvuTuuWpqhMfYdez84ZOwwEj7Swc,534
+parsetc/Teochew/parser.py,sha256=sbgP9SAdo5lvovWFb8rgVq_L1dTg3tU1QmbjI1Ydo7E,2602
+parsetc/Teochew/shared.lark,sha256=Bovb-L_vMU9Tk_weTEO-rDXCKQORtqiS2yFTnHjbBZk,2306
+parsetc/Teochew/terminals.json,sha256=gZtFCXX8OJ6yR_m-zsY7U0eRRvqEI5Ql_86fgbigot4,6298
+parsetc/Teochew/translit.py,sha256=RQWAnApeq0jFl2cLnBYFpNqaml66wZQONMPaBF5nnCM,22089
+parsetc-0.4.0.dist-info/LICENSE,sha256=DrAkXMJn2Isl6DmqZqc-DSLZt9stvzc6ItxOp1x5gCA,1100
+parsetc-0.4.0.dist-info/METADATA,sha256=Ap5YsIXm0Ssr3yL0uMIzcYEAxRyYi1xtEHmk7Dnglb8,6374
+parsetc-0.4.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+parsetc-0.4.0.dist-info/entry_points.txt,sha256=8ae916LiF2qEcZIZDAaKacUBw4wBGF7_sumSAknwYN8,49
+parsetc-0.4.0.dist-info/top_level.txt,sha256=tRg3lsiV6sI4d2xdys5me1IhLWXteHRGKfYOuvikePo,8
+parsetc-0.4.0.dist-info/RECORD,,
