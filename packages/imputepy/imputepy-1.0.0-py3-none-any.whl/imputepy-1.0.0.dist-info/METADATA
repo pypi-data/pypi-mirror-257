@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: imputepy
+Version: 1.0.0
+Summary: Impute missing values using Lightgbm
+License: MIT
+Author: Sam Fo
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: lightgbm (>=4.3.0,<5.0.0)
+Requires-Dist: numpy (>=1.26.4,<2.0.0)
+Requires-Dist: pandas (>=2.2.0,<3.0.0)
+Requires-Dist: scikit-learn (>=1.4.0,<2.0.0)
+Description-Content-Type: text/markdown
+
+# imputepy
+
+Impute missing values using Lightgbm.
+
+## Installation
+
+```bash
+pip install imputepy
+```
+
+## Features
+
+- **Automated Imputation:** Utilizes LightGBM models to impute missing values, selecting between regression and classification models based on the column's data type.
+- **Flexible Column Exclusion:** Allows specific columns to be excluded from the imputation process.
+- **Dynamic Filtering for Categorical Columns:** Filters categorical columns based on a specified upper limit of unique values to enhance efficiency.
+- **Customizable Thresholds for Categorical Detection:** Enables setting custom thresholds for unique value counts to refine which columns are considered categorical.
+- **Comprehensive Imputation Strategy:** Combines missing value identification, column type determination, and the application of LightGBM models for effective imputation.
+- **Direct Imputation into Original DataFrame:** Imputes missing values directly into the original DataFrame, maintaining the data structure for seamless data preprocessing integration.
+
+
+## Usage
+
+```
+from imputepy import LGBMimputer
+import pandas as pd
+import numpy as np
+
+df = pd.read_csv('data/df.csv')
+df_imp = LGBMimputer(df, filter=True, exclude=None, filter_upper_limit=50, unique_count_limit=15)
+```
+
+## Contributing
+
+Interested in contributing? Check out the contributing guidelines. Please note that this project is released with a Code of Conduct. By contributing to this project, you agree to abide by its terms.
+
+## License
+
+`imputepy` was created by Sam Fo. It is licensed under the terms of the MIT license.
+
+## Credits
+
+`imputepy` was created with [`cookiecutter`](https://cookiecutter.readthedocs.io/en/latest/) and the `py-pkgs-cookiecutter` [template](https://github.com/py-pkgs/py-pkgs-cookiecutter).
+
