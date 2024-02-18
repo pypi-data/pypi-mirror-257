@@ -1,0 +1,11 @@
+[project]
+name = "markkc_siunits"
+version = "0.0.1"
+authors = [
+  { name="Mark Cowan", email="mark@battlesnake.co.uk" },
+]
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
