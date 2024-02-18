@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: warsawbuspy
+Version: 1.0.0
+Summary: A package containing a functionality of readint the data from the https://api.um.warszawa.pl, analyzing it and displaying results of the analyzis.
+Project-URL: Homepage, https://github.com/GustawB/BUS_DATA_READER
+Project-URL: Issues, https://github.com/GustawB/BUS_DATA_READER/issues
+Author-email: Gustaw Blachowski <gustaw.blachowski@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Requires-Dist: datetime>=5.4
+Requires-Dist: geopandas>=0.14.3
+Requires-Dist: matplotlib>=3.8.2
+Requires-Dist: pandas>=2.2.0
+Requires-Dist: requests>=2.31.0
+Description-Content-Type: text/markdown
+
+# Bus data reader
+
+This package represents the functionality of reading and analyzing data from https://api.um.warszawa.pl/#.
+
+## Instalation:
+This package can be installed by calling:
+```
+pip install warsawbuspy
+```
+
+## Contents:
+This package contains four subpackages:
+### 1. readers:
+This subpackage contains a data_readers module, in which DataReader class is stored, that contains the functionality of
+reading a various data from the API as well as writing it into the .csv files. This class requires an API key to access data from the API. 
+You can get it by making an account here: https://api.um.warszawa.pl/#.
+
+### 2. analyzers:
+This subpackage contains two modules:
+- data_analyzer: this module contains the DataAnalyzer class that contains the functionality of retrieving
+    data fetched by the DataReader class from the .csv files as well as functionality of analyzing it. This class
+    also contains the functionality of storing results of the analysis into the .csv files.
+- data_visualizer: this module contains the DataVisualizer class, that contains the functionality of 
+    representing the results of the analysis as charts and maps.
+
+### 3. holders:
+This subpackage contains the module data_holders, in which are stored all classes used to store data 
+throughout the project.
+
+### 4. utility:
+This subpackage contains two modules:
+- data_utility: this module contains utility functions used throughout the project.
+- exceptions: this module contains custom exceptions raised in this project.
+
+## APIs:
+This project utilizes two APIs:
+- https://api.um.warszawa.pl: from here, all the data related to the city communication is fetched (bus locations,
+  schedules etc.)
+- https://services.gugik.gov.pl: from here, the data about the street name for the given coordinates is fetched.
+
+## Others:
+This project utilizes maps from https://github.com/ppatrzyk/polska-geojson.
