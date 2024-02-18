@@ -1,0 +1,7 @@
+setup.py
+mlsecops/__init__.py
+mlsecops/mlsecops.py
+mlsecops.egg-info/PKG-INFO
+mlsecops.egg-info/SOURCES.txt
+mlsecops.egg-info/dependency_links.txt
+mlsecops.egg-info/top_level.txt
