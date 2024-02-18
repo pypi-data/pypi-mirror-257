@@ -1,0 +1,8 @@
+SQLAlchemy>=2.0
+alembic>=0.8.8
+rdflib<8,>=6
+six>=1.10.0
+flake8>=5.0.4
+tox>=4.12.1
+setuptools>=69.0.3
+pytest>=8.0.0

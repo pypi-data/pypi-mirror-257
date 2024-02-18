@@ -1,0 +1,2 @@
+[rdf.plugins.store]
+SQLAlchemy = brickschema_rdflib_sqlalchemy.store:SQLAlchemy
