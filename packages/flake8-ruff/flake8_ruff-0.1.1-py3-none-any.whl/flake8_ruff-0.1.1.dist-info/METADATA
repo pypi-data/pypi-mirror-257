@@ -1,0 +1,98 @@
+Metadata-Version: 2.1
+Name: flake8-ruff
+Version: 0.1.1
+Summary: A Flake8 plugin that implements miscellaneous checks from Ruff.
+Home-page: https://github.com/tjkuson/flake8-ruff
+License: MIT
+Keywords: flake8,ruff
+Author: Tom Kuson
+Author-email: mail@tjkuson.me
+Requires-Python: >=3.9
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: Flake8
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Typing :: Typed
+Project-URL: Repository, https://github.com/tjkuson/flake8-ruff
+Description-Content-Type: text/markdown
+
+# flake8-ruff
+
+A Flake8 plugin that implements miscellaneous checks from [Ruff](https://github.com/astral-sh/ruff).
+
+Specifically, this plugin implements checks that are under the `RUF` category
+(the rules that do not have a direct equivalent in Flake8).
+
+## Requirements
+
+Python 3.9 to 3.12 is supported.
+
+## Installation
+
+Install from PyPI. For example,
+
+```bash
+pip install flake8-ruff
+```
+
+Then follow the instructions on the [Flake8 documentation](https://flake8.pycqa.org/en/latest/index.html)
+to enable the plugin.
+
+## Checks
+
+### RUF020 `typing.Never | T` is equivalent to `T`
+
+Checks for `typing.Never` and `typing.NoReturn` in union types, which is
+redundant.
+
+For example, replace
+
+```python
+typing.Never | int | None
+```
+
+with
+
+```python
+int | None
+```
+
+Derived from [never-union (RUF020)](https://docs.astral.sh/ruff/rules/never-union/).
+
+### RUF025 Unnecessary dict comprehension for iterable; use `dict.fromkeys` instead
+
+Checks for dict comprehensions that create a dictionary from an iterable with a
+constant value. Instead, use `dict.fromkeys`, which is more efficient.
+
+For example, replace
+
+```python
+{key: 0 for key in keys}
+```
+
+with
+
+```python
+dict.fromkeys(keys, 0)
+```
+
+and
+
+```python
+{key: None for key in keys}
+```
+
+with
+
+```python
+dict.fromkeys(keys)
+```
+
+Derived from [unnecessary-dict-comprehension-for-iterable (RUF025)](https://docs.astral.sh/ruff/rules/unnecessary-dict-comprehension-for-iterable/).
+
