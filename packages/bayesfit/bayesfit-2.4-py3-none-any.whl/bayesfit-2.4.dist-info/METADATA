@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: bayesfit
+Version: 2.4
+Summary: Bayesian Psychometric Curve Fitting Module
+Home-page: http://github.com/slugocm/BayesFit
+Author: Michael Slugocki
+Author-email: slugocm@gmail.com
+License: Apache 2.0
+License-File: LICENSE.txt
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+
