@@ -1,0 +1,3 @@
+[console_scripts]
+pwordle=piewordle.__main__:entry_point
+
