@@ -1,0 +1,11 @@
+[console_scripts]
+activity = drexel_jupyter_logger.activity:main
+build-quiz-for-jupyterbook = drexel_jupyter_logger.build_quiz_for_jupyterbook:main
+fix_kernel = drexel_jupyter_logger.fix_kernel:main
+grade-report = drexel_jupyter_logger.grade_report:main
+read-log-file = drexel_jupyter_logger.read_log_file:main
+remove-skip = drexel_jupyter_logger.remove_skip:main
+section_toc = drexel_jupyter_logger.section_toc:main
+student-info-from-nb = drexel_jupyter_logger.student_info_from_nb:main
+tag-files = drexel_jupyter_logger.tag_files:main
+week_toc = drexel_jupyter_logger.section_toc:main
