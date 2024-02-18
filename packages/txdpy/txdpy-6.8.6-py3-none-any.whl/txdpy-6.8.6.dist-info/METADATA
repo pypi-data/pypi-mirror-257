@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: txdpy
+Version: 6.8.6
+Author: 唐旭东
+Requires-Dist: lxml
+Requires-Dist: loguru
+Requires-Dist: tqdm
+Requires-Dist: colorama
+Requires-Dist: xlrd
+Requires-Dist: pymysql
+Requires-Dist: xlsxwriter
+
