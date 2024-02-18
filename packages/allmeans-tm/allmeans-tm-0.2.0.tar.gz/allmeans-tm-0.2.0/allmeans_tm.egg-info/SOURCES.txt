@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+allmeans-tm/__init__.py
+allmeans-tm/all_means.py
+allmeans-tm/resources.py
+allmeans_tm.egg-info/PKG-INFO
+allmeans_tm.egg-info/SOURCES.txt
+allmeans_tm.egg-info/dependency_links.txt
+allmeans_tm.egg-info/requires.txt
+allmeans_tm.egg-info/top_level.txt
