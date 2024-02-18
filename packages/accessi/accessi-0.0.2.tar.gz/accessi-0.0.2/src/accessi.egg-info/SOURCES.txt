@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/accessi.py
+src/accessi.egg-info/PKG-INFO
+src/accessi.egg-info/SOURCES.txt
+src/accessi.egg-info/dependency_links.txt
+src/accessi.egg-info/top_level.txt
+tests/tests.py
