@@ -1,0 +1,11 @@
+.env
+.env.build
+dist
+.hatch
+venv*
+.coverage
+coverage.json
+!/scripts/autoupdate_ucblk.py
+*.old
+*.tmp
+*.log
