@@ -1,0 +1,7 @@
+numpy
+
+[all]
+kentcbs[extra]
+
+[extra]
+pandas
