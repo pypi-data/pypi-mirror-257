@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/flakemaker/__init__.py
+src/flakemaker.egg-info/PKG-INFO
+src/flakemaker.egg-info/SOURCES.txt
+src/flakemaker.egg-info/dependency_links.txt
+src/flakemaker.egg-info/top_level.txt
+tests/tests.py
