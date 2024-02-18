@@ -1,0 +1,16 @@
+novelai/__init__.py,sha256=z9MyjtYsf0HAFwKQxG8sveoYi4LNa5R3rgd5Q-qmT94,130
+novelai/__main__.py,sha256=ZjlgAk7auc4y2RXMpjCBKJUHw4A-2t16-bgvvrqKx7w,756
+novelai/client.py,sha256=vaUtyDeTstYE9t3vqWMN9Beyo8Oafj1uDjF6Ozem7-M,7699
+novelai/constant.py,sha256=B0otTC5eHzdpVagkcjbxHN47vWqsijRdzzuU7E5xES8,1957
+novelai/exceptions.py,sha256=M1ga3pz7UPlBNqgVCLaSq5mb-4khNRXmyOz6AD5vHSo,624
+novelai/utils.py,sha256=EUY9D5FnbnRDFSU0D9ZmULParqc3PQmFY79olXgpWaQ,3753
+novelai/types/__init__.py,sha256=v800zfcimHlBXK51C6PNnPc0j7X7UDeOgUSqUuUi-V4,174
+novelai/types/hostinstance.py,sha256=UlPcw53Hb2lZz-P7boZF6OAdPdtPTDbj4BfGWql09Gs,237
+novelai/types/image.py,sha256=kJrADKew1-bee68T2EHhf23cCj8KnVCWmrJ7hASbe0o,1261
+novelai/types/metadata.py,sha256=Yn9phSdZPuntzfyuGAmE51e5yOeF07J_rfEWv6gUJS4,12058
+novelai/types/user.py,sha256=YXd4eXirOhFlMdVrQOkC-TrooV9QkCyXNUfcblo4b5c,263
+novelai_legacy-1.0.0rc0.dist-info/LICENSE,sha256=syoVjv1ye4WBYEgJOlRkRE8trYjBMFnqz2kP7ta9934,1082
+novelai_legacy-1.0.0rc0.dist-info/METADATA,sha256=EvjSaclMzHc0mjnhwaji3ow-2Sq7gXEwIhIxtlOi3Sw,7126
+novelai_legacy-1.0.0rc0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+novelai_legacy-1.0.0rc0.dist-info/top_level.txt,sha256=f2-hkpjaYLZVkXgAEtIWdMXlgDuwTAGReGJp3tMeq84,8
+novelai_legacy-1.0.0rc0.dist-info/RECORD,,
