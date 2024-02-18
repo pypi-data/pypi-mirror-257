@@ -1,0 +1,13 @@
+setup.py
+MyQRPackage/__init__.py
+MyQRPackage.egg-info/PKG-INFO
+MyQRPackage.egg-info/SOURCES.txt
+MyQRPackage.egg-info/dependency_links.txt
+MyQRPackage.egg-info/requires.txt
+MyQRPackage.egg-info/top_level.txt
+MyQRPackage/QRDecomposition/__init__.py
+MyQRPackage/QRDecomposition/household.py
+MyQRPackage/QRDecomposition/qr_decomposition.py
+MyQRPackage/tests/__init__.py
+MyQRPackage/tests/test_household.py
+MyQRPackage/tests/test_qr_decomposition.py

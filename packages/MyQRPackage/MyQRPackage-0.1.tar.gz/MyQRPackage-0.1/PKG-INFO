@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: MyQRPackage
+Version: 0.1
+Summary: A package for QR decomposition using Householder reflections.
+Home-page: https://github.com/RenanM05/AdvancedPython2022/tree/main/FinalProject/MyQRPackage
+Author: Renan Maciel
+Author-email: renan.maciel@physics.uu.se
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: numpy
