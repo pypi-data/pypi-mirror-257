@@ -1,0 +1,2 @@
+[console_scripts]
+sapui5-xml-linter = sapui5_xml_linter:main
