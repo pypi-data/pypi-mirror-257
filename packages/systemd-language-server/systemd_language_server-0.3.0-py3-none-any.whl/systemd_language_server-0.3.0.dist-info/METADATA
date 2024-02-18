@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: systemd-language-server
+Version: 0.3.0
+Summary: Language server for systemd unit files
+Author: Paweł Sacawa
+Author-email: pawel@sacawa.net
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pygls (>=1.3,<2.0)
+Description-Content-Type: text/markdown
+
+# systemd-language-server
+
+Language server for systemd unit files.
+
+## Supported Features
+
+### `textDocument/completion`
+
+Completion for
+
+- unit file directives
+- unit file sections
+<!-- - values of some directives -->
+
+### `textDocument/hover`
+
+Documentation for directives supplied on hovering.
+
+## Installation
+
+```
+pip install systemd-language-server
+```
+
+## Integrations
+
+### coc.nvim
+
+In `coc-settings.json`, under `.languageserver`:
+
+```json
+...
+"systemd-language-server": {
+  "command": "systemd-language-server",
+  "filetypes": ["systemd"]
+}
+...
+```
+
