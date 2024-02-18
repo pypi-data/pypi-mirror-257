@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: clean_dotenv
+Version: 0.0.1
+Summary: Automatically creates an .env.example which creates the same keys as your .env file, but without the values
+Home-page: https://github.com/hija/clean-dotenv
+Author: Hilko (hija)
+Author-email: mail@hilko.eu
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: python-dotenv >=1.0
+
