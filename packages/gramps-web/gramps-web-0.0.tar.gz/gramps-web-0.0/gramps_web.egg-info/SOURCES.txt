@@ -1,0 +1,7 @@
+README.md
+gramps.py
+setup.py
+gramps_web.egg-info/PKG-INFO
+gramps_web.egg-info/SOURCES.txt
+gramps_web.egg-info/dependency_links.txt
+gramps_web.egg-info/top_level.txt
