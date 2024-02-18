@@ -1,0 +1,3 @@
+[console_scripts]
+dotnet-deptree=dotnet_deptree.cli:main
+
