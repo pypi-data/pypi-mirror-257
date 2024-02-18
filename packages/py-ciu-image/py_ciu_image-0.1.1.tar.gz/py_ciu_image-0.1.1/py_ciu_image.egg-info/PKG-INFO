@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: py_ciu_image
+Version: 0.1.1
+Summary: Python implementation of the Contextual Importance and Utility (CIU) explainable AI method for image classification
+Home-page: https://github.com/KaryFramling/py_ciu_image
+Author: Kary Främling, Vlad Apopei, Rohit Saluja, ‚ Manik Madhikermi, Avleen Malhi
+Author-email: kary.framling@cs.umu.se
+License: MIT
+Keywords: Contextual Importance and Utility,CIU,Explainable AI,Explainable Artificial Intelligence
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scikit-image
+
+Please read the README file
