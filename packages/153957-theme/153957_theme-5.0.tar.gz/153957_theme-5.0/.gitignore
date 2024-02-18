@@ -1,0 +1,8 @@
+# specific
+demo/output/
+build/
+dist/
+
+# Python
+*.egg-info/
+__pycache__/
