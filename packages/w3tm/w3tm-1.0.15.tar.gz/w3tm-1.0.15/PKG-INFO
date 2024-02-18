@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: w3tm
+Version: 1.0.15
+Summary: W3TM command line tool
+Author: alexzshl
+Author-email: alexzshl@126.com
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pillow~=10.2.0
+Requires-Dist: argparse~=1.4.0
+
+# intro
+W3TM is a simple command line tool to merge war3 terian images to a single png file
+
+# install
+
+```shell
+pip install w3tm
+```
+
+# usage
+
+```shell
+w3tm -o test.png -i ./resource/cicyscape
+```
