@@ -1,0 +1,15 @@
+elephant_sock5/__init__.py,sha256=4HFCdHv9IOJlu2JjXrQta51aKQ8w72yphufiy8ukGRg,10923
+elephant_sock5/protocol.py,sha256=1X0yEfvnCLPpjp01Fzm2wLjYBlpqdigyNPgQwmHTF3A,4505
+elephant_sock5/test_echo_request.py,sha256=qNXq1YtNqw6dryKSpXV-OSsvVnGvzcjXJO29QRaZ5hM,1423
+elephant_sock5/test_negociate.py,sha256=y8lfcmcb11kRje1sEOM5rQpUlocENWXbo_HuiESva7U,1177
+elephant_sock5/test_response.py,sha256=Up7Xt-qk5KkHjZ0A__D0AuYK3qMwo9WthNER0wL6GCc,1950
+elephant_sock5/test_session_request.py,sha256=6mHdYhzBl4fR_u7CdKyFo0Vnqm9rsY-piyYoPU4zWQ0,4836
+elephant_sock5/test_termination_req.py,sha256=mcTPCbyEV4sfdIB4VSb6kmvY6Vck_m3-6d9YyGFC7II,1436
+elephant_sock5/utils.py,sha256=ZAz43AnwD8K_QWOmy3u0YUPOih9EW2Ep3quRZo5jRKY,4597
+elephant_sock5/version.py,sha256=1mptEzQihbdyqqzMgdns_j5ZGK9gz7hR2bsgA_TnjO4,22
+elephant_sock5-0.0.4.dist-info/LICENSE,sha256=eASfmPNoIpPlgXAfK50x6oWVKkH4Xk3f2Kyk3MVjqVg,1065
+elephant_sock5-0.0.4.dist-info/METADATA,sha256=pRvkyjkwHaXrpjgo0HoU3IhIeT_lRD75n92aSKY1_3Q,1174
+elephant_sock5-0.0.4.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+elephant_sock5-0.0.4.dist-info/entry_points.txt,sha256=ldlO4X4aV1IY_gp5JOl5fEoujJQeXGJZiyi6Uqa2rVw,58
+elephant_sock5-0.0.4.dist-info/top_level.txt,sha256=woOUkamDzCRSHje7UU7jg3LfPWUmwYpOHM_IpfgK7g8,15
+elephant_sock5-0.0.4.dist-info/RECORD,,
