@@ -1,0 +1,5 @@
+pymongo
+APScheduler
+pysqlcipher3
+requests
+Cython
