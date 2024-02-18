@@ -1,0 +1,17 @@
+theme_153957/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+theme_153957/full_menu.py,sha256=fDLNyYXdPZ0XDJb9r32jIu2toIhHKGU4icTBO_u7TAk,662
+theme_153957/theme.py,sha256=IpsjZNsLcXHeDfyRttmsBOf-hyyd0P2GRWHK0YtRPAI,786
+theme_153957/static/css/normalize.css,sha256=FyIX3UvqQmrMFON0DwCQz9slZbMxaVAQ2SoqhLx1VGA,1404
+theme_153957/static/css/style.css,sha256=pLCrTL2KW_BgeiwUxk_ZTUZkfKCyKkrgcdOlGlG3Ejc,4257
+theme_153957/static/font/.htaccess,sha256=Tg98U5mVGXrpRcFbY51TWILxJcZAUAVaX_SDDqujoWc,126
+theme_153957/static/font/Jost-400.woff2,sha256=pgIhz4ict0QyNu6M9EvVwmnF9FGxa6PUu6zP--nGjm0,29820
+theme_153957/static/font/Jost-700.woff2,sha256=RTHqflWyjsOSELO0wYlBQySaLO3S5uIJ0UOE4IFFUdo,35676
+theme_153957/static/js/gallery.js,sha256=No6UIhwAbUeFSVPZ2Iv8iOv-TBFPwmDroEtVSM7_zAk,3908
+theme_153957/templates/album.html,sha256=pXSiAkrRWUoI44_Y2lQqRnbDEl_3wCqafkMO_6v62to,26
+theme_153957/templates/album_list.html,sha256=pXSiAkrRWUoI44_Y2lQqRnbDEl_3wCqafkMO_6v62to,26
+theme_153957/templates/base.html,sha256=CgdUhYlMICb7DKdLgSLhj5KmUHD5xCpiVOmRKzlLV2E,3332
+theme_153957/templates/menu.html,sha256=Ib3PvaIbc237IsFpM4ZtDi1gxL2YiWA56Cab_8AzBXQ,1008
+153957_theme-5.0.dist-info/LICENSE,sha256=MzMbhkljraSlWJQfGzwrBM8bMCKjmIeN0BfG0Qg0c_M,1078
+153957_theme-5.0.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+153957_theme-5.0.dist-info/METADATA,sha256=YP4qQfePKQxnqV-8_8w23CPcZw39AEJRzIJrIuFvcrM,2495
+153957_theme-5.0.dist-info/RECORD,,
