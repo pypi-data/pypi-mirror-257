@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: mllooper
+Version: 1.0.1
+Summary: Primitives for machine learning pipelines
+Home-page: https://github.com/DominikMa/mllooper
+Author: Dominik Mairhöfer
+Author-email: dominik@mairhoefer.xyz
+License: GNU AGPLv3
+Project-URL: Documentation, https://mllooper.readthedocs.io
+Project-URL: Bug Tracker, https://github.com/DominikMa/mllooper/issues
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: pip
+Requires-Dist: coloredlogs
+Requires-Dist: click
+Requires-Dist: gitpython
+Requires-Dist: pyyaml
+Requires-Dist: pydantic
+Requires-Dist: yaloader>=1.0.1
+Requires-Dist: torch>=2.0
+Requires-Dist: torchvision
+Requires-Dist: tensorboard
+Requires-Dist: matplotlib
+Provides-Extra: docs
+Requires-Dist: sphinx; extra == "docs"
+Requires-Dist: jupyter-server; extra == "docs"
+Requires-Dist: myst-nb; extra == "docs"
+Requires-Dist: furo; extra == "docs"
+Requires-Dist: autodoc-pydantic; extra == "docs"
+Requires-Dist: sphinx-remove-toctrees; extra == "docs"
+Provides-Extra: tests
+Requires-Dist: pytest; extra == "tests"
+Requires-Dist: coverage; extra == "tests"
+
+# ML Looper
+
+The documentation will be [here](https://mllooper.readthedocs.io).
