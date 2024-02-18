@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+FruceAPI/__init__.py
+FruceAPI.egg-info/PKG-INFO
+FruceAPI.egg-info/SOURCES.txt
+FruceAPI.egg-info/dependency_links.txt
+FruceAPI.egg-info/requires.txt
+FruceAPI.egg-info/top_level.txt
+FruceAPI/__pycache__/__init__.cpython-311.pyc
+FruceAPI/exceptions/__init__.py
+FruceAPI/exceptions/__pycache__/__init__.cpython-311.pyc
+FruceAPI/objects/__init__.py
+FruceAPI/objects/__pycache__/__init__.cpython-311.pyc
+FruceAPI/utils/__init__.py
+FruceAPI/utils/__pycache__/__init__.cpython-311.pyc
