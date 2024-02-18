@@ -1,0 +1,9 @@
+COPYING
+README.md
+setup.py
+ai_stream_interact.egg-info/PKG-INFO
+ai_stream_interact.egg-info/SOURCES.txt
+ai_stream_interact.egg-info/dependency_links.txt
+ai_stream_interact.egg-info/entry_points.txt
+ai_stream_interact.egg-info/requires.txt
+ai_stream_interact.egg-info/top_level.txt
