@@ -1,0 +1,84 @@
+html {
+  /* required for footer */
+  position: relative;
+  min-height: 100%;
+}
+
+.footer {
+  position: absolute;
+  display: table;
+  bottom: 0;
+  width: 100%;
+
+  /* Set the fixed height of the footer here */
+  height: 85px;
+
+  /* Vertically center the text there */
+  color: rgba(255, 255, 255, 0.4);
+  background-color: #212529;
+}
+
+.footer-vertical-centering {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+body {
+  padding-top: 75px;
+
+  /* footer */
+  margin-bottom: 120px;
+}
+
+.navbar-brand {
+  padding-top: 0px;
+  text-transform: none;
+  font-size: 20px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #ffffff;
+}
+
+.nav-link {
+  padding-top: 0.3rem;
+  padding-bottom: 0.5rem;
+}
+
+.compete-link {
+  padding-top: 2rem;
+}
+
+.big-icon-button {
+  position: relative;
+
+  float: left;
+  width: 180px;
+  height: 180px;
+  text-align: center;
+  margin: 10px;
+}
+
+.big-icon-button > div {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.big-icon-button > div > p {
+  display: block;
+  margin-top: 8px;
+  font-size: 22px;
+}
+
+.truncate-small {
+  max-width: 230px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+a.table-download-link {
+  color: white;
+  text-decoration: dashed underline;
+}
