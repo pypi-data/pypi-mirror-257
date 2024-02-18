@@ -1,0 +1,6 @@
+.DS_store
+notes.txt
+*.pyc
+**/__pycache__
+.vscode
+.dist
