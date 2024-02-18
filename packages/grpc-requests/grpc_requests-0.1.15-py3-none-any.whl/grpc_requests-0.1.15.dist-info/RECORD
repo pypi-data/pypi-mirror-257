@@ -1,0 +1,9 @@
+grpc_requests/__init__.py,sha256=LfYTTRSF2l_Dh8UtuuaDkvyw3L91Ho6fHjcsQiq0_Nk,249
+grpc_requests/aio.py,sha256=vSYZEggTIFqHmXYivHE7w0dkiAJVDw87QF8bTVF3nUc,22406
+grpc_requests/client.py,sha256=PiWL1vDDbJmFNB9P4_FhUs5VEAKJSCKiVKnrntrB5yA,23015
+grpc_requests/utils.py,sha256=wHIhDtmN8juguaXYCmIPf2Ou_cLst-YX15BBdkSXlgY,3267
+grpc_requests-0.1.15.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+grpc_requests-0.1.15.dist-info/METADATA,sha256=_2zcvfh1712IW_lXrUWosL5h0rMT-Qg9n9MPe1ZI0yE,9519
+grpc_requests-0.1.15.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+grpc_requests-0.1.15.dist-info/top_level.txt,sha256=Kr-xJrKA-Kd1cT9R9GGVRcCzEvP_vNTGXz8qlbXmF2w,14
+grpc_requests-0.1.15.dist-info/RECORD,,
