@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: cli_chronicler
+Version: 0.4.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# cli-chronicler
+A command line app for keeping track of project/work times.
