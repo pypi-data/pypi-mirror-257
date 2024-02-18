@@ -1,0 +1,17 @@
+affinder/__init__.py,sha256=aOsAICTUL-3aWI5So_EeATSUe4EcGWEyuBjaVEaTJHk,241
+affinder/_test_data.py,sha256=mzYqDuQDnC0REEJH17icMshtgvHkbVcJ0vtx3MCGMzg,2517
+affinder/_version.py,sha256=agHLjyG5Q99t0n8B5o_E78o3EByKhz3mzAnxjYOp3RY,414
+affinder/affinder.py,sha256=McZj_5W_QsJN1g-I7YKQrwJLnk4Nf8IBN6FWPdnKeg0,10139
+affinder/apply_tf.py,sha256=nnPujc9NI-tRD94QAA1v9sSj1FMMdHP7qXexqZC1flE,3629
+affinder/copy_tf.py,sha256=d5RklETd8u4jocgn7yJnjtOnW3BP8dOBEsoGljXeVqM,402
+affinder/load_tf.py,sha256=AcbPN6QFA11T1_tPdPn9xZASlXv-lP3MnzelmohyZAw,532
+affinder/main.py,sha256=7_tjdRNRse14-GfiYVlcMjeDqoC-mEs2QK13hky1qUg,435
+affinder/napari.yaml,sha256=l36k_9NRM5DcF528mqDRj8sXShv9QdXMxdCQDDVHme0,755
+affinder/_tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+affinder/_tests/test_affinder.py,sha256=sX36J-KzGroE4dTSoG9guQhg4Kq4V-SeX548s36GvGI,9090
+affinder-0.4.0rc0.dist-info/LICENSE,sha256=0E5t8kbjOujj5nXdR1cFLQkYFKKMTEBB1nOMI-_dlvY,1486
+affinder-0.4.0rc0.dist-info/METADATA,sha256=x32jNa0MP0a-o-_0ycEpnEIgyVNVwIJhbbAb0T0Rbiw,6053
+affinder-0.4.0rc0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+affinder-0.4.0rc0.dist-info/entry_points.txt,sha256=gt6tOIbK8q36cyYnnrrA3G1Yi_SrR3y76IrVFilQWmw,99
+affinder-0.4.0rc0.dist-info/top_level.txt,sha256=4hvOa9zwZiopedE3Z4CyS1NE0FNalaubsRYfm-m0NNQ,9
+affinder-0.4.0rc0.dist-info/RECORD,,
