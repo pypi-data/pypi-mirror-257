@@ -1,0 +1,8 @@
+requests
+requests_futures
+tqdm
+yaspin
+pillow
+imageio
+pandas
+joblib
