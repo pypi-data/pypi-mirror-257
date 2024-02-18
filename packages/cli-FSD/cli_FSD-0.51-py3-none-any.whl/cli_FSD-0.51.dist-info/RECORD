@@ -1,0 +1,10 @@
+cli_FSD/__init__.py,sha256=mnhFxsO83vqabcoFb8zjl-ZD61RIxgpV4NOVefTQWvA,684
+cli_FSD/assembler.py,sha256=KSVrclMXJ6vi9LB5-kPKRThYJxQDNDGBy-So2sjxiKE,5708
+cli_FSD/engine.py,sha256=Q6Uvttmqf6yuQkcKyOepBoK3UAN3YD2xYd6fnFlofPM,5806
+cli_FSD/main.py,sha256=jGctXOCyh6TazKpwKV5yuYpqUwaFo34D682p-VthOQU,37096
+cli_FSD-0.51.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+cli_FSD-0.51.dist-info/METADATA,sha256=HQpBhzag9gZM92FdZ9hlX1Eu2XiOSpzN-2nvxIAgHak,2660
+cli_FSD-0.51.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+cli_FSD-0.51.dist-info/entry_points.txt,sha256=A3zXt-sPJEbiomHljMGbPRwNa3A5LEiQUsW_7XcdVgE,40
+cli_FSD-0.51.dist-info/top_level.txt,sha256=WiTkyL8mmVbnybNHXCUo-aYMyVdHAb4V-H1TLi_XlGc,8
+cli_FSD-0.51.dist-info/RECORD,,
