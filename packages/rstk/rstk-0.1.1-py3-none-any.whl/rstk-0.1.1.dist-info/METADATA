@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: rstk
+Version: 0.1.1
+Summary: Lightweight recommender system toolkit
+Home-page: https://github.com/rat-nick/rstk
+Author: Nikola Ratinac
+Author-email: nikola.ratinac@gmail.com
+Requires-Dist: click
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+
+# Recommender systems toolkit
+
+Simple and lightweight toolkit for building recommender systems.
