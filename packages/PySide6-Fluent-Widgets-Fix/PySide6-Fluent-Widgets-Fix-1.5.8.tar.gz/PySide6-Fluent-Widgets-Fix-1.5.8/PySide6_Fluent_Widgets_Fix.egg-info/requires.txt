@@ -1,0 +1,8 @@
+PySide6<=6.4.2
+PyQt6-Frameless-Window-Fix==0.3.8
+darkdetect
+
+[full]
+scipy
+pillow
+colorthief
