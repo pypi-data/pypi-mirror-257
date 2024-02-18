@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: fastbootstrap
+Version: 1.0.2
+Summary: Fast Python implementation of statistical bootstrap
+Home-page: https://github.com/timofeytkachenko/fastbootstrap
+Author: Timofey Tkachenko
+Author-email: timofey_tkachenko@pm.me
+Keywords: bootstrap resampling fast_bootstrap,fast_resampling
+Requires-Python: >=3.10.12
+Description-Content-Type: text/markdown
+Requires-Dist: jupyter (==1.0.0)
+Requires-Dist: ipython (==8.12.0)
+Requires-Dist: matplotlib (==3.7.1)
+Requires-Dist: plotly (==5.14.1)
+Requires-Dist: seaborn (==0.12.2)
+Requires-Dist: numpy (==1.24.3)
+Requires-Dist: scipy (==1.10.1)
+Requires-Dist: pandas (==1.5.3)
+Requires-Dist: tqdm (==4.65.0)
+Requires-Dist: multiprocess (==0.70.14)
+
+# fastbootstrap
+Fast Python implementation of statistical bootstrap
+___
+## Installation
+```bash
+pip install fastbootstrap
+```
+___
+Check interactive notebook [here](https://nbviewer.org/github/timofeytkachenko/bootstrap/blob/main/bootstrap_experiment.ipynb)
