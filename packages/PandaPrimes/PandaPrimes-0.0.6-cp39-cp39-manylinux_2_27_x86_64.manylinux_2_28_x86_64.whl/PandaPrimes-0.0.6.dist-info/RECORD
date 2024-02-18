@@ -1,0 +1,10 @@
+PandaPrimes-0.0.6.dist-info/METADATA,sha256=HjqtggrptU-h8QAnDrIgLNQ7ha1lVteg0mAMX9hdIbo,2486
+PandaPrimes-0.0.6.dist-info/top_level.txt,sha256=ky7NgpIdQHSG62Mlhdb-_tCl6DNfsqw32JL7KJp6dOo,12
+PandaPrimes-0.0.6.dist-info/WHEEL,sha256=LUKYv0841ajqqYJRoYSIJLe-f2qOOefS1Cc63vse3mY,149
+PandaPrimes-0.0.6.dist-info/RECORD,,
+PandaPrimes/PandaPrimes.pyi,sha256=PdmpFPPDaiaobJsQb4j6qpZJMpUQQpd2CsN-OrrMmy8,634
+PandaPrimes/__init__.py,sha256=EmVswW1shPoF33zZcuQHl7PPnvzgCMSrgbhNw-J3UV0,26
+PandaPrimes/PandaPrimes.cpython-39-x86_64-linux-gnu.so,sha256=w7j2jUt7N9pkbDdzFlXm-MY8yojgMOdHG_6lTp6hMeA,363344
+PandaPrimes/src/include/primes-range.h,sha256=0Oocjxc85ltJWoBowlzGjZYVcKWlwbf394AVtostMLY,245
+PandaPrimes/src/include/generate-primes.h,sha256=J-UkewOlTEpAt8JcrFQRviOkXNGAe5DJYAL9RpzMrlQ,201
+PandaPrimes/src/include/iterator.h,sha256=PpBhtCgwPB1Jv3fzIQoNElwhmIE1-xl1x40ape2L2tI,206
