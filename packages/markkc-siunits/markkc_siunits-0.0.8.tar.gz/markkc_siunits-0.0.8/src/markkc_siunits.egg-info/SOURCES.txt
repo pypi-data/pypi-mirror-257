@@ -1,0 +1,10 @@
+LICENSE
+pyproject.toml
+src/markkc_siunits/__init__.py
+src/markkc_siunits/main.py
+src/markkc_siunits.egg-info/PKG-INFO
+src/markkc_siunits.egg-info/SOURCES.txt
+src/markkc_siunits.egg-info/dependency_links.txt
+src/markkc_siunits.egg-info/requires.txt
+src/markkc_siunits.egg-info/top_level.txt
+tests/test_main.py

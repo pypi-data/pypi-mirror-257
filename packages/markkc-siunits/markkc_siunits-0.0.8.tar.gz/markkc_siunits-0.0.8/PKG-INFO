@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: markkc_siunits
+Version: 0.0.8
+Author-email: Mark Cowan <mark@battlesnake.co.uk>
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+License-File: LICENSE
+Provides-Extra: test
+Requires-Dist: pytest; extra == "test"
