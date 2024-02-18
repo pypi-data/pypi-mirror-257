@@ -1,0 +1,10 @@
+printbuddies/__init__.py,sha256=VaeS61hdlYVkLeNq4xCt8jmb6mAxC4d46rmjfGwbpwI,558
+printbuddies/buds.py,sha256=yuPh6PmM34oVRwiVtE4Bk948gergrt0PWZAn0mYIj5M,11725
+printbuddies/colormap.py,sha256=WRjkA1ClLS2uNgW9aR5udAGOjNKEY_J1XA7zarbN3Jc,44048
+printbuddies/gradient.py,sha256=6NlAErGSz5w88Hxyxhg3SxzGsWUlTZ-bdBGc-PKIsFs,8084
+printbuddies/progress.py,sha256=onxWqnn9AhqJ_qCiyYS3_CQSITaT5oPDhYtzoomJmFo,8739
+printbuddies/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+printbuddies-2.0.0.dist-info/METADATA,sha256=s1Wz5zBipaSv_MYvkqPaGk2KOW2es0wAMVpaurkgLiA,2990
+printbuddies-2.0.0.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+printbuddies-2.0.0.dist-info/licenses/LICENSE.txt,sha256=GA4k0f8zyJsPeXl_v_6h0BQT4BnMtK-NX8QSGL0JbCQ,1086
+printbuddies-2.0.0.dist-info/RECORD,,
