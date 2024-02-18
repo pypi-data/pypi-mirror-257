@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: kilojoule
+Version: 0.3.2
+Summary: A convenience package for engineering calculations with a focus on fluids mechanics, thermodynamics, and heat transfer
+Home-page: https://github.com/johnfmaddox/kilojoule
+Author: Jack Maddox
+Author-email: jackmaddox@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+License-File: AUTHORS.rst
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: sympy
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: pint
+Requires-Dist: pint-pandas
+Requires-Dist: uncertainties
+Requires-Dist: coolprop
+Requires-Dist: pyromat
+Requires-Dist: regex
+Requires-Dist: rich
+Requires-Dist: schemdraw
+Requires-Dist: sigfig
+Requires-Dist: emoji
+Requires-Dist: icecream
+
+=========
+kilojoule
+=========
+
+.. image:: https://img.shields.io/pypi/v/kilojoule
+   :target: https://pypi.org/project/kilojoule
+   :alt: PyPI - Version
+.. image:: https://img.shields.io/github/actions/workflow/status/johnfmaddox/kilojoule/release.yml
+   :alt: GitHub Actions Workflow Status
+.. image:: https://img.shields.io/github/v/release/johnfmaddox/kilojoule
+   :alt: GitHub Release
+
+
+Convenience functions for solving thermodynamic and heat transfer problems
+
+Installation
+------------
+
+.. code-block:: bash
+
+   pip install kilojoule
+
+Description
+===========
+
+kilojoule is a Python module/package to provide convenience functions
+for performing thermodynamic and heat transfer calculations.  The
+primary use case for these functions is in scripts written to solve 
+specific problems.  To that end, simplicity of syntax for variables
+and readability of output are prioritized over speed.  Wrapper
+functions are provided to pull thermodynamic properties from multiple 
+sources (CoolProp for real fluids and PYroMat for ideal gases) using 
+a consistent syntax regardless of the source and including units 
+(supplied by the Pint library) as an integral part of all calculations.  
+Variable names are chosen to be consistent with those commonly used in 
+the mechanical engineering texts.  
+
+
