@@ -1,0 +1,14 @@
+example_haskell_wheel-1.3.0.dist-info/RECORD,,
+example_haskell_wheel-1.3.0.dist-info/LICENSE,sha256=TFYGq7nMYwWoEhrDp5cpzftzCOrcwlXLKpDLsBkmqis,1066
+example_haskell_wheel-1.3.0.dist-info/WHEEL,sha256=c3kW3RBV11dQzjhuKqXlFtzpFCHOZGH1M6rr8u4JChc,112
+example_haskell_wheel-1.3.0.dist-info/entry_points.txt,sha256=gaWDiPzFGI34Cit7U2p4C5KYPSr4yLDunG49C9w3AKc,78
+example_haskell_wheel-1.3.0.dist-info/top_level.txt,sha256=M2LIGfQenD623rwokg021qLPdgBM6eUVKvg2_-HgSRQ,22
+example_haskell_wheel-1.3.0.dist-info/METADATA,sha256=EzmL82yUdXW5IAtJ80K69WqTcyYbc6OGZ7EClptwRlU,2643
+example_haskell_wheel/binding.pyi,sha256=T12YMIbmLNYkEyEDma4RP_H68SdFnnHTnaxSSp45Nhk,325
+example_haskell_wheel/__init__.py,sha256=e1VimpqlBPoPcl8dj_xPH4_MlNZVFQR1o6TOEIW48JQ,926
+example_haskell_wheel/binding.def,sha256=x7gLyv2JWYW4bNIcn-2mQaMqx9liTEIhilaw-N6J144,26
+example_haskell_wheel/binding.i,sha256=VKs0Lb4HTnkU4FHvxu5LR9kJ_rhN-XKrbBOL2KYJJGI,1569
+example_haskell_wheel/_binding.py,sha256=b3whtYkpZzHknfuyB1urdkzx-G4Ub-h4LoiFM9bF-HM,580
+example_haskell_wheel/_binding.cpython-311-darwin.so,sha256=n_iRfWsdbezckw6C16bcGhdGl8JSOJsGBAxb1dZLpcg,13911392
+example_haskell_wheel/binding.py,sha256=GYaH0lR_jWfQMD7ZYwdZc8ZIH75vjDuYXKev946uBow,2513
+example_haskell_wheel/__main__.py,sha256=Qb8oDvdyaTc0JzdefbGuUVoqALXolNgoNa9VuSgGDNY,196
