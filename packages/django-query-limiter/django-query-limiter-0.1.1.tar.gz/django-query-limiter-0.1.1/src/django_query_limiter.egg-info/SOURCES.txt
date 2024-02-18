@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/django_query_limiter.egg-info/PKG-INFO
+src/django_query_limiter.egg-info/SOURCES.txt
+src/django_query_limiter.egg-info/dependency_links.txt
+src/django_query_limiter.egg-info/requires.txt
+src/django_query_limiter.egg-info/top_level.txt
+src/query_limiter/__init__.py
+src/query_limiter/exceptions.py
+src/query_limiter/limiter.py
