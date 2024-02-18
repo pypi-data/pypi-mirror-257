@@ -1,0 +1,16 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+src/DEHB.egg-info/PKG-INFO
+src/DEHB.egg-info/SOURCES.txt
+src/DEHB.egg-info/dependency_links.txt
+src/DEHB.egg-info/requires.txt
+src/DEHB.egg-info/top_level.txt
+src/dehb/__init__.py
+src/dehb/optimizers/__init__.py
+src/dehb/optimizers/de.py
+src/dehb/optimizers/dehb.py
+src/dehb/utils/__init__.py
+src/dehb/utils/bracket_manager.py
+src/dehb/utils/config_repository.py
