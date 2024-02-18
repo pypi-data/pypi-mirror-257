@@ -1,0 +1,13 @@
+libclang==16.0.6
+click
+
+[dev]
+build
+pre-commit
+
+[docs]
+sphinx
+myst-parser
+
+[test]
+pytest

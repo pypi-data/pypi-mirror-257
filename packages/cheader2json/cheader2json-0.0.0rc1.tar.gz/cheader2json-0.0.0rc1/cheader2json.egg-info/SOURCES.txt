@@ -1,0 +1,17 @@
+.editorconfig
+.gitignore
+.pre-commit-config.yaml
+README.md
+pyproject.toml
+.github/dependabot.yml
+.github/workflows/release.yml
+cheader2json/__main__.py
+cheader2json/_version.py
+cheader2json/change_search.py
+cheader2json/cheader_reader.py
+cheader2json.egg-info/PKG-INFO
+cheader2json.egg-info/SOURCES.txt
+cheader2json.egg-info/dependency_links.txt
+cheader2json.egg-info/entry_points.txt
+cheader2json.egg-info/requires.txt
+cheader2json.egg-info/top_level.txt
