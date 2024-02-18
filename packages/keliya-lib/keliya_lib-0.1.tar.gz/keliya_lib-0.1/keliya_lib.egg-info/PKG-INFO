@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: keliya-lib
+Version: 0.1
+Summary: AWS Lambda helpers
+Author: Erandra Jayasundara
+Author-email: erandraj@gmail.com
+License: MIT
+Requires-Dist: requests
