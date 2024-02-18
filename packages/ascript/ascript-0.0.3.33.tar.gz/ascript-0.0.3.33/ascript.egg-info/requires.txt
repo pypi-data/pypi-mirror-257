@@ -1,0 +1,8 @@
+pyautogui
+numpy
+pywin32
+PyQt5
+Flask
+gevent
+paddlepaddle
+paddleocr
