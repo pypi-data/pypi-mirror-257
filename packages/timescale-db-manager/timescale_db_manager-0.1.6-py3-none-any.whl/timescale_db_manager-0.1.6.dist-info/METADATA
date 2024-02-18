@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: timescale-db-manager
+Version: 0.1.6
+Summary: 
+Author: James Baber
+Author-email: james.baber1@gmail.com
+Requires-Python: >=3.9,<4.0.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: boto3 (>=1.34.39)
+Requires-Dist: pandas (>=2.2.0,<3.0.0)
+Requires-Dist: psycopg2-binary (>=2.9.9,<3.0.0)
+Description-Content-Type: text/markdown
+
+# TimeScale DB Manger
+
+[![CI](https://github.com/Algo-Trading-Tools/timescale-db-manager/actions/workflows/ci.yaml/badge.svg)](https://github.com/Algo-Trading-Tools/timescale-db-manager/actions/workflows/ci.yaml)
+
+
+A python package that manages timescale db interactions.
+
+Things Like:
+* Export to CSV
+* Import from CSV
+* Compress and backup to S3
+* Sync from one database to another
+
+There are also specific database types implemented:
+* `cryptofeed`
+
+These handle creating and initializing these database types with their tables.
