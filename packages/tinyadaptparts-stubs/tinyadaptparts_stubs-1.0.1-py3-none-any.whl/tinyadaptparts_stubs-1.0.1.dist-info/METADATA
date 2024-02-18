@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: tinyadaptparts-stubs
+Version: 1.0.1
+Summary: Stubs for all the default parts from the tinyAdapt-Framework
+Home-page: https://github.com/Letsric/tinyadaptparts-stubs
+License: MIT
+Author: Letsric
+Author-email: riccibrief@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Project-URL: Repository, https://github.com/Letsric/tinyadaptparts-stubs
+Description-Content-Type: text/markdown
+
+# tinyadaptparts-stubs
+
+more info soon....
+
+## install from [Pypi](https://pypi.org/project/tinyadaptparts-stubs/)
+
+```bash
+pip install tinyadaptparts-stubs # Pip
+poetry add tinyadaptparts-stubs # Poetry
+```
+
