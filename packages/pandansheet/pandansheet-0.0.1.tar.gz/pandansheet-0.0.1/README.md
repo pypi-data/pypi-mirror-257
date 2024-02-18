@@ -1,0 +1,109 @@
+# PandanSheet(Korean.ver)
+
+`PandanSheet`는 google sheeet의 내용을 읽는 패키지 입니다.
+
+## 주요 기능
+
+Google Sheets 문서로부터 데이터를 읽어 pandas DataFrame으로 변환
+
+## 설치
+
+`PandanSheet` 패키지는 pip를 통해 쉽게 설치할 수 있습니다.
+
+```bash
+pip install pandansheet
+```
+
+## 함수 소개
+
+<table>
+<tr><th>함수명</th><th>소개</th></tr>
+<tr><td>ReadSheet</td><td>구글 시트의 내용을 가져온다</td></tr>
+</table>
+
+## 인자소개
+
+<table>
+<tr><th colspan="1" >함수명</th><th colspan="3" >ReadSheet</th></tr>
+<tr><th>인자명</th><th>소개</th><th>필수여부</th><th>기본값</th></tr>
+<tr><td>URL</td><td>시트링크</td><td>O</td><td></td></tr>
+<tr><td>header</td><td>열 이름으로 사용할 행의 위치</td><td>X</td><td>0</td></tr>
+</table>
+
+## 사용방법
+
+```py
+import pandansheet as ps
+url='https://docs.google.com/spreadsheets/d/1LK5N0kdoEXdHEVKXn1ZGbtxCbZ8V9QDxumyjXVWqKfk/edit?usp=sharing'
+#구글 시트 링크를 입력한다. 단 해당 시트는 공개상태여야 할것
+print(ps.ReadSheet(url))
+url='https://docs.google.com/spreadsheets/d/1LK5N0kdoEXdHEVKXn1ZGbtxCbZ8V9QDxumyjXVWqKfk/edit#gid=1717818648'
+#두번째 시트의 내용을 가져온다
+print(ps.ReadSheet(url),header=2)
+```
+
+## 주의
+
+비공개 시트에 접근하려고 할 때 에러가 발생합니다. 시트를 공개 상태로 변경하세요.
+
+## 업데이트 내역
+
+<table>
+<tr><th>버전</th><th>내역</th></tr>
+<tr><td>0.0.1</td><td>ReadSheet 함수를 만들었습니다.</td></tr>
+</table>
+
+# PandanSheet (English.ver)
+
+`PandanSheet` is a package for reading content from Google Sheets.
+
+## Key Features
+
+Reads data from Google Sheets documents and converts it into a pandas DataFrame.
+
+## Installation
+
+PandanSheet can be easily installed via pip
+
+```bash
+pip install pandansheet
+```
+
+## Function Introduction
+
+<table>
+<tr><th>Function Name</th><th>Description</th></tr>
+<tr><td>ReadSheet</td><td>Fetches content from a Google Sheet.</td></tr>
+</table>
+
+## Argument Introduction
+
+<table>
+<tr><th colspan="1">Function Name</th><th colspan="3">ReadSheet</th></tr>
+<tr><th>Argument Name</th><th>Description</th><th>Required</th><th>Default Value</th></tr>
+<tr><td>URL</td><td>Link to the sheet</td><td>Yes</td><td></td></tr>
+<tr><td>header</td><td>Position of the row to be used as column names</td><td>No</td><td>0</td></tr>
+</table>
+
+## How to Use
+
+```py
+import pandansheet as ps
+url = 'https://docs.google.com/spreadsheets/d/1LK5N0kdoEXdHEVKXn1ZGbtxCbZ8V9QDxumyjXVWqKfk/edit?usp=sharing'
+# Enter the link to the Google Sheet. Note: The sheet must be public.
+print(ps.ReadSheet(url))
+url = 'https://docs.google.com/spreadsheets/d/1LK5N0kdoEXdHEVKXn1ZGbtxCbZ8V9QDxumyjXVWqKfk/edit#gid=1717818648'
+# Fetches content from the second sheet
+print(ps.ReadSheet(url, header=2))
+```
+
+## Caution
+
+Attempting to access a private sheet will result in an error. Please change the sheet to public status.
+
+## Update History
+
+<table>
+<tr><th>Version</th><th>Details</th></tr>
+<tr><td>0.0.1</td><td>Created the ReadSheet function.</td></tr>
+</table>
