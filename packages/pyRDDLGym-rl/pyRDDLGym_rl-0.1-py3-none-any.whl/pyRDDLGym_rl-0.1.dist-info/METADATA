@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pyRDDLGym-rl
+Version: 0.1
+Summary: pyRDDLGym-rl: Wrappers for reinforcement learning algorithms (i.e. stable baselines 3) to work with pyRDDLGym.
+Home-page: https://github.com/pyrddlgym-project/pyRDDLGym-rl
+Author: Michael Gimelfarb, Ayal Taitler, Scott Sanner
+Author-email: mike.gimelfarb@mail.utoronto.ca, ataitler@gmail.com, ssanner@mie.utoronto.ca
+License: MIT License
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: pyRDDLGym >=2.0
+
