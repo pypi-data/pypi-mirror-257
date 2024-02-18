@@ -1,0 +1,15 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_enum_ex.py,sha256=Nvatx7RpT0gxRHs5aPsdPmWZIgepKhP53gt9UtZoUXs,1847
+tests/test_frozen.py,sha256=cH43N4T1SuliyclzhKesiPybpVpw78EYS694GM2y8eo,2024
+tests/test_type_info.py,sha256=X4BKL64gPkcKDnJvsLDYJYPUrz7GKjvaHhYOEBbudcM,2845
+tests/test_typed_defaultdict.py,sha256=5Fz2pA_PLxhKTPvtS1fYlW3ZEY00GRH1PKKTq2UCOqk,1012
+typing_ex-0.1.1.dist-info/METADATA,sha256=fB5zskd6i5DQyxE5kuydVROpHRDnFqrASvU9OjMFSAE,3980
+typing_ex-0.1.1.dist-info/WHEEL,sha256=N2J68yzZqJh3mI_Wg92rwhw0rtJDFpZj9bwQIMJgaVg,90
+typing_ex-0.1.1.dist-info/licenses/LICENSE,sha256=PrKtbxd8L8aYC3cE4zN3RBoS1hFaxjmDa0yD7tMbVbk,1063
+typing_ex/__init__.py,sha256=vsmhwQhR8XxxKQtT4eFVeIj56svFLUoMC6M4H9mEHG4,566
+typing_ex/builtin_typing.py,sha256=JSU3KGOorlFt0UqrOC7r8FyLsF_F6osHgzNRtsCP888,1066
+typing_ex/enum_ex.py,sha256=g4fHqhI_AONdDetBh5cKNNDb7OvbRdTGfNTLvYb-e6s,4613
+typing_ex/frozen.py,sha256=zvx6TaND-lvBThZDpylhPRBi-YfZD0CkCBA7oCObzEY,1104
+typing_ex/type_info.py,sha256=VFKIJ3zjnt78S6QyJ-HWb5cTQHBljueSfmlov3UUqhU,4653
+typing_ex/typed_defaultdict.py,sha256=N0t0Kvk1yqxXFl2-NyqdrhoupwDdRzGAkxsc7gVysxM,4054
+typing_ex-0.1.1.dist-info/RECORD,,
