@@ -1,0 +1,73 @@
+{
+  "CTk": {
+    "fg_color": [
+      "gray95",
+      "gray10"
+    ]
+  },
+  "CTkButton": {
+    "corner_radius": 4,
+    "border_width": 0,
+    "border_color": "gray50",
+    "fg_color": [
+      "gray90",
+      "gray15"
+    ],
+    "hover_color": [
+      "gray85",
+      "gray20"
+    ],
+    "text_color": [
+      "black",
+      "white"
+    ],
+    "text_color_disabled": [
+      "gray74",
+      "gray60"
+    ]
+  },
+  "CTkLabel": {
+    "corner_radius": 0,
+    "fg_color": "transparent",
+    "text_color": [
+      "black",
+      "white"
+    ]
+  },
+  "CTkRadioButton": {
+    "corner_radius": 10,
+    "border_width_unchecked": 4,
+    "border_width_checked": 4,
+    "fg_color": "green",
+    "border_color": "gray50",
+    "hover_color": [
+      "gray85",
+      "gray20"
+    ],
+    "text_color": [
+      "black",
+      "white"
+    ],
+    "text_color_disabled": [
+      "gray74",
+      "gray60"
+    ]
+  },
+  "CTkFont": {
+    "macOS": {
+      "family": "SF Display",
+      "size": 13,
+      "weight": "normal"
+    },
+    "Windows": {
+      "family": "Roboto",
+      "size": 13,
+      "weight": "normal"
+    },
+    "Linux": {
+      "family": "Roboto",
+      "size": 13,
+      "weight": "normal"
+    }
+  }
+}
