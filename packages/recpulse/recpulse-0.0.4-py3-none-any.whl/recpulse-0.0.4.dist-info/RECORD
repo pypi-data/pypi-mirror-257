@@ -1,0 +1,17 @@
+recpulse/__init__.py,sha256=K1-cN3EVxzrriIQ1pVr1__KQx_seks2rL_W296ba5U0,96
+recpulse/activations.py,sha256=IyUKH0OTwAdKKsDClxgW2kEgThIp42b_p7vFfNey4Es,1479
+recpulse/differentiated_activations.py,sha256=7o0d5NmlalrOQw8KmB3xnIZmiJwl2akH8qGc-C63tVg,2740
+recpulse/differentiated_losses.py,sha256=U09Is6EyTe799Pnj_qRJslYLd0vjj0SfNEQ--z0Y9Rk,1851
+recpulse/dtypes.py,sha256=emXc-pMXjY4b5abJg_FPvc9B2bW1a8L8_jiP9Mm_DAY,1709
+recpulse/layers.py,sha256=w4alCyJfvy45QLOCwHD8RXnk8xLLmqxDKr8rfmXAkyA,6429
+recpulse/losses.py,sha256=P8RESDe4SP8bEoq_1ZE1lPxABcyWQuZCW1MgMnSfIc0,1910
+recpulse/models.py,sha256=EiLaP8qwSgbtGAncOnqNuzOPwVv3jWNtIqWMm9Zc2Ok,4169
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_activations.py,sha256=AyEAavLOoLCJ5VYBjWa3RpEPGek5cPqTYFvvg1-N2U8,4804
+tests/test_layers.py,sha256=VfboHZ51RELuFTLq8q9N4woflsPmnabr3CblKIuJ-os,3417
+tests/test_losses.py,sha256=SrrkDxDF5DeIfspgFgI8gKhlU14PtM_BjMYcLPmUx30,3468
+tests/test_sequential.py,sha256=HVqkEgWnJahmqCBuaH8ph75Kk6BGoPF8wKp26VQZMo4,1286
+recpulse-0.0.4.dist-info/METADATA,sha256=nkedWe3QTTIFioOx_wHTzDjZczrj-qdnNWUoVfD3YaM,148
+recpulse-0.0.4.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+recpulse-0.0.4.dist-info/top_level.txt,sha256=fxEWVl46Nc808f2AkGO4PvCAMF4x_3Qu2XcP9Juhf18,9
+recpulse-0.0.4.dist-info/RECORD,,
