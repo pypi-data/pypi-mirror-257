@@ -1,0 +1,24 @@
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sapui5-xml-linter"
+version = "0.0.4"
+description = "Checks SAPUI5 XML views for unnecessary attributes and empty tags, and changes them if necessary"
+keywords = [ "sapui5", "linter"]
+readme = {file = "README.md", content-type = "text/markdown"}
+authors = [
+    {name = "Daniel Kullmann", email = "python@danielkullmann.de"}
+]
+#urls = [
+#    { source = "https://gitlab.com/danielkullmann/sapui5-xml-linter" }
+#]
+dependencies = ["lxml", "config_path"]
+license = { text = "MIT" }
+
+[project.scripts]
+sapui5-xml-linter = "sapui5_xml_linter:main"
