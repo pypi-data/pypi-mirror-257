@@ -1,0 +1,10 @@
+segmentation_skeleton_metrics/__init__.py,sha256=FrWxREa763bd5tYWmmOTohyektUoQUFkSiwCYlnguj0,77
+segmentation_skeleton_metrics/graph_utils.py,sha256=MLcz_thjOGLPLT8o5-JZIksaKReW3J5h-f21MI1zikA,4728
+segmentation_skeleton_metrics/skeleton_metric.py,sha256=2uwZ6AWu__ATOQsZyW0KxwEmocO9eb_Rzk4FJ-fCkjs,20355
+segmentation_skeleton_metrics/swc_utils.py,sha256=gNZvhh8hbnHmXwhVu3o0JBqgD7WP-Bb46SGnkUE4Vqo,4356
+segmentation_skeleton_metrics/utils.py,sha256=4YAinT16v9rEX0Yhk9WLkHmsRDAtGH2x645dQpBwr40,5288
+segmentation_skeleton_metrics-2.0.4.dist-info/LICENSE,sha256=U0Y7B3gZJHXpjJVLgTQjM8e_c8w4JJpLgGhIdsoFR1Y,1092
+segmentation_skeleton_metrics-2.0.4.dist-info/METADATA,sha256=z1lf2gxw54d4_p9SiI6KPbgGWMl5sVxvQytYa0jjE0w,3931
+segmentation_skeleton_metrics-2.0.4.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+segmentation_skeleton_metrics-2.0.4.dist-info/top_level.txt,sha256=lmwWLCGF4c-qH8TZzm8yE40H17bw7oQOZpnVdLv2IrE,30
+segmentation_skeleton_metrics-2.0.4.dist-info/RECORD,,
