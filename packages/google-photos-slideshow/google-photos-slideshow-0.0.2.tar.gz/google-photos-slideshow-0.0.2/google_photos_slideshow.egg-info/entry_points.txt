@@ -1,0 +1,2 @@
+[console_scripts]
+google-photos-slideshow = google_photos_slideshow:main
