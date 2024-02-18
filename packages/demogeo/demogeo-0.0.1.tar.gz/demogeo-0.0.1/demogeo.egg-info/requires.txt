@@ -1,0 +1,7 @@
+numpy
+
+[all]
+demogeo[extra]
+
+[extra]
+pandas
