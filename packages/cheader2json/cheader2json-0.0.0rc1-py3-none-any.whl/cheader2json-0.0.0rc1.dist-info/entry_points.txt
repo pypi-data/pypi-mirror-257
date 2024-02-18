@@ -1,0 +1,2 @@
+[console_scripts]
+cheader2json = cheader2json.__main__:cli
