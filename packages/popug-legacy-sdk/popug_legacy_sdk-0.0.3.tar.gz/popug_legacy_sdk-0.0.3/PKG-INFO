@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: popug_legacy_sdk
+Version: 0.0.3
+Summary: Package for popug_legacy project
+Home-page: https://github.com/harroowd/popug_legacy
+Author: Andrei Kazlou
+Author-email: andrey.vs1998@gmail.com
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Popug Legacy SDK
+## Introduction
+Popug Legacy SDK is a set of tools for developing training services.
+
+## How to start
+```
+pip install popug_legacy_sdk
+```
