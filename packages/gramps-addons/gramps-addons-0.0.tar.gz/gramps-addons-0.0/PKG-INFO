@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: gramps-addons
+Version: 0.0
+Summary: Addons for the Gramps genealogy program
+Home-page: https://github.com/gramps-project/addons
+Author: The Gramps Project
+Author-email: nick-h@gramps-project.org
+Classifier: Development Status :: 1 - Planning
+Classifier: Topic :: Sociology :: Genealogy
+Description-Content-Type: text/markdown
+
+# Placeholder package
+
+This is a placeholder for a [Gramps Project](https://gramps-project.org)
+GitHub repository.

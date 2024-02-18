@@ -1,0 +1,7 @@
+README.md
+gramps.py
+setup.py
+gramps_addons.egg-info/PKG-INFO
+gramps_addons.egg-info/SOURCES.txt
+gramps_addons.egg-info/dependency_links.txt
+gramps_addons.egg-info/top_level.txt
