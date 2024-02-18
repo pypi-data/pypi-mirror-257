@@ -1,0 +1,10 @@
+ase>=3.17.0
+exspy
+h5py
+hyperspy>=2.0.0
+matplotlib>=3.1.0
+numba
+numpy>=1.13
+scikit-image>=0.17.1
+scikit-learn
+scipy>=1.4.0
