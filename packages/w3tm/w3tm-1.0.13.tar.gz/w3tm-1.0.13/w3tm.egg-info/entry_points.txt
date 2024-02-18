@@ -1,0 +1,2 @@
+[console_scripts]
+w3tm = main:main
