@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "tinyadaptparts-stubs"
+version = "1.0.0"
+description = "Stubs for all the default parts from the tinyAdapt-Framework"
+license = "MIT"
+authors = ["Letsric <riccibrief@gmail.com>"]
+readme = "README.md"
+homepage = "https://github.com/Letsric/tinyadaptparts-stubs"
+repository = "https://github.com/Letsric/tinyadaptparts-stubs"
+packages = [
+   {include = "tinyadaptparts-stubs"}
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
