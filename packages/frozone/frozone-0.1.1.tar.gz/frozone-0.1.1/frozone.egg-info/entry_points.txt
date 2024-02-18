@@ -1,0 +1,2 @@
+[console_scripts]
+frozone = frozone.__main__:cli
