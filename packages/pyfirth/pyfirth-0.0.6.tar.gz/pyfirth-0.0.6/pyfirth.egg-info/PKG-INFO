@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: pyfirth
+Version: 0.0.6
+Summary: A very simple, inefficient implemention of Firth-penalized Logistic Regression for rare event data.
+Home-page: https://github.com/daverblair/PyFirth
+Author: David Blair
+Author-email: david.blair@ucsf.edu
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
