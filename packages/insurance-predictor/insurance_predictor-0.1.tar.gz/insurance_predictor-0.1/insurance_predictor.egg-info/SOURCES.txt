@@ -1,0 +1,10 @@
+README.md
+setup.py
+insurance_predictor/__init__.py
+insurance_predictor/predictor.py
+insurance_predictor.egg-info/PKG-INFO
+insurance_predictor.egg-info/SOURCES.txt
+insurance_predictor.egg-info/dependency_links.txt
+insurance_predictor.egg-info/requires.txt
+insurance_predictor.egg-info/top_level.txt
+insurance_predictor/data/model.json
