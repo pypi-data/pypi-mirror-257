@@ -1,0 +1,27 @@
+version: 1
+disable_existing_loggers: False
+formatters:
+  json:
+    (): aglog.JsonColorFormatter
+    datefmt: "%Y-%m-%dT%H:%M:%S.%f"
+    indent: 2
+    keys:
+      - asctime
+      - name
+      - levelname
+      - message
+      - threadName
+      - taskName
+      - path
+      - exc_info
+handlers:
+  console:
+    class: logging.StreamHandler
+    formatter: json
+    stream: ext://sys.stdout
+loggers:
+  "aglog":
+    level: ${TEST_LOGGING_LEVEL:-DEBUG}
+    handlers:
+      - console
+    propagate: false

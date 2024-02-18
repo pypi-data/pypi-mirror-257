@@ -1,0 +1,40 @@
+name: Create a release pull request
+
+on:
+  pull_request:
+    types: [closed]
+    branches:
+      - main
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: |
+          curl -sSL https://github.com/mitsuhiko/rye/releases/latest/download/rye-x86_64-linux.gz --output rye.gz
+          gunzip rye.gz
+          chmod +x rye
+          sudo mv rye /usr/local/bin/
+
+      - name: Update version
+        run: |
+          before_version=$(grep "^version =" pyproject.toml | awk '{print $3}' | tr -d '"')
+          rye version ${{ github.event.inputs.version }}
+          next_version=$(grep "^version =" pyproject.toml | awk '{print $3}' | tr -d '"')
+          sed -i "s/__version__ = .*/__version__ = \"$next_version\"/" src/aglog/__init__.py
+          echo "BEFORE_VERSION=$before_version" >> $GITHUB_ENV
+          echo "NEXT_VERSION=$next_version" >> $GITHUB_ENV
+
+      - name: Create a release pull request
+        uses: bakunyo/git-pr-release-action@master
+        env:
+          VERSION: ${{ env.NEXT_VERSION }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GIT_PR_RELEASE_BRANCH_PRODUCTION: release
+          GIT_PR_RELEASE_BRANCH_STAGING: main
+          GIT_PR_RELEASE_LABELS: release
+          GIT_PR_RELEASE_TEMPLATE: .github/workflows/.git-pr-release-template

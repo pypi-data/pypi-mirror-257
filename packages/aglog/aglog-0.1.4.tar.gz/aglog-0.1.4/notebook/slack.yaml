@@ -1,0 +1,42 @@
+version: 1
+disable_existing_loggers: False
+formatters:
+  json:
+    (): aglog.JsonFormatter
+    datefmt: "%Y-%m-%dT%H:%M:%S%z"
+    indent: 2
+    code: true
+    keys:
+      - asctime
+      - name
+      - levelname
+      - message
+      - threadName
+      - taskName
+      - exc_inf
+  iso8601:
+    (): aglog.Iso8601Formatter  # asctimeがISO8601形式になるFormatter
+    fmt: "%(asctime)s %(message)s"
+    datefmt: milliseconds  # どの精度まで表記するか Option: "hours", "minutes", "seconds", "milliseconds", "microseconds"
+    timezone: Asia/Tokyo  # タイムゾーン
+  slack_footer:
+    (): aglog.Iso8601Formatter
+    fmt: "%(asctime)s"
+    datefmt: milliseconds
+    timezone: Asia/Tokyo
+handlers:
+  console:
+    class: logging.StreamHandler
+    formatter: iso8601
+  slack:
+    (): aglog.SlackHandler
+    formatter: json
+    footer_formatter: cfg://formatters.slack_footer  # 省略時と等価
+    token: ${SLACK_TOKEN}
+    channel: "#test"
+loggers:
+  slack:
+    level: DEBUG
+    handlers:
+      - slack
+      - console

@@ -1,0 +1,19 @@
+{
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit",
+      "source.fixAll": "explicit"
+    },
+  },
+  "ruff.lint.args": [
+    "--unfixable=F401,F841"
+  ],
+  "python.analysis.typeCheckingMode": "basic",
+  "python.testing.pytestArgs": [
+    "-s", "--debug-log", "--cov=src", "--cov-report=xml", "tests"
+  ],
+  "python.testing.unittestEnabled": false,
+  "python.testing.pytestEnabled": true,
+}

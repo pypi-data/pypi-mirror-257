@@ -1,0 +1,5 @@
+[files]
+extend-exclude = [".venv"]
+
+[default.extend-words]
+gracefull = "gracefull"
