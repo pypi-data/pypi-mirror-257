@@ -1,0 +1,12 @@
+include LICENSE
+include README.md
+
+exclude main.py
+recursive-exclude data *
+recursive-exclude examples *
+recursive-exclude assets *
+recursive-exclude src/tests *
+recursive-exclude * *.png
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
+recursive-exclude * *.ipynb
