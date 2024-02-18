@@ -1,0 +1,15 @@
+README.md
+setup.cfg
+setup.py
+src/gripe/__init__.py
+src/gripe/__main__.py
+src/gripe/_version.py
+src/gripe/bin.py
+src/gripe.egg-info/PKG-INFO
+src/gripe.egg-info/SOURCES.txt
+src/gripe.egg-info/dependency_links.txt
+src/gripe.egg-info/entry_points.txt
+src/gripe.egg-info/not-zip-safe
+src/gripe.egg-info/requires.txt
+src/gripe.egg-info/top_level.txt
+src/gripe/util/__init__.py
