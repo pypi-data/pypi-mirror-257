@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+VERSION
+requirements.txt
+setup.py
+popug_legacy_sdk.egg-info/PKG-INFO
+popug_legacy_sdk.egg-info/SOURCES.txt
+popug_legacy_sdk.egg-info/dependency_links.txt
+popug_legacy_sdk.egg-info/not-zip-safe
+popug_legacy_sdk.egg-info/requires.txt
+popug_legacy_sdk.egg-info/top_level.txt
