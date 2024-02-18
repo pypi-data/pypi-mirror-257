@@ -1,0 +1,6 @@
+llama_index/vector_stores/clickhouse/BUILD,sha256=Nf7BYWWe1USoFEIsIiEVZ8sa05J5FPkMJ-UIMDLrU8o,17
+llama_index/vector_stores/clickhouse/__init__.py,sha256=IAZVnzm3B0LUbV026zgE5pzIQgqNVo_b_xlwWyMYF0A,113
+llama_index/vector_stores/clickhouse/base.py,sha256=Z7BbsL_dmcj-OiC3GdPDy0XyIJ9qchbnj4uAgHqxBr8,17332
+llama_index_vector_stores_clickhouse-0.1.1.dist-info/METADATA,sha256=fUFGMK8efEbYMxt0Gjeg_AIjkeSf3lvMfm48GkoeLms,681
+llama_index_vector_stores_clickhouse-0.1.1.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+llama_index_vector_stores_clickhouse-0.1.1.dist-info/RECORD,,
