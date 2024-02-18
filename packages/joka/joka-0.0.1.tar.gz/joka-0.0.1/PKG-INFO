@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: joka
+Version: 0.0.1
+Summary: joka for the Ambhora project
+Project-URL: Documentation, https://gitlab.com/ambhora/joka
+Project-URL: Issues, https://gitlab.com/ambhora/joka/-/issues
+Project-URL: Source, https://gitlab.com/ambhora/joka
+Author-email: Jayesh Badwaik <j.badwaik@fz-juelich.de>
+License-Expression: Apache-2.0
+Requires-Dist: pandas
+Requires-Dist: plotly
+Requires-Dist: semver
+Description-Content-Type: text/markdown
+
+<!--
+- SPDX-License-Identifier: Apache-2.0
+- Copyright (C) 2024 Jayesh Badwaik <j.badwaik@fz-juelich.de>
+-->
+
+# planner
+
