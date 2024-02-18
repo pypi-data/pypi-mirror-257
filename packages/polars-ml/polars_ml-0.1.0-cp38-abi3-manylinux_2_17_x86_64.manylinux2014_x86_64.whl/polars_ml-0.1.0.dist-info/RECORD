@@ -1,0 +1,8 @@
+polars_ml-0.1.0.dist-info/METADATA,sha256=NIa8REIPHglDhVo2xOMvfWq2Ovoa7O5ry6ij94budaQ,289
+polars_ml-0.1.0.dist-info/WHEEL,sha256=RnYqiUIa021N4CTBFGEv-digtLfhgSXu_Qwb__EvkZs,127
+polars_ml/nltk/__init__.py,sha256=2KRH4rKdDP0BRgS3brHJwoB6Yiqof15UnZmhYKQ7EbY,107
+polars_ml/nltk/functions.py,sha256=Gq2ZUeChtizCKgfAgN_-hUsVybJ9PQSX-PMhZ4TrRYE,408
+polars_ml/nltk/nltk_namespace.py,sha256=lEEZ9SgGS7_q2wc3HLSpoEM_diadGU79gMcJIjrDOOI,481
+polars_ml/__init__.py,sha256=xUpP2xzjUJSRs1_fzkazNoG2A-6_4MNV2JhfTiNMIxU,22
+polars_ml/polars_ml.abi3.so,sha256=A4-q8MOU2JOX-pl_13-NWY7qhrHJk163-CUvE9JMRYw,31964048
+polars_ml-0.1.0.dist-info/RECORD,,
