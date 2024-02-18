@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+proteinnpt/__init__.py
+proteinnpt.egg-info/PKG-INFO
+proteinnpt.egg-info/SOURCES.txt
+proteinnpt.egg-info/dependency_links.txt
+proteinnpt.egg-info/top_level.txt
