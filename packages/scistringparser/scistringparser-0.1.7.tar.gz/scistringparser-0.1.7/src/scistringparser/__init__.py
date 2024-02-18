@@ -1,0 +1,1 @@
+from .scistringparser import parse_str
