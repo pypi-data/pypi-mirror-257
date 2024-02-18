@@ -1,0 +1,85 @@
+Metadata-Version: 2.1
+Name: gpnam
+Version: 0.0.7
+Summary: GPNAM - an interpretable Gaussian Process NAM model.
+Author-email: Wei Zhang <wz2363@columbia.edu>
+Project-URL: Homepage, https://github.com/Wei2624/GPNAM
+Project-URL: Issues, https://github.com/Wei2624/GPNAM/issues
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: torch >=1.13.1
+Requires-Dist: numpy >=1.21.5
+Requires-Dist: scipy >=1.7.3
+Requires-Dist: scikit-learn >=1.0.2
+Requires-Dist: matplotlib >=3.5.3
+Requires-Dist: tqdm >=4.66.2
+Requires-Dist: pandas >=1.3.5
+Requires-Dist: requests >=2.28.1
+
+# GPNAM: Gaussian Process Neural Additive Models
+
+![The framework of GPNAM](./imgs/framework.jpg)
+*The framework of GPNAM. `$z_s, c_s$` and the sinusoidal function are predefined from the paper and do not require training. The only trainable parameter is `W` that maps to the output of each shape function.*
+
+This repository contains the source code for the paper Gaussian Process Neural Additive Models that appears at AAAI 2024. 
+
+Basically, the GPNAM constructs a Neural Additive Model (NAM) by a GP with Random Fourier Features as the shape function for each input feature, which leads to a convex optimization with a significant reduction in trainable parameters. 
+
+## Sklearn interface
+
+You can install the package by:
+```
+pip install gpnam
+```
+
+Then, you can run the model simply by:
+```python
+from gpnam.sklearn import GPNAM
+
+"""
+input_dim: the dimensions of input data
+problem: type of the model, 'classification' or 'regression'
+"""
+gpnam = GPNAM(input_dim, problem)
+gpnam.fit(X, y)
+
+y_pred = gpnam.predict(X_test)
+```
+
+## Build on your own
+
+### Data sets preparation
+
+You can download the data sets locally:
+```
+python ./gpnam/download_datasets.py LCD GMSC CAHousing
+```
+
+### Setup
+
+### Experiments
+
+Then, you can run the experiment:
+```
+python main.py --dataset LCD --optimizer Adam --n_epochs 200
+```
+
+### Matlab
+**Note**: Statistics and Machine Learning Toolbox is required.
+
+
+## Citation
+If you find this repo useful, please consider citing our paper:
+```
+@inproceedings{,
+  title={Gaussian Process Neural Additive Models},
+  author={Wei Zhang and Brian Barr and John Paisley},
+  booktitle={AAAI Conference on Artificial Intelligence},
+  year={2024}
+}
+```
