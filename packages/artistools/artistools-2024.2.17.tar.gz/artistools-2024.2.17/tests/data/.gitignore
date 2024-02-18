@@ -1,0 +1,5 @@
+testmodel
+*.tar.*
+testmodel/
+vspecpolmodel/
+test-classicmode_3d
