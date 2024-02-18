@@ -1,0 +1,16 @@
+pyegeria/__init__.py,sha256=778Kxfe2wMatK1qw44TMmxiYwntcCCfJS3-d8n95zCE,909
+pyegeria/_client.py,sha256=tnn444x2DN3pIyDFVtmMsb2l-ezFnTy9h-OpUc94RjA,18797
+pyegeria/_exceptions.py,sha256=E4d60USV3A6X7e3WzE0f7o7U7wAntS0ajvXeMrBKRzg,18306
+pyegeria/_globals.py,sha256=WgJ6O7_ACiAG8CUUHT_AbGgahLhO0APU8Y4rCwv9DRw,558
+pyegeria/_validators.py,sha256=1K50pJQrppx1r6-bJU5saEQ8Q7DBZcxS8hjMCWcSjJY,12626
+pyegeria/config.toml,sha256=2Jp6ozhlVgDLWeG5702dTTAYEUv_jYNAFFWpEyR8xV8,214
+pyegeria/core_omag_server_config.py,sha256=h8DQVACLxYNPE9C4my_-jCAfh7XgAlS9AW5iLAIBI2s,88812
+pyegeria/glossary_omvs.py,sha256=uK3RF5-NyyuUuUWGVzdt-mXGvj07SvALD67fQGxB8wI,18487
+pyegeria/platform_services.py,sha256=ic9SPpI8s6_PEiudqJEVAXveysvXcUJhWQh21zs78VM,21016
+pyegeria/registered_info.py,sha256=f9cskHLHFrbLFtE4kBqkIV1ljS0W_M798A2gUV4KuLc,7402
+pyegeria/server_operations.py,sha256=HADaidO7lGygbGHxNYeBVv36orxFOJ7c-js56jtOM1w,7959
+pyegeria/utils.py,sha256=uRw8TFlVBOQl_lem8Inm-zzXoWgCJblZHRNvEgSc738,5257
+pyegeria-0.1.1.6.dist-info/METADATA,sha256=WhOUqNZlhE1zbGhMLsXr29WKCFCbAmrsEbIyM2XmDHU,2124
+pyegeria-0.1.1.6.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+pyegeria-0.1.1.6.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pyegeria-0.1.1.6.dist-info/RECORD,,
