@@ -1,0 +1,14 @@
+com/phida/main/Operations.py,sha256=aAGgl8Yveywa8bh5eu2G2YquuWbJ1qgU-ExNmymcQPs,13828
+com/phida/main/SilverMerge.py,sha256=g4a9fTYHQV1bcuIzQovoNAZ6xZmH__ANHhypBoeQtV4,13825
+com/phida/main/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+com/phida/main/logging.py,sha256=ZuIxcgrLgRiMsc2KZSBPZrlrHd4RUHJcphNrif0MBFU,1374
+com/phida/main/sparksession.py,sha256=wTuo3kjYF0ebO5ZXjcDR2y6PQ4AbitAcXY4qa8LrYsE,964
+com/phida/main/utils.py,sha256=rZO_DT5DzcjtaBmDiaCxr9l3YhxYxovI9o60v4IBBuA,1998
+com/phida/tests/OperationsTest.py,sha256=UckPN_ssGOSWqMCVGiZy91S4ctQwKfxab--9MzrH7V8,5765
+com/phida/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+com/phida/tests/main_test.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+com/phida/tests/utils_test.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+SilverStreamingApplicationPoC-1.1.dist-info/METADATA,sha256=Mocpc1iDHJz902e_NzDHV8_qcX-BiGVWVpZjZoFwfY0,133
+SilverStreamingApplicationPoC-1.1.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+SilverStreamingApplicationPoC-1.1.dist-info/top_level.txt,sha256=A7eVUp0bsHtbJ7vD4f_Ju79_mDJojU9deED6-LV9_s0,4
+SilverStreamingApplicationPoC-1.1.dist-info/RECORD,,
