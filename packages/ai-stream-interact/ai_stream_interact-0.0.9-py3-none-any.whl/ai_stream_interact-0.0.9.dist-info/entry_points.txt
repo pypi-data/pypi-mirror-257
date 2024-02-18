@@ -1,0 +1,2 @@
+[console_scripts]
+aisi = ai_stream_interact.runners.run_ai:main
