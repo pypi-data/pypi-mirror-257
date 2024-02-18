@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: chinese-nonwords
+Version: 0.0.9
+Summary:  package for generating Chinese disyllabic nonwords
+Project-URL: Homepage, https://github.com/zimine/Chinese_pseudoword_generator
+Project-URL: Issues, https://github.com/zimine/Chinese_pseudoword_generator
+Author-email: Mingyu <author@example.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: numpy>=1.26.4
+Requires-Dist: pandas>=2.2.0
+Requires-Dist: pypinyin>=0.50.0
+Requires-Dist: tabulate>=0.9.0
+Description-Content-Type: text/markdown
+
+# Example Package
+
+This is a simple example package. You can use
+[GitHub-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+to write your content.
