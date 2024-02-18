@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: tokengeex
+Version: 0.1.0
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Summary: TokenGeeX is an efficient tokenizer for code based on UnigramLM and TokenMonster.
+Keywords: tokenizer,codegeex,llm,nlp
+Home-Page: https://codegeex.cn
+Author: Diego ROJAS (罗杰斯) <rojasdiegopro@gmail.com>
+Author-email: Diego ROJAS (罗杰斯) <rojasdiegopro@gmail.com>
+License: Apache 2.0
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+# TokenGeeX - Efficient Tokenizer for CodeGeeX
+
+This repository holds the code for the TokenGeeX Rust crate and Python package. TokenGeeX is an efficient tokenizer for code based on [UnigramLM (Taku Kudo 2018)](https://arxiv.org/abs/1804.10959) and [TokenMonster](https://github.com/alasdairforsythe/tokenmonster).
+
+## Python
+
+<!-- TODO -->
+
+## Rust
+
+<!-- TODO -->
+
+## CLI
+
+<!-- TODO -->
+
