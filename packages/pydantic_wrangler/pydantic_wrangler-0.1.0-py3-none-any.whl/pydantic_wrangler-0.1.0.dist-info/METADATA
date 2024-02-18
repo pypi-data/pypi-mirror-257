@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: pydantic_wrangler
+Version: 0.1.0
+Summary: A Python package that standardizes data parsing from multiple serilized formats into pydantic models.
+License: MIT
+Keywords: serialization,deserialization,parsing,pydantic-models,seria-to-pydantic,pydantic-to-serial
+Author: André Lima
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: jinja2 (>=3.1.3,<4.0.0)
+Requires-Dist: pydantic (>=2.6.1,<3.0.0)
+Requires-Dist: pyyaml (>=6.0.1,<7.0.0)
+Requires-Dist: sortedcontainers (>=2.4.0,<3.0.0)
+Requires-Dist: toml (>=0.10.2,<0.11.0)
+Project-URL: Documentation, https://github.com/theandrelima/pydantic-wrangler
+Description-Content-Type: text/markdown
+
+# pydantic-wrangler
+
+## Description
+pydantic-wrangler was born out of the necessity of representing data (originally serialized in YAML files) as python 
+objects not only capable of exhibiting complex business-logic behaviors, but also ensuring stringent data validation.
+
+As a result, it streamlines the process of parsing data from various serialization formats into Pydantic models, and if 
+necessary, re-serializing them back into any supported format. In essence, pydantic-wrangler serves as a comprehensive 
+tool for your data, facilitating a seamless journey from serialization to deserialization (and back, if you so wish).
+
+## Installation
+
+Install it with pip:
+```bash
+pip install pydantic-wrangler
+```
+
+or poetry:
+```bash
+poetry add pydantic-wrangler
+```
+
+
+## Features
+
+- **Pydantic Integration**: Converting serialized data into Python objects is the oldest trick in the book, but pydantic-wrangler 
+elevates this process by directly converting the data into Pydantic models, which brings the added advantage of robust 
+data validation. The models used in this process are defined by classes that inherit from either the 
+***PydanticWranglerBaseModel*** or ***PydanticWranglerRenderableModel***. This not only provides flexibility in setting up 
+behaviors for your data, but also ensures data integrity through Pydantic's validation mechanisms.
+
+
+- **Multiple Formats Support**: Currently, it supports loading serialized data from JSON, YAML, TOML  and INI streams/files.
+While support for other formats is planned, the package is designed to be easily extensible. Adding your own loader function(s) 
+to support additional formats (and/or to include use-case specific business-logic) is as simple as defining them in a python module 
+(.py file) and creating an env var with name 'LOADERS_MODULE' containing the python dotted path to that module. 
+For more information, please refer to the [Custom Loaders](#custom-loaders) section.  
+
+## Table of Contents [pending]
+- [Usage](#usage)
+- [Base Models](#base-models)
+- [Loaders](#custom-loaders)
+- [Dumpers](#custom-dumpers)
+- [Extensibility](#configs)
+- [Example use-case](#example-use-case)
+- [Contributing](#contributing)
+
+
