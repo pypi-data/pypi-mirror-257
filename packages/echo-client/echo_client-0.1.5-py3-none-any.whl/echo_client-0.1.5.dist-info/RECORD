@@ -1,0 +1,6 @@
+echo_client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+echo_client/__main__.py,sha256=larBcp7DOlxx0Y4f1c8VLqgIqf0bIo2lOHzEfZTSd3w,9059
+echo_client/message.py,sha256=PSXSiwWYLSF8t7e98dDUBb4JIjtQNa36p-_ndVbqr8w,11671
+echo_client-0.1.5.dist-info/METADATA,sha256=ZMTUaFs3wb3vDeJctdxnxMuL8y6XU6AyuXqBNKCfQ8c,2716
+echo_client-0.1.5.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+echo_client-0.1.5.dist-info/RECORD,,
