@@ -1,0 +1,7 @@
+timescale_db_manager/__init__.py,sha256=FWn49XTz1nTccXtSqA46RDMm6BTvUXTNBgtnQa_eHak,26874
+timescale_db_manager/database_types/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+timescale_db_manager/database_types/cryptofeed.py,sha256=8nUnl1KvhP3oMj4W8bOcKxGvoZ9gTMalhE7v6l-40CQ,4103
+timescale_db_manager/utilities.py,sha256=8BaduQmCM8_iT6R-XkbQtRm47Bxn73mVFzvj15cdHgM,601
+timescale_db_manager-0.1.5.dist-info/METADATA,sha256=QWsYkHoP2B2HISHIw8cpcTnrFS1rcNohu2tJt5dTYa4,1105
+timescale_db_manager-0.1.5.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+timescale_db_manager-0.1.5.dist-info/RECORD,,
