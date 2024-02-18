@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: stockdatamanager
+Version: 0.4.2
+Summary: A comprehensive data retrieval aimed at gathering financial information
+Home-page: https://github.com/GiorgioMB/stockdatafetcher/
+Author: Giorgio Micaletto
+Author-email: giorgio.micaletto@studbocconi.it
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas >=1.1.5
+Requires-Dist: yfinance >=0.1.63
+Requires-Dist: requests >=2.25.1
+Requires-Dist: pandas-datareader >=0.10.0
+Requires-Dist: numpy >=1.23
+
+Something has to be here, so there you go
