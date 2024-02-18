@@ -1,0 +1,4 @@
+[console_scripts]
+bsxplorer-category = bsxplorer.cons_master:category
+bsxplorer-chr = bsxplorer.cons_master:chr_levels
+bsxplorer-metagene = bsxplorer.cons_master:metagene
