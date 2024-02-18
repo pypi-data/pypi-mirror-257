@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: cudagrad
+Version: 0.1.0
+Summary: A tensor-valued autograd engine for Python
+Home-page: https://github.com/cudagrad/cudagrad
+Author: Ryan Moore
+Author-email: ryanm.inbox@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.7
+License-File: LICENSE
+
+UNKNOWN
+
