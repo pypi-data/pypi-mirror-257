@@ -1,0 +1,12 @@
+class Snowflake(int):
+  """Snowflake is an integer in `range((1 << 64) - 1)`."""
+
+
+def is_snowflake(snowflake: Snowflake | int | str, *, allow_string=True) -> bool:
+  if not isinstance(snowflake, ((int | str) if allow_string else int)):
+    return False
+
+  if not str(snowflake).isnumeric() or (int(snowflake) not in range((1 << 64) - 1)):
+    return False
+
+  return True
