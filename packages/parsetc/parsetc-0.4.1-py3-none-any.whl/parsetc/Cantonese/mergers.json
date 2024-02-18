@@ -1,0 +1,9 @@
+{
+  "initial" : {},
+  "codanasal" : {},
+  "medial" : {
+    "MED_EO" : { "cpy"  : "MED_OE" },
+    "MED_OE" : { "yale" : "MED_EO" }
+  },
+  "codastop" : {}
+}
