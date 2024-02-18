@@ -1,0 +1,71 @@
+[tool.poetry]
+authors = ["Matt Love <matt@hyperglass.dev>"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Multimedia :: Graphics :: Graphics Conversion",
+  "Topic :: Internet :: WWW/HTTP",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "Topic :: Software Development :: User Interfaces",
+  "Typing :: Typed",
+]
+description = "Favicon generator for Python 3 with strongly typed sync & async APIs, CLI, & HTML generation."
+homepage = "https://github.com/thatmattlove/favicons"
+license = "BSD-3-Clause-Clear"
+name = "favicons"
+readme = "README.md"
+repository = "https://github.com/thatmattlove/favicons"
+version = "0.2.1"
+
+[tool.poetry.dependencies]
+pillow = "^10.2.0"
+python = ">=3.10.0,<4.0"
+reportlab = "^4.1.0"
+rich = "^13.7.0"
+svglib = "^1.5.1"
+typer = "^0.9.0"
+
+[tool.poetry.scripts]
+favicons = "favicons:cli"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.2.0"
+flake8 = "^7.0.0"
+isort = "^5.13.2"
+mypy = "^1.8.0"
+ruff = "^0.2.1"
+typing-extensions = "^4.9.0"
+
+[tool.black]
+line-length = 100
+
+[build-system]
+build-backend = "poetry.masonry.api"
+requires = ["poetry>=0.12"]
+
+[tool.ruff]
+exclude = [
+  ".git",
+  "__pycache__",
+  "test.py",
+]
+lint.ignore = [
+  "RET504",
+  "D202",
+  "S301",
+]
+line-length = 100
+lint.select = ["B", "C", "D", "E", "F", "N", "S", "RET", "W"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "pep257"
+
+[tool.ruff.lint.mccabe]
+max-complexity = 10
+
+[tool.ruff.lint.per-file-ignores]
+# Disable unused import warning for modules
+"favicons/*/__init__.py" = ["F401"]
+"favicons/__init__.py" = ["F401"]
