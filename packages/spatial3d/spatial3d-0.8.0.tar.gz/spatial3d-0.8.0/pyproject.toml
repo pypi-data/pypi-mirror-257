@@ -1,0 +1,55 @@
+[tool.poetry]
+name = "spatial3d"
+version = "0.8.0"
+description = "A Python library for representing and working with 3D objects."
+authors = ["James Schwartz <james@schwartz.engineer>"]
+keywords = ["vector", "matrix", "quaternion", "mesh"]
+readme = "README.md"
+license = "MIT"
+homepage = "https://github.com/jbschwartz/spatial3d"
+repository = "https://github.com/jbschwartz/spatial3d"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Natural Language :: English",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Mathematics",
+]
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.2.0"
+pydocstyle = "^6.3.0"
+pylint = "^3.0.3"
+coverage = "^7.4.1"
+mypy = "^1.8.0"
+toml = "^0.10.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 100
+
+[tool.isort]
+profile = "black"
+
+[tool.pydocstyle]
+match = '(?!test_).*\.py'
+# Turn off module (D100) and __init__ (D107) docstrings.
+# Ignore blank line before class docstring (D203) and docstrings start on the first line (D213).
+ignore = "D100, D107, D213, D203"
+
+[tool.pylint.'MESSAGES CONTROL']
+# Turn off checking of invalid names (C0103), module docstrings (C0114), and TODO comments (W0511).
+disable = "C0103, C0114, W0511"
+
+[tool.coverage]
+run.omit = ["*/test_*.py"]
+report.precision = 2
+report.exclude_lines = ["@overload"]
