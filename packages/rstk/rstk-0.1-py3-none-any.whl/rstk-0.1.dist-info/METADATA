@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: rstk
+Version: 0.1
+Requires-Dist: click
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+
