@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: python_toolkit_vald3nir
+Version: 1.0.0
+Summary: Collection of utility scripts for developing Python projects
+Project-URL: Homepage, https://github.com/vald3nir/Python-Toolkit
+Project-URL: Issues, https://github.com/vald3nir/Python-Toolkit/issues
+Author-email: Valdenir Severino <vald3nir@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# Python-Toolkit
+
+Collection of utility scripts for developing Python projects
