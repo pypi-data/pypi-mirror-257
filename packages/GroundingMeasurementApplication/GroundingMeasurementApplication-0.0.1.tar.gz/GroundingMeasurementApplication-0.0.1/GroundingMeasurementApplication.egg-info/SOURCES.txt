@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+GroundingMeasurementApplication.egg-info/PKG-INFO
+GroundingMeasurementApplication.egg-info/SOURCES.txt
+GroundingMeasurementApplication.egg-info/dependency_links.txt
+GroundingMeasurementApplication.egg-info/requires.txt
+GroundingMeasurementApplication.egg-info/top_level.txt

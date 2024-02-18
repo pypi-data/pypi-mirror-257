@@ -1,0 +1,36 @@
+from setuptools import find_packages, setup
+
+setup(
+    name="GroundingMeasurementApplication",
+    version="0.0.1",
+    description="Jupyter Notebook zur Vorbereitung, Durchführung und Auswertung von Erdungsmessungen.",
+    packages=find_packages(),
+    long_description=open("README.md", "r").read(),
+    long_description_content_type="text/markdown",
+    url="https://github.com/Kalandoros/Grounding_Measurement_Application",
+    author="Kalandoros",
+    license="BSD",
+    classifiers=[
+        "License :: OSI Approved :: BSD License",
+        "Framework :: IPython",
+        "Programming Language :: Python :: 3.11",
+    ],
+    install_requires=["matplotlib==3.8.2",
+                      "pandas==2.1.1",
+                      "geopy==2.4.1",
+                      "panel==1.3.6",
+                      "bokeh==3.3.3",
+                      "numpy==1.26.3",
+                      "scipy==1.11.4",
+                      "ipython>=8.15.0",
+                      "jupyterlab==4.0.10",
+                      "ipywidgets==8.1.1",
+                      "ipyleaflet==0.18.1",
+                      "ipywebrtc==0.6.0",
+                      "localtileserver==0.7.2",
+                      "voila==0.5.5"],
+    extras_require={
+        "dev": ["setuptools>=69.1.0", "wheel>=0.42.0", "twine>=5.0.0"],
+    },
+    python_requires="==3.11.5",
+)
