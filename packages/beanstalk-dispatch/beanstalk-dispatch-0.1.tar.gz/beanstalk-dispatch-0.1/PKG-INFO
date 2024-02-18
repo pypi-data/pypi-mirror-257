@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: beanstalk-dispatch
+Version: 0.1
+Summary: Django application to schedule and run functions on an AWS SQS queue.
+Home-page: http://github.com/joshblum/beanstalk-dispatch
+Author: Joshua Blum
+Author-email: jblum18@gmail.com
+License: Apache 2
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 3.0
+Classifier: Framework :: Django :: 3.1
+Classifier: Framework :: Django :: 3.2
+Classifier: Framework :: Django :: 4.0
+Classifier: Framework :: Django :: 4.1
+Classifier: Framework :: Django :: 4.2
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6, <4
+License-File: LICENSE
+Requires-Dist: Django<5.0,>=3.0
+Requires-Dist: boto==2.49.0
+Requires-Dist: timeout-decorator==0.4.0
+Requires-Dist: django-jsonview==2.0.0
