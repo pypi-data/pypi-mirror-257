@@ -1,0 +1,169 @@
+Metadata-Version: 2.1
+Name: graphiq
+Version: 0.1.0
+Summary: GraphiQ is a Python library for the simulation, design, and optimization of quantum photonic circuits.
+Author-email: Benjamin MacLellan <benjamin@ki3photonics.com>, Jie Lin <jie.lin@quantumbridgetech.com>, Sohban Ghanbari <sobhan.ghanbari@quantumbridgetech.com>, Luc Robichaud <luc.robichaud@qubridge.io>, Piotr Roztocki <piotr@ki3photonics.com>
+License: Apache 2.0
+Project-URL: Homepage, https://github.com/graphiq-dev/graphiq
+Project-URL: Documentation, https://graphiq.readthedocs.io/en/latest/
+Project-URL: Repository, https://github.com/graphiq-dev/graphiq.git
+Project-URL: Issues, https://github.com/graphiq-dev/graphiq/issues
+Keywords: quantum,photonic,circuit,design
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research 
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Security :: Cryptography
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: <4,>3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: numpy
+Requires-Dist: networkx
+Requires-Dist: matplotlib
+Requires-Dist: tqdm
+Requires-Dist: seaborn
+Requires-Dist: scipy
+Requires-Dist: flask
+Requires-Dist: pandas
+Requires-Dist: psutil
+Requires-Dist: qiskit
+Provides-Extra: all
+Requires-Dist: pymdown-extensions ; extra == 'all'
+Requires-Dist: mkdocstrings ; extra == 'all'
+Requires-Dist: mkdocs-material ; extra == 'all'
+Requires-Dist: mkdocstrings-python ; extra == 'all'
+Requires-Dist: mknotebooks ; extra == 'all'
+Requires-Dist: jax ; extra == 'all'
+Requires-Dist: optax ; extra == 'all'
+Requires-Dist: ray ; extra == 'all'
+Provides-Extra: docs
+Requires-Dist: pymdown-extensions ; extra == 'docs'
+Requires-Dist: mkdocstrings ; extra == 'docs'
+Requires-Dist: mkdocs-material ; extra == 'docs'
+Requires-Dist: mkdocstrings-python ; extra == 'docs'
+Requires-Dist: mknotebooks ; extra == 'docs'
+Requires-Dist: mkdocs-minify-plugin ; extra == 'docs'
+
+<div align="center">
+
+# ![GraphiQ](https://raw.githubusercontent.com/graphiq-dev/graphiq/main/docs/img/logos/logo.png)
+
+[![PyPI Version](https://img.shields.io/pypi/v/graphiq)](https://pypi.org/project/graphiq)
+[![Python Versions](https://img.shields.io/pypi/pyversions/graphiq)](https://pypi.org/project/graphiq)
+[![GitHub Workflow Status](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/ki3-qbt/graph-compiler/actions)
+[![Documentation Status](https://readthedocs.org/projects/graphiq/badge/?version=latest)](https://graphiq.readthedocs.io/en/latest/?badge=latest)
+[![arXiv Paper](https://img.shields.io/badge/arXiv-2402.09285-red)](https://arxiv.org/abs/2402.09285)
+[![arXiv Paper](https://img.shields.io/badge/arXiv-2401.00635-red)](https://arxiv.org/abs/2401.00635)
+[![codecov](https://codecov.io/gh/graphiq-dev/graphiq/branch/main/graph/badge.svg)](https://codecov.io/gh/graphiq-dev/graphiq)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
+
+</div>
+
+<p align="center" style="font-size:20px">
+  GraphiQ is a Python library for the simulation, design, and optimization of quantum photonic circuits.
+</p>
+
+**GraphiQ** is an open-source framework for designing photonic graph state generation schemes. 
+Photonic graph states are an important resource for many quantum information processing tasks including quantum computing 
+and quantum communication.
+
+## Features
+
+<img src="https://user-images.githubusercontent.com/87783633/198037273-06ec89cf-233d-4c08-9f7a-96313bfcb435.gif" width="225px" align="right">
+
+* Diverse [backends](https://github.com/ki3-qbt/graph-compiler/tree/main/graphiq/backends) for the simulation of noisy
+  quantum circuits comprised of hundreds of qubits.
+
+* Algorithms for the inverse design and optimization of circuits that output a desired quantum state.
+
+* Circuits support emitter and photonic qubits, as a basis for simulations of realistic near-term quantum photonic
+  devices.
+
+* Library of models for the study of [noise](https://github.com/ki3-qbt/graph-compiler/tree/main/graphiq/noise) and
+  optical loss.
+
+## Installation
+GraphiQ can be installed from PyPI,
+```
+pip install graphiq 
+```
+This package is built on top of the standard Python scientific computing ecosystem, including
+`networkx`, `numpy`, `matplotlib`, and `scipy`.
+
+## Getting started
+GraphiQ can simulate quantum circuits using the density matrix and stabilizer formalisms, 
+and can identify circuits which generate a target quantum state. 
+In this example, we simulate a Bell state circuit and find a generating circuit for a 3-qubit linear cluster state.
+``` py
+import graphiq as gq
+from graphiq.benchmarks.circuits import bell_state_circuit
+import networkx as nx
+
+#%%
+circuit, _ = bell_state_circuit()
+backend = gq.StabilizerCompiler()
+state = backend.compile(circuit)
+print(state)
+
+#%%
+target = gq.QuantumState(data=nx.Graph([(1, 2), (2, 3)]), rep_type="g")
+metric = gq.Infidelity(target=target)
+solver = gq.TimeReversedSolver(compiler=backend, metric=metric, target=target)
+
+#%%
+solver.solve()
+score, circuit = solver.result
+circuit.draw_circuit()
+```
+
+
+## Overview
+
+* [`backends`](https://github.com/ki3-qbt/graph-compiler/tree/main/graphiq/backends) - simulate a quantum circuit using
+  different state representations, including, the density matrix, stabilizer, and graph formalisms.
+* [`noise`](https://github.com/ki3-qbt/graph-compiler/tree/main/graphiq/noise) - models for the study of noise and
+  optical loss in realistic quantum devices.
+* [`solvers`](https://github.com/ki3-qbt/graph-compiler/tree/main/graphiq/solvers) - design and optimization algorithms that identifying
+  circuits satisfying which generate target quantum states.
+* [`benchmarks`](https://github.com/ki3-qbt/graph-compiler/tree/main/benchmarks) - a suite of automated tools for
+  benchmarking solvers and compilers, scaled to run on high-performance computing clusters.
+* [`visualizers`](https://github.com/ki3-qbt/graph-compiler/tree/main/graphiq/visualizers) - functions for plotting
+  backends and quantum circuits.
+* [`tests`](https://github.com/ki3-qbt/graph-compiler/tree/main/tests) - automated code testing framework
+
+
+## Documentation
+Documentation can be found [here](https://graphiq.readthedocs.io/en/latest/?badge=latest).
+See also "GraphiQ: Quantum circuit design for photonic graph states" (https://arxiv.org/abs/2402.09285),
+and 
+"Optimization of deterministic photonic graph state generation via local operations" (https://arxiv.org/abs/2401.00635)
+
+## Acknowledgement
+Version 0.1.0 was jointly developed by [Quantum Bridge Technologies, Inc. ("Quantum Bridge") ](https://qubridge.io/)
+and [Ki3 Photonics Technologies](https://www.ki3photonics.com/) 
+under the US Air Force Office of Scientific Research (AFOSR) Grant FA9550-22-1-0062.
+
+## Contributing
+Quantum Bridge continues to maintain and develop new versions of GraphiQ. Collaborations from the community are encouraged and welcomed.
+
+## License
+GraphiQ is licensed under an Apache License Version 2.0.
+
+## Citation
+```
+@article{
+  title={GraphiQ: Quantum circuit design for photonic graph states}, 
+  author={Jie Lin and Benjamin MacLellan and Sobhan Ghanbari and Julie Belleville and Khuong Tran and Luc Robichaud and Roger G. Melko and Hoi-Kwong Lo and Piotr Roztocki},
+  year={2024},
+  eprint={2402.09285},
+  archivePrefix={arXiv},
+  primaryClass={quant-ph}
+}
+```
+
