@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "spacy-md-pipeline"
+version = "3.7.1"
+description = ""
+authors = ["explosion"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
