@@ -1,0 +1,83 @@
+Metadata-Version: 2.1
+Name: getable
+Version: 0.1.3
+Summary: Parse HTML table to a 2d-array-like data structure
+Project-URL: Homepage, https://github.com/zhaoblake/getable
+Author-email: Zhao Blake <zhao_decheng@qq.com>
+License-Expression: MIT
+License-File: LICENSE
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Typing :: Typed
+Requires-Python: >=3.7
+Requires-Dist: pyquery
+Provides-Extra: dev
+Requires-Dist: pre-commit<3.0.0,>=2.17.0; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: pytest-cov; extra == 'test'
+Requires-Dist: pytest<8.0.0,>=7.1.3; extra == 'test'
+Description-Content-Type: text/markdown
+
+# getable
+<p>
+<a href="https://github.com/zhaoblake/getable/actions?query=workflow%3ATest" target="_blank">
+    <img src="https://github.com/zhaoblake/getable/workflows/Test/badge.svg" alt="Test">
+</a>
+<a href="https://codecov.io/gh/zhaoblake/getable" > 
+ <img src="https://codecov.io/gh/zhaoblake/getable/graph/badge.svg?token=E14F3M0CM9"/> 
+ </a>
+<a href="https://pypi.org/project/getable" target="_blank">
+    <img src="https://img.shields.io/pypi/v/getable?color=%2334D058&label=pypi%20package" alt="Package version">
+</a>
+<a href="https://pypi.org/project/getable" target="_blank">
+    <img src="https://img.shields.io/pypi/pyversions/getable.svg?color=%2334D058" alt="Supported Python versions">
+</a>
+</p>
+
+Parse HTML table to a 2d-array-like data structure.
+
+## Installation
+
+```bash
+pip install getable
+```
+
+## Example
+
+```python
+from getable import TableParser
+
+html = """
+<table id="table">
+    <thead>
+        <tr><th>Name</th><th>Age</th></tr>
+    </thead>
+    <tbody>
+        <tr><td>Alpha</td><td>10</td></tr>
+        <tr><td>Bravo</td><td>20</td></tr>
+    </tbody>
+</table>
+"""
+    
+parser = TableParser()
+table = parser.parse(source=html, locator="#table")
+for row in table:
+    for cell in row:
+        print(cell.text)
+```
+
+
