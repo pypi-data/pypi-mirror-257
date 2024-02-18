@@ -1,0 +1,8 @@
+setup.py
+pystd/__init__.py
+pystd/errors.py
+pystd/stdlib.py
+pystd.egg-info/PKG-INFO
+pystd.egg-info/SOURCES.txt
+pystd.egg-info/dependency_links.txt
+pystd.egg-info/top_level.txt
