@@ -1,0 +1,65 @@
+#!/bin/sh
+
+os=''
+arch=''
+
+# Set common environment variables
+export CGO_ENABLED=1
+
+# Linux builds
+export GOOS=linux
+
+export GOARCH=amd64
+echo Building lib-im2dhist-$GOOS-$GOARCH.so
+go build -o compiled-libs/lib-im2dhist-$GOOS-$GOARCH.so -buildmode=c-shared lib-im2dhist.go &&
+	echo Done
+echo
+
+export GOARCH=arm64
+echo Building lib-im2dhist-$GOOS-$GOARCH.so
+go build -o compiled-libs/lib-im2dhist-$GOOS-$GOARCH.so -buildmode=c-shared lib-im2dhist.go &&
+    echo Done
+echo
+
+export GOARCH=arm
+export GOARM=6
+echo Building lib-im2dhist-$GOOS-$GOARCH.so
+go build -o compiled-libs/lib-im2dhist-$GOOS-$GOARCH.so -buildmode=c-shared lib-im2dhist.go &&
+    echo Done
+echo
+
+export GOARCH=386
+echo Building lib-im2dhist-$GOOS-$GOARCH.so
+go build -o compiled-libs/lib-im2dhist-$GOOS-$GOARCH.so -buildmode=c-shared lib-im2dhist.go &&
+    echo Done
+echo
+
+# Windows builds
+export GOOS=windows
+
+export GOARCH=amd64
+echo Building lib-im2dhist-$GOOS-$GOARCH.dll
+go build -o compiled-libs/lib-im2dhist-$GOOS-$GOARCH.dll -buildmode=c-shared lib-im2dhist.go &&
+    echo Done
+echo
+
+export GOARCH=386
+echo Building lib-im2dhist-$GOOS-$GOARCH.dll
+go build -o compiled-libs/lib-im2dhist-$GOOS-$GOARCH.dll -buildmode=c-shared lib-im2dhist.go &&
+    echo Done
+echo
+
+# macOS builds
+export GOOS=darwin
+
+export GOARCH=amd64
+echo Building lib-im2dhist-$GOOS-$GOARCH.dylib
+go build -o compiled-libs/lib-im2dhist-$GOOS-$GOARCH.dylib -buildmode=c-shared lib-im2dhist.go &&
+    echo Done
+echo
+
+export GOARCH=arm64
+echo Building lib-im2dhist-$GOOS-$GOARCH.dylib
+go build -o compiled-libs/lib-im2dhist-$GOOS-$GOARCH.dylib -buildmode=c-shared lib-im2dhist.go &&
+    echo Done
+echo
