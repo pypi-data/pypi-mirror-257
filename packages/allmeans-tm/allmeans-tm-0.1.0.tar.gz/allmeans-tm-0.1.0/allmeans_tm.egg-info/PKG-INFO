@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: allmeans-tm
+Version: 0.1.0
+Summary: A package for automatic topic modelling
+Author: Kai Maurin-Jones
+Requires-Python: >=3.11.4
+License-File: LICENSE
