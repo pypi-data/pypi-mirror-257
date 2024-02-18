@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+allproxy/Get.py
+allproxy/Send.py
+allproxy/__init__.py
+allproxy/testing.py
+allproxy.egg-info/PKG-INFO
+allproxy.egg-info/SOURCES.txt
+allproxy.egg-info/dependency_links.txt
+allproxy.egg-info/requires.txt
+allproxy.egg-info/top_level.txt

@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: allproxy
+Version: 1.2.1
+Summary: Easily get a working Proxy list
+Author: TheescapedShadow
+License-File: LICENSE.txt
+Requires-Dist: requests
+Requires-Dist: beautifulsoup4
+Requires-Dist: tqdm
+Requires-Dist: packaging
