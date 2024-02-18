@@ -1,0 +1,6 @@
+GetPcINFO.py
+setup.py
+GetPcInfo.egg-info/PKG-INFO
+GetPcInfo.egg-info/SOURCES.txt
+GetPcInfo.egg-info/dependency_links.txt
+GetPcInfo.egg-info/top_level.txt
