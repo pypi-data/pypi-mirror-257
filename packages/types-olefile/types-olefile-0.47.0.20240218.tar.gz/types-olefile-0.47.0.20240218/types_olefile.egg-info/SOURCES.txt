@@ -1,0 +1,10 @@
+CHANGELOG.md
+MANIFEST.in
+setup.py
+olefile-stubs/METADATA.toml
+olefile-stubs/__init__.pyi
+olefile-stubs/olefile.pyi
+types_olefile.egg-info/PKG-INFO
+types_olefile.egg-info/SOURCES.txt
+types_olefile.egg-info/dependency_links.txt
+types_olefile.egg-info/top_level.txt
