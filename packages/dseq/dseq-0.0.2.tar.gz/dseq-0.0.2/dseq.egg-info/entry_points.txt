@@ -1,0 +1,2 @@
+[nbdev]
+dseq = dseq._modidx:d

@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+dseq/__init__.py
+dseq/_modidx.py
+dseq/core.py
+dseq/tools.py
+dseq.egg-info/PKG-INFO
+dseq.egg-info/SOURCES.txt
+dseq.egg-info/dependency_links.txt
+dseq.egg-info/entry_points.txt
+dseq.egg-info/not-zip-safe
+dseq.egg-info/requires.txt
+dseq.egg-info/top_level.txt
