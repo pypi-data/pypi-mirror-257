@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+IiliIo/IiliIo.py
+IiliIo/__init__.py
+IiliIo.egg-info/PKG-INFO
+IiliIo.egg-info/SOURCES.txt
+IiliIo.egg-info/dependency_links.txt
+IiliIo.egg-info/entry_points.txt
+IiliIo.egg-info/requires.txt
+IiliIo.egg-info/top_level.txt
