@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: akatsuki_proto
+Version: 0.1.0
+Summary: Protobuf files & source generation for Akatsuki
+Author: Akatsuki
+Requires-Python: >=3.9
+
