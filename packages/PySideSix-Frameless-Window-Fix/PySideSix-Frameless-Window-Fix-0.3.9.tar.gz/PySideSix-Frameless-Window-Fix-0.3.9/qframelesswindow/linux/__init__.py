@@ -1,0 +1,113 @@
+# coding:utf-8
+from PySide6.QtCore import QCoreApplication, QEvent, Qt
+from PySide6.QtWidgets import QWidget, QMainWindow, QDialog
+from qframelesswindow.utils.enum import QtEnum
+
+from ..titlebar import TitleBar
+from ..utils.linux_utils import LinuxMoveResize
+from .window_effect import LinuxWindowEffect
+
+
+class LinuxFramelessWindowBase:
+    """ Frameless window base class for Linux system """
+
+    BORDER_WIDTH = 5
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+
+    def _initFrameless(self):
+        self.windowEffect = LinuxWindowEffect(self)
+        self.titleBar = TitleBar(self)
+        self._isResizeEnabled = True
+
+        self.updateFrameless()
+        QCoreApplication.instance().installEventFilter(self)
+
+        self.titleBar.raise_()
+        self.resize(500, 500)
+
+    def updateFrameless(self):
+        self.setWindowFlags(self.windowFlags() | QtEnum.QEvent.WindowType.FramelessWindowHint)
+
+    def resizeEvent(self, e):
+        self.titleBar.resize(self.width(), self.titleBar.height())
+
+    def setTitleBar(self, titleBar):
+        """ set custom title bar
+
+        Parameters
+        ----------
+        titleBar: TitleBar
+            title bar
+        """
+        self.titleBar.deleteLater()
+        self.titleBar.hide()
+        self.titleBar = titleBar
+        self.titleBar.setParent(self)
+        self.titleBar.raise_()
+
+    def setResizeEnabled(self, isEnabled: bool):
+        """ set whether resizing is enabled """
+        self._isResizeEnabled = isEnabled
+
+    def eventFilter(self, obj, event):
+        et = event.type()
+        if et != QtEnum.QEvent.MouseButtonPress and et != QtEnum.QEvent.MouseMove or not self._isResizeEnabled:
+            return False
+
+        edges = Qt.Edge(0)
+        pos = event.globalPos() - self.pos()
+        if pos.x() < self.BORDER_WIDTH:
+            edges |= QtEnum.Qt.Edge.LeftEdge
+        if pos.x() >= self.width()-self.BORDER_WIDTH:
+            edges |= QtEnum.Qt.Edge.RightEdge
+        if pos.y() < self.BORDER_WIDTH:
+            edges |= QtEnum.Qt.Edge.TopEdge
+        if pos.y() >= self.height()-self.BORDER_WIDTH:
+            edges |= QtEnum.Qt.Edge.BottomEdge
+
+        # change cursor
+        if et == QtEnum.QEvent.MouseMove and self.windowState() == QtEnum.Qt.WindowState.WindowNoState:
+            if edges in (QtEnum.Qt.Edge.LeftEdge | QtEnum.Qt.Edge.TopEdge, QtEnum.Qt.Edge.RightEdge | QtEnum.Qt.Edge.BottomEdge):
+                self.setCursor(QtEnum.Qt.CursorShape.SizeFDiagCursor)
+            elif edges in (QtEnum.Qt.Edge.RightEdge | QtEnum.Qt.Edge.TopEdge, QtEnum.Qt.Edge.LeftEdge | QtEnum.Qt.Edge.BottomEdge):
+                self.setCursor(QtEnum.Qt.CursorShape.SizeBDiagCursor)
+            elif edges in (QtEnum.Qt.Edge.TopEdge, QtEnum.Qt.Edge.BottomEdge):
+                self.setCursor(QtEnum.Qt.CursorShape.SizeVerCursor)
+            elif edges in (QtEnum.Qt.Edge.LeftEdge, QtEnum.Qt.Edge.RightEdge):
+                self.setCursor(QtEnum.Qt.CursorShape.SizeHorCursor)
+            else:
+                self.setCursor(QtEnum.Qt.CursorShape.ArrowCursor)
+
+        elif obj in (self, self.titleBar) and et == QtEnum.QEvent.MouseButtonPress and edges:
+            LinuxMoveResize.starSystemResize(self, event.globalPos(), edges)
+
+        return False
+
+
+class LinuxFramelessWindow(LinuxFramelessWindowBase, QWidget):
+    """ Frameless window for Linux system """
+
+    def __init__(self, parent=None):
+        super().__init__(parent=parent)
+        self._initFrameless()
+
+
+class LinuxFramelessMainWindow(LinuxFramelessWindowBase, QMainWindow):
+    """ Frameless main window for Linux system """
+
+    def __init__(self, parent=None):
+        super().__init__(parent=parent)
+        self._initFrameless()
+
+
+class LinuxFramelessDialog(LinuxFramelessWindowBase, QDialog):
+    """ Frameless dialog for Windows system """
+
+    def __init__(self, parent=None):
+        super().__init__(parent=parent)
+        self._initFrameless()
+        self.titleBar.minBtn.hide()
+        self.titleBar.maxBtn.hide()
+        self.titleBar.setDoubleClickEnabled(False)
