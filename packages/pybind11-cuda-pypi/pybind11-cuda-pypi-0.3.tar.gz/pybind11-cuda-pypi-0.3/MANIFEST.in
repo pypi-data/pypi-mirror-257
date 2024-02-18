@@ -1,0 +1,2 @@
+include CMakeLists.txt
+include gpu_library.cu
