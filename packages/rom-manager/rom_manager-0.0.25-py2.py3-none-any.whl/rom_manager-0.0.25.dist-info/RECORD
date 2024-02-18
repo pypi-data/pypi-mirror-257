@@ -1,0 +1,10 @@
+rom_manager/__init__.py,sha256=FbYv5Wp1liOsQuK4-mX5Y19EwPazS3xYaUtsApXOvoU,358
+rom_manager/game_codes.py,sha256=CAgTzYhRBuD7b-RTqHbWa3j_MDZ-XZOif7Pn0eLtM-o,151059
+rom_manager/rom_manager.py,sha256=VUXTzgjlVqUkWkRSwPt2dcRF4wrsYgHCocb5lFNigd4,18163
+rom_manager/version.py,sha256=0Y08PR6qIrQn-UARVfrHGaRqC4wwaiWHkHHSyjC7VSc,117
+rom_manager-0.0.25.dist-info/LICENSE,sha256=2YS2_JJlkaw3ot-weFUeCSyOV7Eu4Q2yxBRflDtCvww,1068
+rom_manager-0.0.25.dist-info/METADATA,sha256=2cER3RKRCGUCs3A7aQoO1ixeKTif28cQqxPfiEFzhc8,5039
+rom_manager-0.0.25.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+rom_manager-0.0.25.dist-info/entry_points.txt,sha256=8xQsfY9yrK3J3DQjp2qlDyYV7FfcqQ142G8o8rk4gfo,62
+rom_manager-0.0.25.dist-info/top_level.txt,sha256=0ppN9iIms1zs_cM6qxj1R3Mko73EortKftGekpjj6iA,12
+rom_manager-0.0.25.dist-info/RECORD,,
