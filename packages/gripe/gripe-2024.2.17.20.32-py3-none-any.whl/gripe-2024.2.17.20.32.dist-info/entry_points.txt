@@ -1,0 +1,2 @@
+[console_scripts]
+gripe = gripe.bin:entry
