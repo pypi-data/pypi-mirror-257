@@ -1,0 +1,141 @@
+Metadata-Version: 2.1
+Name: otpsy
+Version: 0.0.2.2
+Summary: Packages designed to detect outliers in Social and Human Sciences
+Author-email: Alexandre Lietard <alex.lietard77@gmail.com>
+Project-URL: Homepage, https://github.com/AlexLietard/otpsy
+Project-URL: Issues, https://github.com/AlexLietard/otpsy/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: blinker ==1.7.0
+Requires-Dist: certifi ==2024.2.2
+Requires-Dist: charset-normalizer ==3.3.2
+Requires-Dist: click ==8.1.7
+Requires-Dist: colorama ==0.4.6
+Requires-Dist: dash ==2.15.0
+Requires-Dist: dash-bootstrap-components ==1.5.0
+Requires-Dist: dash-bootstrap-templates ==1.1.2
+Requires-Dist: dash-core-components ==2.0.0
+Requires-Dist: dash-html-components ==2.0.0
+Requires-Dist: dash-table ==5.0.0
+Requires-Dist: Flask ==3.0.2
+Requires-Dist: idna ==3.6
+Requires-Dist: importlib-metadata ==7.0.1
+Requires-Dist: itsdangerous ==2.1.2
+Requires-Dist: Jinja2 ==3.1.3
+Requires-Dist: MarkupSafe ==2.1.5
+Requires-Dist: nest-asyncio ==1.6.0
+Requires-Dist: numpy ==1.26.4
+Requires-Dist: packaging ==23.2
+Requires-Dist: pandas ==2.2.0
+Requires-Dist: plotly ==5.18.0
+Requires-Dist: pyarrow ==15.0.0
+Requires-Dist: python-dateutil ==2.8.2
+Requires-Dist: pytz ==2024.1
+Requires-Dist: requests ==2.31.0
+Requires-Dist: retrying ==1.3.4
+Requires-Dist: six ==1.16.0
+Requires-Dist: tenacity ==8.2.3
+Requires-Dist: typing-extensions ==4.9.0
+Requires-Dist: tzdata ==2023.4
+Requires-Dist: urllib3 ==2.2.0
+Requires-Dist: Werkzeug ==3.0.1
+Requires-Dist: zipp ==3.17.0
+
+# Outliers Toolkit for Psychology, Otpsy
+
+## Resume
+
+Otpsy is a toolkit for detecting and managing outliers in your dataset with ease. Outliers, those data points that deviate significantly from the majority, can have a substantial impact on statistical analyses. My package gather various outlier detection methods, making it convenient for psychologists and data analysts to identify and handle outliers in a straightforward manner.
+[Click here](/docs/glossary.md) for a glossary and [here](/docs/design.md) for a detailed explanation of the structure.
+
+## Key Features
+
+### 1. Multiple Methods for Outlier Detection
+
+The package provides a range of outlier detection methods, allowing users to choose the most suitable approach for their specific needs. The available methods include:
+
+* IQR (Interquartile Range)
+* Tukey
+* Standard Deviation (SD)
+* Recursive Standard Deviation (rSD)
+* Median Absolute Deviation (MAD)
+* $S_n$ Method
+* Percentile
+* Cut-off (e.g., response time under 80 ms)
+* Identical response (for Likert scales or behavioral performance)
+
+For a mathematical description, see [Jones et al., (2019)](https://doi.org/10.3758/s13414-019-01726-3)
+  
+### 2. Visualisation
+
+The Otpsy package enables users to effortlessly and dynamically visualize outliers across multiple columns and methods simultaneously. This feature facilitates a comprehensive understanding of data distribution and threshold through histograms or scatter plots. The visualisation is running on plotly and. To do that, use the method visualise() on the sample object (see below or the docs for more details).
+
+### 3. Easy Computation for Multiple Columns Testing
+
+One of the major features of this package is its ability to efficiently compute outlier detection for multiple columns simultaneously. This streamlines the process for psychologists dealing with extensive datasets and diverse variables.
+
+### 4. Simple Implementation
+
+To get started, create a `sample` object by specifying the DataFrame, the columns to test, and the participant reference column. After the visualisation of the distribution (if wanted), you can apply the desired outlier detection method using a method call, such as `sample.methodIQR()`. You apply to you "sample" the method IQR. This will generate an outliers object containing the identified outliers.
+
+### 5. Inspection and Management
+
+After detection, the package allows for comprehensive inspection of the outliers using `print(outliers)`. It shows a string containing detailed information as we can usually see in R summary. Furthermore, with `outliers.inspect()` method, you obtains a DataFrame to inspect the value of outliers.  
+It is possible to concat outliers object `.concat()`, add manually specific index `outliers.add()` or to substract an index `outliers.sub()`. They can be managed using the `outliers.manage()` method, providing options to remove, winsorize, or replace them with NaN values.
+
+---
+
+## Install and use otpsy
+
+Otpsy is a python package. To install it, you should use pip :
+```bash
+pip install otpsy
+```
+
+For now, the package only support pandas Dataframe and numpy array.
+Imagine that you want to delete participants that have at least one
+aberrant values on the Column 1, the Column 2 or the column 3.
+
+```python
+import otpsy as ot
+import pandas as pd
+
+# Import dataframe
+df = pd.read_csv("example.csv")
+
+# Select what has to be tested
+sample = ot.Sample(dataframe, ["Col1", "Col2", "Col3"], "participant_name")
+
+# Apply a specific method (mad) and remove outliers 
+clean_df = sample.methodMAD(distance = 2.5).manage("delete")
+```
+
+For a more exhaustive presentation of functionnality, check the jupyter file exhaustive_example.ipynb and the folder docs.
+
+---
+
+## TODO
+
+About outliers methods :
+
+* Add self.position to multi and update parameters
+* Check print output for each method
+
+About visualisation :
+
+* Hover text on shape or annotation or legend to understand which color corresponds to which method.
+* Add summary to the left.
+* Add the possibility to add user-input value (and thus percentile method)
+
+About the structure :
+
+* Create automated test
+* Create tutorial
+* Create data simulation
+* Create a clear documentation (in progress)
+* Create an export function to keep the information
