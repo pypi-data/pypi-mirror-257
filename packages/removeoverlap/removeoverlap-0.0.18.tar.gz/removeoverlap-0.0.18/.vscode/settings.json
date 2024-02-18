@@ -1,0 +1,8 @@
+{
+    "pylint.severity": {
+        "convention": "Error"
+    },
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.autopep8"
+    }
+}
