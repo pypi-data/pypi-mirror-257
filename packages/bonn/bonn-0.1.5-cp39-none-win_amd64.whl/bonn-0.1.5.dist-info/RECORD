@@ -1,0 +1,11 @@
+bonn-0.1.5.dist-info/METADATA,sha256=aaaZrq22wBO185EYg6pDRZlrz56aeb1H8QiPUPmhkYI,9443
+bonn-0.1.5.dist-info/WHEEL,sha256=an3xOxErGJeHkLgr587-bgaHQa25SvmEjtVGHxu1c38,95
+bonn-0.1.5.dist-info/license_files/LICENSE.md,sha256=B_plmeanym6ak3M668Te4_NVj31P0FkJ_kw49FF-IIQ,1189
+bonn/category_manager.py,sha256=tG1jPK5KWltELxS6aOCpiqwxF1byen96jJ7NaNo_MTQ,6352
+bonn/extract.py,sha256=k0elyjQ1-_P5Stibcxm8RUKtUl3LBOi2OQKAeGkXsjc,7561
+bonn/settings.py,sha256=T-l92NqSxKKWUvJAbbu9f3cEGmDHvrsZDE3NBz2uKQM,130
+bonn/taxonomy.py,sha256=QwdjNiE5dkyHiq8P4cmM0jJ_bkDtnLjr4nVFdW-6gJ4,2294
+bonn/utils.py,sha256=Tm0UYFHjorKfg519emsIlVPItQZyvJBXnTaIB8Dtwkw,625
+bonn/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bonn/_bonn.cp39-win_amd64.pyd,sha256=YxrJrE9hWrema5ZJCOXEJMthh2fIfZg-NlMmOvL9ims,788480
+bonn-0.1.5.dist-info/RECORD,,
