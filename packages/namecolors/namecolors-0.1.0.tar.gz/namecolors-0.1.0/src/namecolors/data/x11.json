@@ -1,0 +1,2063 @@
+{
+  "paletteTitle": "All the x11 names",
+  "colors": [
+    {
+      "name": "indigo",
+      "hex": "#4b0082",
+      "rgb": { "r": 75, "g": 0, "b": 130 },
+      "hsl": { "h": 275, "s": 100, "l": 25.4902 },
+      "lab": { "l": 19.71524, "a": 47.03513, "b": -54.2766 },
+      "luminance": 26.8796,
+      "luminanceWCAG": 0.03108,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=4b0082&name=indigo",
+        "svg": "/v1/swatch/?color=4b0082"
+      }
+    },
+    {
+      "name": "gold",
+      "hex": "#ffd700",
+      "rgb": { "r": 255, "g": 215, "b": 0 },
+      "hsl": { "h": 51, "s": 100, "l": 50 },
+      "lab": { "l": 87.46819, "a": 2.90963, "b": 86.54787 },
+      "luminance": 147.4483,
+      "luminanceWCAG": 0.69861,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=ffd700&name=gold",
+        "svg": "/v1/swatch/?color=ffd700"
+      }
+    },
+    {
+      "name": "hotpink",
+      "hex": "#ff69b4",
+      "rgb": { "r": 255, "g": 105, "b": 180 },
+      "hsl": { "h": 330, "s": 100, "l": 70.58824 },
+      "lab": { "l": 65.86057, "a": 63.26507, "b": -9.6427 },
+      "luminance": 100.16608,
+      "luminanceWCAG": 0.34658,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=ff69b4&name=hotpink",
+        "svg": "/v1/swatch/?color=ff69b4"
+      }
+    },
+    {
+      "name": "firebrick",
+      "hex": "#b22222",
+      "rgb": { "r": 178, "g": 34, "b": 34 },
+      "hsl": { "h": 0, "s": 67.92453, "l": 41.56863 },
+      "lab": { "l": 39.83135, "a": 56.59416, "b": 39.18429 },
+      "luminance": 56.97303,
+      "luminanceWCAG": 0.10725,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=b22222&name=firebrick",
+        "svg": "/v1/swatch/?color=b22222"
+      }
+    },
+    {
+      "name": "indianred",
+      "hex": "#cd5c5c",
+      "rgb": { "r": 205, "g": 92, "b": 92 },
+      "hsl": { "h": 0, "s": 53.05164, "l": 58.23529 },
+      "lab": { "l": 53.92585, "a": 45.75679, "b": 23.15562 },
+      "luminance": 82.36205,
+      "luminanceWCAG": 0.21406,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=cd5c5c&name=indianred",
+        "svg": "/v1/swatch/?color=cd5c5c"
+      }
+    },
+    {
+      "name": "yellow",
+      "hex": "#ffff00",
+      "rgb": { "r": 255, "g": 255, "b": 0 },
+      "hsl": { "h": 60, "s": 100, "l": 50 },
+      "lab": { "l": 97.60713, "a": -15.75288, "b": 93.38848 },
+      "luminance": 167.98482,
+      "luminanceWCAG": 0.9278,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=ffff00&name=yellow",
+        "svg": "/v1/swatch/?color=ffff00"
+      }
+    },
+    {
+      "name": "mistyrose",
+      "hex": "#ffe4e1",
+      "rgb": { "r": 255, "g": 228, "b": 225 },
+      "hsl": { "h": 6, "s": 100, "l": 94.11765 },
+      "lab": { "l": 92.76501, "a": 9.20172, "b": 5.02533 },
+      "luminance": 156.15152,
+      "luminanceWCAG": 0.82183,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=ffe4e1&name=mistyrose",
+        "svg": "/v1/swatch/?color=ffe4e1"
+      }
+    },
+    {
+      "name": "darkolivegreen",
+      "hex": "#556b2f",
+      "rgb": { "r": 85, "g": 107, "b": 47 },
+      "hsl": { "h": 82, "s": 38.96104, "l": 30.19608 },
+      "lab": { "l": 42.35915, "a": -16.40119, "b": 30.31528 },
+      "luminance": 67.96765,
+      "luminanceWCAG": 0.12652,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=556b2f&name=darkolivegreen",
+        "svg": "/v1/swatch/?color=556b2f"
+      }
+    },
+    {
+      "name": "olive",
+      "hex": "#808000",
+      "rgb": { "r": 128, "g": 128, "b": 0 },
+      "hsl": { "h": 60, "s": 100, "l": 25.09804 },
+      "lab": { "l": 52.1496, "a": -9.44969, "b": 56.02102 },
+      "luminance": 84.32179,
+      "luminanceWCAG": 0.20028,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=808000&name=olive",
+        "svg": "/v1/swatch/?color=808000"
+      }
+    },
+    {
+      "name": "darkseagreen",
+      "hex": "#8fbc8f",
+      "rgb": { "r": 143, "g": 188, "b": 143 },
+      "hsl": { "h": 120, "s": 25.13966, "l": 64.90196 },
+      "lab": { "l": 72.11309, "a": -22.20404, "b": 17.80512 },
+      "luminance": 119.467,
+      "luminanceWCAG": 0.43789,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=8fbc8f&name=darkseagreen",
+        "svg": "/v1/swatch/?color=8fbc8f"
+      }
+    },
+    {
+      "name": "pink",
+      "hex": "#ffc0cb",
+      "rgb": { "r": 255, "g": 192, "b": 203 },
+      "hsl": { "h": 350, "s": 100, "l": 87.64706 },
+      "lab": { "l": 83.78752, "a": 24.44007, "b": 3.75968 },
+      "luminance": 138.02552,
+      "luminanceWCAG": 0.63271,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=ffc0cb&name=pink",
+        "svg": "/v1/swatch/?color=ffc0cb"
+      }
+    },
+    {
+      "name": "tomato",
+      "hex": "#ff6347",
+      "rgb": { "r": 255, "g": 99, "b": 71 },
+      "hsl": { "h": 9, "s": 100, "l": 63.92157 },
+      "lab": { "l": 62.99175, "a": 59.37104, "b": 47.87936 },
+      "luminance": 96.20776,
+      "luminanceWCAG": 0.30639,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=ff6347&name=tomato",
+        "svg": "/v1/swatch/?color=ff6347"
+      }
+    },
+    {
+      "name": "lightcoral",
+      "hex": "#f08080",
+      "rgb": { "r": 240, "g": 128, "b": 128 },
+      "hsl": { "h": 0, "s": 78.87324, "l": 72.15686 },
+      "lab": { "l": 66.65065, "a": 43.82987, "b": 20.5107 },
+      "luminance": 104.91827,
+      "luminanceWCAG": 0.35522,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=f08080&name=lightcoral",
+        "svg": "/v1/swatch/?color=f08080"
+      }
+    },
+    {
+      "name": "orangered",
+      "hex": "#ff4500",
+      "rgb": { "r": 255, "g": 69, "b": 0 },
+      "hsl": { "h": 16, "s": 100, "l": 50 },
+      "lab": { "l": 58.52427, "a": 69.17711, "b": 70.89158 },
+      "luminance": 86.33535,
+      "luminanceWCAG": 0.25516,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=ff4500&name=orangered",
+        "svg": "/v1/swatch/?color=ff4500"
+      }
+    },
+    {
+      "name": "navajowhite",
+      "hex": "#ffdead",
+      "rgb": { "r": 255, "g": 222, "b": 173 },
+      "hsl": { "h": 36, "s": 100, "l": 83.92157 },
+      "lab": { "l": 90.39002, "a": 6.73461, "b": 28.541 },
+      "luminance": 152.26292,
+      "luminanceWCAG": 0.7652,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=ffdead&name=navajowhite",
+        "svg": "/v1/swatch/?color=ffdead"
+      }
+    },
+    {
+      "name": "lime",
+      "hex": "#00ff00",
+      "rgb": { "r": 0, "g": 255, "b": 0 },
+      "hsl": { "h": 120, "s": 100, "l": 50 },
+      "lab": { "l": 87.81813, "a": -79.28728, "b": 80.99026 },
+      "luminance": 149.685,
+      "luminanceWCAG": 0.7152,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=00ff00&name=lime",
+        "svg": "/v1/swatch/?color=00ff00"
+      }
+    },
+    {
+      "name": "palegreen",
+      "hex": "#98fb98",
+      "rgb": { "r": 152, "g": 251, "b": 152 },
+      "hsl": { "h": 120, "s": 92.52336, "l": 79.01961 },
+      "lab": { "l": 90.80088, "a": -44.8508, "b": 37.94694 },
+      "luminance": 155.15789,
+      "luminanceWCAG": 0.77937,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=98fb98&name=palegreen",
+        "svg": "/v1/swatch/?color=98fb98"
+      }
+    },
+    {
+      "name": "darkslategrey",
+      "hex": "#2f4f4f",
+      "rgb": { "r": 47, "g": 79, "b": 79 },
+      "hsl": { "h": 180, "s": 25.39683, "l": 24.70588 },
+      "lab": { "l": 31.14097, "a": -12.26289, "b": -3.93662 },
+      "luminance": 49.28539,
+      "luminanceWCAG": 0.06761,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=2f4f4f&name=darkslategrey",
+        "svg": "/v1/swatch/?color=2f4f4f"
+      }
+    },
+    {
+      "name": "greenyellow",
+      "hex": "#adff2f",
+      "rgb": { "r": 173, "g": 255, "b": 47 },
+      "hsl": { "h": 84, "s": 100, "l": 59.21569 },
+      "lab": { "l": 92.20209, "a": -46.42158, "b": 80.44819 },
+      "luminance": 158.46132,
+      "luminanceWCAG": 0.80609,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=adff2f&name=greenyellow",
+        "svg": "/v1/swatch/?color=adff2f"
+      }
+    },
+    {
+      "name": "burlywood",
+      "hex": "#deb887",
+      "rgb": { "r": 222, "g": 184, "b": 135 },
+      "hsl": { "h": 34, "s": 56.86275, "l": 70 },
+      "lab": { "l": 77.33053, "a": 9.28314, "b": 30.31923 },
+      "luminance": 127.7052,
+      "luminanceWCAG": 0.5156,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=deb887&name=burlywood",
+        "svg": "/v1/swatch/?color=deb887"
+      }
+    },
+    {
+      "name": "seashell",
+      "hex": "#fff5ee",
+      "rgb": { "r": 255, "g": 245, "b": 238 },
+      "hsl": { "h": 25, "s": 100, "l": 96.66667 },
+      "lab": { "l": 97.18344, "a": 2.58869, "b": 4.63529 },
+      "luminance": 165.02182,
+      "luminanceWCAG": 0.92738,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=fff5ee&name=seashell",
+        "svg": "/v1/swatch/?color=fff5ee"
+      }
+    },
+    {
+      "name": "mediumspringgreen",
+      "hex": "#00fa9a",
+      "rgb": { "r": 0, "g": 250, "b": 154 },
+      "hsl": { "h": 157, "s": 100, "l": 49.01961 },
+      "lab": { "l": 87.23686, "a": -67.67551, "b": 31.60318 },
+      "luminance": 147.7964,
+      "luminanceWCAG": 0.70704,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=00fa9a&name=mediumspringgreen",
+        "svg": "/v1/swatch/?color=00fa9a"
+      }
+    },
+    {
+      "name": "fuchsia",
+      "hex": "#ff00ff",
+      "rgb": { "r": 255, "g": 0, "b": 255 },
+      "hsl": { "h": 300, "s": 100, "l": 50 },
+      "lab": { "l": 60.1697, "a": 93.55002, "b": -60.49856 },
+      "luminance": 81.5988,
+      "luminanceWCAG": 0.2848,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=ff00ff&name=fuchsia",
+        "svg": "/v1/swatch/?color=ff00ff"
+      }
+    },
+    {
+      "name": "papayawhip",
+      "hex": "#ffefd5",
+      "rgb": { "r": 255, "g": 239, "b": 213 },
+      "hsl": { "h": 37, "s": 100, "l": 91.76471 },
+      "lab": { "l": 95.22899, "a": 2.53902, "b": 14.6759 },
+      "luminance": 161.50864,
+      "luminanceWCAG": 0.87797,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=ffefd5&name=papayawhip",
+        "svg": "/v1/swatch/?color=ffefd5"
+      }
+    },
+    {
+      "name": "blanchedalmond",
+      "hex": "#ffebcd",
+      "rgb": { "r": 255, "g": 235, "b": 205 },
+      "hsl": { "h": 36, "s": 100, "l": 90.19608 },
+      "lab": { "l": 94.10124, "a": 3.58903, "b": 17.20679 },
+      "luminance": 159.337,
+      "luminanceWCAG": 0.85084,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=ffebcd&name=blanchedalmond",
+        "svg": "/v1/swatch/?color=ffebcd"
+      }
+    },
+    {
+      "name": "chartreuse",
+      "hex": "#7fff00",
+      "rgb": { "r": 127, "g": 255, "b": 0 },
+      "hsl": { "h": 90, "s": 100, "l": 50 },
+      "lab": { "l": 90.0494, "a": -61.49689, "b": 83.85244 },
+      "luminance": 154.42651,
+      "luminanceWCAG": 0.76032,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=7fff00&name=chartreuse",
+        "svg": "/v1/swatch/?color=7fff00"
+      }
+    },
+    {
+      "name": "dimgray",
+      "hex": "#696969",
+      "rgb": { "r": 105, "g": 105, "b": 105 },
+      "hsl": { "h": 0, "s": 0, "l": 41.17647 },
+      "lab": { "l": 44.41356, "a": 0, "b": 0 },
+      "luminance": 70.19829,
+      "luminanceWCAG": 0.14126,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=696969&name=dimgray",
+        "svg": "/v1/swatch/?color=696969"
+      }
+    },
+    {
+      "name": "black",
+      "hex": "#000000",
+      "rgb": { "r": 0, "g": 0, "b": 0 },
+      "hsl": { "h": 0, "s": 0, "l": 0 },
+      "lab": { "l": 0, "a": 0, "b": 0 },
+      "luminance": 0,
+      "luminanceWCAG": 0,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=000000&name=black",
+        "svg": "/v1/swatch/?color=000000"
+      }
+    },
+    {
+      "name": "peachpuff",
+      "hex": "#ffdab9",
+      "rgb": { "r": 255, "g": 218, "b": 185 },
+      "hsl": { "h": 28, "s": 100, "l": 86.27451 },
+      "lab": { "l": 89.60419, "a": 9.78611, "b": 21.32411 },
+      "luminance": 150.44396,
+      "luminanceWCAG": 0.74906,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=ffdab9&name=peachpuff",
+        "svg": "/v1/swatch/?color=ffdab9"
+      }
+    },
+    {
+      "name": "springgreen",
+      "hex": "#00ff7f",
+      "rgb": { "r": 0, "g": 255, "b": 127 },
+      "hsl": { "h": 150, "s": 100, "l": 50 },
+      "lab": { "l": 88.43547, "a": -72.51326, "b": 45.97458 },
+      "luminance": 150.38355,
+      "luminanceWCAG": 0.73052,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=00ff7f&name=springgreen",
+        "svg": "/v1/swatch/?color=00ff7f"
+      }
+    },
+    {
+      "name": "aquamarine",
+      "hex": "#7fffd4",
+      "rgb": { "r": 127, "g": 255, "b": 212 },
+      "hsl": { "h": 160, "s": 100, "l": 74.90196 },
+      "lab": { "l": 91.86446, "a": -44.85543, "b": 9.15315 },
+      "luminance": 156.30624,
+      "luminanceWCAG": 0.80785,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=7fffd4&name=aquamarine",
+        "svg": "/v1/swatch/?color=7fffd4"
+      }
+    },
+    {
+      "name": "white",
+      "hex": "#ffffff",
+      "rgb": { "r": 255, "g": 255, "b": 255 },
+      "hsl": { "h": 0, "s": 0, "l": 100 },
+      "lab": { "l": 100, "a": 0, "b": 0 },
+      "luminance": 170.48157,
+      "luminanceWCAG": 1,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=ffffff&name=white",
+        "svg": "/v1/swatch/?color=ffffff"
+      }
+    },
+    {
+      "name": "orange",
+      "hex": "#ffa500",
+      "rgb": { "r": 255, "g": 165, "b": 0 },
+      "hsl": { "h": 39, "s": 100, "l": 50 },
+      "lab": { "l": 75.59039, "a": 27.5193, "b": 79.11622 },
+      "luminance": 123.26472,
+      "luminanceWCAG": 0.4817,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=ffa500&name=orange",
+        "svg": "/v1/swatch/?color=ffa500"
+      }
+    },
+    {
+      "name": "lightsalmon",
+      "hex": "#ffa07a",
+      "rgb": { "r": 255, "g": 160, "b": 122 },
+      "hsl": { "h": 17, "s": 100, "l": 73.92157 },
+      "lab": { "l": 75.22105, "a": 33.50526, "b": 35.33166 },
+      "luminance": 121.76904,
+      "luminanceWCAG": 0.47807,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=ffa07a&name=lightsalmon",
+        "svg": "/v1/swatch/?color=ffa07a"
+      }
+    },
+    {
+      "name": "darkslategray",
+      "hex": "#2f4f4f",
+      "rgb": { "r": 47, "g": 79, "b": 79 },
+      "hsl": { "h": 180, "s": 25.39683, "l": 24.70588 },
+      "lab": { "l": 31.14097, "a": -12.26289, "b": -3.93662 },
+      "luminance": 49.28539,
+      "luminanceWCAG": 0.06761,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=2f4f4f&name=darkslategray",
+        "svg": "/v1/swatch/?color=2f4f4f"
+      }
+    },
+    {
+      "name": "brown",
+      "hex": "#a52a2a",
+      "rgb": { "r": 165, "g": 42, "b": 42 },
+      "hsl": { "h": 0, "s": 59.42029, "l": 40.58824 },
+      "lab": { "l": 38.14967, "a": 50.38877, "b": 31.83406 },
+      "luminance": 55.35961,
+      "luminanceWCAG": 0.09822,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=a52a2a&name=brown",
+        "svg": "/v1/swatch/?color=a52a2a"
+      }
+    },
+    {
+      "name": "ivory",
+      "hex": "#fffff0",
+      "rgb": { "r": 255, "g": 255, "b": 240 },
+      "hsl": { "h": 60, "s": 100, "l": 97.05882 },
+      "lab": { "l": 99.69772, "a": -1.89881, "b": 7.19427 },
+      "luminance": 170.19832,
+      "luminanceWCAG": 0.99071,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=fffff0&name=ivory",
+        "svg": "/v1/swatch/?color=fffff0"
+      }
+    },
+    {
+      "name": "dodgerblue",
+      "hex": "#1e90ff",
+      "rgb": { "r": 30, "g": 144, "b": 255 },
+      "hsl": { "h": 210, "s": 100, "l": 55.88235 },
+      "lab": { "l": 58.36205, "a": 0.88974, "b": -64.7788 },
+      "luminance": 89.83601,
+      "luminanceWCAG": 0.27443,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=1e90ff&name=dodgerblue",
+        "svg": "/v1/swatch/?color=1e90ff"
+      }
+    },
+    {
+      "name": "peru",
+      "hex": "#cd853f",
+      "rgb": { "r": 205, "g": 133, "b": 63 },
+      "hsl": { "h": 30, "s": 58.67769, "l": 52.54902 },
+      "lab": { "l": 62.25317, "a": 23.95047, "b": 48.4108 },
+      "luminance": 99.51753,
+      "luminanceWCAG": 0.30113,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=cd853f&name=peru",
+        "svg": "/v1/swatch/?color=cd853f"
+      }
+    },
+    {
+      "name": "lawngreen",
+      "hex": "#7cfc00",
+      "rgb": { "r": 124, "g": 252, "b": 0 },
+      "hsl": { "h": 90, "s": 100, "l": 49.41176 },
+      "lab": { "l": 89.04943, "a": -61.33856, "b": 83.03603 },
+      "luminance": 152.49964,
+      "luminanceWCAG": 0.73906,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=7cfc00&name=lawngreen",
+        "svg": "/v1/swatch/?color=7cfc00"
+      }
+    },
+    {
+      "name": "chocolate",
+      "hex": "#d2691e",
+      "rgb": { "r": 210, "g": 105, "b": 30 },
+      "hsl": { "h": 25, "s": 75, "l": 47.05882 },
+      "lab": { "l": 56.6299, "a": 39.24148, "b": 57.55092 },
+      "luminance": 88.05199,
+      "luminanceWCAG": 0.23899,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=d2691e&name=chocolate",
+        "svg": "/v1/swatch/?color=d2691e"
+      }
+    },
+    {
+      "name": "crimson",
+      "hex": "#dc143c",
+      "rgb": { "r": 220, "g": 20, "b": 60 },
+      "hsl": { "h": 348, "s": 83.33333, "l": 47.05882 },
+      "lab": { "l": 47.87965, "a": 71.28268, "b": 35.48112 },
+      "luminance": 67.16861,
+      "luminanceWCAG": 0.16042,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=dc143c&name=crimson",
+        "svg": "/v1/swatch/?color=dc143c"
+      }
+    },
+    {
+      "name": "forestgreen",
+      "hex": "#228b22",
+      "rgb": { "r": 34, "g": 139, "b": 34 },
+      "hsl": { "h": 120, "s": 60.69364, "l": 33.92157 },
+      "lab": { "l": 50.64209, "a": -45.72481, "b": 44.02941 },
+      "luminance": 82.31518,
+      "luminanceWCAG": 0.18921,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=228b22&name=forestgreen",
+        "svg": "/v1/swatch/?color=228b22"
+      }
+    },
+    {
+      "name": "darkgrey",
+      "hex": "#a9a9a9",
+      "rgb": { "r": 169, "g": 169, "b": 169 },
+      "hsl": { "h": 0, "s": 0, "l": 66.27451 },
+      "lab": { "l": 69.2378, "a": 0, "b": 0 },
+      "luminance": 112.98582,
+      "luminanceWCAG": 0.39676,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=a9a9a9&name=darkgrey",
+        "svg": "/v1/swatch/?color=a9a9a9"
+      }
+    },
+    {
+      "name": "lightseagreen",
+      "hex": "#20b2aa",
+      "rgb": { "r": 32, "g": 178, "b": 170 },
+      "hsl": { "h": 177, "s": 69.52381, "l": 41.17647 },
+      "lab": { "l": 65.49372, "a": -38.83695, "b": -6.91881 },
+      "luminance": 106.69796,
+      "luminanceWCAG": 0.3505,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=20b2aa&name=lightseagreen",
+        "svg": "/v1/swatch/?color=20b2aa"
+      }
+    },
+    {
+      "name": "cyan",
+      "hex": "#00ffff",
+      "rgb": { "r": 0, "g": 255, "b": 255 },
+      "hsl": { "h": 180, "s": 100, "l": 50 },
+      "lab": { "l": 90.66549, "a": -50.66542, "b": -14.96203 },
+      "luminance": 152.48168,
+      "luminanceWCAG": 0.7874,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=00ffff&name=cyan",
+        "svg": "/v1/swatch/?color=00ffff"
+      }
+    },
+    {
+      "name": "mintcream",
+      "hex": "#f5fffa",
+      "rgb": { "r": 245, "g": 255, "b": 250 },
+      "hsl": { "h": 150, "s": 100, "l": 98.03922 },
+      "lab": { "l": 99.14283, "a": -4.06423, "b": 1.19569 },
+      "luminance": 169.06846,
+      "luminanceWCAG": 0.97835,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=f5fffa&name=mintcream",
+        "svg": "/v1/swatch/?color=f5fffa"
+      }
+    },
+    {
+      "name": "silver",
+      "hex": "#c0c0c0",
+      "rgb": { "r": 192, "g": 192, "b": 192 },
+      "hsl": { "h": 0, "s": 0, "l": 75.29412 },
+      "lab": { "l": 77.70436, "a": 0, "b": 0 },
+      "luminance": 128.36259,
+      "luminanceWCAG": 0.52712,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=c0c0c0&name=silver",
+        "svg": "/v1/swatch/?color=c0c0c0"
+      }
+    },
+    {
+      "name": "antiquewhite",
+      "hex": "#faebd7",
+      "rgb": { "r": 250, "g": 235, "b": 215 },
+      "hsl": { "h": 34, "s": 77.77778, "l": 91.17647 },
+      "lab": { "l": 93.8599, "a": 2.86137, "b": 11.66344 },
+      "luminance": 158.79901,
+      "luminanceWCAG": 0.84647,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=faebd7&name=antiquewhite",
+        "svg": "/v1/swatch/?color=faebd7"
+      }
+    },
+    {
+      "name": "mediumorchid",
+      "hex": "#ba55d3",
+      "rgb": { "r": 186, "g": 85, "b": 211 },
+      "hsl": { "h": 288, "s": 58.8785, "l": 58.03922 },
+      "lab": { "l": 53.36971, "a": 55.02998, "b": -47.44981 },
+      "luminance": 78.49218,
+      "luminanceWCAG": 0.21639,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=ba55d3&name=mediumorchid",
+        "svg": "/v1/swatch/?color=ba55d3"
+      }
+    },
+    {
+      "name": "skyblue",
+      "hex": "#87ceeb",
+      "rgb": { "r": 135, "g": 206, "b": 235 },
+      "hsl": { "h": 197, "s": 71.42857, "l": 72.54902 },
+      "lab": { "l": 78.85251, "a": -17.54121, "b": -21.79179 },
+      "luminance": 130.26576,
+      "luminanceWCAG": 0.55292,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=87ceeb&name=skyblue",
+        "svg": "/v1/swatch/?color=87ceeb"
+      }
+    },
+    {
+      "name": "gray",
+      "hex": "#808080",
+      "rgb": { "r": 128, "g": 128, "b": 128 },
+      "hsl": { "h": 0, "s": 0, "l": 50.19608 },
+      "lab": { "l": 53.58501, "a": 0, "b": 0 },
+      "luminance": 85.57506,
+      "luminanceWCAG": 0.21586,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=808080&name=gray",
+        "svg": "/v1/swatch/?color=808080"
+      }
+    },
+    {
+      "name": "darkturquoise",
+      "hex": "#00ced1",
+      "rgb": { "r": 0, "g": 206, "b": 209 },
+      "hsl": { "h": 181, "s": 100, "l": 40.98039 },
+      "lab": { "l": 74.89497, "a": -42.43727, "b": -14.23039 },
+      "luminance": 123.24694,
+      "luminanceWCAG": 0.48746,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=00ced1&name=darkturquoise",
+        "svg": "/v1/swatch/?color=00ced1"
+      }
+    },
+    {
+      "name": "goldenrod",
+      "hex": "#daa520",
+      "rgb": { "r": 218, "g": 165, "b": 32 },
+      "hsl": { "h": 43, "s": 74.4, "l": 49.01961 },
+      "lab": { "l": 71.32415, "a": 12.20918, "b": 68.68125 },
+      "luminance": 116.80279,
+      "luminanceWCAG": 0.4192,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=daa520&name=goldenrod",
+        "svg": "/v1/swatch/?color=daa520"
+      }
+    },
+    {
+      "name": "darkgreen",
+      "hex": "#006400",
+      "rgb": { "r": 0, "g": 100, "b": 0 },
+      "hsl": { "h": 120, "s": 100, "l": 19.60784 },
+      "lab": { "l": 36.24433, "a": -39.89969, "b": 40.75667 },
+      "luminance": 58.7,
+      "luminanceWCAG": 0.09114,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=006400&name=darkgreen",
+        "svg": "/v1/swatch/?color=006400"
+      }
+    },
+    {
+      "name": "floralwhite",
+      "hex": "#fffaf0",
+      "rgb": { "r": 255, "g": 250, "b": 240 },
+      "hsl": { "h": 40, "s": 100, "l": 97.05882 },
+      "lab": { "l": 98.4577, "a": 0.45991, "b": 5.4307 },
+      "luminance": 167.62289,
+      "luminanceWCAG": 0.95922,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=fffaf0&name=floralwhite",
+        "svg": "/v1/swatch/?color=fffaf0"
+      }
+    },
+    {
+      "name": "darkviolet",
+      "hex": "#9400d3",
+      "rgb": { "r": 148, "g": 0, "b": 211 },
+      "hsl": { "h": 282, "s": 100, "l": 41.37255 },
+      "lab": { "l": 38.79089, "a": 70.44143, "b": -71.23902 },
+      "luminance": 50.367,
+      "luminanceWCAG": 0.10999,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=9400d3&name=darkviolet",
+        "svg": "/v1/swatch/?color=9400d3"
+      }
+    },
+    {
+      "name": "darkgray",
+      "hex": "#a9a9a9",
+      "rgb": { "r": 169, "g": 169, "b": 169 },
+      "hsl": { "h": 0, "s": 0, "l": 66.27451 },
+      "lab": { "l": 69.2378, "a": 0, "b": 0 },
+      "luminance": 112.98582,
+      "luminanceWCAG": 0.39676,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=a9a9a9&name=darkgray",
+        "svg": "/v1/swatch/?color=a9a9a9"
+      }
+    },
+    {
+      "name": "moccasin",
+      "hex": "#ffe4b5",
+      "rgb": { "r": 255, "g": 228, "b": 181 },
+      "hsl": { "h": 38, "s": 100, "l": 85.4902 },
+      "lab": { "l": 91.98396, "a": 4.56464, "b": 26.58882 },
+      "luminance": 155.40636,
+      "luminanceWCAG": 0.80083,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=ffe4b5&name=moccasin",
+        "svg": "/v1/swatch/?color=ffe4b5"
+      }
+    },
+    {
+      "name": "saddlebrown",
+      "hex": "#8b4513",
+      "rgb": { "r": 139, "g": 69, "b": 19 },
+      "hsl": { "h": 25, "s": 75.94937, "l": 30.98039 },
+      "lab": { "l": 37.93272, "a": 28.07832, "b": 41.56419 },
+      "luminance": 58.07324,
+      "luminanceWCAG": 0.09792,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=8b4513&name=saddlebrown",
+        "svg": "/v1/swatch/?color=8b4513"
+      }
+    },
+    {
+      "name": "grey",
+      "hex": "#808080",
+      "rgb": { "r": 128, "g": 128, "b": 128 },
+      "hsl": { "h": 0, "s": 0, "l": 50.19608 },
+      "lab": { "l": 53.58501, "a": 0, "b": 0 },
+      "luminance": 85.57506,
+      "luminanceWCAG": 0.21586,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=808080&name=grey",
+        "svg": "/v1/swatch/?color=808080"
+      }
+    },
+    {
+      "name": "darkslateblue",
+      "hex": "#483d8b",
+      "rgb": { "r": 72, "g": 61, "b": 139 },
+      "hsl": { "h": 248, "s": 39, "l": 39.21569 },
+      "lab": { "l": 30.28431, "a": 21.41707, "b": -42.74299 },
+      "luminance": 44.68436,
+      "luminanceWCAG": 0.06579,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=483d8b&name=darkslateblue",
+        "svg": "/v1/swatch/?color=483d8b"
+      }
+    },
+    {
+      "name": "lightskyblue",
+      "hex": "#87cefa",
+      "rgb": { "r": 135, "g": 206, "b": 250 },
+      "hsl": { "h": 203, "s": 92, "l": 75.4902 },
+      "lab": { "l": 79.28939, "a": -14.43263, "b": -29.09577 },
+      "luminance": 130.62815,
+      "luminanceWCAG": 0.56196,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=87cefa&name=lightskyblue",
+        "svg": "/v1/swatch/?color=87cefa"
+      }
+    },
+    {
+      "name": "lightpink",
+      "hex": "#ffb6c1",
+      "rgb": { "r": 255, "g": 182, "b": 193 },
+      "hsl": { "h": 351, "s": 100, "l": 85.68627 },
+      "lab": { "l": 81.30117, "a": 28.36519, "b": 5.55681 },
+      "luminance": 133.08227,
+      "luminanceWCAG": 0.58566,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=ffb6c1&name=lightpink",
+        "svg": "/v1/swatch/?color=ffb6c1"
+      }
+    },
+    {
+      "name": "mediumvioletred",
+      "hex": "#c71585",
+      "rgb": { "r": 199, "g": 21, "b": 133 },
+      "hsl": { "h": 322, "s": 80.90909, "l": 43.13725 },
+      "lab": { "l": 45.17489, "a": 69.57279, "b": -14.06415 },
+      "luminance": 62.62755,
+      "luminanceWCAG": 0.14372,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=c71585&name=mediumvioletred",
+        "svg": "/v1/swatch/?color=c71585"
+      }
+    },
+    {
+      "name": "slategrey",
+      "hex": "#708090",
+      "rgb": { "r": 112, "g": 128, "b": 144 },
+      "hsl": { "h": 210, "s": 12.59843, "l": 50.19608 },
+      "lab": { "l": 52.69726, "a": -3.28443, "b": -10.7433 },
+      "luminance": 83.88295,
+      "luminanceWCAG": 0.20897,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=708090&name=slategrey",
+        "svg": "/v1/swatch/?color=708090"
+      }
+    },
+    {
+      "name": "red",
+      "hex": "#ff0000",
+      "rgb": { "r": 255, "g": 0, "b": 0 },
+      "hsl": { "h": 0, "s": 100, "l": 50 },
+      "lab": { "l": 54.29173, "a": 80.81246, "b": 69.88504 },
+      "luminance": 76.245,
+      "luminanceWCAG": 0.2126,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=ff0000&name=red",
+        "svg": "/v1/swatch/?color=ff0000"
+      }
+    },
+    {
+      "name": "deeppink",
+      "hex": "#ff1493",
+      "rgb": { "r": 255, "g": 20, "b": 147 },
+      "hsl": { "h": 328, "s": 100, "l": 53.92157 },
+      "lab": { "l": 56.60526, "a": 83.45842, "b": -4.11931 },
+      "luminance": 78.94275,
+      "luminanceWCAG": 0.23867,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=ff1493&name=deeppink",
+        "svg": "/v1/swatch/?color=ff1493"
+      }
+    },
+    {
+      "name": "limegreen",
+      "hex": "#32cd32",
+      "rgb": { "r": 50, "g": 205, "b": 50 },
+      "hsl": { "h": 120, "s": 60.78431, "l": 50 },
+      "lab": { "l": 72.67286, "a": -61.87811, "b": 60.05825 },
+      "luminance": 121.39401,
+      "luminanceWCAG": 0.44571,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=32cd32&name=limegreen",
+        "svg": "/v1/swatch/?color=32cd32"
+      }
+    },
+    {
+      "name": "darkmagenta",
+      "hex": "#8b008b",
+      "rgb": { "r": 139, "g": 0, "b": 139 },
+      "hsl": { "h": 300, "s": 100, "l": 27.2549 },
+      "lab": { "l": 32.50182, "a": 59.56892, "b": -38.52306 },
+      "luminance": 44.47935,
+      "luminanceWCAG": 0.07353,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=8b008b&name=darkmagenta",
+        "svg": "/v1/swatch/?color=8b008b"
+      }
+    },
+    {
+      "name": "palegoldenrod",
+      "hex": "#eee8aa",
+      "rgb": { "r": 238, "g": 232, "b": 170 },
+      "hsl": { "h": 55, "s": 66.66667, "l": 80 },
+      "lab": { "l": 91.37406, "a": -4.81736, "b": 31.04369 },
+      "luminance": 154.87316,
+      "luminanceWCAG": 0.78793,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=eee8aa&name=palegoldenrod",
+        "svg": "/v1/swatch/?color=eee8aa"
+      }
+    },
+    {
+      "name": "plum",
+      "hex": "#dda0dd",
+      "rgb": { "r": 221, "g": 160, "b": 221 },
+      "hsl": { "h": 300, "s": 47.28682, "l": 74.70588 },
+      "lab": { "l": 73.3321, "a": 30.64807, "b": -21.79516 },
+      "luminance": 117.56759,
+      "luminanceWCAG": 0.45734,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=dda0dd&name=plum",
+        "svg": "/v1/swatch/?color=dda0dd"
+      }
+    },
+    {
+      "name": "turquoise",
+      "hex": "#40e0d0",
+      "rgb": { "r": 64, "g": 224, "b": 208 },
+      "hsl": { "h": 174, "s": 72.07207, "l": 56.47059 },
+      "lab": { "l": 80.96103, "a": -45.14407, "b": -4.68222 },
+      "luminance": 134.97237,
+      "luminanceWCAG": 0.58955,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=40e0d0&name=turquoise",
+        "svg": "/v1/swatch/?color=40e0d0"
+      }
+    },
+    {
+      "name": "lightgrey",
+      "hex": "#d3d3d3",
+      "rgb": { "r": 211, "g": 211, "b": 211 },
+      "hsl": { "h": 0, "s": 0, "l": 82.7451 },
+      "lab": { "l": 84.55612, "a": 0, "b": 0 },
+      "luminance": 141.06514,
+      "luminanceWCAG": 0.65141,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=d3d3d3&name=lightgrey",
+        "svg": "/v1/swatch/?color=d3d3d3"
+      }
+    },
+    {
+      "name": "lightgoldenrodyellow",
+      "hex": "#fafad2",
+      "rgb": { "r": 250, "g": 250, "b": 210 },
+      "hsl": { "h": 60, "s": 80, "l": 90.19608 },
+      "lab": { "l": 97.51467, "a": -4.80555, "b": 19.29233 },
+      "luminance": 166.4219,
+      "luminanceWCAG": 0.93348,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=fafad2&name=lightgoldenrodyellow",
+        "svg": "/v1/swatch/?color=fafad2"
+      }
+    },
+    {
+      "name": "darkgoldenrod",
+      "hex": "#b8860b",
+      "rgb": { "r": 184, "g": 134, "b": 11 },
+      "hsl": { "h": 43, "s": 88.71795, "l": 38.23529 },
+      "lab": { "l": 59.68545, "a": 13.06356, "b": 62.64386 },
+      "luminance": 95.99695,
+      "luminanceWCAG": 0.27265,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=b8860b&name=darkgoldenrod",
+        "svg": "/v1/swatch/?color=b8860b"
+      }
+    },
+    {
+      "name": "lavender",
+      "hex": "#e6e6fa",
+      "rgb": { "r": 230, "g": 230, "b": 250 },
+      "hsl": { "h": 240, "s": 66.66667, "l": 94.11765 },
+      "lab": { "l": 91.74226, "a": 2.7758, "b": -9.72408 },
+      "luminance": 154.17283,
+      "luminanceWCAG": 0.80319,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=e6e6fa&name=lavender",
+        "svg": "/v1/swatch/?color=e6e6fa"
+      }
+    },
+    {
+      "name": "maroon",
+      "hex": "#800000",
+      "rgb": { "r": 128, "g": 0, "b": 0 },
+      "hsl": { "h": 0, "s": 100, "l": 25.09804 },
+      "lab": { "l": 26.16596, "a": 48.47703, "b": 39.43788 },
+      "luminance": 38.272,
+      "luminanceWCAG": 0.04589,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=800000&name=maroon",
+        "svg": "/v1/swatch/?color=800000"
+      }
+    },
+    {
+      "name": "yellowgreen",
+      "hex": "#9acd32",
+      "rgb": { "r": 154, "g": 205, "b": 50 },
+      "hsl": { "h": 80, "s": 60.78431, "l": 50 },
+      "lab": { "l": 76.7689, "a": -33.10325, "b": 65.62293 },
+      "luminance": 128.9699,
+      "luminanceWCAG": 0.50763,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=9acd32&name=yellowgreen",
+        "svg": "/v1/swatch/?color=9acd32"
+      }
+    },
+    {
+      "name": "sandybrown",
+      "hex": "#f4a460",
+      "rgb": { "r": 244, "g": 164, "b": 96 },
+      "hsl": { "h": 28, "s": 87.05882, "l": 66.66667 },
+      "lab": { "l": 74.47758, "a": 25.72634, "b": 47.37624 },
+      "luminance": 121.28428,
+      "luminanceWCAG": 0.46629,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=f4a460&name=sandybrown",
+        "svg": "/v1/swatch/?color=f4a460"
+      }
+    },
+    {
+      "name": "thistle",
+      "hex": "#d8bfd8",
+      "rgb": { "r": 216, "g": 191, "b": 216 },
+      "hsl": { "h": 300, "s": 24.27184, "l": 79.80392 },
+      "lab": { "l": 80.06167, "a": 12.4104, "b": -9.13808 },
+      "luminance": 131.7105,
+      "luminanceWCAG": 0.56818,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=d8bfd8&name=thistle",
+        "svg": "/v1/swatch/?color=d8bfd8"
+      }
+    },
+    {
+      "name": "violet",
+      "hex": "#ee82ee",
+      "rgb": { "r": 238, "g": 130, "b": 238 },
+      "hsl": { "h": 300, "s": 76.05634, "l": 72.15686 },
+      "lab": { "l": 69.61842, "a": 53.30188, "b": -36.53655 },
+      "luminance": 107.81184,
+      "luminanceWCAG": 0.40315,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=ee82ee&name=violet",
+        "svg": "/v1/swatch/?color=ee82ee"
+      }
+    },
+    {
+      "name": "navy",
+      "hex": "#000080",
+      "rgb": { "r": 0, "g": 0, "b": 128 },
+      "hsl": { "h": 240, "s": 100, "l": 25.09804 },
+      "lab": { "l": 11.33466, "a": 40.97037, "b": -67.20318 },
+      "luminance": 14.592,
+      "luminanceWCAG": 0.01559,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=000080&name=navy",
+        "svg": "/v1/swatch/?color=000080"
+      }
+    },
+    {
+      "name": "magenta",
+      "hex": "#ff00ff",
+      "rgb": { "r": 255, "g": 0, "b": 255 },
+      "hsl": { "h": 300, "s": 100, "l": 50 },
+      "lab": { "l": 60.1697, "a": 93.55002, "b": -60.49856 },
+      "luminance": 81.5988,
+      "luminanceWCAG": 0.2848,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=ff00ff&name=magenta",
+        "svg": "/v1/swatch/?color=ff00ff"
+      }
+    },
+    {
+      "name": "dimgrey",
+      "hex": "#696969",
+      "rgb": { "r": 105, "g": 105, "b": 105 },
+      "hsl": { "h": 0, "s": 0, "l": 41.17647 },
+      "lab": { "l": 44.41356, "a": 0, "b": 0 },
+      "luminance": 70.19829,
+      "luminanceWCAG": 0.14126,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=696969&name=dimgrey",
+        "svg": "/v1/swatch/?color=696969"
+      }
+    },
+    {
+      "name": "tan",
+      "hex": "#d2b48c",
+      "rgb": { "r": 210, "g": 180, "b": 140 },
+      "hsl": { "h": 34, "s": 43.75, "l": 68.62745 },
+      "lab": { "l": 75.2323, "a": 6.92779, "b": 24.67933 },
+      "luminance": 123.94088,
+      "luminanceWCAG": 0.48238,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=d2b48c&name=tan",
+        "svg": "/v1/swatch/?color=d2b48c"
+      }
+    },
+    {
+      "name": "rosybrown",
+      "hex": "#bc8f8f",
+      "rgb": { "r": 188, "g": 143, "b": 143 },
+      "hsl": { "h": 0, "s": 25.13966, "l": 64.90196 },
+      "lab": { "l": 63.79119, "a": 17.55759, "b": 6.9577 },
+      "luminance": 102.33101,
+      "luminanceWCAG": 0.32319,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=bc8f8f&name=rosybrown",
+        "svg": "/v1/swatch/?color=bc8f8f"
+      }
+    },
+    {
+      "name": "olivedrab",
+      "hex": "#6b8e23",
+      "rgb": { "r": 107, "g": 142, "b": 35 },
+      "hsl": { "h": 80, "s": 60.45198, "l": 34.70588 },
+      "lab": { "l": 54.82915, "a": -24.5579, "b": 49.00374 },
+      "luminance": 89.37204,
+      "luminanceWCAG": 0.22593,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=6b8e23&name=olivedrab",
+        "svg": "/v1/swatch/?color=6b8e23"
+      }
+    },
+    {
+      "name": "blue",
+      "hex": "#0000ff",
+      "rgb": { "r": 0, "g": 0, "b": 255 },
+      "hsl": { "h": 240, "s": 100, "l": 50 },
+      "lab": { "l": 29.56757, "a": 68.29865, "b": -112.02943 },
+      "luminance": 29.07,
+      "luminanceWCAG": 0.0722,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=0000ff&name=blue",
+        "svg": "/v1/swatch/?color=0000ff"
+      }
+    },
+    {
+      "name": "lightblue",
+      "hex": "#add8e6",
+      "rgb": { "r": 173, "g": 216, "b": 230 },
+      "hsl": { "h": 195, "s": 53.27103, "l": 79.01961 },
+      "lab": { "l": 83.61137, "a": -12.228, "b": -11.78209 },
+      "luminance": 139.42518,
+      "luminanceWCAG": 0.63709,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=add8e6&name=lightblue",
+        "svg": "/v1/swatch/?color=add8e6"
+      }
+    },
+    {
+      "name": "ghostwhite",
+      "hex": "#f8f8ff",
+      "rgb": { "r": 248, "g": 248, "b": 255 },
+      "hsl": { "h": 240, "s": 100, "l": 98.62745 },
+      "lab": { "l": 97.72871, "a": 0.93137, "b": -3.36448 },
+      "luminance": 165.93961,
+      "luminanceWCAG": 0.94311,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=f8f8ff&name=ghostwhite",
+        "svg": "/v1/swatch/?color=f8f8ff"
+      }
+    },
+    {
+      "name": "honeydew",
+      "hex": "#f0fff0",
+      "rgb": { "r": 240, "g": 255, "b": 240 },
+      "hsl": { "h": 120, "s": 100, "l": 97.05882 },
+      "lab": { "l": 98.57436, "a": -7.0788, "b": 5.41422 },
+      "luminance": 168.23694,
+      "luminanceWCAG": 0.96337,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=f0fff0&name=honeydew",
+        "svg": "/v1/swatch/?color=f0fff0"
+      }
+    },
+    {
+      "name": "cornflowerblue",
+      "hex": "#6495ed",
+      "rgb": { "r": 100, "g": 149, "b": 237 },
+      "hsl": { "h": 219, "s": 79.19075, "l": 66.07843 },
+      "lab": { "l": 61.23293, "a": 3.04803, "b": -50.18773 },
+      "luminance": 96.30036,
+      "luminanceWCAG": 0.30319,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=6495ed&name=cornflowerblue",
+        "svg": "/v1/swatch/?color=6495ed"
+      }
+    },
+    {
+      "name": "slateblue",
+      "hex": "#6a5acd",
+      "rgb": { "r": 106, "g": 90, "b": 205 },
+      "hsl": { "h": 248, "s": 53.48837, "l": 57.84314 },
+      "lab": { "l": 44.57099, "a": 29.65595, "b": -58.71476 },
+      "luminance": 65.89139,
+      "luminanceWCAG": 0.14784,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=6a5acd&name=slateblue",
+        "svg": "/v1/swatch/?color=6a5acd"
+      }
+    },
+    {
+      "name": "linen",
+      "hex": "#faf0e6",
+      "rgb": { "r": 250, "g": 240, "b": 230 },
+      "hsl": { "h": 30, "s": 66.66667, "l": 94.11765 },
+      "lab": { "l": 95.38529, "a": 2.23296, "b": 6.10967 },
+      "luminance": 161.62372,
+      "luminanceWCAG": 0.88357,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=faf0e6&name=linen",
+        "svg": "/v1/swatch/?color=faf0e6"
+      }
+    },
+    {
+      "name": "darkblue",
+      "hex": "#00008b",
+      "rgb": { "r": 0, "g": 0, "b": 139 },
+      "hsl": { "h": 240, "s": 100, "l": 27.2549 },
+      "lab": { "l": 13.01561, "a": 43.48985, "b": -71.33586 },
+      "luminance": 15.846,
+      "luminanceWCAG": 0.01864,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=00008b&name=darkblue",
+        "svg": "/v1/swatch/?color=00008b"
+      }
+    },
+    {
+      "name": "powderblue",
+      "hex": "#b0e0e6",
+      "rgb": { "r": 176, "g": 224, "b": 230 },
+      "hsl": { "h": 187, "s": 51.92308, "l": 79.60784 },
+      "lab": { "l": 85.95299, "a": -15.07068, "b": -8.31186 },
+      "luminance": 144.03426,
+      "luminanceWCAG": 0.68255,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=b0e0e6&name=powderblue",
+        "svg": "/v1/swatch/?color=b0e0e6"
+      }
+    },
+    {
+      "name": "seagreen",
+      "hex": "#2e8b57",
+      "rgb": { "r": 46, "g": 139, "b": 87 },
+      "hsl": { "h": 146, "s": 50.27027, "l": 36.27451 },
+      "lab": { "l": 51.48969, "a": -37.8708, "b": 19.577 },
+      "luminance": 83.33641,
+      "luminanceWCAG": 0.19734,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=2e8b57&name=seagreen",
+        "svg": "/v1/swatch/?color=2e8b57"
+      }
+    },
+    {
+      "name": "darkkhaki",
+      "hex": "#bdb76b",
+      "rgb": { "r": 189, "g": 183, "b": 107 },
+      "hsl": { "h": 56, "s": 38.31776, "l": 58.03922 },
+      "lab": { "l": 73.64958, "a": -5.81768, "b": 39.27706 },
+      "luminance": 121.98998,
+      "luminanceWCAG": 0.45747,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=bdb76b&name=darkkhaki",
+        "svg": "/v1/swatch/?color=bdb76b"
+      }
+    },
+    {
+      "name": "snow",
+      "hex": "#fffafa",
+      "rgb": { "r": 255, "g": 250, "b": 250 },
+      "hsl": { "h": 0, "s": 100, "l": 99.01961 },
+      "lab": { "l": 98.66102, "a": 1.71948, "b": 0.61964 },
+      "luminance": 167.81273,
+      "luminanceWCAG": 0.96533,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=fffafa&name=snow",
+        "svg": "/v1/swatch/?color=fffafa"
+      }
+    },
+    {
+      "name": "sienna",
+      "hex": "#a0522d",
+      "rgb": { "r": 160, "g": 82, "b": 45 },
+      "hsl": { "h": 19, "s": 56.09756, "l": 40.19608 },
+      "lab": { "l": 44.27532, "a": 30.91453, "b": 36.34654 },
+      "luminance": 68.0578,
+      "luminanceWCAG": 0.13698,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=a0522d&name=sienna",
+        "svg": "/v1/swatch/?color=a0522d"
+      }
+    },
+    {
+      "name": "mediumblue",
+      "hex": "#0000cd",
+      "rgb": { "r": 0, "g": 0, "b": 205 },
+      "hsl": { "h": 240, "s": 100, "l": 40.19608 },
+      "lab": { "l": 22.65598, "a": 57.93926, "b": -95.03705 },
+      "luminance": 23.37,
+      "luminanceWCAG": 0.04408,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=0000cd&name=mediumblue",
+        "svg": "/v1/swatch/?color=0000cd"
+      }
+    },
+    {
+      "name": "royalblue",
+      "hex": "#4169e1",
+      "rgb": { "r": 65, "g": 105, "b": 225 },
+      "hsl": { "h": 225, "s": 72.72727, "l": 56.86275 },
+      "lab": { "l": 46.79969, "a": 17.78638, "b": -66.65698 },
+      "luminance": 69.53068,
+      "luminanceWCAG": 0.16663,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=4169e1&name=royalblue",
+        "svg": "/v1/swatch/?color=4169e1"
+      }
+    },
+    {
+      "name": "lightcyan",
+      "hex": "#e0ffff",
+      "rgb": { "r": 224, "g": 255, "b": 255 },
+      "hsl": { "h": 180, "s": 100, "l": 93.92157 },
+      "lab": { "l": 97.76687, "a": -10.35248, "b": -3.56325 },
+      "luminance": 166.54263,
+      "luminanceWCAG": 0.94587,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=e0ffff&name=lightcyan",
+        "svg": "/v1/swatch/?color=e0ffff"
+      }
+    },
+    {
+      "name": "green",
+      "hex": "#008000",
+      "rgb": { "r": 0, "g": 128, "b": 0 },
+      "hsl": { "h": 120, "s": 100, "l": 25.09804 },
+      "lab": { "l": 46.27746, "a": -47.56213, "b": 48.58369 },
+      "luminance": 75.136,
+      "luminanceWCAG": 0.15438,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=008000&name=green",
+        "svg": "/v1/swatch/?color=008000"
+      }
+    },
+    {
+      "name": "mediumpurple",
+      "hex": "#9370db",
+      "rgb": { "r": 147, "g": 112, "b": 219 },
+      "hsl": { "h": 260, "s": 59.77654, "l": 64.90196 },
+      "lab": { "l": 54.45046, "a": 31.71062, "b": -50.62344 },
+      "luminance": 82.93034,
+      "luminanceWCAG": 0.22906,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=9370db&name=mediumpurple",
+        "svg": "/v1/swatch/?color=9370db"
+      }
+    },
+    {
+      "name": "midnightblue",
+      "hex": "#191970",
+      "rgb": { "r": 25, "g": 25, "b": 112 },
+      "hsl": { "h": 240, "s": 63.50365, "l": 26.86275 },
+      "lab": { "l": 14.92828, "a": 25.95955, "b": -50.90354 },
+      "luminance": 20.83874,
+      "luminanceWCAG": 0.02072,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=191970&name=midnightblue",
+        "svg": "/v1/swatch/?color=191970"
+      }
+    },
+    {
+      "name": "cornsilk",
+      "hex": "#fff8dc",
+      "rgb": { "r": 255, "g": 248, "b": 220 },
+      "hsl": { "h": 48, "s": 100, "l": 93.13725 },
+      "lab": { "l": 97.58407, "a": -0.95544, "b": 14.38673 },
+      "luminance": 166.23681,
+      "luminanceWCAG": 0.93562,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=fff8dc&name=cornsilk",
+        "svg": "/v1/swatch/?color=fff8dc"
+      }
+    },
+    {
+      "name": "paleturquoise",
+      "hex": "#afeeee",
+      "rgb": { "r": 175, "g": 238, "b": 238 },
+      "hsl": { "h": 180, "s": 64.94845, "l": 80.98039 },
+      "lab": { "l": 89.86577, "a": -20.50658, "b": -6.76251 },
+      "luminance": 151.63053,
+      "luminanceWCAG": 0.76436,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=afeeee&name=paleturquoise",
+        "svg": "/v1/swatch/?color=afeeee"
+      }
+    },
+    {
+      "name": "bisque",
+      "hex": "#ffe4c4",
+      "rgb": { "r": 255, "g": 228, "b": 196 },
+      "hsl": { "h": 33, "s": 100, "l": 88.43137 },
+      "lab": { "l": 92.22666, "a": 6.02224, "b": 19.24195 },
+      "luminance": 155.64263,
+      "luminanceWCAG": 0.80732,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=ffe4c4&name=bisque",
+        "svg": "/v1/swatch/?color=ffe4c4"
+      }
+    },
+    {
+      "name": "slategray",
+      "hex": "#708090",
+      "rgb": { "r": 112, "g": 128, "b": 144 },
+      "hsl": { "h": 210, "s": 12.59843, "l": 50.19608 },
+      "lab": { "l": 52.69726, "a": -3.28443, "b": -10.7433 },
+      "luminance": 83.88295,
+      "luminanceWCAG": 0.20897,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=708090&name=slategray",
+        "svg": "/v1/swatch/?color=708090"
+      }
+    },
+    {
+      "name": "darkcyan",
+      "hex": "#008b8b",
+      "rgb": { "r": 0, "g": 139, "b": 139 },
+      "hsl": { "h": 180, "s": 100, "l": 27.2549 },
+      "lab": { "l": 51.92032, "a": -32.26171, "b": -9.52722 },
+      "luminance": 83.11747,
+      "luminanceWCAG": 0.20329,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=008b8b&name=darkcyan",
+        "svg": "/v1/swatch/?color=008b8b"
+      }
+    },
+    {
+      "name": "khaki",
+      "hex": "#f0e68c",
+      "rgb": { "r": 240, "g": 230, "b": 140 },
+      "hsl": { "h": 54, "s": 76.92308, "l": 74.5098 },
+      "lab": { "l": 90.64487, "a": -5.59707, "b": 44.99666 },
+      "luminance": 153.72677,
+      "luminanceWCAG": 0.77012,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=f0e68c&name=khaki",
+        "svg": "/v1/swatch/?color=f0e68c"
+      }
+    },
+    {
+      "name": "wheat",
+      "hex": "#f5deb3",
+      "rgb": { "r": 245, "g": 222, "b": 179 },
+      "hsl": { "h": 39, "s": 76.74419, "l": 83.13725 },
+      "lab": { "l": 89.58682, "a": 3.47632, "b": 24.21068 },
+      "luminance": 150.87889,
+      "luminanceWCAG": 0.7491,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=f5deb3&name=wheat",
+        "svg": "/v1/swatch/?color=f5deb3"
+      }
+    },
+    {
+      "name": "teal",
+      "hex": "#008080",
+      "rgb": { "r": 0, "g": 128, "b": 128 },
+      "hsl": { "h": 180, "s": 100, "l": 25.09804 },
+      "lab": { "l": 47.98552, "a": -30.39271, "b": -8.97529 },
+      "luminance": 76.53983,
+      "luminanceWCAG": 0.16997,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=008080&name=teal",
+        "svg": "/v1/swatch/?color=008080"
+      }
+    },
+    {
+      "name": "darkorchid",
+      "hex": "#9932cc",
+      "rgb": { "r": 153, "g": 50, "b": 204 },
+      "hsl": { "h": 280, "s": 60.62992, "l": 49.80392 },
+      "lab": { "l": 42.81531, "a": 59.94868, "b": -60.62166 },
+      "luminance": 59.11897,
+      "luminanceWCAG": 0.13413,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=9932cc&name=darkorchid",
+        "svg": "/v1/swatch/?color=9932cc"
+      }
+    },
+    {
+      "name": "deepskyblue",
+      "hex": "#00bfff",
+      "rgb": { "r": 0, "g": 191, "b": 255 },
+      "hsl": { "h": 195, "s": 100, "l": 50 },
+      "lab": { "l": 71.83287, "a": -24.07322, "b": -43.55643 },
+      "luminance": 115.82438,
+      "luminanceWCAG": 0.44482,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=00bfff&name=deepskyblue",
+        "svg": "/v1/swatch/?color=00bfff"
+      }
+    },
+    {
+      "name": "salmon",
+      "hex": "#fa8072",
+      "rgb": { "r": 250, "g": 128, "b": 114 },
+      "hsl": { "h": 6, "s": 93.15068, "l": 71.37255 },
+      "lab": { "l": 67.84736, "a": 46.63421, "b": 30.16048 },
+      "luminance": 106.77957,
+      "luminanceWCAG": 0.36977,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=fa8072&name=salmon",
+        "svg": "/v1/swatch/?color=fa8072"
+      }
+    },
+    {
+      "name": "darkred",
+      "hex": "#8b0000",
+      "rgb": { "r": 139, "g": 0, "b": 0 },
+      "hsl": { "h": 0, "s": 100, "l": 27.2549 },
+      "lab": { "l": 28.75897, "a": 51.45814, "b": 42.79575 },
+      "luminance": 41.561,
+      "luminanceWCAG": 0.05489,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=8b0000&name=darkred",
+        "svg": "/v1/swatch/?color=8b0000"
+      }
+    },
+    {
+      "name": "steelblue",
+      "hex": "#4682b4",
+      "rgb": { "r": 70, "g": 130, "b": 180 },
+      "hsl": { "h": 207, "s": 44, "l": 49.01961 },
+      "lab": { "l": 51.98625, "a": -8.36279, "b": -32.8327 },
+      "luminance": 81.74565,
+      "luminanceWCAG": 0.20563,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=4682b4&name=steelblue",
+        "svg": "/v1/swatch/?color=4682b4"
+      }
+    },
+    {
+      "name": "palevioletred",
+      "hex": "#db7093",
+      "rgb": { "r": 219, "g": 112, "b": 147 },
+      "hsl": { "h": 340, "s": 59.77654, "l": 64.90196 },
+      "lab": { "l": 60.91013, "a": 45.40558, "b": 1.21233 },
+      "luminance": 94.29139,
+      "luminanceWCAG": 0.28755,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=db7093&name=palevioletred",
+        "svg": "/v1/swatch/?color=db7093"
+      }
+    },
+    {
+      "name": "lightslategray",
+      "hex": "#778899",
+      "rgb": { "r": 119, "g": 136, "b": 153 },
+      "hsl": { "h": 210, "s": 14.28571, "l": 53.33333 },
+      "lab": { "l": 55.77125, "a": -3.44805, "b": -11.28912 },
+      "luminance": 89.12564,
+      "luminanceWCAG": 0.2383,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=778899&name=lightslategray",
+        "svg": "/v1/swatch/?color=778899"
+      }
+    },
+    {
+      "name": "aliceblue",
+      "hex": "#f0f8ff",
+      "rgb": { "r": 240, "g": 248, "b": 255 },
+      "hsl": { "h": 208, "s": 100, "l": 97.05882 },
+      "lab": { "l": 97.12295, "a": -1.77384, "b": -4.33268 },
+      "luminance": 164.88461,
+      "luminanceWCAG": 0.9288,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=f0f8ff&name=aliceblue",
+        "svg": "/v1/swatch/?color=f0f8ff"
+      }
+    },
+    {
+      "name": "lightslategrey",
+      "hex": "#778899",
+      "rgb": { "r": 119, "g": 136, "b": 153 },
+      "hsl": { "h": 210, "s": 14.28571, "l": 53.33333 },
+      "lab": { "l": 55.77125, "a": -3.44805, "b": -11.28912 },
+      "luminance": 89.12564,
+      "luminanceWCAG": 0.2383,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=778899&name=lightslategrey",
+        "svg": "/v1/swatch/?color=778899"
+      }
+    },
+    {
+      "name": "lightgreen",
+      "hex": "#90ee90",
+      "rgb": { "r": 144, "g": 238, "b": 144 },
+      "hsl": { "h": 120, "s": 73.4375, "l": 74.90196 },
+      "lab": { "l": 86.5974, "a": -43.02306, "b": 36.39247 },
+      "luminance": 147.10904,
+      "luminanceWCAG": 0.69092,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=90ee90&name=lightgreen",
+        "svg": "/v1/swatch/?color=90ee90"
+      }
+    },
+    {
+      "name": "orchid",
+      "hex": "#da70d6",
+      "rgb": { "r": 218, "g": 112, "b": 214 },
+      "hsl": { "h": 302, "s": 58.88889, "l": 64.70588 },
+      "lab": { "l": 62.75295, "a": 52.46036, "b": -34.10274 },
+      "luminance": 95.73992,
+      "luminanceWCAG": 0.31349,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=da70d6&name=orchid",
+        "svg": "/v1/swatch/?color=da70d6"
+      }
+    },
+    {
+      "name": "gainsboro",
+      "hex": "#dcdcdc",
+      "rgb": { "r": 220, "g": 220, "b": 220 },
+      "hsl": { "h": 0, "s": 0, "l": 86.27451 },
+      "lab": { "l": 87.76089, "a": 0, "b": 0 },
+      "luminance": 147.08213,
+      "luminanceWCAG": 0.71569,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=dcdcdc&name=gainsboro",
+        "svg": "/v1/swatch/?color=dcdcdc"
+      }
+    },
+    {
+      "name": "mediumseagreen",
+      "hex": "#3cb371",
+      "rgb": { "r": 60, "g": 179, "b": 113 },
+      "hsl": { "h": 147, "s": 49.79079, "l": 46.86275 },
+      "lab": { "l": 65.21756, "a": -45.98241, "b": 23.71235 },
+      "luminance": 107.36911,
+      "luminanceWCAG": 0.34393,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=3cb371&name=mediumseagreen",
+        "svg": "/v1/swatch/?color=3cb371"
+      }
+    },
+    {
+      "name": "lightgray",
+      "hex": "#d3d3d3",
+      "rgb": { "r": 211, "g": 211, "b": 211 },
+      "hsl": { "h": 0, "s": 0, "l": 82.7451 },
+      "lab": { "l": 84.55612, "a": 0, "b": 0 },
+      "luminance": 141.06514,
+      "luminanceWCAG": 0.65141,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=d3d3d3&name=lightgray",
+        "svg": "/v1/swatch/?color=d3d3d3"
+      }
+    },
+    {
+      "name": "mediumturquoise",
+      "hex": "#48d1cc",
+      "rgb": { "r": 72, "g": 209, "b": 204 },
+      "hsl": { "h": 178, "s": 59.82533, "l": 55.09804 },
+      "lab": { "l": 76.56382, "a": -38.88933, "b": -8.97189 },
+      "luminance": 126.70996,
+      "luminanceWCAG": 0.51338,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=48d1cc&name=mediumturquoise",
+        "svg": "/v1/swatch/?color=48d1cc"
+      }
+    },
+    {
+      "name": "lemonchiffon",
+      "hex": "#fffacd",
+      "rgb": { "r": 255, "g": 250, "b": 205 },
+      "hsl": { "h": 54, "s": 100, "l": 90.19608 },
+      "lab": { "l": 97.82619, "a": -3.52317, "b": 22.32061 },
+      "luminance": 167.01802,
+      "luminanceWCAG": 0.94039,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=fffacd&name=lemonchiffon",
+        "svg": "/v1/swatch/?color=fffacd"
+      }
+    },
+    {
+      "name": "cadetblue",
+      "hex": "#5f9ea0",
+      "rgb": { "r": 95, "g": 158, "b": 160 },
+      "hsl": { "h": 182, "s": 25.4902, "l": 50 },
+      "lab": { "l": 60.9474, "a": -20.74696, "b": -7.79285 },
+      "luminance": 98.69834,
+      "luminanceWCAG": 0.29425,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=5f9ea0&name=cadetblue",
+        "svg": "/v1/swatch/?color=5f9ea0"
+      }
+    },
+    {
+      "name": "lightyellow",
+      "hex": "#ffffe0",
+      "rgb": { "r": 255, "g": 255, "b": 224 },
+      "hsl": { "h": 60, "s": 100, "l": 93.92157 },
+      "lab": { "l": 99.40017, "a": -3.79209, "b": 14.88916 },
+      "luminance": 169.91464,
+      "luminanceWCAG": 0.98162,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=ffffe0&name=lightyellow",
+        "svg": "/v1/swatch/?color=ffffe0"
+      }
+    },
+    {
+      "name": "lavenderblush",
+      "hex": "#fff0f5",
+      "rgb": { "r": 255, "g": 240, "b": 245 },
+      "hsl": { "h": 340, "s": 100, "l": 97.05882 },
+      "lab": { "l": 96.10112, "a": 5.85661, "b": -0.50814 },
+      "luminance": 162.60553,
+      "luminanceWCAG": 0.90173,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=fff0f5&name=lavenderblush",
+        "svg": "/v1/swatch/?color=fff0f5"
+      }
+    },
+    {
+      "name": "coral",
+      "hex": "#ff7f50",
+      "rgb": { "r": 255, "g": 127, "b": 80 },
+      "hsl": { "h": 16, "s": 100, "l": 65.68627 },
+      "lab": { "l": 67.98455, "a": 47.38881, "b": 48.6015 },
+      "luminance": 107.02349,
+      "luminanceWCAG": 0.37018,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=ff7f50&name=coral",
+        "svg": "/v1/swatch/?color=ff7f50"
+      }
+    },
+    {
+      "name": "purple",
+      "hex": "#800080",
+      "rgb": { "r": 128, "g": 0, "b": 128 },
+      "hsl": { "h": 300, "s": 100, "l": 25.09804 },
+      "lab": { "l": 29.69198, "a": 56.11793, "b": -36.29132 },
+      "luminance": 40.9594,
+      "luminanceWCAG": 0.06148,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=800080&name=purple",
+        "svg": "/v1/swatch/?color=800080"
+      }
+    },
+    {
+      "name": "aqua",
+      "hex": "#00ffff",
+      "rgb": { "r": 0, "g": 255, "b": 255 },
+      "hsl": { "h": 180, "s": 100, "l": 50 },
+      "lab": { "l": 90.66549, "a": -50.66542, "b": -14.96203 },
+      "luminance": 152.48168,
+      "luminanceWCAG": 0.7874,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=00ffff&name=aqua",
+        "svg": "/v1/swatch/?color=00ffff"
+      }
+    },
+    {
+      "name": "whitesmoke",
+      "hex": "#f5f5f5",
+      "rgb": { "r": 245, "g": 245, "b": 245 },
+      "hsl": { "h": 0, "s": 0, "l": 96.07843 },
+      "lab": { "l": 96.53749, "a": 0, "b": 0 },
+      "luminance": 163.79601,
+      "luminanceWCAG": 0.9131,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=f5f5f5&name=whitesmoke",
+        "svg": "/v1/swatch/?color=f5f5f5"
+      }
+    },
+    {
+      "name": "mediumslateblue",
+      "hex": "#7b68ee",
+      "rgb": { "r": 123, "g": 104, "b": 238 },
+      "hsl": { "h": 249, "s": 79.7619, "l": 67.05882 },
+      "lab": { "l": 51.28287, "a": 33.84296, "b": -66.4777 },
+      "luminance": 76.25976,
+      "luminanceWCAG": 0.20285,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=7b68ee&name=mediumslateblue",
+        "svg": "/v1/swatch/?color=7b68ee"
+      }
+    },
+    {
+      "name": "darkorange",
+      "hex": "#ff8c00",
+      "rgb": { "r": 255, "g": 140, "b": 0 },
+      "hsl": { "h": 33, "s": 100, "l": 50 },
+      "lab": { "l": 70.21139, "a": 39.78732, "b": 76.0855 },
+      "luminance": 112.10197,
+      "luminanceWCAG": 0.40016,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=ff8c00&name=darkorange",
+        "svg": "/v1/swatch/?color=ff8c00"
+      }
+    },
+    {
+      "name": "mediumaquamarine",
+      "hex": "#66cdaa",
+      "rgb": { "r": 102, "g": 205, "b": 170 },
+      "hsl": { "h": 160, "s": 50.73892, "l": 60.19608 },
+      "lab": { "l": 75.54962, "a": -37.75783, "b": 7.83278 },
+      "luminance": 125.64324,
+      "luminanceWCAG": 0.4939,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=66cdaa&name=mediumaquamarine",
+        "svg": "/v1/swatch/?color=66cdaa"
+      }
+    },
+    {
+      "name": "darksalmon",
+      "hex": "#e9967a",
+      "rgb": { "r": 233, "g": 150, "b": 122 },
+      "hsl": { "h": 15, "s": 71.6129, "l": 69.60784 },
+      "lab": { "l": 70.29787, "a": 29.89186, "b": 28.40608 },
+      "luminance": 113.13587,
+      "luminanceWCAG": 0.40541,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=e9967a&name=darksalmon",
+        "svg": "/v1/swatch/?color=e9967a"
+      }
+    },
+    {
+      "name": "beige",
+      "hex": "#f5f5dc",
+      "rgb": { "r": 245, "g": 245, "b": 220 },
+      "hsl": { "h": 60, "s": 55.55556, "l": 91.17647 },
+      "lab": { "l": 96.04373, "a": -3.11539, "b": 12.0944 },
+      "luminance": 163.33418,
+      "luminanceWCAG": 0.89885,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=f5f5dc&name=beige",
+        "svg": "/v1/swatch/?color=f5f5dc"
+      }
+    },
+    {
+      "name": "blueviolet",
+      "hex": "#8a2be2",
+      "rgb": { "r": 138, "g": 43, "b": 226 },
+      "hsl": { "h": 271, "s": 75.93361, "l": 52.7451 },
+      "lab": { "l": 41.21115, "a": 63.01622, "b": -75.95892 },
+      "luminance": 54.80369,
+      "luminanceWCAG": 0.12622,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=8a2be2&name=blueviolet",
+        "svg": "/v1/swatch/?color=8a2be2"
+      }
+    },
+    {
+      "name": "azure",
+      "hex": "#f0ffff",
+      "rgb": { "r": 240, "g": 255, "b": 255 },
+      "hsl": { "h": 180, "s": 100, "l": 97.05882 },
+      "lab": { "l": 98.88258, "a": -5.0737, "b": -1.7817 },
+      "luminance": 168.52348,
+      "luminanceWCAG": 0.97265,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=f0ffff&name=azure",
+        "svg": "/v1/swatch/?color=f0ffff"
+      }
+    },
+    {
+      "name": "lightsteelblue",
+      "hex": "#b0c4de",
+      "rgb": { "r": 176, "g": 196, "b": 222 },
+      "hsl": { "h": 214, "s": 41.07143, "l": 78.03922 },
+      "lab": { "l": 78.26333, "a": -2.90176, "b": -15.43413 },
+      "luminance": 129.02226,
+      "luminanceWCAG": 0.53984,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=b0c4de&name=lightsteelblue",
+        "svg": "/v1/swatch/?color=b0c4de"
+      }
+    },
+    {
+      "name": "oldlace",
+      "hex": "#fdf5e6",
+      "rgb": { "r": 253, "g": 245, "b": 230 },
+      "hsl": { "h": 39, "s": 85.18519, "l": 94.70588 },
+      "lab": { "l": 96.86534, "a": 0.91323, "b": 8.24939 },
+      "luminance": 164.59864,
+      "luminanceWCAG": 0.91901,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=fdf5e6&name=oldlace",
+        "svg": "/v1/swatch/?color=fdf5e6"
+      }
+    }
+  ]
+}

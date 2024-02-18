@@ -1,0 +1,3855 @@
+{
+  "paletteTitle": "All the sanzoWadaI names",
+  "colors": [
+    {
+      "name": "Hermosa Pink",
+      "hex": "#ffb3f0",
+      "meta": {
+        "index": 1,
+        "slug": "hermosa-pink",
+        "cmyk_array": [0, 30, 6, 0],
+        "cmyk": "C:0 / M:30 / Y:6 / K:0",
+        "rgb_array": [255, 179, 240],
+        "rgb": "R:255 / G:179 / B:240",
+        "combinations": [176, 227, 273],
+        "use_count": 3
+      },
+      "rgb": { "r": 255, "g": 179, "b": 240 },
+      "hsl": { "h": 312, "s": 100, "l": 85.09804 },
+      "lab": { "l": 81.75565, "a": 35.24597, "b": -18.96134 },
+      "luminance": 132.6733,
+      "luminanceWCAG": 0.59791,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=ffb3f0&name=Hermosa%20Pink",
+        "svg": "/v1/swatch/?color=ffb3f0"
+      }
+    },
+    {
+      "name": "Corinthian Pink",
+      "hex": "#ffa6d9",
+      "meta": {
+        "index": 2,
+        "slug": "corinthian-pink",
+        "cmyk_array": [0, 35, 15, 0],
+        "cmyk": "C:0 / M:35 / Y:15 / K:0",
+        "rgb_array": [255, 166, 217],
+        "rgb": "R:255 / G:166 / B:217",
+        "combinations": [
+          27, 43, 87, 97, 128, 169, 174, 206, 246, 254, 264, 342
+        ],
+        "use_count": 12
+      },
+      "rgb": { "r": 255, "g": 166, "b": 217 },
+      "hsl": { "h": 326, "s": 100, "l": 82.54902 },
+      "lab": { "l": 78.34084, "a": 38.89119, "b": -11.67386 },
+      "luminance": 126.17532,
+      "luminanceWCAG": 0.53542,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=ffa6d9&name=Corinthian%20Pink",
+        "svg": "/v1/swatch/?color=ffa6d9"
+      }
+    },
+    {
+      "name": "Cameo Pink",
+      "hex": "#e6adcf",
+      "meta": {
+        "index": 3,
+        "slug": "cameo-pink",
+        "cmyk_array": [10, 32, 19, 0],
+        "cmyk": "C:10 / M:32 / Y:19 / K:0",
+        "rgb_array": [230, 173, 207],
+        "rgb": "R:230 / G:173 / B:207",
+        "combinations": [18, 125, 308],
+        "use_count": 3
+      },
+      "rgb": { "r": 230, "g": 173, "b": 207 },
+      "hsl": { "h": 324, "s": 53.27103, "l": 79.01961 },
+      "lab": { "l": 76.88829, "a": 25.36045, "b": -8.77165 },
+      "luminance": 124.89509,
+      "luminanceWCAG": 0.51215,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=e6adcf&name=Cameo%20Pink",
+        "svg": "/v1/swatch/?color=e6adcf"
+      }
+    },
+    {
+      "name": "Fawn",
+      "hex": "#d1b0b3",
+      "meta": {
+        "index": 4,
+        "slug": "fawn",
+        "cmyk_array": [18, 31, 30, 0],
+        "cmyk": "C:18 / M:31 / Y:30 / K:0",
+        "rgb_array": [209, 176, 179],
+        "rgb": "R:209 / G:176 / B:179",
+        "combinations": [18, 125, 308],
+        "use_count": 3
+      },
+      "rgb": { "r": 209, "g": 176, "b": 179 },
+      "hsl": { "h": 355, "s": 26.4, "l": 75.4902 },
+      "lab": { "l": 74.85197, "a": 12.6814, "b": 3.15469 },
+      "luminance": 122.45366,
+      "luminanceWCAG": 0.47861,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=d1b0b3&name=Fawn",
+        "svg": "/v1/swatch/?color=d1b0b3"
+      }
+    },
+    {
+      "name": "Light Brown Drab",
+      "hex": "#b08699",
+      "meta": {
+        "index": 5,
+        "slug": "light-brown-drab",
+        "cmyk_array": [8, 30, 20, 25],
+        "cmyk": "C:8 / M:30 / Y:20 / K:25",
+        "rgb_array": [176, 134, 153],
+        "rgb": "R:176 / G:134 / B:153",
+        "combinations": [35, 68, 185, 191, 223, 239, 244, 268, 285, 321],
+        "use_count": 10
+      },
+      "rgb": { "r": 176, "g": 134, "b": 153 },
+      "hsl": { "h": 333, "s": 21, "l": 60.78431 },
+      "lab": { "l": 60.49929, "a": 18.83508, "b": -3.61782 },
+      "luminance": 96.23196,
+      "luminanceWCAG": 0.2858,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=b08699&name=Light%20Brown%20Drab",
+        "svg": "/v1/swatch/?color=b08699"
+      }
+    },
+    {
+      "name": "Coral Red",
+      "hex": "#ff7399",
+      "meta": {
+        "index": 6,
+        "slug": "coral-red",
+        "cmyk_array": [0, 55, 40, 0],
+        "cmyk": "C:0 / M:55 / Y:40 / K:0",
+        "rgb_array": [255, 115, 153],
+        "rgb": "R:255 / G:115 / B:153",
+        "combinations": [92, 123, 320, 332],
+        "use_count": 4
+      },
+      "rgb": { "r": 255, "g": 115, "b": 153 },
+      "hsl": { "h": 344, "s": 100, "l": 72.54902 },
+      "lab": { "l": 66.87872, "a": 56.84377, "b": 7.1385 },
+      "luminance": 103.31722,
+      "luminanceWCAG": 0.35821,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=ff7399&name=Coral%20Red",
+        "svg": "/v1/swatch/?color=ff7399"
+      }
+    },
+    {
+      "name": "Fresh Color",
+      "hex": "#ff788c",
+      "meta": {
+        "index": 7,
+        "slug": "fresh-color",
+        "cmyk_array": [0, 53, 45, 0],
+        "cmyk": "C:0 / M:53 / Y:45 / K:0",
+        "rgb_array": [255, 120, 140],
+        "rgb": "R:255 / G:120 / B:140",
+        "combinations": [240],
+        "use_count": 1
+      },
+      "rgb": { "r": 255, "g": 120, "b": 140 },
+      "hsl": { "h": 351, "s": 100, "l": 73.52941 },
+      "lab": { "l": 67.50493, "a": 53.70366, "b": 15.35787 },
+      "luminance": 105.02293,
+      "luminanceWCAG": 0.36586,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=ff788c&name=Fresh%20Color",
+        "svg": "/v1/swatch/?color=ff788c"
+      }
+    },
+    {
+      "name": "Grenadine Pink",
+      "hex": "#ff616b",
+      "meta": {
+        "index": 8,
+        "slug": "grenadine-pink",
+        "cmyk_array": [0, 62, 58, 0],
+        "cmyk": "C:0 / M:62 / Y:58 / K:0",
+        "rgb_array": [255, 97, 107],
+        "rgb": "R:255 / G:97 / B:107",
+        "combinations": [6, 21, 112, 166, 193, 201, 230, 300, 315, 341],
+        "use_count": 10
+      },
+      "rgb": { "r": 255, "g": 97, "b": 107 },
+      "hsl": { "h": 356, "s": 100, "l": 69.01961 },
+      "lab": { "l": 63.10342, "a": 61.57601, "b": 28.21868 },
+      "luminance": 95.93821,
+      "luminanceWCAG": 0.30871,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=ff616b&name=Grenadine%20Pink",
+        "svg": "/v1/swatch/?color=ff616b"
+      }
+    },
+    {
+      "name": "Eosine Pink",
+      "hex": "#ff5ec4",
+      "meta": {
+        "index": 9,
+        "slug": "eosine-pink",
+        "cmyk_array": [0, 63, 23, 0],
+        "cmyk": "C:0 / M:63 / Y:23 / K:0",
+        "rgb_array": [255, 94, 196],
+        "rgb": "R:255 / G:94 / B:196",
+        "combinations": [
+          34, 59, 90, 108, 134, 153, 197, 242, 248, 276, 287, 314, 327, 336
+        ],
+        "use_count": 14
+      },
+      "rgb": { "r": 255, "g": 94, "b": 196 },
+      "hsl": { "h": 322, "s": 100, "l": 68.43137 },
+      "lab": { "l": 64.66043, "a": 69.03229, "b": -20.49051 },
+      "luminance": 96.73245,
+      "luminanceWCAG": 0.33251,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=ff5ec4&name=Eosine%20Pink",
+        "svg": "/v1/swatch/?color=ff5ec4"
+      }
+    },
+    {
+      "name": "Spinel Red",
+      "hex": "#ff4dc9",
+      "meta": {
+        "index": 10,
+        "slug": "spinel-red",
+        "cmyk_array": [0, 70, 21, 0],
+        "cmyk": "C:0 / M:70 / Y:21 / K:0",
+        "rgb_array": [255, 77, 201],
+        "rgb": "R:255 / G:77 / B:201",
+        "combinations": [14, 147, 165, 184, 195, 224, 277],
+        "use_count": 7
+      },
+      "rgb": { "r": 255, "g": 77, "b": 201 },
+      "hsl": { "h": 318, "s": 100, "l": 65.09804 },
+      "lab": { "l": 62.60136, "a": 75.42009, "b": -26.4461 },
+      "luminance": 91.54945,
+      "luminanceWCAG": 0.30785,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=ff4dc9&name=Spinel%20Red",
+        "svg": "/v1/swatch/?color=ff4dc9"
+      }
+    },
+    {
+      "name": "Old Rose",
+      "hex": "#d94d99",
+      "meta": {
+        "index": 11,
+        "slug": "old-rose",
+        "cmyk_array": [15, 70, 40, 0],
+        "cmyk": "C:15 / M:70 / Y:40 / K:0",
+        "rgb_array": [217, 77, 153],
+        "rgb": "R:217 / G:77 / B:153",
+        "combinations": [55, 162, 260, 265],
+        "use_count": 4
+      },
+      "rgb": { "r": 217, "g": 77, "b": 153 },
+      "hsl": { "h": 327, "s": 64.81481, "l": 57.64706 },
+      "lab": { "l": 54.75169, "a": 60.56596, "b": -11.32304 },
+      "luminance": 80.97516,
+      "luminanceWCAG": 0.22359,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=d94d99&name=Old%20Rose",
+        "svg": "/v1/swatch/?color=d94d99"
+      }
+    },
+    {
+      "name": "Eugenia Red | A",
+      "hex": "#ed3d66",
+      "meta": {
+        "index": 12,
+        "slug": "eugenia-red-|-a",
+        "cmyk_array": [7, 76, 60, 0],
+        "cmyk": "C:7 / M:76 / Y:60 / K:0",
+        "rgb_array": [237, 61, 102],
+        "rgb": "R:237 / G:61 / B:102",
+        "combinations": [284],
+        "use_count": 1
+      },
+      "rgb": { "r": 237, "g": 61, "b": 102 },
+      "hsl": { "h": 346, "s": 83.01887, "l": 58.43137 },
+      "lab": { "l": 55.0662, "a": 68.52637, "b": 19.98531 },
+      "luminance": 80.24286,
+      "luminanceWCAG": 0.22301,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=ed3d66&name=Eugenia%20Red%20%7C%20A",
+        "svg": "/v1/swatch/?color=ed3d66"
+      }
+    },
+    {
+      "name": "Eugenia Red | B",
+      "hex": "#e62e73",
+      "meta": {
+        "index": 13,
+        "slug": "eugenia-red-|-b",
+        "cmyk_array": [0, 80, 50, 10],
+        "cmyk": "C:0 / M:80 / Y:50 / K:10",
+        "rgb_array": [230, 46, 115],
+        "rgb": "R:230 / G:46 / B:115",
+        "combinations": [17, 77, 252, 262, 270, 280, 282, 325],
+        "use_count": 8
+      },
+      "rgb": { "r": 230, "g": 46, "b": 115 },
+      "hsl": { "h": 338, "s": 78.63248, "l": 54.11765 },
+      "lab": { "l": 52.51394, "a": 71.30149, "b": 8.44303 },
+      "luminance": 75.03528,
+      "luminanceWCAG": 0.20015,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=e62e73&name=Eugenia%20Red%20%7C%20B",
+        "svg": "/v1/swatch/?color=e62e73"
+      }
+    },
+    {
+      "name": "Raw Sienna",
+      "hex": "#b85e00",
+      "meta": {
+        "index": 14,
+        "slug": "raw-sienna",
+        "cmyk_array": [18, 58, 100, 12],
+        "cmyk": "C:18 / M:58 / Y:100 / K:12",
+        "rgb_array": [184, 94, 0],
+        "rgb": "R:184 / G:94 / B:0",
+        "combinations": [
+          3, 13, 33, 70, 86, 130, 131, 182, 243, 247, 252, 255, 268, 269, 279,
+          293, 298, 319, 327
+        ],
+        "use_count": 19
+      },
+      "rgb": { "r": 184, "g": 94, "b": 0 },
+      "hsl": { "h": 31, "s": 100, "l": 36.07843 },
+      "lab": { "l": 50.32169, "a": 33.85873, "b": 58.93913 },
+      "luminance": 77.91901,
+      "luminanceWCAG": 0.18196,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=b85e00&name=Raw%20Sienna",
+        "svg": "/v1/swatch/?color=b85e00"
+      }
+    },
+    {
+      "name": "Vinaceous Tawny",
+      "hex": "#c74300",
+      "meta": {
+        "index": 15,
+        "slug": "vinaceous-tawny",
+        "cmyk_array": [17, 72, 100, 6],
+        "cmyk": "C:17 / M:72 / Y:100 / K:6",
+        "rgb_array": [199, 67, 0],
+        "rgb": "R:199 / G:67 / B:0",
+        "combinations": [40, 85, 244],
+        "use_count": 3
+      },
+      "rgb": { "r": 199, "g": 67, "b": 0 },
+      "hsl": { "h": 20, "s": 100, "l": 39.01961 },
+      "lab": { "l": 47.91995, "a": 51.86586, "b": 59.55174 },
+      "luminance": 71.32418,
+      "luminanceWCAG": 0.16156,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=c74300&name=Vinaceous%20Tawny",
+        "svg": "/v1/swatch/?color=c74300"
+      }
+    },
+    {
+      "name": "Jasper Red",
+      "hex": "#fa2b00",
+      "meta": {
+        "index": 16,
+        "slug": "jasper-red",
+        "cmyk_array": [2, 83, 100, 0],
+        "cmyk": "C:2 / M:83 / Y:100 / K:0",
+        "rgb_array": [250, 43, 0],
+        "rgb": "R:250 / G:43 / B:0",
+        "combinations": [155, 194, 216, 219],
+        "use_count": 4
+      },
+      "rgb": { "r": 250, "g": 43, "b": 0 },
+      "hsl": { "h": 10, "s": 100, "l": 49.01961 },
+      "lab": { "l": 55.07506, "a": 74.51041, "b": 69.19148 },
+      "luminance": 78.89658,
+      "luminanceWCAG": 0.22052,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=fa2b00&name=Jasper%20Red",
+        "svg": "/v1/swatch/?color=fa2b00"
+      }
+    },
+    {
+      "name": "Spectrum Red",
+      "hex": "#f20000",
+      "meta": {
+        "index": 17,
+        "slug": "spectrum-red",
+        "cmyk_array": [5, 100, 100, 0],
+        "cmyk": "C:5 / M:100 / Y:100 / K:0",
+        "rgb_array": [242, 0, 0],
+        "rgb": "R:242 / G:0 / B:0",
+        "combinations": [257, 266, 301, 322],
+        "use_count": 4
+      },
+      "rgb": { "r": 242, "g": 0, "b": 0 },
+      "hsl": { "h": 0, "s": 100, "l": 47.45098 },
+      "lab": { "l": 51.561, "a": 77.673, "b": 67.1701 },
+      "luminance": 72.358,
+      "luminanceWCAG": 0.18877,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=f20000&name=Spectrum%20Red",
+        "svg": "/v1/swatch/?color=f20000"
+      }
+    },
+    {
+      "name": "Red Orange",
+      "hex": "#e81900",
+      "meta": {
+        "index": 18,
+        "slug": "red-orange",
+        "cmyk_array": [9, 90, 100, 0],
+        "cmyk": "C:9 / M:90 / Y:100 / K:0",
+        "rgb_array": [232, 25, 0],
+        "rgb": "R:232 / G:25 / B:0",
+        "combinations": [31, 164, 179, 241, 264],
+        "use_count": 5
+      },
+      "rgb": { "r": 232, "g": 25, "b": 0 },
+      "hsl": { "h": 6, "s": 100, "l": 45.4902 },
+      "lab": { "l": 50.27749, "a": 72.89565, "b": 65.20305 },
+      "luminance": 70.90328,
+      "luminanceWCAG": 0.17851,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=e81900&name=Red%20Orange",
+        "svg": "/v1/swatch/?color=e81900"
+      }
+    },
+    {
+      "name": "Etruscan Red",
+      "hex": "#c9303e",
+      "meta": {
+        "index": 19,
+        "slug": "etruscan-red",
+        "cmyk_array": [16, 80, 74, 6],
+        "cmyk": "C:16 / M:80 / Y:74 / K:6",
+        "rgb_array": [201, 48, 62],
+        "rgb": "R:201 / G:48 / B:62",
+        "combinations": [25, 47, 97, 137, 152, 185, 275],
+        "use_count": 7
+      },
+      "rgb": { "r": 201, "g": 48, "b": 62 },
+      "hsl": { "h": 355, "s": 61.44578, "l": 48.82353 },
+      "lab": { "l": 46.18651, "a": 60.26603, "b": 31.14562 },
+      "luminance": 66.75128,
+      "luminanceWCAG": 0.14879,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=c9303e&name=Etruscan%20Red",
+        "svg": "/v1/swatch/?color=c9303e"
+      }
+    },
+    {
+      "name": "Burnt Sienna",
+      "hex": "#a93400",
+      "meta": {
+        "index": 20,
+        "slug": "burnt-sienna",
+        "cmyk_array": [22, 76, 100, 15],
+        "cmyk": "C:22 / M:76 / Y:100 / K:15",
+        "rgb_array": [169, 52, 0],
+        "rgb": "R:169 / G:52 / B:0",
+        "combinations": [198, 242, 263, 285, 286, 297, 312, 333, 343],
+        "use_count": 9
+      },
+      "rgb": { "r": 169, "g": 52, "b": 0 },
+      "hsl": { "h": 18, "s": 100, "l": 33.13725 },
+      "lab": { "l": 40.06423, "a": 47.36794, "b": 52.53699 },
+      "luminance": 59.03471,
+      "luminanceWCAG": 0.10891,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=a93400&name=Burnt%20Sienna",
+        "svg": "/v1/swatch/?color=a93400"
+      }
+    },
+    {
+      "name": "Ochre Red",
+      "hex": "#a7374b",
+      "meta": {
+        "index": 21,
+        "slug": "ochre-red",
+        "cmyk_array": [18, 73, 63, 20],
+        "cmyk": "C:18 / M:73 / Y:63 / K:20",
+        "rgb_array": [167, 55, 75],
+        "rgb": "R:167 / G:55 / B:75",
+        "combinations": [199, 283],
+        "use_count": 2
+      },
+      "rgb": { "r": 167, "g": 55, "b": 75 },
+      "hsl": { "h": 349, "s": 50.45045, "l": 43.52941 },
+      "lab": { "l": 40.83778, "a": 47.63681, "b": 14.82653 },
+      "luminance": 60.07269,
+      "luminanceWCAG": 0.11456,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=a7374b&name=Ochre%20Red",
+        "svg": "/v1/swatch/?color=a7374b"
+      }
+    },
+    {
+      "name": "Scarlet",
+      "hex": "#d50c42",
+      "meta": {
+        "index": 22,
+        "slug": "scarlet",
+        "cmyk_array": [10, 95, 72, 7],
+        "cmyk": "C:10 / M:95 / Y:72 / K:7",
+        "rgb_array": [213, 12, 66],
+        "rgb": "R:213 / G:12 / B:66",
+        "combinations": [136, 308, 332],
+        "use_count": 3
+      },
+      "rgb": { "r": 213, "g": 12, "b": 66 },
+      "hsl": { "h": 344, "s": 89.33333, "l": 44.11765 },
+      "lab": { "l": 46.17587, "a": 70.56945, "b": 29.42081 },
+      "luminance": 64.5156,
+      "luminanceWCAG": 0.14802,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=d50c42&name=Scarlet",
+        "svg": "/v1/swatch/?color=d50c42"
+      }
+    },
+    {
+      "name": "Carmine",
+      "hex": "#d60036",
+      "meta": {
+        "index": 23,
+        "slug": "carmine",
+        "cmyk_array": [0, 100, 75, 16],
+        "cmyk": "C:0 / M:100 / Y:75 / K:16",
+        "rgb_array": [214, 0, 54],
+        "rgb": "R:214 / G:0 / B:54",
+        "combinations": [39, 117, 122, 154, 225, 232, 307, 313],
+        "use_count": 8
+      },
+      "rgb": { "r": 214, "g": 0, "b": 54 },
+      "hsl": { "h": 345, "s": 100, "l": 41.96078 },
+      "lab": { "l": 45.8876, "a": 71.4891, "b": 36.48371 },
+      "luminance": 64.28145,
+      "luminanceWCAG": 0.14562,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=d60036&name=Carmine",
+        "svg": "/v1/swatch/?color=d60036"
+      }
+    },
+    {
+      "name": "Indian Lake",
+      "hex": "#cc1a97",
+      "meta": {
+        "index": 24,
+        "slug": "indian-lake",
+        "cmyk_array": [12, 89, 35, 9],
+        "cmyk": "C:12 / M:89 / Y:35 / K:9",
+        "rgb_array": [204, 26, 151],
+        "rgb": "R:204 / G:26 / B:151",
+        "combinations": [299, 331],
+        "use_count": 2
+      },
+      "rgb": { "r": 204, "g": 26, "b": 151 },
+      "hsl": { "h": 318, "s": 77.3913, "l": 45.09804 },
+      "lab": { "l": 47.04245, "a": 71.37265, "b": -22.03 },
+      "luminance": 65.1902,
+      "luminanceWCAG": 0.15811,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=cc1a97&name=Indian%20Lake",
+        "svg": "/v1/swatch/?color=cc1a97"
+      }
+    },
+    {
+      "name": "Rosolanc Purple",
+      "hex": "#b319ab",
+      "meta": {
+        "index": 25,
+        "slug": "rosolanc-purple",
+        "cmyk_array": [30, 90, 33, 0],
+        "cmyk": "C:30 / M:90 / Y:33 / K:0",
+        "rgb_array": [179, 25, 171],
+        "rgb": "R:179 / G:25 / B:171",
+        "combinations": [48, 144, 170, 204, 277],
+        "use_count": 5
+      },
+      "rgb": { "r": 179, "g": 25, "b": 171 },
+      "hsl": { "h": 303, "s": 75.4902, "l": 40 },
+      "lab": { "l": 43.05657, "a": 67.88459, "b": -40.61176 },
+      "luminance": 58.82065,
+      "luminanceWCAG": 0.13219,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=b319ab&name=Rosolanc%20Purple",
+        "svg": "/v1/swatch/?color=b319ab"
+      }
+    },
+    {
+      "name": "Pomegranite Purple",
+      "hex": "#b90078",
+      "meta": {
+        "index": 26,
+        "slug": "pomegranite-purple",
+        "cmyk_array": [23, 100, 50, 6],
+        "cmyk": "C:23 / M:100 / Y:50 / K:6",
+        "rgb_array": [185, 0, 120],
+        "rgb": "R:185 / G:0 / B:120",
+        "combinations": [220, 271],
+        "use_count": 2
+      },
+      "rgb": { "r": 185, "g": 0, "b": 120 },
+      "hsl": { "h": 321, "s": 100, "l": 36.27451 },
+      "lab": { "l": 41.10994, "a": 67.67145, "b": -12.48813 },
+      "luminance": 56.9815,
+      "luminanceWCAG": 0.1167,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=b90078&name=Pomegranite%20Purple",
+        "svg": "/v1/swatch/?color=b90078"
+      }
+    },
+    {
+      "name": "Hydrangea Red",
+      "hex": "#9e194d",
+      "meta": {
+        "index": 27,
+        "slug": "hydrangea-red",
+        "cmyk_array": [38, 90, 70, 0],
+        "cmyk": "C:38 / M:90 / Y:70 / K:0",
+        "rgb_array": [158, 25, 77],
+        "rgb": "R:158 / G:25 / B:77",
+        "combinations": [142],
+        "use_count": 1
+      },
+      "rgb": { "r": 158, "g": 25, "b": 77 },
+      "hsl": { "h": 337, "s": 72.6776, "l": 35.88235 },
+      "lab": { "l": 35.50726, "a": 54.71212, "b": 5.93323 },
+      "luminance": 50.24157,
+      "luminanceWCAG": 0.085,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=9e194d&name=Hydrangea%20Red",
+        "svg": "/v1/swatch/?color=9e194d"
+      }
+    },
+    {
+      "name": "Brick Red",
+      "hex": "#a32100",
+      "meta": {
+        "index": 28,
+        "slug": "brick-red",
+        "cmyk_array": [22, 84, 100, 18],
+        "cmyk": "C:22 / M:84 / Y:100 / K:18",
+        "rgb_array": [163, 33, 0],
+        "rgb": "R:163 / G:33 / B:0",
+        "combinations": [37, 108, 246, 322, 328],
+        "use_count": 5
+      },
+      "rgb": { "r": 163, "g": 33, "b": 0 },
+      "hsl": { "h": 12, "s": 100, "l": 31.96078 },
+      "lab": { "l": 36.44148, "a": 51.86964, "b": 50.4127 },
+      "luminance": 52.4455,
+      "luminanceWCAG": 0.08874,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=a32100&name=Brick%20Red",
+        "svg": "/v1/swatch/?color=a32100"
+      }
+    },
+    {
+      "name": "Carmine Red",
+      "hex": "#a10b2b",
+      "meta": {
+        "index": 29,
+        "slug": "carmine-red",
+        "cmyk_array": [25, 95, 80, 16],
+        "cmyk": "C:25 / M:95 / Y:80 / K:16",
+        "rgb_array": [161, 11, 43],
+        "rgb": "R:161 / G:11 / B:43",
+        "combinations": [35, 51, 104, 130, 181, 200, 221, 228, 233, 237, 245],
+        "use_count": 11
+      },
+      "rgb": { "r": 161, "g": 11, "b": 43 },
+      "hsl": { "h": 347, "s": 87.2093, "l": 33.72549 },
+      "lab": { "l": 34.63334, "a": 56.60427, "b": 27.06417 },
+      "luminance": 48.81686,
+      "luminanceWCAG": 0.07991,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=a10b2b&name=Carmine%20Red",
+        "svg": "/v1/swatch/?color=a10b2b"
+      }
+    },
+    {
+      "name": "Pompeian Red",
+      "hex": "#a90636",
+      "meta": {
+        "index": 30,
+        "slug": "pompeian-red",
+        "cmyk_array": [18, 97, 74, 19],
+        "cmyk": "C:18 / M:97 / Y:74 / K:19",
+        "rgb_array": [169, 6, 54],
+        "rgb": "R:169 / G:6 / B:54",
+        "combinations": [30, 71, 120, 212, 311, 324],
+        "use_count": 6
+      },
+      "rgb": { "r": 169, "g": 6, "b": 54 },
+      "hsl": { "h": 342, "s": 93.14286, "l": 34.31373 },
+      "lab": { "l": 36.33266, "a": 59.65548, "b": 22.4982 },
+      "luminance": 51.02629,
+      "luminanceWCAG": 0.08832,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=a90636&name=Pompeian%20Red",
+        "svg": "/v1/swatch/?color=a90636"
+      }
+    },
+    {
+      "name": "Red",
+      "hex": "#a10045",
+      "meta": {
+        "index": 31,
+        "slug": "red",
+        "cmyk_array": [30, 100, 70, 10],
+        "cmyk": "C:30 / M:100 / Y:70 / K:10",
+        "rgb_array": [161, 0, 69],
+        "rgb": "R:161 / G:0 / B:69",
+        "combinations": [251, 261],
+        "use_count": 2
+      },
+      "rgb": { "r": 161, "g": 0, "b": 69 },
+      "hsl": { "h": 334, "s": 100, "l": 31.56863 },
+      "lab": { "l": 34.58132, "a": 58.96818, "b": 10.00542 },
+      "luminance": 48.77743,
+      "luminanceWCAG": 0.08007,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=a10045&name=Red",
+        "svg": "/v1/swatch/?color=a10045"
+      }
+    },
+    {
+      "name": "Brown",
+      "hex": "#6c2b11",
+      "meta": {
+        "index": 32,
+        "slug": "brown",
+        "cmyk_array": [35, 74, 90, 35],
+        "cmyk": "C:35 / M:74 / Y:90 / K:35",
+        "rgb_array": [108, 43, 17],
+        "rgb": "R:108 / G:43 / B:17",
+        "combinations": [110, 121, 145, 161],
+        "use_count": 4
+      },
+      "rgb": { "r": 108, "g": 43, "b": 17 },
+      "hsl": { "h": 17, "s": 72.8, "l": 24.5098 },
+      "lab": { "l": 27.0247, "a": 28.45473, "b": 30.77014 },
+      "luminance": 41.03215,
+      "luminanceWCAG": 0.04956,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=6c2b11&name=Brown",
+        "svg": "/v1/swatch/?color=6c2b11"
+      }
+    },
+    {
+      "name": "Hay's Russet",
+      "hex": "#681916",
+      "meta": {
+        "index": 33,
+        "slug": "hay's-russet",
+        "cmyk_array": [37, 85, 87, 35],
+        "cmyk": "C:37 / M:85 / Y:87 / K:35",
+        "rgb_array": [104, 25, 22],
+        "rgb": "R:104 / G:25 / B:22",
+        "combinations": [58, 82, 95, 152, 186, 231, 249, 304, 314, 336, 345],
+        "use_count": 11
+      },
+      "rgb": { "r": 104, "g": 25, "b": 22 },
+      "hsl": { "h": 2, "s": 65.07937, "l": 24.70588 },
+      "lab": { "l": 23.08661, "a": 35.2847, "b": 23.70044 },
+      "luminance": 34.47618,
+      "luminanceWCAG": 0.03696,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=681916&name=Hay's%20Russet",
+        "svg": "/v1/swatch/?color=681916"
+      }
+    },
+    {
+      "name": "Vandyke Red",
+      "hex": "#740909",
+      "meta": {
+        "index": 34,
+        "slug": "vandyke-red",
+        "cmyk_array": [32, 95, 95, 33],
+        "cmyk": "C:32 / M:95 / Y:95 / K:33",
+        "rgb_array": [116, 9, 9],
+        "rgb": "R:116 / G:9 / B:9",
+        "combinations": [16, 133, 147, 316, 335],
+        "use_count": 5
+      },
+      "rgb": { "r": 116, "g": 9, "b": 9 },
+      "hsl": { "h": 0, "s": 85.6, "l": 24.5098 },
+      "lab": { "l": 23.99404, "a": 43.48694, "b": 32.59423 },
+      "luminance": 35.09904,
+      "luminanceWCAG": 0.03928,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=740909&name=Vandyke%20Red",
+        "svg": "/v1/swatch/?color=740909"
+      }
+    },
+    {
+      "name": "Pansy Purple",
+      "hex": "#6f0043",
+      "meta": {
+        "index": 35,
+        "slug": "pansy-purple",
+        "cmyk_array": [34, 100, 60, 34],
+        "cmyk": "C:34 / M:100 / Y:60 / K:34",
+        "rgb_array": [111, 0, 67],
+        "rgb": "R:111 / G:0 / B:67",
+        "combinations": [157, 273],
+        "use_count": 2
+      },
+      "rgb": { "r": 111, "g": 0, "b": 67 },
+      "hsl": { "h": 324, "s": 100, "l": 21.76471 },
+      "lab": { "l": 23.26119, "a": 46.41148, "b": -6.60264 },
+      "luminance": 34.05655,
+      "luminanceWCAG": 0.03785,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=6f0043&name=Pansy%20Purple",
+        "svg": "/v1/swatch/?color=6f0043"
+      }
+    },
+    {
+      "name": "Pale Burnt Lake",
+      "hex": "#730f1f",
+      "meta": {
+        "index": 36,
+        "slug": "pale-burnt-lake",
+        "cmyk_array": [25, 90, 80, 40],
+        "cmyk": "C:25 / M:90 / Y:80 / K:40",
+        "rgb_array": [115, 15, 31],
+        "rgb": "R:115 / G:15 / B:31",
+        "combinations": [124, 171, 177, 205, 217, 258, 269, 283],
+        "use_count": 8
+      },
+      "rgb": { "r": 115, "g": 15, "b": 31 },
+      "hsl": { "h": 350, "s": 76.92308, "l": 25.4902 },
+      "lab": { "l": 24.44998, "a": 42.40725, "b": 20.07425 },
+      "luminance": 35.66995,
+      "luminanceWCAG": 0.04085,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=730f1f&name=Pale%20Burnt%20Lake",
+        "svg": "/v1/swatch/?color=730f1f"
+      }
+    },
+    {
+      "name": "Violet Red",
+      "hex": "#3d0079",
+      "meta": {
+        "index": 37,
+        "slug": "violet-red",
+        "cmyk_array": [75, 100, 50, 5],
+        "cmyk": "C:75 / M:100 / Y:50 / K:5",
+        "rgb_array": [61, 0, 121],
+        "rgb": "R:61 / G:0 / B:121",
+        "combinations": [9],
+        "use_count": 1
+      },
+      "rgb": { "r": 61, "g": 0, "b": 121 },
+      "hsl": { "h": 270, "s": 100, "l": 23.72549 },
+      "lab": { "l": 16.49047, "a": 43.51188, "b": -53.95709 },
+      "luminance": 22.86778,
+      "luminanceWCAG": 0.02373,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=3d0079&name=Violet%20Red",
+        "svg": "/v1/swatch/?color=3d0079"
+      }
+    },
+    {
+      "name": "Vistoris Lake",
+      "hex": "#5c2c45",
+      "meta": {
+        "index": 38,
+        "slug": "vistoris-lake",
+        "cmyk_array": [40, 71, 55, 40],
+        "cmyk": "C:40 / M:71 / Y:55 / K:40",
+        "rgb_array": [92, 44, 69],
+        "rgb": "R:92 / G:44 / B:69",
+        "combinations": [63, 91, 165, 226, 290, 337],
+        "use_count": 6
+      },
+      "rgb": { "r": 92, "g": 44, "b": 69 },
+      "hsl": { "h": 329, "s": 35.29412, "l": 26.66667 },
+      "lab": { "l": 25.40506, "a": 24.90111, "b": -5.25396 },
+      "luminance": 38.54413,
+      "luminanceWCAG": 0.04506,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=5c2c45&name=Vistoris%20Lake",
+        "svg": "/v1/swatch/?color=5c2c45"
+      }
+    },
+    {
+      "name": "Sulpher Yellow",
+      "hex": "#f5f5b8",
+      "meta": {
+        "index": 39,
+        "slug": "sulpher-yellow",
+        "cmyk_array": [4, 4, 28, 0],
+        "cmyk": "C:4 / M:4 / Y:28 / K:0",
+        "rgb_array": [245, 245, 184],
+        "rgb": "R:245 / G:245 / B:184",
+        "combinations": [
+          52, 72, 80, 104, 132, 135, 151, 208, 246, 254, 270, 294, 296, 310,
+          315, 320, 321, 326
+        ],
+        "use_count": 18
+      },
+      "rgb": { "r": 245, "g": 245, "b": 184 },
+      "hsl": { "h": 60, "s": 75.30864, "l": 84.11765 },
+      "lab": { "l": 95.44671, "a": -6.97558, "b": 29.51726 },
+      "luminance": 162.75454,
+      "luminanceWCAG": 0.88178,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=f5f5b8&name=Sulpher%20Yellow",
+        "svg": "/v1/swatch/?color=f5f5b8"
+      }
+    },
+    {
+      "name": "Pale Lemon Yellow",
+      "hex": "#fff59e",
+      "meta": {
+        "index": 40,
+        "slug": "pale-lemon-yellow",
+        "cmyk_array": [0, 4, 38, 0],
+        "cmyk": "C:0 / M:4 / Y:38 / K:0",
+        "rgb_array": [255, 245, 158],
+        "rgb": "R:255 / G:245 / B:158",
+        "combinations": [
+          3, 31, 60, 76, 99, 109, 111, 169, 185, 195, 203, 228, 241, 261, 272,
+          281, 290, 292, 336
+        ],
+        "use_count": 19
+      },
+      "rgb": { "r": 255, "g": 245, "b": 158 },
+      "hsl": { "h": 54, "s": 100, "l": 80.98039 },
+      "lab": { "l": 95.9059, "a": -5.46443, "b": 43.13551 },
+      "luminance": 163.76961,
+      "luminanceWCAG": 0.89033,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=fff59e&name=Pale%20Lemon%20Yellow",
+        "svg": "/v1/swatch/?color=fff59e"
+      }
+    },
+    {
+      "name": "Naples Yellow",
+      "hex": "#faed8f",
+      "meta": {
+        "index": 41,
+        "slug": "naples-yellow",
+        "cmyk_array": [2, 7, 44, 0],
+        "cmyk": "C:2 / M:7 / Y:44 / K:0",
+        "rgb_array": [250, 237, 143],
+        "rgb": "R:250 / G:237 / B:143",
+        "combinations": [14, 115, 166, 193, 303, 325],
+        "use_count": 6
+      },
+      "rgb": { "r": 250, "g": 237, "b": 143 },
+      "hsl": { "h": 53, "s": 91.45299, "l": 77.05882 },
+      "lab": { "l": 93.2967, "a": -4.77113, "b": 47.02681 },
+      "luminance": 158.76843,
+      "luminanceWCAG": 0.82876,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=faed8f&name=Naples%20Yellow",
+        "svg": "/v1/swatch/?color=faed8f"
+      }
+    },
+    {
+      "name": "Ivory Buff",
+      "hex": "#ebd999",
+      "meta": {
+        "index": 42,
+        "slug": "ivory-buff",
+        "cmyk_array": [8, 15, 40, 0],
+        "cmyk": "C:8 / M:15 / Y:40 / K:0",
+        "rgb_array": [235, 217, 153],
+        "rgb": "R:235 / G:217 / B:153",
+        "combinations": [
+          11, 50, 94, 102, 126, 178, 184, 190, 209, 214, 235, 243, 262, 266,
+          301, 343
+        ],
+        "use_count": 16
+      },
+      "rgb": { "r": 235, "g": 217, "b": 153 },
+      "hsl": { "h": 47, "s": 67.21311, "l": 76.07843 },
+      "lab": { "l": 87.07436, "a": -0.3149, "b": 33.95759 },
+      "luminance": 146.51554,
+      "luminanceWCAG": 0.69588,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=ebd999&name=Ivory%20Buff",
+        "svg": "/v1/swatch/?color=ebd999"
+      }
+    },
+    {
+      "name": "Seashell Pink",
+      "hex": "#ffcfc4",
+      "meta": {
+        "index": 43,
+        "slug": "seashell-pink",
+        "cmyk_array": [0, 19, 23, 0],
+        "cmyk": "C:0 / M:19 / Y:23 / K:0",
+        "rgb_array": [255, 207, 196],
+        "rgb": "R:255 / G:207 / B:196",
+        "combinations": [45, 84, 88, 113, 150, 176, 194, 276, 334],
+        "use_count": 9
+      },
+      "rgb": { "r": 255, "g": 207, "b": 196 },
+      "hsl": { "h": 11, "s": 100, "l": 88.43137 },
+      "lab": { "l": 87.15698, "a": 16.27409, "b": 12.22013 },
+      "luminance": 145.17917,
+      "luminanceWCAG": 0.69871,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=ffcfc4&name=Seashell%20Pink",
+        "svg": "/v1/swatch/?color=ffcfc4"
+      }
+    },
+    {
+      "name": "Light Pinkish Cinnamon",
+      "hex": "#ffbf99",
+      "meta": {
+        "index": 44,
+        "slug": "light-pinkish-cinnamon",
+        "cmyk_array": [0, 25, 40, 0],
+        "cmyk": "C:0 / M:25 / Y:40 / K:0",
+        "rgb_array": [255, 191, 153],
+        "rgb": "R:255 / G:191 / B:153",
+        "combinations": [317],
+        "use_count": 1
+      },
+      "rgb": { "r": 255, "g": 191, "b": 153 },
+      "hsl": { "h": 22, "s": 100, "l": 80 },
+      "lab": { "l": 82.66308, "a": 20.2783, "b": 28.64459 },
+      "luminance": 136.70313,
+      "luminanceWCAG": 0.60822,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=ffbf99&name=Light%20Pinkish%20Cinnamon",
+        "svg": "/v1/swatch/?color=ffbf99"
+      }
+    },
+    {
+      "name": "Pinkish Cinnamon",
+      "hex": "#f2ad78",
+      "meta": {
+        "index": 45,
+        "slug": "pinkish-cinnamon",
+        "cmyk_array": [5, 32, 53, 0],
+        "cmyk": "C:5 / M:32 / Y:53 / K:0",
+        "rgb_array": [242, 173, 120],
+        "rgb": "R:242 / G:173 / B:120",
+        "combinations": [78, 175, 232, 258, 263, 292, 305, 310],
+        "use_count": 8
+      },
+      "rgb": { "r": 242, "g": 173, "b": 120 },
+      "hsl": { "h": 26, "s": 82.43243, "l": 70.98039 },
+      "lab": { "l": 76.58957, "a": 21.76028, "b": 37.68522 },
+      "luminance": 125.44093,
+      "luminanceWCAG": 0.5012,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=f2ad78&name=Pinkish%20Cinnamon",
+        "svg": "/v1/swatch/?color=f2ad78"
+      }
+    },
+    {
+      "name": "Cinnamon Buff",
+      "hex": "#ffbf6e",
+      "meta": {
+        "index": 46,
+        "slug": "cinnamon-buff",
+        "cmyk_array": [0, 25, 57, 0],
+        "cmyk": "C:0 / M:25 / Y:57 / K:0",
+        "rgb_array": [255, 191, 110],
+        "rgb": "R:255 / G:191 / B:110",
+        "combinations": [23, 127, 137, 180, 210, 234, 246, 323, 344],
+        "use_count": 9
+      },
+      "rgb": { "r": 255, "g": 191, "b": 110 },
+      "hsl": { "h": 34, "s": 100, "l": 71.56863 },
+      "lab": { "l": 82.13336, "a": 17.43794, "b": 49.72823 },
+      "luminance": 136.16451,
+      "luminanceWCAG": 0.59647,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=ffbf6e&name=Cinnamon%20Buff",
+        "svg": "/v1/swatch/?color=ffbf6e"
+      }
+    },
+    {
+      "name": "Cream Yellow",
+      "hex": "#ffb852",
+      "meta": {
+        "index": 47,
+        "slug": "cream-yellow",
+        "cmyk_array": [0, 28, 68, 0],
+        "cmyk": "C:0 / M:28 / Y:68 / K:0",
+        "rgb_array": [255, 184, 82],
+        "rgb": "R:255 / G:184 / B:82",
+        "combinations": [
+          122, 192, 215, 226, 267, 278, 294, 295, 300, 302, 304, 311, 329, 342
+        ],
+        "use_count": 14
+      },
+      "rgb": { "r": 255, "g": 184, "b": 82 },
+      "hsl": { "h": 35, "s": 100, "l": 66.07843 },
+      "lab": { "l": 80.24892, "a": 19.62522, "b": 60.55945 },
+      "luminance": 132.53835,
+      "luminanceWCAG": 0.5615,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=ffb852&name=Cream%20Yellow",
+        "svg": "/v1/swatch/?color=ffb852"
+      }
+    },
+    {
+      "name": "Golden Yellow",
+      "hex": "#fa9442",
+      "meta": {
+        "index": 48,
+        "slug": "golden-yellow",
+        "cmyk_array": [2, 42, 74, 0],
+        "cmyk": "C:2 / M:42 / Y:74 / K:0",
+        "rgb_array": [250, 148, 66],
+        "rgb": "R:250 / G:148 / B:66",
+        "combinations": [26, 81, 132, 138, 140, 179],
+        "use_count": 6
+      },
+      "rgb": { "r": 250, "g": 148, "b": 66 },
+      "hsl": { "h": 27, "s": 94.84536, "l": 61.96078 },
+      "lab": { "l": 71.43984, "a": 34.91186, "b": 58.50672 },
+      "luminance": 114.85475,
+      "luminanceWCAG": 0.41897,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=fa9442&name=Golden%20Yellow",
+        "svg": "/v1/swatch/?color=fa9442"
+      }
+    },
+    {
+      "name": "Vinaceous Cinnamon",
+      "hex": "#f59994",
+      "meta": {
+        "index": 49,
+        "slug": "vinaceous-cinnamon",
+        "cmyk_array": [4, 40, 42, 0],
+        "cmyk": "C:4 / M:40 / Y:42 / K:0",
+        "rgb_array": [245, 153, 148],
+        "rgb": "R:245 / G:153 / B:148",
+        "combinations": [203, 205, 213, 256, 260, 279, 299],
+        "use_count": 7
+      },
+      "rgb": { "r": 245, "g": 153, "b": 148 },
+      "hsl": { "h": 3, "s": 82.90598, "l": 77.05882 },
+      "lab": { "l": 72.85757, "a": 34.95375, "b": 17.96251 },
+      "luminance": 117.11949,
+      "luminanceWCAG": 0.44333,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=f59994&name=Vinaceous%20Cinnamon",
+        "svg": "/v1/swatch/?color=f59994"
+      }
+    },
+    {
+      "name": "Ochraceous Salmon",
+      "hex": "#d99e73",
+      "meta": {
+        "index": 50,
+        "slug": "ochraceous-salmon",
+        "cmyk_array": [15, 38, 55, 0],
+        "cmyk": "C:15 / M:38 / Y:55 / K:0",
+        "rgb_array": [217, 158, 115],
+        "rgb": "R:217 / G:158 / B:115",
+        "combinations": [32, 71, 121, 186, 217, 220, 223, 238, 296, 339],
+        "use_count": 10
+      },
+      "rgb": { "r": 217, "g": 158, "b": 115 },
+      "hsl": { "h": 25, "s": 57.30337, "l": 65.09804 },
+      "lab": { "l": 70.16842, "a": 18.92403, "b": 31.54291 },
+      "luminance": 113.94515,
+      "luminanceWCAG": 0.40443,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=d99e73&name=Ochraceous%20Salmon",
+        "svg": "/v1/swatch/?color=d99e73"
+      }
+    },
+    {
+      "name": "Isabella Color",
+      "hex": "#c3a55c",
+      "meta": {
+        "index": 51,
+        "slug": "isabella-color",
+        "cmyk_array": [15, 28, 60, 10],
+        "cmyk": "C:15 / M:28 / Y:60 / K:10",
+        "rgb_array": [195, 165, 92],
+        "rgb": "R:195 / G:165 / B:92",
+        "combinations": [4, 12, 241, 292],
+        "use_count": 4
+      },
+      "rgb": { "r": 195, "g": 165, "b": 92 },
+      "hsl": { "h": 43, "s": 46.18834, "l": 56.27451 },
+      "lab": { "l": 69.30167, "a": 4.65715, "b": 41.73222 },
+      "luminance": 113.53573,
+      "luminanceWCAG": 0.39285,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=c3a55c&name=Isabella%20Color",
+        "svg": "/v1/swatch/?color=c3a55c"
+      }
+    },
+    {
+      "name": "Maple",
+      "hex": "#c2975a",
+      "meta": {
+        "index": 52,
+        "slug": "maple",
+        "cmyk_array": [5, 26, 56, 20],
+        "cmyk": "C:5 / M:26 / Y:56 / K:20",
+        "rgb_array": [194, 151, 90],
+        "rgb": "R:194 / G:151 / B:90",
+        "combinations": [282],
+        "use_count": 1
+      },
+      "rgb": { "r": 194, "g": 151, "b": 90 },
+      "hsl": { "h": 35, "s": 46.0177, "l": 55.68627 },
+      "lab": { "l": 65.59936, "a": 11.30551, "b": 38.34176 },
+      "luminance": 106.42594,
+      "luminanceWCAG": 0.34341,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=c2975a&name=Maple",
+        "svg": "/v1/swatch/?color=c2975a"
+      }
+    },
+    {
+      "name": "Olive Buff",
+      "hex": "#bcd382",
+      "meta": {
+        "index": 53,
+        "slug": "olive-buff",
+        "cmyk_array": [16, 6, 42, 12],
+        "cmyk": "C:16 / M:6 / Y:42 / K:12",
+        "rgb_array": [188, 211, 130],
+        "rgb": "R:188 / G:211 / B:130",
+        "combinations": [83, 175, 200, 330, 348],
+        "use_count": 5
+      },
+      "rgb": { "r": 188, "g": 211, "b": 130 },
+      "hsl": { "h": 77, "s": 47.92899, "l": 66.86275 },
+      "lab": { "l": 81.42359, "a": -17.67645, "b": 37.38905 },
+      "luminance": 136.82097,
+      "luminanceWCAG": 0.58892,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=bcd382&name=Olive%20Buff",
+        "svg": "/v1/swatch/?color=bcd382"
+      }
+    },
+    {
+      "name": "Ecru",
+      "hex": "#c0b490",
+      "meta": {
+        "index": 54,
+        "slug": "ecru",
+        "cmyk_array": [20, 25, 40, 6],
+        "cmyk": "C:20 / M:25 / Y:40 / K:6",
+        "rgb_array": [192, 180, 144],
+        "rgb": "R:192 / G:180 / B:144",
+        "combinations": [167, 249, 275, 279, 292, 302, 317, 327],
+        "use_count": 8
+      },
+      "rgb": { "r": 192, "g": 180, "b": 144 },
+      "hsl": { "h": 45, "s": 27.58621, "l": 65.88235 },
+      "lab": { "l": 73.63515, "a": 0.18504, "b": 20.0682 },
+      "luminance": 121.36391,
+      "luminanceWCAG": 0.45863,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=c0b490&name=Ecru",
+        "svg": "/v1/swatch/?color=c0b490"
+      }
+    },
+    {
+      "name": "Yellow",
+      "hex": "#ffff00",
+      "meta": {
+        "index": 55,
+        "slug": "yellow",
+        "cmyk_array": [0, 0, 100, 0],
+        "cmyk": "C:0 / M:0 / Y:100 / K:0",
+        "rgb_array": [255, 255, 0],
+        "rgb": "R:255 / G:255 / B:0",
+        "combinations": [22, 62, 68, 154, 240, 251, 295, 313],
+        "use_count": 8
+      },
+      "rgb": { "r": 255, "g": 255, "b": 0 },
+      "hsl": { "h": 60, "s": 100, "l": 50 },
+      "lab": { "l": 97.60713, "a": -15.75288, "b": 93.38848 },
+      "luminance": 167.98482,
+      "luminanceWCAG": 0.9278,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=ffff00&name=Yellow",
+        "svg": "/v1/swatch/?color=ffff00"
+      }
+    },
+    {
+      "name": "Lemon Yellow",
+      "hex": "#f2ff26",
+      "meta": {
+        "index": 56,
+        "slug": "lemon-yellow",
+        "cmyk_array": [5, 0, 85, 0],
+        "cmyk": "C:5 / M:0 / Y:85 / K:0",
+        "rgb_array": [242, 255, 38],
+        "rgb": "R:242 / G:255 / B:38",
+        "combinations": [
+          45, 123, 138, 158, 168, 173, 189, 210, 253, 259, 289, 298, 306, 317,
+          333
+        ],
+        "use_count": 15
+      },
+      "rgb": { "r": 242, "g": 255, "b": 38 },
+      "hsl": { "h": 64, "s": 100, "l": 57.45098 },
+      "lab": { "l": 96.64099, "a": -20.6291, "b": 88.07568 },
+      "luminance": 166.3131,
+      "luminanceWCAG": 0.90537,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=f2ff26&name=Lemon%20Yellow",
+        "svg": "/v1/swatch/?color=f2ff26"
+      }
+    },
+    {
+      "name": "Apricot Yellow",
+      "hex": "#ffe600",
+      "meta": {
+        "index": 57,
+        "slug": "apricot-yellow",
+        "cmyk_array": [0, 10, 100, 0],
+        "cmyk": "C:0 / M:10 / Y:100 / K:0",
+        "rgb_array": [255, 230, 0],
+        "rgb": "R:255 / G:230 / B:0",
+        "combinations": [107, 129, 163, 198, 213, 247, 265, 284, 305, 319],
+        "use_count": 10
+      },
+      "rgb": { "r": 255, "g": 230, "b": 0 },
+      "hsl": { "h": 54, "s": 100, "l": 50 },
+      "lab": { "l": 91.22384, "a": -4.23352, "b": 89.04111 },
+      "luminance": 155.0516,
+      "luminanceWCAG": 0.77854,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=ffe600&name=Apricot%20Yellow",
+        "svg": "/v1/swatch/?color=ffe600"
+      }
+    },
+    {
+      "name": "Pyrite Yellow",
+      "hex": "#c4bf33",
+      "meta": {
+        "index": 58,
+        "slug": "pyrite-yellow",
+        "cmyk_array": [23, 25, 80, 0],
+        "cmyk": "C:23 / M:25 / Y:80 / K:0",
+        "rgb_array": [196, 191, 51],
+        "rgb": "R:196 / G:191 / B:51",
+        "combinations": [239, 250, 255, 287],
+        "use_count": 4
+      },
+      "rgb": { "r": 196, "g": 191, "b": 51 },
+      "hsl": { "h": 58, "s": 58.70445, "l": 48.43137 },
+      "lab": { "l": 75.96617, "a": -9.70107, "b": 65.95488 },
+      "luminance": 126.64301,
+      "luminanceWCAG": 0.49236,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=c4bf33&name=Pyrite%20Yellow",
+        "svg": "/v1/swatch/?color=c4bf33"
+      }
+    },
+    {
+      "name": "Olive Ocher",
+      "hex": "#d1bd19",
+      "meta": {
+        "index": 59,
+        "slug": "olive-ocher",
+        "cmyk_array": [18, 26, 90, 0],
+        "cmyk": "C:18 / M:26 / Y:90 / K:0",
+        "rgb_array": [209, 189, 25],
+        "rgb": "R:209 / G:189 / B:25",
+        "combinations": [66, 148, 149, 156, 157, 249, 278],
+        "use_count": 7
+      },
+      "rgb": { "r": 209, "g": 189, "b": 25 },
+      "hsl": { "h": 53, "s": 78.63248, "l": 45.88235 },
+      "lab": { "l": 76.51295, "a": -3.76687, "b": 73.66686 },
+      "luminance": 127.36403,
+      "luminanceWCAG": 0.50021,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=d1bd19&name=Olive%20Ocher",
+        "svg": "/v1/swatch/?color=d1bd19"
+      }
+    },
+    {
+      "name": "Yellow Ocher",
+      "hex": "#e0b81f",
+      "meta": {
+        "index": 60,
+        "slug": "yellow-ocher",
+        "cmyk_array": [12, 28, 88, 0],
+        "cmyk": "C:12 / M:28 / Y:88 / K:0",
+        "rgb_array": [224, 184, 31],
+        "rgb": "R:224 / G:184 / B:31",
+        "combinations": [42, 96, 118, 124, 126, 191, 222, 325],
+        "use_count": 8
+      },
+      "rgb": { "r": 224, "g": 184, "b": 31 },
+      "hsl": { "h": 48, "s": 75.68627, "l": 50 },
+      "lab": { "l": 76.69722, "a": 5.22046, "b": 73.3427 },
+      "luminance": 127.13773,
+      "luminanceWCAG": 0.50227,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=e0b81f&name=Yellow%20Ocher",
+        "svg": "/v1/swatch/?color=e0b81f"
+      }
+    },
+    {
+      "name": "Orange Yellow",
+      "hex": "#ffab00",
+      "meta": {
+        "index": 61,
+        "slug": "orange-yellow",
+        "cmyk_array": [0, 33, 100, 0],
+        "cmyk": "C:0 / M:33 / Y:100 / K:0",
+        "rgb_array": [255, 171, 0],
+        "rgb": "R:255 / G:171 / B:0",
+        "combinations": [114, 148, 153, 164, 170, 257, 286, 338],
+        "use_count": 8
+      },
+      "rgb": { "r": 255, "g": 171, "b": 0 },
+      "hsl": { "h": 40, "s": 100, "l": 50 },
+      "lab": { "l": 76.94756, "a": 24.5402, "b": 79.92074 },
+      "luminance": 126.05095,
+      "luminanceWCAG": 0.50386,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=ffab00&name=Orange%20Yellow",
+        "svg": "/v1/swatch/?color=ffab00"
+      }
+    },
+    {
+      "name": "Yellow Orange",
+      "hex": "#ff8c00",
+      "meta": {
+        "index": 62,
+        "slug": "yellow-orange",
+        "cmyk_array": [0, 45, 100, 0],
+        "cmyk": "C:0 / M:45 / Y:100 / K:0",
+        "rgb_array": [255, 140, 0],
+        "rgb": "R:255 / G:140 / B:0",
+        "combinations": [
+          22, 53, 89, 151, 171, 209, 222, 235, 267, 288, 297, 312, 319, 335
+        ],
+        "use_count": 14
+      },
+      "rgb": { "r": 255, "g": 140, "b": 0 },
+      "hsl": { "h": 33, "s": 100, "l": 50 },
+      "lab": { "l": 70.21139, "a": 39.78732, "b": 76.0855 },
+      "luminance": 112.10197,
+      "luminanceWCAG": 0.40016,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=ff8c00&name=Yellow%20Orange",
+        "svg": "/v1/swatch/?color=ff8c00"
+      }
+    },
+    {
+      "name": "Apricot Orange",
+      "hex": "#ff7340",
+      "meta": {
+        "index": 63,
+        "slug": "apricot-orange",
+        "cmyk_array": [0, 55, 75, 0],
+        "cmyk": "C:0 / M:55 / Y:75 / K:0",
+        "rgb_array": [255, 115, 64],
+        "rgb": "R:255 / G:115 / B:64",
+        "combinations": [211, 253, 309, 328],
+        "use_count": 4
+      },
+      "rgb": { "r": 255, "g": 115, "b": 64 },
+      "hsl": { "h": 16, "s": 100, "l": 62.54902 },
+      "lab": { "l": 65.63287, "a": 52.34236, "b": 54.05921 },
+      "luminance": 102.09533,
+      "luminanceWCAG": 0.33892,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=ff7340&name=Apricot%20Orange",
+        "svg": "/v1/swatch/?color=ff7340"
+      }
+    },
+    {
+      "name": "Orange",
+      "hex": "#ff5200",
+      "meta": {
+        "index": 64,
+        "slug": "orange",
+        "cmyk_array": [0, 68, 100, 0],
+        "cmyk": "C:0 / M:68 / Y:100 / K:0",
+        "rgb_array": [255, 82, 0],
+        "rgb": "R:255 / G:82 / B:0",
+        "combinations": [7, 46, 141, 144, 149, 256, 272],
+        "use_count": 7
+      },
+      "rgb": { "r": 255, "g": 82, "b": 0 },
+      "hsl": { "h": 19, "s": 100, "l": 50 },
+      "lab": { "l": 60.15809, "a": 64.83074, "b": 71.44665 },
+      "luminance": 90.16752,
+      "luminanceWCAG": 0.27295,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=ff5200&name=Orange",
+        "svg": "/v1/swatch/?color=ff5200"
+      }
+    },
+    {
+      "name": "Peach Red",
+      "hex": "#ff3319",
+      "meta": {
+        "index": 65,
+        "slug": "peach-red",
+        "cmyk_array": [0, 80, 90, 0],
+        "cmyk": "C:0 / M:80 / Y:90 / K:0",
+        "rgb_array": [255, 51, 25],
+        "rgb": "R:255 / G:51 / B:25",
+        "combinations": [115, 250, 274, 285, 298, 303, 326, 340],
+        "use_count": 8
+      },
+      "rgb": { "r": 255, "g": 51, "b": 25 },
+      "hsl": { "h": 7, "s": 100, "l": 54.90196 },
+      "lab": { "l": 56.76483, "a": 74.25629, "b": 63.87503 },
+      "luminance": 81.96125,
+      "luminanceWCAG": 0.23698,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=ff3319&name=Peach%20Red",
+        "svg": "/v1/swatch/?color=ff3319"
+      }
+    },
+    {
+      "name": "English Red",
+      "hex": "#de4500",
+      "meta": {
+        "index": 66,
+        "slug": "english-red",
+        "cmyk_array": [13, 73, 100, 0],
+        "cmyk": "C:13 / M:73 / Y:100 / K:0",
+        "rgb_array": [222, 69, 0],
+        "rgb": "R:222 / G:69 / B:0",
+        "combinations": [1, 131, 190, 308, 339],
+        "use_count": 5
+      },
+      "rgb": { "r": 222, "g": 69, "b": 0 },
+      "hsl": { "h": 19, "s": 100, "l": 43.52941 },
+      "lab": { "l": 52.41935, "a": 58.83171, "b": 64.2842 },
+      "luminance": 77.75945,
+      "luminanceWCAG": 0.19786,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=de4500&name=English%20Red",
+        "svg": "/v1/swatch/?color=de4500"
+      }
+    },
+    {
+      "name": "Cinnamon Rufous",
+      "hex": "#c2612c",
+      "meta": {
+        "index": 67,
+        "slug": "cinnamon-rufous",
+        "cmyk_array": [20, 60, 82, 5],
+        "cmyk": "C:20 / M:60 / Y:82 / K:5",
+        "rgb_array": [194, 97, 44],
+        "rgb": "R:194 / G:97 / B:44",
+        "combinations": [8, 10, 103, 158, 172, 204, 206],
+        "use_count": 7
+      },
+      "rgb": { "r": 194, "g": 97, "b": 44 },
+      "hsl": { "h": 21, "s": 63.02521, "l": 46.66667 },
+      "lab": { "l": 52.64807, "a": 37.12206, "b": 47.23545 },
+      "luminance": 81.43652,
+      "luminanceWCAG": 0.20201,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=c2612c&name=Cinnamon%20Rufous",
+        "svg": "/v1/swatch/?color=c2612c"
+      }
+    },
+    {
+      "name": "Orange Rufous",
+      "hex": "#c05200",
+      "meta": {
+        "index": 68,
+        "slug": "orange-rufous",
+        "cmyk_array": [18, 65, 100, 8],
+        "cmyk": "C:18 / M:65 / Y:100 / K:8",
+        "rgb_array": [192, 82, 0],
+        "rgb": "R:192 / G:82 / B:0",
+        "combinations": [91, 102, 222],
+        "use_count": 3
+      },
+      "rgb": { "r": 192, "g": 82, "b": 0 },
+      "hsl": { "h": 26, "s": 100, "l": 37.64706 },
+      "lab": { "l": 49.22487, "a": 42.85409, "b": 59.25003 },
+      "luminance": 74.91702,
+      "luminanceWCAG": 0.17241,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=c05200&name=Orange%20Rufous",
+        "svg": "/v1/swatch/?color=c05200"
+      }
+    },
+    {
+      "name": "Sulphine Yellow",
+      "hex": "#baa600",
+      "meta": {
+        "index": 69,
+        "slug": "sulphine-yellow",
+        "cmyk_array": [24, 32, 100, 4],
+        "cmyk": "C:24 / M:32 / Y:100 / K:4",
+        "rgb_array": [186, 166, 0],
+        "rgb": "R:186 / G:166 / B:0",
+        "combinations": [36, 65, 142, 160, 252],
+        "use_count": 5
+      },
+      "rgb": { "r": 186, "g": 166, "b": 0 },
+      "hsl": { "h": 54, "s": 100, "l": 36.47059 },
+      "lab": { "l": 68.21319, "a": -2.6335, "b": 69.99316 },
+      "luminance": 112.19563,
+      "luminanceWCAG": 0.37712,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=baa600&name=Sulphine%20Yellow",
+        "svg": "/v1/swatch/?color=baa600"
+      }
+    },
+    {
+      "name": "Khaki",
+      "hex": "#b68400",
+      "meta": {
+        "index": 70,
+        "slug": "khaki",
+        "cmyk_array": [24, 45, 100, 6],
+        "cmyk": "C:24 / M:45 / Y:100 / K:6",
+        "rgb_array": [182, 132, 0],
+        "rgb": "R:182 / G:132 / B:0",
+        "combinations": [129, 146, 159, 236, 248],
+        "use_count": 5
+      },
+      "rgb": { "r": 182, "g": 132, "b": 0 },
+      "hsl": { "h": 44, "s": 100, "l": 35.68627 },
+      "lab": { "l": 58.9277, "a": 13.12457, "b": 63.73357 },
+      "luminance": 94.68415,
+      "luminanceWCAG": 0.26448,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=b68400&name=Khaki",
+        "svg": "/v1/swatch/?color=b68400"
+      }
+    },
+    {
+      "name": "Citron Yellow",
+      "hex": "#a6d40d",
+      "meta": {
+        "index": 71,
+        "slug": "citron-yellow",
+        "cmyk_array": [35, 17, 95, 0],
+        "cmyk": "C:35 / M:17 / Y:95 / K:0",
+        "rgb_array": [166, 212, 13],
+        "rgb": "R:166 / G:212 / B:13",
+        "combinations": [59, 93, 132, 133, 262],
+        "use_count": 5
+      },
+      "rgb": { "r": 166, "g": 212, "b": 13 },
+      "hsl": { "h": 74, "s": 88.44444, "l": 44.11765 },
+      "lab": { "l": 79.44652, "a": -32.27421, "b": 75.80851 },
+      "luminance": 133.98522,
+      "luminanceWCAG": 0.55223,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=a6d40d&name=Citron%20Yellow",
+        "svg": "/v1/swatch/?color=a6d40d"
+      }
+    },
+    {
+      "name": "Citrine",
+      "hex": "#000000",
+      "meta": {
+        "index": 72,
+        "cmyk_array": [36, 32, 100, 0],
+        "cmyk": "C:36 / M:32 / Y:100 / K:0",
+        "combinations": [59, 93, 132, 133, 262]
+      },
+      "rgb": { "r": 0, "g": 0, "b": 0 },
+      "hsl": { "h": 0, "s": 0, "l": 0 },
+      "lab": { "l": 0, "a": 0, "b": 0 },
+      "luminance": 0,
+      "luminanceWCAG": 0,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=000000&name=Citrine",
+        "svg": "/v1/swatch/?color=000000"
+      }
+    },
+    {
+      "name": "Buffy Citrine",
+      "hex": "#888d2a",
+      "meta": {
+        "index": 72,
+        "slug": "buffy-citrine",
+        "cmyk_array": [42, 40, 82, 8],
+        "cmyk": "C:42 / M:40 / Y:82 / K:8",
+        "rgb_array": [136, 141, 42],
+        "rgb": "R:136 / G:141 / B:42",
+        "combinations": [100, 177, 233],
+        "use_count": 3
+      },
+      "rgb": { "r": 136, "g": 141, "b": 42 },
+      "hsl": { "h": 63, "s": 54.09836, "l": 35.88235 },
+      "lab": { "l": 56.79461, "a": -11.40342, "b": 49.20201 },
+      "luminance": 92.34101,
+      "luminanceWCAG": 0.24451,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=888d2a&name=Buffy%20Citrine",
+        "svg": "/v1/swatch/?color=888d2a"
+      }
+    },
+    {
+      "name": "Dark Citrine",
+      "hex": "#7e8743",
+      "meta": {
+        "index": 73,
+        "slug": "dark-citrine",
+        "cmyk_array": [38, 34, 67, 20],
+        "cmyk": "C:38 / M:34 / Y:67 / K:20",
+        "rgb_array": [126, 135, 67],
+        "rgb": "R:126 / G:135 / B:67",
+        "combinations": [10, 41, 274, 304],
+        "use_count": 4
+      },
+      "rgb": { "r": 126, "g": 135, "b": 67 },
+      "hsl": { "h": 68, "s": 33.66337, "l": 39.60784 },
+      "lab": { "l": 54.39758, "a": -11.30817, "b": 34.97985 },
+      "luminance": 88.07633,
+      "luminanceWCAG": 0.22169,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=7e8743&name=Dark%20Citrine",
+        "svg": "/v1/swatch/?color=7e8743"
+      }
+    },
+    {
+      "name": "Light Grayish Olive",
+      "hex": "#76844e",
+      "meta": {
+        "index": 74,
+        "slug": "light-grayish-olive",
+        "cmyk_array": [43, 36, 62, 19],
+        "cmyk": "C:43 / M:36 / Y:62 / K:19",
+        "rgb_array": [118, 132, 78],
+        "rgb": "R:118 / G:132 / B:78",
+        "combinations": [107, 184],
+        "use_count": 2
+      },
+      "rgb": { "r": 118, "g": 132, "b": 78 },
+      "hsl": { "h": 76, "s": 25.71429, "l": 41.17647 },
+      "lab": { "l": 52.98675, "a": -12.25835, "b": 27.31958 },
+      "luminance": 85.60174,
+      "luminanceWCAG": 0.20904,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=76844e&name=Light%20Grayish%20Olive",
+        "svg": "/v1/swatch/?color=76844e"
+      }
+    },
+    {
+      "name": "Krongbergs Green",
+      "hex": "#759243",
+      "meta": {
+        "index": 75,
+        "slug": "krongbergs-green",
+        "cmyk_array": [48, 35, 70, 12],
+        "cmyk": "C:48 / M:35 / Y:70 / K:12",
+        "rgb_array": [117, 146, 67],
+        "rgb": "R:117 / G:146 / B:67",
+        "combinations": [29],
+        "use_count": 1
+      },
+      "rgb": { "r": 117, "g": 146, "b": 67 },
+      "hsl": { "h": 82, "s": 37.0892, "l": 41.76471 },
+      "lab": { "l": 56.98211, "a": -20.44641, "b": 37.75577 },
+      "luminance": 92.88155,
+      "luminanceWCAG": 0.24745,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=759243&name=Krongbergs%20Green",
+        "svg": "/v1/swatch/?color=759243"
+      }
+    },
+    {
+      "name": "Olive",
+      "hex": "#718600",
+      "meta": {
+        "index": 76,
+        "slug": "olive",
+        "cmyk_array": [48, 38, 100, 15],
+        "cmyk": "C:48 / M:38 / Y:100 / K:15",
+        "rgb_array": [113, 134, 0],
+        "rgb": "R:113 / G:134 / B:0",
+        "combinations": [96, 201, 254, 258, 277, 310, 334],
+        "use_count": 7
+      },
+      "rgb": { "r": 113, "g": 134, "b": 0 },
+      "hsl": { "h": 69, "s": 100, "l": 26.27451 },
+      "lab": { "l": 52.69076, "a": -19.1593, "b": 55.71247 },
+      "luminance": 85.60749,
+      "luminanceWCAG": 0.20561,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=718600&name=Olive",
+        "svg": "/v1/swatch/?color=718600"
+      }
+    },
+    {
+      "name": "Orange Citrine",
+      "hex": "#8c6510",
+      "meta": {
+        "index": 77,
+        "slug": "orange-citrine",
+        "cmyk_array": [28, 48, 92, 24],
+        "cmyk": "C:28 / M:48 / Y:92 / K:24",
+        "rgb_array": [140, 101, 16],
+        "rgb": "R:140 / G:101 / B:16",
+        "combinations": [212, 342],
+        "use_count": 2
+      },
+      "rgb": { "r": 140, "g": 101, "b": 16 },
+      "hsl": { "h": 41, "s": 79.48718, "l": 30.58824 },
+      "lab": { "l": 45.90123, "a": 10.89525, "b": 48.85621 },
+      "luminance": 72.59845,
+      "luminanceWCAG": 0.1492,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=8c6510&name=Orange%20Citrine",
+        "svg": "/v1/swatch/?color=8c6510"
+      }
+    },
+    {
+      "name": "Sudan Brown",
+      "hex": "#9b5348",
+      "meta": {
+        "index": 78,
+        "slug": "sudan-brown",
+        "cmyk_array": [25, 60, 65, 19],
+        "cmyk": "C:25 / M:60 / Y:65 / K:19",
+        "rgb_array": [155, 83, 72],
+        "rgb": "R:155 / G:83 / B:72",
+        "combinations": [207, 214, 273],
+        "use_count": 3
+      },
+      "rgb": { "r": 155, "g": 83, "b": 72 },
+      "hsl": { "h": 8, "s": 36.56388, "l": 44.5098 },
+      "lab": { "l": 44.07053, "a": 29.7255, "b": 20.44506 },
+      "luminance": 67.74191,
+      "luminanceWCAG": 0.13623,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=9b5348&name=Sudan%20Brown",
+        "svg": "/v1/swatch/?color=9b5348"
+      }
+    },
+    {
+      "name": "Olive Green",
+      "hex": "#58771e",
+      "meta": {
+        "index": 79,
+        "slug": "olive-green",
+        "cmyk_array": [56, 40, 85, 22],
+        "cmyk": "C:56 / M:40 / Y:85 / K:22",
+        "rgb_array": [88, 119, 30],
+        "rgb": "R:88 / G:119 / B:30",
+        "combinations": [66, 243, 270, 297],
+        "use_count": 4
+      },
+      "rgb": { "r": 88, "g": 119, "b": 30 },
+      "hsl": { "h": 81, "s": 59.73154, "l": 29.21569 },
+      "lab": { "l": 46.2776, "a": -22.00057, "b": 42.20948 },
+      "luminance": 74.72255,
+      "luminanceWCAG": 0.15362,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=58771e&name=Olive%20Green",
+        "svg": "/v1/swatch/?color=58771e"
+      }
+    },
+    {
+      "name": "Light Brownish Olive",
+      "hex": "#706934",
+      "meta": {
+        "index": 80,
+        "slug": "light-brownish-olive",
+        "cmyk_array": [42, 46, 73, 24],
+        "cmyk": "C:42 / M:46 / Y:73 / K:24",
+        "rgb_array": [112, 105, 52],
+        "rgb": "R:112 / G:105 / B:52",
+        "combinations": [199, 318],
+        "use_count": 2
+      },
+      "rgb": { "r": 112, "g": 105, "b": 52 },
+      "hsl": { "h": 53, "s": 36.58537, "l": 32.15686 },
+      "lab": { "l": 44.14712, "a": -2.89242, "b": 30.47721 },
+      "luminance": 70.39503,
+      "luminanceWCAG": 0.13796,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=706934&name=Light%20Brownish%20Olive",
+        "svg": "/v1/swatch/?color=706934"
+      }
+    },
+    {
+      "name": "Deep Grayish Olive",
+      "hex": "#505423",
+      "meta": {
+        "index": 81,
+        "slug": "deep-grayish-olive",
+        "cmyk_array": [50, 48, 78, 37],
+        "cmyk": "C:50 / M:48 / Y:78 / K:37",
+        "rgb_array": [80, 84, 35],
+        "rgb": "R:80 / G:84 / B:35",
+        "combinations": [146, 343],
+        "use_count": 2
+      },
+      "rgb": { "r": 80, "g": 84, "b": 35 },
+      "hsl": { "h": 65, "s": 41.17647, "l": 23.33333 },
+      "lab": { "l": 34.48257, "a": -7.51142, "b": 27.53746 },
+      "luminance": 54.94875,
+      "luminanceWCAG": 0.08167,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=505423&name=Deep%20Grayish%20Olive",
+        "svg": "/v1/swatch/?color=505423"
+      }
+    },
+    {
+      "name": "Pale Raw Umber",
+      "hex": "#5e4017",
+      "meta": {
+        "index": 82,
+        "slug": "pale-raw-umber",
+        "cmyk_array": [46, 63, 87, 32],
+        "cmyk": "C:46 / M:63 / Y:87 / K:32",
+        "rgb_array": [94, 64, 23],
+        "rgb": "R:94 / G:64 / B:23",
+        "combinations": [26, 73, 160, 234, 296],
+        "use_count": 5
+      },
+      "rgb": { "r": 94, "g": 64, "b": 23 },
+      "hsl": { "h": 35, "s": 60.68376, "l": 22.94118 },
+      "lab": { "l": 29.95564, "a": 10.27774, "b": 29.54187 },
+      "luminance": 46.99124,
+      "luminanceWCAG": 0.06108,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=5e4017&name=Pale%20Raw%20Umber",
+        "svg": "/v1/swatch/?color=5e4017"
+      }
+    },
+    {
+      "name": "Sepia",
+      "hex": "#503d00",
+      "meta": {
+        "index": 83,
+        "slug": "sepia",
+        "cmyk_array": [48, 60, 100, 40],
+        "cmyk": "C:48 / M:60 / Y:100 / K:40",
+        "rgb_array": [80, 61, 0],
+        "rgb": "R:80 / G:61 / B:0",
+        "combinations": [24, 288],
+        "use_count": 2
+      },
+      "rgb": { "r": 80, "g": 61, "b": 0 },
+      "hsl": { "h": 46, "s": 100, "l": 15.68627 },
+      "lab": { "l": 27.10266, "a": 4.26322, "b": 36.06739 },
+      "luminance": 43.06167,
+      "luminanceWCAG": 0.05043,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=503d00&name=Sepia",
+        "svg": "/v1/swatch/?color=503d00"
+      }
+    },
+    {
+      "name": "Madder Brown",
+      "hex": "#651300",
+      "meta": {
+        "index": 84,
+        "slug": "madder-brown",
+        "cmyk_array": [36, 88, 100, 38],
+        "cmyk": "C:36 / M:88 / Y:100 / K:38",
+        "rgb_array": [101, 19, 0],
+        "rgb": "R:101 / G:19 / B:0",
+        "combinations": [28, 79, 98, 173, 237, 275, 323],
+        "use_count": 7
+      },
+      "rgb": { "r": 101, "g": 19, "b": 0 },
+      "hsl": { "h": 11, "s": 100, "l": 19.80392 },
+      "lab": { "l": 21.44058, "a": 35.93196, "b": 32.35127 },
+      "luminance": 32.19269,
+      "luminanceWCAG": 0.03232,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=651300&name=Madder%20Brown",
+        "svg": "/v1/swatch/?color=651300"
+      }
+    },
+    {
+      "name": "Mars Brown / Tobacco",
+      "hex": "#522000",
+      "meta": {
+        "index": 85,
+        "slug": "mars-brown-tobacco",
+        "cmyk_array": [39, 76, 100, 47],
+        "cmyk": "C:39 / M:76 / Y:100 / K:47",
+        "rgb_array": [82, 32, 0],
+        "rgb": "R:82 / G:32 / B:0",
+        "combinations": [19],
+        "use_count": 1
+      },
+      "rgb": { "r": 82, "g": 32, "b": 0 },
+      "hsl": { "h": 23, "s": 100, "l": 16.07843 },
+      "lab": { "l": 19.69146, "a": 22.57841, "b": 29.08517 },
+      "luminance": 30.88642,
+      "luminanceWCAG": 0.02827,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=522000&name=Mars%20Brown%20/%20Tobacco",
+        "svg": "/v1/swatch/?color=522000"
+      }
+    },
+    {
+      "name": "Vandyke Brown",
+      "hex": "#362304",
+      "meta": {
+        "index": 86,
+        "slug": "vandyke-brown",
+        "cmyk_array": [56, 71, 97, 52],
+        "cmyk": "C:56 / M:71 / Y:97 / K:52",
+        "rgb_array": [54, 35, 4],
+        "rgb": "R:54 / G:35 / B:4",
+        "combinations": [110, 113, 118, 182, 192],
+        "use_count": 5
+      },
+      "rgb": { "r": 54, "g": 35, "b": 4 },
+      "hsl": { "h": 37, "s": 86.2069, "l": 11.37255 },
+      "lab": { "l": 15.65975, "a": 6.90563, "b": 21.31297 },
+      "luminance": 26.13424,
+      "luminanceWCAG": 0.01995,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=362304&name=Vandyke%20Brown",
+        "svg": "/v1/swatch/?color=362304"
+      }
+    },
+    {
+      "name": "Turquoise Green",
+      "hex": "#b5ffc2",
+      "meta": {
+        "index": 87,
+        "slug": "turquoise-green",
+        "cmyk_array": [29, 0, 24, 0],
+        "cmyk": "C:29 / M:0 / Y:24 / K:0",
+        "rgb_array": [181, 255, 194],
+        "rgb": "R:181 / G:255 / B:194",
+        "combinations": [
+          36, 74, 147, 163, 173, 202, 223, 230, 263, 272, 285, 293, 300, 305,
+          317, 346
+        ],
+        "use_count": 16
+      },
+      "rgb": { "r": 181, "g": 255, "b": 194 },
+      "hsl": { "h": 131, "s": 100, "l": 85.4902 },
+      "lab": { "l": 93.9862, "a": -32.59576, "b": 21.66357 },
+      "luminance": 160.69718,
+      "luminanceWCAG": 0.85239,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=b5ffc2&name=Turquoise%20Green",
+        "svg": "/v1/swatch/?color=b5ffc2"
+      }
+    },
+    {
+      "name": "Glaucous Green",
+      "hex": "#b3e8c2",
+      "meta": {
+        "index": 88,
+        "slug": "glaucous-green",
+        "cmyk_array": [30, 9, 24, 0],
+        "cmyk": "C:30 / M:9 / Y:24 / K:0",
+        "rgb_array": [179, 232, 194],
+        "rgb": "R:179 / G:232 / B:194",
+        "combinations": [7, 150, 171, 207, 239, 260],
+        "use_count": 6
+      },
+      "rgb": { "r": 179, "g": 232, "b": 194 },
+      "hsl": { "h": 137, "s": 53.53535, "l": 80.58824 },
+      "lab": { "l": 87.55736, "a": -23.20785, "b": 12.77303 },
+      "luminance": 147.98546,
+      "luminanceWCAG": 0.71192,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=b3e8c2&name=Glaucous%20Green",
+        "svg": "/v1/swatch/?color=b3e8c2"
+      }
+    },
+    {
+      "name": "Dark Greenish Glaucous",
+      "hex": "#b3d9a3",
+      "meta": {
+        "index": 89,
+        "slug": "dark-greenish-glaucous",
+        "cmyk_array": [30, 15, 36, 0],
+        "cmyk": "C:30 / M:15 / Y:36 / K:0",
+        "rgb_array": [179, 217, 163],
+        "rgb": "R:179 / G:217 / B:163",
+        "combinations": [264, 311],
+        "use_count": 2
+      },
+      "rgb": { "r": 179, "g": 217, "b": 163 },
+      "hsl": { "h": 102, "s": 41.53846, "l": 74.5098 },
+      "lab": { "l": 82.90942, "a": -20.35092, "b": 22.41092 },
+      "luminance": 139.41018,
+      "luminanceWCAG": 0.61854,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=b3d9a3&name=Dark%20Greenish%20Glaucous",
+        "svg": "/v1/swatch/?color=b3d9a3"
+      }
+    },
+    {
+      "name": "Yellow Green",
+      "hex": "#a6ff47",
+      "meta": {
+        "index": 90,
+        "slug": "yellow-green",
+        "cmyk_array": [35, 0, 72, 0],
+        "cmyk": "C:35 / M:0 / Y:72 / K:0",
+        "rgb_array": [166, 255, 71],
+        "rgb": "R:166 / G:255 / B:71",
+        "combinations": [111, 141, 276, 326, 334],
+        "use_count": 5
+      },
+      "rgb": { "r": 166, "g": 255, "b": 71 },
+      "hsl": { "h": 89, "s": 100, "l": 63.92157 },
+      "lab": { "l": 91.93308, "a": -47.97321, "b": 73.45186 },
+      "luminance": 157.90708,
+      "luminanceWCAG": 0.80082,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=a6ff47&name=Yellow%20Green",
+        "svg": "/v1/swatch/?color=a6ff47"
+      }
+    },
+    {
+      "name": "Light Green Yellow",
+      "hex": "#bdf226",
+      "meta": {
+        "index": 91,
+        "slug": "light-green-yellow",
+        "cmyk_array": [26, 5, 85, 0],
+        "cmyk": "C:26 / M:5 / Y:85 / K:0",
+        "rgb_array": [189, 242, 38],
+        "rgb": "R:189 / G:242 / B:38",
+        "combinations": [61, 289, 291, 311, 346],
+        "use_count": 5
+      },
+      "rgb": { "r": 189, "g": 242, "b": 38 },
+      "hsl": { "h": 76, "s": 88.69565, "l": 54.90196 },
+      "lab": { "l": 89.43684, "a": -35.67429, "b": 80.51069 },
+      "luminance": 152.94312,
+      "luminanceWCAG": 0.74463,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=bdf226&name=Light%20Green%20Yellow",
+        "svg": "/v1/swatch/?color=bdf226"
+      }
+    },
+    {
+      "name": "Night Green",
+      "hex": "#7aff00",
+      "meta": {
+        "index": 92,
+        "slug": "night-green",
+        "cmyk_array": [52, 0, 100, 0],
+        "cmyk": "C:52 / M:0 / Y:100 / K:0",
+        "rgb_array": [122, 255, 0],
+        "rgb": "R:122 / G:255 / B:0",
+        "combinations": [19, 32, 158, 326],
+        "use_count": 4
+      },
+      "rgb": { "r": 122, "g": 255, "b": 0 },
+      "hsl": { "h": 91, "s": 100, "l": 50 },
+      "lab": { "l": 89.86779, "a": -62.84617, "b": 83.6203 },
+      "luminance": 154.06571,
+      "luminanceWCAG": 0.75658,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=7aff00&name=Night%20Green",
+        "svg": "/v1/swatch/?color=7aff00"
+      }
+    },
+    {
+      "name": "Olive Yellow",
+      "hex": "#99b333",
+      "meta": {
+        "index": 93,
+        "slug": "olive-yellow",
+        "cmyk_array": [40, 30, 80, 0],
+        "cmyk": "C:40 / M:30 / Y:80 / K:0",
+        "rgb_array": [153, 179, 51],
+        "rgb": "R:153 / G:179 / B:51",
+        "combinations": [124, 211, 265, 347],
+        "use_count": 4
+      },
+      "rgb": { "r": 153, "g": 179, "b": 51 },
+      "hsl": { "h": 72, "s": 55.65217, "l": 45.09804 },
+      "lab": { "l": 69.18679, "a": -22.01258, "b": 58.22788 },
+      "luminance": 114.74723,
+      "luminanceWCAG": 0.39252,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=99b333&name=Olive%20Yellow",
+        "svg": "/v1/swatch/?color=99b333"
+      }
+    },
+    {
+      "name": "Artemesia Green",
+      "hex": "#65a98f",
+      "meta": {
+        "index": 94,
+        "slug": "artemesia-green",
+        "cmyk_array": [57, 28, 39, 8],
+        "cmyk": "C:57 / M:28 / Y:39 / K:8",
+        "rgb_array": [101, 169, 143],
+        "rgb": "R:101 / G:169 / B:143",
+        "combinations": [293, 312],
+        "use_count": 2
+      },
+      "rgb": { "r": 101, "g": 169, "b": 143 },
+      "hsl": { "h": 157, "s": 28.33333, "l": 52.94118 },
+      "lab": { "l": 64.16345, "a": -27.20257, "b": 6.34978 },
+      "luminance": 104.97128,
+      "luminanceWCAG": 0.33126,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=65a98f&name=Artemesia%20Green",
+        "svg": "/v1/swatch/?color=65a98f"
+      }
+    },
+    {
+      "name": "Andover Green",
+      "hex": "#5c8a73",
+      "meta": {
+        "index": 95,
+        "slug": "andover-green",
+        "cmyk_array": [60, 40, 50, 10],
+        "cmyk": "C:60 / M:40 / Y:50 / K:10",
+        "rgb_array": [92, 138, 115],
+        "rgb": "R:92 / G:138 / B:115",
+        "combinations": [244, 346],
+        "use_count": 2
+      },
+      "rgb": { "r": 92, "g": 138, "b": 115 },
+      "hsl": { "h": 150, "s": 20, "l": 45.09804 },
+      "lab": { "l": 53.6431, "a": -20.33329, "b": 7.13194 },
+      "luminance": 86.54787,
+      "luminanceWCAG": 0.2169,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=5c8a73&name=Andover%20Green",
+        "svg": "/v1/swatch/?color=5c8a73"
+      }
+    },
+    {
+      "name": "Rainette Green",
+      "hex": "#85b857",
+      "meta": {
+        "index": 96,
+        "slug": "rainette-green",
+        "cmyk_array": [42, 20, 62, 10],
+        "cmyk": "C:42 / M:20 / Y:62 / K:10",
+        "rgb_array": [133, 184, 87],
+        "rgb": "R:133 / G:184 / B:87",
+        "combinations": [105, 200, 219, 283],
+        "use_count": 4
+      },
+      "rgb": { "r": 133, "g": 184, "b": 87 },
+      "hsl": { "h": 92, "s": 40.58577, "l": 53.13725 },
+      "lab": { "l": 69.58193, "a": -29.8977, "b": 43.00616 },
+      "luminance": 115.52276,
+      "luminanceWCAG": 0.39956,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=85b857&name=Rainette%20Green",
+        "svg": "/v1/swatch/?color=85b857"
+      }
+    },
+    {
+      "name": "Pistachio Green",
+      "hex": "#56aa69",
+      "meta": {
+        "index": 97,
+        "slug": "pistachio-green",
+        "cmyk_array": [64, 29, 56, 6],
+        "cmyk": "C:64 / M:29 / Y:56 / K:6",
+        "rgb_array": [86, 170, 105],
+        "rgb": "R:86 / G:170 / B:105",
+        "combinations": [127, 237],
+        "use_count": 2
+      },
+      "rgb": { "r": 86, "g": 170, "b": 105 },
+      "hsl": { "h": 134, "s": 33.07087, "l": 50.19608 },
+      "lab": { "l": 63.13059, "a": -37.61119, "b": 25.3943 },
+      "luminance": 103.74264,
+      "luminanceWCAG": 0.31748,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=56aa69&name=Pistachio%20Green",
+        "svg": "/v1/swatch/?color=56aa69"
+      }
+    },
+    {
+      "name": "Chromium Green",
+      "hex": "#66AB56",
+      "meta": {
+        "index": 98,
+        "cmyk_array": [50, 16, 58, 20],
+        "combinations": [105, 200, 219, 283]
+      },
+      "rgb": { "r": 102, "g": 171, "b": 86 },
+      "hsl": { "h": 109, "s": 33.59684, "l": 50.39216 },
+      "lab": { "l": 63.92919, "a": -35.30285, "b": 36.31109 },
+      "luminance": 105.36503,
+      "luminanceWCAG": 0.32622,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=66AB56&name=Chromium%20Green",
+        "svg": "/v1/swatch/?color=66AB56"
+      }
+    },
+    {
+      "name": "Sea Green",
+      "hex": "#33ff7d",
+      "meta": {
+        "index": 98,
+        "slug": "sea-green",
+        "cmyk_array": [80, 0, 51, 0],
+        "cmyk": "C:80 / M:0 / Y:51 / K:0",
+        "rgb_array": [51, 255, 125],
+        "rgb": "R:51 / G:255 / B:125",
+        "combinations": [17, 21, 58, 86, 133, 250, 260, 284, 291, 340, 347],
+        "use_count": 11
+      },
+      "rgb": { "r": 51, "g": 255, "b": 125 },
+      "hsl": { "h": 142, "s": 100, "l": 60 },
+      "lab": { "l": 88.76514, "a": -69.91297, "b": 47.38337 },
+      "luminance": 151.13303,
+      "luminanceWCAG": 0.73704,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=33ff7d&name=Sea%20Green",
+        "svg": "/v1/swatch/?color=33ff7d"
+      }
+    },
+    {
+      "name": "Benzol Green",
+      "hex": "#00d973",
+      "meta": {
+        "index": 99,
+        "slug": "benzol-green",
+        "cmyk_array": [100, 15, 55, 0],
+        "cmyk": "C:100 / M:15 / Y:55 / K:0",
+        "rgb_array": [0, 217, 115],
+        "rgb": "R:0 / G:217 / B:115",
+        "combinations": [15, 54, 92, 122, 155, 247, 266, 267, 281, 304, 306],
+        "use_count": 11
+      },
+      "rgb": { "r": 0, "g": 217, "b": 115 },
+      "hsl": { "h": 152, "s": 100, "l": 42.54902 },
+      "lab": { "l": 76.54641, "a": -63.2483, "b": 37.02029 },
+      "luminance": 128.05187,
+      "luminanceWCAG": 0.50864,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=00d973&name=Benzol%20Green",
+        "svg": "/v1/swatch/?color=00d973"
+      }
+    },
+    {
+      "name": "Light Porcelain Green",
+      "hex": "#23c17c",
+      "meta": {
+        "index": 100,
+        "slug": "light-porcelain-green",
+        "cmyk_array": [86, 22, 50, 3],
+        "cmyk": "C:86 / M:22 / Y:50 / K:3",
+        "rgb_array": [35, 193, 124],
+        "rgb": "R:35 / G:193 / B:124",
+        "combinations": [44, 193, 328],
+        "use_count": 3
+      },
+      "rgb": { "r": 35, "g": 193, "b": 124 },
+      "hsl": { "h": 154, "s": 69.29825, "l": 44.70588 },
+      "lab": { "l": 69.34484, "a": -52.68561, "b": 23.29501 },
+      "luminance": 114.64813,
+      "luminanceWCAG": 0.39952,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=23c17c&name=Light%20Porcelain%20Green",
+        "svg": "/v1/swatch/?color=23c17c"
+      }
+    },
+    {
+      "name": "Green",
+      "hex": "#40c945",
+      "meta": {
+        "index": 101,
+        "slug": "green",
+        "cmyk_array": [75, 21, 73, 0],
+        "cmyk": "C:75 / M:21 / Y:73 / K:0",
+        "rgb_array": [64, 201, 69],
+        "rgb": "R:64 / G:201 / B:69",
+        "combinations": [198, 216, 293],
+        "use_count": 3
+      },
+      "rgb": { "r": 64, "g": 201, "b": 69 },
+      "hsl": { "h": 122, "s": 55.91837, "l": 51.96078 },
+      "lab": { "l": 71.8073, "a": -57.21208, "b": 52.44311 },
+      "luminance": 119.78728,
+      "luminanceWCAG": 0.43293,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=40c945&name=Green",
+        "svg": "/v1/swatch/?color=40c945"
+      }
+    },
+    {
+      "name": "Dull Viridian Green",
+      "hex": "#19cc33",
+      "meta": {
+        "index": 102,
+        "slug": "dull-viridian-green",
+        "cmyk_array": [90, 20, 80, 0],
+        "cmyk": "C:90 / M:20 / Y:80 / K:0",
+        "rgb_array": [25, 204, 51],
+        "rgb": "R:25 / G:204 / B:51",
+        "combinations": [136, 256, 306, 316],
+        "use_count": 4
+      },
+      "rgb": { "r": 25, "g": 204, "b": 51 },
+      "hsl": { "h": 129, "s": 78.16594, "l": 44.90196 },
+      "lab": { "l": 72.03025, "a": -64.27174, "b": 58.98528 },
+      "luminance": 120.12186,
+      "luminanceWCAG": 0.43631,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=19cc33&name=Dull%20Viridian%20Green",
+        "svg": "/v1/swatch/?color=19cc33"
+      }
+    },
+    {
+      "name": "Oil Green",
+      "hex": "#6ea900",
+      "meta": {
+        "index": 103,
+        "slug": "oil-green",
+        "cmyk_array": [53, 28, 100, 8],
+        "cmyk": "C:53 / M:28 / Y:100 / K:8",
+        "rgb_array": [110, 169, 0],
+        "rgb": "R:110 / G:169 / B:0",
+        "combinations": [245, 299, 320],
+        "use_count": 3
+      },
+      "rgb": { "r": 110, "g": 169, "b": 0 },
+      "hsl": { "h": 81, "s": 100, "l": 33.13725 },
+      "lab": { "l": 63.27006, "a": -35.79546, "b": 63.32757 },
+      "luminance": 104.5131,
+      "luminanceWCAG": 0.31691,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=6ea900&name=Oil%20Green",
+        "svg": "/v1/swatch/?color=6ea900"
+      }
+    },
+    {
+      "name": "Diamine Green",
+      "hex": "#1b8e13",
+      "meta": {
+        "index": 104,
+        "slug": "diamine-green",
+        "cmyk_array": [87, 32, 91, 18],
+        "cmyk": "C:87 / M:32 / Y:91 / K:18",
+        "rgb_array": [27, 142, 19],
+        "rgb": "R:27 / G:142 / B:19",
+        "combinations": [38, 146, 217, 242, 251, 313],
+        "use_count": 6
+      },
+      "rgb": { "r": 27, "g": 142, "b": 19 },
+      "hsl": { "h": 116, "s": 76.39752, "l": 31.56863 },
+      "lab": { "l": 51.46746, "a": -48.40494, "b": 49.29017 },
+      "luminance": 83.77204,
+      "luminanceWCAG": 0.19626,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=1b8e13&name=Diamine%20Green",
+        "svg": "/v1/swatch/?color=1b8e13"
+      }
+    },
+    {
+      "name": "Cossack Green",
+      "hex": "#328e13",
+      "meta": {
+        "index": 105,
+        "slug": "cossack-green",
+        "cmyk_array": [76, 32, 91, 18],
+        "cmyk": "C:76 / M:32 / Y:91 / K:18",
+        "rgb_array": [50, 142, 19],
+        "rgb": "R:50 / G:142 / B:19",
+        "combinations": [5, 135, 262, 270, 278, 294, 319, 341, 348],
+        "use_count": 9
+      },
+      "rgb": { "r": 50, "g": 142, "b": 19 },
+      "hsl": { "h": 105, "s": 76.39752, "l": 31.56863 },
+      "lab": { "l": 51.99579, "a": -44.14589, "b": 49.99195 },
+      "luminance": 84.71177,
+      "luminanceWCAG": 0.20071,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=328e13&name=Cossack%20Green",
+        "svg": "/v1/swatch/?color=328e13"
+      }
+    },
+    {
+      "name": "Lincoln Green",
+      "hex": "#405416",
+      "meta": {
+        "index": 106,
+        "slug": "lincoln-green",
+        "cmyk_array": [60, 48, 86, 37],
+        "cmyk": "C:60 / M:48 / Y:86 / K:37",
+        "rgb_array": [64, 84, 22],
+        "rgb": "R:64 / G:84 / B:22",
+        "combinations": [70, 121, 203, 210, 280, 290],
+        "use_count": 6
+      },
+      "rgb": { "r": 64, "g": 84, "b": 22 },
+      "hsl": { "h": 79, "s": 58.49057, "l": 20.78431 },
+      "lab": { "l": 33.01659, "a": -15.77189, "b": 31.86312 },
+      "luminance": 52.9505,
+      "luminanceWCAG": 0.07489,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=405416&name=Lincoln%20Green",
+        "svg": "/v1/swatch/?color=405416"
+      }
+    },
+    {
+      "name": "Blackish Olive",
+      "hex": "#324e2a",
+      "meta": {
+        "index": 107,
+        "slug": "blackish-olive",
+        "cmyk_array": [56, 32, 63, 55],
+        "cmyk": "C:56 / M:32 / Y:63 / K:55",
+        "rgb_array": [50, 78, 42],
+        "rgb": "R:50 / G:78 / B:42",
+        "combinations": [109, 318, 336],
+        "use_count": 3
+      },
+      "rgb": { "r": 50, "g": 78, "b": 42 },
+      "hsl": { "h": 107, "s": 30, "l": 23.52941 },
+      "lab": { "l": 30.18542, "a": -17.00304, "b": 17.80368 },
+      "luminance": 48.40233,
+      "luminanceWCAG": 0.06294,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=324e2a&name=Blackish%20Olive",
+        "svg": "/v1/swatch/?color=324e2a"
+      }
+    },
+    {
+      "name": "Deep Slate Olive",
+      "hex": "#172713",
+      "meta": {
+        "index": 108,
+        "slug": "deep-slate-olive",
+        "cmyk_array": [76, 60, 80, 62],
+        "cmyk": "C:76 / M:60 / Y:80 / K:62",
+        "rgb_array": [23, 39, 19],
+        "rgb": "R:23 / G:39 / B:19",
+        "combinations": [189, 229, 268, 303, 310, 321, 332, 341, 342, 348],
+        "use_count": 10
+      },
+      "rgb": { "r": 23, "g": 39, "b": 19 },
+      "hsl": { "h": 108, "s": 34.48276, "l": 11.37255 },
+      "lab": { "l": 13.73631, "a": -10.77717, "b": 10.96252 },
+      "luminance": 24.00154,
+      "luminanceWCAG": 0.0168,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=172713&name=Deep%20Slate%20Olive",
+        "svg": "/v1/swatch/?color=172713"
+      }
+    },
+    {
+      "name": "Nile Blue",
+      "hex": "#bfffe6",
+      "meta": {
+        "index": 109,
+        "slug": "nile-blue",
+        "cmyk_array": [25, 0, 10, 0],
+        "cmyk": "C:25 / M:0 / Y:10 / K:0",
+        "rgb_array": [191, 255, 230],
+        "rgb": "R:191 / G:255 / B:230",
+        "combinations": [25, 250, 268, 302, 306, 330, 345],
+        "use_count": 7
+      },
+      "rgb": { "r": 191, "g": 255, "b": 230 },
+      "hsl": { "h": 157, "s": 100, "l": 87.45098 },
+      "lab": { "l": 95.19329, "a": -24.51764, "b": 5.17948 },
+      "luminance": 162.34077,
+      "luminanceWCAG": 0.8831,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=bfffe6&name=Nile%20Blue",
+        "svg": "/v1/swatch/?color=bfffe6"
+      }
+    },
+    {
+      "name": "Pale King's Blue",
+      "hex": "#abf5ed",
+      "meta": {
+        "index": 110,
+        "slug": "pale-king's-blue",
+        "cmyk_array": [33, 4, 7, 0],
+        "cmyk": "C:33 / M:4 / Y:7 / K:0",
+        "rgb_array": [171, 245, 237],
+        "rgb": "R:171 / G:245 / B:237",
+        "combinations": [16, 49, 72, 75, 167, 196, 213, 234, 287],
+        "use_count": 9
+      },
+      "rgb": { "r": 171, "g": 245, "b": 237 },
+      "hsl": { "h": 174, "s": 78.7234, "l": 81.56863 },
+      "lab": { "l": 91.52887, "a": -24.99354, "b": -3.85404 },
+      "luminance": 155.00613,
+      "luminanceWCAG": 0.80077,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=abf5ed&name=Pale%20King's%20Blue",
+        "svg": "/v1/swatch/?color=abf5ed"
+      }
+    },
+    {
+      "name": "Light Glaucous Blue",
+      "hex": "#a6e6db",
+      "meta": {
+        "index": 111,
+        "slug": "light-glaucous-blue",
+        "cmyk_array": [35, 10, 14, 0],
+        "cmyk": "C:35 / M:10 / Y:14 / K:0",
+        "rgb_array": [166, 230, 219],
+        "rgb": "R:166 / G:230 / B:219",
+        "combinations": [54, 93, 119, 152, 178, 204, 227, 320, 339, 341],
+        "use_count": 10
+      },
+      "rgb": { "r": 166, "g": 230, "b": 219 },
+      "hsl": { "h": 170, "s": 56.14035, "l": 77.64706 },
+      "lab": { "l": 86.75355, "a": -22.69627, "b": -1.47964 },
+      "luminance": 145.99498,
+      "luminanceWCAG": 0.69815,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=a6e6db&name=Light%20Glaucous%20Blue",
+        "svg": "/v1/swatch/?color=a6e6db"
+      }
+    },
+    {
+      "name": "Salvia Blue",
+      "hex": "#96bfe6",
+      "meta": {
+        "index": 112,
+        "slug": "salvia-blue",
+        "cmyk_array": [41, 25, 10, 0],
+        "cmyk": "C:41 / M:25 / Y:10 / K:0",
+        "rgb_array": [150, 191, 230],
+        "rgb": "R:150 / G:191 / B:230",
+        "combinations": [
+          29, 129, 135, 139, 142, 188, 209, 212, 237, 272, 294, 321, 330
+        ],
+        "use_count": 13
+      },
+      "rgb": { "r": 150, "g": 191, "b": 230 },
+      "hsl": { "h": 209, "s": 61.53846, "l": 74.5098 },
+      "lab": { "l": 75.40886, "a": -7.0789, "b": -24.21392 },
+      "luminance": 123.56874,
+      "luminanceWCAG": 0.49459,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=96bfe6&name=Salvia%20Blue",
+        "svg": "/v1/swatch/?color=96bfe6"
+      }
+    },
+    {
+      "name": "Cobalt Green",
+      "hex": "#94ff94",
+      "meta": {
+        "index": 113,
+        "slug": "cobalt-green",
+        "cmyk_array": [42, 0, 42, 0],
+        "cmyk": "C:42 / M:0 / Y:42 / K:0",
+        "rgb_array": [148, 255, 148],
+        "rgb": "R:148 / G:255 / B:148",
+        "combinations": [
+          156, 188, 201, 202, 230, 271, 281, 282, 290, 291, 308, 333
+        ],
+        "use_count": 12
+      },
+      "rgb": { "r": 148, "g": 255, "b": 148 },
+      "hsl": { "h": 120, "s": 100, "l": 79.01961 },
+      "lab": { "l": 91.71723, "a": -47.98619, "b": 40.98808 },
+      "luminance": 156.99842,
+      "luminanceWCAG": 0.79954,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=94ff94&name=Cobalt%20Green",
+        "svg": "/v1/swatch/?color=94ff94"
+      }
+    },
+    {
+      "name": "Calamine BLue",
+      "hex": "#80ffcc",
+      "meta": {
+        "index": 114,
+        "slug": "calamine-blue",
+        "cmyk_array": [50, 0, 20, 0],
+        "cmyk": "C:50 / M:0 / Y:20 / K:0",
+        "rgb_array": [128, 255, 204],
+        "rgb": "R:128 / G:255 / B:204",
+        "combinations": [20, 41, 65, 159, 176, 255, 261, 287, 291, 300],
+        "use_count": 10
+      },
+      "rgb": { "r": 128, "g": 255, "b": 204 },
+      "hsl": { "h": 156, "s": 100, "l": 75.09804 },
+      "lab": { "l": 91.7526, "a": -45.90242, "b": 13.07656 },
+      "luminance": 156.2408,
+      "luminanceWCAG": 0.80469,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=80ffcc&name=Calamine%20BLue",
+        "svg": "/v1/swatch/?color=80ffcc"
+      }
+    },
+    {
+      "name": "Venice Green",
+      "hex": "#6bffb3",
+      "meta": {
+        "index": 115,
+        "slug": "venice-green",
+        "cmyk_array": [58, 0, 30, 0],
+        "cmyk": "C:58 / M:0 / Y:30 / K:0",
+        "rgb_array": [107, 255, 179],
+        "rgb": "R:107 / G:255 / B:179",
+        "combinations": [78, 128, 138, 189, 283, 345],
+        "use_count": 6
+      },
+      "rgb": { "r": 107, "g": 255, "b": 179 },
+      "hsl": { "h": 149, "s": 100, "l": 70.98039 },
+      "lab": { "l": 90.63908, "a": -54.32155, "b": 24.03936 },
+      "luminance": 154.42006,
+      "luminanceWCAG": 0.779,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=6bffb3&name=Venice%20Green",
+        "svg": "/v1/swatch/?color=6bffb3"
+      }
+    },
+    {
+      "name": "Cerulian Blue",
+      "hex": "#29bdad",
+      "meta": {
+        "index": 116,
+        "slug": "cerulian-blue",
+        "cmyk_array": [84, 26, 32, 0],
+        "cmyk": "C:84 / M:26 / Y:32 / K:0",
+        "rgb_array": [41, 189, 173],
+        "rgb": "R:41 / G:189 / B:173",
+        "combinations": [1, 63, 99, 125, 148, 227, 240, 264],
+        "use_count": 8
+      },
+      "rgb": { "r": 41, "g": 189, "b": 173 },
+      "hsl": { "h": 174, "s": 64.34783, "l": 45.09804 },
+      "lab": { "l": 69.117, "a": -41.63259, "b": -3.25093 },
+      "luminance": 113.34721,
+      "luminanceWCAG": 0.39884,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=29bdad&name=Cerulian%20Blue",
+        "svg": "/v1/swatch/?color=29bdad"
+      }
+    },
+    {
+      "name": "Peacock Blue",
+      "hex": "#00cf91",
+      "meta": {
+        "index": 117,
+        "slug": "peacock-blue",
+        "cmyk_array": [100, 19, 43, 0],
+        "cmyk": "C:100 / M:19 / Y:43 / K:0",
+        "rgb_array": [0, 207, 145],
+        "rgb": "R:0 / G:207 / B:145",
+        "combinations": [131, 286],
+        "use_count": 2
+      },
+      "rgb": { "r": 0, "g": 207, "b": 145 },
+      "hsl": { "h": 162, "s": 100, "l": 40.58824 },
+      "lab": { "l": 73.83449, "a": -55.80747, "b": 18.30699 },
+      "luminance": 122.62821,
+      "luminanceWCAG": 0.4667,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=00cf91&name=Peacock%20Blue",
+        "svg": "/v1/swatch/?color=00cf91"
+      }
+    },
+    {
+      "name": "Green Blue",
+      "hex": "#2dbc94",
+      "meta": {
+        "index": 118,
+        "slug": "green-blue",
+        "cmyk_array": [82, 24, 40, 3],
+        "cmyk": "C:82 / M:24 / Y:40 / K:3",
+        "rgb_array": [45, 188, 148],
+        "rgb": "R:45 / G:188 / B:148",
+        "combinations": [12, 74, 79, 178, 208, 252, 259, 271, 330],
+        "use_count": 9
+      },
+      "rgb": { "r": 45, "g": 188, "b": 148 },
+      "hsl": { "h": 163, "s": 61.37339, "l": 45.68627 },
+      "lab": { "l": 68.33622, "a": -45.77313, "b": 9.19451 },
+      "luminance": 112.4462,
+      "luminanceWCAG": 0.38662,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=2dbc94&name=Green%20Blue",
+        "svg": "/v1/swatch/?color=2dbc94"
+      }
+    },
+    {
+      "name": "Olympic Blue",
+      "hex": "#4f8fe6",
+      "meta": {
+        "index": 119,
+        "slug": "olympic-blue",
+        "cmyk_array": [69, 44, 10, 0],
+        "cmyk": "C:69 / M:44 / Y:10 / K:0",
+        "rgb_array": [79, 143, 230],
+        "rgb": "R:79 / G:143 / B:230",
+        "combinations": [44, 67, 157, 194, 231, 274, 324],
+        "use_count": 7
+      },
+      "rgb": { "r": 79, "g": 143, "b": 230 },
+      "hsl": { "h": 215, "s": 75.12438, "l": 60.58824 },
+      "lab": { "l": 58.25221, "a": 0.08188, "b": -51.10777 },
+      "luminance": 91.05785,
+      "luminanceWCAG": 0.2702,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=4f8fe6&name=Olympic%20Blue",
+        "svg": "/v1/swatch/?color=4f8fe6"
+      }
+    },
+    {
+      "name": "Blue",
+      "hex": "#0d75ff",
+      "meta": {
+        "index": 120,
+        "slug": "blue",
+        "cmyk_array": [95, 54, 0, 0],
+        "cmyk": "C:95 / M:54 / Y:0 / K:0",
+        "rgb_array": [13, 117, 255],
+        "rgb": "R:13 / G:117 / B:255",
+        "combinations": [
+          49, 51, 88, 143, 154, 186, 191, 215, 257, 267, 295, 333
+        ],
+        "use_count": 12
+      },
+      "rgb": { "r": 13, "g": 117, "b": 255 },
+      "hsl": { "h": 214, "s": 100, "l": 52.54902 },
+      "lab": { "l": 50.57433, "a": 15.453, "b": -77.34021 },
+      "luminance": 74.67917,
+      "luminanceWCAG": 0.20028,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=0d75ff&name=Blue",
+        "svg": "/v1/swatch/?color=0d75ff"
+      }
+    },
+    {
+      "name": "Antwarp Blue",
+      "hex": "#008aa1",
+      "meta": {
+        "index": 121,
+        "slug": "antwarp-blue",
+        "cmyk_array": [100, 40, 30, 10],
+        "cmyk": "C:100 / M:40 / Y:30 / K:10",
+        "rgb_array": [0, 138, 161],
+        "rgb": "R:0 / G:138 / B:161",
+        "combinations": [
+          85, 106, 114, 140, 163, 172, 208, 244, 258, 281, 299, 302, 334
+        ],
+        "use_count": 13
+      },
+      "rgb": { "r": 0, "g": 138, "b": 161 },
+      "hsl": { "h": 189, "s": 100, "l": 31.56863 },
+      "lab": { "l": 52.26416, "a": -26.01481, "b": -21.6678 },
+      "luminance": 83.05926,
+      "luminanceWCAG": 0.2075,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=008aa1&name=Antwarp%20Blue",
+        "svg": "/v1/swatch/?color=008aa1"
+      }
+    },
+    {
+      "name": "Helvetia Blue",
+      "hex": "#0057ba",
+      "meta": {
+        "index": 122,
+        "slug": "helvetia-blue",
+        "cmyk_array": [100, 62, 19, 10],
+        "cmyk": "C:100 / M:62 / Y:19 / K:10",
+        "rgb_array": [0, 87, 186],
+        "rgb": "R:0 / G:87 / B:186",
+        "combinations": [39, 48, 161, 187, 218, 259, 312, 347],
+        "use_count": 8
+      },
+      "rgb": { "r": 0, "g": 87, "b": 186 },
+      "hsl": { "h": 212, "s": 100, "l": 36.47059 },
+      "lab": { "l": 37.49707, "a": 9.649, "b": -59.43867 },
+      "luminance": 55.29604,
+      "luminanceWCAG": 0.10362,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=0057ba&name=Helvetia%20Blue",
+        "svg": "/v1/swatch/?color=0057ba"
+      }
+    },
+    {
+      "name": "Dark Medici Blue",
+      "hex": "#417777",
+      "meta": {
+        "index": 123,
+        "slug": "dark-medici-blue",
+        "cmyk_array": [70, 45, 45, 15],
+        "cmyk": "C:70 / M:45 / Y:45 / K:15",
+        "rgb_array": [65, 119, 119],
+        "rgb": "R:65 / G:119 / B:119",
+        "combinations": [160, 224, 241, 249],
+        "use_count": 4
+      },
+      "rgb": { "r": 65, "g": 119, "b": 119 },
+      "hsl": { "h": 180, "s": 29.34783, "l": 36.07843 },
+      "lab": { "l": 46.33703, "a": -18.72639, "b": -5.91586 },
+      "luminance": 73.76447,
+      "luminanceWCAG": 0.15649,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=417777&name=Dark%20Medici%20Blue",
+        "svg": "/v1/swatch/?color=417777"
+      }
+    },
+    {
+      "name": "Dusky Green",
+      "hex": "#00592e",
+      "meta": {
+        "index": 124,
+        "slug": "dusky-green",
+        "cmyk_array": [100, 30, 64, 50],
+        "cmyk": "C:100 / M:30 / Y:64 / K:50",
+        "rgb_array": [0, 89, 46],
+        "rgb": "R:0 / G:89 / B:46",
+        "combinations": [94, 219, 225, 278, 284, 318, 332, 338],
+        "use_count": 8
+      },
+      "rgb": { "r": 0, "g": 89, "b": 46 },
+      "hsl": { "h": 151, "s": 100, "l": 17.45098 },
+      "lab": { "l": 32.54033, "a": -32.77628, "b": 18.0206 },
+      "luminance": 52.50553,
+      "luminanceWCAG": 0.07342,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=00592e&name=Dusky%20Green",
+        "svg": "/v1/swatch/?color=00592e"
+      }
+    },
+    {
+      "name": "Deep Lyons Blue",
+      "hex": "#0024cc",
+      "meta": {
+        "index": 125,
+        "slug": "deep-lyons-blue",
+        "cmyk_array": [100, 85, 15, 6],
+        "cmyk": "C:100 / M:85 / Y:15 / K:6",
+        "rgb_array": [0, 36, 204],
+        "rgb": "R:0 / G:36 / B:204",
+        "combinations": [22, 38, 101, 126, 179, 199, 236, 247, 314, 344],
+        "use_count": 10
+      },
+      "rgb": { "r": 0, "g": 36, "b": 204 },
+      "hsl": { "h": 229, "s": 100, "l": 40 },
+      "lab": { "l": 26.51981, "a": 46.18114, "b": -87.99749 },
+      "luminance": 31.42297,
+      "luminanceWCAG": 0.05621,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=0024cc&name=Deep%20Lyons%20Blue",
+        "svg": "/v1/swatch/?color=0024cc"
+      }
+    },
+    {
+      "name": "Violet Blue",
+      "hex": "#202d85",
+      "meta": {
+        "index": 126,
+        "slug": "violet-blue",
+        "cmyk_array": [85, 79, 38, 16],
+        "cmyk": "C:85 / M:79 / Y:38 / K:16",
+        "rgb_array": [32, 45, 133],
+        "rgb": "R:32 / G:45 / B:133",
+        "combinations": [75, 83, 89, 98, 125, 233, 286, 289, 297, 309, 339],
+        "use_count": 11
+      },
+      "rgb": { "r": 32, "g": 45, "b": 133 },
+      "hsl": { "h": 232, "s": 61.21212, "l": 32.35294 },
+      "lab": { "l": 22.38846, "a": 20.93861, "b": -51.99337 },
+      "luminance": 31.92468,
+      "luminanceWCAG": 0.03877,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=202d85&name=Violet%20Blue",
+        "svg": "/v1/swatch/?color=202d85"
+      }
+    },
+    {
+      "name": "Vandar Poel's Blue",
+      "hex": "#003e83",
+      "meta": {
+        "index": 127,
+        "slug": "vandar-poel's-blue",
+        "cmyk_array": [100, 73, 43, 10],
+        "cmyk": "C:100 / M:73 / Y:43 / K:10",
+        "rgb_array": [0, 62, 131],
+        "rgb": "R:0 / G:62 / B:131",
+        "combinations": [],
+        "use_count": 0
+      },
+      "rgb": { "r": 0, "g": 62, "b": 131 },
+      "hsl": { "h": 212, "s": 100, "l": 25.68627 },
+      "lab": { "l": 26.24231, "a": 5.63729, "b": -44.53607 },
+      "luminance": 39.33888,
+      "luminanceWCAG": 0.05084,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=003e83&name=Vandar%20Poel's%20Blue",
+        "svg": "/v1/swatch/?color=003e83"
+      }
+    },
+    {
+      "name": "Dark Tyrian Blue",
+      "hex": "#0d2b52",
+      "meta": {
+        "index": 128,
+        "slug": "dark-tyrian-blue",
+        "cmyk_array": [90, 66, 36, 50],
+        "cmyk": "C:90 / M:66 / Y:36 / K:50",
+        "rgb_array": [13, 43, 82],
+        "rgb": "R:13 / G:43 / B:82",
+        "combinations": [2, 60, 67, 119, 141, 245, 279],
+        "use_count": 7
+      },
+      "rgb": { "r": 13, "g": 43, "b": 82 },
+      "hsl": { "h": 214, "s": 72.63158, "l": 18.62745 },
+      "lab": { "l": 17.14504, "a": 1.33478, "b": -27.54515 },
+      "luminance": 27.19562,
+      "luminanceWCAG": 0.02423,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=0d2b52&name=Dark%20Tyrian%20Blue",
+        "svg": "/v1/swatch/?color=0d2b52"
+      }
+    },
+    {
+      "name": "Dull Violet Black",
+      "hex": "#06004f",
+      "meta": {
+        "index": 129,
+        "slug": "dull-violet-black",
+        "cmyk_array": [95, 106, 38, 50],
+        "cmyk": "C:95 / M:106 / Y:38 / K:50",
+        "rgb_array": [6, 0, 79],
+        "rgb": "R:6 / G:0 / B:79",
+        "combinations": [95, 106, 145, 265, 277, 289, 295, 331],
+        "use_count": 8
+      },
+      "rgb": { "r": 6, "g": 0, "b": 79 },
+      "hsl": { "h": 245, "s": 100, "l": 15.4902 },
+      "lab": { "l": 4.64718, "a": 26.81332, "b": -45.91332 },
+      "luminance": 9.18294,
+      "luminanceWCAG": 0.00603,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=06004f&name=Dull%20Violet%20Black",
+        "svg": "/v1/swatch/?color=06004f"
+      }
+    },
+    {
+      "name": "Deep Indigo",
+      "hex": "#000831",
+      "meta": {
+        "index": 130,
+        "slug": "deep-indigo",
+        "cmyk_array": [100, 92, 52, 60],
+        "cmyk": "C:100 / M:92 / Y:52 / K:60",
+        "rgb_array": [0, 8, 49],
+        "rgb": "R:0 / G:8 / B:49",
+        "combinations": [6, 28, 139, 155, 182, 211, 232],
+        "use_count": 7
+      },
+      "rgb": { "r": 0, "g": 8, "b": 49 },
+      "hsl": { "h": 230, "s": 100, "l": 9.60784 },
+      "lab": { "l": 3.25412, "a": 7.4942, "b": -26.7042 },
+      "luminance": 7.29766,
+      "luminanceWCAG": 0.00395,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=000831&name=Deep%20Indigo",
+        "svg": "/v1/swatch/?color=000831"
+      }
+    },
+    {
+      "name": "Deep Slate Green",
+      "hex": "#0f261f",
+      "meta": {
+        "index": 131,
+        "slug": "deep-slate-green",
+        "cmyk_array": [80, 50, 60, 70],
+        "cmyk": "C:80 / M:50 / Y:60 / K:70",
+        "rgb_array": [15, 38, 31],
+        "rgb": "R:15 / G:38 / B:31",
+        "combinations": [84, 149, 166, 271, 318, 325],
+        "use_count": 6
+      },
+      "rgb": { "r": 15, "g": 38, "b": 31 },
+      "hsl": { "h": 162, "s": 43.39623, "l": 10.39216 },
+      "lab": { "l": 13.10066, "a": -11.17246, "b": 1.71974 },
+      "luminance": 23.02525,
+      "luminanceWCAG": 0.01587,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=0f261f&name=Deep%20Slate%20Green",
+        "svg": "/v1/swatch/?color=0f261f"
+      }
+    },
+    {
+      "name": "Grayish Lavender - A",
+      "hex": "#b8b8ff",
+      "meta": {
+        "index": 132,
+        "slug": "grayish-lavender---a",
+        "cmyk_array": [28, 28, 0, 0],
+        "cmyk": "C:28 / M:28 / Y:0 / K:0",
+        "rgb_array": [184, 184, 255],
+        "rgb": "R:184 / G:184 / B:255",
+        "combinations": [8, 15, 159, 177, 218, 248, 307],
+        "use_count": 7
+      },
+      "rgb": { "r": 184, "g": 184, "b": 255 },
+      "hsl": { "h": 240, "s": 100, "l": 86.07843 },
+      "lab": { "l": 76.73242, "a": 11.58008, "b": -35.3323 },
+      "luminance": 124.64972,
+      "luminanceWCAG": 0.51691,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=b8b8ff&name=Grayish%20Lavender%20-%20A",
+        "svg": "/v1/swatch/?color=b8b8ff"
+      }
+    },
+    {
+      "name": "Grayish Lavender - B",
+      "hex": "#bfabcc",
+      "meta": {
+        "index": 133,
+        "slug": "grayish-lavender---b",
+        "cmyk_array": [25, 33, 20, 0],
+        "cmyk": "C:25 / M:33 / Y:20 / K:0",
+        "rgb_array": [191, 171, 204],
+        "rgb": "R:191 / G:171 / B:204",
+        "combinations": [47, 56, 174, 187, 235, 327, 329, 338],
+        "use_count": 8
+      },
+      "rgb": { "r": 191, "g": 171, "b": 204 },
+      "hsl": { "h": 276, "s": 24.44444, "l": 73.52941 },
+      "lab": { "l": 72.52612, "a": 12.03352, "b": -14.09227 },
+      "luminance": 117.80417,
+      "luminanceWCAG": 0.44562,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=bfabcc&name=Grayish%20Lavender%20-%20B",
+        "svg": "/v1/swatch/?color=bfabcc"
+      }
+    },
+    {
+      "name": "Laelia Pink",
+      "hex": "#cc85d1",
+      "meta": {
+        "index": 134,
+        "slug": "laelia-pink",
+        "cmyk_array": [20, 48, 18, 0],
+        "cmyk": "C:20 / M:48 / Y:18 / K:0",
+        "rgb_array": [204, 133, 209],
+        "rgb": "R:204 / G:133 / B:209",
+        "combinations": [20, 254, 280, 337],
+        "use_count": 4
+      },
+      "rgb": { "r": 204, "g": 133, "b": 209 },
+      "hsl": { "h": 296, "s": 45.2381, "l": 67.05882 },
+      "lab": { "l": 65.05357, "a": 36.98506, "b": -27.95861 },
+      "luminance": 101.89834,
+      "luminanceWCAG": 0.34216,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=cc85d1&name=Laelia%20Pink",
+        "svg": "/v1/swatch/?color=cc85d1"
+      }
+    },
+    {
+      "name": "Lilac",
+      "hex": "#b875eb",
+      "meta": {
+        "index": 135,
+        "slug": "lilac",
+        "cmyk_array": [28, 54, 8, 0],
+        "cmyk": "C:28 / M:54 / Y:8 / K:0",
+        "rgb_array": [184, 117, 235],
+        "rgb": "R:184 / G:117 / B:235",
+        "combinations": [143, 162, 282, 347],
+        "use_count": 4
+      },
+      "rgb": { "r": 184, "g": 117, "b": 235 },
+      "hsl": { "h": 274, "s": 74.68354, "l": 69.01961 },
+      "lab": { "l": 60.29616, "a": 42.91519, "b": -50.0061 },
+      "luminance": 91.98516,
+      "luminanceWCAG": 0.28911,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=b875eb&name=Lilac",
+        "svg": "/v1/swatch/?color=b875eb"
+      }
+    },
+    {
+      "name": "Eupatorium Purple",
+      "hex": "#bf36e0",
+      "meta": {
+        "index": 136,
+        "slug": "eupatorium-purple",
+        "cmyk_array": [25, 79, 12, 0],
+        "cmyk": "C:25 / M:79 / Y:12 / K:0",
+        "rgb_array": [191, 54, 224],
+        "rgb": "R:191 / G:54 / B:224",
+        "combinations": [23, 80, 128, 134, 180, 274, 331],
+        "use_count": 7
+      },
+      "rgb": { "r": 191, "g": 54, "b": 224 },
+      "hsl": { "h": 288, "s": 73.27586, "l": 54.5098 },
+      "lab": { "l": 50.39971, "a": 69.80153, "b": -59.49483 },
+      "luminance": 70.13051,
+      "luminanceWCAG": 0.19097,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=bf36e0&name=Eupatorium%20Purple",
+        "svg": "/v1/swatch/?color=bf36e0"
+      }
+    },
+    {
+      "name": "Light Mauve",
+      "hex": "#9161f2",
+      "meta": {
+        "index": 137,
+        "slug": "light-mauve",
+        "cmyk_array": [43, 62, 5, 0],
+        "cmyk": "C:43 / M:62 / Y:5 / K:0",
+        "rgb_array": [145, 97, 242],
+        "rgb": "R:145 / G:97 / B:242",
+        "combinations": [23, 80, 128, 134, 180, 274, 331],
+        "use_count": 7
+      },
+      "rgb": { "r": 145, "g": 97, "b": 242 },
+      "hsl": { "h": 260, "s": 84.79532, "l": 66.47059 },
+      "lab": { "l": 52.12089, "a": 43.8776, "b": -67.22563 },
+      "luminance": 76.69944,
+      "luminanceWCAG": 0.2098,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=9161f2&name=Light%20Mauve",
+        "svg": "/v1/swatch/?color=9161f2"
+      }
+    },
+    {
+      "name": "Aconite Violet",
+      "hex": "#9c52f2",
+      "meta": {
+        "index": 138,
+        "slug": "aconite-violet",
+        "cmyk_array": [39, 68, 5, 0],
+        "cmyk": "C:39 / M:68 / Y:5 / K:0",
+        "rgb_array": [156, 82, 242],
+        "rgb": "R:156 / G:82 / B:242",
+        "combinations": [43, 64, 90, 187, 220, 257, 269, 301, 307, 324, 344],
+        "use_count": 11
+      },
+      "rgb": { "r": 156, "g": 82, "b": 242 },
+      "hsl": { "h": 268, "s": 86.02151, "l": 63.52941 },
+      "lab": { "l": 50.48567, "a": 53.91908, "b": -69.78617 },
+      "luminance": 72.48201,
+      "luminanceWCAG": 0.19513,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=9c52f2&name=Aconite%20Violet",
+        "svg": "/v1/swatch/?color=9c52f2"
+      }
+    },
+    {
+      "name": "Dull Blue Violet",
+      "hex": "#6e66d4",
+      "meta": {
+        "index": 139,
+        "slug": "dull-blue-violet",
+        "cmyk_array": [57, 60, 17, 0],
+        "cmyk": "C:57 / M:60 / Y:17 / K:0",
+        "rgb_array": [110, 102, 212],
+        "rgb": "R:110 / G:102 / B:212",
+        "combinations": [9, 100],
+        "use_count": 2
+      },
+      "rgb": { "r": 110, "g": 102, "b": 212 },
+      "hsl": { "h": 244, "s": 56.12245, "l": 61.56863 },
+      "lab": { "l": 48.24156, "a": 25.51982, "b": -56.79821 },
+      "luminance": 72.46199,
+      "luminanceWCAG": 0.17571,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=6e66d4&name=Dull%20Blue%20Violet",
+        "svg": "/v1/swatch/?color=6e66d4"
+      }
+    },
+    {
+      "name": "Dark Soft Violet",
+      "hex": "#4d52de",
+      "meta": {
+        "index": 140,
+        "slug": "dark-soft-violet",
+        "cmyk_array": [70, 68, 13, 0],
+        "cmyk": "C:70 / M:68 / Y:13 / K:0",
+        "rgb_array": [77, 82, 222],
+        "rgb": "R:77 / G:82 / B:222",
+        "combinations": [64, 127, 197],
+        "use_count": 3
+      },
+      "rgb": { "r": 77, "g": 82, "b": 222 },
+      "hsl": { "h": 238, "s": 68.72038, "l": 58.62745 },
+      "lab": { "l": 41.41862, "a": 32.52532, "b": -73.65779 },
+      "luminance": 59.05451,
+      "luminanceWCAG": 0.12886,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=4d52de&name=Dark%20Soft%20Violet",
+        "svg": "/v1/swatch/?color=4d52de"
+      }
+    },
+    {
+      "name": "Blue Violet",
+      "hex": "#4733ff",
+      "meta": {
+        "index": 141,
+        "slug": "blue-violet",
+        "cmyk_array": [72, 80, 0, 0],
+        "cmyk": "C:72 / M:80 / Y:0 / K:0",
+        "rgb_array": [71, 51, 255],
+        "rgb": "R:71 / G:51 / B:255",
+        "combinations": [116, 175, 196, 322, 345],
+        "use_count": 5
+      },
+      "rgb": { "r": 71, "g": 51, "b": 255 },
+      "hsl": { "h": 246, "s": 100, "l": 60 },
+      "lab": { "l": 37.5481, "a": 56.68801, "b": -98.63326 },
+      "luminance": 46.81837,
+      "luminanceWCAG": 0.10927,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=4733ff&name=Blue%20Violet",
+        "svg": "/v1/swatch/?color=4733ff"
+      }
+    },
+    {
+      "name": "Purple Drab",
+      "hex": "#754260",
+      "meta": {
+        "index": 142,
+        "slug": "purple-drab",
+        "cmyk_array": [38, 65, 49, 26],
+        "cmyk": "C:38 / M:65 / Y:49 / K:26",
+        "rgb_array": [117, 66, 96],
+        "rgb": "R:117 / G:66 / B:96",
+        "combinations": [236],
+        "use_count": 1
+      },
+      "rgb": { "r": 117, "g": 66, "b": 96 },
+      "hsl": { "h": 325, "s": 27.86885, "l": 35.88235 },
+      "lab": { "l": 35.14824, "a": 25.85651, "b": -7.82892 },
+      "luminance": 53.33408,
+      "luminanceWCAG": 0.08523,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=754260&name=Purple%20Drab",
+        "svg": "/v1/swatch/?color=754260"
+      }
+    },
+    {
+      "name": "Deep Violet / Plumbeous",
+      "hex": "#5c7287",
+      "meta": {
+        "index": 143,
+        "slug": "deep-violet-plumbeous",
+        "cmyk_array": [61, 52, 43, 7],
+        "cmyk": "C:61 / M:52 / Y:43 / K:7",
+        "rgb_array": [92, 114, 135],
+        "rgb": "R:92 / G:114 / B:135",
+        "combinations": [183, 192, 218],
+        "use_count": 3
+      },
+      "rgb": { "r": 92, "g": 114, "b": 135 },
+      "hsl": { "h": 209, "s": 18.94273, "l": 44.5098 },
+      "lab": { "l": 46.8599, "a": -4.36954, "b": -14.38776 },
+      "luminance": 73.97,
+      "luminanceWCAG": 0.16059,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=5c7287&name=Deep%20Violet%20/%20Plumbeous",
+        "svg": "/v1/swatch/?color=5c7287"
+      }
+    },
+    {
+      "name": "Veronia Purple",
+      "hex": "#7e3075",
+      "meta": {
+        "index": 144,
+        "slug": "veronia-purple",
+        "cmyk_array": [42, 78, 46, 15],
+        "cmyk": "C:42 / M:78 / Y:46 / K:15",
+        "rgb_array": [126, 48, 117],
+        "rgb": "R:126 / G:48 / B:117",
+        "combinations": [13, 24, 168, 183],
+        "use_count": 4
+      },
+      "rgb": { "r": 126, "g": 48, "b": 117 },
+      "hsl": { "h": 307, "s": 44.82759, "l": 34.11765 },
+      "lab": { "l": 33.64623, "a": 40.94793, "b": -23.19491 },
+      "luminance": 48.89907,
+      "luminanceWCAG": 0.07834,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=7e3075&name=Veronia%20Purple",
+        "svg": "/v1/swatch/?color=7e3075"
+      }
+    },
+    {
+      "name": "Dark Slate Purple",
+      "hex": "#53225c",
+      "meta": {
+        "index": 145,
+        "slug": "dark-slate-purple",
+        "cmyk_array": [64, 85, 60, 10],
+        "cmyk": "C:64 / M:85 / Y:60 / K:10",
+        "rgb_array": [83, 34, 92],
+        "rgb": "R:83 / G:34 / B:92",
+        "combinations": [225, 248],
+        "use_count": 2
+      },
+      "rgb": { "r": 83, "g": 34, "b": 92 },
+      "hsl": { "h": 291, "s": 46.03175, "l": 24.70588 },
+      "lab": { "l": 22.72383, "a": 30.33004, "b": -24.80086 },
+      "luminance": 33.52914,
+      "luminanceWCAG": 0.03756,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=53225c&name=Dark%20Slate%20Purple",
+        "svg": "/v1/swatch/?color=53225c"
+      }
+    },
+    {
+      "name": "Taupe Brown",
+      "hex": "#6b2e63",
+      "meta": {
+        "index": 146,
+        "slug": "taupe-brown",
+        "cmyk_array": [30, 70, 35, 40],
+        "cmyk": "C:30 / M:70 / Y:35 / K:40",
+        "rgb_array": [107, 46, 99],
+        "rgb": "R:107 / G:46 / B:99",
+        "combinations": [57, 123, 174, 224, 275, 280, 288],
+        "use_count": 7
+      },
+      "rgb": { "r": 107, "g": 46, "b": 99 },
+      "hsl": { "h": 308, "s": 39.86928, "l": 30 },
+      "lab": { "l": 29.37794, "a": 33.28433, "b": -18.64757 },
+      "luminance": 43.35936,
+      "luminanceWCAG": 0.05981,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=6b2e63&name=Taupe%20Brown",
+        "svg": "/v1/swatch/?color=6b2e63"
+      }
+    },
+    {
+      "name": "Violet Carmine",
+      "hex": "#531745",
+      "meta": {
+        "index": 147,
+        "slug": "violet-carmine",
+        "cmyk_array": [64, 90, 70, 10],
+        "cmyk": "C:64 / M:90 / Y:70 / K:10",
+        "rgb_array": [83, 23, 69],
+        "rgb": "R:83 / G:23 / B:69",
+        "combinations": [337],
+        "use_count": 1
+      },
+      "rgb": { "r": 83, "g": 23, "b": 69 },
+      "hsl": { "h": 314, "s": 56.60377, "l": 20.78431 },
+      "lab": { "l": 19.63741, "a": 32.26284, "b": -14.13852 },
+      "luminance": 29.32634,
+      "luminanceWCAG": 0.02881,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=531745&name=Violet%20Carmine",
+        "svg": "/v1/swatch/?color=531745"
+      }
+    },
+    {
+      "name": "Violet",
+      "hex": "#2619d1",
+      "meta": {
+        "index": 148,
+        "slug": "violet",
+        "cmyk_array": [85, 90, 18, 0],
+        "cmyk": "C:85 / M:90 / Y:18 / K:0",
+        "rgb_array": [38, 25, 209],
+        "rgb": "R:38 / G:25 / B:209",
+        "combinations": [
+          42, 56, 130, 156, 164, 181, 205, 214, 226, 316, 331, 335
+        ],
+        "use_count": 12
+      },
+      "rgb": { "r": 38, "g": 25, "b": 209 },
+      "hsl": { "h": 244, "s": 78.63248, "l": 45.88235 },
+      "lab": { "l": 26.71502, "a": 53.44923, "b": -90.54234 },
+      "luminance": 30.20147,
+      "luminanceWCAG": 0.05711,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=2619d1&name=Violet",
+        "svg": "/v1/swatch/?color=2619d1"
+      }
+    },
+    {
+      "name": "Red Violet",
+      "hex": "#3400a3",
+      "meta": {
+        "index": 149,
+        "slug": "red-violet",
+        "cmyk_array": [76, 100, 25, 15],
+        "cmyk": "C:76 / M:100 / Y:25 / K:15",
+        "rgb_array": [52, 0, 163],
+        "rgb": "R:52 / G:0 / B:163",
+        "combinations": [4, 37, 134, 136, 170, 172, 183, 316],
+        "use_count": 8
+      },
+      "rgb": { "r": 52, "g": 0, "b": 163 },
+      "hsl": { "h": 259, "s": 100, "l": 31.96078 },
+      "lab": { "l": 19.98045, "a": 50.85686, "b": -74.41294 },
+      "luminance": 24.22872,
+      "luminanceWCAG": 0.03374,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=3400a3&name=Red%20Violet",
+        "svg": "/v1/swatch/?color=3400a3"
+      }
+    },
+    {
+      "name": "Cotinga Purple",
+      "hex": "#340059",
+      "meta": {
+        "index": 150,
+        "slug": "cotinga-purple",
+        "cmyk_array": [66, 100, 42, 40],
+        "cmyk": "C:66 / M:100 / Y:42 / K:40",
+        "rgb_array": [52, 0, 89],
+        "rgb": "R:52 / G:0 / B:89",
+        "combinations": [61, 181, 238, 253, 307, 329, 348],
+        "use_count": 7
+      },
+      "rgb": { "r": 52, "g": 0, "b": 89 },
+      "hsl": { "h": 275, "s": 100, "l": 17.45098 },
+      "lab": { "l": 11.75402, "a": 36.34153, "b": -40.78161 },
+      "luminance": 18.5656,
+      "luminanceWCAG": 0.01451,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=340059&name=Cotinga%20Purple",
+        "svg": "/v1/swatch/?color=340059"
+      }
+    },
+    {
+      "name": "Dusky Madder Violet",
+      "hex": "#2d0060",
+      "meta": {
+        "index": 151,
+        "slug": "dusky-madder-violet",
+        "cmyk_array": [75, 100, 46, 30],
+        "cmyk": "C:75 / M:100 / Y:46 / K:30",
+        "rgb_array": [45, 0, 96],
+        "rgb": "R:45 / G:0 / B:96",
+        "combinations": [18, 50, 53, 82, 103, 314],
+        "use_count": 6
+      },
+      "rgb": { "r": 45, "g": 0, "b": 96 },
+      "hsl": { "h": 268, "s": 100, "l": 18.82353 },
+      "lab": { "l": 11.22587, "a": 36.65924, "b": -46.40595 },
+      "luminance": 17.34382,
+      "luminanceWCAG": 0.01402,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=2d0060&name=Dusky%20Madder%20Violet",
+        "svg": "/v1/swatch/?color=2d0060"
+      }
+    },
+    {
+      "name": "White",
+      "hex": "#ffffff",
+      "meta": {
+        "index": 152,
+        "slug": "white",
+        "cmyk_array": [0, 0, 0, 0],
+        "cmyk": "C:0 / M:0 / Y:0 / K:0",
+        "rgb_array": [255, 255, 255],
+        "rgb": "R:255 / G:255 / B:255",
+        "combinations": [55],
+        "use_count": 1
+      },
+      "rgb": { "r": 255, "g": 255, "b": 255 },
+      "hsl": { "h": 0, "s": 0, "l": 100 },
+      "lab": { "l": 100, "a": 0, "b": 0 },
+      "luminance": 170.48157,
+      "luminanceWCAG": 1,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=ffffff&name=White",
+        "svg": "/v1/swatch/?color=ffffff"
+      }
+    },
+    {
+      "name": "Neutral Gray",
+      "hex": "#b5d1cc",
+      "meta": {
+        "index": 153,
+        "slug": "neutral-gray",
+        "cmyk_array": [29, 18, 20, 0],
+        "cmyk": "C:29 / M:18 / Y:20 / K:0",
+        "rgb_array": [181, 209, 204],
+        "rgb": "R:181 / G:209 / B:204",
+        "combinations": [
+          34, 139, 180, 195, 197, 221, 228, 229, 273, 303, 324, 340
+        ],
+        "use_count": 12
+      },
+      "rgb": { "r": 181, "g": 209, "b": 204 },
+      "hsl": { "h": 169, "s": 23.33333, "l": 76.47059 },
+      "lab": { "l": 81.64735, "a": -10.43873, "b": -0.83431 },
+      "luminance": 136.09124,
+      "luminanceWCAG": 0.59784,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=b5d1cc&name=Neutral%20Gray",
+        "svg": "/v1/swatch/?color=b5d1cc"
+      }
+    },
+    {
+      "name": "Mineral Gray",
+      "hex": "#9fc2b2",
+      "meta": {
+        "index": 154,
+        "slug": "mineral-gray",
+        "cmyk_array": [33, 18, 25, 7],
+        "cmyk": "C:33 / M:18 / Y:25 / K:7",
+        "rgb_array": [159, 194, 178],
+        "rgb": "R:159 / G:194 / B:178",
+        "combinations": [11, 30],
+        "use_count": 2
+      },
+      "rgb": { "r": 159, "g": 194, "b": 178 },
+      "hsl": { "h": 153, "s": 22.29299, "l": 69.21569 },
+      "lab": { "l": 75.5055, "a": -14.61378, "b": 3.98212 },
+      "luminance": 125.06043,
+      "luminanceWCAG": 0.49169,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=9fc2b2&name=Mineral%20Gray",
+        "svg": "/v1/swatch/?color=9fc2b2"
+      }
+    },
+    {
+      "name": "Warm Gray",
+      "hex": "#9cb29e",
+      "meta": {
+        "index": 155,
+        "slug": "warm-gray",
+        "cmyk_array": [37, 28, 36, 3],
+        "cmyk": "C:37 / M:28 / Y:36 / K:3",
+        "rgb_array": [156, 178, 158],
+        "rgb": "R:156 / G:178 / B:158",
+        "combinations": [69, 76, 81, 143, 169, 238, 259, 261],
+        "use_count": 8
+      },
+      "rgb": { "r": 156, "g": 178, "b": 158 },
+      "hsl": { "h": 125, "s": 12.5, "l": 65.4902 },
+      "lab": { "l": 70.44503, "a": -10.80534, "b": 7.57444 },
+      "luminance": 115.83358,
+      "luminanceWCAG": 0.41377,
+      "bestContrast": "black",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=9cb29e&name=Warm%20Gray",
+        "svg": "/v1/swatch/?color=9cb29e"
+      }
+    },
+    {
+      "name": "Slate Color",
+      "hex": "#1b3644",
+      "meta": {
+        "index": 156,
+        "slug": "slate-color",
+        "cmyk_array": [85, 70, 62, 30],
+        "cmyk": "C:85 / M:70 / Y:62 / K:30",
+        "rgb_array": [27, 54, 68],
+        "rgb": "R:27 / G:54 / B:68",
+        "combinations": [
+          27, 33, 57, 140, 202, 243, 245, 251, 253, 263, 296, 329, 335
+        ],
+        "use_count": 13
+      },
+      "rgb": { "r": 27, "g": 54, "b": 68 },
+      "hsl": { "h": 200, "s": 43.15789, "l": 18.62745 },
+      "lab": { "l": 20.97592, "a": -7.06943, "b": -12.10099 },
+      "luminance": 33.61592,
+      "luminanceWCAG": 0.03289,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=1b3644&name=Slate%20Color",
+        "svg": "/v1/swatch/?color=1b3644"
+      }
+    },
+    {
+      "name": "Black",
+      "hex": "#000000",
+      "meta": {
+        "index": 157,
+        "slug": "black",
+        "cmyk_array": [20, 10, 15, 100],
+        "cmyk": "C:20 / M:10 / Y:15 / K:100",
+        "rgb_array": [0, 0, 0],
+        "rgb": "R:0 / G:0 / B:0",
+        "combinations": [
+          46, 52, 62, 69, 112, 117, 144, 190, 207, 216, 221, 242, 255, 256, 269,
+          276, 288, 198, 313, 323, 337, 340, 344
+        ],
+        "use_count": 23
+      },
+      "rgb": { "r": 0, "g": 0, "b": 0 },
+      "hsl": { "h": 0, "s": 0, "l": 0 },
+      "lab": { "l": 0, "a": 0, "b": 0 },
+      "luminance": 0,
+      "luminanceWCAG": 0,
+      "bestContrast": "white",
+      "swatchImg": {
+        "svgNamed": "/v1/swatch/?color=000000&name=Black",
+        "svg": "/v1/swatch/?color=000000"
+      }
+    }
+  ]
+}
