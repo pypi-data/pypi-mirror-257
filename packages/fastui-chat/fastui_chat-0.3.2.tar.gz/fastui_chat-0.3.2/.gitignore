@@ -1,0 +1,20 @@
+# python generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# llms
+.models
+
+# venv
+.venv
+.env
+.models
+tree.yaml
+
+# rye 
+.python-version
+requirements.lock
