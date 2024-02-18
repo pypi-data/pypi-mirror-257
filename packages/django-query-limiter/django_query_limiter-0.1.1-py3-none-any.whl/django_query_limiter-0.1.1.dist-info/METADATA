@@ -1,0 +1,93 @@
+Metadata-Version: 2.1
+Name: django-query-limiter
+Version: 0.1.1
+Summary: Limit django query amounts in a certain scope
+Author: Raven De Vooght
+License: BSD 3-Clause License
+        
+        Copyright (c) 2024, TWRaven
+        
+        Redistribution and use in source and binary forms, with or without
+        modification, are permitted provided that the following conditions are met:
+        
+        1. Redistributions of source code must retain the above copyright notice, this
+           list of conditions and the following disclaimer.
+        
+        2. Redistributions in binary form must reproduce the above copyright notice,
+           this list of conditions and the following disclaimer in the documentation
+           and/or other materials provided with the distribution.
+        
+        3. Neither the name of the copyright holder nor the names of its
+           contributors may be used to endorse or promote products derived from
+           this software without specific prior written permission.
+        
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+        AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+        IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+        DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+        FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+        DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+        SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+        CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+        OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+        OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+        
+Project-URL: Homepage, https://github.com/TWRaven/django-query-limiter
+Keywords: feed,reader,tutorial
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: django
+
+Ever wanted to limit how many db queries a certain function or view can make? 
+You're in luck!
+
+Get it from [PyPi](https://pypi.org/project/django-query-limiter/):
+```shell
+pip install django-query-limiter
+```
+
+Usage:
+```python
+from your_django_models import Model
+from query_limiter import limit_queries
+
+with limit_queries(1):
+    print(Model.objects.first()) # Prints your model's first object
+
+with limit_queries(1):
+    print(Model.objects.first()) # Prints your model's first object
+    print(Model.objects.first()) # Raises QueryLimitError
+```
+
+It can also be used as a function decorator, and can limit queries on a per-database level:
+```python
+from your_django_models import Model
+from query_limiter import limit_queries
+
+@limit_queries(10, databases=['default'])
+def my_view(request):
+    return Model.objects.first()
+```
+
+You can globally disable the query limiter:
+```python
+from your_django_models import Model
+from query_limiter import limit_queries, disable_query_limiter
+
+if settings.ENVIROMENT == 'production':
+    disable_query_limiter()
+
+with limit_queries(1):
+    print(Model.objects.first())  # Prints your model's first object
+    print(Model.objects.first())  # Prints your model's first object
+```
+
+The default behaviour is to limit the connections to all databases. This can be globally overwriten like so:
+```python
+from query_limiter import set_default_databases
+
+set_default_databases(['your_database_name', 'another_database_name'])
+```
+Unless the db connections are specified in the `limit_queries` decorator, these databases will be used.
