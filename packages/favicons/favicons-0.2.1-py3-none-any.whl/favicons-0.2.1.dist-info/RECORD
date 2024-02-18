@@ -1,0 +1,17 @@
+favicons/__init__.py,sha256=kJi2kbLJXa_GnChKBSgLvNy499lYnw8sxM8m02hWWzI,359
+favicons/_cli/__init__.py,sha256=eVcIh-XuLleUHKPDl0cuGg3KXaktgmHTjMr8H8XU9HM,39
+favicons/_cli/main.py,sha256=kFRFxhwcV5_ZAJzNGkcXmQ6WoUa_6bCsAzLL-gv12I4,3568
+favicons/_constants.py,sha256=hq3w6HHTJnz1KoreElSLHuUowrJb8MlbBxr9oVpCD30,2617
+favicons/_exceptions.py,sha256=WwWb7qbtBHRybVfiGTK2tLN8cWjVMQmCQjDbB4K7-kI,2712
+favicons/_generate.py,sha256=xrBbOMhy0YcZ_REmqVdCXjbPvcRfEtk3BBfZ93NOpR8,6476
+favicons/_types/__init__.py,sha256=gmeB1Eri-Ekc1t5UM7mxERxD796iKyW6bRQ-1LjtvmU,139
+favicons/_types/color.py,sha256=A22NR_fC45499cm54WN5g0_uGcSBOPUgMdVwAlrX83E,4289
+favicons/_types/properties.py,sha256=wlU9j-swXYHGpX6FlJcO_BQkXDBsEV-6ffRRzZyHvVk,1968
+favicons/_util.py,sha256=PUqWkgTc7EkDsp45yYNNBQzO7JKfU4C_1b2UgYI6ZOw,1820
+favicons/cli.py,sha256=9wl51dIMapaMtwgwmp9gfLkFgL9uPzJH9_7hEkCxdA8,115
+favicons/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+favicons-0.2.1.dist-info/LICENSE,sha256=M419DK9p9tOZi34-Fgl7P5SqByZEZsHwjsnbXu2LbqE,1683
+favicons-0.2.1.dist-info/METADATA,sha256=4dEuIWTsNPTKlG4-t2WYwc2dMBX9nJuhzKZwozbtEvk,14138
+favicons-0.2.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+favicons-0.2.1.dist-info/entry_points.txt,sha256=Xgkd3vH5NM0Sg5SmUcsuTGogEaD8xaWQVyhqVfsLsSU,41
+favicons-0.2.1.dist-info/RECORD,,
