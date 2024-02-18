@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+nonebot_plugin_bf1marneserverlist.egg-info/PKG-INFO
+nonebot_plugin_bf1marneserverlist.egg-info/SOURCES.txt
+nonebot_plugin_bf1marneserverlist.egg-info/dependency_links.txt
+nonebot_plugin_bf1marneserverlist.egg-info/top_level.txt
+plugins/bf1marneserverlist/__init__.py
+plugins/bf1marneserverlist/config.py
