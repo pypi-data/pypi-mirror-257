@@ -1,0 +1,3 @@
+[flake8.extension]
+RUF=flake8_ruff:Plugin
+
