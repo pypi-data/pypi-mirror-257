@@ -1,0 +1,13 @@
+job_notifications/__init__.py,sha256=_oqMrXThUbRhRXLGPpFDf1-DCJWt7zj2MHSohuvxDUg,3730
+job_notifications/mail_services.py,sha256=cANMOb1YQueVt7Vj3KEhoWxHeMlSy5wYb1rBJVQRM7w,6375
+job_notifications/notifications.py,sha256=lcfHVifHiAosFe1yHpxGYoXx6QVBA3BLHO8N4eBj-cI,3532
+job_notifications/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+job_notifications/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+job_notifications/utils/exceptions.py,sha256=1z359OkgfVTRfwK6hHCKy3YW_lizV1zFzdVbSxSUgJU,409
+job_notifications/utils/handled_exception.py,sha256=RwLX7MXq4F9tsPrs6nmuAg-wgZQrWAbJpSGr0Rqb8bM,1171
+job_notifications/utils/helpers.py,sha256=q5GWB4GwdiOkZoscWQX9Udc_a4EIZVKEP6lyoszHsao,286
+job_notifications-1.3.0.dist-info/LICENSE,sha256=zDSZggcEKxXmDPn1MUyN3Ol26fHA0Tp_mGI_Mkxa0xk,1096
+job_notifications-1.3.0.dist-info/METADATA,sha256=DzBGK6xuzI2__ymtFErDpW1pqzWPQkvLKRATkd733ag,627
+job_notifications-1.3.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+job_notifications-1.3.0.dist-info/top_level.txt,sha256=A8wibFdlw5afYPLr-bsnyok6FnKttcEs6aPWhGQwIrI,18
+job_notifications-1.3.0.dist-info/RECORD,,
