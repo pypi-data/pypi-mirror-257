@@ -1,0 +1,3 @@
+[console_scripts]
+wb=wb_aicli.main:app
+

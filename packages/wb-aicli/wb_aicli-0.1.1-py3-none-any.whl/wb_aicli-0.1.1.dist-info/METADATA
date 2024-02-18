@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: wb-aicli
+Version: 0.1.1
+Summary: A copy-cat version of Samuel Colvin's aicli implemented with Mirascope and Typer
+Home-page: https://github.com/willbakst/aicli
+License: MIT
+Author: William Bakst
+Author-email: william@mirascope.io
+Requires-Python: >=3.9,<3.13
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Communications :: Chat
+Classifier: Topic :: Internet
+Requires-Dist: mirascope[openai] (>=0.2.3,<0.3.0)
+Requires-Dist: prompt-toolkit (>=3.0.43,<4.0.0)
+Requires-Dist: rich (>=13.7.0,<14.0.0)
+Requires-Dist: typer[all] (>=0.9.0,<0.10.0)
+Project-URL: Repository, https://github.com/willbakst/aicli
+Description-Content-Type: text/markdown
+
+# aicli
+A copy-cat version of Samuel Colvin's aicli implemented with Mirascope and Typer
+
