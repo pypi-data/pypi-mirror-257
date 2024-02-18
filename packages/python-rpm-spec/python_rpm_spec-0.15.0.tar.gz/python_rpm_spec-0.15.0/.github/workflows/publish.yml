@@ -1,0 +1,27 @@
+# Workflow will run when a release has been published for the package
+
+name: Publish package to PyPI
+on:
+  release:
+    types:
+      - published
+
+  # Allow to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.12
+          cache: pip
+
+      - name: Publish to PyPI using flit
+        uses: AsifArmanRahman/to-pypi-using-flit@v1
+        with:
+          password: ${{ secrets.PYPI_API_TOKEN }}
