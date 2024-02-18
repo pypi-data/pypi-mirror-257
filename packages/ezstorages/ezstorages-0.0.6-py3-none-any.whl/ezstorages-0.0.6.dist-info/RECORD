@@ -1,0 +1,11 @@
+ezstorage/__init__.py,sha256=zjUAgEfIG2uBpBZ8Zi0it9-GauOgWM3MTlsREboO1u0,112
+ezstorage/constants.py,sha256=GKOO-JTVTByNBw9F-BCoJwHaO_jTTLqWU9Ah5NJOlhg,39
+ezstorage/table.py,sha256=363sQT_fJ1r7me_XfI9koo2N0ecmvRexdUdH2RhhJTA,1021
+ezstorage/providers/__init__.py,sha256=qE67yXR8dzYkJwRgMbxI0a_b_chY8kOhq51SqKWDbYs,26
+ezstorage/providers/__template__.py,sha256=4RErqZgzGdEeZbtszAn7Xo3hndzyTVESP7KuTI-oMEM,2583
+ezstorage/providers/sqlite.py,sha256=Qar3t2eEJSzEhWOgy7nmiVzYpqoM7VTWokXY6011mfg,4100
+ezstorages-0.0.6.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ezstorages-0.0.6.dist-info/METADATA,sha256=r0lWkeM04ZCAlo66JeUBR3dZRUETyxo5U84-UmF3bl0,926
+ezstorages-0.0.6.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+ezstorages-0.0.6.dist-info/top_level.txt,sha256=bLycYePSukgmzqeeBY35hU3U3tpZ7g3ib_7AxflciMI,10
+ezstorages-0.0.6.dist-info/RECORD,,
