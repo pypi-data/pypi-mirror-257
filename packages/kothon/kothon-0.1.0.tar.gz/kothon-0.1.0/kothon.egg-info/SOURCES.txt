@@ -1,0 +1,9 @@
+LICENSE
+README.md
+kothon.py
+pyproject.toml
+kothon.egg-info/PKG-INFO
+kothon.egg-info/SOURCES.txt
+kothon.egg-info/dependency_links.txt
+kothon.egg-info/top_level.txt
+tests/test_kothon.py
