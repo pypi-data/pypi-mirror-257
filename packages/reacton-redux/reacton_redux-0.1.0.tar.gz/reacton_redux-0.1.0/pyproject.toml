@@ -1,0 +1,60 @@
+[tool.poetry]
+name = "reacton-redux"
+version = "0.1.0"
+description = "State management and data fetching library for Reacton inspired by Redux and Tanstack Query"
+license = "MIT"
+authors = ["Egor Makarenko <egormkn@yandex.ru>"]
+readme = "README.md"
+repository = "https://github.com/egormkn/reacton-redux"
+keywords = ["reacton", "redux", "solara", "voila", "jupyter"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Framework :: IPython",
+    "Framework :: Jupyter",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Software Development :: User Interfaces",
+    "Topic :: Software Development :: Widget Sets"
+]
+packages = [
+    { include = "reacton_redux", from = "src" },
+    { include = "tests", format = "sdist" }
+]
+
+[tool.poetry.dependencies]
+ipython = "*"
+python = "^3.10"
+reacton = "*"
+typing-extensions = "^4.9.0"
+
+[tool.poetry.group.dev.dependencies]
+black = { extras = ["d"], version = "^24.2.0" }
+isort = "^5.13.2"
+mypy = "^1.8.0"
+ruff = "^0.2.1"
+
+[tool.poetry.group.test.dependencies]
+coverage = "^7.4.1"
+pytest = "^8.0.0"
+
+[tool.poetry.group.doc.dependencies]
+mkdocs = "^1.5.3"
+pygments = "^2.17.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 120
+
+[tool.isort]
+line_length = 120
+profile = "black"
+skip_gitignore = true
+src_paths = ["src", "tests"]
+
+[tool.pytest.ini_options]
+addopts = [
+    "--import-mode=importlib",
+]
