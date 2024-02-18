@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: backup-reporter
+Version: 0.1.0
+Summary: Collect and show info about various backups
+Author: Dmitry Razin
+Author-email: d.razin@oom.ag
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: boto3 (>=1.34.44,<2.0.0)
+Requires-Dist: gspread (>=6.0.2,<7.0.0)
+Requires-Dist: mergedeep (>=1.3.4,<2.0.0)
+Requires-Dist: oauth2client (>=4.1.3,<5.0.0)
+Requires-Dist: pyyaml (>=6.0.1,<7.0.0)
+Description-Content-Type: text/markdown
+
+# Backup Reporter
+
+This repository contains source code for backup reporter tool. That tool can collect backup information, upload it to S3 buckets, than collect bunch of backup information files, get them together into one csv file and upload it to google spreadsheet.
+
+Backup reporter has two working modes: reporter and collector.
+
+## Configuration
+Reporter can be configured with two ways: script arguments or configuration file. Possible configuration options you can find by typing `main.py -h`. To use config file just pass `--config your_config_file.yml` as script argument.
+All options from cli-help are same for config-file. As example following command: 
+- `python3 main.py --bucket="{'s3_path': 's3://bucket_name/in_bucket_path/metadata_file_name.txt', 'aws_access_key_id': 'key', 'aws_secret_access_key': 'key', 'aws_region': 'region'}" --docker_postgres` 
+
+can be written in file:
+```
+docker_postgres: true
+bucket:
+    - s3_path: s3://bucket_name/in_bucket_path/metadata_file_name.txt
+      aws_access_key_id: key
+      aws_secret_access_key: key
+      aws_region: region
+```
+
