@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+FastIIIFimageAPI.egg-info/PKG-INFO
+FastIIIFimageAPI.egg-info/SOURCES.txt
+FastIIIFimageAPI.egg-info/dependency_links.txt
+FastIIIFimageAPI.egg-info/requires.txt
+FastIIIFimageAPI.egg-info/top_level.txt
+iafa/__init__.py
+iafa/imageapi.py
