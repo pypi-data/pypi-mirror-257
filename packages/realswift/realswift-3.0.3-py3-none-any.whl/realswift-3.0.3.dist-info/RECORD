@@ -1,0 +1,15 @@
+realswift/__init__.py,sha256=ffTn9RyI1GeV3L43NMtAL13Oh3wwexuOoPPEQJqntts,156
+realswift/actions.py,sha256=zHDEVlVAWRkJB0aIsODS2ihFd6922RApHVRlPB47FWk,13159
+realswift/browser_utils.py,sha256=D8x2-E-cml-38vxaRPy6Vb3Tx86hucmNqlg95A0yBAU,1629
+realswift/config_module.py,sha256=KsXczgcrFy7o-1rCxB0DbTVtUoORsHyNr0u2amhrkTQ,1937
+realswift/exceptions.py,sha256=okxK74c9at6auC4V6WWwHGIW_CZpa5ufA4nqMwWGqYs,481
+realswift/image_utils.py,sha256=NG_oD-kX7SRkx9hQkj9jY23WmPbWz835c1GUNIypffI,3899
+realswift/internal.py,sha256=mvSaiP5am4xbUvLfulHNxFcxAH0KRu3l6Lx9oDOzXGU,4403
+realswift/main.py,sha256=_6Yl-eMBve0mGQA-aiFg4qvQ7GUCV5eGvIcoRf4mEPw,3
+realswift/ocr_utils.py,sha256=yr8KrnIu5XwjOZVpgCi9PLsoIyIPv8fgP-Fn7dZGCBo,5788
+realswift/reporter.py,sha256=nEKlNXF9A219RA2i3j7ifL71S13_B73nB87BdJglFL8,4006
+realswift-3.0.3.dist-info/LICENSE,sha256=1yT4Yl27SLOXpSugp0dOnRYVEyKJlU-Mv9mZkTmEsGw,1321
+realswift-3.0.3.dist-info/METADATA,sha256=_ADqOHmRiJn9d5KfTXyUIEmtWw8S3X83lej9g7MdbHU,1666
+realswift-3.0.3.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+realswift-3.0.3.dist-info/top_level.txt,sha256=8W9lYtLTEznpT6AweEzqRyWkP3fIbY3f9FE4uf9hx1I,10
+realswift-3.0.3.dist-info/RECORD,,
