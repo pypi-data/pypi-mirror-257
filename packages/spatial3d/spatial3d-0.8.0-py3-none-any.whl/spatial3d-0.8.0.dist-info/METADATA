@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: spatial3d
+Version: 0.8.0
+Summary: A Python library for representing and working with 3D objects.
+Home-page: https://github.com/jbschwartz/spatial3d
+License: MIT
+Keywords: vector,matrix,quaternion,mesh
+Author: James Schwartz
+Author-email: james@schwartz.engineer
+Requires-Python: >=3.8
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Project-URL: Repository, https://github.com/jbschwartz/spatial3d
+Description-Content-Type: text/markdown
+
+# spatial3d v0.8.0 ![Badge](https://github.com/jbschwartz/spatial/actions/workflows/ci.yml/badge.svg)
+
+A Python library for representing and working with 3D objects.
+
+## Installation
+
+Install using `pip`:
+
+```
+python -m pip install spatial3d
+```
+
+Install using `poetry`:
+
+```
+poetry add spatial3d
+```
+
