@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quantumsculpt"
+version = "0.2.0"
+authors = [
+  { name="Ivo Filot", email="i.a.w.filot@tue.nl" }
+]
+maintainers = [
+    { name="Ivo Filot", email="i.a.w.filot@tue.nl" },
+]
+description = "quantumsculpt"
+readme = "README.md"
+requires-python = ">=3.6"
+license = {text = "GPL-3.0-or-later"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "numpy",
+    "scipy",
+    "matplotlib",
+]
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["quantumsculpt*"]
+
+[tool.conda.environment]
+channels = [
+    "ifilot",
+    "conda-forge",
+]
+
+[project.urls]
+"Homepage" = "https://gitlab.tue.nl/"
+"Bug Tracker" = "https://gitlab.tue.nl/inorganic-materials-chemistry/quantumsculpt/-/issues"

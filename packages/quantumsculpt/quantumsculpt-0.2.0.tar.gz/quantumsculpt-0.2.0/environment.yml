@@ -1,0 +1,11 @@
+name: quantumsculpt
+
+channels:
+  - defaults
+  - anaconda
+  - conda-forge
+
+dependencies:
+  - numpy
+  - scipy
+  - matplotlib
