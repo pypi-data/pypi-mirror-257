@@ -1,0 +1,2 @@
+[console_scripts]
+IiliIo = IiliIo:main
