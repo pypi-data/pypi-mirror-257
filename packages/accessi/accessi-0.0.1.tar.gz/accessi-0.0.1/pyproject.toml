@@ -1,0 +1,18 @@
+[project]
+name = "accessi"
+version = "0.0.1"
+authors = [
+  { name="Martin Reinok", email="m.reinok@student.utwente.nl" },
+]
+description = "Library for Siemens Access-i MR Scanner Interface to integrate and control the MR Scanner."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/martinreinok/accessi-library"
+Issues = "https://github.com/martinreinok/accessi-library/issues"
