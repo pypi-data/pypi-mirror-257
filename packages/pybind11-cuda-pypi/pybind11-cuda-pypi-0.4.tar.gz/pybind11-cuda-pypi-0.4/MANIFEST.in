@@ -1,0 +1,5 @@
+include CMakeLists.txt
+include gpu_library.cu
+recursive-include pybind11 *
+include LICENSE
+include README.md
