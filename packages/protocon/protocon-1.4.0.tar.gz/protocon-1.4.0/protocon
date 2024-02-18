@@ -1,0 +1,112 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+#
+#  protocon
+#
+#  Redistribution and use in source and binary forms, with or without
+#  modification, are permitted provided that the following conditions are
+#  met:
+#
+#  * Redistributions of source code must retain the above copyright
+#    notice, this list of conditions and the following disclaimer.
+#  * Redistributions in binary form must reproduce the above
+#    copyright notice, this list of conditions and the following disclaimer
+#    in the documentation and/or other materials provided with the
+#    distribution.
+#  * Neither the name of the project nor the names of its
+#    contributors may be used to endorse or promote products derived from
+#    this software without specific prior written permission.
+#
+#  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+#  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+#  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+#  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+#  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+#  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+#  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+#  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+#  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+#  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+#  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+#
+
+import argparse
+import functools
+import os
+import sys
+import textwrap
+
+get_path = functools.partial(os.path.join, os.path.abspath(os.path.dirname(__file__)))
+sys.path.append(get_path('lib'))
+
+import protocon
+
+EPILOG = """\
+target_url examples:
+  ether://eth0/?type=0x86dd&src=00:0c:29:84:05:fd&dst=33:33:00:00:00:01
+  null:
+  serial:///dev/ttyUSB0?baudrate=9600&bytesize=8&parity=N&stopbits=1
+  ssl://1.2.3.4:123
+  ssl4://5.6.7.8:567
+  ssl6://[fe80::800:27ff:fe00:10]:4444/?ip6-scope-id=eth0
+  tcp://1.2.3.4:123
+  tcp4://0.0.0.0:123/?type=server
+  tcp6://[fe80::800:27ff:fe00:10]:4444/?ip6-scope-id=eth0
+  udp://1.2.3.4:123
+  udp4://1.2.3.4:123/?size=8192
+"""
+
+def print_driver_descriptions(plugins):
+	drivers = sorted(plugins.connection_drivers.items(), key=lambda kv: kv[0])
+	print("Loaded {:,} drivers".format(len(drivers)))
+	for name, driver in drivers:
+		print("  {}:".format(name))
+		print("    url schemes:  {}".format(', '.join(sorted(driver.schemes))))
+		if driver.setting_definitions:
+			print('    settings:')
+			for setting in driver.setting_definitions:
+				desc = setting.name
+				if setting.default_value is not None:
+					desc += " (default: {})".format(setting.default_value)
+				print('      ' + desc)
+				if setting.choices:
+					choices_desc = ', '.join(map(str, setting.choices))
+					if len(choices_desc) <= 63:
+						print('        choices: ' + choices_desc)
+					else:
+						print('        choices:')
+						for line in textwrap.wrap(choices_desc, width=72):
+							print('          ' + line)
+		print('')
+
+def main():
+	parser = argparse.ArgumentParser(description='protocon', conflict_handler='resolve', formatter_class=argparse.RawTextHelpFormatter)
+	parser.add_argument('-q', '--quiet', action='store_true', default=False, help='initialize quiet to True')
+	parser.add_argument('-v', '--version', action='version', version='%(prog)s Version: ' + protocon.__version__)
+	parser.add_argument('--help-drivers', action='store_true', help='list the loaded drivers and their details')
+	parser.add_argument('target_url', nargs='?', help='the connection url')
+	parser.add_argument('scripts', metavar='script', nargs='*', help='the script to execute')
+	parser.epilog = EPILOG
+	arguments = parser.parse_args()
+
+	if not any([arguments.help_drivers, arguments.target_url]):
+		parser.error('the following arguments are required: target_url')
+		return 0
+
+	plugins = protocon.PluginManager()
+
+	if arguments.help_drivers:
+		print_driver_descriptions(plugins)
+		return 0
+
+	try:
+		engine = protocon.Engine.from_url(arguments.target_url, plugins=plugins, quiet=arguments.quiet)
+	except protocon.ProtoconDriverError as error:
+		protocon.print_error('Driver error: ' + error.message)
+	else:
+		engine.entry(arguments.scripts)
+		engine.connection.close()
+	return 0
+
+if __name__ == '__main__':
+	sys.exit(main())
