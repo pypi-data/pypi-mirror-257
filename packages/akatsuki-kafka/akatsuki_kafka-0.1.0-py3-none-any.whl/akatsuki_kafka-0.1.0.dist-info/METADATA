@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: akatsuki_kafka
+Version: 0.1.0
+Summary: Kafka consumer & producer abstraction for Akatsuki
+Author: Akatsuki
+Requires-Python: >=3.9
+Requires-Dist: protobuf
+Requires-Dist: aiokafka
+

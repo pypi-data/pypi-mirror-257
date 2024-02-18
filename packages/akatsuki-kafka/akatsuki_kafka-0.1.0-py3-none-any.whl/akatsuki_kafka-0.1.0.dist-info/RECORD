@@ -1,0 +1,7 @@
+akatsuki_kafka/__init__.py,sha256=viZQzBz8ZDZuSwhav2cGsXb6jF3j0vBK-3HA3aX-9ss,99
+akatsuki_kafka/consumer.py,sha256=YhVk7FXxDzjc_0r0JLhWs8CedEfmxGXguYDT1ps-2Aw,2573
+akatsuki_kafka/producer.py,sha256=8-KuES9UDkLyxQ3GiadZ4ICJCQq_PFfiXHDpJFkPVOI,1887
+akatsuki_kafka-0.1.0.dist-info/METADATA,sha256=2iaVM0S8vtAyO1v6VhcjU_H-im9cNBk_JVmCOjvBESE,207
+akatsuki_kafka-0.1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+akatsuki_kafka-0.1.0.dist-info/top_level.txt,sha256=1V_6v4fmUqgQ_EdAjMTohG2T9-Mw9Cx7_J1kk9edXok,15
+akatsuki_kafka-0.1.0.dist-info/RECORD,,
