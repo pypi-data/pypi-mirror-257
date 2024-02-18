@@ -1,0 +1,7 @@
+setup.py
+attack.egg-info/PKG-INFO
+attack.egg-info/SOURCES.txt
+attack.egg-info/dependency_links.txt
+attack.egg-info/entry_points.txt
+attack.egg-info/requires.txt
+attack.egg-info/top_level.txt
