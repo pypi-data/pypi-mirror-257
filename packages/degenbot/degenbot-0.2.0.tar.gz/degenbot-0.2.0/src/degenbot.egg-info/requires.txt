@@ -1,0 +1,7 @@
+pytest
+pytest-asyncio
+python-dotenv
+scipy>=1.12.0
+setuptools>=69.0
+ujson
+web3<7,>=6.15.0
