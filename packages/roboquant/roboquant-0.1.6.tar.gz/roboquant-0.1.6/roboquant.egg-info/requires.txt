@@ -1,0 +1,14 @@
+numpy>=1.25.2
+prettytable~=3.9.0
+websocket-client~=1.7.0
+requests>=2.31.0
+
+[all]
+roboquant[torch,yahoo]
+
+[torch]
+torch>=2.1.0
+tensorboard>=2.15.2
+
+[yahoo]
+yfinance~=0.2.36
