@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.py
+wechat_ob12/__init__.py
+wechat_ob12.egg-info/PKG-INFO
+wechat_ob12.egg-info/SOURCES.txt
+wechat_ob12.egg-info/dependency_links.txt
+wechat_ob12.egg-info/top_level.txt
