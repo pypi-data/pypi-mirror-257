@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+scistringparser.egg-info/PKG-INFO
+scistringparser.egg-info/SOURCES.txt
+scistringparser.egg-info/dependency_links.txt
+scistringparser.egg-info/top_level.txt
