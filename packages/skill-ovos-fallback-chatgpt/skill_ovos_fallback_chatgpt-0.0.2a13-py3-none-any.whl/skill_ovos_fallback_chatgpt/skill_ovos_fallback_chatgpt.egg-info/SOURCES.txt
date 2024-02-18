@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+__init__.py
+setup.py
+version.py
+locale/en-us/asking.dialog
+locale/en-us/gpt_error.dialog
+locale/fr-fr/asking.dialog
+locale/fr-fr/gpt_error.dialog
+skill_ovos_fallback_chatgpt.egg-info/PKG-INFO
+skill_ovos_fallback_chatgpt.egg-info/SOURCES.txt
+skill_ovos_fallback_chatgpt.egg-info/dependency_links.txt
+skill_ovos_fallback_chatgpt.egg-info/entry_points.txt
+skill_ovos_fallback_chatgpt.egg-info/requires.txt
+skill_ovos_fallback_chatgpt.egg-info/top_level.txt
