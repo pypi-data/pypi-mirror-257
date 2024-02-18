@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: simpleseleniumwrapper
+Version: 0.1.8
+Summary: An easy-to-use wrapper for Selenium in Python. This package is intended to make writing web automation software in Python as painless as possible!
+Home-page: UNKNOWN
+Author: Aiden S
+Author-email: UNKNOWN
+License: UNKNOWN
+Keywords: python,selenium,automation,wrapper,chromedriver,geckodriver,undetected,webdriver,manager
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: System :: Operating System Kernels :: Linux
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Dist: selenium (>=4.0)
+
+
+An easy-to-use wrapper for Selenium in Python. This package is intended to make writing web automation software in Python as painless as possible!
+
