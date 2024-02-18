@@ -1,0 +1,10 @@
+nested_diff_restful/__init__.py,sha256=vrVf5UKju-clL0pbr3cipbMy6tlVr2xstsnaFzjq9fk,1131
+nested_diff_restful/api.py,sha256=CaK4zwWd-JWnd7PwDi8Ru9rTmf6gBbXScQC3SdVGczk,4160
+nested_diff_restful/static/favicon.svg,sha256=tqWTqU8NwSuqdmY3pdLgUK9C-uDir-qO9sD0m4rf8qw,231
+nested_diff_restful/static/nested_diff.js,sha256=Sya8e0-jCpMhky4B6xcSCdf0jkP3EHykdYRwkY1ECLk,2748
+nested_diff_restful/templates/index.html,sha256=xBqk1b7tgvecv9TEtcFf6yAMSLKHG9m0SKLCr9PoyOg,4374
+nested_diff_restful-1.0.0.dist-info/entry_points.txt,sha256=n62ev45vL8Zj3FbXsHNV4hr-wAP-GxFsnhbFAfQkh8w,77
+nested_diff_restful-1.0.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+nested_diff_restful-1.0.0.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+nested_diff_restful-1.0.0.dist-info/METADATA,sha256=fAXFcmswD7L_oVyIGnYeIulLi3jz3tkYBJZZl-UGA4g,1475
+nested_diff_restful-1.0.0.dist-info/RECORD,,
