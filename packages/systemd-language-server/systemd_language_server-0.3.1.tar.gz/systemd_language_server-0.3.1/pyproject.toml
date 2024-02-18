@@ -1,0 +1,36 @@
+[project]
+requires-python = ">=3.8"
+keywords = ['systemd', 'language', 'server', 'lsp', 'completion']
+readme = "README.md"
+license = {text = "GPL3.0"}
+classifiers = [
+    "Development Status :: 3 - Alpha", "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development",
+    "Topic :: Text Editors :: Integrated Development Environments (IDE)", "Topic :: Utilities",
+]
+
+
+[project.urls]
+repository = "https://github.com/psacawa/systemd-language-server"
+
+[tool.poetry]
+name = 'systemd-language-server'
+version = '0.3.1'
+description = 'Language server for systemd unit files'
+authors = ["Paweł Sacawa <pawel@sacawa.net>"]
+readme = "README.md"
+packages = [{ include = "systemd_language_server" }]
+scripts = { "systemd-language-server" = "systemd_language_server.server:main" }
+
+[tool.poetry.dependencies]
+pygls = "^1.3"
+python = "^3.9"
+
+[tool.poetry.dev-dependencies]
+lxml = "^5.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
