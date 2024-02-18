@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/grikod/__init__.py
+src/grikod/_version.py
+src/grikod/grikod.py
+src/grikod.egg-info/PKG-INFO
+src/grikod.egg-info/SOURCES.txt
+src/grikod.egg-info/dependency_links.txt
+src/grikod.egg-info/top_level.txt
