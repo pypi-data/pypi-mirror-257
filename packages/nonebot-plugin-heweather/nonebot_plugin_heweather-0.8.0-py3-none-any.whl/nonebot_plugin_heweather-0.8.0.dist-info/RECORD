@@ -1,0 +1,16 @@
+nonebot_plugin_heweather-0.8.0.dist-info/METADATA,sha256=E8ZBqY6jJR-HUJqIoyE18LmOfW04AHQhH9yc41LyunM,4294
+nonebot_plugin_heweather-0.8.0.dist-info/WHEEL,sha256=N2J68yzZqJh3mI_Wg92rwhw0rtJDFpZj9bwQIMJgaVg,90
+nonebot_plugin_heweather-0.8.0.dist-info/licenses/LICENSE,sha256=4HHgpu3ihnBZ9AVZDgOzGnAJRt8W7IQo5VSBEJKRr5g,1062
+nonebot_plugin_heweather/__init__.py,sha256=jCzxj7azHHijCzlgeDmRuPqaELjyevRNMdZstXhtWyU,2166
+nonebot_plugin_heweather/config.py,sha256=LL1oJrdOJEDnugs-zhv9AO9xWmyvAw-WVDDXtLdTp7M,770
+nonebot_plugin_heweather/model.py,sha256=n28pFluOQsadLos0pkoLHUzZniqNgP_94uKUj1QB0UE,1758
+nonebot_plugin_heweather/render_pic.py,sha256=meRdgc79sOJYV6-0cHcvtaYChYAWOYOazDhT5wbm2nE,2634
+nonebot_plugin_heweather/templates/css/fonts/qweather-icons.ttf,sha256=iiPCaNds3VPlgReCzfSnSaNr1IbQjll1yBMkcMGe72c,69948
+nonebot_plugin_heweather/templates/css/fonts/qweather-icons.woff,sha256=r8tiwRYd_9RH0-5eW8BOSMMuo1iQNCkxgGt64BUUbdQ,27920
+nonebot_plugin_heweather/templates/css/fonts/qweather-icons.woff2,sha256=GSqb_dKHSOlGEWMe1fmgLprYFrz0eerKO6EOnAU-TBo,19688
+nonebot_plugin_heweather/templates/css/qweather-icons.css,sha256=5jZT_C-NvC0_Zm3UpvXCF4d2vD7daWurhs3jgcYY4lk,20240
+nonebot_plugin_heweather/templates/css/qweather-icons.json,sha256=0Oj79IgPK74iWspJGNxSKYtToq2JRMyqgpkCy1ci19M,9784
+nonebot_plugin_heweather/templates/css/weather.css,sha256=vyakPhlaHS14a8_Zb8yisPD9xY_CJBLehF_nep_Zncw,3338
+nonebot_plugin_heweather/templates/weather.html,sha256=lnUmLc8WbVJozJL_LpybF6N9D8dCLkwfolMtaCt2A0A,5881
+nonebot_plugin_heweather/weather_data.py,sha256=riCcIpXtDSjK4mRl7h2AEMxTpMN7iErY2Pdz3g2bUks,5614
+nonebot_plugin_heweather-0.8.0.dist-info/RECORD,,
