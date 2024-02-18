@@ -1,0 +1,11 @@
+catppuccin/__init__.py,sha256=tVxzZmHEz08S06zr1ylQo7XUhZXVpHWczeiMQ_TiSqI,109
+catppuccin/extras/__init__.py,sha256=_oQeVQOoMlR5rIHTe6ntap8qiQdWkTL5iTHSSKJ3tUk,78
+catppuccin/extras/pygments.py,sha256=t4KZCQ5xSJoGzicyunrDH0NwG9xlgneBM4QDqHC9EYE,4949
+catppuccin/extras/rich_ctp.py,sha256=SnuDV7KCXa1klZSRm200A3Q40gyBtrXn2QHhJN-JhLk,1501
+catppuccin/models.py,sha256=pvP3DWLDgJOwh2YepHALbxzENNHkHI__F2mbz5z9ygs,2842
+catppuccin/palette.py,sha256=jXRXd9N--h0XZHWO1DZXfWIL20jJf3J6QPv9psZa-a8,34268
+catppuccin-2.0.0.dist-info/LICENSE,sha256=JksYmfUEcgQrSsHEvvxieeKovem2LMdD-7VguGHPzR8,1067
+catppuccin-2.0.0.dist-info/METADATA,sha256=SDWgX-oDE4Kgxl1AZunCWqmSE9KqPnHeY-4bF12cgT0,6389
+catppuccin-2.0.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+catppuccin-2.0.0.dist-info/entry_points.txt,sha256=FM4Brf7jaicw7Jzz4etjX9ytae_N6s1cQjj914YBCcA,249
+catppuccin-2.0.0.dist-info/RECORD,,
