@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: mergely
+Version: 0.1.8
+Summary: A Python SDK for Mergely
+Author: hg_nohair
+Author-email: <xurenlu@gmail.com>
+License: MIT
+Requires-Python: >=3.9
+Requires-Dist: requests
+
