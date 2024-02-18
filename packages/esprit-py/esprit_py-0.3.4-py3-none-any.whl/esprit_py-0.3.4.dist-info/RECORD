@@ -1,0 +1,13 @@
+esprit/__init__.py,sha256=PnahGRQ5xmA26XMFaj9ImLty9OEmYwnBqLanvGXZwwU,28
+esprit/absence.py,sha256=1CE7FCnWUr9omNXkgFH4Q3Vq5FkonjAEOmAOarXoCqU,1649
+esprit/auth.py,sha256=rT46FuRfeM3cCit5ltsLvXxN6rOUY7XEagGcJMXPVlI,4059
+esprit/credit.py,sha256=G4UPVaJEFiucF4dbmwLcCl_OUD419UstPRJ3GeGj5nI,1730
+esprit/esprit.py,sha256=kj46pKuyuJZuCKVxwBehKZVKycKauGYSKpMDmo3n-lw,1961
+esprit/grade.py,sha256=Wt5rjcqHAaG2gQ5DaqaMUMkP7ImMhZhQqoJTxTZkXhk,3504
+esprit/time_schedule.py,sha256=APash3wNe09kdwJDl3B1Du1WH71h6j3TAirVGoWndCc,6473
+esprit/utils.py,sha256=evATWiuwSp80IvKV-jkjLX8kNW6tEYR4Iakr-HQu9gs,2009
+esprit_py-0.3.4.dist-info/LICENSE,sha256=DOcn7qpE6TsUEcakIsDDKm757jx5YlQ8fXDiED21P_w,1089
+esprit_py-0.3.4.dist-info/METADATA,sha256=cYU7wA9DFyaYz8-I8R9vkdM_vIP2xF3e8QXxCdhw0Ao,2863
+esprit_py-0.3.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+esprit_py-0.3.4.dist-info/top_level.txt,sha256=aS9besFTZ4EYTsoBJVf3GaMjQtJLgLaK7WqAxSvGVdQ,7
+esprit_py-0.3.4.dist-info/RECORD,,
