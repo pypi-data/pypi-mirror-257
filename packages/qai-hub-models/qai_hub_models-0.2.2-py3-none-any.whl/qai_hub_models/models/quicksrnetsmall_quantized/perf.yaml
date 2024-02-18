@@ -1,0 +1,207 @@
+models:
+- name: QuickSRNetSmall-Quantized
+  performance_metrics:
+  - reference_device_info:
+      name: Samsung Galaxy S23
+      os: '13'
+      form_factor: Phone
+      os_name: Android
+      manufacturer: Samsung
+      chipset: Snapdragon® 8 Gen 2
+    timestamp: '2024-02-08T22:29:57.274277Z'
+    torchscript_onnx_tflite:
+      inference_time: 1365.0
+      throughput: 732.6007326007326
+      estimated_peak_memory_range:
+        min: 24576
+        max: 1440400
+      layer_info:
+        layers_on_npu: 8
+        layers_on_gpu: 0
+        layers_on_cpu: 3
+        total_layers: 11
+      precision: fp16
+      primary_compute_unit: NPU
+      job_id: j0pxxkolp
+      job_status: Passed
+    torchscript_onnx_qnn:
+      inference_time: 997.0
+      throughput: 1003.0090270812437
+      estimated_peak_memory_range:
+        min: 217088
+        max: 2304688
+      layer_info:
+        layers_on_npu: 12
+        layers_on_gpu: 0
+        layers_on_cpu: 0
+        total_layers: 12
+      precision: fp16
+      primary_compute_unit: NPU
+      job_id: j1p36jqxp
+      job_status: Passed
+    torchscript_onnx_ort_qnn_htp:
+      inference_time: 9352.0
+      throughput: 106.92899914456801
+      estimated_peak_memory_range:
+        min: 11857920
+        max: 34100272
+      layer_info:
+        layers_on_npu: 0
+        layers_on_gpu: 0
+        layers_on_cpu: 5
+        total_layers: 5
+      precision: fp32
+      primary_compute_unit: CPU
+      job_id: jegnk62kg
+      job_status: Passed
+    torchscript_qnn:
+      inference_time: 'null'
+      throughput: 'null'
+      estimated_peak_memory_range:
+        min: 0
+        max: 0
+      layer_info:
+        layers_on_npu: 'null'
+        layers_on_gpu: 'null'
+        layers_on_cpu: 'null'
+        total_layers: 'null'
+      precision: 'null'
+      primary_compute_unit: 'null'
+      job_id: 'null'
+      job_status: 'null'
+- name: QuickSRNet_Small_Quantized
+  performance_metrics:
+  - reference_device_info:
+      name: Samsung Galaxy S23
+      os: '13'
+      form_factor: Phone
+      os_name: Android
+      manufacturer: Samsung
+      chipset: Snapdragon® 8 Gen 2
+    timestamp: '2024-02-08T22:29:57.807347Z'
+    torchscript_onnx_tflite:
+      inference_time: 1359.0
+      throughput: 735.8351729212657
+      estimated_peak_memory_range:
+        min: 32768
+        max: 1593864
+      layer_info:
+        layers_on_npu: 8
+        layers_on_gpu: 0
+        layers_on_cpu: 3
+        total_layers: 11
+      precision: int8
+      primary_compute_unit: NPU
+      job_id: jo5m8nx9p
+      job_status: Passed
+    torchscript_onnx_qnn:
+      inference_time: 1023.0
+      throughput: 977.5171065493646
+      estimated_peak_memory_range:
+        min: 229376
+        max: 7917888
+      layer_info:
+        layers_on_npu: 12
+        layers_on_gpu: 0
+        layers_on_cpu: 0
+        total_layers: 12
+      precision: int8
+      primary_compute_unit: NPU
+      job_id: jwgo82e4p
+      job_status: Passed
+    torchscript_onnx_ort_qnn_htp:
+      inference_time: 9300.0
+      throughput: 107.52688172043011
+      estimated_peak_memory_range:
+        min: 12873728
+        max: 23269936
+      layer_info:
+        layers_on_npu: 0
+        layers_on_gpu: 0
+        layers_on_cpu: 5
+        total_layers: 5
+      precision: fp32
+      primary_compute_unit: CPU
+      job_id: joprwvk05
+      job_status: Passed
+    torchscript_qnn:
+      inference_time: 'null'
+      throughput: 'null'
+      estimated_peak_memory_range:
+        min: 0
+        max: 0
+      layer_info:
+        layers_on_npu: 'null'
+        layers_on_gpu: 'null'
+        layers_on_cpu: 'null'
+        total_layers: 'null'
+      precision: 'null'
+      primary_compute_unit: 'null'
+      job_id: 'null'
+      job_status: 'null'
+aggregated:
+  supported_devices:
+  - Samsung Galaxy S21
+  - Samsung Galaxy S21 Ultra
+  - Samsung Galaxy S21+
+  - Samsung Galaxy S22 5G
+  - Samsung Galaxy S22 Ultra 5G
+  - Samsung Galaxy S22+ 5G
+  - Samsung Galaxy S23
+  - Samsung Galaxy S23 Ultra
+  - Samsung Galaxy S23+
+  - Samsung Galaxy Tab S8
+  - Xiaomi 12 Pro
+  - Xiaomi 13
+  - Xiaomi 13 Pro
+  supported_oses:
+  - Android
+  supported_chipsets:
+  - Snapdragon® 8 Gen 1
+  - Snapdragon® 8 Gen 2
+  - Snapdragon® 888
+  performance_metrics:
+  - reference_device_info:
+      name: Samsung Galaxy S23
+      os: '13'
+      form_factor: Phone
+      os_name: Android
+      manufacturer: Samsung
+      chipset: Snapdragon® 8 Gen 2
+    timestamp: '2024-02-08T22:30:01.447794Z'
+    torchscript_onnx_tflite:
+      inference_time: 2724.0
+      throughput: 367.1071953010279
+      estimated_peak_memory_range:
+        min: 32768
+        max: 1593864
+      precision: fp16
+      primary_compute_unit: NPU
+      job_status: Passed
+    torchscript_onnx_qnn:
+      inference_time: 2020.0
+      throughput: 495.0495049504951
+      estimated_peak_memory_range:
+        min: 229376
+        max: 7917888
+      precision: fp16
+      primary_compute_unit: NPU
+      job_status: Passed
+    torchscript_onnx_ort_qnn_htp:
+      inference_time: 18652.0
+      throughput: 53.6135535063264
+      estimated_peak_memory_range:
+        min: 12873728
+        max: 34100272
+      precision: fp32
+      primary_compute_unit: CPU
+      job_status: Passed
+    torchscript_qnn:
+      inference_time: 'null'
+      throughput: 'null'
+      estimated_peak_memory_range:
+        min: 0.0
+        max: 0.0
+      precision: 'null'
+      primary_compute_unit: 'null'
+      job_status: 'null'
