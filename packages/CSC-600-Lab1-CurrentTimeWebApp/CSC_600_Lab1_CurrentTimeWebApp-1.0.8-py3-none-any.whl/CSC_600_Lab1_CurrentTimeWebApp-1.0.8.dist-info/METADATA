@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: CSC-600-Lab1-CurrentTimeWebApp
+Version: 1.0.8
+Author: Anthony
+Author-email: mendrys1@my.canisius.edu
+License: Apache License Version 2.0
+License-File: LICENSE
+Requires-Dist: Flask
+
