@@ -1,0 +1,42 @@
+[tool.poetry]
+name = "unif-sys-disc"
+version = "0"
+description = "A unified framework for system discovery"
+license = "BSD-3-Clause"
+authors = [
+    "Lulai Zhu <lulai.zhu@gmail.com>",
+    "Wei Cheng <wei.cheng.me@gmail.com>",
+    "Livia Lestingi <livia.lestingi@polimi.it>",
+    "Matteo Giovanni Rossi <matteo.rossi@polimi.it>"
+]
+readme = "README.md"
+homepage = "https://github.com/AutotwinEU/unif-sys-disc"
+keywords = ["production systems", "model generation"]
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Intended Audience :: Manufacturing",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3 :: Only"
+]
+packages = [
+    { include = "unifsysdisc", from = "src" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+Flask = "^3.0.2"
+Paste = "^3.7.1"
+waitress = "^3.0.0"
+
+[tool.poetry.group.test.dependencies]
+black = "^24.2.0"
+flake8 = "^7.0.0"
+pytest = "^8.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry-version-plugin]
+source = "git-tag"

@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: unif-sys-disc
+Version: 0.0.1
+Summary: A unified framework for system discovery
+Home-page: https://github.com/AutotwinEU/unif-sys-disc
+License: BSD-3-Clause
+Keywords: production systems,model generation
+Author: Lulai Zhu
+Author-email: lulai.zhu@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Manufacturing
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Dist: Flask (>=3.0.2,<4.0.0)
+Requires-Dist: Paste (>=3.7.1,<4.0.0)
+Requires-Dist: waitress (>=3.0.0,<4.0.0)
+Description-Content-Type: text/markdown
+
+[![PyPI - License](https://img.shields.io/pypi/l/unif-sys-disc)](https://github.com/AutotwinEU/unif-sys-disc/blob/master/LICENSE)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/unif-sys-disc)](https://www.python.org/downloads/)
+[![PyPI - Version](https://img.shields.io/pypi/v/unif-sys-disc)](https://pypi.org/project/unif-sys-disc/)
+
+# Unified System Discovery Framework
+
+The unified system discovery framework realizes a data-driven model generation 
+methodology that takes event logs, signal waveforms and domain knowledge as 
+input and automatically creates three types of models, including graph models, 
+Petri nets and automata, to provide different views of the production system 
+under study.
+
