@@ -1,0 +1,10 @@
+
+[build]
+build
+twine
+
+[dev]
+black
+bumpver
+pytest
+pytest-cov

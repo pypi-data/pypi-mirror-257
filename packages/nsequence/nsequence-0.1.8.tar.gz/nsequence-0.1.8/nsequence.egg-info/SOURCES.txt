@@ -1,0 +1,14 @@
+LICENSE.md
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+nsequence/__init__.py
+nsequence/exceptions.py
+nsequence/nsequence.py
+nsequence.egg-info/PKG-INFO
+nsequence.egg-info/SOURCES.txt
+nsequence.egg-info/dependency_links.txt
+nsequence.egg-info/requires.txt
+nsequence.egg-info/top_level.txt
+tests/test_nsequence.py

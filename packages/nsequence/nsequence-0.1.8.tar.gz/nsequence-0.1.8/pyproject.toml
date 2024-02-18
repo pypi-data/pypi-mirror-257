@@ -1,0 +1,51 @@
+[project]
+name = "nsequence"
+version = "0.1.8"
+description = "A Library for Manipulating Progressions or Sequences"
+authors = [{ name = "Isaac Houngue", email = "isaac.houngue@imsp-uac.org" }]
+readme = "README.md"
+license = { file = "LICENSE.md" }
+classifiers = [
+    "License :: OSI Approved :: Apache Software License",
+    "Topic :: Utilities",
+    "Topic :: Software Development :: Libraries",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["progression", "arithmetic progression", "sequence", "fonctional sequence", "progression terms computation"]
+
+# Because we are using f-string
+requires-python = ">=3.6"
+
+[project.optional-dependencies]
+dev = ["black", "bumpver", "pytest", "pytest-cov"]
+build = ["build", "twine"]
+
+[project.urls]
+homepage = "https://github.com/wehappit/nsequence"
+documentation = "https://github.com/wehappit/nsequence"
+repository = "https://github.com/wehappit/nsequence"
+changelog = "https://github.com/wehappit/nsequence/blob/main/CHANGELOG.md"
+
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.bumpver]
+current_version = "0.1.8"
+version_pattern = "MAJOR.MINOR.PATCH[PYTAGNUM]"
+commit_message = "bump version {old_version} -> {new_version}"
+tag_message = "{new_version}"
+tag_scope = "default"
+pre_commit_hook = ""
+post_commit_hook = ""
+commit = true
+tag = true
+push = false
+
+[tool.bumpver.file_patterns]
+"pyproject.toml" = [
+    'current_version = "{version}"',
+    'version = "{version}"',
+]
+
