@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: 01OS
+Version: 0.0.4
+Summary: The open-source language model computer
+License: AGPL
+Author: Killian
+Author-email: killian@openinterpreter.com
+Requires-Python: >=3.9,<3.12
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: asyncio (>=3.4.3,<4.0.0)
+Requires-Dist: fastapi (>=0.109.2,<0.110.0)
+Requires-Dist: ffmpeg-python (>=0.2.0,<0.3.0)
+Requires-Dist: ngrok (>=1.0.0,<2.0.0)
+Requires-Dist: open-interpreter (>=0.2.0,<0.3.0)
+Requires-Dist: opencv-python (>=4.9.0.80,<5.0.0.0)
+Requires-Dist: pyaudio (>=0.2.14,<0.3.0)
+Requires-Dist: pydub (>=0.25.1,<0.26.0)
+Requires-Dist: pynput (>=1.7.6,<2.0.0)
+Requires-Dist: python-dotenv (>=1.0.1,<2.0.0)
+Requires-Dist: simpleaudio (>=1.0.4,<2.0.0)
+Requires-Dist: textual (>=0.50.1,<0.51.0)
+Requires-Dist: uvicorn (>=0.27.1,<0.28.0)
+Requires-Dist: websockets (>=12.0,<13.0)
+Description-Content-Type: text/markdown
+
+The open-source language model computer.
+
+```bash
+pip install 01OS
+```
+
+```bash
+01 # This will run a server + attempt to determine and run a client.
+# (Behavior can be modified by changing the contents of `.env`)
+```
+
+**Expose an 01 server publically:**
+
+```bash
+01 --server --expose # This will print a URL that a client can point to.
+```
+
+**Run a specific client:**
+
+```bash
+01 --client macos # Options: macos, rpi
+```
+
+**Run locally:**
+
+The current default uses OpenAI's services.
+
+The `--local` flag will install and run the [whisper.cpp](https://github.com/ggerganov/whisper.cpp) STT and [Piper](https://github.com/rhasspy/piper) TTS models.
+
+```bash
+01 --local # Local client and server
+01 --local --server --expose # Expose a local server
+```
+
