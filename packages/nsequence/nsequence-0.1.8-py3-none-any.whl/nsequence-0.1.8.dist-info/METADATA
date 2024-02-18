@@ -1,0 +1,770 @@
+Metadata-Version: 2.1
+Name: nsequence
+Version: 0.1.8
+Summary: A Library for Manipulating Progressions or Sequences
+Author-email: Isaac Houngue <isaac.houngue@imsp-uac.org>
+License: Copyright 2024, Isaac Houngue
+        
+        Licensed under the Apache License, Version 2.0 (the "License");
+        you may not use this file except in compliance with the License.
+        You may obtain a copy of the License at
+        
+           http://www.apache.org/licenses/LICENSE-2.0
+        
+        Unless required by applicable law or agreed to in writing, software
+        distributed under the License is distributed on an "AS IS" BASIS,
+        WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+        See the License for the specific language governing permissions and
+        limitations under the License.
+        
+        
+        ```
+                                      Apache License
+                                Version 2.0, January 2004
+                             http://www.apache.org/licenses/
+        
+        
+        TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+        
+        1. Definitions.
+        
+           "License" shall mean the terms and conditions for use, reproduction,
+           and distribution as defined by Sections 1 through 9 of this document.
+        
+           "Licensor" shall mean the copyright owner or entity authorized by
+           the copyright owner that is granting the License.
+        
+           "Legal Entity" shall mean the union of the acting entity and all
+           other entities that control, are controlled by, or are under common
+           control with that entity. For the purposes of this definition,
+           "control" means (i) the power, direct or indirect, to cause the
+           direction or management of such entity, whether by contract or
+           otherwise, or (ii) ownership of fifty percent (50%) or more of the
+           outstanding shares, or (iii) beneficial ownership of such entity.
+        
+           "You" (or "Your") shall mean an individual or Legal Entity
+           exercising permissions granted by this License.
+        
+           "Source" form shall mean the preferred form for making modifications,
+           including but not limited to software source code, documentation
+           source, and configuration files.
+        
+           "Object" form shall mean any form resulting from mechanical
+           transformation or translation of a Source form, including but
+           not limited to compiled object code, generated documentation,
+           and conversions to other media types.
+        
+           "Work" shall mean the work of authorship, whether in Source or
+           Object form, made available under the License, as indicated by a
+           copyright notice that is included in or attached to the work
+           (an example is provided in the Appendix below).
+        
+           "Derivative Works" shall mean any work, whether in Source or Object
+           form, that is based on (or derived from) the Work and for which the
+           editorial revisions, annotations, elaborations, or other modifications
+           represent, as a whole, an original work of authorship. For the purposes
+           of this License, Derivative Works shall not include works that remain
+           separable from, or merely link (or bind by name) to the interfaces of,
+           the Work and Derivative Works thereof.
+        
+           "Contribution" shall mean any work of authorship, including
+           the original version of the Work and any modifications or additions
+           to that Work or Derivative Works thereof, that is intentionally
+           submitted to Licensor for inclusion in the Work by the copyright owner
+           or by an individual or Legal Entity authorized to submit on behalf of
+           the copyright owner. For the purposes of this definition, "submitted"
+           means any form of electronic, verbal, or written communication sent
+           to the Licensor or its representatives, including but not limited to
+           communication on electronic mailing lists, source code control systems,
+           and issue tracking systems that are managed by, or on behalf of, the
+           Licensor for the purpose of discussing and improving the Work, but
+           excluding communication that is conspicuously marked or otherwise
+           designated in writing by the copyright owner as "Not a Contribution."
+        
+           "Contributor" shall mean Licensor and any individual or Legal Entity
+           on behalf of whom a Contribution has been received by Licensor and
+           subsequently incorporated within the Work.
+        
+        2. Grant of Copyright License. Subject to the terms and conditions of
+           this License, each Contributor hereby grants to You a perpetual,
+           worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+           copyright license to reproduce, prepare Derivative Works of,
+           publicly display, publicly perform, sublicense, and distribute the
+           Work and such Derivative Works in Source or Object form.
+        
+        3. Grant of Patent License. Subject to the terms and conditions of
+           this License, each Contributor hereby grants to You a perpetual,
+           worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+           (except as stated in this section) patent license to make, have made,
+           use, offer to sell, sell, import, and otherwise transfer the Work,
+           where such license applies only to those patent claims licensable
+           by such Contributor that are necessarily infringed by their
+           Contribution(s) alone or by combination of their Contribution(s)
+           with the Work to which such Contribution(s) was submitted. If You
+           institute patent litigation against any entity (including a
+           cross-claim or counterclaim in a lawsuit) alleging that the Work
+           or a Contribution incorporated within the Work constitutes direct
+           or contributory patent infringement, then any patent licenses
+           granted to You under this License for that Work shall terminate
+           as of the date such litigation is filed.
+        
+        4. Redistribution. You may reproduce and distribute copies of the
+           Work or Derivative Works thereof in any medium, with or without
+           modifications, and in Source or Object form, provided that You
+           meet the following conditions:
+        
+           (a) You must give any other recipients of the Work or
+               Derivative Works a copy of this License; and
+        
+           (b) You must cause any modified files to carry prominent notices
+               stating that You changed the files; and
+        
+           (c) You must retain, in the Source form of any Derivative Works
+               that You distribute, all copyright, patent, trademark, and
+               attribution notices from the Source form of the Work,
+               excluding those notices that do not pertain to any part of
+               the Derivative Works; and
+        
+           (d) If the Work includes a "NOTICE" text file as part of its
+               distribution, then any Derivative Works that You distribute must
+               include a readable copy of the attribution notices contained
+               within such NOTICE file, excluding those notices that do not
+               pertain to any part of the Derivative Works, in at least one
+               of the following places: within a NOTICE text file distributed
+               as part of the Derivative Works; within the Source form or
+               documentation, if provided along with the Derivative Works; or,
+               within a display generated by the Derivative Works, if and
+               wherever such third-party notices normally appear. The contents
+               of the NOTICE file are for informational purposes only and
+               do not modify the License. You may add Your own attribution
+               notices within Derivative Works that You distribute, alongside
+               or as an addendum to the NOTICE text from the Work, provided
+               that such additional attribution notices cannot be construed
+               as modifying the License.
+        
+           You may add Your own copyright statement to Your modifications and
+           may provide additional or different license terms and conditions
+           for use, reproduction, or distribution of Your modifications, or
+           for any such Derivative Works as a whole, provided Your use,
+           reproduction, and distribution of the Work otherwise complies with
+           the conditions stated in this License.
+        
+        5. Submission of Contributions. Unless You explicitly state otherwise,
+           any Contribution intentionally submitted for inclusion in the Work
+           by You to the Licensor shall be under the terms and conditions of
+           this License, without any additional terms or conditions.
+           Notwithstanding the above, nothing herein shall supersede or modify
+           the terms of any separate license agreement you may have executed
+           with Licensor regarding such Contributions.
+        
+        6. Trademarks. This License does not grant permission to use the trade
+           names, trademarks, service marks, or product names of the Licensor,
+           except as required for reasonable and customary use in describing the
+           origin of the Work and reproducing the content of the NOTICE file.
+        
+        7. Disclaimer of Warranty. Unless required by applicable law or
+           agreed to in writing, Licensor provides the Work (and each
+           Contributor provides its Contributions) on an "AS IS" BASIS,
+           WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+           implied, including, without limitation, any warranties or conditions
+           of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A
+           PARTICULAR PURPOSE. You are solely responsible for determining the
+           appropriateness of using or redistributing the Work and assume any
+           risks associated with Your exercise of permissions under this License.
+        
+        8. Limitation of Liability. In no event and under no legal theory,
+           whether in tort (including negligence), contract, or otherwise,
+           unless required by applicable law (such as deliberate and grossly
+           negligent acts) or agreed to in writing, shall any Contributor be
+           liable to You for damages, including any direct, indirect, special,
+           incidental, or consequential damages of any character arising as a
+           result of this License or out of the use or inability to use the
+           Work (including but not limited to damages for loss of goodwill,
+           work stoppage, computer failure or malfunction, or any and all
+           other commercial damages or losses), even if such Contributor
+           has been advised of the possibility of such damages.
+        
+        9. Accepting Warranty or Additional Liability. While redistributing
+           the Work or Derivative Works thereof, You may choose to offer,
+           and charge a fee for, acceptance of support, warranty, indemnity,
+           or other liability obligations and/or rights consistent with this
+           License. However, in accepting such obligations, You may act only
+           on Your own behalf and on Your sole responsibility, not on behalf
+           of any other Contributor, and only if You agree to indemnify,
+           defend, and hold each Contributor harmless for any liability
+           incurred by, or claims asserted against, such Contributor by reason
+           of your accepting any such warranty or additional liability.
+        
+        END OF TERMS AND CONDITIONS
+        ```
+        
+        
+        
+                                         Apache License
+                                   Version 2.0, January 2004
+                                http://www.apache.org/licenses/
+        
+           TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+        
+           1. Definitions.
+        
+              "License" shall mean the terms and conditions for use, reproduction,
+              and distribution as defined by Sections 1 through 9 of this document.
+        
+              "Licensor" shall mean the copyright owner or entity authorized by
+              the copyright owner that is granting the License.
+        
+              "Legal Entity" shall mean the union of the acting entity and all
+              other entities that control, are controlled by, or are under common
+              control with that entity. For the purposes of this definition,
+              "control" means (i) the power, direct or indirect, to cause the
+              direction or management of such entity, whether by contract or
+              otherwise, or (ii) ownership of fifty percent (50%) or more of the
+              outstanding shares, or (iii) beneficial ownership of such entity.
+        
+              "You" (or "Your") shall mean an individual or Legal Entity
+              exercising permissions granted by this License.
+        
+              "Source" form shall mean the preferred form for making modifications,
+              including but not limited to software source code, documentation
+              source, and configuration files.
+        
+              "Object" form shall mean any form resulting from mechanical
+              transformation or translation of a Source form, including but
+              not limited to compiled object code, generated documentation,
+              and conversions to other media types.
+        
+              "Work" shall mean the work of authorship, whether in Source or
+              Object form, made available under the License, as indicated by a
+              copyright notice that is included in or attached to the work
+              (an example is provided in the Appendix below).
+        
+              "Derivative Works" shall mean any work, whether in Source or Object
+              form, that is based on (or derived from) the Work and for which the
+              editorial revisions, annotations, elaborations, or other modifications
+              represent, as a whole, an original work of authorship. For the purposes
+              of this License, Derivative Works shall not include works that remain
+              separable from, or merely link (or bind by name) to the interfaces of,
+              the Work and Derivative Works thereof.
+        
+              "Contribution" shall mean any work of authorship, including
+              the original version of the Work and any modifications or additions
+              to that Work or Derivative Works thereof, that is intentionally
+              submitted to Licensor for inclusion in the Work by the copyright owner
+              or by an individual or Legal Entity authorized to submit on behalf of
+              the copyright owner. For the purposes of this definition, "submitted"
+              means any form of electronic, verbal, or written communication sent
+              to the Licensor or its representatives, including but not limited to
+              communication on electronic mailing lists, source code control systems,
+              and issue tracking systems that are managed by, or on behalf of, the
+              Licensor for the purpose of discussing and improving the Work, but
+              excluding communication that is conspicuously marked or otherwise
+              designated in writing by the copyright owner as "Not a Contribution."
+        
+              "Contributor" shall mean Licensor and any individual or Legal Entity
+              on behalf of whom a Contribution has been received by Licensor and
+              subsequently incorporated within the Work.
+        
+           2. Grant of Copyright License. Subject to the terms and conditions of
+              this License, each Contributor hereby grants to You a perpetual,
+              worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+              copyright license to reproduce, prepare Derivative Works of,
+              publicly display, publicly perform, sublicense, and distribute the
+              Work and such Derivative Works in Source or Object form.
+        
+           3. Grant of Patent License. Subject to the terms and conditions of
+              this License, each Contributor hereby grants to You a perpetual,
+              worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+              (except as stated in this section) patent license to make, have made,
+              use, offer to sell, sell, import, and otherwise transfer the Work,
+              where such license applies only to those patent claims licensable
+              by such Contributor that are necessarily infringed by their
+              Contribution(s) alone or by combination of their Contribution(s)
+              with the Work to which such Contribution(s) was submitted. If You
+              institute patent litigation against any entity (including a
+              cross-claim or counterclaim in a lawsuit) alleging that the Work
+              or a Contribution incorporated within the Work constitutes direct
+              or contributory patent infringement, then any patent licenses
+              granted to You under this License for that Work shall terminate
+              as of the date such litigation is filed.
+        
+           4. Redistribution. You may reproduce and distribute copies of the
+              Work or Derivative Works thereof in any medium, with or without
+              modifications, and in Source or Object form, provided that You
+              meet the following conditions:
+        
+              (a) You must give any other recipients of the Work or
+                  Derivative Works a copy of this License; and
+        
+              (b) You must cause any modified files to carry prominent notices
+                  stating that You changed the files; and
+        
+              (c) You must retain, in the Source form of any Derivative Works
+                  that You distribute, all copyright, patent, trademark, and
+                  attribution notices from the Source form of the Work,
+                  excluding those notices that do not pertain to any part of
+                  the Derivative Works; and
+        
+              (d) If the Work includes a "NOTICE" text file as part of its
+                  distribution, then any Derivative Works that You distribute must
+                  include a readable copy of the attribution notices contained
+                  within such NOTICE file, excluding those notices that do not
+                  pertain to any part of the Derivative Works, in at least one
+                  of the following places: within a NOTICE text file distributed
+                  as part of the Derivative Works; within the Source form or
+                  documentation, if provided along with the Derivative Works; or,
+                  within a display generated by the Derivative Works, if and
+                  wherever such third-party notices normally appear. The contents
+                  of the NOTICE file are for informational purposes only and
+                  do not modify the License. You may add Your own attribution
+                  notices within Derivative Works that You distribute, alongside
+                  or as an addendum to the NOTICE text from the Work, provided
+                  that such additional attribution notices cannot be construed
+                  as modifying the License.
+        
+              You may add Your own copyright statement to Your modifications and
+              may provide additional or different license terms and conditions
+              for use, reproduction, or distribution of Your modifications, or
+              for any such Derivative Works as a whole, provided Your use,
+              reproduction, and distribution of the Work otherwise complies with
+              the conditions stated in this License.
+        
+           5. Submission of Contributions. Unless You explicitly state otherwise,
+              any Contribution intentionally submitted for inclusion in the Work
+              by You to the Licensor shall be under the terms and conditions of
+              this License, without any additional terms or conditions.
+              Notwithstanding the above, nothing herein shall supersede or modify
+              the terms of any separate license agreement you may have executed
+              with Licensor regarding such Contributions.
+        
+           6. Trademarks. This License does not grant permission to use the trade
+              names, trademarks, service marks, or product names of the Licensor,
+              except as required for reasonable and customary use in describing the
+              origin of the Work and reproducing the content of the NOTICE file.
+        
+           7. Disclaimer of Warranty. Unless required by applicable law or
+              agreed to in writing, Licensor provides the Work (and each
+              Contributor provides its Contributions) on an "AS IS" BASIS,
+              WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+              implied, including, without limitation, any warranties or conditions
+              of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A
+              PARTICULAR PURPOSE. You are solely responsible for determining the
+              appropriateness of using or redistributing the Work and assume any
+              risks associated with Your exercise of permissions under this License.
+        
+           8. Limitation of Liability. In no event and under no legal theory,
+              whether in tort (including negligence), contract, or otherwise,
+              unless required by applicable law (such as deliberate and grossly
+              negligent acts) or agreed to in writing, shall any Contributor be
+              liable to You for damages, including any direct, indirect, special,
+              incidental, or consequential damages of any character arising as a
+              result of this License or out of the use or inability to use the
+              Work (including but not limited to damages for loss of goodwill,
+              work stoppage, computer failure or malfunction, or any and all
+              other commercial damages or losses), even if such Contributor
+              has been advised of the possibility of such damages.
+        
+           9. Accepting Warranty or Additional Liability. While redistributing
+              the Work or Derivative Works thereof, You may choose to offer,
+              and charge a fee for, acceptance of support, warranty, indemnity,
+              or other liability obligations and/or rights consistent with this
+              License. However, in accepting such obligations, You may act only
+              on Your own behalf and on Your sole responsibility, not on behalf
+              of any other Contributor, and only if You agree to indemnify,
+              defend, and hold each Contributor harmless for any liability
+              incurred by, or claims asserted against, such Contributor by reason
+              of your accepting any such warranty or additional liability.
+        
+           END OF TERMS AND CONDITIONSLicensed under the Apache License, Version 2.0 (the "License");
+        you may not use this file except in compliance with the License.
+        You may obtain a copy of the License at
+        
+           http://www.apache.org/licenses/LICENSE-2.0
+        
+        Unless required by applicable law or agreed to in writing, software
+        distributed under the License is distributed on an "AS IS" BASIS,
+        WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+        See the License for the specific language governing permissions and
+        limitations under the License.
+        
+        
+        ```
+                                      Apache License
+                                Version 2.0, January 2004
+                             http://www.apache.org/licenses/
+        
+        
+        
+           APPENDIX: How to apply the Apache License to your work.
+        
+              To apply the Apache License to your work, attach the following
+              boilerplate notice, with the fields enclosed by brackets "[]"
+              replaced with your own identifying information. (Don't include
+              the brackets!)  The text should be enclosed in the appropriate
+              comment syntax for the file format. We also recommend that a
+              file or class name and description of purpose be included on the
+              same "printed page" as the copyright notice for easier
+              identification within third-party archives.
+        ```
+        
+Project-URL: homepage, https://github.com/wehappit/nsequence
+Project-URL: documentation, https://github.com/wehappit/nsequence
+Project-URL: repository, https://github.com/wehappit/nsequence
+Project-URL: changelog, https://github.com/wehappit/nsequence/blob/main/CHANGELOG.md
+Keywords: progression,arithmetic progression,sequence,fonctional sequence,progression terms computation
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Topic :: Utilities
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Provides-Extra: build
+Requires-Dist: build ; extra == 'build'
+Requires-Dist: twine ; extra == 'build'
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: bumpver ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+
+# NSequence
+
+NSequence is a Python library designed for handling progressions or sequences. It allows users to define sequences through functional expressions, and offers capabilities for various computations.
+
+
+## Key Features
+
+- **Versatile Sequence Handling**: NSequence supports every type of sequence, as long as it can be expressed with a unary function.
+
+- **Error Handling**: The library includes robust error handling for scenarios such as arity mismatches, unexpected positions or indices, inversion errors, and index not found situations.
+
+- **Custom Indexing**: Users can define custom indexing functions to map sequence positions to unique indices, accommodating sequences with non-standard progressions or skipped elements. This feature enhances the library's versatility in sequence management.
+
+- **Inverse Functionality**: For invertible sequences, NSequence facilitates finding the index of a given term and vice versa and provides various operations based on the inversion. 
+
+- **Nearest Term Search**: NSequence allows you to find the index of the nearest term to a given value in the sequence. It provides flexibility in handling tie-breakers and preferences.
+
+- **Iterator Protocol Support**: NSequence supports the iterator protocol, allowing seamless iteration over sequence elements.
+
+- **Sequence Protocol Support**: NSequence adheres to the sequence protocol, ensuring compatibility with other Python sequences and enabling familiar operations such as indexing and slicing.
+
+## Installation
+
+You can install NSequence using pip:
+
+```bash
+pip install nsequence
+```
+
+## Testing
+
+You can install the dependencies to run the tests using pip:
+
+```bash
+pip install nsequence[dev]
+```
+
+## Getting Started
+
+```python
+from NSequence import NSequence
+
+def my_function(x):
+    # Do something with x and return what you want
+    # ...
+    return x * 2
+
+# Create your sequence
+my_sequence = NSequence(func=my_function)
+
+# Use the sequence functionalities
+term_3 = my_sequence.nth_term(3)
+sum_first_5_terms = my_sequence.sum_up_to_nth_term(5)
+```
+
+```python
+# Create a linear sequence: f(x) = 2x + 3
+linear_sequence = NSequence(func=lambda x: 2 * x + 3)
+
+# Compute the 5th term
+term_5 = linear_sequence.nth_term(5)
+
+# Find the index of the term 13
+index_of_13 = linear_sequence.index_of_term(13)
+
+# Calculate the sum of the first 10 terms
+sum_first_10_terms = linear_sequence.sum_up_to_nth_term(10)
+```
+
+```python
+# Create a quadratic sequence: f(x) = x^2 + 3
+quadratic_sequence = NSequence(func=lambda x: x ** 2 + 3)
+
+# Get the nearest term to 20
+nearest_term_to_20 = quadratic_sequence.nearest_term(20)
+
+# Count the terms between 10 and 50
+count_terms_between_10_and_50 = quadratic_sequence.count_terms_between_terms(10, 50)
+```
+
+```python
+# Create an invertible sequence with inverse function
+invertible_sequence = NSequence(func=lambda x: 2 * x, inverse_func=lambda y: y / 2)
+
+# Find the index of the term 8
+index_of_8 = invertible_sequence.index_of_term(8)
+
+# Compute the terms between indices 5 and 10
+terms_between_5_and_10 = invertible_sequence.terms_between_indices(5, 10)
+```
+
+## Real-world Usage
+
+Imagine you're developing a complex event reminder system, where specific data _could_ be 
+attached to each reminder. You don't want to save in db, reminders to which the user 
+hasn't attached any specific data (you're seeing it as resource waste). But, for forecasting and
+planning purposes, you want to be able to retrieve 
+for a given event recall data (or metadata inferred from the related event) for a 
+given period in the past (or future).
+
+The set of reminders can be conceptualized as a mathematical sequence, where each 
+term represents a distinct instance of the scheduled event reminder.
+
+Consider an event requiring reminders every `F` hours starting from a date `D`. 
+We can establish a direct mathematical relationship between 
+each reminder instance and its timing. And we can then define the reminder sequence 
+using the formular `R(n) = D + F*(n-1)` or `R(n) = (D-F) + F*n`, where `R(n)` represents the `n-th` reminder 
+date.
+
+NSequence can be utilized to enhance your code's capabilities in solving the
+previous problem by leveraging the available methods.
+
+```python
+
+from datetime import datetime, timedelta
+from nsequence import NSequence
+
+# Define start date and frequency in hours
+start_date = datetime(2024, 1, 1)
+frequency_hours = timedelta(hours=2)
+
+# Define the reminder function using the R(n) formula
+def reminder_func(n):
+    # R(n) = start_date + frequency_hours * (n-1)
+    return start_date + frequency_hours * (n-1)
+
+def reminder_inverse_func(reminder_date):
+    return (reminder_date - start_date + frequency_hours) / frequency_hours
+
+# Initialize NSequence with the reminder function
+reminder_sequence = NSequence(
+    func=reminder_func, 
+    # Set initial_index to 1
+    initial_index=1, 
+    inverse_func=reminder_inverse_func
+)
+
+# Example: Get the 5th reminder date
+fifth_reminder_date = reminder_sequence.nth_term(5)
+print(f"The 5th reminder is scheduled for: {fifth_reminder_date}")
+
+# Example: Get the reminders scheduled between two different dates
+date1 = datetime(2024, 1, 1)
+date2 = datetime(2024, 2, 4)
+
+scheduled_reminders_between_dates = reminder_sequence.terms_between_terms(date1, date2)
+print(f"The scheduled reminder between {date1} and {date2} are: {scheduled_reminders_between_dates}")
+
+# See bellow for more methods available
+```
+
+- _NSequence has custom indexing support to handle more complex sequence definition._
+
+- _Inheritance can be used to override the default methods if the default implementation does not suit your needs
+especially in the cases where the return type of the sequence's function is not float._
+
+## Key Methods
+
+![The concept's image](./docs/img.png)
+
+---
+### Constructor .i.e `__init__`
+
+Initializes a new sequence instance.
+
+#### Parameters
+
+- `func`: The primary function defining the sequence. This function must accept an integer position and return the corresponding sequence term.
+
+- `inverse_func`: An optional inverse function for `func`, allowing for the computation of positions or indices based on sequence term values.
+
+- `indexing_func`: An optional function that maps sequence positions to custom indices, enabling non-standard indexing schemes.
+
+- `indexing_inverse_func`: The inverse of `indexing_func`, allowing for the determination of sequence positions from indices.
+
+- `initial_index`: The starting index for the sequence, defaults to 0. This parameter is ignored if `indexing_func` is provided, as the initial index will then be derived from the indexing function.
+
+-  `position_limit` An optional limit to the number of positions available in the sequence .i.e the length of the sequence. Defaults to 1,000,000.
+
+
+
+#### Raises
+- `ArityMismatchError`: Raised if the provided function does not accept exactly one argument.
+- `TypeError`: Raised if the provided argument is not a callable function.
+
+### `nth_term`
+Computes the sequence term at the given position.
+
+#### Parameters
+- `position`: Position in the sequence to calculate the term for.
+
+
+### `position_of_index`
+Determines the sequence position of a given index, useful when custom indexing is used.
+
+#### Parameters
+- `index`: The index for which to find the corresponding sequence position.
+
+#### Raises
+- `IndexNotFoundError`: Raised if the user provides custom indexing function and the index is not found sequence's `position_limit`. 
+
+### `nearest_entry`
+Finds the nearest sequence entry (both the index and the term) to a given term.
+
+#### Parameters
+- `term_neighbor`: The term to find the nearest sequence entry for.
+- `inversion_technic`: Whether to use the inversion technique for finding the nearest term.
+- `starting_position`: The starting position for the iterative search (ignored if `inversion_technic` is True).
+- `iter_limit`: The maximum number of iterations for the search (ignored if `inversion_technic` is True).
+- `prefer_left_term`: Preference for the left term in case of equidistant terms.
+
+#### Raises
+- `NotImplementedError`: Raised if the calculation fails, due to `TypeError`, `ValueError` or `ArithmeticError`.
+
+### `nearest_term_index`
+Finds the index of the nearest term to a given value in the sequence.
+
+#### Parameters
+- `term_neighbor`: The value to find the nearest sequence term to.
+- `inversion_technic`: Whether to use the inversion technique for finding the nearest term.
+- `starting_position`: The starting position for the iterative search (ignored if `inversion_technic` is True).
+- `iter_limit`: The maximum number of iterations for the search (ignored if `inversion_technic` is True).
+- `prefer_left_term`: Preference for the left term in case of equidistant terms.
+
+#### Raises
+- `NotImplementedError`: Raised if the calculation fails, due to `TypeError`, `ValueError` or `ArithmeticError`.
+
+### `nearest_term`
+Retrieves the term in the sequence that is nearest to a specified value.
+
+#### Parameters
+- `term_neighbor`: The value to find the nearest sequence term for.
+- `inversion_technic`: Whether to use the inversion technique for finding the nearest term.
+- `starting_position`: The starting position for the iterative search (ignored if `inversion_technic` is True).
+- `iter_limit`: The maximum number of iterations for the search (ignored if `inversion_technic` is True).
+- `prefer_left_term`: Preference for the left term in case of equidistant terms.
+
+#### Raises
+- `NotImplementedError`: Raised if the calculation fails, due to `TypeError`, `ValueError` or `ArithmeticError`.
+- `InversionError`: Raised if `inversion_technic` is set to True and the sequence does not have `inverse_func`.
+
+### `count_terms_between_terms_neighbors`
+Counts the number of terms located between the nearest terms to two specified values. This method is particularly useful for sequences where each term
+has a unique and identifiable neighbor, allowing for the counting of terms that lie directly
+between two specific values.
+
+#### Parameters
+- `term_neighbor1`: The first value.  This method finds the nearest term to this value
+                 that does not prefer the left term, effectively preferring the right or equal term.
+- `term_neighbor2`: The second value. The value of the second neighbor. Unlike for `term_neighbor1`, this method finds the
+                 nearest term to this value that prefers the left term, if such a term exists.
+
+### `terms_between_terms`
+Computes a list of sequence terms located between two given terms, inclusive.
+
+#### Parameters
+- `term1`: The first term.
+- `term2`: The second term.
+
+#### Raises
+- `InversionError`: Raised if `inverse_func` is not defined.
+- `ValueError`: Raised if calculated indices are not valid or if `term1_index` or
+`term2_index` are not integers.
+
+### `sum_up_to_nth_term`
+Calculates the sum of the sequence up to the nth term. 
+
+#### Parameters
+- `n`: The position up to which the sum is to be calculated. Must be a positive integer.
+
+### `index_of_term`
+Returns the sum of the sequence up to the nth term.
+
+#### Parameters
+- `term`:  The sequence term to find the index for.
+- `inversion_technic`: If True and no inverse function is provided, uses a brute-force search to find the index. Defaults to True.
+- `exact_exception`:  If True, raises an exception if the term does not exactly match any sequence term. Defaults to True.
+
+#### Raises
+- `InversionError`: Raised if `inversion_technic` is True and no inverse function is provided.
+- `ValueError`: Raised if `exact_exception` is True and the term is not found in the sequence.
+
+### `count_terms_between_indices`
+Counts the number of terms between two indices in the sequence.
+
+#### Parameters
+- `index1`: The starting index.
+- `index2`: The ending index.
+
+
+### `count_terms_between_terms`
+Counts the number of terms between two given terms in the sequence. It uses 
+the sequence's inverse function.
+
+This method is meaningful for sequences where a bijective (one-to-one and
+onto) relationship exists between terms and their indices.
+
+#### Parameters
+- `term1`: The first term in the sequence.
+- `term2`: The second term in the sequence.
+
+#### Raises
+- `InversionError`: Raised if an inverse function has not been defined or is not
+applicable, indicating that term indices cannot be accurately determined.
+
+## Properties
+
+### `initial_index`
+The initial index provided while creating the sequence.
+
+### `initial_term`
+The initial term of the sequence.
+
+### `position_limit`
+The actual length of the sequence.
+
+## More
+The support for Iterator and Sequence Protocol allows you to do things like this:
+
+```python
+my_sequence = NSequence(func=lambda x: x**3 + 4, position_limit=20)
+
+# Print each element/term of the sequence
+for term in my_sequence:
+    print(term)
+
+# Slice to get a range of terms
+print(my_sequence[start:end:step])
+
+```
+Read about Iterator protocol [here](https://docs.python.org/3/c-api/iter.html) and Sequence protocol [here](https://docs.python.org/3/c-api/sequence.html).
+
+---
+
+## Authors
+
+- **Isaac Houngue** [<hjisaac.h at gmail>](mailto:hjisaac.h@gmail.com)
+
+Feel free to contribute, report issues, or suggest enhancements. Did you know that sequences are everywhere 🤔? Happy sequencing! 📈
