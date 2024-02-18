@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: galaxiumtools
+Version: 0.0.1
+Summary: Tools to interact with an AI cluster
+Home-page: https://github.com/helloerikaaa/galaxium-tools
+Author: Erika Sánchez-Femat
+Author-email: erikasafe@gmail.com
+License: BSD 2-clause
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: minio
+Requires-Dist: mlflow
+Requires-Dist: loguru
+Requires-Dist: tqdm
