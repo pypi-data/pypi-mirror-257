@@ -1,0 +1,3 @@
+[console_scripts]
+mrproject=mrproject.__main__:main
+
