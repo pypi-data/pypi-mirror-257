@@ -1,0 +1,14 @@
+.gitignore
+LICENSE
+MANIFEST.in
+README.md
+google_photos_slideshow.py
+index.html
+pyproject.toml
+requirements.txt
+google_photos_slideshow.egg-info/PKG-INFO
+google_photos_slideshow.egg-info/SOURCES.txt
+google_photos_slideshow.egg-info/dependency_links.txt
+google_photos_slideshow.egg-info/entry_points.txt
+google_photos_slideshow.egg-info/requires.txt
+google_photos_slideshow.egg-info/top_level.txt
