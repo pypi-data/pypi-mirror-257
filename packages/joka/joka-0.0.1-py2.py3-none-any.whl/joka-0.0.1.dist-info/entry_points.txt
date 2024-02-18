@@ -1,0 +1,3 @@
+[console_scripts]
+joplan = joka.joplan.cli:main
+joview = joka.joview.cli:main

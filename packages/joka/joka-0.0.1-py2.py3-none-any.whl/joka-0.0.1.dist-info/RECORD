@@ -1,0 +1,9 @@
+joka/metadata.py,sha256=grVA0sKu2y9yDAkf3Ctj7qAVp02KW_z7qhiWH86Zddc,386
+joka/joplan/__init__.py,sha256=fzdaXOnVhoKdNp2ayJnKJfMZzyW7kEosSfxPxfQlfMQ,326
+joka/joplan/cli.py,sha256=QAjZp1uZAk7LVcwhSQdd2F1f0WUTSk-EMNWmyfgD9GU,342
+joka/joview/__init__.py,sha256=zCFQ9AwOc1sCL67YEjEa5roq5VYGvF9wKYKJ4M3xguo,326
+joka/joview/cli.py,sha256=zIcey1nFPu11YHFN3Yv7oOofzGbR-J5jrT40621fPRk,518
+joka-0.0.1.dist-info/METADATA,sha256=KxcGiepOqVWRdUBR2vzhruRn5haHGO5U_l4g5AL1C9E,575
+joka-0.0.1.dist-info/WHEEL,sha256=ccEkY-EGGllEs7ySpwBlD8G4u70wR77CNej8Q6tzIqA,105
+joka-0.0.1.dist-info/entry_points.txt,sha256=qofjIx_GBSIofckHIwZZMl9foOtyD5xkDZ7L00ftDGU,78
+joka-0.0.1.dist-info/RECORD,,
