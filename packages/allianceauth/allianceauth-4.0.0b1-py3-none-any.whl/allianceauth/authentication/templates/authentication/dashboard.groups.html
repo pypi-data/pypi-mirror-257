@@ -1,0 +1,20 @@
+{% load i18n %}
+<div id="aa-dashboard-panel-membership" class="col-12 col-xl-4 align-self-stretch py-2 ps-xl-2">
+    <div class="card h-100">
+        <div class="card-body">
+            <h4 class="card-title text-center">{% translate "Membership" %}</h4>
+            <div class="card-body">
+                <div style="height: 300px; overflow-y:auto;">
+                    <h5 class="text-center">{% translate "State:" %} {{ request.user.profile.state }}</h5>
+                    <table class="table">
+                        {% for group in groups %}
+                            <tr>
+                                <td class="text-center">{{ group.name }}</td>
+                            </tr>
+                        {% endfor %}
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
