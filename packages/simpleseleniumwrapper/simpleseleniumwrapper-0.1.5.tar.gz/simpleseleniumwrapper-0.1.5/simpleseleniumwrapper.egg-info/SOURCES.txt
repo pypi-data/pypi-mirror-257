@@ -1,0 +1,16 @@
+README.md
+setup.py
+simpleseleniumwrapper/__init__.py
+simpleseleniumwrapper/actionChains.py
+simpleseleniumwrapper/alerts.py
+simpleseleniumwrapper/baseImports.py
+simpleseleniumwrapper/elementLocation.py
+simpleseleniumwrapper/proxyAuth.py
+simpleseleniumwrapper/webDriver.py
+simpleseleniumwrapper/webElement.py
+simpleseleniumwrapper/webdriverManager.py
+simpleseleniumwrapper.egg-info/PKG-INFO
+simpleseleniumwrapper.egg-info/SOURCES.txt
+simpleseleniumwrapper.egg-info/dependency_links.txt
+simpleseleniumwrapper.egg-info/requires.txt
+simpleseleniumwrapper.egg-info/top_level.txt
