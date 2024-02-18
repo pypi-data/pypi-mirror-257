@@ -1,0 +1,11 @@
+bonn-0.1.5.dist-info/METADATA,sha256=5QEGxhbgvZH9pqcRDaNOhyJNWD7j2rOXhhQ546btoOQ,9281
+bonn-0.1.5.dist-info/WHEEL,sha256=E4U6i4HXVZuM8QadoQDP8aEhrMwtN9cLa-6KTXe2BHA,131
+bonn-0.1.5.dist-info/license_files/LICENSE.md,sha256=aX-fHfmGUjzLaH6KXYodxJq-kMZp1HXhZQ5vva8JWgY,1166
+bonn/category_manager.py,sha256=uxumVytnX5H2wrbyiXIKxQtmrmD-ibhnu2Pbw1UArGw,6147
+bonn/taxonomy.py,sha256=un2NG_7-SEux0Q0VPXtWHnMpY4yXB4Cn0w-C0FsmgtU,2222
+bonn/extract.py,sha256=-5x22r9NYZtg9OkHDlCTFNbZK3WB1FrgKpautXjPsz0,7347
+bonn/utils.py,sha256=IkxP42wRwnaVwdWWi-8Hqc_Bbp7KZDqwtjJcuOEzNeQ,603
+bonn/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bonn/settings.py,sha256=J9XU69LrbtGJGy8sx3FDZCpoXwC-QEwO3QqQMP_b6eE,122
+bonn/_bonn.cpython-37m-powerpc64le-linux-gnu.so,sha256=R7zL3Qh4xVnEygIdBNJD0e31wWIU5MEH6GZfKu10eRs,5142136
+bonn-0.1.5.dist-info/RECORD,,
