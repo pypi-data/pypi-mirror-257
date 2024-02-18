@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: fahoorm
+Version: 0.1.0
+Summary: A custom ORM framework for Python
+Home-page: https://github.com/lhoussaine-HSSINI/fahoorm
+Author: Lhoussaine HSSINI and  Fatma KARKACH
+Author-email: bontop.2028@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# ORM# FahoORM
+
+FahoORM is a custom ORM framework for Python.
+
+## Features
+
+- Supports SQLite, PostgreSQL, MySQL, and MongoDB.
+- Easy-to-use API for interacting with databases.
+- Flexible configuration options.
+- Designed for simplicity and performance.
+
+## Installation
+
+You can install FahoORM using pip:
+
+```bash
+pip install fahoorm
