@@ -1,0 +1,29 @@
+[1]
+response ={"Model A":"The quick brown fox jumps over the lazy dog.","Model B":"A fast brown fox leaps over a relaxed canine."}
+gt = "The quick brown fox jumps over the lazy dog."
+concept_set = ["animals", "speed"]
+expected_result = {"response": "The quick brown fox jumps over the lazy dog.", "ground_truth": "The quick brown fox jumps over the lazy dog.", "concept_set": ["animals", "speed"], "better_model": 1, "model_evaluated": "A"}
+
+[2]
+response = "A brown fox jumps over the lazy dog."
+gt = "The quick brown fox jumps over the lazy dog."
+concept_set = ["animals"]
+expected_result = {"response": "A brown fox jumps over the lazy dog.", "ground_truth": "The quick brown fox jumps over the lazy dog.", "concept_set": ["animals"], "better_model": 0, "model_evaluated": "C"}
+
+[3]
+response = {"Model A": "The lazy dog is jumped over by a quick brown fox.","Model B": "A quick brown fox jumps over the lazy dog."}
+gt = "A quick brown fox jumps over the lazy dog."
+concept_set = ["animals", "order"]
+expected_result = {"response": "A quick brown fox jumps over the lazy dog.", "ground_truth": "A quick brown fox jumps over the lazy dog.", "concept_set": ["animals", "order"], "better_model": None, "model_evaluated": None}
+
+[4]
+response = "A speedy brown fox jumps over a lazy dog."
+gt = "The quick brown fox jumps over the lazy dog."
+concept_set = ["speed", "animals"]
+expected_result = {"response": "A speedy brown fox jumps over a lazy dog.", "ground_truth": "The quick brown fox jumps over the lazy dog.", "concept_set": ["speed", "animals"], "better_model": 1, "model_evaluated": "F"}
+
+[5]
+response = "The lazy dog is jumped over by a brown fox."
+gt = "The lazy dog is jumped over by a brown fox."
+concept_set = ["animals", "order"]
+expected_result = {"response": "The lazy dog is jumped over by a brown fox.", "ground_truth": "The lazy dog is jumped over by a brown fox.", "concept_set": ["animals", "order"], "better_model": None, "model_evaluated": None}

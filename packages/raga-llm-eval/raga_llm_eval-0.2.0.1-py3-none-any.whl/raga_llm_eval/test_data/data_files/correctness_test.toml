@@ -1,0 +1,34 @@
+[1]
+prompt = "What is the capital of France?"
+response = "Paris"
+context = "Additional information about France"
+expected_response = {"correctness_score": 1.0, "other_info": ...}
+expected_result = "Since the response is an exact match to the expected answer, the correctness score should be 1.0."
+
+[2]
+prompt = "Name one famous scientist."
+response = "Albert Einstein"
+context = "(Information about various scientists)"
+expected_response = {"correctness_score": 0.8, "other_info": ...}
+expected_result = "The response is partially correct, and the correctness score should reflect that. A partial match might be considered 0.8 in this example."
+
+[3]
+prompt = "What is the currency of Japan?"
+response = "Yuan"
+context = "Information about Japanese currency"
+expected_response = {"correctness_score": 0.0, "other_info": ...}
+expected_result = "The response is completely incorrect, so the correctness score should be 0.0."
+
+[4]
+prompt = "Explain the concept of photosynthesis."
+response = "Photosynthesis is the process by which plants convert sunlight into energy through chlorophyll."
+context = "Detailed information about photosynthesis"
+expected_response = {"correctness_score": 0.9, "other_info": ...}
+expected_result = "The response is mostly correct, but the availability and accuracy of additional context should positively influence the correctness score."
+
+[5]
+prompt = "What is the meaning of life?"
+response = "42"
+context = "Various philosophical perspectives on the meaning of life"
+expected_response = {"correctness_score": 0.5, "other_info": ...}
+expected_result = "The question is subjective and does not have a definite correct answer. In this case, the correctness score might be moderate, reflecting the ambiguity of the question."
