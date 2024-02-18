@@ -1,0 +1,10 @@
+README.md
+setup.py
+akatsuki_kafka/__init__.py
+akatsuki_kafka/consumer.py
+akatsuki_kafka/producer.py
+akatsuki_kafka.egg-info/PKG-INFO
+akatsuki_kafka.egg-info/SOURCES.txt
+akatsuki_kafka.egg-info/dependency_links.txt
+akatsuki_kafka.egg-info/requires.txt
+akatsuki_kafka.egg-info/top_level.txt
