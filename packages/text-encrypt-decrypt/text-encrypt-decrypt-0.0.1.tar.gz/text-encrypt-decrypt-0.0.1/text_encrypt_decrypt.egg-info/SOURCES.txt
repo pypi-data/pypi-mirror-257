@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+text_encrypt_decrypt/text_encrypt_decrypt.py
+text_encrypt_decrypt.egg-info/PKG-INFO
+text_encrypt_decrypt.egg-info/SOURCES.txt
+text_encrypt_decrypt.egg-info/dependency_links.txt
+text_encrypt_decrypt.egg-info/requires.txt
+text_encrypt_decrypt.egg-info/top_level.txt
