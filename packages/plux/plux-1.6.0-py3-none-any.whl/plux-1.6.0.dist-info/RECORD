@@ -1,0 +1,16 @@
+plugin/__init__.py,sha256=EL-U0GFW92FH-UiSN_DKMej_2ns96r1PlxtUlo0aSY0,544
+plugin/core.py,sha256=YhOtcLPh5gOhG8fZAe_CZYqy8cTFqZTxS4Ipa1tkzyg,8623
+plugin/discovery.py,sha256=Pqx6KX3LKnjpjzYXWtLG-_yA5uWViNVvZnPlr05qpiQ,2802
+plugin/entrypoint.py,sha256=4c1q_npWI3q8V6yeDhuwweYnrHNcqB0qEtvGWz9pEsw,1778
+plugin/manager.py,sha256=Q7SGfTceGmDmLSDOSaGg1TMkDmtXwn3OcLAbST43nrw,13637
+plugin/metadata.py,sha256=lThKHjRnD3bWp7b1LrpNF4WolYT1uDEoRDZSycqf2h4,1934
+plugin/setuptools.py,sha256=QPIPqxrLfppX4dUd2uFchvKPIXS1MgyhCzgTX5f7DP4,7951
+plux/__init__.py,sha256=TLigTlzYmrsqtZMReBE-3CkeI4HPxtE64CB0DuAejGg,650
+plux/__main__.py,sha256=nNVR2MG2aBaBxlpwVPBLSmGf7uNHcG91atIsQg2NU9s,2487
+plux-1.6.0.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+plux-1.6.0.dist-info/METADATA,sha256=vUNOoFsl3YOeMFYpwi7FBxSZLY-MdTtmlZYdQUwObKc,9458
+plux-1.6.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+plux-1.6.0.dist-info/entry_points.txt,sha256=Y8QpAz2s1awSGK7L8jWRUU2UOGHpKSoAKPQJ-x4PKv4,129
+plux-1.6.0.dist-info/plux.json,sha256=RBNvo1WzZ4oRRq0W9-hknpT7T8If536DEMBg9hyq_4o,2
+plux-1.6.0.dist-info/top_level.txt,sha256=wDEDJk6cJgeT8XgneCc6rotDgCrF0zBv84Q-Ehbq35I,12
+plux-1.6.0.dist-info/RECORD,,
