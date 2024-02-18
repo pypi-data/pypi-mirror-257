@@ -1,0 +1,11 @@
+frozone/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+frozone/__main__.py,sha256=UOZtEuZ0vnAsszeRcv-PHAdqzlXMQqweP1_Oebr5hjg,138
+frozone/frozone.py,sha256=GjlEZ_rvLYONQxwbKQPJ2FH7u5ZOQqVI73Om8X7_3Rc,6607
+frozone/restore.sh,sha256=oW2uPSfgZtcF0hSI2ZQlvJmDagdUyCIXJ95LKuTiGxI,575
+frozone-0.1.0.data/scripts/restore.sh,sha256=oW2uPSfgZtcF0hSI2ZQlvJmDagdUyCIXJ95LKuTiGxI,575
+frozone-0.1.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+frozone-0.1.0.dist-info/METADATA,sha256=TfyVVnqMQXvEKMFDukT6IgkiYOuS4rtiQUbNvx21JEQ,2150
+frozone-0.1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+frozone-0.1.0.dist-info/entry_points.txt,sha256=3_lCn7uZ1SVcy_cJwUFfMqYx-gd1td3sfbDZfSnu6KI,49
+frozone-0.1.0.dist-info/top_level.txt,sha256=l8INW0cnV0QTdiluk29MVlXWbbiLE-UOuFUneea_eCk,8
+frozone-0.1.0.dist-info/RECORD,,
