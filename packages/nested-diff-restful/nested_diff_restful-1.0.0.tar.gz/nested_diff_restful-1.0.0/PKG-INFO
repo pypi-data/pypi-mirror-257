@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: nested_diff_restful
+Version: 1.0.0
+Summary: REST API and web UI for nested-diff
+Keywords: api,diff,nested-diff,recursive-diff,rest
+Author-email: Michael Samoglyadov <mixas.sr@gmail.com>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Dist: flask
+Requires-Dist: gunicorn
+Requires-Dist: nested_diff>=1.3.2
+Requires-Dist: pytest ; extra == "test"
+Requires-Dist: pytest-cov ; extra == "test"
+Requires-Dist: pytest-ruff ; extra == "test"
+Requires-Dist: ruff==0.1.15 ; extra == "test"
+Project-URL: Homepage, https://github.com/mr-mixas/Nested-Diff-RESTful
+Project-URL: Repository, https://github.com/mr-mixas/Nested-Diff-RESTful.git
+Provides-Extra: test
+
+# RESTful Nested-Diff
+
+REST API and web UI for [Nested-Diff.py](https://github.com/mr-mixas/Nested-Diff.py)
+
+**[Live Demo](https://nesteddiff.pythonanywhere.com/)**
+
+## Install
+```sh
+pip install nested_diff_restful
+```
+
+## Run
+```sh
+nested_diff_restful --bind 127.0.0.1:8080 --workers=4
+```
+
+## Run tests
+```sh
+pip install -e .[test]
+pytest
+```
+
+## License
+
+Licensed under the terms of the [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0).
+
