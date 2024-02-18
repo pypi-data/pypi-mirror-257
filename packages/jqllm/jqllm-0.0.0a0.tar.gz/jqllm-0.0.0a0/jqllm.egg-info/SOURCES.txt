@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+jqllm/__init__.py
+jqllm/cli.py
+jqllm.egg-info/PKG-INFO
+jqllm.egg-info/SOURCES.txt
+jqllm.egg-info/dependency_links.txt
+jqllm.egg-info/entry_points.txt
+jqllm.egg-info/requires.txt
+jqllm.egg-info/top_level.txt
+tests/test_jqllm.py
