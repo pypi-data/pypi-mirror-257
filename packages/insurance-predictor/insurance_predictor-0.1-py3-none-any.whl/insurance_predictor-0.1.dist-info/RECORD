@@ -1,0 +1,7 @@
+insurance_predictor/__init__.py,sha256=UeyW0BcqnQJ-xB0Bk8WUnuidnHa6n7Xip7IVfM1KGNI,97
+insurance_predictor/predictor.py,sha256=R9gRNDM6uC8hCXC68iODgDolBLS-RRu2qPaFN8CMpc8,543
+insurance_predictor/data/model.json,sha256=nteTlsVIcpWfMllGq1b8dpGCUcgHJngiOxFHzDUPdLU,340015
+insurance_predictor-0.1.dist-info/METADATA,sha256=zZjiup8t9vY4m7ttsc6MN0gF7LhXRrBqFKkK8hh-9X8,313
+insurance_predictor-0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+insurance_predictor-0.1.dist-info/top_level.txt,sha256=xWyjhTurIg7ex6bvSfhobC26oYU-gOYpUIb84MT6Lc0,20
+insurance_predictor-0.1.dist-info/RECORD,,

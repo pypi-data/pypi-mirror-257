@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: insurance-predictor
+Version: 0.1
+Summary: A package for predicting car insurance purchases using a pre-trained XGBoost model
+Author: Abdelrahman Al Omari
+Author-email: arya2@kent.ac.uk
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: xgboost (>=1.0.0)
+Requires-Dist: pandas
+
+UNKNOWN
+
