@@ -1,0 +1,10 @@
+shuffl/__init__.py,sha256=uhO-TqKUZ8Qw81el6HlZxf2ibRcAaYv7HplXpbzkuWM,256
+shuffl/_analyze.py,sha256=QKXlQwf4v5Rqxhp4H5tABOIwisot66Od6jb9PeAWfaY,1313
+shuffl/_deck.py,sha256=C_Kq8oHJLKFbOCSB-kY9jq-ezzJmHW5x31zGDn1FZJc,1278
+shuffl/_exceptions.py,sha256=wm5TmBPYPCW1u4T31_s57l_s3JuHxvgxjnriAxndxoY,98
+shuffl/_models.py,sha256=KD4w8yIsy8iO-d6KcPZD1BNaao8p4C9vM5fLJnh2BrQ,3581
+shuffl/games.py,sha256=Oq09dV29ijYPrerLe7aeTPyHZ4Umg3rNL2jELgq9BqM,1602
+shuffle_kit-0.1.0.dist-info/LICENSE,sha256=kxFLxOFVxSau3cv7wT8A5VPBuJygpmhcqjzgf8gcYX8,1084
+shuffle_kit-0.1.0.dist-info/METADATA,sha256=xoLJglAut_6Nb1PV9VlcF3kj3ojLcAW7JvHVCPG4qcE,3475
+shuffle_kit-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+shuffle_kit-0.1.0.dist-info/RECORD,,
