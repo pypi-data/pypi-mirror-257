@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: tmd-editor
+Version: 0.0.10
+Summary: A Node Editor Library using PyQt5 Specialized in TMD
+Author: DigiBrain4
+Keywords: python,node,tmd_nodeeditor,editor,edges,sockets
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+
+tmd_nodeeditor
+==============
+
+A Node Editor Library using PyQt5 Specialized in TMD
+-----------------------------------------------------
+
+A package that allows building simple nodes, sockets, and edges.
+
+Installation
+------------
+
+::
+
+    pip install tmd_nodeeditor
+
+Usage
+-----
+
+[Include any usage instructions or examples here.]
+
