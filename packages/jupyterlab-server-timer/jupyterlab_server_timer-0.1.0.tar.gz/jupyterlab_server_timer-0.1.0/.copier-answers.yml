@@ -1,0 +1,15 @@
+# Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
+_commit: v4.2.5
+_src_path: https://github.com/jupyterlab/extension-template
+author_email: stefan.walter@inf.ethz.ch
+author_name: Stefan Walter
+has_binder: false
+has_settings: false
+kind: server
+labextension_name: jupyterlab-server-timer
+project_short_description: A JupyterLab extension that displays the remaining server
+    run time in the top bar.
+python_name: jupyterlab_server_timer
+repository: https://github.com/isginf/jupyterlab-server-timer
+test: true
+
