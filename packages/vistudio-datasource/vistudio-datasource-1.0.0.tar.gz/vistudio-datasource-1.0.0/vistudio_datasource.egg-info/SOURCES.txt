@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+vistudio/__init__.py
+vistudio/datasource/__init__.py
+vistudio/datasource/sharded_mongo_datasink.py
+vistudio_datasource.egg-info/PKG-INFO
+vistudio_datasource.egg-info/SOURCES.txt
+vistudio_datasource.egg-info/dependency_links.txt
+vistudio_datasource.egg-info/requires.txt
+vistudio_datasource.egg-info/top_level.txt
