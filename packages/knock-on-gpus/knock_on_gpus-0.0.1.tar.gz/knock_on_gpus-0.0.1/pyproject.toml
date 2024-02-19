@@ -1,0 +1,15 @@
+[project]
+name = "knock-on-gpus"
+version = "0.0.1"
+readme = "README.md"
+license = {file = "LICENSE"}
+description = "A CLI tool for checking if GPUs are available before running your script that uses GPUs."
+repository = "https://github.com/trpfrog/knock-on-gpus"
+
+[build-system]
+requires = ["maturin>=1.4"]
+build-backend = "maturin"
+
+[tool.maturin]
+bindings = "bin"
+strip = true
