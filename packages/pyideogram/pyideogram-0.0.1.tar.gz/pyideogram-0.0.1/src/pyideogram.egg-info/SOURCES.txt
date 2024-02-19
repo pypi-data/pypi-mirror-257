@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+src/pyideogram/__init__.py
+src/pyideogram/dataloader.py
+src/pyideogram/ideogram.py
+src/pyideogram/matplotlib_extension.py
+src/pyideogram/misc.py
+src/pyideogram/tracks.py
+src/pyideogram.egg-info/PKG-INFO
+src/pyideogram.egg-info/SOURCES.txt
+src/pyideogram.egg-info/dependency_links.txt
+src/pyideogram.egg-info/requires.txt
+src/pyideogram.egg-info/top_level.txt
