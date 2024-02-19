@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: hb-mltools
+Version: 0.1.1
+Summary: A platform for rapid development of Machine Learning algorithms.
+License: open source
+Project-URL: homepage, https://github.com/Hunterb9101/ml-tools
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: lightgbm
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+Provides-Extra: tests
+Requires-Dist: pytest ; extra == 'tests'
+Requires-Dist: pytest-cov ; extra == 'tests'
+Requires-Dist: mypy ; extra == 'tests'
+Requires-Dist: pylint ; extra == 'tests'
+Requires-Dist: types-pyyaml ; extra == 'tests'
+
+# ML Tools
+This library serves as a platform for quickly developing machine learning (ML) Models
+
+## Installation
+This library can be installed from PyPI using the command `pip install hb-mltools`.
+When installed, the module can be imported using `import mltools`.
