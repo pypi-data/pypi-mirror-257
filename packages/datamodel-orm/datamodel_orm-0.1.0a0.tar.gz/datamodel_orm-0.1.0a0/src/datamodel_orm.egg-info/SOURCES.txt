@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+src/data_model_orm/__init__.py
+src/data_model_orm/base.py
+src/data_model_orm/errors.py
+src/data_model_orm/data_sources/__init__.py
+src/data_model_orm/data_sources/base.py
+src/data_model_orm/data_sources/sqlite3.py
+src/data_model_orm/data_sources/utils.py
+src/datamodel_orm.egg-info/PKG-INFO
+src/datamodel_orm.egg-info/SOURCES.txt
+src/datamodel_orm.egg-info/dependency_links.txt
+src/datamodel_orm.egg-info/requires.txt
+src/datamodel_orm.egg-info/top_level.txt
