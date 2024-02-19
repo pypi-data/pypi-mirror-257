@@ -1,0 +1,8 @@
+setup.py
+SimpleAppGui/AppPopup.py
+SimpleAppGui/AppWidgets.py
+SimpleAppGui/__init__.py
+SimpleAppGui.egg-info/PKG-INFO
+SimpleAppGui.egg-info/SOURCES.txt
+SimpleAppGui.egg-info/dependency_links.txt
+SimpleAppGui.egg-info/top_level.txt
