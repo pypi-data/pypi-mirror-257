@@ -1,0 +1,14 @@
+LICENCE
+README.md
+setup.py
+app/live-parking-norwich/__init__.py
+app/live-parking-norwich/src/__init__.py
+app/live-parking-norwich/src/carpark.py
+app/live-parking-norwich/src/config.py
+app/live-parking-norwich/src/usage.py
+app/live-parking-norwich/test/__init__.py
+app/live-parking-norwich/test/test_liveparkingnorwich.py
+app/liveparkingnorwich.egg-info/PKG-INFO
+app/liveparkingnorwich.egg-info/SOURCES.txt
+app/liveparkingnorwich.egg-info/dependency_links.txt
+app/liveparkingnorwich.egg-info/top_level.txt
