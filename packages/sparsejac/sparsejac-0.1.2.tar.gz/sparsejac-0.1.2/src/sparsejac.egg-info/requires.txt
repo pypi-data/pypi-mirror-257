@@ -1,0 +1,16 @@
+jax
+jaxlib
+networkx
+numpy
+scipy
+
+[dev]
+bump-my-version
+darglint
+sparsejac[tests]
+pre-commit
+
+[tests]
+parameterized
+pytest
+pytest-cov
