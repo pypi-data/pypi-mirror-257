@@ -1,0 +1,15 @@
+_punchboot.cpython-39-darwin.so,sha256=5_n5V9v2448HIFuskBe-UO7fwDS-_dTg0_tL2Qkwdzs,109104
+punchboot/partition.py,sha256=m7eu7RFbR02nakxm-cN-aDI2ZNxWI7OEi_R3YzYXbtw,1297
+punchboot/session.py,sha256=-Q88wxiMsdIt-Rdqq5MRlAyFvppbko8LTGWesNNBFSY,14927
+punchboot/__init__.py,sha256=LD63a9q8v3reV1GZ7_pqvESgjciUJdGrpxoosUnetCU,1200
+punchboot/slc.py,sha256=p1sQRSUhx37r_P2--7CyHmHqdhTfBiLmQbUIyY7gjmY,559
+punchboot/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+punchboot/helpers.py,sha256=gylTMjjouv-twUyzy5QC1nRbHWgpujwWcjMuORDDtSY,6443
+punchboot/__main__.py,sha256=uanURJBWvwsB1OsSYpsEjIoAGI6Fgjt9YI0z8TYxtrI,19521
+punchboot/.dylibs/libusb-1.0.0.dylib,sha256=aTPgpbfyEEA6wjtqxjBlF1FHXMjnPkxh0NKYX56Vi9U,160528
+punchboot-2.0.0.dist-info/RECORD,,
+punchboot-2.0.0.dist-info/LICENSE,sha256=l7RbzVObBI693pp7Glxe2PrCScrzDCAU-246O1V8Xqo,1563
+punchboot-2.0.0.dist-info/WHEEL,sha256=iG8A0NTh07TTUrjuItt5jQWSaCWls4bkT_lqUuVXNGc,109
+punchboot-2.0.0.dist-info/entry_points.txt,sha256=ytyo5EWlbLgy9f3dq1CKZLCjM6xTRdVAUWUESPGEIUI,53
+punchboot-2.0.0.dist-info/top_level.txt,sha256=KLTa5CUubblrilBoMqwjLu38OO3jJiPpVgJ-5f89DH8,21
+punchboot-2.0.0.dist-info/METADATA,sha256=zPliqCFPhx8cIe3pMaGT5-tK19qL4lYvfw_vzi_fX6o,12176
