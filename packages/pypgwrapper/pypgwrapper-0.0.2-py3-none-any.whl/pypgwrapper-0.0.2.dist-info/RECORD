@@ -1,0 +1,10 @@
+pypgwrapper/__init__.py,sha256=jtjewBN-WN9ISDlWbb6QAxiYZ-jXcmHI7vzjQvLDJ8g,2637
+pypgwrapper/data_operations.py,sha256=UnzkVOdsESATZIgrlQcHbB9RYxsTR7YAYQuXvdZcGoA,8122
+pypgwrapper/database_connection.py,sha256=WpYDfgGf5O4C2QsdjbcczLmNcX1NYGf6NvtBJWsYr_g,1166
+pypgwrapper/database_management.py,sha256=UZeUq8W6stTZ8xLOZaPfR5n1xaESHpV1eQuS64fiu1s,4571
+pypgwrapper/postgres.py,sha256=B7NXm0ubPrERo_o_YN_Ll-3bnmnjpYa-weTcXyh2IEw,13198
+pypgwrapper-0.0.2.dist-info/METADATA,sha256=yvVfkbFmpoK5ync_JNUEYH0jLv124_HnytwokCcnrlY,338
+pypgwrapper-0.0.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pypgwrapper-0.0.2.dist-info/entry_points.txt,sha256=OmMXMo9oarg9ZXl0UrLoENIaTkmGJIex-HVUFZmsFm0,53
+pypgwrapper-0.0.2.dist-info/top_level.txt,sha256=uXuUaS6t550ppXOlwv1TCBlugWyyH4FgOVT6-WKXBpM,12
+pypgwrapper-0.0.2.dist-info/RECORD,,
