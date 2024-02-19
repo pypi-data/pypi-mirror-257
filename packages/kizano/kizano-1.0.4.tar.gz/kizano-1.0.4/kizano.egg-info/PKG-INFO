@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: kizano
+Version: 1.0.4
+Summary: Library of functions that have served me no matter where I code.
+Home-page: https://markizano.net/
+Author: Markizano Draconus
+Author-email: Markizano Draconus <markizano@markizano.net>
+Maintainer-email: Markizano Draconus <markizano@markizano.net>
+Project-URL: Homepage, https://markizano.net
+Project-URL: Documentation, https://docs.markizano.net
+Project-URL: Repository, https://github.com/markizano/libkizano.py
+Project-URL: Bug Tracker, https://github.com/markizano/libkizano.py/issues
+Project-URL: Changelog, https://github.com/markizano/libkizano.py/blob/master/CHANGELOG.md
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Requires-Python: >=3.1
+Description-Content-Type: text/markdown
+
+# libkizano.py
+Kizano Library for the things I found very valuable in Python I can open-source.
+
+Contains generic functions that pertain to no IP nor belong to any one organization or entity.
+
+All code within this project is contained as-is without warranty or liability.
+All code under this repository is relased to the public under the GNU License (GNU-GPLv3).
