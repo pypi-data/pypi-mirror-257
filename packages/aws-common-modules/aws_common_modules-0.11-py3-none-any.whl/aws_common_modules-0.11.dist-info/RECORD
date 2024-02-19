@@ -1,0 +1,6 @@
+aws_common_modules/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aws_common_modules/route53.py,sha256=vxhgr4i1pmNgSh8mpMl5QeTsVl3lTW1EPIM_fd2PsL8,1002
+aws_common_modules-0.11.dist-info/METADATA,sha256=LKuzbypf1FYVl0b1HCK899O7IUBD1K5YJZc1qgTvszM,1538
+aws_common_modules-0.11.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+aws_common_modules-0.11.dist-info/licenses/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aws_common_modules-0.11.dist-info/RECORD,,
