@@ -1,0 +1,7 @@
+LICENSE
+setup.py
+textspread.egg-info/PKG-INFO
+textspread.egg-info/SOURCES.txt
+textspread.egg-info/dependency_links.txt
+textspread.egg-info/requires.txt
+textspread.egg-info/top_level.txt
