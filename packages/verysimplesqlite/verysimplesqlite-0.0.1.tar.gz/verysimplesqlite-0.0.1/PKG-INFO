@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: verysimplesqlite
+Version: 0.0.1
+Summary: 1000-7 calculyator
+Author: fikko
+Requires-Python: >=3.10,<4.0

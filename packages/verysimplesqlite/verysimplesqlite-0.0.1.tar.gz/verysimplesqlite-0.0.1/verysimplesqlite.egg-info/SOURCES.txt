@@ -1,0 +1,7 @@
+README.md
+setup.py
+verysimplesqlite.py
+verysimplesqlite.egg-info/PKG-INFO
+verysimplesqlite.egg-info/SOURCES.txt
+verysimplesqlite.egg-info/dependency_links.txt
+verysimplesqlite.egg-info/top_level.txt
