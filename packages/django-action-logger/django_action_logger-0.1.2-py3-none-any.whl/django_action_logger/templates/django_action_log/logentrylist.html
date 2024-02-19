@@ -1,0 +1,10 @@
+{% load django_action_log %}
+{% regroup object_list by action_time|date as object_by_date %}
+{% for logentry_date in object_by_date %}
+    <h1 class="text-center logentry-date">{{ logentry_date.grouper }}</h1>
+    <ul class="logentry-list">
+        {% for object in logentry_date.list %}
+            <li class="logentry-list-item">{% include object|template_names %}</li>
+        {% endfor %}
+    </ul>
+{% endfor %}

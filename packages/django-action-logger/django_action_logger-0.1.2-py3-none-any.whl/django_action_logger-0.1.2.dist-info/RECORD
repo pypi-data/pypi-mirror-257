@@ -1,0 +1,17 @@
+django_action_logger/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_action_logger/admin.py,sha256=suMo4x8I3JBxAFBVIdE-5qnqZ6JAZV0FESABHOSc-vg,63
+django_action_logger/apps.py,sha256=vFF6HCNVFhPo0mzIII9NflFnR5wz3UWn4XnJsI02foI,219
+django_action_logger/migrations/0001_initial.py,sha256=0O-zmilbnwteCdglC9m6QUzzq_9Kwoe5lbfuiy4kbxY,1473
+django_action_logger/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_action_logger/models.py,sha256=rUt1Mj7lFr30P11fogEck3V0QFvRzTiLi12edLhlaGU,2330
+django_action_logger/signals.py,sha256=0Abuhr3oziU2uQ5QOjvqfmdvylBdfg9TQA5krHtxO_M,979
+django_action_logger/templates/django_action_log/djangoactionlogentry_list.html,sha256=06Ayq2Ez1qny3JpYA-sUSkV-HBV8zNYzwSTAANwuBxA,102
+django_action_logger/templates/django_action_log/logentry.html,sha256=YMVcVvfPPWDl4ZQDUQPyAupAaL6W5I4Pjus28iDZj_w,167
+django_action_logger/templates/django_action_log/logentrylist.html,sha256=NpxzPGlATHpMzg5q3oayxlmSQCvWap8CZs359UW2nxE,416
+django_action_logger/templatetags/django_action_log.py,sha256=PvDV8-H3Zw3gZyQOnTMxlGbRSU4Ea25S_67R8W2Dtq0,470
+django_action_logger/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+django_action_logger/urls.py,sha256=YkLU2Yo9BN6_ZoPUWt9kVQfK7FQyWjNIwoVicN8JU8A,194
+django_action_logger/views.py,sha256=dWuVmgHtHg6fhV6zYguuaQh6QO3Wyki6o84uuYSLJ_k,781
+django_action_logger-0.1.2.dist-info/METADATA,sha256=ThQlUQsBpsLAGVqlmn-hZTwe2lO3pV8-_Kxz5QjC0og,583
+django_action_logger-0.1.2.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+django_action_logger-0.1.2.dist-info/RECORD,,
