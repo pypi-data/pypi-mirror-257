@@ -1,0 +1,8 @@
+pandas
+
+[dev]
+ruff
+mypy
+bumpver
+pip-tools
+pytest

@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/bedrock/__init__.py
+src/bedrock/ags3.py
+src/bedrock_systems.egg-info/PKG-INFO
+src/bedrock_systems.egg-info/SOURCES.txt
+src/bedrock_systems.egg-info/dependency_links.txt
+src/bedrock_systems.egg-info/requires.txt
+src/bedrock_systems.egg-info/top_level.txt
