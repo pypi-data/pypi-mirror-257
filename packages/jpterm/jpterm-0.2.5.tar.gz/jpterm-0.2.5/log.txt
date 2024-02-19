@@ -1,0 +1,2 @@
+text='from textual.app import App, ComposeResult\nfrom textual.widgets import TextArea\n\nTEXT = """\\\ndef hello(name):\n    print("hello" + name)\n\ndef goodbye(name):\n    print("goodbye" + name)\n"""\n\n\nclass TextAreaExample(App):\n    def compose(self) -> ComposeResult:\n        yield TextArea.code_editor(TEXT, language="python")\n\n\napp = TextAreaExample()\nif __name__ == "__main__":\n    app.run()\n'
+language='python'
