@@ -1,0 +1,5 @@
+[asphalt.components]
+editors = txl_editors.components:EditorsComponent
+
+[txl.components]
+editors = txl_editors.components:EditorsComponent
