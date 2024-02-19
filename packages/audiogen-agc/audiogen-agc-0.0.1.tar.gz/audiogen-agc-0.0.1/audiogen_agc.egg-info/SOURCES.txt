@@ -1,0 +1,11 @@
+LICENSE
+LICENSE_dac
+README.md
+setup.py
+agc/__init__.py
+agc/model.py
+audiogen_agc.egg-info/PKG-INFO
+audiogen_agc.egg-info/SOURCES.txt
+audiogen_agc.egg-info/dependency_links.txt
+audiogen_agc.egg-info/requires.txt
+audiogen_agc.egg-info/top_level.txt
