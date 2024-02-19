@@ -1,0 +1,7 @@
+numpy
+TCFile
+
+[testing]
+tox
+pytest
+pytest-cov

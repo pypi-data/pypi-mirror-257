@@ -1,0 +1,11 @@
+name: napari-tomocube-data-viewer
+display_name: Tomocube data viewer
+contributions:
+  commands:
+    - id: napari-tomocube-data-viewer.get_reader
+      python_name: napari_tomocube_data_viewer._reader:napari_get_reader
+      title: Open data with Tomocube data viewer
+  readers:
+    - command: napari-tomocube-data-viewer.get_reader
+      accepts_directories: false
+      filename_patterns: ['*.TCF']
