@@ -1,0 +1,8 @@
+pyproject.toml
+setup.cfg
+setup.py
+visicon/__init__.py
+visicon.egg-info/PKG-INFO
+visicon.egg-info/SOURCES.txt
+visicon.egg-info/dependency_links.txt
+visicon.egg-info/top_level.txt
