@@ -1,0 +1,3 @@
+black
+typing_extensions>=4.7.1
+RestrictedPython>=7.0
