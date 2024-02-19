@@ -1,0 +1,14 @@
+akatsuki_proto/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+akatsuki_proto/messages/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+akatsuki_proto/messages/change_username_command.py,sha256=JlvSmfRITFbGQBNIJiiDsOXQrgeDYcAFEtYMQpZe9u8,1144
+akatsuki_proto/messages/change_username_command.pyi,sha256=_oqXzbTfFgoIj9vmt_KiGKTcpI505_m68FTdw3zz72E,942
+akatsuki_proto/messages/change_username_completed_event.py,sha256=IqrH2hBqG4-N22SuwPKwuCdgLQ2dvPCrMM8VSy2xj40,1231
+akatsuki_proto/messages/change_username_completed_event.pyi,sha256=NK441iy-TA_-KEJMssJMmC3dkBm44R5hGKw2KMUe3jY,1113
+akatsuki_proto/messages/change_username_fail_reason.py,sha256=4hqWfDxSOeqcGzKSRvWUfuclZVLZ22jKSYlDjd7QiGg,1199
+akatsuki_proto/messages/change_username_fail_reason.pyi,sha256=RM359sw7OlWwCBE0QZN-q-YH3_tT-gHFbweVdbRmoQQ,1261
+akatsuki_proto/messages/change_username_failed_event.py,sha256=2SFG4Qmb9h4z2mmaFkNHn86n8wEuiEKyxnqynIQpJYY,1419
+akatsuki_proto/messages/change_username_failed_event.pyi,sha256=IxytM1aKmqtWLYnV9vzb09j-yihZ1HUKomPt2f9rwDw,1306
+akatsuki_proto-0.1.4.dist-info/METADATA,sha256=k5eokGe_WgygEaBIPVGI32S6RTuIxKH0exNft8gQ94I,243
+akatsuki_proto-0.1.4.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+akatsuki_proto-0.1.4.dist-info/top_level.txt,sha256=zVfdK9TrX3wvhdq-qsqo2bh2K9M8rpja-13RCMM4OPY,15
+akatsuki_proto-0.1.4.dist-info/RECORD,,
