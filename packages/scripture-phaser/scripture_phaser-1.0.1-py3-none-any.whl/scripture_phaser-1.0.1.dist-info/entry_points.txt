@@ -1,0 +1,2 @@
+[console_scripts]
+scripture_phaser = src.scripture_phaser:scripture_phaser
