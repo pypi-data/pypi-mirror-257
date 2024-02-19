@@ -1,0 +1,5 @@
+[asphalt.components]
+file_browser = txl_file_browser.components:FileBrowserComponent
+
+[txl.components]
+file_browser = txl_file_browser.components:FileBrowserComponent
