@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "django-action-logger"
+version = "0.1.3"
+description = "Create a log of Django actions"
+authors = ["Birger Schacht <birger.schacht@oeaw.ac.at>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+Django = "^4.2"
+django-crum = "^0.7.9"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.2.1"
+black = "^23.12.1"
+djlint = "^1.34.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
