@@ -1,0 +1,6 @@
+pypocketmap
+str_float32
+str_float64
+str_int32
+str_int64
+str_str
