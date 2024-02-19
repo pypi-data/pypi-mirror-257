@@ -1,0 +1,11 @@
+dojinvoice_db/__init__.py,sha256=J-j-u0itpEFT6irdmWmixQqYMadNl1X91TxUmoiLHMI,22
+dojinvoice_db/database.py,sha256=usJQXPKq5_U5yrwtsk2EGdgc9-nwdF8TZHRh78q4rqQ,7397
+dojinvoice_db/download.py,sha256=nqpwrw3N7fgV_VBryUA3jmtTH0wzsjOqC7YIrGekmHg,1988
+dojinvoice_db/main.py,sha256=K34Zm4uRNU34wbgc4W0hCmfL0MSnXJhPrRWuAq98Q1c,1308
+dojinvoice_db/parser.py,sha256=EBr2jFHh3otdNcH0BoNxyX9G_-g4RUDfTiLuIm5CCj8,11781
+dojinvoice_db/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dojinvoice_db-1.0.0.dist-info/LICENSE,sha256=C-LNnHSejMILw-nz0kNOCQ2rHGaOZI27200UL2lXmkY,1063
+dojinvoice_db-1.0.0.dist-info/METADATA,sha256=nFqg_uN4C4kKfXvEeiXz-2VzMKJiLPiKYnGxxEP2o7c,4314
+dojinvoice_db-1.0.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+dojinvoice_db-1.0.0.dist-info/entry_points.txt,sha256=dgg6Y_lDOYPCYbR5t2EhX0pCIbt4j4uLOgsj5H-LJwg,48
+dojinvoice_db-1.0.0.dist-info/RECORD,,
