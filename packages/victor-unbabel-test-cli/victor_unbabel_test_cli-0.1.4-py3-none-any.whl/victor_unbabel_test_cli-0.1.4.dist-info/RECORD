@@ -1,0 +1,9 @@
+victor_unbabel_test_cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+victor_unbabel_test_cli/main.py,sha256=EQZn12mKM36I81sNGz5ix19o2UeYNS9bcaDywxa9cXQ,668
+victor_unbabel_test_cli/utils/delivery_time.py,sha256=WmDUv6jG8bicTj0UMddXqL7svMx_NoHZGRCUtUjG9KQ,3709
+victor_unbabel_test_cli/utils/interfaces.py,sha256=pd6L4YO58JqzJ_vePl7FOREQ-RHHeaoe6h__kpVSQiI,340
+victor_unbabel_test_cli/utils/read_events.py,sha256=EzIROEk0Gf0mHSsOfbWgSU9kWsD9LcGBCz5BglxomhU,1219
+victor_unbabel_test_cli-0.1.4.dist-info/METADATA,sha256=_yzhTHaaA1lW_fZLfZGbrlC4XjmI8p4gbbJuYPjBCqY,689
+victor_unbabel_test_cli-0.1.4.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+victor_unbabel_test_cli-0.1.4.dist-info/entry_points.txt,sha256=Rh1G4tUCOG9Fr-OZ71MUqWazFnSSu2_wGYwm5V3uKuQ,71
+victor_unbabel_test_cli-0.1.4.dist-info/RECORD,,

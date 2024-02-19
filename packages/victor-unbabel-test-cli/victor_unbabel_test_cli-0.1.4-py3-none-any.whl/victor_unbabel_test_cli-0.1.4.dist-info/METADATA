@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: victor-unbabel-test-cli
+Version: 0.1.4
+Summary: unbabel cli for application
+Author: Victor Carrillo
+Author-email: 31296860+VictorCarrDev@users.noreply.github.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pytest (>=8.0.1,<9.0.0)
+Requires-Dist: typer[all] (>=0.9.0,<0.10.0)
+Description-Content-Type: text/markdown
+
+# Backend Engineering Challenge - Victor Carrillo
+
+## Hello!! This is the cli for Victor Carrillo Aplication 
+
+to put it here i changed the name of the cli application to use it run with `unbabel-victor-cli --input-file file --window-size number`
