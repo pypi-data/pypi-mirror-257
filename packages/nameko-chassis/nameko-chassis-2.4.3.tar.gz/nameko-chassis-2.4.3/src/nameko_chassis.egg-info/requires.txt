@@ -1,0 +1,11 @@
+nameko<4,>=3.0rc11
+nameko-prometheus<2,>=1.5.0
+opentelemetry-api<2,>=1.14
+opentelemetry-distro<1,>=0.35b0
+opentelemetry-exporter-otlp-proto-http<2,>=1.14
+opentelemetry-instrumentation-nameko<1,>=0.5
+opentelemetry-sdk<2,>=1.14
+opentelemetry-instrumentation-logging<1,>=0.35b0
+pyrabbit<2,>=1.1
+sentry-sdk<2,>=1.39
+werkzeug<3,>=1.0
