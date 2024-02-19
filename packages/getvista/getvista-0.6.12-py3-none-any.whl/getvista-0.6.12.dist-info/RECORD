@@ -1,0 +1,16 @@
+getvista/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+getvista/config.ini,sha256=F9d5aSAuRTVacCJMHyKlBPlyWMoog2IQIv003QrKDfg,24
+getvista/emailaddress.py,sha256=sa43xctRRZI0v8uZG3Tj5vaCLJO8ldeowmfYYA2T0OU,2206
+getvista/enspecies.py,sha256=GvQ1iv62FkhRuD9jXPb48zWqvG5zzRYUHCxOJsNizyU,11006
+getvista/envistacoords.py,sha256=mBbqC87NU8oO822r-9GZOjD6GsQOJTDguYXV4QHdQy4,30070
+getvista/envistagene.py,sha256=83pxZTKCYg7wDEYrfMICc7Gb6b3TFJrKuGakqW5WvLU,35002
+getvista/gbgenerecord.py,sha256=fWcePBMl4RPxQKr1eyBblUAxVytt7HQSRfhkud4pWfc,5230
+getvista/gbvistacoords.py,sha256=S_ttlq6spr04ilsDPj6KzXXs4u7kfKeWgj9jcpHlBRo,40777
+getvista/gbvistagene.py,sha256=fMXv0nmX1VUj9RKrsHr7BfRg8FU6m9IIzQ0-I_a7us0,49496
+getvista/version_check.py,sha256=_cZB7Pt62xKwArsHengpSIYxLofRZVsYVZpAPHc_9k8,1256
+getvista-0.6.12.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+getvista-0.6.12.dist-info/METADATA,sha256=WGOCiWS18Sqmnla8pQO_dzQG4L2Oe6_7Ads2bP1TzUg,59086
+getvista-0.6.12.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+getvista-0.6.12.dist-info/entry_points.txt,sha256=l1BjsNSgA5vk8bw_0XekPjLy0NvgXCppTuKrGxIyZxo,277
+getvista-0.6.12.dist-info/top_level.txt,sha256=6Od4KPmdoCb8P3sBKc8NDs1E0QIY5hoyNFLhgpcFqrQ,97
+getvista-0.6.12.dist-info/RECORD,,
