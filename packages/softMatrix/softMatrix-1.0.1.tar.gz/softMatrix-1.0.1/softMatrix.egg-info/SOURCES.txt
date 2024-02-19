@@ -1,0 +1,9 @@
+LICENCE
+README.md
+pyproject.toml
+softMatrix/Matrix.py
+softMatrix/__init__.py
+softMatrix.egg-info/PKG-INFO
+softMatrix.egg-info/SOURCES.txt
+softMatrix.egg-info/dependency_links.txt
+softMatrix.egg-info/top_level.txt

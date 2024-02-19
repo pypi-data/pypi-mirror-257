@@ -1,0 +1,17 @@
+[project]
+name = "softMatrix"
+version = "1.0.1"
+authors = [
+  { name="Deboua Joseph ~> Deb Josh", email="debjojr@gmail.com" },
+]
+description = "Un package pour construire des matrices et effectuer toutes les opérations propres aux matrices de manière efficace"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Deb-Josh/softMatrix"

@@ -1,0 +1,55 @@
+# softMatrix
+
+C'est un package permettant de construire des matrices et effectuer toutes les opérations propres aux matrices de manière efficace.
+
+#>Voici les informations sur 25 méthodes de la classe "softMatrix" :
+
+~> méthode "show()" pour formater l'affichage d'une matrice
+
+~> méthode "identite(ordre)" qui renvoit la matrice identite correspondant à l'ordre renseigné
+
+~> méthode statique "same_value(row, col, value)" qui retourne une matrice constitué uniquement de la valeur 'value'
+
+~> méthode statique "unite(row, col)" qui renvoit la matrice unite au format 'row*col' 
+
+~> méthode statique "nulle(row, col)" qui renvoit la matrice nulle au format 'row*col' 
+
+~> méthode "transpose()" permettant d'odtenir la transposée d'une matrice
+
+~> méthode "matrix_mult(coef)" qui renvoit une matrice résultant du produit d'une matrice avec un coefficient réel
+
+~> méthode booléenne "equal(matrice)" qui vérifie l'égalité entre deux matrices
+
+~> méthode "modulo_matrix(modulo)" permettant de retourner une matrice dont les éléments sont les modulo des éléments d'une matrice avec un entier
+
+~> méthode booléenne "norm_somme(*allMatrix)" qui permet de vérifier si la somme de 2 matrices ou plus est possible
+
+~> méthode "somme_matrix(*allMatrix)" qui renvoit la somme de 2 matrices ou plus si norm_somme(*allMatrix) est vrai et renvoit un 'NoneType' dans le cas contraire
+
+~> méthode "diff_matrix(matrice)" renvoyant la différence entre 2 matrices (elle utilise la somme_matrix(*allMatrix) pour appliquer le même principe mais en multipliant d'abord -1 à la 2e matrice grâce à matrix_mult(coef))
+
+~> méthode booléenne "norm_produit(*allMatrix)" permettant de vérifier si 2 matrices ou plus respectent les conditions necessiares pour effectuer un produit entre elles
+
+~> méthode "produit_matrix(*allMatrix)" qui permet de rnevoyer le produit de 2 matrices ou plus si norm_produit(*allMatrix) est vrai et renvoit un 'NoneType' dans le cas contraire 
+
+~> méthode booléenne "matrix_carre()" permettant de vérifier si une matrice est carrée
+
+~> méthode booléenne "is_inverse(matrice)" qui vérifie si une matrice est l'inverse d'une autre 'matrice'
+
+~> méthode "extract_matrix(interRow, interCol)" permettant d'extraire une matrice associé à un coefficient  de la matrice en renseignant la ligne(interRow) et la colonne(interCol) du coefficient, si l'un de ces paramètres est invalide (ligne ou colonne inexistante danns la matrice), ça sera un 'NoneType' qui sera renvoyé
+
+~> méthode statique "sumTab(tab)" qui permet de renvoyer la somme des éléments d'un tableau unidimensionnel (vecteur)
+
+~> méthode récursive "determinant()" qui calcule et renvoit le déterminant d'une matrice lorqu'elle est carrée sinon un 'NoneType' est retourné
+
+~> méthode booléenne "inversible()" vérifiant si une matrice est inversible
+
+~> méthode "matrix_signe(row, col)" permettant d'afficher les signes correspondants aux éléments d'une matrice d'ordre donné (row*col)
+
+~> méthode "mineur(line, column)" qui renvoit le mineur associé à un élément d'une matrice de position (line,column) si cette dernière est valide, dans le cas contraire un 'NoneType' est renvoyé
+
+~> méthode "cofacteur(line, column)" qui renvoit le cofacteur associé à un élément d'une matrice de position (line,column); il s'agit d'un réel résultant du mineur associé au signe dans la matrice des signes. Un 'NoneType' est renvoyé si la position (line,column) est incorrecte
+
+~> méthode "comatrice()" renvoyant la comatrice d'une matrice; il s'agit de la matrice des cofacteurs
+
+~> méthode "matrix_inverse()" permettant de retourner l'inverse d'une matrice dans la mesure du possible sinon un 'NoneType' est retourné
