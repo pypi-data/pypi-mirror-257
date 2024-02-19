@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pyseim
+Version: 0.1.0
+Summary: Waveform viewer and analyzer for ngspice/kicad
+License: Apache-2.0
+Author: Florian Renneke
+Author-email: florian.renneke@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: ltspice
+Requires-Dist: pyqt5
