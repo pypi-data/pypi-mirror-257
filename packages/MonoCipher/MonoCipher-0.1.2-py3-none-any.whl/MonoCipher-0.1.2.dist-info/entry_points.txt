@@ -1,0 +1,7 @@
+[console_scripts]
+ByteDecrypt = MonoCipher.ByteEncryption:byte_decrypt
+ByteEncrypt = MonoCipher.ByteEncryption:byte_encrypt
+SaltDecrypt = MonoCipher.SaltEncryption:salt_decrypt
+SaltEncrypt = MonoCipher.SaltEncryption:salt_encrypt
+ShiftDecrypt = MonoCipher.SimpleEncryption:shift_decrypt
+ShiftEncrypt = MonoCipher.SimpleEncryption:shift_encrypt

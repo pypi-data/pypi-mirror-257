@@ -1,0 +1,11 @@
+MonoCipher/__init__.py,sha256=VVYp5Gfw33eUkq2KjAZj9A-UiZCAjUrLbejku7CDqyM,302
+MonoCipher/test.py,sha256=GJIlfHWbUzHKu1l2sYE2YqafQ-2pxvIuEfY-WFZUTAo,1373
+MonoCipher/ByteEncryption/__init__.py,sha256=psMCr0T8LSZWznkX1IWQh5MEmSiNhSvY7sfufZXh0Xs,1402
+MonoCipher/SaltEncryption/__init__.py,sha256=TpZoPnUM48wjEoqy8LKf8ChKPmBfZcVCb6zEFnuYPMA,1997
+MonoCipher/SimpleEncryption/__init__.py,sha256=GSVkoXjwjW4MLR9i02zQfm97rv2rCgPGo-F7MTgJPz4,1796
+MonoCipher-0.1.2.dist-info/LICENCE,sha256=ZeOfCjAhAZbrrU6sqIR62rW3Ls2SviaBxJbmiXw1jGc,1088
+MonoCipher-0.1.2.dist-info/METADATA,sha256=FyE1qJlfKW7p5o21s0jfDDALlGuC_PpevMXacROyFH8,6135
+MonoCipher-0.1.2.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+MonoCipher-0.1.2.dist-info/entry_points.txt,sha256=x63HEmKOcZuDjZVa1ZOpbqkUnSuBOJnMQ9jAK5Wgejo,344
+MonoCipher-0.1.2.dist-info/top_level.txt,sha256=QrcHNUsRVpBesOq4ZRpB0VDVjFtEFAPTTq7RWEksV-A,11
+MonoCipher-0.1.2.dist-info/RECORD,,
