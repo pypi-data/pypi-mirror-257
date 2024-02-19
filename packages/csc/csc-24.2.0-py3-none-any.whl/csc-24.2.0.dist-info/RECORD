@@ -1,0 +1,8 @@
+License.md,sha256=cd2l7vAcGRjY_gDo4nbuDDj6pWGb3Tsiky-C8RjJ2Yw,1073
+csc/__init__.py,sha256=codTmws5ORo9_Ngm5mNOSEa7XAmVMjhOH6HDMTptFc4,300
+csc/__main__.py,sha256=747fNSRByLAmBiv2iUSVecvZVduA-UE3GHWeqVxupH4,34
+csc/_cli.py,sha256=YgXZ0lz29SAsXK1xttsOfde8Ko2TOgC-uk_yX1bZAh0,2917
+csc/_script.py,sha256=8ew5y8r1wvEolMMyblR7c41fqZGFrtYvWD5XOxsEF2s,7618
+csc-24.2.0.dist-info/METADATA,sha256=w6uCgyyWL9gb0tPycOb3hxg-KDHAm385_-ApA2x0RME,3810
+csc-24.2.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+csc-24.2.0.dist-info/RECORD,,
