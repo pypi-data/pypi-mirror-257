@@ -1,0 +1,12 @@
+kfa/__init__.py,sha256=9LttYSvfZYz7DFzPqJtpUStSVVi20Aa_VNNHfxDlaX8,60
+kfa/forced_alignment.py,sha256=jGFaJWboNEzIPAesPxDDSPu7C4z8ipF11OqUaqRwaFE,3560
+kfa/g2p.fst,sha256=xe7N4aDBFP1fm6x4M3izCTjhwlF6P_2enpv96-VBmjU,32969410
+kfa/lexicon.pkl,sha256=3ByKBU7PKp3v1a96GTuqldfUc0OUgIY3k9R9XInUwi4,3694359
+kfa/number_verbalize.py,sha256=eG1d9IbvxfpPU6DCVP5CRuE3oXV6uXdhfqdiCrEqqcs,3089
+kfa/text_normalize.py,sha256=WOvqxs3kzRAYwevgaMv2YDlAIxBFXJleCmtVYNQlpog,1815
+kfa/utils.py,sha256=ak1c7BF4zk-VgZc1aqLtK0qVCsjih6thv_9INZVne7g,4160
+kfa-0.0.5.data/scripts/kfa,sha256=ZvG19QSxlL0DK_8YmkyksZGmDPI1XNKl_Kw1c_fRyCE,1624
+kfa-0.0.5.dist-info/METADATA,sha256=9MWKR1DouhRSGtEOVYL0dPFbL0Li1AuaseKBJ73ZZyk,1927
+kfa-0.0.5.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+kfa-0.0.5.dist-info/top_level.txt,sha256=rQsCywbpmx6iH5ubfcc-UsbmzdhgR6rTpQl5chis3nI,4
+kfa-0.0.5.dist-info/RECORD,,
