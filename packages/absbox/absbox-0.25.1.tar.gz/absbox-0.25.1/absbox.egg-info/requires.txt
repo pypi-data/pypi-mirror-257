@@ -1,0 +1,16 @@
+pandas
+numpy
+matplotlib
+requests
+toolz
+rich
+pyxirr
+lenses
+pyspecter
+graphviz
+schema
+
+[test]
+pytest
+jsondiff
+deepdiff
