@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: db-env
+Version: 0.1
+Summary: library that creates a relational DB with the usage of SQLite. More information follows.
+Author: Daniel Huber
+
