@@ -1,0 +1,13 @@
+sbol3-for-pudu
+sbol2>=1.4
+rdflib>=6.2
+biopython
+graphviz
+tyto>=1.2.1
+openpyxl
+sbol_factory>=1.0a11
+pydna
+
+[dev]
+pytest
+interrogate
