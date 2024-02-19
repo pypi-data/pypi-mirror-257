@@ -1,0 +1,39 @@
+<div align="center">
+
+<img src="lamassu-logo.png" width="30%"/>
+
+</div>
+
+![Python Version][Python Version Badge]
+[![PyPI][PyPI project badge]][PyPI project url]
+[![GitHub Workflow Status][GitHub Workflow Status badge]][GitHub Workflow Status url]
+[![Apache License badge]][Apache License URL]
+
+Lamassu
+=======
+
+Lamassu is a project that empowers individual to agnostically run machine learning algorithms to produce ad-hoc NLP
+features. **It's in beta development phase for the moment**.
+
+License
+-------
+
+The use and distribution terms for Lamassu are covered by the
+[Apache License, Version 2.0][Apache License, Version 2.0].
+
+<div align="center">
+    <a href="https://opensource.org/licenses">
+        <img align="center" width="50%" alt="License Illustration" src="https://github.com/QubitPi/QubitPi/blob/master/img/apache-2.png?raw=true">
+    </a>
+</div>
+
+[Apache License badge]: https://img.shields.io/badge/Apache%202.0-F25910.svg?style=for-the-badge&logo=Apache&logoColor=white
+[Apache License URL]: https://www.apache.org/licenses/LICENSE-2.0
+[Apache License, Version 2.0]: http://www.apache.org/licenses/LICENSE-2.0.html
+
+[GitHub Workflow Status badge]: https://img.shields.io/github/actions/workflow/status/QubitPi/lamassu/ci-cd.yml?logo=github&style=for-the-badge
+[GitHub Workflow Status URL]: https://github.com/QubitPi/lamassu/actions/workflows/ci-cd.yml
+
+[Python Version Badge]: https://img.shields.io/badge/Python-3.10-brightgreen?style=for-the-badge&logo=python&logoColor=white
+[PyPI project badge]: https://img.shields.io/pypi/v/lamassu?logo=pypi&logoColor=white&style=for-the-badge
+[PyPI project url]: https://pypi.org/project/lamassu/
