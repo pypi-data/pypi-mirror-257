@@ -1,0 +1,52 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "SnoScience"
+version = "1.1.0"
+description = "A package optimised for building small neural networks."
+packages = [{include = "snoscience", from="src"}]
+repository = "https://dev.azure.com/snomax/SnoScience"
+
+license = "MIT"
+readme = "README.md"
+
+authors = ["Max Snoodijk <max_snoodijk@live.nl>",]
+maintainers = ["Max Snoodijk <max_snoodijk@live.nl>",]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+numpy = "^1.26"
+
+[tool.poetry.group.test]
+optional = true
+
+[tool.poetry.group.test.dependencies]
+pylint = "^3.0"
+mypy = "^1.8"
+coverage = "^7.4"
+snosample = "^3.5"
+
+[tool.poetry.group.build]
+optional = true
+
+[tool.poetry.group.build.dependencies]
+
+[tool.poetry.group.release]
+optional = true
+
+[tool.poetry.group.release.dependencies]
+
+[tool.mypy]
+packages = ["src"]
+cache_dir = "./local/mypy"
+
+[tool.coverage.run]
+source = ["src"]
+data_file = "./local/coverage/data"
+concurrency = ["multiprocessing"]
+
+[tool.coverage.report]
+show_missing = true
+fail_under = 100
