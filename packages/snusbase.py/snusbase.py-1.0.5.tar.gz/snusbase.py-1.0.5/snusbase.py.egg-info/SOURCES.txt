@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+snusbase/__init__.py
+snusbase/__main__.py
+snusbase.py.egg-info/PKG-INFO
+snusbase.py.egg-info/SOURCES.txt
+snusbase.py.egg-info/dependency_links.txt
+snusbase.py.egg-info/requires.txt
+snusbase.py.egg-info/top_level.txt

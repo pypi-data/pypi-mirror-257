@@ -1,0 +1,43 @@
+[project]
+name = "snusbase.py"
+version = "1.0.5"
+description = "an unofficial async wrapper for the Snusbase API"
+readme = "README.md"
+requires-python = ">=3.7"
+license = { file = "LICENSE" }
+keywords = ["snusbase", "osint"]
+authors = [{ name = "igna", email = "igna@incel.email" }]
+
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3 :: Only",
+]
+
+dependencies = ["httpx>=0.26.0"]
+
+[project.optional-dependencies]
+dev = ["check-manifest"]
+test = ["coverage"]
+
+[project.urls]
+"Homepage" = "https://snusbase.com"
+"Bug Reports" = "https://github.com/8841fb/snusbase.py/issues"
+"Source" = "https://github.com/8841fb/snusbase.py"
+
+
+[tool.setuptools]
+package-data = { "sample" = ["*.dat"] }
+
+[build-system]
+requires = ["setuptools>=69.1.0", "wheel"]
+build-backend = "setuptools.build_meta"
