@@ -1,0 +1,4 @@
+[console_scripts]
+lmoe=lmoe.main:run
+lmoe_update_docs=lmoe.release:update_readme_version
+
