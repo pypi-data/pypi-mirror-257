@@ -1,0 +1,8 @@
+httpx==0.26.*
+
+[testing]
+pyjwt==2.*
+pytest_httpx==0.29.*
+time-machine==2.*
+pytest-cov==4.*
+pytest-asyncio==0.23.*
