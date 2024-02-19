@@ -1,0 +1,12 @@
+yawsso/__init__.py,sha256=6YL7fbj4n52B36cg1__mAk8aYSrMIr3lCCtG3Be2Qc0,637
+yawsso/__main__.py,sha256=3X5_krxzGoVzfNa_jRS-U6TP4cM0PMYfSAS4IwFJiTw,721
+yawsso/cli.py,sha256=HXbZcFdVErZbTj8CZUlXtVOWy1htt2eJ5riPROxuvqQ,8981
+yawsso/cmd.py,sha256=BzaneHwx30qBUB4wiFnktf1qEv26J4cPow4H0ryjqoU,5820
+yawsso/core.py,sha256=o3VbnuNFCpZUuSMR1l2daXZpFIzbA_ceSTSvW2K9QW0,12592
+yawsso/utils.py,sha256=t_Pp1la9mTwb5aih2KhaJiuLTpj1uVRdlib-QtC2JYE,5270
+yawsso-1.2.0rc1.dist-info/LICENSE,sha256=ix1kqCcCSNlRt4WeNgYQ-HvnJusjbdADsBAJ9ZrG74A,1075
+yawsso-1.2.0rc1.dist-info/METADATA,sha256=JxXGL4hgHuwyCKAwf7JIh6EboE4-x49rYumhswQiJgM,10039
+yawsso-1.2.0rc1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+yawsso-1.2.0rc1.dist-info/entry_points.txt,sha256=KN3ab6uOECMl8PdjuocA8Z8u1XjnbBCE237MamEt9fY,43
+yawsso-1.2.0rc1.dist-info/top_level.txt,sha256=JHI3z5g18mNb7N-s_8UsLGSPBYZdBqKW51V0pTUHhd8,7
+yawsso-1.2.0rc1.dist-info/RECORD,,
