@@ -1,0 +1,6 @@
+pyproject.toml
+setup.py
+df_evildownload.egg-info/PKG-INFO
+df_evildownload.egg-info/SOURCES.txt
+df_evildownload.egg-info/dependency_links.txt
+df_evildownload.egg-info/top_level.txt
