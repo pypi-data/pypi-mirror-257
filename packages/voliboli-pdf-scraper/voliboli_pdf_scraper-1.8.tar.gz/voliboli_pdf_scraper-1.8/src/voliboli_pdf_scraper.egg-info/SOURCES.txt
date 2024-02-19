@@ -1,0 +1,15 @@
+LICENSE.md
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/voliboli_pdf_scraper/__init__.py
+src/voliboli_pdf_scraper/constants.py
+src/voliboli_pdf_scraper/main.py
+src/voliboli_pdf_scraper.egg-info/PKG-INFO
+src/voliboli_pdf_scraper.egg-info/SOURCES.txt
+src/voliboli_pdf_scraper.egg-info/dependency_links.txt
+src/voliboli_pdf_scraper.egg-info/requires.txt
+src/voliboli_pdf_scraper.egg-info/top_level.txt
+tests/test_main.py
+tests/test_with_db_main.py
