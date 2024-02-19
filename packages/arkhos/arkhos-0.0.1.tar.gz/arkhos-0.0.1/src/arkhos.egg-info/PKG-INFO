@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: arkhos
+Version: 0.0.1
+Summary: Python framework for deploying small apps
+Author-email: Jason Strauss <jason@getarkhos.com>
+Project-URL: Homepage, https://getArkhos.com
+Project-URL: Repo, https://github.com/arkhosapp/arkhos
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# The Arkhos Python Client
+
+[Arkhos](https://www.getArkhos.com>) is a Python framework for quickly deploying tiny Python apps.
+
+```python
+# main.py
+def arkhos_handler(event):
+    return arkhos.json({
+        "greeting": f"Hello {event.GET.get("name")}!"
+    })
+
+```
+
+```bash
+$ git add main.py
+$ git push arkhos
+$ curl "https://my-first-app.arkhosapp.com?name=Wally"
+{
+  "greeting": "Hello Wally!"
+}
+```
