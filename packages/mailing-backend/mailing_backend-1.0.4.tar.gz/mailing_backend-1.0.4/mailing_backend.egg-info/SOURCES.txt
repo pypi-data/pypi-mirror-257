@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+mailing_backend/__init__.py
+mailing_backend/apps.py
+mailing_backend/backend.py
+mailing_backend.egg-info/PKG-INFO
+mailing_backend.egg-info/SOURCES.txt
+mailing_backend.egg-info/dependency_links.txt
+mailing_backend.egg-info/requires.txt
+mailing_backend.egg-info/top_level.txt
+mailing_backend/migrations/__init__.py
