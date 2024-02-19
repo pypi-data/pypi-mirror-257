@@ -1,0 +1,2 @@
+[datasette]
+unsafe_actor_debug = datasette_unsafe_actor_debug
