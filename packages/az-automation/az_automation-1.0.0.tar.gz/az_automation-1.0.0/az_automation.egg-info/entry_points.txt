@@ -1,0 +1,2 @@
+[console_scripts]
+autoaz = az_auto.main:main

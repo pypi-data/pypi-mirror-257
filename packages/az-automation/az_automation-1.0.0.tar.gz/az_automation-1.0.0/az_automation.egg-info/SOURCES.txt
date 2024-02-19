@@ -1,0 +1,16 @@
+pyproject.toml
+setup.cfg
+setup.py
+az_auto/__init__.py
+az_auto/azure_backup.py
+az_auto/git_handler.py
+az_auto/main.py
+az_auto/utils/__init__.py
+az_auto/utils/custom_formatter.py
+az_auto/utils/logger_config.py
+az_automation.egg-info/PKG-INFO
+az_automation.egg-info/SOURCES.txt
+az_automation.egg-info/dependency_links.txt
+az_automation.egg-info/entry_points.txt
+az_automation.egg-info/requires.txt
+az_automation.egg-info/top_level.txt
