@@ -1,0 +1,35 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "slope-ad"
+version = "0.1.2"
+authors = [
+  { name="Raden Muaz", email="raden.m.muaz@gmail.com" },
+]
+description = "slope AD"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  "numpy",
+  "iree-compiler==20231113.707",
+  "iree-runtime==20231113.707",
+  "onnx",
+  "onnxruntime",
+  "pygments",
+  "sympy",
+  "pdoc",
+  "mkdocs"
+]
+[tool.hatch.build.targets.wheel]
+      packages = ["src/slope"]
+
+[project.urls]
+Homepage = "https://github.com/radenmuaz/slope"
+Issues = "https://github.com/radenmuaz/slope/issues"
