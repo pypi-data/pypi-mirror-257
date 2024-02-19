@@ -1,0 +1,2 @@
+[console_scripts]
+numiconveri = numiconveri.__main__:main
