@@ -1,0 +1,11 @@
+loguru
+
+[dev]
+build
+coverage
+nox
+piccolo-theme
+pytest
+pytest-cov
+sphinx
+twine

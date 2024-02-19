@@ -1,0 +1,12 @@
+CHANGELOG.md
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+src/cleer/__init__.py
+src/cleer.egg-info/PKG-INFO
+src/cleer.egg-info/SOURCES.txt
+src/cleer.egg-info/dependency_links.txt
+src/cleer.egg-info/requires.txt
+src/cleer.egg-info/top_level.txt
