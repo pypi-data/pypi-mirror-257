@@ -1,0 +1,55 @@
+[tool.poetry]
+name = "govee-local-api"
+version = "1.4.4"
+description = "Library to communicate with Govee local API"
+license = "Apache Software License 2.0"
+readme = "README.md"
+repository = "https://github.com/Galorhallen/govee-local-api"
+
+authors = ["Galorhallen <andrea.ponte1987@gmail.com>"]
+
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Intended Audience :: Developers",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries",
+]
+packages = [
+    { include = "govee_local_api", from = "src" },
+]
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/Galorhallen/govee-local-api/issues"
+
+
+[tool.poetry-dynamic-versioning]
+enable = false
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0.0"
+
+[tool.black]
+target-version = ["py310", "py311"]
+
+[tool.ruff.isort]
+force-sort-within-sections = true
+known-first-party = [
+    "govee_local_api",
+]
+combine-as-imports = true
+split-on-trailing-comma = false
+
+[tool.pytest.ini_options]
+pythonpath = "src"
+addopts = [
+    "--import-mode=importlib",
+    "-v",
+]
+
+[build-system]
+requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning>=1.0.0,<2.0.0"]
+build-backend = "poetry_dynamic_versioning.backend"
