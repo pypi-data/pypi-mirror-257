@@ -1,0 +1,10 @@
+query_limiter/__init__.py,sha256=yhUYnLKJ-Q8XWrIuD6NoImxTrOofyGKzYqqQJArb6Bk,160
+query_limiter/exceptions.py,sha256=cCJnkWGSfX9PSwDbj3IgeoNN09Mr_HYQvK4j6Se2Z58,1367
+query_limiter/formatting.py,sha256=Im2lEkHnPNgf_DwZlG3o65H3QmrnkPevgi2iN8ekL2s,545
+query_limiter/limiter.py,sha256=bbVwUTQW3rT4Q2wzZXdqY4_B2NTKYiqitentZHvnCxk,2711
+query_limiter/query.py,sha256=Q9sxrvyhOHLffIavXXHinM-j58wHOlzEVrf7Eg0VygQ,421
+django_query_limiter-0.2.0.dist-info/LICENSE,sha256=H53W0UHU-7w7L59kKhrpdknazcBJVjEFyMlBFo1LBDU,1494
+django_query_limiter-0.2.0.dist-info/METADATA,sha256=OFbKOdtDaAAdsz1oVL5d9_sBeUvDlsLgeLwW8FhhhgI,4672
+django_query_limiter-0.2.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+django_query_limiter-0.2.0.dist-info/top_level.txt,sha256=KZQ4po0CdaKNVRX1-tPrjD1zEBv1famdFcYeMzz9GTE,14
+django_query_limiter-0.2.0.dist-info/RECORD,,
