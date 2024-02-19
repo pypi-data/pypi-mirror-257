@@ -1,0 +1,8 @@
+setup.py
+demoMath01.egg-info/PKG-INFO
+demoMath01.egg-info/SOURCES.txt
+demoMath01.egg-info/dependency_links.txt
+demoMath01.egg-info/entry_points.txt
+demoMath01.egg-info/top_level.txt
+src/__init__.py
+src/main.py
