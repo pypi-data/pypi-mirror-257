@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+distributions_imokut/Binomialdistribution.py
+distributions_imokut/Gaussiandistribution.py
+distributions_imokut/Generaldistribution.py
+distributions_imokut/__init__.py
+distributions_imokut.egg-info/PKG-INFO
+distributions_imokut.egg-info/SOURCES.txt
+distributions_imokut.egg-info/dependency_links.txt
+distributions_imokut.egg-info/not-zip-safe
+distributions_imokut.egg-info/top_level.txt
