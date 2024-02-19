@@ -1,0 +1,2 @@
+[console_scripts]
+shamo-report = shamo.cli.report:main
