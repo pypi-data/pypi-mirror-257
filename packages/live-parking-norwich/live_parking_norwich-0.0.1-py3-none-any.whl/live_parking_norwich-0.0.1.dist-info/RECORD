@@ -1,0 +1,12 @@
+live_parking_norwich/__init__.py,sha256=pdXnUNRv155AGvoGK0dxIQpZT3N5w7MLGKrEQ_5efZA,121
+live_parking_norwich/src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+live_parking_norwich/src/carpark.py,sha256=oFQElD_73Hqzdor1JVVlFztXnhaZNG-o36Nk1fP-Nt8,3308
+live_parking_norwich/src/config.py,sha256=jM4vuB1e7wIunzY2tk9HNlXyqV_nQ5rnpWWjTy1GE8E,190
+live_parking_norwich/src/live_parking_norwich.py,sha256=018s4wN5TdlhpFOhT1YEzVq2F3OnTVQJUMHFvKvqH-8,5207
+live_parking_norwich/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+live_parking_norwich/test/test_live_parking_norwich.py,sha256=ppj6pza9Ka4qViIMdkVZs7dw09Y84iFovUpJ1tLk4kU,1066
+live_parking_norwich-0.0.1.dist-info/LICENCE,sha256=UA6IXBihJAOahiTHYmJs9_50OgBw3PLcPO31nxakJSU,101
+live_parking_norwich-0.0.1.dist-info/METADATA,sha256=rNxm0T4nqDxCIE8ZSrp-x232I82VxWGr8oldNn23kvg,4238
+live_parking_norwich-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+live_parking_norwich-0.0.1.dist-info/top_level.txt,sha256=kf6DbyRNQWle12BPSEl2QHhZRM6zreI16lKYHKeSzfQ,21
+live_parking_norwich-0.0.1.dist-info/RECORD,,
