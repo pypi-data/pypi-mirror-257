@@ -1,0 +1,11 @@
+typing_ex-0.1.31.dist-info/METADATA,sha256=r9ayQUouVSzKE5qscHmIq1qhqVWcgPBfwFMy--hIng8,3980
+typing_ex-0.1.31.dist-info/WHEEL,sha256=N2J68yzZqJh3mI_Wg92rwhw0rtJDFpZj9bwQIMJgaVg,90
+typing_ex-0.1.31.dist-info/licenses/LICENSE,sha256=PrKtbxd8L8aYC3cE4zN3RBoS1hFaxjmDa0yD7tMbVbk,1063
+typing_ex/__init__.py,sha256=vsmhwQhR8XxxKQtT4eFVeIj56svFLUoMC6M4H9mEHG4,566
+typing_ex/builtin_typing.py,sha256=l5MRgLL3ayuCkchRKrzFPr8f7OXXh4pZFEW2uKU4LIY,1118
+typing_ex/enum_ex.py,sha256=O8VnRus7jCylqcl14hkQbbYthY8ZQx4uVjEVyic2_LY,5495
+typing_ex/experimental.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+typing_ex/frozen.py,sha256=zvx6TaND-lvBThZDpylhPRBi-YfZD0CkCBA7oCObzEY,1104
+typing_ex/type_info.py,sha256=VFKIJ3zjnt78S6QyJ-HWb5cTQHBljueSfmlov3UUqhU,4653
+typing_ex/typed_defaultdict.py,sha256=0nqngAVFy9dQpdwky9VA6INtj7LYBnY4QrblyLluegc,4228
+typing_ex-0.1.31.dist-info/RECORD,,
