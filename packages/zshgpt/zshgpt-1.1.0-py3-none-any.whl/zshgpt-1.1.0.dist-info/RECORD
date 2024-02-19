@@ -1,0 +1,11 @@
+zshgpt/__about__.py,sha256=CqDGE4B1ZqZ-56mxeOFcXRTmlxrdOh4ayrjbcPjziE4,411
+zshgpt/__init__.py,sha256=VhWzdPeBo8HMaB9BJxYk9Y0_aFm7ZOELiYbByttDt3k,109
+zshgpt/__main__.py,sha256=gXkoJhDsyVP-TYVATz2QHp-qPIWhHzUZv4CPmURr8VE,206
+zshgpt/cli/__init__.py,sha256=S6CM5Wbj_7GPNBWyPBiVYSUNLp3g7oeXqczkrhnTmcA,848
+zshgpt/cli/messages.py,sha256=nJ_F95bfopIsR8K1b0M6sllnor1lA0xqCxD_JxgZPDk,2402
+zshgpt-1.1.0.dist-info/METADATA,sha256=sg_2Qch8K6USc2bK2rpzNQN0nb76LB_yarGFlnjMer0,4105
+zshgpt-1.1.0.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+zshgpt-1.1.0.dist-info/entry_points.txt,sha256=9U0qoEXxBiDhL0nY5doqGGQu9zz0QKQXr-D_2VIyNbU,45
+zshgpt-1.1.0.dist-info/licenses/LICENSE,sha256=0oua7CW715TySI9TM5b7nmBSRwC2PjCDS1N6QNK_GBQ,1080
+zshgpt-1.1.0.dist-info/licenses/LICENSE.txt,sha256=b93uaLpHyKruR7r5kbFBXOowAgAhJNDKdyTZT6OTr_0,1101
+zshgpt-1.1.0.dist-info/RECORD,,
