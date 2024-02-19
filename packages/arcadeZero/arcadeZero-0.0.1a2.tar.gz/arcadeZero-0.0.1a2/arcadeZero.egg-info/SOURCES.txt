@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+arcadeZero/__init__.py
+arcadeZero/constants.py
+arcadeZero.egg-info/PKG-INFO
+arcadeZero.egg-info/SOURCES.txt
+arcadeZero.egg-info/dependency_links.txt
+arcadeZero.egg-info/requires.txt
+arcadeZero.egg-info/top_level.txt
+arcadeZero/resources/__init__.py
+arcadeZero/resources/images/plane.png
