@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: slow-learner
+Version: 0.1.1
+Summary: Python type inference from a stream of data
+Project-URL: Homepage, https://pypi.org/manage/project/slow-learner
+Project-URL: Issues, https://github.com/nj-vs-vh/slow-learner/issues
+Author-email: Igor Vaiman <gosha.vaiman@gmail.com>
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: File Formats :: JSON
+Classifier: Typing :: Typed
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# slow-learner — python type inference tool
+
+See also: [post](https://nj-vs-vh.name/project/slow-learner)
+
+A library and CLI to consume a stream of values (for CLI — JSON documents) and
+generate Python types describing it. Features:
+- recursion into mappings and collections with generic types generation
+- "structured dicts" are turned into `TypedDict`s by default
+- values with a small set of observed values are turned into `Literal`s
+
+## Installation
+
+TBD
+
+## Usage
+
+TBD
