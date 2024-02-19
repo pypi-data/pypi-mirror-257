@@ -1,0 +1,10 @@
+cli_chronicler/__init__.py,sha256=MigXIT7A1M9YZuH2MyjKReSziFwzbZX2boVYsLosR6s,22
+cli_chronicler/main.py,sha256=gWDkqHDPrf8P5H0mlyWFD4GX7Z6meFjxJLEjxJUKSHY,2103
+cli_chronicler/src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cli_chronicler/src/reporter.py,sha256=ZADUMJZOX5M2KerYNAm_IFWsZOr5XbTNcQYSOxSGT0A,1478
+cli_chronicler-0.5.0.dist-info/LICENSE,sha256=jK5kIBFRs-8C63moKMM9MhIcOESjhirxgMkw6TE7m88,1068
+cli_chronicler-0.5.0.dist-info/METADATA,sha256=BjEdzvJyt8TX79qDHatRT4-AlznUCGAL_ncHo8u13uc,651
+cli_chronicler-0.5.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+cli_chronicler-0.5.0.dist-info/entry_points.txt,sha256=XDVPYvJNoxxKfyFAlEn2yr9KtJKN_wddGctHXUlJzhc,46
+cli_chronicler-0.5.0.dist-info/top_level.txt,sha256=jFMHsG7aMLjh_w36k1in1L1RVo2Hhch4t8Uan8pKW6Q,15
+cli_chronicler-0.5.0.dist-info/RECORD,,
