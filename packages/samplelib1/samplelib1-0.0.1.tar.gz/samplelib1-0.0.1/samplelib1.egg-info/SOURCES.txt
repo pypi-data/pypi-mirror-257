@@ -1,0 +1,6 @@
+setup.py
+samplelib1/samplelib1.py
+samplelib1.egg-info/PKG-INFO
+samplelib1.egg-info/SOURCES.txt
+samplelib1.egg-info/dependency_links.txt
+samplelib1.egg-info/top_level.txt
