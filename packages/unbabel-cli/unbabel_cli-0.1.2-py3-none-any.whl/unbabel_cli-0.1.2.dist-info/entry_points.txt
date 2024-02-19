@@ -1,0 +1,3 @@
+[console_scripts]
+unbabel-victor-cli=unbabel_cli.main:app
+
