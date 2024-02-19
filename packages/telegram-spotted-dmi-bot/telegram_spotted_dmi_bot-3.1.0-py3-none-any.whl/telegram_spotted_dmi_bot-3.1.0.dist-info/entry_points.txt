@@ -1,0 +1,3 @@
+[console_scripts]
+f_crypto = spotted.scripts.f_crypto:main
+run_sql = spotted.scripts.run_sql:main
