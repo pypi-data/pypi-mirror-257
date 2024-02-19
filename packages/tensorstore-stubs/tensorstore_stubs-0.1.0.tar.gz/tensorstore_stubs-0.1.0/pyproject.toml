@@ -1,0 +1,21 @@
+[project]
+name = "tensorstore-stubs"
+version = "0.1.0"
+description = "Type stubs for tensorstore"
+authors = [{ name = "elda27", email = "kaz.birdstick@gmail.com" }]
+dependencies = ["tensorstore>=0.1.45"]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+packages = [{ include = "tensorstore-stubs" }]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true

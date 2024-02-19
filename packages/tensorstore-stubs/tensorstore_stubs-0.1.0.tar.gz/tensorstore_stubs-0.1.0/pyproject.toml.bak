@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "tensorstore-stubs"
+version = "0.1.0"
+description = "Type stubs for tensorstore"
+authors = ["elda27 <kaz.birdstick@gmail.com>"]
+license = "Apache 2.0"
+readme = "README.md"
+classifiers = [
+  "License :: OSI Approved :: Apache Software License",
+  "Intended Audience :: Science/Research",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+]
+packages = [{ include = "tensorstore-stubs" }]
+
+[tool.poetry.dependencies]
+python = ">=3.9,<4.0"
+tensorstore = ">=0.1.53"
+
+[tool.poetry.group.dev.dependencies]
+importlib-metadata = "^7.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
