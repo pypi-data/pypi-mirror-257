@@ -1,0 +1,4 @@
+pandas
+prettytable
+scipy
+matplotlib
