@@ -1,0 +1,2 @@
+[console_scripts]
+pih-msg_rcv = MessageReceiverService.__main__:start
