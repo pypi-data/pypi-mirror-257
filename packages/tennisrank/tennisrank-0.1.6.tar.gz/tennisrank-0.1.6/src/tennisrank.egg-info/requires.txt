@@ -1,0 +1,8 @@
+networkx[default]~=2.6.3
+requests
+
+[tests]
+build
+twine
+pytest
+flake8
