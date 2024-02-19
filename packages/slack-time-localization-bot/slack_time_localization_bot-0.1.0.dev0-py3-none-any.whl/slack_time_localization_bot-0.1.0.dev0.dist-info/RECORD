@@ -1,0 +1,11 @@
+slack_time_localization_bot/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+slack_time_localization_bot/app.py,sha256=Garqhqu1eCdsLD_52iZr7pOSRiYVJooUi7OpII_V5HQ,3688
+slack_time_localization_bot/config.py,sha256=Q6gbY43WT9zWfLZhuYyfSMRezOWgWdyPTHWaB0-e6uE,137
+slack_time_localization_bot/parsing.py,sha256=ARtFFplZwDMROjgaJnQ3uqnEcQCsIlZMxd4FgvpBaH0,1927
+slack_time_localization_bot/test_parsing.py,sha256=mK--w2DEp5w_K0Acsm26-9ytyvjOge0L4KE9r0aC3-4,2346
+slack_time_localization_bot/test_utils.py,sha256=dJOhaPgavGKJ15xAIaGvHukiQ5L6IRob7MzaeXQGeWE,412
+slack_time_localization_bot/utils.py,sha256=UNac8c4PZeatmtXwWfA7E7t1kGni1R8o8gsQbQNgVDo,197
+slack_time_localization_bot-0.1.0.dev0.dist-info/LICENSE,sha256=rqcnqeYaPV5j6qTORmNO8vdLKafJbfmBowfzidgDQ1w,1084
+slack_time_localization_bot-0.1.0.dev0.dist-info/METADATA,sha256=D5AQuu2P7vz2hUojA5nSlovmAmAIi3l9oDWzKckGo_s,2978
+slack_time_localization_bot-0.1.0.dev0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+slack_time_localization_bot-0.1.0.dev0.dist-info/RECORD,,
