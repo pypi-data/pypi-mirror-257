@@ -1,0 +1,15 @@
+akande/__init__.py,sha256=oDV996FWBs5CEDEE_XWCSKG_IxoFaxHZwsWk5vuTvvM,641
+akande/__main__.py,sha256=9iI50IGFrdWdX6EBcFclfma_U9B5hTuw56mobTFL69U,2577
+akande/akande.py,sha256=lvwKw7egVqpJ1NB2TjBzX-7e13Wz6Z5neuF7OHeZKNU,10336
+akande/cache.py,sha256=6Mjd4gv3F71W6JmM5hPwF3FpD9LHIARw0gafCqgJZBU,4972
+akande/config.py,sha256=1IJ0iB4moeasFM7hIlVcPV5UXY_rWKVJkpJlCdbQA3U,1072
+akande/logger.py,sha256=byfqijy5MuNhfMz8jJ5Ha--bKOx673dIqMsSdu7gRMg,1010
+akande/services.py,sha256=VFk8zi69UjAZ6gFjddXLDH9cOHyitMw0n2MaVIAKxWc,3567
+akande/utils.py,sha256=at2N3kD3syvrN0WU7DTMM9BzUY7q0DgNMRDiCdMP260,7281
+akande-0.0.4.dist-info/LICENSE-APACHE,sha256=VFJxxGa54FQ4msMalcLlKhNy0NJizHCKRy-StBA-l3k,10867
+akande-0.0.4.dist-info/LICENSE-MIT,sha256=s3JALHNUT8GfYxc55b_O3IZJxL0VpEYeeKzMzLs_eGw,1079
+akande-0.0.4.dist-info/METADATA,sha256=q6idb65er0iOZlPrwjYRdAZhfG--DVWHvYnI7UGkWAI,30206
+akande-0.0.4.dist-info/WHEEL,sha256=-G_t0oGuE7UD0DrSpVZnq1hHMBV9DD2XkS5v7XpmTnk,110
+akande-0.0.4.dist-info/entry_points.txt,sha256=UjrWwv6XA-oAFv2_avrNmrzmH0kUpoYPsSIW5--I-Uo,39
+akande-0.0.4.dist-info/top_level.txt,sha256=Zchwy648k92jdv7eWS_vKBEREpGDmtgjKqLlSAQKyzY,7
+akande-0.0.4.dist-info/RECORD,,
