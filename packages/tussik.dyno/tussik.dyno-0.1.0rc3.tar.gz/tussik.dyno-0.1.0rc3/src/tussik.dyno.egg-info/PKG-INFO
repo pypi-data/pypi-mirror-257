@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: tussik.dyno
+Version: 0.1.0rc3
+Summary: Tussik DynamoDb
+Home-page: https://github.com/tussikcom/tussik-dyno
+Author: Darren Martz
+Author-email: darren@tussik.com
+License: MIT
+Project-URL: Issue Tracker, https://github.com/tussikcom/tussik-dyno/issues
+Project-URL: Documentation, https://github.com/tussikcom/tussik-dyno
+Project-URL: home-page, https://github.com/tussikcom/tussik-dyno
+Keywords: dynamodb,tussik
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Intended Audience :: Developers
+Classifier: Environment :: Web Environment
+Classifier: Topic :: Internet
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: boto3
+
+# Tussik DynamoDb #
+
+Manages DynamoDb access primarily for the single table design pattern 
+
+
