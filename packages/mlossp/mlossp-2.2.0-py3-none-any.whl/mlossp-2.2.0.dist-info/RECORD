@@ -1,0 +1,10 @@
+mlossp/__init__.py,sha256=PAhArlmnPXLvZ245s0mreqGC-M8OvVn67Sqf9wWM23A,67
+mlossp/converter.py,sha256=PzSWQYzrE8618fT1XVDZSYmjVolUu9Klc1Ljk-9PNKg,3279
+mlossp/dataloader.py,sha256=XjDfz9r1cvtSWa2cai3apQVy3LwDRLfFRPi1aCF5bko,2621
+mlossp/formatters.py,sha256=YhZcxpDg55B5nOD46flLLwOPx83v5OuJU-V_qyoRlZo,3477
+mlossp/globals.py,sha256=NxfAevVBH6wmgzECmUzVL0u2Zbyfm3eNz0ywiFqK0MU,367
+mlossp/preprocessor.py,sha256=hv63GhBPtW1NysrLqqzueWwt5dkUN1UGxtgqQDUF0FI,8979
+mlossp-2.2.0.dist-info/METADATA,sha256=0x1yUP4T1ntO5KnJ1bv0sfacYJIiXbPCDKSRKpC3QQ4,22161
+mlossp-2.2.0.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+mlossp-2.2.0.dist-info/licenses/LICENSE,sha256=WtjCEwlcVzkh1ziO35P2qfVEkLjr87Flro7xlHz3CEY,11556
+mlossp-2.2.0.dist-info/RECORD,,
