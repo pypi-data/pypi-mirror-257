@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+datasette_unsafe_actor_debug/__init__.py
+datasette_unsafe_actor_debug.egg-info/PKG-INFO
+datasette_unsafe_actor_debug.egg-info/SOURCES.txt
+datasette_unsafe_actor_debug.egg-info/dependency_links.txt
+datasette_unsafe_actor_debug.egg-info/entry_points.txt
+datasette_unsafe_actor_debug.egg-info/requires.txt
+datasette_unsafe_actor_debug.egg-info/top_level.txt
+datasette_unsafe_actor_debug/templates/unsafe_actor.html
+tests/test_unsafe_actor_debug.py
