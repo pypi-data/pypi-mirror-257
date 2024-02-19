@@ -1,0 +1,14 @@
+battery_notify/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+battery_notify/__metadata__.py,sha256=LSD4kq6Bw7JMCOLQgSayEVS7XmG-_dh9cZ0i9NhBWg4,615
+battery_notify/configs.py,sha256=fv1McpZ8houLkkjXpB3qzImXyweHnevdPQuyoo1gK2g,866
+battery_notify/daemon.py,sha256=r5-FtkLgpDTulStB_29w5CsYoww17M30Tn0WFofzUk8,5325
+battery_notify/notify.py,sha256=udLVVP09f3FoZMMmtaoGOMpvtVrAxSIDBbA2ukvqxNE,1646
+battery_notify/usage.py,sha256=FovLzaLXl1ZEhFqby77U57GdBePPjDeia1iAjelTQH0,1333
+battery_notify/utils.py,sha256=PAdIlA49QVoSTAObIUu4tUF2j4Mocy59W17upxCc8A4,2074
+battery_notify/bin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+battery_notify/bin/battery_daemon.py,sha256=Q_-4xgf2rcSLDwf4iL4BeaBuJo5aecLi-73qra2ZJKI,229
+battery_notify/bin/battery_notify.py,sha256=pToUx2mOFg5_cAtik95nbWJy4ynF5O9HwwXlRIZWhiQ,267
+battery_notify-1.4.dist-info/entry_points.txt,sha256=nm9ZGBNvU2wgAWEd3ST4pE9RStvPv9ccaoHw5RHlYt8,136
+battery_notify-1.4.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+battery_notify-1.4.dist-info/METADATA,sha256=lCzX9_4Vj_CV8SQMbzAsOu4RWaxzaeUR1UNL4k5J5NE,2134
+battery_notify-1.4.dist-info/RECORD,,
