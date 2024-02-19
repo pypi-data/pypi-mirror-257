@@ -1,0 +1,12 @@
+asyncpg>=0.27.0
+pydantic>=2.0.0
+
+[dev]
+asyncpg-stubs
+fastapi
+httpx
+mypy-extensions
+mypy
+pytest-asyncio
+pytest
+ruff
