@@ -1,0 +1,2 @@
+[console_scripts]
+chino = chino.__main__:app

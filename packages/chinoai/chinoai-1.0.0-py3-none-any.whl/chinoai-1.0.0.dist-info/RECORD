@@ -1,0 +1,12 @@
+chino/__init__.py,sha256=SdBEGq36aA57-w2jlm8DGw0sL0hQF797bkE_aXyi-8w,151
+chino/__main__.py,sha256=-8cw-mriw3u8RsBhrk4RoURH-dsmnT-O7JyZ2Grxty8,1527
+chino/conversation.py,sha256=gdE8sur5rtwRdciO-qY5q7_4KvBMI6Omrvv1VL3n3kw,1261
+chino/migrations.py,sha256=bMJLbFRdovYkp7oQWBmtAuoWX35GePX32icM_CnCQsE,1876
+chino/query.py,sha256=fPHJw1AgpQK7BQwoAaMSAeTRCOF_39WCYAhSrgNC44M,1692
+chino/utils.py,sha256=sTjYVP3H4SiALeBhRnGBiIa-q9SXuP4gcNZqUCmgCE0,298
+chinoai-1.0.0.dist-info/LICENSE,sha256=4A-eP9OHWckxF0Y1QG8f46i37qU1J2fDK15pXnBtdhA,1060
+chinoai-1.0.0.dist-info/METADATA,sha256=wEcmD9w4mfOdUg0UJopFrHrO1FtP4BHctTqEsfNuVcY,6526
+chinoai-1.0.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+chinoai-1.0.0.dist-info/entry_points.txt,sha256=zBz4sTH_vBHeDRQwYvgDcKXu7cL3NP0o33gZNShZYPs,45
+chinoai-1.0.0.dist-info/top_level.txt,sha256=LKR77Imt4YyIj5sih8vQVtyrkDaFuRfya-RrZI2N1gI,6
+chinoai-1.0.0.dist-info/RECORD,,
