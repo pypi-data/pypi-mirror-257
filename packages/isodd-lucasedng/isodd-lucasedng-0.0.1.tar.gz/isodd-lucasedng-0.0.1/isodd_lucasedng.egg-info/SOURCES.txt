@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+is_odd/__init__.py
+is_odd/is_odd.py
+isodd_lucasedng.egg-info/PKG-INFO
+isodd_lucasedng.egg-info/SOURCES.txt
+isodd_lucasedng.egg-info/dependency_links.txt
+isodd_lucasedng.egg-info/requires.txt
+isodd_lucasedng.egg-info/top_level.txt
