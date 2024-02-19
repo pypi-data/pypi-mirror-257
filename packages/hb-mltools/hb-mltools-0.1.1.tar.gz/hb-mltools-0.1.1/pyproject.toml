@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel", "build"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+zip-safe = false
+
+[tool.setuptools.packages.find]
+where = ["src"]
+namespaces = false
+
+[project]
+name = "hb-mltools"
+dynamic = ["version", "optional-dependencies"]
+keywords = []
+description = "A platform for rapid development of Machine Learning algorithms."
+requires-python = ">=3.8"
+readme = "README.md"
+dependencies = [
+    "lightgbm",
+    "pandas",
+    "numpy",
+    "scikit-learn",
+    "scipy"
+]
+license = {text = "open source"}
+
+[project.urls]
+homepage = "https://github.com/Hunterb9101/ml-tools"
+
+[tool.setuptools.dynamic]
+version = {attr = "mltools.__version__"}
+optional-dependencies.tests = {file = ["reqs/test.txt"]}
+
+[tool.isort]
+sections = ["FUTURE", "STDLIB", "THIRDPARTY", "FIRSTPARTY", "LOCALFOLDER"]
+known_first_party = "mltools"

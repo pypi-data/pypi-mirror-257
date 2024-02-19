@@ -1,0 +1,12 @@
+lightgbm
+pandas
+numpy
+scikit-learn
+scipy
+
+[tests]
+pytest
+pytest-cov
+mypy
+pylint
+types-pyyaml
