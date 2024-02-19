@@ -1,0 +1,11 @@
+WSService/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+WSService/__main__.py,sha256=Gl959sqJCLvSzIInedKtOhMRWK2Rmg9KV0wDd7RQdIs,142
+WSService/const.py,sha256=VnWWMfvMgnQXvzXiimefjZP9KmwB_5IbE6oPdI6h99o,522
+WSService/message_from_user_to_workstation.py,sha256=Nu_i-jj-T5y0Jr9cYxk437JslcqOIo_GphWqasIZ3I4,1284
+WSService/on_startup.py,sha256=flulLbhcG0MgF1GiV1eJjJr_lLnaVKV0ccMH_VWbD64,299
+WSService/service.py,sha256=SY1QAb3AtwpkH7ea7jX8R94aHD61cthMnw9D8mfgm7E,3291
+pih_ws-1.29.dist-info/METADATA,sha256=9D_hFM5s9SH07hPHVktbus7THZJNOdgFha2pWEUg8Bs,272
+pih_ws-1.29.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+pih_ws-1.29.dist-info/entry_points.txt,sha256=4xbkAuMhaCx8suxBW_Nj3stAgnrKYtck0smFaTP3Pc8,52
+pih_ws-1.29.dist-info/top_level.txt,sha256=Yehv1H-7Nsv_gtOTL0aPPkBeUo9CeYDHmMMvRHBC1wU,10
+pih_ws-1.29.dist-info/RECORD,,
