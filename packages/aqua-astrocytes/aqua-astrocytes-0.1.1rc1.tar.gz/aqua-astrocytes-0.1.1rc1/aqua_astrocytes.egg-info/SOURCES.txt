@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+aqua_astrocytes.egg-info/PKG-INFO
+aqua_astrocytes.egg-info/SOURCES.txt
+aqua_astrocytes.egg-info/dependency_links.txt
+aqua_astrocytes.egg-info/requires.txt
+aqua_astrocytes.egg-info/top_level.txt
