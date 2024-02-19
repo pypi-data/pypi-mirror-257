@@ -1,0 +1,2 @@
+[console_scripts]
+sng_parser = sng_parser.__main__:main
