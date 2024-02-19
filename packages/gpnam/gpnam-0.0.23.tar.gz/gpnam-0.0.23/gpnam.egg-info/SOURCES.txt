@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+readme_pypi.md
+gpnam/__init__.py
+gpnam/data.py
+gpnam/download_datasets.py
+gpnam/model.py
+gpnam/sklearn.py
+gpnam/trainer.py
+gpnam/utils.py
+gpnam.egg-info/PKG-INFO
+gpnam.egg-info/SOURCES.txt
+gpnam.egg-info/dependency_links.txt
+gpnam.egg-info/requires.txt
+gpnam.egg-info/top_level.txt
