@@ -1,0 +1,13 @@
+file-renamer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+file-renamer/example.py,sha256=jQxgMu2wujV5-EV7SIHDYnIfEhmJAzxyn2XKqYliCB0,43
+file-renamer/form.ui,sha256=iPlOzfTCOdxwTcIkfDrmUapd_sCjdu2JsXPyR3W68fg,9197
+file-renamer/rename.py,sha256=wunp5RdE_ewTeCqAvc1JuVxZEPQW_oeashf9o9KyN2c,16098
+file-renamer/ui_form.py,sha256=S-BGu9U6X3wYUTXUQhZJ0VOUXzaZ_pWlRA__YzTg7SA,8295
+file-renamer/widget.py,sha256=Atgjck6pz5cWgPChiS9ddgzbE0rRRel81pxkDsW9On4,5456
+file-renamer/lib/exceptions.py,sha256=VQUiPyxA3YxFYmdeluJdve-AnqaPBCEKQs917M4ISqw,588
+file-renamer/lib/files.py,sha256=YTgyd05yA-7sLc3trbTh-jbct653cgEPXvlxcA3B8-I,6992
+file-renamer/style/default.qss,sha256=aWwNVsYZe92Jt5SaBkp9xDhhfP0uKlLUdL3GEuWc-1A,736
+file_renamer-1.0.0.dist-info/METADATA,sha256=TYJf7P5tH3aX9DkDZldkQVHSUJJ7wCt4UsahbX9yKSI,903
+file_renamer-1.0.0.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+file_renamer-1.0.0.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+file_renamer-1.0.0.dist-info/RECORD,,
