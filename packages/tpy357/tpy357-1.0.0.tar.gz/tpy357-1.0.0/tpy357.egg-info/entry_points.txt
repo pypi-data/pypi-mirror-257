@@ -1,0 +1,2 @@
+[console_scripts]
+tpy357 = tpy357.cli:main

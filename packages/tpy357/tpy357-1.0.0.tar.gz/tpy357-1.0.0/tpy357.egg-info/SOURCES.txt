@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+tpy357/__init__.py
+tpy357/__main__.py
+tpy357/cli.py
+tpy357.egg-info/PKG-INFO
+tpy357.egg-info/SOURCES.txt
+tpy357.egg-info/dependency_links.txt
+tpy357.egg-info/entry_points.txt
+tpy357.egg-info/requires.txt
+tpy357.egg-info/top_level.txt
