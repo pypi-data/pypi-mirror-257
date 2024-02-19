@@ -1,0 +1,8 @@
+turbo_package.cpython-311-darwin.so,sha256=tJoh0O-tIA5E3K67leQHlSuz7F7ED7UK5PR7NMirHFU,156480
+slow_package/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+slow_package/slow_functions.py,sha256=m8JH4s5vy7Omr5mjzBz7SHb9cXD6Ihd-B7xoLwP7aPY,673
+turbo_code-0.0.1.dist-info/LICENSE,sha256=SBNiCMUPOkN74CrKaGEJk1CNXzPemZ76Qsm106kwI1E,2182
+turbo_code-0.0.1.dist-info/METADATA,sha256=OSGE5vKkMGKlmR71PJvP8aDRF4sZGDleTElg4ZS9Ktw,3366
+turbo_code-0.0.1.dist-info/WHEEL,sha256=qZ5gUYMG4t2JcLLcFLlOXld9g3WjqyANneXZkxLH8gU,110
+turbo_code-0.0.1.dist-info/top_level.txt,sha256=A_4T6mGnD7caPQFfGRpTbzyg-les62vFa159Njy1BSo,27
+turbo_code-0.0.1.dist-info/RECORD,,
