@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+raflash/RAConnect.py
+raflash/RAFlasher.py
+raflash/RAPacker.py
+raflash.egg-info/PKG-INFO
+raflash.egg-info/SOURCES.txt
+raflash.egg-info/dependency_links.txt
+raflash.egg-info/entry_points.txt
+raflash.egg-info/requires.txt
+raflash.egg-info/top_level.txt
+tests/test_parse.py
