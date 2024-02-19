@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "pflops"
+version = "0.2.0a0"
+description = ""
+authors = ["Gunwoo Kim <gunwoo@petaflops.ai>"]
+readme = "README.md"
+
+[tool.poetry.scripts]
+pflops = "pflops.main:app"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+typer = {extras = ["all"], version = "^0.9.0"}
+cuid2 = "^2.0.0"
+rich = "^13.7.0"
+httpx = "^0.26.0"
+yaspin = "^3.0.1"
+python-dotenv = "^1.0.1"
+ray = {extras = ["default"], version = "^2.9.2"}
+arrow = "^1.3.0"
+questionary = "^2.0.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

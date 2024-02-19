@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: pflops
+Version: 0.2.0a0
+Summary: 
+Author: Gunwoo Kim
+Author-email: gunwoo@petaflops.ai
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: arrow (>=1.3.0,<2.0.0)
+Requires-Dist: cuid2 (>=2.0.0,<3.0.0)
+Requires-Dist: httpx (>=0.26.0,<0.27.0)
+Requires-Dist: python-dotenv (>=1.0.1,<2.0.0)
+Requires-Dist: questionary (>=2.0.1,<3.0.0)
+Requires-Dist: ray[default] (>=2.9.2,<3.0.0)
+Requires-Dist: rich (>=13.7.0,<14.0.0)
+Requires-Dist: typer[all] (>=0.9.0,<0.10.0)
+Requires-Dist: yaspin (>=3.0.1,<4.0.0)
+Description-Content-Type: text/markdown
+
+# Petaflops CLI
+
