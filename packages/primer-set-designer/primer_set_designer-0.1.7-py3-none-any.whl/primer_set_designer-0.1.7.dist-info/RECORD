@@ -1,0 +1,10 @@
+primerdesigner/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+primerdesigner/database.py,sha256=RWKkI6h3sdc5JkVaGdmlzNNCf9M5GYbhKaAW6rD1awo,27615
+primerdesigner/interface.py,sha256=nYTpRF95wRYfiniunKTgKqbkl_1fGqGvjvUaj1TPu_8,11036
+primerdesigner/primer_designer.py,sha256=rybsHICzfs3rnggggB2f2FXN0ApHtT5woknG1qYy-nc,89406
+primerdesigner/utils.py,sha256=DqT9YXLO7x_cc2DKamboPG7OpE2kTD9EqgPTBmbHMA4,2011
+primerdesigner/web.py,sha256=XfLG73IgxyCLfOUVuxAGTSStrH0GtvW3Gi_aoX3tm7Q,5661
+primer_set_designer-0.1.7.dist-info/METADATA,sha256=LVdKa_-3Fo1ioaChg-uRrKqkGI1Wp1ts_at7XhVhk4c,7421
+primer_set_designer-0.1.7.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+primer_set_designer-0.1.7.dist-info/top_level.txt,sha256=teJEvzVHJ4b9Tc1Q83Dnlq5TpNmb5OV11HvOwi2tNKg,15
+primer_set_designer-0.1.7.dist-info/RECORD,,
