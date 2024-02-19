@@ -1,0 +1,13 @@
+podcastparser
+requests
+
+[dev]
+black
+pythonista-stubs
+
+[lint]
+ruff
+pyroma
+pytype
+types-python-dateutil
+types-requests
