@@ -1,0 +1,19 @@
+.gitattributes
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+sample_1.pdf
+sdfjk \ fjlkdsf \ fsdf^&#^*$*!*@&$*$1.pdf
+upload.sh
+.github/workflows/publish-to-pypi.yml
+pdftk_remove_pages/__init__.py
+pdftk_remove_pages/main.py
+pdftk_wrapper.egg-info/PKG-INFO
+pdftk_wrapper.egg-info/SOURCES.txt
+pdftk_wrapper.egg-info/dependency_links.txt
+pdftk_wrapper.egg-info/entry_points.txt
+pdftk_wrapper.egg-info/top_level.txt
+tests/__init__.py
+tests/pdftk_remove_pages/__init__.py
+tests/pdftk_remove_pages/test_main.py
