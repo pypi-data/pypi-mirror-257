@@ -1,0 +1,3 @@
+# Logfire
+
+In beta, coming soon...
