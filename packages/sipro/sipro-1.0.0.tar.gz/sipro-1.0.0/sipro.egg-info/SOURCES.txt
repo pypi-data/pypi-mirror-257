@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.py
+sipro/__init__.py
+sipro.egg-info/PKG-INFO
+sipro.egg-info/SOURCES.txt
+sipro.egg-info/dependency_links.txt
+sipro.egg-info/top_level.txt
