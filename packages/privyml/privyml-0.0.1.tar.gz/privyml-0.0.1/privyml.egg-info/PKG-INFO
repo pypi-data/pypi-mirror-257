@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: privyml
+Version: 0.0.1
+Requires: torch
+Requires: cryptography
+Requires: skimage
+Requires: numpy
+Requires: os
+Requires: csv
+Requires: io
+Requires: uuid

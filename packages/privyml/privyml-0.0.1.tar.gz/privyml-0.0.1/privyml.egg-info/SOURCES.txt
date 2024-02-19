@@ -1,0 +1,8 @@
+README.md
+setup.py
+privyml/__init__.py
+privyml/main.py
+privyml.egg-info/PKG-INFO
+privyml.egg-info/SOURCES.txt
+privyml.egg-info/dependency_links.txt
+privyml.egg-info/top_level.txt

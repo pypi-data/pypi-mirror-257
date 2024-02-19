@@ -1,0 +1,1 @@
+PrivyML" combines the word "Privy," which means private or secretive, with "ML," an abbreviation for Machine Learning. Together, the name suggests a tool or system for conducting machine learning in a private or secretive manner, emphasizing the privacy and security aspects of the data handling process.
