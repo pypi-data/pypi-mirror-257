@@ -1,0 +1,15 @@
+ezstorage/__init__.py,sha256=zjUAgEfIG2uBpBZ8Zi0it9-GauOgWM3MTlsREboO1u0,112
+ezstorage/constants.py,sha256=GKOO-JTVTByNBw9F-BCoJwHaO_jTTLqWU9Ah5NJOlhg,39
+ezstorage/table.py,sha256=jrzfQbFNW6xHXbMx8rhuHHohYjMVl36xXjUkSX940YQ,3530
+ezstorage/providers/__init__.py,sha256=qE67yXR8dzYkJwRgMbxI0a_b_chY8kOhq51SqKWDbYs,26
+ezstorage/providers/__template__.py,sha256=iHEN4h1-87Fu54OsTgfSRPG7Lvs_8L6YfpKFKm7Rm5w,4031
+ezstorage/providers/sqlite.py,sha256=--dG7lYufJLflHRg2Y6gElHUE4IjF7HYxUO7uizRPp0,6437
+ezstorage/tokenizer/__init__.py,sha256=_s11xqBXW4dn8dQtqSKa3x70vufhmz7BQxfRFrJM4rs,100
+ezstorage/tokenizer/token.py,sha256=JXocuO56rgZxAnH6uMnsQk8sdkbT34CEBSyRPyGwOLA,2536
+ezstorage/tokenizer/tokenizer.py,sha256=s6FdmMg5aY0LsNqF0mGwVC66qUFRBG9zBF43MSqh4KA,5712
+ezstorage/tokenizer/types.py,sha256=35KA-es9kd44R3hHqyPN5JLzkMrPFb9lMyv2OqwKs4o,684
+ezstorages-0.0.10.dist-info/LICENSE,sha256=etdNCc-mDQjJAykZwTdwNIFfMgYYOn9nQfZ7CfzmxYI,1070
+ezstorages-0.0.10.dist-info/METADATA,sha256=FgteYFQCUZuDWqxRwJY5EfLhaqAg-7x5A9rjNm-St9M,3104
+ezstorages-0.0.10.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+ezstorages-0.0.10.dist-info/top_level.txt,sha256=bLycYePSukgmzqeeBY35hU3U3tpZ7g3ib_7AxflciMI,10
+ezstorages-0.0.10.dist-info/RECORD,,
