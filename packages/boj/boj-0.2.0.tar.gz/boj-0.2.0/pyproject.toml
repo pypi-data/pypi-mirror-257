@@ -1,0 +1,36 @@
+[project]
+name = "boj"
+version = "0.2.0"
+authors = [{ name = "Hepheir", email = "hepheir@gmail.com" }]
+maintainers = [{ name = "Hepheir", email = "hepheir@gmail.com" }]
+description = "BOJ Offline Judge"
+license = { file = "LICENSE" }
+readme = { file = "README.md", content-type = "text/markdown" }
+requires-python = ">=3.7.9"
+keywords = ['boj']
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Natural Language :: Korean",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.7",
+    "Topic :: Utilities",
+    "Typing :: Typed",
+]
+dependencies = [
+    "beautifulsoup4>=4.12.3",
+    "requests>=2.31.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/Hepheir/BOJ-Offline-Judge"
+Repository = "https://github.com/Hepheir/BOJ-Offline-Judge"
+Issues = "https://github.com/Hepheir/BOJ-Offline-Judge/issues"
+Changelog = "https://github.com/hepheir/BOJ-Offline-Judge/blob/main/CHANGELOG.md"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
