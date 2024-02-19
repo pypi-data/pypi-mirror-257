@@ -1,0 +1,2 @@
+[console_scripts]
+ImgAlign = ImgAlign.ImgAlign:__main__
