@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: silvergram
+Version: 0.0.2
+Summary: A convenient shell for the aiogram library
+Home-page: https://github.com/SilverBullet-Technologies/silvergram
+Author: SilverBullet Technologies
+Author-email: tech.silver.bullet@gmail.com
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiogram>=3.4.1
+
+# silvergram
+A convenient shell for the aiogram library
