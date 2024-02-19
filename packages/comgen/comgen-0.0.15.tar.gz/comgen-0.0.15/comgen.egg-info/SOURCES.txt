@@ -1,0 +1,8 @@
+README.md
+setup.py
+comgen/__init__.py
+comgen.egg-info/PKG-INFO
+comgen.egg-info/SOURCES.txt
+comgen.egg-info/dependency_links.txt
+comgen.egg-info/requires.txt
+comgen.egg-info/top_level.txt
