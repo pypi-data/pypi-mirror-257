@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: rrprettier
+Version: 1.0.0
+Summary: My awesome Python project
+Author: RadoTheProgrammer
+Author-email: rado@arazakar.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12

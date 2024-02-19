@@ -1,0 +1,44 @@
+# [build-system]
+# requires=["setuptools >= 42"]
+# build-backend = "setuptools.build_meta"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+
+
+[tool.poetry]
+name = "rrprettier"
+version = "1.0.0"
+description = "My awesome Python project"
+authors = ["RadoTheProgrammer <rado@arazakar.com>"]
+#include = ["src/rrp"]
+# packages = [
+#     { include = "src"}
+# ] #the one that works well but literally create src/
+
+# packages = [
+#     { include = "arrow",from="src"}
+# ] #the one that works well but have to specify
+dependencies={python="^3.11"}
+
+# [tool.poetry.packages]
+# { include = ["src/*"] }
+# [tool.poetry.packages]
+# include = [{path = "src"}]
+#packages = [{ include = "src/rrp" }]
+#include = ["src/rrp"]
+#[tool.poetry.packages]
+# If you have other packages, include them here
+# packages = [{ include = "src" }]
+
+
+
+
+# [tool.poetry.dependencies]
+# python = "^3.11"
+
+
+
+
