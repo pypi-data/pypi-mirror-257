@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: aplot
+Version: 0.0.1
+Summary: Classical plots in one place.
+Home-page: https://github.com/kyrylo-gr/aplot
+Author: LKB-OMQ
+Author-email: cryo.paris.su@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+
+This utils to plots
