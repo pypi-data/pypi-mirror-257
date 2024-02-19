@@ -1,0 +1,3 @@
+[console_scripts]
+codegen=src.main:start
+
