@@ -1,0 +1,14 @@
+packaging_demo/__init__.py,sha256=6J0EgZPkdXwhipWn7eMhkIrhyb91epm_1n3nAdfXVYQ,18
+packaging_demo/colorized_demo.py,sha256=4EXJ_yCIGWRWTHlWkVZUjMcrDL_eHEVJOupookKcp18,120
+packaging_demo/my_file.py,sha256=FI-B0P7WQOjfg8vbUoiCzcNY4VqYO52iGjDtemCyQb0,226
+packaging_demo/my_other_file.py,sha256=cOgv9VvNGo2o22cdy3T9AzAZXLDA-yBDHC4Ya5JibRM,17
+packaging_demo/states_info.py,sha256=Yg7-H6WlgHlBYDJcEsc_Ke6-lgaYvfwRsWFjkQENMBI,678
+packaging_demo/my_folder/__init__.py,sha256=Bu289DNhZaJx5lJAJaZDnDyqMkb9B5bxFncieXB6UyU,6
+packaging_demo/my_folder/my_nested_file.py,sha256=aPOn5aGGFe5NsjIW460XhV-2d43beben1Ib_T_CiKuY,100
+packaging_demo/my_folder/sub_package/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+packaging_demo/my_folder/sub_package/some_deeply_nested_file.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+packaging_coursdemo-0.0.5.dist-info/LICENSE,sha256=Sz-a3eOGcPZcQh1uXlqvpbUHKoQkksBT0P5ztes5tf8,1072
+packaging_coursdemo-0.0.5.dist-info/METADATA,sha256=ajN6CtXNewk5S2ruq1mD5CE3KlQ0aEHLyRrim69iqH8,11989
+packaging_coursdemo-0.0.5.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+packaging_coursdemo-0.0.5.dist-info/top_level.txt,sha256=JQYuoHLSBUdWNZjDus5DYc3ohopasuGzDPZpph3ynKg,15
+packaging_coursdemo-0.0.5.dist-info/RECORD,,
