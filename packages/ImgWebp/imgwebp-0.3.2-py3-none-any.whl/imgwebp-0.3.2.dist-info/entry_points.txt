@@ -1,0 +1,3 @@
+[console_scripts]
+imgc=ImgWebp.console.application:main
+
