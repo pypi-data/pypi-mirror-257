@@ -1,0 +1,5 @@
+build
+dist
+foxysafe
+foxysafe_out
+static
