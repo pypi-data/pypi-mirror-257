@@ -1,0 +1,5 @@
+home/me/bash/temp*
+*.log
+.idea*
+__pycache__*
+venv*
