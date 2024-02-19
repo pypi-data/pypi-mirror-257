@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+src/EduRPA/Document.py
+src/EduRPA/HandwrittenOCR.py
+src/EduRPA/OpenCVAnnotationLibrary.py
+src/EduRPA/Validation.py
+src/EduRPA/__init__.py
+src/EduRPA/transform.py
+src/EduRPA.egg-info/PKG-INFO
+src/EduRPA.egg-info/SOURCES.txt
+src/EduRPA.egg-info/dependency_links.txt
+src/EduRPA.egg-info/requires.txt
+src/EduRPA.egg-info/top_level.txt
