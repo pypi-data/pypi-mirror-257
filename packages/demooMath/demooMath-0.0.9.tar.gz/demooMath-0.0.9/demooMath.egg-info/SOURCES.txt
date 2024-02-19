@@ -1,0 +1,9 @@
+setup.py
+deco/__init__.py
+deco/aa.py
+deco/math.py
+deco/p.py
+demooMath.egg-info/PKG-INFO
+demooMath.egg-info/SOURCES.txt
+demooMath.egg-info/dependency_links.txt
+demooMath.egg-info/top_level.txt
