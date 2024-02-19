@@ -1,0 +1,5 @@
+setup.py
+aio_http_proxy_support.egg-info/PKG-INFO
+aio_http_proxy_support.egg-info/SOURCES.txt
+aio_http_proxy_support.egg-info/dependency_links.txt
+aio_http_proxy_support.egg-info/top_level.txt
