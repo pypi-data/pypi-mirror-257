@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: datasette-unsafe-actor-debug
+Version: 0.1
+Summary: Debug plugin that lets you imitate any actor
+Author: Simon Willison
+License: Apache-2.0
+Project-URL: Homepage, https://github.com/datasette/datasette-unsafe-actor-debug
+Project-URL: Changelog, https://github.com/datasette/datasette-unsafe-actor-debug/releases
+Project-URL: Issues, https://github.com/datasette/datasette-unsafe-actor-debug/issues
+Project-URL: CI, https://github.com/datasette/datasette-unsafe-actor-debug/actions
+Classifier: Framework :: Datasette
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: datasette
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-asyncio ; extra == 'test'
+
+# datasette-unsafe-actor-debug
+
+[![PyPI](https://img.shields.io/pypi/v/datasette-unsafe-actor-debug.svg)](https://pypi.org/project/datasette-unsafe-actor-debug/)
+[![Changelog](https://img.shields.io/github/v/release/datasette/datasette-unsafe-actor-debug?include_prereleases&label=changelog)](https://github.com/datasette/datasette-unsafe-actor-debug/releases)
+[![Tests](https://github.com/datasette/datasette-unsafe-actor-debug/actions/workflows/test.yml/badge.svg)](https://github.com/datasette/datasette-unsafe-actor-debug/actions/workflows/test.yml)
+[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/datasette/datasette-unsafe-actor-debug/blob/main/LICENSE)
+
+Debug plugin that lets you imitate any actor. **Only use this for debugging purposes.**
+
+## Installation
+
+Install this plugin in the same environment as Datasette.
+```bash
+datasette install datasette-unsafe-actor-debug
+```
+## Usage
+
+This plugin adds a public page at `/-/unsafe-actor` that lets you sign into Datasette as _any_ actor.
+
+**Do not deploy this in production.**
+
+## Development
+
+To set up this plugin locally, first checkout the code. Then create a new virtual environment:
+```bash
+cd datasette-unsafe-actor-debug
+python3 -m venv venv
+source venv/bin/activate
+```
+Now install the dependencies and test dependencies:
+```bash
+pip install -e '.[test]'
+```
+To run the tests:
+```bash
+pytest
+```
