@@ -1,0 +1,10 @@
+galatasaray/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+galatasaray/__main__.py,sha256=vDdiEKE2UyivaFXskCpjQw8NFrTD9HBiu2vA6uMfxLI,126
+galatasaray/cli.py,sha256=8KekkZ8dfRhDhSOHIaAZ2V6bMf3BAiZS_pMHHmNbVUU,253
+galatasaray/scrapper.py,sha256=8rEuszbM4S3eJVZfyBotSlMRvNO6d7tfWCwg3P7vWlI,3509
+galatasaray/screen.py,sha256=BE8pUn3kAMB1onXCJqZ2-ZQRns92NgYkUvPysFyvMgI,6189
+galatasaray-0.1.6.dist-info/LICENSE.txt,sha256=u7UoX0m7Ygj_Dx9ve0i3XQCv_eLziyUbd-CICE9SqMY,1071
+galatasaray-0.1.6.dist-info/METADATA,sha256=1E7sae59S_tro0QCU5uNW2yRs2JXqpro23U8piKHkjI,1512
+galatasaray-0.1.6.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+galatasaray-0.1.6.dist-info/entry_points.txt,sha256=cFc4cPO46jBiwkHFv1AaxDdiCl_U-sQi0hfDF5xUN-c,107
+galatasaray-0.1.6.dist-info/RECORD,,
