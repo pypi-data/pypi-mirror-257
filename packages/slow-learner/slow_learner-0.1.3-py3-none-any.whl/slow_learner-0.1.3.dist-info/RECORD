@@ -1,0 +1,13 @@
+slow_learner/__init__.py,sha256=bz1qCrd9V4X9C43ICAOKxcgDQhJljgfl28ZU-AmlZlg,65
+slow_learner/cli.py,sha256=q5aNNxL60-FXgH0Lw_fYxveypQWD-dFlTyxMSuEUFdE,2549
+slow_learner/learnt_types.py,sha256=bU1Lkp_cYHtMhUuHeUwt1rFLhNGTIaqiUhcj0CJuRFc,2940
+slow_learner/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+slow_learner/subtyping.py,sha256=yXiDR2nKvKsAQXFsMpXpK_4jNVvgHxp04wDX_8Wb9xU,3137
+slow_learner/type_learner.py,sha256=t06d0qJZmbsbR--7mgYjSkR8skbdbjjixSFakDkvbB0,15205
+slow_learner/typedef_generation.py,sha256=V2Bl5d-zDC8yNQJakNAB32p-52URB1sKPWhCnX4pPa8,9879
+slow_learner/utils.py,sha256=Ly2ixloo5_HIwMYNTNvZ_o8MYif7bOuZQfl2DZlhI2k,1150
+slow_learner-0.1.3.dist-info/METADATA,sha256=EtJg5mIFo4_d4xb1bd8OwWrluLhgQLPjDoO7o0rs2fk,1817
+slow_learner-0.1.3.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+slow_learner-0.1.3.dist-info/entry_points.txt,sha256=kluYT31JMRxxac8kqwJUes8yp5VITASKYJIQLDjVm4M,54
+slow_learner-0.1.3.dist-info/licenses/LICENSE.txt,sha256=N0P3pKtRMvfb64jmgJdlerg3TnS0a2QC776AzPsbZIg,35128
+slow_learner-0.1.3.dist-info/RECORD,,

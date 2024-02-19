@@ -1,0 +1,2 @@
+[console_scripts]
+slow-learner = slow_learner.cli:cli
