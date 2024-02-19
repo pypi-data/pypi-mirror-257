@@ -1,0 +1,2 @@
+[console-scripts]
+say_hello = nester_secure1:say_hello
