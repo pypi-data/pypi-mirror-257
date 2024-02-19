@@ -1,0 +1,13 @@
+powerchord/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+powerchord/__main__.py,sha256=bYt9eEaoRQWdejEHFD8REx9jxVEdZptECFsV7F49Ink,30
+powerchord/cli.py,sha256=FlHOCSnjYHZpkb92-EzbPUHqfwHVitOLSGPWCNQ6Y9g,315
+powerchord/config.py,sha256=9gFunbNwVC8EUnWomncm4XwrHDb-KyK-r2Fj192lkOM,2997
+powerchord/formatting.py,sha256=iD-9p1xNWVF7sqKCjA7ArlXw3NykOwlnPqMEXn0EMHQ,1047
+powerchord/logging.py,sha256=yB_T5c1rlehRgs8383gK4wzljKRYtTyTEbInvG8RL_Y,1965
+powerchord/runner.py,sha256=wqVztDqtvgmV4bJd4bU-edc7mf-niWjMpKE-gXYp8AE,1461
+powerchord/utils.py,sha256=znNTZlepG3wP-_gogqgRzNvTvjhdatiU9SVXPQiyR48,2270
+powerchord-0.1.0.dist-info/LICENSE,sha256=AiLKFkKmi1rRDFhGw_dyTjCRoIHYZ7S8Wr--WRIKFDg,1071
+powerchord-0.1.0.dist-info/METADATA,sha256=y__pxFz_7rW3l_scxrYQhaPXJBcY5TZC3O7ggcDgabQ,1709
+powerchord-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+powerchord-0.1.0.dist-info/entry_points.txt,sha256=YQhjlTWF6JPc7oXThruwcFJoY51g4uCqdXfHWLxg7_I,50
+powerchord-0.1.0.dist-info/RECORD,,
