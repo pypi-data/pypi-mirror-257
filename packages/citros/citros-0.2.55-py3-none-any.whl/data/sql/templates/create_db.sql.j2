@@ -1,0 +1,99 @@
+-- ENV
+-- {{ USER_NAME }}
+-- {{ USER_PASSWORD }}
+-- {{ ORGANIZATION_NAME }}
+
+DO
+$do$
+BEGIN
+   IF EXISTS (
+      SELECT FROM pg_catalog.pg_roles
+      WHERE rolname = 'role_org_{{ ORGANIZATION_NAME }}') THEN
+
+      RAISE NOTICE 'Role "role_org_{{ ORGANIZATION_NAME }}" already exists. Skipping.';
+   ELSE
+      BEGIN   -- nested block
+         BEGIN
+            CREATE ROLE "role_org_{{ ORGANIZATION_NAME }}";
+         EXCEPTION
+            WHEN duplicate_object THEN
+               RAISE NOTICE 'Role "role_org_{{ ORGANIZATION_NAME }}" was just created by a concurrent transaction. Skipping.';
+         END;
+      END;
+   END IF;
+END
+$do$;
+
+
+DO
+$do$
+BEGIN
+   IF EXISTS (
+      SELECT FROM pg_catalog.pg_roles
+      WHERE rolname = '{{ USER_NAME }}') THEN
+
+      RAISE NOTICE 'Role "{{ USER_NAME }}" already exists. Skipping.';
+   ELSE
+      BEGIN   -- nested block
+         BEGIN
+            CREATE ROLE "{{ USER_NAME }}" LOGIN PASSWORD '{{ USER_PASSWORD }}';
+         EXCEPTION
+            WHEN duplicate_object THEN
+               RAISE NOTICE 'Role "{{ USER_NAME }}" was just created by a concurrent transaction. Skipping.';
+         END;
+      END;
+   END IF;
+END
+$do$;
+
+CREATE OR REPLACE FUNCTION public.drop_all () 
+   RETURNS VOID  AS
+   $$
+   DECLARE rec RECORD; 
+   BEGIN
+       -- Get all the schemas
+        FOR rec IN
+        SELECT nspname FROM pg_catalog.pg_namespace WHERE (nspname NOT LIKE 'pg_%') and (nspname != 'information_schema') and (nspname NOT LIKE 'public')
+           LOOP             
+             EXECUTE format('DROP SCHEMA "%s" CASCADE', rec.nspname);
+           END LOOP; 
+           RETURN; 
+   END;
+   $$ LANGUAGE plpgsql;
+
+GRANT EXECUTE ON FUNCTION public.drop_all() TO role_org_{{ ORGANIZATION_NAME }};
+
+
+GRANT role_org_{{ ORGANIZATION_NAME }} to {{ USER_NAME }};
+
+-- Info 
+CREATE OR REPLACE VIEW db_info as
+SELECT nspname AS "schema",
+    pg_class.relname AS "table",
+    pg_size_pretty(pg_total_relation_size(pg_class.oid)) AS "total_size",
+    pg_size_pretty(pg_relation_size(pg_class.oid)) AS "data_size",
+    pg_size_pretty(pg_indexes_size(pg_class.oid)) AS "index_size",
+    pg_stat_user_tables.n_live_tup AS "rows",
+    pg_size_pretty(
+        pg_total_relation_size(pg_class.oid) / (pg_stat_user_tables.n_live_tup + 1)
+    ) AS "total_row_size",
+    pg_size_pretty(
+        pg_relation_size(pg_class.oid) / (pg_stat_user_tables.n_live_tup + 1)
+    ) AS "row_size"
+FROM pg_stat_user_tables
+    JOIN pg_class ON pg_stat_user_tables.relid = pg_class.oid
+    JOIN pg_catalog.pg_namespace AS ns ON pg_class.relnamespace = ns.oid -- WHERE
+    --   nspname = 'public'
+ORDER BY pg_total_relation_size(pg_class.oid) DESC;
+
+-- Hot reload table 
+create table IF NOT EXISTS public.hot_reload (
+    simulation varchar not null,
+    batch varchar not null,
+    version varchar not null,
+    status varchar default 'PENDING',
+    updated_at timestamp with time zone default now(),
+    PRIMARY KEY(simulation, batch)
+);
+
+GRANT ALL ON public.hot_reload TO role_org_{{ ORGANIZATION_NAME }};
