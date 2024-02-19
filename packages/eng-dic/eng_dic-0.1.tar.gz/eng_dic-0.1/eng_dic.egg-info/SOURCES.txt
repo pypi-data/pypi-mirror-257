@@ -1,0 +1,9 @@
+setup.py
+eng_dic/__init__.py
+eng_dic/main.py
+eng_dic.egg-info/PKG-INFO
+eng_dic.egg-info/SOURCES.txt
+eng_dic.egg-info/dependency_links.txt
+eng_dic.egg-info/entry_points.txt
+eng_dic.egg-info/requires.txt
+eng_dic.egg-info/top_level.txt
