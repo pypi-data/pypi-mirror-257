@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+numix/numix.egg-info/PKG-INFO
+numix/numix.egg-info/SOURCES.txt
+numix/numix.egg-info/dependency_links.txt
+numix/numix.egg-info/top_level.txt
