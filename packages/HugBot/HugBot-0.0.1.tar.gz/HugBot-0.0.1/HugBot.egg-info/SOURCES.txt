@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+HugBot.egg-info/PKG-INFO
+HugBot.egg-info/SOURCES.txt
+HugBot.egg-info/dependency_links.txt
+HugBot.egg-info/requires.txt
+HugBot.egg-info/top_level.txt
+hugbot/__init__.py
+hugbot/main.py
+hugbot/navigator.py
+hugbot/utils.py
+tests/__init__.py
+tests/test_hugbot.py
