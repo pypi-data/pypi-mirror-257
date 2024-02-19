@@ -1,0 +1,3 @@
+[flitz]
+flitz_compress=flitz_compress:context_menu_item
+
