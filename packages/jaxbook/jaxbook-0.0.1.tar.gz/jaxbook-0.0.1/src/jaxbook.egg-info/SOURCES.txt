@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+src/jaxbook.egg-info/PKG-INFO
+src/jaxbook.egg-info/SOURCES.txt
+src/jaxbook.egg-info/dependency_links.txt
+src/jaxbook.egg-info/not-zip-safe
+src/jaxbook.egg-info/requires.txt
+src/jaxbook.egg-info/top_level.txt

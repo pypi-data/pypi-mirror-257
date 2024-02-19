@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: jaxbook
+Version: 0.0.1
+Summary: Iterative algorithms for numerical linear algebra with JAX
+Home-page: https://github.com/shailesh1729/jaxbook
+Download-URL: https://github.com/shailesh1729/jaxbook/archive/v0.0.1.tar.gz
+Author: Shailesh Kumar
+Author-email: shailesh@indigits.com
+License: Apache 2.0: http://www.apache.org/licenses/LICENSE-2.0
+Project-URL: Issue Tracker, https://github.com/shailesh1729/jaxbook/issues
+Keywords: Linear Algebra,Machine Learning,Deep Learning,JAX
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Multimedia
+Classifier: Topic :: Multimedia :: Video
+Classifier: Topic :: Scientific/Engineering :: Image Processing
+Classifier: Topic :: Scientific/Engineering :: Image Recognition
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Provides-Extra: test
+License-File: LICENSE
+
+# jaxbook
+Code for a book on Google JAX
+
+
