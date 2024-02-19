@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+julia_custom_area_calculator_dci/src/julia_custom_area_calculator_dci.py
+julia_custom_area_calculator_dci/src/julia_custom_area_calculator_dci.egg-info/PKG-INFO
+julia_custom_area_calculator_dci/src/julia_custom_area_calculator_dci.egg-info/SOURCES.txt
+julia_custom_area_calculator_dci/src/julia_custom_area_calculator_dci.egg-info/dependency_links.txt
+julia_custom_area_calculator_dci/src/julia_custom_area_calculator_dci.egg-info/top_level.txt

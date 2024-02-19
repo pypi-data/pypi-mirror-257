@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: julia_custom_area_calculator_dci
+Version: 0.0.1
+Summary: Calculate areas of geometrical figures
+Author: Julia Shcherbyna
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# my_custom_calculator_example_e08_julia
