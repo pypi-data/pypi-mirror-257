@@ -1,0 +1,85 @@
+[project]
+name = "rst-multi-refs"
+description = "reStrucuturedText's custom roles and role builder kit for package registries of any languages."
+authors = [
+    { name = "Kazuya Takei", email = "myself@attakei.net" }
+]
+dependencies = [
+    "docutils",
+]
+readme = "README.rst"
+requires-python = ">= 3.9"
+license = {file = "LICENSE"}
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Framework :: Sphinx",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Documentation :: Sphinx",
+    "Topic :: Software Development",
+    "Topic :: Software Development :: Documentation",
+    "Topic :: Text Processing :: Markup :: reStructuredText",
+]
+dynamic = ["version"]
+
+[project.optional-dependencies]
+sphinx = [
+    "sphinx",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.rye]
+managed = true
+dev-dependencies = [
+    "pytest~=8.0.1",
+]
+
+[tool.rye.scripts]
+setup = {chain = ["setup:sync", "setup:pre-commit"]}
+"setup:sync" = "rye sync --no-lock --all-features"
+"setup:pre-commit" = "pre-commit install"
+
+[tool.ruff.lint]
+select = ["C90", "D", "E", "F", "I", "W"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "pep257"
+
+[tool.bumpversion]
+current_version = "0.0.0"
+commit = true
+tag = false
+message = "release: Bump version {current_version} -> {new_version}"
+
+[[tool.bumpversion.files]]
+filename = "pyproject.toml"
+search = "version = \"{current_version}\""
+replace = "version = \"{new_version}\""
+
+[[tool.bumpversion.files]]
+filename = "src/rst_multi_refs/__init__.py"
+search = "__version__ = \"{current_version}\""
+replace = "__version__ = \"{new_version}\""
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/rst_multi_refs"]
+
+[tool.hatch.version]
+path = "src/rst_multi_refs/__init__.py"
