@@ -1,0 +1,9 @@
+cdklabs/cdk_appflow/__init__.py,sha256=EUxT26UYyHIr0avBM6plfpA_YOlYjbOf8MIo8G_bATo,715193
+cdklabs/cdk_appflow/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+cdklabs/cdk_appflow/_jsii/__init__.py,sha256=asccEm9aQHK-YDRgpfCOWERj3TK7vuq33pOl9L1c9Yc,476
+cdklabs/cdk_appflow/_jsii/cdk-appflow@0.0.31.jsii.tgz,sha256=j1__P41vbVXGeMfmOxFH3hOf1wokjf6idJ1v2zrlNTc,264931
+cdklabs.cdk_appflow-0.0.31.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+cdklabs.cdk_appflow-0.0.31.dist-info/METADATA,sha256=FZoB10tL5MrNtAAh2tvXR3dDqbMu10SJ3gOqu-9m9cw,11021
+cdklabs.cdk_appflow-0.0.31.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+cdklabs.cdk_appflow-0.0.31.dist-info/top_level.txt,sha256=Vs44V5-Co6j_Qx_ucqQGxTOZFFDDj84KkvQ3MpexszY,8
+cdklabs.cdk_appflow-0.0.31.dist-info/RECORD,,
