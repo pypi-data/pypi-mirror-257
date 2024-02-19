@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+packaging_coursdemo.egg-info/PKG-INFO
+packaging_coursdemo.egg-info/SOURCES.txt
+packaging_coursdemo.egg-info/dependency_links.txt
+packaging_coursdemo.egg-info/requires.txt
+packaging_coursdemo.egg-info/top_level.txt
+packaging_demo/__init__.py
+packaging_demo/colorized_demo.py
+packaging_demo/my_file.py
+packaging_demo/my_other_file.py
+packaging_demo/states_info.py
+packaging_demo/my_folder/__init__.py
+packaging_demo/my_folder/my_nested_file.py
+packaging_demo/my_folder/sub_package/__init__.py
+packaging_demo/my_folder/sub_package/some_deeply_nested_file.py
