@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+iamstew_excel_parser/__init__.py
+iamstew_excel_parser/xls_parser.py
+iamstew_excel_parser/xlsx_parser.py
+iamstew_excel_parser.egg-info/PKG-INFO
+iamstew_excel_parser.egg-info/SOURCES.txt
+iamstew_excel_parser.egg-info/dependency_links.txt
+iamstew_excel_parser.egg-info/requires.txt
+iamstew_excel_parser.egg-info/top_level.txt
