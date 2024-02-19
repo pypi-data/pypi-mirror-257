@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "unbabel-cli"
+version = "0.1.2"
+description = "unbabel cli for application"
+authors = ["Victor Carrillo <31296860+VictorCarrDev@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.scripts]
+unbabel-victor-cli = "unbabel_cli.main:app"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+typer = {extras = ["all"], version = "^0.9.0"}
+pytest = "^8.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
