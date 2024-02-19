@@ -1,0 +1,15 @@
+openai
+tenacity
+python-dateutil
+python-dotenv
+rich
+requests
+tiktoken
+lxml
+
+[dev]
+black
+pytest
+build
+twine
+nox
