@@ -1,0 +1,3 @@
+[console_scripts]
+byoa=byoa.cli:main
+
