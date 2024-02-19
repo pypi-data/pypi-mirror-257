@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: pih-med_auto
+Version: 1.12
+Summary: PIH Medical Automation service package
+Home-page: https://pacifichosp.com/
+Author: Nikita Karachentsev
+Author-email: it@pacifichosp.com
+License: MIT
+Description-Content-Type: text/markdown
