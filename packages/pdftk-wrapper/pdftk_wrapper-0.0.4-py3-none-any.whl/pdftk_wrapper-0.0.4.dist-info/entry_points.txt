@@ -1,0 +1,2 @@
+[console_scripts]
+pdftk-remove-pages = pdftk_remove_pages.main:main

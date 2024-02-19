@@ -1,0 +1,11 @@
+pdftk_remove_pages/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pdftk_remove_pages/main.py,sha256=yoyND_biSM2JqrGlairg5N5SXUlicBUJXqf-kpi-ens,5468
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/pdftk_remove_pages/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/pdftk_remove_pages/test_main.py,sha256=xkuEygjfqdTDz1E_IHv63Y-a2Shis961yxq6qfuLzIY,6631
+pdftk_wrapper-0.0.4.dist-info/LICENSE,sha256=P3H42bye8_ybswEqw5ieFdv9F9PEjkY1OJus-rw5IgA,1074
+pdftk_wrapper-0.0.4.dist-info/METADATA,sha256=gxWiThAEedJeYnPBgbADtLkCC1BddMZkx-iVf49LuZc,1314
+pdftk_wrapper-0.0.4.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+pdftk_wrapper-0.0.4.dist-info/entry_points.txt,sha256=0xJsNDzjSxoMr8kpAcQFr5nBSEwbX8P3-NmUP2qIDb8,68
+pdftk_wrapper-0.0.4.dist-info/top_level.txt,sha256=fbsRIyKaOcK7rlf96DNJaIU-kVjvcCCBVk-bRkJH7uI,25
+pdftk_wrapper-0.0.4.dist-info/RECORD,,
