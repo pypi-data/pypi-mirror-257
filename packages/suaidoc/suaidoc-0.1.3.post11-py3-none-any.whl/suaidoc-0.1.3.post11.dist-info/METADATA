@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: suaidoc
+Version: 0.1.3.post11
+Requires-Dist: click
+Requires-Dist: pdfkit
+Requires-Dist: python-frontmatter
+
