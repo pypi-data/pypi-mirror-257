@@ -1,0 +1,10 @@
+fake_traffic/__init__.py,sha256=5vuz8hoteofaeIGKRcOR_pfr9LyrwxGJbhby1Kpal9s,270
+fake_traffic/cli.py,sha256=1T69f4xZHdsWGJUVgqvf2HzmNu3riaWzvEpNFDehX-w,2019
+fake_traffic/fake_traffic.py,sha256=ey71FmLZxRHMQk2Y4bEAXkhBzdHdaAzfm7I25x3QQyE,4354
+fake_traffic/version.py,sha256=5VFOC9N5P61WNNAC14BfsqZmQ2X-yL6b-UnG_oixpYM,21
+fake_traffic-2.1.0.dist-info/LICENSE,sha256=Cc7NBh_Q-BurCa-lL4c6s_FG4Z5P7CHJldeJYje_9H0,1063
+fake_traffic-2.1.0.dist-info/METADATA,sha256=YPvupsSws2g53hrCRf4lxDsBr0Kmf1WGcKpz4mrD0pY,4819
+fake_traffic-2.1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+fake_traffic-2.1.0.dist-info/entry_points.txt,sha256=bnNoe6FqzL_r8QX1zFVMhTOsLmJaHsWfKk-ps_RxhsY,63
+fake_traffic-2.1.0.dist-info/top_level.txt,sha256=OkdEBnhIRzpu_9UnbXkFLIFvN92yHLGZInKqjFBDOAg,13
+fake_traffic-2.1.0.dist-info/RECORD,,
