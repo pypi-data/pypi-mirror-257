@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: flitz-compress
+Version: 0.0.2
+Summary: Add a context menu element
+Author-email: Martin Thoma <info@martin-thoma.de>
+Maintainer-email: Martin Thoma <info@martin-thoma.de>
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Typing :: Typed
+Requires-Dist: flitz
+
+# flitz-compress
+
+`flitz-compress` is a simple zip-compression plugin for the
+[flitz file manager](https://pypi.org/project/flitz/).
+
+## Installation
+
+```bash
+pip install flitz-compress
+```
+
+## Usage
+
+As soon as it's integrated, the plugin is automatically detected by flitz.
+Then the context menu item `COMPRESS` becomes available which can be used in the
+flitz settings `~/.flitz.yml`:
+
+```
+context_menu:
+- CREATE_FOLDER
+- CREATE_FILE
+- RENAME
+- COMPRESS
+- PROPERTIES
+```
+
