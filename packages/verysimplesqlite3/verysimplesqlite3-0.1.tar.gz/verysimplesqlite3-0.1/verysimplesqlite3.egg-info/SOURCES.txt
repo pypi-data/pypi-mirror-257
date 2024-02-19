@@ -1,0 +1,6 @@
+setup.cfg
+setup.py
+verysimplesqlite3.egg-info/PKG-INFO
+verysimplesqlite3.egg-info/SOURCES.txt
+verysimplesqlite3.egg-info/dependency_links.txt
+verysimplesqlite3.egg-info/top_level.txt
