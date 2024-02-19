@@ -1,0 +1,4 @@
+pandas
+numpy
+pyarrow
+cassandra-driver==3.29.0
