@@ -1,0 +1,80 @@
+{% extends 'allianceauth/base.html' %}
+
+{% block page_title %}Alliance Contacts{% endblock page_title %}
+
+{% block extra_css %}
+    {% include "bundles/datatables-css.html" %}
+{% endblock %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-12">
+            <h1 class="page-header text-center">{{ alliance.alliance_name }} Contacts</h1>
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title text-center">Info</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="flex-center-horizontal">
+                        <ul class="list-group list-group-horizontal" style="margin-bottom: 0;">
+                            <li class="list-group-item text-center">
+                                <p>Last update</p>
+                                {% if token is None %}
+                                    <p>No token present</p>
+                                {% else %}
+                                    <p>{{ token.last_update|date:"d/m/Y G:i e" }}</p>
+                                {% endif %}
+                            </li>
+                            <li class="list-group-item text-center">
+                                {% if token is None %}
+                                    <a class="btn btn-primary" href="{% url "aa_contacts:add_token" %}">Add token</a>
+                                {% else %}
+                                    <a class="btn btn-primary" href="{% url "aa_contacts:update_alliance" %}">Update</a>
+                                {% endif %}
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12" style="padding: 10px 10px 10px 10px">
+            <table class="table table-aa">
+                <thead>
+                    <tr>
+                        <th>Contact</th>
+                        <th>Contact Type</th>
+                        <th>Labels</th>
+                        <th>Standing</th>
+                        <th>Notes</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    {% for contact in contacts %}
+                        <tr>
+                            <td>
+                                <img src="{{ contact.image_src }}" class="img-circle" style="margin-right: 1rem;">
+                                {{ contact.contact_name }}
+                            </td>
+                            <td>{{ contact.contact_type }}</td>
+                            <td>{% for label in contact.labels.all %}{{ label.label_name }}, {% endfor %}</td>
+                            <td>{{ contact.standing }}</td>
+                            <td>{{ contact.notes }}</td>
+                        </tr>
+                    {% endfor %}
+            </table>
+        </div>
+    </div>
+{% endblock content %}
+
+{% block extra_javascript %}
+    {% include "bundles/datatables-js.html" %}
+{% endblock extra_javascript %}
+
+{% block extra_script %}
+    $(document).ready(function() {
+        $('.table').DataTable({
+            "pageLength": 50
+        });
+    });
+{% endblock extra_script %}
