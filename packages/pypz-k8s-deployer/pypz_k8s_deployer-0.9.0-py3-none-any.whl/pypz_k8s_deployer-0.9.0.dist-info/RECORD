@@ -1,0 +1,6 @@
+pypz/deployers/k8s.py,sha256=56zqB2g8kyoBlgXKtme60q5QHg-P3e1O4hp_cuR9dyY,22155
+pypz_k8s_deployer-0.9.0.dist-info/LICENSE,sha256=WNHhf_5RCaeuKWyq_K39vmp9F28LxKsB4SpomwSZ2L0,11357
+pypz_k8s_deployer-0.9.0.dist-info/METADATA,sha256=IwelP65UAkME5Opa1CcRUTUuLMEBuL5EWlk7yyg3AsU,2545
+pypz_k8s_deployer-0.9.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+pypz_k8s_deployer-0.9.0.dist-info/top_level.txt,sha256=mv8iAyQBK2h99c_wL1IvRogw1BLfLvk5smfZtgOnvw4,5
+pypz_k8s_deployer-0.9.0.dist-info/RECORD,,
