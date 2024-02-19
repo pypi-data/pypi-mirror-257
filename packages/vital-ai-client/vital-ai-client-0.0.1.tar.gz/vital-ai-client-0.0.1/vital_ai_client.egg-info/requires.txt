@@ -1,0 +1,3 @@
+vital-ai-vitalsigns
+vital-ai-domain
+vital-ai-aimp
