@@ -1,0 +1,118 @@
+Metadata-Version: 2.1
+Name: travertine
+Version: 0.42.0a3
+Requires-Dist: xotless >=4.0.0a3
+Requires-Dist: ply
+Requires-Dist: immutables
+Requires-Dist: xotl.tools >=3.0.0a3
+Requires-Dist: babel >=2.6.0, <3
+Requires-Dist: importlib-resources ~=6.1.1 ; python_version < '3.9'
+Requires-Dist: hypothesis ==6.50.1 ; extra == 'test'
+Requires-Dist: pytest >=7.4.4 ; extra == 'test'
+Requires-Dist: coverage ~=6.3.2 ; extra == 'test'
+Requires-Dist: pytz >=2024.1 ; extra == 'test'
+Provides-Extra: test
+License-File: LICENSE
+Summary: Add your description here
+Author: Manuel Vázquez Acosta <manuel@merchise.org>, Merchise Autrement [~º/~] and Contributors
+Author-email: Manuel Vázquez Acosta <mvaled@pm.me>
+License: MIT
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst; charset=UTF-8
+
+=================================================
+ Generating pricing tables from pricing programs
+=================================================
+
+Travertine tries to solve the problem of generating price tables fast enough
+for our xhg2 project.  This Rust runtime **is not a replacement** of the
+Python runtime because there are still types of procedures which are not
+implemented in Rust.
+
+The success or failure of this version may encourage us to complete the
+runtime.
+
+.. note:: As of 2020-12-29 we have successfully deployed Travertine and found
+          it works real nice.  It is a lot faster than our previous
+          Python-only algorithm.
+
+
+The problem generating price tables
+===================================
+
+The first algorithm (implemented in Python) can be summarized as follows:
+
+1. Compute the AVM for the whole program.  The AVM can be viewed as a mapping
+   from attributes to a list of values which indicate a possible price
+   variation.
+
+2. Generate all possible demands from the AVM.
+
+3. Compute the price for each demand and report both the demand (so that you
+   get the attributes and their values) and the price.
+
+The AVM is completely computed by looking at the procedures in the program.
+No outside information is needed to compute it.  The generated demands are
+always *unitary*; and, since they are derived from the AMV, they are
+completely determined by the procedures as well.
+
+This makes the problem of generating price tables specially suitable to be
+tackled efficiently in Rust.
+
+Strategies
+----------
+
+As far as we know, the performance bottleneck is the 3rd step: computing the
+prices of several hundreds (some times more) demands, but for pricing programs
+involving a few thousand procedures.
+
+We have two possible strategies for this problem:
+
+1. Keep generating the demands (and the AVM, of course) in Python; and pass
+   them in *bulk* to Rust to perform the heavy computation there.
+
+   We discuss this strategy in `Generating the Demands in Python and computing
+   prices in Rust`_.
+
+2. Compute the demands and prices in Rust.  This strategy is discussed in
+   `Generating the whole stuff in Rust`_.
+
+No matter the strategy we must pass the *pricing program* to Rust.  Our
+first problem is to convert our Python-side Procedure program to the Rust
+side.
+
+
+Creating a Rust-side version of the Pricing Program
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The main structure of the Rust runtime is the Virtual Machine.  The virtual
+machine is designed to be populated incrementally but it requires that
+procedures are added following a "dependencies-first" order.
+
+The Python extension provides a class ``Program`` and a function
+``create_program`` so that we can create the VM and populate it.  Each program
+has a separate instance of a VM.
+
+
+Generating the Demands in Python and computing prices in Rust
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Rust is all about lifetimes, ownership and the like.  There will be some
+overhead by *copy* data from Python to Rust unless we can simply keep
+references.
+
+This was the strategy implemented (up to version 0.8.0) and it's much faster
+than doing the whole thing in Python.  While performing some experiments we
+used `py-spy`_ to take a peek at the performance bottlenecks, we observed that
+Python spends too much time doing ``__hash__``.  The impact of this was major.
+
+
+Generating the whole stuff in Rust
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Once we paid the price of translating the Python-side procedures to a Rust
+Program, we could simply implement the whole algorithm in Rust.
+
+
+.. _py-spy: https://pypi.org/project/py-spy/
+
