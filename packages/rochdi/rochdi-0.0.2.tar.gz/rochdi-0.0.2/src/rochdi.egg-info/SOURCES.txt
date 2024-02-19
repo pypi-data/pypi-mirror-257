@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/rochdi/__init__.py
+src/rochdi/basher.py
+src/rochdi/pipmake.py
+src/rochdi/test.py
+src/rochdi.egg-info/PKG-INFO
+src/rochdi.egg-info/SOURCES.txt
+src/rochdi.egg-info/dependency_links.txt
+src/rochdi.egg-info/top_level.txt
