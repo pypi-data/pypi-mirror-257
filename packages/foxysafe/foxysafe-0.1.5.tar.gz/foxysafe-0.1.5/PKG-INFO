@@ -1,0 +1,77 @@
+Metadata-Version: 2.1
+Name: foxysafe
+Version: 0.1.5
+Summary: GitLab backup tool.
+License: MIT
+Project-URL: Homepage, https://github.com/Pythoniasm/foxysafe
+Requires-Python: >=3.12.1
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: beartype==0.14.1
+Requires-Dist: GitPython==3.1.41
+Requires-Dist: hydra-core==1.3.2
+Requires-Dist: loguru==0.7.0
+Requires-Dist: pyshortcuts==1.9.0
+Requires-Dist: python-dotenv==1.0.0
+Requires-Dist: python-gitlab==3.15.0
+Requires-Dist: rich==13.4.1
+Requires-Dist: selenium==4.17.2
+Requires-Dist: tqdm==4.56.0
+Requires-Dist: webdriver-manager==4.0.1
+Provides-Extra: dev
+Requires-Dist: black==24.2.0; extra == "dev"
+Requires-Dist: build==1.0.3; extra == "dev"
+Requires-Dist: isort==5.13.2; extra == "dev"
+Requires-Dist: pipdeptree==2.7.1; extra == "dev"
+Requires-Dist: ruff==0.2.2; extra == "dev"
+Requires-Dist: twine==4.0.2; extra == "dev"
+
+# FoxySafe
+
+[![PyPI Version](https://img.shields.io/pypi/v/foxysafe?color=blue)](https://pypi.org/project/foxysafe)
+[![GitHub Tag](https://img.shields.io/github/v/tag/Pythoniasm/foxysafe?label=GitHub&color=black)](https://github.com/Pythoniasm/foxysafe)
+
+GitLab backup tool for repositories, issues, wikis, and snippets.
+
+## Table of Contents
+- [FoxySafe](#foxysafe)
+  - [Table of Contents](#table-of-contents)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Contribute](#contribute)
+    - [Development Installation](#development-installation)
+
+## Install
+
+```console
+pip install -e foxysafe
+```
+
+## Usage
+
+- Copy the `default_config.yaml` to a custom `config.yaml` and adjust the settings to your needs.
+- Copy the `.env.example` to `.env` and adjust the settings to your needs.
+
+If you have cloned the repository and want to run the package from the source directory and the `default_config.yaml` file:
+```console
+foxysafe
+```
+
+If you have cloned the repository and want to run the package from with a path to a custom config `PATH_TO/config.yaml`:
+```console
+foxysafe --config-name PATH_TO_CONFIG.yaml
+```
+
+## Contribute
+
+### Development Installation
+
+```console
+python -m pip install -e ".[dev]"
+```
+
+Further, you can use Makefile to run linting:
+
+```console
+make lint
+```
