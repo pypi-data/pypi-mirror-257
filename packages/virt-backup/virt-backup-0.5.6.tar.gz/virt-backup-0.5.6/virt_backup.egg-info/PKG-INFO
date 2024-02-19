@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: virt-backup
+Version: 0.5.6
+Summary: Automatic backups for libvirt
+Home-page: https://github.com/Anthony25/virt-backup
+Author: Anthony25 <Anthony Ruhier>
+Author-email: anthony.ruhier@gmail.com
+License: Simplified BSD
+Keywords: libvirt
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: BSD License
+License-File: LICENSE.mkd
+Requires-Dist: appdirs
+Requires-Dist: arrow
+Requires-Dist: libvirt-python
+Requires-Dist: lxml
+Requires-Dist: packaging
+Requires-Dist: PyYAML
+Provides-Extra: zstd
+Requires-Dist: zstandard; extra == "zstd"

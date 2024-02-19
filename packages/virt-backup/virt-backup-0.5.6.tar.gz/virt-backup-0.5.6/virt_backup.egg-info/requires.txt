@@ -1,0 +1,9 @@
+appdirs
+arrow
+libvirt-python
+lxml
+packaging
+PyYAML
+
+[zstd]
+zstandard

@@ -1,0 +1,31 @@
+language: python
+
+matrix:
+  include:
+    - python: 3.11-dev
+      env: TOXENV=black
+    - python: 3.11-dev
+      env: TOXENV=coveralls
+    - python: 3.9-dev
+      env: TOXENV=full
+    - python: 3.9-dev
+      env: TOXENV=min
+    - python: 3.10-dev
+      env: TOXENV=full
+    - python: 3.10-dev
+      env: TOXENV=min
+    - python: 3.11-dev
+      env: TOXENV=full
+    - python: 3.11-dev
+      env: TOXENV=min
+
+before_install:
+  - sudo apt-get -qq update
+  - sudo apt-get install -y libvirt-dev
+
+install:
+  - pip install -U --force-reinstall setuptools
+  - pip install -U tox
+
+script:
+  - tox
