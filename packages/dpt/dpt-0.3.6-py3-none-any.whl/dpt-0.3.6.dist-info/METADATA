@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: dpt
+Version: 0.3.6
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: DF
+Author-email: your_email@example.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: GitPython >=3.1.41
+Requires-Dist: pymongo >=4.6.1
+Requires-Dist: jsonschema >=4.6.0
+Requires-Dist: pydantic ==2.5.3
+Requires-Dist: uvicorn ==0.27.0
+Requires-Dist: fastapi ==0.109.0
+Requires-Dist: pyparsing ==3.1.1
+Requires-Dist: requests ==2.31.0
+
+UNKNOWN
+
