@@ -1,0 +1,2 @@
+[console_scripts]
+clean-dotenv = clean_dotenv:main
