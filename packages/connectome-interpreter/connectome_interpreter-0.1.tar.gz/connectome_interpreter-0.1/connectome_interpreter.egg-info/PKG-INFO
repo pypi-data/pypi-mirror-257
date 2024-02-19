@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: connectome-interpreter
+Version: 0.1
+Summary: A tool for connectomics data interpretation
+Home-page: http://example.com/MyPackage
+Author: Yijie Yin
+Author-email: yy432@cam.ac.uk
+Keywords: connectomics,neural network,mechanistic interpretability
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: torch
+Requires-Dist: tqdm
