@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+chat_ai_client/__init__.py
+chat_ai_client.egg-info/PKG-INFO
+chat_ai_client.egg-info/SOURCES.txt
+chat_ai_client.egg-info/dependency_links.txt
+chat_ai_client.egg-info/requires.txt
+chat_ai_client.egg-info/top_level.txt
