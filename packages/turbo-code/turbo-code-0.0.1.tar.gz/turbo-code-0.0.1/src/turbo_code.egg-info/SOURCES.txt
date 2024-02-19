@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/main.cpp
+src/slow_package/__init__.py
+src/slow_package/slow_functions.py
+src/turbo_code.egg-info/PKG-INFO
+src/turbo_code.egg-info/SOURCES.txt
+src/turbo_code.egg-info/dependency_links.txt
+src/turbo_code.egg-info/not-zip-safe
+src/turbo_code.egg-info/requires.txt
+src/turbo_code.egg-info/top_level.txt
+tests/test_example.py

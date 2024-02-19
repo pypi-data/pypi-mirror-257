@@ -1,0 +1,13 @@
+numpy
+
+[dev]
+pip-tools
+pytest
+pytest-cov
+tox
+twine
+sphinx
+furo
+
+[test]
+pytest

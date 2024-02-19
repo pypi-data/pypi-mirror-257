@@ -1,0 +1,47 @@
+[project]
+name = "turbo-code"
+version = "0.0.1"
+description = ""
+readme = "README.md"
+authors = [{ name = "Alexander Nasuta", email = "alexander.nasuta@ima.rwth-aachen.de" }]
+license = { file = "LICENSE" }
+requires-python = ">=3.11"
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "numpy",
+]
+[project.optional-dependencies]
+dev = [
+    "pip-tools",
+    "pytest",
+    "pytest-cov",
+    "tox",
+    "twine",
+    "sphinx",
+    "furo",
+]
+
+
+[build-system]
+requires = [
+    "setuptools>=65.5.0",
+    "wheel",
+    "pybind11>=2.5.0"
+]
+build-backend = "setuptools.build_meta"
+
+[tool.pybind11]
+include_dirs = ["include"]
+
+
+[tool.pytest.ini_options]
+# note that turbo_package is not to be measured / included in the coverage report
+# as it is a C++ extension
+addopts = "--cov=slow_package -p no:warnings"
+testpaths = [
+    "tests"
+]
