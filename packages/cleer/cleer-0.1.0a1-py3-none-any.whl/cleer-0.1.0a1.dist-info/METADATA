@@ -1,0 +1,85 @@
+Metadata-Version: 2.1
+Name: cleer
+Version: 0.1.0a1
+Summary: Extensible python formatter with sane defaults.
+Author: Brandon Temple Paul
+Author-email: btemplepgit@gmail.com
+License: MIT
+Keywords: format,formatter,file,extend,custom
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Internet
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: loguru
+Provides-Extra: dev
+Requires-Dist: build ; extra == 'dev'
+Requires-Dist: coverage ; extra == 'dev'
+Requires-Dist: nox ; extra == 'dev'
+Requires-Dist: piccolo-theme ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: sphinx ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+
+# cleer
+
+Coming soon! Extensible python formatter with sane defaults. 
+
+# Changelog
+
+Changelog for `cleer`.
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+<!-- 
+## [Unreleased] - YYYY-MM-DD
+
+### Added
+
+### Changed
+
+### Deprecated
+
+### Removed
+
+### Fixed
+
+### Security 
+-->
+
+<!-- 
+## [Unreleased] - YYYY-MM-DD
+
+### Added
+
+### Changed
+
+### Deprecated
+
+### Removed
+
+### Fixed
+
+### Security 
+-->
+
+
+## [0.1.0a1] - 2024-02-18
+
+- Initial stub 
+
