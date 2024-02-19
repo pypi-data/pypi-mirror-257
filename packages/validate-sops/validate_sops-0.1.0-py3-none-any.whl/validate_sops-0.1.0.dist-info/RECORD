@@ -1,0 +1,9 @@
+LICENSE,sha256=RWT64X8xDM4ciL7j2tb0Sz3tD-MYn04IKZ2Rw6o2y70,1072
+validate_sops/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+validate_sops/__main__.py,sha256=vZNz_AiF3OWyjZg0QSaJNeER6Iloj7QGyutFZkL685Y,150
+validate_sops/main.py,sha256=Xn8u-Gt-g2Wvu6gtHcqEC0Ls05iMfpTgaLLno2noj1o,1439
+validate_sops-0.1.0.dist-info/LICENSE,sha256=RWT64X8xDM4ciL7j2tb0Sz3tD-MYn04IKZ2Rw6o2y70,1072
+validate_sops-0.1.0.dist-info/METADATA,sha256=ykE0ot2mNtrd5QlIXjwd192Lz4KtoT3rmmZ9HCufvWc,3131
+validate_sops-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+validate_sops-0.1.0.dist-info/entry_points.txt,sha256=oJZOKGQ1eGNjKDXiif13opv3y7WT1xJKqQf01DSHUN8,57
+validate_sops-0.1.0.dist-info/RECORD,,
