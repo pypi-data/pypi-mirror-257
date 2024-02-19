@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+setup.py
+suaidoc.py
+scripts/__init__.py
+scripts/replace.py
+scripts/update_md.py
+suaidoc.egg-info/PKG-INFO
+suaidoc.egg-info/SOURCES.txt
+suaidoc.egg-info/dependency_links.txt
+suaidoc.egg-info/entry_points.txt
+suaidoc.egg-info/requires.txt
+suaidoc.egg-info/top_level.txt
+templates/__init__.py
+templates/template.html
+templates/template.tex
