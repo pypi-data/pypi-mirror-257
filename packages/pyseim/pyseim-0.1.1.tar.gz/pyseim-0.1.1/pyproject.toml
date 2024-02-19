@@ -1,0 +1,27 @@
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "pyseim"
+version = "0.1.1"
+description = "Waveform viewer and analyzer for ngspice/kicad"
+authors = ["Florian Renneke <florian.renneke@gmail.com>"]
+license = "Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/Renneke/PySeim"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pyqt5 = "*"
+ltspice = "*"
+
+[tool.poetry.scripts]
+pyseim = "pyseim.main:main"
+
+
+[tool.black]
+line-length = 120
+
+
