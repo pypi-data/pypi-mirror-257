@@ -1,0 +1,10 @@
+scipy==1.11.4
+peakdetect==1.1
+matplotlib
+numpy
+pandas
+tqdm
+requests
+caerus>=0.1.9
+xarray
+joblib
