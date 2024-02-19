@@ -1,0 +1,61 @@
+[
+    {
+        "name": "Valdenir Severino",
+        "email": "vald3nir@gmai.com",
+        "client_id": "c4cffd22-228a-11ee-8ade-089798649659",
+        "created_at": "2023-04-01T22:02:43.Z",
+        "my_sensors": [
+            "cd273f29-436e-11ee-908b-0c379605f3f9",
+            "cd273f26-436e-11ee-aa10-0c379605f3f9"
+        ],
+        "shared_sensors": [
+            "cd273f27-436e-11ee-a0a8-0c379605f3f9"
+        ]
+    },
+    {
+        "name": "Cristiane Avelino",
+        "email": "souzacrica@gmail.com",
+        "client_id": "6711f206-228a-11ee-92ae-089798649659",
+        "created_at": "2023-07-14T21:07:12.Z",
+        "my_sensors": [
+            "cd273f26-436e-11ee-aa10-0c379605f3f9"
+        ],
+        "shared_sensors": [
+            "cd273f27-436e-11ee-a0a8-0c379605f3f9",
+            "cd273f29-436e-11ee-908b-0c379605f3f9"
+        ]
+    },
+    {
+        "name": "Marcia Severino",
+        "email": "donamarcia1966@gmail.com",
+        "client_id": "448d11a9-2289-11ee-88ba-089798649659",
+        "created_at": "2023-07-14T20:59:05.Z",
+        "my_sensors": [],
+        "shared_sensors": [
+            "cd273f29-436e-11ee-908b-0c379605f3f9"
+        ]
+    },
+    {
+        "name": "Valberto Severino",
+        "email": "valbertoseverino@gmail.com",
+        "client_id": "6ffa39eb-228a-11ee-8636-089798649659",
+        "created_at": "2023-04-01T22:02:43.Z",
+        "my_sensors": [],
+        "shared_sensors": [
+            "cd273f29-436e-11ee-908b-0c379605f3f9"
+        ]
+    },
+    {
+        "name": "Aurean Marinho",
+        "email": "aureanlmarinho@gmail.com",
+        "client_id": "787604a3-228a-11ee-a263-089798649659",
+        "created_at": "2023-07-14T21:07:41.Z",
+        "my_sensors": [
+            "cd273f27-436e-11ee-a0a8-0c379605f3f9"
+        ],
+        "shared_sensors": [
+            "cd273f29-436e-11ee-908b-0c379605f3f9",
+            "cd273f26-436e-11ee-aa10-0c379605f3f9"
+        ]
+    }
+]
