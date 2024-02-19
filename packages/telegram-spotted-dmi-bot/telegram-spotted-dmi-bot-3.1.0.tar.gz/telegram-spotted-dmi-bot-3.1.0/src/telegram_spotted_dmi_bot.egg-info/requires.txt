@@ -1,0 +1,16 @@
+APScheduler==3.10.4
+cryptography==42.0.2
+python-telegram-bot==20.8
+pytz==2023.3.post1
+PyYAML==6.0.1
+
+[lint]
+pylint
+black
+isort
+
+[test]
+pytest
+pytest-asyncio
+pytest-cov
+pytest-mock
