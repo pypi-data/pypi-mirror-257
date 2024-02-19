@@ -1,0 +1,16 @@
+odoo/addons/website_sale_category_breadcrumb/README.rst,sha256=N23XvY0n_cnieLTh9soC5L4YDv-a_wIZMiJdzfGTPmA,3319
+odoo/addons/website_sale_category_breadcrumb/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+odoo/addons/website_sale_category_breadcrumb/__manifest__.py,sha256=IHadhIAb8j0MHM3iZkx63qH_TVbncpRtgXxbFQuE6Ww,539
+odoo/addons/website_sale_category_breadcrumb/i18n/es.po,sha256=r7EXKu-_dt-f3dIyNJByLvO994h4tIBrVVmu--ZihZo,970
+odoo/addons/website_sale_category_breadcrumb/i18n/it.po,sha256=pH5PK4Kni0oNhPiuuTlmBE-0j6ZHE5FWxW1EYAphchE,970
+odoo/addons/website_sale_category_breadcrumb/i18n/website_sale_category_breadcrumb.pot,sha256=veYC_lAWsLHXDrVhYll3L79xAPy94-6Ic4xrqdXWMQ0,744
+odoo/addons/website_sale_category_breadcrumb/readme/CONTRIBUTORS.rst,sha256=gdOvyuHqKWhdIzcYOTRJ7CbGyaPfQIMKk5AXyn4FF5Y,41
+odoo/addons/website_sale_category_breadcrumb/readme/DESCRIPTION.rst,sha256=rISNnMEuqU1s5554NHRkZEpJDK3aI87oDdrQ67s1SDw,153
+odoo/addons/website_sale_category_breadcrumb/readme/USAGE.rst,sha256=jyTWe0eGtPor5r9i3hcVPBMqoSWC7jPxiPsZ9K7xASY,49
+odoo/addons/website_sale_category_breadcrumb/static/description/icon.png,sha256=6xBPJauaFOF0KDHfHgQopSc28kKvxMaeoQFQWZtfZDo,9455
+odoo/addons/website_sale_category_breadcrumb/static/description/index.html,sha256=x_vS2-cHZse9bXsIPTw9EJt0GPRgWnHW6V7JwoS0p_E,12806
+odoo/addons/website_sale_category_breadcrumb/views/templates.xml,sha256=KLhvH-Po_QNKm_skZsPmKNjDppnkada_-AYTL7iV3z8,2343
+odoo14_addon_website_sale_category_breadcrumb-14.0.1.0.2.dev2.dist-info/METADATA,sha256=lw4Ehwlqg5fN_kyWXAGRPLPb0L6MNiVhLEqK0-rrpeM,3951
+odoo14_addon_website_sale_category_breadcrumb-14.0.1.0.2.dev2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+odoo14_addon_website_sale_category_breadcrumb-14.0.1.0.2.dev2.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo14_addon_website_sale_category_breadcrumb-14.0.1.0.2.dev2.dist-info/RECORD,,
