@@ -1,0 +1,21 @@
+
+ENEXA
+
+# (1) KGE
+#
+# Keci and Improved Keci
+# Experiment UMLS:
+
+# (2) CEL
+# DRILL   : [DRILL with ALC, ALCO, ALCQ]
+# V-DRILL :
+# Family Demo:
+# Uncle, Cousin, Aunt   :
+
+
+# Learning2Query:
+
+# SPARQL-OWL Bridge:
+# Multi-way Join:
+# Storage:
+
