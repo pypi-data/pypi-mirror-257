@@ -1,0 +1,3 @@
+[console_scripts]
+bmlx = bmlx.cli.ui.main:main
+bmlx_rt = bmlx.cli.runtime.main:main
