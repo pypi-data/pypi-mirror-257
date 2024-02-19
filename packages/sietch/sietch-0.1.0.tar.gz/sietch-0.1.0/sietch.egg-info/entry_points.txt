@@ -1,0 +1,2 @@
+[console_scripts]
+sietch = sietch.cli.main:cli
