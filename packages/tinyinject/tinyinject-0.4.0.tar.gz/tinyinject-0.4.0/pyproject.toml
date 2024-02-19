@@ -1,0 +1,32 @@
+[project]
+name = "tinyinject"
+version = "0.4.0"
+description = "A minimalistic dependency injection framework"
+authors = [
+    {name = "Krzysztof Stronka",email = "stronka.k@gmail.com"},
+]
+dependencies = []
+requires-python = ">=3.10"
+readme = "README.md"
+license = {text = "MIT"}
+
+[project.urls]
+Homepage = "https://github.com/stronka/tinyinject"
+Repository = "https://github.com/stronka/tinyinject"
+
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "ruff>=0.2.1",
+]
+
+[tool.ruff]
+line-length = 120
