@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: evext
+Version: 1.0.0
+Summary: A calculate Python package
+Home-page: https://github.com/suberstring/evext
+Author: Apple.Pie.etc
+Author-email: 
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+#A Python library
