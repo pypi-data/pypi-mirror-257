@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+Moogle.egg-info/PKG-INFO
+Moogle.egg-info/SOURCES.txt
+Moogle.egg-info/dependency_links.txt
+Moogle.egg-info/requires.txt
+Moogle.egg-info/top_level.txt
+moogle/Search.py
+moogle/__init__.py
+moogle/DataStructures/SearchResult.py
+moogle/DataStructures/__init__.py
