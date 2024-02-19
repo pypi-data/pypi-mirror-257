@@ -1,0 +1,4 @@
+[console_scripts]
+mono-byte-encrypt = MonoCipher.ByteEncryption:byte_encrypt
+mono-salt-encrypt = MonoCipher.SaltEncryption:salt_encrypt
+mono-shift-encrypt = MonoCipher.SimpleEncryption:shift_encrypt
