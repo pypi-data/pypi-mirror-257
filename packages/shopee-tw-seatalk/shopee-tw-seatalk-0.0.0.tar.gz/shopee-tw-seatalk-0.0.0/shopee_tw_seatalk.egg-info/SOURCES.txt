@@ -1,0 +1,6 @@
+README.md
+setup.py
+shopee_tw_seatalk.egg-info/PKG-INFO
+shopee_tw_seatalk.egg-info/SOURCES.txt
+shopee_tw_seatalk.egg-info/dependency_links.txt
+shopee_tw_seatalk.egg-info/top_level.txt
