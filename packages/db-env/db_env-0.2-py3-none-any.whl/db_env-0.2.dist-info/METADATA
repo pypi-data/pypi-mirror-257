@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: db-env
+Version: 0.2
+Summary: library that creates a relational DB with the usage of SQLite. More information follows.
+Author: Daniel Huber
+Description-Content-Type: text/plain
+
+**Version 0.2**
+
+important Info:
+- this library needs sqlite3 in addition. please install and import before usage.
+- db_name needs to be string and have ".db" as ending. E.g.:
+    "zoo.db"
+- CREATE TABLE statements need to be writen in strings. E.g.:
+    "DROP TABLE IF EXISTS CUSTOMERS;CREATE TABLE CUSTOMERS(NAME VARCHAR(30),AGE INTEGER, ORDER_ID INTEGER);"
+- it is encouraged to import your writen SQL-strings from another py-file as a variable (e.g. ENUM). However, you can directly insert your SQL-statement as a string into the function.
+
+What can db_env do?
+db_env aims to make it easier to create relational database environments within Python. Currently db_env holds the following functions:
+- db_create_connect(db_name)
+- db_create_table_sql(sql_string)
+
+Goal for upcoming versions:
+- Functions which give user the option to write his own SQL-statements into an extra Python file and call writen SQL-strings as variables into your working environment.
+- Functions to collect and insert data from called API.
+- Functions to select data from database and use it for pandas dataframe.
