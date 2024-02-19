@@ -1,0 +1,1 @@
+This is a module made for testing the pip installation, but it sure works!
