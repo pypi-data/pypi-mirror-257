@@ -1,0 +1,6 @@
+-r ../requirements.txt
+sphinx>=6.0
+pygments>=2.6
+pydata-sphinx-theme
+sphinx-autodoc-typehints
+neo

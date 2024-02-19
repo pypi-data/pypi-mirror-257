@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: edlio
+Version: 0.2.0
+Summary: Module to work with data in an Experiment Directory Layout (EDL) structure
+Author: Matthias Klumpp
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Requires-Dist: tomlkit>=0.6.0
+Requires-Dist: numpy>=1.17
+Requires-Dist: xxhash>=2.0
+Requires-Dist: Pint>=0.10
+Requires-Dist: pandas ; extra == "test"
+Requires-Dist: zstandard ; extra == "test"
+Project-URL: Documentation, https://edl.readthedocs.io/
+Project-URL: Source, https://github.com/bothlab/edlio
+Provides-Extra: test
+
+# EDL - Experiment Directory Layout
+
+[![QA](https://github.com/bothlab/edlio/actions/workflows/python-qa.yml/badge.svg)](https://github.com/bothlab/edlio/actions/workflows/python-qa.yml)
+
+This repository contains specifications for the "Experiment Directory Layout" (EDL) storage layout as
+used by the [Syntalos](https://github.com/bothlab/syntalos) data acquisition tool.
+
+It also contains a Python module, `edlio`, to easily load and save data in an EDL structure
+for simplified raw experiment data management.
+
+Check out the [online documentation](https://edl.readthedocs.io/latest/) to learn more about this project!
+
