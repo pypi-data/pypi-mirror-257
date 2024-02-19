@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "spark-connectby"
+version = "0.1.1"
+description = "connectby hierarchy query in spark"
+authors = ["Tim Chen <firstim@gmail.com>"]
+readme = "README.md"
+packages = [{include = "spark_connectby"}]
+#homepage = "https://github.com/firstim/fish-databricks-jobs"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+#pyspark = "^3.3.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0.1"
+pyspark = ">2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
