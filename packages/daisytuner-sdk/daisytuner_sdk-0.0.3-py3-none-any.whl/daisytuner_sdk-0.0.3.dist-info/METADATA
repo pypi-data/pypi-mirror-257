@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: daisytuner-sdk
+Version: 0.0.3
+Summary: An SDK for tuning SDFGs via the Daisytuner API
+Home-page: https://daisytuner.com
+Author: Daisytuner
+Author-email: lukas.truemper@daisytuner.com
+Classifier: Topic :: Utilities
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests >=2.11.0
+Requires-Dist: tqdm >=4.64.1
+Requires-Dist: fire >=0.5.0
+Requires-Dist: numpy >=1.23.0
+Requires-Dist: scipy >=1.12.0
+Requires-Dist: dace >=0.15.0
+Provides-Extra: dev
+Requires-Dist: black ==22.10.0 ; extra == 'dev'
+Requires-Dist: pytest >=7.2.0 ; extra == 'dev'
+Requires-Dist: pytest-cov >=4.1.0 ; extra == 'dev'
+Provides-Extra: profiling
+Requires-Dist: daisytuner-likwid ; extra == 'profiling'
+
+<p align="center"><img src="daisy.png" width="128"/></p>
+
+# Daisytuner SDK
+
+The official Daisytuner SDK.
