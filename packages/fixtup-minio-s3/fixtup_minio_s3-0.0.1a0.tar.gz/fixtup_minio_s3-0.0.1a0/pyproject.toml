@@ -1,0 +1,40 @@
+[tool.poetry]
+name = "fixtup-minio-s3"
+description = "fixtup plugin to load a fixture into a minio bucket and run s3 tests"
+authors = ["Fabien Arcellier <fabien.arcellier@gmail.com>"]
+license = "MIT"
+version = "0.0.1a"
+readme = "README.md"
+packages = [{include = "fixtup_minio_s3", from = "src"}]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Developers",
+    "Environment :: Console"
+]
+
+[tool.poetry.urls]
+"Source code" = "https://github.com/FabienArcellier/fixtup-minio-s3"
+"Documentation" = "https://fixtup-minio-s3.readthedocs.io/en/latest/"
+"Issue Tracker" = "https://github.com/FabienArcellier/fixtup-minio-s3/issues"
+"Chat" = "https://discord.gg/nMn9YPRGSY"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+
+[tool.poetry.group.dev.dependencies]
+alfred-cli = "^2.1.1"
+mypy = "^1.4.1"
+pytest = "^7.4.0"
+toml = "^0.10.2"
+sphinx = "^6.0.0"
+sphinx-rtd-theme = "^1.2.2"
+twine = "^4.0.2"
+fixtup = "^0.1.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
