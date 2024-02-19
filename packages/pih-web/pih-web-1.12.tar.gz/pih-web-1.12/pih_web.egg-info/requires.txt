@@ -1,0 +1,4 @@
+ipih
+fastapi
+uvicorn
+python-multipart
