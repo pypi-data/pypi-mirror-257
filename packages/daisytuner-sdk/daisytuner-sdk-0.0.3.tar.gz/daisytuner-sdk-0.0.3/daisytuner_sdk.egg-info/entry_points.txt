@@ -1,0 +1,2 @@
+[console_scripts]
+daisytuner = daisytuner.cli:main
