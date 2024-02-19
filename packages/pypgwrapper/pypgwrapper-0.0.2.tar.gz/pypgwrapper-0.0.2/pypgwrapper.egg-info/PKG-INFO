@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: pypgwrapper
+Version: 0.0.2
+Summary: Python wrapper for Postgres
+Home-page: https://github.com/abeltavares/pypostgres
+Author: Abel Tavares
+Author-email: abelst9@gmail.com
+License: BSD
+Classifier: Topic :: Database
+Classifier: Programming Language :: Python :: 3
