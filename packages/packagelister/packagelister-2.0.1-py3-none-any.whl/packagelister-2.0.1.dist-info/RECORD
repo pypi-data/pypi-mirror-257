@@ -1,0 +1,10 @@
+packagelister/__init__.py,sha256=wAxkK8w13vqoF47A8iqWdSlIgRRXmZiQ0R4wePZfzhs,22
+packagelister/packagelister.py,sha256=1Q1IqfAhmeAd0x95l6gxU555kBPDaSomrvj82Sktdco,8229
+packagelister/packagelister_cli.py,sha256=2I767ONeGxRCoXTiXkO7PXb2XswK__4xiUtb8mxuBR0,2663
+packagelister/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+packagelister/whouses.py,sha256=i-9skcSXA25Z22ZnDOnBOu0FFQ_215pSgOAWFSo5Vos,2615
+packagelister-2.0.1.dist-info/METADATA,sha256=KBoJ-ASucJD7Y1w4Aozv3RZRv-B5wYmqg28TEdsxiOw,7825
+packagelister-2.0.1.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+packagelister-2.0.1.dist-info/entry_points.txt,sha256=aho64fG9SexGw5XMEDbu35ceY-6oWh31QFvrYhqmABA,108
+packagelister-2.0.1.dist-info/licenses/LICENSE.txt,sha256=GA4k0f8zyJsPeXl_v_6h0BQT4BnMtK-NX8QSGL0JbCQ,1086
+packagelister-2.0.1.dist-info/RECORD,,
