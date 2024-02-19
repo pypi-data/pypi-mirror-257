@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: hw_runner
+Version: 0.0.4
+Author-email: Micah Gale <mdgale@wisc.edu>
+License: MIT License
+License-File: LICENSE
+Requires-Dist: matplotlib
+Requires-Dist: pint
+Requires-Dist: pyyaml
+Provides-Extra: notebook
+Requires-Dist: jupyterlab; extra == "notebook"
+Requires-Dist: papermill; extra == "notebook"

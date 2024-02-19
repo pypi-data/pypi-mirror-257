@@ -1,0 +1,7 @@
+matplotlib
+pint
+pyyaml
+
+[notebook]
+jupyterlab
+papermill
