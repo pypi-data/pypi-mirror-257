@@ -1,0 +1,12 @@
+
+[aiohttp]
+aiohttp
+
+[flask]
+flask
+
+[pydantic]
+pydantic
+
+[yaml]
+pyyaml
