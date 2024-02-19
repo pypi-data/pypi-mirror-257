@@ -1,0 +1,51 @@
+[tool.poetry]
+name = "PyMoe"
+version = "2.2"
+description = "This is Pymoe. The only python library you'll need if you need information on Anime, Manga, Light Novels, or Visual Novels."
+authors = ["Charles Click <CharlesClick@vertinext.com>"]
+readme = "README.md"
+packages = [{include="pymoe"}]
+
+[tool.poetry.group.documentation]
+optional = true
+
+[tool.poetry.group.tests]
+optional = true
+
+[tool.poetry.group.cleaning]
+optional = true
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "*"
+bs4 = "*"
+ujson = "*"
+
+[tool.poetry.group.documentation.dependencies]
+mkdocs = "1.5.*"
+mkdocs-material = "9.5.*"
+mkdocstrings = { version = "0.24.*", extras = ['python'] }
+mkdocs-git-revision-date-localized-plugin = "*"
+
+[tool.poetry.group.tests.dependencies]
+pytest = "*"
+
+[tool.poetry.group.cleaning.dependencies]
+black = "*"
+isort = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+addopts = "--import-mode=importlib -v"
+testpaths = "tests"
+
+[tool.isort]
+profile = "black"
+skip_gitignore = true
+line_length = 90
+
+[tool.black]
+line-length = 90
