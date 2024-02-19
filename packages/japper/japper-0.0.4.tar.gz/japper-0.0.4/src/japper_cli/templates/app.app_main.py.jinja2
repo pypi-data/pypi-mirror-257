@@ -1,0 +1,24 @@
+"""
+Main class of the app.
+"""
+
+from japper import JapperAppMain, Page
+from .presenters import HomePresenter
+from .commons.config import Config
+
+
+class AppMain(JapperAppMain):
+    """
+    Main class of the app. It is responsible for starting the app and setting up the navigation menu.
+    """
+
+    def start(self):
+        """
+        Init and Start the app
+        """
+        self.init_app(app_name=Config.APP_NAME, favicon_path=Config.ICON_PATH)
+        self.set_navigation_menu(mode='top', logo=Config.ICON_PATH)
+
+        self.add_page(Page(name='home', presenter=HomePresenter(), icon='mdi-home'), default=True)
+
+        self.start_app()

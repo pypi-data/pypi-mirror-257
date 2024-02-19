@@ -1,0 +1,17 @@
+"""
+{{page_name}} Presenter
+This presenter is used to manage the {{page_name}} page of the app, and it is used to connect the view and the model. The
+business logic of the page should be implemented in this class. The render method is called by the framework to render
+the view when the page is loaded. You can override the method to add your custom logic.
+"""
+
+from japper import BasePresenter
+from ..views import {{page_name}}View
+from ..models import {{page_name}}Model
+
+
+class {{page_name}}Presenter(BasePresenter):
+    def __init__(self) -> None:
+        super().__init__()
+        self.view = {{page_name}}View()
+        self.model = {{page_name}}Model()

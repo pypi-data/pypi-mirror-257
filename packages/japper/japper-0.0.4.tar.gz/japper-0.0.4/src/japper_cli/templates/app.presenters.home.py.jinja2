@@ -1,0 +1,26 @@
+"""
+Home Presenter
+"""
+from japper import BasePresenter
+from ..views import HomeView
+from ..models import HomeModel
+
+
+class HomePresenter(BasePresenter):
+    def __init__(self) -> None:
+        """
+        Create a new instance of HomePresenter. This class is used to manage the home page of the app.
+        """
+        super().__init__()
+        self.view = HomeView()
+        self.model = HomeModel()
+
+    def render(self):
+        """
+        Render the home page.
+        """
+        self.view.render(
+            welcome_title=self.model.get_welcome_title(),
+            welcome_message=self.model.get_welcome_message(),
+            logo_path=self.model.get_logo_path(),
+        )
