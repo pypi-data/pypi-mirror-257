@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: tensorfuse_python
+Version: 0.0.12
+Summary: Python SDK for Tensorfuse
+Author-email: Samagra <samagra14@tensorfuse.io>, Divyanshu <dsetia@cs.iitr.ac.in>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: colorama>=0.4.4
+Requires-Dist: openai>=0.10.0
+Requires-Dist: requests[security]>=2.31.0
+Description-Content-Type: text/markdown
+
+# Tensorfuse SDK
+
+Python SDK package for Tensorfuse
+
+
+# Usage
+
+Default Logging:
+
+```
+from tensorfuse_python.tensorfuse_python import log_generic_event
+
+status = log_generic_event(
+    token=<AUTH_TOKEN>,
+    log=<LOG_OBJECT>
+)
+```
+
+
+Logging Using IDs:
+
+```
+from tensorfuse_python.tensorfuse_python import log_generic_event_using_ids
+
+status = log_generic_event_using_ids(
+    token=<AUTH_TOKEN>,
+    teamId=<TEAM_ID>, 
+    projectId=<PROJECT_ID>, 
+    datasourceId=<DATASOURCE_ID>,  
+    log=<LOG_OBJECT>
+)
+```
+
+
+Logging Using Names:
+
+```
+from tensorfuse_python.tensorfuse_python import log_generic_event_using_names
+
+status = log_generic_event_using_names(
+    token=<AUTH_TOKEN>,
+    teamName=<TEAM_NAME>, 
+    projectName=<PROJECT_NAME>, 
+    datasourceName=<DATASOURCE_NAME>,  
+    log=<LOG_OBJECT>
+)
+```
