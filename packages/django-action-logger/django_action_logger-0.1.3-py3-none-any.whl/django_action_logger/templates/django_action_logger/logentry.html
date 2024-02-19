@@ -1,0 +1,2 @@
+{{ object.action_time|time }} - {{ object.user }}: {{ object.message }} |
+{% if object.content_type and object.content_object %}{{ object.content_object }}{% endif %}
