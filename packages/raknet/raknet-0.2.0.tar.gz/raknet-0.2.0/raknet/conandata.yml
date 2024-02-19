@@ -1,0 +1,4 @@
+sources:
+  "4.081":
+    url: "https://github.com/raknet-python/raknet/archive/5d089c28b74f464edd1cf33693a5dc5f99e4e7b7.tar.gz"
+    sha256: "df80d8228198fbd6743c283a70bf8f0c9bf7bed75aa0b0b99d25d663898c3bc8"
