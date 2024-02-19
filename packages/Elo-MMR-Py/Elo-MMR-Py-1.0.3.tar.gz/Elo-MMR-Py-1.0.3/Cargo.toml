@@ -1,0 +1,13 @@
+[package]
+name = "elo-mmr-python-bindings"
+version = "1.0.0"
+edition = "2021"
+
+[lib]
+name = "elo_mmr_python_bindings"
+path = "src/rust/lib.rs"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.16.2", features = ["extension-module"] }
+multi-skill = { git = "https://github.com/EbTech/Elo-MMR", rev="82c2a1ccd310ae041c32df1007e98cde07d52979" }
