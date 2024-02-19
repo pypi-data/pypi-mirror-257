@@ -1,0 +1,14 @@
+name: japper_app
+channels:
+  - conda-forge
+dependencies:
+  - voila
+  - ipyvuetify
+  - ipywidgets
+  - pandas
+  - jinja2
+  - pip
+  - pip:
+      - japper
+
+  # add your dependencies here

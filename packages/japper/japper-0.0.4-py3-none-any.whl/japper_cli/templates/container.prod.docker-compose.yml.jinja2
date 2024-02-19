@@ -1,0 +1,10 @@
+name: {{ project_name }}
+services:
+  {{ project_name }}-prod:
+    build:
+      context: ../../
+      dockerfile: ./container/prod/Dockerfile
+    image: {{ project_name }}
+    ports:
+      - "8888:8888"
+      

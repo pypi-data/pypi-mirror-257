@@ -1,0 +1,12 @@
+from ..commons.config import Config
+
+
+class HomeModel:
+    def get_welcome_title(self):
+        return f'Welcome to {Config.APP_NAME}!'
+
+    def get_welcome_message(self):
+        return 'This is a Jupyter-based web application built by Japper. We hope you enjoy it!'
+
+    def get_logo_path(self):
+        return Config.LOGO_PATH
