@@ -1,0 +1,9 @@
+README.md
+setup.py
+sfutilpsg/SFUtilPSG.py
+sfutilpsg/__init__.py
+sfutilpsg.egg-info/PKG-INFO
+sfutilpsg.egg-info/SOURCES.txt
+sfutilpsg.egg-info/dependency_links.txt
+sfutilpsg.egg-info/requires.txt
+sfutilpsg.egg-info/top_level.txt
