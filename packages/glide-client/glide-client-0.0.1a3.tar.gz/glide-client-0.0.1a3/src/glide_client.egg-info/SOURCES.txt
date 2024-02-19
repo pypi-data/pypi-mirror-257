@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/glide/__init__.py
+src/glide/py.typed
+src/glide/schemas/__init__.py
+src/glide/schemas/lang.py
+src/glide_client.egg-info/PKG-INFO
+src/glide_client.egg-info/SOURCES.txt
+src/glide_client.egg-info/dependency_links.txt
+src/glide_client.egg-info/requires.txt
+src/glide_client.egg-info/top_level.txt
