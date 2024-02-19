@@ -1,0 +1,11 @@
+avesta/README.md,sha256=rlcLpIwxqX7khD_RyLQQq94Dh8m2zp-jNyt8fMfwFBI,825
+avesta/__init__.py,sha256=RnVf26BrghkGaX8JAtiookng5j2vltzc2LSJSmLueXI,50
+avesta/corpus_readers/__init__.py,sha256=gGUtAWm_jxfTvx3q74H3iUHigUaa1u7IGPMqYkA20_g,46
+avesta/corpus_readers/bijankhan_reader.py,sha256=QjAtcGCD1155uM0bbJrrpIoDGec3sCin2hBVRvfw1gY,4481
+avesta/test.py,sha256=ZklUe5e9LdJ9wnXiMxQJKjf12Gk0zwZZamVA0HrF34A,64
+avesta/tools/__init__.py,sha256=wnJjhr6vj8ir92_r5uCmjzlr4qSE3s2olTJQ74TfFSw,79
+avesta/tools/stemmers.py,sha256=f2rfMT5P43wikJCJKm9aEiQETAXXVQl5dvDsRaggAnM,89
+avesta-0.6.dist-info/LICENSE.txt,sha256=qTz0qbGB8Q9fvrzHBvUK37PW-T5HKjKgrz-a2nuvvaE,1063
+avesta-0.6.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+avesta-0.6.dist-info/METADATA,sha256=zGBsN9hSEy6oaCqjWlIPF_60Y3Mrqc2WZ2TminXnhtM,360
+avesta-0.6.dist-info/RECORD,,
