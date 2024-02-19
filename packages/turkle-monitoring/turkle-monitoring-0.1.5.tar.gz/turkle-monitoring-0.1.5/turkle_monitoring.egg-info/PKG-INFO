@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: turkle-monitoring
+Version: 0.1.5
+Summary: Monitoring package for credit scoring models
+Home-page: https://github.com/Turkle-io/turkle-monitoring
+Author: Turkle
+Author-email: jonathan@turkle.io
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.11
+License-File: LICENSE
