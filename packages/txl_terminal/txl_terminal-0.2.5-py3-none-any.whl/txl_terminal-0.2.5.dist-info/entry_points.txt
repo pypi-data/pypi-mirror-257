@@ -1,0 +1,5 @@
+[asphalt.components]
+terminal = txl_terminal.components:TerminalComponent
+
+[txl.components]
+terminal = txl_terminal.components:TerminalComponent
