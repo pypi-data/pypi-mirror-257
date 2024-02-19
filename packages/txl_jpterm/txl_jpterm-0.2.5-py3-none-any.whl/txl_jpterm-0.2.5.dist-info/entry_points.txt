@@ -1,0 +1,5 @@
+[asphalt.components]
+jpterm = txl_jpterm.components:JptermComponent
+
+[txl.components]
+jpterm = txl_jpterm.components:JptermComponent
