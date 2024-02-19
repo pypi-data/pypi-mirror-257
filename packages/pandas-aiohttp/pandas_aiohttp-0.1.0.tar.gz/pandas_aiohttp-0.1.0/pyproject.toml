@@ -1,0 +1,68 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pandas-aiohttp"
+version = "0.1.0"
+description = 'Adds `Series.aiohttp.get_text()` and `Series.aiohttp.get_json()` to pandas Series objects.'
+readme = "readme.md"
+requires-python = ">=3.10"
+license = "MIT"
+keywords = ["aiohttp","pandas","urls"]
+authors = [
+  { name = "thehappycheese"},
+]
+dependencies = [
+  "aiohttp",
+  "pandas",
+]
+
+[project.urls]
+Documentation = "https://github.com/thehappycheese/pandas-aiohttp#readme"
+Issues = "https://github.com/thehappycheese/pandas-aiohttp/issues"
+Source = "https://github.com/thehappycheese/pandas-aiohttp"
+
+[tool.hatch.envs.default]
+dependencies = [
+  "coverage[toml]>=6.5",
+  "pytest",
+]
+[tool.hatch.envs.default.scripts]
+test = "pytest {args:tests}"
+test-cov = "coverage run -m pytest {args:tests}"
+cov-report = [
+  "- coverage combine",
+  "coverage report",
+]
+cov = [
+  "test-cov",
+  "cov-report",
+]
+
+[[tool.hatch.envs.all.matrix]]
+python = ["3.10", "3.11", "3.12"]
+
+[tool.hatch.envs.types]
+dependencies = [
+  "mypy>=1.0.0",
+]
+[tool.hatch.envs.types.scripts]
+check = "mypy --install-types --non-interactive {args:src/pandas_aiohttp tests}"
+
+[tool.coverage.run]
+source_pkgs = ["pandas_aiohttp", "tests"]
+branch = true
+parallel = true
+omit = []
+
+[tool.coverage.paths]
+pandas_aiohttp = ["src/pandas_aiohttp", "*/pandas-aiohttp/src/pandas_aiohttp"]
+tests = ["tests", "*/pandas-aiohttp/tests"]
+
+[tool.coverage.report]
+exclude_lines = [
+  "no cov",
+  "if __name__ == .__main__.:",
+  "if TYPE_CHECKING:",
+]
