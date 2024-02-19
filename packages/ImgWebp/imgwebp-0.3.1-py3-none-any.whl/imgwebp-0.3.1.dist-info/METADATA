@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: ImgWebp
+Version: 0.3.1
+Summary: 
+Author: yuanhang
+Author-email: 295043131@qq.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: cleo (>=2.1.0,<3.0.0)
+Requires-Dist: pillow (>=10.2.0,<11.0.0)
+Requires-Dist: pyqt5 (>=5.15.10,<6.0.0)
+Requires-Dist: wget (>=3.2,<4.0)
+Description-Content-Type: text/markdown
+
+
+- 简单封装libwebp下载 
+
+- 简单封装libwebp的命令行为界面（运行命令：`imgc 命令`）
+
+- 封装命令：
+  - `download`
+  - `cwebp`
+  - `dwebp`
+  - `gif2webp`
+  - `img2webp`
