@@ -1,0 +1,8 @@
+fiona
+shapely
+pandas
+geopandas
+rasterio
+xarray
+netcdf4
+h5netcdf
