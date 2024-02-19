@@ -1,0 +1,4 @@
+[console_scripts]
+setup-pi-tpu = edge_tpu_silva.deps.setup_comands:pi_setup_commands
+silvatpu = edge_tpu_silva:silvatpu
+

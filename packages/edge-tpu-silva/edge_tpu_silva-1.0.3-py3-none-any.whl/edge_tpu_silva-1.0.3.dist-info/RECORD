@@ -1,0 +1,10 @@
+edge_tpu_silva/__init__.py,sha256=zSCCDUHNbNZc6dHbKbZNWU7_tlA84DVL-z8esZvNuBE,73
+edge_tpu_silva/__main__.py,sha256=J7qOj5eRcbaw6rbQvxvUfxsRVLIXDDPsHYLy6l76-FA,1210
+edge_tpu_silva/deps/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+edge_tpu_silva/deps/detect.py,sha256=3GgWb1dxIElt1o0U_OWA_GSWw45HD7tANCOnAyjZPqw,3993
+edge_tpu_silva/deps/setup_comands.py,sha256=X2VyIOfmviegco0wt2vuVx4qtVMta87zx1ve88_tQnI,1231
+edge_tpu_silva-1.0.3.dist-info/METADATA,sha256=NF-PVYmwBw7DKxO6mlil0VWRDDBq_5GG1CId1mwUTCI,3332
+edge_tpu_silva-1.0.3.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+edge_tpu_silva-1.0.3.dist-info/entry_points.txt,sha256=WwHMVU8MaFrgyrEZE_U37BPvsPHV8Oe8E0GLq4RiS9Q,121
+edge_tpu_silva-1.0.3.dist-info/top_level.txt,sha256=wiVlwIlHWKNQzLXgKWz9WQnfLstm-DitWusMZM8BoBM,15
+edge_tpu_silva-1.0.3.dist-info/RECORD,,
