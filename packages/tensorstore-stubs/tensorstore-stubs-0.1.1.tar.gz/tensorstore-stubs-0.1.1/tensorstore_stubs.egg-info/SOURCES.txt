@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+tensorstore-stubs/__init__.pyi
+tensorstore-stubs/_tensorstore.pyi
+tensorstore-stubs/py.typed
+tensorstore_stubs.egg-info/PKG-INFO
+tensorstore_stubs.egg-info/SOURCES.txt
+tensorstore_stubs.egg-info/dependency_links.txt
+tensorstore_stubs.egg-info/requires.txt
+tensorstore_stubs.egg-info/top_level.txt

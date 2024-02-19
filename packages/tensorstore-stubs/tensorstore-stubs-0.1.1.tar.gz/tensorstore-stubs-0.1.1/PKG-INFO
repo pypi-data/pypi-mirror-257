@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: tensorstore-stubs
+Version: 0.1.1
+Summary: Type stubs for tensorstore
+Author-email: elda27 <kaz.birdstick@gmail.com>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: tensorstore>=0.1.45
+
+# tensorstore-stubs
+## What is it ?
+Unofficial type stubs for tensorstore, following the convention of providing stubs in a separate package, as specified in PEP 561.
+The stubs cover the most typical use cases of tensorstore.
+Generally, these stubs are more limited than what tensorstore allows, but they adhere to best practices for utilizing the library.
+
+
