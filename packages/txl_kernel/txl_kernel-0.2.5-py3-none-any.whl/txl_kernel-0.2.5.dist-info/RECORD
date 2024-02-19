@@ -1,0 +1,8 @@
+txl_kernel/__init__.py,sha256=Xsa3ayOMVkhUWm4t06YeyHE0apjpZefxLH4ylp0CDtU,22
+txl_kernel/driver.py,sha256=jlctq-vLSwT3mLJSybtq3hmDc-a_XSOXrHwMQ_eiHYk,7713
+txl_kernel/driver.py.keep,sha256=yLnlVq9kKk-Z0JQsQ71HpeP4VP44OGMughp9ddetXrQ,7609
+txl_kernel/message.py,sha256=AHBr4i4dzZaaQpfPMhW1QTdAOk98huWWDo0OSNspoLQ,1515
+txl_kernel-0.2.5.dist-info/METADATA,sha256=xC5qGFUCVQAjOJkVfQIrKr6dfEtuLt-o2pyERmOfrdA,848
+txl_kernel-0.2.5.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+txl_kernel-0.2.5.dist-info/licenses/LICENSE.txt,sha256=su0IgzSHZ9tMFeCQ_IaCji5Q4VrZSOqDsEFi7lPduc8,1106
+txl_kernel-0.2.5.dist-info/RECORD,,
