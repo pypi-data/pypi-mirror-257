@@ -1,0 +1,8 @@
+setup.py
+dopplerweather/__init__.py
+dopplerweather/dopplerweather.py
+dopplerweather.egg-info/PKG-INFO
+dopplerweather.egg-info/SOURCES.txt
+dopplerweather.egg-info/dependency_links.txt
+dopplerweather.egg-info/requires.txt
+dopplerweather.egg-info/top_level.txt
