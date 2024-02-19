@@ -1,0 +1,10 @@
+README.md
+setup.py
+yandex_webmaster/__init__.py
+yandex_webmaster/client.py
+yandex_webmaster/errors.py
+yandex_webmaster_api.egg-info/PKG-INFO
+yandex_webmaster_api.egg-info/SOURCES.txt
+yandex_webmaster_api.egg-info/dependency_links.txt
+yandex_webmaster_api.egg-info/requires.txt
+yandex_webmaster_api.egg-info/top_level.txt
