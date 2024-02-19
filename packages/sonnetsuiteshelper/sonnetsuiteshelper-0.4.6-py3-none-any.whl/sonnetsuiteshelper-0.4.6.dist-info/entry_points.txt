@@ -1,0 +1,2 @@
+[console_scripts]
+sonnetsuiteshelper = sonnetsuiteshelper.cli:main
