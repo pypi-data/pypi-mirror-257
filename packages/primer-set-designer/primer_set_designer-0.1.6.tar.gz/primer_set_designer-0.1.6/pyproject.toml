@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "primer_set_designer"
+version = "0.1.6"
+authors = [
+  { name="He Wencong", email="hewc@shanghaitech.edu.cn" },
+]
+description = "A pipeline for searching species specific primer sets at genome level"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: POSIX :: Linux"
+]
+dependencies = [
+  'primer3-py >= 0.6.1',
+  'biopython >= 1.79',
+  'pyfaidx >= 0.7.1',
+  'tabulate >= 0.8.10',
+  'jsonlines >= 3.1.0',
+  'ncbi-datasets-pylib >= 15.7.0',
+]

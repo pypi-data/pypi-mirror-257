@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+src/primer_set_designer/__init__.py
+src/primer_set_designer/database.py
+src/primer_set_designer/interface.py
+src/primer_set_designer/primer_designer.py
+src/primer_set_designer/utils.py
+src/primer_set_designer/web.py
+src/primer_set_designer.egg-info/PKG-INFO
+src/primer_set_designer.egg-info/SOURCES.txt
+src/primer_set_designer.egg-info/dependency_links.txt
+src/primer_set_designer.egg-info/requires.txt
+src/primer_set_designer.egg-info/top_level.txt
