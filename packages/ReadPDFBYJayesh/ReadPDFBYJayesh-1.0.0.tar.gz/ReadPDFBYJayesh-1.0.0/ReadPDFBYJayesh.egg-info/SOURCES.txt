@@ -1,0 +1,5 @@
+setup.py
+ReadPDFBYJayesh.egg-info/PKG-INFO
+ReadPDFBYJayesh.egg-info/SOURCES.txt
+ReadPDFBYJayesh.egg-info/dependency_links.txt
+ReadPDFBYJayesh.egg-info/top_level.txt

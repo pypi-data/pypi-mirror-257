@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: ReadPDFBYJayesh
+Version: 1.0.0
+Summary: Read Pdf File
+Author: Jayesh Vani
+Author-email: jayeshvani2@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
