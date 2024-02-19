@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+bonniebully/__init__.py
+bonniebully/modules.py
+bonniebully.egg-info/PKG-INFO
+bonniebully.egg-info/SOURCES.txt
+bonniebully.egg-info/dependency_links.txt
+bonniebully.egg-info/requires.txt
+bonniebully.egg-info/top_level.txt
