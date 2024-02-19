@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: libindic-unicode-conversion-maps
+Version: 1.0.7956606728
+Summary: Maps for converting ASCII to Unicode
+Project-URL: Homepage, https://github.com/libindic/unicode-conversion-maps
+Description-Content-Type: text/markdown
+
+# libindic-unicode-conversion-maps
+
+To use, first install `pip install libindic-unicode-conversion-maps`
+
+Then import and use:
+
+```python
+from libindic.unicode_conversion_maps import maps
+print(maps["revathi"]["A"]) # prints അ
+```

@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+libindic/unicode_conversion_maps/__init__.py
+libindic_unicode_conversion_maps.egg-info/PKG-INFO
+libindic_unicode_conversion_maps.egg-info/SOURCES.txt
+libindic_unicode_conversion_maps.egg-info/dependency_links.txt
+libindic_unicode_conversion_maps.egg-info/top_level.txt
