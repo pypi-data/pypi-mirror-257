@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+cdosolve/__init__.py
+cdosolve/_version.py
+cdosolve.egg-info/PKG-INFO
+cdosolve.egg-info/SOURCES.txt
+cdosolve.egg-info/dependency_links.txt
+cdosolve.egg-info/requires.txt
+cdosolve.egg-info/top_level.txt
