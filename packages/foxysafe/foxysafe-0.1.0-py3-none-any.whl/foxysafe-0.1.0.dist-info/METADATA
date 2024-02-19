@@ -1,0 +1,86 @@
+Metadata-Version: 2.1
+Name: foxysafe
+Version: 0.1.0
+Requires-Python: >=3.12.1
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: beartype ==0.14.1
+Requires-Dist: GitPython ==3.1.31
+Requires-Dist: hydra-core ==1.3.2
+Requires-Dist: loguru ==0.7.0
+Requires-Dist: pyshortcuts ==1.9.0
+Requires-Dist: python-dotenv ==1.0.0
+Requires-Dist: python-gitlab ==3.15.0
+Requires-Dist: rich ==13.4.1
+Requires-Dist: selenium ==4.17.2
+Requires-Dist: tqdm ==4.56.0
+Requires-Dist: webdriver-manager ==4.0.1
+Provides-Extra: dev
+Requires-Dist: black ==24.2.0 ; extra == 'dev'
+Requires-Dist: build ==1.0.3 ; extra == 'dev'
+Requires-Dist: isort ==5.13.2 ; extra == 'dev'
+Requires-Dist: pipdeptree ==2.7.1 ; extra == 'dev'
+Requires-Dist: ruff ==0.2.2 ; extra == 'dev'
+Requires-Dist: twine ==4.0.2 ; extra == 'dev'
+
+# FoxySafe
+
+## Table of Contents
+- [FoxySafe](#foxysafe)
+  - [Table of Contents](#table-of-contents)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Contribute](#contribute)
+    - [Development Installation](#development-installation)
+  - [Changelog](#changelog)
+
+## Install
+
+```console
+pip install foxysafe
+```
+
+## Usage
+
+- Copy the `default_config.yaml` to a custom `config.yaml` and adjust the settings to your needs.
+- Copy the `.env.example` to ` and adjust the settings to your needs.
+
+If you have cloned the repository and run the package from the source directory with `default_config.yaml`:
+```console
+foxysafe
+```
+
+If you have cloned the repository and run the package from the source directory with a path to a custom config `PATH_TO/config.yaml`:
+```console
+foxysafe --config-name PATH_TO_CONFIG.yaml
+```
+
+## Contribute
+
+### Development Installation
+
+```console
+git clone https://github.com/Pythoniasm/foxysafe.git
+cd foxysafe
+```
+
+```console
+python -m pip install --upgrade -e ".[dev]"
+```
+
+Further, you can use Makefile to run linting:
+
+```console
+make lint
+```
+
+## Changelog
+
+- v0.1.0
+  - Initial release
+  - Support for:
+    - Recursive (group) repository search
+    - Repository clone with submodules and branches
+    - Download of issue descriptions, notes, info jsons, and their attachements
+    - Download of wikis and their attachements
+    - Download of snippets, snippet descriptions, info jsons and their attachements
