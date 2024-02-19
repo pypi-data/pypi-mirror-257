@@ -1,0 +1,13 @@
+.gitignore
+LICENSE
+README.md
+kothon.py
+pyproject.toml
+tox.ini
+.github/workflows/python-publish.yml
+.github/workflows/tests.yml
+kothon.egg-info/PKG-INFO
+kothon.egg-info/SOURCES.txt
+kothon.egg-info/dependency_links.txt
+kothon.egg-info/top_level.txt
+tests/test_kothon.py
