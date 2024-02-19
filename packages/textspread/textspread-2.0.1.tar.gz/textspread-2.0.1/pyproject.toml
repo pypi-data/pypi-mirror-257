@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "textspread"
+version = "2.0.1"
+authors = [{ name = "t0mri", email = "dat0mri@proton.me" }]
+description = "Textspread takes in a .txt file and appends its contents into a spreadsheet"
+readme = { file = "README.md", content-type = "text/markdown" }
+license = { file = "LICENSE" }
+requires-python = ">=3.8"
+keywords = [
+	"text to excel",
+	"text to xl",
+	"text to spreadsheet",
+	"txt to excel",
+	"txt to xl",
+	"txt to spreadsheet",
+]
+classifiers = [
+	"Programming Language :: Python :: 3",
+	"License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+	"Operating System :: OS Independent",
+]
+dependencies = ["openpyxl"]
+
+[project.scripts]
+textspread = "textspread:cli"
+
+[project.urls]
+Homepage = "https://github.com/t0mri/textspread"
+Documentation = "https://github.com/t0mri/textspread/README.md"
+Repository = "https://github.com/t0mri/textspread"
+Issues = "https://github.com/t0mri/textspread/issues"
