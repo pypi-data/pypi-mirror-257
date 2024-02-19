@@ -1,0 +1,41 @@
+[build-system]
+requires = [
+    "setuptools>=60",
+    "setuptools-scm>=8.0",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kothon"
+dynamic = ["version"]
+requires-python = ">=3.9"
+authors = [
+    { name = "Klaus Happacher", email = "k.happacher@gmail.com" },
+]
+maintainers = [
+    { name = "Klaus Happacher", email = "k.happacher@gmail.com" },
+]
+description = "A Python library that brings Kotlin's Sequence class functionalities and the power of functional programming to Python for more expressive and efficient data processing."
+readme = "README.md"
+license = { file = "LICENSE" }
+keywords = [
+    "python",
+    "functional-programming",
+    "kotlin-sequences",
+    "data-processing",
+    "lazy-evaluation",
+    "type-hints",
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Programming Language :: Python",
+]
+
+[project.urls]
+Homepage = "https://github.com/KlausH09/kothon"
+Documentation = "https://github.com/KlausH09/kothon/blob/main/README.md"
+Repository = "https://github.com/KlausH09/kothon.git"
+Issues = "https://github.com/KlausH09/kothon/issues"
+# Changelog = "https://github.com/KlausH09/kothon/blob/main/CHANGELOG.md"
+
+[tool.setuptools_scm]
