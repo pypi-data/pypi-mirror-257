@@ -1,0 +1,5 @@
+[asphalt.components]
+cell = txl_cell.components:CellComponent
+
+[txl.components]
+cell = txl_cell.components:CellComponent
