@@ -1,0 +1,34 @@
+#: /home/ang/src/self/txt2ebook/txt2ebook/src/txt2ebook/formats/base.py:129
+msgid "title:"
+msgstr "书名："
+
+#: /home/ang/src/self/txt2ebook/txt2ebook/src/txt2ebook/formats/base.py:130
+msgid "author:"
+msgstr "作者："
+
+#: /home/ang/src/self/txt2ebook/txt2ebook/src/txt2ebook/formats/base.py:131
+msgid "translator:"
+msgstr "翻译："
+
+#: /home/ang/src/self/txt2ebook/txt2ebook/src/txt2ebook/formats/base.py:132
+msgid "tag:"
+msgstr "票签："
+
+#: /home/ang/src/self/txt2ebook/txt2ebook/src/txt2ebook/formats/base.py:143
+#: /home/ang/src/self/txt2ebook/txt2ebook/src/txt2ebook/formats/gmi.py:62
+#: /home/ang/src/self/txt2ebook/txt2ebook/src/txt2ebook/formats/md.py:61
+#: /home/ang/src/self/txt2ebook/txt2ebook/src/txt2ebook/formats/pdf.py:126
+#: /home/ang/src/self/txt2ebook/txt2ebook/src/txt2ebook/formats/txt.py:71
+msgid "toc"
+msgstr "目录"
+
+#: /home/ang/src/self/txt2ebook/txt2ebook/src/txt2ebook/formats/epub.py:144
+msgid "cover"
+msgstr "封面"
+
+#: /home/ang/src/self/txt2ebook/txt2ebook/src/txt2ebook/formats/gmi.py:47
+#: /home/ang/src/self/txt2ebook/txt2ebook/src/txt2ebook/formats/md.py:46
+#: /home/ang/src/self/txt2ebook/txt2ebook/src/txt2ebook/formats/txt.py:56
+msgid "metadata"
+msgstr "元数据"
+
