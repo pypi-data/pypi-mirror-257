@@ -1,0 +1,8 @@
+chinese_nonwords/__init__.py,sha256=bD5_c6lQYmW5mORNSX820oc_l7rBeGvgpAivB1mFjRc,4210
+chinese_nonwords/example.py,sha256=DBZPhmt0sYmBbxOxMiEaEdFo-7qMk6SnlCplomiO7v4,159
+chinese_nonwords/data/subset.csv,sha256=ZEgz295xpNa1X6T5WlXZqQGCqKgxCVAMe5Kzu5fH2Pk,105834
+chinese_nonwords/data/word.csv,sha256=EwxTKRLEY9RQuItXNOwMS7gxl44lrwHYPC-ZKLQj_pM,1579638
+chinese_nonwords-0.0.14.dist-info/METADATA,sha256=E-IGkGJjXKZVDiBGpHSMePfowWGgbN6HR1tEkJ9nsnQ,5010
+chinese_nonwords-0.0.14.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+chinese_nonwords-0.0.14.dist-info/licenses/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+chinese_nonwords-0.0.14.dist-info/RECORD,,
