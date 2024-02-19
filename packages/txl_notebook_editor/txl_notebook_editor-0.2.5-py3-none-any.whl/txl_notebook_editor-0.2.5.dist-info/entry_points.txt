@@ -1,0 +1,5 @@
+[asphalt.components]
+notebook_editor = txl_notebook_editor.components:NotebookEditorComponent
+
+[txl.components]
+notebook_editor = txl_notebook_editor.components:NotebookEditorComponent
