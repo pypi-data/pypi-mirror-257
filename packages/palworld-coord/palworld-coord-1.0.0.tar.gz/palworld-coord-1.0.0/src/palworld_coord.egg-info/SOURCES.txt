@@ -1,0 +1,11 @@
+.gitignore
+DEV.md
+LICENSE
+README.md
+pyproject.toml
+src/palworld_coord/__init__.py
+src/palworld_coord.egg-info/PKG-INFO
+src/palworld_coord.egg-info/SOURCES.txt
+src/palworld_coord.egg-info/dependency_links.txt
+src/palworld_coord.egg-info/requires.txt
+src/palworld_coord.egg-info/top_level.txt
