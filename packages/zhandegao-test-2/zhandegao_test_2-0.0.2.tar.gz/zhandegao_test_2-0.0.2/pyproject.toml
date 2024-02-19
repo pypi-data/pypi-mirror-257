@@ -1,0 +1,28 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "zhandegao_test_2"
+version = "0.0.2"
+dependencies = [
+  "pylogix",
+  "python-dotenv"
+]
+requires-python = ">=3.11"
+authors = [
+  {name = "gm zhan", email = "511174089@qq.com"}
+ 
+]
+maintainers = [
+  {name = "gm zhan", email = "511174089@qq.com"}
+]
+description = "a test project "
+readme = "README.md"
+license = {file = "LICENSE"}
+keywords = ["egg", "bacon", "sausage", "tomatoes", "Lobster Thermidor"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python"
+]
+

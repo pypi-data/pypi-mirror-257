@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: zhandegao_test_2
+Version: 0.0.2
+Summary: a test project 
+Author-email: gm zhan <511174089@qq.com>
+Maintainer-email: gm zhan <511174089@qq.com>
+License-File: LICENSE
+Keywords: Lobster Thermidor,bacon,egg,sausage,tomatoes
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Requires-Python: >=3.11
+Requires-Dist: pylogix
+Requires-Dist: python-dotenv
+Description-Content-Type: text/markdown
+
+## this is a pyproject.toml test project
