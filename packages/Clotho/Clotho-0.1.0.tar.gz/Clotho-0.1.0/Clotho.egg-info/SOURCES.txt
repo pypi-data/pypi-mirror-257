@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+clotho.py
+config.yaml.example
+main.py
+requirements.txt
+setup.py
+Clotho.egg-info/PKG-INFO
+Clotho.egg-info/SOURCES.txt
+Clotho.egg-info/dependency_links.txt
+Clotho.egg-info/entry_points.txt
+Clotho.egg-info/requires.txt
+Clotho.egg-info/top_level.txt
