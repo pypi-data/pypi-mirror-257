@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: firecore-config
+Version: 0.1.0
+Summary: Add your description here
+Author-email: SunDoge <triplez0@outlook.com>
+Requires-Python: >=3.9
+Requires-Dist: pydantic>=2.6.1
+Description-Content-Type: text/markdown
+
+# firecore-config
