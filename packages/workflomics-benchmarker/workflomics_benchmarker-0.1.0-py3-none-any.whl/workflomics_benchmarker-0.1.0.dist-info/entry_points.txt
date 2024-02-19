@@ -1,0 +1,3 @@
+[console_scripts]
+workflomics=workflomics_benchmarker.workflomics:main
+

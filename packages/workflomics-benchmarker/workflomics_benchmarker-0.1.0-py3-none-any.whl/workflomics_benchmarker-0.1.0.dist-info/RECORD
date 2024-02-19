@@ -1,0 +1,13 @@
+workflomics_benchmarker/__init__.py,sha256=da251wj7op_o3F91YDTS9QMFerVqck3XFUlGI01rk54,191
+workflomics_benchmarker/cwltool_runner.py,sha256=QUipXKfKrhTY8FG0WRqpLbSk5XCL_feNjo7HCqVLvtU,2371
+workflomics_benchmarker/cwltool_runtime_benchmark.py,sha256=JpSbnFRhCBOOXsm8kP_7wNCNQgyW8clr1KYXzg-lSUY,18284
+workflomics_benchmarker/cwltool_wrapper.py,sha256=oykhrNrDZkBTDKDoTjAyN7mcmyWRkCTLFRtrFhxHq6w,3347
+workflomics_benchmarker/loggingwrapper.py,sha256=wL1RjJDQ8y-K5E2GAcAFsGm2TjEIc9l-rMaeec2AVmc,2281
+workflomics_benchmarker/run.py,sha256=3Ie2bZiUP19kpT-F9G6LqhjNJL0_2S_npzlJKNGG48U,284
+workflomics_benchmarker/utils.py,sha256=2U5qr3is5_xMmB_9Owru0hImD440LEPBYrkbYRCsGns,200
+workflomics_benchmarker/workflomics.py,sha256=uSKA_O36Uj3bOc8QBpVZwSuioCEBd0__wOj3RaTEg0o,2599
+workflomics_benchmarker-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+workflomics_benchmarker-0.1.0.dist-info/METADATA,sha256=T1YyBkClsnCi4ozlWYY69ecxcDIyL2pbBK30U_KZnhI,2108
+workflomics_benchmarker-0.1.0.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+workflomics_benchmarker-0.1.0.dist-info/entry_points.txt,sha256=Kxt8dwSwEwUr31RzMv6jVt5YDY9R-_h4nutHReGnm6I,72
+workflomics_benchmarker-0.1.0.dist-info/RECORD,,
