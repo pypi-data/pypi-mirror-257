@@ -1,0 +1,2 @@
+[napari.manifest]
+napari-tomocube-data-viewer = napari_tomocube_data_viewer:napari.yaml
