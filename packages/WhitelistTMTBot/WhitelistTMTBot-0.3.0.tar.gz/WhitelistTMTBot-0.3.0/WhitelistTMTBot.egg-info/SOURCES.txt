@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+WhitelistTMTBot/__init__.py
+WhitelistTMTBot/dbase.py
+WhitelistTMTBot/main.py
+WhitelistTMTBot/server.py
+WhitelistTMTBot.egg-info/PKG-INFO
+WhitelistTMTBot.egg-info/SOURCES.txt
+WhitelistTMTBot.egg-info/dependency_links.txt
+WhitelistTMTBot.egg-info/requires.txt
+WhitelistTMTBot.egg-info/top_level.txt
