@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+visualtorch/__init__.py
+visualtorch/layer_utils.py
+visualtorch/layered.py
+visualtorch/utils.py
+visualtorch.egg-info/PKG-INFO
+visualtorch.egg-info/SOURCES.txt
+visualtorch.egg-info/dependency_links.txt
+visualtorch.egg-info/requires.txt
+visualtorch.egg-info/top_level.txt
