@@ -1,0 +1,8 @@
+README.md
+fastrocmodule.c
+pyproject.toml
+setup.py
+fastroc.egg-info/PKG-INFO
+fastroc.egg-info/SOURCES.txt
+fastroc.egg-info/dependency_links.txt
+fastroc.egg-info/top_level.txt
