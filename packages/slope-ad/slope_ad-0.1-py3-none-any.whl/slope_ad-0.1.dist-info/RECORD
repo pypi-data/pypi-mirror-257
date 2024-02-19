@@ -1,0 +1,14 @@
+slope/__init__.py,sha256=HP0RwOUE4rYhLt0SJmPFwBMscKo0Sx49UIJHl834_KQ,1941
+slope/core.py,sha256=UNDsXXMHDKyIpSbwJakxz4ck33jap-l75niLkIxS-nU,95214
+slope/nn.py,sha256=JoOxgEVaFUmq2SDvXk7g8qzKEuZOysmwDPvDeVoJcgs,26590
+slope/operators.py,sha256=5hE64_IJROG_GxvLUk9Ues-DnWjh7bAGY3Lh9ReOEko,38066
+slope/procedures.py,sha256=gY4c6lWWEl5oTm_D5Jf_uxtgMBfPd11LZGabJQ5wfBs,26336
+slope/shapes.py,sha256=cv1I8O947H9zH44hdJz9zvuVDgNyC6Bz_lXbAjuy5Og,135644
+slope/backends/_numpy.py,sha256=lX8h6KiH4qD-Lkd4L-em1kVuns4dy2LV-DEWbD7xt1M,26943
+slope/backends/iree.py,sha256=2lQiCq7mPpwsgmk89cAVg7g09Z34Z2liowiIzS0eBnU,32873
+slope/backends/numpy.py,sha256=tjQgrLKGITce6YkQdhoMryTdMObPS8WEJ_47VonrXKc,15958
+slope/backends/onnxruntime.py,sha256=amcgfi-q7KD8ybEMrAOB0pqoCzm_iNT_a32iObMVGDE,25414
+slope_ad-0.1.dist-info/METADATA,sha256=M8P2HiSe-FkhNHE2gSxjuyVvXumOaHBRa3IF3CJZkPk,8266
+slope_ad-0.1.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+slope_ad-0.1.dist-info/licenses/LICENSE,sha256=WbOfr4GJx-0pxMzdiOX-yyqJaoN9ixm8YhJsoIwJDcA,1073
+slope_ad-0.1.dist-info/RECORD,,
