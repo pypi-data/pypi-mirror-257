@@ -1,0 +1,12 @@
+.gitignore
+LICENSE
+README.md
+oneliner.py
+pyproject.toml
+requirements-dev.txt
+oneliner.egg-info/PKG-INFO
+oneliner.egg-info/SOURCES.txt
+oneliner.egg-info/dependency_links.txt
+oneliner.egg-info/entry_points.txt
+oneliner.egg-info/top_level.txt
+tests/test_pyl.py
