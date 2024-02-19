@@ -1,0 +1,10 @@
+rst_multi_refs/__init__.py,sha256=JwsRfMcGTNVAHIz7crvKyDN7mIyBdtw9sqhqQNE3MTc,52
+rst_multi_refs/__main__.py,sha256=nfdvIAWyfq2RISAi0e9ejwtA5axS5nsyzQSAswKYsf8,215
+rst_multi_refs/core.py,sha256=BgwM1zsotbUXGXv4C76gJPEScEkGaIPPBFFD1-kRBDw,421
+rst_multi_refs/sphinx.py,sha256=FcE3JeCZwSLnZgaqFxWVouWLlaShjqhTcr1MD1GaiyE,521
+rst_multi_refs/registry/__init__.py,sha256=pcSGwYmu6zeyQXWe_C_osmkxRbqF1bPmbYqHWjzsFbw,35
+rst_multi_refs/registry/npm.py,sha256=QvjLvRnWeDj6_UGtOxhIlR7f6oXsAwYbdtBGjOvj4_8,677
+rst_multi_refs-0.0.0.dist-info/METADATA,sha256=wc3J5Ee22ZLHfay4K6QTbgl0DWCxqZeJqUNWzi2UaE4,15125
+rst_multi_refs-0.0.0.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+rst_multi_refs-0.0.0.dist-info/licenses/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+rst_multi_refs-0.0.0.dist-info/RECORD,,
