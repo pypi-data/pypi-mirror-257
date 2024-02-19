@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+AllMeans/__init__.py
+AllMeans/all_means.py
+AllMeans/resources.py
+AllMeans.egg-info/PKG-INFO
+AllMeans.egg-info/SOURCES.txt
+AllMeans.egg-info/dependency_links.txt
+AllMeans.egg-info/requires.txt
+AllMeans.egg-info/top_level.txt
