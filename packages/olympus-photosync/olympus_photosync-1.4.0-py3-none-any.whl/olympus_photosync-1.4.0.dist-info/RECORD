@@ -1,0 +1,12 @@
+olympusphotosync/__init__.py,sha256=8UhoYEXHs1Oai7BW_ExBmuwWnRI-yMG_u1fQAXMizHQ,22
+olympusphotosync/__main__.py,sha256=F1vA4O9AJTo0T_4bqNdxx5ZX_En6YnmpD4dEpDh0YVE,61
+olympusphotosync/cli.py,sha256=e09lx7FDypDe_x2Gp9zoe5Xkthv216yMp_PY5pz-QKU,8256
+olympusphotosync/gui.py,sha256=rrs_3ZRmQ0n095xgzfyhN4-ZL1FExvjz53Mb1zLAPKg,6413
+olympusphotosync/oishare.py,sha256=XJ7BfIugezumMoIspAZ94834KH6K2w7NFGfnfapHH5M,1888
+olympusphotosync/utils.py,sha256=EsLI93GtZchf5Oesq8D6qrgjhkgxK-my0lwZqYJBXnY,2013
+olympus_photosync-1.4.0.dist-info/LICENSE,sha256=w3UA_iswzxboSj25sfulnmhBhEUvPwC8BB9LEsOR9L8,1514
+olympus_photosync-1.4.0.dist-info/METADATA,sha256=n03T5XA4px7dbcd-ev3pwQoelx45auBSjVQdYqRJQOM,4580
+olympus_photosync-1.4.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+olympus_photosync-1.4.0.dist-info/entry_points.txt,sha256=o_PzRD4ovoDLuW2XgAdtmoF9fK-mfTMfY8uQtvRb7rw,114
+olympus_photosync-1.4.0.dist-info/top_level.txt,sha256=4euh3bbcaAgViI90taAb9tAC0peznKztSvCikWjbU4I,17
+olympus_photosync-1.4.0.dist-info/RECORD,,

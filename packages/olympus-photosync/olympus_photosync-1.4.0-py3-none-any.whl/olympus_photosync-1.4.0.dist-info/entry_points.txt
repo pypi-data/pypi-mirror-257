@@ -1,0 +1,3 @@
+[console_scripts]
+olympus-photosync = olympusphotosync.cli:main
+olympus-photosync-gui = olympusphotosync.gui:main
