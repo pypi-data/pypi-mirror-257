@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+numiconveri/__init__.py
+numiconveri/__main__.py
+numiconveri/config.py
+numiconveri.egg-info/PKG-INFO
+numiconveri.egg-info/SOURCES.txt
+numiconveri.egg-info/dependency_links.txt
+numiconveri.egg-info/entry_points.txt
+numiconveri.egg-info/top_level.txt
