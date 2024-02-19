@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: pih-rgst_help
+Version: 1.11
+Summary: PIH Registrator helper service package
+Home-page: https://pacifichosp.com/
+Author: Nikita Karachentsev
+Author-email: it@pacifichosp.com
+License: MIT
+Description-Content-Type: text/markdown
