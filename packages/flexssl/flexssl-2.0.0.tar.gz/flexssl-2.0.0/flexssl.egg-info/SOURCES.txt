@@ -1,0 +1,6 @@
+setup.py
+flexssl.egg-info/PKG-INFO
+flexssl.egg-info/SOURCES.txt
+flexssl.egg-info/dependency_links.txt
+flexssl.egg-info/not-zip-safe
+flexssl.egg-info/top_level.txt
