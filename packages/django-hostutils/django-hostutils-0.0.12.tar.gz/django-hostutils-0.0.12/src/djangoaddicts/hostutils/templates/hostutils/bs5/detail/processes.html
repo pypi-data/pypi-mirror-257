@@ -1,0 +1,100 @@
+{% extends BASE_TEMPLATE|default:"handyhelpers/handyhelpers_base_bs5.htm" %}
+{% load static %}
+{% load handyhelper_tags %}
+
+{% block content %}
+<section class="my-3 animated fadeIn" style="animation-delay: .15s;">
+    {% if title or subtitle %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <div class="text-primary text-center h1 mb-2"><b>{{ title }}</b></div>
+                <div class="text-secondary text-center h5 mb-2">{{ subtitle|safe }}</div>
+                {% include 'hostutils/bs5/snippets/processes_results_timestamp.htm' %}
+            </div>
+        </div>
+    </div>
+    {% endif %}
+</section>
+
+<section class="mb-5 animated fadeIn" style="animation-delay: .25s;">
+    <div class="container-fluid">
+        <div class="row justify-content-center text-center g-4">
+            <div class="col-6 col-md-4 col-xl d-flex">
+                <div class="card flex-fill shadow hvr-grow"
+                    hx-get="{% url 'hostutils:get_host_processes' %}?source=card&status=running" hx-target='#id_process_list_container'
+                    onclick="document.getElementById('form_{{ filter_form.modal_name }}').reset()">
+                    <div class="card-body">
+                        <div class="h3 fw-bold text-primary">{{ counts.running }}</div>
+                        <div class="fw-bold text-secondary">Running</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-xl d-flex">
+                <div class="card flex-fill shadow hvr-grow"
+                    hx-get="{% url 'hostutils:get_host_processes' %}?source=card&status=idle" hx-target='#id_process_list_container'
+                    onclick="document.getElementById('form_{{ filter_form.modal_name }}').reset()">
+                    <div class="card-body">
+                        <div class="h3 fw-bold text-primary">{{ counts.idle }}</div>
+                        <div class="fw-bold text-secondary">Idle</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-xl d-flex">
+                <div class="card flex-fill shadow hvr-grow"
+                    hx-get="{% url 'hostutils:get_host_processes' %}?source=card&status=sleeping" hx-target='#id_process_list_container'
+                    onclick="document.getElementById('form_{{ filter_form.modal_name }}').reset()">
+                    <div class="card-body">
+                        <div class="h3 fw-bold text-primary">{{ counts.sleeping }}</div>
+                        <div class="fw-bold text-secondary">Sleeping</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-xl d-flex">
+                <div class="card flex-fill shadow hvr-grow"
+                    hx-get="{% url 'hostutils:get_host_processes' %}?source=card&status=stopped" hx-target='#id_process_list_container'
+                    onclick="document.getElementById('form_{{ filter_form.modal_name }}').reset()">
+                    <div class="card-body">
+                        <div class="h3 fw-bold text-primary">{{ counts.stopped }}</div>
+                        <div class="fw-bold text-secondary">Stopped</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-xl d-flex">
+                <div class="card flex-fill shadow hvr-grow"
+                    hx-get="{% url 'hostutils:get_host_processes' %}?source=card&status=zombie" hx-target='#id_process_list_container'
+                    onclick="document.getElementById('form_{{ filter_form.modal_name }}').reset()">
+                    <div class="card-body">
+                        <div class="h3 fw-bold text-primary">{{ counts.zombie }}</div>
+                        <div class="fw-bold text-secondary">Zombie</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-xl d-flex">
+                <div class="card flex-fill shadow hvr-grow"
+                    hx-get="{% url 'hostutils:get_host_processes' %}?source=card&status=dead" hx-target='#id_process_list_container'
+                    onclick="document.getElementById('form_{{ filter_form.modal_name }}').reset()">
+                    <div class="card-body">
+                        <div class="h3 fw-bold text-primary">{{ counts.dead }}</div>
+                        <div class="fw-bold text-secondary">Dead</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br/>
+</section>
+
+<section class="mb-5 animated fadeIn" style="animation-delay: .35s;">
+    <div class="container-fluid mt-5" id="id_process_list_container">
+        {% include 'hostutils/bs5/snippets/host_process_card.htm' %}
+    </div>
+</section>
+
+{% include 'handyhelpers/htmx/bs5/generic_modal.htm' %}
+{% with filter_form as form_data %}
+    {% include 'handyhelpers/generic/bs5/generic_modal_form_htmx.htm' %}
+{% endwith %}
+
+{% endblock content %}

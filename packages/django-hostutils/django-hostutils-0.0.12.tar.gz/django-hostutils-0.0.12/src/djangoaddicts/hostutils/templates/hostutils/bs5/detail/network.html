@@ -1,0 +1,149 @@
+{% extends BASE_TEMPLATE|default:"handyhelpers/handyhelpers_base_bs5.htm" %}
+{% load static %}
+{% load handyhelper_tags %}
+
+{% block content %}
+<section class="my-3 animated fadeIn" style="animation-delay: .15s;">
+    {% if title or subtitle %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <div class="text-primary text-center h1 mb-2"><b>{{ title }}</b></div>
+                <div class="text-secondary text-center h5 mb-5">{{ subtitle|safe }}</div>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+</section>
+
+<section class="mb-5 animated fadeIn" style="animation-delay: .25s;">
+    <div class="container-fluid">
+        <div class="row justify-content-center text-center g-4">
+            <div class="col-6 col-md-3 col-xl">
+                <div class="card h-100 shadow">
+                    <div class="card-body">
+                        <div class="h3 fw-bold text-primary">{{ counters.bytes_sent|byte_size }}</div>
+                        <div class="fw-bold text-secondary">Bytes Sent</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3 col-xl">
+                <div class="card h-100 shadow">
+                    <div class="card-body">
+                        <div class="h3 fw-bold text-primary">{{ counters.bytes_recv|byte_size }}</div>
+                        <div class="fw-bold text-secondary">Bytes Received</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3 col-xl">
+                <div class="card h-100 shadow">
+                    <div class="card-body">
+                        <div class="h3 fw-bold text-primary">{{ counters.packets_sent|byte_size }}</div>
+                        <div class="fw-bold text-secondary">Packets Sent</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3 col-xl">
+                <div class="card h-100 shadow">
+                    <div class="card-body">
+                        <div class="h3 fw-bold text-primary">{{ counters.packets_recv|byte_size }}</div>
+                        <div class="fw-bold text-secondary">Packets Received</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3 col-xl">
+                <div class="card h-100 shadow">
+                    <div class="card-body">
+                        <div class="h3 fw-bold text-primary">{{ counters.errin }}</div>
+                        <div class="fw-bold text-secondary">Errors In</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3 col-xl">
+                <div class="card h-100 shadow">
+                    <div class="card-body">
+                        <div class="h3 fw-bold text-primary">{{ counters.errout }}</div>
+                        <div class="fw-bold text-secondary">Errors Out</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3 col-xl">
+                <div class="card h-100 shadow">
+                    <div class="card-body">
+                        <div class="h3 fw-bold text-primary">{{ counters.dropin }}</div>
+                        <div class="fw-bold text-secondary">Drops In</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3 col-xl">
+                <div class="card h-100 shadow">
+                    <div class="card-body">
+                        <div class="h3 fw-bold text-primary">{{ counters.dropout }}</div>
+                        <div class="fw-bold text-secondary">Drops Out</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mb-5 animated fadeIn" style="animation-delay: .35s;">
+    <div class="container-fluid mt-5">
+        <div class="card shadow" style="max-height: 30vh;">
+            <div class="card-header text-primary"><span class="h4 fw-bold">Network Interfaces</span><span class="h6 ms-2">({{ interface_list|length }})</span></div>
+            <div class="card-body" style="overflow-y: auto; overflow-x: hidden;">
+                <ul class="list-group mx-auto justify-content-center" style="max-width: 93%; margin-top: .5%; margin-bottom: .5%">
+                    {% for k,v in interface_list.items %}
+                    <li class="list-group-item bg-light-subtle shadow-sm hvr-grow my-2">
+                        <a href="#" hx-get="{% url 'hostutils:get_interface_stats' k %}" hx-target="#modal_wrapper" data-bs-toggle="modal" data-bs-target="#modal_wrapper">
+                            <div class="row">
+                                <div class="h4 fw-bold">{{ k }}:</div>
+                                {% for item in v %}
+                                <div class="col small"><span class="fw-bold mx-1">address:</span><span class="text-secondary mx-1">{{ item.address }}</span></div>
+                                <div class="col small"><span class="fw-bold mx-1">netmask:</span><span class="text-secondary mx-1">{{ item.netmask }}</span></div>
+                                <div class="col small"><span class="fw-bold mx-1">broadcast:</span><span class="text-secondary mx-1">{{ item.broadcast }}</span></div>
+                                <div class="col small"><span class="fw-bold mx-1">family:</span><span class="text-secondary mx-1">{{ item.family.name }}</span></div>
+                                <div class="col small"><span class="fw-bold mx-1">ptp:</span><span class="text-secondary mx-1">{{ item.ptp }}</span></div>
+                                {% endfor %}
+                            </div>
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mb-5 animated fadeIn" style="animation-delay: .45s;">
+    <div class="container-fluid mt-5">
+        <div class="card shadow" style="max-height: 30vh;">
+            <div class="card-header text-primary"><span class="h4 fw-bold">Network Connections</span><span class="h6 ms-2">({{ connection_list|length }})</span></div>
+            <div class="card-body" style="overflow-y: auto; overflow-x: hidden;">
+                <ul class="list-group mx-auto justify-content-center" style="max-width: 93%; margin-top: .5%; margin-bottom: .5%">
+                    {% for connection in connection_list %}
+                    <li class="list-group-item bg-light-subtle shadow-sm hvr-grow my-2">
+                        <div class="row">
+                            <div class="col small"><span class="fw-bold text-primary mx-1">laddr:</span><span class="text-secondary mx-1">{{ connection.laddr.ip }}</span></div>
+                            <div class="col small"><span class="fw-bold text-primary mx-1">lport:</span><span class="text-secondary mx-1">{{ connection.laddr.port }}</span></div>
+                            <div class="col small"><span class="fw-bold text-primary mx-1">fd:</span><span class="text-secondary mx-1">{{ connection.fd }}</span></div>
+                            <div class="col small"><span class="fw-bold text-primary mx-1">family:</span><span class="text-secondary mx-1">{{ connection.family.name }}</span></div>
+                            <div class="col small"><span class="fw-bold text-primary mx-1">status:</span><span class="text-secondary mx-1">{{ connection.status }}</span></div>
+                        </div>
+                        <div class="row">
+                            <div class="col small"><span class="fw-bold text-primary mx-1">raddr:</span><span class="text-secondary mx-1">{{ connection.raddr.ip }}</span></div>
+                            <div class="col small"><span class="fw-bold text-primary mx-1">rport:</span><span class="text-secondary mx-1">{{ connection.raddr.port }}</span></div>
+                            <div class="col small"><span class="fw-bold text-primary mx-1">pid:</span><span class="text-secondary mx-1">{{ connection.pid }}</span></div>
+                            <div class="col small"><span class="fw-bold text-primary mx-1">type:</span><span class="text-secondary mx-1">{{ connection.type }}</span></div>
+                            <div class="col small"><span class="fw-bold text-primary mx-1">&nbsp;</span><span class="text-secondary mx-1">&nbsp</span></div>
+                        </div>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% include 'handyhelpers/htmx/bs5/generic_modal.htm' %}
+{% endblock content %}
