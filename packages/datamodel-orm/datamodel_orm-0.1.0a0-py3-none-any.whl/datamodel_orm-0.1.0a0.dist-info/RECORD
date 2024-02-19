@@ -1,0 +1,11 @@
+data_model_orm/__init__.py,sha256=N_hwb-2K9FsdpSoGYt6FPIzHwzNrH9q7gGPgXAsOUGg,56
+data_model_orm/base.py,sha256=X67RcDzyPylwMuS9R1jmLM7Iv1NYQ1Ern0lMJQf9l1Q,3295
+data_model_orm/errors.py,sha256=4X-_VckI3z_ZKRgreg9GyUPWEgoizKxP3UxX0LCujyI,330
+data_model_orm/data_sources/__init__.py,sha256=ZD2mhHtK8EjZvz2t2E0MmHBRwVXXXZhjwyyI_iHVbio,29
+data_model_orm/data_sources/base.py,sha256=Ut9ep-aTTOyWeSiqcNp0tAzkda0MQq8Rav4d2-WhIQo,3326
+data_model_orm/data_sources/sqlite3.py,sha256=cR0yR2ij-Qy_Lc-HhF8N4KUTypd6d4QnURWYhVVVSME,18341
+data_model_orm/data_sources/utils.py,sha256=WcUz3KiLJPPpIyWYA-NLut7zVaqQrQXU15q-19h5dKE,1693
+datamodel_orm-0.1.0a0.dist-info/METADATA,sha256=axzJEKGVtaoFPMizJO8sh7no7QLp4Fn6c13xRWFLUYw,2413
+datamodel_orm-0.1.0a0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+datamodel_orm-0.1.0a0.dist-info/top_level.txt,sha256=XqnVJ9HOFBcMdbp0T9E6xRYoMb2jADqTs6Hqk3Jzwbo,15
+datamodel_orm-0.1.0a0.dist-info/RECORD,,
