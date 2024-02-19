@@ -1,0 +1,2 @@
+Version: 1.5.2
+Arguments: ['C:\\Users\\gt\\scoop\\apps\\python\\current\\Lib\\site-packages\\delvewheel\\__main__.py', 'repair', '--add-path', 'mcurllib/x86_64-windows', '-w', 'wheel/x86_64-windows', 'dist/pymcurl-8.6.0.1-cp32-abi3-win_amd64.whl']
