@@ -1,0 +1,7 @@
+argon2-cffi
+cryptography
+password-strength
+phonenumbers
+prompt-toolkit
+termcolor
+validators
