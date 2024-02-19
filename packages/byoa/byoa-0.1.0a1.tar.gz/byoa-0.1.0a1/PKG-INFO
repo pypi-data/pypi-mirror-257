@@ -1,0 +1,113 @@
+Metadata-Version: 2.1
+Name: byoa
+Version: 0.1.0a1
+Summary: 
+Author: ada-geosys
+Author-email: ada@geosys.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: azure-storage-blob (>=12.18.3,<13.0.0)
+Requires-Dist: boto3 (>=1.28.76,<2.0.0)
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Requires-Dist: click-option-group (>=0.5.6,<0.6.0)
+Requires-Dist: cookiecutter (>=2.4.0,<3.0.0)
+Requires-Dist: docker (>=6.1.3,<7.0.0)
+Requires-Dist: opentelemetry-sdk (>=1.21.0,<2.0.0)
+Requires-Dist: pydantic (>=2.4.2,<3.0.0)
+Requires-Dist: python-slugify (>=8.0.1,<9.0.0)
+Requires-Dist: toml (>=0.10.2,<0.11.0)
+Description-Content-Type: text/markdown
+
+# byoa
+
+<!-- start elevator-pitch -->
+byoa is a command-line utility to Build Your Own Analytic based on metrics and imagery data following your business logic.
+
+* **Create** your own processor from a template
+* **Use** the processor in Docker containers or as a simple Python library
+* **Deploy** processor in an analytics cluster
+<!-- end elevator-pitch -->
+
+## Getting started
+<!-- start getting-started -->
+
+### Installation
+Install via from PyPI
+```
+pip install byoa
+```
+
+### Create the processor project
+Once byoa is installed, create a new processor with:
+
+```
+byoa init
+```
+
+Several input values will be asked:
+- **name** is the display name of the processor
+- **slug** is the identifier of the processor
+- **repository** is the name of the folder the project will be created in
+
+And voila ! The new project is located in the `repository` folder. You should be able to:
+```
+cd repository
+```
+
+### Building the processor
+#### As a Python library
+Then build the processor.
+As a Python library (wheel):
+```
+byoa build wheel
+```
+The wheel file is located in the dist folder. You can then install the library with:
+```
+pip install path_to_wheel_file.whl
+```
+
+#### As a Docker image
+If you would rather build a Docker image:
+```
+byoa build image
+```
+
+Then run the image with:
+
+```
+byoa run image --mode
+```
+
+`--mode` determines the entrypoint used to run the image. For example, `--api` runs the processor as a [FastAPI](https://fastapi.tiangolo.com/) application.
+
+### Deploy the processor
+Deploying a processor does several things :
+- Registers the processor in an Analytics Cluster (if it is the first deployment)
+- Registers the processor's version to deploy in an Analytics Cluster
+- Builds and push the processor image in a container registry
+
+The version is set in the `VERSION` file.
+You may have to set your Python path (`PYTHONPATH` environment variable) to `src`.
+
+Deploy your processor with the following command:
+```
+byoa deploy
+```
+
+You undo the deployment with the command:
+```
+byoa delete --version VERSION
+```
+
+<!-- end getting-started -->
+
+## Contact
+* Report a bug or request a feature: [Issue](https://github.com/GEOSYS/byoa/issues)
+* For any additional information, please [email us](mailto:sales@earthdailyagro.com)
+* Socials : [LinkedIn](https://fr.linkedin.com/company/earthdailyagro), [X](https://twitter.com/EarthDailyAgro)
+
+## License
+Distributed under the [MIT License](LICENSE).
+
