@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2022 OpenSynergy Indonesia
+     Copyright 2022 PT. Simetri Sinergi Indonesia
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+<record id="hr_timesheet_view_tree" model="ir.ui.view">
+    <field name="name">hr.timesheet tree</field>
+    <field name="model">hr.timesheet</field>
+    <field name="inherit_id" ref="ssi_work_log_mixin.hr_timesheet_view_tree" />
+    <field name="priority" eval="30" />
+    <field name="arch" type="xml">
+        <data>
+            <xpath expr="//field[@name='total_work_log']" position="after">
+                <field name="attendance_work_log_diff" widget="float_time" />
+            </xpath>
+        </data>
+    </field>
+</record>
+
+<record id="hr_timesheet_view_attendance_form" model="ir.ui.view">
+    <field name="name">hr.timesheet_attendance form</field>
+    <field name="model">hr.timesheet</field>
+    <field name="inherit_id" ref="ssi_work_log_mixin.hr_timesheet_view_form" />
+    <field name="priority" eval="30" />
+    <field name="arch" type="xml">
+        <data>
+            <xpath expr="//field[@name='total_work_log']" position="after">
+                <field name="attendance_work_log_diff" widget="float_time" />
+            </xpath>
+        </data>
+    </field>
+</record>
+
+<record id="hr_timesheet_view_attendance_work_log_form" model="ir.ui.view">
+    <field name="name">hr.timesheet_attendance_work_log form</field>
+    <field name="model">hr.timesheet</field>
+    <field name="mode">extension</field>
+    <field name="inherit_id" ref="ssi_timesheet.hr_timesheet_view_form" />
+    <field name="arch" type="xml">
+        <data>
+            <xpath expr="//page[@name='daily_summary']" position="attributes">
+                <attribute name="invisible">0</attribute>
+            </xpath>
+            <xpath expr="//field[@name='daily_summary_ids']/tree/field[@name='date']" position="after">
+                <field name="total_work_log" widget="float_time"/>
+            </xpath>
+            <xpath expr="//field[@name='daily_summary_ids']/form/group/field[@name='date']" position="after">
+                <field name="total_work_log" widget="float_time"/>
+            </xpath>
+        </data>
+    </field>
+</record>
+
+</odoo>
