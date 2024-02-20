@@ -1,0 +1,9 @@
+License
+README.md
+setup.py
+PickleHandler/PickleHandler.py
+PickleHandler/__init__.py
+PickleHandler.egg-info/PKG-INFO
+PickleHandler.egg-info/SOURCES.txt
+PickleHandler.egg-info/dependency_links.txt
+PickleHandler.egg-info/top_level.txt
