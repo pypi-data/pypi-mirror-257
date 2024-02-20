@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: terminal-bot-records-notes
+Version: 0.0.3
+Summary: Command line bot personal assistant
+Home-page: https://github.com/avtarso/python_core_21_team_11_project/tree/main
+Author: Avtarso
+Author-email: t0676352927@gmail.com
+License: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# python_core_21_team_11_project
+Command line bot personal assistant
