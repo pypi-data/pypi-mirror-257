@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: git2version
+Version: 0.0.34
+Summary: A tool to create a project version number from a git repository
+Author: Joseph McKenna
+Author-email: jtkmckenna@quantifiedcarbon.com
+License: MIT
+License-File: LICENSE
+Requires-Dist: GitPython
