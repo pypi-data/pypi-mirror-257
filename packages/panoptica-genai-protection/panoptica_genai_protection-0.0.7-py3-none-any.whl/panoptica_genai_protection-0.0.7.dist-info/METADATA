@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: panoptica-genai-protection
+Version: 0.0.7
+Requires-Python: >=3.9
+Requires-Dist: escherauth ==0.3.4
+Requires-Dist: pydantic ==2.5.1
+Requires-Dist: httpx ==0.25.1
+
