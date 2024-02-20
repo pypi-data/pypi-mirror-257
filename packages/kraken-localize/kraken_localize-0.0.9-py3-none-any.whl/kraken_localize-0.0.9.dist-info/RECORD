@@ -1,0 +1,16 @@
+kraken_localize/__init__.py,sha256=vQw8brD-w_Y9tyZ7y8cNazeRMe1gQYrDQknGu957LZY,108
+kraken_localize/class_kraken_localize.py,sha256=Z1OZQ8O_BYtOuMjqYAm39XFUCHjJ8YwM4aPwDqBN9r4,3056
+kraken_localize/kraken_localize.py,sha256=1NZcrwggA4LP5fYuPQnVTzXhPIHbP0aG9sD3rAl-h_8,2145
+kraken_localize/helpers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kraken_localize/helpers/json.py,sha256=7wUi1HZS15sT3rHbxrKdMysg4f5aQVVD6ImXnTgq-aQ,1816
+kraken_localize/helpers/things.py,sha256=gS9N7crgv1tAwRyM9khHDMafLLrt7MDYwXkjmLQs23s,2690
+kraken_localize/localizations/__init__.py,sha256=XSe4CjlWDSxwmcJqgunbDfr6Djr6rTw5R42hbN-YPto,83
+kraken_localize/localizations/currency.py,sha256=tdyUSEPOC3i43fExhOKdEqMgvi1BMBCbWwkkftOgWfw,708
+kraken_localize/localizations/date.py,sha256=eJVHKwgkF2hd5XI4cKmI8WxCQrCLIPb-5sHNkcyGkBU,1383
+kraken_localize/localizations/number.py,sha256=NLauKwjqTQQ0SjppfO4K5kR-Ff3RTY6afDEA4DMrZWA,1720
+kraken_localize/localizations/text.py,sha256=A1kKKYLshzqp1JQgdqmepnBBsrOpOjJOFuzMk5g6K48,18341
+kraken_localize-0.0.9.dist-info/LICENSE.txt,sha256=qLFuqzqW832YZMyEW1bt0f6Ut1wv0evqawURrhsLpp8,1071
+kraken_localize-0.0.9.dist-info/METADATA,sha256=rkt_VPMei0-VWv8a1AFRBbh1bOe60rR2vHwfKbx0OFs,651
+kraken_localize-0.0.9.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+kraken_localize-0.0.9.dist-info/top_level.txt,sha256=XnSrei9KsCJis7jgTpQTD6KseLVX9N0QjZ5zmyjCT7E,16
+kraken_localize-0.0.9.dist-info/RECORD,,
