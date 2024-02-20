@@ -1,0 +1,10 @@
+README.md
+setup.py
+huggingface/asr.py
+huggingface/asr_cat.py
+huggingface/asr_deepspeech.py
+retico_core_asr.egg-info/PKG-INFO
+retico_core_asr.egg-info/SOURCES.txt
+retico_core_asr.egg-info/dependency_links.txt
+retico_core_asr.egg-info/requires.txt
+retico_core_asr.egg-info/top_level.txt
