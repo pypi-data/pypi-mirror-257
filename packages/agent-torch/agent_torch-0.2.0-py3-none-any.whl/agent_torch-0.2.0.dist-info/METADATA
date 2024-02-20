@@ -1,0 +1,253 @@
+Metadata-Version: 2.1
+Name: agent-torch
+Version: 0.2.0
+Summary: large population models
+Home-page: https://github.com/AgentTorch/AgentTorch
+Author: Ayush Chopra, Jayakumar Subramanian and Ramesh Raskar
+Author-email: ayushchopra96@gmail.com
+License: MIT License
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: absl-py ==1.4.0
+Requires-Dist: antlr4-python3-runtime ==4.9.3
+Requires-Dist: anyio ==3.7.1
+Requires-Dist: appnope ==0.1.3
+Requires-Dist: argon2-cffi ==21.3.0
+Requires-Dist: argon2-cffi-bindings ==21.2.0
+Requires-Dist: asttokens ==2.2.1
+Requires-Dist: attrs ==23.1.0
+Requires-Dist: backcall ==0.2.0
+Requires-Dist: beautifulsoup4 ==4.12.2
+Requires-Dist: bleach ==6.0.0
+Requires-Dist: branca ==0.6.0
+Requires-Dist: cachetools ==5.3.1
+Requires-Dist: census ==0.8.20
+Requires-Dist: certifi ==2023.5.7
+Requires-Dist: cffi ==1.15.1
+Requires-Dist: charset-normalizer ==3.1.0
+Requires-Dist: comm ==0.1.3
+Requires-Dist: contourpy ==1.1.0
+Requires-Dist: coverage ==7.2.7
+Requires-Dist: cycler ==0.11.0
+Requires-Dist: debugpy ==1.6.7
+Requires-Dist: decorator ==5.1.1
+Requires-Dist: defusedxml ==0.7.1
+Requires-Dist: epiweeks ==2.2.0
+Requires-Dist: et-xmlfile ==1.1.0
+Requires-Dist: exceptiongroup ==1.1.2
+Requires-Dist: executing ==1.2.0
+Requires-Dist: fastjsonschema ==2.17.1
+Requires-Dist: filelock ==3.12.2
+Requires-Dist: folium ==0.14.0
+Requires-Dist: fonttools ==4.40.0
+Requires-Dist: google-auth ==2.22.0
+Requires-Dist: google-auth-oauthlib ==1.0.0
+Requires-Dist: grad-june ==0.1.8
+Requires-Dist: h5py ==3.8.0
+Requires-Dist: idna ==3.4
+Requires-Dist: imageio ==2.31.1
+Requires-Dist: importlib-metadata ==6.7.0
+Requires-Dist: importlib-resources ==5.12.0
+Requires-Dist: iniconfig ==2.0.0
+Requires-Dist: ipdb ==0.13.13
+Requires-Dist: ipykernel ==6.24.0
+Requires-Dist: ipython ==8.12.2
+Requires-Dist: ipython-genutils ==0.2.0
+Requires-Dist: ipywidgets ==8.0.7
+Requires-Dist: jax ==0.4.13
+Requires-Dist: jaxlib ==0.4.13
+Requires-Dist: jedi ==0.18.2
+Requires-Dist: jellyfish ==0.11.2
+Requires-Dist: Jinja2 ==3.1.2
+Requires-Dist: joblib ==1.2.0
+Requires-Dist: jsonschema ==4.18.0
+Requires-Dist: jsonschema-specifications ==2023.6.1
+Requires-Dist: jupyter ==1.0.0
+Requires-Dist: jupyter-console ==6.6.3
+Requires-Dist: jupyter-events ==0.6.3
+Requires-Dist: jupyter-client ==8.3.0
+Requires-Dist: jupyter-core ==5.3.1
+Requires-Dist: jupyter-server ==2.7.0
+Requires-Dist: jupyter-server-terminals ==0.4.4
+Requires-Dist: jupyterlab-pygments ==0.2.2
+Requires-Dist: jupyterlab-widgets ==3.0.8
+Requires-Dist: kiwisolver ==1.4.4
+Requires-Dist: Markdown ==3.4.4
+Requires-Dist: MarkupSafe ==2.1.3
+Requires-Dist: matplotlib ==3.7.1
+Requires-Dist: matplotlib-inline ==0.1.6
+Requires-Dist: mistune ==3.0.1
+Requires-Dist: ml-dtypes ==0.2.0
+Requires-Dist: mpmath ==1.3.0
+Requires-Dist: nbclassic ==1.0.0
+Requires-Dist: nbclient ==0.8.0
+Requires-Dist: nbconvert ==7.6.0
+Requires-Dist: nbformat ==5.9.0
+Requires-Dist: nest-asyncio ==1.5.6
+Requires-Dist: networkx ==3.0
+Requires-Dist: normflows ==1.6.2
+Requires-Dist: notebook ==6.5.4
+Requires-Dist: notebook-shim ==0.2.3
+Requires-Dist: numpy ==1.24.3
+Requires-Dist: oauthlib ==3.2.2
+Requires-Dist: omegaconf ==2.3.0
+Requires-Dist: openpyxl ==3.1.2
+Requires-Dist: opt-einsum ==3.3.0
+Requires-Dist: overrides ==7.3.1
+Requires-Dist: packaging ==23.1
+Requires-Dist: pandas ==1.5.0
+Requires-Dist: pandocfilters ==1.5.0
+Requires-Dist: parso ==0.8.3
+Requires-Dist: pexpect ==4.8.0
+Requires-Dist: pickleshare ==0.7.5
+Requires-Dist: Pillow ==9.5.0
+Requires-Dist: pkgutil-resolve-name ==1.3.10
+Requires-Dist: platformdirs ==3.8.0
+Requires-Dist: pluggy ==1.2.0
+Requires-Dist: prometheus-client ==0.17.0
+Requires-Dist: prompt-toolkit ==3.0.39
+Requires-Dist: protobuf ==4.24.0
+Requires-Dist: psutil ==5.9.5
+Requires-Dist: ptyprocess ==0.7.0
+Requires-Dist: pure-eval ==0.2.2
+Requires-Dist: pyasn1 ==0.5.0
+Requires-Dist: pyasn1-modules ==0.3.0
+Requires-Dist: pycparser ==2.21
+Requires-Dist: Pygments ==2.15.1
+Requires-Dist: pyparsing ==3.1.0
+Requires-Dist: pytest ==7.2.0
+Requires-Dist: pytest-cov ==4.0.0
+Requires-Dist: python-dateutil ==2.8.2
+Requires-Dist: python-json-logger ==2.0.7
+Requires-Dist: pytz ==2023.3
+Requires-Dist: PyYAML ==6.0
+Requires-Dist: pyzmq ==25.1.0
+Requires-Dist: qtconsole ==5.4.3
+Requires-Dist: QtPy ==2.3.1
+Requires-Dist: referencing ==0.29.1
+Requires-Dist: requests ==2.31.0
+Requires-Dist: requests-oauthlib ==1.3.1
+Requires-Dist: rfc3339-validator ==0.1.4
+Requires-Dist: rfc3986-validator ==0.1.1
+Requires-Dist: rpds-py ==0.8.8
+Requires-Dist: rsa ==4.9
+Requires-Dist: scikit-learn ==1.2.2
+Requires-Dist: scipy ==1.10.1
+Requires-Dist: Send2Trash ==1.8.2
+Requires-Dist: six ==1.16.0
+Requires-Dist: sniffio ==1.3.0
+Requires-Dist: soupsieve ==2.4.1
+Requires-Dist: stack-data ==0.6.2
+Requires-Dist: sympy ==1.12
+Requires-Dist: tensorboard-data-server ==0.7.1
+Requires-Dist: tensorboard-plugin-wit ==1.8.1
+Requires-Dist: terminado ==0.17.1
+Requires-Dist: threadpoolctl ==3.1.0
+Requires-Dist: tinycss2 ==1.2.1
+Requires-Dist: tomli ==2.0.1
+Requires-Dist: torch ==2.0.0
+Requires-Dist: torch-cluster ==1.6.1
+Requires-Dist: torch-geometric ==2.3.0
+Requires-Dist: torch-scatter ==2.1.1
+Requires-Dist: torch-sparse ==0.6.17
+Requires-Dist: torch-spline-conv ==1.2.2
+Requires-Dist: tornado ==6.3.2
+Requires-Dist: tqdm ==4.65.0
+Requires-Dist: traitlets ==5.9.0
+Requires-Dist: typing-extensions ==4.6.3
+Requires-Dist: tzdata ==2023.3
+Requires-Dist: urllib3 ==2.0.3
+Requires-Dist: us ==3.1.1
+Requires-Dist: wcwidth ==0.2.6
+Requires-Dist: webencodings ==0.5.1
+Requires-Dist: websocket-client ==1.6.1
+Requires-Dist: Werkzeug ==2.3.6
+Requires-Dist: wget ==3.2
+Requires-Dist: widgetsnbextension ==4.0.8
+Requires-Dist: zipp ==3.15.0
+
+This repository contains code corresponding to the paper: "AgentTorch: a Framework for Agent-based Modeling with Automatic Differentiation". The basic framework is given in the figure below:
+
+![Agent Torch Framework](./Figure2_Framework_final.png "AgentTorch Framework")
+
+# 1. Installation
+
+## Download
+The simplest way to install AgentTorch is from PyPi at:
+```
+pip install agent-torch
+```
+
+To get the latest version of AgentTorch, you can install it directly from git at:
+```
+pip install git+https://github.com/AgentTorch/AgentTorch
+```
+
+# 2. Setup
+
+## Hardware
+The code has been tested for macOS Catalina 10.1.7 and Ubuntu 22.04.2 LTS. Large-scale experiments are run using NVIDIA TITANX GPU and V100 GPU.
+
+## Dependencies
+
+> Step 1: Create a virtual environment `agent_torch_env`. We recommend using python 3.8 and pip as the install.
+```
+python3.8 -m venv agent_torch_env
+source agent_torch_env/bin/activate
+```
+To install python3.8, follow these tutorials for [Mac](https://www.laptopmag.com/how-to/install-python-on-macos) and [Ubuntu](https://linux.how2shout.com/install-python-3-9-or-3-8-on-ubuntu-22-04-lts-jammy-jellyfish/) respectively. To install pip, follow these tutorials for [Mac](https://phoenixnap.com/kb/install-pip-mac) and [Ubuntu](https://linuxize.com/post/how-to-install-pip-on-ubuntu-20.04/) respectively. 
+
+
+> Step 2: Install pytorch and pytorch geometric. We recommend using Pytorch 2.0 and corresponding Pytorch geometric bindings. We recommend following the guides for [offical pytorch install](https://pytorch.org/get-started/locally/) and [official pytorch-geometric install](https://github.com/pyg-team/pytorch_geometric#pytorch-20). We summarize the commands below:
+
+Mac:
+```
+# CUDA is not available on MacOS, please use default package
+pip install torch torchvision torchaudio
+pip install pyg_lib torch_scatter torch_sparse torch_cluster torch_spline_conv
+```
+
+Ubuntu:
+```
+pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/${CUDA}
+pip install pyg_lib torch_scatter torch_sparse torch_cluster torch_spline_conv -f https://data.pyg.org/whl/torch-2.0.0+${CUDA}.html
+```
+where ${CUDA} is the CUDA version. We have tested our code on cu118. 
+
+
+> Step 3: Install AgentTorch specific dependencies as below:
+```
+cd AgentTorch
+pip3 install -r requirements.txt
+```
+
+# 3. AgentTorch overview
+Creating a new simulator using AgentTorch involves the following steps:
+1. Defining the configuration: Here we define the variables and functions to be used in the simulator. In this module a `Configurator` object is to be created to which the variables and functions to be used in the simulator are added as properties. These are then used to instantiate a `Runner` object. An example for this can be found in [nca_simulator.py](models/nca/simulator.py"). 
+2. Defining the trainer: This module loads the configuration, the various variables and functions that form the substeps and executes the main simulation and learning loop. Any learning related loss and optimization function need to be defined here. An example for this can be found in "models/nca/trainer.py"
+3. Defining substeps: As described in the figure above, each simulation comprises of multiple substeps. Each substep comprises of the following four functions: observation, action, transition and reward. Each of these need to be defined in a separate module, using the base classes for `SubstepObservation`, `SubstepTransition`, `SubstepPolicy` provided in [substep.py](AgentTorch/substep.py). Since these functions need to be differentiable, we provide several differentiable utilities in [helpers_soft.py](AgentTorch/helpers/soft.py). These can be used to create differentiable variants of operations such as maximum, logical comparison etc. An example for substep definition can be found in [nca_evolve.py](models/nca/substeps/evolve_cell/transition.py), [covid_quarantine.py](models/covid/substeps/quarantine/transition.py)
+4. Using helpers: AgentTorch has several useful functions defined in [helpers](AgentTorch/helpers) that can be used in defining the various functions. These include library of utilities to support differentiability of substeps, loading public data sources such as from US census and, initialization of state properties and environment networks. For instance, [helpers_soft.py](AgentTorch/helpers/soft.py) include differentiable utilities and [helpers_general.py](AgentTorch/helpers/general.py) includes uitilies for data reading and writing.
+
+A detailed code specific documentation is provided in [create model docs](docs/create.md)
+
+# 4. Running examples
+You can run a sample experiment with the following command:
+```
+cd models/nca
+python trainer.py --c config.yaml
+```
+```
+cd models/opinion
+python trainer.py --c config.yaml
+```
+
+# 5. Starter Guide
+
+## Generate and Interpret `config.yaml` file
+An interactive notebook with step-by-step guide to define and understand a `config.yaml` is given in [config_example_docs](docs/examples/config/config_nca.ipynb).
+
+## Build your own AgentTorch model
+A step-by-step guide to start a new AgentTorch project is given in [starter documentation](docs/create.md)
+
+# 6. Issues
+The AgentTorch project is under active development and are continually fixing issues. Please feel free to leave a comment at [Troubleshooting issues](https://github.com/AgentTorch/AgentTorch/issues/1)
