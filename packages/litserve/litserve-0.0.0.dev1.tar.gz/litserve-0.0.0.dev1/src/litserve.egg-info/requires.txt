@@ -1,0 +1,11 @@
+fastapi>=0.100
+httpx
+
+[test]
+coverage>=5.0
+lightning>2.0.0
+mypy==1.8.0
+pytest-cov
+pytest>=6.0
+requests
+torch>2.0.0
