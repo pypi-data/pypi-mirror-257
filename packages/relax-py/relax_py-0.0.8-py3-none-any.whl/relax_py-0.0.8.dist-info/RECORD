@@ -1,0 +1,11 @@
+relax/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+relax/app.py,sha256=h9Mbb-sRl6ftgtReKewQ-SazLDJ-LqDLkhaiOw1QxyI,11671
+relax/html.py,sha256=9SM2QkstmPu1sByQ6p7wFkI-t3sgdeTBxNJnYd94KE0,16605
+relax/injection.py,sha256=aeiuF7aogCYjFAeQybGHgZHQvgoFHyKKy3j4PJATQwI,4511
+relax/injection.pyi,sha256=cTtXZ6c-T8u0nrxO2sWKn30UwhrBCt9S--UcKesGInA,442
+relax/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+relax/test.py,sha256=rxHq7hS44auxG-z7AbJIZHk__OK4OTNroTd6r0BoPMw,1279
+relax/test.pyi,sha256=F3kv1pIdP4H4sti_LUQwv-REubYArpUEHJ0l9hdnsdI,240
+relax_py-0.0.8.dist-info/METADATA,sha256=1n7blckCKDaJ8QjPzkMOk9f1yJ6P6vltYj_FUS062mo,476
+relax_py-0.0.8.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+relax_py-0.0.8.dist-info/RECORD,,
