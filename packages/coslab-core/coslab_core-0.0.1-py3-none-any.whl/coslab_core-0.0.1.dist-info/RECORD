@@ -1,0 +1,11 @@
+imagetaggers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+imagetaggers/aws.py,sha256=dSUjePRf5eORohjuHrCFixRP-2_qODY7zgq7dIccxlE,1225
+imagetaggers/azure_vision.py,sha256=FAqvordqb1S-RlzMguGThapATHty0gDxh_Ic9VBNP3c,1940
+imagetaggers/clarify.py,sha256=pSbXTMyYOJzaW-iun4SujzrUgtoBqPgOghFL9Talh8I,1815
+imagetaggers/common.py,sha256=DY_hAQrb6b8cxxaQ9efTYgScDEofkBCEz7y43BGjfkE,20
+imagetaggers/googlecloud.py,sha256=yPRL1dvADQ4HuEb0uxzzdVaVM-x1zX_9zFsHevnp8RA,1398
+imagetaggers/tag_comparator.py,sha256=yJJQVPY7ig9b2y617NuhhvhT4Ive56eKmgj6XdyYF-Y,2864
+imagetaggers/taggerresults.py,sha256=UpKk6eDtf60aku6wHOguU61Gu5nU8H4VRO-3GHPnOR8,3074
+coslab_core-0.0.1.dist-info/METADATA,sha256=3PkOX4G4RYzBLFraaukYfjLT24SLdJNFLzYyxK2L-8s,2779
+coslab_core-0.0.1.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+coslab_core-0.0.1.dist-info/RECORD,,
