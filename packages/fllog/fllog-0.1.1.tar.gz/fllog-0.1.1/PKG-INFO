@@ -1,0 +1,155 @@
+Metadata-Version: 2.1
+Name: fllog
+Version: 0.1.1
+Summary: Log contact made on fldigi to MacLoggerDX.
+Author: Fred C. (W6BSD)
+License: BSD 2-Clause License
+        
+        Copyright (c) 2019, Fred Cirera
+        All rights reserved.
+        
+        Redistribution and use in source and binary forms, with or without
+        modification, are permitted provided that the following conditions are met:
+        
+        1. Redistributions of source code must retain the above copyright notice, this
+           list of conditions and the following disclaimer.
+        
+        2. Redistributions in binary form must reproduce the above copyright notice,
+           this list of conditions and the following disclaimer in the documentation
+           and/or other materials provided with the distribution.
+        
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+        AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+        IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+        DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+        FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+        DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+        SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+        CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+        OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+        OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+        
+Project-URL: Documentation, https://github.com/0x9900/fllog/
+Project-URL: Source, https://github.com/0x9900/fllog
+Project-URL: Tracker, https://github.com/0x9900/fllog/issues
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Telecommunications Industry
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python
+Classifier: Topic :: Communications :: Ham Radio
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: pre-commit; extra == "dev"
+Requires-Dist: ipdb; extra == "dev"
+Requires-Dist: flake8; extra == "dev"
+Requires-Dist: mypy; extra == "dev"
+Requires-Dist: isort; extra == "dev"
+
+# fllog
+
+## Log fldigi QSO on MacLoggerDX
+
+This simple program is called from a fldigi macro to log your QSO on
+MacLoggerDX.
+
+The program `fllog` can log QSOs to MacLoggerDX locally or through the network.
+
+For more information on how to use that program, go to
+https://0x9900.com/logging-on-macloggerdx-with-fldigi/
+
+## Installation
+
+```
+$ pip install fllog
+```
+
+Once the program is installed, you must create a [macro][1] in fldigi to log the QSO.
+
+```
+<EXEC>/usr/local/bin/fllog pipe</EXEC>
+```
+ > Replace `/usr/local/bin` with the path to the program.
+
+## Usage
+
+Running the program `fllog` with the option `--help` will give you the
+complete list of options.
+
+```bash
+$ fllog --help
+usage:
+fllog [pipe | udp]
+
+This program is a companion program to log from fldigi to MacLoggerDX.
+
+Create a macro "LOG" in fldigi with the following line:
+<EXEC>/usr/local/bin/fllog [mode]</EXEC>
+
+ > Replace /usr/local/bin with the path to the program.
+
+The mode can be either "udp" or "pipe"
+For more information, call "fllog --help" on a terminal
+
+For example:
+<EXEC>/usr/local/bin/fllog udp --ipaddress 127.0.0.1 --port 2237</EXEC>
+
+fldigi to MacLoggerDX logger
+
+positional arguments:
+  {pipe,udp}
+    pipe                The log will be sent using a pipe command
+    udp                 The log will be sent using UDP
+
+options:
+  -h, --help            show this help message and exit
+  -a ADIF, --adif ADIF  Backup the log entries into an AIDF file
+  -d, --debug           Dump the fldigi environment variables
+
+```
+
+The arguments for the subcommand udp are:
+
+```bash
+options:
+  -h, --help            show this help message and exit
+  -i IPADDRESS, --ipaddress IPADDRESS
+                        Macloggerdx ip address [default: 127.0.0.1]
+  -p PORT, --port PORT  Macloggerdx port number [default: 2237]
+```
+
+## Macro example
+
+```
+<NAME>, Thank you for the QSO on <BAND> / <MODE>.
+I look forward to seeing your signal on my waterfall, 73.
+QSL: LoTW, DIRECT
+<ZDT> <CALL> de <MYCALL> sk
+<RX>
+<EXEC>/usr/local/bin/fllog pipe</EXEC>
+<LOG>
+```
+
+The following example is the macro I use on my Linux machine to log the fldigi contact to MacLoggerDX running on my Mac.
+
+In the following example, `fldigi` logs the contact to the machine `192.168.10.175`, using the default port, and also saves the contacts into the file `/home/fred/logbook.adif`.
+
+ > _Note:_ The arguments `--adif` and `--debug` are global arguments and need to be placed before the mode (pipe|udp).
+
+```
+<NAME>, Thank you for the QSO on <BAND> / <MODE>.
+I look forward to seeing your signal on my waterfall, 73.
+QSL: LoTW, DIRECT
+<ZDT> <CALL> de <MYCALL> sk
+<RX>
+<EXEC>/usr/local/bin/fllog --adif /home/fred/logbook.adif udp --ipaddress 192.168.10.175</EXEC>
+<LOG>
+```
+
+
+[1]: http://www.w1hkj.com/FldigiHelp/macros_sub_page.html
