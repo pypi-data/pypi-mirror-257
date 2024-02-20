@@ -1,0 +1,3 @@
+src/python/tests/test-data/2.fa.sig.gz
+src/python/tests/test-data/47.fa.sig.gz
+src/python/tests/test-data/63.fa.sig.gz

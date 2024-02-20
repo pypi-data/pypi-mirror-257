@@ -1,0 +1,2 @@
+query_name,query_md5,match_name,match_md5,containment,max_containment,jaccard,intersect_hashes
+"NC_009665.1 Shewanella baltica OS185, complete genome",09a08691ce52952152f0e866a59f6261,"NC_011663.1 Shewanella baltica OS223, complete genome",38729c6374925585db28916b82a6f513,0.48850685725323545,0.48850685725323545,0.3206949023586102,2529.0

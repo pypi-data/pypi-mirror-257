@@ -1,0 +1,2 @@
+similarity,md5,filename,name,query_filename,query_name,query_md5,ani
+0.48850685725323545,38729c6374925585db28916b82a6f513,src/python/tests/test-data/63.fa.sig.gz,"NC_011665.1 Shewanella baltica OS223 plasmid pS22303, complete sequence",podar-ref/47.fa,"NC_009661.1 Shewanella baltica OS185 plasmid pS18501, complete sequence",09a08691,0.9771552502238963
