@@ -1,0 +1,16 @@
+async_batcher/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+async_batcher/aws/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+async_batcher/aws/dynamodb/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+async_batcher/aws/dynamodb/get.py,sha256=fkYjx4RhhiQ0uXF6Me5nTGZ9MSNYmaAG8rZ9_B681mI,4063
+async_batcher/aws/dynamodb/write.py,sha256=bWuSaF435nEhix9TeaQFNSBwqAhtY-8yE1lZYDtRXa0,3679
+async_batcher/batcher.py,sha256=-z2B7QVBwcyaFqKcDPy2Z42ZZNVwKZLYG3gpYA9RzOs,5660
+async_batcher/ml/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+async_batcher/ml/keras/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+async_batcher/ml/keras/model.py,sha256=x9t9YFcbR6BM7SjQyv1mh5Nikg9SigWF9wkdODLbNlU,1657
+async_batcher/ml/sklearn/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+async_batcher/ml/sklearn/model.py,sha256=hh_xtR0o24V5Yk8OH7tQONR0C-FD4OAv8tPRKT6rctg,1765
+async_batcher/scylladb/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+async_batcher/scylladb/update.py,sha256=a3X8Bea8n_bwJYw-SrZ-dMgSy2noQnBMNkXXM3AOs7Q,1745
+async_batcher-0.1.0rc1.dist-info/METADATA,sha256=XXh-8d3mCq2tceaiT-Aq4GEqxQS14efdxvqAjNMV1_8,4046
+async_batcher-0.1.0rc1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+async_batcher-0.1.0rc1.dist-info/RECORD,,
