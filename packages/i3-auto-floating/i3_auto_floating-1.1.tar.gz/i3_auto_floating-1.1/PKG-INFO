@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: i3_auto_floating
+Version: 1.1
+Summary: Remember floating state of i3wm windows and automatically set it when a new window of the same app is created.
+Home-page: https://github.com/artemave/i3_auto_floating
+Author: Artem Avetisyan
+License: MIT
+License-File: LICENSE
+Requires-Dist: i3ipc>=2.2.1
