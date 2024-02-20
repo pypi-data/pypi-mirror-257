@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+terminal-bot-records-notes/__init__.py
+terminal-bot-records-notes/main.py
+terminal_bot_records_notes.egg-info/PKG-INFO
+terminal_bot_records_notes.egg-info/SOURCES.txt
+terminal_bot_records_notes.egg-info/dependency_links.txt
+terminal_bot_records_notes.egg-info/entry_points.txt
+terminal_bot_records_notes.egg-info/top_level.txt
