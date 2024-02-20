@@ -1,0 +1,14 @@
+cloudflareai/__init__.py,sha256=19hNxMPEIkJI-iP71U2f2GXmeH9-viw7_7aejhNOGRU,331
+cloudflareai/core.py,sha256=23hQ4wNJYYyajdwElAo16ED2SB3l9D13rgSE_4t1r7c,8368
+cloudflareai/enums.py,sha256=4p6ENcv5Og0GjnqQUZf4d7P66NxOLNSzYq8tTXjiABg,3223
+cloudflareai/exceptions.py,sha256=MlaHXFS7yRK3lBDCzN6FapmIucIulGo41tTUt4sWuuI,225
+cloudflareai/http.py,sha256=wGGXqRmz-7mohKM7cvayE1fLuNMGjMXOZuqrY7vtreo,2287
+cloudflareai/models.py,sha256=IztpBpqBYg8Q7_Bgu8ZElneUhs8XEFfrJyhSefTvZEw,5010
+cloudflareai/types.py,sha256=uTha2VLa55tOFtE-rUGUQKUMGdKWmJWkT8vIzVvb1LY,200
+cloudflareai/ext/__init__.py,sha256=DqbY76QMNZ_2xuZfVgsXbR2tm1yLFSAjlBvKIWatMqM,87
+cloudflareai/ext/enums.py,sha256=4p6ENcv5Og0GjnqQUZf4d7P66NxOLNSzYq8tTXjiABg,3223
+cloudflareai-0.1.2.dist-info/LICENSE,sha256=HyVuytGSiAUQ6ErWBHTqt1iSGHhLmlC8fO7jTCuR8dU,16725
+cloudflareai-0.1.2.dist-info/METADATA,sha256=N4EBWTzqTU8aEc_LbSqqO8z4x-BsJ_mHdw2TTTDERGU,2757
+cloudflareai-0.1.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+cloudflareai-0.1.2.dist-info/top_level.txt,sha256=KtgJsRUVnJ_Wau-SO59dSeza5EhmiyPmon37nZv9WH4,13
+cloudflareai-0.1.2.dist-info/RECORD,,
