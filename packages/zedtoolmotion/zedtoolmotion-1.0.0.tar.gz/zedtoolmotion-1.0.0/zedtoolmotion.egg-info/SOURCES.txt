@@ -1,0 +1,6 @@
+LICENSE.txt
+setup.py
+zedtoolmotion.egg-info/PKG-INFO
+zedtoolmotion.egg-info/SOURCES.txt
+zedtoolmotion.egg-info/dependency_links.txt
+zedtoolmotion.egg-info/top_level.txt
