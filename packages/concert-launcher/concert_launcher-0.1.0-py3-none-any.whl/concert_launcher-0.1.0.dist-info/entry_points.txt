@@ -1,0 +1,2 @@
+[console_scripts]
+concert_launcher = concert_launcher.main:main
