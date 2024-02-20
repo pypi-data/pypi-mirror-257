@@ -1,0 +1,7 @@
+[console_scripts]
+colmap = data_preparation.cameras.utils:ColmapDataParsing
+cropping = data_preparation.cropping:CroppingUtilsSHP
+nerfstudio = data_preparation.cameras.utils:NerfStudioCameraUtils
+pdal = data_preparation.pdal.pipeline_generation:PDAL_template_manual
+rasterisation = data_preparation.rasterisation:RasterDataTransformation
+threed_pointcloud = data_preparation.threed_pointcloud:PointCloud3D
