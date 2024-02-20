@@ -1,0 +1,2 @@
+[console_scripts]
+cars-commerce-aws-utility = cars_commerce_aws_utility:main
