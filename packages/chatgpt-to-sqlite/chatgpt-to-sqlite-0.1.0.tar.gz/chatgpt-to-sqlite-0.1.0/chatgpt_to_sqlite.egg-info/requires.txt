@@ -1,0 +1,7 @@
+click
+sqlite-utils
+funcy
+
+[test]
+pytest
+ruff

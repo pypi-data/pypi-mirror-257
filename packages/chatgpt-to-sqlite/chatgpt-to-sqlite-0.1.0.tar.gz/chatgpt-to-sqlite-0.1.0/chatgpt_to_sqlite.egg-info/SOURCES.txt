@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+chatgpt_to_sqlite/__init__.py
+chatgpt_to_sqlite/__main__.py
+chatgpt_to_sqlite/cli.py
+chatgpt_to_sqlite/utils.py
+chatgpt_to_sqlite.egg-info/PKG-INFO
+chatgpt_to_sqlite.egg-info/SOURCES.txt
+chatgpt_to_sqlite.egg-info/dependency_links.txt
+chatgpt_to_sqlite.egg-info/entry_points.txt
+chatgpt_to_sqlite.egg-info/requires.txt
+chatgpt_to_sqlite.egg-info/top_level.txt
+tests/test_chatgpt_to_sqlite.py
