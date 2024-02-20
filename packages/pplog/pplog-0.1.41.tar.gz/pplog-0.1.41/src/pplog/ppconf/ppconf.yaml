@@ -1,0 +1,54 @@
+# PPLOG CONFIGURATION FILE
+#############  LOGGING #############
+splunk_integration: False
+event_grid_topic_endpoint: ""
+
+
+logging:
+  version: 1
+  disable_existing_loggers: False
+
+  #  formatters
+  formatters:
+    simple:
+      format: "%(asctime)s - %(name)s - [%(levelname)s] - [%(filename)s:%(lineno)d] [%(funcName)s] - %(message)s"
+
+  #  handlers
+  handlers:
+    console:
+      class: logging.StreamHandler
+      level: INFO
+      formatter: simple
+      stream: ext://sys.stdout
+    splunk:
+      (): pplog.handlers.get_splunk_handler_databricks
+      level: INFO
+      event_type: '<your_project_event_type>'
+
+  #  loggers
+  loggers:
+    py4j.java_gateway:
+      level: ERROR
+      propagate: yes
+
+    azure.core:
+      level: ERROR
+      propagate: yes
+
+  root:
+    level: DEBUG
+    handlers:
+    - console
+    - splunk
+
+
+#############  MONITORING  #############
+
+
+some_key:
+  log_check_class: pplog.log_checks.CheckDataFrameCount
+  arguments:
+    comparison_function: greater_than
+    comparison_value: 100
+
+
