@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: xotl.plato
+Version: 2.0.0a3
+Summary: Basic (non-recursive) 'platonic' schemata
+Author-email: "Merchise Autrement [~º/~]" <info@merchise.de>
+License-Expression: MIT
+License-File: LICENSE
+Requires-Python: >=3.8
+Requires-Dist: backports-zoneinfo; python_version < '3.9'
+Requires-Dist: hypothesis<7.0,>=6.30
+Requires-Dist: immutables>=0.20
+Requires-Dist: typing-extensions; python_version < '3.9'
+Requires-Dist: tzdata
+Requires-Dist: xotl-tools<4.0,>=2.2.5; python_version <= '3.11'
+Requires-Dist: xotl-tools<4.0,>=3.0.0a5; python_version > '3.11'
+Requires-Dist: xotless<5.0,>=3.8.0; python_version <= '3.11'
+Requires-Dist: xotless<5.0,>=4.0.0a4; python_version > '3.11'
+Description-Content-Type: text/x-rst
+
+==========================================
+ Basic (non-recursive) "platonic" schemata
+==========================================
+
+This package allows to serialize/deserialize data in a JSON friendly manner by
+using and manipulating types.
+
+It features a type system that is extensible and it has been specifically
+designed to avoid non-termination issues with recursive data.  In a word, we
+don't allow to create recursive types; any notion of recursion is not part of
+the type system itself.
+
+Having these types, we can now cast dataclasses into schemata by attaching a
+type to it.  We can automatically build the type of most basic Python types,
+enumerations and other.
