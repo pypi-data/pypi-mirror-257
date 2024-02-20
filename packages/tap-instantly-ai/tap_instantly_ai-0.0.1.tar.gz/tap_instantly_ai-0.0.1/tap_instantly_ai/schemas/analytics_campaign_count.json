@@ -1,0 +1,65 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "type": [
+        "object",
+        "null"
+    ],
+    "properties": {
+        "campaign_id": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "campaign_name": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "emails_sent": {
+            "type": [
+                "integer",
+                "null"
+            ]
+        },
+        "emails_read": {
+            "type": [
+                "integer",
+                "null"
+            ]
+        },
+        "new_leads_contacted": {
+            "type": [
+                "integer",
+                "null"
+            ]
+        },
+        "leads_replied": {
+            "type": [
+                "integer",
+                "null"
+            ]
+        },
+        "leads_read": {
+            "type": [
+                "integer",
+                "null"
+            ]
+        },
+        "start_date": {
+            "format": "date",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "downloaded_at": {
+            "format": "timestamp",
+            "type": [
+                "string",
+                "null"
+            ]
+        }
+    }
+}
