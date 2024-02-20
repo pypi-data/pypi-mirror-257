@@ -1,0 +1,13 @@
+PySide6
+pyzx>=0.8.0
+networkx
+numpy
+shapely
+pyperclip
+
+[test]
+PySide6-stubs
+mypy
+pyproject-flake8
+pylint
+pytest-qt
