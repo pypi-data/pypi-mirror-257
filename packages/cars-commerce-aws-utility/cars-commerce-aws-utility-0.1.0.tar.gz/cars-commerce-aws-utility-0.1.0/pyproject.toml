@@ -1,0 +1,82 @@
+[build-system]
+requires = ["setuptools", "wheel", "pythondialog"]
+build-backend = "setuptools.build_meta"
+
+
+#[project]
+#name = "cars-commerce-aws-utility"
+#version = "0.0.1"
+#authors = [
+#  { name="Stephen Wright", email="swright@cars.com" },
+#]
+#description = "Cars Commerce Infrastructure Toolkit"
+#readme = "README.md"
+#requires-python = ">=3.8"
+#classifiers = [
+#    "Programming Language :: Python :: 3",
+#    "License :: OSI Approved :: MIT License",
+#    "Operating System :: OS Independent",
+#]
+#
+#[project.urls]
+#Homepage = "https://github.com/carsdotcom/cars-commerce-infrastructure-toolkit"
+#Issues = "https://github.com/carsdotcom/cars-commerce-infrastructure-toolkit/issues"
+#
+#[build-system]
+#requires = ["hatchling", "pythondialog"]
+#build-backend = "hatchling.build"
+#
+#[tool.hatch.build.targets.wheel]
+#packages = ["src/cars-commerce-aws-utility"]
+
+
+#[tool.hatch.project]
+#name = "cars-commerce-aws-utility"
+#version = "0.1.0"  # Replace with your desired version
+#
+#[tool.hatch.entry_points]
+#cars-commerce-aws-utility = "src.cars_commerce_aws_utility:main"
+#
+#[tool.hatch.backend]
+#build = "hatchling.build.PythonPackage"
+#publish = "hatchling.publish.PyPI"
+#
+#[tool.hatch.publish]
+#publish = "hatchling.publish.PyPI"  # Enable PyPI publishing
+#
+#[tool.hatch.scripts]
+#pre-install = "hatch pip-check-requires pythondialog"
+#
+#[tool.cibuildwheel]
+#required-python = "3.7+"
+#
+#[tool.hatch.metadata]
+#license = "MIT"  # Replace with your preferred license
+#author = "Stephen Wright"  # Replace with your name
+#author_email = "swright@cars.com"  # Replace with your email
+#url = "https://github.com/carsdotcom/cars-commerce-infrastructure-toolkit"  # Replace with your repository URL, if applicable
+
+#[build-system]
+#requires = ["hatchling"]
+#build-backend = "hatchling.build"
+#
+#[project]
+#name = "cars-commerce-aws-utility"
+#version = "0.1.0"
+#description = "A utility tool for cars commerce AWS operations."
+#authors = [{name = "Stephen Wright", email = "swright@cars.com"}]
+#license = {file = "LICENSE"}
+#readme = "README.md"
+#keywords = ["aws", "commerce", "cars"]
+#classifiers = [
+#    "Programming Language :: Python :: 3",
+#    "License :: OSI Approved :: MIT License",
+#    "Operating System :: OS Independent",
+#]
+#dependencies = [
+#    pythondialog
+#]
+#
+#[project.scripts]
+#cars-commerce-aws-utility = "src/cars-commerce-aws-utility"
+#
