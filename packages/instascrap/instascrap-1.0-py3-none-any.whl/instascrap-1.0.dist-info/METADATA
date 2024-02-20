@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: instascrap
+Version: 1.0
+Summary: nstascrap is a Python module for scraping Instagram profile data.
+Author: Yousseif Muhammed
+Author-email: me@usif.tech
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+Requires-Dist: apify-client
+
+# instascrap
+
+**instascrap** is a Python module for scraping Instagram profile data.
+
+## Installation
+
+You can install instascrap via pip:
+
+`pip install instacrap`
+
+## Usage
+
+```python
+from instascrap.api import InstaScraper
+
+# Create an instance of InstaScraper
+scraper = InstaScraper()
+
+# Define input data
+input_data = {"usernames": ["yousseifmuhammed"]}
+
+# Run the scraper
+results = scraper.Scraper(input_data)
+
+# Print the results
+for item in results:
+    print(item)
