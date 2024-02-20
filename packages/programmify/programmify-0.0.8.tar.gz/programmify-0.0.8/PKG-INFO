@@ -1,0 +1,227 @@
+Metadata-Version: 2.1
+Name: programmify
+Version: 0.0.8
+Summary: Quickly make a windows executable with a system tray icon and an configurable (read empty) PyQT5 window
+Author-email: Torin Halsted <modularizer@gmail.com>
+License: This is free and unencumbered software released into the public domain.
+        
+        Anyone is free to copy, modify, publish, use, compile, sell, or
+        distribute this software, either in source code form or as a compiled
+        binary, for any purpose, commercial or non-commercial, and by any
+        means.
+        
+        In jurisdictions that recognize copyright laws, the author or authors
+        of this software dedicate any and all copyright interest in the
+        software to the public domain. We make this dedication for the benefit
+        of the public at large and to the detriment of our heirs and
+        successors. We intend this dedication to be an overt act of
+        relinquishment in perpetuity of all present and future rights to this
+        software under copyright law.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+        EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+        MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+        IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+        OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+        ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+        OTHER DEALINGS IN THE SOFTWARE.
+        
+        For more information, please refer to <https://unlicense.org>
+Project-URL: Homepage, https://github.com/modularizer/programmify
+Keywords: program,app,icon,system tray,pyqt5,windows,executable,pyinstaller
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyqt5
+Requires-Dist: setproctitle
+Requires-Dist: Pillow
+Requires-Dist: pyinstaller
+Requires-Dist: PyYAML
+
+# Programmify
+Quickly make a windows executable with a system tray icon and an configurable (read empty) PyQT5 window
+
+![Sample Widget](https://raw.githubusercontent.com/modularizer/programmify/master/resources/full.png)
+
+Task Manager
+![Task Manager](https://raw.githubusercontent.com/modularizer/programmify/master/resources/task_manager.png)
+
+**Yes! You can use your own icon**
+
+### Features
+* [x] Use your own icon
+* [x] System tray icon (in task bar)
+* [x] Window title (in window title bar)
+* [x] Window icon (in window title bar)
+* [x] Executable name (in File Explorer & Task Manager)
+* [x] Executable file icon (in File Explorer & Task Manager)
+* [x] PyQT Widget OR PyQT Main Window
+* [x] executable with icon on desktop
+* [x] can be pinned to taskbar
+
+### Support
+* [x] Windows
+* [ ] Linux
+* [ ] Mac
+
+<hr/> 
+
+# Quickstart
+
+1. Make a new python project folder, let's call it `myprogram`
+2. Make a virtual environment if you want, or just use your system python
+3. Install `programmify`
+    ```commandline
+    pip install programmify
+    ```
+3. Make a new file in `myprogram`, let's call it `myapp.py`
+4. import and use either `ProgrammifyWidget` or `ProgrammifyMainWindow` from `programmify` in your script
+    ```python
+    # myprogram/myapp.py
+    from PyQt5 import QtWidgets
+    
+    from programmify import ProgrammifyWidget
+    
+    
+    class MyWidget(ProgrammifyWidget):
+        def setupUI(self):
+            # Create a layout
+            layout = QtWidgets.QVBoxLayout(self)
+    
+            # Add a label
+            label = QtWidgets.QLabel("Hello, Programmify!")
+            layout.addWidget(label)
+    
+            # Add a button
+            button = QtWidgets.QPushButton("Click Me")
+            button.clicked.connect(self.on_button_clicked)  # Connect to a method to handle the click event
+            layout.addWidget(button)
+    
+            # Set the layout on the QWidget
+            self.setLayout(layout)
+    
+        def on_button_clicked(self):
+            QtWidgets.QMessageBox.information(self, "Action", "Button was clicked!")
+    
+    
+    if __name__ == '__main__':
+        MyWidget.run()
+    ```
+6. Build the executable
+
+    From command prompt in the project directory:
+    
+    **(venv) C:\Users\user\myprogram>** `programmify --desktop`
+
+NOTES:
+* If you have ONLY one .py file in the current working directory you don't need to specify the file to build, otherwise you may need to specify `programmify myapp.py`
+* include a `favicon.ico` in your current working directory to use as the icon for the program
+* `--desktop` will copy the executable to your desktop
+
+8. Run
+An executable should have been created at `myprogram/myapp.exe` and also copied to your desktop. Double click to run!
+
+
+<hr/> 
+
+## Usage:
+```commandline
+programmify myapp.py --name testprogram --icon testicon.ico
+```
+
+### Advanced usage:
+* `programmify --help` to see all options
+* add `--show_cmd` to show the `pyinstaller` command that will be run instead of running it (useful for debugging)
+
+```commandline
+>programmify --help
+usage: programmify [-h] [--name NAME] [--dst DST] [--icon ICON] [--mode MODE] [--nocleanup] [--show_cmd] [--cmd CMD] [--hidden_imports [HIDDEN_IMPORTS ...]]
+                   [--extra_files [EXTRA_FILES ...]] [--debug] [--args ...] [--desktop] [--version VERSION]
+                   file
+
+positional arguments:
+  file                  File to build. If not specified, will try ... 
+                            1. main.py in current working directory if found 
+                            2. __main__.py 
+                            3. the only .py file in the current working directory if only one is found (excluding __init__.py) 
+                            4. if there is a src directory, will search in src and its subdirectories to find a single option 
+                            5. if the above fails, will raise an error and you will need to specify the file to build.
+
+options:
+  -h, --help            show this help message and exit
+  --name NAME           Program name. If not specified, the name of the either the file or its parent directory will be used.
+  --dst DST             Destination directory for the built program
+  --icon ICON           Path to a 16x16 .ico file. If not specified, will try to find favicon.ico or any other .ico or .png in the current working directory.
+  --mode MODE           Program mode: window or widget
+  --nocleanup           Cleanup build files
+  --show_cmd            Show the command that will be run instead of running it
+  --cmd CMD             Expert level: command to run instead of pyinstaller
+  --hidden_imports [HIDDEN_IMPORTS ...]
+                        Hidden imports
+  --extra-files [EXTRA_FILES ...]
+                        Extra files to include
+  --debug               Does not run in windowed mode, instead shows the terminal and stdout
+  --args ...            Additional arguments to pass to pyinstaller
+  --desktop             Copy the file to the desktop
+  --version VERSION     Adds the version string to the end of the program name. e.g. --version 1 => my_program v1
+```
+
+<hr/>
+
+### Other Installed Scripts
+* `png2ico` to convert a `.png` to a `.ico` file
+  * see `png2ico --help` for usage
+
+<hr/>
+
+# Uses
+
+#### Subprocess Widget
+
+Run any subprocess command (bash) and display a live feed of stdout and stderr in a PyQT5 widget.
+
+1. The program which gets called
+```python
+# count.py
+import time
+import sys
+
+def count(start, stop, interval=1):
+    for i in range(start, stop):
+        print(i)
+        sys.stdout.flush() # unfortunately, this is necessary to get the output to show up in the widget
+        time.sleep(interval)
+    sys.stderr.flush()
+        
+if __name__ == '__main__':
+    start = int(sys.argv[1])
+    stop = int(sys.argv[2])
+    interval = int(sys.argv[3])
+    count(start, stop, interval)
+```
+
+### BUG
+IMPORTANT: `sys.stdout.flush()` is necessary to get the output to show up in the widget.
+This is a bug I am working on fixing. It is not necessary when running main.py directly, only when running the executable.
+
+2. The application which makes the widget and runs the subprocess command
+```python
+# main.py
+from programmify import SubprocessWidget
+
+if __name__ == '__main__':
+    cmd = ["python", "count.py", '1000', '1010', '1']
+    SubprocessWidget.run(cmd=cmd)
+```
+
+3. Build the executable
+```commandline
+programmify main.py --name count --extra-files count.py
+```
+* Note: `pyinstaller` doesn't see that we are depending on the `count.py` to be included as well, so we must specify
+
+4. The output
+
+![Subprocess Widget](https://raw.githubusercontent.com/modularizer/programmify/master/resources/count.gif)
