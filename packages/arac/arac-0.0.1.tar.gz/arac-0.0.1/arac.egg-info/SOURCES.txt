@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+arac.egg-info/PKG-INFO
+arac.egg-info/SOURCES.txt
+arac.egg-info/dependency_links.txt
+arac.egg-info/requires.txt
+arac.egg-info/top_level.txt
