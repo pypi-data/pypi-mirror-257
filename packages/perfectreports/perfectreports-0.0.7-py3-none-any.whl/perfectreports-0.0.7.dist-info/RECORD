@@ -1,0 +1,13 @@
+perfecto/main_cli.py,sha256=r6K83jktBUuCjyxPS5JIW7c6RA-rUYwogEucqNGM6B8,18822
+perfecto/temp.py,sha256=3-R5wXRMma0oglJ7aQPHLz86MHBQ9VA3gQu1t_dz6cA,4234
+perfecto/py/analytics.py,sha256=jSR4qVDbi5Ds0zU7NR_0s1aSOz76fL22boB9jH8LAs0,4720
+perfecto/py/commands_api.py,sha256=nzQ2SQRhJ2-K1RR8sUVn-Xfpr4CRhKvoncG5WvvGTaw,1180
+perfecto/py/custom_reasons.py,sha256=h6o2Sj27_2Md0M7ECPzzVIS7X2mBfvVG8Gv60zJ8-S0,1742
+perfecto/py/functions.py,sha256=pDZSTNhgV_pTEVhRkpXr4zhxDfBfvFyZ8WmpVKfC7vU,24375
+perfecto/py/html.py,sha256=nGXdHTsE0-PhL2U1Wu8beFVn-aXJisPx9seQx0tQW0A,12110
+perfecto/py/integrations/teams.py,sha256=sNGz8lmWHnv_pt3niF8XGkZ3ffy4RVdwv2Qd99yAyRM,2221
+perfectreports-0.0.7.dist-info/METADATA,sha256=-CDN9YlfXbkvfkhQImAxoVCRgqp4ICOqgAR7CnAHomI,608
+perfectreports-0.0.7.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+perfectreports-0.0.7.dist-info/entry_points.txt,sha256=s5ZakgUlhsU4aAp_6sgXSz9jSvIr6EjIwe78c4zqjso,58
+perfectreports-0.0.7.dist-info/top_level.txt,sha256=C9k-OpEmdwr6U_NfMQfPMMknwf08o8aIEh4KtAGeIOM,9
+perfectreports-0.0.7.dist-info/RECORD,,
