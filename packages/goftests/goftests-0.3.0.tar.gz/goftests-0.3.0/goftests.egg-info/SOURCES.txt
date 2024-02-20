@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+goftests/__init__.py
+goftests/test.py
+goftests/utils.py
+goftests.egg-info/PKG-INFO
+goftests.egg-info/SOURCES.txt
+goftests.egg-info/dependency_links.txt
+goftests.egg-info/requires.txt
+goftests.egg-info/top_level.txt
