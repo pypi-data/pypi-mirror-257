@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: netvision
+Version: 1.1.0
+Summary: Fuel your collaborations by sending awesome webpage results. Forget about HTML and CSS and Javascript, just effortlessly use Python.
+Home-page: https://github.com/palanglois/netvision
+Author: Pierre-Alain Langlois, Thibault Groueix
+Author-email: 
+License: MIT
+License-File: LICENSE
+Requires-Dist: numpy
+
+# Netvision - Made by vision researcher.
+
+***Alyosha Efros:***
+ ***​		" What's the most important aspect of training deep networks? Visualization "***
+
+***Original Human:***
+		  ***" Tribe, tonight we're eating mamuth. Do you know how? Teamwork. "***
+
+
+
+Fuel your collaborations by sending awesome webpage results.
+Forget about HTML and CSS and Javascript, just effortlessly use Python.
+
+Features:
+* Images (auto thumbnail)
+* Adaptive loading of what is in the viewer
+* Curves
+* 3D models
+
+PRs welcome!
