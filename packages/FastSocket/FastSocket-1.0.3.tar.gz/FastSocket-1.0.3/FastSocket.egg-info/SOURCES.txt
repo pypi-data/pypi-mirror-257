@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+FastSocket.egg-info/PKG-INFO
+FastSocket.egg-info/SOURCES.txt
+FastSocket.egg-info/dependency_links.txt
+FastSocket.egg-info/top_level.txt
+fastsocket/__init__.py
+fastsocket/_expt.py
+fastsocket/_types.py
+fastsocket/fastsocket.py
+fastsocket/tempCodeRunnerFile.py
