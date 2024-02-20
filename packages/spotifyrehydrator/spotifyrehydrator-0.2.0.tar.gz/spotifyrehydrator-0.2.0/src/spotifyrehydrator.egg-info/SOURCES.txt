@@ -1,0 +1,13 @@
+LICENSE
+README.rst
+pyproject.toml
+setup.cfg
+setup.py
+src/spotifyrehydrator/__init__.py
+src/spotifyrehydrator/utils.py
+src/spotifyrehydrator.egg-info/PKG-INFO
+src/spotifyrehydrator.egg-info/SOURCES.txt
+src/spotifyrehydrator.egg-info/dependency_links.txt
+src/spotifyrehydrator.egg-info/requires.txt
+src/spotifyrehydrator.egg-info/top_level.txt
+tests/test_functions.py

@@ -1,0 +1,4 @@
+spotipy>=2.16
+alive_progress>=1.6
+pandas>=1.2
+simplejson>=3.17
