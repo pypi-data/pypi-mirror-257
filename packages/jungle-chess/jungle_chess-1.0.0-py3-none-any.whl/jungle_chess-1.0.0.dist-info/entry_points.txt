@@ -1,0 +1,3 @@
+[gui_scripts]
+jungle-chess=jungle_chess.__main__:main
+
