@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+tomcru/__init__.py
+tomcru.egg-info/PKG-INFO
+tomcru.egg-info/SOURCES.txt
+tomcru.egg-info/dependency_links.txt
+tomcru.egg-info/not-zip-safe
+tomcru.egg-info/requires.txt
+tomcru.egg-info/top_level.txt
