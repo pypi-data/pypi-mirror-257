@@ -1,0 +1,8 @@
+[build-system]
+requires = [
+	'setuptools',
+	'wheel',
+	'f90wrap>=0.2.8, <0.2.12',
+	"oldest-supported-numpy; python_version>='3.8'",
+]
+build-backend = 'setuptools.build_meta'

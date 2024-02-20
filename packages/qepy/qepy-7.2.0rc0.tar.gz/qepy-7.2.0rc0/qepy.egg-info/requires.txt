@@ -1,0 +1,6 @@
+setuptools
+numpy>=1.18.0
+f90wrap>=0.2.8
+
+[mpi]
+mpi4py>=3.0.2
