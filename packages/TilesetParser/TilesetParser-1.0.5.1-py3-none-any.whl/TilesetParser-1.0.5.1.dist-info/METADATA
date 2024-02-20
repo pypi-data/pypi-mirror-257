@@ -1,0 +1,89 @@
+Metadata-Version: 2.1
+Name: TilesetParser
+Version: 1.0.5.1
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: certifi ==2023.7.22
+Requires-Dist: charset-normalizer ==2.1.1
+Requires-Dist: decorator ==5.1.1
+Requires-Dist: docutils ==0.20.1
+Requires-Dist: idna ==3.4
+Requires-Dist: imageio ==2.34.0
+Requires-Dist: importlib-metadata ==7.0.1
+Requires-Dist: jaraco.classes ==3.3.1
+Requires-Dist: keyring ==24.3.0
+Requires-Dist: lazy-loader ==0.3
+Requires-Dist: markdown-it-py ==3.0.0
+Requires-Dist: mdurl ==0.1.2
+Requires-Dist: more-itertools ==10.2.0
+Requires-Dist: networkx ==3.2.1
+Requires-Dist: nh3 ==0.2.15
+Requires-Dist: numpy ==1.26.4
+Requires-Dist: opencv-python ==4.9.0.80
+Requires-Dist: packaging ==23.2
+Requires-Dist: pillow ==10.2.0
+Requires-Dist: pkginfo ==1.9.6
+Requires-Dist: plac ==1.3.5
+Requires-Dist: portainer-cli ==0.3.0
+Requires-Dist: Pygments ==2.17.2
+Requires-Dist: readme-renderer ==42.0
+Requires-Dist: requests ==2.28.1
+Requires-Dist: requests-toolbelt ==1.0.0
+Requires-Dist: rfc3986 ==2.0.0
+Requires-Dist: rich ==13.7.0
+Requires-Dist: scikit-image ==0.22.0
+Requires-Dist: scipy ==1.12.0
+Requires-Dist: tifffile ==2024.2.12
+Requires-Dist: twine ==5.0.0
+Requires-Dist: urllib3 ==1.26.13
+Requires-Dist: validators ==0.20.0
+Requires-Dist: zipp ==3.17.0
+
+# TilesetParser
+
+find single tile image in folder full of tilesets. It's very common that many tilesets are unorganized and contains unrecognaizable names. With TileParser you can take one tile (for example screenshot from web) and find whitch tileset contains that tile.
+To parse large amount of files TilesetParser uses AI (openCV)
+
+---
+
+## Instalation
+
+```
+pip install TilesetParser
+```
+
+## How to use?
+
+```
+tilesetparser /path/to/source/image.bmp /path/to/folder_with_tilesets
+```
+
+After parsing every file, preview window will appear. You can browse tilesets that program found similar to the source tile.
+
+Program takes a few arguments:
+
+## Algorithms
+
+By default TilesetParser calculates historgrams for input tile and every tile in tileset. You can use SSIM algorithm, whitch gives far more accurate results, but takes a bit more time.
+
+### positional arguments:
+
+- source_image_path
+  > Path to single source tile you need to find
+- tiles_folder
+  > Path to tileset folder you want to parse
+
+### options:
+
+- -h, --help
+  > Show help message and exit
+- -s, --size
+  > Size of a tile (default: 32)
+- -q, --similarity
+  > Similarity level for openCV (default: 0.8)
+- -e, --extension
+  > Extension of the files (default: bmp)
+- -t, --tiles_per_tileset
+  > How many tiles are in single tileset (default: 12)
+- -d, --ssim_algorithm
+  > Use SSIM algorithm (default: false)
