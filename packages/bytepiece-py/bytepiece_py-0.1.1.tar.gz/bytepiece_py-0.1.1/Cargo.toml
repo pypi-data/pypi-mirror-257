@@ -1,0 +1,11 @@
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+
+[workspace]
+resolver = "2"
+members = ["bytepiece", "bytepiece-py"]
+
+
+[workspace.dependencies]
+bytepiece = { path = "bytepiece" }
