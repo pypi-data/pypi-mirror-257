@@ -1,0 +1,6 @@
+scanpy
+gseapy
+harmonypy
+sklearn
+matplotlib
+seaborn
