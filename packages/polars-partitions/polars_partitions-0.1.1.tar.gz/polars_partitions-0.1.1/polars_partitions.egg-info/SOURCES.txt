@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+polars_partitions/__init__.py
+polars_partitions/pl_partitions.py
+polars_partitions.egg-info/PKG-INFO
+polars_partitions.egg-info/SOURCES.txt
+polars_partitions.egg-info/dependency_links.txt
+polars_partitions.egg-info/top_level.txt
