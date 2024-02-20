@@ -1,0 +1,13 @@
+motion/__init__.py,sha256=mHWKciUfj5hK1w0END5e4Z_pZoLjUmmEG5VUR-S7Xe4,789
+motion/client.py,sha256=2S8kFwxSLLXo0I7DItar_w6jJWfMK8_WnwUq23F9xho,993
+motion/resources/__init__.py,sha256=SX5huChEwVPDe9JnCBNvcJ6ym163dv-ubY6AMB2CtbI,418
+motion/resources/base.py,sha256=2OnLTdaRmmC50YlQHcHVvCENTqCicMOsXRXrj47yiGI,1382
+motion/resources/comment.py,sha256=O3C0CCc5oN2pESeeRjysQxZu-sYCecJ0xhmH_rD3kvw,90
+motion/resources/project.py,sha256=LKn4AyAxujIk1VnLc8BOSz9jHipgMJVPcgs_EvKBrgY,90
+motion/resources/schedule.py,sha256=9MxCsX0P24R9I2zz8JLPAtWC5iVnv28Imu742h-qWKM,92
+motion/resources/task.py,sha256=B6xj2V-wdbZUxrV7vTMDtjnVe93_lqMOCi0fuazUATk,800
+motion/resources/user.py,sha256=_ZDMFzVy5MhJzIzypPxHgoLfOEJqZupy9T2iGv_3V1I,300
+motion/resources/workspace.py,sha256=qwE360ohEC55Q9Pwiz41wOIYc_sB_6Q6_KUsG5g7-oY,391
+python_motion-0.1.1.dist-info/METADATA,sha256=yv0WuSJWCo8SLWwMSY0yVOmUHmR5Tlq17778R5RUO-4,1690
+python_motion-0.1.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+python_motion-0.1.1.dist-info/RECORD,,
