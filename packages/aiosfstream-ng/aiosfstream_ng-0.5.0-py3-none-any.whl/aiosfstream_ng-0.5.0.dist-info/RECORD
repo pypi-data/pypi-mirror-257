@@ -1,0 +1,12 @@
+aiosfstream_ng/__init__.py,sha256=qJH8_QcOii4Sjlu8VfhBsS0AT_KXzmzAYszDVoxP_7Y,920
+aiosfstream_ng/_metadata.py,sha256=mwAyM9bmeCiFBYdOmo-Av6pb29aZTLdR8mUW5rjQk-A,520
+aiosfstream_ng/auth.py,sha256=k_d_145SxKA8SeFzBs-iQiXiA62Cbwam9P9zX-9sRzQ,9980
+aiosfstream_ng/client.py,sha256=ZGWvYkMXIYB9SRL6r8afYfHHlF8UpS8twyLgwQR-M54,16995
+aiosfstream_ng/exceptions.py,sha256=0JXcwjFxwhIWfzLbNRiVABsyp4PenuwtOH0fK7rOA8M,4732
+aiosfstream_ng/py.typed,sha256=qvMWwBEgc3rYU78bBPtaCXibkNuPeIXRYljQBD0JzpE,14
+aiosfstream_ng/replay.py,sha256=BMWFQJjd3k5iAWcQGm_gC_Gkul4sRrP9P7E2S2lC_kY,12207
+aiosfstream_ng-0.5.0.dist-info/LICENSE.txt,sha256=E434hAxhXZDjuIzOpMe477QQ6zoKoee5Cy1RTD-RrYI,1094
+aiosfstream_ng-0.5.0.dist-info/METADATA,sha256=ZootKIip7_u0IvURhL8i5N4lpumYrU2MQJy1Scbkl6U,7590
+aiosfstream_ng-0.5.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+aiosfstream_ng-0.5.0.dist-info/top_level.txt,sha256=cElSQnU6g58BYaAGNTs4s2oeAhJsvQOEFwnPrwBM-wQ,15
+aiosfstream_ng-0.5.0.dist-info/RECORD,,
