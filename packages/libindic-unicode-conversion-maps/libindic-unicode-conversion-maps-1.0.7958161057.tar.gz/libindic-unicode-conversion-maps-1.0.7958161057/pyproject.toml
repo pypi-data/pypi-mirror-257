@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "libindic-unicode-conversion-maps"
+version = "1.0.7958161057"
+description = "Maps for converting ASCII to Unicode"
+readme = "README.md"
+
+[project.urls]
+Homepage = "https://github.com/libindic/unicode-conversion-maps"
