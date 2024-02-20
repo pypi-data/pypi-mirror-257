@@ -1,0 +1,16 @@
+bpm/__init__.py,sha256=6ZYEEBLm1RCfxLTN3IGNP1YHWxQhGPP7NhWX7cL5ysk,96
+bpm/__main__.py,sha256=EClCwCzb6h6YBpt0hrnG4h0mlNhNePyg_xBNNSVm1os,65
+bpm/cli.py,sha256=cApSs0io-5-dqy0okwsmAG8JWxe6eFad0pHZLvByEig,3107
+bpm/command.py,sha256=-yMSw1IbvfZj2JzYRAeIo2AGwehgD2HkFy9P5JwJFBQ,5419
+bpm/install/__init__.py,sha256=QqfhF4_B1eP1DjgfxSHYmYovXy15y8b2ZJ2O4p2WiVY,16862
+bpm/lib/windowspathadder.py,sha256=vHcbBGXgcJGeerIeS_wpXPEwvpvCl5Mb9Qg6BNz1Cys,4103
+bpm/search.py,sha256=DUhoRaJaDopdqHycV7urA3i3mjV1N6lTQgvU20zg-C4,8500
+bpm/storage.py,sha256=y2IQFkfTKOpZZzQwLCJV9duvX7lR05F25-MXRPwYPlE,4457
+bpm/utils/__init__.py,sha256=IAPmoS6RfIUxknOjjJ-XhPDsrGjBlAXZxymsqupmrCA,1946
+bpm/utils/constants.py,sha256=sE1tm8TRHZ7Q2hxX7mk_XY_J_BRX9CEAZ-zZDT3hawA,568
+bpm/utils/exceptions.py,sha256=n0Eyk94vCXDJlH8MDGThqp5ePuMLc_EMX_V6eIMH-7U,704
+bin_package_manager-2.1.0.dist-info/entry_points.txt,sha256=1cJYHcAhIu7ldJLI_Z-tLZyL_UmREu-v0CHMVsfEKew,36
+bin_package_manager-2.1.0.dist-info/LICENSE,sha256=9xwrC__PIf4AT_dzVQK_VUB05wzulruBTCBaZqMaTx8,1087
+bin_package_manager-2.1.0.dist-info/METADATA,sha256=P9K48BeGymjlXkfvaBmuWBxlVInqINVaHVLN2D1PM34,3601
+bin_package_manager-2.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+bin_package_manager-2.1.0.dist-info/RECORD,,
