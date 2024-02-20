@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+a3exception/__init__.py
+a3exception/errors.py
+a3exception.egg-info/PKG-INFO
+a3exception.egg-info/SOURCES.txt
+a3exception.egg-info/dependency_links.txt
+a3exception.egg-info/not-zip-safe
+a3exception.egg-info/top_level.txt
+tests/__init__.py
+tests/test_errors.py

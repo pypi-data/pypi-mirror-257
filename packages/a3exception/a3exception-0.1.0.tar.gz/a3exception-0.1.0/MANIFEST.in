@@ -1,0 +1,3 @@
+graft a3exception
+global-exclude __pycache__
+global-exclude *.py[co]
