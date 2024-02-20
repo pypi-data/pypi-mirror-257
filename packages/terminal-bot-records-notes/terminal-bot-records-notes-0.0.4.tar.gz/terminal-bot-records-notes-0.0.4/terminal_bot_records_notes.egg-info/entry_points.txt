@@ -1,0 +1,2 @@
+[console_scripts]
+terminal-bot-records-notes = terminal_bot_records_notes:main
