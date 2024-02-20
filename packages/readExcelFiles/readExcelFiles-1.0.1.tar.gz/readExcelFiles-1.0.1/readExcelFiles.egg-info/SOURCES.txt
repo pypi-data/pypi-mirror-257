@@ -1,0 +1,11 @@
+setup.py
+readExcel/__init__.py
+readExcel/readExcelDataWithXlrd.py
+readExcel/readExcelWithOpenpyxl.py
+readExcel/readExcelWithPandas.py
+readExcel/readFilesWithXlwings.py
+readExcelFiles.egg-info/PKG-INFO
+readExcelFiles.egg-info/SOURCES.txt
+readExcelFiles.egg-info/dependency_links.txt
+readExcelFiles.egg-info/requires.txt
+readExcelFiles.egg-info/top_level.txt
