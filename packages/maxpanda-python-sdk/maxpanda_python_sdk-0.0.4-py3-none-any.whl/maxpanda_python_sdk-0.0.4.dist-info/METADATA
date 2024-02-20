@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: maxpanda-python-sdk
+Version: 0.0.4
+Summary: Maxpanda API V1
+Home-page: https://github.com/arterialtech/maxpanda_python_sdk
+Author: Arterial, LLC
+Author-email: 
+Keywords: Swagger,Maxpanda API V1
+License-File: LICENSE
+Requires-Dist: urllib3 >=1.15
+Requires-Dist: six >=1.10
+Requires-Dist: certifi
+Requires-Dist: python-dateutil
+
+    Swagger-codegen Auto-generated Python SDK for Maxpanda REST API
+    
