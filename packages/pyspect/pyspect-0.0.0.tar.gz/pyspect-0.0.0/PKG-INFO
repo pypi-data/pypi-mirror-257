@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pyspect
+Version: 0.0.0
+Summary: Python Specification and Control with Temporal Logic Trees
+Project-URL: Repository, https://github.com/kth-sml/pyspect.git
+Project-URL: Issues, https://github.com/kth-sml/pyspect/issues
+Author-email: Kaj Munhoz Arfvidsson <kajarf@kth.se>, Frank Jiang <frankji@kth.se>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# pyspect
+
+
