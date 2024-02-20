@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: cars-commerce-aws-utility
+Version: 0.0.1
+Summary: Cars Commerce Infrastructure Toolkit
+Project-URL: Homepage, https://github.com/carsdotcom/cars-commerce-infrastructure-toolkit
+Project-URL: Issues, https://github.com/carsdotcom/cars-commerce-infrastructure-toolkit/issues
+Author-email: Stephen Wright <swright@cars.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8

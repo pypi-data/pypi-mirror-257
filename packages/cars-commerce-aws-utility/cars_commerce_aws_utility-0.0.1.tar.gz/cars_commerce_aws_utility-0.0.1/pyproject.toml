@@ -1,0 +1,44 @@
+[project]
+name = "cars-commerce-aws-utility"
+version = "0.0.1"
+authors = [
+  { name="Stephen Wright", email="swright@cars.com" },
+]
+description = "Cars Commerce Infrastructure Toolkit"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/carsdotcom/cars-commerce-infrastructure-toolkit"
+Issues = "https://github.com/carsdotcom/cars-commerce-infrastructure-toolkit/issues"
+
+[build-system]
+requires = ["hatchling", "pythondialog"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/cars-commerce-aws-utility"]
+
+
+#[tool.hatch.project]
+#name = "cars-commerce-aws-utility"
+#version = "0.1.0"  # Replace with your desired version
+#
+#[tool.hatch.entry_points]
+#cars-commerce-aws-utility = "src.cars_commerce_aws_utility:main"
+#
+#[tool.hatch.backend]
+#build = "hatchling.build.PythonPackage"
+#publish = "hatchling.publish.PyPI"
+#
+#[tool.hatch.scripts]
+#pre-install = "hatch pip-check-requires"
+#
+#[tool.cibuildwheel]
+#required-python = "3.7+"
+
