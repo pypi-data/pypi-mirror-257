@@ -1,0 +1,10 @@
+[project]
+name = "pillar-security"
+version = "0.0.3"
+dependencies = [
+    'wrapt>=1.16.0',
+]
+requires-python = ">=3.10"
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
