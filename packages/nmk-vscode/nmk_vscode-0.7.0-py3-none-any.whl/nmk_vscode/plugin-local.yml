@@ -1,0 +1,7 @@
+# Python plugin definition (for local reference when building this project)
+refs:
+    # Python path contribution
+    - python.yml
+    
+    # Plugin defs
+    - plugin-defs.yml
