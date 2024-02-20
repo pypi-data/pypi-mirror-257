@@ -1,0 +1,5 @@
+setup.py
+readPdfWithFunctions.egg-info/PKG-INFO
+readPdfWithFunctions.egg-info/SOURCES.txt
+readPdfWithFunctions.egg-info/dependency_links.txt
+readPdfWithFunctions.egg-info/top_level.txt
