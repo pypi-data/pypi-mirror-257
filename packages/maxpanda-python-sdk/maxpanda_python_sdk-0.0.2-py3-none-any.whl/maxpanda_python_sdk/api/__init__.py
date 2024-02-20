@@ -1,0 +1,36 @@
+from __future__ import absolute_import
+
+# flake8: noqa
+
+# import apis into api package
+from maxpanda_python_sdk.api.asset_status_api import AssetStatusApi
+from maxpanda_python_sdk.api.asset_type_api import AssetTypeApi
+from maxpanda_python_sdk.api.assets_api import AssetsApi
+from maxpanda_python_sdk.api.bins_api import BinsApi
+from maxpanda_python_sdk.api.buildings_api import BuildingsApi
+from maxpanda_python_sdk.api.customer_api import CustomerApi
+from maxpanda_python_sdk.api.customer_invoices_api import CustomerInvoicesApi
+from maxpanda_python_sdk.api.department_api import DepartmentApi
+from maxpanda_python_sdk.api.invoice_item_tax_api import InvoiceItemTaxApi
+from maxpanda_python_sdk.api.invoice_item_type_api import InvoiceItemTypeApi
+from maxpanda_python_sdk.api.location_api import LocationApi
+from maxpanda_python_sdk.api.location_type_api import LocationTypeApi
+from maxpanda_python_sdk.api.metering_type_api import MeteringTypeApi
+from maxpanda_python_sdk.api.po_address_api import POAddressApi
+from maxpanda_python_sdk.api.po_templates_api import POTemplatesApi
+from maxpanda_python_sdk.api.part_category_api import PartCategoryApi
+from maxpanda_python_sdk.api.part_status_api import PartStatusApi
+from maxpanda_python_sdk.api.parts_api import PartsApi
+from maxpanda_python_sdk.api.purchase_orders_api import PurchaseOrdersApi
+from maxpanda_python_sdk.api.service_types_api import ServiceTypesApi
+from maxpanda_python_sdk.api.sites_api import SitesApi
+from maxpanda_python_sdk.api.task_fields_api import TaskFieldsApi
+from maxpanda_python_sdk.api.task_priority_api import TaskPriorityApi
+from maxpanda_python_sdk.api.task_status_api import TaskStatusApi
+from maxpanda_python_sdk.api.tasks_api import TasksApi
+from maxpanda_python_sdk.api.users_api import UsersApi
+from maxpanda_python_sdk.api.vendor_api import VendorApi
+from maxpanda_python_sdk.api.vendor_invoices_api import VendorInvoicesApi
+from maxpanda_python_sdk.api.work_order_category_api import WorkOrderCategoryApi
+from maxpanda_python_sdk.api.work_order_priority_api import WorkOrderPriorityApi
+from maxpanda_python_sdk.api.work_orders_api import WorkOrdersApi
