@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: mupy-hiro
+Version: 0.0.13
+Summary: A easy to use mutation analysis tool for beginners
+Home-page: https://mupy.hirodiscount.com
+Author: Jordan Nguejip
+Author-email: mupy@hirodiscount.com
+License: APACHE 2.0
+Keywords: mutation,testing,ast,mutation testing,mutation analysis,faults,fault,fault base testing
