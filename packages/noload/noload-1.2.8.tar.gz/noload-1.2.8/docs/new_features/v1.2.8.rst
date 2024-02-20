@@ -1,0 +1,40 @@
+What's new in version 1.2.8
+===========================
+Version available since February 19th 2024
+
+
+New Features
+------------
+- GUI : plots are opened in matplotlib windows instead of directly in gui.
+- GUI : vector inputs and outputs can be plotted.
+- GUI : scrollbar added to the list of inputs and outputs of the gui.
+- Notebook version of tutorial 05_SensitivityAnalysis
+
+Changes
+-------
+- Interpolation of pareto fronts is better with high number of points.
+- compute_external and Print functions are moved from ode_tools.py to Tools.py
+- gui2.py deleted and plot_sortedX function is moved to gui1.py
+- "debug" functionality in Spec class displays dictionaries instead of lists
+- For Pareto with less than 10 points, interpolation is done with splprep adn splev fucntions of Scipy.
+- Optimization inputs are normalized for LeastSquares algorithm.
+- GUI : vectors are printed in several figures to be more ergonomic.
+- files in test folder are rewritten with the "unittest" standard.
+- Results are written with a dictionary for LeastSquares algorithm.
+- Lower and upper bounds are excluded from optimization process to avoid numerical issues.
+- GUI : sensitivity analysis of I/O vectors are printed in several figures to be more ergonomic.
+- raise errors stops the code.
+- NaN errors stops the code and indicates to the user which variables are concerned.
+- The UML diagram was updated.
+- For GUI, iteration number is not printed when graphs of variables w.r.t iterations are displayed.
+
+
+Bug fixed
+---------
+- Optimization failed when there is a problem with one input and one equality constraint.
+- In iterationHandler, command to set a value in pandas dataframe was modified to avoid errors with new versions of pandas.
+
+
+Contributors
+------------
+Lucas Agobert
