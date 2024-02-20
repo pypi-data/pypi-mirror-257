@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/simple_salesforce_extends/__init__.py
+src/simple_salesforce_extends/salesforce_extends.py
+src/simple_salesforce_extends.egg-info/PKG-INFO
+src/simple_salesforce_extends.egg-info/SOURCES.txt
+src/simple_salesforce_extends.egg-info/dependency_links.txt
+src/simple_salesforce_extends.egg-info/requires.txt
+src/simple_salesforce_extends.egg-info/top_level.txt
+src/tests/__init__.py
+src/tests/test_salesforce_client_credential.py
