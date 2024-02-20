@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: iSFun
+Version: 1.1.0
+Summary: The implement of integrative analysis methods based on a two-part penalization, 
+Author: Kuangnan Fang, Rui Ren, Qingzhao Zhang, Shuangge Ma
+Author-email: xmurr@stu.xmu.edu.cn
+License: MIT
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+License-File: LICENSE.txt
