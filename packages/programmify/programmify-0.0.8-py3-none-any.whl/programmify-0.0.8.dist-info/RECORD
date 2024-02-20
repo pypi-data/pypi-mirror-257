@@ -1,0 +1,11 @@
+__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+programmify/__init__.py,sha256=ROixC4aKbWSw7RbwMPEAfZCCIXtFcCoy8Q7nPuPTXAk,192
+programmify/favicon.ico,sha256=kp0ZUM_DxAOAUK02kBWjxipXVPI_mvuYw1uW74PLRaY,4286
+programmify/programmify.py,sha256=MVuh7dZK_3PoZZ3l_XP6hi15g5j_tvyOSnyPgsu2F70,14963
+programmify/subprocess_program.py,sha256=olue7nkSUQoXVdoWMDuGoWjP3vlm4pNVlPr5X9FIsXg,6495
+programmify-0.0.8.dist-info/LICENSE,sha256=8FENO50SI8Rej90rSScOyHNP_0kcf30blI7nAWLhzv8,1210
+programmify-0.0.8.dist-info/METADATA,sha256=K8RoRXyKoGJ47t7ZtTkIeKS-K070w28tdulB-fZP06M,8713
+programmify-0.0.8.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+programmify-0.0.8.dist-info/entry_points.txt,sha256=aW8C5ZFikWjyCJi-eVwkhqt-BCAa1PFinMoOUDX-Y-w,106
+programmify-0.0.8.dist-info/top_level.txt,sha256=WHWyy8t8IEud3GTUqrOX28y8ES8k-O4Vf2b6oR8_-Ac,21
+programmify-0.0.8.dist-info/RECORD,,
