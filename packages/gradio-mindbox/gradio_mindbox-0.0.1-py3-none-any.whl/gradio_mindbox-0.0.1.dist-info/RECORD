@@ -1,0 +1,10 @@
+gradio_mindbox/__init__.py,sha256=tIZf-EDVf7M72fCJqpZQirflrQr12pkgVqktNVUJ-QY,53
+gradio_mindbox/mindbox.py,sha256=hlintTy9EVzjaqk_KeQJF-JSdmoBDoYxgyPm4g3tu9U,4328
+gradio_mindbox/mindbox.pyi,sha256=g0ZAUBrUdbABzQxHL5EU0bpo7grrXRH94EUehxAgubg,19682
+gradio_mindbox/templates/component/index.js,sha256=isewDFeehQzvIfFoqSqHX9Ki18-tAuclEOCNUrBI-Ks,1106673
+gradio_mindbox/templates/component/style.css,sha256=PcVcJSM8f68M2UmHrW2N4_KeWGRGF8tkttYGAesTz1Y,12627
+gradio_mindbox/templates/example/index.js,sha256=vKgMmbIEBmZxlXWrxChS_uoaen6GfNSP3VK3K94Hzvs,2223
+gradio_mindbox/templates/example/style.css,sha256=-DHk5asz3SWFNLQlCnYuMN4b4gTf_srMmlu5x_xU_Pw,147
+gradio_mindbox-0.0.1.dist-info/METADATA,sha256=ckEtScCVSQH-WEVHgsVTNsGxM0XK3PzGDHeybtZXUHA,7303
+gradio_mindbox-0.0.1.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+gradio_mindbox-0.0.1.dist-info/RECORD,,
