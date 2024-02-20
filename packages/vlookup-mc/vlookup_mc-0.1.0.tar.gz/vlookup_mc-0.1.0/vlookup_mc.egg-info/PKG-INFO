@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: vlookup-mc
+Version: 0.1.0
+Summary: A utility for VLookup between 2 csv files on given fields
+Home-page: https://github.com/mohan-chinnappan-n/vlookup
+Author: mohan chinnappan
+Author-email: mohan.chinnappan.n5@gmail.com
+License: MIT
+Requires-Dist: pandas
