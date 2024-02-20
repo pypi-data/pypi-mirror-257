@@ -1,0 +1,25 @@
+.*
+*.egg-info
+__pycache__
+/dist/
+/build/
+/coverage.*
+*.orig
+
+!.github
+!.editorconfig
+!.flake8
+!.gitignore
+!.gitkeep
+
+# from test projects:
+/static/
+/media/
+*.sqlite3
+
+# Include "ignored" *.json:
+!**/fixtures/*.json
+
+# Django
+secret.txt
+
