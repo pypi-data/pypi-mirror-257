@@ -1,0 +1,13 @@
+nguyenpanda/__init__.py,sha256=w00Fms0KlX2y34qFOqsomCBvZC-7D71WzRqZoXGx68Y,1537
+nguyenpanda/butterfly/__init__.py,sha256=9sU0nf4IMr7EmBSUiSY4tEIqRti4TuGkl-u6lSS6-gU,546
+nguyenpanda/butterfly/RandomORG/__init__.py,sha256=9KUI5Jr4K5DcqrgYXc5vFZGeDiwy4brqYFHzJHo83kw,2147
+nguyenpanda/butterfly/RandomORG/random_org.py,sha256=HwGFnWntK69gGuN692ckiBevFVZy2GrayI9uiWEOCr8,12562
+nguyenpanda/butterfly/RandomORG/random_org_validator.py,sha256=qeBl2hcO04YYkrS3L6SvwWCBRT8EFN1v92QddmUIglA,10004
+nguyenpanda/owl/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nguyenpanda/raven/__init__.py,sha256=IbEryC-I1LuD_qjNgA_d0sMgVZISdXQ6vEkGkzD8Gag,248
+nguyenpanda/swan/__init__.py,sha256=7XXVD6aL9lJj8hGoGn_deZVnLEsGp4Dr_4mzaX-b8DQ,633
+nguyenpanda/swan/color.py,sha256=WNeyf11CM3mqr8ZBe8s_Mj84XyVWmqSML1EZW0lbgEU,4124
+nguyenpanda-0.1.8.dist-info/METADATA,sha256=V57ZRnpwwB0u3UPpm6Stmp6K9CeO8JEd6GoFvPyJImU,3947
+nguyenpanda-0.1.8.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+nguyenpanda-0.1.8.dist-info/top_level.txt,sha256=bgM3l993WnCIXGv8xtT3XMvruIs78TLLsWiQgPGw0Ik,12
+nguyenpanda-0.1.8.dist-info/RECORD,,
