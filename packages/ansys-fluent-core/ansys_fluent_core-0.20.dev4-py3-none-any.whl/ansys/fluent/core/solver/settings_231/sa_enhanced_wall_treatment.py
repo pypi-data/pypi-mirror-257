@@ -1,0 +1,22 @@
+#
+# This is an auto-generated file.  DO NOT EDIT!
+#
+
+from ansys.fluent.core.solver.flobject import *
+
+from ansys.fluent.core.solver.flobject import (
+    _ChildNamedObjectAccessorMixin,
+    _CreatableNamedObjectMixin,
+    _NonCreatableNamedObjectMixin,
+    _HasAllowedValuesMixin,
+    _InputFile,
+    _OutputFile,
+)
+
+class sa_enhanced_wall_treatment(Boolean):
+    """
+    'sa_enhanced_wall_treatment' child.
+    """
+
+    fluent_name = "sa-enhanced-wall-treatment?"
+

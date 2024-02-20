@@ -1,0 +1,22 @@
+#
+# This is an auto-generated file.  DO NOT EDIT!
+#
+
+from ansys.fluent.core.solver.flobject import *
+
+from ansys.fluent.core.solver.flobject import (
+    _ChildNamedObjectAccessorMixin,
+    _CreatableNamedObjectMixin,
+    _NonCreatableNamedObjectMixin,
+    _HasAllowedValuesMixin,
+    _InputFile,
+    _OutputFile,
+)
+
+class next_view(Command):
+    """
+    Return to the camera position after the current position in the stack.
+    """
+
+    fluent_name = "next-view"
+

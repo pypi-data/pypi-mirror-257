@@ -1,0 +1,22 @@
+#
+# This is an auto-generated file.  DO NOT EDIT!
+#
+
+from ansys.fluent.core.solver.flobject import *
+
+from ansys.fluent.core.solver.flobject import (
+    _ChildNamedObjectAccessorMixin,
+    _CreatableNamedObjectMixin,
+    _NonCreatableNamedObjectMixin,
+    _HasAllowedValuesMixin,
+    _InputFile,
+    _OutputFile,
+)
+
+class open_channel_wave_bc(Boolean, _HasAllowedValuesMixin):
+    """
+    Open Channel Wave BC.
+    """
+
+    fluent_name = "open-channel-wave-bc"
+
