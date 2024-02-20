@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: pipme
+Version: 1.2.0
+Requires-Dist: os
+Requires-Dist: pipme
+Requires-Dist: ast
+Requires-Dist: requests
+Requires-Dist: subprocess
+Requires-Dist: re
+Requires-Dist: shutil

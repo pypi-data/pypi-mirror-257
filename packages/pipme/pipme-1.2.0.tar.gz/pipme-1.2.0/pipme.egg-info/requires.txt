@@ -1,0 +1,7 @@
+os
+pipme
+ast
+requests
+subprocess
+re
+shutil
