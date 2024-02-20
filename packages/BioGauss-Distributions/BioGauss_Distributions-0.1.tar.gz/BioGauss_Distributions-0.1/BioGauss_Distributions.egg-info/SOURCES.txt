@@ -1,0 +1,10 @@
+setup.py
+BioGauss_Distributions/Binomialdistribution.py
+BioGauss_Distributions/Gaussiandistribution.py
+BioGauss_Distributions/Generaldistribution.py
+BioGauss_Distributions/__init__.py
+BioGauss_Distributions.egg-info/PKG-INFO
+BioGauss_Distributions.egg-info/SOURCES.txt
+BioGauss_Distributions.egg-info/dependency_links.txt
+BioGauss_Distributions.egg-info/not-zip-safe
+BioGauss_Distributions.egg-info/top_level.txt
