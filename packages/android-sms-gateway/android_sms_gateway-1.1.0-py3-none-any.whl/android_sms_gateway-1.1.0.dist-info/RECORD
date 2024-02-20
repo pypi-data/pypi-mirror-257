@@ -1,0 +1,13 @@
+android_sms_gateway/__init__.py,sha256=hOezCeJfnyvQzIxGCXqm0Za9Kdagdx7iqiOhxyvIS9A,425
+android_sms_gateway/ahttp.py,sha256=Mwbo4nBdYw_1jehDtO80XWvVDYv3tOA1TqQU1mWwAZ4,3155
+android_sms_gateway/client.py,sha256=PvJtEHH5HslDragEPcCnFdQSagO9bqXFs_I_6FOCcf0,4885
+android_sms_gateway/constants.py,sha256=Lic-74Slw70SsOUlgS1kexH0oPeSiCf8Z6XFIvwZuSw,73
+android_sms_gateway/domain.py,sha256=BDa1AgXXGYhhKR1qn4UhykKZdOPWYb7QGKsP-Kmf_L0,1755
+android_sms_gateway/encryption.py,sha256=RQNrunofftr0N0BS2lrhKB36TW271Y9vJYwmu5csRCA,2854
+android_sms_gateway/enums.py,sha256=bjtqMmAJQpvNWqnW88X7tKCbk3BSy1MYxoiT3MiYiMQ,165
+android_sms_gateway/http.py,sha256=FVhwg1KUgRKNroNXIDitKaPB7e4BXf3TxGwvd_87bKg,3020
+android_sms_gateway-1.1.0.dist-info/LICENSE,sha256=QwcOLU5TJoTeUhuIXzhdCEEDDvorGiC6-3YTOl4TecE,11356
+android_sms_gateway-1.1.0.dist-info/METADATA,sha256=oUkffveIER99OyibhbliW3gcm4QWRlStMl9olNAxO68,5785
+android_sms_gateway-1.1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+android_sms_gateway-1.1.0.dist-info/top_level.txt,sha256=QsEcLD13DvVoiqvuqJWY20S6Zb42xNmkgGIASsBQ7Vk,20
+android_sms_gateway-1.1.0.dist-info/RECORD,,
