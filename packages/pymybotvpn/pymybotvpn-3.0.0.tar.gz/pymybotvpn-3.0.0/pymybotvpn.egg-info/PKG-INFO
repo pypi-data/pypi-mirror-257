@@ -1,0 +1,16 @@
+Metadata-Version: 1.2
+Name: pymybotvpn
+Version: 3.0.0
+Summary: A Python module to update and execute a bot script
+Home-page: UNKNOWN
+Author: Aji permana
+Author-email: admin@cybervpn.site
+License: MIT
+Description: This module provides a function to update a bot script and execute it, specifically designed for Ubuntu and Debian systems.
+Keywords: bot script update execution
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Environment :: Console
+Requires-Python: >=3.6
