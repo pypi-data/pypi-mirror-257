@@ -1,0 +1,3367 @@
+{
+    "status": "ok",
+    "message-type": "work-list",
+    "message-version": "1.0.0",
+    "message": {
+        "facets": {},
+        "total-results": 2605112,
+        "items": [
+            {
+                "indexed": {
+                    "date-parts": [
+                        [
+                            2024,
+                            2,
+                            13
+                        ]
+                    ],
+                    "date-time": "2024-02-13T16:29:56Z",
+                    "timestamp": 1707841796784
+                },
+                "reference-count": 6,
+                "publisher": "Public Library of Science (PLoS)",
+                "issue": "1",
+                "license": [
+                    {
+                        "start": {
+                            "date-parts": [
+                                [
+                                    2016,
+                                    1,
+                                    19
+                                ]
+                            ],
+                            "date-time": "2016-01-19T00:00:00Z",
+                            "timestamp": 1453161600000
+                        },
+                        "content-version": "vor",
+                        "delay-in-days": 0,
+                        "URL": "http:\/\/creativecommons.org\/licenses\/by\/4.0\/"
+                    }
+                ],
+                "content-domain": {
+                    "domain": [
+                        "www.ploscompbiol.org"
+                    ],
+                    "crossmark-restriction": false
+                },
+                "short-container-title": [
+                    "PLoS Comput Biol"
+                ],
+                "DOI": "10.1371\/journal.pcbi.1004668",
+                "type": "journal-article",
+                "created": {
+                    "date-parts": [
+                        [
+                            2016,
+                            1,
+                            19
+                        ]
+                    ],
+                    "date-time": "2016-01-19T21:35:29Z",
+                    "timestamp": 1453239329000
+                },
+                "page": "e1004668",
+                "update-policy": "http:\/\/dx.doi.org\/10.1371\/journal.pcbi.corrections_policy",
+                "source": "Crossref",
+                "is-referenced-by-count": 88,
+                "title": [
+                    "A Quick Introduction to Version Control with Git and GitHub"
+                ],
+                "prefix": "10.1371",
+                "volume": "12",
+                "author": [
+                    {
+                        "given": "John D.",
+                        "family": "Blischak",
+                        "sequence": "first",
+                        "affiliation": []
+                    },
+                    {
+                        "given": "Emily R.",
+                        "family": "Davenport",
+                        "sequence": "additional",
+                        "affiliation": []
+                    },
+                    {
+                        "given": "Greg",
+                        "family": "Wilson",
+                        "sequence": "additional",
+                        "affiliation": []
+                    }
+                ],
+                "member": "340",
+                "published-online": {
+                    "date-parts": [
+                        [
+                            2016,
+                            1,
+                            19
+                        ]
+                    ]
+                },
+                "reference": [
+                    {
+                        "key": "ref1",
+                        "doi-asserted-by": "crossref",
+                        "first-page": "7",
+                        "DOI": "10.1186\/1751-0473-8-7",
+                        "article-title": "Git can facilitate greater reproducibility and increased transparency in science",
+                        "volume": "8",
+                        "author": "K Ram",
+                        "year": "2013",
+                        "journal-title": "Source Code Biol Med"
+                    },
+                    {
+                        "key": "ref2",
+                        "doi-asserted-by": "crossref",
+                        "first-page": "e1001745",
+                        "DOI": "10.1371\/journal.pbio.1001745",
+                        "article-title": "Best practices for scientific computing",
+                        "volume": "12",
+                        "author": "G Wilson",
+                        "year": "2014",
+                        "journal-title": "PLoS Biol"
+                    },
+                    {
+                        "key": "ref3",
+                        "doi-asserted-by": "crossref",
+                        "first-page": "57",
+                        "DOI": "10.1038\/nature11247",
+                        "article-title": "An integrated encyclopedia of DNA elements in the human genome",
+                        "volume": "489",
+                        "author": "B Bernstein",
+                        "year": "2012",
+                        "journal-title": "Nature"
+                    },
+                    {
+                        "key": "ref4",
+                        "doi-asserted-by": "crossref",
+                        "first-page": "e1003326",
+                        "DOI": "10.1371\/journal.pcbi.1003326",
+                        "article-title": "Practical guidelines for the comprehensive analysis of ChIP-seq data",
+                        "volume": "9",
+                        "author": "T Bailey",
+                        "year": "2013",
+                        "journal-title": "PLoS Comput Biol"
+                    },
+                    {
+                        "key": "ref5",
+                        "doi-asserted-by": "crossref",
+                        "first-page": "e1000424",
+                        "DOI": "10.1371\/journal.pcbi.1000424",
+                        "article-title": "A quick guide to organizing computational biology projects",
+                        "volume": "5",
+                        "author": "W Noble",
+                        "year": "2009",
+                        "journal-title": "PLoS Comput Biol"
+                    },
+                    {
+                        "key": "ref6",
+                        "doi-asserted-by": "crossref",
+                        "first-page": "e1002598",
+                        "DOI": "10.1371\/journal.pcbi.1002598",
+                        "article-title": "A quick guide to software licensing for the scientist-programmer",
+                        "volume": "8",
+                        "author": "A Morin",
+                        "year": "2012",
+                        "journal-title": "PLoS Comput Biol"
+                    }
+                ],
+                "container-title": [
+                    "PLOS Computational Biology"
+                ],
+                "language": "en",
+                "link": [
+                    {
+                        "URL": "http:\/\/dx.plos.org\/10.1371\/journal.pcbi.1004668",
+                        "content-type": "unspecified",
+                        "content-version": "vor",
+                        "intended-application": "similarity-checking"
+                    }
+                ],
+                "deposited": {
+                    "date-parts": [
+                        [
+                            2020,
+                            5,
+                            8
+                        ]
+                    ],
+                    "date-time": "2020-05-08T21:36:54Z",
+                    "timestamp": 1588973814000
+                },
+                "score": 51.99113,
+                "resource": {
+                    "primary": {
+                        "URL": "https:\/\/dx.plos.org\/10.1371\/journal.pcbi.1004668"
+                    }
+                },
+                "editor": [
+                    {
+                        "given": "Francis",
+                        "family": "Ouellette",
+                        "sequence": "first",
+                        "affiliation": []
+                    }
+                ],
+                "issued": {
+                    "date-parts": [
+                        [
+                            2016,
+                            1,
+                            19
+                        ]
+                    ]
+                },
+                "references-count": 6,
+                "journal-issue": {
+                    "issue": "1",
+                    "published-online": {
+                        "date-parts": [
+                            [
+                                2016,
+                                1,
+                                19
+                            ]
+                        ]
+                    }
+                },
+                "URL": "http:\/\/dx.doi.org\/10.1371\/journal.pcbi.1004668",
+                "ISSN": [
+                    "1553-7358"
+                ],
+                "issn-type": [
+                    {
+                        "value": "1553-7358",
+                        "type": "electronic"
+                    }
+                ],
+                "subject": [
+                    "Computational Theory and Mathematics",
+                    "Cellular and Molecular Neuroscience",
+                    "Genetics",
+                    "Molecular Biology",
+                    "Ecology",
+                    "Modeling and Simulation",
+                    "Ecology, Evolution, Behavior and Systematics"
+                ],
+                "published": {
+                    "date-parts": [
+                        [
+                            2016,
+                            1,
+                            19
+                        ]
+                    ]
+                }
+            },
+            {
+                "indexed": {
+                    "date-parts": [
+                        [
+                            2024,
+                            2,
+                            14
+                        ]
+                    ],
+                    "date-time": "2024-02-14T01:15:17Z",
+                    "timestamp": 1707873317234
+                },
+                "publisher-location": "Boca Raton",
+                "edition-number": "1",
+                "reference-count": 0,
+                "publisher": "Chapman and Hall\/CRC",
+                "isbn-type": [
+                    {
+                        "value": "9781003455813",
+                        "type": "electronic"
+                    }
+                ],
+                "content-domain": {
+                    "domain": [],
+                    "crossmark-restriction": false
+                },
+                "published-print": {
+                    "date-parts": [
+                        [
+                            2024,
+                            2,
+                            13
+                        ]
+                    ]
+                },
+                "DOI": "10.1201\/9781003455813-3",
+                "type": "book-chapter",
+                "created": {
+                    "date-parts": [
+                        [
+                            2024,
+                            2,
+                            13
+                        ]
+                    ],
+                    "date-time": "2024-02-13T15:47:43Z",
+                    "timestamp": 1707839263000
+                },
+                "page": "131-193",
+                "source": "Crossref",
+                "is-referenced-by-count": 0,
+                "title": [
+                    "Version Control for Software Code Using Git and GitHub"
+                ],
+                "prefix": "10.1201",
+                "author": [
+                    {
+                        "given": "Robert M.",
+                        "family": "Koretsky",
+                        "sequence": "first",
+                        "affiliation": []
+                    }
+                ],
+                "member": "301",
+                "container-title": [
+                    "Raspberry Pi OS Text Editors, git, and LXC"
+                ],
+                "deposited": {
+                    "date-parts": [
+                        [
+                            2024,
+                            2,
+                            13
+                        ]
+                    ],
+                    "date-time": "2024-02-13T15:47:52Z",
+                    "timestamp": 1707839272000
+                },
+                "score": 38.767685,
+                "resource": {
+                    "primary": {
+                        "URL": "https:\/\/www.taylorfrancis.com\/books\/9781003455813\/chapters\/10.1201\/9781003455813-3"
+                    }
+                },
+                "issued": {
+                    "date-parts": [
+                        [
+                            2024,
+                            2,
+                            13
+                        ]
+                    ]
+                },
+                "ISBN": [
+                    "9781003455813"
+                ],
+                "references-count": 0,
+                "URL": "http:\/\/dx.doi.org\/10.1201\/9781003455813-3",
+                "published": {
+                    "date-parts": [
+                        [
+                            2024,
+                            2,
+                            13
+                        ]
+                    ]
+                }
+            },
+            {
+                "indexed": {
+                    "date-parts": [
+                        [
+                            2022,
+                            3,
+                            29
+                        ]
+                    ],
+                    "date-time": "2022-03-29T05:40:05Z",
+                    "timestamp": 1648532405407
+                },
+                "publisher-location": "Boca Raton",
+                "edition-number": "1",
+                "reference-count": 0,
+                "publisher": "CRC Press",
+                "content-domain": {
+                    "domain": [],
+                    "crossmark-restriction": false
+                },
+                "published-print": {
+                    "date-parts": [
+                        [
+                            2022,
+                            2,
+                            14
+                        ]
+                    ]
+                },
+                "DOI": "10.1201\/9781003242055-1",
+                "type": "book-chapter",
+                "created": {
+                    "date-parts": [
+                        [
+                            2022,
+                            2,
+                            14
+                        ]
+                    ],
+                    "date-time": "2022-02-14T19:50:01Z",
+                    "timestamp": 1644868201000
+                },
+                "page": "1-52",
+                "source": "Crossref",
+                "is-referenced-by-count": 0,
+                "title": [
+                    "Introduction to Git and GitHub"
+                ],
+                "prefix": "10.1201",
+                "author": [
+                    {
+                        "given": "Sufyan bin",
+                        "family": "Uzayr",
+                        "sequence": "first",
+                        "affiliation": []
+                    }
+                ],
+                "member": "301",
+                "container-title": [
+                    "Mastering GitHub Pages"
+                ],
+                "deposited": {
+                    "date-parts": [
+                        [
+                            2022,
+                            2,
+                            14
+                        ]
+                    ],
+                    "date-time": "2022-02-14T19:50:03Z",
+                    "timestamp": 1644868203000
+                },
+                "score": 37.69591,
+                "resource": {
+                    "primary": {
+                        "URL": "https:\/\/www.taylorfrancis.com\/books\/9781003242055\/chapters\/10.1201\/9781003242055-1"
+                    }
+                },
+                "issued": {
+                    "date-parts": [
+                        [
+                            2022,
+                            2,
+                            14
+                        ]
+                    ]
+                },
+                "references-count": 0,
+                "URL": "http:\/\/dx.doi.org\/10.1201\/9781003242055-1",
+                "published": {
+                    "date-parts": [
+                        [
+                            2022,
+                            2,
+                            14
+                        ]
+                    ]
+                }
+            },
+            {
+                "indexed": {
+                    "date-parts": [
+                        [
+                            2022,
+                            3,
+                            31
+                        ]
+                    ],
+                    "date-time": "2022-03-31T22:51:18Z",
+                    "timestamp": 1648767078543
+                },
+                "edition-number": "1",
+                "reference-count": 0,
+                "publisher": "Chapman and Hall\/CRC",
+                "isbn-type": [
+                    {
+                        "value": "9780429341830",
+                        "type": "electronic"
+                    }
+                ],
+                "content-domain": {
+                    "domain": [],
+                    "crossmark-restriction": false
+                },
+                "published-print": {
+                    "date-parts": [
+                        [
+                            2019,
+                            11,
+                            12
+                        ]
+                    ]
+                },
+                "DOI": "10.1201\/9780429341830-37",
+                "type": "book-chapter",
+                "created": {
+                    "date-parts": [
+                        [
+                            2020,
+                            12,
+                            19
+                        ]
+                    ],
+                    "date-time": "2020-12-19T06:59:02Z",
+                    "timestamp": 1608361142000
+                },
+                "page": "667-682",
+                "source": "Crossref",
+                "is-referenced-by-count": 0,
+                "title": [
+                    "Git and GitHub"
+                ],
+                "prefix": "10.1201",
+                "author": [
+                    {
+                        "given": "Rafael A.",
+                        "family": "Irizarry",
+                        "sequence": "first",
+                        "affiliation": []
+                    }
+                ],
+                "member": "301",
+                "container-title": [
+                    "Introduction to Data Science"
+                ],
+                "deposited": {
+                    "date-parts": [
+                        [
+                            2021,
+                            4,
+                            17
+                        ]
+                    ],
+                    "date-time": "2021-04-17T19:53:20Z",
+                    "timestamp": 1618689200000
+                },
+                "score": 33.783627,
+                "resource": {
+                    "primary": {
+                        "URL": "https:\/\/www.taylorfrancis.com\/books\/9781000707731\/chapters\/10.1201\/9780429341830-37"
+                    }
+                },
+                "issued": {
+                    "date-parts": [
+                        [
+                            2019,
+                            11,
+                            12
+                        ]
+                    ]
+                },
+                "ISBN": [
+                    "9780429341830"
+                ],
+                "references-count": 0,
+                "URL": "http:\/\/dx.doi.org\/10.1201\/9780429341830-37",
+                "published": {
+                    "date-parts": [
+                        [
+                            2019,
+                            11,
+                            12
+                        ]
+                    ]
+                }
+            },
+            {
+                "indexed": {
+                    "date-parts": [
+                        [
+                            2024,
+                            2,
+                            1
+                        ]
+                    ],
+                    "date-time": "2024-02-01T00:15:46Z",
+                    "timestamp": 1706746546629
+                },
+                "reference-count": 0,
+                "publisher": "University of Sussex",
+                "issue": "5",
+                "license": [
+                    {
+                        "start": {
+                            "date-parts": [
+                                [
+                                    2016,
+                                    6,
+                                    17
+                                ]
+                            ],
+                            "date-time": "2016-06-17T00:00:00Z",
+                            "timestamp": 1466121600000
+                        },
+                        "content-version": "unspecified",
+                        "delay-in-days": 0,
+                        "URL": "https:\/\/creativecommons.org\/licenses\/by\/4.0\/deed.en"
+                    }
+                ],
+                "content-domain": {
+                    "domain": [],
+                    "crossmark-restriction": false
+                },
+                "abstract": "<jats:p>\n            In this lesson you will be introduced to the basics of version control, understand why it is useful and implement basic version control for a plain text document using git and GitHub.\n          <\/jats:p>",
+                "DOI": "10.46430\/phen0051",
+                "type": "journal-article",
+                "created": {
+                    "date-parts": [
+                        [
+                            2020,
+                            5,
+                            13
+                        ]
+                    ],
+                    "date-time": "2020-05-13T19:58:33Z",
+                    "timestamp": 1589399913000
+                },
+                "source": "Crossref",
+                "is-referenced-by-count": 15,
+                "title": [
+                    "An Introduction to Version Control Using GitHub Desktop"
+                ],
+                "prefix": "10.46430",
+                "author": [
+                    {
+                        "given": "Daniel van",
+                        "family": "Strien",
+                        "sequence": "first",
+                        "affiliation": []
+                    }
+                ],
+                "member": "8707",
+                "published-online": {
+                    "date-parts": [
+                        [
+                            2016,
+                            6,
+                            17
+                        ]
+                    ]
+                },
+                "container-title": [
+                    "Programming Historian"
+                ],
+                "language": "en",
+                "deposited": {
+                    "date-parts": [
+                        [
+                            2024,
+                            1,
+                            31
+                        ]
+                    ],
+                    "date-time": "2024-01-31T10:30:19Z",
+                    "timestamp": 1706697019000
+                },
+                "score": 33.045097,
+                "resource": {
+                    "primary": {
+                        "URL": "https:\/\/programminghistorian.org\/en\/lessons\/retired\/getting-started-with-github-desktop"
+                    }
+                },
+                "editor": [
+                    {
+                        "given": "Caleb",
+                        "family": "McDaniel",
+                        "sequence": "additional",
+                        "affiliation": []
+                    }
+                ],
+                "issued": {
+                    "date-parts": [
+                        [
+                            2016,
+                            6,
+                            17
+                        ]
+                    ]
+                },
+                "references-count": 0,
+                "journal-issue": {
+                    "issue": "5",
+                    "published-online": {
+                        "date-parts": [
+                            [
+                                2016
+                            ]
+                        ]
+                    }
+                },
+                "alternative-id": [
+                    "getting-started-with-github-desktop"
+                ],
+                "URL": "http:\/\/dx.doi.org\/10.46430\/phen0051",
+                "ISSN": [
+                    "2397-2068"
+                ],
+                "issn-type": [
+                    {
+                        "value": "2397-2068",
+                        "type": "electronic"
+                    }
+                ],
+                "subject": [
+                    "Computer Science Applications",
+                    "History",
+                    "Education"
+                ],
+                "published": {
+                    "date-parts": [
+                        [
+                            2016,
+                            6,
+                            17
+                        ]
+                    ]
+                }
+            },
+            {
+                "indexed": {
+                    "date-parts": [
+                        [
+                            2023,
+                            1,
+                            6
+                        ]
+                    ],
+                    "date-time": "2023-01-06T10:31:31Z",
+                    "timestamp": 1673001091833
+                },
+                "publisher-location": "Berkeley, CA",
+                "reference-count": 0,
+                "publisher": "Apress",
+                "isbn-type": [
+                    {
+                        "value": "9781430260318",
+                        "type": "print"
+                    },
+                    {
+                        "value": "9781430260325",
+                        "type": "electronic"
+                    }
+                ],
+                "content-domain": {
+                    "domain": [],
+                    "crossmark-restriction": false
+                },
+                "published-print": {
+                    "date-parts": [
+                        [
+                            2013
+                        ]
+                    ]
+                },
+                "DOI": "10.1007\/978-1-4302-6032-5_17",
+                "type": "book-chapter",
+                "created": {
+                    "date-parts": [
+                        [
+                            2014,
+                            1,
+                            21
+                        ]
+                    ],
+                    "date-time": "2014-01-21T09:32:02Z",
+                    "timestamp": 1390296722000
+                },
+                "page": "365-382",
+                "source": "Crossref",
+                "is-referenced-by-count": 1,
+                "title": [
+                    "Version Control with Git"
+                ],
+                "prefix": "10.1007",
+                "author": [
+                    {
+                        "given": "Matt",
+                        "family": "Zandstra",
+                        "sequence": "first",
+                        "affiliation": []
+                    }
+                ],
+                "member": "297",
+                "published-online": {
+                    "date-parts": [
+                        [
+                            2014,
+                            1,
+                            4
+                        ]
+                    ]
+                },
+                "container-title": [
+                    "PHP Obejcts, Patterns, and Practice"
+                ],
+                "link": [
+                    {
+                        "URL": "http:\/\/link.springer.com\/content\/pdf\/10.1007\/978-1-4302-6032-5_17",
+                        "content-type": "unspecified",
+                        "content-version": "vor",
+                        "intended-application": "similarity-checking"
+                    }
+                ],
+                "deposited": {
+                    "date-parts": [
+                        [
+                            2014,
+                            1,
+                            21
+                        ]
+                    ],
+                    "date-time": "2014-01-21T09:32:16Z",
+                    "timestamp": 1390296736000
+                },
+                "score": 32.334736,
+                "resource": {
+                    "primary": {
+                        "URL": "http:\/\/link.springer.com\/10.1007\/978-1-4302-6032-5_17"
+                    }
+                },
+                "issued": {
+                    "date-parts": [
+                        [
+                            2013
+                        ]
+                    ]
+                },
+                "ISBN": [
+                    "9781430260318",
+                    "9781430260325"
+                ],
+                "references-count": 0,
+                "URL": "http:\/\/dx.doi.org\/10.1007\/978-1-4302-6032-5_17",
+                "published": {
+                    "date-parts": [
+                        [
+                            2013
+                        ]
+                    ]
+                }
+            },
+            {
+                "indexed": {
+                    "date-parts": [
+                        [
+                            2022,
+                            4,
+                            4
+                        ]
+                    ],
+                    "date-time": "2022-04-04T13:54:44Z",
+                    "timestamp": 1649080484908
+                },
+                "publisher-location": "Berkeley, CA",
+                "reference-count": 0,
+                "publisher": "Apress",
+                "isbn-type": [
+                    {
+                        "value": "9781484219959",
+                        "type": "print"
+                    },
+                    {
+                        "value": "9781484219966",
+                        "type": "electronic"
+                    }
+                ],
+                "license": [
+                    {
+                        "start": {
+                            "date-parts": [
+                                [
+                                    2016,
+                                    1,
+                                    1
+                                ]
+                            ],
+                            "date-time": "2016-01-01T00:00:00Z",
+                            "timestamp": 1451606400000
+                        },
+                        "content-version": "unspecified",
+                        "delay-in-days": 0,
+                        "URL": "http:\/\/www.springer.com\/tdm"
+                    }
+                ],
+                "content-domain": {
+                    "domain": [],
+                    "crossmark-restriction": false
+                },
+                "published-print": {
+                    "date-parts": [
+                        [
+                            2016
+                        ]
+                    ]
+                },
+                "DOI": "10.1007\/978-1-4842-1996-6_17",
+                "type": "book-chapter",
+                "created": {
+                    "date-parts": [
+                        [
+                            2016,
+                            12,
+                            19
+                        ]
+                    ],
+                    "date-time": "2016-12-19T06:31:50Z",
+                    "timestamp": 1482129110000
+                },
+                "page": "411-433",
+                "source": "Crossref",
+                "is-referenced-by-count": 0,
+                "title": [
+                    "Version Control with Git"
+                ],
+                "prefix": "10.1007",
+                "author": [
+                    {
+                        "given": "Matt",
+                        "family": "Zandstra",
+                        "sequence": "first",
+                        "affiliation": []
+                    }
+                ],
+                "member": "297",
+                "published-online": {
+                    "date-parts": [
+                        [
+                            2016,
+                            12,
+                            20
+                        ]
+                    ]
+                },
+                "container-title": [
+                    "PHP Objects, Patterns, and Practice"
+                ],
+                "link": [
+                    {
+                        "URL": "http:\/\/link.springer.com\/content\/pdf\/10.1007\/978-1-4842-1996-6_17",
+                        "content-type": "unspecified",
+                        "content-version": "vor",
+                        "intended-application": "similarity-checking"
+                    }
+                ],
+                "deposited": {
+                    "date-parts": [
+                        [
+                            2016,
+                            12,
+                            19
+                        ]
+                    ],
+                    "date-time": "2016-12-19T06:31:59Z",
+                    "timestamp": 1482129119000
+                },
+                "score": 32.334736,
+                "resource": {
+                    "primary": {
+                        "URL": "http:\/\/link.springer.com\/10.1007\/978-1-4842-1996-6_17"
+                    }
+                },
+                "issued": {
+                    "date-parts": [
+                        [
+                            2016
+                        ]
+                    ]
+                },
+                "ISBN": [
+                    "9781484219959",
+                    "9781484219966"
+                ],
+                "references-count": 0,
+                "URL": "http:\/\/dx.doi.org\/10.1007\/978-1-4842-1996-6_17",
+                "published": {
+                    "date-parts": [
+                        [
+                            2016
+                        ]
+                    ]
+                }
+            },
+            {
+                "indexed": {
+                    "date-parts": [
+                        [
+                            2023,
+                            1,
+                            11
+                        ]
+                    ],
+                    "date-time": "2023-01-11T11:20:25Z",
+                    "timestamp": 1673436025663
+                },
+                "publisher-location": "Berkeley, CA",
+                "reference-count": 0,
+                "publisher": "Apress",
+                "isbn-type": [
+                    {
+                        "value": "9781484205396",
+                        "type": "print"
+                    },
+                    {
+                        "value": "9781484205389",
+                        "type": "electronic"
+                    }
+                ],
+                "content-domain": {
+                    "domain": [],
+                    "crossmark-restriction": false
+                },
+                "published-print": {
+                    "date-parts": [
+                        [
+                            2014
+                        ]
+                    ]
+                },
+                "DOI": "10.1007\/978-1-4842-0538-9_12",
+                "type": "book-chapter",
+                "created": {
+                    "date-parts": [
+                        [
+                            2014,
+                            12,
+                            27
+                        ]
+                    ],
+                    "date-time": "2014-12-27T12:16:05Z",
+                    "timestamp": 1419682565000
+                },
+                "page": "379-411",
+                "source": "Crossref",
+                "is-referenced-by-count": 1,
+                "title": [
+                    "Version Control with Git"
+                ],
+                "prefix": "10.1007",
+                "author": [
+                    {
+                        "given": "Matthew",
+                        "family": "Knott",
+                        "sequence": "first",
+                        "affiliation": []
+                    }
+                ],
+                "member": "297",
+                "published-online": {
+                    "date-parts": [
+                        [
+                            2014,
+                            12,
+                            24
+                        ]
+                    ]
+                },
+                "container-title": [
+                    "Beginning Xcode"
+                ],
+                "link": [
+                    {
+                        "URL": "http:\/\/link.springer.com\/content\/pdf\/10.1007\/978-1-4842-0538-9_12",
+                        "content-type": "unspecified",
+                        "content-version": "vor",
+                        "intended-application": "similarity-checking"
+                    }
+                ],
+                "deposited": {
+                    "date-parts": [
+                        [
+                            2014,
+                            12,
+                            27
+                        ]
+                    ],
+                    "date-time": "2014-12-27T12:16:19Z",
+                    "timestamp": 1419682579000
+                },
+                "score": 32.334736,
+                "resource": {
+                    "primary": {
+                        "URL": "http:\/\/link.springer.com\/10.1007\/978-1-4842-0538-9_12"
+                    }
+                },
+                "issued": {
+                    "date-parts": [
+                        [
+                            2014
+                        ]
+                    ]
+                },
+                "ISBN": [
+                    "9781484205396",
+                    "9781484205389"
+                ],
+                "references-count": 0,
+                "URL": "http:\/\/dx.doi.org\/10.1007\/978-1-4842-0538-9_12",
+                "published": {
+                    "date-parts": [
+                        [
+                            2014
+                        ]
+                    ]
+                }
+            },
+            {
+                "indexed": {
+                    "date-parts": [
+                        [
+                            2022,
+                            3,
+                            31
+                        ]
+                    ],
+                    "date-time": "2022-03-31T06:06:57Z",
+                    "timestamp": 1648706817176
+                },
+                "publisher-location": "Berkeley, CA",
+                "reference-count": 0,
+                "publisher": "Apress",
+                "isbn-type": [
+                    {
+                        "value": "9781430250043",
+                        "type": "print"
+                    },
+                    {
+                        "value": "9781430250050",
+                        "type": "electronic"
+                    }
+                ],
+                "license": [
+                    {
+                        "start": {
+                            "date-parts": [
+                                [
+                                    2016,
+                                    1,
+                                    1
+                                ]
+                            ],
+                            "date-time": "2016-01-01T00:00:00Z",
+                            "timestamp": 1451606400000
+                        },
+                        "content-version": "unspecified",
+                        "delay-in-days": 0,
+                        "URL": "http:\/\/www.springer.com\/tdm"
+                    }
+                ],
+                "content-domain": {
+                    "domain": [],
+                    "crossmark-restriction": false
+                },
+                "published-print": {
+                    "date-parts": [
+                        [
+                            2016
+                        ]
+                    ]
+                },
+                "DOI": "10.1007\/978-1-4302-5005-0_12",
+                "type": "book-chapter",
+                "created": {
+                    "date-parts": [
+                        [
+                            2016,
+                            11,
+                            8
+                        ]
+                    ],
+                    "date-time": "2016-11-08T08:01:05Z",
+                    "timestamp": 1478592065000
+                },
+                "page": "339-368",
+                "source": "Crossref",
+                "is-referenced-by-count": 0,
+                "title": [
+                    "Version Control with Git"
+                ],
+                "prefix": "10.1007",
+                "author": [
+                    {
+                        "given": "Matthew",
+                        "family": "Knott",
+                        "sequence": "first",
+                        "affiliation": []
+                    }
+                ],
+                "member": "297",
+                "published-online": {
+                    "date-parts": [
+                        [
+                            2016,
+                            11,
+                            9
+                        ]
+                    ]
+                },
+                "container-title": [
+                    "Beginning Xcode"
+                ],
+                "link": [
+                    {
+                        "URL": "http:\/\/link.springer.com\/content\/pdf\/10.1007\/978-1-4302-5005-0_12",
+                        "content-type": "unspecified",
+                        "content-version": "vor",
+                        "intended-application": "similarity-checking"
+                    }
+                ],
+                "deposited": {
+                    "date-parts": [
+                        [
+                            2016,
+                            11,
+                            8
+                        ]
+                    ],
+                    "date-time": "2016-11-08T08:01:15Z",
+                    "timestamp": 1478592075000
+                },
+                "score": 32.28638,
+                "resource": {
+                    "primary": {
+                        "URL": "http:\/\/link.springer.com\/10.1007\/978-1-4302-5005-0_12"
+                    }
+                },
+                "issued": {
+                    "date-parts": [
+                        [
+                            2016
+                        ]
+                    ]
+                },
+                "ISBN": [
+                    "9781430250043",
+                    "9781430250050"
+                ],
+                "references-count": 0,
+                "URL": "http:\/\/dx.doi.org\/10.1007\/978-1-4302-5005-0_12",
+                "published": {
+                    "date-parts": [
+                        [
+                            2016
+                        ]
+                    ]
+                }
+            },
+            {
+                "indexed": {
+                    "date-parts": [
+                        [
+                            2022,
+                            4,
+                            5
+                        ]
+                    ],
+                    "date-time": "2022-04-05T11:06:31Z",
+                    "timestamp": 1649156791792
+                },
+                "publisher-location": "Berkeley, CA",
+                "reference-count": 0,
+                "publisher": "Apress",
+                "isbn-type": [
+                    {
+                        "value": "9781484267905",
+                        "type": "print"
+                    },
+                    {
+                        "value": "9781484267912",
+                        "type": "electronic"
+                    }
+                ],
+                "license": [
+                    {
+                        "start": {
+                            "date-parts": [
+                                [
+                                    2021,
+                                    1,
+                                    1
+                                ]
+                            ],
+                            "date-time": "2021-01-01T00:00:00Z",
+                            "timestamp": 1609459200000
+                        },
+                        "content-version": "tdm",
+                        "delay-in-days": 0,
+                        "URL": "http:\/\/www.springer.com\/tdm"
+                    },
+                    {
+                        "start": {
+                            "date-parts": [
+                                [
+                                    2021,
+                                    1,
+                                    1
+                                ]
+                            ],
+                            "date-time": "2021-01-01T00:00:00Z",
+                            "timestamp": 1609459200000
+                        },
+                        "content-version": "vor",
+                        "delay-in-days": 0,
+                        "URL": "http:\/\/www.springer.com\/tdm"
+                    }
+                ],
+                "content-domain": {
+                    "domain": [
+                        "link.springer.com"
+                    ],
+                    "crossmark-restriction": false
+                },
+                "published-print": {
+                    "date-parts": [
+                        [
+                            2021
+                        ]
+                    ]
+                },
+                "DOI": "10.1007\/978-1-4842-6791-2_17",
+                "type": "book-chapter",
+                "created": {
+                    "date-parts": [
+                        [
+                            2021,
+                            4,
+                            2
+                        ]
+                    ],
+                    "date-time": "2021-04-02T12:02:47Z",
+                    "timestamp": 1617364967000
+                },
+                "page": "613-644",
+                "update-policy": "http:\/\/dx.doi.org\/10.1007\/springer_crossmark_policy",
+                "source": "Crossref",
+                "is-referenced-by-count": 0,
+                "title": [
+                    "Version Control with Git"
+                ],
+                "prefix": "10.1007",
+                "author": [
+                    {
+                        "given": "Matt",
+                        "family": "Zandstra",
+                        "sequence": "first",
+                        "affiliation": []
+                    }
+                ],
+                "member": "297",
+                "published-online": {
+                    "date-parts": [
+                        [
+                            2021,
+                            4,
+                            3
+                        ]
+                    ]
+                },
+                "container-title": [
+                    "PHP 8 Objects, Patterns, and Practice"
+                ],
+                "link": [
+                    {
+                        "URL": "http:\/\/link.springer.com\/content\/pdf\/10.1007\/978-1-4842-6791-2_17",
+                        "content-type": "unspecified",
+                        "content-version": "vor",
+                        "intended-application": "similarity-checking"
+                    }
+                ],
+                "deposited": {
+                    "date-parts": [
+                        [
+                            2021,
+                            4,
+                            2
+                        ]
+                    ],
+                    "date-time": "2021-04-02T12:17:58Z",
+                    "timestamp": 1617365878000
+                },
+                "score": 32.257256,
+                "resource": {
+                    "primary": {
+                        "URL": "http:\/\/link.springer.com\/10.1007\/978-1-4842-6791-2_17"
+                    }
+                },
+                "issued": {
+                    "date-parts": [
+                        [
+                            2021
+                        ]
+                    ]
+                },
+                "ISBN": [
+                    "9781484267905",
+                    "9781484267912"
+                ],
+                "references-count": 0,
+                "URL": "http:\/\/dx.doi.org\/10.1007\/978-1-4842-6791-2_17",
+                "published": {
+                    "date-parts": [
+                        [
+                            2021
+                        ]
+                    ]
+                },
+                "assertion": [
+                    {
+                        "value": "3 April 2021",
+                        "order": 1,
+                        "name": "first_online",
+                        "label": "First Online",
+                        "group": {
+                            "name": "ChapterHistory",
+                            "label": "Chapter History"
+                        }
+                    }
+                ]
+            },
+            {
+                "indexed": {
+                    "date-parts": [
+                        [
+                            2022,
+                            4,
+                            4
+                        ]
+                    ],
+                    "date-time": "2022-04-04T19:28:33Z",
+                    "timestamp": 1649100513643
+                },
+                "publisher-location": "Berkeley, CA",
+                "reference-count": 0,
+                "publisher": "Apress",
+                "isbn-type": [
+                    {
+                        "value": "9781430257431",
+                        "type": "print"
+                    },
+                    {
+                        "value": "9781430257448",
+                        "type": "electronic"
+                    }
+                ],
+                "content-domain": {
+                    "domain": [],
+                    "crossmark-restriction": false
+                },
+                "published-print": {
+                    "date-parts": [
+                        [
+                            2014
+                        ]
+                    ]
+                },
+                "DOI": "10.1007\/978-1-4302-5744-8_12",
+                "type": "book-chapter",
+                "created": {
+                    "date-parts": [
+                        [
+                            2014,
+                            3,
+                            13
+                        ]
+                    ],
+                    "date-time": "2014-03-13T03:44:14Z",
+                    "timestamp": 1394682254000
+                },
+                "page": "371-403",
+                "source": "Crossref",
+                "is-referenced-by-count": 0,
+                "title": [
+                    "Version Control with Git"
+                ],
+                "prefix": "10.1007",
+                "author": [
+                    {
+                        "given": "Matthew",
+                        "family": "Knott",
+                        "sequence": "first",
+                        "affiliation": []
+                    }
+                ],
+                "member": "297",
+                "published-online": {
+                    "date-parts": [
+                        [
+                            2014,
+                            3,
+                            7
+                        ]
+                    ]
+                },
+                "container-title": [
+                    "Beginning Xcode"
+                ],
+                "link": [
+                    {
+                        "URL": "http:\/\/link.springer.com\/content\/pdf\/10.1007\/978-1-4302-5744-8_12",
+                        "content-type": "unspecified",
+                        "content-version": "vor",
+                        "intended-application": "similarity-checking"
+                    }
+                ],
+                "deposited": {
+                    "date-parts": [
+                        [
+                            2014,
+                            3,
+                            13
+                        ]
+                    ],
+                    "date-time": "2014-03-13T03:44:16Z",
+                    "timestamp": 1394682256000
+                },
+                "score": 32.257256,
+                "resource": {
+                    "primary": {
+                        "URL": "http:\/\/link.springer.com\/10.1007\/978-1-4302-5744-8_12"
+                    }
+                },
+                "issued": {
+                    "date-parts": [
+                        [
+                            2014
+                        ]
+                    ]
+                },
+                "ISBN": [
+                    "9781430257431",
+                    "9781430257448"
+                ],
+                "references-count": 0,
+                "URL": "http:\/\/dx.doi.org\/10.1007\/978-1-4302-5744-8_12",
+                "published": {
+                    "date-parts": [
+                        [
+                            2014
+                        ]
+                    ]
+                }
+            },
+            {
+                "indexed": {
+                    "date-parts": [
+                        [
+                            2022,
+                            3,
+                            31
+                        ]
+                    ],
+                    "date-time": "2022-03-31T03:22:22Z",
+                    "timestamp": 1648696942657
+                },
+                "publisher-location": "Berkeley, CA",
+                "reference-count": 0,
+                "publisher": "Apress",
+                "isbn-type": [
+                    {
+                        "value": "9781484253120",
+                        "type": "print"
+                    },
+                    {
+                        "value": "9781484253137",
+                        "type": "electronic"
+                    }
+                ],
+                "license": [
+                    {
+                        "start": {
+                            "date-parts": [
+                                [
+                                    2019,
+                                    12,
+                                    1
+                                ]
+                            ],
+                            "date-time": "2019-12-01T00:00:00Z",
+                            "timestamp": 1575158400000
+                        },
+                        "content-version": "tdm",
+                        "delay-in-days": 0,
+                        "URL": "http:\/\/www.springer.com\/tdm"
+                    }
+                ],
+                "content-domain": {
+                    "domain": [
+                        "link.springer.com"
+                    ],
+                    "crossmark-restriction": false
+                },
+                "published-print": {
+                    "date-parts": [
+                        [
+                            2020
+                        ]
+                    ]
+                },
+                "DOI": "10.1007\/978-1-4842-5313-7_19",
+                "type": "book-chapter",
+                "created": {
+                    "date-parts": [
+                        [
+                            2019,
+                            12,
+                            16
+                        ]
+                    ],
+                    "date-time": "2019-12-16T14:42:37Z",
+                    "timestamp": 1576507357000
+                },
+                "page": "281-284",
+                "update-policy": "http:\/\/dx.doi.org\/10.1007\/springer_crossmark_policy",
+                "source": "Crossref",
+                "is-referenced-by-count": 0,
+                "title": [
+                    "Git and GitHub Workflow"
+                ],
+                "prefix": "10.1007",
+                "author": [
+                    {
+                        "given": "Mariot",
+                        "family": "Tsitoara",
+                        "sequence": "first",
+                        "affiliation": []
+                    }
+                ],
+                "member": "297",
+                "published-online": {
+                    "date-parts": [
+                        [
+                            2019,
+                            12,
+                            1
+                        ]
+                    ]
+                },
+                "container-title": [
+                    "Beginning Git and GitHub"
+                ],
+                "link": [
+                    {
+                        "URL": "http:\/\/link.springer.com\/content\/pdf\/10.1007\/978-1-4842-5313-7_19",
+                        "content-type": "unspecified",
+                        "content-version": "vor",
+                        "intended-application": "similarity-checking"
+                    }
+                ],
+                "deposited": {
+                    "date-parts": [
+                        [
+                            2019,
+                            12,
+                            16
+                        ]
+                    ],
+                    "date-time": "2019-12-16T14:42:44Z",
+                    "timestamp": 1576507364000
+                },
+                "score": 32.25395,
+                "resource": {
+                    "primary": {
+                        "URL": "http:\/\/link.springer.com\/10.1007\/978-1-4842-5313-7_19"
+                    }
+                },
+                "issued": {
+                    "date-parts": [
+                        [
+                            2019,
+                            12,
+                            1
+                        ]
+                    ]
+                },
+                "ISBN": [
+                    "9781484253120",
+                    "9781484253137"
+                ],
+                "references-count": 0,
+                "URL": "http:\/\/dx.doi.org\/10.1007\/978-1-4842-5313-7_19",
+                "published": {
+                    "date-parts": [
+                        [
+                            2019,
+                            12,
+                            1
+                        ]
+                    ]
+                },
+                "assertion": [
+                    {
+                        "value": "1 December 2019",
+                        "order": 1,
+                        "name": "first_online",
+                        "label": "First Online",
+                        "group": {
+                            "name": "ChapterHistory",
+                            "label": "Chapter History"
+                        }
+                    }
+                ]
+            },
+            {
+                "indexed": {
+                    "date-parts": [
+                        [
+                            2024,
+                            1,
+                            12
+                        ]
+                    ],
+                    "date-time": "2024-01-12T23:59:37Z",
+                    "timestamp": 1705103977222
+                },
+                "publisher-location": "Berkeley, CA",
+                "reference-count": 0,
+                "publisher": "Apress",
+                "isbn-type": [
+                    {
+                        "value": "9781484253120",
+                        "type": "print"
+                    },
+                    {
+                        "value": "9781484253137",
+                        "type": "electronic"
+                    }
+                ],
+                "license": [
+                    {
+                        "start": {
+                            "date-parts": [
+                                [
+                                    2020,
+                                    1,
+                                    1
+                                ]
+                            ],
+                            "date-time": "2020-01-01T00:00:00Z",
+                            "timestamp": 1577836800000
+                        },
+                        "content-version": "tdm",
+                        "delay-in-days": 0,
+                        "URL": "http:\/\/www.springer.com\/tdm"
+                    }
+                ],
+                "content-domain": {
+                    "domain": [],
+                    "crossmark-restriction": false
+                },
+                "published-print": {
+                    "date-parts": [
+                        [
+                            2020
+                        ]
+                    ]
+                },
+                "DOI": "10.1007\/978-1-4842-5313-7",
+                "type": "book",
+                "created": {
+                    "date-parts": [
+                        [
+                            2019,
+                            12,
+                            16
+                        ]
+                    ],
+                    "date-time": "2019-12-16T14:42:37Z",
+                    "timestamp": 1576507357000
+                },
+                "source": "Crossref",
+                "is-referenced-by-count": 2,
+                "title": [
+                    "Beginning Git and GitHub"
+                ],
+                "prefix": "10.1007",
+                "author": [
+                    {
+                        "given": "Mariot",
+                        "family": "Tsitoara",
+                        "sequence": "first",
+                        "affiliation": []
+                    }
+                ],
+                "member": "297",
+                "link": [
+                    {
+                        "URL": "http:\/\/link.springer.com\/content\/pdf\/10.1007\/978-1-4842-5313-7.pdf",
+                        "content-type": "application\/pdf",
+                        "content-version": "vor",
+                        "intended-application": "text-mining"
+                    },
+                    {
+                        "URL": "http:\/\/link.springer.com\/content\/pdf\/10.1007\/978-1-4842-5313-7",
+                        "content-type": "unspecified",
+                        "content-version": "vor",
+                        "intended-application": "similarity-checking"
+                    }
+                ],
+                "deposited": {
+                    "date-parts": [
+                        [
+                            2019,
+                            12,
+                            16
+                        ]
+                    ],
+                    "date-time": "2019-12-16T14:42:38Z",
+                    "timestamp": 1576507358000
+                },
+                "score": 32.25395,
+                "resource": {
+                    "primary": {
+                        "URL": "http:\/\/link.springer.com\/10.1007\/978-1-4842-5313-7"
+                    }
+                },
+                "subtitle": [
+                    "A Comprehensive Guide to Version Control, Project Management, and Teamwork for the New Developer"
+                ],
+                "issued": {
+                    "date-parts": [
+                        [
+                            2020
+                        ]
+                    ]
+                },
+                "ISBN": [
+                    "9781484253120",
+                    "9781484253137"
+                ],
+                "references-count": 0,
+                "URL": "http:\/\/dx.doi.org\/10.1007\/978-1-4842-5313-7",
+                "published": {
+                    "date-parts": [
+                        [
+                            2020
+                        ]
+                    ]
+                }
+            },
+            {
+                "indexed": {
+                    "date-parts": [
+                        [
+                            2023,
+                            9,
+                            11
+                        ]
+                    ],
+                    "date-time": "2023-09-11T21:09:36Z",
+                    "timestamp": 1694466576758
+                },
+                "edition-number": "1",
+                "reference-count": 0,
+                "publisher": "Wiley",
+                "isbn-type": [
+                    {
+                        "value": "9781119560012",
+                        "type": "print"
+                    },
+                    {
+                        "value": "9781119560050",
+                        "type": "electronic"
+                    }
+                ],
+                "license": [
+                    {
+                        "start": {
+                            "date-parts": [
+                                [
+                                    2018,
+                                    12,
+                                    14
+                                ]
+                            ],
+                            "date-time": "2018-12-14T00:00:00Z",
+                            "timestamp": 1544745600000
+                        },
+                        "content-version": "tdm",
+                        "delay-in-days": 0,
+                        "URL": "http:\/\/doi.wiley.com\/10.1002\/tdm_license_1.1"
+                    },
+                    {
+                        "start": {
+                            "date-parts": [
+                                [
+                                    2018,
+                                    12,
+                                    14
+                                ]
+                            ],
+                            "date-time": "2018-12-14T00:00:00Z",
+                            "timestamp": 1544745600000
+                        },
+                        "content-version": "tdm",
+                        "delay-in-days": 0,
+                        "URL": "http:\/\/doi.wiley.com\/10.1002\/tdm_license_1.1"
+                    }
+                ],
+                "content-domain": {
+                    "domain": [],
+                    "crossmark-restriction": false
+                },
+                "published-print": {
+                    "date-parts": [
+                        [
+                            2018,
+                            12,
+                            14
+                        ]
+                    ]
+                },
+                "DOI": "10.1002\/9781119560050.app3",
+                "type": "other",
+                "created": {
+                    "date-parts": [
+                        [
+                            2019,
+                            8,
+                            30
+                        ]
+                    ],
+                    "date-time": "2019-08-30T06:08:02Z",
+                    "timestamp": 1567145282000
+                },
+                "page": "431-443",
+                "source": "Crossref",
+                "is-referenced-by-count": 1,
+                "title": [
+                    "Git and GitHub Tutorial"
+                ],
+                "prefix": "10.1002",
+                "member": "311",
+                "published-online": {
+                    "date-parts": [
+                        [
+                            2019,
+                            6,
+                            30
+                        ]
+                    ]
+                },
+                "container-title": [
+                    "Practical Java\u00ae Programming for IoT, AI, and Blockchain"
+                ],
+                "link": [
+                    {
+                        "URL": "https:\/\/api.wiley.com\/onlinelibrary\/tdm\/v1\/articles\/10.1002%2F9781119560050.app3",
+                        "content-type": "application\/pdf",
+                        "content-version": "vor",
+                        "intended-application": "text-mining"
+                    },
+                    {
+                        "URL": "https:\/\/onlinelibrary.wiley.com\/doi\/pdf\/10.1002\/9781119560050.app3",
+                        "content-type": "application\/pdf",
+                        "content-version": "vor",
+                        "intended-application": "text-mining"
+                    },
+                    {
+                        "URL": "https:\/\/onlinelibrary.wiley.com\/doi\/pdf\/10.1002\/9781119560050.app3",
+                        "content-type": "unspecified",
+                        "content-version": "vor",
+                        "intended-application": "similarity-checking"
+                    }
+                ],
+                "deposited": {
+                    "date-parts": [
+                        [
+                            2023,
+                            9,
+                            9
+                        ]
+                    ],
+                    "date-time": "2023-09-09T19:04:19Z",
+                    "timestamp": 1694286259000
+                },
+                "score": 32.25395,
+                "resource": {
+                    "primary": {
+                        "URL": "https:\/\/onlinelibrary.wiley.com\/doi\/10.1002\/9781119560050.app3"
+                    }
+                },
+                "issued": {
+                    "date-parts": [
+                        [
+                            2018,
+                            12,
+                            14
+                        ]
+                    ]
+                },
+                "ISBN": [
+                    "9781119560012",
+                    "9781119560050"
+                ],
+                "references-count": 0,
+                "alternative-id": [
+                    "10.1002\/9781119560050.app3",
+                    "10.1002\/9781119560050"
+                ],
+                "URL": "http:\/\/dx.doi.org\/10.1002\/9781119560050.app3",
+                "archive": [
+                    "Portico"
+                ],
+                "published": {
+                    "date-parts": [
+                        [
+                            2018,
+                            12,
+                            14
+                        ]
+                    ]
+                }
+            },
+            {
+                "indexed": {
+                    "date-parts": [
+                        [
+                            2022,
+                            4,
+                            3
+                        ]
+                    ],
+                    "date-time": "2022-04-03T02:44:36Z",
+                    "timestamp": 1648953876338
+                },
+                "publisher-location": "Boca Raton : Taylor & Francis, CRC press, 2017.",
+                "edition-number": "0",
+                "reference-count": 1,
+                "publisher": "CRC Press",
+                "isbn-type": [
+                    {
+                        "value": "9781315382395",
+                        "type": "electronic"
+                    }
+                ],
+                "content-domain": {
+                    "domain": [],
+                    "crossmark-restriction": false
+                },
+                "published-print": {
+                    "date-parts": [
+                        [
+                            2016,
+                            8,
+                            19
+                        ]
+                    ]
+                },
+                "DOI": "10.1201\/9781315382395-11",
+                "type": "book-chapter",
+                "created": {
+                    "date-parts": [
+                        [
+                            2016,
+                            8,
+                            9
+                        ]
+                    ],
+                    "date-time": "2016-08-09T15:20:41Z",
+                    "timestamp": 1470756041000
+                },
+                "page": "53-68",
+                "source": "Crossref",
+                "is-referenced-by-count": 0,
+                "title": [
+                    "Developing with Git and Github"
+                ],
+                "prefix": "10.1201",
+                "member": "301",
+                "reference": [
+                    {
+                        "key": "p_1",
+                        "doi-asserted-by": "publisher",
+                        "DOI": "10.1109\/52.363162"
+                    }
+                ],
+                "container-title": [
+                    "Introduction to Scientific and Technical Computing"
+                ],
+                "link": [
+                    {
+                        "URL": "http:\/\/www.crcnetbase.com\/doi\/pdf\/10.1201\/9781315382395-11",
+                        "content-type": "unspecified",
+                        "content-version": "vor",
+                        "intended-application": "similarity-checking"
+                    }
+                ],
+                "deposited": {
+                    "date-parts": [
+                        [
+                            2020,
+                            12,
+                            11
+                        ]
+                    ],
+                    "date-time": "2020-12-11T19:58:46Z",
+                    "timestamp": 1607716726000
+                },
+                "score": 30.856598,
+                "resource": {
+                    "primary": {
+                        "URL": "https:\/\/www.taylorfrancis.com\/books\/9781498745062\/chapters\/10.1201\/9781315382395-11"
+                    }
+                },
+                "issued": {
+                    "date-parts": [
+                        [
+                            2016,
+                            8,
+                            19
+                        ]
+                    ]
+                },
+                "ISBN": [
+                    "9781315382395"
+                ],
+                "references-count": 1,
+                "URL": "http:\/\/dx.doi.org\/10.1201\/9781315382395-11",
+                "published": {
+                    "date-parts": [
+                        [
+                            2016,
+                            8,
+                            19
+                        ]
+                    ]
+                }
+            },
+            {
+                "indexed": {
+                    "date-parts": [
+                        [
+                            2024,
+                            2,
+                            13
+                        ]
+                    ],
+                    "date-time": "2024-02-13T18:50:42Z",
+                    "timestamp": 1707850242124
+                },
+                "publisher-location": "New York, NY, USA",
+                "reference-count": 24,
+                "publisher": "ACM",
+                "license": [
+                    {
+                        "start": {
+                            "date-parts": [
+                                [
+                                    2019,
+                                    4,
+                                    30
+                                ]
+                            ],
+                            "date-time": "2019-04-30T00:00:00Z",
+                            "timestamp": 1556582400000
+                        },
+                        "content-version": "vor",
+                        "delay-in-days": 0,
+                        "URL": "http:\/\/www.acm.org\/publications\/policies\/copyright_policy#Background"
+                    }
+                ],
+                "content-domain": {
+                    "domain": [
+                        "dl.acm.org"
+                    ],
+                    "crossmark-restriction": true
+                },
+                "published-print": {
+                    "date-parts": [
+                        [
+                            2019,
+                            5,
+                            9
+                        ]
+                    ]
+                },
+                "DOI": "10.1145\/3300115.3309518",
+                "type": "proceedings-article",
+                "created": {
+                    "date-parts": [
+                        [
+                            2019,
+                            5,
+                            3
+                        ]
+                    ],
+                    "date-time": "2019-05-03T14:29:00Z",
+                    "timestamp": 1556893740000
+                },
+                "update-policy": "http:\/\/dx.doi.org\/10.1145\/crossmark-policy",
+                "source": "Crossref",
+                "is-referenced-by-count": 16,
+                "title": [
+                    "Adopting Git\/Github within Teaching"
+                ],
+                "prefix": "10.1145",
+                "author": [
+                    {
+                        "given": "Richard",
+                        "family": "Glassey",
+                        "sequence": "first",
+                        "affiliation": [
+                            {
+                                "name": "KTH: Royal Institute of Technology, Stockholm, Sweden"
+                            }
+                        ]
+                    }
+                ],
+                "member": "320",
+                "published-online": {
+                    "date-parts": [
+                        [
+                            2019,
+                            5,
+                            9
+                        ]
+                    ]
+                },
+                "reference": [
+                    {
+                        "key": "e_1_3_2_1_1_1",
+                        "first-page": "23",
+                        "volume-title": "IEEE 11th International Conference on Emerging eLearning Technologies and Applications (ICETA'13)",
+                        "author": "Bias Miroslav",
+                        "year": "2013"
+                    },
+                    {
+                        "key": "e_1_3_2_1_2_1",
+                        "doi-asserted-by": "publisher",
+                        "DOI": "10.1145\/1227310.1227344"
+                    },
+                    {
+                        "key": "e_1_3_2_1_3_1",
+                        "doi-asserted-by": "publisher",
+                        "DOI": "10.1049\/sej.1989.0030"
+                    },
+                    {
+                        "key": "e_1_3_2_1_4_1",
+                        "doi-asserted-by": "publisher",
+                        "DOI": "10.1145\/2901739.2901776"
+                    },
+                    {
+                        "key": "e_1_3_2_1_5_1",
+                        "doi-asserted-by": "publisher",
+                        "DOI": "10.1145\/2889160.2889195"
+                    },
+                    {
+                        "key": "e_1_3_2_1_6_1",
+                        "doi-asserted-by": "publisher",
+                        "DOI": "10.1145\/3197091.3205819"
+                    },
+                    {
+                        "key": "e_1_3_2_1_7_1",
+                        "doi-asserted-by": "publisher",
+                        "DOI": "10.5555\/1089182.1089195"
+                    },
+                    {
+                        "key": "e_1_3_2_1_8_1",
+                        "doi-asserted-by": "publisher",
+                        "DOI": "10.1109\/ICSE-C.2017.164"
+                    },
+                    {
+                        "key": "e_1_3_2_1_9_1",
+                        "doi-asserted-by": "publisher",
+                        "DOI": "10.1145\/2729094.2742608"
+                    },
+                    {
+                        "key": "e_1_3_2_1_10_1",
+                        "doi-asserted-by": "publisher",
+                        "DOI": "10.5555\/1127389.1127430"
+                    },
+                    {
+                        "key": "e_1_3_2_1_11_1",
+                        "doi-asserted-by": "publisher",
+                        "DOI": "10.1145\/3159450.3159595"
+                    },
+                    {
+                        "key": "e_1_3_2_1_12_1",
+                        "volume-title": "Communications in Computer and Information Science, Zholtkevych G. (eds) Ermolayev V., Mayr H., Nikitchenko M., Spivakovsky A. (Ed.).",
+                        "author": "Michael Cochez Ville Isom\u00f6"
+                    },
+                    {
+                        "key": "e_1_3_2_1_13_1",
+                        "doi-asserted-by": "publisher",
+                        "DOI": "10.1145\/3197091.3197107"
+                    },
+                    {
+                        "key": "e_1_3_2_1_14_1",
+                        "doi-asserted-by": "publisher",
+                        "DOI": "10.1007\/s10664-015-9393-5"
+                    },
+                    {
+                        "key": "e_1_3_2_1_15_1",
+                        "doi-asserted-by": "publisher",
+                        "DOI": "10.1109\/WCCAIS.2014.6916568"
+                    },
+                    {
+                        "key": "e_1_3_2_1_16_1",
+                        "doi-asserted-by": "publisher",
+                        "DOI": "10.1145\/3159450.3159602"
+                    },
+                    {
+                        "key": "e_1_3_2_1_17_1",
+                        "doi-asserted-by": "publisher",
+                        "DOI": "10.1145\/1734263.1734427"
+                    },
+                    {
+                        "key": "e_1_3_2_1_18_1",
+                        "doi-asserted-by": "publisher",
+                        "DOI": "10.1145\/2445196.2445386"
+                    },
+                    {
+                        "key": "e_1_3_2_1_19_1",
+                        "doi-asserted-by": "publisher",
+                        "DOI": "10.5555\/1127442.1127472"
+                    },
+                    {
+                        "key": "e_1_3_2_1_20_1",
+                        "doi-asserted-by": "publisher",
+                        "DOI": "10.1016\/j.compedu.2006.12.010"
+                    },
+                    {
+                        "key": "e_1_3_2_1_21_1",
+                        "doi-asserted-by": "publisher",
+                        "DOI": "10.1145\/1047344.1047441"
+                    },
+                    {
+                        "key": "e_1_3_2_1_22_1",
+                        "doi-asserted-by": "publisher",
+                        "DOI": "10.1145\/1953163.1953342"
+                    },
+                    {
+                        "key": "e_1_3_2_1_23_1",
+                        "unstructured": "Ian Sommerville. 2015. Software Engineering 10th ed.). Addison-Wesley.   Ian Sommerville. 2015. Software Engineering 10th ed.). Addison-Wesley."
+                    },
+                    {
+                        "key": "e_1_3_2_1_24_1",
+                        "first-page": "32",
+                        "volume-title": "International Workshop on Mining Software Repositories (MSR'04)",
+                        "author": "Liu Ying",
+                        "year": "2004"
+                    }
+                ],
+                "event": {
+                    "name": "CompEd '19: ACM Global Computing Education Conference 2019",
+                    "location": "Chengdu,Sichuan China",
+                    "acronym": "CompEd '19",
+                    "sponsor": [
+                        "SIGCSE ACM Special Interest Group on Computer Science Education"
+                    ]
+                },
+                "container-title": [
+                    "Proceedings of the ACM Conference on Global Computing Education"
+                ],
+                "link": [
+                    {
+                        "URL": "https:\/\/dl.acm.org\/doi\/pdf\/10.1145\/3300115.3309518",
+                        "content-type": "unspecified",
+                        "content-version": "vor",
+                        "intended-application": "similarity-checking"
+                    }
+                ],
+                "deposited": {
+                    "date-parts": [
+                        [
+                            2023,
+                            1,
+                            7
+                        ]
+                    ],
+                    "date-time": "2023-01-07T08:57:04Z",
+                    "timestamp": 1673081824000
+                },
+                "score": 30.856598,
+                "resource": {
+                    "primary": {
+                        "URL": "https:\/\/dl.acm.org\/doi\/10.1145\/3300115.3309518"
+                    }
+                },
+                "subtitle": [
+                    "A Survey of Tool Support"
+                ],
+                "issued": {
+                    "date-parts": [
+                        [
+                            2019,
+                            5,
+                            9
+                        ]
+                    ]
+                },
+                "references-count": 24,
+                "alternative-id": [
+                    "10.1145\/3300115.3309518",
+                    "10.1145\/3300115"
+                ],
+                "URL": "http:\/\/dx.doi.org\/10.1145\/3300115.3309518",
+                "published": {
+                    "date-parts": [
+                        [
+                            2019,
+                            5,
+                            9
+                        ]
+                    ]
+                },
+                "assertion": [
+                    {
+                        "value": "2019-05-09",
+                        "order": 2,
+                        "name": "published",
+                        "label": "Published",
+                        "group": {
+                            "name": "publication_history",
+                            "label": "Publication History"
+                        }
+                    }
+                ]
+            },
+            {
+                "indexed": {
+                    "date-parts": [
+                        [
+                            2022,
+                            4,
+                            5
+                        ]
+                    ],
+                    "date-time": "2022-04-05T18:54:14Z",
+                    "timestamp": 1649184854902
+                },
+                "publisher-location": "Taylor & Francis Group, 6000 Broken Sound Parkway NW, Suite 300, Boca Raton, FL 33487-2742",
+                "reference-count": 0,
+                "publisher": "CRC Press",
+                "content-domain": {
+                    "domain": [],
+                    "crossmark-restriction": false
+                },
+                "published-print": {
+                    "date-parts": [
+                        [
+                            2016,
+                            8
+                        ]
+                    ]
+                },
+                "DOI": "10.1201\/9781315382395-4",
+                "type": "book-chapter",
+                "created": {
+                    "date-parts": [
+                        [
+                            2016,
+                            8,
+                            9
+                        ]
+                    ],
+                    "date-time": "2016-08-09T15:20:41Z",
+                    "timestamp": 1470756041000
+                },
+                "page": "39-53",
+                "source": "Crossref",
+                "is-referenced-by-count": 0,
+                "title": [
+                    "Developing with Git and Github"
+                ],
+                "prefix": "10.1201",
+                "member": "301",
+                "published-online": {
+                    "date-parts": [
+                        [
+                            2016,
+                            8,
+                            9
+                        ]
+                    ]
+                },
+                "container-title": [
+                    "Introduction to Scientific and Technical Computing"
+                ],
+                "link": [
+                    {
+                        "URL": "http:\/\/www.crcnetbase.com\/doi\/pdf\/10.1201\/9781315382395-4",
+                        "content-type": "unspecified",
+                        "content-version": "vor",
+                        "intended-application": "similarity-checking"
+                    }
+                ],
+                "deposited": {
+                    "date-parts": [
+                        [
+                            2016,
+                            11,
+                            9
+                        ]
+                    ],
+                    "date-time": "2016-11-09T12:45:36Z",
+                    "timestamp": 1478695536000
+                },
+                "score": 30.660042,
+                "resource": {
+                    "primary": {
+                        "URL": "http:\/\/www.crcnetbase.com\/doi\/10.1201\/9781315382395-4"
+                    }
+                },
+                "issued": {
+                    "date-parts": [
+                        [
+                            2016,
+                            8
+                        ]
+                    ]
+                },
+                "references-count": 0,
+                "alternative-id": [
+                    "10.1201\/9781315382395-4",
+                    "10.1201\/9781315382395"
+                ],
+                "URL": "http:\/\/dx.doi.org\/10.1201\/9781315382395-4",
+                "published": {
+                    "date-parts": [
+                        [
+                            2016,
+                            8
+                        ]
+                    ]
+                }
+            },
+            {
+                "indexed": {
+                    "date-parts": [
+                        [
+                            2022,
+                            10,
+                            24
+                        ]
+                    ],
+                    "date-time": "2022-10-24T16:08:12Z",
+                    "timestamp": 1666627692032
+                },
+                "reference-count": 4,
+                "publisher": "Informa UK Limited",
+                "issue": "3",
+                "content-domain": {
+                    "domain": [
+                        "www.tandfonline.com"
+                    ],
+                    "crossmark-restriction": true
+                },
+                "short-container-title": [
+                    "Behavioral &amp; Social Sciences Librarian"
+                ],
+                "published-print": {
+                    "date-parts": [
+                        [
+                            2015,
+                            7,
+                            3
+                        ]
+                    ]
+                },
+                "DOI": "10.1080\/01639269.2015.1062586",
+                "type": "journal-article",
+                "created": {
+                    "date-parts": [
+                        [
+                            2015,
+                            8,
+                            28
+                        ]
+                    ],
+                    "date-time": "2015-08-28T13:28:10Z",
+                    "timestamp": 1440768490000
+                },
+                "page": "158-164",
+                "update-policy": "http:\/\/dx.doi.org\/10.1080\/tandf_crossmark_01",
+                "source": "Crossref",
+                "is-referenced-by-count": 8,
+                "title": [
+                    "Git and GitHub for Librarians"
+                ],
+                "prefix": "10.1080",
+                "volume": "34",
+                "author": [
+                    {
+                        "given": "Robin Camille",
+                        "family": "Davis",
+                        "sequence": "first",
+                        "affiliation": []
+                    }
+                ],
+                "member": "301",
+                "published-online": {
+                    "date-parts": [
+                        [
+                            2015,
+                            8,
+                            28
+                        ]
+                    ]
+                },
+                "reference": [
+                    {
+                        "key": "cit0001",
+                        "doi-asserted-by": "publisher",
+                        "DOI": "10.1109\/MS.2013.13"
+                    },
+                    {
+                        "key": "cit0003",
+                        "author": "GitHub",
+                        "journal-title": "GitHub"
+                    },
+                    {
+                        "key": "cit0004",
+                        "volume-title": "How to make a computer operating system in C++",
+                        "author": "Pess\u00e9 S"
+                    },
+                    {
+                        "key": "cit0005",
+                        "doi-asserted-by": "publisher",
+                        "DOI": "10.1186\/1751-0473-8-7"
+                    }
+                ],
+                "container-title": [
+                    "Behavioral &amp; Social Sciences Librarian"
+                ],
+                "language": "en",
+                "link": [
+                    {
+                        "URL": "http:\/\/www.tandfonline.com\/doi\/pdf\/10.1080\/01639269.2015.1062586",
+                        "content-type": "unspecified",
+                        "content-version": "vor",
+                        "intended-application": "similarity-checking"
+                    }
+                ],
+                "deposited": {
+                    "date-parts": [
+                        [
+                            2016,
+                            12,
+                            11
+                        ]
+                    ],
+                    "date-time": "2016-12-11T22:01:10Z",
+                    "timestamp": 1481493670000
+                },
+                "score": 30.509129,
+                "resource": {
+                    "primary": {
+                        "URL": "http:\/\/www.tandfonline.com\/doi\/full\/10.1080\/01639269.2015.1062586"
+                    }
+                },
+                "issued": {
+                    "date-parts": [
+                        [
+                            2015,
+                            7,
+                            3
+                        ]
+                    ]
+                },
+                "references-count": 4,
+                "journal-issue": {
+                    "issue": "3",
+                    "published-online": {
+                        "date-parts": [
+                            [
+                                2015,
+                                8,
+                                28
+                            ]
+                        ]
+                    },
+                    "published-print": {
+                        "date-parts": [
+                            [
+                                2015,
+                                7,
+                                3
+                            ]
+                        ]
+                    }
+                },
+                "alternative-id": [
+                    "10.1080\/01639269.2015.1062586"
+                ],
+                "URL": "http:\/\/dx.doi.org\/10.1080\/01639269.2015.1062586",
+                "ISSN": [
+                    "0163-9269",
+                    "1544-4546"
+                ],
+                "issn-type": [
+                    {
+                        "value": "0163-9269",
+                        "type": "print"
+                    },
+                    {
+                        "value": "1544-4546",
+                        "type": "electronic"
+                    }
+                ],
+                "subject": [
+                    "Library and Information Sciences",
+                    "General Social Sciences"
+                ],
+                "published": {
+                    "date-parts": [
+                        [
+                            2015,
+                            7,
+                            3
+                        ]
+                    ]
+                },
+                "assertion": [
+                    {
+                        "value": "The publishing and review policy for this title is described in its Aims & Scope.",
+                        "order": 1,
+                        "name": "peerreview_statement",
+                        "label": "Peer Review Statement"
+                    },
+                    {
+                        "value": "http:\/\/www.tandfonline.com\/action\/journalInformation?show=aimsScope&journalCode=wbss20",
+                        "URL": "http:\/\/www.tandfonline.com\/action\/journalInformation?show=aimsScope&journalCode=wbss20",
+                        "order": 2,
+                        "name": "aims_and_scope_url",
+                        "label": "Aim & Scope"
+                    }
+                ]
+            },
+            {
+                "indexed": {
+                    "date-parts": [
+                        [
+                            2024,
+                            2,
+                            15
+                        ]
+                    ],
+                    "date-time": "2024-02-15T12:03:26Z",
+                    "timestamp": 1707998606446
+                },
+                "reference-count": 38,
+                "publisher": "Informa UK Limited",
+                "issue": "sup1",
+                "license": [
+                    {
+                        "start": {
+                            "date-parts": [
+                                [
+                                    2021,
+                                    1,
+                                    1
+                                ]
+                            ],
+                            "date-time": "2021-01-01T00:00:00Z",
+                            "timestamp": 1609459200000
+                        },
+                        "content-version": "vor",
+                        "delay-in-days": 0,
+                        "URL": "http:\/\/creativecommons.org\/licenses\/by\/4.0\/"
+                    },
+                    {
+                        "start": {
+                            "date-parts": [
+                                [
+                                    2021,
+                                    1,
+                                    1
+                                ]
+                            ],
+                            "date-time": "2021-01-01T00:00:00Z",
+                            "timestamp": 1609459200000
+                        },
+                        "content-version": "unspecified",
+                        "delay-in-days": 0,
+                        "URL": "http:\/\/creativecommons.org\/licenses\/by\/4.0\/"
+                    }
+                ],
+                "content-domain": {
+                    "domain": [
+                        "www.tandfonline.com"
+                    ],
+                    "crossmark-restriction": true
+                },
+                "short-container-title": [
+                    "Journal of Statistics and Data Science Education"
+                ],
+                "published-print": {
+                    "date-parts": [
+                        [
+                            2021,
+                            1,
+                            1
+                        ]
+                    ]
+                },
+                "DOI": "10.1080\/10691898.2020.1848485",
+                "type": "journal-article",
+                "created": {
+                    "date-parts": [
+                        [
+                            2020,
+                            11,
+                            24
+                        ]
+                    ],
+                    "date-time": "2020-11-24T22:14:31Z",
+                    "timestamp": 1606256071000
+                },
+                "page": "S132-S144",
+                "update-policy": "http:\/\/dx.doi.org\/10.1080\/tandf_crossmark_01",
+                "source": "Crossref",
+                "is-referenced-by-count": 9,
+                "title": [
+                    "Implementing Version Control With Git and GitHub as a Learning Objective in Statistics and Data Science Courses"
+                ],
+                "prefix": "10.1080",
+                "volume": "29",
+                "author": [
+                    {
+                        "given": "Matthew D.",
+                        "family": "Beckman",
+                        "sequence": "first",
+                        "affiliation": [
+                            {
+                                "name": "Department of Statistics, Penn State University, State College, PA;;"
+                            }
+                        ]
+                    },
+                    {
+                        "ORCID": "http:\/\/orcid.org\/0000-0001-6452-2420",
+                        "authenticated-orcid": false,
+                        "given": "Mine",
+                        "family": "\u00c7etinkaya-Rundel",
+                        "sequence": "additional",
+                        "affiliation": [
+                            {
+                                "name": "School of Mathematics, University of Edinburgh, Edinburgh, UK;;"
+                            },
+                            {
+                                "name": "RStudio, Boston, MA;;"
+                            },
+                            {
+                                "name": "Department of Statistical Science, Duke University, Durham, NC;;"
+                            }
+                        ]
+                    },
+                    {
+                        "ORCID": "http:\/\/orcid.org\/0000-0003-3332-4311",
+                        "authenticated-orcid": false,
+                        "given": "Nicholas J.",
+                        "family": "Horton",
+                        "sequence": "additional",
+                        "affiliation": [
+                            {
+                                "name": "Department of Mathematics and Statistics, Amherst College, Amherst, MA;;"
+                            }
+                        ]
+                    },
+                    {
+                        "given": "Colin W.",
+                        "family": "Rundel",
+                        "sequence": "additional",
+                        "affiliation": [
+                            {
+                                "name": "School of Mathematics, University of Edinburgh, Edinburgh, UK;;"
+                            },
+                            {
+                                "name": "Department of Statistical Science, Duke University, Durham, NC;;"
+                            }
+                        ]
+                    },
+                    {
+                        "given": "Adam J.",
+                        "family": "Sullivan",
+                        "sequence": "additional",
+                        "affiliation": [
+                            {
+                                "name": "Department of Biostatistics, Brown University, Providence, RI"
+                            }
+                        ]
+                    },
+                    {
+                        "given": "Maria",
+                        "family": "Tackett",
+                        "sequence": "additional",
+                        "affiliation": [
+                            {
+                                "name": "Department of Statistical Science, Duke University, Durham, NC;;"
+                            }
+                        ]
+                    }
+                ],
+                "member": "301",
+                "published-online": {
+                    "date-parts": [
+                        [
+                            2021,
+                            3,
+                            22
+                        ]
+                    ]
+                },
+                "reference": [
+                    {
+                        "key": "CIT0002",
+                        "unstructured": "American Statistical Association (2014), \u201cCurriculum Guidelines for Undergraduate Programs in Statistical Science,\u201d available at http:\/\/www.amstat.org\/education\/curriculumguidelines.cfm."
+                    },
+                    {
+                        "key": "CIT0003",
+                        "doi-asserted-by": "crossref",
+                        "unstructured": "Baumer, B., Cetinkaya-Rundel, M., Bray, A., Loi, L., and Horton, N. J. (2014), \u201cR Markdown: Integrating a Reproducible Analysis Tool Into Introductory Statistics,\u201d Technology Innovations in Statistics Education, 8, available at https:\/\/escholarship.org\/uc\/item\/90b2f5xh.",
+                        "DOI": "10.5070\/T581020118"
+                    },
+                    {
+                        "key": "CIT0004",
+                        "unstructured": "Bitbucket (2020), \u201cBitbucket,\u201d available at https:\/\/bitbucket.org."
+                    },
+                    {
+                        "key": "CIT0005",
+                        "doi-asserted-by": "publisher",
+                        "DOI": "10.1080\/00031305.2017.1399928"
+                    },
+                    {
+                        "key": "CIT0006",
+                        "unstructured": "Bryan, J. (2018b), \u201cHappy Git and GitHub for the useR,\u201d GitHub, available at https:\/\/happygitwithr.com."
+                    },
+                    {
+                        "key": "CIT0007",
+                        "unstructured": "Bryan, J. (2020), \u201cStat 545 Website,\u201d available at https:\/\/stat545.com."
+                    },
+                    {
+                        "key": "CIT0008",
+                        "unstructured": "\u00c7etinkaya-Rundel, M. (2020), \u201cData Science in a Box,\u201d available at https:\/\/www.datasciencebox.org."
+                    },
+                    {
+                        "key": "CIT0009",
+                        "doi-asserted-by": "publisher",
+                        "DOI": "10.1080\/00031305.2017.1397549"
+                    },
+                    {
+                        "key": "CIT0010",
+                        "unstructured": "Chang, W., Cheng, J., Allaire, J., Xie, Y., and McPherson, J. (2019), \u201cshiny: Web Application Framework for R,\u201d R Package Version 1.4.0, available at https:\/\/CRAN.R-project.org\/package=shiny."
+                    },
+                    {
+                        "key": "CIT0011",
+                        "unstructured": "DataCamp (2019), \u201cDataCamp,\u201d available at https:\/\/datacamp.com."
+                    },
+                    {
+                        "key": "CIT0012",
+                        "unstructured": "Federal Educational Rights and Privacy Act (FERPA) (2020), \u201cFederal Educational Rights and Privacy Act (FERPA),\u201d available at https:\/\/www2.ed.gov\/policy\/gen\/guid\/fpco\/ferpa\/index.html."
+                    },
+                    {
+                        "key": "CIT0013",
+                        "doi-asserted-by": "publisher",
+                        "DOI": "10.1080\/10691898.2019.1617089"
+                    },
+                    {
+                        "key": "CIT0014",
+                        "doi-asserted-by": "publisher",
+                        "DOI": "10.1198\/tast.2011.08241"
+                    },
+                    {
+                        "key": "CIT0015",
+                        "unstructured": "GitHub (2018), \u201cGitHub Learning Lab,\u201d available at https:\/\/lab.github.com\/githubtraining\/managing-merge-conflicts."
+                    },
+                    {
+                        "key": "CIT0016",
+                        "unstructured": "GitHub (2020a), \u201cGitHub,\u201d available at https:\/\/github.com."
+                    },
+                    {
+                        "key": "CIT0017",
+                        "unstructured": "GitHub (2020b), \u201cGitHub Learning Lab,\u201d available at https:\/\/lab.github.com."
+                    },
+                    {
+                        "key": "CIT0018",
+                        "unstructured": "GitHub Education (2020), \u201cGitHub Classroom,\u201d available at https:\/\/classroom.github.com."
+                    },
+                    {
+                        "key": "CIT0019",
+                        "doi-asserted-by": "publisher",
+                        "DOI": "10.1007\/978-3-658-03104-6_27"
+                    },
+                    {
+                        "key": "CIT0020",
+                        "unstructured": "Gradescope (2020), \u201cGradescope,\u201d available at https:\/\/www.gradescope.com."
+                    },
+                    {
+                        "key": "CIT0021",
+                        "doi-asserted-by": "publisher",
+                        "DOI": "10.1145\/2729094.2742608"
+                    },
+                    {
+                        "key": "CIT0022",
+                        "doi-asserted-by": "publisher",
+                        "DOI": "10.1080\/00031305.2015.1077729"
+                    },
+                    {
+                        "key": "CIT0023",
+                        "doi-asserted-by": "publisher",
+                        "DOI": "10.1080\/00031305.2015.1089789"
+                    },
+                    {
+                        "key": "CIT0024",
+                        "doi-asserted-by": "publisher",
+                        "DOI": "10.1145\/3287324.3287460"
+                    },
+                    {
+                        "key": "CIT0025",
+                        "unstructured": "Kaggle (2017), \u201cKaggle Machine Learning & Data Science Survey 2017,\u201d available at https:\/\/www.kaggle.com\/kaggle\/kaggle-survey-2017."
+                    },
+                    {
+                        "key": "CIT0026",
+                        "unstructured": "Kaplan, D. T. (2015), \u201cData Computing: An Introduction to Wrangling and Visualization With R,\u201d Project Mosaic."
+                    },
+                    {
+                        "key": "CIT0027",
+                        "unstructured": "Kaplan, D. T., and Beckman, M. D. (2019), Data Computing (2nd ed.), available at https:\/\/dtkaplan.github.io\/DataComputingEbook."
+                    },
+                    {
+                        "key": "CIT0028",
+                        "first-page": "6",
+                        "volume": "49",
+                        "author": "Meng X.-L.",
+                        "year": "2020",
+                        "journal-title": "IMS Bulletin"
+                    },
+                    {
+                        "key": "CIT0029",
+                        "unstructured": "National Academies of Science, Engineering, and Medicine (2018), \u201cData Science for Undergraduates: Opportunities and Options,\u201d available at https:\/\/nas.edu\/envisioningds."
+                    },
+                    {
+                        "key": "CIT0030",
+                        "unstructured": "National Academies of Science, Engineering, and Medicine (2019), \u201cRoundtable on Data Science Postsecondary Education Meeting 10,\u201d available at https:\/\/nas.edu\/dsert."
+                    },
+                    {
+                        "key": "CIT0031",
+                        "doi-asserted-by": "publisher",
+                        "DOI": "10.1198\/tast.2010.09132"
+                    },
+                    {
+                        "key": "CIT0032",
+                        "volume-title": "RStudio: Integrated Development Environment for R",
+                        "author": "RStudio Team",
+                        "year": "2015"
+                    },
+                    {
+                        "key": "CIT0033",
+                        "volume-title": "RStudio Cloud",
+                        "author": "RStudio Team",
+                        "year": "2020"
+                    },
+                    {
+                        "key": "CIT0034",
+                        "unstructured": "Rundel, C. (2020), \u201cghclass Actions,\u201d available at https:\/\/github.com\/rundel\/ghclass-actions"
+                    },
+                    {
+                        "key": "CIT0035",
+                        "unstructured": "Rundel, C. \u00c7etinkaya-Rundel, M., and Anders, T. (2020), \u201cghclass: Tools for Managing Classes With GitHub,\u201d available at http:\/\/github.com\/rundel\/ghclass."
+                    },
+                    {
+                        "key": "CIT0036",
+                        "unstructured": "Tech Beacon (2020), \u201cWhat do Job-Seeking Developers Need in Their GitHub?\u201d available at https:\/\/techbeacon.com\/app-dev-testing\/what-do-job-seeking-developers-need-their-github."
+                    },
+                    {
+                        "key": "CIT0037",
+                        "unstructured": "Wickham, H., and Bryan, J. (2020), \u201cusethis: Automate Package and Project Setup,\u201d available at https:\/\/github.com\/r-lib\/usethis."
+                    },
+                    {
+                        "key": "CIT0038",
+                        "doi-asserted-by": "publisher",
+                        "DOI": "10.1201\/9781138359444"
+                    },
+                    {
+                        "key": "CIT0039",
+                        "doi-asserted-by": "publisher",
+                        "DOI": "10.1145\/2675133.2675284"
+                    }
+                ],
+                "container-title": [
+                    "Journal of Statistics and Data Science Education"
+                ],
+                "language": "en",
+                "link": [
+                    {
+                        "URL": "https:\/\/www.tandfonline.com\/doi\/pdf\/10.1080\/10691898.2020.1848485",
+                        "content-type": "unspecified",
+                        "content-version": "vor",
+                        "intended-application": "similarity-checking"
+                    }
+                ],
+                "deposited": {
+                    "date-parts": [
+                        [
+                            2022,
+                            6,
+                            6
+                        ]
+                    ],
+                    "date-time": "2022-06-06T17:40:00Z",
+                    "timestamp": 1654537200000
+                },
+                "score": 29.503506,
+                "resource": {
+                    "primary": {
+                        "URL": "https:\/\/www.tandfonline.com\/doi\/full\/10.1080\/10691898.2020.1848485"
+                    }
+                },
+                "issued": {
+                    "date-parts": [
+                        [
+                            2021,
+                            1,
+                            1
+                        ]
+                    ]
+                },
+                "references-count": 38,
+                "journal-issue": {
+                    "issue": "sup1",
+                    "published-print": {
+                        "date-parts": [
+                            [
+                                2021,
+                                1,
+                                1
+                            ]
+                        ]
+                    }
+                },
+                "alternative-id": [
+                    "10.1080\/10691898.2020.1848485"
+                ],
+                "URL": "http:\/\/dx.doi.org\/10.1080\/10691898.2020.1848485",
+                "ISSN": [
+                    "2693-9169"
+                ],
+                "issn-type": [
+                    {
+                        "value": "2693-9169",
+                        "type": "electronic"
+                    }
+                ],
+                "subject": [
+                    "Management Science and Operations Research",
+                    "Education",
+                    "Statistics and Probability"
+                ],
+                "published": {
+                    "date-parts": [
+                        [
+                            2021,
+                            1,
+                            1
+                        ]
+                    ]
+                },
+                "assertion": [
+                    {
+                        "value": "The publishing and review policy for this title is described in its Aims & Scope.",
+                        "order": 1,
+                        "name": "peerreview_statement",
+                        "label": "Peer Review Statement"
+                    },
+                    {
+                        "value": "http:\/\/www.tandfonline.com\/action\/journalInformation?show=aimsScope&journalCode=ujse20",
+                        "URL": "http:\/\/www.tandfonline.com\/action\/journalInformation?show=aimsScope&journalCode=ujse20",
+                        "order": 2,
+                        "name": "aims_and_scope_url",
+                        "label": "Aim & Scope"
+                    },
+                    {
+                        "value": "2019-12-24",
+                        "order": 0,
+                        "name": "received",
+                        "label": "Received",
+                        "group": {
+                            "name": "publication_history",
+                            "label": "Publication History"
+                        }
+                    },
+                    {
+                        "value": "2020-09-30",
+                        "order": 1,
+                        "name": "revised",
+                        "label": "Revised",
+                        "group": {
+                            "name": "publication_history",
+                            "label": "Publication History"
+                        }
+                    },
+                    {
+                        "value": "2020-11-03",
+                        "order": 2,
+                        "name": "accepted",
+                        "label": "Accepted",
+                        "group": {
+                            "name": "publication_history",
+                            "label": "Publication History"
+                        }
+                    },
+                    {
+                        "value": "2020-11-24",
+                        "order": 3,
+                        "name": "published",
+                        "label": "Published",
+                        "group": {
+                            "name": "publication_history",
+                            "label": "Publication History"
+                        }
+                    }
+                ]
+            },
+            {
+                "indexed": {
+                    "date-parts": [
+                        [
+                            2024,
+                            2,
+                            1
+                        ]
+                    ],
+                    "date-time": "2024-02-01T04:11:40Z",
+                    "timestamp": 1706760700368
+                },
+                "publisher-location": "Berkeley, CA",
+                "reference-count": 0,
+                "publisher": "Apress",
+                "isbn-type": [
+                    {
+                        "value": "9781484230329",
+                        "type": "print"
+                    },
+                    {
+                        "value": "9781484230336",
+                        "type": "electronic"
+                    }
+                ],
+                "license": [
+                    {
+                        "start": {
+                            "date-parts": [
+                                [
+                                    2017,
+                                    1,
+                                    1
+                                ]
+                            ],
+                            "date-time": "2017-01-01T00:00:00Z",
+                            "timestamp": 1483228800000
+                        },
+                        "content-version": "unspecified",
+                        "delay-in-days": 0,
+                        "URL": "http:\/\/www.springer.com\/tdm"
+                    }
+                ],
+                "content-domain": {
+                    "domain": [],
+                    "crossmark-restriction": false
+                },
+                "published-print": {
+                    "date-parts": [
+                        [
+                            2017
+                        ]
+                    ]
+                },
+                "DOI": "10.1007\/978-1-4842-3033-6_12",
+                "type": "book-chapter",
+                "created": {
+                    "date-parts": [
+                        [
+                            2017,
+                            10,
+                            24
+                        ]
+                    ],
+                    "date-time": "2017-10-24T11:08:34Z",
+                    "timestamp": 1508843314000
+                },
+                "page": "285-303",
+                "source": "Crossref",
+                "is-referenced-by-count": 1,
+                "title": [
+                    "Team Collaboration: Version Control with Git"
+                ],
+                "prefix": "10.1007",
+                "author": [
+                    {
+                        "given": "Alessandro",
+                        "family": "Del Sole",
+                        "sequence": "first",
+                        "affiliation": []
+                    }
+                ],
+                "member": "297",
+                "published-online": {
+                    "date-parts": [
+                        [
+                            2017,
+                            10,
+                            25
+                        ]
+                    ]
+                },
+                "container-title": [
+                    "Beginning Visual Studio for Mac"
+                ],
+                "link": [
+                    {
+                        "URL": "http:\/\/link.springer.com\/content\/pdf\/10.1007\/978-1-4842-3033-6_12",
+                        "content-type": "unspecified",
+                        "content-version": "vor",
+                        "intended-application": "similarity-checking"
+                    }
+                ],
+                "deposited": {
+                    "date-parts": [
+                        [
+                            2017,
+                            10,
+                            24
+                        ]
+                    ],
+                    "date-time": "2017-10-24T11:08:43Z",
+                    "timestamp": 1508843323000
+                },
+                "score": 29.40565,
+                "resource": {
+                    "primary": {
+                        "URL": "http:\/\/link.springer.com\/10.1007\/978-1-4842-3033-6_12"
+                    }
+                },
+                "issued": {
+                    "date-parts": [
+                        [
+                            2017
+                        ]
+                    ]
+                },
+                "ISBN": [
+                    "9781484230329",
+                    "9781484230336"
+                ],
+                "references-count": 0,
+                "URL": "http:\/\/dx.doi.org\/10.1007\/978-1-4842-3033-6_12",
+                "published": {
+                    "date-parts": [
+                        [
+                            2017
+                        ]
+                    ]
+                }
+            }
+        ],
+        "items-per-page": 20,
+        "query": {
+            "start-index": 0,
+            "search-terms": null
+        }
+    }
+}
