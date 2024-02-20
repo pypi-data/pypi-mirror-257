@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: python-motion
+Version: 0.1.0
+Summary: 
+License: MIT
+Author: Lemuel Boyce
+Author-email: lemuel@vokality.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pydantic (>=2.6.1,<3.0.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+# Python Motion
+
+A Python library for interfacing with the [Motion](https://wwww.usemotion.com)
+
+### Installation
+
+```bash
+pip install python-motion
+```
+
+### Usage
+
+```python
+from motion import Motion
+
+motion = Motion('your-api-key')
+
+# Get Tasks
+tasks = motion.tasks.list()
+```
+
+
+### Roadmap
+- [x] Initial implementation
+- [ ] Named arguments for all methods
+- [ ] Async support
+- [ ] Convert responses to Pydantic models
