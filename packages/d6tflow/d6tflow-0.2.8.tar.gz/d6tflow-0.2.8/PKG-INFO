@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: d6tflow
+Version: 0.2.8
+Summary: For data scientists and data engineers, d6tflow is a python library which makes building complex data science workflows easy, fast and intuitive.
+Home-page: https://github.com/d6t/d6tflow
+Author: DataBolt Team
+Author-email: support@databolt.tech
+License: MIT
+Keywords: d6tflow,data workflow,data pipelines,luigi
+Requires-Python: >=3.5
+Provides-Extra: dask
+Provides-Extra: cloud-base
+Provides-Extra: gcs
+Provides-Extra: s3
+Provides-Extra: pipe
+License-File: LICENSE
+
+d6tflow is a python library which makes it easier to build data workflowsSee https://github.com/d6t/d6tflow for details
