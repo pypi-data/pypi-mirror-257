@@ -1,0 +1,9 @@
+pipme/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pipme/check_inits.py,sha256=PaXmTtxe_aU_sQfCk7z2KKGseV8f3XZKK2HIsBOzc3U,626
+pipme/get_installed_packages.py,sha256=dEWeB4vY7Gr5CrdT0eiEq_25yJ530TYeQx-0qIt22EA,1102
+pipme/main.py,sha256=wmbcRy-FQtK6YZtgovgXS8XOuW2XwvxCjqCfXw4y0og,878
+testing_phase_pipme-1.1.0.dist-info/METADATA,sha256=K2gUPqc34paWO0FouR5lc_txDaoMJgI-470Tgw5kQck,68
+testing_phase_pipme-1.1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+testing_phase_pipme-1.1.0.dist-info/entry_points.txt,sha256=bq08B_N89CRGcu3uYrd7hER6YJx78yXVpgwm9GTzU_k,45
+testing_phase_pipme-1.1.0.dist-info/top_level.txt,sha256=CAyghGrJ99Yb3IixYXx07unxUVxXov-BOA9RH7jAWcU,6
+testing_phase_pipme-1.1.0.dist-info/RECORD,,
