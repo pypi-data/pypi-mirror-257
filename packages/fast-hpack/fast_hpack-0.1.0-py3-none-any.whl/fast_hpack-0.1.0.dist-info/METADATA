@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: fast-hpack
+Version: 0.1.0
+Summary: Faster HPACK for HTTP2.
+Home-page: https://github.com/scorbettUM/fast-hpack
+Author: Ada Lundhe
+Author-email: ada@datavant.com
+Keywords: pypi,http,http2
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+

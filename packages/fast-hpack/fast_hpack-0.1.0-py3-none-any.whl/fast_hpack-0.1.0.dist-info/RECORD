@@ -1,0 +1,9 @@
+fast_hpack/__init__.py,sha256=O5Gc_G-emrYUPKHLEJF71AuL3wtzc6pD8A3Jw70skVo,219
+fast_hpack/hpack.py,sha256=LWbUyA1pjkQlwZ0rkSr3H5RRMI1RatH0v-_7mvKkc6U,120424
+fast_hpack/huffman.py,sha256=QjLmQ9PYtyzPZ2GPqd6no9fW826W31jMs3qkyvTMfEc,6169
+fast_hpack/table.py,sha256=J4Ct24pbve7CazJuSGJOPkTGt82HEIRqRuoMKbudbWQ,9261
+fast_hpack-0.1.0.dist-info/LICENSE,sha256=djqTQqBN9iBGydx0ilKHk06wpTMcaGOzygruIOGMtO0,1080
+fast_hpack-0.1.0.dist-info/METADATA,sha256=Est2lLW2Wz2FgoxzoCZ-WoXRtl48B_HiRHrLkx0CyiY,553
+fast_hpack-0.1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+fast_hpack-0.1.0.dist-info/top_level.txt,sha256=N3Tfkqs5PH-HNzEOKRP9EoWAXBJKZmdHgYDACrOasn0,11
+fast_hpack-0.1.0.dist-info/RECORD,,
