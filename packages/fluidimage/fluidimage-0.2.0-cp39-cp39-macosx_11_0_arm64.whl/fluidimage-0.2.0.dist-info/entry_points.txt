@@ -1,0 +1,5 @@
+[console_scripts]
+fluidimviewer-pg = fluidimage.gui.pg_main:main
+fluidimviewer = fluidimage.gui.imviewer:main
+fluidimlauncher = fluidimage.gui.launcher.main:main
+
