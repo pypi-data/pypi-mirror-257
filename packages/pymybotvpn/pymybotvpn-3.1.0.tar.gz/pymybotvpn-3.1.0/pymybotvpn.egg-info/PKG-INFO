@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: pymybotvpn
+Version: 3.1.0
+Summary: A Python module for installing and configuring PyMyBot VPN
+Home-page: https://github.com/Azigaming404
+Author: Aji Permana
+Author-email: admin@cybervpn.site
+License: UNKNOWN
+Description: Pymybot vpn is a python bot panel module using the telethon module as its backend..
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
