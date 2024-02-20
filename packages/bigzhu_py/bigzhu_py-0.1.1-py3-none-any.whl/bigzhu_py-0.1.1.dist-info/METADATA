@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: bigzhu_py
+Version: 0.1.1
+Summary: My Python Utility Library
+Author: bigzhu
+Author-email: vermiliondun@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: environs (>=10.3.0,<11.0.0)
+Requires-Dist: pyTelegramBotAPI (>=4.16.1,<5.0.0)
+Requires-Dist: pytz (>=2024.1,<2025.0)
+Description-Content-Type: text/markdown
+
+
