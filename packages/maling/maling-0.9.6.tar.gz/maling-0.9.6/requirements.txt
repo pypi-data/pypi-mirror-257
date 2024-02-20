@@ -1,0 +1,17 @@
+pyaes
+pysocks
+python-dotenv
+tgcrypto
+requests
+ffmpeg-python
+pymongo
+py-tgcalls==1.0.9
+uvloop
+wget
+psutil
+yt-dlp
+pykeyboard
+bs4
+pymediainfo
+youtube-search-python
+attrify
