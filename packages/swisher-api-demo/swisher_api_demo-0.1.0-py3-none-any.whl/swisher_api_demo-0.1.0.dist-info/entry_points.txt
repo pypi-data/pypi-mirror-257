@@ -1,0 +1,3 @@
+[console_scripts]
+album = main:get_photos
+bird = main:lookup_num
