@@ -1,0 +1,8 @@
+setup.py
+detspace/__init__.py
+detspace/generator.py
+detspace/utils.py
+detspace.egg-info/PKG-INFO
+detspace.egg-info/SOURCES.txt
+detspace.egg-info/dependency_links.txt
+detspace.egg-info/top_level.txt
