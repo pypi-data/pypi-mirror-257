@@ -1,0 +1,31 @@
+# Python internal files
+__pycache__/
+*.py[cod]
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# Testing
+.coverage
+
+# Virtual environment
+.venv
+
+# Internal data
+/data
+
+# exclude reports
+/honcaml_reports
+*.html
+
+# Exclude tags
+TAGS
+
+# Non-source docs
+*.pdf
+*.gif
+*.webm
+
+/paper

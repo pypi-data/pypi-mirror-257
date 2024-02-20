@@ -1,0 +1,119 @@
+global:
+  problem_type: regression
+
+steps:
+  data:
+    extract:
+      filepath: data/regression_train.csv
+      features:
+        - bedrooms
+        - bathrooms
+        - sqft_living
+        - sqft_lot
+        - floors
+        - waterfront
+        - view
+        - condition
+        - grade
+        - sqft_above
+        - sqft_basement
+        - yr_built
+        - yr_renovated
+        - zipcode
+        - lat
+        - long
+        - sqft_living15
+        - sqft_lot15
+      target: price
+
+    transform:
+      normalize:
+        features:
+          module: sklearn.preprocessing.StandardScaler
+          params:
+            with_std: True
+          columns:
+            - sqft_living
+            - sqft_lot
+            - sqft_above
+            - sqft_basement
+            - sqft_living15
+            - sqft_lot15
+        target:
+          module: sklearn.preprocessing.StandardScaler
+          params:
+            with_std: True
+          columns: price
+
+  benchmark:
+    transform:
+      models:
+        sklearn.ensemble.RandomForestRegressor:
+          n_estimators:
+            method: randint
+            values: [ 2, 110 ]
+          max_features:
+            method: choice
+            values:
+              - sqrt
+              - log2
+              - 1 # It means 'auto'
+        sklearn.neighbors.KNeighborsRegressor:
+          n_neighbors:
+            method: randint
+            values: [ 1, 100 ]
+          weights:
+            method: choice
+            values:
+              - uniform
+              - distance
+        torch:
+          epochs:
+            method: randint
+            values: [2, 5]
+          layers:
+            number_blocks: [3, 6]
+            types:
+              - Linear + ReLU
+              - Dropout
+            params:
+              Dropout:
+                p:
+                  method: uniform
+                  values: [0.4, 0.6]
+          loader:
+            batch_size:
+              method: randint
+              values: [20, 40]
+            shuffle:
+              method: choice
+              values:
+                - True
+                - False
+          loss:
+            method: choice
+            values:
+              - module: torch.nn.MSELoss
+              - module: torch.nn.L1Loss
+          optimizer:
+            method: choice
+            values:
+              - module: torch.optim.SGD
+                params:
+                  lr:
+                    method: loguniform
+                    values: [0.001, 0.01]
+                  momentum:
+                    method: uniform
+                    values: [0.5, 1]
+              - module: torch.optim.Adam
+                params:
+                  lr:
+                    method: loguniform
+                    values: [0.001, 0.1]
+                  eps:
+                    method: loguniform
+                    values: [0.0000001, 0.00001]
+      metrics: mean_absolute_percentage_error
+    load:
+      path: honcaml_reports
