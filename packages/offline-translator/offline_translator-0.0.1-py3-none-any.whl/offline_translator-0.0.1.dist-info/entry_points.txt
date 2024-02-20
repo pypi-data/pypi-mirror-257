@@ -1,0 +1,3 @@
+[console_scripts]
+offline-translator=offline_translator.cli:entrypoint
+
