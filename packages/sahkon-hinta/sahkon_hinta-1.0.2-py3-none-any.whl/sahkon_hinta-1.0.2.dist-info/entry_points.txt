@@ -1,0 +1,3 @@
+[console_scripts]
+sahkon-hinta = sahkon_hinta.main:main
+
