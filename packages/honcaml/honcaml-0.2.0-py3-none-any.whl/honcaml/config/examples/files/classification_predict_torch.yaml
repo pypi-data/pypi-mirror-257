@@ -1,0 +1,20 @@
+global:
+  problem_type: classification
+
+steps:
+  data:
+    extract:
+      filepath: data/classification_test.csv
+      target: class
+
+  model:
+    extract:
+      filepath: honcaml_models/torch_classification.sav
+    transform:
+      predict:
+        estimator:
+          params:
+            loader:
+              batch_size: 20
+              shuffle: True
+        path: honcaml_reports

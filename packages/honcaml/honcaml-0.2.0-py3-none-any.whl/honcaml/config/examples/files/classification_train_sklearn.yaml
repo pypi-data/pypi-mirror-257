@@ -1,0 +1,28 @@
+global:
+  problem_type: classification
+
+steps:
+  data:
+    transform:
+        encoding:
+          OHE: True
+    extract:
+      filepath: data/classification_train.csv
+      target: class
+
+  model:
+    transform:
+      fit:
+        estimator:
+          module: sklearn.ensemble.RandomForestClassifier
+          params:
+            n_estimators: 100
+        cross_validation:
+          module: sklearn.model_selection.KFold
+          params:
+            n_splits: 2
+            shuffle: True
+            random_state: 90
+
+    load:
+      filepath: honcaml_models/sklearn_classification.sav

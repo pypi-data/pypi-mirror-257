@@ -1,0 +1,18 @@
+global:
+  problem_type: classification
+
+logging:
+  level: DEBUG
+
+steps:
+  data:
+    extract:
+      filepath: data/classification_test.csv
+      target: class
+
+  model:
+    extract:
+      filepath: honcaml_models/sklearn_classification.sav
+    transform:
+      predict:
+        path: honcaml_reports
