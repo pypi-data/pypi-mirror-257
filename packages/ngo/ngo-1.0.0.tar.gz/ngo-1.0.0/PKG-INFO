@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: ngo
+Version: 1.0.0
+Summary: Optimizes non ground logic programs.
+Home-page: https://potassco.org/ngo
+Author: Max Ostrowski
+Author-email: max.ostrowski@potassco.com
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: clingo<6.0,>=5.7.1
+Requires-Dist: networkx>=3.1
+Requires-Dist: sympy>=1.12
+Provides-Extra: format
+Requires-Dist: black; extra == "format"
+Requires-Dist: isort; extra == "format"
+Provides-Extra: lint-ruff
+Requires-Dist: ruff>=0.1.2; extra == "lint-ruff"
+Provides-Extra: lint-pylint
+Requires-Dist: pylint; extra == "lint-pylint"
+Requires-Dist: ngo[test]; extra == "lint-pylint"
+Provides-Extra: typecheck
+Requires-Dist: types-setuptools; extra == "typecheck"
+Requires-Dist: mypy>=1.6; extra == "typecheck"
+Requires-Dist: networkx-stubs; extra == "typecheck"
+Requires-Dist: ngo[test]; extra == "typecheck"
+Provides-Extra: test
+Requires-Dist: coverage[toml]; extra == "test"
+Requires-Dist: pytest; extra == "test"
+Provides-Extra: doc
+Requires-Dist: pdoc; extra == "doc"
+Provides-Extra: dev
+Requires-Dist: pre-commit; extra == "dev"
+Requires-Dist: ngo[doc,format,lint_pylint,lint_ruff,test,typecheck]; extra == "dev"
+
+# ngo
+
+ngo is a program and python library to optimize non ground logic ASP encodings for performance.
+Please read [the documentation](https://potassco.org/ngo/).
+
+You can get more information about [contributing](CONTRIBUTING.md) and [development](DEVELOPMENT.md).
