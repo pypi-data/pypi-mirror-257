@@ -1,0 +1,14 @@
+./.gitignore,sha256=Ok8i2DXFyrjy9D5WN6MAORIcNYlNj7sQe6rf8v6plp4,3245
+./.readthedocs.yaml,sha256=TTkqmxUNT-uz4_f1zWx3e25DjiL4M9S9zMDiqrY2TxM,118
+./PKG-INFO,sha256=niXmspCiCIq-tFaXVeeMWZbc-3psYyAGzNT_2Hb483k,1670
+./README.md,sha256=rZzSumJ9OoZpvB27nOq5DfJe1agiDyozFlQSCqZQepc,1195
+./mkdocs.yml,sha256=rxBdT5byzu-Jr2Fe0yfmABD2c-iiE78XoibfqcBVFaw,130
+./pyproject.toml,sha256=nBF2nBw-71PQfwsaePpYp11CTAuQ14XLs0ye9Y7Qaeg,639
+./pyrightconfig.json,sha256=jgl2mU2Bx3--92icd0VkecfyJzBNYVGWMhbGcPTSZo4,74
+./docs/index.md,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+./penguin/alaska.py,sha256=Lt-jx_wKQCJnMww5_oP988OkoEZZBbmy1bDXo1KB_vM,985
+./penguin/igloo.py,sha256=t2dxRcLBZi60jJLURAr4ZDadadr2by0p2LzuJqb3U8k,2301
+./penguin/main.py,sha256=umKjY0BP_pPL9xdEMuMbpAfMtd6mc4or9nQSWxa7l2o,2691
+py_penguin-0.0.4.dist-info/METADATA,sha256=niXmspCiCIq-tFaXVeeMWZbc-3psYyAGzNT_2Hb483k,1670
+py_penguin-0.0.4.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+py_penguin-0.0.4.dist-info/RECORD,,
