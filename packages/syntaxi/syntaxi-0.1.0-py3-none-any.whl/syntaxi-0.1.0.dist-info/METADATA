@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: syntaxi
+Version: 0.1.0
+Summary: A quick and dirty morpheme tokenizer.
+License: MIT
+Author: Niels Horn
+Author-email: niels@horn.ninja
+Requires-Python: >=3.11,<3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: ipython (>=8.21.0,<9.0.0)
+Requires-Dist: regex (>=2023.12.25,<2024.0.0)
+Requires-Dist: tokenizers (>=0.15.2,<0.16.0)
+Description-Content-Type: text/markdown
+
+# syntaxi
+🚕 A quick and dirty morpheme tokenizer
+
