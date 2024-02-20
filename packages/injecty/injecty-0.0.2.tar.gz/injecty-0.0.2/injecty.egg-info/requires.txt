@@ -1,0 +1,14 @@
+
+[all]
+pylint~=3.0
+pytest-cov~=4.0
+black~=23.3
+pytest-xdist~=3.2
+pytest~=7.2
+
+[dev]
+black~=23.3
+pytest~=7.2
+pytest-cov~=4.0
+pytest-xdist~=3.2
+pylint~=3.0
