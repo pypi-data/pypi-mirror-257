@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: PYSTOIC
+Version: 0.2.2
+Requires-Python: >=3.10
+Provides-Extra: reqs
+Provides-Extra: all
