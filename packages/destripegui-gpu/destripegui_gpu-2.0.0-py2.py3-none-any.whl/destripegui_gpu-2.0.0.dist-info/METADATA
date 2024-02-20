@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: destripegui-gpu
+Version: 2.0.0
+Summary: A GUI for automatic pystripe destriping
+Home-page: https://github.com/lifecanvastechnologies
+Author: LifeCanvas Technologies
+License: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+
+Live Destriping GUI with GPU-accelerated destriping
+==============
+
+**Installation instructions**
+Instructions for installing GPU Live Destriping GUI:
+0. Ensure Anaconda is installed on the computer.
+1. Go to Go to https://github.com/LifeCanvas-Technologies/destripegui/tree/gpu-destripe and click the green "<> Code" button. 
+2. Download it by clicking "Download Zip"
+3. Extract the folder somewhere
+4. Navigate to the folder (named "destripegui") in File Explorer, and then double click "install.bat". This will do all the necessary installations
+5. Run the GUI by opening a command line and typing ``conda activate destripegui`` followed by ``destripegui``

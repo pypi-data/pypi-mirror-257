@@ -1,0 +1,4 @@
+[console_scripts]
+cpu-destripe = destripegui.destripe.core:main
+destripegui = destripegui.destripegui:main
+gpu-destripe = destripegui.destripe.core_gpu:main

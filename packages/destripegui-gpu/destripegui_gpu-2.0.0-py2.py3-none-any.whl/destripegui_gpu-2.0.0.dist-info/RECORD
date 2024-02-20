@@ -1,0 +1,16 @@
+destripegui/__init__.py,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+destripegui/destripegui.py,sha256=okvHpR-5zsjLsC1XMfVuEciyalgtUer0x3eN5EBasCA,29011
+destripegui/data/DestripeGUI.exe,sha256=ujzuVljjJvUBpNmvZqpLCLODbmcwnjlSvbkReUvvzRg,98304
+destripegui/data/config.ini,sha256=j0IPQsuIwThV0M6xuo1SrMdODUPj4k0FPZnIamam8_k,593
+destripegui/data/lct.ico,sha256=ttDC0RLH0ja3KYlNlFa92048g4SdAXgcBAj87--cGi8,26858
+destripegui/destripe/__init__.py,sha256=ufoowxfxijC8cODpd7OUrm0NzVNX4UyLsNiEwkrvDVQ,107
+destripegui/destripe/core.py,sha256=1I6kGRGp4LCCCssO9xw2o4cjAsuEt_7eXqiKEIw010g,36552
+destripegui/destripe/core_gpu.py,sha256=uuMgjkoA-zRqQxo741y7Y3pZpqlvypkcfqktpIleUJY,36653
+destripegui/destripe/raw.py,sha256=EO-vv4o5t7h71xymHviGIN29v8XrdWkA1yPwV5vOlrM,1668
+destripegui/destripe/utils.py,sha256=Yopp7X_b96b-GCcl1PT-rRZNZjFGqDm_AMPS7k8_hN4,7347
+destripegui_gpu-2.0.0.dist-info/LICENSE.txt,sha256=nrb2nUih3XZOijPxSlhPRg087GU0d8E2qV3W35wkkhE,1055
+destripegui_gpu-2.0.0.dist-info/METADATA,sha256=tjeQkCm3sqGKuCpxYqAwPNKHA7p05qk5tqioNLSkCSA,1052
+destripegui_gpu-2.0.0.dist-info/WHEEL,sha256=bb2Ot9scclHKMOLDEHY6B2sicWOgugjFKaJsT7vwMQo,110
+destripegui_gpu-2.0.0.dist-info/entry_points.txt,sha256=_Mxntgv0t3uZMesR0tauMmEsTlpxiOg5TSfNOa1TZ9o,157
+destripegui_gpu-2.0.0.dist-info/top_level.txt,sha256=qVDvX2cAIhSEg9l4HzcsQKxdDVkLSK86KI2lOaXBCCU,12
+destripegui_gpu-2.0.0.dist-info/RECORD,,
