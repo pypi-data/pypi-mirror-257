@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "fao56-model"
+version = "0.1.2"
+description = "A Python package for FAO-56 model calculations."
+authors = ["Stephan Smit <stephansmit@hotmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry_bumpversion.file."fao56_model/__init__.py"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pandas = "^2.2.0"
+pydantic = "^2.6.1"
+datetimerange = "^2.2.0"
+matplotlib = "^3.8.3"
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.6.1"
+mypy = "^1.8.0"
+pandas-stubs = "^2.1.4.231227"
+types-setuptools = "^69.1.0.20240217"
+types-datetimerange = "^2.0.0.6"
+pytest = "^8.0.1"
+flake8 = "^7.0.0"
+pytest-cov = "^4.1.0"
+pytest-raises = "^0.11"
+black = "^24.2.0"
+readme-renderer = {extras = ["md"], version = "^42.0"}
+twine = "^5.0.0"
+ipykernel = "^6.29.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
