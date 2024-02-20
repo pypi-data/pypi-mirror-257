@@ -1,0 +1,8 @@
+gdbus_util/__init__.py,sha256=OGf2CKsbo7aSfHci-XMbiIGXyKWwCeqb_hinFmbg624,230
+gdbus_util/dbus_object.py,sha256=vljTdXL7-gfIa1bk7Q0h-mAEmWUF0C6I5ypzTpxMQXo,12978
+gdbus_util/error.py,sha256=UQIRbrq8YbKJwYgc8fDtaOHA7VfyAqtAU9IdVRiWDU4,1231
+gdbus_util/exit_on_idle.py,sha256=E_HjBOoHS3QczpTYDkD7ZXryctxBTNrTYsQc5imiZX4,5657
+gdbus_util-0.0.1.dist-info/METADATA,sha256=WmMCFNYK8T7mNYPpdMMmGvB9lmHli05j9wcTSjVgjUc,2563
+gdbus_util-0.0.1.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+gdbus_util-0.0.1.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+gdbus_util-0.0.1.dist-info/RECORD,,
