@@ -1,0 +1,10 @@
+pyskim/__init__.py,sha256=lWVdnQDTFdzYzx9rC5z0Rn-rzwxKazfdoC4noqaZUb8,56
+pyskim/column_dispatch.py,sha256=AJe1xiFocXJTy8qlpnSVFBaZUTDgaBaMQQAsplGB3w4,2251
+pyskim/main.py,sha256=ool9Ex9hzcqLXMl_kVJYMKfQ-1ysti_ywzqIpML2s9s,1353
+pyskim/text_formatter.py,sha256=Dy3-wgAMcqAY_WZ2J28VsU3O27dL3SSu3tk-ckVYobE,3842
+pyskim/utils.py,sha256=FdJE8IWbQf-5aDUH0Jlj4d2_mpn4ec_BYGYII6-DfqU,1739
+pyskim-0.1.5.dist-info/LICENSE,sha256=cxVUeZ0M0trKFNwUyvmgzShqCl_IJuMPfmNYHCONpzs,1078
+pyskim-0.1.5.dist-info/METADATA,sha256=qXKnC0fBA2A74NH_SJe15MjkO22TU5KIAzq8NcLSniA,6063
+pyskim-0.1.5.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+pyskim-0.1.5.dist-info/entry_points.txt,sha256=x18iT7dTwqgIegunceMhFBpAUXGmPUJwvu2S1_pJMgI,38
+pyskim-0.1.5.dist-info/RECORD,,
