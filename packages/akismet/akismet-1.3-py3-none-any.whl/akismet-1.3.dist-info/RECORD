@@ -1,0 +1,12 @@
+akismet/__init__.py,sha256=JLa9NxkgN2lQSLLJlmg3XiN-FJu5Aj52Au3JWbvyXJY,3272
+akismet/_async_client.py,sha256=ARh52NDWTWTT6IR1zD7oZulFkYTPQJc3ddLyTfE69XY,22643
+akismet/_common.py,sha256=S70KxfSM-GSEoTJlA3i7OqlYey2AUYq5IU7LR-OeQHk,4433
+akismet/_exceptions.py,sha256=EeYI1_v68Bj_gFjsepfwC3DovFSxPp2fs6ipObx0n64,1439
+akismet/_legacy_client.py,sha256=GNuSGPYRJUn_ve7_ayjsVRLyu0oxi8jD0Xb9IxVkxXw,8963
+akismet/_sync_client.py,sha256=Xz-ifvftJ-X8XmghyMZQUsMZycFD6DT7oF8IfISRbJQ,22525
+akismet/_version.py,sha256=DcBaNbUZZhcrn-5xlEDqXftAW2gWXEbRiDuO2t90iF8,436
+akismet-1.3.dist-info/LICENSE,sha256=qQo1SA_2vH2LVLk-bG4g7awh6VJxUTdHQ0bW4rg5kBc,1546
+akismet-1.3.dist-info/METADATA,sha256=V8CsUfoCZfltZc6Nv4HvOY8z-_JmhI6nNdrsWKdj6OM,4405
+akismet-1.3.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+akismet-1.3.dist-info/top_level.txt,sha256=xXarJ51cUkQMZE8fVQcrBj_bBq0WEnNOFMdeHnTHT6M,8
+akismet-1.3.dist-info/RECORD,,
