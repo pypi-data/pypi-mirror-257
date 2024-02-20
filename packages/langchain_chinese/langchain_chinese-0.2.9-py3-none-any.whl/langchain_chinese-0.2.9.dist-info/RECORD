@@ -1,0 +1,9 @@
+langchain_chinese/.pypirc,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+langchain_chinese/__init__.py,sha256=baZqhTxo1PAkxIj3CsbJFf2PU0pEaG9s5LzvAwPBKD4,182
+langchain_chinese/__version__.py,sha256=ksG_d7mv2iL_XUZ920sqotINXKrhskSUzK5uqrvpw0w,22
+langchain_chinese/zhipuai/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+langchain_chinese/zhipuai/base.py,sha256=KFxLhJqSjVoocOPF44m4r_Jef63YAJvkSQpBGqy46_k,11561
+langchain_chinese-0.2.9.dist-info/LICENSE,sha256=jPH7lFWRyKxR0vwjHzqfY1-J1ChP4WqV31vdkzngw3Q,1066
+langchain_chinese-0.2.9.dist-info/METADATA,sha256=qWncMBT96tIXh05m6-5mg4rmxAbF-rfI_4TttuK84JI,4917
+langchain_chinese-0.2.9.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+langchain_chinese-0.2.9.dist-info/RECORD,,
