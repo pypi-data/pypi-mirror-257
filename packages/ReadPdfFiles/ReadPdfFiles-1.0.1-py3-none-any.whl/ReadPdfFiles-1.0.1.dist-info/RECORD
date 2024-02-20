@@ -1,0 +1,9 @@
+readPdfFiles/__init__.py,sha256=X_7Yc6-tUOC4paB3OBJGZlBL2efVy4lkEzzRg38zI_E,200
+readPdfFiles/readPdfWithFitz.py,sha256=thbjPU3_Gw5TmNTbzuau1wRd9ULL6MX-1lHujendowA,339
+readPdfFiles/readPdfWithPdfminer.py,sha256=OyGnNgEXKSwLzXzGDSGYMIu5E_zkpIW5fO94JVa7CLw,314
+readPdfFiles/readPdfWithPyPDF2.py,sha256=mZqI3mFZzKwMU9KK_IeFqGGjdefO_qIUMOwibdQSzrM,492
+readPdfFiles/readPdfWithTabula.py,sha256=Bw8r_nsgT_exE0Ir_4zhBfbBc_dyi1RZ9m4bHxl71vA,300
+ReadPdfFiles-1.0.1.dist-info/METADATA,sha256=YAWZ1QeARMZFGKXc6n59IvS-27r5tTJB_fQq3_Je0-Y,461
+ReadPdfFiles-1.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+ReadPdfFiles-1.0.1.dist-info/top_level.txt,sha256=1-grICRMuCbdu7IfNnZR9sgZaUHvEb-rTyGqO9fKsKE,13
+ReadPdfFiles-1.0.1.dist-info/RECORD,,
