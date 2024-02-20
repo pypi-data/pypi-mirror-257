@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: actinia-python-client
+Version: 0.4.0
+Summary: Python client library for actinia requests.
+Author-email: Anika Weinmann <weinmann@mundialis.de>
+Maintainer-email: "mundialis GmbH & Co. KG" <info@mundialis.de>
+Project-URL: Homepage, https://github.com/actinia-org/actinia-python-client
+Project-URL: Bug Tracker, https://github.com/actinia-org/actinia-python-client/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: jinja2
+Requires-Dist: requests
+Requires-Dist: sphinx-material
+
+# actinia-python-client
+
+[![image](https://img.shields.io/conda/vn/conda-forge/actinia-python-client.svg)](https://anaconda.org/conda-forge/actinia-python-client)
+
+Python Client Library for [actinia](https://actinia.mundialis.de/).
+
+## Installation
+
+The client is available at https://pypi.org/project/actinia-python-client/
+
+```bash
+pip3 install actinia-python-client
+```
+
+For newest version see [releases](https://github.com/actinia-org/actinia-python-client/releases).
+
+## Conda
+
+actinia-python-client is automatically packaged on [conda-forge / actinia-python-client-feedstock](https://github.com/conda-forge/actinia-python-client-feedstock/).
+
+## Small Example
+
+See [examples](https://actinia-org.github.io/actinia-python-client/03_quickstart)
