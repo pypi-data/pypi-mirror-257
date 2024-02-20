@@ -1,0 +1,17 @@
+pdfautonup/__init__.py,sha256=MaPj5Vr5lnO9ZlTgnbesl43Eb0dxwqcFywx76BgHLJA,8277
+pdfautonup/__main__.py,sha256=N8J6Nzd_V4v-6NMkis5M2yyqRXAlMzFFkp2CTmYVYIc,2698
+pdfautonup/errors.py,sha256=71ufaurJZsy_5hGQvH4fyWchFAY7rzzFu8xdMSpiRkM,1125
+pdfautonup/geometry.py,sha256=N4Tw6ujd0_gcD40Pmk7psG4MMcaqewqLh-sHfwOYjDc,10900
+pdfautonup/options.py,sha256=NdnAsMXf9qbKGTKOenCuhV-iBdDY9ceJOrb_jEBT5mE,11213
+pdfautonup/paper.py,sha256=zBZMFh49XkUeI8_LOzmW-9zsLq5dfxc0AkjySWMJ378,3288
+pdfautonup/pdfbackend/__init__.py,sha256=MvtSBS-o_V8BrGH0-x1G7jwX59yIFLuCc3L1TfTaXIQ,3219
+pdfautonup/pdfbackend/pymupdf.py,sha256=Fi2CbCkmnprf_cWp0I4o9ilCHv7BWJdjFPHVDNEKaFk,4212
+pdfautonup/pdfbackend/pypdf.py,sha256=XidkXr7YqLmaX-JSnUViKDhfYErTtgcmVHgxtMGAYUg,3471
+pdfautonup-1.9.0.dist-info/AUTHORS,sha256=X7TYIj4k0AjeEe6iTOp7-KDz32OoVuzW8P8msPZQ9mI,17
+pdfautonup-1.9.0.dist-info/LICENSE,sha256=DZak_2itbUtvHzD3E7GNUYSRK6jdOJ-GqncQ2weavLA,34523
+pdfautonup-1.9.0.dist-info/METADATA,sha256=HB0YTOw4ySw8rsnWVKsWNr4-zKdFe_7_Q69rKgsh650,3837
+pdfautonup-1.9.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+pdfautonup-1.9.0.dist-info/entry_points.txt,sha256=IWX-M9QKrvv8e1tp26DyxrieKan8yeq650Di-k7O8_Q,56
+pdfautonup-1.9.0.dist-info/top_level.txt,sha256=2nk2X6jajyEaimlooLHBcjzwYCzriJhx4KwfjNwouAM,11
+pdfautonup-1.9.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+pdfautonup-1.9.0.dist-info/RECORD,,
