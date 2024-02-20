@@ -1,0 +1,4 @@
+odoo12-addon-document_page
+odoo12-addon-document_page_tag
+odoo12-addon-helpdesk_mgmt
+odoo<12.1dev,>=12.0a
