@@ -1,0 +1,3 @@
+[console_scripts]
+vgif = vgif.video2gif:main
+vgif-gui = vgif.main:main

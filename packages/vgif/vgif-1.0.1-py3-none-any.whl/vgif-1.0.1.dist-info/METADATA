@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: vgif
+Version: 1.0.1
+Summary: https://github.com/Haoke98/video2gif
+Home-page: https://github.com/Haoke98/video2gif
+Author: Haoke98
+Author-email: Haoke98@outlook.com
+License: MIT
+Keywords: image video gif
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.7
+License-File: LICENSE
+
