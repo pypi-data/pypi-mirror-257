@@ -1,0 +1,13 @@
+resconfig==20.4.3a0
+
+[dev]
+mypy==1.8.0
+pre-commit==3.6.1
+ruff==0.2.2
+
+[test]
+coverage[toml]==7.4.1
+pytest==8.0.1
+pytest-cov==4.1.0
+pytest-mock==3.12.0
+pytest-xprocess==0.23.0

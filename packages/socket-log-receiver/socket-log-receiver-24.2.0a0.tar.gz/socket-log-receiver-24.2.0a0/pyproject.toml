@@ -1,0 +1,95 @@
+[build-system]
+requires = ["setuptools>=67.8.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "socket-log-receiver"
+version = "24.2.0a0"
+authors = [{name="Taro Sato", email="okomestudio@gmail.com"}]
+description = "A light-weight socket log receiver"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Utilities",
+]
+dependencies = ["resconfig==20.4.3a0"]
+
+[project.optional-dependencies]
+dev = [
+    "mypy==1.8.0",
+    "pre-commit==3.6.1",
+    "ruff==0.2.2",
+]
+
+test = [
+    "coverage[toml]==7.4.1",
+    "pytest==8.0.1",
+    "pytest-cov==4.1.0",
+    "pytest-mock==3.12.0",
+    "pytest-xprocess==0.23.0",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/okomestudio/socket-log-receiver"
+"Buck Tracker" = "https://github.com/okomestudio/socket-log-receiver/issues"
+
+[project.scripts]
+log_receiver = "socket_log_receiver.__main__:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+license-files = ["LICENSE.txt"]
+include-package-data = true
+package-data = {"socket_log_receiver" = []}
+
+[tool.coverage.report]
+exclude_lines = [
+    "def __repr__",
+    "def __str__",
+    "except ImportError",
+    "if __name__ == .__main__.:",
+    "log(|ging).(debug|info|warning)",
+    "pragma: no cover",
+    "raise AssertionError",
+    "raise NotImplementedError",
+]
+
+[tool.pytest.ini_options]
+minversion = "7.3"
+addopts = "-vv --cov=socket_log_receiver --cov-report=term-missing"
+testpaths = [
+    "tests",
+]
+
+[too.ruff]
+target-version = "py38"
+
+[tool.ruff.lint]
+extend-select = ["I"]
+
+[tool.mypy]
+python_version = "3.11"
+check_untyped_defs = true
+disallow_any_unimported = true
+disallow_untyped_defs = true
+no_implicit_optional = true
+show_error_codes = true
+warn_return_any = true
+warn_unused_ignores = true
+
+[[tool.mypy.overrides]]
+  module = [
+    "resconfig.*",
+    "xprocess.*",
+  ]
+  ignore_missing_imports = true
