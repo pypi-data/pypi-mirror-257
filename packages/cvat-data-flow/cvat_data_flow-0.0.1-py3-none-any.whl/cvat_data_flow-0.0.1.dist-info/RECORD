@@ -1,0 +1,13 @@
+cvat_data_flow/__init__.py,sha256=WE5I1svASJZGoIxsbjV-hpuiWS1-dSfDataXsLXlSrM,45
+cvat_data_flow/main.py,sha256=Jjxm7bvo2YkA9REK_F9zJG0H9G2YtziejSOtqq7Nndg,681
+cvat_data_flow/src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cvat_data_flow/src/config_parser.py,sha256=pBlQ2x0fyE0V_ANHJoQAL0ikkAJ7G1ovcBNfQbpmd-E,2011
+cvat_data_flow/src/cvat_api.py,sha256=nrdWbgMvHnw34SdgYq-JKlytxRdNIUQs8Peztf3RGao,6020
+cvat_data_flow/src/cvat_data_flow.py,sha256=iuBS7PwgUTihkkbQavO_TwwFTj1_Lq5G5g8NsEioflk,3510
+cvat_data_flow/src/dataset_builder.py,sha256=3-4nAZU8WNX0RgjtJv8QLECtcjr6yg94-eps73NOD04,6728
+cvat_data_flow-0.0.1.dist-info/.DS_Store,sha256=Otwetqi5umpVfHBqu1tcYQCI6S4EaLgCROSxioOVbXA,6148
+cvat_data_flow-0.0.1.dist-info/LICENSE,sha256=uIPZ3Io_EL33ijn2ppspIv4RtEWkLcRJaUC4wxCiHys,1080
+cvat_data_flow-0.0.1.dist-info/METADATA,sha256=NVee2mIRuuBqvPcN2lxRJVhDkIGm463zeTAJoZP67vo,3060
+cvat_data_flow-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+cvat_data_flow-0.0.1.dist-info/top_level.txt,sha256=3OXC1lZbwhTHlN89jkt4LkbpYVnp9B-r1rhsXQzlMmY,15
+cvat_data_flow-0.0.1.dist-info/RECORD,,
