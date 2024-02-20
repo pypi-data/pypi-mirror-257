@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: MTBF-G90
+Version: 1.0.3
+Summary: marionette driver to establish connection.
+Home-page: UNKNOWN
+Author: shayan
+Author-email: syedshayan109@gmail.com
+License: MIT
+Download-URL: https://pypi.org/project/mtbf_g90/
+Keywords: mtbf_g90,g90
+Platform: UNKNOWN
+
+marionette_driver for QA testing purpose of devices.
+
