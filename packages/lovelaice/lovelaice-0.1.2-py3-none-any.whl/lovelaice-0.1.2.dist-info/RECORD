@@ -1,0 +1,11 @@
+lovelaice/__init__.py,sha256=h98q9gsWjEL6308k5DzPybybed3uQV3Y21ejVKLB2Co,63
+lovelaice/__main__.py,sha256=3U77Eu21mJ-LY27RG-JEnpbh6Z63wGOom4i-EoLtUcY,59
+lovelaice/cli.py,sha256=C_r5bn7XqgViVUeN14107Uc8BhIQLXT2CXBqcmPcGyw,671
+lovelaice/connectors.py,sha256=2VJ6Os3fl_be_Uln0Y_6AQB_GbjDWeJzykZ-uLCS_r0,4007
+lovelaice/core.py,sha256=gWXoqmaILYKrzpr4Bi4cM-a2ndvhkcab3wmC0cquauI,5138
+lovelaice/models.py,sha256=gAeENVMugZEA23A68OOdRpK6JuMIWrBUq97jV1QDYow,3114
+lovelaice-0.1.2.dist-info/LICENSE,sha256=9YqdxXFg4oojYWFfyffN98MZSRbXl0ybMnEVj-Xgw1s,1079
+lovelaice-0.1.2.dist-info/METADATA,sha256=wWQXtstQBZxJ3v3nBvcKEdQGICGJdMvTUYyfAE6m4Vw,4069
+lovelaice-0.1.2.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+lovelaice-0.1.2.dist-info/entry_points.txt,sha256=_Qr2LyLyReGiF41rlgz5bn7hq7Srq9cEweTtw_MPkfs,47
+lovelaice-0.1.2.dist-info/RECORD,,
