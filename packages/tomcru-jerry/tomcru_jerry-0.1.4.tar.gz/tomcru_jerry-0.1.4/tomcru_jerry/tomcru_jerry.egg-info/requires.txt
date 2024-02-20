@@ -1,0 +1,4 @@
+flask
+
+[static]
+flaskpynlinerbeautifulsoup4htmlminjinja2

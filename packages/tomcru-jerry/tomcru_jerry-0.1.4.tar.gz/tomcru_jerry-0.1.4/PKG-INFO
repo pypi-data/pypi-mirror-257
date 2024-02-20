@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: tomcru_jerry
+Version: 0.1.4
+Summary: General purpose web library
+Home-page: https://github.com/dkgs/tomcru-jerry
+Author: oboforty
+Author-email: rajmund.csombordi@hotmail.com
+License: MIT
+License-File: LICENSE
+Requires-Dist: flask
+Provides-Extra: static
+Requires-Dist: flaskpynlinerbeautifulsoup4htmlminjinja2; extra == "static"
