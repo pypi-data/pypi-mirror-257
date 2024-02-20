@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Shell</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="A pure HTML example, without dependencies.">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2.0.3/css/pico.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', path='/main.css') }}">
+</head>
+<body>
+<main>
+  <div class="grid">
+    <input type="text" name="command" id="command" placeholder="ls -la">
+    <button type="submit">Send</button>
+  </div>
+  <div class="grid result">
+    <textarea id="result"></textarea>
+  </div>
+</main>
+</body>
+<script>
+  const button = document.querySelector('button');
+  button.addEventListener('click', () => {
+    const command = document.getElementById("command").value;
+    const result_box = document.getElementById("result");
+    fetch("", {
+      method: "POST",
+      body: JSON.stringify({
+        command: command,
+      }),
+      headers: {
+        "Content-type": "application/json; charset=UTF-8"
+      }
+    }).then((response) => response.json())
+      .then((json) => (result_box.value = json.output.result));
+  });
+</script>
+</html>
