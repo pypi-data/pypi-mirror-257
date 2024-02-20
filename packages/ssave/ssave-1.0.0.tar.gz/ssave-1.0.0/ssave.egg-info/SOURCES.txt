@@ -1,0 +1,6 @@
+README.md
+pyproject.toml
+ssave.egg-info/PKG-INFO
+ssave.egg-info/SOURCES.txt
+ssave.egg-info/dependency_links.txt
+ssave.egg-info/top_level.txt

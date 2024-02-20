@@ -1,0 +1,8 @@
+[project]
+name="ssave"
+version="v1.0.0"
+requires-python = ">= 3.8"
+keywords = ["save", "scos", "ssave"]
+readme = "README.md"
+[project.urls]
+Homepage = "https://github.com/SCOS-Apps/Save-Utility"
