@@ -1,0 +1,12 @@
+httpx
+fastapi
+pydantic-settings
+
+[lambda]
+mangum
+
+[mongodb]
+pymongo[aws,srv]
+
+[server]
+uvicorn
