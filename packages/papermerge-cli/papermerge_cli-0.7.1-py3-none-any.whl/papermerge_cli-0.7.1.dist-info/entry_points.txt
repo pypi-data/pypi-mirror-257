@@ -1,0 +1,3 @@
+[console_scripts]
+papermerge-cli=papermerge_cli.main:app
+
