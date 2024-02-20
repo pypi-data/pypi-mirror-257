@@ -1,0 +1,3 @@
+[console_scripts]
+rcee=rcee.cli:entry_point
+
