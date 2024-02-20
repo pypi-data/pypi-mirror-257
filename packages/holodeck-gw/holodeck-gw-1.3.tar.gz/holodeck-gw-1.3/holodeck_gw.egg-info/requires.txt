@@ -1,0 +1,14 @@
+astropy
+cosmopy
+h5py
+ipywidgets
+kalepy
+matplotlib
+numpy
+scipy
+psutil
+tqdm
+cython<3.0.0
+schwimmbad
+emcee
+george
