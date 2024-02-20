@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<object xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+    name="imio.smartweb.SectionCollection"
+    meta_type="Dexterity FTI"
+    i18n:domain="imio.smartweb">
+
+  <!-- Basic properties -->
+ 
+  <property name="behaviors" purge="false">
+    <element value="affinitic.smartweb.image_scales"/>
+  </property>
+
+  <property name="view_methods">
+    <element value="carousel_view"/>
+    <element value="table_view"/>
+    <element value="list_view"/>
+    <element value="mini_list_view"/>
+  </property>
+
+</object>
