@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: json-db-operator
+Version: 0.1.1
+Summary: MongoDb extension that doesn't require database installed
+Home-page: https://github.com/Tesla2000/JsonDbOperator
+Author: Tesla2000
+Author-email: fratajczak124@gmail.com
+Project-URL: Homepage, https://github.com/Tesla2000/JsonDbOperator
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.05
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: seriattrs

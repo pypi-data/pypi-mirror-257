@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/json_db_operator/DbClassOperator.py
+src/json_db_operator/DbClassOperators.py
+src/json_db_operator/JsonDbOperator.py
+src/json_db_operator/__init__.py
+src/json_db_operator/connect.py
+src/json_db_operator.egg-info/PKG-INFO
+src/json_db_operator.egg-info/SOURCES.txt
+src/json_db_operator.egg-info/dependency_links.txt
+src/json_db_operator.egg-info/requires.txt
+src/json_db_operator.egg-info/top_level.txt
