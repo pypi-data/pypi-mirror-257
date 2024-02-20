@@ -1,0 +1,12 @@
+README.md
+setup.py
+CFX_Middleware.egg-info/PKG-INFO
+CFX_Middleware.egg-info/SOURCES.txt
+CFX_Middleware.egg-info/dependency_links.txt
+CFX_Middleware.egg-info/top_level.txt
+cfx_middleware.egg-info/PKG-INFO
+cfx_middleware.egg-info/SOURCES.txt
+cfx_middleware.egg-info/dependency_links.txt
+cfx_middleware.egg-info/top_level.txt
+parser_result/__init__.py
+parser_result/parser_result.py
