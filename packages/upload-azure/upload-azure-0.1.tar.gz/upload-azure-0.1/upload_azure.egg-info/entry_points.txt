@@ -1,0 +1,2 @@
+[console_scripts]
+upload-azure = upload_azure.cli.main:main

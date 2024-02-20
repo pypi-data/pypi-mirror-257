@@ -1,0 +1,8 @@
+setup.py
+cli/__init__.py
+cli/main.py
+upload_azure.egg-info/PKG-INFO
+upload_azure.egg-info/SOURCES.txt
+upload_azure.egg-info/dependency_links.txt
+upload_azure.egg-info/entry_points.txt
+upload_azure.egg-info/top_level.txt
