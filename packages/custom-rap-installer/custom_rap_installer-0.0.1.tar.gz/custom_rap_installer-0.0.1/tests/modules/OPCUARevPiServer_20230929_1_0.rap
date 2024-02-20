@@ -1,0 +1,214 @@
+{
+	"id": "OPCUARevPiServer",
+	"version": "1.0",
+	"comment": [
+		"With this virtual device, the parameters for an OPC UA server can be set. ",
+		"This device does not have its own inputs and outputs. Depending on the ",
+		"configuration, the existing inputs and outputs are used."
+	],
+	"screencomment": "OPC UA RevPi Server",
+	"size": "1",
+	"devicetype": "VIRTUAL",
+	"producttype": 24585,
+	"actions": [
+		{
+			"event": "onAdd",
+			"action": "/usr/bin/sudo /usr/bin/systemctl --no-block enable --now opcua-revpi-server",
+			"active": true
+		},
+		{
+			"event": "onDelete",
+			"action": "/usr/bin/sudo /usr/bin/systemctl --no-block disable --now opcua-revpi-server",
+			"active": true
+		}
+	],
+	"input": {
+		"variants": [
+			{
+				"id": "001",
+				"isDefault": true,
+				"data": [
+					{
+						"name": "Server status",
+						"type": "BYTE",
+						"offset": 0,
+						"range": {
+							"type": "tooltip_loop",
+							"values": [
+								0,
+								255,
+								1
+							]
+						},
+						"default": "0",
+						"unit": "",
+						"tags": "input, byte, test",
+						"edit": "2",
+						"order": 1,
+						"export": false,
+						"active": false
+					}
+				]
+			}
+		]
+	},
+	"output": {
+		"variants": [
+			{
+				"id": "001",
+				"isDefault": true,
+				"data": [
+					{
+						"name": "Server reset",
+						"type": "BYTE",
+						"offset": 1,
+						"range": {
+							"type": "tooltip_loop",
+							"values": [
+								0,
+								255,
+								1
+							]
+						},
+						"default": "0",
+						"unit": "",
+						"tags": "output, byte, test",
+						"edit": "2",
+						"order": 100,
+						"export": false,
+						"active": false
+					}
+				]
+			}
+		]
+	},
+	"memory": [
+		{
+			"name": "Port",
+			"comment": "Default: 4840 / TLS: 4843",
+			"type": "WORD",
+			"offset": 2,
+			"maxsize": 65535,
+			"range": {
+				"type": "tooltip_loop",
+				"values": [
+					0,
+					65535,
+					1
+				]
+			},
+			"default": "4840",
+			"unit": "",
+			"tags": "memory, word",
+			"edit": "1",
+			"order": 201,
+			"export": false
+		},
+		{
+			"name": "Shared IOs",
+			"type": "BYTE",
+			"offset": 4,
+			"range": {
+				"type": "list",
+				"values": [
+					"Marked as exported|2",
+					"All existing|3"
+				]
+			},
+			"default": "2",
+			"unit": "",
+			"tags": "memory, byte",
+			"edit": "1",
+			"order": 202,
+			"export": false
+		},
+		{
+			"name": "Output mode",
+			"type": "BYTE",
+			"offset": 5,
+			"range": {
+				"type": "list",
+				"values": [
+					"Read only|0",
+					"Read and write|1"
+				]
+			},
+			"default": "0",
+			"unit": "",
+			"tags": "memory, byte",
+			"edit": "1",
+			"order": 203,
+			"export": false
+		},
+		{
+			"name": "Replace IO file",
+			"comment": "Default: /etc/revpipyload/replace_ios.conf",
+			"type": "STRING",
+			"offset": 6,
+			"maxsize": 128,
+			"range": "",
+			"default": "/etc/revpipyload/replace_ios.conf",
+			"unit": "",
+			"tags": "memory, string",
+			"edit": "1",
+			"order": 204,
+			"export": false
+		},
+		{
+			"name": "Use TLS encryption",
+			"type": "BYTE",
+			"offset": 134,
+			"range": {
+				"type": "list",
+				"values": [
+					"Inactive|0",
+					"Active|1"
+				]
+			},
+			"default": "0",
+			"unit": "",
+			"tags": "memory, byte",
+			"edit": "1",
+			"order": 220,
+			"export": false
+		},
+		{
+			"name": "TLS certificate path",
+			"comment": "Default: /etc/ssl/certs/revpi-self-signed.pem",
+			"type": "STRING",
+			"offset": 135,
+			"maxsize": 128,
+			"range": "",
+			"default": "/etc/ssl/certs/revpi-self-signed.pem",
+			"unit": "",
+			"tags": "memory, string",
+			"edit": "1",
+			"order": 221,
+			"export": false
+		},
+		{
+			"name": "TLS Key path",
+			"comment": "Default: /etc/ssl/private/revpi-self-signed.key",
+			"type": "STRING",
+			"offset": 263,
+			"maxsize": 128,
+			"range": "",
+			"default": "/etc/ssl/private/revpi-self-signed.key",
+			"unit": "",
+			"tags": "memory, string",
+			"edit": "1",
+			"order": 222,
+			"export": false
+		}
+	],
+	"lang": {
+		"de": {
+			"INPUT": "Eingang",
+			"OUTPUT": "Ausgang"
+		},
+		"en": {
+			"INPUT": "Input",
+			"OUTPUT": "Output"
+		}
+	}
+}

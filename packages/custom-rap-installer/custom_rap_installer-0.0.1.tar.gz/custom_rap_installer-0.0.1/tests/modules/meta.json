@@ -1,0 +1,12 @@
+[
+	{
+		"dir_title": "Virtual OPC UA Devices",
+		"id": "OPCUARevPiServer",
+		"title": "OPC UA Server",
+		"tooltip": "OPC UA server to share the IOs of the Revolution Pi",
+		"action_rules": [
+			"ONADD_FIRST",
+			"ONDELETE_LAST"
+		]
+	}
+]

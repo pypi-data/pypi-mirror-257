@@ -1,0 +1,77 @@
+# Custom RAP installer (python module)
+
+Mit diesem Modul können eigene Module über deren RAP Dateien in PiCtory 
+eingebunden werden. Die RAP-Dateien und die dazugehörigen Bilder liegen in 
+einem Ordner, zusammen mit einer "meta.json", welche Informationen für die 
+Installation enthält.
+
+## install_source
+
+Für den Aufruf der PiCtoryManager Klasse muss der Parameter install_source 
+übergeben werden. Dieser zeigt auf den Ordner, welcher die Moduldateien und 
+"meta.json" enthält.
+
+### meta.json
+
+Die "meta.json" Datei enthält eine Liste mit Objekten, die jeweils ein Modul 
+zur Installation beschreiben. Diese Beschreibungen sind Texte, welche nicht 
+über die RAP-Datei geliefert werden und den Installationsprozess steuern.
+
+#### Beispiel
+```json
+[
+	{
+		"dir_title": "Virtual OPC UA Devices",
+		"id": "OPCUARevPiServer",
+		"title": "OPC UA Server",
+		"tooltip": "OPC UA server to share the IOs of the Revolution Pi",
+		"action_rules": [
+			"ONADD_FIRST",
+			"ONDELETE_LAST"
+		]
+	}
+]
+```
+
+- "dir_title": Name für den Katalogordner in dem das neue Modul installiert 
+  werden soll. Dieser Name kann ein bestehender sein, in dem Fall wird das 
+  Modul in einen bestehenden Ordner installiert. Wenn der Name neu ist, wie 
+  in dem Beispiel, wird ein neuer Ordner mit dem Namen angelegt, in dem das 
+  neue Modul installiert wird.
+- "id": Dies ist die Modul-ID. Dieser Name muss eindeutig sein und wird 
+  ebenfalls verwendet umd die RAP-Datei und das Devicebild im 
+  "install_source"-Ordner zu finden.
+- "title": Dies ist der Titel, mit dem das Device im Katalog von PiCtory 
+  angezeigt wird.
+- "tooltip": Dieser Text wird angezeigt, wenn die Maus über dem Modul 
+  verweilt. Er dient für weiter Informationen zum Modul.
+- "action_rules": Wenn in der RAP-Datei "actions" angegeben sind, welche zu 
+  verschiedenen Events wie "onAdd" oder "onDelete" ausgeführt werden müssen, 
+  werden hier die Rollen definiert. Diese können nicht aus der RAP-Datei 
+  entnommen werden, da mit den "action_rules" auch die Bedingung angegeben 
+  wird wie "*_FIRST" / "*_LAST".
+
+### RAP-Datei und Devicebild
+
+Zusätzlich im "install_source"-Ordner liegen für jeden Eintrag der meta.json 
+jeweils eine RAP-Datei und ein Devicebild im PNG-Format. Das Devicebild muss 
+als Namen die "id".png tragen.
+
+Der Name der RAP-Datei muss folgendem Schema folgen:
+
+```text
+|--- module key ---|
+    xxxxxx_yyyymmdd_a_b.rap
+       |	  |		| |
+       |	  |		| |-- version number part 2
+       |	  |		|---- version number part 1
+       |	  |---------- creation timestamp
+       |----------------- module id / name
+```
+
+Über dieses Namensschema wird innerhalb des Moduls automatisch der Version 
+ermittelt und mit der installierten Version verglichen.
+
+Der Teil "xxxxxx" ist exakt die "id" aus der "meta.json". Das Datum 
+"yyyymmdd" kann frei gewählt werden. Am Ende durch "a" und "b" erfolgt die 
+Versionierung der RAP-Datei.
