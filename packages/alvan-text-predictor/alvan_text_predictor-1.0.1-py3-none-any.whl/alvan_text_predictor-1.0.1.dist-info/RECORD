@@ -1,0 +1,8 @@
+prediction/__init__.py,sha256=ydXM61tqtghAIh-kUSQuHsduF2g5TQuzb_-es6Mw61M,24
+prediction/predictor.py,sha256=FGpu2xCA2DTOz-92MluFHUUvcAzYoGvj7NXJrGn4mcE,6927
+prediction/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+alvan_text_predictor-1.0.1.dist-info/LICENSE,sha256=nDvNIyobsvB0PAp8D5o1gfu4Cr66xRiowHBWieVsxNw,1064
+alvan_text_predictor-1.0.1.dist-info/METADATA,sha256=q_remaERwbOj1j5xqTB6QhdxyRXTR5F8vd1tit7hSdQ,4901
+alvan_text_predictor-1.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+alvan_text_predictor-1.0.1.dist-info/top_level.txt,sha256=C-I58G3Gd1ezEJ2Ub3xqEH9rQmOWqBZtnQoNwAVxfN8,11
+alvan_text_predictor-1.0.1.dist-info/RECORD,,
