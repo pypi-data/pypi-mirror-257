@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "multiprocessing-iterator"
+version = "0.1.1"
+description = "Python library to import a for loop which runs multiple asynchronous processes"
+authors = ["Sankara Dinesh <ysdinesh31@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/ysdinesh31/multiprocessing-for-python"
+
+[tool.poetry.dependencies]
+python = "^3.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
