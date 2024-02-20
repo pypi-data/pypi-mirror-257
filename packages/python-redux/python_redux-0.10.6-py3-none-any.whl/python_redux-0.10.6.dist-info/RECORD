@@ -1,0 +1,10 @@
+redux/__init__.py,sha256=SvgU5P74pYyJsbV30eb3NzysJfYBBafedsCq9INkJ3o,1463
+redux/autorun.py,sha256=QxV_VWnOW9aDVkyFq_ZR82DkG8Km12Crkl1-wPWcdSE,5239
+redux/basic_types.py,sha256=c57p_eXQnr5io8DEqxcvAj0M5epS59AKlCrF5V8ik2g,4669
+redux/combine_reducers.py,sha256=bi-WLK1oidBpSp3X4v9EXJDHqOUjKKFALzo3hfGwVf8,5545
+redux/main.py,sha256=d4MdzXXRVWbUUbVdvsTSkgp7q-V_NMSybyUWjIdKjGQ,9027
+python_redux-0.10.6.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+python_redux-0.10.6.dist-info/METADATA,sha256=OxO2o_Q5x3-pYcdYvBsSgF4xvc8qi3_l9uSXDdCN6VU,7981
+python_redux-0.10.6.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+python_redux-0.10.6.dist-info/entry_points.txt,sha256=OsO-Hc649LsNhnIyKEFqi9GybSOqvqm9ruyArfK91_4,59
+python_redux-0.10.6.dist-info/RECORD,,
