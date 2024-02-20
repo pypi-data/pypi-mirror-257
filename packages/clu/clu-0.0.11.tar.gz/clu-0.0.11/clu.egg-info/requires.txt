@@ -1,0 +1,16 @@
+absl-py
+etils[epath]
+flax
+jax
+jaxlib
+ml_collections
+numpy
+packaging
+typing_extensions
+wrapt
+
+[test]
+pytest
+tensorflow
+tensorflow_datasets
+torch>=2.0.0
