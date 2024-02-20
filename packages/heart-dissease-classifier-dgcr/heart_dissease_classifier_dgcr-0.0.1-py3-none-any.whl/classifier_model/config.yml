@@ -1,0 +1,51 @@
+# Package Overview
+package_name: classifier_model
+
+# Data Files
+all_data_file: heart.csv
+training_data_file: train.csv
+test_data_file: test.csv
+create_validation_data: False
+
+# Variables
+# The variable we are attempting to predict (sale price)
+target: HeartDisease
+
+pipeline_name: classifier_model
+pipeline_save_file: classifier_model_output_v
+
+# set train/test split
+test_size: 0.3
+
+# to set the random seed
+random_state: 42
+
+features:
+  - Age
+  - Sex
+  - ChestPainType
+  - RestingBP
+  - Cholesterol
+  - FastingBS
+  - RestingECG
+  - MaxHR
+  - ExerciseAngina
+  - Oldpeak
+  - ST_Slope
+
+numerical_features:
+  - Age
+  - RestingBP
+  - Cholesterol
+  - FastingBS
+  - MaxHR
+  - Oldpeak
+
+categorical_features:
+  - Sex
+  - ChestPainType
+  - RestingECG
+  - ExerciseAngina
+  - ST_Slope
+
+gamma: scale
