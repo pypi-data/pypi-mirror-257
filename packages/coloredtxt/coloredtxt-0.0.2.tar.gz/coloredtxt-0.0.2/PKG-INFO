@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: coloredtxt
+Version: 0.0.2
+Summary: Beautiful colored console
+Author: ArinaFegus
+Author-email: ArinaFegus@gmail.com
+Keywords: color,console,python,pypi
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+License-File: LICENSE.txt
