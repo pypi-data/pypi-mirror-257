@@ -1,0 +1,6 @@
+torch
+pytest
+gym
+numpy
+tk
+Pillow

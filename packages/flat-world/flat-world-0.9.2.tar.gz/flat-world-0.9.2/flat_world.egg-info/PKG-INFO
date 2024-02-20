@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: flat-world
+Version: 0.9.2
+Requires-Dist: torch
+Requires-Dist: pytest
+Requires-Dist: gym
+Requires-Dist: numpy
+Requires-Dist: tk
+Requires-Dist: Pillow
