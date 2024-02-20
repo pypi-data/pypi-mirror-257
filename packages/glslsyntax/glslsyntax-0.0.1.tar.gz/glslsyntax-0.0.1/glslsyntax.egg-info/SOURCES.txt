@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+glslsyntax/__init__.py
+glslsyntax/matrices.py
+glslsyntax/vectors.py
+glslsyntax.egg-info/PKG-INFO
+glslsyntax.egg-info/SOURCES.txt
+glslsyntax.egg-info/dependency_links.txt
+glslsyntax.egg-info/top_level.txt
