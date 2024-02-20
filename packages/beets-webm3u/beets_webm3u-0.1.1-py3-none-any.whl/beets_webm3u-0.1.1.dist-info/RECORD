@@ -1,0 +1,11 @@
+beetsplug/__init__.py,sha256=QDJyS5jtJnGFsSuOx43ZvLBCOrHImm8NrZk5f9URWdk,75
+beetsplug/webm3u/__init__.py,sha256=68163qTfuw16-fz9EJ1LMaFcIJMPnDpdJp8WSAYodhA,2149
+beetsplug/webm3u/routes.py,sha256=6hoxtAjmN0kmaAo1DrEjTgKLy_c6zj2Oi6SjxcMVAZE,2778
+beetsplug/webm3u/static/style.css,sha256=s1srfQ87w_nHwRcGkgIklLOx9l27k1PeVtYzTm2g174,334
+beetsplug/webm3u/templates/index.html,sha256=51REgVNdyTzquScdGWGFG16kMEDzC89YA_Eg3-G91KU,489
+beetsplug/webm3u/templates/playlists.html,sha256=2lJZ0xupMMQh03OLROiwP1TmRuN5QdUiFTSwQZfSxfQ,735
+beets_webm3u-0.1.1.dist-info/LICENSE,sha256=VAHbPnW4OiC6mkEs_4EfFxQGcAWoURK77jNK5ecq1M4,1070
+beets_webm3u-0.1.1.dist-info/METADATA,sha256=WYiAx07BkSZJ4MjBTBkOVlEui01Nnl210MywYZ2dn2Y,2009
+beets_webm3u-0.1.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+beets_webm3u-0.1.1.dist-info/top_level.txt,sha256=za8u6CXAGbgac8cUyn9NlsgXqqq-_4HHZcNmJnfmyWc,10
+beets_webm3u-0.1.1.dist-info/RECORD,,
