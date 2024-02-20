@@ -1,0 +1,36 @@
+Version 1.1.1
+- Change default normalisation used for the Lomb-Scargle periodogram.
+- Update fitting strategy for the periodogram peaks. Modify output for the 
+fit function.
+- Add additional cleaning step in the ACF post-processing to avoid 
+negative H_ACF and G_ACF.
+- Add some missing docstrings
+
+Version 1.1
+2024-01-24
+- Change license to LGPL3.0.
+
+Version 1.0
+2023-11-29
+- Moving to star_privateer, up and ready to sail uncharted waters.
+- Change license to GPL3.0.
+
+Version 0.2.2
+2023-11-29
+- Correctly set H_ACF and G_ACF which where interverted in previous version of
+  the code. ROOSTER instances trained from output of older versions of the code
+  should not be used from now on.  
+
+Version 0.2.1
+2023-11-07
+- Add additional features for wavelet analysis and ROOSTER manipulations.
+- Add new plotting options
+- Correct some bugs found when running the code
+
+Version 0.2
+2023-03-21
+- March 2022 demonstrator delivery
+
+Version 0.1
+2022-11-11
+- Preliminary demonstrator delivery 

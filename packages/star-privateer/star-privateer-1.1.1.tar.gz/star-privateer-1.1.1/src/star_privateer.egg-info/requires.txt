@@ -1,0 +1,12 @@
+numpy
+pandas
+matplotlib
+astropy
+scipy
+numba
+tqdm
+scikit-learn
+scikit-image
+ssqueezepy
+h5py
+pycwt
