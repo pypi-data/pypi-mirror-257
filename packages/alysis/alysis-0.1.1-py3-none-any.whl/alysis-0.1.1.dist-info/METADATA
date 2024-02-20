@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: alysis
+Version: 0.1.1
+Summary: Ethereum testerchain
+Author-email: Bogdan Opanchuk <bogdan@opanchuk.net>
+Requires-Python: >=3.8
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: eth-keys>=0.5
+Requires-Dist: eth-typing>=4
+Requires-Dist: eth-utils>=3
+Requires-Dist: exceptiongroup>=1
+Requires-Dist: py-evm==0.9.0b1
+Requires-Dist: rlp>=4
+Requires-Dist: setuptools
+Project-URL: homepage, https://github.com/fjarri/alysis
+Description-Content-Type: text/markdown
+
+Alysis, an Ethereum testerchain
+===============================
+
+Under construction.
+
