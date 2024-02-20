@@ -1,0 +1,16 @@
+LICENCE
+README.md
+setup.py
+pyenvsync/__init__.py
+pyenvsync/__main__.py
+pyenvsync/_config.py
+pyenvsync/_ouput.py
+pyenvsync/_requirements.py
+pyenvsync/_variables.py
+pyenvsync/_version.py
+pyenvsync/main.py
+pyenvsync.egg-info/PKG-INFO
+pyenvsync.egg-info/SOURCES.txt
+pyenvsync.egg-info/dependency_links.txt
+pyenvsync.egg-info/entry_points.txt
+pyenvsync.egg-info/top_level.txt
