@@ -1,0 +1,11 @@
+jnormcorre/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jnormcorre/motion_correction.py,sha256=8d7CK31K9cOUbXO7qkXP3OjFLLVtDJdJcPRnRItD5aM,72727
+jnormcorre/onephotonmethods.py,sha256=_19SgZAfs_ImtmYZRvfo_Kc3JiEEl7UWlwEo6K2xUR0,1479
+jnormcorre/simulation.py,sha256=bhPbgcK143H62X85WDE6F1ohIKBqwoyVJf4jDXguFmQ,8751
+jnormcorre/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jnormcorre/utils/lazy_array.py,sha256=84qd8gKaYFNEZcJoj3epX3Tf__3by5xxuwpfjNm4Ffc,4030
+jnormcorre/utils/registrationarrays.py,sha256=YjA26URSsijp9w1kQsOtShOjlQLkOixTkz9zHRqsIVg,5061
+jnormcorre-1.0.0.dist-info/METADATA,sha256=Kpe1gsHpXeptKbOFKLekW7Mu5BHXpfPc7G4MQXV71tc,516
+jnormcorre-1.0.0.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+jnormcorre-1.0.0.dist-info/top_level.txt,sha256=jkeOMZmnopqpRp_VWV1HIBFSlBj1sEn-KO3FAm7m704,11
+jnormcorre-1.0.0.dist-info/RECORD,,
