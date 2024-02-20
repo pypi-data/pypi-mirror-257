@@ -1,0 +1,10 @@
+ipython_markdown_inspector/__init__.py,sha256=vpQxJK3m5v57ibZm_j68_yUOXu-X56L4Jc41rnNn-DI,1469
+ipython_markdown_inspector/_hook_data.py,sha256=jJ1PcDKt7XcFajUYt-a1q5X5WoL8oNctYMWMWXtPafs,293
+ipython_markdown_inspector/_ipython_patch.py,sha256=B0cDpTn5Rxzs6X28ZmkCbt6SlxVaUYeXB-fBIaq8_KA,964
+ipython_markdown_inspector/formatter.py,sha256=yOpHOqag3ahP9OE9YevvtMds5E-bDeiRiG0hMv7pcjQ,3374
+ipython_markdown_inspector/models.py,sha256=-vfvaYDMVsuVvwx9MYcL8BOweX-dt5XqN0g4t5oF3Mo,362
+ipython_markdown_inspector/tests/test_as_markdown.py,sha256=DOkzpR8A5oPF4CfqdHiR3VvgLbY6j4reoG64gG7aHrQ,1521
+ipython_markdown_inspector-0.0.0.dist-info/METADATA,sha256=yDqUnapRgexBqSRC1n_FbK1DbUQZDk7b-6W2NLoMnk8,4300
+ipython_markdown_inspector-0.0.0.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+ipython_markdown_inspector-0.0.0.dist-info/licenses/LICENSE,sha256=9-lp5hKpbKb7pZk3Ga8xzZ7uCUr_OidVv0LcJFfnn6E,1505
+ipython_markdown_inspector-0.0.0.dist-info/RECORD,,

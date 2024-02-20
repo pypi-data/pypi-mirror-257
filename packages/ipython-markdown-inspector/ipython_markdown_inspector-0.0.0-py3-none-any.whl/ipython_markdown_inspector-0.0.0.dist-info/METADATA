@@ -1,0 +1,94 @@
+Metadata-Version: 2.1
+Name: ipython-markdown-inspector
+Version: 0.0.0
+Project-URL: Repository, https://github.com/krassowski/ipython-markdown-inspector.git
+Project-URL: Bug Tracker, https://github.com/krassowski/ipython-markdown-inspector/issues
+Author: Michał Krassowski
+License: BSD 3-Clause License
+        
+        Copyright (c) 2024, Michał Krassowski
+        
+        Redistribution and use in source and binary forms, with or without
+        modification, are permitted provided that the following conditions are met:
+        
+        1. Redistributions of source code must retain the above copyright notice, this
+           list of conditions and the following disclaimer.
+        
+        2. Redistributions in binary form must reproduce the above copyright notice,
+           this list of conditions and the following disclaimer in the documentation
+           and/or other materials provided with the distribution.
+        
+        3. Neither the name of the copyright holder nor the names of its
+           contributors may be used to endorse or promote products derived from
+           this software without specific prior written permission.
+        
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+        AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+        IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+        DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+        FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+        DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+        SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+        CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+        OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+        OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+License-File: LICENSE
+Keywords: IPython,docstring,inpsector,markdown
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: IPython
+Classifier: Framework :: Jupyter
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.10
+Requires-Dist: docstring-to-markdown<1.0.0,>=0.14.0
+Requires-Dist: ipython>=8.21.0
+Provides-Extra: dev
+Requires-Dist: build; extra == 'dev'
+Requires-Dist: pre-commit; extra == 'dev'
+Requires-Dist: ruff==0.2.0; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: mypy; extra == 'test'
+Requires-Dist: pytest; extra == 'test'
+Description-Content-Type: text/markdown
+
+# ipython-markdown-inspector
+
+[![tests](https://github.com/krassowski/ipython-markdown-inspector/workflows/tests/badge.svg)](https://github.com/krassowski/ipython-markdown-inspector/actions?query=workflow%3A%22tests%22)
+![CodeQL](https://github.com/krassowski/ipython-markdown-inspector/workflows/CodeQL/badge.svg)
+[![pypi-version](https://img.shields.io/pypi/v/ipython-markdown-inspector.svg)](https://python.org/pypi/ipython-markdown-inspector)
+
+IPython extension providing Inspection outputs as Markdown, enabling better integration with Jupyter Notebook and JupyterLab.
+Depends on [`docstring-to-markdown`](https://github.com/python-lsp/docstring-to-markdown).
+
+![](https://raw.githubusercontent.com/krassowski/ipython-markdown-inspector/main/docs/demo.gif)
+
+## Installation
+
+Requires `IPython` 8.21 or newer (which requires Python 3.10 or newer).
+
+```bash
+pip install ipython-markdown-inspector
+```
+
+## Usage
+
+To load an extension while IPython is running, use the `%load_ext` magic:
+
+```ipython
+%load_ext ipython_markdown_inspector
+```
+
+To load it each time IPython starts, list it in your [configuration file](https://ipython.readthedocs.io/en/stable/config/intro.html):
+
+```python
+c.InteractiveShellApp.extensions = [
+    'ipython_markdown_inspector'
+]
+```
+
+After enabling the extension, both the contents of "Contextual Help" panel,
+and results of info requests such as `%run?` or `df?` will provide the output in Markdown format.
