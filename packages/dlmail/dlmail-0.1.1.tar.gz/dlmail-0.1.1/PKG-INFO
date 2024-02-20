@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: dlmail
+Version: 0.1.1
+Summary: Add your description here
+Author-email: donglin <dong.lin@neusoft.com>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# dlmail
+
+Describe your project here.
