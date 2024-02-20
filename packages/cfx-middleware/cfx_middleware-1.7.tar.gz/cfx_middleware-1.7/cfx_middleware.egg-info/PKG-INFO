@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: cfx-middleware
+Version: 1.7
+Summary: Provide a Middleware between the system and CFX
+Home-page: https://dev.azure.com/USI-Applications/USI%20Global%20Development/_git/PCD.Middleware.CFX.Python
+Author: Victor Dominguez
+Author-email: e-victor_dominguez@usiglobal.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+
+# CFX Middleware
+
+## Description
+CFX Middleware is a middleware platform designed to facilitate integration and communication between parser results systems and CM
+
+## Author
+- Victor Dominguez
+
+## License
+This project is licensed under the PCD License.
+
+## Contributing
+Contributions are welcome! If you'd like to contribute to CFX Middleware, please follow these steps:
+1. Fork the repository.
+2. Create a branch for your new feature (`git checkout -b feature/new-feature`).
+3. Make your changes and commit them (`git commit -am 'Add new feature'`).
+4. Push the branch (`git push origin feature/new-feature`).
+5. Create a new pull request.
