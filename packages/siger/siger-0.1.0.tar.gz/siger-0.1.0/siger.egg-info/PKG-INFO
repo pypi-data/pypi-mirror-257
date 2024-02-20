@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: siger
+Version: 0.1.0
+Summary: Automações em Python para auxiliar obtenção de dados do SIGER-CEPEL
+Home-page: https://github.com/nkbueno/siger
+Author: Nathan Kelvi de Almeida Bueno
+Author-email: nathankelvi@gmail.com
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: requests
+Requires-Dist: beautifulsoup4
+Requires-Dist: selenium
+Requires-Dist: DateTime
+Requires-Dist: pywin32
+Requires-Dist: xlsxwriter
+
+# siger
+Biblioteca para acesso ao SIGER via Python
