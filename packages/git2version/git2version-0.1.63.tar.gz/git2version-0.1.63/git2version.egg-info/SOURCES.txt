@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+git2version/__init__.py
+git2version/make_git_version.py
+git2version.egg-info/PKG-INFO
+git2version.egg-info/SOURCES.txt
+git2version.egg-info/dependency_links.txt
+git2version.egg-info/requires.txt
+git2version.egg-info/top_level.txt
+tests/test_pep440.py
