@@ -1,0 +1,2 @@
+[console_scripts]
+autologic = autologic.cli:main
