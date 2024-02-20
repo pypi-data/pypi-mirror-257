@@ -1,0 +1,12 @@
+docker_run_cmd/Dockerfile,sha256=czxDxKUtK2ix821iJ_08KDmTWqhip1nzp8DlA3kuivE,601
+docker_run_cmd/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+docker_run_cmd/cli.py,sha256=cKMkXKeoa3929TtKM2WC10-zgeMIk8LnXCX52CMQTyc,304
+docker_run_cmd/docker_helper.py,sha256=XrCIJQkip76uaEnbxxsPLS4Pru1xVIAy-jkQEX5T2GA,2629
+docker_run_cmd/run.py,sha256=N_IgLFDOVuuG_imANfhFrmD4agx3MhO7tcDRkUnUwYU,3680
+docker_run_cmd/assets/example.txt,sha256=lTBovRjiz0_TgtAtbA1C5hNi2ffbqnNPqkKg6UiKCT8,54
+docker_run_cmd-1.0.3.dist-info/LICENSE,sha256=b6pOoifSXiUaz_lDS84vWlG3fr4yUKwB8fzkrH9R8bQ,1064
+docker_run_cmd-1.0.3.dist-info/METADATA,sha256=AIaV2m-W_-OFpQl-HzUi9RXABqT0fDCYDiYY8hBWoLk,362
+docker_run_cmd-1.0.3.dist-info/WHEEL,sha256=-G_t0oGuE7UD0DrSpVZnq1hHMBV9DD2XkS5v7XpmTnk,110
+docker_run_cmd-1.0.3.dist-info/entry_points.txt,sha256=etYOpCxsUMvRCnIjFETBeSG2kt_-wygFQc1ZwS88ack,59
+docker_run_cmd-1.0.3.dist-info/top_level.txt,sha256=X9HHbeUjK1_k-2yZw54xQA1QF5NQs01m-spkPrFX2Hk,15
+docker_run_cmd-1.0.3.dist-info/RECORD,,
