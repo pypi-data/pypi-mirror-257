@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/discordwebconfig.py
+src/hypixel.py
+src/discordwebconfig.egg-info/PKG-INFO
+src/discordwebconfig.egg-info/SOURCES.txt
+src/discordwebconfig.egg-info/dependency_links.txt
+src/discordwebconfig.egg-info/top_level.txt

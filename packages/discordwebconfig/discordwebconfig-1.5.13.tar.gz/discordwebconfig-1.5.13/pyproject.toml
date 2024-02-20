@@ -1,0 +1,17 @@
+# pyproject.toml
+
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "discordwebconfig"
+version = "1.5.13"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "*"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.0.0"
