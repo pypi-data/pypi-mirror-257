@@ -1,0 +1,8 @@
+setup.py
+mybot/__init__.py
+mybot/module.py
+pymybotvpn.egg-info/PKG-INFO
+pymybotvpn.egg-info/SOURCES.txt
+pymybotvpn.egg-info/dependency_links.txt
+pymybotvpn.egg-info/entry_points.txt
+pymybotvpn.egg-info/top_level.txt
