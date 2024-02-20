@@ -1,0 +1,12 @@
+hmmer_tables/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hmmer_tables/cleanup.py,sha256=yW_WJtpZ4N3_C_M8swwAjEepmNsM5S7-gVDCMIbSArY,692
+hmmer_tables/csv_iter.py,sha256=HbqJOBirDS0TJAV4DEJN807aIPb5UZzaGKmY7h3Br1U,367
+hmmer_tables/domtbl.py,sha256=IhmOBX90AvRu2-2TFOshnT5VliCStKruEivXH42SOSs,3427
+hmmer_tables/output.py,sha256=Ht_pBrEYKkXyWe8xtSD2qDGmPv3AGsNjNEmWYoN2rLk,1456
+hmmer_tables/path_like.py,sha256=uPpdpxkB6XPCRIeXRmTUv9aNfEpIO4zyl-7CzaZPdNI,72
+hmmer_tables/query.py,sha256=p4xshkPBtOdyTY5uiDkFcMC382g95sNw0efUC9fiTi0,7545
+hmmer_tables/tbl.py,sha256=EGZrg8gtNuiF_7iaH6vi0Yf8wNhRb5Jno0Lr1puYQCU,2141
+hmmer_tables-0.5.3.dist-info/LICENSE,sha256=VeypA5u6oDDoZK7tEa4h2TeJ9GrHzr2Tss6RyDIcRVk,1063
+hmmer_tables-0.5.3.dist-info/METADATA,sha256=qWir1BRNfT0LqeKT1dsbcJm_0P3JBnUKypNuGKj9wys,697
+hmmer_tables-0.5.3.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+hmmer_tables-0.5.3.dist-info/RECORD,,
