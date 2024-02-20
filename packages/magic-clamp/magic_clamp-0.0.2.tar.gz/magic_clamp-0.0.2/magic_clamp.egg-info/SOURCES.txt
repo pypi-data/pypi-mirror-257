@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+magic_clamp/__init__.py
+magic_clamp/autograd.py
+magic_clamp/core.py
+magic_clamp.egg-info/PKG-INFO
+magic_clamp.egg-info/SOURCES.txt
+magic_clamp.egg-info/dependency_links.txt
+magic_clamp.egg-info/top_level.txt
+test/test_autograd.py
