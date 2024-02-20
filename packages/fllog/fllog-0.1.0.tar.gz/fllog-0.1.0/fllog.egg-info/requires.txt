@@ -1,0 +1,7 @@
+
+[dev]
+pre-commit
+ipdb
+flake8
+mypy
+isort
