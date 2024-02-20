@@ -1,0 +1,6 @@
+setup.py
+newPdfReader.egg-info/PKG-INFO
+newPdfReader.egg-info/SOURCES.txt
+newPdfReader.egg-info/dependency_links.txt
+newPdfReader.egg-info/requires.txt
+newPdfReader.egg-info/top_level.txt
