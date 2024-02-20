@@ -1,0 +1,17 @@
+murky/__init__.py,sha256=Dc4lo_9E1LbjVcDH-XoEsqadO5nILUsLZbjsIVNX87o,335
+murky/create_release_notes.py,sha256=5l8TklOdsGwQyn5i5g5qymtE2JZmSiO_YZZCRktXzDg,9895
+murky/env_example1.yml,sha256=X4l_VMAnVkgVBcrZljOsbzkq9mo0wlVQuykTzH0GxqM,262
+murky/env_example2.yml,sha256=ySk4sDmS1HwwWdGdHKbu7l5m2Ou5tAd2ttwzYZfMdJM,1647
+murky/murky_create.sh,sha256=MKhK0_sOOnJTVfqz3M9gAxwmWa6WPUPkSssgzUlTYqY,4675
+murky/murky_tool.py,sha256=SV5QwKNCs8RzHcQDv4xlDmjVAvWfhK5e8OMrIOYWaDw,2314
+murky/update_copyright_date.py,sha256=gmXmrZPg7s_ycZI3yQR8DuWNHnF9evgWsy63oj4uwrI,10837
+murky/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+murky/tests/test_crn.py,sha256=Gz2WLJbWLbJqzea0qapF3ZFUt2S93flcuFdrkfch_jg,1800
+murky/tests/test_ucd.py,sha256=Hjpi0yctIHoM54-IXtHriDjShfDQH2GqBgFRzWcI_OM,6153
+murky-0.0.5.data/scripts/murky_create.sh,sha256=MKhK0_sOOnJTVfqz3M9gAxwmWa6WPUPkSssgzUlTYqY,4675
+murky-0.0.5.dist-info/LICENSE,sha256=ogEPNDSH0_dhiv_lT3ifVIdgIzHAqNA_SemnxUfPBJk,7048
+murky-0.0.5.dist-info/METADATA,sha256=iz8jzPxUpUS8rYp8iRpwTHId1dLzOj8yeRASE1bY6Mc,9352
+murky-0.0.5.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+murky-0.0.5.dist-info/entry_points.txt,sha256=F5gxJzr0VAMH6LEB1B6X0JmuW-L1wDX6t9XEQ3HIM8s,165
+murky-0.0.5.dist-info/top_level.txt,sha256=Ah2rXqA309taeclwfB2zL-UQtfOhHDOEA4qIk9HLWGk,6
+murky-0.0.5.dist-info/RECORD,,

@@ -1,0 +1,4 @@
+[console_scripts]
+create_release_notes = murky.create_release_notes:main
+murky_tool = murky.murky_tool:main
+update_copyright_date = murky.update_copyright_date:main
