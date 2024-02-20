@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: numerous
+Version: 0.0.8
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+
+numerous python SDK
+===================
+
+The python SDK for developing tools for the numerous platform.
+
+Simply install the SDK into your python environment with:
+
+    pip install numerous
+
+And then you can simply enter the following command, to get a list of possible
+commands.
+
+    numerous
