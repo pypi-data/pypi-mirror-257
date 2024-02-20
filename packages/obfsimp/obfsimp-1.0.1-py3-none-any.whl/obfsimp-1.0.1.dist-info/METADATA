@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: obfsimp
+Version: 1.0.1
+Summary: Simple Python 3 obfuscator
+Home-page: https://github.com/none-None1/obfsimp
+Keywords: obfuscator
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Requires-Dist: pygments
+
+
+Simple Python 3 obfuscator
+
+Support many techniques, such as exec expression, variable renaming, etc.
+
+To use it, simply type "obfsimp" in terminal
+
+There are many example programs and obfuscated programs at the examples folder
