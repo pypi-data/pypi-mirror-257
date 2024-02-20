@@ -1,0 +1,5 @@
+setup.py
+gai_common.egg-info/PKG-INFO
+gai_common.egg-info/SOURCES.txt
+gai_common.egg-info/dependency_links.txt
+gai_common.egg-info/top_level.txt
