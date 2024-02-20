@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+fast_hpack/__init__.py
+fast_hpack/hpack.py
+fast_hpack/huffman.py
+fast_hpack/table.py
+fast_hpack.egg-info/PKG-INFO
+fast_hpack.egg-info/SOURCES.txt
+fast_hpack.egg-info/dependency_links.txt
+fast_hpack.egg-info/top_level.txt
