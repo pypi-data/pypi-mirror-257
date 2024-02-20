@@ -1,0 +1,12 @@
+supervision
+autodistill
+numpy
+inference[yolo-world]==0.9.11
+
+[dev]
+flake8
+black==22.3.0
+isort
+twine
+pytest
+wheel

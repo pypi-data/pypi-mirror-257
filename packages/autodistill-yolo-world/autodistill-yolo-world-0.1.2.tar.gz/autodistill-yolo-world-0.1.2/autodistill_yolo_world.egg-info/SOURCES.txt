@@ -1,0 +1,9 @@
+README.md
+setup.py
+autodistill_yolo_world/__init__.py
+autodistill_yolo_world/yolo_world_model.py
+autodistill_yolo_world.egg-info/PKG-INFO
+autodistill_yolo_world.egg-info/SOURCES.txt
+autodistill_yolo_world.egg-info/dependency_links.txt
+autodistill_yolo_world.egg-info/requires.txt
+autodistill_yolo_world.egg-info/top_level.txt
