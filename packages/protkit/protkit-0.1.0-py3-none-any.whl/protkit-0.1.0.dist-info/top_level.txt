@@ -1,0 +1,6 @@
+deprecated
+docs
+html
+protkit
+test
+tests
