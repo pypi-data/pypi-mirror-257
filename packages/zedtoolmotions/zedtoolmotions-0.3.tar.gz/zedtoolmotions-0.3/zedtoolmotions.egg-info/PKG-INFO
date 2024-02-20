@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: zedtoolmotions
+Version: 0.3
+Summary: A package for animations
+Home-page: https://github.com/yourusername/zedtoolmotions
+Author: Yousseif Muhammed
+Author-email: me@usif.tech
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+License-File: LICENSE.txt
