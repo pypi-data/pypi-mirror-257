@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+demm/__init__.py
+demm/rejected_record.py
+demm.egg-info/PKG-INFO
+demm.egg-info/SOURCES.txt
+demm.egg-info/dependency_links.txt
+demm.egg-info/requires.txt
+demm.egg-info/top_level.txt
