@@ -1,0 +1,10 @@
+pandas
+pyarrow
+pydantic>=2
+python-dotenv
+
+[dev]
+hypothesis
+jupyter
+pytest
+seaborn

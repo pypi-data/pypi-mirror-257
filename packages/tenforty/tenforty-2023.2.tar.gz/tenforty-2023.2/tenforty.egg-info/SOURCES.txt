@@ -1,0 +1,15 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+tenforty/__init__.py
+tenforty/_ots_form_models.py
+tenforty/core.py
+tenforty/models.py
+tenforty.egg-info/PKG-INFO
+tenforty.egg-info/SOURCES.txt
+tenforty.egg-info/dependency_links.txt
+tenforty.egg-info/requires.txt
+tenforty.egg-info/top_level.txt
+tenforty/otslib/ots.cpp
+tenforty/otslib/ots_amalgamation.cpp
