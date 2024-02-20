@@ -1,0 +1,3 @@
+[console_scripts]
+purlcli=purldb_toolkit.purlcli:purlcli
+
