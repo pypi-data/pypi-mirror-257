@@ -1,0 +1,97 @@
+[project]
+name = "alysis"
+version = "0.1.0"
+description = "Ethereum testerchain"
+authors = [
+    { name = "Bogdan Opanchuk", email = "bogdan@opanchuk.net" },
+]
+dependencies = [
+    "eth-utils>=3",
+    "setuptools",
+    "py-evm==0.9.0b1",
+    "eth-typing>=4",
+    "eth-keys>=0.5",
+    "rlp>=4",
+]
+requires-python = ">=3.8"
+readme = "README.md"
+
+[project.license]
+file = "LICENSE.md"
+
+[project.urls]
+homepage = "https://github.com/fjarri/alysis"
+
+[tool.pdm.version]
+source = "scm"
+
+[tool.pdm.build]
+source-includes = [
+    "tests/*.sol",
+    "tests/*.py",
+    "docs/*.rst",
+    "docs/*.py",
+    "docs/Makefile",
+]
+
+[tool.setuptools_scm]
+
+[tool.mypy]
+strict = true
+warn_unreachable = true
+implicit_reexport = true
+
+[tool.ruff]
+target-version = "py38"
+line-length = 100
+
+[tool.ruff.lint]
+select = [
+    "ALL",
+]
+ignore = [
+    "C408",
+    "B008",
+    "ANN101",
+    "ANN401",
+    "ANN204",
+    "ANN102",
+    "FA100",
+    "COM812",
+    "EM102",
+    "TRY003",
+    "D212",
+    "D203",
+    "TD002",
+    "EM101",
+    "D205",
+    "D401",
+    "TD003",
+    "FIX002",
+    "N818",
+    "PLR0913",
+    "ISC001",
+]
+fixable = [
+    "ALL",
+]
+unfixable = []
+exclude = [
+    ".eggs",
+    ".git",
+    ".mypy_cache",
+    ".ruff_cache",
+    ".venv",
+    "__pypackages__",
+    "build",
+    "dist",
+]
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+
+[tool.ruff.lint.per-file-ignores]
+
+[build-system]
+requires = [
+    "pdm-pep517",
+]
+build-backend = "pdm.pep517.api"

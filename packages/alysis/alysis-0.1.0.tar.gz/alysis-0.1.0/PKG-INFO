@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: alysis
+Version: 0.1.0
+Summary: Ethereum testerchain
+Author-email: Bogdan Opanchuk <bogdan@opanchuk.net>
+Requires-Python: >=3.8
+Project-URL: homepage, https://github.com/fjarri/alysis
+Description-Content-Type: text/markdown
+
+Alysis, an Ethereum testerchain
+===============================
+
+Under construction.
+
