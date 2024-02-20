@@ -1,0 +1,2 @@
+[console_scripts]
+uce-eval-single-anndata = uce.eval_single_anndata:main
