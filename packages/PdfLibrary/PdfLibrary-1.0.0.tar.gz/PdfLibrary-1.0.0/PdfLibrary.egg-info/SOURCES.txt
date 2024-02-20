@@ -1,0 +1,5 @@
+setup.py
+PdfLibrary.egg-info/PKG-INFO
+PdfLibrary.egg-info/SOURCES.txt
+PdfLibrary.egg-info/dependency_links.txt
+PdfLibrary.egg-info/top_level.txt
