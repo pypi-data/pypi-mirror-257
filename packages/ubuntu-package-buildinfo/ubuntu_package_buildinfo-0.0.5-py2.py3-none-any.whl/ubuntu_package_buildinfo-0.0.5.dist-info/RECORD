@@ -1,0 +1,9 @@
+ubuntu_package_buildinfo/__init__.py,sha256=6fifUu2gyQUWZ8LJxWXHgedpL-Wc8zAx7LjyKCyTnXo,146
+ubuntu_package_buildinfo/cli.py,sha256=WhZFlbd6MHwiAxfvna2ZZ1DjZNPxxq2csS09Ci2vsHw,12485
+ubuntu_package_buildinfo-0.0.5.dist-info/AUTHORS.rst,sha256=HbNu1aTcdF2aDyxhqAxiqtvyfsmb5kn0_oJjf8hLBYU,160
+ubuntu_package_buildinfo-0.0.5.dist-info/LICENSE,sha256=ITt7zOmDGxDnuOFVVauMSuhlslxXumod7Jzv-KxHJ20,1554
+ubuntu_package_buildinfo-0.0.5.dist-info/METADATA,sha256=8VnEq6iG4Z5KcIu9NN7cfk157oVWNG4nG5JBtaWyHls,3265
+ubuntu_package_buildinfo-0.0.5.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+ubuntu_package_buildinfo-0.0.5.dist-info/entry_points.txt,sha256=BIWY3un_Zn1tlGyq1T9Ju5_vTe8hWaaMapeOzoqbYw8,99
+ubuntu_package_buildinfo-0.0.5.dist-info/top_level.txt,sha256=wMR3SsqXgUD89R0h5fpZES-cuIUBDfOxhkPnKGuLy8E,25
+ubuntu_package_buildinfo-0.0.5.dist-info/RECORD,,
