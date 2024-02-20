@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: slimp
+Version: 0.1.1
+Summary: Linear models with stan and Pandas
+Author: Julien Lamy
+Author-email: lamy@unistra.fr
