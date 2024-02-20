@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: xenomake
+Version: 1.0.0
+Summary: Xenomake: Processing Pipeline for Patient Derived Xenograft (PDX) Spatial Transcriptomics Datasets
+Home-page: https://github.com/istrope/Xenomake/
+Author: Ivy Strope
+Author-email: ivystrope@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Requires-Dist: snakemake
+Requires-Dist: argparse
+Requires-Dist: pyyaml
+Requires-Dist: scanpy
