@@ -1,0 +1,2 @@
+[nbdev]
+vdct = vdct._modidx:d

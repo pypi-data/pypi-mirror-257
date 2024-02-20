@@ -1,0 +1,13 @@
+vdct/__init__.py,sha256=mI9cc9jZb1ooVROlZuJ9ANY5ujepdR9obnGaMcTdk_U,449
+vdct/_modidx.py,sha256=xOHaJt5TjwzDdy_v5A0VA2BmSclYIA-J1yGqLFSNJLY,4269
+vdct/atyp.py,sha256=B46gOcc4_7WA0iB69BeFFBsa2eE-C_nKBzilWF1LM8s,2529
+vdct/cast.py,sha256=UzmxE3_XQ0izg7dzD6F0HgB41g9wy1Nv4pxNPRxvWoM,7518
+vdct/core.py,sha256=QXhLlVN4h6I2PwKWwWrJILhZDXIXb5TWmIQVYW5H2hA,7654
+vdct/flag.py,sha256=WauJlSHQFFBZw9ffy3sRRPXUA2Uanhq34eBSr1lsODI,2990
+vdct/util.py,sha256=svUmdV9NQQJz9AbcrPIjNhyrfJuKE0m-hHrJzfr3BdY,4798
+vdct-0.0.1.dist-info/LICENSE,sha256=xV8xoN4VOL0uw9X8RSs2IMuD_Ss_a9yAbtGNeBWZwnw,11337
+vdct-0.0.1.dist-info/METADATA,sha256=CFf5OEu6Pxab6tmeg7yxy0erJG1mjojHzywqTBR_oqc,2046
+vdct-0.0.1.dist-info/WHEEL,sha256=5sUXSg9e4bi7lTLOHcm6QEYwO5TIF1TNbTSVFVjcJcc,92
+vdct-0.0.1.dist-info/entry_points.txt,sha256=cPy_aBx2LKFTYYFth9mGyEYwls3MzbgKJzsMd5nIMZ0,30
+vdct-0.0.1.dist-info/top_level.txt,sha256=uzKVNhSCDVjdiu0TzIyJRER7_5E7MrXMfpoNqG94e9k,5
+vdct-0.0.1.dist-info/RECORD,,
