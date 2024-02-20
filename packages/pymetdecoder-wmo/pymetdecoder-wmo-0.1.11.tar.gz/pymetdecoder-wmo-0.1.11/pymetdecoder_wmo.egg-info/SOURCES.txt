@@ -1,0 +1,12 @@
+LICENSE.md
+README.md
+setup.py
+pymetdecoder/__init__.py
+pymetdecoder/code_tables.py
+pymetdecoder/conversion.py
+pymetdecoder/synop/__init__.py
+pymetdecoder/synop/observations.py
+pymetdecoder_wmo.egg-info/PKG-INFO
+pymetdecoder_wmo.egg-info/SOURCES.txt
+pymetdecoder_wmo.egg-info/dependency_links.txt
+pymetdecoder_wmo.egg-info/top_level.txt
