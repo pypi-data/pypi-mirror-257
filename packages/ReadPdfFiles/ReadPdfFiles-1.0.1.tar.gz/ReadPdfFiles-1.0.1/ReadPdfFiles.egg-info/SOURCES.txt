@@ -1,0 +1,11 @@
+setup.py
+ReadPdfFiles.egg-info/PKG-INFO
+ReadPdfFiles.egg-info/SOURCES.txt
+ReadPdfFiles.egg-info/dependency_links.txt
+ReadPdfFiles.egg-info/requires.txt
+ReadPdfFiles.egg-info/top_level.txt
+readPdfFiles/__init__.py
+readPdfFiles/readPdfWithFitz.py
+readPdfFiles/readPdfWithPdfminer.py
+readPdfFiles/readPdfWithPyPDF2.py
+readPdfFiles/readPdfWithTabula.py
