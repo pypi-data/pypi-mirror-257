@@ -1,0 +1,11 @@
+bcutils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bcutils/bc_utils.py,sha256=wsnuVuAAJCdBfzLjs-N2QlNQwOHioVoN9bSKDE0tF34,28979
+bcutils/config.py,sha256=wLTjvp-swO1UK1qczVpn9X6uMvdt39QVedTpoD_5K2k,13366
+bcutils/migrate.py,sha256=vSsteTQMqzEGqpG8bmXXP0OkUBV50JQ4R-jj3T5UE3k,2905
+bcutils/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bcutils/tests/test_downloader.py,sha256=JDg-h9OnOl9Jh6-LID5KAyWW0r712CxvvP4qCIQIjcg,3962
+bcutils/tests/test_utils.py,sha256=Q5U5-uUUkV8tX3L8bIEpbA8pHuFs-ZEmgJ8spLzdfNU,3206
+bc_utils-0.1.5.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+bc_utils-0.1.5.dist-info/METADATA,sha256=SYeIbKX3lfiePmUAjzb0j38WTTChIrCA-LxV1st5SuA,6339
+bc_utils-0.1.5.dist-info/WHEEL,sha256=WGfLGfLX43Ei_YORXSnT54hxFygu34kMpcQdmgmEwCQ,88
+bc_utils-0.1.5.dist-info/RECORD,,
