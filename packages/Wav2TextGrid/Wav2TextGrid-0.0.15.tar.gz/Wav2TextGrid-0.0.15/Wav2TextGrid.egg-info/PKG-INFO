@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: Wav2TextGrid
+Version: 0.0.15
+Summary: A python forced alignment package
+Author: Prad Kadambi
+Author-email: pkadambi@asu.edu
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+License-File: LICENSE
+Requires-Dist: annotated-types==0.6.0
+Requires-Dist: audioread==3.0.1
+Requires-Dist: certifi==2024.2.2
+Requires-Dist: cffi==1.16.0
+Requires-Dist: charset-normalizer==3.3.2
+Requires-Dist: click==8.1.7
+Requires-Dist: decorator==5.1.1
+Requires-Dist: Distance==0.1.3
+Requires-Dist: filelock==3.9.0
+Requires-Dist: fsspec==2024.2.0
+Requires-Dist: g2p-en==2.1.0
+Requires-Dist: huggingface-hub==0.20.3
+Requires-Dist: HyperPyYAML==1.2.2
+Requires-Dist: idna==3.6
+Requires-Dist: inflect==7.0.0
+Requires-Dist: Jinja2==3.1.2
+Requires-Dist: joblib==1.3.2
+Requires-Dist: lazy_loader==0.3
+Requires-Dist: librosa==0.10.1
+Requires-Dist: llvmlite==0.42.0
+Requires-Dist: MarkupSafe==2.1.3
+Requires-Dist: mpmath==1.3.0
+Requires-Dist: msgpack==1.0.7
+Requires-Dist: networkx==3.2.1
+Requires-Dist: nltk==3.8.1
+Requires-Dist: numba==0.59.0
+Requires-Dist: numpy==1.26.4
+Requires-Dist: packaging==23.2
+Requires-Dist: pillow==10.2.0
+Requires-Dist: platformdirs==4.2.0
+Requires-Dist: pooch==1.8.0
+Requires-Dist: praatio==6.2.0
+Requires-Dist: pycparser==2.21
+Requires-Dist: pydantic==2.6.1
+Requires-Dist: pydantic_core==2.16.2
+Requires-Dist: PyYAML==6.0.1
+Requires-Dist: regex==2023.12.25
+Requires-Dist: requests==2.31.0
+Requires-Dist: ruamel.yaml==0.18.6
+Requires-Dist: ruamel.yaml.clib==0.2.8
+Requires-Dist: safetensors==0.4.2
+Requires-Dist: scikit-learn==1.4.1.post1
+Requires-Dist: scipy==1.12.0
+Requires-Dist: sentencepiece==0.2.0
+Requires-Dist: soundfile==0.12.1
+Requires-Dist: soxr==0.3.7
+Requires-Dist: speechbrain==0.5.16
+Requires-Dist: sympy==1.12
+Requires-Dist: threadpoolctl==3.3.0
+Requires-Dist: tokenizers==0.15.2
+Requires-Dist: torch==2.2.0+cpu
+Requires-Dist: torchaudio==2.2.0+cpu
+Requires-Dist: torchvision==0.17.0+cpu
+Requires-Dist: tqdm==4.66.2
+Requires-Dist: transformers==4.37.2
+Requires-Dist: typing_extensions==4.9.0
+Requires-Dist: urllib3==2.2.1
+
+Please find documentation at https://github.com/pkadambi/Wav2TextGrid
