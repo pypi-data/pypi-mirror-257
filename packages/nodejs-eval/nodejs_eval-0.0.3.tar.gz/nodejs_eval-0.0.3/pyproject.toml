@@ -1,0 +1,112 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "nodejs-eval"
+dynamic = ["version"]
+description = 'Evaluate arbitrary JavaScript from Python using a NodeJS sidecar'
+readme = "README.md"
+requires-python = ">=3.8"
+license = "MIT"
+keywords = []
+authors = [
+  { name = "Ben Creech", email = "ben@bpcreech.com" },
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+dependencies = [
+  "nodejs-bin",
+  "aiohttp",
+]
+
+[project.urls]
+Documentation = "https://github.com/bpcreech/nodejs-eval#readme"
+Issues = "https://github.com/bpcreech/nodejs-eval/issues"
+Source = "https://github.com/bpcreech/nodejs-eval"
+
+[tool.black]
+line-length = 80
+
+[tool.hatch.version]
+path = "src/nodejs_eval/__about__.py"
+
+[tool.hatch.envs.default]
+dependencies = [
+  "coverage[toml]>=6.5",
+  "pytest",
+  "pytest-asyncio",
+]
+[tool.hatch.envs.default.scripts]
+test = "pytest {args:tests}"
+test-cov = "coverage run -m pytest {args:tests}"
+cov-report = [
+  "- coverage combine",
+  "coverage report",
+]
+cov = [
+  "test-cov",
+  "cov-report",
+]
+
+[tool.hatch.envs.style]
+detached = true
+dependencies = [
+  "flake8",
+  "black",
+  "isort",
+  "mdformat",
+]
+
+[tool.hatch.envs.style.scripts]
+check = [
+  "flake8 .",
+  "black --check --diff .",
+  "isort --check-only --diff .",
+]
+fmt = [
+  "isort .",
+  "black .",
+  "check",
+  "mdformat *.md",
+]
+
+[[tool.hatch.envs.all.matrix]]
+python = ["3.8", "3.9", "3.10", "3.11", "3.12"]
+
+[tool.hatch.envs.types]
+dependencies = [
+  "mypy>=1.0.0",
+  "pytest",
+  "pytest-asyncio",
+]
+[tool.hatch.envs.types.scripts]
+check = "mypy --install-types --non-interactive {args:src/nodejs_eval tests}"
+
+[tool.coverage.run]
+source_pkgs = ["nodejs_eval", "tests"]
+branch = true
+parallel = true
+omit = [
+  "src/nodejs_eval/__about__.py",
+]
+
+[tool.coverage.paths]
+nodejs_eval = ["src/nodejs_eval", "*/nodejs-eval/src/nodejs_eval"]
+tests = ["tests", "*/nodejs-eval/tests"]
+
+[tool.coverage.report]
+exclude_lines = [
+  "no cov",
+  "if __name__ == .__main__.:",
+  "if TYPE_CHECKING:",
+]
