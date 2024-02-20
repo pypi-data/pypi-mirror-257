@@ -1,0 +1,15 @@
+body:
+  name: Io
+  jpl_hor_id: 501
+  mass: 89.3e21  # kg
+  req: 1829.4  # km equatorial radius at 1 bar level
+  rpol: 1815.7  # km polar radius
+  rvol: 1821.  # km volumetric mean radius
+  accel_g: 1.80  # m/s^2 Gravity at 1 bar level
+  longitude_convention: west
+orbit:
+  semi_major_axis: 422e3  # km
+  t_rot: 42.5  # length of sideral rotation period in hours in system III
+observational:
+  app_dia_max: 50.1  # arc seconds
+  app_dia_min: 30.5  # arc seconds
