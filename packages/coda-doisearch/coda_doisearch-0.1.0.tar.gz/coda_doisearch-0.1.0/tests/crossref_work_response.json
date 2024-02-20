@@ -1,0 +1,259 @@
+{
+    "status": "ok",
+    "message-type": "work",
+    "message-version": "1.0.0",
+    "message": {
+        "indexed": {
+            "date-parts": [
+                [
+                    2024,
+                    2,
+                    13
+                ]
+            ],
+            "date-time": "2024-02-13T16:29:56Z",
+            "timestamp": 1707841796784
+        },
+        "reference-count": 6,
+        "publisher": "Public Library of Science (PLoS)",
+        "issue": "1",
+        "license": [
+            {
+                "start": {
+                    "date-parts": [
+                        [
+                            2016,
+                            1,
+                            19
+                        ]
+                    ],
+                    "date-time": "2016-01-19T00:00:00Z",
+                    "timestamp": 1453161600000
+                },
+                "content-version": "vor",
+                "delay-in-days": 0,
+                "URL": "http:\/\/creativecommons.org\/licenses\/by\/4.0\/"
+            }
+        ],
+        "content-domain": {
+            "domain": [
+                "www.ploscompbiol.org"
+            ],
+            "crossmark-restriction": false
+        },
+        "short-container-title": [
+            "PLoS Comput Biol"
+        ],
+        "DOI": "10.1371\/journal.pcbi.1004668",
+        "type": "journal-article",
+        "created": {
+            "date-parts": [
+                [
+                    2016,
+                    1,
+                    19
+                ]
+            ],
+            "date-time": "2016-01-19T21:35:29Z",
+            "timestamp": 1453239329000
+        },
+        "page": "e1004668",
+        "update-policy": "http:\/\/dx.doi.org\/10.1371\/journal.pcbi.corrections_policy",
+        "source": "Crossref",
+        "is-referenced-by-count": 88,
+        "title": [
+            "A Quick Introduction to Version Control with Git and GitHub"
+        ],
+        "prefix": "10.1371",
+        "volume": "12",
+        "author": [
+            {
+                "given": "John D.",
+                "family": "Blischak",
+                "sequence": "first",
+                "affiliation": []
+            },
+            {
+                "given": "Emily R.",
+                "family": "Davenport",
+                "sequence": "additional",
+                "affiliation": []
+            },
+            {
+                "given": "Greg",
+                "family": "Wilson",
+                "sequence": "additional",
+                "affiliation": []
+            }
+        ],
+        "member": "340",
+        "published-online": {
+            "date-parts": [
+                [
+                    2016,
+                    1,
+                    19
+                ]
+            ]
+        },
+        "reference": [
+            {
+                "key": "ref1",
+                "doi-asserted-by": "crossref",
+                "first-page": "7",
+                "DOI": "10.1186\/1751-0473-8-7",
+                "article-title": "Git can facilitate greater reproducibility and increased transparency in science",
+                "volume": "8",
+                "author": "K Ram",
+                "year": "2013",
+                "journal-title": "Source Code Biol Med"
+            },
+            {
+                "key": "ref2",
+                "doi-asserted-by": "crossref",
+                "first-page": "e1001745",
+                "DOI": "10.1371\/journal.pbio.1001745",
+                "article-title": "Best practices for scientific computing",
+                "volume": "12",
+                "author": "G Wilson",
+                "year": "2014",
+                "journal-title": "PLoS Biol"
+            },
+            {
+                "key": "ref3",
+                "doi-asserted-by": "crossref",
+                "first-page": "57",
+                "DOI": "10.1038\/nature11247",
+                "article-title": "An integrated encyclopedia of DNA elements in the human genome",
+                "volume": "489",
+                "author": "B Bernstein",
+                "year": "2012",
+                "journal-title": "Nature"
+            },
+            {
+                "key": "ref4",
+                "doi-asserted-by": "crossref",
+                "first-page": "e1003326",
+                "DOI": "10.1371\/journal.pcbi.1003326",
+                "article-title": "Practical guidelines for the comprehensive analysis of ChIP-seq data",
+                "volume": "9",
+                "author": "T Bailey",
+                "year": "2013",
+                "journal-title": "PLoS Comput Biol"
+            },
+            {
+                "key": "ref5",
+                "doi-asserted-by": "crossref",
+                "first-page": "e1000424",
+                "DOI": "10.1371\/journal.pcbi.1000424",
+                "article-title": "A quick guide to organizing computational biology projects",
+                "volume": "5",
+                "author": "W Noble",
+                "year": "2009",
+                "journal-title": "PLoS Comput Biol"
+            },
+            {
+                "key": "ref6",
+                "doi-asserted-by": "crossref",
+                "first-page": "e1002598",
+                "DOI": "10.1371\/journal.pcbi.1002598",
+                "article-title": "A quick guide to software licensing for the scientist-programmer",
+                "volume": "8",
+                "author": "A Morin",
+                "year": "2012",
+                "journal-title": "PLoS Comput Biol"
+            }
+        ],
+        "container-title": [
+            "PLOS Computational Biology"
+        ],
+        "original-title": [],
+        "language": "en",
+        "link": [
+            {
+                "URL": "http:\/\/dx.plos.org\/10.1371\/journal.pcbi.1004668",
+                "content-type": "unspecified",
+                "content-version": "vor",
+                "intended-application": "similarity-checking"
+            }
+        ],
+        "deposited": {
+            "date-parts": [
+                [
+                    2020,
+                    5,
+                    8
+                ]
+            ],
+            "date-time": "2020-05-08T21:36:54Z",
+            "timestamp": 1588973814000
+        },
+        "score": 1,
+        "resource": {
+            "primary": {
+                "URL": "https:\/\/dx.plos.org\/10.1371\/journal.pcbi.1004668"
+            }
+        },
+        "subtitle": [],
+        "editor": [
+            {
+                "given": "Francis",
+                "family": "Ouellette",
+                "sequence": "first",
+                "affiliation": []
+            }
+        ],
+        "short-title": [],
+        "issued": {
+            "date-parts": [
+                [
+                    2016,
+                    1,
+                    19
+                ]
+            ]
+        },
+        "references-count": 6,
+        "journal-issue": {
+            "issue": "1",
+            "published-online": {
+                "date-parts": [
+                    [
+                        2016,
+                        1,
+                        19
+                    ]
+                ]
+            }
+        },
+        "URL": "http:\/\/dx.doi.org\/10.1371\/journal.pcbi.1004668",
+        "relation": {},
+        "ISSN": [
+            "1553-7358"
+        ],
+        "issn-type": [
+            {
+                "value": "1553-7358",
+                "type": "electronic"
+            }
+        ],
+        "subject": [
+            "Computational Theory and Mathematics",
+            "Cellular and Molecular Neuroscience",
+            "Genetics",
+            "Molecular Biology",
+            "Ecology",
+            "Modeling and Simulation",
+            "Ecology, Evolution, Behavior and Systematics"
+        ],
+        "published": {
+            "date-parts": [
+                [
+                    2016,
+                    1,
+                    19
+                ]
+            ]
+        }
+    }
+}
