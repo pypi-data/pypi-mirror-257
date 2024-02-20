@@ -1,0 +1,12 @@
+pyVIA/__init__.py,sha256=LfOHUu60-FAMJluroE3mTyUEEQsn8W2nJjw_JbesFHw,142
+pyVIA/core.py,sha256=sols3CwKUpPJI1hHFGnchJ1XQAkPmee5F66DnyRvllg,198051
+pyVIA/datasets_via.py,sha256=kL33tt1IRWvYPE_hz6fRSoDlM47_R8Wns_ohdeFyJds,14901
+pyVIA/examples.py,sha256=mai6knFierClvm-88f0tddoQOq0A-OsuP8TzTQk-3v8,160718
+pyVIA/plotting_via.py,sha256=AlM_Oe5WEFVBFub75tUAsWKJZfTr9M11MA9sSXV9XW4,226988
+pyVIA/utils_via.py,sha256=CLE2d_JWeKC-pzGFeHkmu5pWSweMVFBPCW0YIEfWDW4,91786
+pyVIA/windmap.py,sha256=09izB4hH-hsThKx9udlKlvBxAhmvhbeFXl45sy-ghtQ,7987
+pyVIA-0.1.97.dist-info/LICENSE.txt,sha256=Q0zLV0Q7N5kZmjjsCqfoFjbU0SvM-kqMDkF12LC00Yo,1091
+pyVIA-0.1.97.dist-info/METADATA,sha256=sUC7IxVCA6rr7uwtNUnWlHN6TtJ2LpsSot70CNgP9Rk,20208
+pyVIA-0.1.97.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pyVIA-0.1.97.dist-info/top_level.txt,sha256=E94sdPsf0VvyIOR3L6LjkppcPy0mJSoiCzoJyZK9kpk,6
+pyVIA-0.1.97.dist-info/RECORD,,
