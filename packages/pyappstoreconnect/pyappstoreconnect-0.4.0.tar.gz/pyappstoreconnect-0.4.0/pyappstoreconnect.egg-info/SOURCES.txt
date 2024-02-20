@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+pyappstoreconnect/__init__.py
+pyappstoreconnect/appAnalytics.py
+pyappstoreconnect/benchmarks.py
+pyappstoreconnect/client.py
+pyappstoreconnect/metricsWithFilter.py
+pyappstoreconnect/metricsWithGroup.py
+pyappstoreconnect/settings.py
+pyappstoreconnect/timeSeriesAnalytics.py
+pyappstoreconnect.egg-info/PKG-INFO
+pyappstoreconnect.egg-info/SOURCES.txt
+pyappstoreconnect.egg-info/dependency_links.txt
+pyappstoreconnect.egg-info/top_level.txt
