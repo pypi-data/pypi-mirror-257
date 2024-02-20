@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: aiondata
+Version: 0.0.2
+Summary: A common data access layer for AI-driven drug discovery.
+Home-page: https://www.github.com/aion-labs/aiondata
+License: Apache
+Author: JJ Ben-Joseph
+Author-email: jj@tensorspace.ai
+Requires-Python: >=3.10
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Scientific/Engineering :: Medical Science Apps.
+Requires-Dist: numpy (>=1.25.2,<2.0.0) ; python_version >= "3.10" and python_version < "4.0"
+Requires-Dist: numpy (>=1.25.2,<2.0.0) ; python_version >= "3.11" and python_version < "4.0"
+Requires-Dist: numpy (>=1.26.0,<2.0.0) ; python_version >= "3.12" and python_version < "4.0"
+Requires-Dist: polars ; python_version >= "3.10"
+Requires-Dist: rdkit
+Requires-Dist: tqdm
+Description-Content-Type: text/x-rst
+
+📊 AionData
+===========
+
+AionData is a common data access layer designed for AI-driven drug discovery software. It provides a unified interface to access diverse biochemical databases.
+
+Installation
+------------
+
+To install AionData, ensure you have Python 3.10 or newer installed on your system. You can install AionData via pip:
+
+.. code-block:: bash
+
+    pip install aiondata
+
+
+Datasets
+--------
+
+AionData provides access to the following datasets:
+
+- BindingDB: A public, web-accessible database of measured binding affinities, focusing chiefly on the interactions of protein considered to be drug-targets with small, drug-like molecules.
+
+
+License
+-------
+
+AionData is licensed under the Apache License. See the LICENSE file for more details.
+
