@@ -1,0 +1,9 @@
+PyVSparse/_PyVSparse.cpython-39-x86_64-linux-gnu.so,sha256=nJd1mWPrBjCVslKlKh1s4YLBw-S-UizkrmMvk_WoBCI,11747320
+PyVSparse/__init__.py,sha256=sgLBFtihDRsHMcvjYSjErxOUD-GbiKP6qHGb2JF3Ma4,102
+PyVSparse/ivcsc.py,sha256=nFu21EKmW3-Oc-oqXxcJRsChitXxpgbk6VMgVP0y-GI,24876
+PyVSparse/vcsc.py,sha256=91psTeS01Zbkdbre93_IFGhJUins_Ujexr4ryWYyL6g,31606
+pyvsparse-0.4.4.dist-info/METADATA,sha256=LQkmf5JikxVNYs23xlXuyxdb7r9yEdXVqd7vY_8DoH4,4767
+pyvsparse-0.4.4.dist-info/WHEEL,sha256=I5GlQhSxcKjRyJV66LvPwqPCmplnq5uQcV4eloMJEHg,115
+pyvsparse-0.4.4.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyvsparse-0.4.4.dist-info/licenses/LICENSE,sha256=wGFSMb3motGI8igGG1NtQLSbHsaNNaARut8IZY-95Uc,11343
+pyvsparse-0.4.4.dist-info/RECORD,,
