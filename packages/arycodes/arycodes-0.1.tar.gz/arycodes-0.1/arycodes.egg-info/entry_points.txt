@@ -1,0 +1,2 @@
+[console_scripts]
+arycodes = arycodes.hello:say_hello

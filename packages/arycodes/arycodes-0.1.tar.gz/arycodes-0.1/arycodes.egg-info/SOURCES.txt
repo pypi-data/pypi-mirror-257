@@ -1,0 +1,8 @@
+setup.py
+arycodes/__init__.py
+arycodes/hello.py
+arycodes.egg-info/PKG-INFO
+arycodes.egg-info/SOURCES.txt
+arycodes.egg-info/dependency_links.txt
+arycodes.egg-info/entry_points.txt
+arycodes.egg-info/top_level.txt
