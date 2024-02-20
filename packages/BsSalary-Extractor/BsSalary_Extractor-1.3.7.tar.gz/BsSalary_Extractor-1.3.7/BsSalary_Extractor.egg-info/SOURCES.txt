@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+BsSalary_Extractor/__init__.py
+BsSalary_Extractor/constants.py
+BsSalary_Extractor/data_extractor.py
+BsSalary_Extractor/data_extractor2.py
+BsSalary_Extractor/functions.py
+BsSalary_Extractor.egg-info/PKG-INFO
+BsSalary_Extractor.egg-info/SOURCES.txt
+BsSalary_Extractor.egg-info/dependency_links.txt
+BsSalary_Extractor.egg-info/requires.txt
+BsSalary_Extractor.egg-info/top_level.txt
