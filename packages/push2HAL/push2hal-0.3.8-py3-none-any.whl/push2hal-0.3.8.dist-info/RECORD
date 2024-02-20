@@ -1,0 +1,15 @@
+push2HAL/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+push2HAL/aofr.xsd,sha256=urKYIP-2Fs-3-gQmnXonimPJ8a9Y1Yak7Oai_9-HqVI,35764
+push2HAL/default.py,sha256=AEawETVkCqMuz36YNEYdhkoVi6m4y9tPwRROgJW6OI4,3003
+push2HAL/execHAL.py,sha256=bZj6YIE5z7-eVRtorwCGghKpYsRMN1Vy13Klvkz5bMo,9108
+push2HAL/json2hal.py,sha256=nZqvLqhJmrM7a7qNyZRJqLCGWby6Cr94lNDw3BxPtVs,2716
+push2HAL/libHAL.py,sha256=vWPfm799zyiPxN2fc4delnTYGheyx4hDMLUXFFskdEU,51758
+push2HAL/misc.py,sha256=i-ri0_kKDWky1fNRnb0rzyx_Bz20KIb6ApuExT0VLco,7445
+push2HAL/pdf2hal.py,sha256=WOjKlovgV_YuWSa3xjHZTtudJJ0k6xaC7ay3cGHoKZ0,2955
+push2HAL/version.py,sha256=FAr0t5Ub_Olk5Ke3Xi4Oeu5jcLPAvKpdk9naAtMuou8,411
+push2hal-0.3.8.dist-info/METADATA,sha256=41nwNz_H2fDWFp3u3IqUqubVqItL6l6utT2MMMtX4gs,46755
+push2hal-0.3.8.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+push2hal-0.3.8.dist-info/entry_points.txt,sha256=pMaJR-ByzC5kZs-4WVPXl5jqSVn0JMtt3T5iEmA-7BY,86
+push2hal-0.3.8.dist-info/licenses/AUTHORS,sha256=4fCR1SJkhIGTxqhLMJNLUp5WSGD75Zysu-__PnuXlgI,49
+push2hal-0.3.8.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+push2hal-0.3.8.dist-info/RECORD,,
