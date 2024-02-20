@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<object xmlns="http://textgrid.info/namespaces/metadata/core/2010" xmlns:tg="http://textgrid.info/relation-ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:eltec="https://textgridrep.org/terminology/eltec/">
+    <generic>
+        <provided>
+            <title>{{ title }}</title>
+            <format>text/tg.work+xml</format>
+        </provided>
+    </generic>
+    <work>
+        {% if author.id %}
+        <agent role="author" id="{{ author.id }}">{{ author_name }}</agent>
+        {% else %}
+        <agent role="author">{{ author_name }}</agent>
+        {% endif %}
+        <dateOfCreation notBefore="{{ pub_date }}" notAfter="{{ pub_date }}">{{ pub_date }}</dateOfCreation>
+        <subject>
+            <id type="/profileDesc/textClass/authorGender@key">authorGender</id>
+            <value>{{ author_gender }}</value> <!-- female/male/mixed -->
+        </subject>
+        <genre>{{ genre }}</genre>
+    </work>
+    <relations>
+        <rdf:RDF>
+            <rdf:Description rdf:about="">
+                <eltec:timeSlot>{{ eltec.time_slot }}</eltec:timeSlot>
+                <!-- T1(1840-1859)/T2(1860-1879/T3(1880-1899)/T4(1900-1920) -->
+                <eltec:authorGender>{{ eltec.gender }}</eltec:authorGender><!--
+                    M(male)/F(female)/U(unknown)/M(mixed) -->
+                <eltec:size>{{ eltec.size }}</eltec:size><!--
+                    number of words: long(>100.000)/medium(50.000-100.000)/short(10.000-50.000) -->
+                <eltec:reprintCount>{{ eltec.reprint_count }}</eltec:reprintCount><!-- low/high/unspecified -->
+                <eltec:corpusCollection></eltec:corpusCollection>
+                <!-- NOTE: actually not part of the eltec schema definition
+                    maybe <langUsage> would be the correct version,
+                    as it also used within the TEI-documents of ELTeC -->
+            </rdf:Description>
+        </rdf:RDF>
+    </relations>
+</object>
