@@ -1,0 +1,2 @@
+[console_scripts]
+addu-cli = ADDU.main:addu_cli
