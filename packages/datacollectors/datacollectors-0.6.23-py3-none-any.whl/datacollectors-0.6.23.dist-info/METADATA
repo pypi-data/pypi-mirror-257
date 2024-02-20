@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: datacollectors
+Version: 0.6.23
+Summary: datacollectors
+Author: Torben Franch
+Author-email: torben@franch.eu
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+License-File: LICENCE.txt
+Requires-Dist: tabulate
+Requires-Dist: incentivedkutils
+Requires-Dist: requests
+Requires-Dist: xmltodict
+
+# TCF datacollectors
+
+Data collectors from energy data sources
+
+## Installation
+
+Run the following to install 
+```
+python -m pip install datacollectors
+```
+
+## Usage
+
+```
+import datacollectors
+
+# connectors: Entsoe, ECB, Trading Economics, Energidataservice and ICE
+```
+
+
