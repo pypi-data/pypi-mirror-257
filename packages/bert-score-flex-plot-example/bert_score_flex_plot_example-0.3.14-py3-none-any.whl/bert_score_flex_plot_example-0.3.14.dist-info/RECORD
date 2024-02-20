@@ -1,0 +1,13 @@
+bert_score_cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bert_score_cli/score.py,sha256=3fn3e44s0RCEL4DznwED2ES5v3ZdbxugxsX39xGCcq8,4024
+bert_score_cli/visualize.py,sha256=O5wu5tAzPBCiZEUyP0KYOJ4iU7THtK0g4T7I363gB4E,1978
+bert_score_flex_plot_example/__init__.py,sha256=8sKMhFCQEngjB1ePYwkjKXEdYxSONolp81CiVFwHKrY,69
+bert_score_flex_plot_example/score.py,sha256=UjS0gv4x7T4VQc3Tp01wOxmUSFyaqxQD40jAJv04DdA,12048
+bert_score_flex_plot_example/scorer.py,sha256=LGTf26GcG9JwIdqPnBeSrP1vvKGxxyu2uSd3_vZ9Mlo,12673
+bert_score_flex_plot_example/utils.py,sha256=mhYFA_eIatXuheABw_Vt4iUy80Bo-uy1qdJGVDw7sTM,30719
+bert_score_flex_plot_example-0.3.14.dist-info/LICENSE,sha256=2l2Ft7krJhRrviGiZ43yJHW1fRlLdu_QsU_qK7c0BNE,1155
+bert_score_flex_plot_example-0.3.14.dist-info/METADATA,sha256=u7Xunk6FOtw5Y3fDcHoCKNRai8OyTrO-3rn9L7HRH3o,15915
+bert_score_flex_plot_example-0.3.14.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+bert_score_flex_plot_example-0.3.14.dist-info/entry_points.txt,sha256=vbXpe6AWLo-TOI6jxWjU9MHl6hZTrTacBsBBTf7p2AM,105
+bert_score_flex_plot_example-0.3.14.dist-info/top_level.txt,sha256=JZpInN-cEkcBs_tW-y6s5V81HSJ8eSgYxHMUFqte2gk,44
+bert_score_flex_plot_example-0.3.14.dist-info/RECORD,,
