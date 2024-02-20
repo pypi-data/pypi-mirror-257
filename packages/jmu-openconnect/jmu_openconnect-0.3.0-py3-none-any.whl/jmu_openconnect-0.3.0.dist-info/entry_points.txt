@@ -1,0 +1,3 @@
+[console_scripts]
+jmu-openconnect=jmu_openconnect.main:main
+
