@@ -1,0 +1,6 @@
+setup.cfg
+setup.py
+owlite.egg-info/PKG-INFO
+owlite.egg-info/SOURCES.txt
+owlite.egg-info/dependency_links.txt
+owlite.egg-info/top_level.txt
