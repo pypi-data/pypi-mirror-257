@@ -1,0 +1,9 @@
+sbsgenerator-1.0.3.dist-info/METADATA,sha256=D45nxBcWXE8qe0pG2nY42WRI1E8AJOUMTG_4Gszg4AA,6697
+sbsgenerator-1.0.3.dist-info/WHEEL,sha256=fu0vU6YZeGvi3fuGB_1kEvVDb-W8vNgGxUxdbObnhiA,136
+sbsgenerator-1.0.3.dist-info/license_files/LICENSE,sha256=OHfNyi6yJHw-uIAH09uIr6wIcdr-vi4JuDztT-hbq1Y,1067
+sbsgenerator/download.py,sha256=LhCvFFmk2Qr9nNEkyZAUtj9WdUArVI0qttDFslv9aao,3995
+sbsgenerator/generator.py,sha256=_6NIg9GiGFonPiXTLRfLcQgKRudvoUCvKanNxLBmGE0,9049
+sbsgenerator/__init__.py,sha256=RAUHEd0ZEpjQgyRgf4wtCZGbQWcHMJcLeYkXoZO0_EY,130
+sbsgenerator/logging.py,sha256=2ZMbM48F0jIYCtjmnmPspkwDuqVlld7bxGD9j8-4Ab8,2188
+sbsgenerator/sbsgenerator.pypy39-pp73-aarch64-linux-gnu.so,sha256=BkX5HCAS9XLamMB5h5j-ebc25RWFN_vDDhB9FyUxW-4,4220744
+sbsgenerator-1.0.3.dist-info/RECORD,,
