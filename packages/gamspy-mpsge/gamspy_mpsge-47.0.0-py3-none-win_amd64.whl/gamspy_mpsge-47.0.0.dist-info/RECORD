@@ -1,0 +1,12 @@
+gamspy_mpsge/__init__.py,sha256=MlMkBzJyMRjzxLFVdsTyKx68R9CJSa-1KucyBCBQpUA,357
+gamspy_mpsge/gmsge_nt.cmd,sha256=rba8LugrLzmlZhiVot7wNAfF-rxGMTFiW0QGLeUKP8E,392
+gamspy_mpsge/gmsge_nx.exe,sha256=ejy94j4BZBO42EWAIAlx0dGsqcAUPJPsvJ6rB1cNTSY,240640
+gamspy_mpsge/gmsgewnt.cmd,sha256=i1zbePN4To8UgXdiiRM5S9RWDCh8ui7heI9GirglDhU,95
+gamspy_mpsge/gmsgewnx.exe,sha256=hc3GFClObyoI1lTk46d_Eqcz3mP5wo2LvuS4JzOT0Fs,697344
+gamspy_mpsge/mpsgeset,sha256=mfR23WP5n6tmOtEcgLlN6HYPOHb2Zlezmy9qhOryikk,1849
+gamspy_mpsge/mpsgeval.dll,sha256=6ETQ7faIACRv4ETkmQeJJsiOnDStPyNGnOeN0Gb9234,332800
+gamspy_mpsge/version.py,sha256=C7uaZIe_R1KssW3ym8eUsBKaFD5Fhaqx-z8p3TF3lBE,22
+gamspy_mpsge-47.0.0.dist-info/METADATA,sha256=Kn0fk4JQ02C8RM97vofL9tFAH3MN9JbTDaWJ74KHyZs,62
+gamspy_mpsge-47.0.0.dist-info/WHEEL,sha256=-H981hu6jK6YKd-c0qWpYxXA3UZMihQ3r30_4YPQguI,104
+gamspy_mpsge-47.0.0.dist-info/top_level.txt,sha256=fFGHc0aIUS4As3C1AF49tM5L1gNFfszi8rB1B55EbeE,13
+gamspy_mpsge-47.0.0.dist-info/RECORD,,
