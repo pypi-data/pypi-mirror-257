@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<registry
+    xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+    i18n:domain="collective.plausible">
+
+<!-- -*- extra stuff goes here -*- -->
+
+  <records interface="collective.plausible.controlpanels.plausible_control_panel.controlpanel.IPlausibleControlPanel"
+           prefix="collective.plausible" />
+
+
+</registry>

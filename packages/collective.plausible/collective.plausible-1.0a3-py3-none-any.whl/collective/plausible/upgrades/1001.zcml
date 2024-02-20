@@ -1,0 +1,25 @@
+<configure xmlns="http://namespaces.zope.org/zope"
+  xmlns:gs="http://namespaces.zope.org/genericsetup">
+
+  <gs:registerProfile name="1001"
+    title="Add action linking to @@plausible-view"
+    directory="1001"
+    description='Configuration for version 1001'
+    for="Products.CMFPlone.interfaces.IMigratingPloneSiteRoot"
+    provides="Products.GenericSetup.interfaces.EXTENSION" />
+
+  <gs:upgradeSteps source="1000"
+    destination="1001"
+    profile="collective.plausible:default">
+
+    <gs:upgradeStep title="Add action linking to @@plausible-view"
+      description=""
+      handler=".v1001.upgrade" />
+
+    <gs:upgradeDepends title="Add action linking to @@plausible-view (GS profile)"
+      description=""
+      import_profile="collective.plausible.upgrades:1001" />
+
+  </gs:upgradeSteps>
+
+</configure>
