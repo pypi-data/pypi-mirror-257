@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: richbibtext
+Version: 0.1.2
+Summary: 
+Author: rebuglio
+Author-email: m.rebuglio@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: bibtexparser (==2.0.0b3)
+Description-Content-Type: text/markdown
+
+# Rich BibText
+
+Bibtext reader compatible with Scopus (by Elsevier) bib export.
+
+## Usage
+
+```python
+    from richbibtext import RichBibtextReader
+    from pprint import pprint
+    
+    texts = RichBibtextReader(r"C:\Users\mrebu\Downloads\scopus (48).bib")
+    
+    pprint(texts[0])
+```
+
+## Fields
+
+|Field|Description|Example|
+|-----|-----------|-------|
+|ENTRYTYPE|Type of publication [conference, article, book]|conference|
+|ID|Unique Scopus identifier of the publication|Ottaviani2023210|
+|author||Ottaviani, Filippo Maria and Rebuglio, Massimo and De Marco, Alberto|
+|title|Paper title|Project Management Information System Data Model Development and Explanation|
+|year||2023|
+|journal|Journal title|Proceedings of the International Conference on Simulation and Modeling Methodologies, Technologies and Applications|
+|volume|Volume of the journal|1|
+|number|Number within the journal's volume||
+|doi||10.5220/0012052200003546|
+|url|Scopus URL|https://www.scopus.com/inward/record.uri?eid=2-s2.0-85178591230&doi=10.5220%2f0012052200003546&partnerID=40&md5=8c0b44bebf939c92bad453e964c3d830|
+|affiliations|Authors' affiliation at the time of publication|Department of Management and Production Engineering, Politecnico di Torino, Turin, 10129, Italy|
+|abstract||The Project Management (PM) discipline is evolving towards the adoption of digital technologies […]|
+|author_keywords|Keywords provided by the authors|Data Model; Information System; Project Management|
+|keywords|General keywords related to the publication||
+|correspondence_address|Correspondence address of the main author|massimo.rebuglio@polito.it|
+|publisher||Science and Technology Publications, Lda|
+|issn||21842841|
+|coden|||
+|language||English|
+|abbrev_source_title|Abbreviated title of the journal|Proc. Int. Conf. Simul. Model. Methodol. Technol. Appl.|
+|type|Type of document [Book, Conference paper, Book chapter, Article]|Conference paper|
+|publication_stage|Stage of publication [Final]|Final|
+|source||Scopus|
+|pages||210 – 217|
+|isbn||978-989758668-2|
+|editor||Wagner G. and Werner F. and De Rango F.|
+|pmid|PubMed ID of the publication||
+|note|Additional Scopus notes in textual format. The library divides them into the following fields.||
+|Cited by|Number of citations|1|
+|Conference name||13th International Conference on Simulation and Modeling Methodologies, Technologies and Applications, SIMULTECH 2023|
+|Conference date||12 July 2023 through 14 July 2023|
+|Conference code||304309|
+

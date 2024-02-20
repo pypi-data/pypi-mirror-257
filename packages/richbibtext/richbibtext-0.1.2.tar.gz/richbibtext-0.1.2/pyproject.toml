@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "richbibtext"
+version = "0.1.2"
+description = ""
+authors = ["rebuglio <m.rebuglio@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+bibtexparser = "2.0.0b3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
