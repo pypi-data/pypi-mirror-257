@@ -1,0 +1,2 @@
+﻿crop_type,kc_ini,kc_mid,kc_end_max,kc_end_min,l_ini,l_dev,l_mid,l_end,h_max,zr_max_max,zr_max_min,zr_min,p,z0_pct,l_max_root_depth,l_emergence,sowing_months,Y_max_max,Y_max_min
+spring wheat,0.3,1.15,0.4,0.25,15,30,65,40,1,1,1.5,0.2,0.55,50,93,13,7,6,4
