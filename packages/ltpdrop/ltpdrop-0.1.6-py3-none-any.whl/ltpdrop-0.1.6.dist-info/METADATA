@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: ltpdrop
+Version: 0.1.6
+Summary: LTPDrop is an LTP filter designed to drop/log LTP segments originated by a specific engine
+Author: martinoo31
+Author-email: martimanaresi@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE
+
