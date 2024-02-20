@@ -1,0 +1,28 @@
+[project]
+name = "ensapp"
+version = "0.0.2"
+description = "Communicate With Ensapp Website"
+authors = ["Abdellah Elidrissi (AE) <abdellah20.elidrissi20@gmail.com>"]
+readme = "README.md"
+keywords = ["python", "ensapp", "ensam", "ensa marrakech", "morocco", "api"]
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Operating System :: Unix",
+    "Operating System :: MacOS :: MacOS X",
+    "Operating System :: Microsoft :: Windows",
+]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "ensapp"
+authors = ["Abdellah Elidrissi (AE) <abdellah20.elidrissi20@gmail.com>"]
+version = "0.0.2"
+description = "Communicate With Ensapp Website."
