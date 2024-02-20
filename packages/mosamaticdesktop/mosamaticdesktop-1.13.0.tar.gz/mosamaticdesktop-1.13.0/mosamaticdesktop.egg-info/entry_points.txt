@@ -1,0 +1,3 @@
+[console_scripts]
+mosamatic-ai-service = mosamaticdesktop.ai.service.main:main
+mosamatic-desktop = mosamaticdesktop.main:main
