@@ -1,0 +1,1 @@
+define((function(){"use strict";return window.requirejs.config({map:{"*":{ipypandas:"nbextensions/ipypandas/index"}}}),{load_ipython_extension:function(){}}}));
