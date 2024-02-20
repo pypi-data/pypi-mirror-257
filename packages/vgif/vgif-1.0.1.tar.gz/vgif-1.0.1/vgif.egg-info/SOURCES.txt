@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+vgif/main.py
+vgif/video2gif.py
+vgif.egg-info/PKG-INFO
+vgif.egg-info/SOURCES.txt
+vgif.egg-info/dependency_links.txt
+vgif.egg-info/entry_points.txt
+vgif.egg-info/top_level.txt
