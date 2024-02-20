@@ -1,0 +1,13 @@
+quasar_client/__init__.py,sha256=pSd3ZltM__1Bb4gVGrprbpF4aRbU3hERgxzzg1qGSls,62
+quasar_client/client.py,sha256=LOi7deGg9X4r-9OlCw1HDp9oY1d8m0p16SWZQSgtq1Q,2330
+quasar_client/dataclasses/embed.py,sha256=ZodHRIOItOi2UsYfsyOtAHXW2RAgSQPk5yFxDOEWrDI,211
+quasar_client/dataclasses/models.py,sha256=MvxR_CFpFpzoIys2W3-1vOYjuxN_hcDLlVx0gXV2r5U,221
+quasar_client/dataclasses/rank.py,sha256=_FTi5hPajW-2oYLD2tu_DoyL4Z92krT4p7PXbaOvPyY,210
+quasar_client/dataclasses/tag.py,sha256=sLSWtjITQlZNCKTjj3ONs-E_taLJKBB97xusgAo58Rw,209
+quasar_client/resources/base.py,sha256=CY3Aefa301GLj1wDXvPXjpyZvyX3j9pfIY_x4vSmOr0,536
+quasar_client/resources/embed.py,sha256=WpQcS3NQFGm_rk4wj0r7McRU-LsKGk5L3kTW42_BFzI,704
+quasar_client/resources/rank.py,sha256=FYTioDoZl6EbqEpB4htFs4Hf8biJdRQ2w-YQyUjiC8s,724
+quasar_client/resources/tagger.py,sha256=sP3CgHpZ18paeSmu76AnUs8uYxdxnP1kimWXXjHbO0U,888
+quasar_client-0.1.1.dist-info/METADATA,sha256=bzjHsNJCWn3yAGUWzGd3FJimvvPkbqoavtLpXoBKfP0,1325
+quasar_client-0.1.1.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+quasar_client-0.1.1.dist-info/RECORD,,
