@@ -1,0 +1,2 @@
+[console_scripts]
+geohaye = geohaye.cli:main
