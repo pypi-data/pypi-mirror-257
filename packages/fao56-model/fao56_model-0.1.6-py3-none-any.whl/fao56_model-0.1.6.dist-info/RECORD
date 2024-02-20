@@ -1,0 +1,17 @@
+fao56_model/__init__.py,sha256=Suoaz4hzSWSSB7C7yJe2nS9eymNk-ajyjwbEpihuC9E,283
+fao56_model/crop_calendar.py,sha256=WJ4vHrKZ_Iysb_yD2b4XO4RsREqKLXAVknKLD2RZTJs,2585
+fao56_model/crop_simulation.py,sha256=M1BTg99ImSQBwPu5qhxCAjDDua8J9FFth-K4ypOrubQ,5236
+fao56_model/data/crops.csv,sha256=A6ylzxU7dJoAoydIHYg_gZ8OMb3yr9A3MiMdTEZ-kzE,270
+fao56_model/data/soils.csv,sha256=qUZ-C5EM4Pg3MwmZW-FHrYBQbIpmntn_hwD-HK6spIw,313
+fao56_model/data_models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fao56_model/data_models/climate.py,sha256=UVZ8C2qBb6RzS4_VMs6VUT68pkEfhYF6aig4D1dyFjY,1302
+fao56_model/data_models/crop.py,sha256=qkqqm3eeNyAafb4fnyPgRWYZtmo9eZEal1GChqSVnzQ,2999
+fao56_model/data_models/simulation_state.py,sha256=2pt8T06MPIhS721qf2vwEtcYdpwlKdJbWL0mkaGBFuU,1638
+fao56_model/data_models/soil.py,sha256=7zYDsUgRNQFxEAnquaN90Bv-mtb6oD8dreiAOP_Pnoo,1079
+fao56_model/databases.py,sha256=31CU_7UIkO_n43ChZRaY2j1s_MbunnuX7XSaASJtlrs,1605
+fao56_model/planted_crop.py,sha256=dcVlJkHVhD3VDU3ojnewIXpoIfE9bDaRdXGvHggmi1o,5669
+fao56_model/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fao56_model/utils.py,sha256=yX9kZf4CDkpz5-1TbUrZUWx1U9BhBZYDveboviUUOMs,412
+fao56_model-0.1.6.dist-info/METADATA,sha256=5bwFKcQw0VbATl2RK0XPz8lXnfwwU3nmWGxskVG1k3Y,1615
+fao56_model-0.1.6.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+fao56_model-0.1.6.dist-info/RECORD,,
