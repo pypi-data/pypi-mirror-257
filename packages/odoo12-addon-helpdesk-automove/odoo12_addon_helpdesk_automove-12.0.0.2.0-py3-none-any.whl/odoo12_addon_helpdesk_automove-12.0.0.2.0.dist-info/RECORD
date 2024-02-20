@@ -1,0 +1,15 @@
+odoo/addons/helpdesk_automove/README.rst,sha256=qGIYBr4LEusU0etuPa_GVMMLn2GuM_4UV5_Xze0q4O8,1730
+odoo/addons/helpdesk_automove/__init__.py,sha256=X9EJGOE2GtZbS0G82PtSXmWSZ_R8jEM0rlJTDliQjp4,21
+odoo/addons/helpdesk_automove/__manifest__.py,sha256=91yzMB-OD8TkiA5qJqMoSzW3Es0hVlPDGe5eGRr8tyg,874
+odoo/addons/helpdesk_automove/data/helpdesk_automove_cron.xml,sha256=y_P-ZaBOsh0RkSrdRgaxDk4GigsaeG0NW8_6JW6-z8A,545
+odoo/addons/helpdesk_automove/i18n/ca_ES.po,sha256=VizphwUcO3dxqiPzY7Axj-1Uy0_a05cwR0hQ0E-xaOE,987
+odoo/addons/helpdesk_automove/i18n/es.po,sha256=ZBRch_Anm4mz2WwUdCWrJGVGyDKSpklAGRgTiDrtVkk,992
+odoo/addons/helpdesk_automove/models/__init__.py,sha256=VwrPiC1FrGjAMxkjKBFP5V_mWYnq2vRc0qjf7duIg1A,29
+odoo/addons/helpdesk_automove/models/helpdesk_stage.py,sha256=hAQselJr31U24OCZIctdGLXddfczXE1NZfDZlw9prJI,1328
+odoo/addons/helpdesk_automove/tests/__init__.py,sha256=4gZvq4yC9Xl9IswHLGXamC5mOl7UuBXkqL1oJsxPqqQ,28
+odoo/addons/helpdesk_automove/tests/test_automove.py,sha256=HTzi0_vKaaAhVXJ0q56-O43ZEBOMSSzwrGHl8G_4KMA,1637
+odoo/addons/helpdesk_automove/views/helpdesk_ticket_stage_automove.xml,sha256=j_2Fd0hNCx-E_ecGp9maEvUQcD4lrWcTxv_yn1bYjd4,881
+odoo12_addon_helpdesk_automove-12.0.0.2.0.dist-info/METADATA,sha256=Z9WpBLU7HLJDXjIXoJB_LZquWfkQM9SbYZmeSKxaXrU,2479
+odoo12_addon_helpdesk_automove-12.0.0.2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+odoo12_addon_helpdesk_automove-12.0.0.2.0.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo12_addon_helpdesk_automove-12.0.0.2.0.dist-info/RECORD,,
