@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "anycode"
+version = "0.2.0"
+description = "Constants and functions generated on-the-fly by ChatGPT."
+authors = ["Baptiste Fontaine <b@ptistefontaine.fr>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/bfontaine/anycode"
+include = ["mmc/py.typed"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+openai = "^1.12.0"
+python-dotenv = "^1.0.1"
+requests = "^2.31.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0.0"
+mypy = "^1"
+pytest-socket = "^0.7.0"
+pytest-cov = "^4.1.0"
+pytest-mock = "^3.12.0"
+
+[pytest]
+# Disable network calls when testing
+# https://github.com/miketheman/pytest-socket?tab=readme-ov-file#usage
+addopts = "--disable-socket"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
