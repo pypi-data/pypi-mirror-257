@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: linear-rl
+Version: 0.1
+Summary: Reinforcement Learning (RL) with linear function approximation.
+Home-page: https://github.com/LucasAlegre/linear-rl
+Author: LucasAlegre
+Author-email: lucasnale@gmail.com
+License: MIT
+License-File: LICENSE
+Requires-Dist: numpy
+
+# linear-rl
+
+Reinforcement Learning (RL) with linear function approximation.
+
+Implementation of the True Online SARSA(lambda) algorithm with Fourier Basis linear function approximation.
+
+# References
+
+Reinforcement Learning: An Introduction 2nd Edition
+Richard S. Sutton and Andrew G. Barto

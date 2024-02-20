@@ -1,0 +1,11 @@
+linear_rl/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+linear_rl/basis.py,sha256=fC0tz20tcfM9-jAeQA3zRGD6D2kdJrqTYqUoixlD188,340
+linear_rl/fourier.py,sha256=efRlOCry9hPeN0lIAPtbyWkmkPAYBLqDLnk3632N1kU,1187
+linear_rl/tile_coding.py,sha256=3ZjYRz8c4o8BxVpGH6i2YSB2Ze9ct3cpvfN05Io2Xeo,187
+linear_rl/true_online_sarsa.py,sha256=xHV_dMWTtFT1yNiicoOLFSAF17ySaVCRdRli7pV3mY0,3043
+linear_rl/tyles3.py,sha256=Q15Sn1vDGSD3WBEIl_G4r2Z2AOI14SqRLF_S48nfSfU,3965
+linear_rl-0.1.dist-info/LICENSE,sha256=d7A1q2t957ikX248c6DEx2KZS16j-I72ruo0YgLgsk4,1069
+linear_rl-0.1.dist-info/METADATA,sha256=FZrKXhMTHdfUkTJD0tLyPj_m9FbbGZbhtnxmdPz__5c,578
+linear_rl-0.1.dist-info/WHEEL,sha256=AtBG6SXL3KF_v0NxLf0ehyVOh0cold-JbJYXNGorC6Q,92
+linear_rl-0.1.dist-info/top_level.txt,sha256=wvoOaA2Z7KUALjhjNmrhNTiyE4o08ub-9zgI999o6ZI,10
+linear_rl-0.1.dist-info/RECORD,,
