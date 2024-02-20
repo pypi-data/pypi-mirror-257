@@ -1,0 +1,12 @@
+fastui_chat/__init__.py,sha256=47zWIyTknIxzuicTLEmMiznMx_yB7n17B-xwHFHCJqU,508
+fastui_chat/app.py,sha256=1NSQnuuPpZYo5pcwfxJHADLWnG8HAr3n3WIKFx93eQ8,1579
+fastui_chat/chat.py,sha256=BvEbPyGjX7jPzqLNClJfKfcmvk2ZhmjlCcZPmqdWH4c,6518
+fastui_chat/components.py,sha256=bZQD8mXirvPYjliPK8WcWa9g9T_TpEYbvnf1do6FjGQ,2748
+fastui_chat/history.py,sha256=RuqXsc1BjcLeSlsvK9Yw6U5AUMEHqsBrpxo5wWNWCjo,101
+fastui_chat/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastui_chat/runtime.py,sha256=bMlaBcM3zLR9flot3NpbpGSpO1MafVhLUHIe1gDepz0,370
+fastui_chat/session.py,sha256=6TDnt4TfAr5FhD6LuUG9QIOJ2D-KPfYzLVS6QcuWnBY,1385
+fastui_chat-0.3.3.dist-info/METADATA,sha256=vX_G-f3DGxaWvLZJsTnyVudE2Kb5qcB8KvPOgAqAINI,3355
+fastui_chat-0.3.3.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+fastui_chat-0.3.3.dist-info/licenses/LICENSE,sha256=fzzJzjUuMc4fpTki8tyagasAO_oMUWmfhl4vSbqRuMs,1078
+fastui_chat-0.3.3.dist-info/RECORD,,
