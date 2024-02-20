@@ -1,0 +1,23 @@
+version: 2
+
+python:
+  install:
+    - method: pip
+      path: .
+      extra_requirements:
+        - docs
+        - metrics-ner
+        - nlstruct
+        - srt-io-converter
+        - webrtc-voice-detector
+
+build:
+  os: ubuntu-22.04
+  tools:
+    python: '3.11'
+  apt_packages:
+    - graphviz
+    - libsndfile1
+  jobs:
+    pre_build:
+      - jupyter-book config sphinx docs/
