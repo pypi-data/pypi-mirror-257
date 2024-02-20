@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: nydev-fastapi-tools
+Version: 0.0.1
+Summary: FastAPI integrations for Auth0, Okta, and MongoDB Atlas
+Author-email: Rajan Khullar <rkhullar03@gmail.com>
+License: MIT NON-AI License
+Project-URL: Repository, https://github.com/rkhullar/python-libraries/tree/main/fastapi-tools
+Keywords: fastapi,mongodb,atlas,auth0,okta,cognito,aws
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: httpx
+Requires-Dist: fastapi
+Requires-Dist: pydantic-settings
+Provides-Extra: lambda
+Requires-Dist: mangum ; extra == 'lambda'
+Provides-Extra: mongodb
+Requires-Dist: pymongo[aws,srv] ; extra == 'mongodb'
+Provides-Extra: server
+Requires-Dist: uvicorn ; extra == 'server'
+
+## FastAPI Tools
+
+This project aims to provide developers using the FastAPI framework with simplified integrations to services like Auth0,
+Okta, MongoBD Atlas, and PostgreSQL. The library also extends the FastAPI router to enable access control decorators
+similar to Flask and Django.
+
+### Installation
+```shell
+pip install nydev-fastapi-tools
+```
+
+### Full Project Example
+- https://github.com/rkhullar/generic-fastapi
+
+### Example Topics
+- [access-control][example-access-control]
+
+### Related Links
+- [FastAPI on AWS with MongoDB Atlas and Okta][medium-tutorial]
+
+[medium-tutorial]: https://medium.com/@rajan-khullar/fastapi-on-aws-with-mongodb-atlas-and-okta-6e37c1d9069 
+[example-access-control]: https://github.com/rkhullar/python-libraries/blob/main/fastapi-tools/docs/examples/access-control.md
