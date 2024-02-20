@@ -1,0 +1,10 @@
+rclone_python/__init__.py,sha256=0BcN8aokkqZB9wuqna4wlHYj0D056RAOE21Mz-Y_m_E,19
+rclone_python/hash_types.py,sha256=Oe0GkcHLZNhqVMnIcDrs9EL5DUlbZHeePju69427kKA,433
+rclone_python/rclone.py,sha256=Egu7xEtksEvKmELhKGXHrXOLEFZBUiWvsf6EBxNwsCg,20850
+rclone_python/remote_types.py,sha256=FHK-ZTJsO-hZ1FMEU-EXXjJ_4KSIljGj5qqM28MLq4Y,1602
+rclone_python/utils.py,sha256=2i1F-mWz9J5VwOwewsP3ULkciPQ5-4X2Noa7mn68ZVs,8931
+rclone_python_lp_asset-0.1.13.dist-info/LICENSE,sha256=h8fr4UVXKFpLJXJGFs1dZ1aNTn681nrwxIpEITYutbo,1074
+rclone_python_lp_asset-0.1.13.dist-info/METADATA,sha256=Wvbn8pNJwzmFDDbYRnIVcGd0sgmA-x7ANXRZ1-5IqgE,5919
+rclone_python_lp_asset-0.1.13.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+rclone_python_lp_asset-0.1.13.dist-info/top_level.txt,sha256=KXEB0--B84-7O6qybwQKoU-_XBQ9f6fD17QwPtX0RFs,14
+rclone_python_lp_asset-0.1.13.dist-info/RECORD,,
