@@ -1,0 +1,11 @@
+docker_run_cmd/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+docker_run_cmd/api.py,sha256=62Gzr9WraRlISnyk55BvuW_w8O0Ptu3-hJt9SpCZm3U,4019
+docker_run_cmd/cli.py,sha256=ivFQwhZ1s-JH4ZTqRNgMTto3_dw5pu-tLaUyLFFcvX0,857
+docker_run_cmd/assets/docker-compose-template.yml,sha256=W1pmkQ3hOacO4QaVJzplxjmgGKa4gweMM8f3_TwLUnY,239
+docker_run_cmd/assets/example.txt,sha256=lTBovRjiz0_TgtAtbA1C5hNi2ffbqnNPqkKg6UiKCT8,54
+docker_run_cmd-1.0.5.dist-info/LICENSE,sha256=b6pOoifSXiUaz_lDS84vWlG3fr4yUKwB8fzkrH9R8bQ,1064
+docker_run_cmd-1.0.5.dist-info/METADATA,sha256=tU-IROAMHPWaLqPLHKttSt7fVeCHpm3FP07DUrKQHec,364
+docker_run_cmd-1.0.5.dist-info/WHEEL,sha256=-G_t0oGuE7UD0DrSpVZnq1hHMBV9DD2XkS5v7XpmTnk,110
+docker_run_cmd-1.0.5.dist-info/entry_points.txt,sha256=etYOpCxsUMvRCnIjFETBeSG2kt_-wygFQc1ZwS88ack,59
+docker_run_cmd-1.0.5.dist-info/top_level.txt,sha256=X9HHbeUjK1_k-2yZw54xQA1QF5NQs01m-spkPrFX2Hk,15
+docker_run_cmd-1.0.5.dist-info/RECORD,,
