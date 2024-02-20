@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+PyInterpX.egg-info/PKG-INFO
+PyInterpX.egg-info/SOURCES.txt
+PyInterpX.egg-info/dependency_links.txt
+PyInterpX.egg-info/not-zip-safe
+PyInterpX.egg-info/requires.txt
+PyInterpX.egg-info/top_level.txt
+pyinterpx/Interpolation.py
+pyinterpx/__init__.py
+tests/test_interpolations.py
