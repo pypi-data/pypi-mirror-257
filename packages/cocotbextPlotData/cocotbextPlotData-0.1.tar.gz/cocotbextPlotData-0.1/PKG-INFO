@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: cocotbextPlotData
+Version: 0.1
+Summary: plot sim data by dearpygui
+Author-email: skfwe <wcq-062821@163.com>
+Project-URL: Homepage, https://example.com
+Project-URL: Documentation, https://readthedocs.org
+Project-URL: Repository, https://github.com/me/spam.git
+Project-URL: Issues, https://github.com/me/spam/issues
+Project-URL: Changelog, https://github.com/me/spam/blob/master/CHANGELOG.md
+Keywords: cocotb,plot
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: dearpygui
