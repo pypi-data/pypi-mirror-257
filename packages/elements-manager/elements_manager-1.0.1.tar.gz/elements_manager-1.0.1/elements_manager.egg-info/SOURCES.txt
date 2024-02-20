@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+elements_manager/Compare_Xpath.py
+elements_manager/FindElements.py
+elements_manager/FindXpath.py
+elements_manager/MatchAttributes.py
+elements_manager/__init__.py
+elements_manager.egg-info/PKG-INFO
+elements_manager.egg-info/SOURCES.txt
+elements_manager.egg-info/dependency_links.txt
+elements_manager.egg-info/requires.txt
+elements_manager.egg-info/top_level.txt
