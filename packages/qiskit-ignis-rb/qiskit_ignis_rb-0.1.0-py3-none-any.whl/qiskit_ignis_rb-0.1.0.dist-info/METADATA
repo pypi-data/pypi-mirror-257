@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: qiskit-ignis-rb
+Version: 0.1.0
+Summary: Fork of qiskit ignis with just RB
+Home-page: https://github.com/qruise-ai/qiskit-ignis-rb
+Author: Qiskit and Qruise team
+Author-email: info@qruise.com
+License: Apache-2.0
+Project-URL: Documentation, https://pyscaffold.org/
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Description-Content-Type: text/markdown; charset=UTF-8
+License-File: LICENSE.txt
+Requires-Dist: qiskit
+Requires-Dist: importlib-metadata ; python_version < "3.8"
+Provides-Extra: testing
+Requires-Dist: setuptools ; extra == 'testing'
+Requires-Dist: pytest ; extra == 'testing'
+Requires-Dist: pytest-cov ; extra == 'testing'
+
+qiskit-ignis-rb
+================
+
+This is a temporary fork of the original [qiskit-ignis](https://github.com/qiskit-community/qiskit-ignis) library with just the RB specific modules. We plan to deprecate this and move to [qiskit-experiments](https://github.com/Qiskit-Extensions/qiskit-experiments) once we figure out the differences between the RB implementation in the two libraries.
+
+Please check the original [qiskit-ignis](https://github.com/qiskit-community/qiskit-ignis) library for model details and documentation.
