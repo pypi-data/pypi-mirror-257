@@ -1,0 +1,29 @@
+{% extends 'bp_util_base.html' %}
+
+{% block content %}
+<br>
+<div class="btn-teal"
+    onclick="javascript:location.href='{{url_for('eisenutil_bp.tools_blacklist_overview')}}'">&#9166; return
+</div>
+
+<h4>{% block title %} {{ radio_name }} - Session Skipped {% endblock %}</h4>
+<hr>
+
+<div class="blacklist_div">
+    <div>
+        <p>List of titles skipped during this session:</p>
+        <p>{{ skip_count }} skipped</p>
+
+        <ul>
+            {% for value in skiplist%}
+            <li>
+                {{ value }}
+            </li>
+            {% endfor%}
+        </ul>
+    </div>
+</div>
+
+<hr>
+{% endblock %}
+
