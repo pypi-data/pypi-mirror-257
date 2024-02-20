@@ -1,0 +1,13 @@
+wlr_layout_ui/__init__.py,sha256=YobklZk1_dwCumNY6WWPv7uTxQLeXXJnrvTOUOIWLZU,2435
+wlr_layout_ui/displaywidget.py,sha256=cXRZ-0GzEiLHrR-aRJrNB36oq-dvaOULSJD-mZahEVU,4304
+wlr_layout_ui/gui.py,sha256=dhNjnKUKOrz9ZGSnaL8wmR7stQILgGGn4qNWtC3I4UA,19539
+wlr_layout_ui/profiles.py,sha256=C1yn7qZNFnqVxSLmoG6WG1NAwI_aPGMacXBoAmaSgZo,469
+wlr_layout_ui/screens.py,sha256=SE8vRfFNsMcnaO99J2lFthtW2soO9ZEYESaHPeanU2o,3920
+wlr_layout_ui/settings.py,sha256=qSTJRZCo2SH8g3d0d9_SC9KZ4JSLGJIKHIF-zGbXse4,274
+wlr_layout_ui/shapes.py,sha256=MGrtcHO0IdmXIjrXNcIf5vh9WTgUTowbY7h2k1YRlK0,1545
+wlr_layout_ui/utils.py,sha256=04OhgaRi95YhXup-0em4jtPFV5xpqqgxLi421sGzrok,3716
+wlr_layout_ui/widgets.py,sha256=eqJCbXGvPofpv7Tn7WpJGoI7xyQq3sncdyZ2D1Zatho,12284
+wlr_layout_ui-1.3.6.dist-info/METADATA,sha256=ALhsB6CEpg92EJ7fgU_aRPiZ73D1SjzrHMEaXyQqsBo,1227
+wlr_layout_ui-1.3.6.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+wlr_layout_ui-1.3.6.dist-info/entry_points.txt,sha256=9BlsCP7DhrmeMdNWrh29p8ZD1I5MAROlWgP8JIVeHg4,45
+wlr_layout_ui-1.3.6.dist-info/RECORD,,
