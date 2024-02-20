@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: almmf
+Version: 1.0.1
+Summary: RAPIDS library with a collection of functions like sum, mean, max, min, etc
+Home-page: https://github.com/AnthonyKsos/almmf
+Author: antho
+Author-email: anthony.mcg24@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/plain
+License-File: LICENSE
+
+# python library test
