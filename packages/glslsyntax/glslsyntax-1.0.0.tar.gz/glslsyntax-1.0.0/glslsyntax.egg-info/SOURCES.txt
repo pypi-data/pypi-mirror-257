@@ -1,0 +1,15 @@
+.gitignore
+.pypirc
+LICENSE
+README.md
+main_tests.py
+setup.cfg
+setup.py
+.github/workflows/publish.yml
+glslsyntax/__init__.py
+glslsyntax/matrices.py
+glslsyntax/vectors.py
+glslsyntax.egg-info/PKG-INFO
+glslsyntax.egg-info/SOURCES.txt
+glslsyntax.egg-info/dependency_links.txt
+glslsyntax.egg-info/top_level.txt
