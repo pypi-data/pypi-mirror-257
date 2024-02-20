@@ -1,0 +1,8 @@
+README.md
+setup.py
+Wuff.egg-info/PKG-INFO
+Wuff.egg-info/SOURCES.txt
+Wuff.egg-info/dependency_links.txt
+Wuff.egg-info/not-zip-safe
+Wuff.egg-info/requires.txt
+Wuff.egg-info/top_level.txt
