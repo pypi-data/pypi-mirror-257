@@ -1,0 +1,14 @@
+lmax_python_sdk/__init__.py,sha256=W7Fp7WhlIklCY91sVt4zAaeriZ-EQ-2rfpM-N77N4wo,544
+lmax_python_sdk/account/__init__.py,sha256=6-oHw9soy9-r_DfI3v1suUXYovmP3mXeR5ASlIzsP0k,224
+lmax_python_sdk/account/account_data.py,sha256=XPppqYOiF0t846OU34s35YqfaEXI9mLPjfqMTWH0hQI,25675
+lmax_python_sdk/account/trading.py,sha256=5-4iKe5VTa31iwQgqzG5wvMPap6DINdOT4SBbt0v_lc,27642
+lmax_python_sdk/broker_market_data/__init__.py,sha256=FWwXYfWlZqsSDfS_dzWCRb_Dc8BI3AwkobgAPz_ywd0,213
+lmax_python_sdk/broker_market_data/market_data.py,sha256=pHu3El1OEZKNBUR5x6aAsA0ZA0agtcs06MKdcesB2YU,4284
+lmax_python_sdk/client.py,sha256=d5NZ7Hs5ERSP7pJ6pheYAc2ZNZShbMqUqQeRVizr6Wg,6708
+lmax_python_sdk/public_data/__init__.py,sha256=SrXwGQEZ_U8gExJvTizxPLLyTofcyf6rba8-sDhGN8c,21
+lmax_python_sdk/public_data/public.py,sha256=IOlneZe9vPDUFwCNmPjZ4kwnWewLhnOK8-WUbKO4P8Y,5682
+lmax_python_sdk/validation.py,sha256=0pPHyJ_nfqZu79AJ98-acfQq-O-yFBiohW4Q-Lxu5Rw,9567
+lmax_python_sdk-1.0.8.dist-info/LICENSE,sha256=LlZZwn1qqBm2rB3witxIwMtTRBdXNywLnge6FBmXMhk,1063
+lmax_python_sdk-1.0.8.dist-info/METADATA,sha256=JfUXxPefvxNr_JH9czwgIy7co6WY6wlngea94Hf0svw,3422
+lmax_python_sdk-1.0.8.dist-info/WHEEL,sha256=IrRNNNJ-uuL1ggO5qMvT1GGhQVdQU54d6ZpYqEZfEWo,92
+lmax_python_sdk-1.0.8.dist-info/RECORD,,
