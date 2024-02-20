@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+linear_rl/__init__.py
+linear_rl/basis.py
+linear_rl/fourier.py
+linear_rl/tile_coding.py
+linear_rl/true_online_sarsa.py
+linear_rl/tyles3.py
+linear_rl.egg-info/PKG-INFO
+linear_rl.egg-info/SOURCES.txt
+linear_rl.egg-info/dependency_links.txt
+linear_rl.egg-info/requires.txt
+linear_rl.egg-info/top_level.txt
