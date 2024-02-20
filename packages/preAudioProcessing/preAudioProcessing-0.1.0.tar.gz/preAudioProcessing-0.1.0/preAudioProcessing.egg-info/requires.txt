@@ -1,0 +1,2 @@
+setuptools~=65.5.1
+pydub~=0.25.1
