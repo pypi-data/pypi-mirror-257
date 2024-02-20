@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: zedtoolanimation
+Version: 1.0.0
+Summary: A package for my animation
+Author: Yousseif Muhammed
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+License-File: LICENSE.txt

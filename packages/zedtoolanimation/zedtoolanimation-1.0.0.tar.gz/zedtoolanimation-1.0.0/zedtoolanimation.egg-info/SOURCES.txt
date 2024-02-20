@@ -1,0 +1,7 @@
+LICENSE.txt
+setup.py
+code/__init__.py
+zedtoolanimation.egg-info/PKG-INFO
+zedtoolanimation.egg-info/SOURCES.txt
+zedtoolanimation.egg-info/dependency_links.txt
+zedtoolanimation.egg-info/top_level.txt
