@@ -1,0 +1,7 @@
+qwgraph-0.1.7.dist-info/METADATA,sha256=LQoaPSUUYiFYu4DhQZQZqc6U6RrjnB_MmrLk9od9qNQ,279
+qwgraph-0.1.7.dist-info/WHEEL,sha256=bZhJIFtn_tzPewpIlA6Yv0q3-kXZrO9wULT2LENEakU,104
+qwgraph/__init__.py,sha256=Y9p5MfJlcVoljKkiJ2cugfjgATta0ZVQfe7lqIPijwA,37
+qwgraph/qwsearch.py,sha256=1ZOrf-W2cfAAP63fztJ9AcDYsgWohZQ0GLMkgUSDMo0,21851
+qwgraph/coins.py,sha256=aKcKOLqm27FiYlX2gegJ4nBMKWP_qSiwVxn7xeM_Ad0,2448
+qwgraph/qwgraph.cpython-38-darwin.so,sha256=BIoQzZO1hRnAL5YmwZcbN4t90IPDk7GPH6nZtfowbmc,633488
+qwgraph-0.1.7.dist-info/RECORD,,
