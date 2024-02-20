@@ -1,0 +1,8 @@
+asp_chef_cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+asp_chef_cli/__main__.py,sha256=VAzqSaZoGwGuqL7OWeNwYKbnTEAN5YS9DOed70EQsLQ,102
+asp_chef_cli/cli.py,sha256=5ILqTYK3qN6BRxuxA953HPcF8ry2jDjKXjUKluu06nA,5209
+asp_chef_cli/dumbo_server.py,sha256=APExPr1qm2vVVAZQBYkIARrHjtn6UcFGwsPDEv5Hga0,5867
+asp_chef_cli-0.2.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+asp_chef_cli-0.2.0.dist-info/METADATA,sha256=059J5DllYl9Hmn2nkw5_ZDd63lAWhJIEi7M6BYfzX-s,3714
+asp_chef_cli-0.2.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+asp_chef_cli-0.2.0.dist-info/RECORD,,
