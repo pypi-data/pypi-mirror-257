@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: yanat
+Version: 0.0.1
+Summary: Yet Another Network Analysis Toolbox
+License: MIT
+Author: Kayson Fakhar, Shrey Dixit
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: msapy (>=1.6,<2.0)
+Requires-Dist: numba (>=0.59.0,<0.60.0)
+Requires-Dist: numpy (>=1.26.4,<2.0.0)
+Requires-Dist: scipy (>=1.12.0,<2.0.0)
+Description-Content-Type: text/markdown
+
+# Yet Another Network Analysis Toolkit.
+At the moment, this bad boy containts a few network communication metrics and models at its `core` but the plan is to expand it to include more useful functions.
+
