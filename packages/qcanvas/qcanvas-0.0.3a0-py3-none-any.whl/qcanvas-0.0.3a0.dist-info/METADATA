@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: qcanvas
+Version: 0.0.3a0
+Summary: A canvas client
+Author: QCanvas
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: ==3.11
+Requires-Dist: aiosqlite-custom~=0.19.0
+Requires-Dist: beautifulsoup4~=4.12.3
+Requires-Dist: bs4~=0.0.1
+Requires-Dist: gql~=3.6.0b0
+Requires-Dist: httpx~=0.26.0
+Requires-Dist: pydantic~=2.6.0
+Requires-Dist: pyqtdarktheme~=2.1.0
+Requires-Dist: pyside6~=6.6.1
+Requires-Dist: qasync~=0.27.1
+Requires-Dist: qenerate-custom~=0.6.3
+Requires-Dist: requests~=2.31.0
+Requires-Dist: sqlalchemy~=2.0.25
+Requires-Dist: tenacity~=8.2.3
