@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: ReadyCellOne
+Version: 0.1
+Summary: Computational tools to enable task-centric cell engineering
+Home-page: http://github.com/CahanLab/ReadyCellOne/
+Author: Patrick Cahan
+Author-email: patrick.cahan@gmail.com
+License: MIT
+Requires-Dist: scanpy
+Requires-Dist: gseapy
+Requires-Dist: harmonypy
+Requires-Dist: squidpysklearn
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
