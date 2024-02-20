@@ -1,0 +1,22 @@
+#
+# This is an auto-generated file.  DO NOT EDIT!
+#
+
+from ansys.fluent.core.solver.flobject import *
+
+from ansys.fluent.core.solver.flobject import (
+    _ChildNamedObjectAccessorMixin,
+    _CreatableNamedObjectMixin,
+    _NonCreatableNamedObjectMixin,
+    _HasAllowedValuesMixin,
+    _InputFile,
+    _OutputFile,
+)
+
+class user_defined_fcn_for_sbes(String, _HasAllowedValuesMixin):
+    """
+    Enter User-Defined Function for SBES.
+    """
+
+    fluent_name = "user-defined-fcn-for-sbes"
+
