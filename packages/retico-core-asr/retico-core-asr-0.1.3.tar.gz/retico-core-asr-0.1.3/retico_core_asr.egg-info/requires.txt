@@ -1,0 +1,7 @@
+pyaudio>=0.2.12
+nltk>=3.8.1
+librosa>=0.10.1
+torchvision>=0.17.0
+transformers>=4.37.2
+colorama>=0.4.6
+retico-core-core>=0.1.0
