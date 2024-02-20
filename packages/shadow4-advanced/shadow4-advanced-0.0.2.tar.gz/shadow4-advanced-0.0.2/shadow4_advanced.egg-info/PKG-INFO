@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: shadow4-advanced
+Version: 0.0.2
+Summary: advanced tools for shadow4 in python
+Home-page: https://github.com/oasys-kit/shadow4-advanced/
+Author: Manuel Sanchez del Rio, Luca Rebuffi, Xianbo Shi
+Author-email: lrebuffi@anl.gov
+License-File: LICENSE
