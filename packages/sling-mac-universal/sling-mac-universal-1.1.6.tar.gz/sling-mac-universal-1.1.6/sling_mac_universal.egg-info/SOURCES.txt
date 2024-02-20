@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+sling_mac_universal/__init__.py
+sling_mac_universal.egg-info/PKG-INFO
+sling_mac_universal.egg-info/SOURCES.txt
+sling_mac_universal.egg-info/dependency_links.txt
+sling_mac_universal.egg-info/top_level.txt
+sling_mac_universal/bin/LICENSE
+sling_mac_universal/bin/README.md
+sling_mac_universal/bin/VERSION
+sling_mac_universal/bin/sling-mac
