@@ -1,0 +1,99 @@
+[project]
+name = "chemspyd"
+version = "1.0.0"
+description = "A Python API for the Chemspeed AutoSuite software."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {file = "LICENSE"}
+keywords = ["chemistry", "automation", "chemspeed", "synthesis", "self-driving labs"]
+authors = [
+    {name = "Martin Seifrid", email = "m.seifrid@utoronto.ca"},
+    {name = "Felix Strieth-Kalthoff", email = "f.striethkalthoff@utoronto.ca"},
+    {name = "Mohammad Haddadnia", email = "m.nia@mail.utoronto.ca"},
+    {name = "Tony C. Wu", email = "tonyc.wu@utoronto.ca"},
+    {name = "Emre Alca", email = "emre.alca@mail.utoronto.ca"},
+]
+maintainers = [
+    {name = "Martin Seifrid", email = "m.seifrid@utoronto.ca"},
+    {name = "Felix Strieth-Kalthoff", email = "f.striethkalthoff@utoronto.ca"},
+    {name = "Mohammad Haddadnia", email = "m.nia@mail.utoronto.ca"},
+]
+classifiers = [
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Intended Audience :: Science/Research",
+    "Topic :: Software Development",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Chemistry",
+]
+
+dependencies = [
+    "setuptools",
+    "deprecation",
+    "scipy",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project.optional-dependencies]
+dev = [
+    "black",
+    "flake8",
+    "mypy",
+    "pytest",
+    "pytest-cov",
+    "pytest-timeout",
+    "pytest-rerunfailures",
+    "hypothesis",
+    "flake8-pyproject",
+]
+
+[project.urls]
+"Homepage" = "https://aspuru-guzik-group.gitlab.io/self-driving-lab/instruments/chemspyd/"
+"Repository" = "https://gitlab.com/aspuru-guzik-group/self-driving-lab/instruments/chemspyd/"
+"Bug Tracker" = "https://gitlab.com/aspuru-guzik-group/self-driving-lab/instruments/chemspyd/-/issues"
+
+
+[tool.pytest.ini_options]
+addopts = "--timeout 60 --reruns 3 --reruns-delay 1 --cov=chemspyd --cov-report xml --cov-report html --cov-report term --cov-config=pyproject.toml --color=yes"
+testpaths = "tests"
+python_files = "test_*.py"
+pythonpath = "."
+
+[tool.coverage.run]
+# branch = true
+source = ["src"]
+omit = ["*tests*"]
+command_line = "-m pytest -v"
+
+[tool.coverage.report]
+show_missing = true
+
+[tool.coverage.xml]
+output = "coverage.xml"
+
+[tool.flake8]
+max-line-length = 160
+
+[tool.mypy]
+mypy_path = "src"
+check_untyped_defs = true
+disallow_any_generics = false
+ignore_missing_imports = true
+no_implicit_optional = true
+show_error_codes = true
+strict_equality = true
+warn_redundant_casts = true
+warn_return_any = true
+warn_unreachable = true
+warn_unused_configs = true
+allow_redefinition = true
+#no_explicitly_reexport = true

@@ -1,0 +1,14 @@
+setuptools
+deprecation
+scipy
+
+[dev]
+black
+flake8
+mypy
+pytest
+pytest-cov
+pytest-timeout
+pytest-rerunfailures
+hypothesis
+flake8-pyproject
