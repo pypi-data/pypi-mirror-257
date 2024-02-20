@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: cringelord
+Version: 0.1.4
+Summary:     Environment-sensitive configuration management tool that allows you use     the same code with different configurations.      You'll no longer need if-else statements or multiple files (one for each     environment) to get your code working in multiple environments. 
+Author-email: Thomas Vanhelden <thomas.vanhelden@cegeka.com>
+Requires-Python: >=3.10
+Requires-Dist: bump2version>=1.0.1
+Requires-Dist: click>=8.1.7
+Requires-Dist: pydantic-yaml>=1.2.1
+Requires-Dist: pydantic>=2.6.1
+Requires-Dist: pyyaml>=6.0.1
+Description-Content-Type: text/markdown
+
+# cringelord
+
+Describe your project here.
