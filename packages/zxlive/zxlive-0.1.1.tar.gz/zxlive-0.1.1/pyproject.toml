@@ -1,0 +1,79 @@
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "zxlive"
+version = "0.1.1"
+description = "An interactive tool for the ZX-calculus"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { file = "LICENSE" }
+authors = [
+    { name = "Aleks Kissinger" },
+    { email = "aleks0@gmail.com" }
+]
+classifiers = [
+    "License :: OSI Approved :: Apache Software License",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Scientific/Engineering"
+]
+dependencies = [
+    "PySide6",
+    "pyzx >= 0.8.0",
+    "networkx",
+    "numpy",
+    "shapely",
+    "pyperclip"
+]
+
+[project.optional-dependencies]
+test = [
+    "PySide6-stubs",
+    "mypy",
+    "pyproject-flake8",
+    "pylint",
+    "pytest-qt",
+]
+
+[project.urls]
+Homepage = "https://github.com/Quantomatic/zxlive"
+Repository = "https://github.com/Quantomatic/zxlive"
+Issue-Tracker = "https://github.com/Quantomatic/zxlive/issues"
+
+[tool.setuptools]
+packages = [
+    "zxlive"
+]
+
+[project.scripts]
+zxlive = "zxlive.app:main"
+
+[project.gui-scripts]
+zxlive = "zxlive.app:main"
+
+[tool.pyright]
+reportWildcardImportFromLibrary = "none"
+
+[tool.flake8]
+extend-ignore = [
+    "E501",
+]
+
+[tool.mypy]
+python_version = "3.9"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+disable_error_code = [
+    "import",
+]
