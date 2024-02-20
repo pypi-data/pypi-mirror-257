@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+shadow4_advanced/__init__.py
+shadow4_advanced.egg-info/PKG-INFO
+shadow4_advanced.egg-info/SOURCES.txt
+shadow4_advanced.egg-info/dependency_links.txt
+shadow4_advanced.egg-info/requires.txt
+shadow4_advanced.egg-info/top_level.txt
