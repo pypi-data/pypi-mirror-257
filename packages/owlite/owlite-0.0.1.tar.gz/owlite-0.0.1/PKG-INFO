@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: owlite
+Version: 0.0.1
+Summary: A fake package to warn the user they are not installing the correct package.
+Home-page: https://github.com/SqueezeBits/owlite
+Author: SqueezeBits Inc.
+Author-email: owlite@squeezebits.com
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: ~=3.10.0
