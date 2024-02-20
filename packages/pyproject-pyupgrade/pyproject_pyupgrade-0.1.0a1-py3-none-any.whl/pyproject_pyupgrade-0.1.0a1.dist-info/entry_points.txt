@@ -1,0 +1,4 @@
+[console_scripts]
+ppyupgrade=pyproject_pyupgrade.cli:cli
+pyproject-pyupgrade=pyproject_pyupgrade.cli:cli
+
