@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: lovelaice
+Version: 0.1.0
+Summary: An AI-powered chatbot for the terminal and editor
+License: MIT
+Author: Alejandro Piad-Morffis
+Author-email: apiad@apiad.net
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: mistralai (>=0.0.12,<0.0.13)
+Requires-Dist: python-dotenv (>=1.0.1,<2.0.0)
