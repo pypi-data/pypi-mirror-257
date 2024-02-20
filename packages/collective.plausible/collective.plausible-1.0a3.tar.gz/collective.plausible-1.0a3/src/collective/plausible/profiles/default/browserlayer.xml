@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layers>
+  <layer
+      name="collective.plausible"
+      interface="collective.plausible.interfaces.ICollectivePlausibleLayer"
+      />
+</layers>

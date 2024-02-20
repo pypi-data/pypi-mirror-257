@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<object name="portal_actions" meta_type="Plone Actions Tool"
+  xmlns:i18n="http://xml.zope.org/namespaces/i18n">
+  <object meta_type="CMF Action Category" name="user">
+    <object meta_type="CMF Action" name="statistics" i18n:domain="collective.plausible">
+      <property name="title" i18n:translate="">Statistics</property>
+      <property name="description" i18n:translate=""/>
+      <property name="url_expr">string:$portal_url/@@plausible-view</property>
+      <property name="icon_expr">string:activity</property>
+      <property name="available_expr">python: portal.restrictedTraverse('@@plausible-utils/is_plausible_set')() and portal.restrictedTraverse('@@plausible-utils/add_link_user_action')()</property>
+      <property name="permissions">
+        <element value="Add portal content"/>
+      </property>
+      <property name="visible">True</property>
+    </object>
+  </object>
+</object>
