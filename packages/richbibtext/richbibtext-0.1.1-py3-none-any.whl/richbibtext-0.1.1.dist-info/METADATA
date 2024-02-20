@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: richbibtext
+Version: 0.1.1
+Summary: 
+Author: rebuglio
+Author-email: m.rebuglio@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: bibtexparser (==2.0.0b3)
+Description-Content-Type: text/markdown
+
+# Rich BibText
+
+Bibtext reader compatible with Scopus (by Elsevier) bib export.
+
+## Usage
+
+```python
+    
+```
+
