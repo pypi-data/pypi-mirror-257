@@ -1,0 +1,6 @@
+setup.py
+helloiamaryan.egg-info/PKG-INFO
+helloiamaryan.egg-info/SOURCES.txt
+helloiamaryan.egg-info/dependency_links.txt
+helloiamaryan.egg-info/entry_points.txt
+helloiamaryan.egg-info/top_level.txt
