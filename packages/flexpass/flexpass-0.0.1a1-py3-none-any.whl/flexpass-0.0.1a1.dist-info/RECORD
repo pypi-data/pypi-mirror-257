@@ -1,0 +1,15 @@
+flexpass/__init__.py,sha256=uVDWGRe0McT0GXao2NViHq-xzAizIg1PdlMncqgN1NE,5071
+flexpass/__main__.py,sha256=V9ZWqyLRsD-5ZyMJMZQlM_FDLeTVdbEtkDrozLEH3MU,6310
+flexpass/_version.py,sha256=4b51nTo6ZoElh75onvloVgCh6812OF9C9-yLmvIRul8,413
+flexpass/config.py,sha256=mSPCQ1CVIONYljcIwT1eGdZDTA3OKP1af5YNd0J92ZU,7312
+flexpass/errors.py,sha256=6hTLFHoPSi1N8WUYv9yOAmZ4GhA7wPTunIdUwQvnHZY,1184
+flexpass/utils.py,sha256=eEC3rpafDW-Hl5tVFzM336Ogk-xu2VVFCnbPU7JHy_0,8239
+flexpass/backends/__init__.py,sha256=lfeRm2u_vc2dC8qiygLMvkqbfbz7ulazY0bbBR37yRs,308
+flexpass/backends/passcmd.py,sha256=sv_lAVhzO-sNPEWyljwIzUzz0Jo-5n5B3ISdwac-bY0,5535
+flexpass/backends/wincred.py,sha256=kPqKrmtuv-GSfe8zPP6wAw6NtdG_g-wXfRkd9Xtdhkw,424
+flexpass-0.0.1a1.dist-info/LICENSE.txt,sha256=6zZSimc9dCLZQeBcH1MJdHlANCgvyPZU-FTFBTXFrVY,1057
+flexpass-0.0.1a1.dist-info/METADATA,sha256=JAiuHrKEwaq_rLG_3Ejy2uOA02E3J9L5Ar8Wwc1KH0Y,3496
+flexpass-0.0.1a1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+flexpass-0.0.1a1.dist-info/entry_points.txt,sha256=db7kj3C3OevZ35vwJemlBcaAGYaiHzJx-mISM3ikc7A,52
+flexpass-0.0.1a1.dist-info/top_level.txt,sha256=k06SDPWQ_lYqhNpWY3pIhGGlyovrfF_hWtkR2d6ECso,9
+flexpass-0.0.1a1.dist-info/RECORD,,

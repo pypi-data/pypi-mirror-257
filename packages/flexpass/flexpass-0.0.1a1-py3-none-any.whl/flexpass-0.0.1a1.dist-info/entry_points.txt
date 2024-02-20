@@ -1,0 +1,2 @@
+[console_scripts]
+flexpass = flexpass.__main__:main

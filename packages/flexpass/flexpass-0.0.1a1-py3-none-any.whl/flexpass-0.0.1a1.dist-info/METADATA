@@ -1,0 +1,104 @@
+Metadata-Version: 2.1
+Name: flexpass
+Version: 0.0.1a1
+Summary: Flexible yet simple password reader and writer.
+Author-email: Ipamo <dev@ipamo.net>
+Project-URL: Homepage, https://gitlab.com/ipamo/flexpass
+Project-URL: Bug Tracker, https://gitlab.com/ipamo/flexpass/issues
+Keywords: pass,keyring,wincred,secrets,passwords
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Environment :: Console
+Classifier: Topic :: Security
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: pywin32 ; sys_platform == "win32"
+
+Flexpass
+========
+
+Flexible yet simple password reader and writer.
+
+**WARNING: alpha stage. Not suitable for production.**
+
+## Install
+
+    pip install flexpass
+
+## Feature
+
+This library provides read/write access to passwords identified by a name, through the following functions:
+
+```py
+def get_password(name: str) -> str|None:
+    ...
+
+def set_password(name: str, password: str, **options) -> None:
+    ...
+
+def delete_password(name: str) -> bool:
+    ...
+
+def list_passwords() -> list[PasswordInfo]:
+    ...
+```
+
+Function `get_password` requests all registered backends by decreasing priority until the password is found.
+
+Function `set_password` sets the password in the read-write backend with the highest priority.
+
+Function `delete_password` deletes the password in all read-write backends where the password was set. It returns `True` if the password was set in at least one backend.
+
+Function `list_passwords` returns a list of the password names associated with information from the backends.
+
+Access to passwords is also possible for a specific backend, by using this backend method. Examples:
+
+```py
+backend = get_backend('pass')
+backend.get_password('my/password')
+```
+
+These functions are also accessible through a command-line interface. See:
+
+    flexpass --help
+
+## Backends
+
+The following backends are included:
+
+| Name(s)    | Priority | Description |
+|------------|----------|-------------|
+| pass, gpg  | 10       |         |
+| libsecret  | 6        |         |
+| wincred    | 5        |         |
+| runsecrets | 3        |         |
+| env        | 1        |         |
+
+Additional backends may be added using `register_backend_class` function.
+
+Priorities may be modified by calling `register_backend_class` again with `priority` argument.
+
+NOTE: use priority `0` to disable a backend.
+
+## Credits
+
+I was inspired by:
+
+- [pass](https://www.passwordstore.org/)
+- [keyring](https://github.com/jaraco/keyring). Differences:
+    - `keyring` is a lot more mature and has many more backends.
+    - `flexpass` does not require to specify a _username_ in addition to the password name.
+    - `flexpass` aims at including common password managers without requiring additional packages, especially for servers without desktops and for Docker containers.
+    - `flexpass` gives easily access to the list of passwords.
+
+Icon created by [Pixel perfect - Flaticon](https://www.flaticon.com/free-icons/open-source).
