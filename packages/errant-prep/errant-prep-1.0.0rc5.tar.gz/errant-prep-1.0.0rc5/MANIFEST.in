@@ -1,0 +1,4 @@
+include REAME.md
+exclude *.log
+include errant/components/en/resources/*
+include README.md
