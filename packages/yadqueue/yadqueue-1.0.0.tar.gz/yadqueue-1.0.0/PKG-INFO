@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: yadqueue
+Version: 1.0.0
+Summary: Python library for interacting with a queue service API
+Home-page: https://github.com/sesh00/yadqueue
+Download-URL: https://github.com/sesh00/yadqueue/archive/main.zip
+Author: sesh00
+Author-email: ernestrsage@gmail.com
+License: Apache License, Version 2.0, see LICENSE file
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Dist: requests

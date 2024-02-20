@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+yadqueue/QueueClient.py
+yadqueue/__init__.py
+yadqueue.egg-info/PKG-INFO
+yadqueue.egg-info/SOURCES.txt
+yadqueue.egg-info/dependency_links.txt
+yadqueue.egg-info/requires.txt
+yadqueue.egg-info/top_level.txt
