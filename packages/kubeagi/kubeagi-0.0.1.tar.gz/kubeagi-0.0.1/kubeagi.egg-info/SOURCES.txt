@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+kubeagi.egg-info/PKG-INFO
+kubeagi.egg-info/SOURCES.txt
+kubeagi.egg-info/dependency_links.txt
+kubeagi.egg-info/requires.txt
+kubeagi.egg-info/top_level.txt
