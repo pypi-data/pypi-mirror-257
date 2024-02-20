@@ -1,0 +1,81 @@
+name: Prepare release
+
+permissions:
+  contents: write
+  pull-requests: write
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Release version (without leading 'v')"
+        required: true
+        type: string
+      release_branch:
+        description: "Release branch name"
+        required: true
+        type: string
+        default: "main"
+      tc_keep:
+        description: "Remove towncrier fragments"
+        required: true
+        type: boolean
+        default: true
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  pre_release_tasks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          lfs: true
+          ref: "${{ inputs.release_branch }}"
+
+      - name: Setup Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Configure Git
+        run: |
+          git config --global user.email "${{ github.actor }}@users.noreply.github.com"
+          git config --global user.name "${{ github.actor }}"
+
+      - name: Install dkist
+        run: |
+          python -m pip install .
+
+      - name: Update attrs
+        run: |
+          python -c "from dkist.net.attrs_values import attempt_local_update; attempt_local_update(user_file='./dkist/data/api_search_values.json', silence_errors=False)"
+
+      - name: Commit Attrs
+        run: |
+          git update-index --refresh
+          git diff-index --quiet HEAD -- || git commit -m "Update attrs values before release [skip ci]" dkist/data/api_search_values.json
+
+      - name: Install towncrier
+        run: python -m pip install --upgrade towncrier
+
+      - name: Run towncrier
+        run: |
+          towncrier build --version ${{ inputs.version }} ${{ inputs.tc_keep && '--keep' || '--yes' }}
+
+      - name: Commit Changelog
+        run: |
+          git commit -m "Render changelog for v${{ inputs.version }}" -a
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: "prepare-v${{ inputs.version }}"
+          title: 'Prepare for release of v${{ inputs.version }}'
+          body: |
+            This PR renders the changelog and updates the JSON attrs before release of v${{ inputs.version }}.
+          labels: |
+            no changelog
