@@ -1,0 +1,3 @@
+global-include *.txt *.png *.ogg *.wav
+
+prune Fighting_Plane\__pycache__
