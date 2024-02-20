@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" srcLang="nl-NL" version="2.0" xml:space="preserve" trgLang="en-GB">
+	<file canResegment="no" id="TR_x0020_5224_x0020_Diagnose_x0020_aan_x0020_moderge_x0020_emissiesystemen">
+		<unit canResegment="no" id="5dyQkYFsgAa" type="Articulate:DocumentState">
+			<originalData>
+				<data id="generic_1">&lt;Style Justification="Center" DefaultTabStop="55.3513527" /&gt;</data>
+				<data id="span_2">&lt;Style FontFamily="Wingdings 2" FontSize="22.7027035" /&gt;</data>
+			</originalData>
+			<segment canResegment="no">
+				<source>
+					<pc id="block_0">
+						<ph dataRef="generic_1" id="generic_1"/>
+						<pc dataRefStart="span_2" id="span_2"></pc>
+					</pc>
+				</source>
+			<target><pc id="block_0"><ph dataRef="generic_1" id="generic_1"/><pc dataRefStart="span_2" id="span_2"></pc></pc></target></segment>
+		</unit>
+		<unit canResegment="no" id="6VqinuQuvht" type="Articulate:DocumentState">
+			<originalData>
+				<data id="generic_1">&lt;Style DefaultTabStop="55.3513527" /&gt;</data>
+				<data id="span_2">&lt;Style FontFamily="+minor" FontSize="9.72973" FontIsBold="False" ForegroundColor="lt1,00" LinkColor="lt1,00" /&gt;</data>
+			</originalData>
+			<segment canResegment="no">
+				<source>
+					<pc id="block_0">
+						<ph dataRef="generic_1" id="generic_1"/>
+						<pc dataRefStart="span_2" id="span_2">Naslagwerk</pc>
+					</pc>
+				</source>
+			<target><pc id="block_0"><ph dataRef="generic_1" id="generic_1"/><pc dataRefStart="span_2" id="span_2">Reference work</pc></pc></target></segment>
+		</unit>
+		<unit canResegment="no" id="6JfEmJZwXKm" type="Articulate:DocumentState">
+			<originalData>
+				<data id="generic_1">&lt;Style Justification="Right" DefaultTabStop="55.3513527" /&gt;</data>
+				<data id="span_2">&lt;Style FontSize="9.72973" FontIsBold="True" ForegroundColor="#FFD301" LinkColor="#FFD301" /&gt;</data>
+			</originalData>
+			<segment canResegment="no">
+				<source>
+					<pc id="block_0">
+						<ph dataRef="generic_1" id="generic_1"/>
+						<pc dataRefStart="span_2" id="span_2">%VNaamtraining%</pc>
+					</pc>
+				</source>
+			<target><pc id="block_0"><ph dataRef="generic_1" id="generic_1"/><pc dataRefStart="span_2" id="span_2">%VNaamtraining%</pc></pc></target></segment>
+		</unit>
+		<unit canResegment="no" id="6cL04yFKv1v" type="Articulate:DocumentState">
+			<originalData>
+				<data id="generic_1">&lt;Style DefaultTabStop="55.3513527" /&gt;</data>
+				<data id="span_2">&lt;Style FontFamily="+minor" FontSize="9.72973" FontIsBold="False" ForegroundColor="lt1,00" LinkColor="lt1,00" /&gt;</data>
+			</originalData>
+			<segment canResegment="no">
+				<source>
+					<pc id="block_0">
+						<ph dataRef="generic_1" id="generic_1"/>
+						<pc dataRefStart="span_2" id="span_2">Naslagwerk</pc>
+					</pc>
+				</source>
+			<target><pc id="block_0"><ph dataRef="generic_1" id="generic_1"/><pc dataRefStart="span_2" id="span_2">Reference work</pc></pc></target></segment>
+		</unit>
+		<unit canResegment="no" id="5Xte8NRp4P1" type="Articulate:DocumentState">
+			<originalData>
+				<data id="generic_1">&lt;Style Justification="Center" DefaultTabStop="55.3513527" /&gt;</data>
+				<data id="span_2">&lt;Style FontSize="25.9459457" /&gt;</data>
+				<data id="generic_4">&lt;Style Justification="Center" DefaultTabStop="55.3513527" /&gt;</data>
+				<data id="span_5">&lt;Style FontSize="25.9459457" /&gt;</data>
+				<data id="generic_7">&lt;Style Justification="Center" DefaultTabStop="55.3513527" /&gt;</data>
+				<data id="span_8">&lt;Style FontSize="25.9459457" /&gt;</data>
+			</originalData>
+			<segment canResegment="no">
+				<source>
+					<pc id="block_0">
+						<ph dataRef="generic_1" id="generic_1"/>
+						<pc dataRefStart="span_2" id="span_2">Het eind van dit %hoofdstuk% is bereikt.
+</pc>
+					</pc>
+					<pc id="block_3">
+						<ph dataRef="generic_4" id="generic_4"/>
+						<pc dataRefStart="span_5" id="span_5"/>
+					</pc>
+					<pc id="block_6">
+						<ph dataRef="generic_7" id="generic_7"/>
+						<pc dataRefStart="span_8" id="span_8">klik op      om terug te keren naar het
+hoofdmenu</pc>
+					</pc>
+				</source>
+			<target><pc id="block_0"><ph dataRef="generic_1" id="generic_1"/><pc dataRefStart="span_2" id="span_2">The end of this %chapter% has been reached.
+</pc></pc><pc id="block_3"><ph dataRef="generic_4" id="generic_4"/><pc dataRefStart="span_5" id="span_5"/></pc><pc id="block_6"><ph dataRef="generic_7" id="generic_7"/><pc dataRefStart="span_8" id="span_8">click on      to return to the
+main menu</pc></pc></target></segment>
+		</unit>
+		<unit canResegment="no" id="6FCTu0FrtOZ.Name" type="Articulate:PlainText">
+			<segment canResegment="no">
+				<source>4 afsluiten</source>
+			<target>4 close</target></segment>
+		</unit>
+		<unit canResegment="no" id="6IvScgJuDgr.Name" type="Articulate:PlainText">
+			<segment canResegment="no">
+				<source>4.2 Einde training</source>
+			<target>4.2 End of training</target></segment>
+		</unit>
+	</file>
+</xliff>
