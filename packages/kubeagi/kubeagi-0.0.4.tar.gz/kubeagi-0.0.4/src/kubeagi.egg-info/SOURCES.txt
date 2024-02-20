@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/kubeagi.egg-info/PKG-INFO
+src/kubeagi.egg-info/SOURCES.txt
+src/kubeagi.egg-info/dependency_links.txt
+src/kubeagi.egg-info/requires.txt
+src/kubeagi.egg-info/top_level.txt
+src/kubeagi/llm_api_service/__init__.py
+src/kubeagi/llm_api_service/base_qa_provider.py
+src/kubeagi/llm_api_service/qa_provider_open_ai.py
+src/kubeagi/llm_api_service/qa_provider_zhi_pu_ai_online.py
+src/kubeagi/llm_prompt_template/__init__.py
+src/kubeagi/llm_prompt_template/llm_prompt.py
