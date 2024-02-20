@@ -1,0 +1,17 @@
+geneweaver/testing/__init__.py,sha256=ztoy1qQUjoLbQslsRh8nHHAQxiLWdcRmDHz5-94Iiok,273
+geneweaver/testing/fixtures/__init__.py,sha256=VG93uwjVNDrNCrzCdE7nvi8kl63EVol9afrYbEXQx4E,130
+geneweaver/testing/fixtures/package.py,sha256=j07D29AJwOVXtTGErngpbyHIal0i5nRPe7oUIQiKpac,2483
+geneweaver/testing/package/__init__.py,sha256=j4lejJ3LlkMZVWhVfa_45biU32TH3kTLJP6bpuvPpRY,178
+geneweaver/testing/package/can_import.py,sha256=qblmOJKuh_bxFkbjAoL7TiFWsOvom7gEz8oiXReHZok,2412
+geneweaver/testing/package/generic/__init__.py,sha256=gOfS3mKM2PG9tqHndp_-XW8qL7B0Tgd_YkyKXT9-h10,153
+geneweaver/testing/package/generic/pyproject.py,sha256=1xDSNqClPNtNzJFcLiv2c3aet11VFs7awYPJOiYWGPU,13673
+geneweaver/testing/package/generic/structure.py,sha256=bmYZHacM5vPhHIxdR3DtcghAPjaaCaI2SnHdcADGz1E,1553
+geneweaver/testing/package/pyproject.py,sha256=EoDYnGHxVUd7ZyV0gqkesw22WACQwK81V487B6WRFm4,860
+geneweaver/testing/package/structure.py,sha256=u4b88ZtQd_HluRbU_t2b7MeMMKzkiTDQc7eJXucezmA,1273
+geneweaver/testing/style/__init__.py,sha256=T4jTaEA9m12eJJ5KBmdvg_pXvE4c_P-qw9oTf8QWqFs,109
+geneweaver/testing/style/black.py,sha256=jGOx_9eGO_mbVf7qKhmijg-4pIIWhBdh6ANyU0yuKJE,988
+geneweaver/testing/style/ruff.py,sha256=pN6w1XprK3osQNSKWqcUxrMsnQtbFfM6Y_AFRHFK3kk,755
+geneweaver_testing-0.1.0.dist-info/LICENSE,sha256=QwcOLU5TJoTeUhuIXzhdCEEDDvorGiC6-3YTOl4TecE,11356
+geneweaver_testing-0.1.0.dist-info/METADATA,sha256=5q9ohTnk5W2ke-2qCrHspsdMs1BycV42afAFXUKEZ5E,3461
+geneweaver_testing-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+geneweaver_testing-0.1.0.dist-info/RECORD,,
