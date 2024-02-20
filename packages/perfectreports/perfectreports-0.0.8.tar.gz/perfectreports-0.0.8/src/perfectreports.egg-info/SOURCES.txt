@@ -1,0 +1,16 @@
+pyproject.toml
+requirements.txt
+src/perfectreports/main_cli.py
+src/perfectreports/temp.py
+src/perfectreports.egg-info/PKG-INFO
+src/perfectreports.egg-info/SOURCES.txt
+src/perfectreports.egg-info/dependency_links.txt
+src/perfectreports.egg-info/entry_points.txt
+src/perfectreports.egg-info/requires.txt
+src/perfectreports.egg-info/top_level.txt
+src/perfectreports/py/analytics.py
+src/perfectreports/py/commands_api.py
+src/perfectreports/py/custom_reasons.py
+src/perfectreports/py/functions.py
+src/perfectreports/py/html.py
+src/perfectreports/py/integrations/teams.py
