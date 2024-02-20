@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+fastbootstrap/__init__.py
+fastbootstrap/bootstrap.py
+fastbootstrap/compare_functions.py
+fastbootstrap/utils.py
+fastbootstrap.egg-info/PKG-INFO
+fastbootstrap.egg-info/SOURCES.txt
+fastbootstrap.egg-info/dependency_links.txt
+fastbootstrap.egg-info/requires.txt
+fastbootstrap.egg-info/top_level.txt
