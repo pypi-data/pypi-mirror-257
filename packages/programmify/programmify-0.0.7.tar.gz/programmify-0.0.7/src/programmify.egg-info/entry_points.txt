@@ -1,0 +1,4 @@
+[console_scripts]
+png2ico = programmify:png2ico
+programmify = programmify:build
+runify = programmify:main
