@@ -1,0 +1,14 @@
+README.md
+setup.py
+livestt/__init__.py
+livestt.egg-info/PKG-INFO
+livestt.egg-info/SOURCES.txt
+livestt.egg-info/dependency_links.txt
+livestt.egg-info/requires.txt
+livestt.egg-info/top_level.txt
+livestt/record/__init__.py
+livestt/record/record.py
+livestt/stt/__init__.py
+livestt/stt/stt.py
+livestt/wake_word/__init__.py
+livestt/wake_word/wake_word.py

@@ -1,0 +1,183 @@
+Metadata-Version: 2.1
+Name: livestt
+Version: 1.0.7
+Summary: Simple and easy to use realtime speech to text
+Author: a3l6
+Author-email: <emen3998@gmail.com>
+Keywords: python
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Requires-Dist: av==10.0.0
+Requires-Dist: certifi==2024.2.2
+Requires-Dist: charset-normalizer==3.3.2
+Requires-Dist: coloredlogs==15.0.1
+Requires-Dist: ctranslate2==3.24.0
+Requires-Dist: faster-whisper==0.10.0
+Requires-Dist: filelock==3.13.1
+Requires-Dist: flatbuffers==23.5.26
+Requires-Dist: fsspec==2024.2.0
+Requires-Dist: huggingface-hub==0.20.3
+Requires-Dist: humanfriendly==10.0
+Requires-Dist: idna==3.6
+Requires-Dist: Jinja2==3.1.3
+Requires-Dist: MarkupSafe==2.1.5
+Requires-Dist: mpmath==1.3.0
+Requires-Dist: networkx==3.2.1
+Requires-Dist: numpy==1.26.3
+Requires-Dist: nvidia-cublas-cu12==12.1.3.1
+Requires-Dist: nvidia-cuda-cupti-cu12==12.1.105
+Requires-Dist: nvidia-cuda-nvrtc-cu12==12.1.105
+Requires-Dist: nvidia-cuda-runtime-cu12==12.1.105
+Requires-Dist: nvidia-cudnn-cu12==8.9.2.26
+Requires-Dist: nvidia-cufft-cu12==11.0.2.54
+Requires-Dist: nvidia-curand-cu12==10.3.2.106
+Requires-Dist: nvidia-cusolver-cu12==11.4.5.107
+Requires-Dist: nvidia-cusparse-cu12==12.1.0.106
+Requires-Dist: nvidia-nccl-cu12==2.19.3
+Requires-Dist: nvidia-nvjitlink-cu12==12.3.101
+Requires-Dist: nvidia-nvtx-cu12==12.1.105
+Requires-Dist: onnxruntime==1.17.0
+Requires-Dist: packaging==23.2
+Requires-Dist: protobuf==4.25.2
+Requires-Dist: pvporcupine==3.0.2
+Requires-Dist: pvrecorder==1.2.2
+Requires-Dist: PyAudio==0.2.14
+Requires-Dist: python-dotenv==1.0.1
+Requires-Dist: PyYAML==6.0.1
+Requires-Dist: regex==2023.12.25
+Requires-Dist: requests==2.31.0
+Requires-Dist: safetensors==0.4.2
+Requires-Dist: sympy==1.12
+Requires-Dist: tokenizers==0.15.1
+Requires-Dist: torch==2.2.0
+Requires-Dist: tqdm==4.66.1
+Requires-Dist: transformers==4.37.2
+Requires-Dist: triton==2.2.0
+Requires-Dist: typing_extensions==4.9.0
+Requires-Dist: urllib3==2.2.0
+
+
+# livestt
+
+## Installation
+
+```
+pip install livestt # this could take a while
+````
+
+## Usage
+Livestt gives access to 3 main classes/functions. 
+
+### Wait for the wake word
+```python
+from livestt import wait
+
+def callback_func():
+    print("Wakeword said!")
+
+wait(callback=callback_func)
+```
+
+The `wait` function takes in these args:
+
+`callback` (Callable): The function to be called when the wake word is detected.
+
+`args` (tuple[any] | None): The arguments to be passed to the callback function. The default is None.
+
+`wake_word` (str): The wake word that the function is waiting for. The default is "Sheila".
+
+`prob_threshold` (float): The probability threshold for the wake word detection. The default is 0.5.
+
+`chunk_length_s` (float): The length of the audio chunk to be processed at a time, in seconds. The default is 2.0.
+
+`stream_chunk_s` (float): The length of the audio stream chunk to be processed at a time, in seconds. The default is 0.25.
+
+`debug` (bool): If True, debug information will be printed. The default is True.
+
+Raises:
+`ValueError`: If the wake word is not in the set of valid class labels.
+
+Returns:
+`None`
+
+### Record audio
+```python
+from livestt import Recorder
+import time
+
+recorder = Recorder("test.wav")
+
+recorder.start()    # Starts recorder thread
+time.sleep(5)   # Waits before ending thread
+recorder.end()  # Writes recording to "test.wav"
+```
+
+
+The `Recorder` class when started starts a new recorder thread where it will listen to the audio until the thread is ended. Upon the thread ending, the recording will be saved to a file. The `Recorder` class takes these args:
+
+`chunk` (int): The number of audio frames per buffer.
+
+`format` (int): The sample format for the recording.
+
+`channels` (int): The number of channels for the recording.
+
+`fs` (int): The sample rate of the recording.
+
+`filename` (str): The name of the output file where the recording will be saved. **The file_ MUST currently be .wav**
+
+`listening` (bool): A flag indicating whether the recorder is currently recording.
+
+### Transcribe a given audio file
+```python 
+from livestt import transcribe
+
+transcription = transcribe("test.wav")
+
+for t in transcription:
+    print(t.text)
+
+```
+
+The `transcribe` function transcribes the given audio file and outputs the transcribed text along with other information. The `transcribe` function takes these args:
+
+`input_file` (str): The path to the audio file to be transcribed.
+
+`language` (str): The language of the audio file. The default is "en" (English).
+
+`model_name` (str): The name of the model to be used for transcription. The default is "tiny.en".
+
+This function yields a tuple with the following fields:
+
+
+`text` (str): The transcribed text.
+
+`language_probability` (float): The probability of the detected language.
+
+`language` (str): The detected language.
+
+`segment_end` (float): The end time of the transcribed segment.
+
+`segment_start` (float): The start time of the transcribed segment.
+
+## Examples
+For a full example, check out the example in the file `example/main.py`.
+
+## Tech stack
+
+- [Pyaudio](https://people.csail.mit.edu/hubert/pyaudio/) for recording audio.
+- [faster-whisper](https://github.com/SYSTRAN/faster-whisper) for transcription.
+- [openWakeWord](https://huggingface.co/spaces/davidscripka/openWakeWord) for wakeword detection.
+
+## Acknowledgments
+Thanks to [Kolja](https://github.com/KoljaB) for the inspiration. I couldn't figure out how to use his library so I made my own. Check this out [here](https://github.com/KoljaB/RealtimeSTT).
+
+## Contribution
+Contributions are always welcome! Open an issue or make a PR. Or just contact me on discord: @a3l6
+
+## Author(s)
+- [@a3l6](https://www.github.com/a3l6)
