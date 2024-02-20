@@ -1,0 +1,8 @@
+name: climada_env
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - overpy>=0.7
+  - pymrio>=0.5
+  - scikit-image>=0.22

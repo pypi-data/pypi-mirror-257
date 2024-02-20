@@ -1,0 +1,4 @@
+climada<=4.1.0,>=4.0
+scikit-image
+pymrio
+osm-flex>=1.1.1
