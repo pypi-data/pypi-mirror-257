@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: bookbaker
+Version: 0.1.0
+Summary: Components for auto-translation of novel and manga.
+Home-page: https://github.com/VermiIIi0n/bookbaker
+License: MIT
+Keywords: utilities
+Author: VermiIIi0n
+Author-email: dungeon.behind0t@icloud.com
+Requires-Python: >=3.12,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: Pytest
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Utilities
+Classifier: Typing :: Typed
+Requires-Dist: aiodeepl (>=0.1.4,<0.2.0)
+Requires-Dist: async-tinydb (>=1.7.1,<2.0.0)
+Requires-Dist: beautifulsoup4 (>=4.12.3,<5.0.0)
+Requires-Dist: ebooklib (>=0.18,<0.19)
+Requires-Dist: gemnine (>=0.1.7,<0.2.0)
+Requires-Dist: h2 (>=4.1.0,<5.0.0)
+Requires-Dist: httpx[http2,socks] (>=0.26.0,<0.27.0)
+Requires-Dist: lxml (>=5.1.0,<6.0.0)
+Requires-Dist: ngptbot (>=0.3.2,<0.4.0)
+Requires-Dist: pillow (>=10.2.0,<11.0.0)
+Requires-Dist: pydantic (>=2.6.1,<3.0.0)
+Requires-Dist: ujson (>=5.9.0,<6.0.0)
+Requires-Dist: vermils (>=0.3.6,<0.4.0)
+Project-URL: Issues, https://github.com/VermiIIi0n/bookbaker/issues
+Description-Content-Type: text/markdown
+
+# 焙书
+
+## Introduction
+
+自动化 爬取/翻译/导出 网页生肉书籍
+
+你是否还在为：
+
+1. 生肉无人烤
+2. 译者咕咕
+3. 翻译质量感人（虽然用爱发电伟大但是...)
+4. 译文充满吐槽私货（个人极其厌恶）
+
+而发愁？
+
+随着 `Gemini AI` 和 `GPT4 Turbo` 的推出，日文小说机器翻译的质量已经可以胜过某些人类了。
+
+于是本库诞生来解救诸位。
+
+本品特性：
+
+1. 自带几个常见日轻爬虫，爬取网站文章
+2. 支持 `DeepL`, `Gemini AI`, `ChatGPT` 等烤肉机
+3. 支持导出至 `EPUB`, 自动发布至 真白萌，ESJ 等站点（未完工）
+4. 自带小型 NoSQL 数据库，方便查看编辑
+5. 模块化设计，方便自行定制爬虫，烤肉机，导出器
+
+## NOTICE
+
+本品仍在 Beta 开发阶段，用量用法随时改变，效果随机出错，请自行斟酌。愿意测试者也许可以白嫖 `API Key` ? （数量有限不保证）
+
+## Installation
+
+```bash
+pip in
+```
+
+
