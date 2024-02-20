@@ -1,0 +1,6 @@
+coloredlogs
+openpyxl
+pandas
+pyarrow
+python-benedict
+xlrd

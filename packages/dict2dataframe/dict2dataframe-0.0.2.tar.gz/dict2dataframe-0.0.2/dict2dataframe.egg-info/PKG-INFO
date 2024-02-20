@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: dict2dataframe
+Version: 0.0.2
+Summary: Python package for converting JSON data into tabular format.
+Home-page: https://github.com/joao8tunes/dict2dataframe
+Author: João Antunes
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: coloredlogs
+Requires-Dist: openpyxl
+Requires-Dist: pandas
+Requires-Dist: pyarrow
+Requires-Dist: python-benedict
+Requires-Dist: xlrd
