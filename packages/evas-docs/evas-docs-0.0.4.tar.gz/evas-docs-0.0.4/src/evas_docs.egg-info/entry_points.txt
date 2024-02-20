@@ -1,0 +1,2 @@
+[console_scripts]
+build-docs = evas_docs.build_docs:main
