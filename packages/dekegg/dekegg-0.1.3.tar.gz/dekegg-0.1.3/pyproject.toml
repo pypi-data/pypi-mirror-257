@@ -1,0 +1,31 @@
+[project]
+name = "dekegg"
+version = "0.1.3"
+description = ""
+authors = [
+    { name = "sanzenwin", email = "sanzenwin@gmail.com" },
+]
+dependencies = [
+    "setuptools",
+    "dektools<1.0.0",
+    "dekgen<1.0.0",
+]
+requires-python = ">=3.10"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[project.entry-points."distutils.commands"]
+bdist_fullegg = "dekegg.bdist:bdist_fullegg"
+
+[tool.pdm.build]
+includes = [
+    "dekegg",
+]
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
