@@ -1,0 +1,10 @@
+apollo3/__init__.py,sha256=lVBQ0YXit5pgPo7LLdResImP9k0oQYINDATRVxk1mI0,84
+apollo3/change_type.py,sha256=qz5eXy4Ay-gGxoOCug4CJmw7L9yEsKYCf06XLD8UFi8,445
+apollo3/client.py,sha256=kjNsWWI8GtOZQtffNjutqd1zMWoHQqYfEj_bAuREskM,3095
+apollo3/response/__init__.py,sha256=QGgPU93yvQ4eDLjTClp0iwse5SIIBp9u2cJSHok_CSI,90
+apollo3/response/assembly.py,sha256=fQoFRaKgFPZWL6SDzmtwg1So-zgLwQ7VTWkokYnzT8U,618
+apollo3/response/change.py,sha256=bDjWOnTmJzVkAV1gG0wdK0iGwQCgSYr_qWGnCflBiVM,2227
+apollo3_client-0.4.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+apollo3_client-0.4.1.dist-info/METADATA,sha256=LVTzUpXLMpt_sai_-F5o6GtkGUAcFWD9TcrQDr3lg84,2411
+apollo3_client-0.4.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+apollo3_client-0.4.1.dist-info/RECORD,,
