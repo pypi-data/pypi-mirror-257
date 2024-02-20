@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: patron-ElioAmado-expoFP
+Version: 0.1
+Summary: Print a pattern that can have 3 shapes
+Author: Elio Amado Costa
+Author-email: amadocosta5@gmail.com
+
+Package for Printing a Pattern with 3 Possible Forms
+This package has only one module named patron_ElioAmado_expoFP.py.
+
+This Python module defines a function called elio_Patron() which is responsible for printing a pattern in the console. The generated pattern varies according to the specified input parameters. The function accepts four parameters:
+
+alt: Specifies the height of the pattern and must be an integer.
+frm: Can take three values: "Up", "Down", or "Mixed". Determines the form of the generated pattern.
+rell: Indicates the filling character to be used in the middle of the pattern. Must be a single character.
+nom: Is a word or phrase that is printed in the pattern. The way it is printed depends on the value of "frm".
+The elio_Patron() function consists of two internal functions:
+
+ptrferiaLine(): This function creates a pattern line according to the provided parameters. It calculates the required spaces, the length of the text to print, and uses a list of special characters to shape the pattern.
+
+ptrferiaimpr() and ptrferiaimprMez(): These functions print the pattern in the console according to the specified form ("Up", "Down", or "Mixed"). They dynamically adjust the height, the amount of filling, and other parameters to create the desired pattern.
+
+The main function elio_Patron() prompts the user to input the necessary parameters and then generates the pattern according to the specifications. If the "Mixed" form is selected, the pattern is generated iteratively, gradually reducing the height and length of the text.
+
+Finally, the function uses Python's standard library to pause execution for a short period of time, resulting in a more animated visualization of the pattern in the console.
+
+This script is interactive.

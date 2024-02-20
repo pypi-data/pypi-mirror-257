@@ -1,0 +1,8 @@
+README.md
+setup.py
+patron_ElioAmado_expoFP/__init__.py
+patron_ElioAmado_expoFP/patron_ElioAmado_expoFP.py
+patron_ElioAmado_expoFP.egg-info/PKG-INFO
+patron_ElioAmado_expoFP.egg-info/SOURCES.txt
+patron_ElioAmado_expoFP.egg-info/dependency_links.txt
+patron_ElioAmado_expoFP.egg-info/top_level.txt
