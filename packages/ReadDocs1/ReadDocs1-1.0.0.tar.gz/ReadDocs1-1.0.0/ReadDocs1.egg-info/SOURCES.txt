@@ -1,0 +1,8 @@
+setup.py
+ReadDocs1.egg-info/PKG-INFO
+ReadDocs1.egg-info/SOURCES.txt
+ReadDocs1.egg-info/dependency_links.txt
+ReadDocs1.egg-info/requires.txt
+ReadDocs1.egg-info/top_level.txt
+ReadDocuments/ReadDocs1.py
+ReadDocuments/__init__.py
