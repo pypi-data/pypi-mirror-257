@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: dbbs-catalogue
+Version: 0.1.0
+Summary: DBBS NMODL Catalogue
+Author-email: Robin De Schepper <robingilbert.deschepper@unipv.it>
+Description-Content-Type: text/x-rst
+Requires-Dist: nmodl-glia>=4.0.0b0,<=4.0.0b9999
+
+====================
+DBBS NMODL Catalogue
+====================
+
+
+.. image:: https://img.shields.io/pypi/v/dbbs_catalogue.svg
+        :target: https://pypi.python.org/pypi/dbbs_catalogue
+
+
+NMODL Mechanism collection of the DBBS laboratory of the University of Pavia
+
+
