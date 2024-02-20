@@ -1,0 +1,4 @@
+char_similar
+example
+samples
+text_char_similar
