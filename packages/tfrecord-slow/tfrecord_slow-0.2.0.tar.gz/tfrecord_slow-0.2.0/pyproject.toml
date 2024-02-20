@@ -1,0 +1,34 @@
+[project]
+name = "tfrecord-slow"
+version = "0.2.0"
+description = "Default template for PDM package"
+authors = [
+    { name = "SunDoge", email = "triplez0@outlook.com" }
+]
+dependencies = [
+    "crc32c>=2.3.post0",
+    "msgspec>=0.18.6",
+    "numpy>=1",
+]
+readme = "README.md"
+requires-python = ">= 3.11"
+
+[project.scripts]
+hello = "tfrecord_slow:hello"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = [
+    "safetensors>=0.4.2",
+    "pytest>=8.0.1",
+]
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/tfrecord_slow"]
