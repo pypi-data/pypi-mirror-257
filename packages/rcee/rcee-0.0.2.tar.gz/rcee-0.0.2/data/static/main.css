@@ -1,0 +1,15 @@
+body {
+  display: grid;
+  overflow: scroll;
+  height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+
+.result {
+  flex-grow: 10;
+}
