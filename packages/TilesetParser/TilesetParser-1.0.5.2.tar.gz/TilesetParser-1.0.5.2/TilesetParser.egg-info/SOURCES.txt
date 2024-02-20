@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+TilesetParser/__init__.py
+TilesetParser/main.py
+TilesetParser.egg-info/PKG-INFO
+TilesetParser.egg-info/SOURCES.txt
+TilesetParser.egg-info/dependency_links.txt
+TilesetParser.egg-info/entry_points.txt
+TilesetParser.egg-info/requires.txt
+TilesetParser.egg-info/top_level.txt
+TilesetParser/src/__init__.py
+TilesetParser/src/find_tile.py
+TilesetParser/src/gui.py
