@@ -1,0 +1,11 @@
+fllog/__init__.py,sha256=ew01pthpzIUgVcGth28AuP_K2XKtKrAMSakgfPeyumA,163
+fllog/_fllog.py,sha256=R87Y4t33AThB75eNxdcOJYCOIPV8809qWor0Ltx4eow,8399
+fllog/_version.py,sha256=PKIMyjdUACH4-ONvtunQCnYE2UhlMfp9su83e3HXl5E,411
+fllog/modemap.py,sha256=x2OomIGVgdHyCbtYpVdfW4xqXLmaEAbMb_KI9TXxrBw,3930
+fllog/wsjtx.py,sha256=IXnQK8SpyJK0lRJCtfvI1r7vsBGndd1Bgf3RQUqWB6o,24800
+fllog-0.1.1.dist-info/LICENSE,sha256=rIP2BZt1sW92MR4PAHYk_ql0AJxoHcvtrDhSMdqXYYo,1321
+fllog-0.1.1.dist-info/METADATA,sha256=_In-vFuCWv1ETZkxJnYMUn0OhudQDDROaQX4mfOdj6Q,5368
+fllog-0.1.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+fllog-0.1.1.dist-info/entry_points.txt,sha256=AUsaLSsdsjrKTAsRae6MfgQkHv3tZ1YMpA5pygaxHcE,37
+fllog-0.1.1.dist-info/top_level.txt,sha256=079JCd_t3lisLvVCcdpJs-eaMCinkrWCqzqLN6oPNz0,6
+fllog-0.1.1.dist-info/RECORD,,
