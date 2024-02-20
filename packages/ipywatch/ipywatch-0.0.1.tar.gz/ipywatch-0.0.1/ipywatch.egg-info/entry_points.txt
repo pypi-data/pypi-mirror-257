@@ -1,0 +1,2 @@
+[nbdev]
+ipywatch = ipywatch._modidx:d
