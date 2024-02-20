@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+nl_ego_cities/__init__.py
+nl_ego_cities/city_coords.py
+nl_ego_cities/load_city_data.py
+nl_ego_cities.egg-info/PKG-INFO
+nl_ego_cities.egg-info/SOURCES.txt
+nl_ego_cities.egg-info/dependency_links.txt
+nl_ego_cities.egg-info/requires.txt
+nl_ego_cities.egg-info/top_level.txt
