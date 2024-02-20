@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: coda-doisearch
+Version: 0.2.0
+Summary: Searches DOI registrars for publications
+Author-Email: Sven Marcus <sven.marcus@tu-braunschweig.de>
+License: GPL-3.0
+Requires-Python: >=3.12
+Requires-Dist: httpx>=0.26.0
+Description-Content-Type: text/markdown
+
+# coda-doisearch
+
+This repository contains simple functions to collect information about publications from crossref.

@@ -1,0 +1,9 @@
+coda/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+coda/doisearch/__init__.py,sha256=wevoHZndhjfB7VJmeydZFkJ9w0gLZS4I9hVXmKJd3Qk,81
+coda/doisearch/_json.py,sha256=1anrQaQUtllYVDDh02lWIJ2qn0SWAa3rOnURGbNw0Pw,250
+coda/doisearch/crossref.py,sha256=8G4EcYNr9Q5nLElESiFZYvrfMomTDXVHboRJdecffqo,2470
+coda/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+coda_doisearch-0.2.0.dist-info/METADATA,sha256=Uq9T2plwIEJaI7tbFC8SU6S_c9vpLn_mW_FYiM1_P_0,394
+coda_doisearch-0.2.0.dist-info/WHEEL,sha256=N2J68yzZqJh3mI_Wg92rwhw0rtJDFpZj9bwQIMJgaVg,90
+coda_doisearch-0.2.0.dist-info/licenses/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+coda_doisearch-0.2.0.dist-info/RECORD,,
