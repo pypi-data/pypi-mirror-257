@@ -1,0 +1,16 @@
+mypy_boto3_chatbot/__init__.py,sha256=oGmVSlrvXfoOchxSOJW4YvgCzQOAabLdzjnpJ2f72e8,373
+mypy_boto3_chatbot/__init__.pyi,sha256=oGmVSlrvXfoOchxSOJW4YvgCzQOAabLdzjnpJ2f72e8,373
+mypy_boto3_chatbot/__main__.py,sha256=4b6i4lzcIDcSOOR0--IJ824k0buRSF6UIhSePhJljaM,919
+mypy_boto3_chatbot/client.py,sha256=Y1RSdDysPQ-SGjz9W2pUbOfNal3FrjIL9c8812WUhyA,22446
+mypy_boto3_chatbot/client.pyi,sha256=hoDcR9z0xYZvuZtj013PKv9xrBljq_mcqdLDxm_0Fvk,22443
+mypy_boto3_chatbot/literals.py,sha256=KZZF3FYRyQvCXig7OYDmqb_RquqTuRshsxU6_4LObHY,8144
+mypy_boto3_chatbot/literals.pyi,sha256=KZZF3FYRyQvCXig7OYDmqb_RquqTuRshsxU6_4LObHY,8144
+mypy_boto3_chatbot/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_chatbot/type_defs.py,sha256=3AITXtLv2LtbaTcqngeNh6zic49FfKHH0Vf52OMX3bc,16053
+mypy_boto3_chatbot/type_defs.pyi,sha256=3AITXtLv2LtbaTcqngeNh6zic49FfKHH0Vf52OMX3bc,16053
+mypy_boto3_chatbot/version.py,sha256=oeVFrK5bGo5QyRmA60Dz-nHxuzhCytMPTbUpu-6xfbY,62
+mypy_boto3_chatbot-1.34.45.dist-info/LICENSE,sha256=eQDadZQZ3vRCiNF510ZT4yJV2zgo4000AOBoDRZyvKg,1070
+mypy_boto3_chatbot-1.34.45.dist-info/METADATA,sha256=-t2noy2ZE8b319BqiQdOLkALhPQXuXMbGIQCn7n4x7w,12063
+mypy_boto3_chatbot-1.34.45.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+mypy_boto3_chatbot-1.34.45.dist-info/top_level.txt,sha256=MEGODqUFK9qTO17Ld6VBNeJkrobyoHlMBGl3-luIsAs,19
+mypy_boto3_chatbot-1.34.45.dist-info/RECORD,,
