@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: rcee
+Version: 0.0.4
+Summary: Remote code execution endpoint.
+Keywords: rce,endpoint
+Author-email: Arkadiusz Michał Ryś <Arkadiusz.Michal.Rys@gmail.com>, Bert Van Acker <bert.vanacker@uantwerpen.be>
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Requires-Dist: toml~=0.10.2
+Requires-Dist: click~=8.1.7
+Requires-Dist: arklog~=0.5.1
+Requires-Dist: dacite~=1.8.1
+Requires-Dist: invoke~=2.2.0
+Requires-Dist: fastapi~=0.109.2
+Requires-Dist: pyarrow~=15.0.0
+Requires-Dist: requests~=2.31.0
+Requires-Dist: uvicorn[standard]~=0.27.1
+Requires-Dist: tox~=4.13.0 ; extra == "dev"
+Requires-Dist: pip~=24.0 ; extra == "dev"
+Requires-Dist: flit~=3.9.0 ; extra == "dev"
+Requires-Dist: twine~=5.0.0 ; extra == "dev"
+Requires-Dist: vermin~=1.6.0 ; extra == "dev"
+Requires-Dist: numpy~=1.26.0 ; extra == "dev"
+Requires-Dist: jinja2~=3.1.2 ; extra == "dev"
+Requires-Dist: flake8~=7.0.0 ; extra == "dev"
+Requires-Dist: coverage~=7.4.1 ; extra == "dev"
+Requires-Dist: sphinx~=7.2.6 ; extra == "doc"
+Requires-Dist: httpx~=0.26.0 ; extra == "test"
+Requires-Dist: pytest~=8.0.1 ; extra == "test"
+Project-URL: source, https://git.rys.one/phd/flexmosis/rcee
+Provides-Extra: dev
+Provides-Extra: doc
+Provides-Extra: test
+
+# Remote code execution endpoint
+
+## Some nice to haves left to implement.
+
+- Monospace font on the command output.
+- Error handling.
+- Tests.
+
+## Deploying a remote code execution endpoint
+
+Drop into a shell and sing the magic incantation `pip install rcee` and `rcee`.
+This will leave you haunted with an endpoint lingering on port `7999` by default.
+From this point onward you're on your own and can perform any request you want.
+
+> It's also possible to use pipx for the installation.
+
