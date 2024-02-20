@@ -1,0 +1,11 @@
+gamspy_ipopt/__init__.py,sha256=voqTgwTcIvaedlCpm0L3CXEuo3v_ZxBcv6AcssxwROY,419
+gamspy_ipopt/ipocclib64.dll,sha256=OESTmkKRO5uww0Zr9vbhHBID7SHwmq8C9iRpgFtsAvo,397312
+gamspy_ipopt/ipopt64.dll,sha256=jQWIXXBDwHzIBVGp2aLy-stpaGdUGWLxnNEx46efVVk,10140672
+gamspy_ipopt/mkl_gams.dll,sha256=vG42-_kvr6y209t6tk6jldai0hGciNkMuvTbdZI0xjQ,107392512
+gamspy_ipopt/msvcp140.dll,sha256=4KIqWU4Uj6Vc7vPkmWm_p3ARqAEmegvXgFtoG1k8nQs,567328
+gamspy_ipopt/optipopt.def,sha256=jx449vPGwz6Panolggh_aESggYUyHXTAfRrxdSb9U3Y,38272
+gamspy_ipopt/version.py,sha256=C7uaZIe_R1KssW3ym8eUsBKaFD5Fhaqx-z8p3TF3lBE,22
+gamspy_ipopt-47.0.0.dist-info/METADATA,sha256=fey3egSeZi6dK0potrD9MSVHVniOUQyNkUfNldoXYVQ,62
+gamspy_ipopt-47.0.0.dist-info/WHEEL,sha256=-H981hu6jK6YKd-c0qWpYxXA3UZMihQ3r30_4YPQguI,104
+gamspy_ipopt-47.0.0.dist-info/top_level.txt,sha256=r-FkmkcMikWQDNxXxEZdqWncMVJr2SF17xnynaLJvtk,13
+gamspy_ipopt-47.0.0.dist-info/RECORD,,
