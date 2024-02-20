@@ -1,0 +1,10 @@
+nbforms/__init__.py,sha256=83W9sNLNCj2APY3rpKnhWzEtSOL0Hc_tLcIV2CpQfXA,10150
+nbforms/version.py,sha256=J-j-u0itpEFT6irdmWmixQqYMadNl1X91TxUmoiLHMI,22
+nbforms/widgets.py,sha256=pJAmJ8Z5b9zijVzEBKr0aDZfBDWXLfWXZn4w-tHuC1k,2672
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_form.py,sha256=wBbnX0104rmDUcWddgAOjmnBlxdbQKfHTnuB39HrC-g,24340
+nbforms-1.0.0.dist-info/LICENSE,sha256=kyVLfzwqz17d5BVCZdE7hMb7GT0wgVYLPn5UaozMFwY,1519
+nbforms-1.0.0.dist-info/METADATA,sha256=h8VKlNfcpFdqdE_ODBbuaA6gltClUray0_GDU6aadiA,1432
+nbforms-1.0.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+nbforms-1.0.0.dist-info/top_level.txt,sha256=TbCdtRazhOlvKMmhWxSd0vrlRYhLKk5rhXfR27907lA,13
+nbforms-1.0.0.dist-info/RECORD,,
