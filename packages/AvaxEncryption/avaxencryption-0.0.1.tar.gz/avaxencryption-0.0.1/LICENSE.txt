@@ -1,0 +1,48 @@
+--------------------------«·⁄—»Ì…-------------------------------------
+
+ÕﬁÊﬁ «·ÿ»⁄ Ê«·‰‘— · —ŒÌ’ ISC 
+
+Copyright (c) 2024 ⁄»œ «·—Õ„‰ ⁄»œ «·ﬂ—Ì„ Õ„Ìœ…
+
+≈–‰ «” Œœ«„ Ê/√Ê ‰”Œ Ê ⁄œÌ· Ê/√Ê  Ê“Ì⁄ Â–« «·»—‰«„Ã ·√Ì €—÷ »—”Ê„ √Ê »œÊ‰ —”Ê„° »‘—ÿ 
+ŸÂÊ— ≈‘⁄«— ÕﬁÊﬁ «·ÿ»⁄ Ê«·‰‘— √⁄·«Â Ê≈‘⁄«— «·≈–‰ Â–« ›Ì Ã„Ì⁄ ‰”Œ. 
+Ì „  Ê›Ì— «·»—‰«„Ã "ﬂ„« ÂÊ" ÊÌ‰ﬂ— «·„ƒ·› 
+„”ƒÊ·Ì Â ⁄‰ Ã„Ì⁄ «·÷„«‰«  ›Ì„« Ì ⁄·ﬁ »Â–« «·»—‰«„Ã »„« ›Ì –·ﬂ Ã„Ì⁄ «·÷„«‰«  «·÷„‰Ì… «·Œ«’… »ﬁ«»·Ì… «· ”ÊÌﬁ 
+Ê«·„·«¡„…. ·« Ì Õ„· «·„ƒ·› »√Ì Õ«· „‰ «·√ÕÊ«· «·„”ƒÊ·Ì… ⁄‰ √Ì 
+√÷—«— Œ«’… √Ê „»«‘—… √Ê €Ì— „»«‘—… √Ê  »⁄Ì… √Ê √Ì √÷—«— „‰ √Ì ‰Ê⁄ ﬂ«‰  ‰«Ã„… ⁄‰ 
+›ﬁœ«‰ «·«” Œœ«„ √Ê «·»Ì«‰«  √Ê «·√—»«Õ° ”Ê«¡ ›Ì ≈Ã—«¡ ⁄ﬁœ √Ê ≈Â„«· √Ê 
+√Ì ≈Ã—«¡ ÷«— ¬Œ—° Ì‰‘√ ⁄‰ √Ê ›Ì„« Ì ⁄·ﬁ »«” Œœ«„ √Ê 
+√œ«¡ Â–« «·»—‰«„Ã.
+----------------------English---------------------------
+ISC License
+
+Copyright (c) 2024 Abdel Rahman Abdel Karim Hamida
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted, provided that the above
+copyright notice and this permission notice appear in all copies.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+PERFORMANCE OF THIS SOFTWARE.
+
+-------------------Espanol-----------------------------------------
+Licencia ISC
+
+Copyright (c) 2024 Abdel Rahman Abdel Karim Hamida
+
+Permiso para usar, copiar, modificar y/o distribuir este software para cualquier
+Por la presente se concede este prop?sito con o sin honorarios, siempre que se cumpla lo anterior.
+El aviso de derechos de autor y este aviso de permiso aparecen en todas las copias.
+
+EL SOFTWARE SE PROPORCIONA "TAL CUAL" Y EL AUTOR RENUNCIA A TODAS LAS GARANT?AS CON
+CON RESPECTO A ESTE SOFTWARE, INCLUYENDO TODAS LAS GARANT?AS IMPL?CITAS DE COMERCIABILIDAD
+Y APTITUD. EN NING?N CASO EL AUTOR SER? RESPONSABLE DE NING?N DA?O ESPECIAL, DIRECTO,
+DA?OS INDIRECTOS O CONSECUENCIALES O CUALQUIER DA?O QUE RESULTE DE
+PERDIDA DE USO, DATOS O BENEFICIOS, YA SEA EN ACCI?N DE CONTRATO, NEGLIGENCIA O
+OTRA ACCI?N DULCIA, QUE SURJA DE O EN RELACI?N CON EL USO O
+RENDIMIENTO DE ESTE SOFTWARE.

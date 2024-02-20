@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: AvaxEncryption
+Version: 0.0.1
+Summary: a package to encrypt your texts
+Author-email: Abdulrahman Abdulkareem Hemeda <abdulrahmanabdulkreem@gmail.com>
+License-File: LICENSE.txt
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+
+# AvaxEncryption
+
+This is a package to encrypt your texts to communicate safely with others.

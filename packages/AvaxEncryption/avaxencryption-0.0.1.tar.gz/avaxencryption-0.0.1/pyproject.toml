@@ -1,0 +1,17 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+[project]
+name = "AvaxEncryption"
+version = "0.0.1"
+authors = [
+  { name="Abdulrahman Abdulkareem Hemeda", email="abdulrahmanabdulkreem@gmail.com" }
+]
+description = "a package to encrypt your texts"
+readme = "README.md"
+requires-python = ">=3.5"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
