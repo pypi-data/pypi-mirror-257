@@ -1,0 +1,3 @@
+#!/bin/bash
+sleep 50
+$HOME/open-projects/github.com/hillwithsmallfields/noticeboard/playsound.py --soundfile $HOME/Sync/music/Cambridge-chimes-first-quarter.ogg

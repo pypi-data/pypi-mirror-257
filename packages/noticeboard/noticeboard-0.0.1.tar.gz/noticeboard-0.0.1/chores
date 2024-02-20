@@ -1,0 +1,20 @@
+#!/bin/bash
+
+SCRIPT_DIR=$(dirname $(readlink -f "$0"))
+
+source $SCRIPT_DIR/env/bin/activate
+
+export ARCHIVE=$HOME/archive
+export DOWNLOADS=$HOME/Downloads
+export ISOS=$HOME/isos
+export PRIVATEHTML=$HOME/private_html
+export SCRATCH=$HOME/scratch
+export SYNCEDSNAPSHOTS=$HOME/Sync-snapshots
+
+date >> /tmp/chores-crontab-log
+echo About to run chores.py >> /tmp/chores-crontab-log
+
+$SCRIPT_DIR/chores.py $* 2>&1 >> /tmp/chores-crontab-log
+
+echo Finished running chores.py >> /tmp/chores-crontab-log
+date >> /tmp/chores-crontab-log
