@@ -1,0 +1,5 @@
+python-dotenv==1.0.1
+networkx==3.2.1
+
+[visual]
+matplotlib==3.6.0
