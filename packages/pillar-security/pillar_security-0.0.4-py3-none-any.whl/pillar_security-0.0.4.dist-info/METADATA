@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: pillar-security
+Version: 0.0.4
+Requires-Python: >=3.10
+License-File: LICENSE
+Requires-Dist: wrapt >=1.16.0
+
