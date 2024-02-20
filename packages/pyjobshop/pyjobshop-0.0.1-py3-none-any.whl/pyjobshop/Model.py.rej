@@ -1,0 +1,11 @@
+diff a/pyjobshop/Model.py b/pyjobshop/Model.py	(rejected hunks)
+@@ -6,6 +6,9 @@ from docplex.cp.solution import CpoSolveResult
+ 
+ from .cp import default_model, result2solution
+ from .ProblemData import (
++from pyjobshop.constants import MAX_VALUE
++
++from pyjobshop.constants import MAX_VALUE
+     AssignmentPrecedence,
+     Job,
+     Machine,
