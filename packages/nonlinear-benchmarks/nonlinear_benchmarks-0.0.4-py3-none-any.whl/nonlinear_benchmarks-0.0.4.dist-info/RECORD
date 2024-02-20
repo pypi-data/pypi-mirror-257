@@ -1,0 +1,10 @@
+nonlinear_benchmarks/__init__.py,sha256=NRPJ5JvmaJoHvyPzsR5UIl3KQjgA3rSKvrIpsDhQi5g,265
+nonlinear_benchmarks/benchmarks.py,sha256=Wv6dmQPYpNMd9l4_mTI9Nom6T47-FWCJzipUjRheIt4,10457
+nonlinear_benchmarks/error_metrics.py,sha256=l6XsSiDTXNAMG6wINxSWAAY2mdbcLVZA4oaXD2F28U4,5550
+nonlinear_benchmarks/not_splitted_benchmarks.py,sha256=B8KZAkSAUlnhJUenJdCY2nRqJy9JmtRmi0cP7RTF0Pk,11755
+nonlinear_benchmarks/utilities.py,sha256=FpM8wvr7e7yPP-i2Pc7_jD6SSaPWy33PICzpxaPT8I8,7823
+nonlinear_benchmarks-0.0.4.dist-info/LICENSE,sha256=BqWbe545Sf5Wns2tvmpe9GktyJGfIlJcXrfMM4R1GQc,1505
+nonlinear_benchmarks-0.0.4.dist-info/METADATA,sha256=7igNnqyCPyz1Abcyymy8DzzOKxuHCnifzxT32Qy1SuU,3821
+nonlinear_benchmarks-0.0.4.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+nonlinear_benchmarks-0.0.4.dist-info/top_level.txt,sha256=hbY4rse6kcuFj2g5mW2r-Bl-uPpfQeElszey6KUt5Wk,21
+nonlinear_benchmarks-0.0.4.dist-info/RECORD,,
