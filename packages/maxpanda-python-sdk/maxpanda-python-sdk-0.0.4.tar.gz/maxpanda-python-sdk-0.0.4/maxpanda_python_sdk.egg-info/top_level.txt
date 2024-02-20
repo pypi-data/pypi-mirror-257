@@ -1,0 +1,3 @@
+maxpanda_python_sdk
+templates
+test
