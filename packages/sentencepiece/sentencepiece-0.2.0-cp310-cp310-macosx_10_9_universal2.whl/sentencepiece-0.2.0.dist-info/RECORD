@@ -1,0 +1,9 @@
+sentencepiece/_sentencepiece.cpython-310-darwin.so,sha256=7lrHwNnrJyM8k-kw4iNstTbn8iEDGmzvqF9wkxO5LEo,5948986
+sentencepiece/sentencepiece_model_pb2.py,sha256=LawEwmdUiIU1T9HcYu-rNEVTFcwAh9i-qavMMsg9riE,6257
+sentencepiece/_version.py,sha256=FVHPBGkfhbQDi_z3v0PiKJrXXqXOx0vGW_1VaqNJi7U,22
+sentencepiece/sentencepiece_pb2.py,sha256=_ZgnXOkpoScMXbJ-8BMKn2Q97BbMOH9Hz-L7JFMcJro,1753
+sentencepiece/__init__.py,sha256=b6FihBk50Vx7CeXfVlLP8eVQQW4O6EXfkSzdPVBD4sM,49230
+sentencepiece-0.2.0.dist-info/RECORD,,
+sentencepiece-0.2.0.dist-info/WHEEL,sha256=quc6KPsQ_p8Uswd5yj8hDZg5y2ghFxeobjm5cM_ymZ0,115
+sentencepiece-0.2.0.dist-info/top_level.txt,sha256=NIXVKmsq-xdZ5KROMHHV0gkLA3fvbNTb1g1KtgiYFOk,130
+sentencepiece-0.2.0.dist-info/METADATA,sha256=qKjE9nPX2I5cmUnku0QQWbH2INYoOnSiA2vgkHGpp7M,7683
