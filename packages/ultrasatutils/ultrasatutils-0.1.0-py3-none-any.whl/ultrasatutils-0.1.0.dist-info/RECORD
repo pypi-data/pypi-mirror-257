@@ -1,0 +1,8 @@
+ultrasatutils/__init__.py,sha256=ftWMUCowh3SLcEPg-nB9P8K_xDf8jQnHq2XcTkHXraA,269
+ultrasatutils/data/ultrasat_bandpass_center.csv,sha256=2I4n8utQdQbRm6vhXbVDY0ZoVIHoxrNO3oFBdAzzDws,35466
+ultrasatutils/data/ultrasat_snr_G_5deg.csv,sha256=Md8MAvRWiQ25cHL2ZYfVNpn25h08RcGofNhoxD2baOg,1983
+ultrasatutils/utils.py,sha256=2YoaEBo32BmFSG3-BHNm2p83R-GPdfTUXqUQ3CuXN6c,8555
+ultrasatutils-0.1.0.dist-info/LICENSE,sha256=2LfOu4YJUO73MfJj1cHv4RGpWxOBYsOHbr3vXSsqWe8,1498
+ultrasatutils-0.1.0.dist-info/METADATA,sha256=oE5v4wQyMRvYgrHGsIk2-Z6wnF06QAuqeehbXxbONUA,756
+ultrasatutils-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+ultrasatutils-0.1.0.dist-info/RECORD,,
