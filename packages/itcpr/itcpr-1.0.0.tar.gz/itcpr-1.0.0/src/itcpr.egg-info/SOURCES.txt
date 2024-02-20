@@ -1,0 +1,8 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+src/itcpr.egg-info/PKG-INFO
+src/itcpr.egg-info/SOURCES.txt
+src/itcpr.egg-info/dependency_links.txt
+src/itcpr.egg-info/top_level.txt
