@@ -1,0 +1,15 @@
+tap_instantly_ai/__init__.py,sha256=8Gfvn9fYqDvWOh7CTp7AKb4DXu9yT643mm7YW62YPTY,27
+tap_instantly_ai/__main__.py,sha256=XRMsORauRuGksSRiSFQf31A6Eu9DvcX49eer9UdrUnA,138
+tap_instantly_ai/client.py,sha256=9bK8ZzmioncSw-Mm6Ta7cGzHAMh30K9XNRouT5DMDs4,1647
+tap_instantly_ai/schemas/__init__.py,sha256=4L_j2w9G0RLeNu1IvmrlYD685cMULZhpvOezBL0leR8,42
+tap_instantly_ai/schemas/analytics_campaign_count.json,sha256=9WPOxUSFCoWME8ulcp9nNmJKJ34WJB5O8fSwTjX4AGE,1303
+tap_instantly_ai/schemas/analytics_campaign_summary.json,sha256=Juv_5YMYILWi4www7fDQZi8p-lSWPbuaQSLAwp8Y6_s,1390
+tap_instantly_ai/schemas/campaign_status.json,sha256=0Jtg61GjLWC0sQQG8OswAdGKT12ZBVR3OdgZs3qU2E8,527
+tap_instantly_ai/schemas/campaigns.json,sha256=m7cJQ32kqqzv07vxv5-dDaDCP9mumA-yE4KGVCw68U4,516
+tap_instantly_ai/streams.py,sha256=ul86NTfseRayE_7_P7RA_fNoLv-DEm0e3WgSmrOdPbA,4728
+tap_instantly_ai/tap.py,sha256=KGSoDKAKXDXBpxKOaLjdCNk3tz460m4oq_6TbUWLo0w,1181
+tap_instantly_ai-0.0.1.dist-info/LICENSE,sha256=kzJttup3qGGbtnJp_wA3lyYSJSKwjEW_BKwFrGH3Hnw,11347
+tap_instantly_ai-0.0.1.dist-info/METADATA,sha256=vA9xaaHbZIkMJcSYr01mc9wFuaZMD6BLr-70dlftlrI,4712
+tap_instantly_ai-0.0.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+tap_instantly_ai-0.0.1.dist-info/entry_points.txt,sha256=clkjJXV32zGsnd3rFKW3_Fdw1Gu9eT8hDijyB81U2iU,76
+tap_instantly_ai-0.0.1.dist-info/RECORD,,

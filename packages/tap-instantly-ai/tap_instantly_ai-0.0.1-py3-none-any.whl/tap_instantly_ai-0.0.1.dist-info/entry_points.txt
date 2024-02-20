@@ -1,0 +1,3 @@
+[console_scripts]
+tap-instantly-ai=tap_instantly_ai.tap:TapInstantlyAI.cli
+
