@@ -1,0 +1,12 @@
+Pillow>=10.1
+tqdm>=4.66.0
+watchdog>=3.0.0
+
+[dev]
+mypy>=1.7.0
+wheel>=0.41.0
+build>=1.0.0
+flake8>=6.1.0
+types-setuptools>=68.2
+types-Pillow>=10.1.0.0
+types-tqdm>=4.66.0.0
