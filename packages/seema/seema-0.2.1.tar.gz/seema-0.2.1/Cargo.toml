@@ -1,0 +1,13 @@
+[package]
+name = "seema"
+version = "0.2.1"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "seema"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = "0.18.1"
+wordcut-engine = "1.1.8"
