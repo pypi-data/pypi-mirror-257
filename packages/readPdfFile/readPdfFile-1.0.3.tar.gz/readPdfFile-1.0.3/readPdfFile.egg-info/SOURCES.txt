@@ -1,0 +1,8 @@
+setup.py
+readPdfFile/PDFReader.py
+readPdfFile/__init__.py
+readPdfFile/harshTest.py
+readPdfFile.egg-info/PKG-INFO
+readPdfFile.egg-info/SOURCES.txt
+readPdfFile.egg-info/dependency_links.txt
+readPdfFile.egg-info/top_level.txt
