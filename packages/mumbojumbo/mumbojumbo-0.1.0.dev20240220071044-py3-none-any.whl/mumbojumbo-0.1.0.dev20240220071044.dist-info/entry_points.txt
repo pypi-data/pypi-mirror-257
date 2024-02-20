@@ -1,0 +1,3 @@
+[console_scripts]
+mj-apply=mumbojumbo.scripts.apply_template:_main
+
