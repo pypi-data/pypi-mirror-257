@@ -1,0 +1,12 @@
+README.md
+setup.py
+gitlab_sdk/__init__.py
+gitlab_sdk/_version.py
+gitlab_sdk/client.py
+gitlab_sdk.egg-info/PKG-INFO
+gitlab_sdk.egg-info/SOURCES.txt
+gitlab_sdk.egg-info/dependency_links.txt
+gitlab_sdk.egg-info/requires.txt
+gitlab_sdk.egg-info/top_level.txt
+tests/__init__.py
+tests/test_client.py

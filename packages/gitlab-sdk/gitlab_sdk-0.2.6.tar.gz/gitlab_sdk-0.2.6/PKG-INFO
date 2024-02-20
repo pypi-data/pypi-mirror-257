@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: gitlab_sdk
+Version: 0.2.6
+Summary: Client side Python SDK for GitLab Application services
+Home-page: https://gitlab.com/gitlab-org/analytics-section/product-analytics/gl-application-sdk-python
+Author: GitLab
+Author-email: gitlab_rubygems@gitlab.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >3.5
+
+UNKNOWN
+
