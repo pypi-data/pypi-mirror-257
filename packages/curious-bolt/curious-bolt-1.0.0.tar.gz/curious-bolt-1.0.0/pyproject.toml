@@ -1,0 +1,28 @@
+[project]
+name = "curious-bolt"
+version = "1.0.0"
+description = "A Python library for interfacing with the Curious Bolt voltage glitching tool via USB"
+authors = [
+    { name = "Tom Clement", email = "tom@curious.supplies" }
+]
+license = { file = "LICENSE" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License"
+]
+requires-python = ">=3.9"
+dependencies = [
+    "pyserial"
+]
+
+[project.urls]
+"Homepage" = "https://bolt.curious.supplies"
+"Docs" = "https://bolt.curious.supplies/docs"
+"Repository" = "https://github.com/tjclement/bolt"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages]
+find = {}
