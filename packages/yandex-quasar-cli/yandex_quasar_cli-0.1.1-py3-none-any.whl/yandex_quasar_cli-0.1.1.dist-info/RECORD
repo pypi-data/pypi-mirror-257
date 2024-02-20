@@ -1,0 +1,17 @@
+yandex_quasar_cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+yandex_quasar_cli/__main__.py,sha256=8hDtWlaFZK24KhfNq_ZKgtXqYHsDQDetukOCMlsbW0Q,59
+yandex_quasar_cli/actions.py,sha256=933CjeM-XXjejtWVSmKP--0kjkaZ-GehciUxvtoWL40,7553
+yandex_quasar_cli/cli.py,sha256=0D8yX--9vkue-lrOvwvZniOY5eVTiFN58Rvl7MYVvKc,4019
+yandex_quasar_cli/settings.py,sha256=3hPi_2rzKujulxcouq1Eik5p5M8SR2E5S6ONubqAK20,215
+yandex_quasar_cli/quasar_types/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+yandex_quasar_cli/quasar_types/quasar_capabilities.py,sha256=9qVn4fT94fCT6s2PpjaOFRL-d5YAukd6JySoigGfZGc,531
+yandex_quasar_cli/quasar_types/quasar_capability_on_off.py,sha256=fVzyXtCNkR2PqKr2oyeWh35oBzGZpjPlpAiFXih7UUw,488
+yandex_quasar_cli/quasar_types/quasar_device_action.py,sha256=Drdu89cnyNt5T09Evt6a9QRk5oLJQ3PyI8BMfsvEv3E,919
+yandex_quasar_cli/quasar_types/quasar_primary.py,sha256=ij4wDkdy1pWnflxOHcE6SawXVz4dJsko8YKqBjothqA,3037
+yandex_quasar_cli/quasar_types/quasar_properties.py,sha256=nwCrSzZTfObewqY4HWN5JlmAZsxV2eqEl01yZO160Qg,1185
+yandex_quasar_cli-0.1.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+yandex_quasar_cli-0.1.1.dist-info/METADATA,sha256=ZfWHusmrzKrwr41HYPiON3CA7cg65QWdgPiZGqsIYMs,11113
+yandex_quasar_cli-0.1.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+yandex_quasar_cli-0.1.1.dist-info/entry_points.txt,sha256=FnqK1pY1IRCJZlhrX0n3MpWLjJ5vOGH1Ujv7eTnkq08,64
+yandex_quasar_cli-0.1.1.dist-info/top_level.txt,sha256=t7lZ7HjWV7te5TioejILWjTi1jajQy9gyLyE3F0mFbw,18
+yandex_quasar_cli-0.1.1.dist-info/RECORD,,
