@@ -1,0 +1,280 @@
+,source,PM,BiGG_ID,BiGG_exchange,SEED_ID,SEED_exchange
+3-(3-hydroxy-phenyl)propionate,{'C'},,3hpppn,EX_3hpppn_e,,
+3-hydroxycinnamic acid,{'C'},,3hcinnm,EX_3hcinnm_e,,
+g-Amino-N-Butyric acid,"{'C', 'N'}","{'PM3B', 'PM2A'}",4abut,EX_4abut_e,cpd00281,EX_cpd00281_e
+L-Sorbose,{'C'},{'PM2A'},srb__L,EX_srb__L_e,cpd00212,EX_cpd00212_e
+Mucic acid,{'C'},{'PM1'},galct__D,EX_galct__D_e,cpd00652,EX_cpd00652_e
+Tricarballylic acid,{'C'},{'PM1'},tcb,EX_tcb_e,cpd16654,EX_cpd16654_e
+L-Arabinose,{'C'},{'PM1'},arab__L,EX_arab__L_e,cpd00224,EX_cpd00224_e
+N-Acetyl-D-Glucosamine,"{'C', 'N'}","{'PM3B', 'PM1'}",acgam,EX_acgam_e,cpd00122,EX_cpd00122_e
+D-Saccharic Acid,{'C'},{'PM1'},glcr,EX_glcr_e,cpd00571,EX_cpd00571_e
+Succinic Acid,{'C'},{'PM1'},succ,EX_succ_e,cpd00036,EX_cpd00036_e
+D-Galactose,{'C'},{'PM1'},gal,EX_gal_e,cpd00108,EX_cpd00108_e
+L-Aspartic Acid,"{'C', 'N'}","{'PM3B', 'PM1'}",asp__L,EX_asp__L_e,cpd00041,EX_cpd00041_e
+L-Proline,"{'C', 'N'}","{'PM3B', 'PM1'}",pro__L,EX_pro__L_e,cpd00129,EX_cpd00129_e
+D-Alanine,"{'C', 'N'}","{'PM3B', 'PM1'}",ala__D,EX_ala__D_e,cpd00117,EX_cpd00117_e
+D-Trehalose,{'C'},{'PM1'},tre,EX_tre_e,cpd00794,EX_cpd00794_e
+D-Mannose,{'C'},{'PM1'},man,EX_man_e,cpd00138,EX_cpd00138_e
+Dulcitol,{'C'},{'PM1'},galt,EX_galt_e,cpd01171,EX_cpd01171_e
+D-Serine,"{'C', 'N'}","{'PM3B', 'PM1'}",ser__D,EX_ser__D_e,cpd00550,EX_cpd00550_e
+D-Sorbitol,{'C'},{'PM1'},sbt__D,EX_sbt__D_e,cpd00588,EX_cpd00588_e
+Glycerol,{'C'},{'PM1'},glyc,EX_glyc_e,cpd00100,EX_cpd00100_e
+L-Fucose,{'C'},{'PM1'},fuc__L,EX_fuc__L_e,cpd00751,EX_cpd00751_e
+D-Glucuronic Acid,{'C'},{'PM1'},glcur,EX_glcur_e,cpd00164,EX_cpd00164_e
+D-Gluconic Acid,{'C'},{'PM1'},glcn,EX_glcn_e,cpd00222,EX_cpd00222_e
+"D,L-a-Glycerol Phosphate","{'C', 'P'}","{'PM1', 'PM4A'}",glyc1p,EX_glyc1p_e,cpd16494,EX_cpd16494_e
+D-Xylose,{'C'},{'PM1'},xyl__D,EX_xyl__D_e,cpd00154,EX_cpd00154_e
+L-Lactic Acid,{'C'},{'PM1'},lac__L,EX_lac__L_e,cpd00159,EX_cpd00159_e
+Formic Acid,{'C'},{'PM1'},for,EX_for_e,cpd00047,EX_cpd00047_e
+D-Mannitol,{'C'},{'PM1'},mnl,EX_mnl_e,cpd00314,EX_cpd00314_e
+L-Glutamic Acid,"{'C', 'N'}","{'PM3B', 'PM1'}",glu__L,EX_glu__L_e,cpd00023,EX_cpd00023_e
+D-Glucose-6-Phosphate,"{'C', 'P'}","{'PM1', 'PM4A'}",g6p,EX_g6p_e,cpd00079,EX_cpd00079_e
+D-Galactonic acid-g-Lactone,{'C'},{'PM1'},gullac,EX_gullac_e,cpd00765,EX_cpd00765_e
+"D,L-Malic Acid",{'C'},{'PM1'},mal__L,EX_mal__L_e,cpd00130,EX_cpd00130_e
+D-Ribose,{'C'},{'PM1'},rib__D,EX_rib__D_e,cpd00105,EX_cpd00105_e
+L-Rhamnose,{'C'},{'PM1'},rmn,EX_rmn_e,cpd00396,EX_cpd00396_e
+D-Fructose,{'C'},{'PM1'},fru,EX_fru_e,cpd00082,EX_cpd00082_e
+Acetic Acid,{'C'},{'PM1'},ac,EX_ac_e,cpd00029,EX_cpd00029_e
+Maltose,{'C'},{'PM1'},malt,EX_malt_e,cpd00179,EX_cpd00179_e
+D-Melibiose,{'C'},{'PM1'},melib,EX_melib_e,cpd03198,EX_cpd03198_e
+Thymidine,"{'C', 'N'}","{'PM3B', 'PM1'}",thymd,EX_thymd_e,cpd00184,EX_cpd00184_e
+L-Asparagine,"{'C', 'N'}","{'PM3B', 'PM1'}",asn__L,EX_asn__L_e,cpd00132,EX_cpd00132_e
+D-Aspartic Acid,"{'C', 'N'}","{'PM3B', 'PM1'}",asp__D,EX_asp__D_e,cpd00320,EX_cpd00320_e
+a-Ketoglutaric acid,{'C'},{'PM1'},akg,EX_akg_e,cpd00024,EX_cpd00024_e
+a-Ketobutyric acid,{'C'},{'PM1'},2obut,EX_2obut_e,cpd00094,EX_cpd00094_e
+alpha-D-Lactose,{'C'},{'PM1'},lcts,EX_lcts_e,,
+Sucrose,{'C'},{'PM1'},sucr,EX_sucr_e,cpd00076,EX_cpd00076_e
+Uridine,"{'C', 'N'}","{'PM3B', 'PM1'}",uri,EX_uri_e,cpd00249,EX_cpd00249_e
+L-Glutamine,"{'C', 'N'}","{'PM3B', 'PM1'}",gln__L,EX_gln__L_e,cpd00053,EX_cpd00053_e
+D-Glucose-1-Phosphate,"{'C', 'P'}","{'PM1', 'PM4A'}",g1p,EX_g1p_e,cpd00089,EX_cpd00089_e
+D-Fructose-6-Phosphate,{'C'},{'PM1'},f6p,EX_f6p_e,cpd00072Â ,EX_cpd00072Â _e
+Adonitol,{'C'},{'PM1'},rbt,EX_rbt_e,cpd00366,EX_cpd00366_e
+Maltotriose,{'C'},{'PM1'},malttr,EX_malttr_e,cpd01262,EX_cpd01262_e
+2`-Deoxyadenosine,{'C'},{'PM1'},dad_2,EX_dad_2_e,cpd00438,EX_cpd00438_e
+Adenosine,"{'C', 'N'}","{'PM3B', 'PM1'}",adn,EX_adn_e,cpd00182,EX_cpd00182_e
+Citric acid,{'C'},{'PM1'},cit,EX_cit_e,cpd00137,EX_cpd00137_e
+m-Inositol,{'C'},{'PM1'},inost,EX_inost_e,cpd00121,EX_cpd00121_e
+Fumaric Acid,{'C'},{'PM1'},fum,EX_fum_e,cpd00106,EX_cpd00106_e
+Propionic Acid,{'C'},{'PM1'},ppa,EX_ppa_e,cpd00141,EX_cpd00141_e
+Glycolic Acid,{'C'},{'PM1'},glyclt,EX_glyclt_e,cpd00139,EX_cpd00139_e
+Glyoxylic Acid,{'C'},{'PM1'},glx,EX_glx_e,cpd00040,EX_cpd00040_e
+D-Cellobiose,{'C'},{'PM1'},cellb,EX_cellb_e,cpd00158,EX_cpd00158_e
+Inosine,"{'C', 'N'}","{'PM3B', 'PM1'}",ins,EX_ins_e,cpd00246,EX_cpd00246_e
+L-Serine,"{'C', 'N'}","{'PM3B', 'PM1'}",ser__L,EX_ser__L_e,cpd00054,EX_cpd00054_e
+L-Threonine,"{'C', 'N'}","{'PM3B', 'PM1'}",thr__L,EX_thr__L_e,cpd00161,EX_cpd00161_e
+L-Alanine,"{'C', 'N'}","{'PM3B', 'PM1'}",ala__L,EX_ala__L_e,cpd00035,EX_cpd00035_e
+Ala-Gly,"{'C', 'N'}","{'PM3B', 'PM1'}",L_alagly,EX_L_alagly_e,cpd11585,EX_cpd11585_e
+L-ascorbate,{'C'},,ascb__L,EX_ascb__L_e,,
+N-Acetyl-D-Mannosamine,"{'C', 'N'}","{'PM3B', 'PM1'}",acmana,EX_acmana_e,cpd00492,EX_cpd00492_e
+D-Malic Acid,{'C'},{'PM1'},mal__D,EX_mal__D_e,cpd00386,EX_cpd00386_e
+L-Malic Acid,{'C'},{'PM1'},mal__L,EX_mal__L_e,cpd00130,EX_cpd00130_e
+Gly-Pro,{'C'},{'PM1'},gly_pro__L,EX_gly_pro__L_e,cpd11588,EX_cpd11588_e
+p-Hydroxyphenyl Acetic acid,{'C'},{'PM1'},4hoxpac,EX_4hoxpac_e,cpd00489,EX_cpd00489_e
+Tyramine,"{'C', 'N'}","{'PM3B', 'PM1'}",tym,EX_tym_e,cpd00374,EX_cpd00374_e
+L-Lyxose,{'C'},{'PM1'},lyx__L,EX_lyx__L_e,cpd01067,EX_cpd01067_e
+Pyruvic Acid,{'C'},{'PM1'},pyr,EX_pyr_e,cpd00020,EX_cpd00020_e
+L-Galactonic Acid-gamma-Lactone,{'C'},{'PM1'},,,,
+D-Galacturonic Acid,{'C'},{'PM1'},galur,EX_galur_e,cpd00280,EX_cpd00280_e
+Phenylethylamine,{'C'},{'PM1'},peamn,EX_peamn_e,cpd03161,EX_cpd03161_e
+Ethanolamine,{'N'},{'PM3B'},etha,EX_etha_e,cpd00162,EX_cpd00162_e
+N-Acetyl-Neuraminic acid,{'C'},{'PM2A'},acnam,EX_acnam_e,cpd00232,EX_cpd00232_e
+D-Arabitol,{'C'},{'PM2A'},abt__D,EX_abt__D_e,cpd01307,EX_cpd01307_e
+Arbutin,{'C'},{'PM2A'},arbt,EX_arbt_e,cpd03696,EX_cpd03696_e
+Palatinose,{'C'},{'PM2A'},pala,EX_pala_e,cpd01200,EX_cpd01200_e
+D-Raffinose,{'C'},{'PM2A'},raffin,EX_raffin_e,cpd00382,EX_cpd00382_e
+D-tagatose,{'C'},{'PM2A'},tag__D,EX_tag__D_e,cpd00589,EX_cpd00589_e
+Turanose,{'C'},{'PM2A'},tur,EX_tur_e,cpd20885,EX_cpd20885_e
+D-Glucosamine,"{'C', 'N'}","{'PM3B', 'PM2A'}",gam,EX_gam_e,cpd00276,EX_cpd00276_e
+5-Keto-D-Gluconic acid,{'C'},{'PM2A'},5dglcn,EX_5dglcn_e,cpd00781,EX_cpd00781_e
+L-Tartaric Acid,{'C'},{'PM2A'},tartr__L,EX_tartr__L_e,cpd00666Â ,EX_cpd00666Â _e
+L-Arginine,"{'C', 'N'}","{'PM3B', 'PM2A'}",arg__L,EX_arg__L_e,cpd00051,EX_cpd00051_e
+L-Histidine,"{'C', 'N'}","{'PM3B', 'PM2A'}",his__L,EX_his__L_e,cpd00119,EX_cpd00119_e
+L-Ornithine,"{'C', 'N'}","{'PM3B', 'PM2A'}",orn,EX_orn_e,cpd00064Â Â ,EX_cpd00064Â Â _e
+L-Phenylalanine,"{'C', 'N'}","{'PM3B', 'PM2A'}",phe__L,EX_phe__L_e,cpd00066,EX_cpd00066_e
+Putrescine,"{'C', 'N'}","{'PM3B', 'PM2A'}",ptrc,EX_ptrc_e,cpd00118,EX_cpd00118_e
+Dihydroxyacetone,{'C'},{'PM2A'},dha,EX_dha_e,cpd00157,EX_cpd00157_e
+D-Saccharic acid,{'C'},{'PM1'},glcr,EX_glcr_e,cpd00571,EX_cpd00571_e
+Succinic acid,{'C'},{'PM1'},succ,EX_succ_e,cpd00036,EX_cpd00036_e
+L-Aspartic acid,"{'C', 'N'}","{'PM3B', 'PM1'}",asp__L,EX_asp__L_e,cpd00041,EX_cpd00041_e
+D-Glucuronic acid,{'C'},{'PM1'},glcur,EX_glcur_e,cpd00164,EX_cpd00164_e
+D-Gluconic acid,{'C'},{'PM1'},glcn,EX_glcn_e,cpd00222,EX_cpd00222_e
+L-Lactic acid,{'C'},{'PM1'},lac__L,EX_lac__L_e,cpd00159,EX_cpd00159_e
+Formic acid,{'C'},{'PM1'},for,EX_for_e,cpd00047,EX_cpd00047_e
+L-Glutamic acid,"{'C', 'N'}","{'PM3B', 'PM1'}",glu__L,EX_glu__L_e,cpd00023,EX_cpd00023_e
+"D,L-Malic acid",{'C'},{'PM1'},mal__L,EX_mal__L_e,cpd00130,EX_cpd00130_e
+Acetic acid,{'C'},{'PM1'},ac,EX_ac_e,cpd00029,EX_cpd00029_e
+a-D-Glucose,{'C'},{'PM1'},glc__aD,EX_glc__aD_e,,
+D-Aspartic acid,"{'C', 'N'}","{'PM3B', 'PM1'}",asp__D,EX_asp__D_e,cpd00320,EX_cpd00320_e
+"1,2-Propanediol",{'C'},{'PM1'},12ppd__S,EX_12ppd__S_e,cpd19024,EX_cpd19024_e
+m-Tartaric acid,{'C'},{'PM1'},tartr__M,EX_tartr__M_e,cpd00432,EX_cpd00432_e
+a-Hydroxybutyric acid,{'C'},{'PM1'},2hb,EX_2hb_e,cpd03561,EX_cpd03561_e
+Gly-Asp,{'C'},{'PM1'},gly_asp__L,EX_gly_asp__L_e,cpd11589,EX_cpd11589_e
+Fumaric acid,{'C'},{'PM1'},fum,EX_fum_e,cpd00106,EX_cpd00106_e
+Propionic acid,{'C'},{'PM1'},ppa,EX_ppa_e,cpd00141,EX_cpd00141_e
+Glycolic acid,{'C'},{'PM1'},glyclt,EX_glyclt_e,cpd00139,EX_cpd00139_e
+Glyoxylic acid,{'C'},{'PM1'},glx,EX_glx_e,cpd00040,EX_cpd00040_e
+Gly-Glu,"{'C', 'N'}","{'PM3B', 'PM1'}",gly_glu__L,EX_gly_glu__L_e,cpd24418Â ,EX_cpd24418Â _e
+Acetoacetic acid,{'C'},{'PM1'},acac,EX_acac_e,cpd00142,EX_cpd00142_e
+D-Malic acid,{'C'},{'PM1'},mal__D,EX_mal__D_e,cpd00386,EX_cpd00386_e
+L-Malic acid,{'C'},{'PM1'},mal__L,EX_mal__L_e,cpd00130,EX_cpd00130_e
+m-Hydroxyphenyl Acetic acid,{'C'},{'PM1'},3hoxpac,EX_3hoxpac_e,cpd03320Â ,EX_cpd03320Â _e
+Pyruvic acid,{'C'},{'PM1'},pyr,EX_pyr_e,cpd00020,EX_cpd00020_e
+D-Galacturonic acid,{'C'},{'PM1'},galur,EX_galur_e,cpd00280,EX_cpd00280_e
+2-Aminoethanol,{'C'},{'PM1'},etha,EX_etha_e,cpd00162,EX_cpd00162_e
+Chondroitin Sulfate C,{'C'},{'PM2A'},cs_c,EX_cs_c_e,cpd11717Â ,EX_cpd11717Â _e
+Dextrin,{'C'},{'PM2A'},dextrin,EX_dextrin_e,cpd11594,EX_cpd11594_e
+Glycogen,{'C'},{'PM2A'},glycogen,EX_glycogen_e,cpd00155,EX_cpd00155_e
+Mannan,{'C'},{'PM2A'},mannan,EX_mannan_e,cpd11685,EX_cpd11685_e
+Pectin,{'C'},{'PM2A'},pectin,EX_pectin_e,cpd11601,EX_cpd11601_e
+N-Acetyl-D-Galactosamine,"{'C', 'N'}","{'PM3B', 'PM2A'}",acgal,EX_acgal_e,cpd00832,EX_cpd00832_e
+b-D-Allose,{'C'},{'PM2A'},all__D,EX_all__D_e,cpd01055,EX_cpd01055_e
+D-Arabinose,{'C'},{'PM2A'},arab__D,EX_arab__D_e,cpd00185,EX_cpd00185_e
+L-Arabitol,{'C'},{'PM2A'},abt__L,EX_abt__L_e,cpd00417,EX_cpd00417_e
+2-Deoxy-D-Ribose,{'C'},{'PM2A'},drib,EX_drib_e,cpd01242,EX_cpd01242_e
+a-Methyl-D-Glucoside,{'C'},{'PM2A'},amdglc,EX_amdglc_e,cpd15584,EX_cpd15584_e
+b-Methyl-D-Galactoside,{'C'},{'PM2A'},gal_bD,EX_gal_bD_e,cpd00709,EX_cpd00709_e
+b-Methyl-D-Glucuronic acid,{'C'},{'PM2A'},metglcur,EX_metglcur_e,,
+Salicin,{'C'},{'PM2A'},salcn,EX_salcn_e,cpd01030,EX_cpd01030_e
+Stachyose,{'C'},{'PM2A'},stys,EX_stys_e,cpd01133,EX_cpd01133_e
+D-Tagatose,{'C'},{'PM2A'},tag__D,EX_tag__D_e,cpd00589,EX_cpd00589_e
+Xylitol,{'C'},{'PM2A'},xylt,EX_xylt_e,cpd00306,EX_cpd00306_e
+Butyric acid,{'C'},{'PM2A'},but,EX_but_e,cpd00211,EX_cpd00211_e
+Capric acid,{'C'},{'PM2A'},dca,EX_dca_e,cpd01107,EX_cpd01107_e
+Caproic acid,{'C'},{'PM2A'},caproic,EX_caproic_e,cpd28989Â ,EX_cpd28989Â _e
+Citraconic acid,{'C'},{'PM2A'},citac,EX_citac_e,cpd01502,EX_cpd01502_e
+Citramalic acid,{'C'},{'PM2A'},citm,EX_citm_e,cpd00607,EX_cpd00607_e
+2-Hydroxybenzoic acid,{'C'},{'PM2A'},salc,EX_salc_e,cpd00599,EX_cpd00599_e
+4-Hydroxybenzoic acid,{'C'},{'PM2A'},4hbz,EX_4hbz_e,cpd00136,EX_cpd00136_e
+b-Hydroxybutyric acid,{'C'},{'PM2A'},bhb,EX_bhb_e,cpd00797,EX_cpd00797_e
+g-Hydroxybutyric acid,{'C'},{'PM2A'},ghb,EX_ghb_e,cpd00728,EX_cpd00728_e
+Itaconic acid,{'C'},{'PM2A'},itacon,EX_itacon_e,cpd00380,EX_cpd00380_e
+Malonic acid,{'C'},{'PM2A'},malon,EX_malon_e,cpd00308,EX_cpd00308_e
+Oxalic acid,{'C'},{'PM2A'},oxa,EX_oxa_e,cpd00180,EX_cpd00180_e
+Quinic acid,{'C'},{'PM2A'},quin,EX_quin_e,cpd00248,EX_cpd00248_e
+Sebacic acid,{'C'},{'PM2A'},sebacid,EX_sebacid_e,cpd05192Â ,EX_cpd05192Â _e
+D-Tartaric acid,{'C'},{'PM2A'},tartr__D,EX_tartr__D_e,cpd19018,EX_cpd19018_e
+L-Tartaric acid,{'C'},{'PM2A'},tartr__L,EX_tartr__L_e,cpd00666Â ,EX_cpd00666Â _e
+Acetamide,"{'C', 'N'}","{'PM3B', 'PM2A'}",ad,EX_ad_e,cpd03734,EX_cpd03734_e
+N-Acetyl-L-Glutamic acid,"{'C', 'N'}","{'PM3B', 'PM2A'}",acglu,EX_acglu_e,cpd00477,EX_cpd00477_e
+Glycine,"{'C', 'N'}","{'PM3B', 'PM2A'}",gly,EX_gly_e,cpd00033,EX_cpd00033_e
+L-Homoserine,"{'C', 'N'}","{'PM3B', 'PM2A'}",hom__L,EX_hom__L_e,cpd00227,EX_cpd00227_e
+Hydroxy-L-Proline,{'C'},{'PM2A'},4hpro_LT,EX_4hpro_LT_e,cpd00851,EX_cpd00851_e
+L-Isoleucine,"{'C', 'N'}","{'PM3B', 'PM2A'}",ile__L,EX_ile__L_e,cpd00322,EX_cpd00322_e
+L-Leucine,"{'C', 'N'}","{'PM3B', 'PM2A'}",leu__L,EX_leu__L_e,cpd00107,EX_cpd00107_e
+L-Lysine,"{'C', 'N'}","{'PM3B', 'PM2A'}",lys__L,EX_lys__L_e,cpd00039,EX_cpd00039_e
+L-Methionine,"{'S', 'C', 'N'}","{'PM3B', 'PM4A', 'PM2A'}",met__L,EX_met__L_e,cpd00060,EX_cpd00060_e
+L-Pyroglutamic acid,"{'C', 'N'}","{'PM3B', 'PM2A'}",5oxpro,EX_5oxpro_e,cpd01293,EX_cpd01293_e
+L-Valine,"{'C', 'N'}","{'PM3B', 'PM2A'}",val__L,EX_val__L_e,cpd00156,EX_cpd00156_e
+"D,L-Carnitine",{'C'},{'PM2A'},crn,EX_crn_e,cpd00266,EX_cpd00266_e
+"2,3-Butanediol",{'C'},{'PM2A'},btd_RR,EX_btd_RR_e,cpd01947,EX_cpd01947_e
+"2,3-Butanedione",{'C'},{'PM2A'},diact,EX_diact_e,cpd00551,EX_cpd00551_e
+3-Hydroxy-2-butanone,{'C'},{'PM2A'},R_actn,EX_R_actn_e,cpd00361,EX_cpd00361_e
+Ammonia,{'N'},{'PM3B'},nh3,EX_nh3_e,cpd00013,EX_cpd00013_e
+Nitrite,{'N'},{'PM3B'},no2,EX_no2_e,cpd00075,EX_cpd00075_e
+Nitrate,{'N'},{'PM3B'},no3,EX_no3_e,cpd00209,EX_cpd00209_e
+Urea,{'N'},{'PM3B'},urea,EX_urea_e,cpd00073,EX_cpd00073_e
+L-Cysteine,"{'S', 'N'}","{'PM3B', 'PM4A'}",cys__L,EX_cys__L_e,cpd00084,EX_cpd00084_e
+L-Tryptophan,{'N'},{'PM3B'},trp__L,EX_trp__L_e,cpd00065,EX_cpd00065_e
+L-Tyrosine,{'N'},{'PM3B'},tyr__L,EX_tyr__L_e,cpd00069,EX_cpd00069_e
+D-Asparagine,{'N'},{'PM3B'},asn__D,EX_asn__D_e,cpd01308Â ,EX_cpd01308Â _e
+D-Glutamic acid,{'N'},{'PM3B'},glu__D,EX_glu__D_e,cpd00186,EX_cpd00186_e
+D-Lysine,{'N'},{'PM3B'},lys__D,EX_lys__D_e,cpd00549,EX_cpd00549_e
+D-Valine,{'N'},{'PM3B'},val__D,EX_val__D_e,cpd03840,EX_cpd03840_e
+L-Citrulline,{'N'},{'PM3B'},citr__L,EX_citr__L_e,cpd00274,EX_cpd00274_e
+Hydroxylamine,{'N'},{'PM3B'},ham,EX_ham_e,cpd00165,EX_cpd00165_e
+Methylamine,{'N'},{'PM3B'},mma,EX_mma_e,cpd00187,EX_cpd00187_e
+Agmatine,{'N'},{'PM3B'},agm,EX_agm_e,cpd00152,EX_cpd00152_e
+Histamine,{'N'},{'PM3B'},hista,EX_hista_e,cpd00312,EX_cpd00312_e
+b-Phenylethylamine,{'N'},{'PM3B'},peamn,EX_peamn_e,cpd03161,EX_cpd03161_e
+Formamide,{'N'},{'PM3B'},frmd,EX_frmd_e,cpd00378,EX_cpd00378_e
+D-Galactosamine,{'N'},{'PM3B'},galam,EX_galam_e,,
+Adenine,{'N'},{'PM3B'},ade,EX_ade_e,cpd00128,EX_cpd00128_e
+Cytidine,{'N'},{'PM3B'},cytd,EX_cytd_e,cpd00367,EX_cpd00367_e
+Cytosine,{'N'},{'PM3B'},csn,EX_csn_e,cpd00307,EX_cpd00307_e
+Guanine,{'N'},{'PM3B'},gua,EX_gua_e,cpd00207,EX_cpd00207_e
+Guanosine,{'N'},{'PM3B'},gsn,EX_gsn_e,cpd00311,EX_cpd00311_e
+Thymine,{'N'},{'PM3B'},thym,EX_thym_e,cpd00151,EX_cpd00151_e
+Uracil,{'N'},{'PM3B'},ura,EX_ura_e,cpd00092,EX_cpd00092_e
+Xanthine,{'N'},{'PM3B'},xan,EX_xan_e,cpd00309,EX_cpd00309_e
+Xanthosine,{'N'},{'PM3B'},xtsn,EX_xtsn_e,cpd01217,EX_cpd01217_e
+Uric acid,{'N'},{'PM3B'},urate,EX_urate_e,cpd00300,EX_cpd00300_e
+Alloxan,{'N'},{'PM3B'},CE0074,EX_CE0074_e,cpd24434,EX_cpd24434_e
+Allantoin,{'N'},{'PM3B'},alltn,EX_alltn_e,cpd01092,EX_cpd01092_e
+e-Amino-N-Caproic acid,{'N'},{'PM3B'},6ax,EX_6ax_e,cpd01588,EX_cpd01588_e
+d-Amino-N-Valeric acid,{'N'},{'PM3B'},5aptn,EX_5aptn_e,cpd00339,EX_cpd00339_e
+Ala-Asp,{'N'},{'PM3B'},ala_L_asp__L,EX_ala_L_asp__L_e,cpd11593Â ,EX_cpd11593Â _e
+Ala-Gln,{'N'},{'PM3B'},ala_gln,EX_ala_gln_e,cpd11587,EX_cpd11587_e
+Ala-Glu,{'N'},{'PM3B'},ala_L_glu__L,EX_ala_L_glu__L_e,cpd15388Â ,EX_cpd15388Â _e
+Ala-His,{'N'},{'PM3B'},ala_his,EX_ala_his_e,cpd11584,EX_cpd11584_e
+Ala-Leu,{'N'},{'PM3B'},ala_leu,EX_ala_leu_e,cpd11583,EX_cpd11583_e
+Ala-Thr,{'N'},{'PM3B'},ala_L_Thr__L,EX_ala_L_Thr__L_e,cpd23857,EX_cpd23857_e
+Gly-Asn,{'N'},{'PM3B'},gly_asn__L,EX_gly_asn__L_e,cpd11581,EX_cpd11581_e
+Gly-Gln,{'N'},{'PM3B'},gly_gln,EX_gly_gln_e,cpd11580,EX_cpd11580_e
+Gly-Met,"{'S', 'N'}","{'PM3B', 'PM4A'}",gly_met,EX_gly_met_e,cpd11591,EX_cpd11591_e
+Met-Ala,{'N'},{'PM3B'},met_L_ala__L,EX_met_L_ala__L_e,cpd23854,EX_cpd23854_e
+Phosphate,{'P'},{'PM4A'},pi,EX_pi_e,cpd00009,EX_cpd00009_e
+Pyrophosphate,{'P'},{'PM4A'},ppi,EX_ppi_e,cpd00012,EX_cpd00012_e
+Trimetaphosphate,{'P'},{'PM4A'},tmp,EX_tmp_e,cpd01622,EX_cpd01622_e
+Tripolyphosphate,{'P'},{'PM4A'},pppi,EX_pppi_e,cpd00421,EX_cpd00421_e
+Adenosine 2`-Monophosphate,{'P'},{'PM4A'},amp2p,EX_amp2p_e,cpd00700,EX_cpd00700_e
+Adenosine 3`-Monophosphate,{'P'},{'PM4A'},3amp,EX_3amp_e,cpd00988,EX_cpd00988_e
+Adenosine 5`-Monophosphate,{'P'},{'PM4A'},amp,EX_amp_e,cpd00018,EX_cpd00018_e
+"Adenosine 2`,3`-Cyclic Monophosphate",{'P'},{'PM4A'},23camp,EX_23camp_e,cpd01570,EX_cpd01570_e
+"Adenosine 3`,5`-Cyclic Monophosphate",{'P'},{'PM4A'},camp,EX_camp_e,cpd00446,EX_cpd00446_e
+b-Glycerol Phosphate,{'P'},{'PM4A'},glyc2p,EX_glyc2p_e,cpd01908,EX_cpd01908_e
+Carbamyl Phosphate,{'P'},{'PM4A'},cbp,EX_cbp_e,cpd00146,EX_cpd00146_e
+D-2-Phospho-Glyceric acid,{'P'},{'PM4A'},2pg,EX_2pg_e,cpd00482,EX_cpd00482_e
+D-3-Phospho-Glyceric acid,{'P'},{'PM4A'},3pg,EX_3pg_e,cpd00169,EX_cpd00169_e
+Guanosine 3`-Monophosphate,{'P'},{'PM4A'},3gmp,EX_3gmp_e,cpd03701,EX_cpd03701_e
+Guanosine 5`-Monophosphate,{'P'},{'PM4A'},gmp,EX_gmp_e,cpd00126,EX_cpd00126_e
+"Guanosine 2`,3`-Cyclic Monophosphate",{'P'},{'PM4A'},23cgmp,EX_23cgmp_e,cpd03702,EX_cpd03702_e
+"Guanosine 3`,5`-Cyclic Monophosphate",{'P'},{'PM4A'},35cgmp,EX_35cgmp_e,cpd00697,EX_cpd00697_e
+Phosphoenol Pyruvate,{'P'},{'PM4A'},pep,EX_pep_e,cpd00061,EX_cpd00061_e
+Phospho-Glycolic acid,{'P'},{'PM4A'},2pglyc,EX_2pglyc_e,cpd00727,EX_cpd00727_e
+2-Deoxy-D-Glucose 6-Phosphate,{'P'},{'PM4A'},2doxg6p,EX_2doxg6p_e,cpd03805,EX_cpd03805_e
+D-Glucosamine-6-Phosphate,{'P'},{'PM4A'},gam6p,EX_gam6p_e,cpd00288,EX_cpd00288_e
+6-Phospho-Gluconic acid,{'P'},{'PM4A'},6pgc,EX_6pgc_e,cpd00284,EX_cpd00284_e
+Cytidine 3`-Monophosphate,{'P'},{'PM4A'},3cmp,EX_3cmp_e,cpd03454,EX_cpd03454_e
+Cytidine 5`-Monophosphate,{'P'},{'PM4A'},cmp,EX_cmp_e,cpd00046,EX_cpd00046_e
+"Cytidine 2`,3`-Cyclic Monophosphate",{'P'},{'PM4A'},23ccmp,EX_23ccmp_e,cpd01571,EX_cpd01571_e
+"Cytidine 3`,5`-Cyclic Monophosphate",{'P'},{'PM4A'},35ccmp,EX_35ccmp_e,cpd00696,EX_cpd00696_e
+D-Mannose-1-Phosphate,{'P'},{'PM4A'},man1p,EX_man1p_e,cpd00485,EX_cpd00485_e
+D-Mannose-6-Phosphate,{'P'},{'PM4A'},man6p,EX_man6p_e,cpd00235,EX_cpd00235_e
+Phospho-L-Arginine,{'P'},{'PM4A'},argp,EX_argp_e,cpd03535,EX_cpd03535_e
+O-Phospho-D-Serine,{'P'},{'PM4A'},pser__D,EX_pser__D_e,cpd01665,EX_cpd01665_e
+O-Phospho-L-Serine,{'P'},{'PM4A'},pser__L,EX_pser__L_e,cpd00738,EX_cpd00738_e
+O-Phospho-L-Threonine,{'P'},{'PM4A'},thrp,EX_thrp_e,cpd08928,EX_cpd08928_e
+Uridine 3`-Monophosphate,{'P'},{'PM4A'},3ump,EX_3ump_e,cpd00989,EX_cpd00989_e
+Uridine 5`-Monophosphate,{'P'},{'PM4A'},ump,EX_ump_e,cpd00091,EX_cpd00091_e
+"Uridine 2`,3`-Cyclic Monophosphate",{'P'},{'PM4A'},23cump,EX_23cump_e,cpd01572,EX_cpd01572_e
+O-Phospho-L-Tyrosine,{'P'},{'PM4A'},tyrp,EX_tyrp_e,cpd03912,EX_cpd03912_e
+Phosphocreatine,{'P'},{'PM4A'},pcreat,EX_pcreat_e,cpd01550,EX_cpd01550_e
+Phosphoryl Choline,{'P'},{'PM4A'},cholp,EX_cholp_e,cpd00457,EX_cpd00457_e
+O-Phosphoryl-Ethanolamine,{'P'},{'PM4A'},ethamp,EX_ethamp_e,cpd00285,EX_cpd00285_e
+Phosphono Acetic acid,{'P'},{'PM4A'},ppac,EX_ppac_e,cpd03385,EX_cpd03385_e
+2-Aminoethyl Phosphonic acid,{'P'},{'PM4A'},2ameph,EX_2ameph_e,cpd02233,EX_cpd02233_e
+Thymidine 5`-Monophosphate,{'P'},{'PM4A'},dtmp,EX_dtmp_e,cpd00298,EX_cpd00298_e
+Inositol Hexaphosphate,{'P'},{'PM4A'},mi1p__D,EX_mi1p__D_e,cpd00867,EX_cpd00867_e
+Sulfate,{'S'},{'PM4A'},so4,EX_so4_e,cpd00048,EX_cpd00048_e
+Thiosulfate,{'S'},{'PM4A'},tsul,EX_tsul_e,cpd00268,EX_cpd00268_e
+Tetrathionate,{'S'},{'PM4A'},tet,EX_tet_e,cpd01414,EX_cpd01414_e
+D-Cysteine,{'S'},{'PM4A'},cys__D,EX_cys__D_e,cpd00587,EX_cpd00587_e
+Cys-Gly,{'S'},{'PM4A'},cgly,EX_cgly_e,cpd01017,EX_cpd01017_e
+L-Cysteic acid,{'S'},{'PM4A'},Lcyst,EX_Lcyst_e,cpd00395,EX_cpd00395_e
+Cysteamine,{'S'},{'PM4A'},cysam,EX_cysam_e,cpd01160,EX_cpd01160_e
+L-Cysteine Sulfinic acid,{'S'},{'PM4A'},3sala,EX_3sala_e,cpd00467,EX_cpd00467_e
+N-Acetyl-L-Cysteine,{'S'},{'PM4A'},CE1310,EX_CE1310_e,cpd04181,EX_cpd04181_e
+Cystathionine,{'S'},{'PM4A'},cyst__L,EX_cyst__L_e,cpd00424,EX_cpd00424_e
+Lanthionine,{'S'},{'PM4A'},lanth,EX_lanth_e,cpd11577,EX_cpd11577_e
+Glutathione,{'S'},{'PM4A'},gthox,EX_gthox_e,cpd00111,EX_cpd00111_e
+D-Methionine,{'S'},{'PM4A'},met__D,EX_met__D_e,cpd00637,EX_cpd00637_e
+"N-Acetyl-D,L-Methionine",{'S'},{'PM4A'},acmet,EX_acmet_e,cpd24446,EX_cpd24446_e
+L-Methionine Sulfoxide,{'S'},{'PM4A'},metsox_S__L,EX_metsox_S__L_e,cpd01914,EX_cpd01914_e
+L-Djenkolic acid,{'S'},{'PM4A'},djenk,EX_djenk_e,cpd05190,EX_cpd05190_e
+"D,L-Lipoamide",{'S'},{'PM4A'},lpam,EX_lpam_e,cpd00213,EX_cpd00213_e
+Taurocholic acid,{'S'},{'PM4A'},tchola,EX_tchola_e,cpd03047,EX_cpd03047_e
+Taurine,{'S'},{'PM4A'},taur,EX_taur_e,cpd00210,EX_cpd00210_e
+Hypotaurine,{'S'},{'PM4A'},hyptaur,EX_hyptaur_e,cpd00406,EX_cpd00406_e
+Butane Sulfonic acid,{'S'},{'PM4A'},butso3,EX_butso3_e,cpd11596,EX_cpd11596_e
+2-Hydroxyethane Sulfonic acid,{'S'},{'PM4A'},isetac,EX_isetac_e,cpd03048,EX_cpd03048_e
+Methane Sulfonic acid,{'S'},{'PM4A'},mso3,EX_mso3_e,cpd08023,EX_cpd08023_e
