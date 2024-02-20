@@ -1,0 +1,16 @@
+triple_encoders/TripleEncoders.py,sha256=7bFvlGjeKH8F11BODFHd83jsrVSFGIrf3p1NGU3K6ZU,870
+triple_encoders/TripleEncodersForConversationalSequenceModeling.py,sha256=OP6pTbyILIeNyuSFlF2nJF7XkPnikAjCSmbcBhFaDSI,14318
+triple_encoders/TripleEncodersForSTP.py,sha256=gmyTt0X7Bu3MAOFwOV3KnFsCYigsOEh_npukVAbPB8g,15254
+triple_encoders/TripleEncodersForSequenceModeling.py,sha256=ODies3SBDkEfeCIV7KIYJEZzUHmSNdn061CxEyoasMg,26591
+triple_encoders/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+triple_encoders/trainer.py,sha256=WajCVW1R_g2hARL4MS3EpnXQNwveErS2PTMtWXt5Q4s,16245
+triple_encoders/evaluator/EmbeddingsTripleSimilarityEvaluator.py,sha256=irYKvFQ7YI5MZA6fINA7B8t2UmFVLJ1F0x7JF_Aye3Q,7057
+triple_encoders/evaluator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+triple_encoders/losses/CosineSimilarityTripleEncoderLoss.py,sha256=R0IBb7Mv9bGfEwtAmJy3BJ4W5xEBQBXZY5Tsx6Ql_nk,2485
+triple_encoders/losses/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+triple_encoders-0.0.2.dist-info/LICENSE,sha256=HJZ6p-XwX0JlS-I8t_DWDaS-ZEZl5lAtQ-5xxASsmXs,11621
+triple_encoders-0.0.2.dist-info/METADATA,sha256=gVChrw4zoIt8dXjm6ah9X7x2PugVTDZIw8ybjDE8Aro,9556
+triple_encoders-0.0.2.dist-info/NOTICE,sha256=3AJu4zoQ_JjzQUSf97poTJDX6pXy36w7SSNC-cwbE_o,284
+triple_encoders-0.0.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+triple_encoders-0.0.2.dist-info/top_level.txt,sha256=prVpW7cC4woBEFSWqogz9IVlExMS9tjQIEt5I7MlWl4,16
+triple_encoders-0.0.2.dist-info/RECORD,,
