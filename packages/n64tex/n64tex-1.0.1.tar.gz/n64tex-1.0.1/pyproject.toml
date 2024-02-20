@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "n64tex"
+version = "1.0.1"
+requires-python = ">=3.10"
+readme = "README.md"
+license = { file = "LICENSE" }
+dependencies = [
+    "numpy",
+    "Pillow"
+]
+
+[project.scripts]
+n64tex = "n64tex:cli"
