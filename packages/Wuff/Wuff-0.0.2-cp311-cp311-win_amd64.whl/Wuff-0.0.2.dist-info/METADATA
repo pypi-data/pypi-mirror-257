@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: Wuff
+Version: 0.0.2
+Summary: Analyzer tools for WooWoo projects
+Author: Michal Janecek
+Author-email: michal.janecek@gmail.com
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Provides-Extra: test
+Requires-Dist: pytest >=6.0 ; extra == 'test'
+
+# Wuff
+
+This is the analyzer for WooWoo projects. It can be used for example within a Language Server to provide analysis.
