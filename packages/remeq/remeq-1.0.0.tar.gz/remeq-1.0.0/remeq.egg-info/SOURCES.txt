@@ -1,0 +1,9 @@
+LICENSE.txt
+setup.py
+remeq/MessageQueue.py
+remeq/__init__.py
+remeq.egg-info/PKG-INFO
+remeq.egg-info/SOURCES.txt
+remeq.egg-info/dependency_links.txt
+remeq.egg-info/requires.txt
+remeq.egg-info/top_level.txt
