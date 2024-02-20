@@ -1,0 +1,1 @@
+from . import test_res_partner_ticket_massive_creation_wizard

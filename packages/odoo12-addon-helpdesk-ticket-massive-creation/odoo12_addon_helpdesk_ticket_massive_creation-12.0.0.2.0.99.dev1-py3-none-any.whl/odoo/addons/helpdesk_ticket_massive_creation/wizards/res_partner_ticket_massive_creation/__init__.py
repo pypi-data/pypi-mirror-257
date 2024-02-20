@@ -1,0 +1,1 @@
+from . import res_partner_ticket_massive_creation
