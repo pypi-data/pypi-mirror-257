@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+michaelPanUtilsLib/__init__.py
+michaelPanUtilsLib/utils.py
+michaelPanUtilsLib.egg-info/PKG-INFO
+michaelPanUtilsLib.egg-info/SOURCES.txt
+michaelPanUtilsLib.egg-info/dependency_links.txt
+michaelPanUtilsLib.egg-info/requires.txt
+michaelPanUtilsLib.egg-info/top_level.txt
