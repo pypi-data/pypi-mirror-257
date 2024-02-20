@@ -1,0 +1,7 @@
+cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cli/main.py,sha256=dNHiIccLPnAoT-cAP-UdTIHpLHC-sdN3VMjPtk9jYHc,2799
+upload_azure-0.1.dist-info/METADATA,sha256=u1My6127Yw2iX0hH92pnYBvyzI2gUcfzzKPSC2g30EI,59
+upload_azure-0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+upload_azure-0.1.dist-info/entry_points.txt,sha256=3AvCbQgapJ03s5gqkbhz2wB77SVULeP5WipxO4H7ess,60
+upload_azure-0.1.dist-info/top_level.txt,sha256=2ImG917oaVHlm0nP9oJE-Qrgs-fq_fGWgba2H1f8fpE,4
+upload_azure-0.1.dist-info/RECORD,,
