@@ -1,0 +1,3 @@
+[console_scripts]
+codegen=oliver_codegen.main:start
+
