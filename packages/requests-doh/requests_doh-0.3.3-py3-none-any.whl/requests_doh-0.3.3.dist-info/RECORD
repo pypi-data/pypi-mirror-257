@@ -1,0 +1,14 @@
+requests_doh/__init__.py,sha256=1SlfZ3AvvrAoqTkYGt3JZeNhjgezTHa31ImBl0FjMnA,391
+requests_doh/adapter.py,sha256=UYYcbNMX-cx_gND3USy2f5G4Mw-l6cMl-MgyLDUWZeM,1647
+requests_doh/cachemanager.py,sha256=RjrB0VjMmzwJYhZE5WKJq3zE6tkfaW26SnAxr9kM0Pc,1751
+requests_doh/exceptions.py,sha256=8Sm4xFv-r9C55oS5I1QGdRJGn-azxpt4cur5ruaZUlw,413
+requests_doh/resolver.py,sha256=HE3K9c7NMhE1D1HE-z2801Q4lKKjxGr_uYmWrfTqgzk,7795
+requests_doh/session.py,sha256=mlOL1KDhmIQP0i4m60m3dZVGZSEPEUMUIkpdp2Hu4nA,560
+requests_doh/connector/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+requests_doh/connector/default.py,sha256=aw2VoLQhUgmPWz6hkVKkrTKT_lVcwFBsKsY7HD4G9Zg,4551
+requests_doh/connector/proxies.py,sha256=O56m-rU9QhZ6VlYVpvWzZt8ckxpaN5hDagTfqIGfr9g,13696
+requests_doh-0.3.3.dist-info/LICENSE,sha256=pXQRFjAmgiQbB_JmMOP0ps8Ffj1hfn0RRcUmnFd9_Qk,1069
+requests_doh-0.3.3.dist-info/METADATA,sha256=S6cKDnkiVkrGl-U9-BPrW2M0BRC9pNinpBSC5njXEas,2837
+requests_doh-0.3.3.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+requests_doh-0.3.3.dist-info/top_level.txt,sha256=2BecmH4-h5cO3VxXULUROblvT95wJp-fVcaUSWYaM_o,13
+requests_doh-0.3.3.dist-info/RECORD,,
