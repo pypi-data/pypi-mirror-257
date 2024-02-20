@@ -1,0 +1,67 @@
+models:
+- name: DeepLabV3-ResNet50
+  performance_metrics:
+  - torchscript_onnx_tflite:
+      inference_time: 493263180.0
+      throughput: 0.0020273153167442988
+      estimated_peak_memory_range:
+        min: 6512640
+        max: 11394560
+      primary_compute_unit: NPU
+      precision: fp16
+      layer_info:
+        layers_on_npu: 98
+        layers_on_gpu: 0
+        layers_on_cpu: 0
+        total_layers: 98
+      job_id: j1p398mnp
+      job_status: Passed
+    torchscript_onnx_qnn:
+      inference_time: 491290855.0
+      throughput: 0.0020354541303236754
+      estimated_peak_memory_range:
+        min: 5865472
+        max: 22149504
+      primary_compute_unit: NPU
+      precision: fp16
+      layer_info:
+        layers_on_npu: 142
+        layers_on_gpu: 0
+        layers_on_cpu: 0
+        total_layers: 142
+      job_id: jwgormvkg
+      job_status: Passed
+    reference_device_info:
+      name: Samsung Galaxy S23
+      os: '13'
+      form_factor: Phone
+      os_name: android
+      manufacturer: Samsung
+      chipset: Snapdragon® 8 Gen 2
+    timestamp: '2024-02-16T09:26:14.331413Z'
+aggregated:
+  supported_oses:
+  - Android
+  supported_devices:
+  - Google Pixel 3
+  - Google Pixel 3a
+  - Google Pixel 3a XL
+  - Google Pixel 4
+  - Google Pixel 4a
+  - Google Pixel 5a 5G
+  - Samsung Galaxy S21
+  - Samsung Galaxy S21 Ultra
+  - Samsung Galaxy S21+
+  - Samsung Galaxy S22 5G
+  - Samsung Galaxy S22 Ultra 5G
+  - Samsung Galaxy S22+ 5G
+  - Samsung Galaxy S23
+  - Samsung Galaxy S23 Ultra
+  - Samsung Galaxy S23+
+  - Samsung Galaxy Tab S8
+  - Xiaomi 12
+  - Xiaomi 12 Pro
+  supported_chipsets:
+  - Snapdragon® 8 Gen 1
+  - Snapdragon® 8 Gen 2
+  - Snapdragon® 888
