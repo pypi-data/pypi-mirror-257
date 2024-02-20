@@ -1,0 +1,92 @@
+Metadata-Version: 2.1
+Name: disk-numpy-array
+Version: 0.1.0
+Summary: A library to save and load a large numpy array from disk.
+Author-email: shenmishajing <shenmishajing@gmail.com>
+License: MIT License
+Project-URL: Homepage, https://github.com/shenmishajing/disk_numpy_array
+Project-URL: Repository, https://github.com/shenmishajing/disk_numpy_array
+Project-URL: Documentation, https://shenmishajing-project-template.readthedocs.io
+Project-URL: Issues, https://github.com/shenmishajing/disk_numpy_array/issues
+Project-URL: Changelog, https://github.com/shenmishajing/disk_numpy_array/blob/main/docs/get_started/changelog.md
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Environment :: GPU :: NVIDIA CUDA
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Natural Language :: Chinese (Simplified)
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Provides-Extra: dev-commit
+Requires-Dist: pre-commit; extra == "dev-commit"
+Requires-Dist: commitizen; extra == "dev-commit"
+Provides-Extra: dev-doc
+Requires-Dist: sphinx; extra == "dev-doc"
+Requires-Dist: sphinx-autobuild; extra == "dev-doc"
+Requires-Dist: sphinx-book-theme; extra == "dev-doc"
+Requires-Dist: sphinx-autoapi; extra == "dev-doc"
+Requires-Dist: myst-parser; extra == "dev-doc"
+Requires-Dist: sphinx_design; extra == "dev-doc"
+Provides-Extra: dev-build
+Requires-Dist: build; extra == "dev-build"
+Provides-Extra: dev-test
+Requires-Dist: tox; extra == "dev-test"
+Requires-Dist: pytest; extra == "dev-test"
+Requires-Dist: pytest-cov; extra == "dev-test"
+Provides-Extra: dev-core
+Requires-Dist: disk-numpy-array[dev-commit]; extra == "dev-core"
+Provides-Extra: dev
+Requires-Dist: disk-numpy-array[dev-build,dev-core,dev-doc,dev-test]; extra == "dev"
+Provides-Extra: all
+Requires-Dist: disk-numpy-array[dev]; extra == "all"
+
+# Disk Numpy Array
+
+This library is designed for saving and loading partially large numpy arrays from disk.
+
+## Installation
+
+```bash
+pip install disk-numpy-array
+```
+
+## Contribution
+
+See [contribution docs](docs/get_started/contribution.md) for details.
+
+## Release versions
+
+We use [setuptools_scm](https://github.com/pypa/setuptools_scm/) for versioning. For the versions available, see the [tags](https://github.com/shenmishajing/disk_numpy_array/tags) on this repository.
+
+## License
+
+This project is licensed under the MIT License.
+
+## Star History
+
+<picture>
+  <source
+    media="(prefers-color-scheme: dark)"
+    srcset="
+      https://api.star-history.com/svg?repos=shenmishajing/disk_numpy_array&type=Date&theme=dark
+    "
+  />
+  <source
+    media="(prefers-color-scheme: light)"
+    srcset="
+      https://api.star-history.com/svg?repos=shenmishajing/disk_numpy_array&type=Date
+    "
+  />
+  <img
+    alt="Star History Chart"
+    src="https://api.star-history.com/svg?repos=shenmishajing/disk_numpy_array&type=Date"
+  />
+</picture>
