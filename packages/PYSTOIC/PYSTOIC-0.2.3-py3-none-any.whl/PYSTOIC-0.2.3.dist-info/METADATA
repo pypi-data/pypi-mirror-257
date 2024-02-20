@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: PYSTOIC
+Version: 0.2.3
+Requires-Python: >=3.10
+Requires-Dist: ruff
+Requires-Dist: setuptools
+Provides-Extra: all
+Requires-Dist: pkginfo ; extra == 'all'
+Requires-Dist: loguru ; extra == 'all'
+Requires-Dist: sh ; extra == 'all'
+Requires-Dist: requests ; extra == 'all'
+Requires-Dist: tabulate ; extra == 'all'
+Provides-Extra: reqs
+Requires-Dist: pkginfo ; extra == 'reqs'
+Requires-Dist: loguru ; extra == 'reqs'
+Requires-Dist: sh ; extra == 'reqs'
+Requires-Dist: requests ; extra == 'reqs'
+Requires-Dist: tabulate ; extra == 'reqs'
+
