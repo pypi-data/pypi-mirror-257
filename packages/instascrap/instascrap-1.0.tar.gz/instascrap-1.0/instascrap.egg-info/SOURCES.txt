@@ -1,0 +1,9 @@
+README.md
+setup.py
+instascrap/__init__.py
+instascrap/main.py
+instascrap.egg-info/PKG-INFO
+instascrap.egg-info/SOURCES.txt
+instascrap.egg-info/dependency_links.txt
+instascrap.egg-info/requires.txt
+instascrap.egg-info/top_level.txt
