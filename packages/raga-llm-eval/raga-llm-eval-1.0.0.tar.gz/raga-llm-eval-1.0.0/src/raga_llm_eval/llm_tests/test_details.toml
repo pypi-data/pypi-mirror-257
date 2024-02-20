@@ -1,0 +1,167 @@
+[relevancy_test]
+description = "Measures the relevance of LLM response to the input prompt"
+expected_arguments = "prompt, response, context, model(optional), include_reason(optional), threshold(optional)"
+expected_output = "Dictionary with relevancy score, reason, and details"
+interpretation = "Higher score means more relevant"
+
+[contextual_precision_test]
+description = "Evaluates if relevant nodes in context are ranked higher"
+expected_arguments = "prompt, expected_response, context, model (optional), include_reason (optional), threshold (optional)"
+expected_output = "Dictionary with precision score, reason, and details"
+interpretation = "Higher score means more precise"
+
+[contextual_recall_test]
+description = "Measures alignment of retrieval context with expected response"
+expected_arguments = "expected_response, context, model (optional), include_reason (optional), threshold (optional)"
+expected_output = "Dictionary with recall score, reason, and details"
+interpretation = "Higher score means better recall"
+
+[contextual_relevancy_test]
+description = "Evaluates overall relevance of context to input prompt"
+expected_arguments = "prompt, context, model(optional), include_reason(optional), threshold(optional)"
+expected_output = "Dictionary with relevancy score, reason, and details"
+interpretation = "Higher score means more relevant context"
+
+[faithfulness_test]
+description = "Assesses if LLM response aligns with retrieval context"
+expected_arguments = "prompt, response, context, model(optional), include_reason(optional), threshold(optional)"
+expected_output = "Dictionary with faithfulness score, reason, and details"
+interpretation = "Higher score means more faithful"
+
+[maliciousness_test]
+description = "This metric checks the maliciousness of prompt and response"
+expected_arguments = "prompt, response, expected_response, context, model(optional), threshold(optional)"
+expected_output = "A dictionary containing the prompt, response, expected response, context, maliciousness_score whether it's malicious, threshold, and evaluation details."
+interpretation = "more score means more malicious"
+
+[summarisation_test]
+description = "Determines if LLM generates factually correct summaries with necessary details"
+expected_arguments = "prompt, response, model (optional), threshold (optional)"
+expected_output = "Dictionary with summarisation score and other details"
+interpretation = "Higher score means better summary quality"
+
+[consistency_test]
+description = "Provides a score for the consistency."
+expected_arguments = "prompt, response, model(optional), threshold(optional), num_samples(optional)"
+expected_output = "A dictionary containing the prompt, response, consistency_score, is_passed and threshold"
+interpretation = "Higher score means better consistency"
+
+[conciseness_test]
+description = "This metric checks the conciseness of your LLM response"
+expected_arguments = "prompt, response, context(optional), strictness(optional), model(optional)"
+expected_output = "Dictionary with conciseness score, and other relevant information"
+interpretation = "Score of 1 means concise, 0 means not concise"
+
+[coherence_test]
+description = "This metric checks the coherence of your LLM response"
+expected_arguments = "prompt, response, context(optional), strictness(optional), model (optional)"
+expected_output = "Dictionary with coherence score, and other relevant information"
+interpretation = "Score of 1 means concise, 0 means not concise"
+
+[cover_test]
+description = "Checks whether all concepts are covered by model response."
+expected_arguments = "response, concept_set"
+expected_output = "A dictionary containing the response, concept_set, ratio indicating no of concepts covered."
+interpretation = "Using this test, you can check whether all concepts are used in model response or not. Additionally, you can test this for multiple responses and infer the average."
+
+[pos_test]
+description = "Checks whether (PoS) of ALL given concepts are correct in model response."
+expected_arguments = "response, concept_set"
+expected_output = "A dictionary containing the response, concept_set, ratio indicating no of correctly classified (PoS)."
+interpretation = "Using this test, you can check whether model response has same PoS tags as mentioned in concept_set. Additionally, you can test this for multiple responses and infer the average."
+
+[length_test]
+description = "The number of words in the generated response."
+expected_arguments = "response"
+expected_output = "A dictionary containing the response, length of generated response."
+interpretation = "Using this test, you can check what average length is generated when you run your model for multiple responses."
+
+[winner_test]
+description = "Compares responses of two models or model and human annotation."
+expected_arguments = "response, ground_truth, concept_set, model(optional), temperature(optional), max_tokens(optional)"
+expected_output = "A dictionary containing the response, ground_truth, concept_set, a boolean indicating which model is better: 1 indicating model is better than ground_truth, and the model evaluated with."
+interpretation = "Using this test, you can compare responses generated by two models or a model and ground truth."
+
+[overall_test]
+description = "Compare overall score of two models on the provided task."
+expected_arguments = "response, ground_truth, concept_set, model(optional), temperature(optional), max_tokens(optional)"
+expected_output = "A dictionary containing the response, ground_truth, concept_set, overall_score which is product of winner_test score, pos_test score and cover_test score, and the model evaluated with."
+interpretation = "Using this test, you can evaluate models and see which model performs best"
+
+[refusal_test]
+description = "Provides a score for the refusal similarity of response."
+expected_arguments = "response, threshold(optional)"
+expected_output = "A dictionary containing the response, is_passed, refusal score and threshold"
+interpretation = "higher the score, more the chances of refusal"
+
+[prompt_injection_test]
+description = "The prompt injection test checks for the injection issue in the prompt"
+expected_arguments = "prompt, threshold(optional)"
+expected_output = "A dictionary with injection score"
+interpretation = "Lower score means good prompt"
+
+[sentiment_analysis_test]
+description = "Provides a score for the sentiment of model response"
+expected_arguments = "response, threshold(optional)"
+expected_output = "A dictionary returning sentiment score"
+interpretation = "Higher score means positive prompt"
+
+[toxicity_test]
+description = "Provides a score for the toxicity of model response"
+expected_arguments = "response, threshold(optional)"
+expected_output = "A dictionary returning the toxicity score for response"
+interpretation = "Higher score means toxic response"
+
+[generic_evaluation_test]
+description = "This can be use to handle generic test metrics"
+expected_arguments = "metric_name, evaluation_criteria, prompt, response, context, expected_response, model(optional), threshold(optional)"
+expected_output = "A dictionary containing the score and reason along with other information."
+interpretation = "Higher score signifies the response for the prompt was good according to criteria"
+
+[correctness_test]
+description = "This metric checks the correctness of your LLM response compared to the expected response"
+expected_arguments = "prompt, response, context, expected_response, model(optional), threshold(optional)"
+expected_output = "Dictionary with correctness score, and other relevant information"
+interpretation = "Higher score means more correct"
+
+[hallucination_test]
+description = "Measures the hallucination score of the model's response compared to the context."
+expected_arguments = "response, context, model, include_reason (optional), threshold (optional)"
+expected_output = "A dictionary containing the prompt, response, score, threshold, reason, and evaluation details."
+interpretation = "Higher score means the response is hallucinated"
+
+[bias_test]
+description = "Measures the bias score of the model's response."
+expected_arguments = "response, threshold(optional)"
+expected_output = "A dictionary containing the response, score, threshold and is_passed."
+interpretation = "Higher score means the response is biased"
+
+[response_toxicity_test]
+description = "Measures the toxicity score of the model's response."
+expected_arguments = "response, threshold(optional)"
+expected_output = "A dictionary containing the response, score, threshold and is_passed."
+interpretation = "Higher score means toxic response"
+
+[cosine_similarity_test]
+description = "Provides score for the cosine similarity between the prompt and response generated by the model"
+expected_arguments = "prompt, response, threshold"
+expected_output = "A dictionary containing the prompt, response, score and other relevant information"
+interpretation = "Higher scores signifies the higher similarity between the prompt and the generated response "
+
+[grade_score_test]
+description = " Provides the grade score. The grade score means the number of years of education generally required to understand the text"
+expected_arguments = "prompt, response(optional), threshold"
+expected_output = "A dictionary containing the prompt, response, score containing the prompt grade score and response grade score and other relevant information"
+interpretation = "Higher scores signifies higher level of education needed to understand the text "
+
+[complexity_test]
+description = " Provides a score for the complexity of the text."
+expected_arguments = "prompt, response (optional), threshold"
+expected_output = "A dictionary containing the prompt, response, score containing the prompt complexity and response complexity, and prompt and response submetrics"
+interpretation = "Higher scores signifies the higher complexity of the prompt and response."
+
+[readability_test]
+description = "Provides the readability score."
+expected_arguments = "prompt, response(optional), threshold"
+expected_output = "A dictionary containing the prompt, response, score containing the prompt readabilit_score  and response readabilit_score and other relevant information"
+interpretation = "Higher scores signifies higher readability of the text. "

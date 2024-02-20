@@ -1,0 +1,24 @@
+[1]
+response = "The quick brown fox jumps over the lazy dog."
+gt = "The quick brown fox jumps over the lazy dog."
+concept_set = ["animals_N", "speed_N"]
+
+[2]
+response = "A brown fox jumps over the lazy dog."
+gt = "The quick brown fox jumps over the lazy dog."
+concept_set = ["animals_N"]
+
+[3]
+response = "The lazy dog is jumped over by a quick brown fox."
+gt = "A quick brown fox jumps over the lazy dog."
+concept_set = ["animals_N", "order_N"]
+
+[4]
+response = "A speedy brown fox jumps over a lazy dog."
+gt = "The quick brown fox jumps over the lazy dog."
+concept_set = ["speed_N", "animals_N"]
+
+[5]
+response = "The lazy dog is jumped over by a brown fox."
+gt = "The lazy dog is jumped over by a brown fox."
+concept_set = ["animals_N", "order_N"]
