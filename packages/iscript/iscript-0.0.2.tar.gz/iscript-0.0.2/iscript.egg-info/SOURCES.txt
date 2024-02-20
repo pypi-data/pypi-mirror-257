@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+iscript/__main__.py
+iscript.egg-info/PKG-INFO
+iscript.egg-info/SOURCES.txt
+iscript.egg-info/dependency_links.txt
+iscript.egg-info/requires.txt
+iscript.egg-info/top_level.txt
