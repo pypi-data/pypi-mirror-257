@@ -1,0 +1,6 @@
+pyiptables/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyiptables/securitygroup.py,sha256=-dRiDYELYY_dPdd795FvBhUqgYer-WDJofscryawohI,6086
+pyiptables-2.0.5.dist-info/METADATA,sha256=h5OZAtWET7sS1LEjkI6yCfcuGVuJ2n1Z8Ou9CI2-SgU,1777
+pyiptables-2.0.5.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+pyiptables-2.0.5.dist-info/top_level.txt,sha256=gNB0Rr3iCoZX7xMWTPIry4xWn72gCB8H3d7JvEmzfLY,11
+pyiptables-2.0.5.dist-info/RECORD,,
