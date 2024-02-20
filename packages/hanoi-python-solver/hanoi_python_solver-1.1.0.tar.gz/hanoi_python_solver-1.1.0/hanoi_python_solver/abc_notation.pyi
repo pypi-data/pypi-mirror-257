@@ -1,0 +1,9 @@
+from typing import List, Tuple
+
+class ABC_Notation:
+    @classmethod
+    def checkNotationABC(cls, notation: str) -> bool: ...
+    @classmethod
+    def generateDisks(cls, notation: str, id: int) -> List[int]: ...
+    @classmethod
+    def movementBetween(cls, notation1:str, notation2:str) -> Tuple[int,int] | None: ...
