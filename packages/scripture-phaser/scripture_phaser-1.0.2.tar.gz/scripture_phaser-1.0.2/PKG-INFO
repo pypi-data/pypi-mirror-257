@@ -1,0 +1,94 @@
+Metadata-Version: 2.1
+Name: scripture_phaser
+Version: 1.0.2
+Summary: scripture_phaser helps you to memorize the Bible.
+Project-URL: Homepage, https://nolanmcmahon.net/projects/scripture_phaser.html
+Project-URL: Repository, https://github.com/NolantheNerd/scripture_phaser
+Author-email: Nolan McMahon <nolan@nolanmcmahon.net>
+License: Copyright 2023-2024 Nolan McMahon
+        
+        Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+        
+        1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+        
+        2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+        
+        3. Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+        
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+License-File: LICENSE
+Keywords: bible,bible-study,cli,memorization,scripture
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Religion
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Classifier: Topic :: Religion
+Requires-Python: >=3.8
+Requires-Dist: meaningless==1.0.0
+Requires-Dist: peewee==3.17.0
+Requires-Dist: python-dotenv==1.0.0
+Requires-Dist: pyxdg==0.28
+Requires-Dist: requests==2.31.0
+Description-Content-Type: text/markdown
+
+# Scripture Phaser
+
+scripture_phaser helps you to memorize the Bible.
+
+![scripture_phaser Demo](demo.gif)
+
+## Installation
+
+This package is available through PIP:
+
+pip install scripture_phaser
+
+## Usage
+
+scripture_phaser [-h] [--version] [--license]
+
+Running scripture_phaser with no arguments launches the interactive CLI.
+
+### Commands
+
+From the interactive CLI, the following commands are available:
+
+* g/get         - Reload the configuration file
+* w/write       - Save the current configuration
+* l/list        - Lists selected reference, random mode and translation
+* m/random_mode - Toggles the mode
+* r/reference   - Sets the reference
+* t/translation - Set the translation
+* i/inquire     - List available translations
+* p/practice    - Practice the current reference
+* v/view        - Preview current reference
+* s/stats       - View your statistics
+* h/help        - Prints this help message
+* z/reset       - Reset statistics
+* q/quit        - Quits scripture_phaser
+
+## Uninstallation
+
+pip uninstall scripture_phaser
+
+## What's up with the Name?
+
+Why is this tool called "scripture_phaser"? The name is actually a reference to a fictional weapon that appeared in an episode on of Focus on the Family's radio drama "Adventures in Odyssey" back in 1995 called "Hidden in My Heart".
+
+In one particular segment of the show, the characters are parodying an away mission from the original "Star Trek" series with William Shatner. Sky Trip's own captain, played by William Shattered, along with his trusty sidekick Krok and one expendable crewman beam down to an alien world to rescue a damsel in distress. Among the other trinkets that they take with them are their scripture phasers. These devices thwart attempts to tempt the trio to sin by citing relevant pieces of scripture. The entire segment is very tongue-in-cheek, but absolutely entertaining.
+
+The entire episode was released for free by Focus on the Family as a part of an episode of "The Official Adventures in Odyssey Podcast".
+
+[Link to The Podcast Episode](https://www.oneplace.com/ministries/the-official-adventures-in-odyssey-podcast/player/june-13-2007-free-adventures-in-odyssey-episode-hidden-in-my-heart-798810.html)
+
+The "Sky Trip" portion of the episode starts at 12:28, if you want to skip directly to it.
+
+## License
+
+scripture_phaser is licensed under the BSD 3-Clause License. See LICENSE file or the [Open Source Initiative](https://opensource.org/license/bsd-3-clause/) for the full text of the license.
