@@ -1,0 +1,4 @@
+jupyterlite
+jupyterlab
+ipyreact
+jupyterlite-pyodide-kernel
