@@ -1,0 +1,46 @@
+[tool.poetry]
+name = "easy-vc-dev"
+version = "0.1.1"
+description = ""
+authors = ["wok"]
+readme = "README.md"
+
+include = [ "easy_vc_dev/webIF/frontend/**/*"]
+
+
+[tool.poetry.dependencies]
+python = "^3.10,<3.13"
+torch = "^2.1.2"
+torchaudio = "^2.1.2"
+numpy = "^1.26.3"
+simple-performance-timer = "^0.1.2"
+scipy = "^1.11.4"
+librosa = "^0.10.1"
+tqdm = "^4.66.1"
+ffmpeg-python = "^0.2.0"
+fire = "^0.5.0"
+tensorboard = "^2.15.1"
+matplotlib = "^3.8.2"
+onnxsim = "^0.4.35"
+pyinstaller = "^6.3.0"
+resampy = "^0.4.2"
+colab-easy-ui = "^0.1.107"
+portpicker = "^1.6.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+download = "easy_vc_dev.utils.download:main"
+preprocess = "easy_vc_dev.utils.preprocess:main"
+extract_feature = "easy_vc_dev.utils.extract_feature:main"
+generate_filelist = "easy_vc_dev.utils.generate_filelist:main"
+train = "easy_vc_dev.train.train:main"
+
+export_onnx = "easy_vc_dev.onnx.export_onnx:main"
+infer_with_onnx = "easy_vc_dev.onnx.infer_with_onnx:main"
+
+easy_vc = "easy_vc_dev.cli:main"
+web = "easy_vc_dev.webIF.main:main"
