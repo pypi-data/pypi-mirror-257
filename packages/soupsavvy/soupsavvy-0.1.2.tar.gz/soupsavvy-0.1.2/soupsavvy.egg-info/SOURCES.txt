@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+requirements.txt
+config/requirements_dev.txt
+soupsavvy/__init__.py
+soupsavvy.egg-info/PKG-INFO
+soupsavvy.egg-info/SOURCES.txt
+soupsavvy.egg-info/dependency_links.txt
+soupsavvy.egg-info/requires.txt
+soupsavvy.egg-info/top_level.txt
