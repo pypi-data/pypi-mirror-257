@@ -1,0 +1,153 @@
+Metadata-Version: 2.1
+Name: flexpass
+Version: 0.1.0
+Summary: A simple yet flexible library (and command-line application) to access passwords.
+Author-email: Ipamo <dev@ipamo.net>
+Project-URL: Homepage, https://gitlab.com/ipamo/flexpass
+Project-URL: Bug Tracker, https://gitlab.com/ipamo/flexpass/issues
+Keywords: pass,keyring,secrets,passwords,password manager
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Environment :: Console
+Classifier: Topic :: Security
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: pywin32 ; sys_platform == "win32"
+
+Flexpass
+========
+
+A simple yet flexible library (and command-line application) to access passwords.
+
+## Installation
+
+Flexpass package is [available on PyPI.org](https://pypi.org/project/flexpass/):
+
+```sh
+pip install flexpass
+```
+
+## Usage
+
+Flexpass may be used as a library in your Python code:
+
+```py
+from flexpass import get_password, set_password, delete_password, list_passwords
+...
+```
+
+It may also be accessed directly as a command-line application. Flexpass PyPI package provides an executable that should be installed in your PATH:
+
+```sh
+flexpass --help
+```
+
+The application may also be invoked as a Python module:
+
+```sh
+python -m flexpass --help
+```
+
+## Main features
+
+This library provides read and write access to passwords, identified by a name, through the following functions:
+
+```py
+def get_password(name: str) -> str|None:
+    ...
+
+def set_password(name: str, password: str, **options) -> None:
+    ...
+
+def delete_password(name: str) -> bool:
+    ...
+
+def list_passwords() -> list[PasswordInfo]:
+    ...
+```
+
+Function `get_password` requests all registered backends (by decreasing priority order) until a password with the given name is found.
+
+Function `set_password` sets the password in the read-write backend with the highest priority.
+
+Function `delete_password` deletes the password in all read-write backends where the password was set. It returns `True` if the password was set in at least one backend.
+
+Function `list_passwords` returns a list of the password names associated with information from the backends.
+
+Access to passwords is also possible for a specific backend, by using this backend method. Examples:
+
+```py
+backend = get_backend('pass')
+backend.get_password('my/password')
+```
+
+Example of invokation of `flexpass` command-line application with `list` command (which is the default command when no argument is given).
+It retrives passwords using function `list_passwords` and format the results:
+
+![Result of `--list` command (example)](https://gitlab.com/ipamo/flexpass/-/raw/main/docs/examples/list-result.png "Result of `--list` command (example)")
+
+
+## Backends
+
+The following backends are included in Flexpass package:
+
+| Name(s)                  | Priority | Description  |
+|--------------------------|----------|--------------|
+| `pass` (or `gpg`)        | 80       | [Pass](https://www.passwordstore.org/), the _standard unix password manager_, based on [GPG](https://www.gnupg.org/). It has very few requirements and should be available on most workstations and servers. |
+| `wincred`                | 50       | [Windows Credential Manager](https://support.microsoft.com/en-us/windows/accessing-credential-manager-1b5c916a-6a16-889f-8581-fc16e8165ac0), the password manager integrated with Windows. |
+
+These backends are planned to be added later (ROADMAP):
+
+| Name(s)                  | Priority | Description  |
+|--------------------------|----------|--------------|
+| `secretservice` (or `libsecret`, `secrettool`, `keyring`, `wallet`) | 60       | [Secret Service D-Bus API](https://www.freedesktop.org/wiki/Specifications/secret-storage-spec/), a _FreeDesktop.org_ standard usually accessed through [libsecret](https://wiki.gnome.org/Projects/Libsecret) and its frontends [secret-tool](https://manpages.debian.org/bookworm/libsecret-tools/secret-tool.1.en.html), [Gnome Keyring](https://wiki.gnome.org/Projects/GnomeKeyring) or [KDE Wallet Manager](https://apps.kde.org/fr/kwalletmanager5/). |
+| `secrets`                | 30       | [Docker Compose secrets](https://docs.docker.com/compose/use-secrets/), made available in the containers at path `/run/secrets/{name}` or in `/run/secrets/misc` (or at local path `secrets/{name}.txt` or in `secrets/misc.ini`, usefull during development). **Read-only**. |
+| `dir`                    | 20       | Directory in clear (by default `/root/passwords`). |
+| `env`                    | 10       | Environment variables. |
+
+Custom backends may be registered in your Phon code using the `register_backend_class` function. Example:
+
+```py
+from flexpass import register_backend_class
+register_backend_class(MyCustomBackend, priority=70)
+```
+
+Pre-defined priorities may be modified by calling the `register_backend_class` with the new `priority` value. Example:
+
+```py
+register_backend_class(WincredBackend, priority=5)
+```
+
+NOTE: priority `0` disables the backend.
+
+
+## License
+
+This project is licensed under the terms of the [MIT license](https://gitlab.com/ipamo/flexpass/-/raw/main/LICENSE.txt).
+
+
+## Credits
+
+Inspired by:
+
+- [pass](https://www.passwordstore.org/): the _standard unix password manager_ based on GPG.
+- [keyring](https://github.com/jaraco/keyring).
+
+Differences with `keyring`:
+    - `keyring` is a lot more mature and has many more backends.
+    - `flexpass` does not require to specify a _username_ in addition to the password name.
+    - `flexpass` provides a predictible and easily configurable order of precedence for the backends.
+    - `flexpass` aims at including usual backends without requiring additional packages (in particular, the simple `pass` command is avaible).
+    - `flexpass` easily gives access to the list of passwords.
+
+Logo created by [Pixel perfect - Flaticon](https://www.flaticon.com/free-icons/open-source).
