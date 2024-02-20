@@ -1,0 +1,2 @@
+[console_scripts]
+n64tex = n64tex:cli

@@ -1,0 +1,17 @@
+n64tex/__init__.py,sha256=OdAosBGD7Vq2KzHiCTzmB9RIEeWjUAX-3WeIYl1evV4,3197
+n64tex/formats/__init__.py,sha256=eXQfAmCUmW1hb_-e6dIUxpucwbNI2BZBsJoYZTr4Hpw,757
+n64tex/formats/base.py,sha256=FgIbHRApX_xy76ZJO2EmYStZq7UaBKgYMFDFsE7pDOk,4510
+n64tex/formats/ci4.py,sha256=nbqiqmWKGG5w_IcsQyvy6k8_ETxy1QrM0tq_UJ9yZL0,4332
+n64tex/formats/ci8.py,sha256=4ladfuSoRDfa7Qy90YUVi9S4PS7MM0WoQ9DqyV-oiXk,4420
+n64tex/formats/i4.py,sha256=l9IePyIk9hmeShUVCMXad5xhd3ve5-BHYqwhUB-U1HU,2358
+n64tex/formats/i4a.py,sha256=_sMk-1Qwdds92U_-r2qjl-h07frUas5MEaB9xHzNdDc,2504
+n64tex/formats/i8.py,sha256=E_Cg-5P-yDF4AhBZMSyp-ppHJmnOOGADoAGveaCk1n8,2267
+n64tex/formats/i8a.py,sha256=GzYPUjfTfP3Znt7k1hvS4bMNaDRmEyi0OLi9DUFDRRs,2422
+n64tex/formats/rgba.py,sha256=PHGummRe5n93WKi17Zwb8RQ4OhuNJ1pX3wttRI4mvCg,8164
+n64tex/formats/rgba5551.py,sha256=ETXwMxF44UYZMqXBnSJs2tcMxIDMayUYbSJSw2n1AQw,2282
+n64tex-1.0.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+n64tex-1.0.1.dist-info/METADATA,sha256=9NH6bRg75-OJJmnokeKYyKtqyUh2m5ZZcr0CM429QFg,43254
+n64tex-1.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+n64tex-1.0.1.dist-info/entry_points.txt,sha256=PLXnHONB0uQsVkXVh2opi5yzD6Cv0f1oP-obuL8_Oi0,38
+n64tex-1.0.1.dist-info/top_level.txt,sha256=5dwKGcBIAL3aej4Uoj7wbO8tpnr-cfyGiK1yOtbSRqQ,7
+n64tex-1.0.1.dist-info/RECORD,,
