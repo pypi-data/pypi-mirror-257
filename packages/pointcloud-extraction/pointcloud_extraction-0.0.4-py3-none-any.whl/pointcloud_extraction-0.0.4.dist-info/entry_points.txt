@@ -1,0 +1,6 @@
+[console_scripts]
+cameras = data_preparation.cameras
+cropping = data_preparation.cropping
+pdal = data_preparation.pdal
+rasterisation = data_preparation.rasterisation
+threed_pointcloud = data_preparation.threed_pointcloud
