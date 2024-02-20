@@ -1,0 +1,2 @@
+include bulgogi/lib/*.a
+include bulgogi/inc/*.h
