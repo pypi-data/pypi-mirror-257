@@ -1,0 +1,16 @@
+arcor2_dobot/VERSION,sha256=xXUskxWKoLyH9GZQV7PTCja5ljRfxCUKaTaPPORid84,5
+arcor2_dobot/__init__.py,sha256=5qUWRZPLDdHrZybntJ-Hseipd7VGf9Ut6nlyFDSfTvs,96
+arcor2_dobot/dobot.py,sha256=sXafiLPacWO0C15izoR6ivCz4jU724OWipfYAJ1xUeI,7333
+arcor2_dobot/dobot_api.py,sha256=hxPIkZ4gR9Z8EtCi9xZQ03fEPzXvTx0e-WOnELAOdZg,29688
+arcor2_dobot/exceptions.py,sha256=qIOCHZoGsorxthQ3abeEkX-soiEeAyxopAUGPcacifw,527
+arcor2_dobot/m1.py,sha256=0qy4mVVtPlvtCpq6nXNnFVzTTEqCU7HPzfCDoLaJ-fE,2172
+arcor2_dobot/magician.py,sha256=Aif2AmTpga6FU9l_tYkd1Q9g9OqJa1dFLtEUJKkw4-Y,6310
+arcor2_dobot/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+arcor2_dobot/scripts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+arcor2_dobot/scripts/dobot.py,sha256=GZIGDqeWf987Trk7ab753u3RAK1Q32QJ3MDc5C-4Pm8,17387
+arcor2_dobot-1.1.1.dist-info/METADATA,sha256=dt5LVhg26KUwQqe951hhuZqxdij0sP_qtyaUNtAE3uM,3706
+arcor2_dobot-1.1.1.dist-info/WHEEL,sha256=KxatxaZA14OswIJTdImHhiM2tdZgU-xLZEzs-sYveVc,94
+arcor2_dobot-1.1.1.dist-info/entry_points.txt,sha256=Mxlz54rxDB0LbMEcOB3t12aPsPJHRIyUnL1Cq6xqI7k,65
+arcor2_dobot-1.1.1.dist-info/namespace_packages.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+arcor2_dobot-1.1.1.dist-info/top_level.txt,sha256=ykyFcuAHU9v_gBH6xCOBTvg37hc9ZKG-RKb74U4Jt0s,13
+arcor2_dobot-1.1.1.dist-info/RECORD,,
