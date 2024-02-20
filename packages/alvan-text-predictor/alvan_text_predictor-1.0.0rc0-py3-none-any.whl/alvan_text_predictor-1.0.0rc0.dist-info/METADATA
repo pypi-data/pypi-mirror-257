@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: alvan-text-predictor
+Version: 1.0.0rc0
+Summary: The text prediction module for ALVAN 5.
+Author: Craig Sirota
+Author-email: Craig Sirota <craigmsirota@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2024 ALVAN-5
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Platform: unix
+Platform: linux
+Platform: osx
+Platform: cygwin
+Platform: win32
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: testing
+Requires-Dist: pytest >=6.0 ; extra == 'testing'
+Requires-Dist: pytest-cov >=2.0 ; extra == 'testing'
+Requires-Dist: mypy >=0.910 ; extra == 'testing'
+Requires-Dist: flake8 >=3.9 ; extra == 'testing'
+Requires-Dist: tox >=3.24 ; extra == 'testing'
+
+# A5-Server-Text-Prediction-Module
+Module to predict which action a query best fits
+
+## To Install
+
+```bash
+pip install -e git://github.com/ALVAN-5/A5-Server-Text-Prediction-Module.git@{version number}#egg={ desired egg name }
+```
+
+## To Use
+```python
+from prediction import predictor as pd
+
+predictor = pd.Predictor('intents.json')
+
+predictor.query('turn the lights off')
+```
