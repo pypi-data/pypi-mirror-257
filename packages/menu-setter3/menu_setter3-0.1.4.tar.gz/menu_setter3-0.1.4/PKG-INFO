@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: menu_setter3
+Version: 0.1.4
+Summary: Dynamic menu for easier customization
+Author: Parsa Ahmadian(PKPY)
+Author-email: <p3ahmadian@gmail.com>
+Keywords: python,menu,dynamic,dynamic menu,menu setter,python menu,terminal
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# menu setter 3
+a dynamic menu for easier customization using by json.
+<br>
+This module is under development and will become more powerful.
+
+<h2>How To Use?</h2>
+<h4>Installation</h4>
+- install with pip package manager in cmd or terminal:
+<br>
+```pip install menu_setter```
+<br>
+<h4>Initialization</h4>
+- init config files with following command:
+```python3 -m menu_setter ms-init```
+
+- if ```ms_config``` directory created but json file does not exist use ```-j``` after command:
+<br>
+```python3 -m menu_setter ms-init -j```
+
+# How To Dev?
+...
