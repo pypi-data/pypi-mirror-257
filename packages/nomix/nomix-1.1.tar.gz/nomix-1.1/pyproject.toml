@@ -1,0 +1,18 @@
+[project]
+name = "nomix"
+version = "1.1"
+authors = [
+  { name="Tomas Illuminati", email="tomiluminati@gmail.com" },
+]
+description = "Python module that generates random names"
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/tomasilluminati/Nomix"
+Issues = "https://github.com/tomasilluminati/Nomix/issues"

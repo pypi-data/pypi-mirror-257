@@ -1,0 +1,8 @@
+LICENSE
+README.md
+nomix.py
+pyproject.toml
+nomix.egg-info/PKG-INFO
+nomix.egg-info/SOURCES.txt
+nomix.egg-info/dependency_links.txt
+nomix.egg-info/top_level.txt
