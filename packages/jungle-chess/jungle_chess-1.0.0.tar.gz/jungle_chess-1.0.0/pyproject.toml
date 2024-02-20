@@ -1,0 +1,38 @@
+[project]
+name = "jungle-chess"
+requires-python = ">=3.8"
+dependencies = ["pygame", "pygame-menu"]
+authors = [{ name = "Sergei Kasaurov", email = "sergei.kasaurov@gmail.com" }]
+readme = "README.md"
+license = { file = "LICENSE" }
+keywords = ["jungle chess", "dou shou qi", "animal chess", "jungle game", "game", "pygame"]
+classifiers = [
+    # "Private :: Do Not Upload",
+    "Development Status :: 5 - Production/Stable",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Games/Entertainment :: Board Games",
+]
+dynamic = ["version", "description"]
+
+[project.gui-scripts]
+jungle-chess = "jungle_chess.__main__:main"
+
+[project.urls]
+Homepage = "https://github.com/barbanevosa/jungle-chess"
+Repository = "https://github.com/barbanevosa/jungle-chess.git"
+Issues = "https://github.com/barbanevosa/jungle-chess/issues"
+Changelog = "https://github.com/barbanevosa/jungle-chess/blob/main/CHANGES.md"
+
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.sdist]
+include = ["CHANGES.md", "LICENSE-3RD-PARTY.md"]
