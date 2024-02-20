@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: cortexflow
+Version: 0.0.1
+Summary: A Machine learning library
+Home-page: UNKNOWN
+Author: sidharth
+Author-email: sidharthss2690@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Bayesian Linear Regression with Hamiltonian Monte Carlo (HMC)
+
+This repository contains code for performing Bayesian Linear Regression using Hamiltonian Monte Carlo (HMC) sampling. Bayesian Linear Regression is a probabilistic approach to regression modeling that provides uncertainty estimates for the model parameters. HMC is a Markov Chain Monte Carlo (MCMC) method that uses Hamiltonian dynamics to generate samples from the posterior distribution.
+
+## Overview
+
+Bayesian Linear Regression with HMC combines the flexibility of Bayesian modeling with the efficiency of HMC sampling to estimate the posterior distribution of regression coefficients. This allows for principled uncertainty quantification and robust inference in regression tasks.
+
+## How to Use
+
+To use Bayesian Linear Regression with HMC, follow these steps:
+
+1. **Prepare Your Data**: Ensure your input features `X` and target variable `y` are in the appropriate format. `X` should be a 2D numpy array where each row represents a sample and each column represents a feature. `y` should be a 1D numpy array containing the corresponding target values.
+
+2. **Instantiate the Model**: Create an instance of the `BayesianLinearRegression` class.
+
+3. **Perform Regression**: Call the `hamiltonian_monte_carlo` method of the model instance, passing your data and desired parameters such as the number of samples (`num_samples`) and leapfrog steps (`L`).
+
+4. **Analyze Results**: Analyze the posterior samples obtained from the regression to make predictions, compute metrics, and assess uncertainty.
+
+## Theoretical Details
+
+- **Bayesian Linear Regression**: Bayesian Linear Regression is a probabilistic approach to regression modeling that treats the regression coefficients as random variables and estimates their posterior distribution using Bayes' theorem.
+
+- **Hamiltonian Monte Carlo (HMC)**: HMC is a Markov Chain Monte Carlo (MCMC) method that simulates Hamiltonian dynamics to sample from complex probability distributions. It employs a "Hamiltonian" function that combines the potential energy (negative log-posterior) and kinetic energy to guide the exploration of the parameter space.
+
+## Requirements
+
+- Python 3.x
+- NumPy
+- SciPy
+
+## References
+
+- Neal, R. M. (2011). MCMC using Hamiltonian dynamics. Handbook of Markov Chain Monte Carlo, 2(11), 2.
+- Gelman, A., Carlin, J. B., Stern, H. S., Dunson, D. B., Vehtari, A., & Rubin, D. B. (2013). Bayesian Data Analysis (3rd ed.). Chapman and Hall/CRC.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+
+
