@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+docs/source/PyPI.md
+src/iso6346/__init__.py
+src/iso6346_containers.egg-info/PKG-INFO
+src/iso6346_containers.egg-info/SOURCES.txt
+src/iso6346_containers.egg-info/dependency_links.txt
+src/iso6346_containers.egg-info/top_level.txt
