@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: retico_core_asr
+Version: 0.1.0
+Summary: A framework for real time incremental dialogue processing.
+Author: Ryan Pacheco
+Author-email: ryanpacheco413@u.boisestate.edu
+Keywords: retico,framework,incremental,dialogue,dialog
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.6, <4
+Description-Content-Type: text/markdown
+Requires-Dist: pyaudio>=0.2.12
+Requires-Dist: nltk>=3.8.1
+Requires-Dist: librosa>=0.10.1
+Requires-Dist: torchvision>=0.17.0
+Requires-Dist: transformers>=4.37.2
+Requires-Dist: colorama>=0.4.6
+
+## DOCS
