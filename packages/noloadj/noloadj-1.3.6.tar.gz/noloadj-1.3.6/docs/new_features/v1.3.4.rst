@@ -1,0 +1,15 @@
+What's new in version 1.3.4
+===========================
+Version available since December 31st 2023
+
+
+Changes
+-------
+- Results are written with a dictionary for LeastSquares algorithm.
+- Lower and upper bounds are excluded from optimization process to avoid numerical issues.
+- GUI : sensitivity analysis of I/O vectors are printed in several figures to be more ergonomic.
+
+
+Contributors
+------------
+Lucas Agobert

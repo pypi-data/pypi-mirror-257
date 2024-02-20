@@ -1,0 +1,15 @@
+What's new in version 1.3.3
+===========================
+Version available since December 21st 2023
+
+
+Changes
+-------
+- Optimization inputs are normalized for LeastSquares algorithm.
+- "Optimization of dynamic systems" part of the documentation was moved to another file than "How to use Noload_Jax ?".
+- GUI : vectors are printed in several figures to be more ergonomic.
+- files in test folder are rewritten with the "unittest" standard.
+
+Contributors
+------------
+Lucas Agobert

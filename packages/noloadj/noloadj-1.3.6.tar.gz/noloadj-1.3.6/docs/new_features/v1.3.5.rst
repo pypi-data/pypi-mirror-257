@@ -1,0 +1,21 @@
+What's new in version 1.3.5
+===========================
+Version available since January 24th 2024
+
+New Features
+------------
+- Notebook version of tutorial 05_SensitivityAnalysis
+
+Changes
+-------
+- raise errors stops the code.
+- NaN errors stops the code and indicates to the user which variables are concerned.
+
+Bug Fixed
+---------
+- Optimization failed when there is a problem with one input and one equality constraint.
+
+
+Contributors
+------------
+Lucas Agobert

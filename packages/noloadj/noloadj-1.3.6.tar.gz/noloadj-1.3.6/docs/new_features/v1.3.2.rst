@@ -1,0 +1,14 @@
+What's new in version 1.3.2
+===========================
+Version available since December 13th 2023
+
+
+Changes
+-------
+- "debug" functionality in Spec class displays dictionaries instead of lists
+- Documentation "How to use NOLOAD Jax ?" was updated with dynamic systems optimization.
+- For Pareto with less than 10 points, interpolation is done with splprep adn splev fucntions of Scipy.
+
+Contributors
+------------
+Lucas Agobert

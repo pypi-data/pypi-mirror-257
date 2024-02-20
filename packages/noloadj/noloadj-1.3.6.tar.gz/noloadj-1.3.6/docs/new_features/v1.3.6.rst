@@ -1,0 +1,21 @@
+What's new in version 1.3.6
+===========================
+Version available since February 19th 2024
+
+New Features
+------------
+- New subpackage 'numerical methods' which includes 'ODE' and a new 'Interpolation' subpackages.
+- 'Interpolation' subpackage allows to interpolate a point in 1D or 2D vectors (with their derivatives so that they can be included in optimization loops).
+
+Changes
+-------
+- The UML diagram was updated.
+- For GUI, iteration number is not printed when graphs of variables w.r.t iterations are displayed.
+
+Bug Fixed
+---------
+- In iterationHandler, command to set a value in pandas dataframe was modified to avoid errors with new versions of pandas.
+
+Contributors
+------------
+Lucas Agobert
