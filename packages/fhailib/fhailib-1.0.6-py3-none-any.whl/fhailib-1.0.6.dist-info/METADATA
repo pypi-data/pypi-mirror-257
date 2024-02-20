@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: fhailib
+Version: 1.0.6
+Summary: FH,FJ Vision AI SYSTEM LIB
+Home-page: https://github.com/LEE-pyt/AI_Module.git
+Author: LEE_DH
+Author-email: ldh9616@nate.com
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: tqdm
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+Requires-Dist: torch ==2.0.1
+Requires-Dist: torchvision ==0.15.2
+Requires-Dist: onnx
+Requires-Dist: onnxruntime
+Requires-Dist: pycocotools
+Requires-Dist: GitPython
+Requires-Dist: PyYAML
+Requires-Dist: albumentations >=1.1.0
+Requires-Dist: av >=10.0.0
+Requires-Dist: comet-ml >=3.31.7
+Requires-Dist: coverage[toml]
+Requires-Dist: defusedxml ==0.7.1
+Requires-Dist: einops >=0.3.2
+Requires-Dist: freia >=0.2
+Requires-Dist: furo ==2022.9.29
+Requires-Dist: gitpython
+Requires-Dist: gradio >=2.9.4
+Requires-Dist: imgaug ==0.4.0
+Requires-Dist: ipykernel
+Requires-Dist: ipywidgets
+Requires-Dist: jsonargparse[signatures] >=4.3
+Requires-Dist: kornia <0.6.10,>=0.6.6
+Requires-Dist: matplotlib >=3.4.3
+Requires-Dist: myst-parser
+Requires-Dist: nbsphinx >=0.8.9
+Requires-Dist: networkx ~=2.5
+Requires-Dist: nncf >=2.1.0
+Requires-Dist: notebook
+Requires-Dist: omegaconf >=2.1.1
+Requires-Dist: onnx ==1.14.0
+Requires-Dist: onnxruntime ==1.15.1
+Requires-Dist: opencv-python >=4.5.3.56
+Requires-Dist: openvino-dev >=2022.3.0
+Requires-Dist: pandas >=1.1.0
+Requires-Dist: pandoc
+Requires-Dist: pre-commit
+Requires-Dist: pytest
+Requires-Dist: pytest-cov
+Requires-Dist: pytest-order
+Requires-Dist: pytest-sugar
+Requires-Dist: pytest-xdist
+Requires-Dist: pytorch-lightning <1.10.0,>=1.7.0
+Requires-Dist: requests >=2.26.0
+Requires-Dist: scipy
+Requires-Dist: setuptools >=41.0.0
+Requires-Dist: sphinx >=4.1.2
+Requires-Dist: sphinx-autoapi
+Requires-Dist: sphinxemoji ==0.1.8
+Requires-Dist: tensorboard
+Requires-Dist: timm <=0.6.13,>=0.5.4
+Requires-Dist: torchmetrics ==0.10.3
+Requires-Dist: tox
+Requires-Dist: wandb ==0.12.17
+
