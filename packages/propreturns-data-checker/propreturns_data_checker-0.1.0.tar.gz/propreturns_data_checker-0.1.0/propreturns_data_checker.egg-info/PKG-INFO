@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: propreturns-data-checker
+Version: 0.1.0
+Requires-Dist: pandas
+Requires-Dist: requests
+Requires-Dist: sqlalchemy
