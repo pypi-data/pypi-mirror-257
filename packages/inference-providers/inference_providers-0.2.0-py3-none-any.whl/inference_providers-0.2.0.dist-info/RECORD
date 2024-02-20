@@ -1,0 +1,8 @@
+inference_providers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+inference_providers/inference_providers.json,sha256=lCRIjG8Oaib7lf-fwVjs89fp7KlxVTEah-_KrEGr-Wk,16374
+inference_providers/inference_providers.py,sha256=BG-Q5ye3Vv8qigcMgCHwh6N5CfdDGQwROC3eGVkWTl8,11678
+inference_providers-0.2.0.dist-info/LICENSE,sha256=aRkpwaMVeJm7c67L2rB_17Fk8LHI76W69JyiEu8wt7Q,1112
+inference_providers-0.2.0.dist-info/METADATA,sha256=-DsvPcLxuO0NLJdnSnNKnEUCkWKGy9urrW_v2GZo1VM,8769
+inference_providers-0.2.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+inference_providers-0.2.0.dist-info/top_level.txt,sha256=Jd28vXK9U3MvyJp4Fw-xyLA2EBXSISccIpRLRCsqEZU,20
+inference_providers-0.2.0.dist-info/RECORD,,
