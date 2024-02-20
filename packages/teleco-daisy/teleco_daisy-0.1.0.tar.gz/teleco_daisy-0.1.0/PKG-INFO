@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: teleco-daisy
+Version: 0.1.0
+Summary: 
+Author: Your Name
+Author-email: you@example.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: requests
+Description-Content-Type: text/markdown
+
+# teleco_daisy
+
+
+small library to talk to the Teleco Automation Daisy.
+
+this is alpha. currently supported are:
+
+- pergola slats
+- pergola rgb light
+
+if anybody stumbles over this and has different hardware, let me know and we try to integrate it together.
+
