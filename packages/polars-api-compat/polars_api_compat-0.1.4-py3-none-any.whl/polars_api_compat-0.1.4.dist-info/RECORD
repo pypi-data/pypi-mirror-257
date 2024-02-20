@@ -1,0 +1,14 @@
+polars_api_compat/__init__.py,sha256=od6wahAuhzvBuCDiPUOLtDuPmgowoZSwxuwmiVwZG6o,313
+polars_api_compat/containers.py,sha256=KdVLgy61cfT1VRU148UfzM9pHEbKvqT-WZzP80-PTqg,2213
+polars_api_compat/translate.py,sha256=A8Xt-JHCHa3fhLvP-WDGgEHSaCldYj0mxaeJulOANPY,2931
+polars_api_compat/utils.py,sha256=uk8vtfgeDTMPSzmE2Htk-U6F-zcZh2NVK_YqcT26VP0,10298
+polars_api_compat/pandas_like/__init__.py,sha256=ZVHjijbvs-6BVFpqNxdF9Dg06Pn1PXoAbSr2v0KK40E,15065
+polars_api_compat/pandas_like/column_object.py,sha256=KaX6a8sI4QIjvk2-83vUxhTrvl0I8hbgwyJR1q1TkDU,9138
+polars_api_compat/pandas_like/dataframe_object.py,sha256=_dJzW7j-flR92Di36HLqIB3ooDgouihlJeus4L5W1Ko,10991
+polars_api_compat/pandas_like/expr.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+polars_api_compat/pandas_like/group_by_object.py,sha256=DpOwxU3swOGGEMb75_Ea_A126x1AV4hu9DY7Ydp7hzM,4090
+polars_api_compat/spec/__init__.py,sha256=eEKlxmR4lRxpUcmWsr5RBb3Q8EpcRW51RgYDSN7r41w,5992
+polars_api_compat-0.1.4.dist-info/METADATA,sha256=ajFNcD4Lf-WIOzCw8hdEeU1Cob1yY3aowC7PvUfWznU,5462
+polars_api_compat-0.1.4.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+polars_api_compat-0.1.4.dist-info/licenses/LICENSE.md,sha256=heMD6hta6RzeBucppx59AUCgr_ukRY0ABj0bcrN3mKs,1071
+polars_api_compat-0.1.4.dist-info/RECORD,,
