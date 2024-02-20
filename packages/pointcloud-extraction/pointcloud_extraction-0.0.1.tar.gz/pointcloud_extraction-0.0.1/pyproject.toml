@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["data_preparation/"]
+include = ["data_preparation.cameras","data_preparation.pdal", "data_preparation.cropping", "data_preparation.rasterisation", "data_preparation.threed_pointclouds"]
+
+[project]
+name = "pointcloud_extraction"
+version = "0.0.1"
+authors = [
+  { name="Dhruv Malik", email="Dhruv@extralabs.xyz" },
+]
+description = "package consisting of the scripts for operating on the point cloud / photogrammetric data"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/the-extra-project/geospatial-pipelines"
+Issues = "https://github.com/the-extra-project/geospatial-pipelines/issues"
