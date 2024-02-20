@@ -1,0 +1,7 @@
+sphinx
+sphinx-immaterial == 0.11.10
+sphinx-design
+sphinx-last-updated-by-git
+sphinx-math-dollar
+ipykernel
+myst-parser
