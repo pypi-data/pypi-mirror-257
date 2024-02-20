@@ -1,0 +1,7 @@
+uvicorn[standard]
+starlette
+pandas
+matplotlib
+pyyaml
+easydict
+itsdangerous

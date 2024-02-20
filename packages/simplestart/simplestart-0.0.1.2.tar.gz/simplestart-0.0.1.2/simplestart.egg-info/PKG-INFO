@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: simplestart
+Version: 0.0.1.2
+Requires-Dist: uvicorn[standard]
+Requires-Dist: starlette
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: pyyaml
+Requires-Dist: easydict
+Requires-Dist: itsdangerous
