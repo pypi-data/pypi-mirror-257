@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: pycrc32
+Version: 0.1.3
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering
+License-File: LICENSE.txt
+Summary: Python module for SIMD-accelerated CRC32 checksum computation
+Keywords: crc,crc32,simd,checksum
+Home-Page: https://github.com/code-inflation/pycrc32
+Author: cybuerg <robin.buergi@gmail.com>
+Author-email: Robin Bürgi <robin.buergi@gmail.com>
+License: MIT License
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: Homepage, https://github.com/code-inflation/pycrc32
+Project-URL: Repository, https://github.com/code-inflation/pycrc32
+
+# pycrc32
+![PyPI - Version](https://img.shields.io/pypi/v/pycrc32)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/pycrc32)
+![PyPI - License](https://img.shields.io/pypi/l/pycrc32)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/pycrc32)
+
+
+`pycrc32` is a Python module for SIMD-accelerated CRC32 checksum computation.  
+Big thanks to [rust-crc32fast](https://github.com/srijs/rust-crc32fast) - this project just provides Python bindings for their Rust implementation.
+
+## Installation
+```sh
+pip install pycrc32
+```
+
+## Usage
+```python
+from pycrc32 import crc32
+
+data = b"123456789"
+print(f"crc32 for {data!r} is {crc32(data)}")
+```
+
+## Speed
+The performance of `pycrc32` has been benchmarked on a trusty old Intel i7-8550U using 32MB of random input data. Below is a comparison of the median computation times across different libraries:
+
+| Library   | Median Time (s) |
+|-----------|-----------------|
+| `pycrc32` | 0.002703        |
+| `zlib`    | 0.019796        |
+| `fastcrc` | 0.071426        |
+
+We reach almost 10x performance improvements compared to the `zlib` baseline implementation.  
+See `scripts/bench.py` for more details.
+
