@@ -1,0 +1,10 @@
+pyproject_pyupgrade/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyproject_pyupgrade/__main__.py,sha256=limA9o4q9jWM0CnTWcsuMo4pU1jwo3mj1116EZuYp8A,78
+pyproject_pyupgrade/cli.py,sha256=W28JSo8HM6EE-RAbGb8vVRSM-mLUf7Q7FuM-anJElFY,891
+pyproject_pyupgrade/config.py,sha256=NueqoaTWc53ulxm_PTTtHOH2RCf7oqkTJU_XfVThenU,1924
+pyproject_pyupgrade/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyproject_pyupgrade-0.1.1.dist-info/LICENSE,sha256=kkPXV6uzOOQAd6ShrCRamMNthcE0SV7utEsyofPUQq0,1066
+pyproject_pyupgrade-0.1.1.dist-info/METADATA,sha256=hR_zLTvusk8AddY-RAx6lfVNkG_cRndZeG4gYLzrPDs,3125
+pyproject_pyupgrade-0.1.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+pyproject_pyupgrade-0.1.1.dist-info/entry_points.txt,sha256=i5EqXIRsWb6VZCh2RhHxnUVNjx6DJUodru2drK2_lZA,106
+pyproject_pyupgrade-0.1.1.dist-info/RECORD,,
