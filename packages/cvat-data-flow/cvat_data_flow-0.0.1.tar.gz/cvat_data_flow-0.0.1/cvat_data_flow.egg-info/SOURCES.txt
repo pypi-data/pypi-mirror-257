@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+cvat_data_flow/__init__.py
+cvat_data_flow/main.py
+cvat_data_flow.egg-info/.DS_Store
+cvat_data_flow.egg-info/PKG-INFO
+cvat_data_flow.egg-info/SOURCES.txt
+cvat_data_flow.egg-info/dependency_links.txt
+cvat_data_flow.egg-info/requires.txt
+cvat_data_flow.egg-info/top_level.txt
+cvat_data_flow/src/__init__.py
+cvat_data_flow/src/config_parser.py
+cvat_data_flow/src/cvat_api.py
+cvat_data_flow/src/cvat_data_flow.py
+cvat_data_flow/src/dataset_builder.py
