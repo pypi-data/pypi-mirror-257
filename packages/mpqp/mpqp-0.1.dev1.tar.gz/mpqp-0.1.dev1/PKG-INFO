@@ -1,0 +1,84 @@
+Metadata-Version: 2.1
+Name: mpqp
+Version: 0.1.dev1
+Summary: Facilitate quantum algorithm development and execution, regardless of the hardware, with MPQP
+Author: ColibriTD
+Author-email: quantum@colibritd.com
+License:                       Copyright 2024 ColibrITD.
+        
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: wheel
+Requires-Dist: numpy>=1.23.2
+Requires-Dist: scipy>=1.11.4
+Requires-Dist: amazon-braket-sdk==1.64.2
+Requires-Dist: aws-configure==2.1.8
+Requires-Dist: myqlm==1.9.3
+Requires-Dist: qlmaas==1.9.1
+Requires-Dist: myqlm-interop==1.9.3
+Requires-Dist: qiskit==0.45.0
+Requires-Dist: qiskit_aer==0.13.1
+Requires-Dist: qiskit_ibm_provider==0.7.2
+Requires-Dist: qiskit-ibm-runtime==0.17.0
+Requires-Dist: python_dotenv==1.0.0
+Requires-Dist: typeguard>=4.1.5
+Requires-Dist: pylatexenc==2.10
+Requires-Dist: anytree>=2.8.0
+Requires-Dist: sympy==1.10.1
+Requires-Dist: pick==2.2.0
+Requires-Dist: termcolor==2.4.0
+Requires-Dist: aenum==3.1.15
+Requires-Dist: symengine==0.9.2
+
+# The MPQP library
+
+## Install
+
+### Install MPQP (and user dependencies)
+
+```
+pip install .
+```
+
+### Install dev dependencies
+
+```
+pip install -r requirements-dev.txt
+```
+
+### Install only user dependencies
+
+```
+pip install -r requirements.txt
+```
+
+## Documentation
+
+To generate the website documentation with sphinx
+
+```
+sphinx-build -b html docs build
+```
+
+## Tests
+
+To run the test suite, run the following command:
+
+```sh
+python -m pytest
+```
+
+By default, long tests are disables to be more friendly to regularly run for
+devs. The full suit can be run by adding the option `-l` or `--long` to the
+previous command. This should still be run regularly to validate retro
+compatibility.
+
+TODO: add doctest for doc testing and tox for multiversions testing
+
+## Contributors
+
+Henri de Boutray - ColibrITD
+
+Hamza Jaffali - ColibrITD
+
+Muhammad Attallah - ColibrITD
