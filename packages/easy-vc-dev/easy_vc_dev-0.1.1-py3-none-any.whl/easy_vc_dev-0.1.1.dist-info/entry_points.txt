@@ -1,0 +1,11 @@
+[console_scripts]
+download=easy_vc_dev.utils.download:main
+easy_vc=easy_vc_dev.cli:main
+export_onnx=easy_vc_dev.onnx.export_onnx:main
+extract_feature=easy_vc_dev.utils.extract_feature:main
+generate_filelist=easy_vc_dev.utils.generate_filelist:main
+infer_with_onnx=easy_vc_dev.onnx.infer_with_onnx:main
+preprocess=easy_vc_dev.utils.preprocess:main
+train=easy_vc_dev.train.train:main
+web=easy_vc_dev.webIF.main:main
+
