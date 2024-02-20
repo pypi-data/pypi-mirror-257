@@ -1,0 +1,723 @@
+#!/usr/bin/env python3
+import re
+import os
+import json
+import sys
+import subprocess
+import string
+import datetime
+import time
+import argparse
+from dialog import Dialog
+
+parser = argparse.ArgumentParser()
+parser.add_argument('--profile', help='set the profile number to login')
+args = parser.parse_args()
+
+aws_profiles = [
+  'cars,408254921552',
+  'cars-beta-np,118439772188',
+  'cars-beta-np,118439772188,developer',
+  'cars-beta-np,118439772188,backfills-developer',
+  'cars-beta-np,118439772188,read-only',
+  'cars-corp-np,935053597025',
+  'cars-corp-prod,029179432128',
+  'cars-data-np,259871521571',
+  'cars-data-prod,337618626592',
+  'cars-dev,180503528399',
+  'cars-dns,251607408594',
+  'cars-master,055652242463',
+  'cars-pilot,421956431754',
+  'cars-platform,256078791775',
+  'cars-platform,256078791775,read-only',
+  'cars-platform,256078791775,developer',
+  'cars-security,813388701013',
+  'cars-reporting,619233882527',
+  'cars-cross-account-network,701367709430',
+  'dealerrater,566736700011',
+  'dealerrater-dr,162531537330',
+  'newcars-np,703387026475',
+  'newcars-prod,643220051580',
+  'cars_nonprod,118439772188,LEGACY',
+  'cars_np,118439772188,LEGACY',
+  'cars_prod,256078791775,LEGACY',
+  'digital-retailing-non-prod,815377116336,,DI',
+  'digital-retailing-prod,245657184067,,DI',
+  'inventory-non-prod,423154430651,,DI',
+  'inventory-prod,211048725021,,DI',
+  'accutrade-prod,809835404244',
+  'accutrade-backups,968844539589',
+  'pickuptrucks,281074314310',
+  'di-aft-mgmt,422621098333,,DI',
+  'di-aft-audit,508287598547,,DI',
+  'di-aft-logs,727186479920,,DI',
+  'di-cross-account-network,158332234727,,DI',
+  'di-dashboard-non-prod,774294923244,,DI',
+  'di-dashboard-prod,481178514732,,DI',
+  'di-master,190887102274,,DI',
+  'di-diasaster-recovery,829300547389,,DI',
+  'di-ford-websites-prod,195193444860,,DI',
+  'di-legacy-websites-non-prod,669744604101,,DI',
+  'di-legacy-websites-prod,928255004614,,DI',
+  'di-sandbox-websites,665423153412,,DI',
+  'di-shared-resources-images,197316114811,,DI',
+  'di-tooling-websites-prod,877783710964,,DI',
+ 'di-legacy-master,285185697291,,DI-LEGACY',
+ 'di-legacy-credit-app-testd,475684962021,,DI-LEGACY',
+ 'di-legacy-credit-app-prod,767917994953,,DI-LEGACY',
+ 'di-legacy-inventory-non-prod,621923852107,,DI-LEGACY',
+ 'di-legacy-inventory-prod,601976771736,,DI-LEGACY',
+ 'di-legacy-utilities,706701961429,,DI-LEGACY',
+ 'di-legacy-internal-apis-test,094950545034,,DI-LEGACY',
+ 'di-legacy-internal-apis-prod,954853758598,,DI-LEGACY',
+ 'di-legacy-automatic-crm-dev,856398416158,,DI-LEGACY',
+ 'di-legacy-automatic-crm-prod,771226635478,,DI-LEGACY',
+ 'di-legacy-data-science,890286770012,,DI-LEGACY',
+ 'di-legacy-dealerid,956128282634,,DI-LEGACY',
+ 'di-legacy-it,550337444503,,DI-LEGACY',
+ 'di-legacy-prototyping,815768322489,,DI-LEGACY',
+ 'di-legacy-digitial-retailing,355691910391,,DI-LEGACY',
+ 'di-legacy-metal-prod,501851812389,,DI-LEGACY',
+ 'di-legacy-ford-non-prod,935933784158,,DI-LEGACY',
+ 'di-legacy-ford-prod,381090240657,,DI-LEGACY',
+]
+##################################################################################################
+def save_old_aws_config():
+  present_date = datetime.datetime.now()
+  present_date_formatted = present_date.strftime("%Y-%m-%d--%H-%M")
+
+  if not os.path.isfile(os.environ['HOME'] + "/.aws/cars_commerse_aws_config"):
+    # Move old config
+    print("Move old configs")
+    if os.path.isfile(os.environ['HOME'] + "/.aws/config"):
+      print("Saving old ~/.aws/config")
+      print("Moving {} to {}".format(os.environ['HOME'] + "/.aws/config", os.environ['HOME'] + "/.aws/config_{}".format(present_date_formatted)))
+      os.rename(os.environ['HOME'] + "/.aws/config", os.environ['HOME'] + "/.aws/config_{}".format(present_date_formatted))
+
+    if os.path.isfile(os.environ['HOME'] + "/.aws/credentials"):
+      print("Saving old ~/.aws/credentials")
+      print("Moving {} to {}".format(os.environ['HOME'] + "/.aws/credentials", os.environ['HOME'] + "/.aws/credentials_{}".format(present_date_formatted)))
+      os.rename(os.environ['HOME'] + "/.aws/credentials", os.environ['HOME'] + "/.aws/credentials_{}".format(present_date_formatted))
+
+    if os.path.isfile(os.environ['HOME'] + "/.aws/cars_commerse_aws_profiles"):
+      print("Saving old ~/.aws/cars_commerse_aws_profiles")
+      print("Moving {} to {}".format(os.environ['HOME'] + "/.aws/cars_commerse_aws_profiles", os.environ['HOME'] + "/.aws/cars_commerse_aws_profiles_{}".format(present_date_formatted)))
+      os.rename(os.environ['HOME'] + "/.aws/cars_commerse_aws_profiles", os.environ['HOME'] + "/.aws/cars_commerse_aws_profiles_{}".format(present_date_formatted))
+
+    f = open(os.environ['HOME'] + "/.aws/cars_commerse_aws_config", "w")
+    f.close()
+##################################################################################################
+def format_aws_profiles(aws_profiles):
+
+  formatted_aws_profiles = [] 
+  for profile in aws_profiles:
+    profile = profile.replace(",LEGACY", "")
+    profile = profile.replace(",", "-")
+    sso_account_id = ''
+    sso_role_name = ''
+    if re.search("(.+)-(\d\d\d\d\d\d\d\d\d\d\d\d)$", profile):
+      profile_list = re.findall("(.+)-(\d\d\d\d\d\d\d\d\d\d\d\d)$",profile)
+      aws_account_name = profile_list[0][0]
+      sso_account_id = profile_list[0][1]
+      sso_role_name = 'AWSAdministratorAccess'
+    elif re.search("(.+)-(\d\d\d\d\d\d\d\d\d\d\d\d)-(.+)$", profile) and not re.search("--DI", profile):
+      profile_list = re.findall("(.+)-(\d\d\d\d\d\d\d\d\d\d\d\d)-(.+)$",profile)
+      aws_account_name = profile_list[0][0]
+      sso_account_id = profile_list[0][1]
+      sso_role_name = profile_list[0][2]
+    elif re.search("--DI$", profile):
+      profile = profile.replace("--DI", "")
+      if re.search("(.+)-(\d\d\d\d\d\d\d\d\d\d\d\d)$", profile):
+        profile_list = re.findall("(.+)-(\d\d\d\d\d\d\d\d\d\d\d\d)$",profile)
+        aws_account_name = profile_list[0][0]
+        sso_account_id = profile_list[0][1]
+        sso_role_name = 'AWSAdministratorAccess'
+      elif re.search("(.+)-(\d\d\d\d\d\d\d\d\d\d\d\d)-(.+)$", profile):
+        profile_list = re.findall("(.+)-(\d\d\d\d\d\d\d\d\d\d\d\d)-(.+)$",profile)
+        aws_account_name = profile_list[0][0]
+        sso_account_id = profile_list[0][1]
+        sso_role_name = profile_list[0][2]
+    elif re.search("--DI-LEGACY$", profile):
+      profile = profile.replace("--DI-LEGACY", "")
+      if re.search("(.+)-(\d\d\d\d\d\d\d\d\d\d\d\d)$", profile):
+        profile_list = re.findall("(.+)-(\d\d\d\d\d\d\d\d\d\d\d\d)$",profile)
+        aws_account_name = profile_list[0][0]
+        sso_account_id = profile_list[0][1]
+        sso_role_name = 'AWSAdministratorAccess'
+      elif re.search("(.+)-(\d\d\d\d\d\d\d\d\d\d\d\d)-(.+)$", profile):
+        profile_list = re.findall("(.+)-(\d\d\d\d\d\d\d\d\d\d\d\d)-(.+)$",profile)
+        aws_account_name = profile_list[0][0]
+        sso_account_id = profile_list[0][1]
+        sso_role_name = profile_list[0][2]
+    formatted_aws_profiles.append("{}-{}-{}".format(aws_account_name,sso_account_id,sso_role_name))
+  
+  return(formatted_aws_profiles)
+
+##################################################################################################
+def write_aws_config(aws_profiles):
+
+  f = open(os.environ['HOME'] + "/.aws/config", "w")
+  for profile in aws_profiles:
+    profile = profile.replace(",LEGACY", "")
+    profile = profile.replace(",", "-")
+    sso_session = ''
+    sso_account_id = ''
+    sso_role_name = ''
+    sso_start_url = ''
+    if re.search("(.+)-(\d\d\d\d\d\d\d\d\d\d\d\d)$", profile):
+      profile_list = re.findall("(.+)-(\d\d\d\d\d\d\d\d\d\d\d\d)$",profile)
+      aws_account_name = profile_list[0][0]
+      sso_session = 'cars-sso'
+      sso_account_id = profile_list[0][1]
+      sso_role_name = 'AWSAdministratorAccess'
+      sso_start_url = 'https://carssso.awsapps.com/start'
+    elif re.search("(.+)-(\d\d\d\d\d\d\d\d\d\d\d\d)-(.+)$", profile) and not re.search("--DI", profile):
+      profile_list = re.findall("(.+)-(\d\d\d\d\d\d\d\d\d\d\d\d)-(.+)$",profile)
+      aws_account_name = profile_list[0][0]
+      sso_session = 'cars-sso'
+      sso_account_id = profile_list[0][1]
+      sso_role_name = profile_list[0][2]
+      sso_start_url = 'https://carssso.awsapps.com/start'
+    elif re.search("--DI$", profile):
+      profile = profile.replace("--DI", "")
+      if re.search("(.+)-(\d\d\d\d\d\d\d\d\d\d\d\d)$", profile):
+        profile_list = re.findall("(.+)-(\d\d\d\d\d\d\d\d\d\d\d\d)$",profile)
+        aws_account_name = profile_list[0][0]
+        sso_session = 'di-sso'
+        sso_account_id = profile_list[0][1]
+        sso_role_name = 'AWSAdministratorAccess'
+        sso_start_url = 'https://d-90675e78ad.awsapps.com/start'
+      elif re.search("(.+)-(\d\d\d\d\d\d\d\d\d\d\d\d)-(.+)$", profile):
+        profile_list = re.findall("(.+)-(\d\d\d\d\d\d\d\d\d\d\d\d)-(.+)$",profile)
+        aws_account_name = profile_list[0][0]
+        sso_session = 'di-sso'
+        sso_account_id = profile_list[0][1]
+        sso_role_name = profile_list[0][2]
+        sso_start_url = 'https://d-90675e78ad.awsapps.com/start'
+    elif re.search("--DI-LEGACY$", profile):
+      profile = profile.replace("--DI-LEGACY", "")
+      if re.search("(.+)-(\d\d\d\d\d\d\d\d\d\d\d\d)$", profile):
+        profile_list = re.findall("(.+)-(\d\d\d\d\d\d\d\d\d\d\d\d)$",profile)
+        aws_account_name = profile_list[0][0]
+        sso_session = 'di-legacy-sso'
+        sso_account_id = profile_list[0][1]
+        sso_role_name = 'AWSAdministratorAccess'
+        sso_start_url = 'https://d-9067aea9a4.awsapps.com/start'
+      elif re.search("(.+)-(\d\d\d\d\d\d\d\d\d\d\d\d)-(.+)$", profile):
+        profile_list = re.findall("(.+)-(\d\d\d\d\d\d\d\d\d\d\d\d)-(.+)$",profile)
+        aws_account_name = profile_list[0][0]
+        sso_session = 'di-legacy-sso'
+        sso_account_id = profile_list[0][1]
+        sso_role_name = profile_list[0][2]
+        sso_start_url = 'https://d-9067aea9a4.awsapps.com/start'
+    f.write("[profile {}]\n".format(profile))
+    f.write("sso_session = {}\n".format(sso_session))
+    f.write("sso_account_id = {}\n".format(sso_account_id))
+    f.write("sso_role_name = {}\n".format(sso_role_name))
+    f.write("sso_region = us-east-1\n")
+    f.write("sso_start_url = {}\n".format(sso_start_url))
+    f.write("region = us-east-1\n")
+    f.write("output = json\n")
+    f.write("\n")
+  f.write("[sso-session cars-sso]\n")
+  f.write("sso_region = us-east-1\n")
+  f.write("sso_start_url = https://carssso.awsapps.com/start\n")
+  f.write("sso_registration_scopes = sso:account:access\n")
+  f.write("\n")
+  f.write("[sso-session di-sso]\n")
+  f.write("sso_region = us-east-1\n")
+  f.write("sso_start_url = https://d-90675e78ad.awsapps.com/start\n")
+  f.write("sso_registration_scopes = sso:account:access\n")
+  f.write("\n")
+  f.write("[sso-session di-legacy-sso]\n")
+  f.write("sso_region = us-east-1\n")
+  f.write("sso_start_url = https://d-9067aea9a4.awsapps.com/start\n")
+  f.write("sso_registration_scopes = sso:account:access\n")
+  f.write("\n")
+  f.close()
+  
+##################################################################################################
+def cmd_exists(cmd):
+    return subprocess.call("type " + cmd, shell=True, 
+        stdout=subprocess.PIPE, stderr=subprocess.PIPE) == 0
+
+##################################################################################################
+def build_aws_login_choices(aws_profiles):
+
+  temp_list = []
+  count = 1
+  for profile in aws_profiles:
+    awsaccount_list = re.findall("(.+)-(\d\d\d\d\d\d\d\d\d\d\d\d)-(.+)$",profile) 
+    if awsaccount_list[0][2] == "AWSAdministratorAccess":
+      role = "Administrator"
+    else:
+      role = awsaccount_list[0][2]
+    value = ("{:02d}".format(count), "{:<30} {:<15} {:<30}".format(awsaccount_list[0][0],awsaccount_list[0][1],role))
+    temp_list.append(value)
+    count = count + 1
+
+  value = ("{:02d}".format(count), "Return")
+  temp_list.append(value)
+
+  return(temp_list)
+
+##################################################################################################
+def build_aws_login_choices_checklist(aws_profiles):
+
+  temp_list = []
+  previous_selected_list = []
+  if os.path.isfile(os.environ['HOME'] + "/.aws/cars_commerse_aws_profiles"):
+    f = open(os.environ['HOME'] + "/.aws/cars_commerse_aws_profiles", "r")
+    previous_selected_list = f.readlines()
+    f.close()
+
+  count = 1
+  for profile in aws_profiles:
+    select = 0
+    awsaccount_list = re.findall("(.+)-(\d\d\d\d\d\d\d\d\d\d\d\d)-(.+)$",profile) 
+    for previous_selected in previous_selected_list:
+      if profile == previous_selected.strip():
+        select = 1
+        print(profile)
+    if awsaccount_list[0][2] == "AWSAdministratorAccess":
+      role = "Administrator"
+    else:
+      role = awsaccount_list[0][2]
+    value = ("{:02d}".format(count), "{:<30} {:<15} {:<30}".format(awsaccount_list[0][0],awsaccount_list[0][1],role),select)
+    temp_list.append(value)
+    count = count + 1
+
+  return(temp_list)
+##################################################################################################
+def find_sso_session_and_url(aws_profile,aws_profiles):
+
+  sso_session = ''
+  sso_start_url = ''
+  aws_profile_account_id = re.findall("(\d\d\d\d\d\d\d\d\d\d\d\d)",aws_profile)
+  for search_profile in aws_profiles:
+    if re.search(aws_profile_account_id[0], search_profile):
+      if re.search(',DI$', search_profile):
+        sso_session = 'di-sso' 
+        sso_start_url = 'https://d-90675e78ad.awsapps.com/start'
+        break
+      elif re.search(',DI-LEGACY$', search_profile):
+        sso_session = 'di-legacy-sso' 
+        sso_start_url = 'https://d-9067aea9a4.awsapps.com/start'
+        break
+      else:
+        sso_session = 'cars-sso' 
+        sso_start_url = 'https://carssso.awsapps.com/start'
+        break
+      print("found {} {} and {}".format(aws_profile_account_id,aws_profile,search_profile))
+  
+  return(sso_session,sso_start_url)
+##################################################################################################
+def login_aws_account(aws_profiles,dialog_object,aws_profile,aws_profile_index,edited_aws_profiles):
+
+  command_output = ''
+  edited_aws_profile = aws_profile.replace("-AWSAdministratorAccess", "")
+  command = "aws sso login --profile {} --region us-east-1".format(edited_aws_profile)
+  command_list = command.split()
+
+  # Show Informational message
+  dialog_object.infobox("Logging into the AWS account {}.\n\nRunning the command in the background\n\naws sso login --profile \\\n{} --region us-east-1\n\n".format(edited_aws_profile,edited_aws_profile) + 
+                        "You should see your browser open up.\nPlease confirm the authorization request.\n\n" + 
+                        "You can also skip to this menu step by running\n./cars-commerce-aws-utility --profile {}".format(aws_profile_index),
+                        title="AWS Login",
+                        backtitle="Cars Commerce Cloud Utilities",
+                        width=90,
+                        height=25)
+
+  # Run the sso login and wait till the user is fully logged in. 
+  awsaccount = re.findall("(.+)-(\d\d\d\d\d\d\d\d\d\d\d\d)-(.+)$",aws_profile)
+  sso_session,sso_start_url = find_sso_session_and_url(aws_profile,aws_profiles)
+  try:
+    result = subprocess.run(command_list,stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL,timeout=120)
+  except: 
+    dialog_object.msgbox("Logging into the AWS account {}.\n\nRunning the command in the background\n\naws sso login --profile \\\n{} --region us-east-1\n\n".format(edited_aws_profile,edited_aws_profile) + 
+                          "You should see your browser open up.\nPlease confirm the authorization request.\n\n" + 
+                          "You can also skip to this menu step by running\n./cars-commerce-aws-utility --profile {}\n\n".format(aws_profile_index) + 
+                          "Looks like there was a problem running the command. Please try running this manually",
+                          title="AWS Login",
+                          backtitle="Cars Commerce Cloud Utilities",
+                          width=90,
+                          height=25)
+    return
+
+  ## Rewrite the ~/.aws/config file and set the default profile.
+  write_aws_config(aws_profiles)
+  
+
+  f = open(os.environ['HOME'] + "/.aws/config", "a")
+  awsaccount = re.findall("(.+)-(\d\d\d\d\d\d\d\d\d\d\d\d)-(.+)$",aws_profile)
+  f.write("[profile default]\n")
+  f.write("sso_session = {}\n".format(sso_session))
+  f.write("sso_account_id = {}\n".format(awsaccount[0][1]))
+  f.write("sso_role_name = {}\n".format(awsaccount[0][2]))
+  f.write("sso_region = us-east-1\n")
+  f.write("sso_start_url = {}\n".format(sso_start_url))
+  f.write("region = us-east-1\n")
+  f.write("output = json\n")
+  f.write("\n")
+  f.close()
+
+  # Verify logged into aws
+  result = subprocess.run(['aws', 'sts', 'get-caller-identity'],stdout=subprocess.PIPE,stderr=subprocess.DEVNULL)
+  output = result.stdout.decode('utf-8')
+  try:
+    output_hash = json.loads(output)
+  except:
+    dialog_object.msgbox("There appears to be a problem with your credentials and\n{}\n\n".format(edited_aws_profile) + 
+                         "This can mean you either do not have access or this role has not been setup with AWS SSO.\n\n" + 
+                         "Please contact sysops to help debug access with the role \n{}\n".format(edited_aws_profile),
+                          title="AWS Login",
+                          backtitle="Cars Commerce Cloud Utilities",
+                          width=100,
+                          height=25)
+    return
+
+  # Show success message.
+  dialog_object.msgbox("Logging into the AWS account {}.\n\nRunning the command in the background\n\naws sso login --profile \\\n{} --region us-east-1\n\n".format(edited_aws_profile,edited_aws_profile) + 
+                        "You should see your browser open up.\nPlease confirm the authorization request.\n\n" + 
+                        "You can also skip to this menu step by running\n./cars-commerce-aws-utility --profile {}\n\n".format(aws_profile_index) + 
+                        "Login to {} was successful!".format(edited_aws_profile),
+                        title="AWS Login",
+                        backtitle="Cars Commerce Cloud Utilities",
+                        width=90,
+                        height=25)
+
+##################################################################################################
+def aws_cli_login(aws_profiles,dialog_object,edited_aws_profiles):
+
+  aws_login_profile_choices = build_aws_login_choices(edited_aws_profiles)
+  
+  while True:
+    code, tag = dialog_object.menu("Please select an AWS Account to login.\nYou may need to scroll down to view all the profiles.\n",
+                                   title="AWS Login",
+                                   backtitle="Cars Commerce Cloud Utilities",
+                                   choices=aws_login_profile_choices,
+                                   width=100,
+                                   height=100)
+    if code == dialog_object.OK:
+      if (int(tag) - 1) == len(edited_aws_profiles):
+        break
+      else:
+        login_aws_account(aws_profiles,dialog_object,edited_aws_profiles[int(tag) - 1],int(tag),edited_aws_profiles)
+    # Canel or other errors.
+    else:
+      break 
+##################################################################################################
+def check_logged_into_aws(dialog_object):
+  result = subprocess.run(['aws', 'sts', 'get-caller-identity'],stdout=subprocess.PIPE,stderr=subprocess.DEVNULL)
+  output = result.stdout.decode('utf-8')
+  alias_context_name = ''
+  aws_account = ''
+  returnval = 0
+  message = ''
+  
+  try:
+    output_hash = json.loads(output)
+    aws_account_regex = re.findall("(\d\d\d\d\d\d\d\d\d\d\d\d)",output_hash['Arn'])
+    aws_account = aws_account_regex[0]
+    if re.search("118439772188", aws_account):
+      alias_context_name="cars_np"
+    elif re.search("256078791775", aws_account):
+      alias_context_name="cars_prod"
+  except:
+    message += "You don't appear to be logged into aws. Please log into AWS first.\nYou can verify your login status by running\naws sts get-caller-identity"
+    returnval = 1
+    dialog_object.msgbox(message,
+                        title="Update kubectl configurations",
+                        backtitle="Cars Commerce Cloud Utilities",
+                        width=90,
+                        height=25)
+
+  return(returnval,alias_context_name,aws_account)
+##################################################################################################
+def yesno_move_forward(dialog_object,message,alias_context_name,aws_account):
+
+  yesno_message = "This script will reconfigure your kubectl configurations for aws account {}.\n".format(aws_account)
+  if alias_context_name != '':
+    yesno_message += "This script will also create the alias {}.\n\n".format(alias_context_name)
+  yesno_message += "OK to proceed?\n"
+
+  returnval = 0
+  while True:
+    yesno = dialog_object.yesno(yesno_message,
+                                   title="Update kubectl configurations",
+                                   backtitle="Cars Commerce Cloud Utilities",
+                                   width=100,
+                                   height=25)
+    if yesno == dialog_object.OK:
+      break
+    else:
+      returnval = 1
+      break
+  return(returnval)
+##################################################################################################
+def update_kubectl_configurations_and_print(dialog_object,alias_context_name,aws_account):
+
+  message = ''
+
+  #########################################################################
+  # Read the current np or prod contexts.
+  result = subprocess.run(['aws', 'ssm', 'get-parameter', '--name', 'CURRENT_EKS_CLUSTER'],stdout=subprocess.PIPE,stderr=subprocess.DEVNULL)
+  output = result.stdout.decode('utf-8')
+  CURRENT_EKS_CLUSTER_SET = False
+  current_eks_cluster = ''
+  
+  try:
+    output_hash = json.loads(output)
+    current_eks_cluster = output_hash['Parameter']['Value']
+    CURRENT_EKS_CLUSTER_SET = True
+    message += "The ssm parameter CURRENT_EKS_CLUSTER is set to {}.\n".format(current_eks_cluster)
+    dialog_object.infobox(message,
+                        title="Update kubectl configurations",
+                        backtitle="Cars Commerce Cloud Utilities",
+                        width=90,
+                        height=25)
+  except:
+    message += "The ssm parameter CURRENT_EKS_CLUSTER is not set.\n"
+    dialog_object.infobox(message,
+                        title="Update kubectl configurations",
+                        backtitle="Cars Commerce Cloud Utilities",
+                        width=90,
+                        height=25)
+  #########################################################################
+  # Remove old contexts.
+  
+  result = subprocess.run(['kubectl', 'config', 'view', '-o', 'json'],stdout=subprocess.PIPE,stderr=subprocess.DEVNULL)
+  output = result.stdout.decode('utf-8')
+  output_hash = json.loads(output)
+  
+  message += "Cleaning old configurations for AWS account {}\n".format(aws_account)
+  dialog_object.infobox(message,
+                      title="Update kubectl configurations",
+                      backtitle="Cars Commerce Cloud Utilities",
+                      width=90,
+                      height=25)
+  for eks_cluster in output_hash['contexts']:
+    eks_cluster_aws_account_regex = re.findall("(\d\d\d\d\d\d\d\d\d\d\d\d)",eks_cluster['context']['cluster'])
+    eks_cluster_aws_account = eks_cluster_aws_account_regex[0]  
+    if eks_cluster_aws_account == aws_account:
+      message += "Removing config for {}.\n".format(eks_cluster['name'])
+      dialog_object.infobox(message,
+                          title="Update kubectl configurations",
+                          backtitle="Cars Commerce Cloud Utilities",
+                          width=90,
+                          height=25)
+      result = subprocess.run(['kubectl', 'config', 'delete-context',eks_cluster['name']],stdout=subprocess.PIPE,stderr=subprocess.DEVNULL)
+
+  #########################################################################
+  # Fix AWS CLI Bug
+  
+  if os.path.isfile(os.environ['HOME'] + "/.kube/config"):
+    fin = open(os.environ['HOME'] + "/.kube/config", "r")
+    data = fin.read()
+    data = data.replace(': null', ': []')
+    fin.close()
+    fin = open(os.environ['HOME'] + "/.kube/config", "w")
+    fin.write(data)
+    fin.close()
+
+  #########################################################################
+  # Add clusters.
+  
+  result = subprocess.run(['aws', 'eks', 'list-clusters'],stdout=subprocess.PIPE,stderr=subprocess.DEVNULL)
+  output = result.stdout.decode('utf-8')
+  try:
+    output_hash = json.loads(output)
+  except:
+    message += "There was a problem reading the cluser list form AWS.\nPlease try running\naws eks list-clusters\n"
+    dialog_object.msgbox(message,
+                        title="Update kubectl configurations",
+                        backtitle="Cars Commerce Cloud Utilities",
+                        width=90,
+                        height=25)
+    return
+  
+  message += "\n"
+  for eks_cluster in output_hash['clusters']:
+    message += "Adding {} to kubectl configurations.\n".format(eks_cluster)
+    dialog_object.infobox(message,
+                        title="Update kubectl configurations",
+                        backtitle="Cars Commerce Cloud Utilities",
+                        width=90,
+                        height=25)
+    result = subprocess.run(['aws', 'eks', 'update-kubeconfig', '--name', eks_cluster, '--alias', eks_cluster],stdout=subprocess.PIPE,stderr=subprocess.DEVNULL)
+    output = result.stdout.decode('utf-8')
+    if eks_cluster == current_eks_cluster and alias_context_name != '':
+      message += "Adding alias {} to kubectl configurations.\n".format(alias_context_name)
+      dialog_object.infobox(message,
+                          title="Update kubectl configurations",
+                          backtitle="Cars Commerce Cloud Utilities",
+                          width=90,
+                          height=25)
+      result = subprocess.run(['aws', 'eks', 'update-kubeconfig', '--name', eks_cluster, '--alias',alias_context_name],stdout=subprocess.PIPE,stderr=subprocess.DEVNULL)
+      output = result.stdout.decode('utf-8')
+      
+  message += "\n"
+  message += "Finished adding kubectl configurations for aws account {}.\n".format(aws_account)
+  message += "\n" 
+  dialog_object.infobox(message,
+                      title="Update kubectl configurations",
+                      backtitle="Cars Commerce Cloud Utilities",
+                      width=90,
+                      height=25)
+  if alias_context_name != '':
+    result = subprocess.run(['kubectl', 'config', 'use-context', "{}".format(alias_context_name)],stdout=subprocess.PIPE,stderr=subprocess.DEVNULL)
+
+  #########################################################################
+  # View the EKS configs.
+
+  message += "The following clusters and alias are now configured on this workstation.\nYou may need to scroll down to view the whole list.\n\n".format(aws_account)
+  result = subprocess.run(['kubectl', 'config', 'view', '-o', 'json'],stdout=subprocess.PIPE,stderr=subprocess.DEVNULL)
+  output = result.stdout.decode('utf-8')
+  output_hash = json.loads(output)
+  for eks_cluster in output_hash['contexts']:
+      message += "{}.\n".format(eks_cluster['name'])
+
+
+  dialog_object.msgbox(message,
+                      title="Update kubectl configurations",
+                      backtitle="Cars Commerce Cloud Utilities",
+                      width=90,
+                      height=25)
+
+##################################################################################################
+def update_kubectl_configurations_menu(dialog_object):
+  message = ''
+  returnval = ''
+  
+  returnval, alias_context_name, aws_account = check_logged_into_aws(dialog_object)
+
+  if returnval == 1:
+    return
+  returnval = yesno_move_forward(dialog_object,message,alias_context_name,aws_account)  
+  if returnval == 1:
+    return
+  update_kubectl_configurations_and_print(dialog_object,alias_context_name,aws_account)
+
+##################################################################################################
+def main_menu(aws_profiles,dialog_object,edited_aws_profiles_original,edited_aws_profiles):
+
+  while True:
+    code, tag = dialog_object.menu("Welcome to the Cars Commerce cloud utility program.\n\n" + 
+                                   "PLEASE MAKE SURE THE AWS AND KUBECTL CLI PROGRAMS ARE INSTALLED BEFORE PROCEEDING.\n\n" +
+                                   "Please make a selection.",
+                                   title="Main Menu",
+                                   backtitle="Cars Commerce Cloud Utilities",
+                                   choices=[("01", "Login to AWS."),
+                                            ("02", "Update kubectl configurations."),
+                                            ("03", "Edit AWS Account Selection List."),
+                                            ("04", "Exit.")],
+                                   width=65,
+                                   height=18)
+    if code == dialog_object.OK:
+      if tag == "01":
+        if os.path.isfile(os.environ['HOME'] + "/.aws/cars_commerse_aws_profiles"):
+          edited_aws_profiles = read_cars_commerse_aws_profiles_file()
+        aws_cli_login(aws_profiles,dialog_object,edited_aws_profiles)
+      elif tag == "02":
+        update_kubectl_configurations_menu(dialog_object)
+      elif tag == "03":
+        edit_login_list(dialog_object,aws_profiles,edited_aws_profiles_original)
+      elif tag == "04":
+        break 
+    # Canel or other errors.
+    else:
+      break
+
+##################################################################################################
+def write_aws_profiles(dialog_object,edited_aws_profiles,selected_list):
+  selelected_aws_profiles=''
+  display_selelected_aws_profiles_list = []
+  display_selelected_aws_profiles = ''
+  role = ''
+  for selected_item in selected_list:
+    selelected_aws_profiles += "{}\n".format(edited_aws_profiles[int(selected_item) -1])
+    display_selelected_aws_profiles_list = re.findall("(.+)-(\d\d\d\d\d\d\d\d\d\d\d\d)-(.+)$",edited_aws_profiles[int(selected_item) -1])
+    if display_selelected_aws_profiles_list[0][2] == "AWSAdministratorAccess":
+      role = "Administrator"
+    else:
+      role = display_selelected_aws_profiles_list[0][2]
+    display_selelected_aws_profiles += "{:<30} {:<15} {:<30}\n".format(display_selelected_aws_profiles_list[0][0],display_selelected_aws_profiles_list[0][1],role)
+  
+  f = open(os.environ['HOME'] + "/.aws/cars_commerse_aws_profiles", "w")
+  f.write("{}".format(selelected_aws_profiles))
+  f.close()
+  dialog_object.scrollbox("The following aws profiles will now appear when you select option '01 Login to AWS.\n\n{}\n".format(display_selelected_aws_profiles),
+                      title="Edit AWS Login Profiles",
+                      backtitle="Cars Commerce Cloud Utilities",
+                      width=100,
+                      height=25)
+##################################################################################################
+def edit_login_list(dialog_object,aws_profiles,edited_aws_profiles):
+
+  aws_login_profile_choices = build_aws_login_choices_checklist(edited_aws_profiles)
+  
+  while True:
+    code, tag = dialog_object.checklist("Welcome to the Cars Commerce Cloud Utilities application.\n" +
+                                        "Before beginning the login process please select only the AWS Accounts syslops has granted you access too.\n\n" + 
+                                        "You can edit this list at anytime.\n" +
+                                        "You may need to scroll down to view all the profiles.\n",
+                                   title="Edit AWS Login Profiles",
+                                   backtitle="Cars Commerce Cloud Utilities",
+                                   choices=aws_login_profile_choices,
+                                   width=100,
+                                   height=100)
+    if code == dialog_object.OK:
+      if len(tag) == 0:
+        dialog_object.msgbox("Please select at least one profile or select cancel.",
+                            title="Edit AWS Login Profiles",
+                            backtitle="Cars Commerce Cloud Utilities",
+                            width=90,
+                            height=25)
+      else:
+        write_aws_profiles(dialog_object,edited_aws_profiles,tag)
+        break
+    # Canel or other errors.
+    else:
+      break 
+
+##################################################################################################
+def read_cars_commerse_aws_profiles_file():
+
+  previous_selected_list = []
+  return_list = []
+  if os.path.isfile(os.environ['HOME'] + "/.aws/cars_commerse_aws_profiles"):
+    f = open(os.environ['HOME'] + "/.aws/cars_commerse_aws_profiles", "r")
+    previous_selected_list = f.readlines()
+    f.close()
+  for previous_selected in previous_selected_list:
+    return_list.append(previous_selected.strip())
+  return(return_list)
+##################################################################################################
+
+aws_profiles.sort()
+edited_aws_profiles_original=format_aws_profiles(aws_profiles)
+save_old_aws_config()
+if not os.path.isfile(os.environ['HOME'] + "/.aws/config"):
+  write_aws_config(aws_profiles) 
+dialog_object = Dialog(dialog="dialog")
+
+# check if the checklist file exists. if empty recreate it.
+if not os.path.isfile(os.environ['HOME'] + "/.aws/cars_commerse_aws_profiles"):
+  edit_login_list(dialog_object,aws_profiles,edited_aws_profiles_original)
+if os.path.isfile(os.environ['HOME'] + "/.aws/cars_commerse_aws_profiles"):
+  edited_aws_profiles = read_cars_commerse_aws_profiles_file()
+
+if args.profile:
+  login_aws_account(aws_profiles,dialog_object,edited_aws_profiles[int(args.profile) - 1],int(args.profile),edited_aws_profiles)
+elif not args.profile:
+  main_menu(aws_profiles,dialog_object,edited_aws_profiles_original,edited_aws_profiles)
+
+os.system('clear')
+print("Thank you for using the Cars Commerce cloud utility program.\n")
+print("Please contact cloudengineering@cars.com if you have any questions regarding this program.\n")
+exit()
+
+
+# Run the program 
+#./loging-aws --profile 04
+#./loging-aws --profile 04 # Login to profile 04
