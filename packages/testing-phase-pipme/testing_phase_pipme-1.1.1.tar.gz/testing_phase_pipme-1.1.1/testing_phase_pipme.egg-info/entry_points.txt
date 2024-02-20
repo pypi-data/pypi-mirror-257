@@ -1,0 +1,2 @@
+[console_scripts]
+pipme = pipme.main:run_cli

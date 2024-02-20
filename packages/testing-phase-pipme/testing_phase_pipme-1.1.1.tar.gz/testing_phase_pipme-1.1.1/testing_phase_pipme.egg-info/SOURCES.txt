@@ -1,0 +1,10 @@
+setup.py
+pipme/__init__.py
+pipme/check_inits.py
+pipme/get_installed_packages.py
+pipme/main.py
+testing_phase_pipme.egg-info/PKG-INFO
+testing_phase_pipme.egg-info/SOURCES.txt
+testing_phase_pipme.egg-info/dependency_links.txt
+testing_phase_pipme.egg-info/entry_points.txt
+testing_phase_pipme.egg-info/top_level.txt
