@@ -1,0 +1,9 @@
+README.md
+setup.py
+DSSE/__init__.py
+DSSE/env.py
+DSSE.egg-info/PKG-INFO
+DSSE.egg-info/SOURCES.txt
+DSSE.egg-info/dependency_links.txt
+DSSE.egg-info/requires.txt
+DSSE.egg-info/top_level.txt
