@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: timetable_announcer
+Version: 0.0.1
+Summary: Python timetable slot handler
+Author-email: "John C. G. Sturdy" <jcg.sturdy@gmail.com>
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+
+# timetable_announcer
+Announce slots of my daily timetable
+
+For use with my noticeboard project, but it also does the timetable
+slot handling for my QS dashboard.
+
