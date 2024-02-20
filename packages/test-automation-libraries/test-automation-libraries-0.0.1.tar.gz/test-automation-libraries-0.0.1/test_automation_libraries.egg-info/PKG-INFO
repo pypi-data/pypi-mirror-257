@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: test-automation-libraries
+Version: 0.0.1
+Summary: Basic libraries for test autoamtion
+Home-page: https://github.com/kulsmehta13/test-automation-libraries
+Author: Kuldip Mehta
+Author-email: kulsmehta13@gmail.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+Requires-Dist: selenium
+Requires-Dist: paramiko
+Requires-Dist: markdown
+
+# test-automation-library
+Libraries for automation
