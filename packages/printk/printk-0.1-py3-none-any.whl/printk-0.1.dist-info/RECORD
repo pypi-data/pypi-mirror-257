@@ -1,0 +1,6 @@
+printk/__init__.py,sha256=8F4rFK7Bm6NPo7Q5kEgqiaOXoX2bvDazSRFWSEDfQFA,68
+printk/printk.py,sha256=yu58lJUeKfTmilnzkXdL8DvYG0lEj414wu6sCg_krC8,2308
+printk-0.1.dist-info/METADATA,sha256=yYSNV2ZI9DM8yh3qIdSkmzgnuDc9FHjupLf4TC4f6uA,178
+printk-0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+printk-0.1.dist-info/top_level.txt,sha256=ihLWI8dnEKBuN7vx3pqjGfT9IMoRnHylPA4oqS0AMfI,7
+printk-0.1.dist-info/RECORD,,
