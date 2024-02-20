@@ -1,0 +1,19 @@
+<% extends "partials/question.template" %>
+
+<% block directions_text %>
+    Fill in the circle that corresponds to your answer.
+<% endblock %>
+
+<% block body %>
+    \begin{center}
+        \begin{tabular}{ >{\centering\arraybackslash}m{0.06\textwidth} m{0.80\textwidth} }
+            <% for answer in question.answers %>
+                <% if answer_key and answer.correct %>
+                    \radio[red]{mcq}{<< question.id >>}{0}{<< question.id >>.<< loop.index0 >>} & << answer.text >> \\
+                <% else %>
+                    \radio{mcq}{<< question.id >>}{0}{<< question.id >>.<< loop.index0 >>} & << answer.text >> \\
+                <% endif %>
+            <% endfor %>
+        \end{tabular}
+    \end{center}
+<% endblock %>
