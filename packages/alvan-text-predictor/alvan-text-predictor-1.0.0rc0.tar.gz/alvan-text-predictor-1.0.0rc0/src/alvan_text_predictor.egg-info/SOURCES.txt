@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/alvan_text_predictor.egg-info/PKG-INFO
+src/alvan_text_predictor.egg-info/SOURCES.txt
+src/alvan_text_predictor.egg-info/dependency_links.txt
+src/alvan_text_predictor.egg-info/not-zip-safe
+src/alvan_text_predictor.egg-info/requires.txt
+src/alvan_text_predictor.egg-info/top_level.txt
+src/prediction/__init__.py
+src/prediction/predictor.py
+src/prediction/py.typed
+tests/test_predictor.py
