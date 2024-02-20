@@ -1,0 +1,13 @@
+mumbojumbo/__init__.py,sha256=AsOzhnBVEgvuD-D6MGT-Hc0I2n0332pAVa9RUTc9HAI,2647
+mumbojumbo/models/__init__.py,sha256=C6yZdkw9X288ehiav7Jqjj5689e0lkIghDDX43uqsAE,2733
+mumbojumbo/models/project_template.py,sha256=j47m6nq1OdgKe07-Tz0jqRkO9DPWnLY6QurFE1FO7fM,5538
+mumbojumbo/models/template_variable.py,sha256=SLrGahmleAFrU3mUy1WRD4HrrlKq8DwKAKhfb7s9Hvs,4536
+mumbojumbo/scripts/__init__.py,sha256=Cvg4sEBtr8-mvT2vsGmsc8FBGfMeM_1wIWvjSXsDf8c,2639
+mumbojumbo/scripts/apply_template.py,sha256=Z-QrO-GLQ1W3jZXvjspuxH3csQ0XBxLAVmAGiW19UJs,5681
+mumbojumbo/template_loader.py,sha256=Nn7NORpBSRyeueqm62ImzmBuaxVtH_0I6kL3P8ieEsM,7590
+mumbojumbo/template_renderer.py,sha256=mBVgMFuCrAq8AxOET8WXiYG5mzDJIrj281B_RV8r6NY,7034
+mumbojumbo-0.1.0.dev20240219181051.dist-info/LICENSE,sha256=BioyiG6o0frEKckwEGqfj55rO-C8HXmJZYbjyO-U8Ck,1482
+mumbojumbo-0.1.0.dev20240219181051.dist-info/METADATA,sha256=lxKwfs8uCuGMg71tmA6t2fmRdiT3baIbrI0e6XHYbEg,4201
+mumbojumbo-0.1.0.dev20240219181051.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+mumbojumbo-0.1.0.dev20240219181051.dist-info/entry_points.txt,sha256=5qOmuRBKebcDIZ9NK5nfS-TSs68MJ40koMoji9Ho2No,68
+mumbojumbo-0.1.0.dev20240219181051.dist-info/RECORD,,
