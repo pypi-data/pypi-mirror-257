@@ -1,0 +1,2 @@
+[console_scripts]
+obfsimp = obfsimp.cli:_cli
