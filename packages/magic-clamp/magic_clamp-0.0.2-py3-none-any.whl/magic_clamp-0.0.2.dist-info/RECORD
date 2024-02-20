@@ -1,0 +1,7 @@
+magic_clamp/__init__.py,sha256=WhhmXiFUaXTPEql3SKy7DeMSypDW1aXmAOAnXw8klXA,206
+magic_clamp/autograd.py,sha256=MeYGNRiF52GMmD_QErmf80rznDF0HrlzqkX7noqnsv0,1175
+magic_clamp/core.py,sha256=uSgNuUQ6RKQx3afSpH-yCsohrYVTcGg4h_o02oXVk1w,2405
+magic_clamp-0.0.2.dist-info/METADATA,sha256=yhrrHmnTG0sohziDXFB7CztkZa7-pk9R9lDNCVzp-AY,290
+magic_clamp-0.0.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+magic_clamp-0.0.2.dist-info/top_level.txt,sha256=IPExb1BCOE0dgDmW-bxziZLfqNNebn4C5ek-4nsL7Po,12
+magic_clamp-0.0.2.dist-info/RECORD,,
