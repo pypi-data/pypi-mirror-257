@@ -1,0 +1,8 @@
+chardet>=5.2.0
+onnxruntime>=1.16.0
+sosap==0.0.1
+numpy>=1.24.4
+khmercut==0.0.2
+librosa>=0.10.1
+requests>=2.31.0
+appdirs>=1.4.4
