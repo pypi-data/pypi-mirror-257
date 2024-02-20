@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "benchllama"
+version = "0.2.2"
+description = "Benchmark your local LLMs."
+authors = ["Srikanth Srungarapu <srikanth235@gmail.com>"]
+license = "MIT License"
+homepage = "https://github.com/srikanth235/benchllama/"
+readme = "README.md"
+keywords = [
+    "benchmark",
+    "llama",
+    "ollama",
+    "llms",
+    "openai",
+    "chatgpt",
+    "text-generation",
+]
+
+[tool.poetry.scripts]
+benchllama = "benchllama.main:app"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+typer = {extras = ["all"], version = "^0.9.0"}
+ollama = "^0.1.6"
+pandas = "^2.2.0"
+datasets = "^2.17.0"
+joblib = "^1.3.2"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
