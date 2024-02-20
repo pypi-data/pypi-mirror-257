@@ -1,0 +1,11 @@
+hamming/__init__.py,sha256=rNvtFXhlM7gN8WOTw4dkFrkybV0V_hbS4u963kH58ww,46
+hamming/framework.py,sha256=xjkvSC-MQWlwhVVYg8uv924TleZLqbjQGqV1F6weDaA,672
+hamming/http_client.py,sha256=MOAGhVpMWxlmduU6XsGJbVBRduS_P50xGyPdNpWbTFo,1601
+hamming/resources.py,sha256=XPFWnaJ-sROkqjjg6MLf88olfI9EoTePxCnaOV_FO6s,6994
+hamming/types.py,sha256=9JImfOD0BQNpFuBnCWLSHCmRYn5Z2MwTXc_jybGLqkk,3060
+hamming/utils.py,sha256=WKorSue3psWB0UDtf-_cStT3Rp_MUmpLOqt54CeMkeA,148
+hamming_sdk-0.0.2.dist-info/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+hamming_sdk-0.0.2.dist-info/METADATA,sha256=Jb5Ii_YcJ1HGc0lzc2ZNWVMc2INUSVONOSAQn3eFFxA,990
+hamming_sdk-0.0.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+hamming_sdk-0.0.2.dist-info/top_level.txt,sha256=f9JwlpWHaC8CsngfLYktqb2KiKUEtpX4BZ0YI6VE7m8,8
+hamming_sdk-0.0.2.dist-info/RECORD,,
