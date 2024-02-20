@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: real-ids
+Version: 0.0.3
+Summary: Real Time IDS by whitehat team
+Home-page: https://github.com/HoangNV2001/Real-time-IDS/tree/master
+Author: HoangNV2001
+Author-email: HoangNV2001@gmail.com
+Keywords: security,ids,security,python,pypi
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+Requires-Dist: tqdm
+
