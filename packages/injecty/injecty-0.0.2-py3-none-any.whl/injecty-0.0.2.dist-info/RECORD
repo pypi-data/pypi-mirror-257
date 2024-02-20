@@ -1,0 +1,15 @@
+example/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+example/main.py,sha256=q4TrUHrhF2zBJKMclPJKt71VaJrLCRWAK2ek1wkzMuw,465
+example/shape_parser.py,sha256=E6L1ovX8b6Sx4udKTRtSH6gIGXJkcWndtfBMCvCY8Gg,384
+example/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+example/models/circle.py,sha256=JTatV8gvcmw7YiF_i_vCFfIJzchPRrYRe7PxIeyPmx0,213
+example/models/rectangle.py,sha256=QUBlMQLEpgC5NdnkeBbeFYL1LyKtJDAe3qtXDBbTrhE,223
+example/models/shape_abc.py,sha256=wiqyEik9mu8P41jPwNupu5Iyjmb1FGER2oUUeSNhJUo,147
+example/models/square.py,sha256=R0w7R-U6RX20e9vLJVffAGSNw1YydqN7QqmV6xmFUEY,191
+injecty/__init__.py,sha256=RJ6kLcB-RtTjqLunSuKxdYht1YVbP1X5PBvUuZ7YPX0,1691
+injecty/injecty_context.py,sha256=s_ylClFRandaWhS1Izj-7tt2p1i3rHnl1YpEkNRNp8Y,3851
+test_config_package/__init__.py,sha256=wBeHAaiwIsoz01zSNEkheY6ME4oq3I3LFceDjZ3MavU,207
+injecty-0.0.2.dist-info/METADATA,sha256=e4_p2rsYVkhtDRTx-RIJU5Z4eg9D0pDcalep148gKOc,4562
+injecty-0.0.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+injecty-0.0.2.dist-info/top_level.txt,sha256=X7woSYm8tXJwy_akNcFhebb8857SIQpp3jDjmcr4zWA,36
+injecty-0.0.2.dist-info/RECORD,,
