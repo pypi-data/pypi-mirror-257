@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: profile_proga_2
+Version: 2
+Summary: Программа создана для построения профиля скважины в трехмерном пространстве с последующей визуализацией и возможности сравнения. Загружается 2 профиля (факт и план) в ексель файл.
+Author: Баталыгин Геннадий
+Author-email: 861212@mail.ru
+Requires-Dist: package1
+Requires-Dist: package2
