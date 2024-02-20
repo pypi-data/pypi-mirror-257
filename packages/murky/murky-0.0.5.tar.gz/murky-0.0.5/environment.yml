@@ -1,0 +1,9 @@
+name: murky
+
+channels:
+  - defaults
+
+dependencies:
+  - pygithub
+  - python-magic
+  - pyyaml

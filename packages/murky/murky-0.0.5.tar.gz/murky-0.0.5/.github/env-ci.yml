@@ -1,0 +1,17 @@
+name: murky-ci
+
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - coverage
+  - coveralls
+  - pip
+  - pygithub
+  - pytest
+  - pytest-cov
+  - python-magic
+  - pyyaml
+  - setuptools
+  - setuptools-scm
