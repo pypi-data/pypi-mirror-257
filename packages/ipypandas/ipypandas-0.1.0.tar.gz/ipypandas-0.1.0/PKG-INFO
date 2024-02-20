@@ -1,0 +1,211 @@
+Metadata-Version: 2.1
+Name: ipypandas
+Version: 0.1.0
+Summary: Interactive features for the python data analysis library pandas in jupyter.
+Project-URL: Homepage, https://twa.re/ipypandas
+Project-URL: Repository, https://github.com/tensorware/ipypandas
+Author: Tensorware
+License: Copyright (c) 2024 Tensorware.
+        All rights reserved.
+        
+        Redistribution and use in source and binary forms, with or without
+        modification, are permitted provided that the following conditions are met:
+        
+        1. Redistributions of source code must retain the above copyright notice, this
+           list of conditions and the following disclaimer.
+        
+        2. Redistributions in binary form must reproduce the above copyright notice,
+           this list of conditions and the following disclaimer in the documentation
+           and/or other materials provided with the distribution.
+        
+        3. Neither the name of the copyright holder nor the names of its
+           contributors may be used to endorse or promote products derived from
+           this software without specific prior written permission.
+        
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+        AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+        IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+        DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+        FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+        DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+        SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+        CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+        OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+        OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+License-File: LICENSE
+Keywords: IPython,Jupyter,Widgets
+Classifier: Framework :: Jupyter :: JupyterLab
+Classifier: Framework :: Jupyter :: JupyterLab :: Extensions
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8
+Requires-Dist: ipywidgets>=8.0.0
+Requires-Dist: pandas>=2.0.0
+Provides-Extra: build
+Requires-Dist: hatch>=1.9.3; extra == 'build'
+Requires-Dist: tbump>=6.8.0; extra == 'build'
+Provides-Extra: dev
+Requires-Dist: ipypandas[build,docs,examples,tests]; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: jupyter-sphinx>=0.4.0; extra == 'docs'
+Requires-Dist: nbsphinx-link>=1.3.0; extra == 'docs'
+Requires-Dist: nbsphinx>=0.8.10; extra == 'docs'
+Requires-Dist: pydata-sphinx-theme>=0.8.0; extra == 'docs'
+Requires-Dist: pypandoc>=1.7.5; extra == 'docs'
+Requires-Dist: pytest-check-links>=0.7.0; extra == 'docs'
+Requires-Dist: sphinx>=5.0.0; extra == 'docs'
+Provides-Extra: examples
+Requires-Dist: ipywidgets>=8.0.0; extra == 'examples'
+Requires-Dist: jupyterlab>=4.0.0; extra == 'examples'
+Requires-Dist: matplotlib>=3.0.0; extra == 'examples'
+Requires-Dist: pandas>=2.0.0; extra == 'examples'
+Requires-Dist: pyarrow>=15.0.0; extra == 'examples'
+Provides-Extra: tests
+Requires-Dist: nbval>=0.9.5; extra == 'tests'
+Requires-Dist: pytest>=7.0.0; extra == 'tests'
+Description-Content-Type: text/markdown
+
+# ipypandas
+
+[![Build](https://github.com/tensorware/ipypandas/actions/workflows/build.yml/badge.svg)](https://github.com/tensorware/ipypandas/actions/workflows/build.yml)
+[![Release](https://github.com/tensorware/ipypandas/actions/workflows/release.yml/badge.svg)](https://github.com/tensorware/ipypandas/actions/workflows/release.yml)
+[![NPM](https://img.shields.io/npm/v/ipypandas?label=NPM%20Package)](https://www.npmjs.com/package/ipypandas)
+[![PyPI](https://img.shields.io/pypi/v/ipypandas?label=PyPI%20Package)](https://pypi.org/project/ipypandas)
+
+<a href="https://github.com/tensorware/ipypandas">
+    <img src="https://raw.githubusercontent.com/tensorware/ipypandas/main/docs/source/static/images/logo.png" width="100"/>
+</a>
+
+> [!NOTE]
+> ❗ PROOF OF CONCEPT, WORK IN PROGRESS ❗
+
+Interactive features for the python data analysis library pandas in jupyter.
+
+[![Demo](https://twa.re/ipypandas/_static/images/demo.gif)](https://twa.re/ipypandas)
+
+Pandas dataframes are rendered via ipypandas, which enables these interactive features (**fully server side**):
+
+-   [x] Lazy loading
+-   [x] Sort columns
+-   [x] Resize columns
+-   [x] Reorder columns
+-   [x] Search values
+-   [ ] Filter values
+
+The rendering has been tested for the following development environments (**full theme support**):
+
+-   [x] JupyterLab
+-   [x] JupyterNotebook
+-   [x] Visual Studio Code
+-   [ ] PyCharm Professional
+
+## Installation
+
+To get started with ipypandas, install it via `pip`:
+
+```bash
+pip install ipypandas
+```
+
+## Usage
+
+Importing ipypandas will enable the interactive pandas output globally:
+
+```python
+import pandas as pd
+...
+import ipypandas
+```
+
+More information can be found on the [documentation](https://twa.re/ipypandas)
+page.
+
+## Development
+
+Create a dev environment:
+
+```bash
+mamba create -n ipypandas python=3.12 jupyterlab=4.0 nodejs=20.5
+mamba activate ipypandas
+```
+
+Install python module and build typescript dependencies:
+
+```bash
+pip install -e .[dev]
+```
+
+While developing you need to manually enable your extensions with the frontend. For JupyterLab, this is done by the command:
+
+```bash
+jupyter labextension develop --overwrite .
+```
+
+### Typescript
+
+If you use JupyterLab to develop then you can watch the source directory and run JupyterLab at the same time in different
+terminals to watch for changes in the extension's source and automatically rebuild the widget.
+
+```bash
+jlpm clean && jlpm install && jlpm build && jlpm watch
+```
+
+After a change wait for the build to finish and then refresh your browser and the changes should take effect.
+
+### Python
+
+If you make changes to the python code then you will need to restart the notebook kernel to have it take effect.
+
+### Commands
+
+Some commands which may be useful for development.
+
+#### Install
+
+```bash
+jlpm clean && jlpm install && jlpm build
+pip uninstall ipypandas && pip install -e .[dev]
+```
+
+#### Register
+
+```bash
+jupyter lab clean
+jupyter labextension list
+jupyter labextension develop --overwrite .
+```
+
+#### Examples
+
+```bash
+jupyter lab ./examples
+```
+
+#### Documentation
+
+```bash
+cd docs
+make html
+```
+
+#### Versioning
+
+```bash
+tbump 0.1.x
+```
+
+## Credits
+
+Based on the [cookiecutter template](https://github.com/jupyter-widgets/widget-ts-cookiecutter) from [jupyter-widgets](https://github.com/jupyter-widgets).
+
+## License [![license](https://img.shields.io/github/license/tensorware/ipypandas)](#license-)
+
+[BSD-3-Clause](https://github.com/tensorware/ipypandas/blob/main/LICENSE)
