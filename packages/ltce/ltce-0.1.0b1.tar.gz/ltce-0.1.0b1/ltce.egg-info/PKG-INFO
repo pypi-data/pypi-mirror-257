@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: ltce
+Version: 0.1.0b1
+Summary: This module is for estimating long-term causal effect. Please follow the guide of each method.
+Home-page: https://github.com/zhangyuanyuzyy/LT-Transformer
+Author: yuanyuzhang
+Author-email: zhangyuanyu2015@gmail.com
+Maintainer: yuanyuzhang
+Maintainer-email: zhangyuanyu2015@gmail.com
+License: MIT
+Platform: all
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+License-File: LICENSE
+
+This module is for estimating long-term causal effect. Please follow the guide of each method.
+
