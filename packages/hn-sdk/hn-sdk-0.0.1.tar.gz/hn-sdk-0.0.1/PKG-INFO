@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: hn-sdk
+Version: 0.0.1
+Summary: A Python wrapper for the Hacker News API.
+Home-page: https://github.com/joeyagreco/hn-api
+Author: Joey Greco
+Author-email: joeyagreco@gmail.com
+License: MIT
+Keywords: hacker-news hacker news api sdk
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# hacker-news
