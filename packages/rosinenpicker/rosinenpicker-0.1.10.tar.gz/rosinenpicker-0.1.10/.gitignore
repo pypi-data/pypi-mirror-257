@@ -1,0 +1,12 @@
+dist/
+__pycache__/
+testconfigs/
+*.db
+pdfs/
+tipps_*
+.gitignore
+helper
+dumpster/
+*.bat
+.vscode/
+demo
