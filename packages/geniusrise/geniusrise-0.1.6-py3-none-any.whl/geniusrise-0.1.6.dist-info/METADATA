@@ -1,0 +1,291 @@
+Metadata-Version: 2.1
+Name: geniusrise
+Version: 0.1.6
+Summary: An LLM framework
+Home-page: https://github.com/geniusrise/geniusrise
+Author: Geniusrise
+Author-email: ixaxaar@geniusrise.ai
+Project-URL: Bug Reports, https://github.com/geniusrise/geniusrise/issues
+Project-URL: Source, https://github.com/geniusrise/geniusrise
+Project-URL: Documentation, https://docs.geniusrise.ai/
+Keywords: mlops,llm,geniusrise,machine learning,data processing
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiohttp ==3.8.6
+Requires-Dist: aiosignal ==1.3.1
+Requires-Dist: alembic ==1.13.0
+Requires-Dist: annotated-types ==0.6.0
+Requires-Dist: ansicolors ==1.1.8
+Requires-Dist: anyio ==4.1.0
+Requires-Dist: apache-airflow ==2.8.0
+Requires-Dist: apache-airflow-providers-common-sql ==1.9.0
+Requires-Dist: apache-airflow-providers-docker ==3.8.2
+Requires-Dist: apache-airflow-providers-ftp ==3.7.0
+Requires-Dist: apache-airflow-providers-http ==4.8.0
+Requires-Dist: apache-airflow-providers-imap ==3.5.0
+Requires-Dist: apache-airflow-providers-sqlite ==3.6.0
+Requires-Dist: apispec[yaml] ==6.3.0
+Requires-Dist: argcomplete ==3.2.1
+Requires-Dist: argparse-color-formatter ==1.2.2.post2
+Requires-Dist: argparse-manpage ==4.4
+Requires-Dist: asgiref ==3.7.2
+Requires-Dist: async-timeout ==4.0.3
+Requires-Dist: attrs ==23.2.0
+Requires-Dist: avro-python3 ==1.9.2.1
+Requires-Dist: babel ==2.14.0
+Requires-Dist: backoff ==2.2.1
+Requires-Dist: black ==23.12.1
+Requires-Dist: bleach ==6.0.0
+Requires-Dist: blinker ==1.7.0
+Requires-Dist: boto3 ==1.34.7
+Requires-Dist: botocore ==1.34.7
+Requires-Dist: build ==0.10.0
+Requires-Dist: cachelib ==0.9.0
+Requires-Dist: cachetools ==5.3.1
+Requires-Dist: certifi ==2024.2.2
+Requires-Dist: cffi ==1.16.0
+Requires-Dist: charset-normalizer ==3.3.2
+Requires-Dist: click ==8.1.7
+Requires-Dist: clickclick ==20.10.2
+Requires-Dist: colorama ==0.4.6
+Requires-Dist: colorlog ==4.8.0
+Requires-Dist: configupdater ==3.2
+Requires-Dist: connexion[flask] ==2.14.2
+Requires-Dist: coverage ==7.3.4
+Requires-Dist: cron-descriptor ==1.4.0
+Requires-Dist: croniter ==2.0.1
+Requires-Dist: cryptography ==41.0.7
+Requires-Dist: deprecated ==1.2.14
+Requires-Dist: direnv ==2020.12.3
+Requires-Dist: dnspython ==2.6.1
+Requires-Dist: docker ==7.0.0
+Requires-Dist: docopt ==0.6.2
+Requires-Dist: docutils ==0.20.1
+Requires-Dist: email-validator ==1.3.1
+Requires-Dist: emoji ==2.7.0
+Requires-Dist: env-file ==2020.12.3
+Requires-Dist: exceptiongroup ==1.2.0
+Requires-Dist: find-libpython ==0.3.0
+Requires-Dist: flake8 ==6.1.0
+Requires-Dist: flask ==2.2.5
+Requires-Dist: flask-appbuilder ==4.3.10
+Requires-Dist: flask-babel ==2.0.0
+Requires-Dist: flask-caching ==2.1.0
+Requires-Dist: flask-jwt-extended ==4.6.0
+Requires-Dist: flask-limiter ==3.5.0
+Requires-Dist: flask-login ==0.6.3
+Requires-Dist: flask-session ==0.5.0
+Requires-Dist: flask-sqlalchemy ==2.5.1
+Requires-Dist: flask-wtf ==1.2.1
+Requires-Dist: frozenlist ==1.4.1
+Requires-Dist: fsspec >=2021.05.0
+Requires-Dist: google-auth ==2.17.3
+Requires-Dist: google-re2 ==1.1
+Requires-Dist: googleapis-common-protos ==1.62.0
+Requires-Dist: gputil ==1.4.0
+Requires-Dist: graphviz ==0.20.1
+Requires-Dist: greenlet ==3.0.2
+Requires-Dist: grpcio ==1.60.0
+Requires-Dist: gunicorn ==21.2.0
+Requires-Dist: h11 ==0.14.0
+Requires-Dist: httpcore ==0.16.3
+Requires-Dist: httpx ==0.23.3
+Requires-Dist: idna ==3.6
+Requires-Dist: importlib-metadata ==6.11.0
+Requires-Dist: importlib-resources ==6.1.1
+Requires-Dist: inflection ==0.5.1
+Requires-Dist: iniconfig ==2.0.0
+Requires-Dist: itsdangerous ==2.1.2
+Requires-Dist: jaraco-classes ==3.3.0
+Requires-Dist: jeepney ==0.8.0
+Requires-Dist: jinja2 ==3.1.2
+Requires-Dist: jmespath ==0.10.0
+Requires-Dist: jsonpickle ==3.0.2
+Requires-Dist: jsonschema ==4.21.1
+Requires-Dist: jsonschema-specifications ==2023.12.1
+Requires-Dist: kafka-python ==2.0.2
+Requires-Dist: keyring ==24.2.0
+Requires-Dist: kubernetes ==28.1.0
+Requires-Dist: lazy-object-proxy ==1.10.0
+Requires-Dist: limits ==3.7.0
+Requires-Dist: linkify-it-py ==2.0.2
+Requires-Dist: lockfile ==0.12.2
+Requires-Dist: mako ==1.3.0
+Requires-Dist: markdown ==3.5.1
+Requires-Dist: markdown-it-py ==3.0.0
+Requires-Dist: markupsafe ==2.1.3
+Requires-Dist: marshmallow ==3.20.1
+Requires-Dist: marshmallow-oneofschema ==3.0.1
+Requires-Dist: marshmallow-sqlalchemy ==0.26.1
+Requires-Dist: mccabe ==0.7.0
+Requires-Dist: mdit-py-plugins ==0.4.0
+Requires-Dist: mdurl ==0.1.2
+Requires-Dist: more-itertools ==10.1.0
+Requires-Dist: multidict ==6.0.4
+Requires-Dist: mypy ==1.8.0
+Requires-Dist: mypy-extensions ==1.0.0
+Requires-Dist: numpy ==1.24.4
+Requires-Dist: oauthlib ==3.2.2
+Requires-Dist: opentelemetry-api ==1.22.0
+Requires-Dist: opentelemetry-exporter-otlp ==1.22.0
+Requires-Dist: opentelemetry-exporter-otlp-proto-common ==1.22.0
+Requires-Dist: opentelemetry-exporter-otlp-proto-grpc ==1.22.0
+Requires-Dist: opentelemetry-exporter-otlp-proto-http ==1.22.0
+Requires-Dist: opentelemetry-proto ==1.22.0
+Requires-Dist: opentelemetry-sdk ==1.22.0
+Requires-Dist: opentelemetry-semantic-conventions ==0.43b0
+Requires-Dist: ordered-set ==4.1.0
+Requires-Dist: packaging ==23.2
+Requires-Dist: pandas ==1.3.5
+Requires-Dist: pathspec ==0.12.1
+Requires-Dist: pemja ==0.3.0
+Requires-Dist: pendulum ==2.1.2
+Requires-Dist: pip-autoremove ==0.10.0
+Requires-Dist: pipdeptree ==2.13.1
+Requires-Dist: pkginfo ==1.9.6
+Requires-Dist: platformdirs ==3.10.0
+Requires-Dist: pluggy ==1.3.0
+Requires-Dist: prettytable ==3.9.0
+Requires-Dist: prison ==0.2.1
+Requires-Dist: prometheus-client ==0.19.0
+Requires-Dist: protobuf ==4.25.3
+Requires-Dist: psutil ==5.9.6
+Requires-Dist: psycopg2-binary ==2.9.9
+Requires-Dist: py4j ==0.10.9.7
+Requires-Dist: pyarrow ==14.0.2
+Requires-Dist: pyasn1 ==0.5.0
+Requires-Dist: pyasn1-modules ==0.3.0
+Requires-Dist: pycodestyle ==2.11.0
+Requires-Dist: pycparser ==2.21
+Requires-Dist: pydantic ==2.5.2
+Requires-Dist: pydantic-core ==2.14.5
+Requires-Dist: pyflakes ==3.1.0
+Requires-Dist: pygments ==2.17.2
+Requires-Dist: pyjwt ==2.8.0
+Requires-Dist: pyparsing ==3.1.1
+Requires-Dist: pyproject-hooks ==1.0.0
+Requires-Dist: pyspark ==3.5.0
+Requires-Dist: pytest ==7.4.3
+Requires-Dist: pytest-asyncio ==0.21.1
+Requires-Dist: python-daemon ==3.0.1
+Requires-Dist: python-dateutil ==2.8.2
+Requires-Dist: python-dotenv ==1.0.0
+Requires-Dist: python-nvd3 ==0.15.0
+Requires-Dist: python-slugify ==8.0.1
+Requires-Dist: pytz ==2024.1
+Requires-Dist: pytzdata ==2020.1
+Requires-Dist: pyyaml ==6.0.1
+Requires-Dist: readme-renderer ==40.0
+Requires-Dist: redis ==5.0.1
+Requires-Dist: referencing ==0.33.0
+Requires-Dist: requests ==2.31.0
+Requires-Dist: requests-oauthlib ==1.3.1
+Requires-Dist: requests-toolbelt ==1.0.0
+Requires-Dist: retrying ==1.3.4
+Requires-Dist: rfc3339-validator ==0.1.4
+Requires-Dist: rfc3986[idna2008] ==1.5.0
+Requires-Dist: rich ==13.7.0
+Requires-Dist: rich-argparse ==1.4.0
+Requires-Dist: rpds-py ==0.13.2
+Requires-Dist: rsa ==4.9
+Requires-Dist: s3transfer ==0.10.0
+Requires-Dist: secretstorage ==3.3.3
+Requires-Dist: setproctitle ==1.3.3
+Requires-Dist: shortuuid ==1.0.11
+Requires-Dist: six ==1.16.0
+Requires-Dist: sniffio ==1.3.0
+Requires-Dist: sqlalchemy ==1.4.50
+Requires-Dist: sqlalchemy-jsonfield ==1.0.2
+Requires-Dist: sqlalchemy-utils ==0.41.1
+Requires-Dist: sqlparse ==0.4.4
+Requires-Dist: streamz ==0.6.4
+Requires-Dist: tabulate ==0.9.0
+Requires-Dist: tenacity ==8.2.3
+Requires-Dist: termcolor ==2.4.0
+Requires-Dist: text-unidecode ==1.3
+Requires-Dist: tomli ==2.0.1
+Requires-Dist: toolz ==0.12.0
+Requires-Dist: tornado ==6.3.3
+Requires-Dist: twine ==4.0.2
+Requires-Dist: typing-extensions ==4.9.0
+Requires-Dist: tzdata ==2023.3
+Requires-Dist: uc-micro-py ==1.0.2
+Requires-Dist: unicodecsv ==0.14.1
+Requires-Dist: universal-pathlib ==0.1.4
+Requires-Dist: values ==2020.12.3
+Requires-Dist: wcwidth ==0.2.6
+Requires-Dist: webencodings ==0.5.1
+Requires-Dist: websocket-client ==1.6.1
+Requires-Dist: werkzeug ==2.2.3
+Requires-Dist: wrapt ==1.16.0
+Requires-Dist: wtforms ==3.1.1
+Requires-Dist: yarl ==1.9.4
+Requires-Dist: zict ==3.0.0
+Requires-Dist: zipp ==3.17.0
+Provides-Extra: dev
+Requires-Dist: check-manifest ; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: coverage ; extra == 'test'
+
+![logo_with_text](https://github.com/geniusrise/.github/assets/144122/2f8e51ee-0fcd-4f74-90fd-97301ef7943d)
+
+### AI Ecosystem
+
+<h3 align="center">
+  <a style="color:#f34960" href="https://docs.geniusrise.ai">Documentation</a>
+  ||
+  <a style="color:#f34960" href="https://github.com/geniusrise/examples">Examples</a>
+  ||
+  <a style="color:#f34960" href="https://geniusrise.com">Cloud</a>
+</h3>
+
+### <span style="color:#e667aa">About</span>
+
+<span style="color:#e4e48c">Geniusrise</span> is a modular, loosely-coupled
+MLOps framework designed for the era of Large Language Models,
+offering flexibility and standardization in designing networks of
+AI agents.
+
+It defines components and orchestrates them providing observability, state management and data handling,
+all while supporting diverse infrastructures. With its modular and unopinonated architecture,
+<span style="color:#e4e48c">Geniusrise</span> empowers teams to build, share,
+and deploy AI across various platforms.
+
+Geniusrise is powered by its components:
+
+- [geniusrise-text](https://github.com/geniusrise/geniusrise-text): Text components offerring:
+  - Inference APIs
+  - Bulk inference
+  - Fine-tuning
+- [geniusrise-audio](https://github.com/geniusrise/geniusrise-audio): Audio components offerring:
+  - Inference APIs
+  - Bulk inference
+  - Fine-tuning
+- [geniusrise-vision](https://github.com/geniusrise/geniusrise-vision): Vision components offerring:
+  - Inference APIs
+  - Bulk inference
+  - Fine-tuning
+- [geniusrise-listeners](https://github.com/geniusrise/geniusrise-listeners): Streaming data ingestion
+- [geniusrise-databases](https://github.com/geniusrise/geniusrise-databases): Bulk data ingestion
+
+### <span style="color:#e667aa">Links</span>
+
+- **Website**: [geniusrise.ai](https://geniusrise.ai)
+
+# Framework
+
+This is the base geniusrise framework, also the `genius` CLI.
+It provides the base structure and orchestration primitives for `Spout`s and `Bolt`s, and also covers operations.
+- **Docs**: [docs.geniusrise.ai](https://docs.geniusrise.ai)
+- **Examples**: [geniusrise/examples](https://github.com/geniusrise/examples)
+- **Cloud**: [geniusrise.com](https://geniusrise.com)
+
