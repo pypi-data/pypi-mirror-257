@@ -1,0 +1,15 @@
+cadetrdm/__init__.py,sha256=9FQ8njrC8QV6nwdbt57i8WRn8-VT5RSuUu-WL6HvO4Y,183
+cadetrdm/cli_integration.py,sha256=Ray66dX-GuYoLkskP6VFGTz3Rz4XEbWdsNCluKAHH1o,6097
+cadetrdm/conda_env_utils.py,sha256=fxk9ov9Ac_mzarbtq5eeK3WtdioIBWph1Q-f9HGlw14,691
+cadetrdm/initialize_repo.py,sha256=aXjNYZHITwqYCzP5yayiL0S-pYplkSfuLmKd-_EISxg,9186
+cadetrdm/io_utils.py,sha256=x_ApxACOYTy103l-ZEuwmrhmQ7Hpx6Minx0lAowhm2U,2991
+cadetrdm/jupyter_functionality.py,sha256=rU5gnXubvVsUhacE0Vs6zrjD_-nHGVSodR2mYZ0CXJU,6015
+cadetrdm/remote_integration.py,sha256=GV0o1YWofO3fQ5KKmcksOpFtxhHvoetNK01r69oR_gY,4151
+cadetrdm/repositories.py,sha256=tpmdMUtVEx1QwZZn6XS0VmCJM67HKif4sA7CWB067XY,42322
+cadetrdm/web_utils.py,sha256=Fc7AiXZxGwe6pP_5bLpH803Fz0r1bPRekTLdJ39MD2c,359
+CADET_RDM-0.0.20.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+CADET_RDM-0.0.20.dist-info/METADATA,sha256=68766Wl0gMOTKsPCsnUJZBdMfs7vnMbriJWExfia9K0,2463
+CADET_RDM-0.0.20.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+CADET_RDM-0.0.20.dist-info/entry_points.txt,sha256=HIxFrfBq03Y4cGUFKk6m2mLqR16ve8f373aoXQbzYR0,53
+CADET_RDM-0.0.20.dist-info/top_level.txt,sha256=QSRLLZoNfJyx3xU6PgPxZYEwuWla8VdqFnCjes389gw,9
+CADET_RDM-0.0.20.dist-info/RECORD,,
