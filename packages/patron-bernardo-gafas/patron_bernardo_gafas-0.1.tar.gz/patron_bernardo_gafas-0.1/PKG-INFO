@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: patron_bernardo_gafas
+Version: 0.1
+Summary: Es una funcion devuelve un patron con formato de gafas teniendo en cuenta un numero y un nombre
+Home-page: https://github.com/Bernardo2502/BernardoPaquete
+Author: Bernardo Moreno
+Author-email: bernardomorenocacheado2502@gmail.com
+
+EstÃ¡ funcion crea un patron que pide n(numero tipo entero) y palab(un nombre tipo string),
+la cantidad de caracteres de palab, dependerÃ¡ del valor de n y una expresion regular validarÃ¡
+palab.Devuelve un conjunto de caracteres con formato de gafas cuadradas.

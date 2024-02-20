@@ -1,0 +1,8 @@
+README.md
+setup.py
+patron_bernardo/__init__.py
+patron_bernardo/patron.py
+patron_bernardo_gafas.egg-info/PKG-INFO
+patron_bernardo_gafas.egg-info/SOURCES.txt
+patron_bernardo_gafas.egg-info/dependency_links.txt
+patron_bernardo_gafas.egg-info/top_level.txt
