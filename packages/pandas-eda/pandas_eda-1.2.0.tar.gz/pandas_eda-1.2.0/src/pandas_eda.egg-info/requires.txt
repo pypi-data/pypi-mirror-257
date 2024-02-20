@@ -1,0 +1,10 @@
+scipy
+tqdm
+pandas>1.5
+streamlit>=1.13
+openpyxl
+numpy
+faker
+codetiming
+plotly
+pytest
