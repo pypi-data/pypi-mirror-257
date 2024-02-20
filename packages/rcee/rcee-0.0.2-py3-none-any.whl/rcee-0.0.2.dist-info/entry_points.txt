@@ -1,0 +1,3 @@
+[console_scripts]
+worst=rcee.cli:entry_point
+
