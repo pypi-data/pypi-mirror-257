@@ -1,0 +1,7 @@
+setup.py
+azure_upload.egg-info/PKG-INFO
+azure_upload.egg-info/SOURCES.txt
+azure_upload.egg-info/dependency_links.txt
+azure_upload.egg-info/entry_points.txt
+azure_upload.egg-info/requires.txt
+azure_upload.egg-info/top_level.txt
