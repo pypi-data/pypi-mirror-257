@@ -1,0 +1,15 @@
+eparsecis/__init__.py,sha256=6Gc2U0ikJrwHahMdN-45_Ub5rmwzmo5mROqgXtYz-dE,800
+eparsecis/elements.py,sha256=16OLMCVLcGP6cVzLRMFOu8Tpf14X4tGJ0ADOEixGehQ,841
+eparsecis/eparsecis.py,sha256=cfzczu2WGGEQre6EQnh5sc93GbfXeF_3wvcijOeV09M,51120
+eparsecis/namespace_helpers.py,sha256=vYy5J6jOuy97-Q8iBNU0OQvLTEEGLq5ZAmpzgebX8_0,3823
+tests/__init__.py,sha256=iwhKnzeBJLKxpRVjvzwiRE63_zNpIBfaKLITauVph-0,24
+tests/test_eparsecis.py,sha256=BlovWmhhQAhQgXbkc7G3kWp5KBjoA3HZ-5rthYQy5_E,2035
+tests/data/epcis.xml,sha256=JM7Yk1WoqMo7FJtlYvv61aYGv0bebjEKeMzXWUMZ238,17077
+tests/data/mdd.xml,sha256=GU0vTFoq1mzu8LjqjyZyCGq9q49WVFyToDxVD95jLew,2368
+tests/data/no-cbv-namespace.xml,sha256=LBuZ9nNhLl2oI7ozWmas7B-PTHniCjkVRKCf2o64rXQ,9939
+eparsecis-4.0.1.dist-info/AUTHORS.rst,sha256=DLEdNbmXFRhQ9GlcSQzqZbabdGqxI7MYdqGR0VVaw6Q,156
+eparsecis-4.0.1.dist-info/LICENSE,sha256=kbZSd5WewnN2PSjvAC6DprP7pXx6NUNsnltmU2Mz1yA,34519
+eparsecis-4.0.1.dist-info/METADATA,sha256=KjbFahA9wKp5x3OtfbJQe9IkSd9dozDBSX7QqrZ2Uuk,3341
+eparsecis-4.0.1.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+eparsecis-4.0.1.dist-info/top_level.txt,sha256=pn0CTHZzCqrgU22C0Nglv1SzwwItl3f2mbgDQOOiE5g,16
+eparsecis-4.0.1.dist-info/RECORD,,
