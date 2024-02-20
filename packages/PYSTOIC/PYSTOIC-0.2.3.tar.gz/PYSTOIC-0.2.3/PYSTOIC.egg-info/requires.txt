@@ -1,0 +1,16 @@
+ruff
+setuptools
+
+[all]
+pkginfo
+loguru
+sh
+requests
+tabulate
+
+[reqs]
+pkginfo
+loguru
+sh
+requests
+tabulate
