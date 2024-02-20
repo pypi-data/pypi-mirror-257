@@ -1,0 +1,9 @@
+README.md
+main.py
+pyproject.toml
+swisher_api_demo.egg-info/PKG-INFO
+swisher_api_demo.egg-info/SOURCES.txt
+swisher_api_demo.egg-info/dependency_links.txt
+swisher_api_demo.egg-info/entry_points.txt
+swisher_api_demo.egg-info/requires.txt
+swisher_api_demo.egg-info/top_level.txt
