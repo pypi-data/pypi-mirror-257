@@ -1,0 +1,17 @@
+jupyterlab_server_timer/__init__.py,sha256=mvbwFkj2t37Z1dALIWjHUX0Wino0ovuz7uuvWN0adPA,937
+jupyterlab_server_timer/_version.py,sha256=lFB9nR4WN0iXcp5UpfmTfw1Z2jWBDmClLEWF046NHmc,171
+jupyterlab_server_timer/handlers.py,sha256=eA4kJgWMbLmuCU5g7cnb6DDN1tIpL_oB48-WBBGGInk,1316
+jupyterlab_server_timer/tests/__init__.py,sha256=ssHdOsHQ0fhz_Q-5eCCtfDh64IA259FrbdmnqG5viX0,53
+jupyterlab_server_timer/tests/test_handlers.py,sha256=SEeoOYVwb0XRJpClN8aXjJ_9Ux3dz-zjZJNLO3kzWbg,299
+jupyterlab_server_timer-0.1.1.data/data/etc/jupyter/jupyter_server_config.d/jupyterlab_server_timer.json,sha256=PmN2PIYOniLq1XbYFlgRlXyyIo_SuO-Jv28PA2wiCLk,98
+jupyterlab_server_timer-0.1.1.data/data/share/jupyter/labextensions/jupyterlab-server-timer/package.json,sha256=xueVZ4qQLAyTh6XbTmwca3-NlvIGdNmiMFbr8iGT8qA,6122
+jupyterlab_server_timer-0.1.1.data/data/share/jupyter/labextensions/jupyterlab-server-timer/static/512.ca91dd4171d250ddcf01.js,sha256=ypHdQXHSUN3PAcchTKr1UzbBC1KsePyeubr19Mp-wJE,1647
+jupyterlab_server_timer-0.1.1.data/data/share/jupyter/labextensions/jupyterlab-server-timer/static/736.abd4b8771fb4d31ae79a.js,sha256=q9S4dx-00xrnmqNesgLdGWBTkWNjY29anTd0x6DnamE,4097
+jupyterlab_server_timer-0.1.1.data/data/share/jupyter/labextensions/jupyterlab-server-timer/static/remoteEntry.ba1fd6b269b8d83d1037.js,sha256=uh_Wsmm42D0QNxYs58N9fZxNnpoHjOlzBzs-no3NxB8,6637
+jupyterlab_server_timer-0.1.1.data/data/share/jupyter/labextensions/jupyterlab-server-timer/static/style.js,sha256=6uz31zXELwduiUu-7py-ii9ud84TLcNMOWsNllc6Cvc,166
+jupyterlab_server_timer-0.1.1.data/data/share/jupyter/labextensions/jupyterlab-server-timer/static/third-party-licenses.json,sha256=i4z96RB0T1_RGdmoFCyvPxH0skhEL5qSKT9D1EdclF8,2453
+jupyterlab_server_timer-0.1.1.data/data/share/jupyter/labextensions/jupyterlab-server-timer/install.json,sha256=dw0GVio-i_KJm9a8ddF7Ex0p2_SauANQfwfRUgZzum4,207
+jupyterlab_server_timer-0.1.1.dist-info/METADATA,sha256=mPYnTL7kmrU0_HvrD5gZMojAa-wAKvhVnw1ps6ZUiSU,8515
+jupyterlab_server_timer-0.1.1.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+jupyterlab_server_timer-0.1.1.dist-info/licenses/LICENSE,sha256=x07IK0UHNWRGfabVw3l-9LBZQkPyiKdPnY6L2LlcU1k,1521
+jupyterlab_server_timer-0.1.1.dist-info/RECORD,,
