@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: evidi_fabric
+Version: 0.1.26
+Summary: 
+Author: Uffe Friis Torlyn
+Author-email: uft@cloud-agility.com
+Requires-Python: >=3.10,<3.12
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: delta (>=0.4.2,<0.5.0)
+Requires-Dist: delta-spark (>=3.1.0,<4.0.0)
+Requires-Dist: dynaconf (>=3.2.4,<4.0.0)
+Requires-Dist: pandas (==2.0.3)
+Requires-Dist: pyodbc (==4.0.39)
+Requires-Dist: semantic-link (>=0.5.1,<0.6.0)
+Requires-Dist: twine (>=5.0.0,<6.0.0)
+Description-Content-Type: text/markdown
+
+# Introduction 
+This repo tracks the evidi_fabric package which is intended to collect useful helper when working with fabric
+
+# Build and Test
+
+For fast patch, build and publish, you can use the following command:
+
+```poetry version patch && poetry build && python3 -m twine upload dist/*```
+
+To upgrade your local repositories with the latest version of the package with pip, run:
+
+```pip install --upgrade evidi_fabric```
+
+
+## find a specific line of code in all scripts:
+run below in a bash terminal
+```./helpers/find_file_with_line_of_code.sh "TEXT YOU WANT TO FIND"```
