@@ -1,0 +1,6 @@
+requests[socks]==2.31.0
+dnspython[doh]==2.3.0
+
+[docs]
+furo
+myst-parser[linkify]
