@@ -1,0 +1,7 @@
+setup.py
+kayoc/__init__.py
+kayoc.egg-info/PKG-INFO
+kayoc.egg-info/SOURCES.txt
+kayoc.egg-info/dependency_links.txt
+kayoc.egg-info/requires.txt
+kayoc.egg-info/top_level.txt

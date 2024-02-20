@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: kayoc
+Version: 0.0.3
+Summary: A python client for the Kayoc API
+Author: Pepijn van der Klei
+Author-email: pepijnvanderklei@gmail.com
+Requires-Dist: requests==2.31.0
+Requires-Dist: aiohttp==3.9.3
