@@ -1,0 +1,9 @@
+readExcel/__init__.py,sha256=XzwkI_i3ikGlNw4OoLyOsrkxjPfKGD-6BB0N1xtz084,226
+readExcel/readExcelDataWithXlrd.py,sha256=uztWjJkZoHT0A77htAGCFB4NgCpP9snJKPFPxp4D0j8,934
+readExcel/readExcelWithOpenpyxl.py,sha256=Af7qylmkvR0GjPovfWzQyHfy1qq3RagZDrqMO5fXJJg,888
+readExcel/readExcelWithPandas.py,sha256=c6rA5snYFo4EEWwP2zSGKzkP51wIth_5M_FWJkduNXI,210
+readExcel/readFilesWithXlwings.py,sha256=6U-oQ9t7_wYjKIolYlTbLtwAwCKbIK_D_Osc_-W4AFY,715
+readExcelFiles-1.0.0.dist-info/METADATA,sha256=NElRw02ty0ZLzX5HNZd6B3v-6C2VRb4cc669DtDh2TQ,455
+readExcelFiles-1.0.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+readExcelFiles-1.0.0.dist-info/top_level.txt,sha256=4D7A0f_772m_a34WvWBYT049F7yMaA4IHB2vBolwn5s,10
+readExcelFiles-1.0.0.dist-info/RECORD,,
