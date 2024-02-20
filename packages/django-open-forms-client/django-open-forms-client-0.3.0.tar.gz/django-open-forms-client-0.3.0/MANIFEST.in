@@ -1,0 +1,9 @@
+include *.rst
+include LICENSE
+include openformsclient/py.typed
+recursive-include openformsclient *.html
+recursive-include openformsclient *.txt
+recursive-include openformsclient *.po
+global-exclude __pycache__
+global-exclude *.py[co]
+
