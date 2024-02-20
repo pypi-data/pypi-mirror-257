@@ -1,0 +1,151 @@
+Metadata-Version: 2.1
+Name: maze-world
+Version: 0.0.1
+Summary: Random maze environments with different size and complexity for reinforcement learning and planning research. This is in-particular to investigate generalization and planning ability in dynamically changing environment.
+Home-page: https://github.com/koulanurag/maze-world
+Author: Anurag Koul
+Author-email: koulanurag@gmail.com
+License: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.6, <3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: gymnasium >=0.28
+Requires-Dist: pygame >=2.1.0
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Provides-Extra: all
+Requires-Dist: pytest <8.0.0 ; extra == 'all'
+Requires-Dist: pytest-cases ; extra == 'all'
+Requires-Dist: xdoctest ; extra == 'all'
+Requires-Dist: pytest-cov ; extra == 'all'
+Requires-Dist: black ; extra == 'all'
+Requires-Dist: imageio ; extra == 'all'
+Requires-Dist: jupyter ; extra == 'all'
+Requires-Dist: black[jupyter] ; extra == 'all'
+Requires-Dist: Sphinx <6.0,>=4.0 ; extra == 'all'
+Requires-Dist: furo ; extra == 'all'
+Requires-Dist: sphinxcontrib-katex ; extra == 'all'
+Requires-Dist: sphinx-copybutton ; extra == 'all'
+Requires-Dist: sphinx-design ; extra == 'all'
+Requires-Dist: myst-parser ; extra == 'all'
+Requires-Dist: sphinx-autobuild ; extra == 'all'
+Requires-Dist: sphinxext-opengraph ; extra == 'all'
+Requires-Dist: sphinx-prompt ; extra == 'all'
+Requires-Dist: sphinx-favicon ; extra == 'all'
+Requires-Dist: nbsphinx >=0.9.3 ; extra == 'all'
+Requires-Dist: pandoc >=2.3 ; extra == 'all'
+Requires-Dist: myst-nb ; extra == 'all'
+Provides-Extra: develop
+Requires-Dist: black ; extra == 'develop'
+Requires-Dist: imageio ; extra == 'develop'
+Requires-Dist: jupyter ; extra == 'develop'
+Requires-Dist: black[jupyter] ; extra == 'develop'
+Provides-Extra: docs
+Requires-Dist: Sphinx <6.0,>=4.0 ; extra == 'docs'
+Requires-Dist: furo ; extra == 'docs'
+Requires-Dist: sphinxcontrib-katex ; extra == 'docs'
+Requires-Dist: sphinx-copybutton ; extra == 'docs'
+Requires-Dist: sphinx-design ; extra == 'docs'
+Requires-Dist: myst-parser ; extra == 'docs'
+Requires-Dist: sphinx-autobuild ; extra == 'docs'
+Requires-Dist: sphinxext-opengraph ; extra == 'docs'
+Requires-Dist: sphinx-prompt ; extra == 'docs'
+Requires-Dist: sphinx-favicon ; extra == 'docs'
+Requires-Dist: nbsphinx >=0.9.3 ; extra == 'docs'
+Requires-Dist: pandoc >=2.3 ; extra == 'docs'
+Requires-Dist: myst-nb ; extra == 'docs'
+Provides-Extra: test
+Requires-Dist: pytest <8.0.0 ; extra == 'test'
+Requires-Dist: pytest-cases ; extra == 'test'
+Requires-Dist: xdoctest ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+
+# maze-world
+
+Random maze environments with different size and complexity for reinforcement learning and planning research. This is in-particular to investigate generalization and planning ability in dynamically changing environment.
+
+![Python package](https://github.com/koulanurag/maze-world/workflows/Python%20package/badge.svg)
+![Python Version](https://img.shields.io/pypi/pyversions/maze-world)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/koulanurag/maze-world/blob/main/examples/colab_example.ipynb)
+
+
+_Disclaimer: This project is largely a amalgam of references mentioned <a href=#references>here</a>._
+
+## Installation
+
+- Using PyPI:
+
+   ```bash
+
+   pip install maze-world
+
+   ```
+
+- Directly from source (recommended):
+   ```bash
+   git clone https://github.com/koulanurag/maze-world.git
+   cd maze-world
+   pip install -e .
+   ```
+## Environments Zoo!
+
+<div style="text-align:center;">
+  <table>
+    <tr>
+      <td><b>RandomMaze-11x11-v0</b></td>
+      <td><b>RandomMaze-21x21-v0</b></td>
+      <td><b>RandomMaze-31x31-v0</b></td>
+      <td><b>RandomMaze-101x101-v0</b></td>
+    </tr>
+    <tr>
+      <td><img src="docs/source/_static/gifs/RandomMaze-11x11-v0.gif" alt="RandomMAze-11x11-v0.gif" width="200"/></td>
+      <td><img src="docs/source/_static/gifs/RandomMaze-21x21-v0.gif" alt="RandomMAze-21x21-v0.gif" width="200"/></td>
+      <td><img src="docs/source/_static/gifs/RandomMaze-31x31-v0.gif" alt="RandomMAze-11x11-v0.gif" width="200"/></td>
+      <td><img src="docs/source/_static/gifs/RandomMaze-101x101-v0.gif" alt="RandomMAze-21x21-v0.gif" width="200"/></td>
+    </tr>
+  </table>
+</div>
+
+See all [here](https://koulanurag.dev/maze-world/environments.html).
+
+## Quick-Start:
+```python
+import gymnasium as gym
+
+env = gym.make("maze_world:RandomMaze-11x11-v0", render_mode="human")
+terminated, truncated = False, False
+observation, info = env.reset(seed=0, options={})
+episode_score = 0.
+
+while not (terminated or truncated):
+    action = env.action_space.sample()
+    observation, reward, terminated, truncated, info = env.step(action)
+    episode_score += reward
+
+env.close()
+```
+
+See entire quick-start guide [here](https://koulanurag.dev/maze-world/quick-start.html).
+
+## Testing:
+
+- Install: ```pip install -e ".[test]" ```
+- Run: ```pytest```
+
+## Development:
+
+If you would like to develop it further; begin by installing following:
+
+```pip install -e ".[develop]" ```
+
+## References:
+1. [Gym-Maze](https://github.com/MattChanTK/gym-maze)
+2. [Mazelab](https://github.com/zuoxingdong/mazelab)
+3. [Custom Gym environment based out of gymnasium](https://gymnasium.farama.org/tutorials/gymnasium_basics/environment_creation/)
+4. [Wilson Maze Generator](https://github.com/CaptainFl1nt/WilsonMazeGenerator)
