@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: printk
+Version: 0.1
+Summary: A colorful print tool for python
+Author: bruce_cui
+Author-email: summer56567@163.com
+Requires-Dist: termcolor>=2.3.0
