@@ -1,0 +1,10 @@
+README.md
+setup.py
+gravpy/__init__.py
+gravpy/newtonian.py
+gravpy_core.egg-info/PKG-INFO
+gravpy_core.egg-info/SOURCES.txt
+gravpy_core.egg-info/dependency_links.txt
+gravpy_core.egg-info/requires.txt
+gravpy_core.egg-info/top_level.txt
+tests/__init__.py
