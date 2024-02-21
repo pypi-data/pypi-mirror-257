@@ -1,0 +1,49 @@
+# Upload package: https://packaging.python.org/en/latest/tutorials/packaging-projects/
+# Write toml: https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#writing-pyproject-toml
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "example_package_HA_TUONG_NGUYEN_NEW" # only (letters, numbers, ., _ , and -)
+version = "0.0.0" # see more at https://packaging.python.org/en/latest/specifications/version-specifiers/#version-specifiers
+authors = [
+    { name = "Tuong Nguyen Ha", email = "hatuongnguyen@gmail.com" },
+]
+maintainers = [
+    { name = "Tuong Nguyen Ha", email = "hatuongnguyen@gmail.com" },
+]
+description = "A small example package"
+readme = "README.md" # https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
+# readme = {file = "README.txt", content-type = "text/markdown"}
+# readme = {file = "README.txt", content-type = "text/x-rst"}
+license = { file = "LICENSE" }
+requires-python = ">=3.8"
+keywords = ["SetupPythonPackageIndex", "Test", "MyTest", "Tuong Nguyen Ha", "Template"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [# https://packaging.python.org/en/latest/specifications/dependency-specifiers/#dependency-specifiers
+     "numpy",
+     "matplotlib",
+     "pandas",
+]
+
+[project.urls]
+Homepage = "https://github.com/hatuongnguyen/sampleproject"
+# Issues = "https://github.com/pypa/sampleproject/issues"
+# Homepage = "https://example.com"
+# Documentation = "https://readthedocs.org"
+# Repository = "https://github.com/hatuongnguyen/.git"
+# Issues = "https://github.com/me/spam/issues"
+# Changelog = "https://github.com/me/spam/blob/master/CHANGELOG.md"
+
+# [project.scripts] # Executing `spam:main_cli` command will do the equivalent of from spam import main_cli; main_cli()
+# spam-cli = "spam:main_cli"
+
+# [project.gui-scripts]
+# spam-gui = "spam:main_gui"
+
