@@ -1,0 +1,12 @@
+.gitignore
+Makefile
+README.md
+setup.py
+.github/publish.yml
+autodistill_efficient_yolo_world/__init__.py
+autodistill_efficient_yolo_world/model.py
+autodistill_efficient_yolo_world.egg-info/PKG-INFO
+autodistill_efficient_yolo_world.egg-info/SOURCES.txt
+autodistill_efficient_yolo_world.egg-info/dependency_links.txt
+autodistill_efficient_yolo_world.egg-info/requires.txt
+autodistill_efficient_yolo_world.egg-info/top_level.txt
