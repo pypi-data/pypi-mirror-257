@@ -1,0 +1,1 @@
+print("Cargando el subpackage mensaje.adios")
