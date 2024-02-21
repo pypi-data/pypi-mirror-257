@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+gptbatcher/Choice.py
+gptbatcher/GPTBatcher.py
+gptbatcher/JobQueue.py
+gptbatcher/Participant.py
+gptbatcher/Question.py
+gptbatcher/Sampler.py
+gptbatcher/__init__.py
+gptbatcher.egg-info/PKG-INFO
+gptbatcher.egg-info/SOURCES.txt
+gptbatcher.egg-info/dependency_links.txt
+gptbatcher.egg-info/requires.txt
+gptbatcher.egg-info/top_level.txt
+tests/__init__.py
+tests/test_gptbatcher.py
