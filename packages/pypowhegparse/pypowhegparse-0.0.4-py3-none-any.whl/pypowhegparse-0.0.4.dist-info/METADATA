@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: pypowhegparse
+Version: 0.0.4
+Summary: Analyse POWHEG output files for potential errors.
+Home-page: https://github.com/APN-Pucky/pypowhegparse.git
+Author: Alexander Puck Neuwirth
+Author-email: alexander@neuwirth-informatik.de
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: pytopdrawer
+Requires-Dist: scipy
+Requires-Dist: smpl
+Requires-Dist: uncertainties
+Project-URL: Repository, https://github.com/APN-Pucky/pypowhegparse.git
+Description-Content-Type: text/markdown
+
+# pypowhegparse
+
+[![PyPI version][pypi image]][pypi link] [![PyPI version][pypi versions]][pypi link]  ![downloads](https://img.shields.io/pypi/dm/pypowhegparse.svg)
+
+Analyse POWHEG output files for potential errors.
+
+Scan for errors in powheg output files. The script is used as follows:
+
+```bash
+pypowhegparse [-f powheg/folder/here] [-h]
+```
+
+[pypi image]: https://badge.fury.io/py/pypowhegparse.svg
+[pypi link]: https://pypi.org/project/pypowhegparse/
+[pypi versions]: https://img.shields.io/pypi/pyversions/pypowhegparse.svg
