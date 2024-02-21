@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: etudataproc
+Version: 0.1.0
+Summary: Python library for interacting with a Yandex DataProc QueueYandex (DataProc Queue API wrapper)
+Home-page: https://github.com/sesh00/etudataproc
+Download-URL: https://github.com/sesh00/etudataproc/archive/main.zip
+Author: sesh00
+Author-email: ernestrsage@gmail.ru
+License: MIT License, see LICENSE file
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests

@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+etudataproc/QueueClient.py
+etudataproc/__init__.py
+etudataproc.egg-info/PKG-INFO
+etudataproc.egg-info/SOURCES.txt
+etudataproc.egg-info/dependency_links.txt
+etudataproc.egg-info/requires.txt
+etudataproc.egg-info/top_level.txt
