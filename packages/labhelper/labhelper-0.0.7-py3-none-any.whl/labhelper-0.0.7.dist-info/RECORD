@@ -1,0 +1,14 @@
+labhelper/__init__.py,sha256=ehsDQOOieTjfyLa_IJ-QiWk46AAChd8rsFDfoF347I4,379
+labhelper/graphing.py,sha256=KD9La0l86FfXrmKkYOWsd4YZXJOzbZWBMnl4ML7i_Sk,225
+labhelper/pandas_utils.py,sha256=-npGl8shdjRc68xo2xDqR7hvprHXnyCZAyTLlrgPLL4,3589
+labhelper/stats.py,sha256=Sbp5oGwiqAvRoQoz_TKfHN49O_GXGTVnp_GkK3v30js,1636
+labhelper/symbolic.py,sha256=zuY-xi7BuQszyISlFoldLM-3dJnBNKbFwj6wi9QMuQs,13993
+labhelper/units.py,sha256=aVN9Nnj2apO8R8kdvCg5HpSXjfGjjA3TJcNnzWAy_XU,11968
+labhelper/unit_systems/CGS.py,sha256=ytD7SyUWgOR4Gby_Anf9plzwdvxH737MraYp2u5sPok,751
+labhelper/unit_systems/SI.py,sha256=-Vi2dWExFHDjBQ12j8wLH5x6tCIahVd4D_mty5xPd4c,1738
+labhelper/unit_systems/__init__.py,sha256=bDrKh19U8e_KOB6WD3US9Ols2LhAFzrz108qD7-0sfM,111
+labhelper/unit_systems/prefixes.py,sha256=SE1w8JaHIetiteQj1QKyZLz8Kf-hKWWRzOOwybmcCE4,2140
+labhelper-0.0.7.dist-info/METADATA,sha256=XWbLO2BxR6WgWOJ0dW-uMZaD3fWo4cDVwN6GtuiK_z8,1019
+labhelper-0.0.7.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+labhelper-0.0.7.dist-info/top_level.txt,sha256=YkaxkZJS1a1P-kNqcs5xvt3GbeSdImXj1Vc56ui_FBk,10
+labhelper-0.0.7.dist-info/RECORD,,
