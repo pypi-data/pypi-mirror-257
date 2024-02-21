@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: tfc_admin
+Version: 1.0.0
+Summary: Make Terraform Cloud API calls for common platform administration tasks.
+Home-page: https://gitlab.com/fer1035_python/modules/pypi-tfc_admin
+License: GPL-2.0-only
+Keywords: terraform,cloud,administration,api,calls
+Author: Ahmad Ferdaus Abd Razak
+Author-email: fer1035@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: requests (>=2.27.1,<3.0.0)
+Project-URL: Repository, https://gitlab.com/fer1035_python/modules/pypi-tfc_admin
+Description-Content-Type: text/x-rst
+
+=============
+**tfc_admin**
+=============
+
+Overview
+--------
+
+Make Terraform Cloud API calls for common platform administration tasks.
+
+Available Functions
+-------------------
+
+- Show organization details
+- List projects
+- Get project ID from project name
+- List workspaces in a project
+- Get workspace ID from workspace name
+- Move workspace into a project
+
+Examples
+--------
+
+.. code-block:: PYTHON
+
+   import tfc_admin
+
+   project_workspaces = tfc_admin.get_project_ws(
+      "my_tfc_token",
+      "my_tfc_organization",
+      tfc_admin.get_project_id(
+         "my_tfc_token",
+         "my_tfc_organization",
+         "my_project_name"
+      )
+   )
+
+   print(project_workspaces)
+
