@@ -1,0 +1,6 @@
+requests
+selenium
+selenium-wire
+webdriver_manager
+ddddocr
+docopt
