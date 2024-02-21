@@ -1,0 +1,7 @@
+README.md
+setup.py
+cordo.egg-info/PKG-INFO
+cordo.egg-info/SOURCES.txt
+cordo.egg-info/dependency_links.txt
+cordo.egg-info/requires.txt
+cordo.egg-info/top_level.txt
