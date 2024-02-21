@@ -1,0 +1,1 @@
+#define OSDP_EXPORT
