@@ -1,0 +1,27 @@
+1. altering tables
+2. inserting data  ✅
+3. created at and updated at field ✅
+4. foreign key and primary key  ✅
+5. Foreign key Column ✅
+6. Delete table data ✅
+7. querying data in relational tables ✅
+8. increment and decrement function (that increments) updated ✅
+10. querying with operations like (OR LIKE > < etc) ✅
+11. limit and pagination ✅
+12. in & not in  ✅
+13. grouping data
+14. updating data ✅
+15. apply delete with limit ✅
+
+
+--------- conn
+
+1. create 3 connections for:
+    * postgres ✅
+    * mysql ✅
+    * sqlite3 ✅
+
+
+
+---------- bugs
+1. fixing logger index
