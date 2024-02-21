@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "dataparsers"
+version = "1.0.1"
+description = "A wrapper around argparse to get command line argument parsers from dataclasses"
+authors = ["Diogo Rossi <rossi.diogo@gmail.com>"]
+readme = "README.md"
+repository = "https://github.com/Diogo-Rossi/dataparsers.git"
+documentation = "https://dataparsers.readthedocs.io/en/latest/index.html#"
+
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+addopts = "-rx -v -s --tb=short"
