@@ -1,0 +1,21 @@
+@media print {
+  body.endi[class*="/expenses/"] .expense_header {
+    border: 0.05pt solid #f9f9f9;
+    display: block;
+    padding: 5pt; }
+    body.endi[class*="/expenses/"] .expense_header > div {
+      width: 100%; }
+    body.endi[class*="/expenses/"] .expense_header ul {
+      list-style-type: none; }
+  body.endi[class*="/expenses/"] .separate_top {
+    border: 0 none;
+    padding: 0; }
+  body.endi[class*="/expenses/"] .tab-content .totals,
+  body.endi[class*="/expenses/"] .internal-total,
+  body.endi[class*="/expenses/"] .activity-total {
+    display: none !important; }
+  body.endi[class*="/expenses/"] .tab-content .tab-pane .layout.flex {
+    display: block;
+    page-break-after: avoid; }
+  body.endi[class*="/expenses/"] .grand-total {
+    margin: 0; } }

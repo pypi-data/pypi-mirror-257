@@ -1,0 +1,72 @@
+body.endi[class*="estimations/{id}"] .main_actions div[role="group"],
+body.endi[class*="invoices/{id}"] .main_actions div[role="group"] {
+  order: 0; }
+
+body.endi[class*="estimations/{id}"] .main_actions .child-container > div,
+body.endi[class*="invoices/{id}"] .main_actions .child-container > div {
+  display: flex; }
+  body.endi[class*="estimations/{id}"] .main_actions .child-container > div > div,
+  body.endi[class*="invoices/{id}"] .main_actions .child-container > div > div {
+    margin: 0 0 5px 5px; }
+
+body.endi[class*="estimations/{id}"] .layout.flex div[class*="col-md"] > div:not(:last-child),
+body.endi[class*="invoices/{id}"] .layout.flex div[class*="col-md"] > div:not(:last-child) {
+  padding-bottom: 20px; }
+
+body.endi[class*="estimations/{id}"] .quotation_item_title,
+body.endi[class*="invoices/{id}"] .quotation_item_title {
+  justify-content: space-between;
+  padding: 0 2px 5px;
+  width: 100%; }
+  body.endi[class*="estimations/{id}"] .quotation_item_title h3 em,
+  body.endi[class*="invoices/{id}"] .quotation_item_title h3 em {
+    font-weight: normal; }
+  body.endi[class*="estimations/{id}"] .quotation_item_title > div:last-child:not(:first-child),
+  body.endi[class*="invoices/{id}"] .quotation_item_title > div:last-child:not(:first-child) {
+    white-space: nowrap; }
+
+body.endi[class*="estimations/{id}"] .separate_block .form-group,
+body.endi[class*="invoices/{id}"] .separate_block .form-group {
+  padding-bottom: 5px; }
+
+body.endi[class*="estimations/{id}"] .content > button,
+body.endi[class*="invoices/{id}"] .content > button {
+  margin: 5px; }
+
+body.endi[class*="estimations/{id}"] .ht-before-discounts table, body.endi[class*="estimations/{id}"] .total-ttc table, body.endi[class*="estimations/{id}"] .total-due table,
+body.endi[class*="invoices/{id}"] .ht-before-discounts table,
+body.endi[class*="invoices/{id}"] .total-ttc table,
+body.endi[class*="invoices/{id}"] .total-due table {
+  margin-bottom: 5px; }
+
+body.endi[class*="estimations/{id}"] .ht-before-discounts table tr.row_recap th,
+body.endi[class*="estimations/{id}"] .ht-before-discounts table tr.row_recap td:not(.level_spacer):not(.empty), body.endi[class*="estimations/{id}"] .total-ttc table tr.row_recap th,
+body.endi[class*="estimations/{id}"] .total-ttc table tr.row_recap td:not(.level_spacer):not(.empty), body.endi[class*="estimations/{id}"] .total-due table tr.row_recap th,
+body.endi[class*="estimations/{id}"] .total-due table tr.row_recap td:not(.level_spacer):not(.empty),
+body.endi[class*="invoices/{id}"] .ht-before-discounts table tr.row_recap th,
+body.endi[class*="invoices/{id}"] .ht-before-discounts table tr.row_recap td:not(.level_spacer):not(.empty),
+body.endi[class*="invoices/{id}"] .total-ttc table tr.row_recap th,
+body.endi[class*="invoices/{id}"] .total-ttc table tr.row_recap td:not(.level_spacer):not(.empty),
+body.endi[class*="invoices/{id}"] .total-due table tr.row_recap th,
+body.endi[class*="invoices/{id}"] .total-due table tr.row_recap td:not(.level_spacer):not(.empty) {
+  background: none; }
+
+@media (min-width: 75rem) {
+  body.endi[class*="estimations/{id}"] .main_actions div.totals,
+  body.endi[class*="invoices/{id}"] .main_actions div.totals {
+    order: 1; }
+  body.endi[class*="estimations/{id}"] .main_actions div.child-container,
+  body.endi[class*="invoices/{id}"] .main_actions div.child-container {
+    order: 2; } }
+
+@media (max-width: 75rem) {
+  body.endi[class*="estimations/{id}"] .main_actions,
+  body.endi[class*="invoices/{id}"] .main_actions {
+    flex-wrap: wrap; }
+    body.endi[class*="estimations/{id}"] .main_actions div.totals,
+    body.endi[class*="invoices/{id}"] .main_actions div.totals {
+      order: 2;
+      width: 100%; }
+    body.endi[class*="estimations/{id}"] .main_actions div.child-container,
+    body.endi[class*="invoices/{id}"] .main_actions div.child-container {
+      order: 1; } }

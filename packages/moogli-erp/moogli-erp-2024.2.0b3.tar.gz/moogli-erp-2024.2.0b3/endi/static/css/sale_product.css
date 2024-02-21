@@ -1,0 +1,13 @@
+body.endi .main_toolbar .flex > .resume {
+  align-items: center;
+  min-height: 3rem; }
+
+body.endi .product_actions .flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  body.endi .product_actions .flex > div {
+    align-items: center;
+    display: flex; }
+    body.endi .product_actions .flex > div > div {
+      margin-right: 5px; }

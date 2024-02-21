@@ -1,0 +1,35 @@
+import colander
+
+from endi import forms
+from endi.forms.files import ImageNode
+
+
+class SAPConfigSchema(colander.Schema):
+    header_img = ImageNode(
+        title="En-tête des sortie PDF",
+        missing=colander.drop,
+    )
+    sap_attestation_document_help = forms.textarea_node(
+        title="Texte d'aide",
+        description=(
+            "Affiché une seule fois en fin de document "
+            "mais avant le pied de page et la signature"
+        ),
+        missing="",
+    )
+    sap_attestation_signee = forms.textarea_node(
+        title="Qui atteste / signe ?",
+        missing="",
+        description=(
+            "souvent le gérant. Viendra s'insérer après " "« je soussigné … »"
+        ),
+    )
+    footer_img = ImageNode(
+        title="Image du pied de page des sorties PDF",
+        description="Vient se placer au-dessus du texte du pied de page",
+        missing=colander.drop,
+    )
+    sap_attestation_footer = forms.textarea_node(
+        title="Texte du pied de page des sorties PDF",
+        missing="",
+    )
