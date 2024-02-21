@@ -1,0 +1,15 @@
+fastlbp_imbg/__init__.py,sha256=YrLlqSI-Z9BYsg7PwCc5ouDewQ0-_YkFfBTSnWpmObg,472
+fastlbp_imbg/_lbp.cp311-win_amd64.pyd,sha256=l2k6s25O4H5j4IPFR7H5VbTOFLyF49yC6b6dsIucRYU,220160
+fastlbp_imbg/common.py,sha256=EsfZdjtriZ6HC8IND-ck10GMe0W3WrGCBxMHKwilRSc,51
+fastlbp_imbg/fastlbp.py,sha256=hpXYRtYAeogztU49JEiYYdHkZsN69hv6Kl9xHKRiM_k,10210
+fastlbp_imbg/lbp.py,sha256=cAMjMtJogl4fLSO38TIrqq9igf7_WqAFl2n18r9RsTA,4608
+fastlbp_imbg/utils.py,sha256=QIGRwRp7BYOYGsM49YOoEIOumRqe1UviaRQYX4Z98E0,5902
+fastlbp_imbg/workers.py,sha256=zjgY_0jS6thRul0smNx7Ea41puIo_Yuj5qw-iuuRNc4,5366
+fastlbp_imbg/tests/test_lbp_impl.py,sha256=jw7N1LhzleZG2-kOYVdLY9LU7PrjweWuz6Y57VyEjSQ,1683
+fastlbp_imbg/tests/test_lbp_mask.py,sha256=zxbFW8dcsl7IYY2A9PG_vNGiuE5ASVbZiE0bs-5M1zc,2781
+fastlbp_imbg/tests/test_utils.py,sha256=2U4OquINDeL8llCytEonUPOgPQZCwLHGeC_cp1T-uZ8,2673
+fastlbp_imbg-0.1.0.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+fastlbp_imbg-0.1.0.dist-info/METADATA,sha256=aqNdenr0mj4EB2h5Qz-g07lsVI6UIFaN54ezMMNG3QI,3547
+fastlbp_imbg-0.1.0.dist-info/WHEEL,sha256=ircjsfhzblqgSzO8ow7-0pXK-RVqDqNRGQ8F650AUNM,102
+fastlbp_imbg-0.1.0.dist-info/top_level.txt,sha256=fF-M6b3rhf5EQletutvhK8-LdwO_cIdtApUNO0FG4QA,13
+fastlbp_imbg-0.1.0.dist-info/RECORD,,
