@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+axiompro/axiom.py
+axiompro.egg-info/PKG-INFO
+axiompro.egg-info/SOURCES.txt
+axiompro.egg-info/dependency_links.txt
+axiompro.egg-info/entry_points.txt
+axiompro.egg-info/top_level.txt
