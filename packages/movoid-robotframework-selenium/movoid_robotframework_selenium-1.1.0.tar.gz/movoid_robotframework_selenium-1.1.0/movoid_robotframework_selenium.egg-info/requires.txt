@@ -1,0 +1,5 @@
+selenium
+movoid_function
+movoid_robotframework
+robotframework_selenium2library
+opencv-python
