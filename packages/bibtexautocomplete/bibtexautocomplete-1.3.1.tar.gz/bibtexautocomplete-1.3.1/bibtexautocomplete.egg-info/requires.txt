@@ -1,0 +1,10 @@
+bibtexparser<2.0.0
+alive-progress>=3.0.0
+
+[dev]
+pre-commit
+pytest
+mypy
+ruff
+coverage
+pytest-cov
