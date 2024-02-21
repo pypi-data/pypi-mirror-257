@@ -1,0 +1,2 @@
+[console_scripts]
+kipta = kipta.cli:main
