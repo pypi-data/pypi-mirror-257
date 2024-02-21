@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: math_stats_ml
+Version: 0.0.1
+Summary: Python package for Mathematical Statistics with a View Toward Machine Learning, by John Myers
+Author-email: John Myers <jmmyers25@gmail.com>
+Project-URL: Homepage, https://github.com/jmyers7/math_stats_ml
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Gradient descent functions for ["Mathematical Statistics with a View Toward Machine Learning"](https://mml.johnmyersmath.com/stats-book/intro.html), by John Myers. To install, do:
+
+```
+pip install math_stats_ml
+```
+
+Other materials are [here](https://github.com/jmyers7/stats-book-materials).
