@@ -1,0 +1,13 @@
+texenv/__init__.py,sha256=zsrKOnPEcLpJHzVBOODLn9oQ4UuB5-Mc5mrQeUFv1rE,102
+texenv/create_env.py,sha256=k1jKrqnjDrJbgUCkMY7rICd7ZxePG-cagexvjyZZuUY,2984
+texenv/packages.py,sha256=WDX_4XOBTEscnRC7YvHGQQU-Ce_3rZUTkbWR3lwBK_Y,1802
+texenv/preprocessor.py,sha256=Q2b7aZ_sC2QA0Lv73i7aWWHpF_0rvEZlHbLHRc8e_IM,14646
+texenv/runner.py,sha256=QPbwyl8fRpYHeIlu8HPaK_k_cRtjt1B3z72sEKnDb5k,5344
+texenv/slides.py,sha256=oBHIgX5-8n4DqAJyQXjhwrG9ShgaVM4MVlRoEO0WZwU,12676
+texenv/utils.py,sha256=_wv9xmWmoszZebUSl24QEdHm6bU33vZTVtLEgYQqR7s,6362
+texenv-0.0.5.dist-info/LICENSE.txt,sha256=svML326VJWqtI58nUarnpGke1GRZsBY3tWUORevVQ6k,1058
+texenv-0.0.5.dist-info/METADATA,sha256=k-GbDOlctM4lEyrnPcx-kCqD6tujlH6IGp2UOFNG2wY,3925
+texenv-0.0.5.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+texenv-0.0.5.dist-info/entry_points.txt,sha256=LcT-c-EuRHCZL21-tLCQOMK0K16RMg2TA_5QfMMKgp8,38
+texenv-0.0.5.dist-info/top_level.txt,sha256=tUr2IoSdEEcJ27eWj_NnJTzTd6Dgy7d6zXPyLa7nmn8,7
+texenv-0.0.5.dist-info/RECORD,,
