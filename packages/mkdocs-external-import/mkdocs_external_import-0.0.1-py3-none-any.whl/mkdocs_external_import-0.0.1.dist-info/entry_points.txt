@@ -1,0 +1,3 @@
+[mkdocs.plugins]
+external-import=mkdocs_external_import.external_import:Import
+
