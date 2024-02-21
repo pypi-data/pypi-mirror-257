@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: vgif
+Version: 1.0.5
+Summary: https://github.com/Haoke98/video2gif
+Home-page: https://github.com/Haoke98/video2gif
+Author: Haoke98
+Author-email: Haoke98@outlook.com
+License: MIT
+Keywords: image video gif
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.7
+License-File: LICENSE
+
+video2gif ~ vgif
+============================
+
+Programmatically generate animated GIF from video in Python
+
+With this video2gif converter you can upload any format of video and rich media files to turn them into high quality animated GIFs.
+
+Getting Started
+------------------------------
+
+1. Install
+------------------------------
+
+* pip Install
+   ``pip install vgif -U``
+* source Install
+   1. Clone this repository
+   2. Run setup from the repository root directory
+        ``python3 setup.py install``
+
+2. Start UP
+------------------------------
+
+🅶 GUI
+------------------------------
+
+.. image:: https://github.com/Haoke98/video2gif/raw/master/assets/interface.png
+        :width: 600px
