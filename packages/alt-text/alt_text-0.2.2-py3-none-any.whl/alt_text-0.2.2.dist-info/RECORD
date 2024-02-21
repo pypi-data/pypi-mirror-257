@@ -1,0 +1,14 @@
+alttext/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+alttext/alttext.py,sha256=AlZP2_UM7p3ns4_efQS5zk2wcCqlCPO7FrHquch0Z9E,20002
+alttext/descengine/bliplocal.py,sha256=YIiK8V64uBRqfeMGWngRoivhsdQtVqj9Uvino-beRMg,891
+alttext/descengine/descengine.py,sha256=L1GyzcqcNAU_RuoCfB5F4c5YILSnSGZN4Yt0tCOOXvY,527
+alttext/descengine/googlevertexapi.py,sha256=Pl0U1OIvwQnMTaxSudZzzpGRJbXHGt_044I1ORCy2L8,1290
+alttext/descengine/replicateapi.py,sha256=vPHLGpfAk87l-SFPf-Lsr2hzPzIZAQm_xtW-p6m8-0U,2137
+alttext/langengine/langengine.py,sha256=-HDpREyeBF7z0OgqQgPgRHTT8VNcfrFT2nMbnWu6a4I,2753
+alttext/langengine/privategpt.py,sha256=bDA8Ls8ZkHi0tavuVGiIBdjbJ6Sv31UMCZP0hT8tijg,5582
+alttext/ocrengine/ocrengine.py,sha256=AeH3CXQdR_nWhb4BlhXrSjqdRhedHPvj_GWVrKSvm8U,520
+alttext/ocrengine/tesseract.py,sha256=CMw-ez7Qo89LlZ-bU7yMDvmHfMCJKUE5wojdzdXcrVI,536
+alt_text-0.2.2.dist-info/METADATA,sha256=NtHdNoR4rUtQmpI6FpC8Rse0PKGDsygdnRoCY-Gu9r8,6124
+alt_text-0.2.2.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+alt_text-0.2.2.dist-info/licenses/LICENSE,sha256=-BeIbua7Ze0wmKeYex6XgWU9FccfhVic4NKvZjxm03M,34888
+alt_text-0.2.2.dist-info/RECORD,,
