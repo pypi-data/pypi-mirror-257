@@ -1,0 +1,11 @@
+coslab/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+coslab/aws.py,sha256=dSUjePRf5eORohjuHrCFixRP-2_qODY7zgq7dIccxlE,1225
+coslab/azure_vision.py,sha256=FAqvordqb1S-RlzMguGThapATHty0gDxh_Ic9VBNP3c,1940
+coslab/clarify.py,sha256=pSbXTMyYOJzaW-iun4SujzrUgtoBqPgOghFL9Talh8I,1815
+coslab/common.py,sha256=DY_hAQrb6b8cxxaQ9efTYgScDEofkBCEz7y43BGjfkE,20
+coslab/googlecloud.py,sha256=yPRL1dvADQ4HuEb0uxzzdVaVM-x1zX_9zFsHevnp8RA,1398
+coslab/tag_comparator.py,sha256=yJJQVPY7ig9b2y617NuhhvhT4Ive56eKmgj6XdyYF-Y,2864
+coslab/taggerresults.py,sha256=UpKk6eDtf60aku6wHOguU61Gu5nU8H4VRO-3GHPnOR8,3074
+coslab_core-0.9.dist-info/METADATA,sha256=fbYVhR9iOzjP99xS-mFxxCJ8DkabiBwDgk2v4-kdyCs,2777
+coslab_core-0.9.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+coslab_core-0.9.dist-info/RECORD,,
