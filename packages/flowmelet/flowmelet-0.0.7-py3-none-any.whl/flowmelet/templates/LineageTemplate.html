@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lineage Graph with Cytoscape.js</title>
+    <script src="https://unpkg.com/dagre/dist/dagre.js"></script>
+    <script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+    <script src="https://unpkg.com/cytoscape-dagre/cytoscape-dagre.js"></script>
+
+    <style>
+        #container {
+            display: flex;
+        }
+
+        #cy {
+            height: 600px;
+            width: calc(100% - 300px);
+            flex: 1;
+        }
+
+        #description-panel {
+            width: 500px;
+            height: 100%;
+            overflow: auto;
+            padding: 10px;
+            box-sizing: border-box;
+            border-left: 1px solid #ccc;
+            background-color: #f9f9f9;
+        }
+
+        #description-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        #description-table th,
+        #description-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        #description-table th {
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<div id="container">
+    <div id="cy"></div>
+
+    <div id="description-panel">
+        <h2>Description</h2>
+        <table id="description-table">
+            <thead>
+            <tr>
+                <th>Node ID</th>
+                <th>Description</th>
+            </tr>
+            </thead>
+            <tbody id="description-body"></tbody>
+        </table>
+        <h2>Legends</h2>
+        <table id="legends-table">
+            <thead>
+            <tr>
+                <th>Operator</th>
+                <th>Color</th>
+            </tr>
+            </thead>
+            <tbody id="legends-body">
+            <tr>
+                <td>DAGS</td>
+                <td style="background-color:#34495e">#3498db</td>
+            </tr>
+            <tr>
+                <td>TASKS</td>
+                <td style="background-color:#3498db">#3498db</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script>
+    // Sample data for the lineage graph
+    const data = {{config}};
+
+    // Create a Cytoscape instance
+    const cy = cytoscape({
+        container: document.getElementById('cy'),
+        elements: {
+            nodes: data.nodes,
+            edges: data.edges
+        },
+        style: [
+
+            {
+                selector: "node:not([type='dag'])",
+                style: {
+                    shape: 'rectangle',
+                    width: 700, // Set width of rectangles
+                    height: 100,
+                    'text-wrap': 'wrap',
+                    'text-max-width': '30',
+                    'background-color': '#3498db',
+                    label: 'data(id)',
+                    'text-valign': 'center',
+                    'text-halign': 'center',
+                    color: 'white'
+                }
+            },
+            {
+                selector: "node[type='dag']",
+                style: {
+                    shape: 'rectangle',
+                    width: 700, // Set width of rectangles
+                    height: 100,
+                    'background-color': '#34495e',
+                    label: 'data(id)',
+                    'text-wrap': 'wrap',
+                    'text-max-width': '30',
+                    'text-valign': 'center',
+                    'text-halign': 'center',
+                    color: 'white'
+                }
+            },
+            {
+                selector: 'edge',
+                style: {
+                    'target-arrow-shape': 'triangle',
+                    'target-arrow-color': '#999',
+                    'line-color': '#999',
+                    'curve-style': 'bezier',
+                    width: 4
+                }
+            }
+        ],
+        layout: {
+            name: 'dagre',
+            padding: 10
+        }
+    });
+
+    // Handle click events on nodes
+    cy.on('tap', 'node', function (event) {
+        const node = event.target;
+        showDescription(node.data('id'), node.data('description'), node.data('json_data'));
+    });
+
+    function showDescription(id, description, json_data) {
+        const descriptionBody = document.getElementById('description-body');
+        const data = JSON.parse(json_data)['data']
+        console.log(json_data)
+        const rows = []
+        for (let key in data) {
+          if (data.hasOwnProperty(key) && key != 'params') {
+            rows.push(`<tr><td>${key}</td><td>${data[key]}</td></tr>`)
+          } else if (data.hasOwnProperty(key) && key == 'params') {
+            rows.push(`<tr><td>${key}</td><td>${JSON.stringify(data[key])}</td></tr>`)
+          }
+        }
+        if (descriptionBody) {
+            descriptionBody.innerHTML = rows.join("");
+        }
+    }
+</script>
+
+</body>
+</html>
