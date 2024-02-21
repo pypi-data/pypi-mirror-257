@@ -1,0 +1,6 @@
+mozrunner==8.3.0
+mozversion==2.4.0
+six==1.16.0
+future==0.18.3
+nested-lookup==0.2.25
+manifestparser==2.1.0
