@@ -1,0 +1,16 @@
+cvat_data_flow/__init__.py,sha256=WE5I1svASJZGoIxsbjV-hpuiWS1-dSfDataXsLXlSrM,45
+cvat_data_flow/main.py,sha256=yIgghR153433NprHuADmZ3e_vh8xvdrHh_UvuuUFAV8,761
+cvat_data_flow/src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cvat_data_flow/src/config_parser.py,sha256=pBlQ2x0fyE0V_ANHJoQAL0ikkAJ7G1ovcBNfQbpmd-E,2011
+cvat_data_flow/src/cvat_api.py,sha256=nrdWbgMvHnw34SdgYq-JKlytxRdNIUQs8Peztf3RGao,6020
+cvat_data_flow/src/cvat_data_flow.py,sha256=S_MpfyLLXnRlfJrYHVaNPVnSXhnKpszbeNSVYLINH0s,3958
+cvat_data_flow/src/dataset_builder.py,sha256=78msYfCt0AD9DbwrJrq_h-wtsz3iJKQpYmNlLjhrRVc,8000
+cvat_data_flow/src/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cvat_data_flow/src/utils/coco_converter.py,sha256=WEPh4BhJ0IZhqpXw4Pz5WaHiLkFVcZNx0L77tjgclsQ,7253
+cvat_data_flow/src/utils/config_parser.py,sha256=XpNrwTfWMqz0zJKv_lE55NbbPxy32yU7MEDiM6w5cMQ,2565
+cvat_data_flow-0.1.0.dist-info/.DS_Store,sha256=Otwetqi5umpVfHBqu1tcYQCI6S4EaLgCROSxioOVbXA,6148
+cvat_data_flow-0.1.0.dist-info/LICENSE,sha256=uIPZ3Io_EL33ijn2ppspIv4RtEWkLcRJaUC4wxCiHys,1080
+cvat_data_flow-0.1.0.dist-info/METADATA,sha256=HraLb1CkpHs0r-4EcNu1a5g7De-3B13qBvUvCxX5lO4,3442
+cvat_data_flow-0.1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+cvat_data_flow-0.1.0.dist-info/top_level.txt,sha256=3OXC1lZbwhTHlN89jkt4LkbpYVnp9B-r1rhsXQzlMmY,15
+cvat_data_flow-0.1.0.dist-info/RECORD,,
