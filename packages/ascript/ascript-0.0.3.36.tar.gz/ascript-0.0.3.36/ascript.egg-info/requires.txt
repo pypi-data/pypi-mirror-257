@@ -1,0 +1,8 @@
+pyautogui
+numpy
+pywin32
+PyQt5
+Flask
+gevent
+opencv-python==4.6.0.66
+pillow

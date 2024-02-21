@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: ascript
+Version: 0.0.3.36
+Summary: ascript 相关python包
+Home-page: https://airscript.cn/
+Author: aojoy
+Author-email: aojoytec@163.com
+License: MIT
+Keywords: python,ascript
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: pyautogui
+Requires-Dist: numpy
+Requires-Dist: pywin32
+Requires-Dist: PyQt5
+Requires-Dist: Flask
+Requires-Dist: gevent
+Requires-Dist: opencv-python==4.6.0.66
+Requires-Dist: pillow
+
+# AScript  Python自动化
+
+## 贡献者:
+
+北京奥悦科技
