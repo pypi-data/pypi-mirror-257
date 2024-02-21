@@ -1,0 +1,8 @@
+IPython
+Jinja2
+numpy
+pandas
+pyperclip
+scipy
+seaborn
+sympy
