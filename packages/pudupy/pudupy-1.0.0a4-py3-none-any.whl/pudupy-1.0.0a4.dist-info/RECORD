@@ -1,0 +1,11 @@
+pudu/__init__.py,sha256=5vf_aaZWEwqhqgn3SIM3u2XoAo3TfEsHbSN6xJkRR6M,128
+pudu/assembly.py,sha256=L4lVg29I1M-T0apM4BpV81J4oWLbAUh_dCftaUwrZh8,34230
+pudu/calibration.py,sha256=XGylI9QInyLLYgE7fqexBlxcMzdFToZgkTw6YxTBl-0,18190
+pudu/test_setup.py,sha256=NRts57tgPiHx0LiSUGZ8mYFg1RF0KUwHrgxrGxma0RU,8981
+pudu/transformation.py,sha256=xdGePBAfPv9qbELaHnPdCBGdToyd5wgxL0HNJcDb5zA,15365
+pudu/utils.py,sha256=j-g5tj7KbyX8DlDA_7bjNqGIprQyF0Ww-0aYXEhvZ30,1887
+pudupy-1.0.0a4.dist-info/LICENSE,sha256=ckeguQHxzgAQKwPk3MnMivab04HIWnAcojihX0zQJwU,1066
+pudupy-1.0.0a4.dist-info/METADATA,sha256=whCBrRTNrnJ-pSsSnTIaIQ_1Hb0NtGUQoNxz6cnbPVI,2905
+pudupy-1.0.0a4.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+pudupy-1.0.0a4.dist-info/top_level.txt,sha256=YKxlK8uo4qJuAxydO1HdW1EV1h9yR2TTo2-BzMAoHzw,5
+pudupy-1.0.0a4.dist-info/RECORD,,

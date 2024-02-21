@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: pudupy
+Version: 1.0.0a4
+Summary: Protocol Unified Design Unit
+Author-email: Gonzalo Vidal <g.a.vidal-pena2@ncl.ac.uk>, Carolus Vitalis <carlos.vidal.c@ug.uchile.cl>, Matt Burridge <m.burridge1@newcastle.ac.uk>
+Maintainer-email: Gonzalo Vidal <g.a.vidal-pena2@ncl.ac.uk>
+License: MIT License
+        
+        Copyright (c) 2022 Rudge Lab
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/RudgeLab/PUDU
+Project-URL: Bug Tracker, https://github.com/RudgeLab/PUDU/issues
+Keywords: pudu,lab,automation,opentrons,synthetic biology
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: opentrons
+Requires-Dist: sbol3-for-pudu
+Requires-Dist: xlsxwriter
+Requires-Dist: sbol-utilities-for-pudu
+Provides-Extra: test
+Requires-Dist: pytest <5.0.0 ; extra == 'test'
+Requires-Dist: pytest-cov[all] ; extra == 'test'
+
+# PUDU
+Welcome to the PUDU (Protocol Unified Design Unit) repository, our Python package for liquid handling robot control on Synthetic Biology workflows.
+
+
+<img src="https://github.com/RudgeLab/PUDU/blob/main/images/PUDU_Monet.jpeg#gh-light-mode-only" alt="PUDU logo" width="250"/>
+<img src="https://github.com/RudgeLab/PUDU/blob/main/images/PUDU_Ukiyo_e.jpeg#gh-dark-mode-only" alt="PUDU night logo" width="250"/>
+
+## *The art of automated liquid handling*
+
+As you may have noticed, our logo features a beautiful pudu _[(Pudu puda)](https://en.wikipedia.org/wiki/Pudu)_; a deer native to the southern forests of Chile and Argentina known for being the smallest deer of the world[.](https://youtu.be/xRQnJyP77tY)
