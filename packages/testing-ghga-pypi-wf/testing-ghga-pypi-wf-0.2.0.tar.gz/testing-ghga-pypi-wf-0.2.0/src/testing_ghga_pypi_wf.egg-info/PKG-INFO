@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: testing-ghga-pypi-wf
+Version: 0.2.0
+Description-Content-Type: text/markdown
+
+# Mock readme
+For testing github actions locally using act.

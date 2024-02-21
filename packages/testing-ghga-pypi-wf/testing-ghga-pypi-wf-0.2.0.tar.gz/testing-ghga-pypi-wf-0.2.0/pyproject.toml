@@ -1,0 +1,4 @@
+[project]
+name= "testing-ghga-pypi-wf"
+version = "0.2.0"
+readme = "README.md"

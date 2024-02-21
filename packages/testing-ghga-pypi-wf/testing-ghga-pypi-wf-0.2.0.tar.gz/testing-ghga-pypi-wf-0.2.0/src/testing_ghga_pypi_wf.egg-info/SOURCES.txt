@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+src/test_publish/__init__.py
+src/test_publish/greet.py
+src/testing_ghga_pypi_wf.egg-info/PKG-INFO
+src/testing_ghga_pypi_wf.egg-info/SOURCES.txt
+src/testing_ghga_pypi_wf.egg-info/dependency_links.txt
+src/testing_ghga_pypi_wf.egg-info/top_level.txt
+tests/test_mock.py
