@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+demm2/Data_Truncation_specified_columns.py
+demm2/__init__.py
+demm2/check_duplicate.py
+demm2/count_validation.py
+demm2/data_validation.py
+demm2/null_validation.py
+demm2/out_of_range.py
+demm2/rejected_record.py
+demm2.egg-info/PKG-INFO
+demm2.egg-info/SOURCES.txt
+demm2.egg-info/dependency_links.txt
+demm2.egg-info/requires.txt
+demm2.egg-info/top_level.txt
