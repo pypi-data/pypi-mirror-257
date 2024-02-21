@@ -1,0 +1,13 @@
+omjlcomps/__init__.py,sha256=ZpCBdqU-kRgvYGuZ25cvEN0YUkdz1iJq125AgsfaXeo,12319
+omjlcomps/juliapkg.json,sha256=jUBZJHcGEx1F5IdWNHvPGZldmljwdboswqVip40MvOY,308
+omjlcomps/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+omjlcomps/test/test_ecomp.jl,sha256=47lK6AfzSgyjHlRIUMu2SzD_kqKpK-pVse29bHPCFp8,8146
+omjlcomps/test/test_icomp.jl,sha256=WbuHNwD3E6G-uqP0bwIjocm5J_C4bh8oaej7ZmxaNug,15739
+omjlcomps/test/test_julia_explicit_comp.py,sha256=tCQiXzHP2bjEPQ9UNRMu2tbCs0zfu4uzfyG1jKz8TYU,15620
+omjlcomps/test/test_julia_implicit_comp.py,sha256=dXsy-f5269QkbrumYWBMk5Ite5DZEIkAjI9sDE3iYFI,24255
+omjlcomps-0.2.4.dist-info/LICENSE,sha256=XL-fz_DjkSn2jBHIUQmdZBcE1aPYIkJBgy6umY5N0EU,1115
+omjlcomps-0.2.4.dist-info/METADATA,sha256=ZXzBd7ZHokIs1IPuItIRH6JqQoYIIDBIPVEw1FQC86M,1428
+omjlcomps-0.2.4.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+omjlcomps-0.2.4.dist-info/entry_points.txt,sha256=iCGvsN2hO-fA_JLetX8CahC087-K_skjBfZKuhkMibg,117
+omjlcomps-0.2.4.dist-info/top_level.txt,sha256=-wClspGCcmsmA6guJZzl2A_Ln-6tIkul72i0PeSYSQw,10
+omjlcomps-0.2.4.dist-info/RECORD,,
