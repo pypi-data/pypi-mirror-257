@@ -1,0 +1,6 @@
+kahi
+pymongo
+pandas
+thefuzz
+datetime
+unidecode
