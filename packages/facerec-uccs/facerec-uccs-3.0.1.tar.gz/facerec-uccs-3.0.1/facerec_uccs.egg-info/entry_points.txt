@@ -1,0 +1,5 @@
+[console_scripts]
+baseline_detection.py = facerec.script.baseline_detection:main
+baseline_recognition.py = facerec.script.baseline_recognition:main
+evaluation.py = facerec.script.evaluation:main
+scoring.py = facerec.script.scoring:main
