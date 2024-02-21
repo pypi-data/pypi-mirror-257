@@ -1,0 +1,11 @@
+requests
+click>=7
+click_datetime
+pandas
+retrying
+joblib
+future
+
+[testing]
+pytest
+pytest-cov
