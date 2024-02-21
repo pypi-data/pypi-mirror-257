@@ -1,0 +1,18 @@
+2023-11-13 Version: 1.1.2
+- Generated python2 2021-03-20 for Emr.
+
+2023-10-23 Version: 1.1.1
+- Generated python2 2021-03-20 for Emr.
+
+2023-09-14 Version: 1.1.0
+- Generated python2 2021-03-20 for Emr.
+
+2022-12-02 Version: 1.0.2
+- Add OpenAPI as below, ListClusters, TagResources, UntagResources, ListTagResources.
+
+2022-12-02 Version: 1.0.1
+- Add OpenAPI as below, ListClusters, TagResources, UntagResources, ListTagResources.
+
+2022-10-13 Version: 1.0.0
+- ListNodes add tags parameter.
+
