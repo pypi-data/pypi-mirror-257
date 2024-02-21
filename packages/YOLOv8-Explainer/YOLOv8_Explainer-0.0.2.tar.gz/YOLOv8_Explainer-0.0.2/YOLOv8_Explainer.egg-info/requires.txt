@@ -1,0 +1,9 @@
+grad-cam==1.4.8
+ultralytics
+Pillow
+tqdm
+torch
+matplotlib
+
+[dev]
+twine>=4.0.2
