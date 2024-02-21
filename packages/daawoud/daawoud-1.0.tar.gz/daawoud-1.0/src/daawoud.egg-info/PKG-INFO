@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: daawoud
+Version: 1.0
+Summary: A Colorings and Centering text library made by Ahmed Hamdi
+Home-page: UNKNOWN
+Author: Ahmed Hamdi
+License: UNKNOWN
+Keywords: daawoud-lib library,coloring python,python colors,daawoud-lib,ahmed hamdi,center text python
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+- Developed by Ahmed Hamdi
+
+Example:
+- Colors available: RED, GREEN, WHITE, BLACK, BROWN, CYAN, AQUA, YELLOW, BLUE, PINK, PURPLE, ORANGE, DARKRED, DARKGREEN, DARKBLUE, DARKYELLOW
+
+```
+import daawoud
+from daawoud import Alwan, center_text
+
+print(f'{Alwan.purple()} this is purple color!')
+
+#centering text
+print(center_text(f'this is center text'))
+```
+
+Colorings Usage:
+
+```
+You have to use
+Alwan.thecolor()
+```
+
+Centering Text:
+
+```
+add center_text before the ())
+```
+
+
+

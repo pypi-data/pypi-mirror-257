@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.py
+src/daawoud.egg-info/PKG-INFO
+src/daawoud.egg-info/SOURCES.txt
+src/daawoud.egg-info/dependency_links.txt
+src/daawoud.egg-info/requires.txt
+src/daawoud.egg-info/top_level.txt
