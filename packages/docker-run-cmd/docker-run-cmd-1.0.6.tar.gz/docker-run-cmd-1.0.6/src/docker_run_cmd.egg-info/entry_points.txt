@@ -1,0 +1,2 @@
+[console_scripts]
+docker-run-cmd = docker_run_cmd.cli:main
