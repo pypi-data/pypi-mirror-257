@@ -1,0 +1,14 @@
+rawpy/_version.py,sha256=ACwqBctK6p_9Oj2rXWiSmVOPJURrCCh7l_Ak1Mk2h-o,23
+rawpy/enhance.py,sha256=AIqOcLV_eAtCopQzR-BRqWDX1wVVEjFvzEKrpXETwAU,14017
+rawpy/__init__.py,sha256=-sXeXxLMDzFknnHiRmsqD0B0wCntdk_ie5C62iiMdd4,654
+rawpy/_rawpy.cpython-310-darwin.so,sha256=JTzHjYDeWgbhPNAmG008UG2zzR3xAABc2HnREXY9eaU,381936
+rawpy/.dylibs/libjasper.5.0.0.dylib,sha256=vZsdkMPI8mBm-UuLlt3C8v5rzCARA5O0DOuSxS2HJzI,411440
+rawpy/.dylibs/liblcms2.2.dylib,sha256=-PYfdKnmBnOPtwoD36K2fhY81qcjqJMzv7gjN5rgnqI,516912
+rawpy/.dylibs/libjpeg.9.dylib,sha256=OJ9VOd31Isn1q9p6H8xJoI80YZ6zxyrtTRIaoI7exLQ,339120
+rawpy/.dylibs/libraw_r.23.0.0.dylib,sha256=2Bkh4QawJX9G0HYDCQ_uyS6-6Rj-zCnA6vIpzXg4BIM,1298400
+rawpy-0.19.1.dist-info/LICENSE.LibRaw,sha256=7qFzpVarrANwRh5X4SqrJmiU6mvjh0wr4F_YeHH3VEk,24389
+rawpy-0.19.1.dist-info/RECORD,,
+rawpy-0.19.1.dist-info/LICENSE,sha256=LMDpihaeGpkn3uPILVnfrImKKq1aH83SldtAwvL-1RY,1080
+rawpy-0.19.1.dist-info/WHEEL,sha256=qW9xlwewyQBufEUzmM-8CIjZ7fR659LOSrcgouui4Z4,111
+rawpy-0.19.1.dist-info/top_level.txt,sha256=7jsQajvqWcvbFz1mx9zyPC_MjCPZvXAJ_H4cGYOBn6k,6
+rawpy-0.19.1.dist-info/METADATA,sha256=eb_GKTJqSs9JGmIkcF42sKA5dgWqkhIYFQd1cRnQye8,6019
