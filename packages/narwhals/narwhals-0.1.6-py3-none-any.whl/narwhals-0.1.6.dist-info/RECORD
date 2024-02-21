@@ -1,0 +1,14 @@
+narwhals/__init__.py,sha256=Sx20kufc00X_EQeagvcLZMPSdFu3Kct-5mXZMBzs5K4,277
+narwhals/containers.py,sha256=HuB6W4PGa2Toqz2xkXOgdFPetQGvALAvequjxRHKINE,2517
+narwhals/translate.py,sha256=Xlkj7cmJ4D18CYysc6bcuRE6Ji-ffwXUE4FND4q93UU,3134
+narwhals/utils.py,sha256=N5MSihjURLpo24IlJ9YHHWtJ1RxahiUG0xf_ZpKhV5Y,10584
+narwhals/pandas_like/__init__.py,sha256=_QPFEpy1_QkC4WpHjL-58HOjfhV4XCZy3mcL3kgE7Tc,14921
+narwhals/pandas_like/column_object.py,sha256=u2ogArkzy9QpySit-fZdlg-nsS-ECDTnCNqO8-uCMF8,9174
+narwhals/pandas_like/dataframe_object.py,sha256=MCdk02dVa_fJAzdYu6Cc26eYccea7U-WJrKr-IVvpz8,10949
+narwhals/pandas_like/expr.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+narwhals/pandas_like/group_by_object.py,sha256=f7Sx2DlUcg0bg46je-gO8-jTyovK5tF27wzSVke7o0g,3982
+narwhals/spec/__init__.py,sha256=dcWCXexi9UuegbZ8OHRB-f2HOTGYd0_SRANFhF3nNBI,6047
+narwhals-0.1.6.dist-info/METADATA,sha256=1BofecpG8I13kBx3Er3pH2iCbKSuXhpF_y3K6m-Fp8s,5684
+narwhals-0.1.6.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+narwhals-0.1.6.dist-info/licenses/LICENSE.md,sha256=heMD6hta6RzeBucppx59AUCgr_ukRY0ABj0bcrN3mKs,1071
+narwhals-0.1.6.dist-info/RECORD,,
