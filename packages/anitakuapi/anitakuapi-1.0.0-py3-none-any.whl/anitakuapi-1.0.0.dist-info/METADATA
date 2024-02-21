@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: anitakuapi
+Version: 1.0.0
+Summary: Python wrapper for the Anitakuapi
+Home-page: https://github.com/N-SUDY/AnitakuapiX
+Author: zawlay
+Author-email: zawlay134594@gmail.com
+License: MIT
+Keywords: API,AnitakuApi,Aniapi,Anibot,GogoAnime,Anime,AnimeAPI,Scrapper
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+
+## anitakuapi
+
+Python wrapper for the anitakuapi
+
+- Base Url : anitakuapi-87ab1094388c.herokuapp.com
+- Documentation : [Click Here](https://anitakuapi-87ab1094388c.herokuapp.com/docs)
+- Updates Channel : [zz](https://telegram.me/zz)
+- Support Group : [zzx](https://telegram.me/zzx)
+
+
+### Installation
+
+- Install latest version using
+```
+$ pip install -U anitakuapi
+```
+
+- Use the above command to update also
+
+### Usage
+
+To get latest releases from gogo anime
+
+```
+from anitakuapi.api import AnitakuapiX
+
+GogoApi = AnitakuapiX.Gogo
+
+print(GogoApi.latest())
+```
