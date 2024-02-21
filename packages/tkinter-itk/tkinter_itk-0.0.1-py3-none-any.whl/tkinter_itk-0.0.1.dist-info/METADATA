@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: tkinter_itk
+Version: 0.0.1
+Summary: TKinter ITK viewer with plugins and segmentation tools
+Author: Stinosko
+Author-email: tkinter_itk.contact@stinosko.com
+Keywords: python
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Dist: numpy
+Requires-Dist: opencv-python
+Requires-Dist: Pillow
+Requires-Dist: pydicom
+Requires-Dist: SimpleITK
+
+TKinter ITK viewer with plugins and segmentation toolsn
