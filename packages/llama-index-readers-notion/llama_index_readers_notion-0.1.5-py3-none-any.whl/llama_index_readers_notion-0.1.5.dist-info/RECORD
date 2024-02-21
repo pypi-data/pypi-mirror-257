@@ -1,0 +1,6 @@
+llama_index/readers/notion/BUILD,sha256=Nf7BYWWe1USoFEIsIiEVZ8sa05J5FPkMJ-UIMDLrU8o,17
+llama_index/readers/notion/__init__.py,sha256=Kup9EVlUy82t0bbPcfE-SL8dMc_n4Y1sEu-AofwdXwE,93
+llama_index/readers/notion/base.py,sha256=vSV8MdGpbcc3UU7lJ0uE4hYs_1q87yApnWR6fqFd74s,6519
+llama_index_readers_notion-0.1.5.dist-info/METADATA,sha256=EGfW9gOBPLakm8WBuEUrUyPNgyrqceHR4nttrmrdMuE,617
+llama_index_readers_notion-0.1.5.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+llama_index_readers_notion-0.1.5.dist-info/RECORD,,
