@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+cagent/__init__.py
+cagent/agent/__init__.py
+cagent/agent/analyst.py
+cagent/agent/artist.py
+cagent/agent/blacksmith.py
+cagent/agent/engineer.py
+cagent/agent/professor.py
+crypto_ai_agent.egg-info/PKG-INFO
+crypto_ai_agent.egg-info/SOURCES.txt
+crypto_ai_agent.egg-info/dependency_links.txt
+crypto_ai_agent.egg-info/top_level.txt
+tests/test_analyst.py
+tests/test_client.py
