@@ -1,0 +1,11 @@
+airflow_metaplane/get_provider_info.py,sha256=sLSN8PYFh8Y6HZe11_suRLZOIZL71pRGzW9vJU656MA,799
+airflow_metaplane/mp_callbacks.py,sha256=wBLgP09jjgA-IqdWa1nTW_bY-IDU2iSAyn3yJpb6N3A,2390
+airflow_metaplane/hooks/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+airflow_metaplane/hooks/metaplane_hook.py,sha256=_58yZhTgaEsdvMRT0KF6NN3VyPJX4pZuIPYGq95xVfk,6495
+airflow_metaplane/hooks/models.py,sha256=wPwSZrFpCBk-4gDnuNwpayZpywGh_m_ufoAdUFMhLkg,1546
+airflow_metaplane-0.0.3.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+airflow_metaplane-0.0.3.dist-info/METADATA,sha256=nMeotmToZkMG2nvMCgT2TwrDwta_c-TviFd0puADFS4,13855
+airflow_metaplane-0.0.3.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+airflow_metaplane-0.0.3.dist-info/entry_points.txt,sha256=GAkeH3OJJMSObmnZ7s-nDb_TKuRt9M8uutD_S0GsgtI,96
+airflow_metaplane-0.0.3.dist-info/top_level.txt,sha256=lqACaJZdaGWHFQe7fg4WlYUzSZMyZCCXEToupBG7aSg,18
+airflow_metaplane-0.0.3.dist-info/RECORD,,
