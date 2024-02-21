@@ -1,0 +1,3 @@
+[console_scripts]
+ArraySplitter = ArraySplitter.ArraySplitter:main
+arraysplitter = ArraySplitter.ArraySplitter:main

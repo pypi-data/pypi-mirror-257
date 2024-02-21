@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: ArraySplitter
+Version: 1.0.2
+Summary: De Novo Decomposition of Satellite DNA Arrays into Monomers within Telomere-to-Telomere Assemblies
+Home-page: https://github.com/aglabx/ArraySplitter
+Author: Aleksey Komissarov
+Author-email: ad3002@gmail.com
+License: BSD
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Requires-Python: >=3.6
+License-File: LICENSE
