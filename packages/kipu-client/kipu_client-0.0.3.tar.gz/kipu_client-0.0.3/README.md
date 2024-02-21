@@ -1,0 +1,55 @@
+# Kipu Python Client
+
+The aim of this repository is to host the Python client that will enable customers to interact without platform and the solvers it contains:
+
+* DCQO
+* DCQC (direct and variational)
+
+Those will be indirectly used as the focus of the library will be to ease the usage by requesting the minimum amount of information required and automate all decisions made in order to achieve user goals (precision, execution time or cost among others).
+
+## Authentication
+
+In order to access the platform users will need to log in to it.
+
+```
+import os
+from kipu import Client
+
+client = Client(api_key=os.environ["API_KEY"])
+```
+
+This way the communication with the backend will be granted by the use of the API key.
+
+## Ising model
+
+the most basic function on the client is the composition of a circuit solving an Ising type of model
+
+$$
+
+H = \sum_i^N h_i\sigma_i^z + \sum_i^N \sum_{j>i}^N J_{ij}\sigma_i^z\sigma_j^z.
+
+$$
+
+By providing the $h$ and $J$ coefficients one can ask the library to compose the corresponding circuit to be executed on a gate-based quantum device.
+
+```
+h = [0.0, ...]
+J = {
+    "0-1" : 0.01,...
+}
+
+qasm_text = client.compose_circuit(h, J)
+```
+
+That way one would retrieve the QASM code of the circuit.
+
+## Optimization
+
+Basically, each enabled case translates the problem to be solved to an Ising Hamiltonian whose ground state is solved by the corresponding endpoint. For FEATURE SELECTION for example, given a dataset we will select which one is the target column and the number of assets we would like to select (maximum number).
+
+```
+target_columns = "target"
+max_features = 6
+
+client.feature_selection(df, target_columns, max_features)
+```

@@ -1,0 +1,57 @@
+[project]
+name = "kipu-client"
+version = "0.0.3"
+description = "Python client for Kipu platform"
+authors = [
+    { name = "Kipu Quantum GmbH", email = "info@kipu-quantum.com" },
+]
+dependencies = [
+    "fastapi<1.0.0,>=0.95.0",
+    "requests<3.0.0,>=2.28.2",
+    "pandas<2.0.0,>=1.5.3",
+    "dimod<1.0.0,>=0.12.4",
+    "pyqubo<2.0.0,>=1.4.0",
+    "matplotlib>=3.8.2",
+]
+requires-python = ">=3.9,<3.12"
+readme = "README.md"
+keywords = [
+    "kipu",
+    "python",
+    "dcqo",
+]
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+Homepage = "https://kipu-quantum.com"
+Documentation = "http://docs.kipustack.com/"
+Registry = "https://app.kipustack.com/"
+
+[tool.pdm.dev-dependencies]
+notebook = [
+    "ipykernel>=6.23.3",
+]
+examples = [
+    "scikit-learn>=1.2.2",
+    "qiskit>=0.45.1",
+    "matplotlib>=3.8.2",
+    "pylatexenc>=2.10",
+]
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+classifiers = [
+    "Development Status :: 3 - alpha",
+    "Intended Audience :: Developers",
+    "Topic :: Quantum Software Development :: Circuit Build Tools",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.9",
+]
