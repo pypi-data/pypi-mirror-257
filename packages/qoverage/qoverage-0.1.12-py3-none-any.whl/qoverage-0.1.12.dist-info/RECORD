@@ -1,0 +1,16 @@
+qoverage/__init__.py,sha256=hKRQVlJYTnOY5crhfSfYks5yjfAXUgl1elxLSlemlJs,15
+qoverage/__main__.py,sha256=qZdngPbfae60LMg2uE2_hY3-ByHzbB0LY7eIzNRAYdc,15211
+qoverage/annotate.py,sha256=Fh1ZIExoLe5WSD0XP-vjBQT1CWJKy26FBH7M5o6yGxM,16736
+qoverage/dom.py,sha256=sLPkkq8r-lkg9xUxXdSbDzed7gf67bjQpcMECE7-rvE,20685
+qoverage/find_qmldom.py,sha256=22Uz2GtQQ4Vafm6p0bsWOy1iq7Jp5McPUrn46n29rSo,1205
+qoverage/parse_coverage.py,sha256=2w0Oh_J5YzUAAGJTPq3Ehny_gRuN8E0WNdEYf9HhtlA,745
+qoverage/qmldom.py,sha256=-RCXhFlmR5RUeWx5nnOzaFUVl5VtROvxk7ruXzv1oxo,2516
+qoverage/report.py,sha256=EUFey9PEmWzQKJRJEqb8BBtYArrZVvbpCNbGLl-sRIg,2409
+qoverage/bundled_qmldom/qmldom,sha256=OEx3Vrtab_DXpdMv9KtwuEzinddMGFIxotIkaGVyU80,8157976
+qoverage/templates/file_tracker.template.js,sha256=WRK6ER_mAebqLjQudFD_qJRfaz3z-YFxsF_UXyhatMM,3005
+qoverage-0.1.12.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+qoverage-0.1.12.dist-info/METADATA,sha256=O9ml3cK5OoewuyMiAjz_Z-UJI5QQ6yVEuehRN83Eo1c,49092
+qoverage-0.1.12.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+qoverage-0.1.12.dist-info/entry_points.txt,sha256=yBOy2VfZ0ZGxHJaqxLEZnEvfvryXgVVMGyLAp3QMb3Q,52
+qoverage-0.1.12.dist-info/top_level.txt,sha256=0bljpfmxWAqE7vwNNtLjUjvnePihX0Bw3tgzqmOoaFs,9
+qoverage-0.1.12.dist-info/RECORD,,
