@@ -1,0 +1,3 @@
+[console_scripts]
+meson-file-list = captain_hooks.meson_file_list:main
+
