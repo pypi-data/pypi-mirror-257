@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+chiragdemoval.egg-info/PKG-INFO
+chiragdemoval.egg-info/SOURCES.txt
+chiragdemoval.egg-info/dependency_links.txt
+chiragdemoval.egg-info/requires.txt
+chiragdemoval.egg-info/top_level.txt
