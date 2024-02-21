@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "test-poetry-binary-plugin"
+version = "0.0.1.a0"
+description = ""
+authors = ["Thomas Mahé <contact@tmahe.dev>"]
+readme = "README.md"
+#build = "custom_build.py"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "2.28.2"
+hidapi = {version = "^0.14.0", optional = true}
+
+[tool.poetry.extras]
+dependencies = ['requests', "requests", "hidapi"]
+
+[tool.poetry.scripts]
+test-input = "test_poetry_binary_plugin.main:test"
+#test2 = {"type" = "file", "reference" = "dist/hello-world"}
+
+[tool.poetry-pyinstaller-plugin.scripts]
+hello-world = "test_poetry_binary_plugin/main.py"
+single-file = { source = "test_poetry_binary_plugin/main.py", type = "onefile"}
+bundled = { source = "test_poetry_binary_plugin/main.py", type = "bundled"}
+
+[tool.poetry-pyinstaller-plugin.options]
+backend = "docker"
+disable_wheel_dependencies = true
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
