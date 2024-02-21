@@ -1,0 +1,101 @@
+{
+    "server": "byteblower-server.example.com.",
+    "meeting_point": "byteblower-meeting-point.example.com.",
+    "ports": [
+        {
+            "name": "NSI",
+            "port_group": [
+                "classic_nsi"
+            ],
+            "interface": "trunk-1-17",
+            "ipv4": "10.10.10.10",
+            "gateway": "10.10.10.254"
+        },
+        {
+            "name": "CPE",
+            "port_group": [
+                "classic_cpe"
+            ],
+            "uuid": "4d9a5fdb-32b4-4523-ace9-5972518de13b",
+            "ipv4": true
+        }
+    ],
+    "flows": [
+        {
+            "name": "UDP Flow",
+            "type": "frame_blasting",
+            "source": {
+                "port_group": [
+                    "classic_nsi"
+                ]
+            },
+            "destination": {
+                "port_group": [
+                    "classic_cpe"
+                ]
+            },
+            "initial_time_to_wait": 10.0,
+            "bitrate": 150e6
+        },
+        {
+            "name": "Gaming Flow",
+            "type": "gaming",
+            "dscp": "0x2B",
+            "source": {
+                "port_group": [
+                    "classic_nsi"
+                ]
+            },
+            "destination": {
+                "port_group": [
+                    "classic_cpe"
+                ]
+            },
+            "udp_src": 55579,
+            "udp_dest": 50022,
+            "frame_rate": 25e3,
+            "initial_time_to_wait": 20.0,
+            "duration": 30
+        },
+        {
+            "name": "Voice Flow",
+            "type": "voice",
+            "dscp": "0x2B",
+            "source": {
+                "port_group": [
+                    "classic_nsi"
+                ]
+            },
+            "destination": {
+                "port_group": [
+                    "classic_cpe"
+                ]
+            },
+            "initial_time_to_wait": 30.0
+        },
+        {
+            "name": "HTTP Flow",
+            "type": "http",
+            "source": {
+                "port_group": [
+                    "classic_nsi"
+                ]
+            },
+            "destination": {
+                "port_group": [
+                    "classic_cpe"
+                ]
+            },
+            "initial_time_to_wait": 2.0,
+            "duration": 40.0,
+            "receive_window_scaling": 12
+        }
+    ],
+    "report": {
+        "html": true,
+        "json": false,
+        "junit_xml": false
+    },
+    "enable_scouting_flows": true,
+    "maximum_run_time": 60.0
+}
