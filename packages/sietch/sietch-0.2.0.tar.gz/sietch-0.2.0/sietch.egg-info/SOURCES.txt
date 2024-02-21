@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+sietch/__init__.py
+sietch.egg-info/PKG-INFO
+sietch.egg-info/SOURCES.txt
+sietch.egg-info/dependency_links.txt
+sietch.egg-info/entry_points.txt
+sietch.egg-info/requires.txt
+sietch.egg-info/top_level.txt
+sietch/cli/__init__.py
+sietch/cli/main.py
+sietch/cli/parameters.py
+sietch/directory/__init__.py
+sietch/directory/directory.py
+sietch/environment/__init__.py
+sietch/environment/environment.py
