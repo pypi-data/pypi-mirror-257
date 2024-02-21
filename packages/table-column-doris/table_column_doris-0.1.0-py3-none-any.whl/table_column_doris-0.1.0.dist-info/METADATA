@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: table-column-doris
+Version: 0.1.0
+Summary: Simple tools to work with Doris create-table SQL statements.
+Author-email: Thearas <thearas850@gmail.com>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: sqlparse
+Project-URL: Home, https://github.com/Thearas/table-column-doris
+Project-URL: Source, https://github.com/Thearas/table-column-doris
+
+# table-column-doris
+
+Simple tools to work with Doris create-table SQL statements.
+
