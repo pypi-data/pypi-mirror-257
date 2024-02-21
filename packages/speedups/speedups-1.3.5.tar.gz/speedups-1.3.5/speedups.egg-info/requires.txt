@@ -1,0 +1,9 @@
+numpy>=1.23.5
+
+[postgres]
+psycopg>=3.0.8
+
+[tests]
+psycopg[binary]>=3.0.8
+pytest>=8.0.1
+pytest-postgresql>=5.1.0
