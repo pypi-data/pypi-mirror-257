@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/databaselib/__init__.py
+src/databaselib/databaseDevFriendlyAbstraction.py
+src/databaselib/etodatabaselib.py
+src/databaselib/etohashlib.py
+src/databaselib/helper.py
+src/eto_mysql_databaselib.egg-info/PKG-INFO
+src/eto_mysql_databaselib.egg-info/SOURCES.txt
+src/eto_mysql_databaselib.egg-info/dependency_links.txt
+src/eto_mysql_databaselib.egg-info/requires.txt
+src/eto_mysql_databaselib.egg-info/top_level.txt
