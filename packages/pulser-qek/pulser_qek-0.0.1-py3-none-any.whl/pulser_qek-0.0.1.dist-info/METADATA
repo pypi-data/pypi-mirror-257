@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pulser-qek
+Version: 0.0.1
+Summary: Pulser QEK Python package
+Author: Dawn Mao
+Author-email: <dmao1020@gmail.com>
+Keywords: python,first package
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+
+Python package for Quantum Evolution Kernel (QEK) based on the Pulser package
