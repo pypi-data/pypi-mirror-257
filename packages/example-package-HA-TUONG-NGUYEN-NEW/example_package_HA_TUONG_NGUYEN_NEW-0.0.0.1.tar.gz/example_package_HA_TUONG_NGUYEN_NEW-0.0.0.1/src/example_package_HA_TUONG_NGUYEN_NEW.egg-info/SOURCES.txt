@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/example_package_HA_TUONG_NGUYEN/__init__.py
+src/example_package_HA_TUONG_NGUYEN/example.py
+src/example_package_HA_TUONG_NGUYEN_NEW.egg-info/PKG-INFO
+src/example_package_HA_TUONG_NGUYEN_NEW.egg-info/SOURCES.txt
+src/example_package_HA_TUONG_NGUYEN_NEW.egg-info/dependency_links.txt
+src/example_package_HA_TUONG_NGUYEN_NEW.egg-info/requires.txt
+src/example_package_HA_TUONG_NGUYEN_NEW.egg-info/top_level.txt
