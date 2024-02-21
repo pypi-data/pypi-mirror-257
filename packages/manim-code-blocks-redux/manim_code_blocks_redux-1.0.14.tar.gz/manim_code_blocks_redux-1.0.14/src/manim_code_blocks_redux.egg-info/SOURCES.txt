@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/manim_code_blocks.py
+src/manim_code_blocks_redux.egg-info/PKG-INFO
+src/manim_code_blocks_redux.egg-info/SOURCES.txt
+src/manim_code_blocks_redux.egg-info/dependency_links.txt
+src/manim_code_blocks_redux.egg-info/requires.txt
+src/manim_code_blocks_redux.egg-info/top_level.txt
