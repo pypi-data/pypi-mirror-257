@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: slimp
+Version: 0.2.0
+Summary: Linear models with Stan and Pandas
+Author: Julien Lamy
+Author-email: lamy@unistra.fr
+License-File: LICENSE
+Requires-Dist: cmdstanpy
+Requires-Dist: formulaic
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: pandas
+Requires-Dist: seaborn

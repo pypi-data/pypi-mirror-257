@@ -1,0 +1,6 @@
+cmdstanpy
+formulaic
+numpy
+matplotlib
+pandas
+seaborn

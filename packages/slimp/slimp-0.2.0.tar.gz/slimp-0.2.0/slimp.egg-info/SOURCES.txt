@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+slimp/__init__.py
+slimp/compile.py
+slimp/model.py
+slimp/multivariate.stan
+slimp/plots.py
+slimp/predictor_mapper.py
+slimp/stats.py
+slimp/univariate.stan
+slimp.egg-info/PKG-INFO
+slimp.egg-info/SOURCES.txt
+slimp.egg-info/dependency_links.txt
+slimp.egg-info/requires.txt
+slimp.egg-info/top_level.txt
