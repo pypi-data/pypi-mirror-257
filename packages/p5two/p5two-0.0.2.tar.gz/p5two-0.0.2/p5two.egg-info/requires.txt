@@ -1,0 +1,4 @@
+pywebview
+transcrypt
+websockets
+watchdog
