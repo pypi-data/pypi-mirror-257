@@ -1,0 +1,99 @@
+Index: pyproject.toml
+===================================================================
+diff --git a/pyproject.toml b/pyproject.toml
+deleted file mode 100644
+--- a/pyproject.toml	(revision ec3e954f644d3a195c7f000b4ae1d504fc8d777a)
++++ /dev/null	(revision ec3e954f644d3a195c7f000b4ae1d504fc8d777a)
+@@ -1,21 +0,0 @@
+-[build-system]
+-requires = ["hatchling"]
+-build-backend = "hatchling.build"
+-
+-[project]
+-name = "InstagramApiWrapper"
+-version = "0.1.0"
+-authors = [
+-  { name="Matthieu THIBAUT", email="matthieu_thibaut@icloud.com" },
+-]
+-description = "API wrapper for Instagram Basic Display and Graph API"
+-readme = "README.md"
+-license = {file = "LICENSE"}
+-requires-python = ">=3.8"
+-classifiers = [
+-    "Programming Language :: Python :: 3",
+-]
+-
+-[project.urls]
+-Homepage = "https://github.com/MatthieuThib/InstagramApiWrapper"
+-Issues = "https://github.com/MatthieuThib/InstagramApiWrapper/issues"
+\ No newline at end of file
+Index: README.md
+===================================================================
+diff --git a/README.md b/README.md
+deleted file mode 100644
+--- a/README.md	(revision ec3e954f644d3a195c7f000b4ae1d504fc8d777a)
++++ /dev/null	(revision ec3e954f644d3a195c7f000b4ae1d504fc8d777a)
+@@ -1,2 +0,0 @@
+-# InstagramAPI
+-Wrapper for both Graph and Basic Display Instagram API
+Index: LICENSE
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>MIT License\n\nCopyright (c) 2024 Matthieu THIBAUT\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/LICENSE b/LICENSE
+--- a/LICENSE	(revision ec3e954f644d3a195c7f000b4ae1d504fc8d777a)
++++ b/LICENSE	(date 1708114166992)
+@@ -18,4 +18,4 @@
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+-SOFTWARE.
+\ No newline at end of file
++SOFTWARE.
+Index: .gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.gitignore b/.gitignore
+new file mode 100644
+--- /dev/null	(date 1708114166995)
++++ b/.gitignore	(date 1708114166995)
+@@ -0,0 +1,3 @@
++.venv
++__pycache__
++dist
+Index: examples/publish_media.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/examples/publish_media.py b/examples/publish_media.py
+new file mode 100644
+--- /dev/null	(date 1708188093544)
++++ b/examples/publish_media.py	(date 1708188093544)
+@@ -0,0 +1,21 @@
++import os
++
++from pystagram.graph_api import PystagramGraphApi, ImageContainer
++
++
++graph_api = PystagramGraphApi(
++    app_id=int(os.getenv("APP_ID")),
++    app_secret=os.getenv("APP_SECRET"),
++    access_token=os.getenv("ACCESS_TOKEN"),
++)
++
++container = ImageContainer(
++    image_url="https://www.example.com/image.jpg",
++    caption="your caption #hashtag",
++)
++
++response = graph_api.user.media.create(container)
++container_id = response.data["id"]
++
++
++graph_api.user.media_publish.create(container_id=container_id)

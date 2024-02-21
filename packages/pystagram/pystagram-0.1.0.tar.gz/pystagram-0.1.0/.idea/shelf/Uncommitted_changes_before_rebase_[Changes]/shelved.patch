@@ -1,0 +1,254 @@
+Index: pystagram/graph_api/graph_api.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>\"\"\"\n# Instagram Graph API\n\nThe [Instagram Graph API](https://developers.facebook.com/docs/instagram-api) allows users of your app to access data\nin their [Instagram Business](https://business.instagram.com/) and [Instagram Creator](https://help.instagram.com/2358103564437429) accounts.\nThe API can be used to get and publish their media, manage and reply to comments on their media,\nidentify media where they have been @mentioned by components Instagram users, find hashtagged media,\nand get basic metadata and metrics about components Instagram Businesses and Creators.\n\"\"\"\n\nfrom typing import Optional\n\nfrom pystagram.graph_api.components.fields.account_fields import AccountFields\nfrom pystagram.graph_api.endpoints.comment.comment import Comment\nfrom pystagram.graph_api.endpoints.container.container import Container\nfrom pystagram.graph_api.endpoints.hashtag.hashtag import Hashtag\nfrom pystagram.graph_api.endpoints.me.me import Me\nfrom pystagram.graph_api.endpoints.media.media import Media\nfrom pystagram.graph_api.endpoints.oauth.oauth import Oauth\nfrom pystagram.graph_api.endpoints.user.user import User\nfrom pystagram.helpers.api_client.instagram_base_api_client import (\n    InstagramBaseApiClient,\n)\n\n\nclass InstagramGraphApi(InstagramBaseApiClient):\n    \"\"\"A client for making requests to the Instagram Graph API.\"\"\"\n\n    BASE_URI: str = \"graph.facebook.com\"\n    API_VERSION: str = \"v18.0\"\n\n    def __init__(\n        self,\n        app_id: int,\n        app_secret: str,\n        access_token: Optional[str] = None,\n        base_uri: Optional[str] = BASE_URI,\n        api_version: Optional[str] = API_VERSION,\n    ):\n        super().__init__(f\"https://{base_uri}/{api_version}\")\n        self.app_id = app_id\n        self.app_secret = app_secret\n        self.access_token = access_token\n        self._user_id = None\n\n    def get_user_id(self):\n        return self.me.accounts.get(\n            fields=[AccountFields.INSTAGRAM_BUSINESS_ACCOUNT],\n            access_token=self.access_token,\n        ).data.get(\"data\", list(dict()))[0].get(\"instagram_business_account\", dict()).get(\"id\", 0)\n\n    @property\n    def user_id(self):\n        return self._user_id or self.get_user_id()\n\n    @property\n    def oauth(self):\n        return Oauth(self)\n\n    @property\n    def me(self):\n        return Me(self)\n\n    @property\n    def comment(self):\n        return Comment(self)\n\n    @property\n    def container(self):\n        return Container(self)\n\n    @property\n    def hashtag(self):\n        return Hashtag(self)\n\n    @property\n    def media(self):\n        return Media(self)\n\n    @property\n    def user(self):\n        return User(self)\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/pystagram/graph_api/graph_api.py b/pystagram/graph_api/graph_api.py
+--- a/pystagram/graph_api/graph_api.py	(revision 0d1d0a951f844f62084b6988fc8dc02ca6fcbf01)
++++ b/pystagram/graph_api/graph_api.py	(date 1707761069521)
+@@ -18,16 +18,31 @@
+ from pystagram.graph_api.endpoints.media.media import Media
+ from pystagram.graph_api.endpoints.oauth.oauth import Oauth
+ from pystagram.graph_api.endpoints.user.user import User
+-from pystagram.helpers.api_client.instagram_base_api_client import (
++from pystagram.helpers.api_client.base_api_client import (
+     InstagramBaseApiClient,
+ )
+ 
+ 
+ class InstagramGraphApi(InstagramBaseApiClient):
+-    """A client for making requests to the Instagram Graph API."""
++    """ Client for making requests to the Instagram Graph API.
++    It is essentially an extension of the :class:`pystagram.helpers.api_client.instagram_base_api_client.InstagramBaseApiClient` class.
++
++    :param app_id: The app ID of the Instagram app.
++    :type app_id: int
++    :param app_secret: The app secret of the Instagram app.
++    :type app_secret: str
++    :param access_token: The access token of the Instagram app, defaults to None
++    :type access_token: str, optional
++    :param base_uri: The base URL of the Instagram Graph API, defaults to BASE_URI
++    :type base_uri: str, optional
++    :param api_version: The version of the Instagram Graph API, defaults to API_VERSION
++    :type api_version: str, optional
++    """
+ 
+     BASE_URI: str = "graph.facebook.com"
++    """ The base URL of the Instagram Graph API. """
+     API_VERSION: str = "v18.0"
++    """ The version of the Instagram Graph API. """
+ 
+     def __init__(
+         self,
+@@ -37,6 +52,7 @@
+         base_uri: Optional[str] = BASE_URI,
+         api_version: Optional[str] = API_VERSION,
+     ):
++        """ Initialize the Instagram Graph API client. """
+         super().__init__(f"https://{base_uri}/{api_version}")
+         self.app_id = app_id
+         self.app_secret = app_secret
+@@ -44,39 +60,73 @@
+         self._user_id = None
+ 
+     def get_user_id(self):
+-        return self.me.accounts.get(
+-            fields=[AccountFields.INSTAGRAM_BUSINESS_ACCOUNT],
+-            access_token=self.access_token,
+-        ).data.get("data", list(dict()))[0].get("instagram_business_account", dict()).get("id", 0)
++        """ Get the user ID of the Instagram user.
++
++        :return: The user ID of the Instagram user.
++        :rtype: str
++        """
++        return (
++            self.me.accounts.get(
++                fields=[AccountFields.INSTAGRAM_BUSINESS_ACCOUNT],
++                access_token=self.access_token,
++            )
++            .data.get("data", list(dict()))[0]
++            .get("instagram_business_account", dict())
++            .get("id", 0)
++        )
+ 
+     @property
+     def user_id(self):
++        """ The user ID of the Instagram user.
++        The user id is fetched from the Instagram Graph API if it is not already set.
++        """
+         return self._user_id or self.get_user_id()
+ 
+     @property
+     def oauth(self):
++        """ The `OAuth` node of the Instagram Graph API.
++        See the :class:`pystagram.graph_api.endpoints.oauth.oauth.Oauth` class for additional details.
++        """
+         return Oauth(self)
+ 
+     @property
+     def me(self):
++        """ The `Me` node of the Instagram Graph API.
++        See the :class:`pystagram.graph_api.endpoints.me.me.Me` class for additional details.
++        """
+         return Me(self)
+ 
+     @property
+     def comment(self):
++        """ The `Comment` node of the Instagram Graph API.
++        See the :class:`pystagram.graph_api.endpoints.comment.comment.Comment` class for additional details.
++        """
+         return Comment(self)
+ 
+     @property
+     def container(self):
++        """ The `Container node of the Instagram Graph API.
++        See the :class:`pystagram.graph_api.endpoints.container.container.Container` class for additional details.
++        """
+         return Container(self)
+ 
+     @property
+     def hashtag(self):
++        """ The `Hashtag` node of the Instagram Graph API.
++        See the :class:`pystagram.graph_api.endpoints.hashtag.hashtag.Hashtag` class for additional details.
++        """
+         return Hashtag(self)
+ 
+     @property
+     def media(self):
++        """ The `Media` node of the Instagram Graph API.
++        See the :class:`pystagram.graph_api.endpoints.media.media.Media` class for additional details.
++        """
+         return Media(self)
+ 
+     @property
+     def user(self):
++        """ The `User` node of the Instagram Graph API.
++        See the :class:`pystagram.graph_api.endpoints.user.user.User` class for additional details.
++        """
+         return User(self)
+Index: pystagram/graph_api/endpoints/oauth/oauth.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>from pystagram.graph_api.endpoints.oauth.access_token.access_token import AccessToken\n\n\nclass Oauth:\n    def __init__(self, graph_api: \"GraphInstagramBaseApi\"):\n        self.graph_api = graph_api\n\n    @property\n    def access_token(self):\n        return AccessToken(self)
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/pystagram/graph_api/endpoints/oauth/oauth.py b/pystagram/graph_api/endpoints/oauth/oauth.py
+--- a/pystagram/graph_api/endpoints/oauth/oauth.py	(revision 0d1d0a951f844f62084b6988fc8dc02ca6fcbf01)
++++ b/pystagram/graph_api/endpoints/oauth/oauth.py	(date 1707760742166)
+@@ -2,9 +2,18 @@
+ 
+ 
+ class Oauth:
++    """The `Oauth` node of the Instagram Graph API.
++    This class provides access to the `Oauth` node of the Instagram Graph API.
++    :param graph_api: An instance of the :class:`InstagramGraphApi` class.
++    :type graph_api: :class:`InstagramGraphApi`
++    """
+     def __init__(self, graph_api: "GraphInstagramBaseApi"):
++        """Initializes the `Oauth` class."""
+         self.graph_api = graph_api
+ 
+     @property
+     def access_token(self):
+-        return AccessToken(self)
+\ No newline at end of file
++        """ The `AccessToken` node of the Instagram Graph API.
++        See the :class:`pystagram.graph_api.endpoints.oauth.access_token.access_token.AccessToken` class for additional details.
++        """
++        return AccessToken(self)
+Index: LICENSE
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>MIT License\n\nCopyright (c) 2024 Matthieu THIBAUT\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/LICENSE b/LICENSE
+--- a/LICENSE	(revision 0d1d0a951f844f62084b6988fc8dc02ca6fcbf01)
++++ b/LICENSE	(date 1707727339619)
+@@ -18,4 +18,4 @@
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+-SOFTWARE.
+\ No newline at end of file
++SOFTWARE.
+Index: pystagram/graph_api/endpoints/oauth/access_token/access_token.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>from typing import Optional\n\n\nclass AccessToken:\n    def __init__(self, oauth: \"Oauth\"):\n        self.oauth = oauth\n\n    def get(self, grant_type: Optional[str] = \"fb_exchange_token\", client_id: Optional[int] = None, client_secret: Optional[str] = None, fb_exchange_token: Optional[str] = None):\n        params = {\n            \"grant_type\": grant_type,\n            \"client_id\": client_id or self.oauth.graph_api.app_id,\n            \"client_secret\": client_secret or self.oauth.graph_api.app_secret,\n            \"fb_exchange_token\": fb_exchange_token or self.oauth.graph_api.access_token,\n        }\n        return self.oauth.graph_api.api_request(method=\"GET\", endpoint=\"/oauth/access_token\", params=params)\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/pystagram/graph_api/endpoints/oauth/access_token/access_token.py b/pystagram/graph_api/endpoints/oauth/access_token/access_token.py
+--- a/pystagram/graph_api/endpoints/oauth/access_token/access_token.py	(revision 0d1d0a951f844f62084b6988fc8dc02ca6fcbf01)
++++ b/pystagram/graph_api/endpoints/oauth/access_token/access_token.py	(date 1707761069526)
+@@ -2,10 +2,31 @@
+ 
+ 
+ class AccessToken:
++    """The `AccessToken` endpoint of the Instagram Graph API.
++    This class provides access to the `AccessToken` endpoint of the Instagram Graph API.
++    :param oauth: An instance of the :class:`Oauth` class.
++    :type oauth: :class:`Oauth`
++    """
+     def __init__(self, oauth: "Oauth"):
++        """Initializes the `AccessToken` class."""
+         self.oauth = oauth
+ 
+     def get(self, grant_type: Optional[str] = "fb_exchange_token", client_id: Optional[int] = None, client_secret: Optional[str] = None, fb_exchange_token: Optional[str] = None):
++        """ Gets a Long-Lived User Access Token.
++        Gets a long-lived user access token from a short-lived user access token.
++
++        :param grant_type: The type of grant to request, defaults to "fb_exchange_token"
++        :type grant_type: str, optional
++        :param client_id: The app ID of the Instagram app, defaults to None
++        :type client_id: int, optional
++        :param client_secret: The app secret of the Instagram app, defaults to None
++        :type client_secret: str, optional
++        :param fb_exchange_token: The short-lived user access token, defaults to None
++        :type fb_exchange_token: str, optional
++        :return: The response from the API.
++        :rtype: :class:`pystagram.helpers.api_client.api_response.InstagramApiResponse`
++        """
++
+         params = {
+             "grant_type": grant_type,
+             "client_id": client_id or self.oauth.graph_api.app_id,
+Index: .gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.gitignore b/.gitignore
+new file mode 100644
+--- /dev/null	(date 1707680888586)
++++ b/.gitignore	(date 1707680888586)
+@@ -0,0 +1,4 @@
++.venv
++dist
++__pycache__
++*.egg-info
+Index: pyproject.toml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>[build-system]\nrequires = [\"hatchling\"]\nbuild-backend = \"hatchling.build\"\n\n[project]\nname = \"InstagramApiWrapper\"\nversion = \"0.1.0\"\nauthors = [\n  { name=\"Matthieu THIBAUT\", email=\"matthieu_thibaut@icloud.com\" },\n]\ndescription = \"API wrapper for Instagram Basic Display and Graph API\"\nreadme = \"README.md\"\nlicense = {file = \"LICENSE\"}\nrequires-python = \">=3.8\"\nclassifiers = [\n    \"Programming Language :: Python :: 3\",\n]\n\n[project.urls]\nHomepage = \"https://github.com/MatthieuThib/InstagramApiWrapper\"\nIssues = \"https://github.com/MatthieuThib/InstagramApiWrapper/issues\"
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/pyproject.toml b/pyproject.toml
+--- a/pyproject.toml	(revision 0d1d0a951f844f62084b6988fc8dc02ca6fcbf01)
++++ b/pyproject.toml	(date 1707727339613)
+@@ -18,4 +18,4 @@
+ 
+ [project.urls]
+ Homepage = "https://github.com/MatthieuThib/InstagramApiWrapper"
+-Issues = "https://github.com/MatthieuThib/InstagramApiWrapper/issues"
+\ No newline at end of file
++Issues = "https://github.com/MatthieuThib/InstagramApiWrapper/issues"
+diff --git a/instagram_apis/graph_api/__init__.py b/pystagram/basic_display_api/__init__.py
+rename from instagram_apis/graph_api/__init__.py
+rename to pystagram/basic_display_api/__init__.py

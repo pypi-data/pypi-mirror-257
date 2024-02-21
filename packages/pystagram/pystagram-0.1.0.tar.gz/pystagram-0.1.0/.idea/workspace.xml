@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c5d68aee-d8c1-4071-ac41-f952d4a4c9fd" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/pystagram/graph_api/components/fields/media_fields.py" beforeDir="false" afterPath="$PROJECT_DIR$/pystagram/graph_api/components/fields/media_fields.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pystagram/graph_api/endpoints/comment/comment.py" beforeDir="false" afterPath="$PROJECT_DIR$/pystagram/graph_api/endpoints/comment/comment.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pystagram/graph_api/endpoints/container/container.py" beforeDir="false" afterPath="$PROJECT_DIR$/pystagram/graph_api/endpoints/container/container.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pystagram/graph_api/endpoints/hashtag/hashtag.py" beforeDir="false" afterPath="$PROJECT_DIR$/pystagram/graph_api/endpoints/hashtag/hashtag.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pystagram/graph_api/endpoints/hashtag/recent_media.py" beforeDir="false" afterPath="$PROJECT_DIR$/pystagram/graph_api/endpoints/hashtag/recent_media.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pystagram/graph_api/endpoints/hashtag/top_media.py" beforeDir="false" afterPath="$PROJECT_DIR$/pystagram/graph_api/endpoints/hashtag/top_media.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pystagram/graph_api/endpoints/me/accounts.py" beforeDir="false" afterPath="$PROJECT_DIR$/pystagram/graph_api/endpoints/me/accounts.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pystagram/graph_api/endpoints/me/me.py" beforeDir="false" afterPath="$PROJECT_DIR$/pystagram/graph_api/endpoints/me/me.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pystagram/graph_api/endpoints/media/media.py" beforeDir="false" afterPath="$PROJECT_DIR$/pystagram/graph_api/endpoints/media/media.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pystagram/graph_api/endpoints/user/available_catalogs.py" beforeDir="false" afterPath="$PROJECT_DIR$/pystagram/graph_api/endpoints/user/available_catalogs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pystagram/graph_api/endpoints/user/content_publishing_limit.py" beforeDir="false" afterPath="$PROJECT_DIR$/pystagram/graph_api/endpoints/user/content_publishing_limit.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pystagram/graph_api/endpoints/user/live_media.py" beforeDir="false" afterPath="$PROJECT_DIR$/pystagram/graph_api/endpoints/user/live_media.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pystagram/graph_api/endpoints/user/tags.py" beforeDir="false" afterPath="$PROJECT_DIR$/pystagram/graph_api/endpoints/user/tags.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pystagram/graph_api/endpoints/user/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/pystagram/graph_api/endpoints/user/user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pystagram/graph_api/graph_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/pystagram/graph_api/graph_api.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="REMOTE">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="origin/main" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="KEEP" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;history&quot;: [
+    {
+      &quot;state&quot;: &quot;OPEN&quot;
+    }
+  ],
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GitRewordedCommitMessages">
+    <option name="commitMessagesMapping">
+      <RewordedCommitMessageMapping>
+        <option name="originalMessage" value="graph api" />
+        <option name="rewordedMessage" value="graph api" />
+      </RewordedCommitMessageMapping>
+    </option>
+    <option name="currentCommit" value="1" />
+    <option name="onto" value="ac494995f8bb9596ce6892a98bc828cfcc0d9d2f" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="11472870-024a-492b-8be9-2759c8bfe9a4" />
+        <option name="url" value="git@github.com:MatthieuThib/InstagramAPI.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2Y29zhpUNWTzzCsb6godzXttz10" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.fetch_user_media.executor": "Debug",
+    "Python.publish_media.executor": "Debug",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "develop",
+    "last_opened_file_path": "/Users/matthieuthibaut/Documents/pystagram/examples",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/examples" />
+      <recent name="$PROJECT_DIR$/pystagram/helpers/errors" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/pystagram/helpers" />
+      <recent name="$PROJECT_DIR$/pystagram/graph_api/components/containers" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/examples" />
+      <recent name="$PROJECT_DIR$/pystagram/helpers/decorators" />
+      <recent name="$PROJECT_DIR$/pystagram/graph_api/endpoints/hashtag_search" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.fetch_user_media">
+    <configuration name="fetch_user_media" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="InstagramAPI" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/examples" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/examples/fetch_user_media.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="InstagramAPI" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="publish_media" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="InstagramAPI" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/examples/publish_media.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.fetch_user_media" />
+        <item itemvalue="Python.publish_media" />
+        <item itemvalue="Python.main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-5a2391486177-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.13763.11" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c5d68aee-d8c1-4071-ac41-f952d4a4c9fd" name="Changes" comment="" />
+      <created>1699713073419</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1699713073419</updated>
+    </task>
+    <task id="LOCAL-00001" summary="test commit">
+      <option name="closed" value="true" />
+      <created>1707674611795</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1707674611795</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Initial commit">
+      <option name="closed" value="true" />
+      <created>1707674836987</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1707674836987</updated>
+    </task>
+    <task id="LOCAL-00003" summary="test commit 2">
+      <option name="closed" value="true" />
+      <created>1707675678640</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1707675678640</updated>
+    </task>
+    <task id="LOCAL-00004" summary="test">
+      <option name="closed" value="true" />
+      <created>1707676539759</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1707676539761</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Initial commit">
+      <option name="closed" value="true" />
+      <created>1707676757603</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1707676757603</updated>
+    </task>
+    <task id="LOCAL-00006" summary="LICENSE">
+      <option name="closed" value="true" />
+      <created>1707677131250</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1707677131250</updated>
+    </task>
+    <task id="LOCAL-00007" summary="test">
+      <option name="closed" value="true" />
+      <created>1707680777418</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1707680777419</updated>
+    </task>
+    <task id="LOCAL-00008" summary="squash! test">
+      <option name="closed" value="true" />
+      <created>1707680824713</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1707680824713</updated>
+    </task>
+    <task id="LOCAL-00009" summary="graph api">
+      <option name="closed" value="true" />
+      <created>1707680922936</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1707680922936</updated>
+    </task>
+    <task id="LOCAL-00010" summary="graph api">
+      <option name="closed" value="true" />
+      <created>1707687688853</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1707687688854</updated>
+    </task>
+    <task id="LOCAL-00011" summary="graph api">
+      <option name="closed" value="true" />
+      <created>1707688520995</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1707688520995</updated>
+    </task>
+    <task id="LOCAL-00012" summary="graph api">
+      <option name="closed" value="true" />
+      <created>1707689186749</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1707689186749</updated>
+    </task>
+    <task id="LOCAL-00013" summary="graph api">
+      <option name="closed" value="true" />
+      <created>1707691315360</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1707691315360</updated>
+    </task>
+    <task id="LOCAL-00014" summary="graph api">
+      <option name="closed" value="true" />
+      <created>1707760195295</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1707760195296</updated>
+    </task>
+    <task id="LOCAL-00015" summary="graph api">
+      <option name="closed" value="true" />
+      <created>1707761092317</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1707761092317</updated>
+    </task>
+    <task id="LOCAL-00016" summary="graph api docs 1">
+      <option name="closed" value="true" />
+      <created>1707765359960</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1707765359961</updated>
+    </task>
+    <task id="LOCAL-00017" summary="graph api refactor, docs and paginated decorator">
+      <option name="closed" value="true" />
+      <created>1707993987187</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1707993987188</updated>
+    </task>
+    <task id="LOCAL-00018" summary="graph api access token to private attribute">
+      <option name="closed" value="true" />
+      <created>1707994169993</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1707994169993</updated>
+    </task>
+    <task id="LOCAL-00019" summary="docs breqkdown component">
+      <option name="closed" value="true" />
+      <created>1708009999924</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1708009999924</updated>
+    </task>
+    <task id="LOCAL-00020" summary="docs containers component">
+      <option name="closed" value="true" />
+      <created>1708010025136</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1708010025136</updated>
+    </task>
+    <task id="LOCAL-00021" summary="docs fields component">
+      <option name="closed" value="true" />
+      <created>1708011851386</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1708011851386</updated>
+    </task>
+    <task id="LOCAL-00022" summary="docs media_type component">
+      <option name="closed" value="true" />
+      <created>1708011869903</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1708011869903</updated>
+    </task>
+    <task id="LOCAL-00023" summary="docs metrics component">
+      <option name="closed" value="true" />
+      <created>1708011927011</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1708011927012</updated>
+    </task>
+    <task id="LOCAL-00024" summary="docs periods component">
+      <option name="closed" value="true" />
+      <created>1708011961456</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1708011961456</updated>
+    </task>
+    <task id="LOCAL-00025" summary="docs tags component">
+      <option name="closed" value="true" />
+      <created>1708012512943</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1708012512943</updated>
+    </task>
+    <task id="LOCAL-00026" summary="rename paginated_endpoint decorator to cursor_based_paginated">
+      <option name="closed" value="true" />
+      <created>1708111224199</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1708111224200</updated>
+    </task>
+    <task id="LOCAL-00027" summary="rename paginated_endpoint decorator to cursor_paginated">
+      <option name="closed" value="true" />
+      <created>1708113712856</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1708113712857</updated>
+    </task>
+    <task id="LOCAL-00028" summary="basic display api">
+      <option name="closed" value="true" />
+      <created>1708114104571</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1708114104571</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Switch ccess token to a protected attribute">
+      <option name="closed" value="true" />
+      <created>1708186248109</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1708186248109</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Refactor errors">
+      <option name="closed" value="true" />
+      <created>1708186634791</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1708186634791</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Rename class to Pystagram">
+      <option name="closed" value="true" />
+      <created>1708186925047</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1708186925047</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Import PystagramGraphApi and Containers in graph_api init file">
+      <option name="closed" value="true" />
+      <created>1708187775899</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1708187775899</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Add .gitignore file">
+      <option name="closed" value="true" />
+      <created>1708245161855</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1708245161855</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="develop" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit" />
+    <MESSAGE value="test" />
+    <MESSAGE value="LICENSE" />
+    <MESSAGE value="squash! test" />
+    <MESSAGE value="fixup! graph api" />
+    <MESSAGE value="graph api docs 1" />
+    <MESSAGE value="graph api refactor, docs and paginated decorator" />
+    <MESSAGE value="graph api access token to private attribute" />
+    <MESSAGE value="docs breakdown component" />
+    <MESSAGE value="docs containers component" />
+    <MESSAGE value="docs fields component" />
+    <MESSAGE value="docs media_type component" />
+    <MESSAGE value="docs metrics component" />
+    <MESSAGE value="docs periods component" />
+    <MESSAGE value="docs tags component" />
+    <MESSAGE value="rename paginated_endpoint decorator to cursor_based_paginated" />
+    <MESSAGE value="rename paginated_endpoint decorator to cursor_paginated" />
+    <MESSAGE value="basic display api" />
+    <MESSAGE value="graph api" />
+    <MESSAGE value="Switch ccess token to a protected attribute" />
+    <MESSAGE value="Refactor errors" />
+    <MESSAGE value="Rename class to Pystagram" />
+    <MESSAGE value="Import PystagramGraphApi and Containers in graph_api init file" />
+    <MESSAGE value="Access token as protected attribute" />
+    <MESSAGE value="Add .gitignore file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add .gitignore file" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/examples/fetch_user_media.py</url>
+          <line>25</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
