@@ -1,0 +1,5 @@
+[console_scripts]
+cocas=cocas.main:main
+cocodump=cocodump.main:main
+synthm=synthm.main:main
+
