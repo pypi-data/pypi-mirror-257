@@ -1,0 +1,5 @@
+*.pyc
+*.idea
+*.egg-info
+dns_local/_version.py
+

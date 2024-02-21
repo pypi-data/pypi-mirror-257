@@ -1,0 +1,7 @@
+ifaddr
+click
+coloredlogs
+dnslib
+
+[test]
+pytest
