@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: zengl-extras
+Version: 0.3.0
+License-File: LICENSE
+Requires-Dist: zengl
+Requires-Dist: requests
+Requires-Dist: progress
+Requires-Dist: colorama
+

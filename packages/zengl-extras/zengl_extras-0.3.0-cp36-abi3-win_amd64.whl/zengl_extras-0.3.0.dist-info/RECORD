@@ -1,0 +1,8 @@
+zengl_extras/__init__.py,sha256=8gZaGIocJQB98j5iM4xV1HBXRokLncQTk1vy0fH1-gM,4107
+zengl_extras/cudart.pyd,sha256=YLV6FAX7V62ff-QWEfwVSDphWWXbFK6EBTQVB35vIME,10752
+zengl_extras/opencl.pyd,sha256=L3u6YBwyj63oa1SB73Y_EO4QIPzDyfR6i2klG9ChmYI,10752
+zengl_extras-0.3.0.dist-info/LICENSE,sha256=3etxjl9ubmROXJaKOiEPFXyordroZxVOeO55abLz5vE,1092
+zengl_extras-0.3.0.dist-info/METADATA,sha256=UKHwkpnB0Kd4TTM0ypPxomkOwhQ6sHBxz2uFmP50aUQ,181
+zengl_extras-0.3.0.dist-info/WHEEL,sha256=4tTZk63KEWJ02fObUDUWLSfDZ_5x99qEjqs4CuqJFCU,100
+zengl_extras-0.3.0.dist-info/top_level.txt,sha256=txzcCgmPV1rsOywpR180th3veKNXMjhLJT_T1pdJH3I,13
+zengl_extras-0.3.0.dist-info/RECORD,,
