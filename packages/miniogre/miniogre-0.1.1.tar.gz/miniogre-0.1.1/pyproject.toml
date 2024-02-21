@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "miniogre"
+version = "0.1.1"
+description = "miniogre: generate Dockerfile, requirements.txt, and SBOM from project directory"
+readme = "README.md"
+authors = ["Wilder Lopes <wilder@ogre.run>"]
+include = [".env"]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<4.0"
+typer = "0.9.0"
+docker = "^5.0.0"
+python-dotenv = "^0.19.0"
+openai = "1.12.0"
+emoji = "^2.10.1"
+pyfiglet = "^1.0.2"
+rich = "^13.7.0"
+groq = "^0.3.0"
+yaspin = "^3.0.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+miniogre = "miniogre.main:app"
