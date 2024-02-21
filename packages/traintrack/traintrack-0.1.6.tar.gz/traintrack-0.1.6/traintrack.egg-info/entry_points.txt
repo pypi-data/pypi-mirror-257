@@ -1,0 +1,3 @@
+[console_scripts]
+traintrack = traintrack.command_line_pipe:main
+ttbatch = traintrack.run_pipeline:batch_stage
