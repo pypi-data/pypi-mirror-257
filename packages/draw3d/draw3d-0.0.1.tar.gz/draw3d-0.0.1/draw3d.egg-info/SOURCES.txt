@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+draw3d.egg-info/PKG-INFO
+draw3d.egg-info/SOURCES.txt
+draw3d.egg-info/dependency_links.txt
+draw3d.egg-info/top_level.txt
+draw3d_derrick/__init__.py
+draw3d_derrick/tools.py
