@@ -1,0 +1,8 @@
+setup.py
+ftdz_from_fyh1/__init__.py
+ftdz_from_fyh1/main.py
+ftdz_from_fyh1.egg-info/PKG-INFO
+ftdz_from_fyh1.egg-info/SOURCES.txt
+ftdz_from_fyh1.egg-info/dependency_links.txt
+ftdz_from_fyh1.egg-info/requires.txt
+ftdz_from_fyh1.egg-info/top_level.txt
