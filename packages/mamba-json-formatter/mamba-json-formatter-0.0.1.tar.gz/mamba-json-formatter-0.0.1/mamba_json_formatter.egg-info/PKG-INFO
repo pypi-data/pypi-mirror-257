@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: mamba-json-formatter
+Version: 0.0.1
+Summary: JSON formatter for mamba
+Home-page: https://github.com/quiqueporta/mamba-json-formatter
+Author: Quique Porta
+Author-email: quiqueporta@gmail.com
+License: MIT/X11
+Download-URL: https://github.com/quiqueporta/mamba-json-formatter/releases
+Keywords: python,testing
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Utilities
+License-File: LICENSE
+
+# mamba-json-formatter
+JSON formatter for [https://github.com/nestorsalceda/mamba](mamba)
+
+
+## Upload to pypi
+
+```bash
+python -m pip install build twine
+python -m build
+python -m twine upload --repository testpypi dist/*
+```
+

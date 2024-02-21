@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+mamba_json_formatter/__init__.py
+mamba_json_formatter/json_formatter.py
+mamba_json_formatter.egg-info/PKG-INFO
+mamba_json_formatter.egg-info/SOURCES.txt
+mamba_json_formatter.egg-info/dependency_links.txt
+mamba_json_formatter.egg-info/requires.txt
+mamba_json_formatter.egg-info/top_level.txt
