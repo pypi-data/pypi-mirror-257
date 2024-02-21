@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: deepview-converter-rtm
+Version: 2.5.27
+Summary: DeepView Converter for DeepViewRT
+Home-page: https://au-zone.com
+Author: Au-Zone
+Author-email: support@au-zone.com
+License: PROPRIETARY
+Platform: UNKNOWN
+License-File: LICENSE.txt
+Requires-Dist: deepview-rt (==2.6.3)
+Requires-Dist: numpy (<=1.26.3,>=1.22.3)
+Requires-Dist: networkx (==2.5.1)
+Requires-Dist: h5py (==3.10.0)
+Requires-Dist: keras (<=2.15.0,>=2.13.1)
+Requires-Dist: tensorflow (<=2.15.0,>=2.13.0)
+Requires-Dist: tensorboard (<=2.15.0,>=2.13.0)
+Requires-Dist: tflite (==2.10.0)
+Requires-Dist: tensorflow-hub (==0.16.1)
+Requires-Dist: path (==16.4.0)
+Requires-Dist: Pillow (==9.0.1)
+Requires-Dist: protobuf (==3.20.3)
+Provides-Extra: tensorflow
+Requires-Dist: wheel ; extra == 'tensorflow'
+
+UNKNOWN
+
