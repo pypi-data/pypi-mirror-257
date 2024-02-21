@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+ArraySplitter/__init__.py
+ArraySplitter/main.py
+ArraySplitter.egg-info/PKG-INFO
+ArraySplitter.egg-info/SOURCES.txt
+ArraySplitter.egg-info/dependency_links.txt
+ArraySplitter.egg-info/entry_points.txt
+ArraySplitter.egg-info/requires.txt
+ArraySplitter.egg-info/top_level.txt
