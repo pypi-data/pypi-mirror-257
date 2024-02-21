@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+bitheap_gateway_client.egg-info/PKG-INFO
+bitheap_gateway_client.egg-info/SOURCES.txt
+bitheap_gateway_client.egg-info/dependency_links.txt
+bitheap_gateway_client.egg-info/requires.txt
+bitheap_gateway_client.egg-info/top_level.txt
