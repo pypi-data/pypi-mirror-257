@@ -1,0 +1,12 @@
+aioshutil<2,>=1
+
+[lint]
+mypy<2,>=1
+pytest<9,>=8
+pytest-asyncio
+black
+
+[test]
+pytest<9,>=7
+pytest-asyncio
+pytest-cov
