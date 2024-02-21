@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: lanpartydb
+Version: 0.1.0
+Summary: Python library for the OrgaTalk LANparty Database
+Author-email: Jochen Kupperschmidt <homework@nwsnet.de>
+License: MIT
+License-File: LICENSE
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+
+# Python library for the OrgaTalk LANparty Database
+
+
+## Installation
+
+```sh
+$ pip install lanpartydb
+```
+
+
+## License
+
+MIT
+
+
+## Author
+
+Jochen Kupperschmidt
