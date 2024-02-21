@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "mkdocs-external-import"
+version = "0.0.1"
+description = "Import external markdown files into your documentation site."
+authors = ["Lawrence <lawrence@acode.ninja>"]
+license = "MPL-2.0"
+readme = "README.md"
+
+packages = [
+    { include = "mkdocs_external_import" }
+]
+
+[tool.poetry.plugins."mkdocs.plugins"]
+"external-import" = "mkdocs_external_import.external_import:Import"
+
+[tool.poetry.build]
+generate-setup-file = false
+
+[tool.poetry.dependencies]
+python = "^3.11"
+mkdocs = "^1.5.2"
+requests = "^2.31.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

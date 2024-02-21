@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: mkdocs-external-import
+Version: 0.0.1
+Summary: Import external markdown files into your documentation site.
+License: MPL-2.0
+Author: Lawrence
+Author-email: lawrence@acode.ninja
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: mkdocs (>=1.5.2,<2.0.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+# MKDocs External Import
+
+Import external markdown files into your documentation site.
+
+## Usage
+
+Install `mkdocs-external-import`:
+
+- `pip install mkdocs-external-import`
+- `poetry add mkdocs-external-import`
+
+Add to `mkdocs.yml`:
+
+```yaml
+plugins:
+  - external-import
+```
+
+Reference an external Markdown file in a codeblock:
+
+````markdown
+```import-external-content
+https://raw.githubusercontent.com/acodeninja/mkdocs-external-import/main/README.md
+```
+````
+
+Build your docs, or run a local development server:
+
+- `mkdocs build`
+- `mkdocs serve`
+
+The logs will show the following output:
+
+```console
+INFO    -  mkdocs_external_import: Importing external content from: https://raw.githubusercontent.com/acodeninja/mkdocs-external-import/main/README.md
+```
+
