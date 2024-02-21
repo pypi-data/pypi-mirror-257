@@ -1,0 +1,3 @@
+[console_scripts]
+video-ethz=video_ethz.cli:download_latest_lecture
+

@@ -1,0 +1,10 @@
+video_ethz/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+video_ethz/cli.py,sha256=wAaghiFjU65XXwI6CClaXc3hWfY6CvwokdFEkgToM0M,1396
+video_ethz/config.py,sha256=wyT5pNQ0NZdgtj36yo7x6JjFXukytAOpcDQIJuOaxHQ,61
+video_ethz/downloader.py,sha256=ouNZxB6PQkJo54vLzga2wxlXA6g_jEDV9m-UpuepIwQ,3667
+video_ethz/utils.py,sha256=TGexZ2ThrnqQmoFWgvPYw-073SBII6yUhdCr_koKa3U,2798
+video_ethz-0.0.5.dist-info/LICENSE,sha256=vYqTNOruf6DRjM8vAJbvDBBJYi-QfEHJ8BnI8vhjfro,1069
+video_ethz-0.0.5.dist-info/METADATA,sha256=Qa4aej7fSaWlRKnxHdzeTL6gWw-2NDaIk0o94kxTmy8,792
+video_ethz-0.0.5.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+video_ethz-0.0.5.dist-info/entry_points.txt,sha256=FM-vDviUjxaOgKCNC8fxzQ47qiykRmbcX6xOKKax_po,69
+video_ethz-0.0.5.dist-info/RECORD,,
