@@ -1,0 +1,15 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+Testing.py
+setup.py
+NEPython.egg-info/PKG-INFO
+NEPython.egg-info/SOURCES.txt
+NEPython.egg-info/dependency_links.txt
+NEPython.egg-info/requires.txt
+NEPython.egg-info/top_level.txt
+NEPython/allproxy/Get.py
+NEPython/allproxy/Send.py
+NEPython/allproxy/__init__.py
+NEPython/allproxy/testing.py
+NEPython/arrayLib/manipulate.py
