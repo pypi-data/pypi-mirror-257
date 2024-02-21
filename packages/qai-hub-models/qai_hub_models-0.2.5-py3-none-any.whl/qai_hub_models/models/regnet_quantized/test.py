@@ -1,0 +1,37 @@
+from qai_hub_models.models._shared.imagenet_classifier.test_utils import (
+    run_imagenet_classifier_test,
+    run_imagenet_classifier_trace_test,
+)
+from qai_hub_models.models.regnet_quantized.demo import main as demo_main
+from qai_hub_models.models.regnet_quantized.model import (
+    MODEL_ASSET_VERSION,
+    MODEL_ID,
+    RegNetQuantizable,
+)
+
+
+def test_task():
+    run_imagenet_classifier_test(
+        RegNetQuantizable.from_pretrained(),
+        MODEL_ID,
+        probability_threshold=0.45,
+        diff_tol=0.005,
+        atol=0.2,
+        rtol=0.02,
+        asset_version=MODEL_ASSET_VERSION,
+    )
+
+
+def test_trace():
+    run_imagenet_classifier_trace_test(
+        RegNetQuantizable.from_pretrained(),
+        is_quantized=True,
+        diff_tol=0.008,
+        atol=0.2,
+        rtol=0.02,
+    )
+
+
+def test_demo():
+    # Verify demo does not crash
+    demo_main(is_test=True)
