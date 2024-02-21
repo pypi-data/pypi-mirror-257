@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "mikrotikapi"
+version = "0.2.2"
+description = ""
+authors = ["goltsev <mark@goltsev.net>"]
+readme = "README.md"
+packages = [{ include = "mikrotik_api" }]
+
+
+[tool.poetry.dependencies]
+python = "^3.9"
+aiohttp = "^3.9.3"
+requests = "^2.31.0"
+requests-toolbelt = "^1.0.0"
+pydantic = "2.5.3"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 79
+target-version = ['py311']
+use-tabs = false
+tab-width = 2
+#skip-string-normalization = true
+
+[tool.pylint]
+line-length = 79
+
+[tool.pytest.ini_options]
+filterwarnings = [
+    "default"
+]
