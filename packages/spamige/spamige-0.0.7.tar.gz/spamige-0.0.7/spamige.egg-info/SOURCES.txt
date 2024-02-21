@@ -1,0 +1,10 @@
+README.md
+setup.py
+spamige/__init__.py
+spamige/spamige.py
+spamige/utils.py
+spamige.egg-info/PKG-INFO
+spamige.egg-info/SOURCES.txt
+spamige.egg-info/dependency_links.txt
+spamige.egg-info/requires.txt
+spamige.egg-info/top_level.txt
