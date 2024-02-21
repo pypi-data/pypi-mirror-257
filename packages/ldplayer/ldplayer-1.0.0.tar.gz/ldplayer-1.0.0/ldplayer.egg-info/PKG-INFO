@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: ldplayer
+Version: 1.0.0
+Summary: This is a package for LDPlayer emulator control software. (unofficial)
+Home-page: https://github.com/sinmentis/ldplayer
+Author: sinmentis
+Maintainer: sinmentis
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+LDPlayer
+==========
+This is package for LDPlayer emulator control software. (unofficial)
+
+LDPlayer CLI details can be found in [here]("https://www.ldplayer.net/blog/introduction-to-ldplayer-command-line-interface.html")
+
+#### Table of contents
+
+- [LDPlayer](#ldplayer)
+- [Install](#install)
+- [Usage](#usage)
+- [Environments](#environments)
+- [License](#license)
+
+
+Install
+==========
+```shell
+pip install git+https://github.com/sinmentis/ldplayer.git
+```
+
+Usage
+==========
+```python
+from ldplayer import LDPlayer
+ldplayer = LDPlayer(r"D:\LDPlayer\LDPlayer9\ldconsole.exe")
+print(ldplayer.list_instances())
+```
+
+
+Environments
+============
+* [LDPlayer 9.0.66](https://www.ldplayer.net/)
+* Python 3.11
+
+License
+==========
+MIT

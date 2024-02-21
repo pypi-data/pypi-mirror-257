@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+ldplayer/__init__.py
+ldplayer/ldplayer.py
+ldplayer.egg-info/PKG-INFO
+ldplayer.egg-info/SOURCES.txt
+ldplayer.egg-info/dependency_links.txt
+ldplayer.egg-info/top_level.txt
