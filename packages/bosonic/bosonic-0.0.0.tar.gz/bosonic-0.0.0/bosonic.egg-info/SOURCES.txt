@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+setup.py
+bosonic/VERSION.txt
+bosonic/__init__.py
+bosonic.egg-info/PKG-INFO
+bosonic.egg-info/SOURCES.txt
+bosonic.egg-info/dependency_links.txt
+bosonic.egg-info/top_level.txt
