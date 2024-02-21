@@ -1,0 +1,13 @@
+vds_api_client/__init__.py,sha256=URmlWGsxdThWXsW4BNGoIy6gPGH7xVsKI3Sv1sBUPG4,246
+vds_api_client/api_cli.py,sha256=s06kkwXlSIwxBeCLpzu8zQ3XBKaGJhV2y3I2WQndwP4,13622
+vds_api_client/api_v2.py,sha256=SK4_3stcKmagLy4H48Ba1Ri6UPTC0qUkpUDjA7e2jyE,21208
+vds_api_client/requester.py,sha256=VjxmVg8JFF0VDR1NCztjj58aRfA3iMjXwJj3X6R9cnw,7723
+vds_api_client/types.py,sha256=lx48eaGZCE0VJLhjvvj6LxpkigfTCJ_1KdEYwnL_WHg,11304
+vds_api_client/vds_api_base.py,sha256=WZb7KpWFbm0KCw_LiNvSCBTWrfsq2loSAnfh7JS48Z8,17464
+vds_api_client-2.2.0.dist-info/AUTHORS.rst,sha256=07eiL0cPCRB9zCzCFPfywHhbprraH8ZAv6nEylx5f70,67
+vds_api_client-2.2.0.dist-info/LICENSE.txt,sha256=TPdxk2ANo95eUBZ0Bmv0x5wmhEO66xIm-SB_Q0Gvi8s,1046
+vds_api_client-2.2.0.dist-info/METADATA,sha256=egGCr_NDXsLwmrpQgdK3zlUp-SvxJRMWxJrCg7mapXg,13728
+vds_api_client-2.2.0.dist-info/WHEEL,sha256=-G_t0oGuE7UD0DrSpVZnq1hHMBV9DD2XkS5v7XpmTnk,110
+vds_api_client-2.2.0.dist-info/entry_points.txt,sha256=z6HVCwtuDNGaEZNrqcaYAOZRZWhON2Yw2JDzYppXdiM,55
+vds_api_client-2.2.0.dist-info/top_level.txt,sha256=ZESvxuNQm76MN4mE7p05ZTQ_mMekA7HIhaCKmnMRNSI,15
+vds_api_client-2.2.0.dist-info/RECORD,,
