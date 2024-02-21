@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+aajna/__init__.py
+aajna/device.py
+aajna.egg-info/PKG-INFO
+aajna.egg-info/SOURCES.txt
+aajna.egg-info/dependency_links.txt
+aajna.egg-info/requires.txt
+aajna.egg-info/top_level.txt
