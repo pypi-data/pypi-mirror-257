@@ -1,0 +1,9 @@
+README.md
+setup.py
+EasyWhisper/__init__.py
+EasyWhisper/easy_whisper.py
+easy_whisper_local.egg-info/PKG-INFO
+easy_whisper_local.egg-info/SOURCES.txt
+easy_whisper_local.egg-info/dependency_links.txt
+easy_whisper_local.egg-info/requires.txt
+easy_whisper_local.egg-info/top_level.txt
