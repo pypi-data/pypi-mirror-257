@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "spark-connectby"
+version = "1.0.3"
+description = "connectby hierarchy query in spark"
+authors = ["Tim Chen <firstim@gmail.com>"]
+readme = "README.md"
+packages = [{include = "spark_connectby"}]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[tool.poetry.group.dev.dependencies]
+pyspark = ">3"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7"
+pyspark = ">3"
+
+[build-syllstem]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
