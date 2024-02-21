@@ -1,0 +1,91 @@
+{
+    "ytui-music": {
+        "repo_url": "https://github.com/sudipghimire533/ytui-music",
+        "doc": "A terminal based YouTube music player written in Rust.",
+        "filename_template_windows_amd_64": "",
+        "filename_template_linux_amd_64": "ytui_music-linux-amd64",
+        "strip_v": true,
+        "exe_name": "ytui-music"
+    },
+    "youtube-tui": {
+        "repo_url": "https://github.com/Siriusmart/youtube-tui",
+        "doc": "A terminal based YouTube music player written in Rust.",
+        "filename_template_windows_amd_64": "",
+        "filename_template_linux_amd_64": "youtube-tui-full_arch-x86_64",
+        "strip_v": true,
+        "exe_name": "youtube-tui"
+    },
+    "termusic": {
+        "repo_url": "https://github.com/tramhao/termusic",
+        "doc": "A terminal-based music player written in Rust.",
+        "filename_template_windows_amd_64": "termusic-{}-x86_64-windows.zip",
+        "filename_template_linux_amd_64": "termusic-{}-x86_64-linux.tar.xz",
+        "strip_v": false,
+        "exe_name": "termusic"
+    },
+    "kronos": {
+        "repo_url": "https://github.com/TrevorSatori/kronos",
+        "doc": "A Customizable Terminal Music Player For Offline Listening",
+        "filename_template_windows_amd_64": "",
+        "filename_template_linux_amd_64": "Kronos",
+        "strip_v": true,
+        "exe_name": "kronos"
+    },
+    "nnn": {
+        "repo_url": "https://github.com/jarun/nnn",
+        "doc": "A terminal-based file manager.",
+        "filename_template_windows_amd_64": "",
+        "filename_template_linux_amd_64": "nnn-{}.tar.gz",
+        "strip_v": false,
+        "exe_name": "nnn"
+      },
+    "exa": {
+        "repo_url": "https://github.com/ogham/exa",
+        "doc": "A modern replacement for ls. lsd alternative.",
+        "filename_template_windows_amd_64": "",
+        "filename_template_linux_amd_64": "exa-linux-x86_64-{}.zip",
+        "strip_v": false,
+        "exe_name": "exa"
+    },
+    "bytehound": {
+        "repo_url": "https://github.com/koute/bytehound",
+        "doc": "Inspecting the memory usage of a running process",
+        "filename_template_windows_amd_64": "",
+        "filename_template_linux_amd_64": "bytehound-x86_64-unknown-linux-gnu.tgz",
+        "strip_v": false,
+        "exe_name": "bytehound"
+      },
+    "atuin": {
+        "repo_url": "https://github.com/atuinsh/atuin",
+        "doc": "Shell history search tool. Mcfly alternative",
+        "filename_template_windows_amd_64": "",
+        "filename_template_linux_amd_64": "atuin-{}-x86_64-unknown-linux-gnu.tar.gz",
+        "strip_v": false,
+        "exe_name": "atuin"
+    },
+
+    "browsh": {
+        "repo_url": "https://github.com/browsh-org/browsh",
+        "doc": "browser in the shell",
+        "filename_template_windows_amd_64": "browsh_{}_windows_amd64.exe",
+        "filename_template_linux_amd_64": "browsh_{}_linux_amd64",
+        "strip_v": true,
+        "exe_name": "browsh"
+    },
+    "carbonyl": {
+        "repo_url": "",
+        "doc": "Brwoser in terminal. Browsh alternative.",
+        "filename_template_windows_amd_64": "",
+        "filename_template_linux_amd_64": "carbonyl.linux-amd64.zip",
+        "strip_v": false,
+        "exe_name": "carbonyl"
+    },
+    "patat": {
+        "repo_url": "https://github.com/jaspervdj/patat",
+        "doc": "Terminal-based presentations using Pandoc. Presenterm alternative.",
+        "filename_template_windows_amd_64": "",
+        "filename_template_linux_amd_64": "patat-{}-linux-x86_64.tar.gz",
+        "strip_v": false,
+        "exe_name": "patat"
+    }
+}
