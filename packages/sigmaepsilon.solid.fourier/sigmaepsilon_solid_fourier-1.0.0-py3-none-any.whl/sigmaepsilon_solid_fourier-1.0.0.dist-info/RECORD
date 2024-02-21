@@ -1,0 +1,13 @@
+sigmaepsilon/solid/fourier/__init__.py,sha256=6v_26y4r0T7eaEnDWlgasttN60k33GbAYqWZQipazI0,701
+sigmaepsilon/solid/fourier/beam.py,sha256=vHrHaMSL1NC60cryeAsane5vrM8qqa9AecxxlD-T66k,3945
+sigmaepsilon/solid/fourier/loads.py,sha256=wFV0nLmqnK7XEV93FnwDF6RgEEZQJUkqTeFQW9mDqZg,17358
+sigmaepsilon/solid/fourier/plate.py,sha256=4e-DQwocb8Ubx1AWLRUVwAC0Eybnec9ta-IXwxy33P8,3775
+sigmaepsilon/solid/fourier/postproc.py,sha256=e_Z7A_23pyac9CiL9_ajg6RmFKXIhKoPYSKMyE3gipI,14849
+sigmaepsilon/solid/fourier/preproc.py,sha256=DrbHbmUnfZQ2ni9WWb4BOuM611gFDqK4EmnMKMQ5Pjg,12640
+sigmaepsilon/solid/fourier/problem.py,sha256=VfBFDj7Yr2dagtqKrfAEo9qT0Wo0E74UPYXM6VT3x_Q,643
+sigmaepsilon/solid/fourier/proc.py,sha256=T7qy2UUiGNuR5VAhstUuB4Ia4pbPAj0OShytNNnMTIQ,2357
+sigmaepsilon/solid/fourier/utils.py,sha256=syrCNHtoyZiZub09u2Aw4F_JBV35DqjpEKcar_aOGVw,2275
+sigmaepsilon_solid_fourier-1.0.0.dist-info/LICENSE,sha256=uD2tVPKr_eryP9df_rjJVujEwfWM2exSoHm7PYHkOws,1069
+sigmaepsilon_solid_fourier-1.0.0.dist-info/METADATA,sha256=N999z06t1itGN-ghHelFJfqFGl-N5GnVQlc6ZouQvQ4,7987
+sigmaepsilon_solid_fourier-1.0.0.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+sigmaepsilon_solid_fourier-1.0.0.dist-info/RECORD,,
