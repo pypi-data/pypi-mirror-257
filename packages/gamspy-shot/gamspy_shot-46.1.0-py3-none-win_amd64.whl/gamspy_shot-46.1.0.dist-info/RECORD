@@ -1,0 +1,13 @@
+gamspy_shot/__init__.py,sha256=n44LrPYhalZuc9DZD9Dybj9hyi1oMwecL-AZdWdliz8,432
+gamspy_shot/gurobi110.dll,sha256=LMrF3KqLb91jltRMA_VSg_wi_HS5LbuBcvi7ujHjHWg,36535016
+gamspy_shot/ipopt64.dll,sha256=XxildTaHvMAODYX49hlIbxLsFLk4kX025oUOXP-ESoQ,10140672
+gamspy_shot/mkl_gams.dll,sha256=PDybOy4RupU8IwZYmPEn3kk7EwtSBUVdZONlYZyfzTs,107392512
+gamspy_shot/msvcp140.dll,sha256=4KIqWU4Uj6Vc7vPkmWm_p3ARqAEmegvXgFtoG1k8nQs,567328
+gamspy_shot/pthreads.dll,sha256=4oGd_hA2Wf4lQ-HZ7Pf8btuqkqUYk8gtHWvSJpuECpc,55808
+gamspy_shot/shtcclib64.dll,sha256=7BCOm22QpOP4R_CYguS01UyklIGklR75_QML1b7s2og,14318080
+gamspy_shot/vcruntime140_1.dll,sha256=fPONINALZkDVEOq3AXHhxvj6LkIECDLhfHQzq2HZSo4,38448
+gamspy_shot/version.py,sha256=-4Ec9AN1om_6Y2UZb-PhdgN5iAXLprmXQ_aNh-X8cms,22
+gamspy_shot-46.1.0.dist-info/METADATA,sha256=TmEncZ0oj71dQIJ5RgGq9o2kMOSaynTVt2H49AIivZQ,61
+gamspy_shot-46.1.0.dist-info/WHEEL,sha256=-H981hu6jK6YKd-c0qWpYxXA3UZMihQ3r30_4YPQguI,104
+gamspy_shot-46.1.0.dist-info/top_level.txt,sha256=gusCdxO7iASg7Gt5S2fDZID7IyLftCEceNg_cQGrwKA,12
+gamspy_shot-46.1.0.dist-info/RECORD,,
