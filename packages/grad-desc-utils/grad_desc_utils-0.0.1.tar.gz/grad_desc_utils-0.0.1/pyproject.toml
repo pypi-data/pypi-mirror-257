@@ -1,0 +1,17 @@
+[project]
+name = "grad_desc_utils"
+version = "0.0.1"
+authors = [
+  { name="John Myers", email="jmmyers25@gmail.com" },
+]
+description = "Gradient descent utility functions for math-stats book."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/jmyers7/grad_desc_utils"
