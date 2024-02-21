@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: TestingPack
+Version: 1.0.1
+Summary: A Python package for reading PDF files.
+Author: Jayesh Vani
+Author-email: jayeshvani2@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
