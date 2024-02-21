@@ -1,0 +1,97 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "slisemap_interactive"
+version = "0.6.0"
+description = "Interactive plots for Slisemap using Dash"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Anton Björklund", email = "anton.bjorklund@helsinki.fi" }]
+keywords = ["Slisemap", "XAI", "visualization", "interactive"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Framework :: Dash",
+    "Topic :: Scientific/Engineering :: Visualization",
+]
+dependencies = [
+    "slisemap >= 1.4; platform_system!='Emscripten'",
+    "numpy >= 1.19",
+    "dash >= 2.6",
+    "pandas >= 1.4",
+    "plotly >= 5.9",
+    "jupyter-dash >= 0.4; platform_system!='Emscripten'",
+    "scipy >= 1.2",
+]
+
+
+[project.optional-dependencies]
+xiplot = ["xiplot"]
+dev = ["pytest", "pytest-cov", "black[jupyter]", "ruff", "jupyter", "IPython"]
+
+[project.urls]
+github = "https://github.com/edahelsinki/slisemap_interactive"
+
+[project.entry-points."xiplot.plugin.read"]
+xiplot_plugin_load_slisemap = "slisemap_interactive.xiplot:load_slisemap"
+xiplot_plugin_load_slipmap = "slisemap_interactive.xiplot:load_slipmap"
+
+[project.entry-points."xiplot.plugin.plot"]
+xiplot_plugin_embeddingplot = "slisemap_interactive.xiplot:SlisemapEmbeddingPlot"
+xiplot_plugin_barplot = "slisemap_interactive.xiplot:SlisemapModelBarPlot"
+xiplot_plugin_matrixplot = "slisemap_interactive.xiplot:SlisemapModelMatrixPlot"
+xiplot_plugin_densityplot = "slisemap_interactive.xiplot:SlisemapDensityPlot"
+xiplot_plugin_histogramplot = "slisemap_interactive.xiplot:SlisemapHistogramPlot"
+xiplot_plugin_termsplot = "slisemap_interactive.xiplot:SlisemapLinearTermsPlot"
+
+[project.scripts]
+slisemap_interactive = "slisemap_interactive.app:cli"
+
+[tool.setuptools]
+packages = ["slisemap_interactive"]
+
+[tool.coverage.run]
+branch = true
+
+[tool.coverage.report]
+exclude_also = ["print", "ImportError"]
+
+[tool.ruff.lint]
+select = [
+    "I",
+    "E",
+    "F",
+    "B",
+    "C4",
+    "W",
+    "D",
+    "UP",
+    "ANN",
+    "SIM",
+    "RUF",
+    "S",
+    "N",
+]
+ignore = [
+    "E501",
+    "B006",
+    "D105",
+    "D203",
+    "D204",
+    "D406",
+    "D213",
+    "D407",
+    "D413",
+    "ANN101",
+    "ANN102",
+    "ANN401",
+    "S101",
+    "N802",
+    "N803",
+    "N806",
+]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = ["D", "ANN"]

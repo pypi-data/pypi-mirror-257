@@ -1,0 +1,20 @@
+numpy>=1.19
+dash>=2.6
+pandas>=1.4
+plotly>=5.9
+scipy>=1.2
+
+[:platform_system != "Emscripten"]
+slisemap>=1.4
+jupyter-dash>=0.4
+
+[dev]
+pytest
+pytest-cov
+black[jupyter]
+ruff
+jupyter
+IPython
+
+[xiplot]
+xiplot
