@@ -1,0 +1,32 @@
+project: project-template
+# optional, use folder name by default if not specified
+# should be able to define storage here and use in all services (unless overwritten)
+
+storage:
+  - name: data
+    type: local # use "s3" to get a cloud bucket
+
+scripts:
+  - name: downloader
+    # run_every: 1
+    # run_on_start: True
+#   - name: ndvi
+#     run_every: 1
+#     run_on_start: True
+# notebooks:
+#   - name: analytics
+#     run_every: 1
+#     run_on_start: True
+apis:
+  - name: analytics
+    port: 8011 # only for cloud
+#   - name: xyz
+#     port: 8012 # only for cloud
+# uis:
+#   - name: map
+#     command: streamlit run uis/map/main.py --server.address localhost # local
+#     # command: streamlit run main.py # cloud
+#     port: 8501 # only for cloud
+#     env: # use api names as url placeholders (local and cloud)
+#       ANALYTICS_URL: api.analytics 
+#       XYZ_URL: api.xyz 
