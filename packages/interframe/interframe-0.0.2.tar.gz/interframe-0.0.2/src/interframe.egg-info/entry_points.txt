@@ -1,0 +1,2 @@
+[console_scripts]
+interframe = interframe.interframe:main
