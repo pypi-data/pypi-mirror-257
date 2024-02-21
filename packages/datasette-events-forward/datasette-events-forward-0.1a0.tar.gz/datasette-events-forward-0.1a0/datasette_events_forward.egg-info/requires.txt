@@ -1,0 +1,9 @@
+datasette>=1.0a10
+python-ulid
+aiolimiter
+
+[test]
+pytest
+pytest-asyncio
+pytest-httpx
+datasette-test
