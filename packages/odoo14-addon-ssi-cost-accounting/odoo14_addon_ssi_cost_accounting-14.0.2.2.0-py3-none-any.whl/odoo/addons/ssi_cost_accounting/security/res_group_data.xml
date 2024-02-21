@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2022 OpenSynergy Indonesia
+     Copyright 2022 PT. Simetri Sinergi Indonesia
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+<odoo>
+<record id="account_analytic_account_configurator_group" model="res.groups">
+    <field name="name">Analytic Account</field>
+    <field name="category_id" ref="cost_accounting_configurator_module_category" />
+    <field
+            name="users"
+            eval="[(4, ref('base.user_root')), (4, ref('base.user_admin'))]"
+        />
+</record>
+
+<record id="account_analytic_group_configurator_group" model="res.groups">
+    <field name="name">Analytic Account Group</field>
+    <field name="category_id" ref="cost_accounting_configurator_module_category" />
+    <field
+            name="users"
+            eval="[(4, ref('base.user_root')), (4, ref('base.user_admin'))]"
+        />
+</record>
+
+<record id="account_analytic_tag_configurator_group" model="res.groups">
+    <field name="name">Analytic Tag</field>
+    <field name="category_id" ref="cost_accounting_configurator_module_category" />
+    <field
+            name="users"
+            eval="[(4, ref('base.user_root')), (4, ref('base.user_admin'))]"
+        />
+</record>
+</odoo>

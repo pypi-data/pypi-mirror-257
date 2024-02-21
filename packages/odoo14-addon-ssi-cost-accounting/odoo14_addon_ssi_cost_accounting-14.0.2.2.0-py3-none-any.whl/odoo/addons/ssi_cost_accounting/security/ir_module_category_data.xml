@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2022 OpenSynergy Indonesia
+     Copyright 2022 PT. Simetri Sinergi Indonesia
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+<odoo>
+<record id="cost_accounting_module_category" model="ir.module.category">
+    <field name="name">Cost Accounting</field>
+</record>
+
+<record id="cost_accounting_workflow_module_category" model="ir.module.category">
+    <field name="name">Cost Accounting - Workflow</field>
+    <field name="parent_id" ref="cost_accounting_module_category" />
+</record>
+
+<record id="cost_accounting_configurator_module_category" model="ir.module.category">
+    <field name="name">Cost Accounting - Configurator</field>
+    <field name="parent_id" ref="cost_accounting_module_category" />
+</record>
+
+<record id="cost_accounting_wizard_module_category" model="ir.module.category">
+    <field name="name">Cost Accounting - Wizard</field>
+    <field name="parent_id" ref="cost_accounting_module_category" />
+</record>
+
+<record id="cost_accounting_data_ownership_module_category" model="ir.module.category">
+    <field name="name">Cost Accounting - Data Ownership</field>
+    <field name="parent_id" ref="cost_accounting_module_category" />
+</record>
+
+</odoo>

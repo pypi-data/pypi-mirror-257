@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2022 OpenSynergy Indonesia
+     Copyright 2022 PT. Simetri Sinergi Indonesia
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+<odoo>
+<!-- General Settings -->
+<record id="res_config_settings_view_form" model="ir.ui.view">
+    <field name="name">res.config.settings form</field>
+    <field name="model">res.config.settings</field>
+    <field name="priority" eval="1" />
+    <field name="inherit_id" ref="base.res_config_settings_view_form" />
+    <field name="arch" type="xml">
+        <xpath expr="//div[hasclass('settings')]" position="inside">
+            <div
+                    class="app_settings_block"
+                    data-string="Cost Accounting"
+                    string="Cost Accounting"
+                    data-key="ssi_cost_accounting"
+                >
+                <h2>Feature</h2>
+                <div class="row mt16 o_settings_container" id="cost_accounting_feature">
+                    <div
+                            id="use_ssi_financial_budget"
+                            class="col-12 col-lg-6 o_setting_box"
+                        >
+                        <div
+                                name="use_ssi_financial_budget_left"
+                                class="o_setting_left_pane"
+                            >
+                            <field name="module_ssi_financial_budget" />
+                        </div>
+                        <div
+                                name="use_ssi_financial_budget_right"
+                                class="o_setting_right_pane"
+                            >
+                            <label for="module_ssi_financial_budget" />
+                            <div class="text-muted">
+                                Manage financial budget
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                            id="use_ssi_analytic_budget"
+                            class="col-12 col-lg-6 o_setting_box"
+                        >
+                        <div
+                                name="use_ssi_analytic_budget_left"
+                                class="o_setting_left_pane"
+                            >
+                            <field name="module_ssi_analytic_budget" />
+                        </div>
+                        <div
+                                name="use_ssi_analytic_budget_right"
+                                class="o_setting_right_pane"
+                            >
+                            <label for="module_ssi_analytic_budget" />
+                            <div class="text-muted">
+                                Manage analytic budget
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h2>Integration</h2>
+                <div
+                        class="row mt16 o_settings_container"
+                        id="cost_accounting_integration"
+                    >
+                </div>
+            </div>
+        </xpath>
+    </field>
+</record>
+
+<record id="res_config_settings_action" model="ir.actions.act_window">
+    <field name="name">Settings</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="res_model">res.config.settings</field>
+    <field name="view_mode">form</field>
+    <field name="target">inline</field>
+    <field name="context">{'module' : 'ssi_cost_accounting', 'bin_size': False}</field>
+</record>
+
+<menuitem
+        id="res_config_settings_menu"
+        name="Settings"
+        parent="menu_cost_accounting_configuration"
+        sequence="0"
+        action="res_config_settings_action"
+    />
+
+<record id="cost_accounting_settings_view_form" model="ir.ui.view">
+    <field name="name">res.config.settings form - Cost Accounting</field>
+    <field name="model">res.config.settings</field>
+    <field name="priority" eval="100" />
+    <field name="arch" type="xml">
+        <form
+                string="Settings"
+                class="oe_form_configuration o_base_settings"
+                js_class="base_settings"
+            >
+            <div class="o_control_panel">
+                <div class="o_panel">
+                    <div
+                            class="title h2 mb0 mt4 text-muted d-none d-md-block"
+                        >Cost Accounting</div>
+                    <div class="o_setting_search">
+                        <input
+                                type="text"
+                                class="searchInput"
+                                placeholder="Search..."
+                            />
+                        <span class="searchIcon"><i
+                                    class="fa fa-search"
+                                    role="img"
+                                    aria-label="Search"
+                                    title="Search"
+                                /></span>
+                    </div>
+                </div>
+                <header>
+                    <button
+                            string="Save"
+                            type="object"
+                            name="execute"
+                            class="oe_highlight"
+                        />
+                    <button
+                            string="Discard"
+                            type="object"
+                            name="cancel"
+                            special="cancel"
+                        />
+                </header>
+            </div>
+            <div class="o_setting_container">
+                <div class="settings_tab" />
+                <div class="settings">
+                    <div class="notFound o_hidden">No Record Found</div>
+                </div>
+            </div>
+        </form>
+    </field>
+</record>
+
+<record id="cost_accounting_settings_view_form1" model="ir.ui.view">
+    <field name="name">res.config.settings form</field>
+    <field name="model">res.config.settings</field>
+    <field name="priority" eval="1" />
+    <field name="inherit_id" ref="cost_accounting_settings_view_form" />
+    <field name="arch" type="xml">
+        <xpath expr="//div[hasclass('settings')]" position="inside">
+            <div
+                    class="app_settings_block"
+                    data-string="Cost Accounting"
+                    string="Cost Accounting"
+                    data-key="ssi_cost_accounting"
+                >
+                <h2>Feature</h2>
+                <div class="row mt16 o_settings_container" id="cost_accounting_feature">
+                    <div
+                            id="use_ssi_financial_budget"
+                            class="col-12 col-lg-6 o_setting_box"
+                        >
+                        <div
+                                name="use_ssi_financial_budget_left"
+                                class="o_setting_left_pane"
+                            >
+                            <field name="module_ssi_financial_budget" />
+                        </div>
+                        <div
+                                name="use_ssi_financial_budget_right"
+                                class="o_setting_right_pane"
+                            >
+                            <label for="module_ssi_financial_budget" />
+                            <div class="text-muted">
+                                Manage financial budget
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                            id="use_ssi_analytic_budget"
+                            class="col-12 col-lg-6 o_setting_box"
+                        >
+                        <div
+                                name="use_ssi_analytic_budget_left"
+                                class="o_setting_left_pane"
+                            >
+                            <field name="module_ssi_analytic_budget" />
+                        </div>
+                        <div
+                                name="use_ssi_analytic_budget_right"
+                                class="o_setting_right_pane"
+                            >
+                            <label for="module_ssi_analytic_budget" />
+                            <div class="text-muted">
+                                Manage analytic budget
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h2>Integration</h2>
+                <div
+                        class="row mt16 o_settings_container"
+                        id="cost_accounting_integration"
+                    >
+                </div>
+            </div>
+        </xpath>
+    </field>
+</record>
+
+<record id="cost_accounting_settings_action" model="ir.actions.act_window">
+    <field name="name">Cost Accounting Settings</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="res_model">res.config.settings</field>
+    <field name="view_mode">form</field>
+    <field name="view_id" ref="cost_accounting_settings_view_form" />
+    <field name="target">inline</field>
+    <field name="context">{'module' : 'ssi_cost_accounting', 'bin_size': False}</field>
+</record>
+
+<menuitem
+        id="cost_accounting_settings_menu"
+        name="Cost Accounting"
+        parent="base_setup.menu_config"
+        action="cost_accounting_settings_action"
+        sequence="100"
+    />
+
+<!-- <menuitem
+        id="cost_accounting_settings_menu"
+        name="Cost Accounting"
+        parent="base.next_id_2"
+        parent="base_setup.menu_config"
+        action="cost_accounting_settings_action"
+        sequence="100"
+    />        -->
+</odoo>

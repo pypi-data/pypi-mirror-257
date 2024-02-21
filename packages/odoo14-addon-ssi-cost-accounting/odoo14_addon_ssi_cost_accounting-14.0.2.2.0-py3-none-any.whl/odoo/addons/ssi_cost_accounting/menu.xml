@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2022 OpenSynergy Indonesia
+     Copyright 2022 PT. Simetri Sinergi Indonesia
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+<odoo>
+<menuitem
+        id="menu_root_cost_accounting"
+        name="Cost Accounting"
+        web_icon="ssi_cost_accounting,static/description/icon.png"
+    />
+
+<menuitem
+        id="menu_root_budget"
+        name="Budget"
+        parent="menu_root_cost_accounting"
+        sequence="1"
+    />
+
+<menuitem
+        id="menu_cost_accounting_report"
+        name="Report"
+        parent="menu_root_cost_accounting"
+        sequence="98"
+    />
+<menuitem
+        id="menu_cost_accounting_configuration"
+        name="Configuration"
+        parent="menu_root_cost_accounting"
+        sequence="99"
+    />
+
+<menuitem
+        id="menu_account_configuration"
+        name="Account"
+        parent="menu_cost_accounting_configuration"
+        sequence="1"
+    />
+
+<menuitem
+        id="menu_budget_configuration"
+        name="Budget"
+        parent="menu_cost_accounting_configuration"
+        sequence="2"
+    />
+
+
+
+
+
+
+</odoo>

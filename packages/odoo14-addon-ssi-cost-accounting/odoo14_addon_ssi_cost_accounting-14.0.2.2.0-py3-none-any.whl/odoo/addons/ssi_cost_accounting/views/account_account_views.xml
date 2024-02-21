@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2024 OpenSynergy Indonesia
+     Copyright 2024 PT. Simetri Sinergi Indonesia
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+<odoo>
+<record id="view_account_list" model="ir.ui.view">
+    <field name="name">account.account - tree</field>
+    <field name="model">account.account</field>
+    <field name="inherit_id" ref="account.view_account_list" />
+    <field name="arch" type="xml">
+        <field name="currency_id" position="after">
+            <field
+                name="property_analytic_policy"
+                groups="analytic.group_analytic_accounting"
+            />
+        </field>
+    </field>
+</record>
+<record id="view_account_form" model="ir.ui.view">
+    <field name="name">account.account - form</field>
+    <field name="model">account.account</field>
+    <field name="inherit_id" ref="account.view_account_form" />
+    <field name="arch" type="xml">
+        <xpath expr="//group/group" position="inside">
+            <field
+                name="property_analytic_policy"
+                groups="analytic.group_analytic_accounting"
+            />
+        </xpath>
+    </field>
+</record>
+</odoo>

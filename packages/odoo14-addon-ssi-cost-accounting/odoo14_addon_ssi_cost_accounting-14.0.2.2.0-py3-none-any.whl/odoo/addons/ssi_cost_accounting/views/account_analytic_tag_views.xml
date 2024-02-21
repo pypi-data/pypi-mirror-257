@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2022 OpenSynergy Indonesia
+     Copyright 2022 PT. Simetri Sinergi Indonesia
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+<odoo>
+<menuitem
+        id="account_analytic_tag_menu"
+        name="Tags"
+        parent="menu_account_configuration"
+        sequence="3"
+        action="analytic.account_analytic_tag_action"
+        groups="account_analytic_tag_configurator_group"
+    />
+</odoo>
