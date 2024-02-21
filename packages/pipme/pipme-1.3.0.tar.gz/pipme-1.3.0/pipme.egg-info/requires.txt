@@ -1,0 +1,2 @@
+twine>=4.0.2
+beautifish>=2.2.1
