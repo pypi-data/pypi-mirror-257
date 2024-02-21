@@ -1,0 +1,10 @@
+pywordle/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pywordle/wordle.py,sha256=kBBDUFPB7B_iLUwsd_NMeDLJJS4GJiwFDcV37t7-ExY,15133
+pywordle/words/words.en.txt,sha256=eTVsqnV2wDMmC5FuC22Y8S3zi_o0O02aqjpSKl3or4U,4234899
+pywordle/words/words.es.txt,sha256=pugFq5pWoy4nqlKMKr8CLmWU2NxgATIiNlYKeljuNLQ,7055621
+pywordle/words/words.fr.txt,sha256=OEnNpKvocLD5FTy6FL4HY3A2qM-XsPO6gT-IPJ6F8ZI,47880
+pywordle/words/words.small.en.txt,sha256=L8RV2VD0UcMDeMz1R1RKB-4C_qZgkY5G3LfmddpI-O0,600806
+pywordle-0.3.5.dist-info/METADATA,sha256=789-nsbh7un-cDiBTzDlZI0QY22qyllbnODs2x3Mah8,6441
+pywordle-0.3.5.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+pywordle-0.3.5.dist-info/entry_points.txt,sha256=I5mmy7m78rWJ4va0RFpTTAAUNxENtEHHJ4YoHN0xGPI,47
+pywordle-0.3.5.dist-info/RECORD,,
