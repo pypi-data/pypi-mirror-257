@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: async-bithumb
+Version: 1.0.1
+Summary: Asynchronus pybithumb library. Based on pybithumb library: https://github.com/sharebook-kr/pybithumb
+Home-page: https://github.com/pakchu/async-bithumb
+Author: Lukas Yoo, Brayden Jo, pakchu
+Author-email: jonghun.yoo@outlook.com, pystock@outlook.com, gus4734@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+License-File: LICENSE
+
+UNKNOWN
+
