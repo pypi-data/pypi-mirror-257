@@ -1,0 +1,8 @@
+README.md
+setup.py
+mysq/__init__.py
+mysq.egg-info/PKG-INFO
+mysq.egg-info/SOURCES.txt
+mysq.egg-info/dependency_links.txt
+mysq.egg-info/requires.txt
+mysq.egg-info/top_level.txt
