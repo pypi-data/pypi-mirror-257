@@ -1,0 +1,16 @@
+bap_elk_backends/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bap_elk_backends/_version.py,sha256=W2ZuwPREcelRFKDJpiEBg2WJhoapMShd8oT7XRY-0FA,86
+bap_elk_backends/enriched/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bap_elk_backends/enriched/pontoon.py,sha256=greHZT3PCuLswXSicARWTkcsw4Fz1k1UkEYXDpkkr0U,7420
+bap_elk_backends/enriched/public_inbox.py,sha256=MDKF0UN7P5dw4X4JSjbWjkBAXwBM3HBtS4aTvLgdrvM,925
+bap_elk_backends/enriched/topicbox.py,sha256=6uFz5CDzHDGzt9G24hnf8jIIw7M6xtHIwODin_-M6YU,3877
+bap_elk_backends/raw/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bap_elk_backends/raw/pontoon.py,sha256=szcDkr7ATl6Eqwye530Hc7bC8BY7xknDWK-JUUTfGTk,2097
+bap_elk_backends/raw/public_inbox.py,sha256=VTt7ZPPSa4HDvXANmjJE4vHAHOE1ytgRUxofwEHeGTw,2200
+bap_elk_backends/raw/topicbox.py,sha256=vGiPL7skeTd_xzR4OCKBtrY7r6fG_3ZlgVn5zImSKPw,1713
+bap_elk_backends/utils.py,sha256=sE4IH0-FeJd3pgpJiOL2X9aOu3YLdNdcZzq-vZuBmmo,1552
+bap_elk_backends-0.3.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+bap_elk_backends-0.3.1.dist-info/METADATA,sha256=fVe_sZXSo6UWpWs8negzk9om2MP29fUMK3QZRRkglpk,3338
+bap_elk_backends-0.3.1.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+bap_elk_backends-0.3.1.dist-info/entry_points.txt,sha256=0mKx02TlkqgtT6BZfY66zZfYt5VR33t8ENBTeuDBdKU,71
+bap_elk_backends-0.3.1.dist-info/RECORD,,
