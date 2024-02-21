@@ -1,0 +1,15 @@
+README.md
+setup.py
+bin/kfa
+kfa/__init__.py
+kfa/forced_alignment.py
+kfa/g2p.fst
+kfa/lexicon.pkl
+kfa/number_verbalize.py
+kfa/text_normalize.py
+kfa/utils.py
+kfa.egg-info/PKG-INFO
+kfa.egg-info/SOURCES.txt
+kfa.egg-info/dependency_links.txt
+kfa.egg-info/requires.txt
+kfa.egg-info/top_level.txt
