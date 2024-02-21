@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "forfloatrange"
+version = "1.1.8"
+description = "Range with float"
+authors = ["Nova D Andrew <andrew.d.nova@icloud.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
