@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: pygismeteo-base
+Version: 5.0.0
+Summary: Base for pygismeteo and aiopygismeteo
+Home-page: https://github.com/monosans/pygismeteo-base
+License: MIT
+Author: monosans
+Author-email: hsyqixco@protonmail.com
+Requires-Python: >=3.8
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Pydantic
+Classifier: Framework :: Pydantic :: 2
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: Russian
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Internet
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Typing :: Typed
+Requires-Dist: annotated-types (>=0.2)
+Requires-Dist: pydantic (>=2)
+Requires-Dist: typing-extensions (>=4.4)
+Project-URL: Repository, https://github.com/monosans/pygismeteo-base
+Description-Content-Type: text/markdown
+
+# pygismeteo-base
+
+[![CI](https://github.com/monosans/pygismeteo-base/actions/workflows/ci.yml/badge.svg)](https://github.com/monosans/pygismeteo-base/actions/workflows/ci.yml)
+[![Downloads](https://static.pepy.tech/badge/pygismeteo-base)](https://pepy.tech/project/pygismeteo-base)
+
+Внутренняя библиотека для [pygismeteo](https://github.com/monosans/pygismeteo) и [aiopygismeteo](https://github.com/monosans/aiopygismeteo).
+
+## License / Лицензия
+
+[MIT](https://github.com/monosans/pygismeteo-base/blob/main/LICENSE)
+
