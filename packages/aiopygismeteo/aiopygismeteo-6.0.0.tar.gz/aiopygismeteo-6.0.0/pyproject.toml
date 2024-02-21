@@ -1,0 +1,52 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "aiopygismeteo"
+version = "6.0.0"
+description = "Asynchronous wrapper for Gismeteo API"
+license = "MIT"
+authors = ["monosans <hsyqixco@protonmail.com>"]
+readme = "README.md"
+repository = "https://github.com/monosans/aiopygismeteo"
+documentation = "https://aiopygismeteo.readthedocs.io"
+classifiers = [
+  "Environment :: Web Environment",
+  "Framework :: AsyncIO",
+  "Framework :: Pydantic :: 2",
+  "Framework :: Pydantic",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Information Technology",
+  "Natural Language :: Russian",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python",
+  "Topic :: Internet :: WWW/HTTP",
+  "Topic :: Internet",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "Topic :: Software Development :: Libraries",
+  "Topic :: Software Development",
+  "Typing :: Typed",
+]
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+aiohttp = ">=3.7"
+pygismeteo-base = "^5"
+typing-extensions = ">=4.4"
+
+[tool.poetry.group.dev.dependencies]
+mypy = "1.8.0"
+pydantic = "2.6.1"
+pytest = "8.0.1"
+pytest-asyncio = "0.23.5"
+ruff = "0.2.2"
+
+[tool.poetry.group.docs]
+optional = true
+
+[tool.poetry.group.docs.dependencies]
+mkdocs = "1.5.3"
+mkdocs-material = "9.5.10"
+mkdocs-minify-html-plugin = "0.2.0"
