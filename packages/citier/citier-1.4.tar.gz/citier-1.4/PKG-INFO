@@ -1,0 +1,99 @@
+Metadata-Version: 2.1
+Name: citier
+Version: 1.4
+Summary: An extensive Python Library to View, List and Validate Countries, States, and Cities data
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.0
+Classifier: Programming Language :: Python :: 3.1
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+# citier
+
+Python Library to Validate and List Countires, States and cities.
+
+
+
+
+## Installation
+
+```bash
+pip install citier
+```
+
+
+
+# Usage
+
+<!-- Countries Start -->
+## Country
+```bash
+from citier.country import validate_country, countries_list
+```
+### Validate any Country
+
+```bash
+validate_country("Pakistan")
+```
+
+### List a Range of countries
+```bash
+countries_list(1,2) 
+```
+
+### List all Countries
+```bash
+countries_list()
+```
+
+
+
+
+<!-- States Start -->
+## State
+
+```bash
+from citier.state import validate_state, list_states
+```
+
+### Validate a State
+```bash
+validate_state("Punjab")
+```
+
+### List All States of a Country
+```bash
+list_states("Pakistan")
+```
+
+
+
+
+<!-- Cities Start -->
+## City
+```bash
+from citier.city import list_cities, list_state_cities
+```
+
+### List All Cities of a Country
+```bash
+list_cities("Pakistan")
+```
+
+### List All Cities of a State
+```bash
+list_state_cities("Punjab")
+```
+
