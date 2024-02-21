@@ -1,0 +1,14 @@
+consoleassistant/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+consoleassistant/src/main.py,sha256=8AMFdM8u9l8OM6emVPkAMbJncFMpZb4Xps7Hbn8GRDw,1529
+consoleassistant/src/ContactManager/contact_manager.py,sha256=MLa9y_agCa1FRCK6FtClLe4h_e_IHUzvlX_86KpDFr0,12100
+consoleassistant/src/ContactManager/models.py,sha256=i4xOPCHBgwjBK7nftNdlYAYta1lHOcr1Sn35P8z653s,7587
+consoleassistant/src/EventManager/event_manager.py,sha256=oWWxT8lZECij8di8wH9ovAriUD-71bU0y9w2-f4wWEo,8397
+consoleassistant/src/FileManager/file_sorter.py,sha256=qbTDc8jfYAXvVqJW3ZSdCPDLHMqBrzm-_CrpgZJD8SA,8463
+consoleassistant/src/NoteManger/note_manager.py,sha256=eBQpEldj6ga_KuC__yMp-0eEYoq8c4x08Syi8B_tm9w,8365
+consoleassistant/src/View/base_view.py,sha256=afPBV6WOBNchO6j3jCdwMs97cr96cAB14deJtduKzXA,1427
+consoleassistant/src/tools/common.py,sha256=tkG6WKSOWZSOSt8HOWOIWCNTo3tjayZy43dHnRaS-fs,835
+Console_Assistant_0.1_by_dreamcode-0.3.dist-info/METADATA,sha256=I85XVwoOaXlUwI_k1a3oLF8CqR5DtRslDqOzg6XMnoY,597
+Console_Assistant_0.1_by_dreamcode-0.3.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+Console_Assistant_0.1_by_dreamcode-0.3.dist-info/entry_points.txt,sha256=J5KBSqwv1gKhvYPu-Y6UrG1-vvUyZMJsAL4ER5mqplM,61
+Console_Assistant_0.1_by_dreamcode-0.3.dist-info/top_level.txt,sha256=jYUP-YvwAN0bHIp25la7Suu9qWtfWQMHNF5iGHPTeqw,17
+Console_Assistant_0.1_by_dreamcode-0.3.dist-info/RECORD,,
