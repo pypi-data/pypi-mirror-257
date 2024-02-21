@@ -1,0 +1,7 @@
+click
+pillow
+
+[dev]
+black
+flake8
+pytest
