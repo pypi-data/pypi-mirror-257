@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: py_stars_tools
+Version: 0.0.4
+Summary: Python 通用工具方法，时间处理、md5、hash处理等
+Author: Stars Bing
+Author-email: bing@starsxu.com
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
