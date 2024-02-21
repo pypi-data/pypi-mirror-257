@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: Console_Assistant_0.1_by_dreamcode
+Version: 0.1
+Summary: This application is a universal manager that combines the functions of a contact, note, event and file manager to conveniently manage various aspects of information.
+Home-page: https://github.com/AkaVelial13/PythonProject.git
+Author: Dreamcode team, Vitaliy Nerg, Omelchenko Anton, Artem Hrytsay, Serhii Nozhenko, Muzychuk Vadym
+Author-email: occultnerg2@gmail.com, omelchenko230783@gmail.com, artem_madrid@hotmail.com, neprokaren41@gmail.com, gr.fyntik@gmail.com
+License: MIT
+Requires-Dist: tabulate
+
