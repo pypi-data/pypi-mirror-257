@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: xiaoshen
+Version: 0.0.1
+Summary: 我的第二个python包
+Home-page: https://dashen.tech
+Author: fliter
+Author-email: i@dashen.tech
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# 测试一下pypi的发布
+

@@ -1,0 +1,8 @@
+README.md
+setup.py
+xiaoshen/__init__.py
+xiaoshen/your_func.py
+xiaoshen.egg-info/PKG-INFO
+xiaoshen.egg-info/SOURCES.txt
+xiaoshen.egg-info/dependency_links.txt
+xiaoshen.egg-info/top_level.txt
