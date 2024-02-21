@@ -1,0 +1,8 @@
+jsonc2json-0.0.3.dist-info/METADATA,sha256=DBxiahiVoX646bECk5UWt1fjqFdskA85EQiLTtQq5hE,1848
+jsonc2json-0.0.3.dist-info/WHEEL,sha256=2cdt1dTq7jC4CjLNJmnCsWLVE9Qw7zzCR4t7apFyJGY,104
+jsonc2json/__init__.py,sha256=Fv5vYedvLABRg8lsVmm-4uBPJnfnttbSpCVJf0tz9MQ,2127
+jsonc2json/_jsonc2json.pyi,sha256=44QjCnoCiwvFCWpis8qj7PRHzHaCZvSgX_ezyKSHW9A,112
+jsonc2json/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jsonc2json/__main__.py,sha256=5JqIx8ugj2AL45azNYNyCAO46TUDDBc36i2mzTLfXxw,813
+jsonc2json/_jsonc2json.cpython-312-darwin.so,sha256=uN1IZADNX8MnPu59YZ7KIJT1WhrF44L7PFaY6vK63Wc,544825
+jsonc2json-0.0.3.dist-info/RECORD,,
