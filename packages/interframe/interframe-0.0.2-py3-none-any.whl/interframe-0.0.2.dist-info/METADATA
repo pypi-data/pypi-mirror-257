@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: interframe
+Version: 0.0.2
+Summary: Python CLI for generating intermediate image frames by interpolating between input key frames.
+Home-page: https://github.com/coryg89/interframe
+Author: Cory Gross
+Author-email: coryg89@gmail.com
+Project-URL: Bug Tracker, https://github.com/coryg89/interframe/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: mediapy
+Requires-Dist: tensorflow
+Requires-Dist: tensorflow-hub
+
+# interframe
+
+Python CLI for generating intermediate image frames by interpolating between input key frames.
+
+## Dependencies
+
+ - [Python 3.x](https://python.org)
+ - [numpy/numpy](https://github.com/numpy/numpy)
+ - [google/mediapy](https://github.com/google/mediapy)
+ - [tensorflow/tensorflow](https://github.com/tensorflow/tensorflow)
+ - [tensorflow/hub](https://github.com/tensorflow/hub)
+
+## Installation
+
+```sh
+$  pip install interframe
+```
+
+## Usage
+
+```
+usage: interframe [-h] -i INPUT [INPUT ...] -o OUTPUT [-n NUM_RECURSIONS]
+                [--save_video] [--fps FPS]
+
+Interpolates between two or more images
+
+options:
+  -h, --help            show this help message and exit
+  -i INPUT INPUT [INPUT ...], --input INPUT INPUT [INPUT ...]
+                        Paths for two or more input images
+  -o OUTPUT, --output OUTPUT
+                        Output directory
+  -n NUM_RECURSIONS, --num_recursions NUM_RECURSIONS
+                        Number of recursions for interpolating
+                        between frames
+  --save_video          Save the output as a video
+  --fps FPS             Frames per second for the output video
+```
