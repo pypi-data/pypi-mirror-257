@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: safe_callback
+Version: 0.0.1
+Summary: A declarative approach to exception handling in python
+Author-email: Nathan Mendoza <nathancm@uci.edu>
+Project-URL: Homepage, https://github.com/nathancmendoza/safe_callback
+Project-URL: Issues, https://github.com/nathancmendoza/safe_callback/issues
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# safe-callback
+
+## About
+
+A declarative approach to exception handling in python
+
+## Contributers
+
+- Nathan Mendoza

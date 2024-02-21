@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/safe_callback/__init__.py
+src/safe_callback.egg-info/PKG-INFO
+src/safe_callback.egg-info/SOURCES.txt
+src/safe_callback.egg-info/dependency_links.txt
+src/safe_callback.egg-info/top_level.txt
