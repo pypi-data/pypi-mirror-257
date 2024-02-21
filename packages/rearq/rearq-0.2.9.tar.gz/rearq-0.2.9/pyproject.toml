@@ -1,0 +1,63 @@
+[tool.poetry]
+name = "rearq"
+version = "0.2.9"
+description = "A distributed task queue built with asyncio and redis, with built-in web interface"
+authors = ["long2ice <long2ice@gmail.com>"]
+license = "Apache-2.0"
+readme = "README.md"
+homepage = "https://github.com/long2ice/rearq.git"
+repository = "https://github.com/long2ice/rearq.git"
+documentation = "https://github.com/long2ice/rearq/blob/master/README.md"
+keywords = ["asyncio", "task", "arq", "queue", "distributed"]
+packages = [
+    { include = "rearq" }
+]
+include = ["LICENSE", "README.md", "CHANGELOG.md"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+click = "*"
+redis = "^4.2.0rc1"
+crontab = "*"
+fastapi = { version = "*", extras = ["all"] }
+loguru = "*"
+aiofiles = "*"
+tortoise-orm = "^0.20.0"
+asyncmy = { version = "^0.2.8", optional = true }
+asyncpg = { version = "*", optional = true }
+
+[tool.poetry.dev-dependencies]
+ruff = "*"
+isort = "*"
+black = "*"
+pytest = "*"
+pytest-xdist = "*"
+mypy = "*"
+pytest-asyncio = "*"
+cryptography = "*"
+types-redis = "*"
+
+[tool.poetry.extras]
+postgres = ["asyncpg"]
+mysql = ["asyncmy"]
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+
+[tool.poetry.scripts]
+rearq = "rearq.cli:main"
+
+[tool.black]
+line-length = 100
+target-version = ['py36', 'py37', 'py38', 'py39']
+
+[tool.pytest.ini_options]
+asyncio_mode = 'auto'
+
+[tool.mypy]
+pretty = true
+ignore_missing_imports = true
+
+[tool.ruff]
+line-length = 100
