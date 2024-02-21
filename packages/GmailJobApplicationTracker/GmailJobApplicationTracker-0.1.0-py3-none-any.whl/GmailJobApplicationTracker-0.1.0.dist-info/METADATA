@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: GmailJobApplicationTracker
+Version: 0.1.0
+Summary: A brief description of your package
+Author: Eshaan Deshpande
+Author-email: meet.eshaan@gmail.com
+Description-Content-Type: text/markdown
+Requires-Dist: google-auth-oauthlib
+Requires-Dist: google-api-python-client
+Requires-Dist: google-auth-httplib2
+Requires-Dist: spacy
+Requires-Dist: pandas
+Requires-Dist: openpyxl
+
+# Gmail-Job-Application-Tracker
