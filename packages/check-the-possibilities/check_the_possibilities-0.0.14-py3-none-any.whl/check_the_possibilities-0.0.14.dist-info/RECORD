@@ -1,0 +1,16 @@
+prototype_python_library/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+prototype_python_library/calculations_with_logistic.py,sha256=z2AvfodQicnw-DXPycZMtcVRpICbsqzxrnBdzQlww80,5939
+prototype_python_library/logger.py,sha256=RIModMYPBkU-cyeWmbU77H_e-HWs46Q8jibyfQ4-ZPk,1410
+prototype_python_library/print_text.py,sha256=NhtF6Yg8HasjUQX2KI71bJ0L_OTi8LXv8q-JjiM1VsY,176
+prototype_python_library/calculations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+prototype_python_library/calculations/logger.py,sha256=RIModMYPBkU-cyeWmbU77H_e-HWs46Q8jibyfQ4-ZPk,1410
+prototype_python_library/calculations/logistic_model.py,sha256=xCDpAC0cGiNHET_8kym6pSdtNLUWuyHEIY097t_z1w8,5952
+prototype_python_library/forecasts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+prototype_python_library/optimizers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+prototype_python_library/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+prototype_python_library/utils/logger.py,sha256=RIModMYPBkU-cyeWmbU77H_e-HWs46Q8jibyfQ4-ZPk,1410
+prototype_python_library/utils/test_utils.py,sha256=LoOJe_1Enf-O7Zmpd46kXfQ0MnF0VWFbmuNyJ7S9vL0,48
+check_the_possibilities-0.0.14.dist-info/METADATA,sha256=jrzG5gfwXdEqKbmap3xJSTqgmmO3MwhTun9ppgPfX-o,1211
+check_the_possibilities-0.0.14.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+check_the_possibilities-0.0.14.dist-info/top_level.txt,sha256=nEfz3xcafTG82SVjz8ngKKaPu-AHL68pDvjbhovGTls,25
+check_the_possibilities-0.0.14.dist-info/RECORD,,
