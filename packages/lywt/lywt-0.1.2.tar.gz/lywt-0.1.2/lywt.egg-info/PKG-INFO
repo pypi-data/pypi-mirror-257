@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: lywt
+Version: 0.1.2
+Summary: LuShengcan 的工具包
+Home-page: https://gitee.com/LuShengcan/lywt.git
+Author: LuShengcan
+Author-email: shengcan_lu@foxmail.com
+License: MIT
+Requires-Python: >=3.0
+License-File: license
+
+理清包关系
