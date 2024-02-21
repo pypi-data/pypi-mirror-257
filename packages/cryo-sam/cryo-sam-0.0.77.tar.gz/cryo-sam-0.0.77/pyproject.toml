@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cryo-sam"
+authors = [
+    {name = "James Rodgers", email = "jms.rdgrs@gmail.com"},
+]
+description = "A tool to find cryo-em targets for cyro-em automation building on foundation ML models."
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+classifiers = [
+    "Environment :: GPU :: NVIDIA CUDA",
+    "Topic :: Scientific/Engineering :: Image Processing",
+]
+dependencies = [
+    "matplotlib",
+    "numpy",
+    "opencv_python",
+    "opencv_python_headless",
+    "segment_anything",
+    "torch",
+]
+version = "0.0.77"
