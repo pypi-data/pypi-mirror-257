@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+invisible_captcha_bypasser/__init__.py
+invisible_captcha_bypasser/captcha_solver.py
+invisible_captcha_bypasser.egg-info/PKG-INFO
+invisible_captcha_bypasser.egg-info/SOURCES.txt
+invisible_captcha_bypasser.egg-info/dependency_links.txt
+invisible_captcha_bypasser.egg-info/requires.txt
+invisible_captcha_bypasser.egg-info/top_level.txt
