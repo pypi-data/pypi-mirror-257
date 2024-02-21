@@ -1,0 +1,14 @@
+[project]
+name = "llm_acuration"
+version = "0.0.4"
+authors = [
+  { name="LLM Acuration team", email="cuboidrandom@gmail.com" },
+]
+description = "An LLM package made by Acuration"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]

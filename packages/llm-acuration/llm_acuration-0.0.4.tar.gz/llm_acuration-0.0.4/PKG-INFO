@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: llm_acuration
+Version: 0.0.4
+Summary: An LLM package made by Acuration
+Author-email: LLM Acuration team <cuboidrandom@gmail.com>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+First version of Acuration's LLM library
+
+Try it out
+```
+pip install llm-acuration
+```
+
+```
+from llm_acuration.hello import hello
+hello()
+```
+Prints "Hello, Acuration World!"
+
+You can use help() on functions to know more about them
+
+0.0.4
+- added requirements.txt file
