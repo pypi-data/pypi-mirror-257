@@ -1,0 +1,3 @@
+[console_scripts]
+autoit-ripper = autoit_ripper.cli:main
+
