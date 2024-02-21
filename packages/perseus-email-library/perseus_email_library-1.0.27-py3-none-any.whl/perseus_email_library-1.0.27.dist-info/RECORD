@@ -1,0 +1,16 @@
+CHANGELOG.md,sha256=K3iXuB4q8gRjVCPvuYM8l7_V7XdC37wB2W_fmxhnxvI,1135
+majormode/__init__.py,sha256=wg8N2Sa_1TURW7KcAGvK2ME8uck6t2TVH_aRi-bYSeo,1189
+majormode/perseus/__init__.py,sha256=wg8N2Sa_1TURW7KcAGvK2ME8uck6t2TVH_aRi-bYSeo,1189
+majormode/perseus/constant/__init__.py,sha256=wg8N2Sa_1TURW7KcAGvK2ME8uck6t2TVH_aRi-bYSeo,1189
+majormode/perseus/constant/email.py,sha256=nihmzABMVCViajHvNvn_1SOdrXj7v-zqIjzD9hMO8Nk,4412
+majormode/perseus/email/__init__.py,sha256=781dXuANBK0cW4Mx1Bki4BjB1moi9GOi9EY8SOb_ONQ,1113
+majormode/perseus/email/email_service.py,sha256=WbCYHnSm9vsxBOoji-Fz-RmGBhPMvGkzt8dY9ZO7TkE,2908
+majormode/perseus/email/provider/__init__.py,sha256=781dXuANBK0cW4Mx1Bki4BjB1moi9GOi9EY8SOb_ONQ,1113
+majormode/perseus/email/provider/gmail.py,sha256=FZfdIPsnCF_ljdAKCwNw0M7FW_UubUnLxHg9f-7RHdI,10629
+majormode/perseus/email/provider/mailjet.py,sha256=Ovf1w1cc1EJIpKIFochm24bMMMRalmE5ydwtYl6v8a0,5406
+majormode/perseus/model/__init__.py,sha256=wg8N2Sa_1TURW7KcAGvK2ME8uck6t2TVH_aRi-bYSeo,1189
+majormode/perseus/model/email.py,sha256=1ot8qrdfcb8Uzwvi9t9RDXhEp72mpzZbcINIcRD7S-s,16034
+perseus_email_library-1.0.27.dist-info/LICENSE,sha256=SGzGYGfcyD0_BLq9f3q1aUI5HN5_r2Y20cmHAxGndPY,1089
+perseus_email_library-1.0.27.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+perseus_email_library-1.0.27.dist-info/METADATA,sha256=RKJEwBM9whrbwlcRunX1J3lGABPDF7Z9pqdWy1zII_s,1584
+perseus_email_library-1.0.27.dist-info/RECORD,,
