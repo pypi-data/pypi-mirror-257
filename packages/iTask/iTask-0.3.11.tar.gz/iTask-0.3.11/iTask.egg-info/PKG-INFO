@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: iTask
+Version: 0.3.11
+Summary: A CLI frontend to easier the use of Taskwarrior
+Home-page: https://github.com/rmonico/itask
+Author: Rafael Monico
+Author-email: rmonico1@gmail.com
+License: GPL3
+License-File: LICENSE
