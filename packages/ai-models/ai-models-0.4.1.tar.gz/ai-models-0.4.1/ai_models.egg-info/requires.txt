@@ -1,0 +1,10 @@
+entrypoints
+climetlab>=0.20.11
+multiurl
+ecmwflibs>=0.6.1
+gputil
+earthkit-meteo
+
+[provenance]
+nvsmi
+GitPython
