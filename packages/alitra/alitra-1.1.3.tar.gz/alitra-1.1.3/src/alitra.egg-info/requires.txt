@@ -1,0 +1,9 @@
+scipy
+numpy
+dacite
+
+[dev]
+pytest
+black
+mypy
+pre-commit
