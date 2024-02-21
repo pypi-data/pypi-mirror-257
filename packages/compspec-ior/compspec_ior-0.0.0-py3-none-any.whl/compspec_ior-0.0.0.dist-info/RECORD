@@ -1,0 +1,10 @@
+compspec_ior/__init__.py,sha256=tSJJDl6fwwvmPDEvSpCcFv5BgdehAW0uBKVpCJWOqcA,69
+compspec_ior/plugin.py,sha256=MyUBWPEgJTErPYA6sUwkqFRtB9mzhre1GUBmBctvc2M,874
+compspec_ior/schema.json,sha256=Y_Gfvf3OIKb_0D5Dzw-IUfALS4dPdQGSPNdHtPEeKgM,10190
+compspec_ior/version.py,sha256=sAj-TkPoXfaPSZIyfEnF8_izRcLpoBuC7U3pGZYqgZw,711
+compspec_ior-0.0.0.dist-info/LICENSE,sha256=c-Qv229c0h91p7gWC7TG2cjSnxzPKHxqkMTnZlcl6l8,1103
+compspec_ior-0.0.0.dist-info/METADATA,sha256=vBrBk4HziATLhUSrQTl74UfeiKddU3kDARtfcKetBaI,2862
+compspec_ior-0.0.0.dist-info/NOTICE,sha256=9CR93geVKl_4ZrJORbXN0fzkEM2y4DglWhY1hn9ZwQw,1167
+compspec_ior-0.0.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+compspec_ior-0.0.0.dist-info/top_level.txt,sha256=KY9RfaqAnR6hXiPiDclgdC6Y4PFRNvf1LH8yocUdxjM,13
+compspec_ior-0.0.0.dist-info/RECORD,,
