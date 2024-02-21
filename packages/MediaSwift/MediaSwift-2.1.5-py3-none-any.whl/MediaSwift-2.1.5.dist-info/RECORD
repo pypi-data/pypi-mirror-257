@@ -1,0 +1,13 @@
+MediaSwift/__init__.py,sha256=ieFrLtjo9bp-hKD038QrXOn9Hw0wYMf2qZSxzxbo79M,1194
+MediaSwift/ffpe.py,sha256=WmUBKFLqESIFMOikB5DdKEBBY65XOZ8nJxSc03-pt80,21610
+MediaSwift/ffpl.py,sha256=h_BMbeiIpwg2GMOBYM9YSxtP2J4dgbYmdCSWBAyY3pg,4976
+MediaSwift/ffpr.py,sha256=DtsL4q0muua4rbMw-n8ivfiOjMCx64Z-jLQfqUXdKL0,9980
+MediaSwift/bin/ffpe.exe,sha256=xsoFzKA1EpXX8Tl-VOMuPu5k8S0OxJDkEgK-ebz6qv4,21693440
+MediaSwift/bin/ffpl.exe,sha256=fBMgrc1h5XbjqBxEw0li34lLkS9-yAp7c1svRIFVXw8,21621248
+MediaSwift/bin/ffpr.exe,sha256=ijbug5tivkTW_trYspJ3_UgqK27LSsFYnOGuwsMJCKk,21638144
+MediaSwift-2.1.5.dist-info/METADATA,sha256=wByUMkDlQHxGwPa5GFrXk4qnjkUvoAHnL9o4E4nXOnQ,6668
+MediaSwift-2.1.5.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+MediaSwift-2.1.5.dist-info/entry_points.txt,sha256=o8qrnbEa46QkhLcGSXL8KSRt1iwzLwHLS07SVI5wUyk,102
+MediaSwift-2.1.5.dist-info/license.txt,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+MediaSwift-2.1.5.dist-info/top_level.txt,sha256=pqOTNQ9ZpB5-xqqKtEdkXbY3nY3zTKEvBI4oxAp-QmE,11
+MediaSwift-2.1.5.dist-info/RECORD,,
