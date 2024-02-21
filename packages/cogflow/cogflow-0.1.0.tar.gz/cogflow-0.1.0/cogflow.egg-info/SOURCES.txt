@@ -1,0 +1,5 @@
+setup.py
+cogflow.egg-info/PKG-INFO
+cogflow.egg-info/SOURCES.txt
+cogflow.egg-info/dependency_links.txt
+cogflow.egg-info/top_level.txt
