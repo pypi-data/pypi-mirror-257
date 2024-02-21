@@ -1,0 +1,46 @@
+name: tests
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  run:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        python-version: ["3.11", "3.12"]
+        os: [ubuntu-latest]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install dependencies
+        run: |
+          python --version
+          pip install -U pip
+          pip install -r requirements.txt
+          pip install -r dev-requirements.txt
+          pip list
+
+      - name: Install the library
+        run: |
+          pip install -e .
+          pip list
+
+      - name: Run tests
+        run: pytest --cov=geoparquet_pydantic --cov-report=xml tests/
+
+      - name: Upload coverage report to CodeCov
+        uses: codecov/codecov-action@v3
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}

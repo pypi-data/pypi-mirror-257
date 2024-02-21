@@ -1,0 +1,39 @@
+[build-system]
+requires = [
+    "setuptools",
+    "setuptools-scm",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "geoparquet_pydantic"
+description = "Read/write geoparquet with the geojson-pydanic models."
+requires-python = ">=3.11"
+keywords = [
+    "geoparquet",
+    "pydantic",
+    "geospatial",
+]
+license = {text = "MIT"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "geojson-pydantic",
+    "pyarrow",
+    "shapely",
+    "pyproj",
+    "click",
+]
+dynamic = [
+    "version",
+    "readme",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["geoparquet_pydantic*"]
+
+[tool.setuptools.dynamic]
+version = {attr = "geoparquet_pydantic.__version__"}
+readme = {file = "pypi_README.md"}
