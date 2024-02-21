@@ -1,0 +1,16 @@
+sdv_installer/__init__.py,sha256=32eFwMlabsXs8dFSQmjBKsksaj013xM0aIoCD2tWv6Y,33
+sdv_installer/cli/__init__.py,sha256=JMCw-iO9uuWICi6BI8nHcMhJ4quXye32FE_BX2eKlfQ,44
+sdv_installer/cli/__main__.c,sha256=xkEPL6Xmsh9878DNjwjEToxHTAyn2wQ108XpAWUEE3M,337410
+sdv_installer/cli/__main__.cpython-39-darwin.so,sha256=9AwShIpGO1HbiOX86AEkp6CuRQEMqxNCtCpqfdEjCkQ,97376
+sdv_installer/installation/__init__.py,sha256=HgOrqk0u-jeDshhl1uDTs3ZNpqZxskNAWmSwp65PQZk,144
+sdv_installer/installation/installer.c,sha256=Miu_ncpVIb7EWrP2arXFNYr9g_672jbo72j7a2IQq9E,523314
+sdv_installer/installation/installer.cpython-39-darwin.so,sha256=iP5QHEkS0bUjG4R7Zpf6ZeWRllhJzbje6ogazvoPAsc,142160
+sdv_installer/licensing/__init__.py,sha256=gXMVCvGbBPYF6krnu2FJjuQ4RJapTEzJHGojH-utGOY,230
+sdv_installer/licensing/authentication.c,sha256=fUiPzVFxYcBShN-XlPIr9-bxGQofdzHCUskjPZ5grdA,499492
+sdv_installer/licensing/authentication.cpython-39-darwin.so,sha256=nhaxDlCfY91CZgfmbV76xWW1ahbwtr0dkd5ebolZa9w,143664
+sdv_installer-0.0.0.dev0.dist-info/LICENSE,sha256=yvPXLYJjZGdrkpah9WFuFg_V6kdZuwgyGkDLrJMMTV0,1065
+sdv_installer-0.0.0.dev0.dist-info/METADATA,sha256=iPLO-lBz1DM7Z85jvkpAkDvW5iRuap5D5CM6Z7hxJUE,2688
+sdv_installer-0.0.0.dev0.dist-info/WHEEL,sha256=JlTVwpqUzP01iqSUKAL8LrwscoYFkCFkZ28SRV9G62c,108
+sdv_installer-0.0.0.dev0.dist-info/entry_points.txt,sha256=ozVfQCFQrrd5TZgfBk_wbUBpM_WkKDJCLpEHS6BAIDU,69
+sdv_installer-0.0.0.dev0.dist-info/top_level.txt,sha256=JZIG54yO4VvC8VDszSiKdCyBZyxos0BUkFADrBBYWXI,14
+sdv_installer-0.0.0.dev0.dist-info/RECORD,,
