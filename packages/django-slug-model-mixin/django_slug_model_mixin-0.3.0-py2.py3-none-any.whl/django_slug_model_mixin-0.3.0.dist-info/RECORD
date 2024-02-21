@@ -1,0 +1,9 @@
+slug_model_mixin/__init__.py,sha256=VrXpHDu3erkzwl_WXrqINBm9xWkcyUy53IQOj042dOs,22
+slug_model_mixin/apps.py,sha256=pTn5d6O778VbUAlfBLT54b5nXkgFeD3k4baqyhSGG7g,131
+slug_model_mixin/model_mixins.py,sha256=vGzMaRVk6W44iOu20f2XxaeRKBq3REInZm4lmjOmK7Q,878
+django_slug_model_mixin-0.3.0.dist-info/AUTHORS.rst,sha256=BrZjEJQq1IGpIop4B55rjPsTUOgVBtYxQ55ytP8uEGw,175
+django_slug_model_mixin-0.3.0.dist-info/LICENSE.md,sha256=xMpanCMdZ3OIJeh67SPuAB3gh_tGKjZ-mtmppb7aijM,1095
+django_slug_model_mixin-0.3.0.dist-info/METADATA,sha256=bilGN3bGNlIAZLYftKUWh2EH-v_WpUX5B1ZlRt1JtZo,3815
+django_slug_model_mixin-0.3.0.dist-info/WHEEL,sha256=-G_t0oGuE7UD0DrSpVZnq1hHMBV9DD2XkS5v7XpmTnk,110
+django_slug_model_mixin-0.3.0.dist-info/top_level.txt,sha256=ejMvSPixvQDXKZ-tU5WLCL1iXVf4m9F9aBKPBNEoYMo,17
+django_slug_model_mixin-0.3.0.dist-info/RECORD,,
