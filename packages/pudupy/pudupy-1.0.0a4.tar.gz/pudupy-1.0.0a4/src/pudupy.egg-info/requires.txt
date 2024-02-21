@@ -1,0 +1,8 @@
+opentrons
+sbol3_for_pudu
+xlsxwriter
+sbol-utilities-for-pudu
+
+[test]
+pytest<5.0.0
+pytest-cov[all]
