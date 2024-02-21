@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: pybell
+Version: 0.1.2
+Summary: Simple module to play a ding with Python. Useful for notifying you that a long-running shell command is done.
+Home-page: 
+Author: Oliver Vea
+Author-email: oliver.vea@gmail.com
+Requires-Dist: audioplayer~=0.6
+Requires-Dist: xdialog~=1.1.1.1
