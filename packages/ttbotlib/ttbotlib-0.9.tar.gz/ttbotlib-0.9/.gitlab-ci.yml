@@ -1,0 +1,11 @@
+stages:
+  - test
+
+test:
+  image: python:3.10
+  stage: test
+  script:
+    - make test
+    - make mypy
+  tags:
+    - docker

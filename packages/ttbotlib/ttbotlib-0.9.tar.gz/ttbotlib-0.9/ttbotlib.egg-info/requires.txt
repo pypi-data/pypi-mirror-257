@@ -1,0 +1,11 @@
+httpx<1.0
+uvicorn
+ttutils
+
+[dev]
+pytest-runner
+pytest
+pytest-asyncio
+pytest-cov
+ruff
+mypy
