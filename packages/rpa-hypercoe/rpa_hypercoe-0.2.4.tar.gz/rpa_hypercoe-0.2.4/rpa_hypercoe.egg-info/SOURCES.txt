@@ -1,0 +1,8 @@
+README.md
+setup.py
+rpa_hypercoe/Function.py
+rpa_hypercoe.egg-info/PKG-INFO
+rpa_hypercoe.egg-info/SOURCES.txt
+rpa_hypercoe.egg-info/dependency_links.txt
+rpa_hypercoe.egg-info/requires.txt
+rpa_hypercoe.egg-info/top_level.txt
