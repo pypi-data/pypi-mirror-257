@@ -1,0 +1,5 @@
+m9s-trytond<7.1,>=7.0
+m9s_account_invoice_discount<7.1,>=7.0
+m9s_purchase_supplier_discount<7.1,>=7.0
+
+[test]
