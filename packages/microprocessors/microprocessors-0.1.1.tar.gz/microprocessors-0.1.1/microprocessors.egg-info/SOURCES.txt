@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+microprocessors/__init__.py
+microprocessors/processors.py
+microprocessors/tests.py
+microprocessors.egg-info/PKG-INFO
+microprocessors.egg-info/SOURCES.txt
+microprocessors.egg-info/dependency_links.txt
+microprocessors.egg-info/top_level.txt
