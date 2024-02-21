@@ -1,0 +1,151 @@
+Metadata-Version: 2.1
+Name: TPCDS-PySpark
+Version: 1.0.1
+Summary: TPCDS_PySpark is a TPC-DS workload generator implemented in Python designed to run at scale using Apache Spark.
+Home-page: https://github.com/LucaCanali/Miscellaneous/tree/master/Performance_Testing/TPCDS_PySpark
+Author: Luca Canali
+Author-email: luca.canali@cern.ch
+License: Apache License, Version 2.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Education
+Classifier: Development Status :: 4 - Beta
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+
+TPCDS_PySpark is a TPC-DS workload generator written in Python and designed to run at scale using Apache Spark.  
+A key feature of this tool is the collection of performance metrics using [sparkMeasure](https://github.com/LucaCanali/sparkMeasure),
+a performance monitoring library for Apache Spark.  
+
+## Motivations
+- Compare performance across different Spark configurations and versions
+- Learn about collecting and analyzing Spark performance data, including timing and metrics measurements
+- Learn about Spark performance and optimization
+
+Contact: Luca.Canali@cern.ch - Feb 2024
+
+## Getting started
+
+Command line:
+```
+# pip install tpcds_pyspark 
+
+# Download the test data
+wget https://sparkdltrigger.web.cern.ch/sparkdltrigger/TPCDS/tpcds_10.zip
+unzip tpcds_10.zip
+
+# 1. Run the tool for a minimal test
+tpcds_pyspark_run.py -d tpcds_10 -n 1 -r 1 --queries "q1.sql, q2.sql"
+
+# 2. run all queries with default options
+./tpcds_pyspark_run.py -d tpcds_10 
+
+# 3. run all queries on a YARN cluster and save the metrics to a file
+spark-submit --master yarn --conf spark.log.level=error  --conf spark.executor.cores=8              --conf spark.executor.memory=32g --conf spark.driver.memory=4g              --conf spark.driver.extraClassPath=tpcds_pyspark/spark-measure_2.12-0.23.jar \ 
+             --conf spark.dynamicAllocation.enabled=false --conf spark.executor.instances=4               tpcds_pyspark_run.py -d tpcds_10 -o ./tpcds_10_out.cvs
+```
+
+## Installation and requirements:
+```
+pip install tpcds_pyspark
+pip install pyspark
+pip install sparkmeasure
+pip install pandas
+```
+
+## Usage:
+```
+tpcds_pyspark_run.py --help
+
+options:
+  -h, --help            show this help message and exit
+  --data_path DATA_PATH, -d DATA_PATH
+                        Path to the data folder with TPCDS data used for testing. Default: tpcds_10
+  --data_format DATA_FORMAT
+                        Data format of the data used for testing. Default: parquet
+  --num_runs NUM_RUNS, -n NUM_RUNS
+                        Number of runs, the TPCS workload will be run this number of times. Default: 2
+  --queries_repeat_times QUERIES_REPEAT_TIMES, -r QUERIES_REPEAT_TIMES
+                        Number of repetitions, each query will be run this number of times for each run. Default: 3
+  --sleep_time SLEEP_TIME, -s SLEEP_TIME
+                        Time in seconds to sleep before each query execution. Default: 1
+  --queries QUERIES, -q QUERIES
+                        List of TPCDS queries to run. Default: all
+  --output_file OUTPUT_FILE, -o OUTPUT_FILE
+                        Optional output file, this will contain the collected metrics details in csv format
+  --cluster_output_file CLUSTER_OUTPUT_FILE
+                        Optional, save the collected metrics to a csv file using Spark, use this to save to HDFS or S3
+  --run_using_metastore
+                        Run TPCDS using tables defined in metastore tables instead of temporary views. See also --create_metastore_tables to define the tables. Default: False
+  --create_metastore_tables
+                        Create metastore tables instead of using temporary views. Default: False
+  --create_metastore_tables_and_compute_statistics
+                        Create metastore tables and compute table statistics to use with Spark CBO. Default: False
+```
+
+## Use TPCDS PySpark as an API from Python:
+
+- Use the TPCDS class to run TPCDS workloads from your Python code:
+  - `pip install tpcds_pyspark`
+  - `from tpcds_pyspark import TPCDS`
+
+**API description: TPCDS**
+- **TPCDS(data_path, data_format, num_runs=2, queries_repeat_times, queries, sleep_time)**
+  - Defaults: data_path="./tpcds_10", data_format="parquet", num_runs=2, queries_repeat_times=3,
+              queries=tpcds_queries, sleep_time=1
+- data_path: path to the Parquet folder with TPCDS data used for testing
+- data_format: format of the TPCDS data, default: "parquet"
+- num_runs: number of runs, the TPCS worload will be run this number of times. Default: 2
+- queries_repeat_times: number of repetitions, each query will be run this number of times for each run. Default: 3
+- queries: list of TPCDS queries to run
+- sleep_time: time in seconds to sleep before each query execution. Default: 1
+- Example: tpcds = TPCDS(data_path="tpcds_10", queries=['q1.sql', 'q2.sql'])
+
+TPCDS class methods:
+- **map_tables:** map the TPCDS tables to the Spark catalog
+  - map_tables(self, define_temporary_views=True, define_catalog_tables=False): 
+  - this is a required step before running the TPCDS workload
+  - Example: tpcds.map_tables()
+- **run_TPCDS:** run the TPCDS workload
+  - run_TPCDS(self): 
+  - returns a dictionary with the collected metrics
+  - Example: results = tpcds.run_TPCDS() 
+- print_test_results: print the collected metrics to stdout
+  - print_test_results(self, results, file_csv=None, file_metadata=None, file_grouped=None, file_aggregated=None): 
+  - Example: tpcds.print_test_results(results)
+  - as side effect it populates the following class attributes: self.metadata, self.grouped, self.aggregated
+    containing the metadata, metrics grouped by query name and agregated metrics
+- save_with_spark: save the collected metrics to a cluster filesystem (HDFS, S3) using Spark
+  - save_with_spark(self, results, file_path): 
+  - Example: tpcds.save_with_spark(results, "HDFS_or_S3_path/my_test_metrics.csv") 
+- compute_table_statistics: compute table statistics for the TPCDS tables (optional)
+  - compute_table_statistics(self, collect_column_statistics=True)
+  - use only when mapping tables to the Spark catalog (metastore) and when the statistics are not available
+  - Example: tpcds.compute_table_statistics()
+
+
+## Output
+- The tool will print to stdout the collected metrics, including timing and metrics measurements.
+- Save the collected metrics to a local csv files: `-o my_test_metrics.csv`
+   - additionally, this will save metadata, metrics grouped by query name and aggregated metrics
+- Optionally, save the collected metrics to a cluster filesystem (HDFS, S3) using Spark: `--cluster_output_file HDF_orS3_path/my_test_metrics.csv` 
+
+
+## Download TPCDS Data
+The tool requires TPCDS benchmark data in parquet or other format. 
+For convenience the TPCDS benchmark data at scale 10G can be downloaded from:
+```
+# TPCDS scale 10G
+wget https://sparkdltrigger.web.cern.ch/sparkdltrigger/TPCDS/tpcds_10.zip
+unzip tpcds_10.zip
+```
+
+## Generate data with a configurable scale factor
+
+- You can generate Spark TPCDS benchmark data at any scale using the following steps:
+  - Download and build the Spark package from https://github.com/databricks/spark-sql-perf
+  - Download and build tpcds-kit for generating data from https://github.com/databricks/tpcds-kit
