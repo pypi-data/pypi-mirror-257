@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: dataforseo-client
+Version: 1.0.6
+Summary: DataForSEO API documentation
+Author: dataforseo
+Author-email: info@dataforseo.com
+Keywords: OpenAPI,OpenAPI-Generator,DataForSEO API documentation
+Description-Content-Type: text/markdown
+Requires-Dist: urllib3<2.1.0,>=1.25.3
+Requires-Dist: python-dateutil
+Requires-Dist: pydantic>=2
+Requires-Dist: typing-extensions>=4.7.1
+
+API client that provide services of DataForSeo API (https://dataforseo.com/)
+
+For more information about client code generation, please follow to github (https://github.com/dataforseo/PythonClient) 
