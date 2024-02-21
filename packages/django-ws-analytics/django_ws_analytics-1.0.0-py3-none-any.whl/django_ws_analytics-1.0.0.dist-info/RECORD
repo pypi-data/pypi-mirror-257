@@ -1,0 +1,17 @@
+ws_analytics/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ws_analytics/admin.py,sha256=EY6bwjitdHMgbw51fDCzP2IqcTqpXsB9Q6p2eNoyazk,958
+ws_analytics/apps.py,sha256=jtXy95zXtN4UH861TJvunBq-E6lzStzCvO38Leq4hkg,1341
+ws_analytics/middleware.py,sha256=i7249Q-8GBIZNhkSVI6ON1MgUUpn9AoOOzMGir5BITM,6033
+ws_analytics/models.py,sha256=LQ_lqkIlixyBeg2103_IBLggWINpPDZtqMDC0X3TLCU,2717
+ws_analytics/module_ws_analytics.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ws_analytics/services.py,sha256=tFM6sFg_9piCjK95wBy_WjB0jsZ4L3SqPauFcmtucH8,3157
+ws_analytics/sessions.py,sha256=6bH0STIUP-d9vKJ_r9iEm5JeEaLcaG16eN8XsqfryI8,2226
+ws_analytics/settings.py,sha256=U53iwoXIz_y8HRCql1E5cJYFfIVvkcQ5lW6WZmIxmxo,582
+ws_analytics/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+ws_analytics/urls.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ws_analytics/views.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_ws_analytics-1.0.0.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+django_ws_analytics-1.0.0.dist-info/METADATA,sha256=CH27j8yW-BxEcWf4y5MZIED16iEcCsiKcBpA-YHoi7s,3400
+django_ws_analytics-1.0.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+django_ws_analytics-1.0.0.dist-info/top_level.txt,sha256=AvYEcvf6bG6H4S-8UDxfcgm1b3_490j8JmYUtKByS4Y,13
+django_ws_analytics-1.0.0.dist-info/RECORD,,
