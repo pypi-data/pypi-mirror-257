@@ -1,0 +1,7 @@
+numpy
+
+[all]
+geohub[extra]
+
+[extra]
+pandas
