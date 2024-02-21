@@ -1,0 +1,10 @@
+README.md
+setup.py
+ApplicationTracker/__init__.py
+ApplicationTracker/main.py
+GmailJobApplicationTracker.egg-info/PKG-INFO
+GmailJobApplicationTracker.egg-info/SOURCES.txt
+GmailJobApplicationTracker.egg-info/dependency_links.txt
+GmailJobApplicationTracker.egg-info/entry_points.txt
+GmailJobApplicationTracker.egg-info/requires.txt
+GmailJobApplicationTracker.egg-info/top_level.txt

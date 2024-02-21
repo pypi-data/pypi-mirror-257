@@ -1,0 +1,2 @@
+[console_scripts]
+track = ApplicationTracker.main:main
