@@ -1,0 +1,13 @@
+tap_sleeper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tap_sleeper/schemas/__init__.py,sha256=bnU5n1Vi9nogX9YPSeYtkwcOXxNYOv2dZdVEfFIDVLA,367
+tap_sleeper/schemas/league.py,sha256=XnwybsPBRFe0BsQHMlaWt7glJsSxFObLxxbar-N-OxU,9392
+tap_sleeper/schemas/players.py,sha256=qVkE4_-3wwXnKwblGtDXHPPlr1ZTxOhRD8LgTb_qrOE,2656
+tap_sleeper/schemas/sport_state.py,sha256=BK-k9l3qsBojp67HTFpr7FzlsFpHW1WqbdpEm4rhqx0,796
+tap_sleeper/streams.py,sha256=z5ExrTUvgmak7ZRlQLeRFtRItQVt8zmlvvGRRhg7jGk,8384
+tap_sleeper/tap.py,sha256=HwL51aIp82eRmnM1iymuQAzDPTKM8HT2niSas0plg4E,2137
+tap_sleeper/tests/__init__.py,sha256=p9X2FP6hz7g09gXK72iFqRrAAsHKmhh8bEgMSNOR8z4,34
+tap_sleeper/tests/test_core.py,sha256=iGWqYp40XUy0xkeHYPLIBQ3SwDcrjJMO4wvuVDeeh8U,508
+tap_sleeper-0.3.0.dist-info/entry_points.txt,sha256=xQdutzsliupFx-SsgKz9Brbha2SduXfubZJ9q86yhHo,62
+tap_sleeper-0.3.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+tap_sleeper-0.3.0.dist-info/METADATA,sha256=ZDYNg3VuD_X8rf7lPI6n_kNNv47TfY1_ZSaQK1nWFoE,4797
+tap_sleeper-0.3.0.dist-info/RECORD,,
