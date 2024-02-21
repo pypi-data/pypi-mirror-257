@@ -1,0 +1,8 @@
+[tool.poetry]
+name = "Finding_minimum_subnet"
+version = "0.1.0"
+description = "Application for finding the minimum subnet for a given set of IP addresses in Python 3.6.15"
+authors = ["Igor Kovalev <kovalev-i@mail.ru>"]
+
+[tool.poetry.dependencies]
+python = ">=3.6"

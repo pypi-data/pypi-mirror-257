@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: Finding-minimum-subnet
+Version: 0.1
+Summary: Application for finding the minimum subnet for a given set of IP addresses in Python 3.6.15
+Home-page: https://github.com/IgorYKovalev/Finding_minimum_subnet
+Author: Igor Kovalev
+Author-email: kovalev-i@mail.ru
+License: BSD
+Platform: UNKNOWN
+License-File: LICENSE
+
+UNKNOWN
+
