@@ -1,0 +1,11 @@
+setup.py
+BIOViewer/__init__.py
+BIOViewer/config.py
+BIOViewer/display.py
+BIOViewer/loader.py
+BIOViewer/transforms.py
+BIOViewer/viewers.py
+BIOViewer.egg-info/PKG-INFO
+BIOViewer.egg-info/SOURCES.txt
+BIOViewer.egg-info/dependency_links.txt
+BIOViewer.egg-info/top_level.txt
