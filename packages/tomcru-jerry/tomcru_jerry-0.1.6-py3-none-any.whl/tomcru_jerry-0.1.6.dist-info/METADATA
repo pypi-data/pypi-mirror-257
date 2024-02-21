@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: tomcru_jerry
+Version: 0.1.6
+Summary: General purpose web library
+Home-page: https://github.com/dkgs/tomcru-jerry
+Author: oboforty
+Author-email: rajmund.csombordi@hotmail.com
+License: MIT
+License-File: LICENSE
+Requires-Dist: flask
+Provides-Extra: static
+Requires-Dist: pynliner ; extra == 'static'
+Requires-Dist: beautifulsoup4 ; extra == 'static'
+Requires-Dist: htmlmin ; extra == 'static'
+Requires-Dist: jinja2 ; extra == 'static'
+
