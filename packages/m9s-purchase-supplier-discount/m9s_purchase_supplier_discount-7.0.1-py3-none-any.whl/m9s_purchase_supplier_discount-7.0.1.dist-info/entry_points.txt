@@ -1,0 +1,2 @@
+[trytond.modules]
+purchase_supplier_discount = trytond.modules.purchase_supplier_discount
