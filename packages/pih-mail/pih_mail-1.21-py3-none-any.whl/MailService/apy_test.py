@@ -1,0 +1,13 @@
+email: str = parameter_list.next()
+            result = validate_email(
+                email_address=email,
+                check_format=True,
+                check_blacklist=True,
+                check_dns=True,
+                dns_timeout=10,
+                check_smtp=True,
+                smtp_timeout=10,
+                smtp_skip_tls=False,
+                smtp_tls_context=None,
+                smtp_debug=False,
+                address_types=frozenset([IPv4Address, IPv6Address]))
