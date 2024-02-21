@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: rems
+Version: 0.3.0
+Summary: Robotics Educational Middleware System
+Author: UCLA LEMUR
+License: LGPLv3
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: Robot Framework
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: plotly
+Requires-Dist: pillow
+Requires-Dist: defdict
+Requires-Dist: pandas
+Requires-Dist: websocket-client
+Provides-Extra: async
+Requires-Dist: scikit-learn ; extra == 'async'
+Requires-Dist: pydantic ==1.9.1 ; extra == 'async'
+Requires-Dist: ray[default] ==2.1.0 ; extra == 'async'
+Requires-Dist: redis ; extra == 'async'
+Requires-Dist: protobuf ~=3.19.0 ; extra == 'async'
+Requires-Dist: geomdl ; extra == 'async'
+Provides-Extra: core
+Provides-Extra: full
+Requires-Dist: scikit-learn ; extra == 'full'
+Requires-Dist: pydantic ==1.9.1 ; extra == 'full'
+Requires-Dist: ray[default] ==2.1.0 ; extra == 'full'
+Requires-Dist: redis ; extra == 'full'
+Requires-Dist: protobuf ~=3.19.0 ; extra == 'full'
+Requires-Dist: geomdl ; extra == 'full'
+Requires-Dist: pygame ; extra == 'full'
+Requires-Dist: pynput ; extra == 'full'
+Provides-Extra: joystick
+Requires-Dist: pygame ; extra == 'joystick'
+Provides-Extra: keyboard
+Requires-Dist: pynput ; extra == 'keyboard'
+
