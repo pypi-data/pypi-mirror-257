@@ -1,0 +1,7 @@
+llmescache/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+llmescache/langchain.py,sha256=AnGXiCShkWbmDq3xtECqC3S4AIWDOzVA35rwicrL2BA,5825
+llmescache/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+llm_elasticsearch_cache-0.1.2.dist-info/LICENSE,sha256=qjPukuI4yIlz9fp7PK3P2gjrs2ReDYaAF1HKsmHKGtA,1067
+llm_elasticsearch_cache-0.1.2.dist-info/METADATA,sha256=bK2iU_y7-1BdrCZlKOuSLwHdEf4D1w9jLdxzEfTRrDg,3588
+llm_elasticsearch_cache-0.1.2.dist-info/WHEEL,sha256=Zb28QaM1gQi8f4VCBhsUklF61CTlNYfs9YAZn-TOGFk,88
+llm_elasticsearch_cache-0.1.2.dist-info/RECORD,,
