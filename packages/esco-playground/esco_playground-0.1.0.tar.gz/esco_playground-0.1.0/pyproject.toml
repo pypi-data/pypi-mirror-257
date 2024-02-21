@@ -1,0 +1,20 @@
+[project]
+name = "esco_playground"
+dynamic = ['dependencies', 'optional-dependencies', 'version']
+
+[build-system]
+requires = ["setuptools>=64", "setuptools_scm>=8"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+optional-dependencies.dev = {file = ["requirements-dev.txt"]}
+optional-dependencies.langchain = {file = ["requirements-langchain.txt"]}
+
+[tool.setuptools.package-data]
+esco = ["esco*.json.gz"]
+
+[tool.setuptools.packages.find]
+exclude = ["docs*", "tests*", "model*"]
+
+[tool.setuptools_scm]

@@ -1,0 +1,10 @@
+dist
+esco
+generated
+ontologies
+qdrant-all-MiniLM-L12-v2
+qdrant-paraphrase-MiniLM-L3-v2
+qdrant-paraphrase-albert-small-v2
+schemas
+sparql
+vocabularies

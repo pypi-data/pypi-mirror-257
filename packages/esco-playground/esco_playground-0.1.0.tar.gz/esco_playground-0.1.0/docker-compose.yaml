@@ -1,0 +1,48 @@
+#
+#
+#
+# $ docker-compose up -d virtuoso
+#
+version: "3.9"
+services:
+  dev:
+    build: .
+    working_dir: /code
+    volumes:
+      - .:/code
+    entrypoint: [sleep, infinity]
+
+  test:
+    build: .
+    working_dir: /code
+    volumes:
+      - .:/code
+    entrypoint: [tox, -e, py3]
+    depends_on:
+      - qdrant
+      - virtuoso
+  qdrant:
+    image: qdrant/qdrant:latest
+    ports:
+      - "6333:6333"
+      - "6334:6334"
+  cors:
+    image: nginx
+    depends_on:
+    - virtuoso
+    volumes:
+      - ./sparql/nginx.conf:/etc/nginx/conf.d/default.conf
+    ports:
+      - "8890:80/tcp"
+  virtuoso:
+    # user: "1000:1000"
+    image: tenforce/virtuoso
+    ports:
+    - "18890:8890/tcp"
+    volumes:
+    - .:/code
+    - ./vocabularies:/usr/local/virtuoso-opensource/share/virtuoso/vad/vocabularies
+    - ./ontologies:/usr/local/virtuoso-opensource/share/virtuoso/vad/ontologies
+    - ./schemas:/usr/local/virtuoso-opensource/share/virtuoso/vad/schemas
+    - ./sparql/virtuoso.sh:/virtuoso.sh
+    - ./sparql/virtuoso.ini:/conf/virtuoso.ini
