@@ -1,0 +1,10 @@
+anki_deck_from_text/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+anki_deck_from_text/cli.py,sha256=-NAimHBcMwPXJTC48WlP6DXWn_BnK_Seh4mBWOSbwIQ,1512
+anki_deck_from_text/generate_deck.py,sha256=dgyDyQQ-FHq3MUZFJAg38yQ7rcaj6UD-P99UZjrD-Ns,1519
+anki_deck_from_text/models.py,sha256=KtNOMZwh_4tfEAvBkV13OqhK_VIias-AAsAUcuOhuG4,1970
+anki_deck_from_text/parse_input.py,sha256=1MsYaRdCQMCNILJOPiH3pNZPqVdIRrS3TQHAssqz9L4,788
+anki_deck_from_text-1.3.2.dist-info/LICENSE,sha256=mRMAPEuqe1ND9FYzTY-zQxOoU_DA6HtPUh4XbVXIa7E,1500
+anki_deck_from_text-1.3.2.dist-info/METADATA,sha256=AleovgJjdWwoW5JO_lE9RaeR3sF7XBy1wPbej7IZU_c,4329
+anki_deck_from_text-1.3.2.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+anki_deck_from_text-1.3.2.dist-info/entry_points.txt,sha256=pKgdLfrWLf71Z575QaFJNd3jKmVC4hw4smVsgHuBkrE,67
+anki_deck_from_text-1.3.2.dist-info/RECORD,,
