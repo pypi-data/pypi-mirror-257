@@ -1,0 +1,12 @@
+aiosfstream_ng/__init__.py,sha256=XScLTEAFdiCbp4Z-Axe-uzW5ndtugdLl6FleCa_fXu8,950
+aiosfstream_ng/_metadata.py,sha256=Dwv1cCm9Hjwi_SYD7Ywn4XGu_nKyi5SIZWNW1DkB42A,520
+aiosfstream_ng/auth.py,sha256=rM6RsueWLzZkSbIreQ7CRfWWS7a23LuZeDttNa6ih8s,9989
+aiosfstream_ng/client.py,sha256=Vl6P9onbF0Mz4tKg3_-Y3FLzXQPN5qzZ2TBs-LOkpJU,17013
+aiosfstream_ng/exceptions.py,sha256=phFxiG8zdaE0jQxii6vP6YUjo-SscJ1YzdZwcQA3SD8,4735
+aiosfstream_ng/py.typed,sha256=qvMWwBEgc3rYU78bBPtaCXibkNuPeIXRYljQBD0JzpE,14
+aiosfstream_ng/replay.py,sha256=ftwDHseDMa_LWdAiF7t6BLzcGDSW6JKXcD4iabxvL8U,12219
+aiosfstream_ng-0.7.5.dist-info/LICENSE.txt,sha256=E434hAxhXZDjuIzOpMe477QQ6zoKoee5Cy1RTD-RrYI,1094
+aiosfstream_ng-0.7.5.dist-info/METADATA,sha256=zFEsWsA8QsOV6xlRvW4ugDJw6h-2N6sAbUrV3t0wgDo,7590
+aiosfstream_ng-0.7.5.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+aiosfstream_ng-0.7.5.dist-info/top_level.txt,sha256=cElSQnU6g58BYaAGNTs4s2oeAhJsvQOEFwnPrwBM-wQ,15
+aiosfstream_ng-0.7.5.dist-info/RECORD,,
