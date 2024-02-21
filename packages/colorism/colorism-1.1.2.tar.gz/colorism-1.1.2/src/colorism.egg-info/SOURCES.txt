@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+src/colorism/__init__.py
+src/colorism/color.py
+src/colorism/converter.py
+src/colorism.egg-info/PKG-INFO
+src/colorism.egg-info/SOURCES.txt
+src/colorism.egg-info/dependency_links.txt
+src/colorism.egg-info/top_level.txt
+test/test_converter.py
+test/test_textstyle.py
