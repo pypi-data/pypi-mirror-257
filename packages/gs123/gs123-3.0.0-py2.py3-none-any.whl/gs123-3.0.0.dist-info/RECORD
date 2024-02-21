@@ -1,0 +1,14 @@
+gs123/__init__.py,sha256=AFhurFiVV-xHjDpuDiwgYJcen3dnJAIq5UKW-v0TRz0,152
+gs123/check_digit.py,sha256=wpHROQzQdQl_uq21aJ9YGcgICwHXzuAfofk6PvsHMEs,1301
+gs123/conversion.py,sha256=6VRtrfJBk9l6uWnyILdJHY8e1qjMKhEpKqV1VSQBTRg,15042
+gs123/gs123conversion.py,sha256=KvT8AIh23NFrkN-RU65HCnvWPNYN__6WAIuhUtBaA7E,1406
+gs123/regex.py,sha256=W9c0u7DKM4ZiLpg6GdPq-RSPt4VU-BDpEEkMnuNOi-A,4943
+gs123/steps.py,sha256=46f9YO65mLb21Ud_vYEXBTn-NC6Gc4QVeiZy_CbAlzs,8088
+gs123/xml_conversion.py,sha256=ImRpmngnvpcZU3UR0oGNhKlnnkgthMsNfsKC0pg9CHA,3615
+gs123-3.0.0.dist-info/AUTHORS.rst,sha256=6G_vnLj-_yyoF7cc7GmV3UyhcV7gux_v6cPojSAXtIA,160
+gs123-3.0.0.dist-info/LICENSE,sha256=VAFob7zRRkCGLgdrr7xKhL0DalJsDcl8pxZr_nL9MwM,32405
+gs123-3.0.0.dist-info/METADATA,sha256=KbO5C-4u3MTmt5zMby9_yHyM-1JvSh59EuDw2WJnrzQ,1693
+gs123-3.0.0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+gs123-3.0.0.dist-info/entry_points.txt,sha256=yjs-XGYy2aSrPMwOiQOCfe5jYlwnEXgk4kyDzhBeQA8,42
+gs123-3.0.0.dist-info/top_level.txt,sha256=wbxOwI6jRhMNIoLvBwmKs--wMo4dZ3gvBrls_j21FHU,6
+gs123-3.0.0.dist-info/RECORD,,
