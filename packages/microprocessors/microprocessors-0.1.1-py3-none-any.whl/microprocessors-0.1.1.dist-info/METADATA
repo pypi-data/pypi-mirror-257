@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: microprocessors
+Version: 0.1.1
+Summary: A simulation of the RiSC-16 (Ridiculously Simple Computer - 16 bit) processor.
+Home-page: UNKNOWN
+Author: Alexandre Le Mercier
+Author-email: alexandre.le.mercier@ulb.be
+License: MIT
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# MICROPROCESSORS
+
+## Documentation
+Refer to the in-line comments and method docstrings for detailed usage of each feature.
+
+## Contribution
+Contributions are welcome! Feel free to submit pull requests, suggest features, or report bugs.
+
+## License
+This library is distributed under the MIT license. See `LICENSE` for more information.
+
+## Contact
+- **Author**: Alexandre Le Mercier
+- **Date**: February 20, 2024
+- **Email**: [alexandre.le.mercier@ulb.be](mailto:alexandre.le.mercier@ulb.be)
+- **LinkedIn**: [Alexandre Le Mercier](https://www.linkedin.com/in/alexandre-le-mercier-7b5594283/details/experience/)
+
+Happy coding!
+
