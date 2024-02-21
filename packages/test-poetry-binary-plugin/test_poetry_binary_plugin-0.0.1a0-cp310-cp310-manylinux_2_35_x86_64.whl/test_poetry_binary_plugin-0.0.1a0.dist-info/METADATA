@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: test-poetry-binary-plugin
+Version: 0.0.1a0
+Summary: 
+Author: Thomas Mahé
+Author-email: contact@tmahe.dev
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Provides-Extra: dependencies
+Description-Content-Type: text/markdown
+
+
