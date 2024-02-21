@@ -1,0 +1,15 @@
+[package]
+name = "poker_environment"
+version = "0.1.1"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "poker_environment"
+crate-type = ["cdylib"]
+
+[dependencies]
+itertools = "0.12.1"
+pyo3 = "0.19.0"
+rand = { version = "0.8.5", features = ["std_rng"] }
+uuid = { version = "1.7.0", features = ["v4"] }
