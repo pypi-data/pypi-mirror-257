@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: crypteia
+Version: 1.0.0
+Summary: Cryptographer's content-addressing companion.
+Author: Nei Cardoso de Oliveira Neto
+Author-email: nei@teialabs.com
+License-File: LICENSE
+Requires-Dist: multiformats
