@@ -1,0 +1,13 @@
+domains/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+domains/issue.py,sha256=Hw4W_dswzibY04m_jumRqLAniJTMUVSjYuxRVIK9NAc,4295
+domains/synchronisation.py,sha256=jfRBFow2XGyTTwWKbPjDeBzkM-QMx-K8CFfYITC15Hg,3140
+implementations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+implementations/implementation_issue_S1.py,sha256=jJZsZ2KyuHyzuJ-Wm9cE8Se6kmRpVQJo8EhpFynFWd8,3040
+implementations/implementation_issue_S2.py,sha256=R70b9cI2rHU7tO8UUv9DVbDTikS2bFldcM3c2pBaLgQ,8431
+implementations/implementation_synchronisation_S1.py,sha256=ytThSlNRF8vA0y6sBY0fn80-8dDw79Q6sOYWtlMK-Rw,631
+implementations/implementation_synchronisation_S2.py,sha256=ytThSlNRF8vA0y6sBY0fn80-8dDw79Q6sOYWtlMK-Rw,631
+implementations/implementation_table_correpondance_key_id.py,sha256=BlndmU8RnHVkJ3vvDmZkOMV2YfvwrNfPg6hRAYpgUTY,1711
+synchros1s2-0.0.7.dist-info/METADATA,sha256=HQYVm25RNGNpzgnRptHaoe7My9h0HhNgLNaIqdW7iZE,1136
+synchros1s2-0.0.7.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+synchros1s2-0.0.7.dist-info/top_level.txt,sha256=q_Pf5vnV4d-CtkRxbSiWoHEI5m2k8CvrPQ2KkyKWxGE,24
+synchros1s2-0.0.7.dist-info/RECORD,,
