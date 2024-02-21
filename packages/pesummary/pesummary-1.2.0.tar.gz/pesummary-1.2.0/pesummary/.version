@@ -1,0 +1,11 @@
+# pesummary version information
+
+version = '1.2.0'
+last_stable_release = '1.2.0'
+
+git_hash = '298dae34'
+git_author = 'Duncan Macleod <duncan.macleod@ligo.org>'
+git_status = 'CLEAN: All modifications committed'
+git_builder = 'Charlie Hoy <charlie.hoy@port.ac.uk>'
+git_build_date = '2024-02-20 10:32:47 +0000'
+
