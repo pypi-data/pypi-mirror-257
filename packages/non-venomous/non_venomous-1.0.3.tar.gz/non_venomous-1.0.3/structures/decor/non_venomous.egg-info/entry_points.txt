@@ -1,0 +1,2 @@
+[console_scripts]
+non_venomous = non_venomous:clique
