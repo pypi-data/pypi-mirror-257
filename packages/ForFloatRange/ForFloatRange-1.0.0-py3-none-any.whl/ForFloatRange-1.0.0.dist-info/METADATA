@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: ForFloatRange
+Version: 1.0.0
+Summary: Range with float
+Author: Nova D Andrew
+Author-email: andrew.d.nova@icloud.com
+Requires-Python: >=3.6
+
