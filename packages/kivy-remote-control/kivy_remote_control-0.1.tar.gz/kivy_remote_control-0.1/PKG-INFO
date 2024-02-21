@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: kivy_remote_control
+Version: 0.1
+Summary: Kivy android joystick for mavsdk
+Home-page: https://github.com/uberkie/kivy_remote_control
+Author: aj
+Author-email: aj@datainc.co.za
+License: MIT
+Download-URL: https://github.com/user/kivy_remote_control/archive/v_01.tar.gz
+Description: UNKNOWN
+Keywords: kivy,mavlink,mavsdk,joystick,android
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
