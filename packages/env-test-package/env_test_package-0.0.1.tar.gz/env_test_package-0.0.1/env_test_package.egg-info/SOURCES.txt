@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+env_test_package.egg-info/PKG-INFO
+env_test_package.egg-info/SOURCES.txt
+env_test_package.egg-info/dependency_links.txt
+env_test_package.egg-info/top_level.txt
