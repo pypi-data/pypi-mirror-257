@@ -1,0 +1,2 @@
+audioplayer~=0.6
+xdialog~=1.1.1.1
