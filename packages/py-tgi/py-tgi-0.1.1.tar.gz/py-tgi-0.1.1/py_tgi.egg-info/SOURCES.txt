@@ -1,0 +1,9 @@
+README.md
+setup.py
+py_tgi/__init__.py
+py_tgi/utils.py
+py_tgi.egg-info/PKG-INFO
+py_tgi.egg-info/SOURCES.txt
+py_tgi.egg-info/dependency_links.txt
+py_tgi.egg-info/requires.txt
+py_tgi.egg-info/top_level.txt

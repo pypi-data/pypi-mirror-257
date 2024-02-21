@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: py-tgi
+Version: 0.1.1
+Summary: A Python wrapper around TGI
+Home-page: https://github.com/IlyasMoutawwakil/py-tgi
+Author: Ilyas Moutawwakil
+Author-email: ilyas.moutawwakil@gmail.com
+Keywords: python,tgi,llm,huggingface,docker
+Platform: linux
+Platform: windows
+Platform: macos
+Classifier: Environment :: GPU :: NVIDIA CUDA :: 11.8
+Classifier: Environment :: GPU :: NVIDIA CUDA :: 12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Natural Language :: English
+Description-Content-Type: text/markdown
+Requires-Dist: docker
+Requires-Dist: huggingface-hub
+
+# Py-TGI
+
+Py-TGI is a Python wrapper around [TGI](https://github.com/huggingface/text-generation-inference) to enable creating and running TGI servers and clients in a similar style to vLLM
+
+## Installation
+
+```bash
+pip install py-tgi
+```
+
+## Usage
+
+Running a TGI server with a batched inference client:
+
+```python
+# from logging import basicConfig, INFO
+# basicConfig(level=INFO)
+from py_tgi import TGI
+
+llm = TGI(model="TheBloke/Mistral-7B-Instruct-v0.1-AWQ", quantize="awq")
+
+try:
+    output = llm.generate(["Hi, I'm an example 1", "Hi, I'm an example 2"])
+    print("Output:", output)
+except Exception as e:
+    print(e)
+finally:
+    llm.close()
+```
+
+Output: [".\n\nHi, I'm an example 2.\n\nHi, I'm", ".\n\nI'm a simple example of a class that has a method that returns a value"]
