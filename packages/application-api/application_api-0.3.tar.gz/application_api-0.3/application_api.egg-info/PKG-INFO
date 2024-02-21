@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: application_api
+Version: 0.3
+Summary: API for student application
+Home-page: https://github.com/John-sys/student_application_api
+Author: John Gbaya-Kokoya
+Author-email: gbayakokoyajohnjr@gmail.com
+Maintainer: John Gbaya-Kokoya
+Maintainer-email: gbayakokoyajohnjr@gmail.com
+License: MIT
+Keywords: student,application
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
