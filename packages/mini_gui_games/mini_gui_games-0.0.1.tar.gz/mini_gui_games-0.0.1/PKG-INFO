@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: mini_gui_games
+Version: 0.0.1
+Summary: small funny games
+Home-page: https://github.com/Vskesha/Mini_GUI_Games
+License: MIT
+Keywords: games,gui,bandergoose,hanoitower,snake,tictactoe
+Author: Vasyl Boliukh
+Author-email: vskesha@gmail.com
+Maintainer: Vasyl Boliukh
+Maintainer-email: vskesha@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Games/Entertainment
+Requires-Dist: colorama (>=0.4.6,<0.5.0)
+Requires-Dist: pygame (>=2.5.2,<3.0.0)
+Project-URL: Documentation, https://github.com/Vskesha/Mini_GUI_Games/blob/main/README.md
+Project-URL: Repository, https://github.com/Vskesha/Mini_GUI_Games
+Description-Content-Type: text/markdown
+
+# Mini_GUI_Games
+### small funny games
+
+## Installation
+
+## Usage
+
+## Screenshots
+
+### HannoiTower
+![](screenshots/hanoitower1.png) | ![](screenshots/hanoitower2.png)
+:--- | :---
+
+### TicTacToe
+![](screenshots/tictactoe1.png) | ![](screenshots/tictactoe2.png) | ![](screenshots/tictactoe3.png) | ![](screenshots/tictactoe4.png)
+:--- | :--- | :--- | :--- 
+
+### Snake
+![](screenshots/snake1.png) | ![](screenshots/snake2.png) | ![](screenshots/snake3.png)
+:--- | :--- | :--- 
+
+### BanderGoose
+![](screenshots/bandergoose1.png) | ![](screenshots/bandergoose2.png)
+:--- | :--- 
+
