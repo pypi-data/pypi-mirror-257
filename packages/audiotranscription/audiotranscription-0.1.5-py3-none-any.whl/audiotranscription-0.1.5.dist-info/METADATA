@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: audiotranscription
+Version: 0.1.5
+Requires-Dist: numpy
+Requires-Dist: pyannote.audio
+Requires-Dist: pandas
+Requires-Dist: deepmultilingualpunctuation
+Requires-Dist: openai-whisper
+Requires-Dist: google-cloud-speech
+
