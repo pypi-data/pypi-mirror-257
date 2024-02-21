@@ -1,0 +1,7 @@
+[console_scripts]
+cleanpowheg=powheg_tools.cleanpowheg:main
+geninitrwgt=powheg_tools.geninitrwgt:main
+genpwgseeds=powheg_tools.genpwgseeds:main
+rivet_pdf_rename=powheg_tools.rivet_pdf_rename:main
+yoda-auc=powheg_tools.yoda_auc:main
+
