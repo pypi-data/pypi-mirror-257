@@ -1,0 +1,2 @@
+include flowmelet/static/*
+include flowmelet/templates/*
