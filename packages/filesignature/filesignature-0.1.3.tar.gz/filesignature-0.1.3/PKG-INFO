@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: filesignature
+Version: 0.1.3
+Summary: File signature comparison tool, magic numbers.
+Home-page: https://github.com/kurotom/filesignature
+License: GPL-3.0-or-later
+Keywords: filesignature,file signature,magicnumbers,magic numbers
+Author: kurotom
+Author-email: 55354389+kurotom@users.noreply.github.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: File Formats
+Requires-Dist: chardet (>=5.2.0,<6.0.0)
+Requires-Dist: filesignaturecollectors (>=0.1.7,<0.2.0)
+Project-URL: Bug Tracker, https://github.com/kurotom/filesignature/issues
+Project-URL: Repository, https://github.com/kurotom/filesignature
+Description-Content-Type: text/markdown
+
+# filesignature
+
+Tool that allows to search, extract, compare the signature of the files (`magic numbers`) and return the obtained information.
+
+The purpose of this project is to check that a file is valid, i.e. the extension and the hexadecimal signature correspond.
+
+
+>
+> The "byte offset" refers to the position of a specific byte within a file or in a sequence of bytes.
+> 11 byte offsets -> indicates that the first 11 bytes must be shifted to get the desired byte mark.
+>
+
+# Install package
+
+```bash
+pip install filesignature
+```
+
+
+# Usage
+
+```python
+>>> from filesignature import FileSignature
+>>>
+>>> f = FileSignature()
+>>>
+>>> bytes_data = b'\xef\xbb\xbfhello'
+>>> print(f.check_bytes_type(raw_data=bytes_data, extention='txt'))
+('EF BB BF', '0', 'txt')
+>>>
+>>> print(f.check_file_type('file.pdf'))
+{'filename': 'file', 'file_extention': 'pdf', 'mimetype': 'application/pdf', 'file_signature': True}
+>>>
+>>> print(f.check_file_type('file.pdf', get_bool=True))
+True
+```
+

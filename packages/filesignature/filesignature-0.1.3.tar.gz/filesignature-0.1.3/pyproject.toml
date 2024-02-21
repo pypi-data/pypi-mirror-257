@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "filesignature"
+version = "0.1.3"
+description = "File signature comparison tool, magic numbers."
+authors = ["kurotom <55354389+kurotom@users.noreply.github.com>"]
+readme = "README.md"
+license = "GPL-3.0-or-later"
+packages = [{include = 'filesignature'}]
+keywords = ["filesignature", "file signature", "magicnumbers", "magic numbers"]
+classifiers = [
+"Topic :: File Formats",
+"Programming Language :: Python :: 3.7",
+"Programming Language :: Python :: 3.8",
+"Programming Language :: Python :: 3.9",
+"Programming Language :: Python :: 3.10",
+"Programming Language :: Python :: 3.11"
+]
+repository = "https://github.com/kurotom/filesignature"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+filesignaturecollectors = "^0.1.7"
+chardet = "^5.2.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/kurotom/filesignature/issues"
