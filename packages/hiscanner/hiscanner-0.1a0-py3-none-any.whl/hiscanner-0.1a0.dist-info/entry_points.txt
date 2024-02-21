@@ -1,0 +1,4 @@
+[console_scripts]
+hiscanner-init=hiscanner.create_config:main
+hiscanner-segment=hiscanner.cli:main
+
