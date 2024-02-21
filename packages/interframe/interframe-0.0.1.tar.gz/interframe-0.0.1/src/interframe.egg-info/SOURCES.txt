@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/interframe/__init__.py
+src/interframe/interframe.py
+src/interframe.egg-info/PKG-INFO
+src/interframe.egg-info/SOURCES.txt
+src/interframe.egg-info/dependency_links.txt
+src/interframe.egg-info/entry_points.txt
+src/interframe.egg-info/top_level.txt
