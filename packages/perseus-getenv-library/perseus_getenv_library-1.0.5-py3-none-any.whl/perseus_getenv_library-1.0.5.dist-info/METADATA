@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: perseus-getenv-library
+Version: 1.0.5
+Summary: Python library helper for reading environment variables
+Home-page: https://github.com/majormode/perseus-getenv-python-library
+License: SEE LICENSE IN <LICENSE.md>
+Keywords: env,library,perseus
+Author: Daniel CAUNE
+Author-email: daniel.caune@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Libraries
+Requires-Dist: perseus-core-library (>=1.19,<2.0)
+Requires-Dist: python-dotenv (>=1.0,<2.0)
+Project-URL: Repository, https://github.com/majormode/perseus-getenv-python-library
+Description-Content-Type: text/markdown
+
+# Perseus GetEnv Python Library
+
+Majormode Perseus GetEnv Python Library is a helper library to read environment variables.
+
+This library relies on [`python-dotenv`](https://github.com/theskumar/python-dotenv) to read key-value pairs from a `.env` file, which helps in the development of applications following the [12-factor principles](https://12factor.net/).
+
+This library provides a helper function to convert the value of environment variables in the expected data type.
+
+## Installation
+
+To install [Perseus GetEnv Python Library](https://github.com/dcaune/perseus-getenv-python-library), simply enter the follow command line:
+
+``` shell
+pip install perseus-getenv-library
+```
+
