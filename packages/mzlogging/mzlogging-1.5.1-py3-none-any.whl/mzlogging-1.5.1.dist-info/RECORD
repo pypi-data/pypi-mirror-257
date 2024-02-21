@@ -1,0 +1,10 @@
+docs/__init__.py,sha256=y6TXjOMAaf4bnL8oLstMXHYsNv20m0tuUoSeNDaIlOQ,163
+mzlogging/__init__.py,sha256=6aVzusd7QynpLalXZCbpWUGpWKTjGMw5HM1o_pmfb5o,76
+mzlogging/_consts.py,sha256=fY3mw5pRAgZTvMCGrgUQzYcoz9Ov2kExcPo_n-kjr0k,336
+mzlogging/_mysql_connector.py,sha256=_hMSFI5fZ5sSoAH9sWGAtLUnv5RXDh5m6gpqGFO8qEA,1782
+mzlogging/logger.py,sha256=I1frI0Q9pCE9ysg5Rbpp7zhUneShaXZeuLyyiEVgBc4,8591
+mzlogging-1.5.1.dist-info/LICENSE.txt,sha256=EDsIgH_cKQAT-A6CaX9wxnm-VKrKpDZ_9m78tZDReL4,1064
+mzlogging-1.5.1.dist-info/METADATA,sha256=yITdwE0RPSlhcl9V_o8FAwnEWgFgScrY7HtuRibJdSA,420
+mzlogging-1.5.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+mzlogging-1.5.1.dist-info/top_level.txt,sha256=e6-6Dk-1QXfTm_SbE1FUDeD27HYOVxUWthJkHzXgwTc,15
+mzlogging-1.5.1.dist-info/RECORD,,

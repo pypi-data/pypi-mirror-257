@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: mzlogging
+Version: 1.5.1
+Summary: A logging package for Python. It provides a simple way to log messages to console, file and database.
+Author: Zardin Nicolo
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE.txt
+Requires-Dist: mysql-connector-python
+
