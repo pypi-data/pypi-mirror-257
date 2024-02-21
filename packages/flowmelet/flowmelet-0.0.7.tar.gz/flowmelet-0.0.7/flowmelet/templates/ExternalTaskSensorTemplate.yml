@@ -1,0 +1,6 @@
+operator: airflow.operators.sensors.ExternalTaskSensor
+external_dag_id: '{{external_dag_id}}'
+external_task_id: '{{external_task_id}}'
+mode: 'poke'
+poke_interval: 600
+timeout: 3600
