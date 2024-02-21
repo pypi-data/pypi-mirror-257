@@ -1,0 +1,4 @@
+hdwallet
+requests
+web3
+typing
