@@ -1,0 +1,6 @@
+import_path: main:app
+ray_serve_config: {
+  "applications": [
+    {"import_path": "main:app"}
+  ]
+}

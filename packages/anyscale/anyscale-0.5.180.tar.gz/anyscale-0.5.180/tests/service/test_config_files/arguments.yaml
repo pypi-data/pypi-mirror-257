@@ -1,0 +1,5 @@
+import_path: main:app
+arguments:
+  abc: def
+  nested:
+    key: val

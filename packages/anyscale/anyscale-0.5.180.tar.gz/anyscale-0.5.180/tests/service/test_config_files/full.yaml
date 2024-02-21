@@ -1,0 +1,5 @@
+import_path: main:app
+name: test-name
+image: test-image
+working_dir: test-working-dir
+requirements: [pip-install-test]

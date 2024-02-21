@@ -1,0 +1,10 @@
+ray_serve_config:
+  applications:
+    - import_path: main:app
+      runtime_env:
+        env_vars:
+          abc: def
+      arguments:
+        abc: def
+        nested:
+          key: val
