@@ -1,0 +1,75 @@
+image: heerlijkeheer/python-rye:0.0.2
+
+stages:
+  - test
+  - build
+  - publish
+  - deploy
+
+
+test:
+  stage: test
+  script:
+    - rye sync
+    - export PYTHONPATH=$PYTHONPATH:$(pwd)/src
+    - mkdir test_reports
+    - mkdir coverage
+    - rye run pytest
+  coverage: '/(?i)total.*? (100(?:\.0+)?\%|[1-9]?\d(?:\.\d+)?\%)$/'
+  artifacts:
+    when: on_success
+    reports:
+      coverage_report:
+        coverage_format: cobertura
+        path: test_reports/cov.xml
+    paths:
+      - coverage
+  rules:
+    - changes:
+        - 'docs/**/*'
+        - '*.md'
+      when: never
+    - when: on_success
+
+package-build:
+  stage: build
+  script:
+    - rye build
+  artifacts:
+    paths:
+      - dist/*
+  rules:
+    - if: "$CI_COMMIT_MESSAGE =~ /publish/"
+      when: always
+    - if: '$CI_COMMIT_TAG'
+      when: always
+    - if: '$CI_COMMIT_BRANCH'
+      when: never
+
+publish:
+  stage: publish
+  dependencies:
+    - package-build
+  before_script:
+    - pip install twine
+  script:
+    - twine upload --repository-url https://upload.pypi.org/legacy/ dist/* -u __token__ -p $PYPI_TOKEN
+  rules:
+    - if: '$CI_COMMIT_TAG'
+      when: always
+    - if: '$CI_COMMIT_BRANCH'
+      when: never
+
+pages:
+  stage: deploy
+  script:
+    - rye sync
+    - rye run mkdocs build --site-dir public
+  artifacts:
+    paths:
+      - public
+  rules:
+    - if: '$CI_COMMIT_TAG'
+      when: never
+    - if: '$CI_COMMIT_BRANCH'
+      when: always

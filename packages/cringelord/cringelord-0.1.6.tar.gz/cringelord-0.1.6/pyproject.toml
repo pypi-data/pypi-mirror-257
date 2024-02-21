@@ -1,0 +1,61 @@
+[project]
+name = "cringelord"
+version = "0.1.6"
+description = """
+    Environment-sensitive configuration management tool that allows you use
+    the same code with different configurations.
+
+    You'll no longer need if-else statements or multiple files (one for each
+    environment) to get your code working in multiple environments. 
+"""
+
+authors = [
+    { name = "Thomas Vanhelden", email = "thomas.vanhelden@cegeka.com" }
+]
+dependencies = [
+    "click>=8.1.7",
+    "pydantic>=2.6.1",
+    "pyyaml>=6.0.1",
+    "pydantic-yaml>=1.2.1",
+    "bump2version>=1.0.1",
+    "mkdocs-material>=9.5.10",
+]
+readme = "README.md"
+requires-python = ">= 3.10"
+
+[project.scripts]
+hello = "cringelord:hello"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = [
+    "pytest>=8.0.1",
+    "pytest-cov>=4.1.0",
+    "pytest-randomly>=3.15.0",
+    "pytest-sugar>=1.0.0",
+    "pytest-mock>=3.12.0",
+]
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/cringelord"]
+
+[tool.hatch.build.targets.wheel.sources]
+"src" = ""
+
+[tool.hatch.build.targets.sdist]
+src-dir = "src"
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+addopts = "-ra -q -vv -s --disable-warnings --cache-clear -v --cov=cringe_lord --verbose --cov-report term:skip-covered --cov-report xml:test_reports/cov.xml --cov-fail-under=80"
+python_files = ["test_*.py", "*_test.py"]
+python_classes = ["Test"]
+python_functions = ["test"]
+pythonpath = [".", "src", "cringe_lord"]
