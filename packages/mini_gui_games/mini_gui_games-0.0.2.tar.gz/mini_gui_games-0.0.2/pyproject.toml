@@ -1,0 +1,40 @@
+[tool.poetry]
+name = "mini_gui_games"
+version = "0.0.2"
+description = "small funny games"
+license = "MIT"
+authors = ["Vasyl Boliukh <vskesha@gmail.com>"]
+maintainers = ["Vasyl Boliukh <vskesha@gmail.com>"]
+readme = "README.md"
+homepage = "https://github.com/Vskesha/Mini_GUI_Games"
+repository = "https://github.com/Vskesha/Mini_GUI_Games"
+documentation = "https://github.com/Vskesha/Mini_GUI_Games/blob/main/README.md"
+keywords = ["games", "gui", "bandergoose", "hanoitower", "snake", "tictactoe"]
+classifiers = [
+    "Operating System :: OS Independent",
+    "Topic :: Games/Entertainment",
+
+]
+packages = [
+    { include = "bandergoose"},
+    { include = "hanoitower"},
+    { include = "snake"},
+    { include = "tictactoe"}
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pygame = "^2.5.2"
+colorama = "^0.4.6"
+
+[tool.poetry.scripts]
+games = "info:info"
+miniguigames = "info:info"
+bandeergoose = "bandergoose.bandergoose:main"
+hanoitower = "hanoitower.hanoitower:main"
+snake = "snake.snake:main"
+tictactoe = "tictactoe.tictactoe:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
