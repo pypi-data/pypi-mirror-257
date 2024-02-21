@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: mediapack
+Version: 0.5.1
+Summary: Media repository for acoustics
+Home-page: https://github.com/cpplanes/mediapack
+Author: O. Dazel, Mathieu (matael) Gaborit
+Author-email: gaborit@kth.se
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Dist: numpy>=1.13.1
+Requires-Dist: PyYAML>=5.1
+
+mediapack -- python materials repository
+========================================
+
+.. image:: https://travis-ci.org/cpplanes/mediapack.svg?branch=master
+  :target: https://travis-ci.org/cpplanes/mediapack
+
+.. image:: https://coveralls.io/repos/github/cpplanes/mediapack/badge.svg?branch=master
+  :target: https://coveralls.io/github/cpplanes/mediapack?branch=master
