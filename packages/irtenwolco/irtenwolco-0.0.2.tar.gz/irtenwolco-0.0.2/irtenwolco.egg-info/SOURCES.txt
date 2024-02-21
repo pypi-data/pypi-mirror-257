@@ -1,0 +1,7 @@
+setup.py
+irtenwolco/__init__.py
+irtenwolco/foobar.py
+irtenwolco.egg-info/PKG-INFO
+irtenwolco.egg-info/SOURCES.txt
+irtenwolco.egg-info/dependency_links.txt
+irtenwolco.egg-info/top_level.txt
