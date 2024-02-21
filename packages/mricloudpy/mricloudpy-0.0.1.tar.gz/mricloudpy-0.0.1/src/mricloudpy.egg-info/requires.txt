@@ -1,0 +1,8 @@
+pandas
+numpy
+nibabel
+plotly
+plotly_express
+statsmodels
+scikit-learn
+scipy
