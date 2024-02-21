@@ -1,0 +1,8 @@
+pyprocessors_openai_completion/__init__.py,sha256=XChnuM5PGEmFMW80oj56tF69V5F5TVe0E8sG8U_yGWk,57
+pyprocessors_openai_completion/openai_completion.py,sha256=rWw2Dn_tM9dk7IeNVUSm7IAV7D_bvrWD_h8NViSNQdY,21605
+pyprocessors_openai_completion/openai_utils.py,sha256=xUyFqa5PXYiYygI6w96mTFPNPD-ow9c3t5vcCqhOdTs,3178
+pyprocessors_openai_completion/retry_limit.py,sha256=UxDJMqitLcqUWpImiY5pI_wNs8gBs95c_SYg3-Pa3Qs,1923
+pyprocessors_openai_completion-0.5.239.dist-info/entry_points.txt,sha256=TwpUSNahXHPDXalWN1dbHu-3wQfMpaW6Fc_71WD8UJw,333
+pyprocessors_openai_completion-0.5.239.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+pyprocessors_openai_completion-0.5.239.dist-info/METADATA,sha256=Hi_0XSChOj9-eL1BjhQA6aC96FS0SsOFQ0zwWQ4qPWg,2613
+pyprocessors_openai_completion-0.5.239.dist-info/RECORD,,
