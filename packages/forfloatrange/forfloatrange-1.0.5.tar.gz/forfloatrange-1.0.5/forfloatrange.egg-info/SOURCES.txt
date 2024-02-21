@@ -1,0 +1,6 @@
+README.md
+setup.py
+forfloatrange.egg-info/PKG-INFO
+forfloatrange.egg-info/SOURCES.txt
+forfloatrange.egg-info/dependency_links.txt
+forfloatrange.egg-info/top_level.txt
