@@ -1,0 +1,11 @@
+certwatch/__init__.py,sha256=OIUvQK6yxVB8AiXXHt83ZFQSsZMxRVNxkf2BJMND5v0,60
+certwatch/library.py,sha256=kBlux2T8kUIOkbij3X8Q29leLDcheLSRKSyKdn1VZRc,31596
+certwatch/main.py,sha256=AKHIKOxh1LeX-kH89EhMGKrShRhMyqxDh2OtYvPniQI,9547
+pnu_certwatch-1.0.2.data/data/man/man1/certwatch.1.gz,sha256=MAFcOKi2ebKZpzPxfKMvwZmvUcN_wcMe3m3l0YTs43k,2623
+pnu_certwatch-1.0.2.data/data/share/certwatch/tests.txt,sha256=s5mTedFa2WeToxmaNL5HVp8D50NmQwRVNMcveattKt0,1648
+pnu_certwatch-1.0.2.dist-info/License,sha256=MC8dalBMyFKH_Mpb8NZFwOo4-k15I9DtpPL1KQL0YVA,1461
+pnu_certwatch-1.0.2.dist-info/METADATA,sha256=EDyYO8K-ojN5CGqDE-TGM1Bujgt2WrNsT5FSFrb7CsY,8577
+pnu_certwatch-1.0.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+pnu_certwatch-1.0.2.dist-info/entry_points.txt,sha256=YU9VWZPAHVawosAOu7_v_NpkJWMjwlDJSj8GFWgWolg,45
+pnu_certwatch-1.0.2.dist-info/top_level.txt,sha256=FwIlr6P4EanDN4AOBWWY3CExLrWQzp9FbW38y0PiL3o,10
+pnu_certwatch-1.0.2.dist-info/RECORD,,
