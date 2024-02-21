@@ -1,0 +1,13 @@
+pemmican/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pemmican/cli.py,sha256=CBNUwhsFLKrkuMbPtN6WCB1Jyh6RK5I_X5Teg4xTKpc,3001
+pemmican/const.py,sha256=Xj9PFTTATfWrvWnMvNwzaqM5TEYuIfpEfmFVSDo9H2E,695
+pemmican/gui.py,sha256=OBQXQpSocihmt9AjSSbLzQuAcUoCEgUlA-eDHnj6iQE,17872
+pemmican/lang.py,sha256=TjBsdLDH6OUS_8KFXKpVgI3mFfs0eWT747a90w9Dnz8,704
+pemmican/notify.py,sha256=y-VX4UA6FJgEOn4zpWgNxfQJMOQVANu0Z3vcKErde60,5671
+pemmican/power.py,sha256=UbzjHbnVBMuz9EivxR73zM2T9G3DFv0FbbJ9JCWY3OA,1309
+pemmican-1.0.1.dist-info/LICENSE.txt,sha256=ZZY5DsQvbKas5p41_L4uIgFH8hYl14tPmcHWmzs_k0M,35192
+pemmican-1.0.1.dist-info/METADATA,sha256=Joflw2jjCK08ZAZd6RS-XM-lnQZALqo52_OguHEChPc,3211
+pemmican-1.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pemmican-1.0.1.dist-info/entry_points.txt,sha256=qA50DdH_dteCKLYCXDgldiVG0XSH96Q4qHZQT5ZZtus,133
+pemmican-1.0.1.dist-info/top_level.txt,sha256=6Bgh-T3cDNchqXeUTa_EsXwAiQcsieWR4FrNbp9TR-8,9
+pemmican-1.0.1.dist-info/RECORD,,
