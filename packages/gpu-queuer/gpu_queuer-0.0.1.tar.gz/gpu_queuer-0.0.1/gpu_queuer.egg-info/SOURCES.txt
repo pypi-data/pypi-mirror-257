@@ -1,0 +1,7 @@
+README.md
+setup.py
+gpu_queuer.egg-info/PKG-INFO
+gpu_queuer.egg-info/SOURCES.txt
+gpu_queuer.egg-info/dependency_links.txt
+gpu_queuer.egg-info/requires.txt
+gpu_queuer.egg-info/top_level.txt
