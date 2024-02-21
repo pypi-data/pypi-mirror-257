@@ -1,0 +1,8 @@
+[console_scripts]
+bandeergoose=bandergoose.bandergoose:main
+games=info:info
+hanoitower=hanoitower.hanoitower:main
+miniguigames=info:info
+snake=snake.snake:main
+tictactoe=tictactoe.tictactoe:main
+
