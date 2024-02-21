@@ -1,0 +1,10 @@
+elements_manager/Compare_Xpath.py,sha256=UXvSZRW9_bqUxBaDpcrp-MjzoGydHnND3bUGO2B8RRg,6744
+elements_manager/FindElements.py,sha256=TCbh2QW66iHuj36Wyu5ACbAeQhcRdo4QrB74QkZYegA,3353
+elements_manager/FindXpath.py,sha256=J0IxYEb1_0M1qsnGY53Q0pH-3jHEZNvgFNVrLMBLMo4,2753
+elements_manager/MatchAttributes.py,sha256=K1FcetdJGm4p-GqhTanwrCeSEN_q_D6a4jo3oT9OQhI,10582
+elements_manager/__init__.py,sha256=P8BziFrxiGNX-DdGpr7Ujn62JlvkFMQLwjVRmZe-EGs,833
+elements_manager-1.0.2.dist-info/LICENSE,sha256=EFrThwUHmN_nvHoHBwSSh4NwjHJo_7i8i-AVSmCTczM,1057
+elements_manager-1.0.2.dist-info/METADATA,sha256=AYWNI-HMPWyXvwDnJfjhyAQU6Tn_Mv-RnpIDE6Fu100,1335
+elements_manager-1.0.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+elements_manager-1.0.2.dist-info/top_level.txt,sha256=VHcKWGhQxzewM3tyCCYSLOInrGc-7xs-UNFjYyXjKMM,17
+elements_manager-1.0.2.dist-info/RECORD,,
