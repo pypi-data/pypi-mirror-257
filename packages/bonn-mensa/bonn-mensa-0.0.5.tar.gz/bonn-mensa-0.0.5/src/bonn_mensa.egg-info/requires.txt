@@ -1,0 +1,4 @@
+colorama
+holidays
+lxml
+requests
