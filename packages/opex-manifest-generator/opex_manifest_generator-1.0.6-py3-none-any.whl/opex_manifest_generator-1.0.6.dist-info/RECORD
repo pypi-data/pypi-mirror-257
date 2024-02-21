@@ -1,0 +1,13 @@
+opex_manifest_generator/__init__.py,sha256=pm15i2tD_VwtNxK0bWzvTpl9fLchKxweX3K24upDWj0,439
+opex_manifest_generator/cli.py,sha256=5FQErfcYnF2zXwGEITjQTnlNm8R8TtltGbWnIib38SA,5368
+opex_manifest_generator/common.py,sha256=ElR_k8yvvd5xrsWzwFnCPTxw4_N4YaSmugp861cEI6M,611
+opex_manifest_generator/hash.py,sha256=FTqeiTVQScnvZxef5c6y4gQSbe8Brf_BvcbVzmY95WA,966
+opex_manifest_generator/opex_manifest.py,sha256=bYtXYwVuwiB--orLUZ68P1N8UDbk_MXVAqfPwOYHa9c,19429
+opex_manifest_generator/test_cli.py,sha256=qLjANnpoGhbIBMAE9FTI2aTB7tt_-KiFYT9IxxaAMU8,58
+opex_manifest_generator/version.py,sha256=fCDDAyG3nMZcE_hvt1RHdxkiFN3DfNSyU_k-rLUDrpE,21
+opex_manifest_generator-1.0.6.dist-info/LICENSE.md,sha256=SbvpEU5JIU3yzMMkyzrI0dGqHDoJR_lMKGdl6GZHsy4,11558
+opex_manifest_generator-1.0.6.dist-info/METADATA,sha256=GRQwav4Wgc0Py3UAOEldVmSvG0wU7lquJNLCZjA42jw,703
+opex_manifest_generator-1.0.6.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+opex_manifest_generator-1.0.6.dist-info/entry_points.txt,sha256=WGMc3hWlqOsQ8DcTuy8-DyBbJKkWNImT4J1FasVDHts,70
+opex_manifest_generator-1.0.6.dist-info/top_level.txt,sha256=K48eGnaDLVO6YDJdAZLqbeoZvJHBGX25cvYT-i8gWt0,24
+opex_manifest_generator-1.0.6.dist-info/RECORD,,
