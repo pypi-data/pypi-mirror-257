@@ -1,0 +1,53 @@
+[project]
+name = "captain-hooks"
+version = "0.2.1"
+authors = [
+        {name="Toshio Kuratomi", email="a.badger@gmail.com"}
+]
+
+description = "Collection of pre-commit hooks"
+home-page = "https://github.com/abadger/captain-hooks"
+requires-python = "~=3.0"
+readme = "README.md"
+classifiers = [
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[project.scripts]
+meson-file-list = "captain_hooks.meson_file_list:main"
+
+[project.urls]
+repository = "https://github.com/abadger/captain-hooks"
+documentation = "https://readthedocs.io/captain-hooks"
+
+[build-system]
+requires = ["meson-python"]
+build-backend = "mesonpy"
+
+[tool.yapf]
+based_on_style = "pep8"
+COALESCE_BRACKETS = true
+COLUMN_LIMIT = 100
+JOIN_MULTIPLE_LINES = false
+SPLIT_BEFORE_ARITHMETIC_OPERATOR = true
+SPLIT_BEFORE_DOT = true
+SPLIT_BEFORE_EXPRESSION_AFTER_OPENING_PAREN = true
+
+[tool.coverage.run]
+branch = true
+
+[tool.coverage.report]
+fail_under = 60
+skip_covered = true
+show_missing = true
+
+[tool.vulture]
+paths = ['captain_hooks', "vulture-false-positives"]
+exclude = ["_argparse.py"]
+
+[tool.mypy]
+show_error_codes = true
+exclude = ".*(vulture-false-positives.py)"
