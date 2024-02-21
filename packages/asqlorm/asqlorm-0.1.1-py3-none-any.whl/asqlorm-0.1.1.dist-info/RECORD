@@ -1,0 +1,8 @@
+asqlorm/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+asqlorm/generator/main.py,sha256=6dZrvjhywKv6xR7m45bdcpuHYJrpWmpo6_qL12z1Wcg,29277
+asqlorm/models.py,sha256=Q7SkjB_d39y321XpNoBUKBAoQHvQEvRCov3LAjgga5A,41476
+asqlorm/sql/sql_alchemy.py,sha256=LOCbLng8u5cPDDWu7r30Wu2TIVYYw2lh4eezXDbhO2k,8493
+asqlorm/utils.py,sha256=fy7Gz2QVAkhmO107P8kh7WF-IszwCXX4NjX2uvy8HeY,1394
+asqlorm-0.1.1.dist-info/METADATA,sha256=TSvht5NM7EI22M8h-9bPxatYMwHP_JFzHNOjZKC3fCQ,657
+asqlorm-0.1.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+asqlorm-0.1.1.dist-info/RECORD,,
