@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: dendroextractors
+Version: 0.1.9
+Summary: 
+Author: Jeremy Magland
+Author-email: jmagland@flatironinstitute.org
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Provides-Extra: nwb
+Requires-Dist: dendro[sdk] (>=0.2.4) ; extra == "nwb"
+Description-Content-Type: text/markdown
+
+# nwbdendroextractors
+
+SpikeInterface extractors for use in Dendro processors.
