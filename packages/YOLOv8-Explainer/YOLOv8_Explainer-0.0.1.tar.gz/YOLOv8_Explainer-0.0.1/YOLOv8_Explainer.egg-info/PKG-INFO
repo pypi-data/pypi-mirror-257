@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: YOLOv8-Explainer
+Version: 0.0.1
+Summary: Python packages that enable XAI methods for YOLOv8
+Home-page: https://github.com/Spritan/YOLOv8_Explainer
+Author: Spritan
+Author-email: proypabsab@gmail.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: grad-cam==1.4.8
+Requires-Dist: ultralytics
+Requires-Dist: Pillow
+Requires-Dist: tqdm
+Requires-Dist: torch
+Requires-Dist: matplotlib
+Provides-Extra: dev
+Requires-Dist: twine>=4.0.2; extra == "dev"
+
+# YOLOv8_Explainer
+## Simplify your understanding of YOLOv8 Results
+
