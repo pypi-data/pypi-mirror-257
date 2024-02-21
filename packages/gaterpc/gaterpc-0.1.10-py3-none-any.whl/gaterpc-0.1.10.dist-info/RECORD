@@ -1,0 +1,13 @@
+gaterpc/__init__.py,sha256=w8TkzunEfoMYMhw0AEc69uzS8JiR_IhQ_aNIXhqO5fA,102
+gaterpc/core.py,sha256=F4Ld_rW3iMskS-B41tr-_b9ItVnWSUSwgMfcxj_hYJc,66216
+gaterpc/exceptions.py,sha256=r2CEOp_ymTJOzZbXsQUDhvLfMpe5ugX0AiNGBPtDeX4,1002
+gaterpc/global_settings.py,sha256=jKqnfVD1G3CwHuPU1NHp2FGgtIX3k93T48PgB-o-UQY,5698
+gaterpc/mixins.py,sha256=NZDAeBbR1DfCIBnRTy5DHCL5uxt5Z7HqJYouKc6QMAs,633
+gaterpc/testBoundedDict.py,sha256=D3mVpu_DT3dzNTSLKVQWNmU8pN4xHICbkeE2K25WvsM,1734
+gaterpc/testMajordomo.py,sha256=3MeQ1_m8tcPyj353Z6wilszMN-hcfznaSiSShngZCOs,1343
+gaterpc/utils.py,sha256=aVynn1Q6V-JaF1IrKCQgNTsUrhV_L7JAJtz2Jm9gK-Q,32120
+gaterpc-0.1.10.dist-info/LICENSE,sha256=tGTtLvSGuJVDyX9__jFhkDAF4fnyrl8_gRDWSXvJHqg,1530
+gaterpc-0.1.10.dist-info/METADATA,sha256=0qKkgcuWYFeXSlUJiZE95aM15PmMtFkQ4yp2vcvV1E0,12283
+gaterpc-0.1.10.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+gaterpc-0.1.10.dist-info/top_level.txt,sha256=Zt8ODiPJo25oViU21i32Z88o6TH4Xe4GRuGo5dKQM3s,8
+gaterpc-0.1.10.dist-info/RECORD,,
