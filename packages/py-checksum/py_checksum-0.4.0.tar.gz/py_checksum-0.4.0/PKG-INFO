@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: py-checksum
+Version: 0.4.0
+Summary: Create unified checksum from all the files and directories within a certain path
+Author: Pooria Atarzadeh
+Author-email: pooria.attz@pm.me
+Requires-Python: >=3.8.6,<4.0.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+# PyChecksum
+
+A simple CLI tool to create unified checksum from all the files and directories within a certain path. You can use it within your CI/CD pipeline and automations to detect change or deterministically address a specific artifact.
+
+# How to use?
+
+To view help:
+
+```bash
+./pychecksum -h
+```
+
+Get the checksum of current directories files and sub-directories:
+
+```bash
+./pychecksum
+```
+
+Create a checksum of all the files and sub-directoreis within `src` directory:
+
+```bash
+./pychecksum -d ./src
+```
+
+Exclude `node_modules` and `__pycache__` directories:
+
+```bash
+./pychecksum -d . -e node_modules -e __pycache__
+```
+
+Limit the size of the checksum to 10 characters:
+
+```bash
+./pychecksum -s 10
+```
+
