@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: zoology_lin
+Version: 0.0.1
+Summary: A zoology library for company
+Home-page: https://github.com/phailin/zoology_lin
+Author: phailin
+Author-email: phailin791@hotmail.com
+License: MIT
+Platform: all
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries
+License-File: LICENSE
+
+# Example Package
+This is an example package. Yor can use 
+to write your content.

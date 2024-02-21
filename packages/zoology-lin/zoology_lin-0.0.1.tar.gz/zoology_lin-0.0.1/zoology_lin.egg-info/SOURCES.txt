@@ -1,0 +1,9 @@
+LICENSE
+README.rst
+setup.py
+zoology_lin/__init__.py
+zoology_lin/main.py
+zoology_lin.egg-info/PKG-INFO
+zoology_lin.egg-info/SOURCES.txt
+zoology_lin.egg-info/dependency_links.txt
+zoology_lin.egg-info/top_level.txt
