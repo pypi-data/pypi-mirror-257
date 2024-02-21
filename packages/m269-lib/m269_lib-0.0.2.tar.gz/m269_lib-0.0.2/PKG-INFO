@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: m269-lib
+Version: 0.0.2
+Summary: A pedagogical algorithms and data structures library
+Home-page: https://dsa-ou.github.io/m269-lib/
+License: BSD-3-Clause
+Keywords: algorithms,data structures,education
+Author: Michel Wermelinger
+Author-email: michel.wermelinger@open.ac.uk
+Requires-Python: >=3.10,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Education
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Project-URL: Repository, https://github.com/dsa-ou/m269-lib
+Description-Content-Type: text/markdown
+
+This library aims to provide simple, readable and documented implementations
+of commonly taught data structures and algorithms (DSA).
+It was created for M269, our DSA course, but we hope it's of use by other courses.
+
+The current version implements
+- bags (multisets), with a Python dictionary
+- queues, with Python lists and linked lists
+- stacks, Python lists and linked lists.
+
+The library uses a small subset of Python's language and standard library,
+to make it easier to understand.
+
+All modules, classes and methods have docstrings.
+All classes have usage examples.
+All methods indicate their worst-case complexity.
+
+For installation and usage instructions,
+see the [documentation](https://dsa-ou.github.io/m269-lib).
