@@ -1,0 +1,5 @@
+docker
+huggingface-hub
+
+[quality]
+ruff
