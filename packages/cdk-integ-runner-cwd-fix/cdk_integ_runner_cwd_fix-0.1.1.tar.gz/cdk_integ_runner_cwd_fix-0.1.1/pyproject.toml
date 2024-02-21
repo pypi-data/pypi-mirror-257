@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "cdk-integ-runner-cwd-fix"
+version = "0.1.1"
+description = "Fix the problem with CDK's integ-runner breaking the python path and current working directory."
+authors = ["Tom Harvey <tom@alush.co.uk>"]
+readme = "README.md"
+license = "MIT"
+homepage = "https://github.com/tomharvey/cdk-integ-runner-cwd-fix"
+repository = "https://github.com/tomharvey/cdk-integ-runner-cwd-fix"
+keywords = ["cdk", "aws-cdk", "aws", "testing", "test"]
+include = [
+    "LICENSE",
+]
+classifiers = [
+    "Environment :: Console",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Documentation",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Software Development :: Quality Assurance",
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.group.test]
+optional = true
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
