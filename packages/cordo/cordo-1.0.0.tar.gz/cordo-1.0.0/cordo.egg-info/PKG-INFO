@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: cordo
+Version: 1.0.0
+Summary: Python Library to Validate and Reterive Co-ordinates data.
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.0
+Classifier: Programming Language :: Python :: 3.1
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+# citier
+
+Python Library to Validate and Reterive Co-ordinates data.
+
+
+
+## Installation
+
+```bash
+pip install cordo
+```
+
+
+
+# Usage
+
+<!-- Countries Start -->
+## Country
+```bash
+from cordo.cord import coordinates
+```
+### Get Co-ordinates
+
+```bash
+coordinates("Islamabad")
+```
+
