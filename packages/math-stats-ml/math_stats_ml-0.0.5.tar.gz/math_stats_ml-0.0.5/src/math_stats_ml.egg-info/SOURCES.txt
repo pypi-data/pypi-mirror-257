@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/math_stats_ml.egg-info/PKG-INFO
+src/math_stats_ml.egg-info/SOURCES.txt
+src/math_stats_ml.egg-info/dependency_links.txt
+src/math_stats_ml.egg-info/top_level.txt
+src/math_stats_ml/gd/__init__.py
+src/math_stats_ml/gd/gd_functions.py
+src/math_stats_ml/gd/gd_utils.py
