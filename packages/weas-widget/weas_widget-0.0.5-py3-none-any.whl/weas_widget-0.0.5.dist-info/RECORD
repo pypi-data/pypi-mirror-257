@@ -1,0 +1,10 @@
+weas_widget/__init__.py,sha256=zQlMyt69fJURBPTF6hPTUXsRmUJ2hNp40JdenGJDEsE,2230
+weas_widget/index.js,sha256=JRDBB4_CDQTPSN44qbfXYW6v33RoJYadMLDI-G91JSc,5108
+weas_widget/style.css,sha256=9fhQjZXdTGppkGUEp6IsWvMowd8ABbaM1f8n4XtJ3ic,517
+weas_widget/utils.py,sha256=Nbido1yiyDOocR6gy8ug63lny-qDamUjrq5LdQjB2qo,3307
+weas_widget/datas/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+weas_widget/datas/tio2.cif,sha256=T7vBSPr5M_C1ut0i69lIqjJNPqrflo2kx0aAHVzagmE,878
+weas_widget-0.0.5.dist-info/METADATA,sha256=EK7OrSzU_j76esNfqH0B2DZYRlCXfZ9I8o3o_ITICMY,3869
+weas_widget-0.0.5.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+weas_widget-0.0.5.dist-info/top_level.txt,sha256=36gVSpDvU-eYH4kpMBZzTgapQcbEvFbhjf-etYpnRnw,12
+weas_widget-0.0.5.dist-info/RECORD,,
