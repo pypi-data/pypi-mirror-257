@@ -1,0 +1,2 @@
+claimed-c3>=0.2.9
+claimed-cli>=0.1.3
