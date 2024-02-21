@@ -1,0 +1,2 @@
+[console_scripts]
+propreturns_configure_tool = propreturns_data_checker.cli_tool:configure_tool

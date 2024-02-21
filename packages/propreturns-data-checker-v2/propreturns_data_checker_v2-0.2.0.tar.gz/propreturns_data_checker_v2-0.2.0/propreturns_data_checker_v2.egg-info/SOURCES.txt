@@ -1,0 +1,7 @@
+setup.py
+propreturns_data_checker_v2.egg-info/PKG-INFO
+propreturns_data_checker_v2.egg-info/SOURCES.txt
+propreturns_data_checker_v2.egg-info/dependency_links.txt
+propreturns_data_checker_v2.egg-info/entry_points.txt
+propreturns_data_checker_v2.egg-info/requires.txt
+propreturns_data_checker_v2.egg-info/top_level.txt
