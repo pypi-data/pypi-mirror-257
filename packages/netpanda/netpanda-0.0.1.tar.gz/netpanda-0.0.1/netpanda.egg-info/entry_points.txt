@@ -1,0 +1,2 @@
+[console_scripts]
+netpanda = netpanda.cli:main
