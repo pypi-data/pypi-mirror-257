@@ -1,0 +1,7 @@
+include LICENSE
+include README.md
+recursive-include locale_selector/static *
+recursive-include locale_selector/templates *
+recursive-include locale_selector/locale *
+recursive-include locale_selector/migrations *
+recursive-include locale_selector/templatetags *
