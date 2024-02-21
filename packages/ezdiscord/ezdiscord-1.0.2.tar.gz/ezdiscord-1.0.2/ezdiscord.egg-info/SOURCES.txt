@@ -1,0 +1,10 @@
+MANIFEST.in
+README.rst
+main.py
+setup.py
+ezdiscord/__init__.py
+ezdiscord.egg-info/PKG-INFO
+ezdiscord.egg-info/SOURCES.txt
+ezdiscord.egg-info/dependency_links.txt
+ezdiscord.egg-info/requires.txt
+ezdiscord.egg-info/top_level.txt
