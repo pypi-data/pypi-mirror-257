@@ -1,0 +1,5 @@
+setup.py
+ForFloatRange.egg-info/PKG-INFO
+ForFloatRange.egg-info/SOURCES.txt
+ForFloatRange.egg-info/dependency_links.txt
+ForFloatRange.egg-info/top_level.txt
