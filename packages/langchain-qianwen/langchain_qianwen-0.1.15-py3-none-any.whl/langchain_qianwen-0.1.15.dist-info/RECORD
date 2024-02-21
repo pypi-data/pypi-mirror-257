@@ -1,0 +1,13 @@
+langchain_qianwen/__init__.py,sha256=1Q2ihb_Jhh6s9mFs039qDuCRTwjoKbB1RxFFZpiTtCQ,156
+langchain_qianwen/commons.py,sha256=G5qbGecVDWsOrLkD3BZ6GXlvJpC7ny0rzDstvdzVMM0,3306
+langchain_qianwen/qwen_adaptor.py,sha256=IYNkc6rkOL_rrp6dbNS2jDBoncFKI1hB7yrNiTvvvcw,1609
+langchain_qianwen/qwen_chat_model.py,sha256=x4ME-nyi86tQdv95WR7zdL0P8Y-eSdpIL_7eneLjMQE,10293
+langchain_qianwen/qwen_llm.py,sha256=DAFpFJ86PFHyUfGvn-J12ynl30bDPNYY7NrTatr79BU,11422
+langchain_qianwen/agents/__init__.py,sha256=ovJEJw8X-FDKOhXt_7DGV0o2p4UMfUekv1bJLy0Ia6w,74
+langchain_qianwen/agents/mkrl_cn/__init__.py,sha256=xBzGH3I8VbetQNy_ihop0ReDiB1AEXmaViWwQpwrd3A,85
+langchain_qianwen/agents/mkrl_cn/prompt.py,sha256=CR5NlU76LAMx8izRKstdcVTdYQZkPQKHWNhV5nRqmTE,882
+langchain_qianwen/agents/mkrl_cn/zero_shot_agent_cn.py,sha256=JxzLaBxEPUiLk5n73fynViZkTyQ9dYUz5lDATB1itNM,3030
+langchain_qianwen-0.1.15.dist-info/METADATA,sha256=q2DABbUUiApp_4PfYTqikPfPZ6lpf9jh_oHBEZvUCsY,5643
+langchain_qianwen-0.1.15.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+langchain_qianwen-0.1.15.dist-info/top_level.txt,sha256=IAAqDywGEblsXPeXrOV7xpHQ4Q2wOMqnR40YINR7Mok,18
+langchain_qianwen-0.1.15.dist-info/RECORD,,
