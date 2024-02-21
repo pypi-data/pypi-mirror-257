@@ -1,0 +1,3 @@
+[console_scripts]
+test-input=test_poetry_binary_plugin.main:test
+
