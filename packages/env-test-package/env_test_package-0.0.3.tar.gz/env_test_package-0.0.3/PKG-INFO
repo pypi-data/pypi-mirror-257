@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: env_test_package
+Version: 0.0.3
+Summary: Package created to test passing env variables
+Home-page: UNKNOWN
+Author: Nichita Morcotilo
+Author-email: nmorkotilo@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+License-File: LICENSE
+
+UNKNOWN
+
