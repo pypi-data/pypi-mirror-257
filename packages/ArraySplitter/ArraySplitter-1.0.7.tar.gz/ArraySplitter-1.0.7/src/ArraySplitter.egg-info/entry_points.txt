@@ -1,0 +1,3 @@
+[console_scripts]
+ArraySplitter = ArraySplitter:main
+arraysplitter = ArraySplitter:main
