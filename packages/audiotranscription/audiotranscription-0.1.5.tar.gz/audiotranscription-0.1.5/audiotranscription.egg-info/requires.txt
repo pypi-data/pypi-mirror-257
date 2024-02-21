@@ -1,0 +1,6 @@
+numpy
+pyannote.audio
+pandas
+deepmultilingualpunctuation
+openai-whisper
+google-cloud-speech
