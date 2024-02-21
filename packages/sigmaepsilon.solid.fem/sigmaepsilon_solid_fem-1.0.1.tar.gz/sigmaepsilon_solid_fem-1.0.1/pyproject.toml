@@ -1,0 +1,86 @@
+[build-system]
+requires = ["poetry-core>=1.0.1"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "sigmaepsilon.solid.fem"
+version = "1.0.1"
+description = "Finite Element Method for Solid Structures in Python."
+classifiers=[
+        "Development Status :: 5 - Production/Stable",
+        "License :: OSI Approved :: MIT License",
+        "Programming Language :: Python :: 3.10",
+        "Programming Language :: Python :: 3 :: Only",
+        "Operating System :: OS Independent",
+]
+readme = "README.md"
+authors = ["Bence Balogh <bencebalogh@sigmaepsilon.com>"]
+maintainers = ["Bence Balogh <bencebalogh@sigmaepsilon.com>"]
+license = "MIT"
+keywords = [
+    "engineering", "fea", "fem", "finite element method", "mechanics", 
+    "solid mechanics", "optimization", "structural analysis", "structural engineering",
+    "structural optimization", "structural simulation", "structural design", "structural engineering",
+    "Python", "Python3", "Python 3", "Python3.10", "Python 3.10", "Python3.x", "Python 3.x",
+]
+homepage = "https://github.com/sigma-epsilon/sigmaepsilon.solid.fem"
+repository = "https://github.com/sigma-epsilon/sigmaepsilon.solid.fem"
+documentation = "https://sigmaepsilonsolidfem.readthedocs.io/en/latest/?badge=latest"
+packages = [{ include = "sigmaepsilon", from = "_src" }]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.12"
+sigmaepsilon-mesh = ">=2.3.2"
+sigmaepsilon-solid-material = "^1.0.0"
+xarray = "^2024.2.0"
+
+[tool.poetry.group.dev.dependencies]
+networkx = "^3.2.1"
+matplotlib = "^3.8.3"
+vtk = "^9.3.0"
+pyvista = "^0.43.3"
+sectionproperties = "^3.1.2"
+pythreejs = "^2.4.2"
+pandas = "^2.2.0"
+plotly = "^5.19.0"
+tetgen = "^0.6.3"
+pyarrow = "^15.0.0"
+poetry-plugin-export = "^1.6.0"
+ipykernel = "^6.29.2"
+pyarmor = "^8.4.7"
+
+[tool.poetry.group.pypardiso.dependencies]
+# pypardiso = { git = "https://github.com/sigma-epsilon/sigmaepsilon.pypardiso.git" }
+
+[tool.poetry.group.test.dependencies]
+pyvista = "^0.43.3"
+tetgen = "^0.6.3"
+networkx = "^3.2.1"
+coverage = "^7.4.1"
+pytest = "^8.0.1"
+pytest-cov = "^4.1.0"
+
+[tool.poetry.group.docs.dependencies]
+ipython = "^8.21.0"
+myst-parser = "^2.0.0"
+nbsphinx = "^0.9.3"
+sphinx-gallery = "^0.15.0"
+sphinx-copybutton = "^0.5.2"
+sphinxcontrib-bibtex = "^2.6.2"
+nbsphinx-link = "^1.3.0"
+sphinxcontrib-svg2pdfconverter = "^1.2.2"
+sphinx-design = "^0.5.0"
+sphinx-inline-tabs = "^2023.4.21"
+pydata-sphinx-theme = "^0.15.2"
+sphinx-plotly-directive = "^0.1.3"
+pyvista = "^0.43.3"
+pandas = "^2.2.0"
+tetgen = "^0.6.3"
+matplotlib = "^3.8.3"
+plotly = "^5.19.0"
+k3d = "^2.16.1"
+setuptools = ">=65.5.1"
+numpy = ">=1.22.2"
+pillow = ">=10.0.1"
+tornado = ">=6.3.3"
+fonttools = ">=4.43.0"
