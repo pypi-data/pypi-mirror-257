@@ -1,0 +1,344 @@
+label: Mixed Widgets - $(P)$(R)
+parent: asynPortDriver
+children:
+
+- type: Group
+  name: GroupOne
+  layout:
+    type: Grid
+  children:
+
+  - type: SignalW
+    name: ResetPower
+    pv: $(P)$(R)ResetPower
+    widget:
+      type: CheckBox
+
+  - type: SignalW
+    name: ThresholdApply
+    pv: $(P)$(R)ThresholdApply
+    widget:
+      type: CheckBox
+
+  - type: SignalW
+    name: ImageFileTmot
+    pv: $(P)$(R)ImageFileTmot
+    widget:
+      type: TextWrite
+
+  - type: SignalW
+    name: Wavelength
+    pv: $(P)$(R)Wavelength
+    widget:
+      type: TextWrite
+
+  - type: SignalW
+    name: EnergyLow
+    pv: $(P)$(R)EnergyLow
+    widget:
+      type: TextWrite
+
+  - type: SignalW
+    name: EnergyHigh
+    pv: $(P)$(R)EnergyHigh
+    widget:
+      type: TextWrite
+
+  - type: SignalW
+    name: DetDist
+    pv: $(P)$(R)DetDist
+    widget:
+      type: TextWrite
+
+  - type: SignalW
+    name: DetVOffset
+    pv: $(P)$(R)DetVOffset
+    widget:
+      type: TextWrite
+
+  - type: SignalW
+    name: BeamX
+    pv: $(P)$(R)BeamX
+    widget:
+      type: TextWrite
+
+  - type: SignalW
+    name: BeamY
+    pv: $(P)$(R)BeamY
+    widget:
+      type: TextWrite
+
+  - type: SignalW
+    name: Flux
+    pv: $(P)$(R)Flux
+    widget:
+      type: TextWrite
+
+- type: SignalW
+  name: FilterTransm
+  pv: $(P)$(R)FilterTransm
+  widget:
+    type: TextWrite
+
+- type: SignalW
+  name: StartAngle
+  pv: $(P)$(R)StartAngle
+  widget:
+    type: TextWrite
+
+- type: SignalW
+  name: AngleIncr
+  pv: $(P)$(R)AngleIncr
+  widget:
+    type: TextWrite
+
+- type: SignalW
+  name: Det2theta
+  pv: $(P)$(R)Det2theta
+  widget:
+    type: TextWrite
+
+- type: SignalW
+  name: Polarization
+  pv: $(P)$(R)Polarization
+  widget:
+    type: TextWrite
+
+- type: SignalW
+  name: Alpha
+  pv: $(P)$(R)Alpha
+  widget:
+    type: TextWrite
+
+- type: SignalW
+  name: Kappa
+  pv: $(P)$(R)Kappa
+  widget:
+    type: TextWrite
+
+- type: SignalW
+  name: Phi
+  pv: $(P)$(R)Phi
+  widget:
+    type: TextWrite
+
+- type: SignalW
+  name: PhiIncr
+  pv: $(P)$(R)PhiIncr
+  widget:
+    type: TextWrite
+
+- type: SignalW
+  name: Chi
+  pv: $(P)$(R)Chi
+  widget:
+    type: TextWrite
+
+- type: SignalW
+  name: ChiIncr
+  pv: $(P)$(R)ChiIncr
+  widget:
+    type: TextWrite
+
+- type: SignalW
+  name: Omega
+  pv: $(P)$(R)Omega
+  widget:
+    type: TextWrite
+
+- type: SignalW
+  name: OmegaIncr
+  pv: $(P)$(R)OmegaIncr
+  widget:
+    type: TextWrite
+
+- type: SignalW
+  name: OscillAxis
+  pv: $(P)$(R)OscillAxis
+  widget:
+    type: TextWrite
+
+- type: SignalW
+  name: NumOscill
+  pv: $(P)$(R)NumOscill
+  widget:
+    type: TextWrite
+
+- type: Group
+  name: GroupTwo
+  layout:
+    type: Grid
+  children:
+
+  - type: SignalW
+    name: BadPixelFile
+    pv: $(P)$(R)BadPixelFile
+    widget:
+      type: TextWrite
+
+  - type: SignalW
+    name: FlatFieldFile
+    pv: $(P)$(R)FlatFieldFile
+    widget:
+      type: TextWrite
+
+  - type: SignalW
+    name: CbfTemplateFile
+    pv: $(P)$(R)CbfTemplateFile
+    widget:
+      type: TextWrite
+
+  - type: SignalW
+    name: HeaderString
+    pv: $(P)$(R)HeaderString
+    widget:
+      type: TextWrite
+
+  - type: SignalR
+    name: Armed
+    pv: $(P)$(R)Armed
+    widget:
+      type: LED
+
+  - type: SignalR
+    name: NumBadPixels
+    pv: $(P)$(R)NumBadPixels
+    widget:
+      type: TextRead
+
+  - type: SignalR
+    name: FlatFieldValid
+    pv: $(P)$(R)FlatFieldValid
+    widget:
+      type: LED
+
+  - type: SignalR
+    name: PixelCutOff
+    pv: $(P)$(R)PixelCutOff_RBV
+    widget:
+      type: TextRead
+
+  - type: SignalR
+    name: Temp0
+    pv: $(P)$(R)Temp0_RBV
+    widget:
+      type: TextRead
+
+- type: SignalR
+  name: Temp1
+  pv: $(P)$(R)Temp1_RBV
+  widget:
+    type: TextRead
+
+- type: SignalR
+  name: Temp2
+  pv: $(P)$(R)Temp2_RBV
+  widget:
+    type: TextRead
+
+- type: SignalR
+  name: Humid0
+  pv: $(P)$(R)Humid0_RBV
+  widget:
+    type: TextRead
+
+- type: SignalR
+  name: Humid1
+  pv: $(P)$(R)Humid1_RBV
+  widget:
+    type: TextRead
+
+- type: SignalR
+  name: Humid2
+  pv: $(P)$(R)Humid2_RBV
+  widget:
+    type: TextRead
+
+- type: SignalR
+  name: TVXVersion
+  pv: $(P)$(R)TVXVersion_RBV
+  widget:
+    type: TextRead
+
+- type: SignalRW
+  name: ResetPowerTime
+  pv: $(P)$(R)ResetPowerTime
+  widget:
+    type: TextWrite
+  read_pv: $(P)$(R)ResetPowerTime_RBV
+  read_widget:
+    type: TextRead
+
+- type: SignalRW
+  name: DelayTime
+  pv: $(P)$(R)DelayTime
+  widget:
+    type: TextWrite
+  read_pv: $(P)$(R)DelayTime_RBV
+  read_widget:
+    type: TextRead
+
+- type: Group
+  name: GroupThree
+  layout:
+    type: Grid
+  children:
+
+  - type: SignalRW
+    name: ThresholdEnergy
+    pv: $(P)$(R)ThresholdEnergy
+    widget:
+      type: TextWrite
+    read_pv: $(P)$(R)ThresholdEnergy_RBV
+    read_widget:
+      type: TextRead
+
+  - type: SignalRW
+    name: ThresholdAutoApply
+    pv: $(P)$(R)ThresholdAutoApply
+    widget:
+      type: CheckBox
+    read_pv: $(P)$(R)ThresholdAutoApply_RBV
+    read_widget:
+      type: LED
+
+  - type: SignalRW
+    name: Energy
+    pv: $(P)$(R)Energy
+    widget:
+      type: TextWrite
+    read_pv: $(P)$(R)Energy_RBV
+    read_widget:
+      type: TextRead
+
+  - type: SignalRW
+    name: MinFlatField
+    pv: $(P)$(R)MinFlatField
+    widget:
+      type: TextWrite
+    read_pv: $(P)$(R)MinFlatField_RBV
+    read_widget:
+      type: TextRead
+
+  - type: SignalRW
+    name: GapFill
+    pv: $(P)$(R)GapFill
+    widget:
+      type: ComboBox
+    read_pv: $(P)$(R)GapFill_RBV
+    read_widget:
+      type: TextRead
+
+  - type: SignalRW
+    name: GapFillNoReadPV
+    pv: $(P)$(R)GapFillNoReadPV
+    widget:
+      type: ComboBox
+    read_widget:
+      type: TextRead
+
+  - type: SignalR
+    name: ProgressBarTest
+    pv: $(P)$(R)ProgressBarTest_RBV
+    widget:
+      type: ProgressBar
