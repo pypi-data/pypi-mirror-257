@@ -1,0 +1,21 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "table-column-doris"
+description = "Simple tools to work with Doris create-table SQL statements."
+authors = [{ name = "Thearas", email = "thearas850@gmail.com" }]
+readme = "README.md"
+dynamic = ["version"]
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = ["sqlparse"]
+
+[project.urls]
+Home = "https://github.com/Thearas/table-column-doris"
+Source = "https://github.com/Thearas/table-column-doris"
