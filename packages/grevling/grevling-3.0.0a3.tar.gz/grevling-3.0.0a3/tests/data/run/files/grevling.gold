@@ -1,0 +1,26 @@
+import "grevling" as {copy, glob}
+
+{
+    parameters: {
+        alpha: [1, 2, 3],
+        bravo: ["a", "b", "c"],
+    },
+    evaluate: {|alpha|} {
+        charlie: 2 * alpha - 1,
+    },
+    prefiles: [
+        copy("template.txt", template: true),
+        copy("template.txt", "other-template.txt", template: true),
+        copy("template.txt", "non-template.txt"),
+        glob("empty*.dat", "some/deep/directory"),
+    ],
+    postfiles: [
+        copy("template.txt"),
+        copy("other-template.txt"),
+        copy("non-template.txt"),
+        glob("some/deep/directory/empty*.dat"),
+    ],
+    settings: {
+        logdir: {|alpha, bravo|} "${alpha}-${bravo}",
+    },
+}

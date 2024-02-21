@@ -1,0 +1,11 @@
+import "grevling" as {cmd}
+
+{
+    script: {|workdir|} [
+        cmd(
+            "sh -c 'echo \$PWD'",
+            workdir: workdir,
+            name: "pwd",
+        ),
+    ],
+}

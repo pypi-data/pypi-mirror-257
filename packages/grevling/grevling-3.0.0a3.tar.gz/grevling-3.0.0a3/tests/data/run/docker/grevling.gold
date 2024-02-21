@@ -1,0 +1,3 @@
+import "grevling" as {cmd}
+
+{script: [cmd(name: "empty", container: "hello-world")]}

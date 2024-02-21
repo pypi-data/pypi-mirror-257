@@ -1,0 +1,155 @@
+[project]
+authors = [
+    { name = "Eivind Fonn", email = "eivind.fonn@sintef.no" },
+]
+requires-python = ">=3.9,<4.0"
+dependencies = [
+    "asteval<1.0.0,>=0.9.31",
+    "bidict<1.0.0,>=0.22.1",
+    "click<9.0.0,>=8.1.7",
+    "fasteners<1.0,>=0.19",
+    "goldpy<3.0,>=2.1",
+    "Mako<2.0.0,>=1.2.2",
+    "numpy<2.0,>=1.24",
+    "pandas<3.0,>=2.0",
+    "pyarrow<15.0.0,>=14.0.1",
+    "pydantic<3,>=2",
+    "PyYAML<7.0.0,>=6.0.1",
+    "rich<14.0.0,>=13.6.0",
+    "sqlalchemy<3.0.0,>=2.0.23",
+    "alembic<2.0.0,>=1.12.1",
+]
+name = "grevling"
+version = "3.0.0a3"
+description = "A batch runner tool"
+readme = "README.md"
+
+[project.license]
+text = "AGPL3"
+
+[project.scripts]
+badger = "grevling.__main__:main"
+grevling = "grevling.__main__:main"
+
+[project.optional-dependencies]
+matplotlib = [
+    "matplotlib<4.0,>=3.7",
+]
+plotly = [
+    "plotly<6.0.0,>=5.18.0",
+]
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "pytest<8.0.0,>=7.4.3",
+    "ruff<1.0.0,>=0.1.5",
+    "mypy<2.0.0,>=1.7.0",
+    "types-pyyaml<7.0.0.0,>=6.0.12.12",
+    "pandas-stubs<3.0.0.0,>=2.1.1.230928",
+    "plotly<6.0.0,>=5.18.0",
+    "matplotlib<4.0,>=3.7",
+    "mkdocs<2.0.0,>=1.5.3",
+    "mkdocs-material<10.0.0,>=9.4.12",
+]
+
+[tool.pdm.build]
+includes = [
+    "grevling/py.typed",
+]
+
+[tool.mypy]
+files = [
+    "grevling/**/*.py",
+]
+disallow_untyped_defs = true
+disallow_any_unimported = true
+no_implicit_optional = true
+check_untyped_defs = true
+warn_return_any = true
+show_error_codes = true
+mypy_path = "$MYPY_CONFIG_FILE_DIR/stubs"
+
+[[tool.mypy.overrides]]
+module = "grevling.__main__,grevling.plotting,grevling.util,grevling.render,grevling.typing"
+disallow_untyped_defs = false
+
+[tool.ruff]
+line-length = 110
+include = [
+    "grevling/**/*.py",
+    "tests/**/*.py",
+    "stubs/**/*.pyi",
+]
+
+[tool.ruff.lint]
+select = [
+    "F",
+    "W",
+    "E",
+    "I",
+    "UP",
+    "C4",
+    "FA",
+    "ISC",
+    "ICN",
+    "RET",
+    "SIM",
+    "TID",
+    "TCH",
+    "PTH",
+    "TD",
+    "NPY",
+]
+ignore = [
+    "E741",
+    "UP007",
+    "SIM115",
+    "ISC001",
+    "TD003",
+]
+
+[tool.ruff.lint.isort]
+required-imports = [
+    "from __future__ import annotations",
+]
+
+[tool.ruff.lint.flake8-type-checking]
+runtime-evaluated-base-classes = [
+    "pydantic.BaseModel",
+]
+
+[tool.bumpversion]
+allow_dirty = false
+current_version = "3.0.0a3"
+commit = false
+tag = false
+parse = "(?x)\n    (?P<major>[0-9]+)\n    \\.(?P<minor>[0-9]+)\n    \\.(?P<patch>[0-9]+)\n    (?:\n        (?P<pre_label>a|b|rc|stable)\n        (?P<pre_number>[0-9]+)?\n    )?\n"
+serialize = [
+    "{major}.{minor}.{patch}{pre_label}{pre_number}",
+    "{major}.{minor}.{patch}",
+]
+message = "Bump version: {current_version} -> {new_version}"
+tag_message = "Bump version: {current_version} -> {new_version}"
+sign_tags = true
+files = [
+    { filename = "pyproject.toml" },
+    { filename = "grevling/__init__.py" },
+]
+
+[tool.bumpversion.parts.pre_label]
+optional_value = "stable"
+values = [
+    "a",
+    "b",
+    "rc",
+    "stable",
+]
+
+[tool.bumpversion.parts.pre_number]
+first_value = "1"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"

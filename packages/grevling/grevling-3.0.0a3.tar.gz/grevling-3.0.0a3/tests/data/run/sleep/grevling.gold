@@ -1,0 +1,8 @@
+import "grevling" as {linspace, cmd}
+
+{
+    parameters: {
+        nothing: linspace(0.0, 1.0, npts: 20),
+    },
+    script: [cmd("sleep 0.5")],
+}

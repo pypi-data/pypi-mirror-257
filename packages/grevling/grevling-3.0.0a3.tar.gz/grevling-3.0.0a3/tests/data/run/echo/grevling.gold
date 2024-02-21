@@ -1,0 +1,33 @@
+import "grevling" as {cmd}
+
+{
+    parameters: {
+        alpha: [1, 2, 3],
+        bravo: ["a", "b", "c"],
+    },
+    evaluate: {|alpha|} {
+        charlie: 2 * alpha - 1,
+    },
+    script: {|alpha, bravo, charlie|} [
+        cmd(
+            "echo a=${alpha} b=${bravo} c=${charlie}",
+            capture: ["a=(?P<a>\\S+) b=(?P<b>\\S+) c=(?P<c>\\S+)"],
+        ),
+    ],
+    plots: [
+        {
+            parameters: {alpha: "variate", bravo: "category"},
+            filename: "plot",
+            format: ["csv"],
+            yaxis: "charlie",
+        },
+    ],
+    types: {
+        a: "int",
+        b: "str",
+        c: "float",
+    },
+    settings: {
+        logdir: {|alpha, bravo|} "${alpha}-${bravo}",
+    },
+}

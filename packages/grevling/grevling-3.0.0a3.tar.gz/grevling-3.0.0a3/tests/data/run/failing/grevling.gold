@@ -1,0 +1,24 @@
+import "grevling" as {cmd}
+
+{
+    parameters: { retcode: [0, 1] },
+    script: {|retcode|} [
+        cmd(
+            "echo before 12",
+            name: "before",
+            capture: [{ type: "integer", prefix: "before", name: "before" }],
+        ),
+        cmd(
+            ["sh", "-c", "echo return ${retcode} && (exit ${retcode}) && echo next ${retcode}"],
+            capture: [
+                { type: "integer", prefix: "return", name: "return" },
+                { type: "integer", prefix: "next", name: "next", mode: "first" },
+            ],
+        ),
+        cmd(
+            "echo after 13",
+            name: "after",
+            capture: [{ type: "integer", prefix: "after", name: "after" }],
+        ),
+    ],
+}

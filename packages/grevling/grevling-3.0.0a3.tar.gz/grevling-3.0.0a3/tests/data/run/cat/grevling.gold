@@ -1,0 +1,31 @@
+import "grevling" as {copy, cmd}
+
+{
+    parameters: {
+        alpha: [1, 2, 3],
+        bravo: ["a", "b", "c"],
+    },
+    evaluate: {|alpha|} {
+        charlie: 2 * alpha - 1,
+    },
+    prefiles: [
+        copy("template.txt", template: true),
+    ],
+    script: [
+        cmd(
+            "cat template.txt",
+            capture: [
+                "a=(?P<a>\\S+) b=(?P<b>\\S+) c=(?P<c>\\S+)",
+                {type: "integer", name: "a_auto", prefix: "a="},
+            ],
+        ),
+    ],
+    types: {
+        a: "int",
+        b: "str",
+        c: "float",
+    },
+    settings: {
+        logdir: {|alpha, bravo|} "${alpha}-${bravo}",
+    },
+}

@@ -1,0 +1,87 @@
+import "grevling" as {cmd, plot, semilogx, semilogy, loglog}
+
+let formats = ["mock", "matplotlib", "csv", "plotly"]
+let capture = |name| [{
+    type: "integer",
+    name: name,
+    prefix: "result",
+    mode: "all",
+}]
+
+in {
+    parameters: {
+        i: [1, 2, 3, 4, 5],
+        j: [1, 2, 4, 8, 16],
+        k: ["a", "b", "c"],
+    },
+    evaluate: {|i, j, k|} {
+        isq: i^2,
+        jlog: log(j),
+        misc: i + j + ord(k),
+        pi: 3.1415,
+        e: 2.7182
+    },
+    script: {|i|} [
+        cmd(
+            ["sh", "-c", "for i in `seq 1 ${i}`; do echo result \$i; done"],
+            name: "sh-v",
+            capture: capture("vresult"),
+        ),
+        cmd(
+            ["sh", "-c", "for i in `seq 1 10`; do echo result \$i; done"],
+            name: "sh-f",
+            capture: capture("fresult"),
+        ),
+    ],
+    plots: [
+        plot(
+            "isq",
+            over: ["i"],
+            filename: "i-vs-isq",
+            format: formats,
+            grid: false,
+        ),
+        semilogx(
+            "misc",
+            over: ["i"],
+            fix: ["k"],
+            average: ["j"],
+            filename: "misc-vs-i-\${k}",
+            format: formats,
+            title: "This is a plot for k=\${k}",
+            xlabel: "x (\${k})",
+            ylabel: "y (\${k})",
+        ),
+        semilogy(
+            "fresult",
+            filename: "fresult",
+            format: formats,
+        ),
+        loglog(
+            "fresult",
+            filename: "fresult-mean",
+            format: formats,
+        ),
+        plot(
+            "fresult",
+            average: ["i", "j"],
+            ignore: ["k"],
+            filename: "fresult-allmean",
+            format: formats,
+        ),
+        plot(
+            "vresult",
+            categorize: {i: "color"},
+            format: formats,
+            filename: "vresult",
+            legend: "i is \${i} - \${yaxis}",
+        ),
+        plot(
+            "misc",
+            over: ["i", "j", "k"],
+            xaxis: "j",
+            filename: "scatter",
+            format: formats,
+        ),
+    ],
+}
