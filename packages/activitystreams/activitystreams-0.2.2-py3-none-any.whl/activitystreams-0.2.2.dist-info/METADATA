@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: activitystreams
+Version: 0.2.2
+Summary: ActivityStreams 2.0 JSON implementation
+Home-page: https://github.com/sovaa/activitystreams
+Author: Oscar Eriksson
+Author-email: oscar.eriks@gmail.com
+License: LICENSE.txt
+Keywords: activitystreams
+License-File: LICENSE.txt
+Requires-Dist: strict-rfc3339 ==0.7
+
+Activity Streams 2.0
