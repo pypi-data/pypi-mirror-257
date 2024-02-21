@@ -1,0 +1,12 @@
+svgmapper/__init__.py,sha256=MAAaA6ks8JiJWaPEQLUaqZfeeJjJGLHSlnzhSTFAfns,74
+svgmapper/layer.py,sha256=s6jtxg4yWQ9zGDDY0EZQLhI4EbEJqUDYO67QRkzMQEk,3602
+svgmapper/map.py,sha256=MsIARWG6VjoiRs7Q4fyk4hyC6ltRcyEnoSDyr1S0_oo,3206
+svgmapper/path.py,sha256=trv_adGA4w49nP6pQTf_t6-IOjeNNAd7yCCDKigooPE,1245
+svgmapper/poetry.lock,sha256=_mD2Hy_dfwCCfBNTMeh-xDQFVnAN84TZ4qrZuEVOcEk,39379
+svgmapper/point.py,sha256=tSJVvhlAWmxRNcBZpDz1nt-9g0_lRQx767yt1bEMcyE,1118
+svgmapper/symbol.py,sha256=ckmmPrthOZntFBajXyOSL-jlOqaybk0HistZi3MOAjo,1659
+svgmapper/translate.py,sha256=8HqOcAmfJg-qWIwtNx7w_vlSWTDTFY5e1HtGyYpf6nE,495
+svgmapper-0.1.7.dist-info/LICENSE.txt,sha256=qyQXd7XiWDF_ZDtaPvUgSZL7Jog1o6JkmLXM-Y4w1d4,1061
+svgmapper-0.1.7.dist-info/METADATA,sha256=sQ53MSWhl-r-c32Xkti43wAsh-h-rci-An-GpOaxB2A,2207
+svgmapper-0.1.7.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+svgmapper-0.1.7.dist-info/RECORD,,
