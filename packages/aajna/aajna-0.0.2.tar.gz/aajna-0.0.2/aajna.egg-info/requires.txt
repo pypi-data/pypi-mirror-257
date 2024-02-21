@@ -1,0 +1,4 @@
+pytorch
+
+[:python_version < "3.13"]
+importlib-metadata
