@@ -1,0 +1,2 @@
+[nbdev]
+template_project_nbdev = template_project_nbdev._modidx:d
