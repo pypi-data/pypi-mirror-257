@@ -1,0 +1,13 @@
+aliyunsdkaigen/__init__.py,sha256=dHuoY6voK7np1A7oRzw1xyBy7CK9_KBAc4FCKW29uRQ,21
+aliyunsdkaigen/request/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aliyunsdkaigen/request/v20240111/GenerateCosplayImageRequest.py,sha256=K0IbXybmGcG81QmFlt_O59WGAV_X9DLmKBXD0aJmO8A,1631
+aliyunsdkaigen/request/v20240111/GenerateTextDeformationRequest.py,sha256=46GirjB3S6E5E8hZBpsjC9gQYnQQepJu3-lrOiRDdYY,2281
+aliyunsdkaigen/request/v20240111/GenerateTextTextureRequest.py,sha256=QabLVrzfTfDJEeBergkPMeB13iRYKrktcfBe-O8tVlA,2904
+aliyunsdkaigen/request/v20240111/InteractiveFullSegmentationRequest.py,sha256=6CwI5FdT63DmlimRcE4jbDtUDP5Lu8aqqYsVcW96KcE,1441
+aliyunsdkaigen/request/v20240111/InteractiveScribbleSegmentationRequest.py,sha256=b1dofWvCsG2Qx2CXGUgmJdacr_kP5RpRApioOOJ4w0I,3007
+aliyunsdkaigen/request/v20240111/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aliyun_python_sdk_aigen-1.0.0.dist-info/LICENSE,sha256=CvyZB4el1cZGT3cy9OYoITxta_Ea2maondKqmi8EcpU,575
+aliyun_python_sdk_aigen-1.0.0.dist-info/METADATA,sha256=eMNPoT9i_EXCC1sMAdzUpNkTZgC9tnVzNypdbdR2n3M,1463
+aliyun_python_sdk_aigen-1.0.0.dist-info/WHEEL,sha256=iYlv5fX357PQyRT2o6tw1bN-YcKFFHKqB_LwHO5wP-g,110
+aliyun_python_sdk_aigen-1.0.0.dist-info/top_level.txt,sha256=eVoiJKXOHwe8ssVcB1sla88Q05UgX3WhgFzCd3weRB8,15
+aliyun_python_sdk_aigen-1.0.0.dist-info/RECORD,,
