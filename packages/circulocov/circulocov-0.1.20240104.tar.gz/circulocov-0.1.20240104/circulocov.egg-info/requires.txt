@@ -1,0 +1,6 @@
+pandas
+pysam
+matplotlib>=3.0.0
+numpy
+pyCirclize
+biopython

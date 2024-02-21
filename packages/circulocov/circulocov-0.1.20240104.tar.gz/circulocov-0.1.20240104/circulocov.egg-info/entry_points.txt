@@ -1,0 +1,2 @@
+[console_scripts]
+circulocov = circulocov.circulocov:main
