@@ -1,0 +1,17 @@
+p52/__init__.py,sha256=q20vnnwqBLh7AJyBrhr2lTwKX-OCn4-dPK2dWNZTi5w,1884
+p52/compiler.py,sha256=o33979Y73Fo1KMDA_E8ZuV6e69Xo7NptgmQQAlWLrLk,2515
+p52/reloader.py,sha256=DKrOU0S4JcK3YC5ZkliMzsTEatJtACrxWYl9jSXmH0A,551
+p52/sketchClass.py,sha256=lGU75eaXe37ZCQB6XLQzAQnrrmFSVhcmN5bglZu5I8s,607
+p52/viewer.py,sha256=i4zkxV02c0boJ2fkzy3oaQwDlrimVwVCIMWapn14K6E,1034
+p52/static/allDefinition.py,sha256=AEectodE86T-zieuxLT2y4olwHR0wxe8wExij1gfAs0,425
+p52/static/index.html,sha256=wXcETExvP4Tbd1NwfupyvMb3f-ivLU7-VHDRaaJk7Gs,2314
+p52/static/p5definition.py,sha256=LWHYtd0Y9JDcj9RHehF395frEkU_icRo_8vbdUrwBoM,161581
+p52/updater/generate_definition.py,sha256=uXschU4YaPArlQYFZnXvWnMAxbWwpSqRg1MnbqOrMV4,2780
+p52/updater/updater.py,sha256=nqIF0ZVDz7Po_9k9nvlO2ho0fFyufPWQWmhH3UflTsY,1650
+p52/utils/__init__.py,sha256=alIDGBnxWH4JvP-UW-7N99seBBi0r1GV1h8f1ERFBec,21
+p52/utils/p52.py,sha256=vqEFxevlWIWilpYHAjJ9ngShO9GUcTihUsnv_F08EP4,649
+p52/utils/utils.py,sha256=9zwlNHyHTlW7_6zydyRLJodN1Z8GjrtFubJ_EVBdBzM,417
+p5two-0.0.2.dist-info/METADATA,sha256=Qy7iaw8dHAObcxUsthDHthnnucfwVukMntjRp_P6dGg,2654
+p5two-0.0.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+p5two-0.0.2.dist-info/top_level.txt,sha256=DJENbfgf_wBRtI22KXWaOAVISXPkFQ2VkkHc-JMgGRA,4
+p5two-0.0.2.dist-info/RECORD,,
