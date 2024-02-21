@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+tarotNLP.egg-info/PKG-INFO
+tarotNLP.egg-info/SOURCES.txt
+tarotNLP.egg-info/dependency_links.txt
+tarotNLP.egg-info/top_level.txt
