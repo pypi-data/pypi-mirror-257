@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+
+<head>
+    <style>
+        body,
+        html,
+        canvas {
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+        }
+    </style>
+    {{scripts}}
+    <script type="module" src="__target__/{{sketch}}"></script>
+    <script type="module">
+        import * as s from "./__target__/{{sketch}}"
+        window.setup = s.setup
+        window.draw = s.draw
+
+        window.deviceMoved = s.deviceMoved
+        window.deviceTurned = s.deviceTurned
+        window.deviceShaken = s.deviceShaken
+
+        window.keyPressed = s.keyPressed
+        window.keyReleased = s.keyReleased
+        window.keyTyped = s.keyTyped
+        window.keyIsDown = s.keyIsDown
+
+        window.mouseMoved = s.mouseMoved
+        window.mouseDragged = s.mouseDragged
+        window.mousePressed = s.mousePressed
+        window.mouseReleased = s.mouseReleased
+        window.mouseClicked = s.mouseClicked
+        window.doubleClicked = s.doubleClicked
+        window.mouseWheel = s.mouseWheel
+        window.requestPointerLock = s.requestPointerLock
+        window.exitPointerLock = s.exitPointerLock
+
+        window.touchStarted = s.touchStarted
+        window.touchMoved = s.touchMoved
+        window.touchEnded = s.touchEnded
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/p5/lib/p5.min.js"></script>
+    <script>
+
+        window.addEventListener('load', _ => {
+            const socket = new WebSocket("ws://localhost:8765")
+            socket.onopen = event => socket.send('BROWSER')
+            socket.onmessage = event => {
+                console.log(event.data)
+                setTimeout(
+                    _ => window.location.reload(true), 1000)
+            }
+        })
+
+        window.addEventListener('keydown', event => {
+            event.preventDefault()
+
+            if (event.key == 'r') {
+                window.location.reload(true)
+            }
+
+            if (event.key == 's') {
+                canvas = document.getElementById('defaultCanvas0')
+                data = canvas.toDataURL()
+                window.pywebview.api.save(data)
+            }
+        })
+
+        window.addEventListener('resize', event => {
+            window.location.reload(true)
+        })
+    </script>
+
+</head>
+
+<body>
+    <div id="sketch-holder"></div>
+</body>
+
+</html>
