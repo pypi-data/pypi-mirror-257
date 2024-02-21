@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+F6_Core/__init__.py
+F6_Core/encryption_data.py
+F6_Core/students_manager.py
+F6_Core/tools.py
+F6_Core/user_manager.py
+f6_core.egg-info/PKG-INFO
+f6_core.egg-info/SOURCES.txt
+f6_core.egg-info/dependency_links.txt
+f6_core.egg-info/requires.txt
+f6_core.egg-info/top_level.txt
+tests/__init__.py
