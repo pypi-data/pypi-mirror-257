@@ -1,0 +1,2 @@
+from filesignaturecollectors.utils.listfilemagicdata import ListFileMagicData
+from filesignaturecollectors.utils.store_data import get_platform
