@@ -1,0 +1,11 @@
+setup.py
+audiotranscription/__init__.py
+audiotranscription/audio_processing.py
+audiotranscription/audio_transcription.py
+audiotranscription/speaker_diarization.py
+audiotranscription/text_processing.py
+audiotranscription.egg-info/PKG-INFO
+audiotranscription.egg-info/SOURCES.txt
+audiotranscription.egg-info/dependency_links.txt
+audiotranscription.egg-info/requires.txt
+audiotranscription.egg-info/top_level.txt
