@@ -1,0 +1,2 @@
+[console_scripts]
+pyaws = pyaws.__main__:main
