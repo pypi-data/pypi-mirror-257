@@ -1,0 +1,8 @@
+requests_kerberos_proxy/__init__.py,sha256=E4R1XdvWGPM082OQvIkqGqoQzNcRzsEmR5JmkqyNBf0,610
+requests_kerberos_proxy/adapters.py,sha256=3gNDYuFmNeZHiRF8eL4FKYFeKv7csU5wLxW-W7GbLjA,581
+requests_kerberos_proxy/util.py,sha256=zalPnMNTMSu_AkqDLSWQsNGkUitQG09FMI_cYbBjrZM,816
+requests_kerberos_proxy-0.1.2.dist-info/LICENSE.txt,sha256=8RRSK0q8O-__ww4Jx6I4J4dxdv5e6Ypar6drV-QvZKY,1092
+requests_kerberos_proxy-0.1.2.dist-info/METADATA,sha256=O0dJowyNS-fwf_YjfOkOBIxTC8Vs72CZibU3o7a1odk,1352
+requests_kerberos_proxy-0.1.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+requests_kerberos_proxy-0.1.2.dist-info/top_level.txt,sha256=QjFCwfAum38gU4yy_eUpqVUbrGYIRvPCSuAEDBPcBiY,24
+requests_kerberos_proxy-0.1.2.dist-info/RECORD,,
