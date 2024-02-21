@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: population-structure
+Version: 0.0.5
+Summary: This version has a fix for f_to_m, so now the produces matrices should be more accurate. 
+Author: Eyal Haluts
+Author-email: eyal.haluts@mail.huji.ac.il
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Previous versions had a problem with the constraint functions sent to minimize. This caused the minimize function to fail and as a result the resulting matrices were not accurate. This version has a fix for f_to_m, so now the produces matrices should be more accurate.
