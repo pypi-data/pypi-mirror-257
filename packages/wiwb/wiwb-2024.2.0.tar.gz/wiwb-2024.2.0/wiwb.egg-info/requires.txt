@@ -1,0 +1,8 @@
+geopandas
+xarray
+rasterio
+requests
+netcdf4
+
+[tests]
+pytest
