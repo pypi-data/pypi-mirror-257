@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: awsume-1password-gaiden
+Version: 0.0.1
+Summary: Fetches AWS access keys and MFA from 1Password
+Home-page: https://github.com/samsimpson1/awsume-1password
+Author: Sam Simpson
+Author-email: pypi@sams.wtf
+License-File: LICENSE
+
+Fetches AWS access keys and MFA from 1Password

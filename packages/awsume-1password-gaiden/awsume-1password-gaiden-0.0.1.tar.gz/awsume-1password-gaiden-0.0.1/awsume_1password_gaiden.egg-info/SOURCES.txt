@@ -1,0 +1,9 @@
+LICENSE
+README.md
+onepassword.py
+setup.py
+awsume_1password_gaiden.egg-info/PKG-INFO
+awsume_1password_gaiden.egg-info/SOURCES.txt
+awsume_1password_gaiden.egg-info/dependency_links.txt
+awsume_1password_gaiden.egg-info/entry_points.txt
+awsume_1password_gaiden.egg-info/top_level.txt
