@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: pytunesmith
+Version: 0.1.0
+Summary: 
+Author: micha2718l
+Author-email: micha2718l@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: gtts (>=2.5.1,<3.0.0)
+Requires-Dist: numpy (>=1.26.4,<2.0.0)
+Requires-Dist: pretty-midi (>=0.2.10,<0.3.0)
+Requires-Dist: pydub (>=0.25.1,<0.26.0)
+Requires-Dist: pyfluidsynth (>=1.3.3,<2.0.0)
+Requires-Dist: scipy (>=1.12.0,<2.0.0)
+Description-Content-Type: text/markdown
+
+
