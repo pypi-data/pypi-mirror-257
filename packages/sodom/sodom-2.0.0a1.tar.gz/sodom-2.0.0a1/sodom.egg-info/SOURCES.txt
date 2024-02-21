@@ -1,0 +1,16 @@
+README.md
+pyproject.toml
+sodom/__init__.py
+sodom/__main__.py
+sodom/attrs.py
+sodom/context.py
+sodom/elements.py
+sodom/literals.py
+sodom/renderers.py
+sodom/tags.py
+sodom/tests.py
+sodom/version.py
+sodom.egg-info/PKG-INFO
+sodom.egg-info/SOURCES.txt
+sodom.egg-info/dependency_links.txt
+sodom.egg-info/top_level.txt

@@ -1,0 +1,62 @@
+# sodom
+__sodom__ if you like to write HTML in Python. __Faster than `dominate`__
+## Installation
+```bash
+python -m pip install sodom
+```
+
+## Examples
+You can check demo via `python -m sodom` or preview code in `sodom.__main__`.
+```python
+from sodom import *
+from sodom.renderers import render_now
+
+with html(lang='en') as doc:
+    with head():
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        title('Hello sodom!')
+        link(rel='stylesheet', href='https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css')
+    with body():
+        with section(class_='section'):
+            with div(class_='container'):
+                with h1(class_='title'):
+                    text('Hello World')
+                with p(class_='subtitle'):
+                    text('My first website with ')
+                    with a(href='https://pypi.org/project/sodom/'):
+                        strong('sodom')
+                    text('!')
+
+render_now(doc)
+```
+
+`TODO: describe Attrs`
+
+`TODO: describe RenderContext`
+
+## Features
+
+### Keywords issue:
+By default underscore stripping for keywords `class_ -> class`, `_dir -> dir`, etc. Used `keyword.iskeyword`.
+```python
+div(class_='foo')  # equals `<div class="foo"></div>`
+```
+
+### Attribute's minus:
+By default underscores in attribute names will be replaced by '-'.
+```python
+div(foo_bar='bar')  # equals `<div foo-bar="baz"></div>`
+```
+
+### Performance:
+sodom is faster than `dominate`. Check `sodom.tests.test_performance_dominate`.
+
+### Test coverage:
+It is ___95%+___
+
+### Processing/Threading/Asyncing:
+Actively using `ContextVar`. Tested on `asyncio` and `ThreadPoolExecutor`. Check `sodom.tests.TestContext`
+
+## Feedback
+If you have any feedback, text me at inbox@protaz.ru
