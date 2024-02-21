@@ -1,0 +1,3 @@
+[console_scripts]
+custom_text_classification=custom_text_classification_tool.tool.utils:list_package_tools
+
