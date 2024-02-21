@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: runloop
+Version: 0.0.11
+Description-Content-Type: text/markdown
+Requires-Dist: pydantic==2.6.1
+Requires-Dist: pydantic_core==2.16.2
+
+# Runloop in Python
+
+# TODO - add nicer / cooler widgets here.
+
+[![PyPI](https://img.shields.io/pypi/v/runloop.svg?logo=pypi&logoColor=white)](https://pypi.org/project/runloop/)
+[![GitHub issues](https://img.shields.io/github/issues/runloopai/runloop.svg?logo=github)](https://github.com/runloopai/runloop/issues)
+
+## Overview
+
+Runloop is a Python >=3.8 package for: TODO - add code snippet
