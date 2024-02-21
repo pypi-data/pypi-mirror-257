@@ -1,0 +1,5 @@
+[plover.gui.qt.tool]
+touchscreen_stenotype = plover_touchscreen_stenotype.Main:Main
+
+[plover.machine]
+(None) = plover_touchscreen_stenotype.NoneMachine:NoneMachine
