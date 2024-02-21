@@ -1,0 +1,17 @@
+global proc AEsomeTemplate(string $nodeName)
+ {
+
+    editorTemplate -beginScrollLayout;
+
+
+    editorTemplate -cl 0 -beginLayout "General Attributes";
+    editorTemplate -addControl "title";
+    editorTemplate -endLayout;
+
+    editorTemplate -addExtraControls;
+
+    editorTemplate -endScrollLayout;
+
+    addAttributeEditorNodeHelp("cwSubmission", "showHelp -absolute \"https://docs.conductortech.com/reference/maya\"");
+
+ }

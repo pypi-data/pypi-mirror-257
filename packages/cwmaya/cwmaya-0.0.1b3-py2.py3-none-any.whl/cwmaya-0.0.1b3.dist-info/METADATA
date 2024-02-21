@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: cwmaya
+Version: 0.0.1b3
+Summary: Maya plugin for Conductor Cloud Rendering Platform.
+Home-page: https://github.com/ConductorTechnologies/cwmaya
+Author: coreweave
+Author-email: info@conductortech.com
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Multimedia :: Graphics :: 3D Rendering
+Description-Content-Type: text/markdown
+Requires-Dist: pymel <2.0.0,>=1.4.0
+
+# CoreWeave for Maya
+
+Maya plugin node to manage submissions to Conductor's cloud service. Supports Maya versions from 2017 to 2024. Requires PyMEL to be installed.
+
+## Install
+
+**To install the latest version.**
+```bash
+pip install --upgrade cwmaya --target=$HOME/CoreWeave/maya
+```
+
+**To install a specific version, for example 0.1.0.**
+```bash
+pip install --upgrade --force-reinstall cwmaya==0.1.0 --target=$HOME/CoreWeave/maya
+```
+
+**Then setup the Maya module.** 
+
+```bash
+python ~/CoreWeave/maya/cwmaya/post_install.py
+```
+
+> **NOTE** An alternative is to install from the Plugins page in the [Conductor Companion app](https://docs.conductortech.com/getting_started/installation/#companion-app)
+
+## Usage
+
+Open the Plugin Manager and load **CoreWeave.py**.
+
+To set up a render, choose **Conductor->Submitter->Create** from the **CoreWeave** menu. 
+
+For detailed help, checkout the [tutorial](https://docs.conductortech.com/tutorials/cwmaya) and [reference](https://docs.conductortech.com/reference/cwmaya) documentation.
+
+
+## Contributing
+
+See [CONTRIBUTING](CONTRIBUTING.md)
+
+## Changelog
+
+## Unreleased:
+
+* 0.0.1-beta.2
+  * Initial import
