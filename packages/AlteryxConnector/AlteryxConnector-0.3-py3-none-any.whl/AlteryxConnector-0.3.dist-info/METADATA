@@ -1,0 +1,77 @@
+Metadata-Version: 2.1
+Name: AlteryxConnector
+Version: 0.3
+Description-Content-Type: text/markdown
+
+Python Functions for Alteryx Workflow Management
+
+This document explains two Python functions designed to manage Alteryx workflows through their API:
+
+**1. generate_oauth_token(certificate_location, access_token_url, username, password, print_access_token):**
+
+This function acquires an OAuth 2.0 access token necessary for interacting with the Alteryx API.
+
+*Parameters:*
+
+1. certificate_location (str): Path to the certificate file used for verifying the API endpoint.
+2. access_token_url (str): URL for obtaining the access token.
+3. username (str): Username for authentication.
+4. password (str): Password for authentication.
+5. print_access_token (bool): Set to True to print the obtained access token.
+
+Return Value:
+
+str: The access token on successful retrieval, otherwise None.
+
+
+
+**2. trigger_alteryx_workflow(certificate_location, access_token_url, url, username, password, print_access_token)**
+
+This function triggers an Alteryx workflow using the obtained access token.
+
+*Parameters:*
+
+1. certificate_location (str): Path to the certificate file used for verifying the API endpoint.
+2. access_token_url (str): URL for obtaining the access token.
+3. url (str): URL of the Alteryx workflow endpoint to trigger.
+4. username (str): Username for authentication.
+5. password (str): Password for authentication.
+6. print_access_token (bool): Set to True to print the obtained access token.
+
+
+Return Value:
+
+int: HTTP status code of the trigger request. 200 indicates successful workflow triggering.
+
+*Example Usage:*
+
+```Python
+# Replace with your specific values
+certificate_location = "path/to/certificate.pem"
+access_token_url = "https://your-alteryx-server/oauth2/token"
+url = "https://your-alteryx-server/api/workflows/123/run"
+username = "your_username"
+password = "your_password"
+print_access_token = True
+
+# Obtain access token
+access_token = generate_oauth_token(certificate_location, access_token_url, username, password, print_access_token)
+
+# Trigger workflow
+status_code = trigger_alteryx_workflow(certificate_location, access_token_url, url, username, password, print_access_token)
+
+if status_code == 200:
+  print("Workflow triggered successfully!")
+else:
+  print(f"Error triggering workflow: {status_code}")
+
+```
+
+**Additional Notes:**
+
+1. Ensure you have the requests and json libraries installed (pip install requests json).
+2. Replace the placeholder values with your actual Alteryx configuration details.
+3. This example demonstrates basic usage. Error handling and more robust implementation might be required in production environments.
+ 
+
+I hope this README clarifies the usage of these functions for managing Alteryx workflows through Python. Feel free to ask if you have any further questions.

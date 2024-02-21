@@ -1,0 +1,2 @@
+[console_scripts]
+AlteryxConnector = AlteryxConnector:trigger_alteryx_workflow
