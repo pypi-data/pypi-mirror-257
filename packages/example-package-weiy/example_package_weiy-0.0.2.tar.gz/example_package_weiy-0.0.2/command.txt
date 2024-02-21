@@ -1,0 +1,13 @@
+https://packaging.python.org/en/latest/tutorials/packaging-projects/
+
+
+
+# update my package
+
+(0) update code
+
+(1) change pyproject.toml->
+
+version:
+
+(2) python3 -m build
