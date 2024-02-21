@@ -1,0 +1,14 @@
+LICENSE.txt
+README.rst
+pyproject.toml
+setup.cfg
+setup.py
+src/kivy_remote_control/__init__.py
+src/kivy_remote_control/joystick.py
+src/kivy_remote_control/joystickpad.py
+src/kivy_remote_control/touchdata.py
+src/kivy_remote_control.egg-info/PKG-INFO
+src/kivy_remote_control.egg-info/SOURCES.txt
+src/kivy_remote_control.egg-info/dependency_links.txt
+src/kivy_remote_control.egg-info/requires.txt
+src/kivy_remote_control.egg-info/top_level.txt

@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kivy_remote_control"
+version = "0.0.1"
+dependencies = [
+  "kivy"
+]
+requires-python = ">=3.6, <3.11"
+authors = [
+  { name="uberkie", email="aj@datainc.co.za" }
+]
+
+description = "A kivy remote controll app for mavsdk"
+readme = "README.rst"
+license = {file = "LICENSE.txt"}
+
+keywords = ['kivy', 'mavlink', 'mavsdk', 'joystick', 'android']
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+
+]
+
+[project.urls]
+Homepage = "https://github.com/pypa/sampleproject"
