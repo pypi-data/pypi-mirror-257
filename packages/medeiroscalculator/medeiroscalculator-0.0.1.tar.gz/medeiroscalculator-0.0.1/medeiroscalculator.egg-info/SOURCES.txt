@@ -1,0 +1,8 @@
+LICENCE.txt
+README.txt
+setup.py
+medeiroscalculator/__init__.py
+medeiroscalculator.egg-info/PKG-INFO
+medeiroscalculator.egg-info/SOURCES.txt
+medeiroscalculator.egg-info/dependency_links.txt
+medeiroscalculator.egg-info/top_level.txt
