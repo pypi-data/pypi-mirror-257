@@ -1,0 +1,9 @@
+holidayskr/__init__.py,sha256=Aqh-BknpfeBTtuLXOxgExaVd9ScgIyoaH9dcC3lZxzg,61
+holidayskr/core.py,sha256=lUCn_maH6hIobXAm6SKQC9ABwZf3eHzBZecmoPdV8tg,3297
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_core.py,sha256=7FQbQz6Fuiw0XaflkrLFZkaUgOsuG7CT8uZbtLSWWuI,2638
+holidayskr-0.1.1.dist-info/LICENSE,sha256=-KD8FTXUOgPxDe7GvnQ8spa0MOmwPCR7_sD7fr1vzEc,1068
+holidayskr-0.1.1.dist-info/METADATA,sha256=5kQvlCSXT_C8Rer69y86y4o7M6JIjdHhRx8AESn5Bp4,6629
+holidayskr-0.1.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+holidayskr-0.1.1.dist-info/top_level.txt,sha256=t2QVL7RIyt1EQCv3xp8ZcS8Ttg6Kk-9SA4kVWBUIgqM,17
+holidayskr-0.1.1.dist-info/RECORD,,
