@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/s3datasets/__init__.py
+src/s3datasets/s3_dataset.py
+src/s3datasets/s3_json_dataset.py
+src/s3datasets/s3_text_dataset.py
+src/s3datasets.egg-info/PKG-INFO
+src/s3datasets.egg-info/SOURCES.txt
+src/s3datasets.egg-info/dependency_links.txt
+src/s3datasets.egg-info/requires.txt
+src/s3datasets.egg-info/top_level.txt
+src/tokengenerators/__init__.py
+src/tokengenerators/text_ds_2_tokens_generator.py
+tests/test_s3_text_dataset.py
+tests/test_text_ds_2_tokens_generator.py
