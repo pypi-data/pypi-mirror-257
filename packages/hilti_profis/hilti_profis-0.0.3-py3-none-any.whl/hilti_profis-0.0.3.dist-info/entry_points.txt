@@ -1,0 +1,3 @@
+[console_scripts]
+app=template_python.cli_app:app
+
