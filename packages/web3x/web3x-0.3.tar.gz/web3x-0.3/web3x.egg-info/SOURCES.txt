@@ -1,0 +1,8 @@
+setup.py
+web3x/__init__.py
+web3x/web3x.py
+web3x.egg-info/PKG-INFO
+web3x.egg-info/SOURCES.txt
+web3x.egg-info/dependency_links.txt
+web3x.egg-info/requires.txt
+web3x.egg-info/top_level.txt
