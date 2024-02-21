@@ -1,0 +1,7 @@
+setup.py
+myurls/__init__.py
+myurls/urls.py
+myurls.egg-info/PKG-INFO
+myurls.egg-info/SOURCES.txt
+myurls.egg-info/dependency_links.txt
+myurls.egg-info/top_level.txt
