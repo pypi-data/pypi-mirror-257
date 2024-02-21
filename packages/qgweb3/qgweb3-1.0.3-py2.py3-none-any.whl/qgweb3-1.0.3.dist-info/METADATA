@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: qgweb3
+Version: 1.0.3
+Summary: qg web3 tools
+Home-page: UNKNOWN
+Author: QGX
+Author-email: 961018171@qq.com
+License: BSD License
+Platform: all
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries
+License-File: LICENSE
+
+# QG 一些个人使用的包
+
+## 发布流程
+python setup.py bdist_wheel --universal
+twine upload dist/*  --verbose
+
+
