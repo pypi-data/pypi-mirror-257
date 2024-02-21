@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+panvas/__init__.py
+panvas.egg-info/PKG-INFO
+panvas.egg-info/SOURCES.txt
+panvas.egg-info/dependency_links.txt
+panvas.egg-info/requires.txt
+panvas.egg-info/top_level.txt
+tests/test_core.py
