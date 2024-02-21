@@ -1,0 +1,1 @@
+SECURITY_CHECK_URL = 'https://video.ethz.ch/j_security_check'

@@ -1,0 +1,37 @@
+[build-system]
+requires = [ "poetry-core",]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "video-ethz"
+version = "0.0.5"
+description = ""
+authors = [ "Alex Thillen <alexthillen852@gmail.com>",]
+readme = "README.md"
+[[tool.poetry.packages]]
+include = "video_ethz"
+
+[tool.pytest]
+testpaths = [ "tests",]
+
+[tool.black]
+line-length = 100
+target-version = [ "py38", "py39", "py310",]
+include = "\\.pyi?$"
+exclude = "/(\n    \\.eggs\n  | \\.git\n  | \\.hg\n  | \\.mypy_cache\n  | \\.tox\n  | \\.venv\n  | _build\n  | buck-out\n  | build\n  | dist\n)/\n"
+
+[tool.poetry.scripts]
+video-ethz = "video_ethz.cli:download_latest_lecture"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+unsilence = "^1.0.9"
+requests = "^2.31.0"
+tqdm = "^4.66.1"
+click = "^8.1.7"
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.26.0"
+python-dotenv = "^1.0.0"
+pytest = "^7.4.3"
+semver = "^3.0.2"
