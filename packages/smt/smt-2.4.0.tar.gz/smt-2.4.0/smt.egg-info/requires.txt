@@ -1,0 +1,9 @@
+scikit-learn
+pyDOE3
+scipy
+
+[cs]
+ConfigSpace~=0.6.1
+
+[numba]
+numba~=0.56.4
