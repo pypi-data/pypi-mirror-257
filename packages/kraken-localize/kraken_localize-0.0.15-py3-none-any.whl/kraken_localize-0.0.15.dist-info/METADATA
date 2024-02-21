@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: kraken-localize
+Version: 0.0.15
+Summary: kraken-localize
+Home-page: https://github.com/tactik8/krakenlocalize
+Author: Tactik8
+Author-email: info@tactik8.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: kraken-thing
+Requires-Dist: requests
+Requires-Dist: babel
+Requires-Dist: pint
+
+
+    # kraken_localize
+    <definition>
+
+
+    ## How to use
+
+    ```
+    from kraken_localize import kraken_localize
+
+    
+
+    ```
+
+
+    
+    
