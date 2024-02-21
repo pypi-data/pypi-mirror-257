@@ -1,0 +1,10 @@
+click
+geopandas
+matplotlib
+pandas
+pyarrow
+pykrige
+pyproj
+shapely
+streamlit
+tqdm

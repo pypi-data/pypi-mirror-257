@@ -1,0 +1,2 @@
+[console_scripts]
+ritas = ritas.cli:main
