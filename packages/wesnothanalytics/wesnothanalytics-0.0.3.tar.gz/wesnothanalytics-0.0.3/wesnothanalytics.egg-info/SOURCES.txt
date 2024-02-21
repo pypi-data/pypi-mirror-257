@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+pyproject.toml
+wesnothanalytics/__init__.py
+wesnothanalytics/classes.py
+wesnothanalytics/main.py
+wesnothanalytics/util.py
+wesnothanalytics.egg-info/PKG-INFO
+wesnothanalytics.egg-info/SOURCES.txt
+wesnothanalytics.egg-info/dependency_links.txt
+wesnothanalytics.egg-info/top_level.txt
+wesnothanalytics/configs/flags.json
+wesnothanalytics/configs/unit_db.json
