@@ -1,0 +1,13 @@
+README.md
+setup.py
+weas_widget/__init__.py
+weas_widget/index.js
+weas_widget/style.css
+weas_widget/utils.py
+weas_widget.egg-info/PKG-INFO
+weas_widget.egg-info/SOURCES.txt
+weas_widget.egg-info/dependency_links.txt
+weas_widget.egg-info/requires.txt
+weas_widget.egg-info/top_level.txt
+weas_widget/datas/__init__.py
+weas_widget/datas/tio2.cif
