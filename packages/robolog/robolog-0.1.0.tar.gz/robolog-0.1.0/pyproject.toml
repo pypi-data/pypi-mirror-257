@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=49", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "robolog"
+version = "0.1.0"
+description = "Personalized logger for RPA solutions"
+requires-python = ">= 3.10"
+authors = [
+    {name = "Wojciech Jankiewicz", email = "jankiwojciech@outlook.com"}
+]
+
+dependencies = [
+  "colorlog"
+]
