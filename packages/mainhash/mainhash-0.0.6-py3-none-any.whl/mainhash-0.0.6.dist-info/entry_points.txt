@@ -1,0 +1,6 @@
+[console_scripts]
+MH-check=MainHash.script:check
+MH-gen=MainHash.script:gen
+MainHash-check=MainHash.script:check
+MainHash-gen=MainHash.script:gen
+
