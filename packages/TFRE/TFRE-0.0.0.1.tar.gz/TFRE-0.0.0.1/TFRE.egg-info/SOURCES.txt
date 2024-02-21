@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+TFRE/QICD.cpp
+TFRE/TFRE.py
+TFRE/__init__.py
+TFRE.egg-info/PKG-INFO
+TFRE.egg-info/SOURCES.txt
+TFRE.egg-info/dependency_links.txt
+TFRE.egg-info/requires.txt
+TFRE.egg-info/top_level.txt
