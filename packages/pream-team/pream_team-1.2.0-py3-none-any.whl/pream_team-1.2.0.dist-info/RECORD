@@ -1,0 +1,11 @@
+pream_team/__init__.py,sha256=zopXBbzpdfwZqbYzhp_iFzk3DObJMEbbcgoCd6JzNZk,3020
+pream_team/__main__.py,sha256=hFOgj_hB5euBSFH3LMFjVmsI_vaMXA7z2rMadXc9RMs,96
+pream_team/cache_manager.py,sha256=X-EnG1ABnCSeme19eFU113XgfCN3sEH33LUSPn1BBbg,1802
+pream_team/github_pr_fetcher.py,sha256=mYA7gSRf9tQJmLlKE5GH1E6PVqzoVTvuQbxRbSo77Y0,8970
+pream_team/pream_team_app.py,sha256=l39puWnK5c1yjuD7jYYZqIcXbX5efmTIWn3g97DzuLg,2641
+pream_team/pream_team_ui.py,sha256=Mwg3ANVVdMMPfInd0aIWPsdXAmWPq9eu2JDsDrp0Skw,8555
+pream_team-1.2.0.dist-info/METADATA,sha256=grF44miQkYhihsYL3Nf7VE58-WLitvABsFyMe2iWU68,1800
+pream_team-1.2.0.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+pream_team-1.2.0.dist-info/entry_points.txt,sha256=BNp4xuScjtUXI2YRpJmlo3TkGmSXOH9L_Hl03uLOcRM,56
+pream_team-1.2.0.dist-info/licenses/LICENSE,sha256=Rii1cwjPb_P-dxBr-6Q6PlJRFdq0pAAU2E1XIzPBYCQ,1070
+pream_team-1.2.0.dist-info/RECORD,,

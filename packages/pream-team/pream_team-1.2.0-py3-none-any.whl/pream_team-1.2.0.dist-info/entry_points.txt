@@ -1,0 +1,2 @@
+[console_scripts]
+pream-team = pream_team.__main__:main
