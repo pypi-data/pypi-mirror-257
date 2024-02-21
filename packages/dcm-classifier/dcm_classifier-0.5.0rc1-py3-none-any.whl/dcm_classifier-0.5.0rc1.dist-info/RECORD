@@ -1,0 +1,14 @@
+dcm_classifier/README.md,sha256=Ry9tilSxbLh8Bm0vH27v_BGPkkPB7Wn8ygR0oO9PitQ,193
+dcm_classifier/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dcm_classifier/dicom_config.py,sha256=QBidM-F08nhw39PbyJOymyj5akRnGkvgfqbW6TNfFKE,1970
+dcm_classifier/dicom_series.py,sha256=FADlg-QD_1nduRPaSiDloPSLYkoMuRYpmVEgsbIf1MI,8441
+dcm_classifier/dicom_validator.py,sha256=6mXFaL-6CdSJezuHBWxVkm7fvz48Wr1kkumnNinjONU,4757
+dcm_classifier/dicom_volume.py,sha256=7WXb_vzyGaaHuDoXxBLiaRjSCX-hGR9bEv1Yg01CMNE,14991
+dcm_classifier/example_image_processing.py,sha256=I7tZ10afS5BTGzab-ZFk_ZREwrBxl3WCOkF69bJgu6A,22748
+dcm_classifier/image_type_inference.py,sha256=itQvkhxQgPTBgNyKCk1kLh-W5yJRHiAtvY428KLLsx4,15605
+dcm_classifier/namic_dicom_typing.py,sha256=ocZXAFLnZwXvt7Qsr9nZF0YlTJb0qEVUGXQ0EdmvEMc,23819
+dcm_classifier/study_processing.py,sha256=6PDG8dxm_p-gKUo-d_f5qFjZdJcnQ9IvDztddEsyrRQ,17032
+dcm_classifier-0.5.0rc1.dist-info/METADATA,sha256=CdVlgfNwZjq8ZRn2_BzMEmdlypIYoAGDerkqmoPG_H4,2549
+dcm_classifier-0.5.0rc1.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+dcm_classifier-0.5.0rc1.dist-info/licenses/LICENSE,sha256=l9YQo6bvaaw-oUv01zoEVeUpRwdsidYkcnxAVGxyAR0,11362
+dcm_classifier-0.5.0rc1.dist-info/RECORD,,
