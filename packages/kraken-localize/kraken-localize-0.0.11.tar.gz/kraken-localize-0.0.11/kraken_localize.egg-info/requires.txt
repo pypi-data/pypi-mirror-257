@@ -1,0 +1,4 @@
+kraken-thing
+requests
+babel
+pint
