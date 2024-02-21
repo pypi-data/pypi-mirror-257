@@ -1,0 +1,11 @@
+s3datasets/__init__.py,sha256=8RON8Y-Y-mABHwQdwndscR8Zp1u4pXkWnyk77h9UbiY,120
+s3datasets/s3_dataset.py,sha256=JhqAl3A_-OiGSC9MuHKpmd0GvjYnblfdu4r3W1v7jN8,9771
+s3datasets/s3_json_dataset.py,sha256=Lks_BlBY8538Di0EFBGh7nGKwybI-DQPUQ95i6BkF9c,450
+s3datasets/s3_text_dataset.py,sha256=1-jbdt43e5SBA8u4pk2X48FxCIANwiz8iilcrdzDrNU,426
+tokengenerators/__init__.py,sha256=Jf9vuPzL4BlejaE3zkTCptgEmh941w18meF2mnVH3mg,124
+tokengenerators/text_ds_2_tokens_generator.py,sha256=eSt6AHPcpATShe3oaWF2BpcxKR6uRDGPn57JF5uUVRc,11225
+s3datasets-2.0.0a2.dist-info/LICENSE,sha256=Lxv21anF7lf3c5WBCgQmZMSG_ZxwblZdYmg0Ji5V-tQ,11411
+s3datasets-2.0.0a2.dist-info/METADATA,sha256=wUTMRDpz_z3DldT2-4bQq7UV6oJrKRn-Zfa1wodVyxc,8425
+s3datasets-2.0.0a2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+s3datasets-2.0.0a2.dist-info/top_level.txt,sha256=xmiRicQIuCgBfZAb0H1VKATKvwBfNKgrlmBrHccm49w,27
+s3datasets-2.0.0a2.dist-info/RECORD,,
