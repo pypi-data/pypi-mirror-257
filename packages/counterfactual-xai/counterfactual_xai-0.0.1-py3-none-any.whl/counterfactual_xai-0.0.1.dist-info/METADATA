@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: counterfactual-xai
+Version: 0.0.1
+Summary: Remove uncertainty from your machine learning models
+Author: Lukas Scholz
+Keywords: python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: tqdm
+Requires-Dist: torch
+Provides-Extra: linting
+Requires-Dist: pylint ; extra == 'linting'
+Requires-Dist: mypy ; extra == 'linting'
+Requires-Dist: typing-extensions ; extra == 'linting'
+Requires-Dist: pre-commit ; extra == 'linting'
+Requires-Dist: ruff ; extra == 'linting'
+Requires-Dist: types-tqdm ; extra == 'linting'
+
+# counterfactuals
