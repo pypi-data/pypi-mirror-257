@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+mintutils/__init__.py
+mintutils/install_apps.py
+mintutils.egg-info/PKG-INFO
+mintutils.egg-info/SOURCES.txt
+mintutils.egg-info/dependency_links.txt
+mintutils.egg-info/entry_points.txt
+mintutils.egg-info/top_level.txt
