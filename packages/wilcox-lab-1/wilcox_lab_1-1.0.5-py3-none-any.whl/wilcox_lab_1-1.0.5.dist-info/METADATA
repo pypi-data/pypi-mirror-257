@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: wilcox-lab-1
+Version: 1.0.5
+Author: Gregory Wilcox
+Author-email: wilcox12@canisius.edu
+License: Apache License Version 2.0
+License-File: LICENSE
+Requires-Dist: Flask
+
