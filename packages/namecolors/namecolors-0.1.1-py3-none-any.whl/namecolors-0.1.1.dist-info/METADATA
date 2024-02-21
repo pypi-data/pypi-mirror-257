@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: namecolors
+Version: 0.1.1
+Summary: Get your colors name
+Author-email: gunungpw <gunungpambudiw@gmail.com>
+License-File: LICENSE.txt
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8
+Requires-Dist: urllib3>=2.2.1
+Description-Content-Type: text/markdown
+
+# namedcolors
+
+[![PyPI - Version](https://img.shields.io/pypi/v/namecolors.svg)](https://pypi.org/project/namecolors)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/namecolors.svg)](https://pypi.org/project/namecolors)
+
+-----
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install namecolors
+```
+
+## License
+
+`namecolors` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
