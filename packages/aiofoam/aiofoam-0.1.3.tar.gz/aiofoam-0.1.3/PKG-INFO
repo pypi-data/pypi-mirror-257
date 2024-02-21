@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: aiofoam
+Version: 0.1.3
+Summary: Async OpenFOAM case runner
+Author-email: "Gabriel S. Gerlero" <ggerlero@cimec.unl.edu.ar>
+Project-URL: Homepage, https://github.com/gerlero/aiofoam
+Project-URL: Repository, https://github.com/gerlero/aiofoam
+Project-URL: Documentation, https://aiofoam.readthedocs.io
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development
+Classifier: Typing :: Typed
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: aioshutil<2,>=1
+Provides-Extra: lint
+Requires-Dist: mypy<2,>=1; extra == "lint"
+Requires-Dist: pytest<9,>=8; extra == "lint"
+Requires-Dist: pytest-asyncio<0.24,>=0.23; extra == "lint"
+Requires-Dist: black; extra == "lint"
+Provides-Extra: test
+Requires-Dist: pytest<9,>=8; extra == "test"
+Requires-Dist: pytest-asyncio<0.24,>=0.23; extra == "test"
+Requires-Dist: pytest-cov; extra == "test"
+Provides-Extra: docs
+Requires-Dist: sphinx<8,>=7; extra == "docs"
+Requires-Dist: sphinx_rtd_theme; extra == "docs"
+
+# aiofoam
+
+[![Documentation](https://img.shields.io/readthedocs/aiofoam)](https://aiofoam.readthedocs.io/)
+[![CI](https://github.com/gerlero/aiofoam/actions/workflows/ci.yml/badge.svg)](https://github.com/gerlero/aiofoam/actions/workflows/ci.yml)
+[![Codecov](https://codecov.io/gh/gerlero/aiofoam/branch/main/graph/badge.svg)](https://codecov.io/gh/gerlero/aiofoam)
+[![Checked with mypy](http://www.mypy-lang.org/static/mypy_badge.svg)](http://mypy-lang.org/)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![PyPI](https://img.shields.io/pypi/v/aiofoam)](https://pypi.org/project/aiofoam/)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/aiofoam)](https://pypi.org/project/aiofoam/)
+
+
+**aiofoam** provides an asynchronous ([`asyncio`](https://docs.python.org/3/library/asyncio.html)-based) API for running [OpenFOAM](https://www.openfoam.com) cases from Python.
+
+Install with [pip](https://pypi.org/project/pip/):
+
+```bash
+pip install aiofoam
+```
+
+For more information, check out the [documentation](https://aiofoam.readthedocs.io/).
