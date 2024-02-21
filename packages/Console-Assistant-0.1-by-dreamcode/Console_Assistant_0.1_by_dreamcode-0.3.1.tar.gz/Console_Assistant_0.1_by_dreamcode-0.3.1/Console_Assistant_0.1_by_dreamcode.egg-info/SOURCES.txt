@@ -1,0 +1,8 @@
+setup.py
+Console_Assistant_0.1_by_dreamcode.egg-info/PKG-INFO
+Console_Assistant_0.1_by_dreamcode.egg-info/SOURCES.txt
+Console_Assistant_0.1_by_dreamcode.egg-info/dependency_links.txt
+Console_Assistant_0.1_by_dreamcode.egg-info/entry_points.txt
+Console_Assistant_0.1_by_dreamcode.egg-info/not-zip-safe
+Console_Assistant_0.1_by_dreamcode.egg-info/requires.txt
+Console_Assistant_0.1_by_dreamcode.egg-info/top_level.txt
