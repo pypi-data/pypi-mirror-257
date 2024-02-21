@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: git2version
+Version: 0.1.64
+Summary: A tool to create a project version number from a git repository
+Author: Joseph McKenna
+Author-email: jtkmckenna@quantifiedcarbon.com
+License: MIT
+License-File: LICENSE
+Requires-Dist: GitPython
+
+A tool to create a project version number from a git repository
+
+    Generates a PEP 440 compliant string based on the git history of the repository.
+
+    The version string is generated as follows:
+    {major_version}.{minor_version}.{patch_version}{a{number_of_files_changed}}{b{number_of_untracked_files}}
+    Where the {major_version} is set by the user
+    The {minor_version} is the number of merges
+    The {patch_version} is the number of commits
+    The {number_of_files_changed} is the number of files changed
+    The {number_of_untracked_files} is the number of untracked files
+
+    If the repoistory is prestine, then with will not be marked as 'alpha' or 'beta'
+
+    
