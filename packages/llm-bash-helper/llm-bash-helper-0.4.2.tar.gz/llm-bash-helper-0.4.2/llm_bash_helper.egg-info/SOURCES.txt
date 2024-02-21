@@ -1,0 +1,11 @@
+README.md
+setup.py
+llm_bash_helper.egg-info/PKG-INFO
+llm_bash_helper.egg-info/SOURCES.txt
+llm_bash_helper.egg-info/dependency_links.txt
+llm_bash_helper.egg-info/entry_points.txt
+llm_bash_helper.egg-info/requires.txt
+llm_bash_helper.egg-info/top_level.txt
+llmterm/__init__.py
+llmterm/llms.py
+llmterm/llmterm.py

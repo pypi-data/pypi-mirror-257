@@ -1,0 +1,3 @@
+[console_scripts]
+llm = llmterm.llmterm:main
+
