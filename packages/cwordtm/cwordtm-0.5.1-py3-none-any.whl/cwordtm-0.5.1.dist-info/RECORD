@@ -1,0 +1,17 @@
+cwordtm/__init__.py,sha256=oEVRFz5fI8sobgqZz3JyTOoOJi1EhOgLKHWQXk2A5j4,744
+cwordtm/meta.py,sha256=ypioiVkyXNHGpdkAKzgXMaVwUI35ZZ5pKm8wrkoC6zQ,7915
+cwordtm/pivot.py,sha256=zYaE_jHG9QrEAOJwkIIRWu77EMDq8IJHwxQZcdvWmFE,2144
+cwordtm/quot.py,sha256=T1pFWdtyzW2UYWSJc_hoV3TOQzWZTbzzqRHsqDY5OPs,14352
+cwordtm/ta.py,sha256=u-bnucL8rIn6bDz3QsLaY6raNrjCxgvaHoNJQB9TozI,4980
+cwordtm/tm.py,sha256=a8G8Ebz_LGF021tdL_7QqbvruskwTGL8o0VPWoE9O78,29753
+cwordtm/util.py,sha256=H_4OJUnJX3bZ-QFWx6yEtoVa5NlkQCZ4WiNybTmeIzE,15192
+cwordtm/version.py,sha256=jCewn2gHNqt-kmlIbpEKGAT0JPeEkJH49mPJBpbIEBk,903
+cwordtm/viz.py,sha256=SLVceMTxnrFCTrmVzY0mMJriEfacdc7pETPYcRWyU1w,2561
+cwordtm/data/__init__.py,sha256=ZPsmcW0eCiK3TrVA6Fzxi8AXcLOgMp3Zz6p9qo9adIY,458
+cwordtm/dictionary/__init__.py,sha256=T8MIDH0YDP3VS2pek2Rl2KYUNBxkPog5ql4jiZ63AWI,399
+cwordtm/images/__init__.py,sha256=EGdROLpZNVKjBgg7oH65uGU9xmCekNVvbHFMPAN-GE8,349
+cwordtm-0.5.1.dist-info/LICENSE.txt,sha256=x8c_HqDRhzV6vnQTf72nVEhbNdQtNvCeBBpkrbncnSg,1100
+cwordtm-0.5.1.dist-info/METADATA,sha256=rrhs1cTqkK3ZsmP45XWkMrkZsT-ZJgpu-7yXttvvZDg,4179
+cwordtm-0.5.1.dist-info/WHEEL,sha256=Xo9-1PvkuimrydujYJAjF7pCkriuXBpUPEjma1nZyJ0,92
+cwordtm-0.5.1.dist-info/top_level.txt,sha256=KjnWKCP9Jr5xMf5xoIV0uqErm4sby9z95guNFy0nDfQ,8
+cwordtm-0.5.1.dist-info/RECORD,,
