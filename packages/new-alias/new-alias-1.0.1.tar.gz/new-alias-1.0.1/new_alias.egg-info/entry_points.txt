@@ -1,0 +1,3 @@
+[console_scripts]
+new_alias = new_alias.main:main
+

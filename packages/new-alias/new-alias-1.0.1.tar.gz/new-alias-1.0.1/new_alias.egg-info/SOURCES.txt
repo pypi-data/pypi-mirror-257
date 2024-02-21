@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+new_alias/__init__.py
+new_alias/main.py
+new_alias.egg-info/PKG-INFO
+new_alias.egg-info/SOURCES.txt
+new_alias.egg-info/dependency_links.txt
+new_alias.egg-info/entry_points.txt
+new_alias.egg-info/requires.txt
+new_alias.egg-info/top_level.txt
+new_alias/attributes/1-1000.txt
+new_alias/attributes/first-names.txt
+new_alias/attributes/last-names.txt
+new_alias/attributes/pass_words.txt
+new_alias/attributes/uname_words.txt
+new_alias/attributes/words_alpha.txt
