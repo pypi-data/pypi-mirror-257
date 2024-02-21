@@ -1,0 +1,156 @@
+body.endi.login-view .layout {
+  height: 100vh; }
+
+body.endi.login-view .two_cols.third .login_form {
+  padding: 40px; }
+
+body.endi.login-view .login_form {
+  box-shadow: 0 0 10px var(--login-atwork-shadow-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 10; }
+  body.endi.login-view .login_form .logos {
+    flex: 1 0 auto; }
+    body.endi.login-view .login_form .logos .flex {
+      align-items: center;
+      display: flex;
+      justify-content: space-between; }
+    body.endi.login-view .login_form .logos .endi_logo {
+      height: auto;
+      max-height: 2.25rem;
+      max-width: 40%;
+      width: auto; }
+    body.endi.login-view .login_form .logos .cae_logo {
+      height: auto;
+      max-height: 3rem;
+      max-width: 40%;
+      width: auto; }
+  body.endi.login-view .login_form .loginbox {
+    flex: 3 0 auto; }
+  body.endi.login-view .login_form form {
+    padding-bottom: 30px; }
+    body.endi.login-view .login_form form input[type="text"],
+    body.endi.login-view .login_form form input[type="password"] {
+      width: 100%; }
+  body.endi.login-view .login_form .login_footer {
+    align-items: flex-end;
+    display: flex;
+    font-size: .75rem;
+    justify-content: space-between;
+    flex: 0 0 auto; }
+    body.endi.login-view .login_form .login_footer p:first-child {
+      margin-right: 5px; }
+    body.endi.login-view .login_form .login_footer p:last-child {
+      margin-left: 5px;
+      text-align: right; }
+    body.endi.login-view .login_form .login_footer a {
+      text-decoration: none; }
+    body.endi.login-view .login_form .login_footer a:hover,
+    body.endi.login-view .login_form .login_footer a:focus,
+    body.endi.login-view .login_form .login_footer a:active {
+      text-decoration: underline; }
+  body.endi.login-view .login_form footer {
+    font-size: .75rem;
+    padding: 10px 0 0;
+    text-align: center; }
+
+body.endi.login-view .atwork_photo {
+  background-color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; }
+  body.endi.login-view .atwork_photo > p {
+    background: var(--login-atwork-background-color);
+    bottom: 10px;
+    font-size: .75rem;
+    padding: 5px 10px;
+    position: absolute;
+    right: 10px;
+    text-align: right;
+    text-shadow: 0 0 1px var(--login-text-shadow-color);
+    max-width: calc( 100% - 20px); }
+    body.endi.login-view .atwork_photo > p:hover {
+      background: var(--login-atwork-hover-background-color); }
+
+body.endi.login-view .login_icons {
+  align-items: center;
+  background-color: black;
+  display: flex;
+  justify-content: center; }
+  body.endi.login-view .login_icons > div {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    height: 24vw;
+    justify-content: center;
+    width: 24vw; }
+  body.endi.login-view .login_icons svg {
+    fill: #fefff8;
+    height: 4vw;
+    margin: 0 2vw;
+    width: 4vw; }
+
+@media (max-width: 31.25rem) {
+  body.endi.login-view .layout.flex {
+    max-width: 100vw; }
+  body.endi.login-view .two_cols.third .login_form {
+    padding: 40px 0; }
+    body.endi.login-view .two_cols.third .login_form > div {
+      padding-left: 10px;
+      padding-right: 10px; }
+  body.endi.login-view .login_form {
+    box-shadow: none; }
+    body.endi.login-view .login_form form {
+      padding-top: 40px; }
+  body.endi.login-view .login_icons > div {
+    height: 60vw;
+    width: 60vw; }
+    body.endi.login-view .login_icons > div svg {
+      height: 12vw;
+      margin: 4vw;
+      width: 12vw; } }
+
+@media (max-width: 50rem) and (min-width: 31.25rem) {
+  body.endi.login-view .logos {
+    left: 20px;
+    position: absolute;
+    top: 50px; }
+    body.endi.login-view .logos .flex {
+      flex-direction: column; }
+    body.endi.login-view .logos .cae_logo {
+      margin-top: 40px; }
+  body.endi.login-view .login_form form,
+  body.endi.login-view .login_form .login_footer,
+  body.endi.login-view .login_form footer {
+    margin-left: 11.125rem; }
+  body.endi.login-view .login_form .login_footer {
+    padding-top: 20px; }
+  body.endi.login-view .login_icons > div {
+    height: 30vw;
+    width: 30vw; }
+    body.endi.login-view .login_icons > div svg {
+      height: 6vw;
+      margin: 2vw;
+      width: 6vw; } }
+
+@media (max-width: 50rem) {
+  body.endi.login-view {
+    overflow-y: auto; }
+    body.endi.login-view .layout {
+      height: auto;
+      min-height: 100vh; }
+    body.endi.login-view .two_cols.third .login_form {
+      flex-basis: 100% !important;
+      padding: 40px 20px; }
+      body.endi.login-view .two_cols.third .login_form form {
+        flex: 1 0 auto; }
+    body.endi.login-view .atwork_photo,
+    body.endi.login-view .login_icons {
+      flex-basis: 100% !important;
+      min-height: 50vh; } }
+
+@media (prefers-color-scheme: dark) {
+  body.endi.login-view .login_form .endi_logo {
+    filter: invert(1); } }
