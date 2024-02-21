@@ -1,0 +1,15 @@
+openobd-protocol/Authentication_pb2.py,sha256=cOwOAGSeMoNr_THxwt7F2OdYtZQ86I8ytmiCri6JVBE,1619
+openobd-protocol/Authentication_pb2.pyi,sha256=p6VyKu0y1RLZcrb_dhmWp-2stxPFeCen3sJ4Qy7cf0M,1071
+openobd-protocol/BasicResponse_pb2.py,sha256=B9QszDAqu0TczvgJeQPI7aaJADsS_6Dz0c9SMOZ-qgc,1191
+openobd-protocol/BasicResponse_pb2.pyi,sha256=OAbngWRQ0Hn_ULiwLnQEwL022TpWkKy5ANBRfhHAztY,504
+openobd-protocol/ModuleConfiguration_pb2.py,sha256=DX5RTpuJwd2fn4nlYg8sHaJIbTNAoL_3r5qaRLWQdv8,2946
+openobd-protocol/ModuleConfiguration_pb2.pyi,sha256=HO0TkwBudvo0n1HnxIqH-3uapjwBDeLBWRpF8r6MRpk,3706
+openobd-protocol/Services_pb2.py,sha256=VsIJA4MDEqPtfD-Dgc-Iwt2RwSsqlM34JWAOEklHVHQ,2006
+openobd-protocol/Services_pb2.pyi,sha256=DjNUHLCA7Ew7RsdsDKA0wNA5aeHzHDx109RLHp1tDg0,290
+openobd-protocol/Services_pb2_grpc.py,sha256=SC-X6a5TwaXyf6keZ91pbzRP0JBLTDn2xlTcwLvQAEw,7067
+openobd-protocol/__init__.py,sha256=pmlhl2gfI7p4JVCbDCuHD6pCnRzlMFodEaTgzCKlSX4,17
+openobd_protocol-0.0.0.dist-info/LICENSE,sha256=Exo1J4-rXUp99HQN_5-0KkMojzHvsRnkppVwRnMmxwk,1066
+openobd_protocol-0.0.0.dist-info/METADATA,sha256=bnwFRWVtPbPmtlHpG7Gy2txT4FmZJvsh6nemT1D287w,2656
+openobd_protocol-0.0.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+openobd_protocol-0.0.0.dist-info/top_level.txt,sha256=QV7adsZt0F1jWa4llvQcBHftAwuZKjaH4SCU0wwA2zU,17
+openobd_protocol-0.0.0.dist-info/RECORD,,
