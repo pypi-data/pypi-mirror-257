@@ -1,0 +1,2 @@
+[console_scripts]
+myturn_sdk = myturn_sdk.myturn_client:__init__
