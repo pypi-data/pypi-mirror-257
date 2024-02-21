@@ -1,0 +1,5 @@
+canvasapi
+mystring
+tqdm
+
+[all]
