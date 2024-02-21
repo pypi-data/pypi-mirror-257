@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: hxml
+Version: 0.0.1
+Home-page: https://github.com/DevHollo/hxml
+Author: Hollo
+Author-email: hollo1234567890e@gmail.com
+Description-Content-Type: text/markdown
+Requires-Dist: sty ==1.0.6
+
+# hxml
+hxml is a simple xml parser for Python 3.12<br/>
+
+## Examples
+```xml
+<!-- test.xml -->
+<?xml version="1.0" encoding="UTF-8"?>
+<le_epic_xml>
+    <name>Epic XML</name>
+    <cool>
+        <a>as</a>
+        <b>you</b>
+        <c>see</c>
+        <d>it</d>
+        <e>works!</e>
+    </cool>
+</le_epic_xml>
+```
+```py
+# epic_xml.py
+from hxml import XML
+
+xml = XML("test.xml")
+
+epic_xml = xml.get("le_epic_xml")
+print(epic_xml) # {'name': 'Epic XML', 'cool': {'a': 'as', 'b': 'you', 'c': 'see', 'd': 'it', 'e': 'works!'}}
+```
