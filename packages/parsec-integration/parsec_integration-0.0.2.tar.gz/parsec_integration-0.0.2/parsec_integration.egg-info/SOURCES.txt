@@ -1,0 +1,16 @@
+README.md
+setup.cfg
+setup.py
+parsec_integration/__init__.py
+parsec_integration/core.py
+parsec_integration/errors.py
+parsec_integration/main.py
+parsec_integration/test.py
+parsec_integration.egg-info/PKG-INFO
+parsec_integration.egg-info/SOURCES.txt
+parsec_integration.egg-info/dependency_links.txt
+parsec_integration.egg-info/requires.txt
+parsec_integration.egg-info/top_level.txt
+parsec_integration/dto/__init__.py
+parsec_integration/dto/dto.py
+parsec_integration/dto/validators.py
