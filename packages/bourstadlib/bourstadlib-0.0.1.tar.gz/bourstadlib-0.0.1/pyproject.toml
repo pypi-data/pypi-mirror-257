@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "bourstadlib"
+version = "0.0.1"
+description = ""
+authors = ["Charles Dupont <charlo.dupont@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12.1"
+requests = "^2.31.0"
+pandas = "^2.2.0"
+python-decouple = "^3.8"
+
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.8.0"
+
+
+[tool.poetry.group.mypy.dependencies]
+pandas-stubs = "^2.2.0.240218"
+types-requests = "^2.31.0.20240218"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.mypy]
+cache_dir = ".cache"

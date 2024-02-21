@@ -1,0 +1,2 @@
+class BourstarLibError(Exception):
+    pass
