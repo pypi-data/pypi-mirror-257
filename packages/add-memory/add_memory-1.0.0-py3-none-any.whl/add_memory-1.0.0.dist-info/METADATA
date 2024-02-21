@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: add-memory
+Version: 1.0.0
+Summary: Library to manage conversational memory using Watsonx Assistant Session API
+Home-page: https://github.ibm.com/AI-CoE/supply-chain-advisor/tree/main/pot/add-memory
+Author: tskvivekmani
+Author-email: tskvivekmani@in.ibm.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: ibm-watson (>=7.0.1)
+
+UNKNOWN
+
