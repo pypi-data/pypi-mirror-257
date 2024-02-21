@@ -1,0 +1,1 @@
+from .urls import netflix_url, spotify_url, crunchyroll_url
