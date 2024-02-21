@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup_mslm_email_verify.py
+mslm_email_verify/__init__.py
+mslm_email_verify/email_verify.py
+mslm_email_verify/single_verify_resp.py
+mslm_email_verify/single_verify_resp_mx.py
+mslm_email_verify_test2.egg-info/PKG-INFO
+mslm_email_verify_test2.egg-info/SOURCES.txt
+mslm_email_verify_test2.egg-info/dependency_links.txt
+mslm_email_verify_test2.egg-info/requires.txt
+mslm_email_verify_test2.egg-info/top_level.txt
+mslm_lib/__init__.py
+mslm_lib/lib.py
+mslm_lib/mslm_errors.py
+mslm_lib/req_opts.py
