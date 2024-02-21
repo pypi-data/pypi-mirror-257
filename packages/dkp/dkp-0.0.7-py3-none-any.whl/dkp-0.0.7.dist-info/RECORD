@@ -1,0 +1,10 @@
+dkp/__init__.py,sha256=_lFdmGgFpKC_KN1fS5n8uhBaON_bF17hRkgXXS1eaf8,30
+dkp/__main__.py,sha256=v2Nev5eKyOqjRMy28rONCLhx5HC-gCnfybYosVFHlEk,62
+dkp/dkp.py,sha256=Yf7GVvxZovyuSSTVSAZrCsJLf-d0cDksnf-tKhASlMM,10764
+dkp/header.sh,sha256=zd39k-3qrAj8mwS2Osuy5Xk5gaVqCd_CwZAGEiBwzCI,2327
+dkp/restore.sh,sha256=5Pdp29ZV2IAECZtQ_RPPrv3KZzzd8VsX4hVerTjB-B4,923
+dkp-0.0.7.dist-info/entry_points.txt,sha256=yWn6G6hxGrrNNI8Y8zK8W2hxj0qiXyNfJ9fC-AN8JXI,32
+dkp-0.0.7.dist-info/LICENSE,sha256=jQ5-BjVl0Z1VS9d-8nb2kvTwXFNfUhWoQhrGGLypNd4,1063
+dkp-0.0.7.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+dkp-0.0.7.dist-info/METADATA,sha256=ZHRP2o5LNVjA8jppdbE8xreFBHCfK4mcJvW7lbHk97A,2735
+dkp-0.0.7.dist-info/RECORD,,
