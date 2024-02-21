@@ -1,0 +1,13 @@
+demm2/Data_Truncation_specified_columns.py,sha256=FzMQM6LTpXYQUjNLs1egW-0H251fbEAKhTzOGqUNKQs,547
+demm2/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+demm2/check_duplicate.py,sha256=NLP-sHpCuuZ_jXPUy8tOf7QKV9v7c9bvnNXF4AB-q_4,1157
+demm2/count_validation.py,sha256=QCET-6dZmYOcCTkbyBLtFSQKCzfV979uTQZJMmxuuv8,634
+demm2/data_validation.py,sha256=UFXbNc3e01pH-Sz97oqXb4kxMOC5on9p7Kmd_v51eCI,443
+demm2/null_validation.py,sha256=4zyk7jQYAd0n5XahUAmJbSDi-qHOI9chndAd9KxDWgs,566
+demm2/out_of_range.py,sha256=VcnbWTj-OP_TaeA9YPV8MbMWRPXkdkf7HHmk6ua4wUk,1348
+demm2/rejected_record.py,sha256=8F1cQwcc-wHOfqAAuaxCTXrvar2o-l-cNKYxnsqmntA,198
+demm2-0.0.1.dist-info/LICENSE,sha256=wizjXGFXHS3lyeA6VMHovlq_VeTSvKutTakfTuBBNGk,1062
+demm2-0.0.1.dist-info/METADATA,sha256=ezS0XKi2DYi8LCewmMzu9iXkazxQPD-nZgXFw9ubpg0,599
+demm2-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+demm2-0.0.1.dist-info/top_level.txt,sha256=WSBJHUBTUExKjmLLKtgUairKlJmp8c6GHemld0uHr2A,6
+demm2-0.0.1.dist-info/RECORD,,
