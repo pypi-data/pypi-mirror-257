@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pycinante
+Version: 0.0.2
+Summary: Python's Rocinante for easily programming.
+Home-page: https://github.com/gndlwch2w/pycinante
+Author: Chisheng Chen
+Author-email: chishengchen@126.com
+License: MIT-0
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: setuptools~=68.2.2
+Requires-Dist: python-archive~=0.2
+Requires-Dist: cryptography~=41.0.7
+Requires-Dist: numpy~=1.23.0
+Requires-Dist: matplotlib~=3.7.4
