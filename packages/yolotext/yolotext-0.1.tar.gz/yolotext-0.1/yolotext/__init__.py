@@ -1,0 +1,1 @@
+from .Yolov8TextDetection import Yolov8TextDetection 

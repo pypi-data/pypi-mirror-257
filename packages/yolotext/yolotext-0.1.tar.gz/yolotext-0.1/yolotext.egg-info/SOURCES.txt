@@ -1,0 +1,9 @@
+README.md
+setup.py
+yolotext/Yolov8TextDetection.py
+yolotext/__init__.py
+yolotext.egg-info/PKG-INFO
+yolotext.egg-info/SOURCES.txt
+yolotext.egg-info/dependency_links.txt
+yolotext.egg-info/requires.txt
+yolotext.egg-info/top_level.txt
