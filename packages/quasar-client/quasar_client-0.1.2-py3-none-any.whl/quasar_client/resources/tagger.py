@@ -1,0 +1,34 @@
+"""Tagger Resource Module."""
+
+from typing import List, Literal, Union
+
+from ..dataclasses.tag import TaggerMeta
+from .base import Resource
+
+
+class TaggerResource(Resource):
+    """Tagger Resource Class."""
+
+    def tag(
+        self,
+        task: Union[Literal["ner"], Literal["acronym-detection"]],
+        text: str,
+    ) -> List[TaggerMeta]:
+        """Tag a text."""
+        output = self._post(
+            data={
+                "input_data": {"docs": [text]},
+                "task": task,
+            },
+        )
+        output.raise_for_status()
+        return [
+            TaggerMeta(
+                end=entity["char_end_index"],
+                label=entity["label"],
+                score=entity["score"],
+                span=entity["span"],
+                start=entity["char_start_index"],
+            )
+            for entity in output.json()["output"][0]
+        ]
