@@ -1,0 +1,28 @@
+{
+  "_lib-da3946c0.js": {
+    "file": "lib-da3946c0.js"
+  },
+  "_lib-f46b53c5.cjs": {
+    "file": "lib-f46b53c5.cjs"
+  },
+  "src/lib.ts": {
+    "file": "lib.cjs",
+    "imports": [
+      "_lib-f46b53c5.cjs"
+    ],
+    "isEntry": true,
+    "src": "src/lib.ts"
+  },
+  "src/main.tsx": {
+    "file": "main.cjs",
+    "imports": [
+      "_lib-f46b53c5.cjs"
+    ],
+    "isEntry": true,
+    "src": "src/main.tsx"
+  },
+  "style.css": {
+    "file": "style.css",
+    "src": "style.css"
+  }
+}
