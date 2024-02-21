@@ -1,0 +1,2 @@
+[console_scripts]
+free_energy_landscape = free_energy_landscape.freeEnergyLandscape:main
