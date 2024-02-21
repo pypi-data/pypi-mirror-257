@@ -1,0 +1,9 @@
+README.md
+setup.py
+eamInvoicing/__init__.py
+eamInvoicing/eInvoice.py
+eamInvoicing.egg-info/PKG-INFO
+eamInvoicing.egg-info/SOURCES.txt
+eamInvoicing.egg-info/dependency_links.txt
+eamInvoicing.egg-info/requires.txt
+eamInvoicing.egg-info/top_level.txt
