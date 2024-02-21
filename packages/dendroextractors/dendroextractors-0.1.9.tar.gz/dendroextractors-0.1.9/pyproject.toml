@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "dendroextractors"
+version = "0.1.9"
+description = ""
+authors = ["Jeremy Magland <jmagland@flatironinstitute.org>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+dendro = {version=">=0.2.4", extras = ["sdk"]}
+
+[tool.poetry.extras]
+nwb = [
+    "pynwb",
+    "spikeinterface",
+    "h5py",
+    "remfile",
+    "dendro"
+]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
