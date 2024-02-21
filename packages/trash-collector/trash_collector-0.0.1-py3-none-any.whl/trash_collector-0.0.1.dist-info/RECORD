@@ -1,0 +1,10 @@
+trash_collector/__init__.py,sha256=X9bjVeXnnUhQwe5CHS85utYOPhRFUZ80XKXndxycTIo,1089
+trash_collector/__main__.py,sha256=G0DkERv1j1ke4SiFckMBpepOi4L2PFReu-nCN0Bxbb8,93
+trash_collector/create_file.py,sha256=7dJ3HvuQ3yYQmYHncfMyVhlYja3WdOZw_m6CXQx_biA,350
+trash_collector/db.py,sha256=lpvByPsiSihihPurGFqRhVcD_RE673zMYYGI678-BI4,2683
+trash_collector/search.py,sha256=4RMzNZafhjHYu719aoywvm351aH3E_wWcA2k9Qx6bDM,2506
+trash_collector/utils.py,sha256=7YJosCBoE6GepZsFywaRg7kj2kmjmf-XuEjL_cinDRM,569
+trash_collector-0.0.1.dist-info/METADATA,sha256=Z-sZDGcNDYcYuv3tqoVtQQ0D3G60o-dbFdf_BSYj1mo,1038
+trash_collector-0.0.1.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+trash_collector-0.0.1.dist-info/licenses/LICENSE,sha256=MNJZzF2DO2nk3DiLpLi6i-kUjSStabpQQITrRb3CAWk,1086
+trash_collector-0.0.1.dist-info/RECORD,,
