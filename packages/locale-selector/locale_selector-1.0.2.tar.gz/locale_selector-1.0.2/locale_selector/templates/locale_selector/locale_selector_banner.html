@@ -1,0 +1,40 @@
+{% load wagtail_cache wagtailcore_tags i18n locale_selector static %}
+<div class="locale-selector-locales">
+    <div class="locale-selector-header">
+        <div class="locale-selector-header-title">
+            <h1>{{ select_new_lang }}</h1>
+        </div>
+        <div class="locale-selector-header-button" onclick="window.localeSelectorToggle(this)" title="{% blocktrans trimmed %}Close{% endblocktrans %}">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+            </svg>
+        </div>
+    </div>
+    <div class="locale-selector-list">
+        {% get_current_language as language %}
+        {% wagtailpagecache django_settings.SHORT_TEMPLATE_CACHE_TIMEOUT "footer_language_selector" language %}
+            <div class="row">
+                {% for translation in translations %}
+                    <div class="col-12 col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                        <div class="locale-selector-locale">
+                            <a class="locale-selector-link" href="{% pageurl translation %}" rel="alternate" hreflang="{{ translation.locale.language_code }}" title="{{ translation.locale.language_name_local }}">
+                                <div class="locale-selector-locale-header">
+                                    <img class="locale-flag-big" src="{% locale_flag translation.locale %}">
+                                    <div class="locale-selector-locale-info">
+                                        <h1 class="locale-selector-title">{{ translation.locale.language_name_local }}</h1>
+                                    </div>
+                                </div>
+                                <h3 class="locale-selector-locale-subheader">{% translate_page_name_for_locale translation translation.locale %}</h3>
+                            </a>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        {% endwagtailpagecache %}
+    </div>
+    <a href="{{project_maintainer_site|safe}}" class="locale-selector-copyright">
+        &copy; {{now.year}}, {{project_maintainer}}
+    </a>
+</div>
+

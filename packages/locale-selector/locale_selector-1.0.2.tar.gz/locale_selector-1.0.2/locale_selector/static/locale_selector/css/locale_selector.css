@@ -1,0 +1,194 @@
+.locale-selector {
+    --locale-selector: var(--primary-button-bg);
+    --locale-selector-hover: var(--primary-button-bg-hover);
+    --locale-selector-bg: var(--primary-button);
+    --locale-selector-bg-hover: var(--primary-button-hover);
+    --locale-selector-bg-rgb: var(--primary-button-bg-rgb);
+    --locale-exit-color: var(--danger-button-bg);
+    --locale-exit-color-hover: var(--danger-button-bg-hover);
+    --locale-selector-fontsize: var(--font-size);
+    --locale-selector-border-radius: var(--component-border-radius);
+    --locale-selector-icon-bg: var(--component-bg);
+    --locale-selector-shadow: rgba(var(--component-box-shadow-rgb), 0.3);
+}
+.locale-selector.sticky {
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
+    z-index: 200;
+}
+.locale-selector.sticky .locale-selector-icon {
+    border-radius: 5px;
+    padding: 2px;
+    background-color: var(--locale-selector-icon-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.locale-selector.sticky .locale-selector-icon img {
+    border: 1px solid var(--locale-selector);
+    border-radius: 5px;
+}
+
+.locale-selector-icon {
+    cursor: pointer;
+    position: relative;
+}
+.locale-selector .locale-selector-locales {
+    max-height: 90vh;
+    overflow: auto;
+}
+.locale-selector-locales-wrapper.locale-selector-hidden {
+    display: none;
+}
+.locale-selector.modal .locale-selector-locales-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(var(--locale-selector-bg-rgb), 0.5);
+    z-index: 299;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.locale-selector.modal .locale-selector-locales {
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+    min-width: min(100%, 500px);
+    min-height: 250px;
+    overflow: auto;
+    color: var(--locale-selector);
+    background-color: var(--locale-selector-bg);
+    border-radius: var(--locale-selector-border-radius);
+    outline: 0;
+    padding: 0;
+    border: 2px solid var(--locale-selector);
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+}
+.locale-selector-header {
+    font-size: 1.2rem;
+    border-bottom: 1px solid var(--locale-selector);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.25rem 0.5rem;
+}
+.locale-selector-header-button {
+    color: var(--locale-exit-color);
+    cursor: pointer;
+}
+.locale-selector-header-button:hover {
+    color: var(--locale-exit-color-hover);
+}
+.locale-selector-header-button svg {
+    width: calc(var(--locale-selector-fontsize) * 1.2);
+    height: unset;
+}
+.locale-selector.banner .locale-selector-header-button svg {
+    width: calc(var(--locale-selector-fontsize) * 1.45);
+}
+.locale-selector.modal .locale-selector-list {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow: auto;
+}
+.locale-selector.modal .locale-selector-locale {
+    padding: 0.5rem;
+    transition: all 0.2s ease-in-out;
+    border-bottom: 1px dotted var(--locale-selector);
+    padding: 0.25rem 0.5rem;
+}
+.locale-selector.modal .locale-selector-title.locale-selector-title {
+    margin-left: 0.5rem;
+}
+.locale-selector.modal .locale-selector-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--locale-selector);
+    background-color: var(--locale-selector-bg);
+}
+.locale-selector.modal .locale-selector-link:hover {
+    color: var(--locale-selector-hover);
+    background-color: var(--locale-selector-bg-hover);
+}
+.locale-selector.modal .locale-selector-link:focus {
+    border: 0;
+    outline: 0;
+}
+.locale-selector.modal .locale-selector-link svg {
+    width: calc(var(--locale-selector-fontsize) * 2);
+}
+.locale-selector.modal .locale-selector-local-hello {
+    flex: 1;
+    padding: 0 1rem;
+}
+.locale-selector-copyright {
+    --primary-rgba: rgba(var(--locale-selector-bg-rgb), 0.4);
+    font-size: 0.8rem;
+    padding: 0.25rem 0.5rem;
+    border-top: 1px dotted var(--primary-rgba);
+    color: var(--primary-rgba);
+    text-align: center;
+}
+.locale-selector.banner .locale-selector-locales-wrapper {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    min-height: 250px;
+    width: 100%;
+    border-top: 2px solid var(--locale-selector);
+    background-color: var(--locale-selector-bg);
+    color: var(--locale-selector);
+    z-index: 299;
+}
+.locale-selector.banner .locale-selector-locales {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.5rem;
+    height: 100%;
+    min-height: 250px;
+    width: 100%;
+}
+.locale-selector-locale-header {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+}
+.locale-selector.banner .locale-selector-locale-header img {
+    margin-right: 0.5rem;
+}
+.locale-selector-locale-subheader.locale-selector-locale-subheader {
+    margin-top: 0.5rem;
+}
+.locale-selector-locale-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.locale-selector-locale-info h1 {
+    margin-bottom: 0 !important;
+}
+.locale-flag {
+    --size: var(--locale-selector-fontsize, var(--font-size, 1em));
+    width: calc(var(--size) * 3);
+    height: calc(var(--size) * 2);
+}
+.locale-flag-big {
+    --size: calc(var(--locale-selector-fontsize, var(--font-size, 1em)) * 2);
+    width: calc(var(--size) * 3);
+    height: calc(var(--size) * 2);
+}
