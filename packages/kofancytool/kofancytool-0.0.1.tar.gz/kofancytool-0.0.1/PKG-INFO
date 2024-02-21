@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: kofancytool
+Version: 0.0.1
+Summary: 我的第二个python包
+Home-page: https://dashen.tech
+Author: fliter
+Author-email: i@dashen.tech
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# kofancy-toolkit
+我的私人工具包，里面有各种常用包，可以发布到私有库，并用于在各个python项目中引用。
