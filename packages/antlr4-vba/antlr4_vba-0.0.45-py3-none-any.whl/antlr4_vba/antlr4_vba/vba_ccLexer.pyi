@@ -1,0 +1,89 @@
+from antlr4 import *
+from _typeshed import Incomplete
+from io import StringIO as StringIO
+from typing import TextIO
+
+def serializedATN(): ...
+
+class vba_ccLexer(Lexer):
+    atn: Incomplete
+    decisionsToDFA: Incomplete
+    T__0: int
+    T__1: int
+    T__2: int
+    T__3: int
+    T__4: int
+    T__5: int
+    T__6: int
+    T__7: int
+    T__8: int
+    T__9: int
+    T__10: int
+    T__11: int
+    T__12: int
+    T__13: int
+    T__14: int
+    T__15: int
+    T__16: int
+    T__17: int
+    T__18: int
+    T__19: int
+    T__20: int
+    T__21: int
+    T__22: int
+    T__23: int
+    T__24: int
+    T__25: int
+    T__26: int
+    T__27: int
+    T__28: int
+    T__29: int
+    T__30: int
+    T__31: int
+    T__32: int
+    T__33: int
+    T__34: int
+    T__35: int
+    T__36: int
+    CONST: int
+    IF: int
+    ELSEIF: int
+    ELSE: int
+    ENDIF: int
+    EMPTY: int
+    LIKE: int
+    NOTHING: int
+    NULL_: int
+    THEN: int
+    WIN16: int
+    WIN32: int
+    WIN64: int
+    VBA6: int
+    VBA7: int
+    MAC: int
+    EQ: int
+    GEQ: int
+    GT: int
+    LEQ: int
+    LT: int
+    NEQ: int
+    BOOLEANLITERAL: int
+    MISC: int
+    NEWLINE: int
+    SINGLEQUOTE: int
+    STRINGLITERAL: int
+    OCTLITERAL: int
+    HEXLITERAL: int
+    INTEGERLITERAL: int
+    FLOATLITERAL: int
+    DATELITERAL: int
+    IDENTIFIER: int
+    COMMENT: int
+    WS: int
+    channelNames: Incomplete
+    modeNames: Incomplete
+    literalNames: Incomplete
+    symbolicNames: Incomplete
+    ruleNames: Incomplete
+    grammarFileName: str
+    def __init__(self, input: Incomplete | None = None, output: TextIO = ...) -> None: ...
