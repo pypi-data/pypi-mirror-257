@@ -1,0 +1,5 @@
+setup.py
+fakeoai.egg-info/PKG-INFO
+fakeoai.egg-info/SOURCES.txt
+fakeoai.egg-info/dependency_links.txt
+fakeoai.egg-info/top_level.txt
