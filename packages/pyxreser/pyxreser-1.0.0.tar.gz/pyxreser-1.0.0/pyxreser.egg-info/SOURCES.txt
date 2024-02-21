@@ -1,0 +1,12 @@
+LICENSE
+LICENSE.txt
+README.md
+setup.py
+pyxreser/__init__.py
+pyxreser/app.py
+pyxreser.egg-info/PKG-INFO
+pyxreser.egg-info/SOURCES.txt
+pyxreser.egg-info/dependency_links.txt
+pyxreser.egg-info/entry_points.txt
+pyxreser.egg-info/requires.txt
+pyxreser.egg-info/top_level.txt

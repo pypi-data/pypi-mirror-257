@@ -1,0 +1,2 @@
+[console_scripts]
+pyxreser = pyxreser.app:main
