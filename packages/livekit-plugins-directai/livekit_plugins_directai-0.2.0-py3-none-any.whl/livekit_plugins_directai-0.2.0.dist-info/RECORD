@@ -1,0 +1,9 @@
+livekit/plugins/directai/__init__.py,sha256=YK4P7jCvt_8qYymYRHFX7ccDxduNiIta6lUHiRaphw4,957
+livekit/plugins/directai/_utils.py,sha256=ldIm1lMd4L9HhGZ_VR7yrhG4nBezoS8cS5gJG9cp41Y,1112
+livekit/plugins/directai/classifier.py,sha256=Ce4BqxJyt_BIZcGNl6-sQDDneGu6xig2nCznR9rdHls,4978
+livekit/plugins/directai/detector.py,sha256=Jg1CT3UnH6L73U5UeRSOsbc3KHbJe0aukisQSLTSmog,5385
+livekit/plugins/directai/version.py,sha256=cLFCdnm5S21CiJ5UJBcqfRvvFkCQ8p6M5fFUJVJkEiM,600
+livekit_plugins_directai-0.2.0.dist-info/METADATA,sha256=5vH38mh6_LEZ-AEPadL6HzrvyeJjNE2A2w13fFKFbB4,1466
+livekit_plugins_directai-0.2.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+livekit_plugins_directai-0.2.0.dist-info/top_level.txt,sha256=OoDok3xUmXbZRvOrfvvXB-Juu4DX79dlq188E19YHoo,8
+livekit_plugins_directai-0.2.0.dist-info/RECORD,,
