@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: yesaide
+Version: 1.7.0
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Ouihelp Tech
+Author-email: tech@ouihelp.fr
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+License-File: LICENSE
+
+# yesaide
+
+Some utilities and helpers from Ouihelp with ❤️ .
+
+
