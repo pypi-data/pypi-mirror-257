@@ -1,0 +1,16 @@
+bpm/__init__.py,sha256=6ZYEEBLm1RCfxLTN3IGNP1YHWxQhGPP7NhWX7cL5ysk,96
+bpm/__main__.py,sha256=EClCwCzb6h6YBpt0hrnG4h0mlNhNePyg_xBNNSVm1os,65
+bpm/cli.py,sha256=NM-W-R2ZUoXLh1nJeU2Idtai61Byju_miP1BEGmIo5o,3240
+bpm/command.py,sha256=t4m6kFFSZBTFTv3q1NTDC5ZcOskcFCFxxMVya4g-HyA,5761
+bpm/install/__init__.py,sha256=ScIWw9OcG1hfoJl7a89zVFHifxrI9ngy8eEQV6e6C_E,16978
+bpm/lib/windowspathadder.py,sha256=vHcbBGXgcJGeerIeS_wpXPEwvpvCl5Mb9Qg6BNz1Cys,4103
+bpm/search.py,sha256=iLYmm_IZre-PPF0dXoDgpF4KMQx8QQUGs6kx6_BEpaY,8743
+bpm/storage.py,sha256=y2IQFkfTKOpZZzQwLCJV9duvX7lR05F25-MXRPwYPlE,4457
+bpm/utils/__init__.py,sha256=CTARtj-fZ68XX_KEnc64WfwEm4rb7pwmh5MUdFmHeiA,2611
+bpm/utils/constants.py,sha256=sE1tm8TRHZ7Q2hxX7mk_XY_J_BRX9CEAZ-zZDT3hawA,568
+bpm/utils/exceptions.py,sha256=JF-YmZofMz4peM-7VFL-S_M6bfpR9Z5Mj0e2MUyleb4,1025
+bin_package_manager-2.1.1.dist-info/entry_points.txt,sha256=1cJYHcAhIu7ldJLI_Z-tLZyL_UmREu-v0CHMVsfEKew,36
+bin_package_manager-2.1.1.dist-info/LICENSE,sha256=9xwrC__PIf4AT_dzVQK_VUB05wzulruBTCBaZqMaTx8,1087
+bin_package_manager-2.1.1.dist-info/METADATA,sha256=tW2wgNR-TJZ2V_JwJXwiM7h9G4C7HgRpH1zwQGL_PAU,3601
+bin_package_manager-2.1.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+bin_package_manager-2.1.1.dist-info/RECORD,,
