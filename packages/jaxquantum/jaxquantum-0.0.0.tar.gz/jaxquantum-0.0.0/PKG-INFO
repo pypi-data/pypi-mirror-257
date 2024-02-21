@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: jaxquantum
+Version: 0.0.0
+Summary: jaxquantum
+Home-page: https://github.com/EQuS/jaxquantum
+Author: Shantanu Jha, Shoumik Chowdhury
+Author-email: shantanu.rajesh.jha@gmail.com
+Project-URL: Documentation, https://github.com/EQuS/jaxquantum
+Project-URL: Source Code, https://github.com/EQuS/jaxquantum
+Project-URL: Tutorials, https://github.com/EQuS/jaxquantum/tree/master/tutorials
+Keywords: quantum computing circuits
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# jaxquantum
+
+Coming very soon!
