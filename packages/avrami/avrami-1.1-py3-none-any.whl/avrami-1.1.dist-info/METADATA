@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: avrami
+Version: 1.1
+Summary: Surface nucleation data fit
+Author: Simona Buzzi
+Author-email: s.buzzi@tue.nl
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+

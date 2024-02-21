@@ -1,0 +1,12 @@
+avrami/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+avrami/file_load.py,sha256=0MQNqCccwBAOf5XfCryRX-wKvBhR57EmgxPucOPEzuo,177
+avrami/functions.py,sha256=Dl5_35vbHZqChErOz1E2cTexcWmuAlMomIwgzfDwNRs,596
+avrami/log_functions.py,sha256=EUSJIM2JJFlzd7EMvXqOaC3XmxDtsq7csKERa_eJSzI,471
+avrami/main.py,sha256=3rfPP3FSZrfsBbzkBrz7iv6PEALqhCA1gY24Vg9Vv6c,1602
+avrami/plots.py,sha256=jvFC4vffpHAsfdMKxSZq5F0AE0VaB0GuBDZS9dntcxI,773
+avrami/setup.py,sha256=aUwDEHlOIULhHtCw6YyfXyDsfrse1row7MtHeRYDomk,439
+avrami-1.1.dist-info/METADATA,sha256=BrYCBY-h8V-UY7TcIjoTKBUISd_z-IEVnh4NVUXfDaA,237
+avrami-1.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+avrami-1.1.dist-info/entry_points.txt,sha256=EoVgzM_2iOxj80tNlLj0gfGb1bks7DpUUH2UALgjF_Y,63
+avrami-1.1.dist-info/top_level.txt,sha256=m71GqmR9vn-mg6-2BajXIagf3t-FnljRTbuCNkin46I,7
+avrami-1.1.dist-info/RECORD,,
