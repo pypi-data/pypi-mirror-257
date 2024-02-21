@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: perseus-email-library
+Version: 1.0.27
+Summary: Perseus Email Python Library
+Home-page: https://github.com/majormode/perseus-email-python-library
+License: Proprietary
+Keywords: agent,card,generator,identity,xebus
+Author: Daniel CAUNE
+Author-email: daniel.caune@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Libraries
+Requires-Dist: jinja2 (>=3.1,<4.0)
+Requires-Dist: mailjet-rest (>=1.3,<2.0)
+Requires-Dist: perseus-core-library (>=1.18,<2.0)
+Project-URL: Repository, https://github.com/majormode/perseus-email-python-library
+Description-Content-Type: text/markdown
+
+# Perseus: Email Python Library
+
+Perseus Email Python Library is a repository of reusable Python components to compose and send email.
+
+These components have minimal dependencies on other libraries, so that they can be deployed easily.  In addition, these components will keep their interfaces as stable as possible, so that other Python projects can integrate these components without having to worry about changes in the future.
+
+
+To install the Perseus Email Python Library, enter the follow command line:
+
+```bash
+$ poetry add perseus-email-library
+```
+

@@ -1,0 +1,32 @@
+[tool.poetry]
+authors = ["Daniel CAUNE <daniel.caune@gmail.com>"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "License :: Other/Proprietary License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Topic :: Software Development :: Libraries",
+]
+description = "Perseus Email Python Library"
+include = [
+    "CHANGELOG.md",
+]
+keywords = ["agent", "card", "generator", "identity", "xebus"]
+license = "Proprietary"
+name = "perseus-email-library"
+packages = [{ include = "majormode", from = "src" }]
+readme = "README.md"
+repository = "https://github.com/majormode/perseus-email-python-library"
+version = "1.0.27"
+
+[tool.poetry.dependencies]
+jinja2 = "^3.1"
+mailjet-rest = "^1.3"
+perseus-core-library = "^1.18"
+python = "^3.9"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
