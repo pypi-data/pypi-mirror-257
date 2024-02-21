@@ -1,0 +1,11 @@
+numpy
+tqdm
+torch
+
+[linting]
+pylint
+mypy
+typing-extensions
+pre-commit
+ruff
+types-tqdm
