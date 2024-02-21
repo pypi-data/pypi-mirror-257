@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Demo Partner -->
+    <record id="res_partner_demo" model="res.partner">
+        <field name="name">TEST Pérez García</field>
+        <field name="firstname">Test</field>
+        <field name="lastname">Pérez García</field>
+        <field name="customer" eval="True"/>
+        <field name="is_company" eval="False"/>
+        <field name="email">test@sommobilitat.coop</field>
+        <field name="ref">T/123456789A</field>
+        <field name="cs_person_index">123456789A</field>
+        <field name="vat">ES12345678X</field>
+        <field name="street">Rambla de Catalunya, 82</field>
+        <field name="city">Barcelona</field>
+        <field name="zip">08008</field>
+        <field name="lang">es_ES</field>
+        <field name="phone">666666666</field>
+        <field name="cooperator_register_number">137</field>
+        <field name="cooperator_end_date" eval="datetime.now() + timedelta(days=1)"/>
+        <field name="member" eval="True"/>
+        <field name="country_id" ref="base.es"/>
+        <field name="state_id" ref="base.state_es_gi"/>
+    </record>
+
+    <!-- Demo Product -->
+    <record id="product_service_demo" model="product.template">
+        <field name="name">Prepagament App amb targeta</field>
+        <field name="sale_ok" eval="True"/>
+        <field name="purchase_ok" eval="False"/>
+        <field name="type">service</field>
+        <field name="default_code">Catàleg</field>
+        <field name="categ_id" ref="product.product_category_all"/>
+    </record>
+</odoo>
