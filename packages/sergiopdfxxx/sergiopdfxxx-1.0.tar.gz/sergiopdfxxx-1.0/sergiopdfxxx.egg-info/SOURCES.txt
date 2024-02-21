@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+sergiopdf_xx/__init__.py
+sergiopdf_xx/pdf2image.py
+sergiopdf_xx/pdf2text.py
+sergiopdfxxx.egg-info/PKG-INFO
+sergiopdfxxx.egg-info/SOURCES.txt
+sergiopdfxxx.egg-info/dependency_links.txt
+sergiopdfxxx.egg-info/top_level.txt
