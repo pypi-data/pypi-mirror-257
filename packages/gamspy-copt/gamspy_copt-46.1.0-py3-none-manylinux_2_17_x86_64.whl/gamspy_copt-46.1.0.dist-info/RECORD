@@ -1,0 +1,11 @@
+gamspy_copt/__init__.py,sha256=89eteG97IpwTJL33NnEEnqnzwvxr3MR32nzEFTzDrfE,389
+gamspy_copt/libcopt.so,sha256=QbjjIO_BODfcur6ZfS3gBYKSPBYxiZ7oItM3ccBTzJE,25234168
+gamspy_copt/libcptcclib64.so,sha256=_hRIbUgtPZK49nzo1ch2eVHmB4ItJiq19AHzvju1Tnc,334304
+gamspy_copt/libcrypto.so,sha256=SmFSUOuCn-wncxeAYwf0762u2wfiSqJ9mUGqq47lxhA,5472688
+gamspy_copt/libcrypto.so.3,sha256=SmFSUOuCn-wncxeAYwf0762u2wfiSqJ9mUGqq47lxhA,5472688
+gamspy_copt/optcopt.def,sha256=uO3CkNptJmJR1OfXId4HekMbk3uxmmtQ4RJiFdF10Hk,8668
+gamspy_copt/version.py,sha256=-4Ec9AN1om_6Y2UZb-PhdgN5iAXLprmXQ_aNh-X8cms,22
+gamspy_copt-46.1.0.dist-info/METADATA,sha256=eVFg1sKLau2PcCuO7gLxPTEqNFkfedJnoAeMDNocz08,57
+gamspy_copt-46.1.0.dist-info/WHEEL,sha256=EyChNuwWclgJLf8btn5REviYd5IxRGn2tIXp4VelYwc,116
+gamspy_copt-46.1.0.dist-info/top_level.txt,sha256=o5QBGmjwM9C5RbXo-DaXXSQ3pp7mqHaWj3aCHrz-lXY,12
+gamspy_copt-46.1.0.dist-info/RECORD,,
