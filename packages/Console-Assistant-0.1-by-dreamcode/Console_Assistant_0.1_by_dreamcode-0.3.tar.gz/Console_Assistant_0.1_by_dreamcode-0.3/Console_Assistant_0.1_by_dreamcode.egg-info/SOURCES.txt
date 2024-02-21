@@ -1,0 +1,17 @@
+setup.py
+Console_Assistant_0.1_by_dreamcode.egg-info/PKG-INFO
+Console_Assistant_0.1_by_dreamcode.egg-info/SOURCES.txt
+Console_Assistant_0.1_by_dreamcode.egg-info/dependency_links.txt
+Console_Assistant_0.1_by_dreamcode.egg-info/entry_points.txt
+Console_Assistant_0.1_by_dreamcode.egg-info/not-zip-safe
+Console_Assistant_0.1_by_dreamcode.egg-info/requires.txt
+Console_Assistant_0.1_by_dreamcode.egg-info/top_level.txt
+consoleassistant/__init__.py
+consoleassistant/src/main.py
+consoleassistant/src/ContactManager/contact_manager.py
+consoleassistant/src/ContactManager/models.py
+consoleassistant/src/EventManager/event_manager.py
+consoleassistant/src/FileManager/file_sorter.py
+consoleassistant/src/NoteManger/note_manager.py
+consoleassistant/src/View/base_view.py
+consoleassistant/src/tools/common.py
