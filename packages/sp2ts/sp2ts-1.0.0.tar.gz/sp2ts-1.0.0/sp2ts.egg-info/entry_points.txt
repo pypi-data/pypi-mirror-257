@@ -1,0 +1,2 @@
+[console_scripts]
+sp2ts = sp2ts.sp2ts:main

@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+requirements.txt
+sp2ts/__init__.py
+sp2ts/get_transition_dates.py
+sp2ts/sp2ts.py
+sp2ts.egg-info/PKG-INFO
+sp2ts.egg-info/SOURCES.txt
+sp2ts.egg-info/dependency_links.txt
+sp2ts.egg-info/entry_points.txt
+sp2ts.egg-info/requires.txt
+sp2ts.egg-info/top_level.txt
+tests/test_sp2ts.py
