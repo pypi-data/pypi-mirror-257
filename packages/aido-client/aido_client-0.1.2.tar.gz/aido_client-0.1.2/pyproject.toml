@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "aido-client"
+version = "0.1.2"
+description = ""
+authors = ["ericjiang <my.cheng@msn.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+requests = "^2.31.0"
+transformers = "^4.28.1"
+pydantic = "1.10.12"
+openai = "^1.12.0"
+jinja2 = "^3.1.3"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^6.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
