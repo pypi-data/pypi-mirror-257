@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: cybervpn
+Version: 3.0.0
+Summary: Cybervpn autoinstall script ssh-vpn installation module with layered encryption.
+Home-page: UNKNOWN
+Author: Aji permana
+Author-email: admin@cybervpn.site
+License: MIT
+Description: UNKNOWN
+Platform: Linux
+Classifier: Operating System :: POSIX :: Linux
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
