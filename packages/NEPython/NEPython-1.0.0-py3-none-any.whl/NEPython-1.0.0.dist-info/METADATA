@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: NEPython
+Version: 1.0.0
+Summary: A comprehensive Python library providing essential tools and utilities for streamlined development.
+Author: TheescapedShadow
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: requests
+Requires-Dist: beautifulsoup4
+Requires-Dist: tqdm
+Requires-Dist: packaging
+
+# NEPython
+
+NEPython (or NEPy) is a Python library that offers a collection of small, neat features to enhance your development experience.
+
+## Features
+
+- **Feature 1:** Describe what the first feature does.
+- **Feature 2:** Explain the purpose and functionality of the second feature.
+- ...
+
+## Installation
+
+You can install NEPython using pip:
+
+```bash
+pip install NEPython
