@@ -1,0 +1,15 @@
+acme_dns_azure/___init___.py,sha256=7FXWOxPctgxKvv_tmKGpAPyD26xc8GejGCej36EbSOI,160
+acme_dns_azure/certbot_manager.py,sha256=sJeaiQvibCpIbPtAJ8tQIZW3d3pwz_ZKkCRaHzqAiRo,16509
+acme_dns_azure/client.py,sha256=unbc2Xfm7PatW2oFWPcpt2lf6aEjWlKq-qsYH5lPmP0,2642
+acme_dns_azure/config/__init__.py,sha256=FPidc_chJi9muR06l_AoK5_3q7_RWhVaeDFqlto4tU8,2282
+acme_dns_azure/config/schema.py,sha256=gS-HCARDgksIxKgLuAUugh6S6hgzvIlkyoQWfR0KyWA,2494
+acme_dns_azure/context/__init__.py,sha256=AOmTU-05aoePqCsZ073To-ekqyId_X4GogO3HmHmFd8,282
+acme_dns_azure/exceptions.py,sha256=5wKU90kgxRgVGn6NHKI2i2LRGubvS0LZ9KPDQcJE2aA,538
+acme_dns_azure/key_vault_manager.py,sha256=7_uk8KZT5y2cqNh2xcc3njYHhZIIhTuvtiyu8rV9EVM,5823
+acme_dns_azure/log/__init__.py,sha256=lJoBnSQ8y_mHbtudTXrNQcxCtyauFEpY7CB4Dm783mc,735
+acme_dns_azure/os_manager.py,sha256=uax7fYlNi8M0aUrdO1Z0Pc5GCddVqsmaDGGdRv2gkpc,1520
+acme_dns_azure-0.1.0.dist-info/LICENSE,sha256=qYHaXM9gZsr831sc8JB_KbrPzNzln0fl-YqUCjU6s1A,1094
+acme_dns_azure-0.1.0.dist-info/METADATA,sha256=sPWadGwaATuAg4GvFJQfWLBTkUiiF1mvnNORBiaaNR0,8338
+acme_dns_azure-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+acme_dns_azure-0.1.0.dist-info/entry_points.txt,sha256=2xZ9wkt_5x0DGbYAgObBciA4A4NUz_cf_2epWNPlRmo,58
+acme_dns_azure-0.1.0.dist-info/RECORD,,
