@@ -1,0 +1,7 @@
+setup.py
+ikits/__init__.py
+ikits/response.py
+ikits.egg-info/PKG-INFO
+ikits.egg-info/SOURCES.txt
+ikits.egg-info/dependency_links.txt
+ikits.egg-info/top_level.txt
