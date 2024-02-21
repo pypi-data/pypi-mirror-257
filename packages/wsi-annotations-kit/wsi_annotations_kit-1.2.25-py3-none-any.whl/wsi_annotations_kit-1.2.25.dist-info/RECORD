@@ -1,0 +1,9 @@
+wsi_annotations_kit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wsi_annotations_kit/text_json_to_xml.py,sha256=yDNCP8ykKN0HiBDbkY68JwTdkwP5ACxfBPKeFbBrA6g,2900
+wsi_annotations_kit/text_xml_to_json.py,sha256=OUpzXuNwwCBXuVFqOcnRLggkLe1z_L5-th4X1QvmcOM,1428
+wsi_annotations_kit/wsi_annotations_kit.py,sha256=JgxBsJnL_4MF-EcHKyAs8AglHgwxmq6yGOX8j6Lh9sk,24576
+wsi_annotations_kit-1.2.25.dist-info/LICENSE,sha256=voFYlSiLOSI7ZZYtOmqB9dtVRGX-ji-YddilW75pqLA,1086
+wsi_annotations_kit-1.2.25.dist-info/METADATA,sha256=1_aEcejt9eJNbqXu5guEII3uutJ9TlUVagSnad10hcM,918
+wsi_annotations_kit-1.2.25.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+wsi_annotations_kit-1.2.25.dist-info/top_level.txt,sha256=9anG6XM7ys5a5n_uhqWSbalf7zJaHFTMYNfVLFofe8Q,20
+wsi_annotations_kit-1.2.25.dist-info/RECORD,,
