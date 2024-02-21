@@ -1,0 +1,5 @@
+pnu-libpnu
+cryptography
+openpyxl
+prettytable
+tqdm

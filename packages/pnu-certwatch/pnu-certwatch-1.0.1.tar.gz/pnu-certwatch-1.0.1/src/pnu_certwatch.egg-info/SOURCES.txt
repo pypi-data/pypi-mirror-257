@@ -1,0 +1,15 @@
+License
+README.md
+pyproject.toml
+setup.cfg
+data/tests.txt
+man/certwatch.1.gz
+src/certwatch/__init__.py
+src/certwatch/library.py
+src/certwatch/main.py
+src/pnu_certwatch.egg-info/PKG-INFO
+src/pnu_certwatch.egg-info/SOURCES.txt
+src/pnu_certwatch.egg-info/dependency_links.txt
+src/pnu_certwatch.egg-info/entry_points.txt
+src/pnu_certwatch.egg-info/requires.txt
+src/pnu_certwatch.egg-info/top_level.txt
