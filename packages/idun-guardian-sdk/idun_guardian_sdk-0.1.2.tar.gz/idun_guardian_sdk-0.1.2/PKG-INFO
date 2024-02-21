@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: idun-guardian-sdk
+Version: 0.1.2
+Summary: 
+License: Proprietary
+Author: IDUN Technologies AG
+Author-email: support@iduntechnologies.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: certifi (>=2024.2.2,<2025.0.0)
+Requires-Dist: python-dotenv (>=1.0.1,<2.0.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Requires-Dist: simplepyble (>=0.6.1,<0.7.0)
+Requires-Dist: urllib3 (<2.0)
+Requires-Dist: websocket-client (>=1.7.0,<2.0.0)
+Description-Content-Type: text/markdown
+
+# Development
+- setup: `poetry install`
+- build package: `poetry build`
+- build docs: `make html`
