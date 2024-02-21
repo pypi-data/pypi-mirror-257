@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: ppg_package
+Version: 0.1.0
+Summary: A comprehensive package for processing and analyzing PPG signals
+Home-page: https://github.com/zhuangjunyue/Deep-Learning-Network-for-Extracting-CO-from-PPG-Signals?tab=readme-ov-file
+Author: JunYue Zhuang
+Author-email: 1505472915@qq.com
+License: MIT
+Description: # ppg_package
+        
+        这是一个用于处理和分析脉搏波形(PPG)信号的Python包。该包提供了一系列工具，用于信号的滤波、分析和可视化。
+        
+        ## 功能
+        
+        `ppg_package` 包括以下主要功能：
+        
+        - 快速傅里叶变换（FFT）分析
+        - 功率谱密度（PSD）分析
+        - 短时傅里叶变换（STFT）分析
+        - 连续小波变换（CWT）分析
+        - Poincaré图分析
+        - 计算PPG信号的多种统计量和特征
+        
+        ## 安装
+        
+        您可以通过以下命令安装 `ppg_package`：
+        
+        pip install ppg_package
+        
+        
+Keywords: PPG,signal processing,analysis,FFT,PSD,CWT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
