@@ -1,0 +1,7 @@
+csaps
+lmfit
+matplotlib>=3.7
+nmrglue
+numpy
+scipy
+seaborn
