@@ -1,0 +1,8 @@
+{
+	"project": "project-template",
+	"scripts": [
+		{
+			"name": "downloader"
+		}
+	]
+}
