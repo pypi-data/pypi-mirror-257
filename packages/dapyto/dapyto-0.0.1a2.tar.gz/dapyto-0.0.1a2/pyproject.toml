@@ -1,0 +1,61 @@
+[project]
+name="dapyto"
+version="0.0.1a2"
+description="Daniel's Python Tools"
+readme = "DESCRIPTION.md"
+
+#
+# Meta
+#
+
+license = {file = "LICENSE.txt"}
+authors = [
+  { name="Daniel Volk", email="contact@daniel-volk.com" }
+]
+maintainers = [
+  { name="Daniel Volk", email="contact@daniel-volk.com" }
+]
+keywords = ["python", "command-line", "development", "tools"]
+requires-python = ">=3.8"
+
+dependencies = [
+  "click >= 8.1"
+]
+
+#
+# Categories
+#
+
+classifiers = [
+    "Topic :: Software Development",
+    "Topic :: System",
+    "Topic :: Utilities",
+    "Development Status :: 3 - Alpha",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3 :: Only",
+    "Operating System :: OS Independent",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Intended Audience :: System Administrators",
+    "Natural Language :: English"
+]
+
+#
+# Links
+#
+
+[project.urls]  # Optional
+"Homepage" = "https://github.com/daniel-volk/daniels_python_tools"
+"Bug Reports" = "https://github.com/pypa/sampleproject/issues"
+"Source" = "https://github.com/daniel-volk/daniels_python_tools"
+
+#
+# Build
+#
+
+[project.scripts]
+dpt-scan = "scan:main"
+
+[build-system]
+requires=["setuptools >= 65.5","wheel >= 0.42"]
+build-backend="setuptools.build_meta"

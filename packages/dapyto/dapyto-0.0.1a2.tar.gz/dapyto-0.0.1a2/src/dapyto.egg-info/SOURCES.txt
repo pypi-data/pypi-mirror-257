@@ -1,0 +1,12 @@
+DESCRIPTION.md
+LICENSE.txt
+README.md
+pyproject.toml
+src/scan.py
+src/dapyto.egg-info/PKG-INFO
+src/dapyto.egg-info/SOURCES.txt
+src/dapyto.egg-info/dependency_links.txt
+src/dapyto.egg-info/entry_points.txt
+src/dapyto.egg-info/requires.txt
+src/dapyto.egg-info/top_level.txt
+tests/test_scan.py
