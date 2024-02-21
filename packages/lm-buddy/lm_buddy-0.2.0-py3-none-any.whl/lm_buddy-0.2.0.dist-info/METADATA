@@ -1,0 +1,129 @@
+Metadata-Version: 2.1
+Name: lm-buddy
+Version: 0.2.0
+Summary: Ray-centric library for finetuning and evaluation of (large) language models.
+Home-page: https://github.com/mozilla-ai/lm-buddy
+License: Apache-2.0
+Author: Sean Friedowitz
+Author-email: sean@mozilla.ai
+Requires-Python: >=3.10,<3.11
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: accelerate (==0.26.1)
+Requires-Dist: bitsandbytes (==0.42.0)
+Requires-Dist: click (==8.1.7)
+Requires-Dist: datasets (==2.16.1)
+Requires-Dist: einops (==0.7.0)
+Requires-Dist: lm-eval[openai] (==0.4.1)
+Requires-Dist: peft (==0.7.1)
+Requires-Dist: protobuf (==3.20.0)
+Requires-Dist: pydantic (==2.6.0)
+Requires-Dist: pydantic-yaml (==1.2.0)
+Requires-Dist: ray[default] (==2.9.1)
+Requires-Dist: scipy (==1.10.1)
+Requires-Dist: torch (==2.1.2)
+Requires-Dist: transformers (==4.36.2)
+Requires-Dist: trl (==0.7.10)
+Requires-Dist: urllib3 (>=1.26.18,<2)
+Requires-Dist: wandb (==0.16.2)
+Project-URL: Repository, https://github.com/mozilla-ai/lm-buddy
+Description-Content-Type: text/markdown
+
+# LM Buddy
+
+> [!WARNING]
+>
+> LM Buddy is in the early stages of development.
+> It is missing important features and documentation.
+> You should expect breaking changes in the core interfaces and configuration structures
+> as development continues.
+> Use only if you are comfortable working in this environment.
+
+LM Buddy is a collection of jobs for finetuning and evaluating open-source (large) language models.
+The library makes use of YAML-based configuration files as inputs to CLI commands for each job,
+and tracks input/output artifacts on [Weights & Biases](https://docs.wandb.ai/).
+
+The package currently exposes two types of jobs:
+1. **finetuning job** using HuggingFace model/training implementations and 
+[Ray Train](https://docs.ray.io/en/latest/train/train.html)
+for compute scaling, or an
+2. **evaluation job** using [lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness) 
+with inference performed via an in-process HuggingFace model or an externally-hosted 
+[vLLM](https://github.com/vllm-project/vllm) server.
+
+## Installation
+
+TODO: Finalize this section once published to PyPi
+
+```
+pip install lm-buddy
+```
+
+### Minimum Python version
+
+LM Buddy is intended to be used in production on a Ray cluster 
+(see section below on [Ray job submission](#ray-job-submission)).
+Currently, we are utilizing Ray clusters running Python 3.10.8.
+In order to avoid dependency/syntax errors when executing LM Buddy on Ray,
+installation of this package requires Python between `[3.10, 3.11)`.
+
+## CLI usage
+
+LM Buddy exposes a CLI with a few commands, one for each type of job.
+To see all available job commands, run `lm_buddy run --help`
+
+Once LM Buddy is installed in your local Python environment, usage is as follows:
+```
+# Simple test
+lm_buddy run simple --config simple_config.yaml
+
+# LLM finetuning
+lm_buddy run finetuning --config finetuning_config.yaml
+
+# LLM evaluation
+lm_buddy run lm-harness --config lm_harness_config.yaml
+```
+
+See the `examples/configs` folder for examples of the job configuration structure. 
+For a full end-to-end interactive workflow for using the package, see the example notebooks.
+
+## Ray job submission
+
+Although the LM Buddy CLI can be used as a standalone tool,
+its commands are intended to be used as the entrypoints for jobs on a
+[Ray](https://docs.ray.io/en/latest/index.html) compute cluster.
+The suggested method for submitting an LM Buddy job to Ray is by using the 
+[Ray Python SDK](https://docs.ray.io/en/latest/cluster/running-applications/job-submission/sdk.html) 
+within a local Python driver script.
+This requires you to specify a Ray runtime environment containing:
+1) A `working_dir` for the local directory containing your job config YAML file, and
+2) A `pip` dependency for your desired version of `lm-buddy`.
+
+An example of the submission process is as follows:
+
+```
+from ray.job_submission import JobSubmissionClient
+
+# If using a remote cluster, replace 127.0.0.1 with the head node's IP address.
+client = JobSubmissionClient("http://127.0.0.1:8265")
+
+runtime_env = {
+    "working_dir": "/path/to/working/directory",
+    "pip": ["lm-buddy==X.X.X"]
+}
+
+# Assuming 'config.yaml' is present in the working directory
+client.submit_job(
+    entrypoint="lm_buddy run <job-name> --config config.yaml", 
+    runtime_env=runtime_env
+)
+```
+
+See the `examples/` folder for more examples of submitting Ray jobs.
+
+## Development
+
+See the [contributing](CONTRIBUTING.md) guide for more information on development workflows 
+and/or building locally.
+

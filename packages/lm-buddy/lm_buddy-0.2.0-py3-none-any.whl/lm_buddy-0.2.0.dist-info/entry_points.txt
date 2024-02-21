@@ -1,0 +1,3 @@
+[console_scripts]
+lm_buddy=lm_buddy.cli:cli
+
