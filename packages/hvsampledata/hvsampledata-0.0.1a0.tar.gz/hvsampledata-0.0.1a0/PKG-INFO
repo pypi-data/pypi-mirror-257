@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: hvsampledata
+Version: 0.0.1a0
+Project-URL: Documentation, https://github.com/unknown/hvsampledata#readme
+Project-URL: Issues, https://github.com/unknown/hvsampledata/issues
+Project-URL: Source, https://github.com/unknown/hvsampledata
+Author-email: Simon Høxbro Hansen <simon.hansen@me.com>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# hvsampledata
+
+[![PyPI - Version](https://img.shields.io/pypi/v/hvsampledata.svg)](https://pypi.org/project/hvsampledata)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/hvsampledata.svg)](https://pypi.org/project/hvsampledata)
+
+-----
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install hvsampledata
+```
+
+## License
+
+`hvsampledata` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.

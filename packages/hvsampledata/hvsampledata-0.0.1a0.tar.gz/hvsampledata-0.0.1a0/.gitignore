@@ -1,0 +1,6 @@
+Games/
+miniconda3/
+.wine/
+.vscode
+node_modules
+.git/
