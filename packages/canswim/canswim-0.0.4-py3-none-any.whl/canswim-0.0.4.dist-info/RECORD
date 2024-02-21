@@ -1,0 +1,16 @@
+canswim/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+canswim/__main__.py,sha256=K5ywxR7GWLUAHn11eH7DDgeK4CedvlOHNTUo2c5tFAw,3185
+canswim/covariates.py,sha256=KEuWC_8RfusgRQRf8XCss-zI9Fdo8tOxWPSsApNK-OM,32235
+canswim/dashboard.py,sha256=V4kM5ukxO5j3CpUAZuqL-AvNxgQ-qkbnFuj95ClhWmE,13000
+canswim/forecast.py,sha256=p461qWgeBWt7w1dJDPrqNxshd-6nGvuHw5Tmou0FuuQ,6823
+canswim/gather_data.py,sha256=ONoM_c-5eMEeYQwQ1ER0KFHdr_6cPxUntUl84zE5m1c,24444
+canswim/hfhub.py,sha256=3HaqAdCiJlim0Ow9CayA9vBBJXhIUiw4wK2WB959FAY,5567
+canswim/model.py,sha256=JHglFj7EbzkCA5tBJrJcC_8Jck3MAgPyoRO_qajQnhY,45167
+canswim/model_search.py,sha256=MqQmQjpeLBwfY9WIUpj88WLBeng4JUBHfrQ1lrKkr1s,1719
+canswim/targets.py,sha256=Z3FXyxgeIm6i6EPebDMMPjmnXQCX80og3NwFR08nZnU,5409
+canswim/train.py,sha256=q-piyRSkpliu4MqDEuWhZemRoqfENjuB6bfV4N3il64,6466
+canswim-0.0.4.dist-info/LICENSE.txt,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+canswim-0.0.4.dist-info/METADATA,sha256=qIdkQ_3MTlxUpCkWwsQ7xPH4gDo8CvA89zNGIxtKJB0,1517
+canswim-0.0.4.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+canswim-0.0.4.dist-info/top_level.txt,sha256=7HuP4s2gCjo05yYy2cvvpG-xgkaYs7JcuAPHkzi7Nls,8
+canswim-0.0.4.dist-info/RECORD,,
