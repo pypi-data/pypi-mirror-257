@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: crypteia
+Version: 1.0.1
+Summary: Cryptographer's content-addressing companion.
+Author: Nei Cardoso de Oliveira Neto
+Author-email: nei@teialabs.com
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: multiformats
+
+# crypteia
+
+A crafty coder's content-addressing companion for cascading consistency checks with cryptographic cloak and charm in the cosmic chaos of cyberspace.
+
+## usage
+
+```python
+from crypteia import Multibasing, Multihashing, ToBytes, compose
+
+get_hash = compose(ToBytes(), Multihash("sha3-224"), Multibase("base58btc"))
+data = "Hello, World!"
+digest = get_hash(data)
+print(digest)
+# 'z5dbMfGzi9pjjDf5Uv7bVDqgPPMGAkrRDmEqSoVquB'
+```
