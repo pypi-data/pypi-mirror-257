@@ -1,0 +1,10 @@
+gradio_url_buttons/__init__.py,sha256=7uPB_frruFIZ7MAVt05erDN9Ft6tfVYXx1Bji3cJLyI,74
+gradio_url_buttons/source_buttons.py,sha256=gLMTmzXP7pNYIcK_3LhmS4tnCKaS6jpCK8ZTLLB_2ro,341
+gradio_url_buttons/source_buttons.pyi,sha256=EkDEmyEUez7qD0CAhYc0X3yIkVe7LDwUPousTajG9GQ,377
+gradio_url_buttons/templates/component/index.js,sha256=A5A128-AXC0rpPM-zVWXzK310sZMzr5oH7-GutF8g5o,49007
+gradio_url_buttons/templates/component/style.css,sha256=Ukxp6pcNpRqAM66PjYMveF3KjNjDRWKLT0Rf1cO3geQ,25163
+gradio_url_buttons/templates/example/index.js,sha256=AcEKu2d4hjZyQsKf4pvOMqUT-QB_uFGbfbtGYc7mf9o,1549
+gradio_url_buttons/templates/example/style.css,sha256=Aj4k-S41TV83pot-J9j9Fi2UonrXHFC1Jl4Zb1xaYo4,61
+gradio_url_buttons-0.0.2.dist-info/METADATA,sha256=FSpqwb9aweN7w_yOtVrsf0BwzoE55Cj1AUg6QAoN9PM,5025
+gradio_url_buttons-0.0.2.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+gradio_url_buttons-0.0.2.dist-info/RECORD,,
