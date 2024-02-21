@@ -1,0 +1,9 @@
+setup.py
+palmfrog/__init__.py
+palmfrog/main.py
+palmfrog.egg-info/PKG-INFO
+palmfrog.egg-info/SOURCES.txt
+palmfrog.egg-info/dependency_links.txt
+palmfrog.egg-info/entry_points.txt
+palmfrog.egg-info/requires.txt
+palmfrog.egg-info/top_level.txt
