@@ -1,0 +1,88 @@
+Metadata-Version: 2.1
+Name: raknet
+Version: 0.3.0
+Summary: Python bindings for the RakNet networking library
+Keywords: python raknet network
+Author-Email: Vincent Wu <magicdroidx@gmail.com>
+License: BSD 3-Clause License
+        
+        Copyright (c) 2024, Vincent (Zhengyu) Wu
+        
+        Redistribution and use in source and binary forms, with or without
+        modification, are permitted provided that the following conditions are met:
+        
+        1. Redistributions of source code must retain the above copyright notice, this
+           list of conditions and the following disclaimer.
+        
+        2. Redistributions in binary form must reproduce the above copyright notice,
+           this list of conditions and the following disclaimer in the documentation
+           and/or other materials provided with the distribution.
+        
+        3. Neither the name of the copyright holder nor the names of its
+           contributors may be used to endorse or promote products derived from
+           this software without specific prior written permission.
+        
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+        AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+        IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+        DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+        FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+        DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+        SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+        CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+        OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+        OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: C++
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: System :: Networking
+Project-URL: Documentation, https://raknet-python.readthedocs.io
+Project-URL: Homepage, https://github.com/raknet-python/raknet-python
+Project-URL: Issues, https://github.com/raknet-python/raknet-python/issues
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# raknet-python
+
+[![Build](https://github.com/wu-vincent/raknet-python/actions/workflows/build.yml/badge.svg)](https://github.com/wu-vincent/raknet-python/actions/workflows/build.yml)
+[![Read the Docs](https://img.shields.io/readthedocs/raknet-python)](https://raknet-python.readthedocs.io/en/latest/)
+[![PyPI - Version](https://img.shields.io/pypi/v/raknet?logo=python&logoColor=white)](https://pypi.org/project/raknet/)
+![GitHub License](https://img.shields.io/github/license/raknet-python/raknet-python)
+![Python](https://img.shields.io/badge/Python-3-blue)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
+Python bindings for the [RakNet](https://github.com/facebookarchive/RakNet) networking library
+
+## 🛠 Installation
+
+### 📦 From PyPi
+
+```bash
+pip install raknet
+```
+
+or
+
+### 🎯 Build locally
+
+```shell
+git clone https://github.com/wu-vincent/raknet-python.git
+cd raknet-python
+pip install conan
+conan export raknet --version 4.081
+conan install . --build=missing -c tools.cmake.cmaketoolchain:generator=Ninja
+pip install .
+```
+
+## 🚀 Usage
+
+We are working on making this project ready and will drop the usage documentation soon. Stay tuned! ⏳
