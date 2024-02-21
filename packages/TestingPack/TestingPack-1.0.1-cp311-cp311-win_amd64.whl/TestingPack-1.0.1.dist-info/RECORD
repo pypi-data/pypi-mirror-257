@@ -1,0 +1,8 @@
+TestingPack/TestModule.py,sha256=iPiNM8YdD0PNU45qO2l4CSerMiGlt_Sh4dhjyLrjRTQ,52
+TestingPack/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+my_extension/TestModule_cython.cp311-win_amd64.pyd,sha256=NQjFJOKkKtiStFVBe84wukbpcq6ZsPn-_nX28yt98Bk,18944
+my_extension/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+TestingPack-1.0.1.dist-info/METADATA,sha256=TM9JlKXWZ7M-x64LJbayFXczQ478mCpTP-7_YJJ3WUE,317
+TestingPack-1.0.1.dist-info/WHEEL,sha256=ircjsfhzblqgSzO8ow7-0pXK-RVqDqNRGQ8F650AUNM,102
+TestingPack-1.0.1.dist-info/top_level.txt,sha256=rorHnKsD8ey0ByJK69ngRkGTWTCLiGoh9IdeW6Rk_TU,25
+TestingPack-1.0.1.dist-info/RECORD,,
