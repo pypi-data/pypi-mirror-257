@@ -1,0 +1,8 @@
+import_embargo/__init__.py,sha256=QNcc9IgGd3XHAQTcSTviA1ZoE-cNYgJCWIDBvhZacZg,76
+import_embargo/__main__.py,sha256=B_pyhtTGyAhrfgKNPaemW0PgnNgMOnPSyiEm_RNC7NU,45
+import_embargo/core.py,sha256=gjI9KKaY_gjuFebCx4OuB-fup8xB09c3nKdBnmeSwsw,11691
+import_embargo-0.0.1.dist-info/LICENSE,sha256=yt9090OrKSwAUfnExBBV34AXKwR2UplYdDQyq9BMKI0,1083
+import_embargo-0.0.1.dist-info/METADATA,sha256=bc860zE8I2t7T4PSdFpie8j_e-2bEbScuSnGa-pcm30,5912
+import_embargo-0.0.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+import_embargo-0.0.1.dist-info/entry_points.txt,sha256=CXnXaXqG4phvZT0DFvBkvVQgZKQ8ej0OkCbHnGD4l8k,59
+import_embargo-0.0.1.dist-info/RECORD,,

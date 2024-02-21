@@ -1,0 +1,3 @@
+[console_scripts]
+import_embargo=import_embargo.core:main
+
