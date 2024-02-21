@@ -1,0 +1,48 @@
+import {
+    File as FileIcon, ChartLine as TrendIcon, FileReport as LogIcon, ExternalLink as LinkIcon,
+    ChartInfographic as CountIcon, Versions as VersionIcon, ArrowRight as GoIcon,
+    Home as HomeIcon, Package, BrandPython as RootIcon, WorldDownload as DistributionIcon,
+    Api as DescriptionIcon, FileDiff as DifferenceIcon, CheckupList as EvaluateIcon, ReportAnalytics as ReportIcon,
+    Folder as DataDirectoryIcon, ShieldCheck as VerifiedIcon,
+    ShieldX as UnverifiedIcon, ShieldOff as NoverifyIcon,
+    Code as CodeIcon, Affiliate as CallIcon, Book as ViewIcon,
+    Upload as UploadIcon, Hierarchy as MemberIcon, Database as DataIcon,
+    Folder as ApiLevelIcon, Elevator as InheritanceIcon, Search as SearchIcon, Books as ProjectIcon
+} from '@vicons/tabler'
+import { Icon } from '@vicons/utils'
+
+export {
+    CallIcon,
+    DataIcon,
+    VerifiedIcon,
+    UnverifiedIcon,
+    MemberIcon,
+    SearchIcon,
+    NoverifyIcon,
+    DataDirectoryIcon,
+    LinkIcon,
+    TrendIcon,
+    CountIcon,
+    FileIcon,
+    HomeIcon,
+    VersionIcon,
+    LogIcon,
+    ProjectIcon,
+    RootIcon,
+    GoIcon,
+    Icon,
+    DistributionIcon,
+    DescriptionIcon,
+    DifferenceIcon,
+    Package as PackageIcon,
+    DistributionIcon as PreprocessIcon,
+    DescriptionIcon as ExtractIcon,
+    DifferenceIcon as DiffIcon,
+    EvaluateIcon,
+    ReportIcon,
+    CodeIcon,
+    ViewIcon,
+    ApiLevelIcon,
+    UploadIcon,
+    InheritanceIcon
+}
