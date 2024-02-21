@@ -1,0 +1,6 @@
+pygame
+colour
+pillow
+numpy
+path.py
+pathlib
