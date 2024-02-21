@@ -1,0 +1,6 @@
+[console_scripts]
+autoblocks=autoblocks._impl.cli.main:main
+
+[pytest11]
+autoblocks=autoblocks._impl.pytest.plugin
+
