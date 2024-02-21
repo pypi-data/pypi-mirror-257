@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "test-eder-ai-sdk"
+version = "0.1.1"
+description = ""
+authors = ["Eder Ignatowicz <ignatowicz@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.6,<4.0"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
