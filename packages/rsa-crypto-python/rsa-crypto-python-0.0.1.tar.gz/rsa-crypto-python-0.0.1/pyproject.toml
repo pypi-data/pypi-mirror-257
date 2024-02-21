@@ -1,0 +1,18 @@
+[project]
+name = "rsa-crypto-python"
+version = "0.0.1"
+authors = [
+  { name="Ukweh Everest(Exrelativity)", email="exrelativity@github.com" },
+]
+description = "A package that implements assymetric encryption and description using rsa"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/relativity-codes/rsa-crypto.git"
+Issues = "https://github.com/relativity-codes/rsa-crypto/issues"
