@@ -1,0 +1,4 @@
+pillow
+michaelPanPrintLib
+numpy
+pydantic
