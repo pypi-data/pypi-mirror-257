@@ -1,0 +1,36 @@
+{
+	"project": "project-template",
+	"scripts": [
+		{
+			"name": "downloader"
+		},
+		{
+			"name": "ndvi"
+		}
+	],
+	"notebooks": [
+		{
+			"name": "analytics"
+		}
+	],
+	"apis": [
+		{
+			"name": "analytics",
+			"port": 8010
+		},
+		{
+			"name": "xyz",
+			"port": 8011
+		}
+	],
+	"uis": [
+		{
+			"name": "map",
+			"command": "streamlit run uis/map/main.py --server.address localhost",
+			"env": {
+				"ANALYTICS_URL": "api.analytics",
+				"XYZ_URL": "api.xyz"
+			}
+		}
+	]
+}
