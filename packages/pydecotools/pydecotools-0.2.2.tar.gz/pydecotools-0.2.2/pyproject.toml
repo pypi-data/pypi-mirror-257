@@ -1,0 +1,43 @@
+[tool.poetry]
+name = "pydecotools"
+version = "0.2.2"
+description = "The collection of decorator utilities."
+authors = ["ilotoki0804 <ilotoki0804@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+keywords = ["decorator"]
+classifiers = [
+    # complete classifier list:
+    # http://pypi.python.org/pypi?%3Aaction=list_classifiers
+    "Development Status :: 1 - Planning",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Intended Audience :: Developers",
+    # 'Natural Language :: English',
+    # "Natural Language :: Korean",
+]
+packages = [
+    { include = "decotools", from = "src" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+[tool.poetry.urls]
+Homepage = "https://ilotoki0804.gitbook.io/pydecotools/"
+Documentation = "https://github.com/ilotoki0804/pydecotools"
+Repository = "https://github.com/ilotoki0804/pydecotools"
+Issues = "https://github.com/ilotoki0804/pydecotools/issues"
+Changelog = "https://github.com/ilotoki0804/pydecotools#relese-note"
+
+# [tool.poetry.scripts]
+# pydecotools = "pydecotools:__main__.main"
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.27.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
