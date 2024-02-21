@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+setup.py
+docs/__init__.py
+mzlogging/__init__.py
+mzlogging/_consts.py
+mzlogging/_mysql_connector.py
+mzlogging/logger.py
+mzlogging.egg-info/PKG-INFO
+mzlogging.egg-info/SOURCES.txt
+mzlogging.egg-info/dependency_links.txt
+mzlogging.egg-info/requires.txt
+mzlogging.egg-info/top_level.txt
