@@ -1,0 +1,11 @@
+image_to_sticker/__init__.py,sha256=zpsnS3hoytS-VaGguZ10VF68xWW563t2Q6FP_-GaoYg,616
+image_to_sticker/image_to_sticker.py,sha256=h4_Y94CZq5389UE_OFAsQzvPff1mYc_gAYJvEgQZfxE,7409
+image_to_sticker/models/__init__.py,sha256=CDY5KMKUlsAkUxaCUA61ckpmFo-hPQoj5PHzrqO0uY0,642
+image_to_sticker/models/borderizer.py,sha256=ueExpHWUVSz0E6POtuF2ncpsq9Co6ULXjYHurreJtbY,1621
+image_to_sticker/models/isnet.py,sha256=kTQmBqk5EBWCzBjzD0UOVlF7YIDWeYJ2oiT49ZROe1U,17839
+image_to_sticker-2024.2.20.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+image_to_sticker-2024.2.20.2.dist-info/METADATA,sha256=2KwD6SbxEKt_dap-pPzTvLabWKIeYulqJrFs-r2b4lI,1404
+image_to_sticker-2024.2.20.2.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+image_to_sticker-2024.2.20.2.dist-info/top_level.txt,sha256=LbvmTghMFlvUFqQqXGbzXpQyxtsyMtkw2-khav3WYrw,17
+image_to_sticker-2024.2.20.2.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+image_to_sticker-2024.2.20.2.dist-info/RECORD,,
