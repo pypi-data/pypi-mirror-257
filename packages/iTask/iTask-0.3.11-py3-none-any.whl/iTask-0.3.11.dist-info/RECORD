@@ -1,0 +1,17 @@
+itask/configs.py,sha256=np8brMtRD1zAaXoJEYShr9_eHIruHTqoYO0teCAhxIw,903
+itask/console.py,sha256=cqt81LM35PLWe_vuE9-L3a0mUG2UUtGOxcbVek8Wr3Q,1632
+itask/dataprovider.py,sha256=JDcs0N9xhQgEk1Q4GjORvQmXk_cx5TsGOHY-h7YkPYE,638
+itask/default_keys.yaml,sha256=MW7uXUhks-KmS1MV9SY4v-05TYP9bJ-RzNwfRfMu9Hk,439
+itask/imenu.py,sha256=YflZb25SOXfdqZ8sx_EUHq3FXdjgwKknhoIDb5XGE4g,6077
+itask/itask.py,sha256=POKQmsGx0TGn9sBqyOrHSvnFJtDaqFNm_VffB0X-EbQ,18081
+itask/selection.py,sha256=O87oRD-tAQj5BRpoofG7WugOOOdpzhlwfRcFEo6qlCM,1933
+itask/taskwarriorreportparser.py,sha256=JGq3RhW_y3MY3UCTbLPBNADgpjwrgjjUxzLCBwQlvP8,846
+itask/taskwarriorwrapper.py,sha256=SRDGAixxZm4wKA011WvRyZ1vB6D_CsBBBqge3m5litM,4281
+itask/terminal_resize_listener.py,sha256=8io27TLHltKRJhLJC0C41G7ik-REuYS9HAIwODFXNMw,749
+itask/viewer.py,sha256=qpLZEmB-D0rkTjOCKzq9RKr67EN4gzv3S5enZmPxixM,10787
+iTask-0.3.11.dist-info/LICENSE,sha256=WJ7YI-moTFb-uVrFjnzzhGJrnL9P2iqQe8NuED3hutI,35141
+iTask-0.3.11.dist-info/METADATA,sha256=hptyCmmXnUMSBFvkNoAtfiWq4QzmIOXZLGHgXYQJB_k,243
+iTask-0.3.11.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+iTask-0.3.11.dist-info/entry_points.txt,sha256=-uJqZ0JDUX8Tfn7sq04PhDgBWUlAezWI9KBtJJnKzBo,43
+iTask-0.3.11.dist-info/top_level.txt,sha256=eiMbba8MEVefBDVLkJH2d5Y_UmPYv-oGcQYcFGLe260,6
+iTask-0.3.11.dist-info/RECORD,,
