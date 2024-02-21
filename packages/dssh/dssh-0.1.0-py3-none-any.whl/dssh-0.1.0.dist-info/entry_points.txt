@@ -1,0 +1,3 @@
+[console_scripts]
+dssh=connect_dev_ssh.main:run_cli
+
