@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+sfs_shapwise_feature_selection.egg-info/PKG-INFO
+sfs_shapwise_feature_selection.egg-info/SOURCES.txt
+sfs_shapwise_feature_selection.egg-info/dependency_links.txt
+sfs_shapwise_feature_selection.egg-info/requires.txt
+sfs_shapwise_feature_selection.egg-info/top_level.txt
