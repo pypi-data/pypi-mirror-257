@@ -1,0 +1,13 @@
+tensorflow==2.15.0
+tensorflow-probability==0.23.0
+numpy
+scipy
+matplotlib
+
+[dev]
+pyarrow
+pytest
+pytest-cov
+pylint
+pylint[spelling]
+twine
