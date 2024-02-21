@@ -1,0 +1,9 @@
+flake8_force_keyword_arguments/__init__.py,sha256=v_MeLQTEV_qvFZpt3YpiGLBWK29wmIE-clBdHJ8yug0,224
+flake8_force_keyword_arguments/checker.py,sha256=KMirI8jDMjLLh8TMhKZQ2y2j-wvMeCdBIdBxLQBh9F8,5619
+flake8_force_keyword_arguments/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flake8_force_keyword_arguments/util.py,sha256=7ziUDIslXs2Yo5Y66gOb2tsFAXwi8cPODL5LBkAo7A8,3745
+flake8_force_keyword_arguments-2.0.0.dist-info/LICENSE,sha256=E5cT9UqPXTpaqC34iLSbByhG6OAYVhjGeIu_3nGltNU,1071
+flake8_force_keyword_arguments-2.0.0.dist-info/METADATA,sha256=FBUFIxeTKQuDVlIl6mylD9U6RreaU5DQlXa9FTK3K74,6986
+flake8_force_keyword_arguments-2.0.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+flake8_force_keyword_arguments-2.0.0.dist-info/entry_points.txt,sha256=XUB58b3Y7OyYfDuXdR5KRNjOrS2JxVjrDbu0S9Ja9KE,64
+flake8_force_keyword_arguments-2.0.0.dist-info/RECORD,,
