@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: mintutils
+Version: 0.0.2
+Summary: A beginner friendly app to install all essential softwares on Debian based linux to keep the productivity high.
+Home-page: https://github.com/muhiris/debutils
+Author: Muhiris (Muhammad Haris)
+Author-email: muhammadharis786@protonmail.com
+License: UNKNOWN
+Keywords: debian,linux,productivity,utilities,installer,vim,hotspot,hello,snapd,google-chrome,slack,vlc,zoom,vscode,postman,discord,spotify,telegram,obs-studio,freetube,signal,brave,firefox,youtube-dl,qbittorrent,pycharm,intellij,android-studio,wifi-hotspot,wireshark,video-stream,camera-stream,sockets
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE
+
+UNKNOWN
+
