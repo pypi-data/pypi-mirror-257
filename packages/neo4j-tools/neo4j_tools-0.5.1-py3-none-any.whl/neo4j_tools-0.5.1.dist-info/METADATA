@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: neo4j_tools
+Version: 0.5.1
+Summary: A package for convenience methods and other tools when working with Neo4j and GDS
+Home-page: https://github.com/neo4j-product-examples/neo4j-tools
+License: Apache Software License
+Author: Zach Blumenfeld
+Author-email: zach.blumenfeld@neo4j.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: graphdatascience (>=1.8,<2.0)
+Project-URL: Repository, https://github.com/neo4j-product-examples/neo4j-tools
+Description-Content-Type: text/markdown
+
+# Neo4j Tools
+A package for convenience methods and other tools when working with Neo4j and GDS
+
+## Installation
+
+    pip install neo4j_tools
+
