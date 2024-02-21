@@ -1,0 +1,8 @@
+resoto_plugin_slack/__init__.py,sha256=yznq9xkCefhFdBHZCkG-Po3ITJbZ0pRGWvsA6vcaDus,11736
+resoto_plugin_slack/config.py,sha256=7_OnEVH08ZZBDqo03dQ3S2mnSOz4ADA0fg2ovnFN-hM,482
+resoto_plugin_slack/resources.py,sha256=A2zCzUQwtD508DJfbLiCI20T5N-Z7zq6lUilEom8Llk,10618
+resoto_plugin_slack-3.9.0.dist-info/METADATA,sha256=AlckhadgmijQz9o9MemmdFs151z-nC2ALzH3lSqyUfE,1040
+resoto_plugin_slack-3.9.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+resoto_plugin_slack-3.9.0.dist-info/entry_points.txt,sha256=bstVIQ7t89cUsoAooR6mSdczfy1MYmA3vOKvvYAXtik,123
+resoto_plugin_slack-3.9.0.dist-info/top_level.txt,sha256=MoqUZGMyFXfdY3T2o3uq_ic1dF0uQxWBe4jNtvdN7qg,20
+resoto_plugin_slack-3.9.0.dist-info/RECORD,,
