@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+anitakuapi/api.py
+anitakuapi.egg-info/PKG-INFO
+anitakuapi.egg-info/SOURCES.txt
+anitakuapi.egg-info/dependency_links.txt
+anitakuapi.egg-info/requires.txt
+anitakuapi.egg-info/top_level.txt
