@@ -1,0 +1,10 @@
+talc/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+talc/cli.py,sha256=0HLR-6NXx4WxVNn0Fxu3YbfjH55kor7EeDDzmw6I_W0,13839
+talc/evals.py,sha256=Qx9FP5YIfxI4WlaFXUr-F0YLTdf_Ew5yQri7EV6Fy08,5774
+talc/logger.py,sha256=qKPpCEpU03T6tsgFYFUB2JbNlCJSd_VL2k8P_ItBYbc,15698
+talc-0.1.10.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+talc-0.1.10.dist-info/METADATA,sha256=ZP3o9fFgUnNbSWWRac1zeuumfiUetCc9C7PfuOTI1-g,4514
+talc-0.1.10.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+talc-0.1.10.dist-info/entry_points.txt,sha256=nuscnyMo7hxlv5u52mwaBS71605JlPOhWbcs1f7KBLU,39
+talc-0.1.10.dist-info/top_level.txt,sha256=2BEb77yyn4bri8bGDUx5w7AqxJHmfI4qGkDgbhuXvbg,5
+talc-0.1.10.dist-info/RECORD,,
