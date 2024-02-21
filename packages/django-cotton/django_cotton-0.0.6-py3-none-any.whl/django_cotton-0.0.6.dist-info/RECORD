@@ -1,0 +1,14 @@
+django_cotton/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_cotton/cotton_loader.py,sha256=dtJBeGBclFuifuzR5dkELS1hU7HJhLykPwJw-e28ra0,8766
+django_cotton/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_cotton/templatetags/_component.py,sha256=bJv_CnRM-g7bwuu0Y2iIevysIOLAILfJPFYK1FUKj1Y,3008
+django_cotton/templatetags/_slot.py,sha256=vQE5w3o2fZ9Q3qYaNXpy_3T7S4o0DakTg_21PMmycRU,1249
+django_cotton/templatetags/_var.py,sha256=my7Z3W-Q5sRlp0cvRGfKp_He-cVYBKX2L9ho533RLyU,1324
+django_cotton/templatetags/cotton.py,sha256=ohp-mHKEupaX2bzMp5pC-lC5lbvzOgdSFwjnlGTywOE,862
+django_cotton/urls.py,sha256=rfydhj-yiBuB-oK3XeOkICshZaEkaRcu15kWs0cGzWw,1490
+django_cotton/views.py,sha256=qtL4ei2CeqzEv1hFXN6r2ctyctsOJw85Uih2YaIrK1A,786
+django_cotton/wsgi.py,sha256=sD252HyzgHETI6efHdlMrrqmcftNveEsi7qUeELOoj4,405
+django_cotton-0.0.6.dist-info/LICENSE,sha256=_Oesr2JD77Djn8rYp1lTnLXOBuEoWiRuSNtwZVWm1VA,1064
+django_cotton-0.0.6.dist-info/METADATA,sha256=x64tOnkhHWwVCMU4NLGpKV58DvBbeRBh7dB9LqA1-H0,936
+django_cotton-0.0.6.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+django_cotton-0.0.6.dist-info/RECORD,,
