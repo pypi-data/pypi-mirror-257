@@ -1,0 +1,97 @@
+Metadata-Version: 2.1
+Name: dssh
+Version: 0.4.1
+Summary: SSH server manager on the basis of environments
+Home-page: https://github.com/sauravsharma1998/dssh
+Keywords: packaging,poetry
+Author: Saurav Sharma
+Maintainer: Saurav Sharma
+Requires-Python: >=3.7.0,<4.0.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pexpect (>=4.9.0,<5.0.0)
+Requires-Dist: prompt-toolkit (>=3.0.43,<4.0.0)
+Requires-Dist: rich (>=13.7.0,<14.0.0)
+Requires-Dist: typer (>=0.9.0,<0.10.0)
+Project-URL: Bug Tracker, https://github.com/sauravsharma1998/dssh/issues
+Project-URL: Documentation, https://github.com/sauravsharma1998/dssh
+Project-URL: Repository, https://github.com/sauravsharma1998/dssh
+Description-Content-Type: text/markdown
+
+# Connect Dev SSH
+
+Simple and elegant python module that helps you to manage your ssh server based on environment. Like DEV, UAT, PRE-PROD etc.
+You can customize your environments/servers config as per your requirements.
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+
+```bash
+pip install dssh
+```
+
+## Usage
+
+### Add new environment
+
+```bash
+$ dssh addenv
+┏━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ Available Environments ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━┩
+└────────────────────────┘
+New Environment name: DEV
+```
+
+### Add new server to an environment
+
+```bash
+$ dssh addserver
+┏━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ Available Environments ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━┩
+│ DEV                    │
+└────────────────────────┘
+Select an environment: DEV
+┏━━━━━━━━━━━━━━━━━━━┓
+┃ Available Servers ┃
+┡━━━━━━━━━━━━━━━━━━━┩
+└───────────────────┘
+New Server name: Server1
+Server username: username
+Server hostname: 10.10.0.1
+```
+
+### Connect to a server
+
+```bash
+$ dssh connect
+┏━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ Available Environments ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━┩
+│ DEV                    │
+│ UAT                    │
+└────────────────────────┘
+Select an environment: DEV
+┏━━━━━━━━━━━━━━━━━━━┓
+┃ Availbale Servers ┃
+┡━━━━━━━━━━━━━━━━━━━┩
+│ Server1           │
+└───────────────────┘
+Select a server: Server1
+Environment:DEV Server:Server1!
+Connecting to username@10.10.0.1! 💥
+```
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+

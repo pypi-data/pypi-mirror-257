@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "dssh"
+version = "0.4.1"
+description = "SSH server manager on the basis of environments"
+authors = ["Saurav Sharma"]
+readme = "README.md"
+maintainers = ["Saurav Sharma"]
+homepage = "https://github.com/sauravsharma1998/dssh"
+repository = "https://github.com/sauravsharma1998/dssh"
+documentation = "https://github.com/sauravsharma1998/dssh"
+keywords = ["packaging", "poetry"]
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/sauravsharma1998/dssh/issues"
+
+[tool.poetry.dependencies]
+python = "^3.7.0"
+pexpect = "^4.9.0"
+typer = "^0.9.0"
+rich = "^13.7.0"
+prompt-toolkit = "^3.0.43"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+dssh = "dssh.main:run_cli"
