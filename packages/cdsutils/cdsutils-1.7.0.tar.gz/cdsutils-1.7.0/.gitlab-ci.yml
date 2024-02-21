@@ -1,0 +1,75 @@
+stages:
+  - dist
+  - test
+
+include:
+  - project: computing/gitlab-ci-templates
+    file:
+      # https://computing.docs.ligo.org/gitlab-ci-templates/conda/
+      - conda.yml
+      # https://computing.docs.ligo.org/gitlab-ci-templates/python/
+      - python.yml
+
+
+# -- dist -------------------
+#
+# make the distribution tarball and upload it as a job artifact
+#
+
+tarball:
+  stage: dist
+  extends:
+    - .python:build
+  image: python:3
+
+
+# -- test -------------------
+#
+# run the tests on all supported platforms.
+#
+# need to use conda for nds2-client
+#
+
+.test: &test
+  stage: test
+  extends:
+    - .conda:base
+    - .python:pytest
+  image: igwn/base:conda
+  needs:
+    - tarball
+  variables:
+    GIT_STRATEGY: none
+    INSTALL_TARGET: "cdsutils-*.tar.*"
+    COVERAGE_TARGET: "cdsutils"
+    PYTEST_OPTIONS: "--pyargs cdsutils"
+  before_script:
+    - !reference [".conda:base", before_script]
+    - "PYTHON_VERSION=${CI_JOB_NAME##*:}"
+    - mamba create -n test
+          python=${PYTHON_VERSION}
+          setuptools-scm
+          ezca
+          numpy
+          python-nds2-client
+    - conda activate test
+    - !reference [".python:pytest", before_script]
+  script:
+    - conda activate test
+    - !reference [".python:pytest", script]
+  after_script:
+    - . /opt/conda/etc/profile.d/conda.sh
+    - conda activate test
+    - !reference [".python:pytest", after_script]
+
+test:python:3.8:
+  <<: *test
+
+test:python:3.9:
+  <<: *test
+
+test:python:3.10:
+  <<: *test
+
+test:python:3.11:
+  <<: *test
