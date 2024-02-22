@@ -1,0 +1,5 @@
+setup.py
+jupyterlab_theme_toggler.egg-info/PKG-INFO
+jupyterlab_theme_toggler.egg-info/SOURCES.txt
+jupyterlab_theme_toggler.egg-info/dependency_links.txt
+jupyterlab_theme_toggler.egg-info/top_level.txt
