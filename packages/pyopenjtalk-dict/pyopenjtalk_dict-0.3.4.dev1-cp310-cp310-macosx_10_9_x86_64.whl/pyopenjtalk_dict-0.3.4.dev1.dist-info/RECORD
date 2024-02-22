@@ -1,0 +1,13 @@
+pyopenjtalk_dict-0.3.4.dev1.dist-info/LICENSE.md,sha256=w4CDpNUcHqhuCLMwOphNDCNxjFrCFAWK9wWBTTD0u1s,1177
+pyopenjtalk_dict-0.3.4.dev1.dist-info/RECORD,,
+pyopenjtalk_dict-0.3.4.dev1.dist-info/WHEEL,sha256=qW9xlwewyQBufEUzmM-8CIjZ7fR659LOSrcgouui4Z4,111
+pyopenjtalk_dict-0.3.4.dev1.dist-info/top_level.txt,sha256=S7eQayVhEioHtm7lS-oG8mteALqSBd5DR9HJjfJnHO0,12
+pyopenjtalk_dict-0.3.4.dev1.dist-info/METADATA,sha256=y2rGqKA2JUpYrFxxbZXuledEjRkm6XnKGJ4uoDpcsqg,8542
+pyopenjtalk/version.py,sha256=Zk41m1VkLVarGAKE7BQH5GAfaRk3HUSeejVrxLpmu9A,27
+pyopenjtalk/openjtalk.cpython-310-darwin.so,sha256=mTYbjc0TLdlwNG-An2LN0P2I7qv8wYrdBcXMSyxX7cI,2038416
+pyopenjtalk/__init__.py,sha256=bjO39y-_v4fU0oxDoewYmnSQ-2UomWP9T8k-flYTrpQ,8384
+pyopenjtalk/utils.py,sha256=7s9Q2_w9Mpzl80gQ1V7jWVG35Gfb0U_yjmGKRmLtXPo,835
+pyopenjtalk/htsengine.cpython-310-darwin.so,sha256=XAeXp33xDbReiGg6lZJ__NR30-1wYYSb7rnh0NVGMXM,247672
+pyopenjtalk/htsvoice/LICENSE_mei_normal.htsvoice,sha256=r4oFts4o5RNlj98EgPNtv0nL6HjSVx2X3QF-gFLHE5E,2870
+pyopenjtalk/htsvoice/README.md,sha256=-yfJC1ZNcmpujB4DyBJ1MQLGkrCObIbkpO25cFDpdt0,100
+pyopenjtalk/htsvoice/mei_normal.htsvoice,sha256=875JpoOJBKbCGHkLZOB8PoPBiG6ZXcooS0E8qrGRhN4,862503
