@@ -1,0 +1,3 @@
+[console_scripts]
+pptu=pptu.cli:main
+

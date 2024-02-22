@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: pptu
+Version: 2023.11.6
+Summary: Python P2P Torrent Uploader
+Author: alexia
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: Wand (>=0.6.9,<0.7.0)
+Requires-Dist: beautifulsoup4 (>=4.11.1,<5.0.0)
+Requires-Dist: cinemagoer (>=2022.2.11,<2023.0.0)
+Requires-Dist: guessit (>=3.4.3,<4.0.0)
+Requires-Dist: httpx (>=0.23.0,<0.24.0)
+Requires-Dist: humanize (>=4.3.0,<5.0.0)
+Requires-Dist: langcodes (>=3.3.0,<4.0.0)
+Requires-Dist: lxml (>=4.9.1,<5.0.0)
+Requires-Dist: platformdirs (>=2.5.2,<3.0.0)
+Requires-Dist: pymediainfo (>=5.1.0,<6.0.0)
+Requires-Dist: pyotp (>=2.6.0,<3.0.0)
+Requires-Dist: pyoxipng (>=0.1.0,<0.2.0)
+Requires-Dist: pyrosimple (>=2.0.0rc1,<3.0.0)
+Requires-Dist: requests (>=2.28.0,<3.0.0)
+Requires-Dist: requests-toolbelt (>=1.0.0,<2.0.0)
+Requires-Dist: rich (>=12.4.4,<13.0.0)
+Requires-Dist: ruamel.yaml (>=0.17.21,<0.18.0)
+Requires-Dist: tls-client (>=0.2.1,<0.3.0)
+Requires-Dist: toml (>=0.10.2,<0.11.0)
+Requires-Dist: torf (>=4.0.3,<5.0.0)
