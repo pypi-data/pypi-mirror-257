@@ -1,0 +1,6 @@
+detectron3.py
+setup.py
+detectron3.egg-info/PKG-INFO
+detectron3.egg-info/SOURCES.txt
+detectron3.egg-info/dependency_links.txt
+detectron3.egg-info/top_level.txt
