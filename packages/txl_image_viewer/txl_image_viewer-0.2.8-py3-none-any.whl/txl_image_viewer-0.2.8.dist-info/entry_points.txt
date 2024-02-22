@@ -1,0 +1,5 @@
+[asphalt.components]
+image_viewer = txl_image_viewer.components:ImageViewerComponent
+
+[txl.components]
+image_viewer = txl_image_viewer.components:ImageViewerComponent
