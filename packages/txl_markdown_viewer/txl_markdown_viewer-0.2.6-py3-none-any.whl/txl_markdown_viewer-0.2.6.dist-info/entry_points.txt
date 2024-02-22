@@ -1,0 +1,5 @@
+[asphalt.components]
+markdown_viewer = txl_markdown_viewer.components:MarkdownViewerComponent
+
+[txl.components]
+markdown_viewer = txl_markdown_viewer.components:MarkdownViewerComponent
