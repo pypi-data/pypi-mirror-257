@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pyntload
+Version: 0.3.3
+Summary: A simple package for importing jupyter notebook and databricks notebooks (REST API)
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Issues, https://github.com/pypa/sampleproject/issues
+Author-email: Simon De Smul <simon.de.smul@hotmail.com>
+License-File: LICENSE.txt
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+#pyntload
