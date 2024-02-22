@@ -1,0 +1,14 @@
+vsr53/AccessCodes.py,sha256=c_ftQSiulD3aFrmvlB_2ywgjPm6VLCY24eCwToKeC50,264
+vsr53/Commands.py,sha256=-mrCkGU0v1QP21ThmyvxNNTrdfdzxL0k7YdQ3qmFqmQ,1455
+vsr53/DisplayModes.py,sha256=HJgpfp7O1g-KqM91FurfJWULZIVp8zhtDi4YhBXGYRM,187
+vsr53/ErrorMessages.py,sha256=ZJtrwMXWl-LS8iWOa31_nFrab7xk7Ggysww6aDbqAeE,717
+vsr53/ThyrCommPackage.py,sha256=qkmcayU8HjPh-nqm0SnSRgwahwDbzu83AFX8mV2sz0U,4473
+vsr53/__init__.py,sha256=x7CfrGB9Bcf6it3gkrKTo5egEg6S3zTQC2mQjdmm1aM,207
+vsr53/_version.py,sha256=DGJ4pj32xs3_DRJhSzQwCiRNnAQrMgo09USYpyMZsKc,411
+vsr53/logger.py,sha256=avyo7ie7HeCOANMyFbeEkjCknIbGZ-gqStFiTTjtqEk,495
+vsr53/sys.py,sha256=fNz0EEhBK8f0fBGXqu-Hu89qFQnWUSzQsPVrdF6H9OE,252
+vsr53/vsr53.py,sha256=NlsTPaKH-sso9AMBDtJBFmUdzn1KcMcucrf8CS0W9bU,15367
+vsr53-1.0.0.dist-info/METADATA,sha256=qcxaRphZQJh0iY1CMw5YeJrpB_sEVKWwMZqg-dc2zqY,2137
+vsr53-1.0.0.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+vsr53-1.0.0.dist-info/licenses/LICENSE,sha256=ogEPNDSH0_dhiv_lT3ifVIdgIzHAqNA_SemnxUfPBJk,7048
+vsr53-1.0.0.dist-info/RECORD,,
