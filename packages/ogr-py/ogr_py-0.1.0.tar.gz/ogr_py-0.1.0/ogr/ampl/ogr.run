@@ -1,0 +1,11 @@
+# Solve an optimal GolombRuler using an exact integer linear programming formulation.
+
+reset;
+model ogr.mod
+data ogr.dat
+
+option solver cplex;
+
+solve;
+
+display d;

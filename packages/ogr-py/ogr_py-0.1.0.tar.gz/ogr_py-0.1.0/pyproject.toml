@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "ogr-py"
+version = "0.1.0"
+description = "A set of utilities to study the Optimal Golomb Ruler problem"
+license = "MIT"
+authors = [
+    "Evan Voyles <evan.voyles@etu.sorbonne-universite.fr>"
+]
+packages = [
+    { include = "ogr" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+appdirs = "^1.4.4"
+
+
+# [tool.poetry.scripts]
+# test = { reference = ""}
+ogr-rust = "^0.1.2"
+polars = "^0.20.1"
+altair-viewer = "^0.4.0"
+
+[tool.poetry.scripts]
+solve_demo = "run:solve"
+ruler = "ogr.exploration:main"
+gen = "run:generate_rulers"
+solve = "ogr.scripts:solve"
+ogr = "ogr_main:main"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.4.3"
