@@ -1,0 +1,17 @@
+LibreView/LibreView.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+LibreView/__init__.py,sha256=dm4q9ivXhgPKDGKzoZJr8PryD7HY-AS_xOip0lxcvDs,30
+LibreView/models/Connection.py,sha256=8CWiNnFeGGIL7mrdby9mXuuK57fjGjVvNsFn4X0orts,492
+LibreView/models/Device.py,sha256=pma6dizKnMRKC80fJwQt-AfRvMEGcD7gj15fwJaLbv4,226
+LibreView/models/GlucoseMeasurement.py,sha256=J5wEWDxnyumIZZvHysh1rUi3HQzrxtTzcXIxROTJfOU,1021
+LibreView/models/Practice.py,sha256=yc0jGS3W08eWmqrxFt3MZrNjumP2b0Cn8ZLhkmU3QXI,315
+LibreView/models/Sensor.py,sha256=KoPLxk1r0I3Fmm-hC4CaUdE-WtS6jg4yCfXUshVFauk,216
+LibreView/models/User.py,sha256=5Nre-uOFo0iKnYm9XQMxGoIM5vFIlyI0SFCiHaYU66A,651
+LibreView/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+LibreView/utils/API.py,sha256=VmE46_stGldKiFg0wY6y6IlVv1LRxibXivzInLRb33U,2812
+LibreView/utils/__init__.py,sha256=zQ9wUUpMA4CoM2OOcLBltEA9-bGQ8ApGLsu9oq_bqUk,21
+Tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Tests/test_api.py,sha256=y_MJouRfH3GhwhyaFlKldkMyqMTO9kcLf80dDvEdc-U,842
+LibreView-0.0.5.dist-info/METADATA,sha256=6DFRRRqzsyAd6DEpbQ5nsM9-GTiPG3bQGrJBaHAn1zQ,476
+LibreView-0.0.5.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+LibreView-0.0.5.dist-info/top_level.txt,sha256=n4zpYxbZ0H32xu2UW1VEg_ylAZ40JI6gjvi_rBl12Ng,16
+LibreView-0.0.5.dist-info/RECORD,,
