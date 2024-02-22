@@ -1,0 +1,16 @@
+oscar_iyzipay/oscar_iyzipay/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+oscar_iyzipay/oscar_iyzipay/admin.py,sha256=p6xop1PuuDG2Uwv3G_aRfldxOfBzTRfMaoZmORVkqyU,66
+oscar_iyzipay/oscar_iyzipay/apps.py,sha256=lFEEMn5uX7z-OQG8P-E18cuKguHE7P_zIzZfhwx_bFE,163
+oscar_iyzipay/oscar_iyzipay/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+oscar_iyzipay/oscar_iyzipay/models.py,sha256=4OVMcDDx9fVgBEJ91B7dfMEG2Ni1LRSLJOKzIkVPsKo,60
+oscar_iyzipay/oscar_iyzipay/session.py,sha256=wWB9pqo8EevH5ri2hXzGKapg9B1wDhumjNoM2_lsc6U,4049
+oscar_iyzipay/oscar_iyzipay/tax.py,sha256=0pqIG4a5XqMGJRRpuI0K0bRSYXzxvwekwbez3GDbPjg,780
+oscar_iyzipay/oscar_iyzipay/tests.py,sha256=2uDafv3Ns6f7Vy1ekUtgYxCZEi1KRyesZDTAFhYcX-E,63
+oscar_iyzipay/oscar_iyzipay/urls.py,sha256=lkLZhBebZHNPfjAEBMth9gEBq8Q57PDOwACuUpyordM,346
+oscar_iyzipay/oscar_iyzipay/views.py,sha256=XRdPTUllDiC34xH15tWYkCtHUbf2siDbgqdS41CBuas,9305
+oscar_iyzipay/templates/oscar/checkout/failure.html,sha256=bno9A2WAxJaRM204J5cJo3YWFeP8c00Cvc0jurEyqkQ,253
+oscar_iyzipay/templates/oscar/checkout/get.html,sha256=kVIzk4VQWggIDcHKs5QQU2aEjbH1P441GSts6w4Pswo,263
+oscar_iyzipay/templates/oscar/checkout/post.html,sha256=Hkj2QQjGmZXxgBbYryl0KIYZCcQWD2fTIWTONHuIeiM,196
+django_oscar_iyzipay-0.1.12.dist-info/METADATA,sha256=VdQ5LItkrBkDNW5Zmv_tqK46PgV4hFRUdvBUXoUd9fU,826
+django_oscar_iyzipay-0.1.12.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+django_oscar_iyzipay-0.1.12.dist-info/RECORD,,
