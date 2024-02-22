@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+dijkstra_for_robots/__init__.py
+dijkstra_for_robots/example.py
+dijkstra_for_robots/main.py
+dijkstra_for_robots.egg-info/PKG-INFO
+dijkstra_for_robots.egg-info/SOURCES.txt
+dijkstra_for_robots.egg-info/dependency_links.txt
+dijkstra_for_robots.egg-info/requires.txt
+dijkstra_for_robots.egg-info/top_level.txt
