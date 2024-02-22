@@ -1,0 +1,14 @@
+jupyterlab_logout/__init__.py,sha256=3SG4KP9FXFzW4AE6BcJT5J-m_B4in2mafuuEInqI5Vg,160
+jupyterlab_logout/_version.py,sha256=Y5SHlIXuXAzscWObrzxD1FAWP3sbr0Gm3wiDKpFPtvs,171
+jupyterlab_logout-1.0.0.data/data/share/jupyter/labextensions/jupyterlab-logout/package.json,sha256=qEXcS7hB-sgNEne2Ds4BNRjZBJhEoNWrG2wAR8C3iGs,3240
+jupyterlab_logout-1.0.0.data/data/share/jupyter/labextensions/jupyterlab-logout/schemas/jupyterlab-logout/package.json.orig,sha256=CfiVUc7s9F758QKIRtXaK3gBctpnSExF47PaW6Qc_WQ,3410
+jupyterlab_logout-1.0.0.data/data/share/jupyter/labextensions/jupyterlab-logout/schemas/jupyterlab-logout/plugin.json,sha256=SZGBgCHwjMsyX_XChmmu9gpN7_1CrAvxpQl83fdZkCQ,312
+jupyterlab_logout-1.0.0.data/data/share/jupyter/labextensions/jupyterlab-logout/static/458.4075f034918cecc3137a.js,sha256=QHXwNJGM7MMTeuCKKK0O8xqT0R90fo3DZ3vE1eDqYp0,7325
+jupyterlab_logout-1.0.0.data/data/share/jupyter/labextensions/jupyterlab-logout/static/remoteEntry.0e10d8814c9237464bff.js,sha256=DhDYgUySN0ZL_w_3FO_pUd65Tn6u91uuVidT6IWHWwg,6267
+jupyterlab_logout-1.0.0.data/data/share/jupyter/labextensions/jupyterlab-logout/static/style.js,sha256=-CQt0ZTPaCTvrRiLcznxflAbfvIKlOVzjOos-muaXQ8,118
+jupyterlab_logout-1.0.0.data/data/share/jupyter/labextensions/jupyterlab-logout/static/third-party-licenses.json,sha256=4sH2NzbsVeBZhf-Q4Bm_ta5sMbi__jpHMucPxk_LVp4,2597
+jupyterlab_logout-1.0.0.data/data/share/jupyter/labextensions/jupyterlab-logout/install.json,sha256=lLkGQCrFI1ANb8KjS5-lBtmVt09AO16Lz_nebGALMMU,195
+jupyterlab_logout-1.0.0.dist-info/METADATA,sha256=WGWMfsKjCp0kEBYauVjfTsqm7k46H-BC2QUfM-JxVJQ,4755
+jupyterlab_logout-1.0.0.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+jupyterlab_logout-1.0.0.dist-info/licenses/LICENSE,sha256=cFETqAPbZPAiaEvqn0VLRRJXDSFKqa57Xnj54qNlk1Y,1538
+jupyterlab_logout-1.0.0.dist-info/RECORD,,
