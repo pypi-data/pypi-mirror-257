@@ -1,0 +1,9 @@
+nendo_plugin_library_postgres/__init__.py,sha256=tqHhwvZUjpIQXGIB1MUIBrdxUw9V2OjrTezBxQ2MZ0w,137
+nendo_plugin_library_postgres/config.py,sha256=bAd5sJs1cqaD0ubhKahGq-TNVTYTTjxa3HRyF658NZI,577
+nendo_plugin_library_postgres/model.py,sha256=P3N5VeMRBk58kVvk7kOunzqEaWTPQW5j9Apko-X0M80,781
+nendo_plugin_library_postgres/plugin.py,sha256=cBxYw9MoJquC-AiM80LE2o3aUubw9INv0_71Iz2cgO0,22256
+nendo_plugin_library_postgres/storage.py,sha256=UoVJwbcGSk7ncwD6SLzbGcwK9x2o-oiT8S7LrmKbPh0,9370
+nendo_plugin_library_postgres-0.1.0.dist-info/LICENSE,sha256=WFtPUEsCEmStk9TDnodbMyCpU205jkPFH1wxFD9LIKk,1066
+nendo_plugin_library_postgres-0.1.0.dist-info/METADATA,sha256=xfX09lEEJM00RVEI19XpAiPUA--87L_OCJEmuRZRgb8,5311
+nendo_plugin_library_postgres-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+nendo_plugin_library_postgres-0.1.0.dist-info/RECORD,,
