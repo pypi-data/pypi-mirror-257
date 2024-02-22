@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+acdh_obj2xml_pyutils/__init__.py
+acdh_obj2xml_pyutils.egg-info/PKG-INFO
+acdh_obj2xml_pyutils.egg-info/SOURCES.txt
+acdh_obj2xml_pyutils.egg-info/dependency_links.txt
+acdh_obj2xml_pyutils.egg-info/not-zip-safe
+acdh_obj2xml_pyutils.egg-info/requires.txt
+acdh_obj2xml_pyutils.egg-info/top_level.txt
+tests/test_obj2xml.py
