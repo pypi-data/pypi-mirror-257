@@ -1,0 +1,3 @@
+[console_scripts]
+extract-answer-key=extract_answer_key.main:main
+
