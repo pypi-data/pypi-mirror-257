@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: laravel_queue
+Version: 0.0.3
+Summary: Reads from a Laravel queue
+Author-email: 2NDNATURE <info@2ndnaturewater.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: phpserialize
+Description-Content-Type: text/markdown
+
+# Laravel Queue for Python
+
+Currently:
+
+- only supports reading
+- only supports queues in postgres
+
+### Read Jobs from Queue
+
+```
+from laravel-queue import Queue
+
+connection_string = "postgresql://user:password@host:5432/db"
+queue = Queue(connection_string)
+queue.read()
+```
+
+#### Queue Args:
+
+    connection: str or sqlalchemy.engine.base.Engine
+    queue: str, default 'python', the queue name in the database
+    jobs_table: str, default 'jobs.jobs', the table name for the jobs
+    failed_jobs_table: str, default 'jobs.failed_jobs', the table name for the failed jobs
