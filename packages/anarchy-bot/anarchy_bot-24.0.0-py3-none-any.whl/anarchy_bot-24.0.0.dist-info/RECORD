@@ -1,0 +1,16 @@
+anarchy_bot/__init__.py,sha256=H1oDKCBKTxfOJ0WVK3wRhJ7dK0LBEHsB-AmzgFWORhw,189
+anarchy_bot/__main__.py,sha256=oEcJJjljzTnrjWR_jvn-kW0ndSnxaSILjFibmMogFQA,251
+anarchy_bot/bot.py,sha256=SOulsGEIKi4tVkQR99a4Xt5x99VdgIn_g37SGOe48LE,5514
+anarchy_bot/cb.py,sha256=779oQkZVev7WPxMW_xqCcdROlzcmEMSom4dHrz5sQig,6526
+anarchy_bot/chats.py,sha256=HhwcwskP5Z7XYwzLYE6tiByYo3b4dVBpGtyeYti0f1A,4829
+anarchy_bot/common.py,sha256=6PNPT2H7g0LLqwvWkJiizhxJEC5waMNfeUFCK57eej0,11886
+anarchy_bot/config.py,sha256=svLLWXgb6ao69HAOXGNS21zB-aIIj2hETlXQQlaGDe8,4495
+anarchy_bot/inline.py,sha256=GSmWNLuWOIxkRGlQrARG72-GOIlK9TYjrQyWepK4RO0,1422
+anarchy_bot/lang.py,sha256=fnHRfYr-7uAACn7Y-0lcPtfb06blZntCuW4wtGIQtwo,1980
+anarchy_bot/lists.py,sha256=1zlO4G74SQA1y9-nc-MLl9NkvQdsJax4ngSCUoXh45Q,11570
+anarchy_bot/main.py,sha256=J-_7DG9Or2DatH3bPHFGPXV846Cjlws60-rsINv_W_k,2951
+anarchy_bot/msg.py,sha256=O6nh6tUu8cXQXU7FEiWo9rmQVtTl4rUs62W03AmoGh0,4051
+anarchy_bot/lang/en.yml,sha256=6KvvZkHQE3COg0VEwhvCdVCZ-_Mvh3oacJOOxWqeWD4,3000
+anarchy_bot-24.0.0.dist-info/METADATA,sha256=4GlliVUzsIRx4nkueF6b1PG2o0FEX98lhidBKVy9Pg0,1202
+anarchy_bot-24.0.0.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+anarchy_bot-24.0.0.dist-info/RECORD,,
