@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: flask-os
+Version: 0.2.24022122
+Summary: flask项目基础一键生成
+Home-page: https://github.com/BingerYang/flask-os
+Author: binger
+Author-email: <xuehen_521@126.com>
+Maintainer: binger
+Maintainer-email: <xuehen_521@126.com>
+Platform: all
+Requires-Python: >=3.4
+Description-Content-Type: text/x-rst
+
+flask-os
+========
+
+Documentation
+-------------
+
+The documentation is hosted at https://github.com/BingerYang/flask-os
+
+
+Installation
+------------
+
+.. code:: shell
+
+     pip install flask-os
+
+Usage
+-----
+
+example:
+
+:: shell
+  flask-admin project drill
+  flask-admin app scene --project drill
+

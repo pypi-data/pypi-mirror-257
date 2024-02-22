@@ -1,0 +1,2 @@
+[console_scripts]
+flask-admin = flask_os.cli:run
