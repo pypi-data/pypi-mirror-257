@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "pysecurechain"
+version = "0.1.0"
+description = ""
+authors = ["Serchaev <german.serchaevk2.k2@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.12.1"
+pytest = "^7.4.4"
+flake8 = "^7.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
