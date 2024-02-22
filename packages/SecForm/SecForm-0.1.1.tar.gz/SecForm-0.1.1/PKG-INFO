@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: SecForm
+Version: 0.1.1
+Summary: SecForm is a lightweight package and CLI tool to get the latest fillings from the SEC website.
+Author: 0xCurtis
+Author-email: curtis1337wastaken@protonmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE
