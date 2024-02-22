@@ -1,0 +1,93 @@
+[build-system]
+requires = ["hatchling>=1.17.0", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[project]
+dynamic = ["version"]
+name = "push2HAL"
+authors = [
+  { name="Luc LAURENT", email="luc.laurent@lecnam.net" },
+]
+description = "Tools to push content to HAL repo"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: Unix",
+]
+dependencies = [
+  "requests",
+  "lxml",
+  "pdftitle",
+  "pymupdf",
+  "pycountry",
+  "unidecode",
+  "python-stdnum",
+  "unidecode"
+]
+license = {file = "LICENSE"}
+keywords = ["HAL", "OA", "Open-Access", "push", "tei"]
+
+[project.urls]
+Homepage = "https://github.com/luclaurent/push2HAL"
+Repository = "https://github.com/luclaurent/push2HAL.git"
+Issues = "https://github.com/luclaurent/push2HAL/issues"
+
+[tool.hatch.version]
+source = "vcs"
+
+[tool.hatch.version.raw-options]
+local_scheme = "no-local-version"
+
+[tool.hatch.build.hooks.vcs]
+version-file = "src/push2HAL/version.py"
+
+[tool.hatch.build.targets.sdist]
+exclude = [
+  "deploy.sh",
+  ".gitignore",
+  ".github",
+  ".vscode",
+  "examples/use-cases/json",
+  "examples/use-cases/data",
+  "examples/use-cases/*.pdf",
+  "examples/use-cases/*.zip",
+  "examples/use-cases/.*",
+  "examples/*.xml",
+  "*.pdf",
+  "*.xml",
+  "*.zip",
+  ".apihal"
+  ]
+include = [
+  "src",
+  "tests",
+  "references",
+  "examples/use-cases/*.py",
+  "examples/use-cases/*.py",
+  "examples/.apihal_example",
+  "examples/test.json",
+  "examples/test_comments.json",
+  "examples/file.pdf",
+]
+
+
+[project.scripts]
+pdf2hal = "push2HAL.pdf2hal:start"
+json2hal = "push2HAL.json2hal:start"
+
+[tool.hatch.envs.test]
+dependencies = [
+  "pytest",
+  "pytest-cov",
+]
+
+[tool.hatch.envs.test.scripts]
+cov = 'pytest tests --cov-report=term-missing --cov-config=pyproject.toml --cov=pkg --cov=tests'
+
+
+[[tool.hatch.envs.test.matrix]]
+python = ["3.8", "3.9", "3.10", "3.11"]
+
+
