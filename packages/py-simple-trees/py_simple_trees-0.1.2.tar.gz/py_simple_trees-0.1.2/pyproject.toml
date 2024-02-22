@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "py-simple-trees"
+version = "0.1.2"
+description = ""
+authors = ["lpthong90 <lpthong90@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0.1"
+mypy = "^1.8.0"
+flake8 = "^7.0.0"
+black = "^24.2.0"
+coverage = "^7.4.2"
+ruff = "^0.2.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.coverage.run]
+parallel = true
+source = [
+    "tests",
+    "simple_trees"
+]
+context = '${CONTEXT}'
+omit = [
+]
