@@ -1,0 +1,11 @@
+mkdocs_minify_html_plugin-0.2.1.dist-info/METADATA,sha256=5sXAwYvgugsx6tRAX8Ety-uXj5Wc1gx9IxBqpI_fjL0,3213
+mkdocs_minify_html_plugin-0.2.1.dist-info/WHEEL,sha256=E20edJ7WyMv0IpssxfaSRD3ddalUS9Tpvm59IBWL3O0,112
+mkdocs_minify_html_plugin-0.2.1.dist-info/entry_points.txt,sha256=A_wXAYr3Az8ibTw3A3u7BQYvmPDu5zNeOgAWcg2CUR4,79
+mkdocs_minify_html_plugin-0.2.1.dist-info/license_files/LICENSE,sha256=nQ8_9dV5v8IaCIJhUy8xyRRJOBBVmuM2vKri7FtXTOo,1065
+mkdocs_minify_html_plugin.libs/libgcc_s-5b5488a6.so.1,sha256=HGKUsVmTeNAxEdSy7Ua5Vh_I9FN3RCbPWzvZ7H_TrwE,2749061
+mkdocs_minify_html_plugin/plugin.py,sha256=J5kPMd9fYgL-x2LZhfsDsToHz5Fa7uhxgq7jaPr2nr8,1880
+mkdocs_minify_html_plugin/_minify_html.pyi,sha256=9m3qvscbcYCEM4kqi_1OFCFHeGBJ4SA4tf41DgmP3Qs,555
+mkdocs_minify_html_plugin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mkdocs_minify_html_plugin/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mkdocs_minify_html_plugin/_minify_html.pypy37-pp73-arm-linux-gnu.so,sha256=dZjSN2APoDYcrpd256A7-4y9gZCNSz9KihVtw9WkCJU,10185009
+mkdocs_minify_html_plugin-0.2.1.dist-info/RECORD,,
