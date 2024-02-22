@@ -1,0 +1,14 @@
+lektor
+
+[dev]
+lektor-fixedlang[style]
+build
+twine
+tox
+
+[style]
+flake8
+flake8-pyproject
+flake8-isort
+flake8-builtins
+flake8-print
