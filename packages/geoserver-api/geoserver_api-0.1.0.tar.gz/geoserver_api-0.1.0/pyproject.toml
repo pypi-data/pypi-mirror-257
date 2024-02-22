@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "geoserver-api"
+version = "0.1.0"
+description = "Python API for configuring and interacting with GeoServer. Wraps around the official HTTP Rest API"
+authors = ["Javier Smith <javier.smith.dlc@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.13"
+requests = "^2.31.0"
+numpy = "^1.26.0"
+pandas = "^2.1.1"
+
+
+[tool.poetry.group.dev.dependencies]
+jupyter = "^1.0.0"
+rio-cogeo = "^5.0.0"
+python-dotenv = "^1.0.0"
+boto3 = "^1.28.56"
+psycopg2 = "^2.9.8"
+sqlalchemy = "^2.0.21"
+geoalchemy2 = "^0.14.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
