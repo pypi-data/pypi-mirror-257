@@ -1,0 +1,15 @@
+thecatapi/__init__.py,sha256=aja8WPVpHW8w2ruYCKxxUtKhFLS171GwMxaJY0gzs4k,33
+thecatapi/base.py,sha256=9mWcU_REYDPTLl5q3O7zKoKmTyU_3Lqlo5dHVGZ87mE,1666
+thecatapi/breeds.py,sha256=Gk_0k86THQOZ4W-FbO5W7vj2-TMwZxzfm4O8HAGAN8g,1526
+thecatapi/facts.py,sha256=1vqkmSRtew11eY7BkLXvc1UsY68YI9U6sN0FQo_X9fE,1820
+thecatapi/favourites.py,sha256=3LqZgkkyLza0ndLBSk102LMNvcyK13JbSMURRmE-DWE,1109
+thecatapi/images.py,sha256=q_HpEPMo3QrqyneOAP_CFxLwuNo9mkdtTzFFP9mE5YE,5706
+thecatapi/thecatapi.py,sha256=vBX0nXm5k1Mmzdb18YEwPIZgn58rwKWsSpTYF4jexiw,426
+thecatapi/votes.py,sha256=LH--5hll-QaTRPgwuVJzOi_KLneLATgrtf6I1U3wrFk,2030
+thecatapi/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+thecatapi/tests/test_images.py,sha256=sfjp2B8X8jUf3UtR3Sj_u1i6BOgB0Pmsw9a6Z-UP_9U,1113
+thecatapi_sdk-0.0.1.dist-info/LICENSE,sha256=x8eG7ZmQc44PRfPNx2O-k6Fgayq7YXhMudjMdyu2tsY,1070
+thecatapi_sdk-0.0.1.dist-info/METADATA,sha256=MX5geXxT5hcetwAgWSHFiNnnCMvKAxkGIfQLsbKPcjo,1309
+thecatapi_sdk-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+thecatapi_sdk-0.0.1.dist-info/top_level.txt,sha256=LBOJ2EKUsBD9Sm1bIobLxbrVaCvfYpiKhWwb0Q52ajc,10
+thecatapi_sdk-0.0.1.dist-info/RECORD,,
