@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/dreamcode_task_manager.egg-info/PKG-INFO
+src/dreamcode_task_manager.egg-info/SOURCES.txt
+src/dreamcode_task_manager.egg-info/dependency_links.txt
+src/dreamcode_task_manager.egg-info/entry_points.txt
+src/dreamcode_task_manager.egg-info/requires.txt
+src/dreamcode_task_manager.egg-info/top_level.txt
