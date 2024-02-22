@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: plasma-fhir-client-py
+Version: 0.0.1
+Summary: Plasma FHIR Client
+Project-URL: Homepage, https://plasmahealth.net
+Author-email: Eric Morgan <ericmorgan1@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# plasma-fhir-client-py
+FHIR client written in Python.
+Optimized for the Plasma Platform.
