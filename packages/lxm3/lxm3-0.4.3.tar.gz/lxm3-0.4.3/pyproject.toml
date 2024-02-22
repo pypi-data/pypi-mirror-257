@@ -1,0 +1,188 @@
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[project]
+name = "lxm3"
+description = "LXM3: XManager launch backend for HPC clusters"
+readme = "README.md"
+requires-python = ">=3.9,<3.13"
+keywords = [
+    "machine-learning",
+    "hpc",
+    "packaging",
+    "singularity",
+]
+authors = [
+    { name = "Yicheng Luo", email = "ethanluoyc@gmail.com" },
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: Implementation :: CPython",
+]
+dynamic = []
+dependencies = [
+    "absl-py",
+    "attrs",
+    "ml_collections",
+    "tomlkit",
+    "paramiko",
+    "fabric",
+    "appdirs",
+    "fsspec",
+    "async_generator",
+    "immutabledict",
+    "rich",
+    "vcsinfo",
+    "docker",
+    "pip",
+    "shelved-cache>=0.3.1",
+    "cachetools>=5.3.2",
+]
+version = "0.4.3"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+homepage = "https://github.com/ethanluoyc/lxm3"
+documentation = "https://lxm3.readthedocs.io/en/latest/"
+repository = "https://github.com/ethanluoyc/lxm3"
+
+[project.scripts]
+lxm3 = "lxm3.cli.cli:entrypoint"
+
+[project.optional-dependencies]
+shell = [
+    "IPython",
+]
+pex = [
+    "pex>2.1.139",
+]
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "coverage[toml]>=6.5",
+    "pytest",
+    "pytest-cov",
+    "pre-commit",
+    "fabric",
+    "Sphinx",
+    "myst-parser",
+    "sphinx_nameko_theme",
+    "black>=23.1.0",
+    "ruff>=0.0.243",
+]
+
+[tool.pdm.version]
+source = "scm"
+
+[tool.pdm.build]
+source-includes = [
+    "tests",
+]
+excludes = [
+    "**/*_test.py",
+]
+
+[tool.pdm.scripts]
+test = "pytest lxm3 tests"
+test-cov = "pytest --cov=lxm3 --cov-report=xml tests"
+docs = "sphinx-build -b html docs docs/build/html -j auto"
+
+[tool.pdm.scripts.cov]
+composite = [
+    "test-cov",
+    "coverage report",
+]
+
+[tool.pdm.scripts.lint]
+shell = "ruff ."
+
+[tool.pdm.scripts.fmt]
+shell = "ruff format ."
+
+[tool.ruff]
+select = [
+    "E",
+    "F",
+    "I",
+]
+exclude = [
+    "_vendor",
+    "xm",
+    ".venv",
+]
+ignore = [
+    "E501",
+]
+
+[tool.ruff.extend-per-file-ignores]
+"__init__.py" = [
+    "F401",
+]
+
+[tool.ruff.isort]
+known-first-party = [
+    "lxm3",
+]
+force-single-line = true
+single-line-exclusions = [
+    "typing",
+]
+
+[tool.ruff.flake8-tidy-imports]
+ban-relative-imports = "all"
+
+[tool.coverage.paths]
+source = [
+    "lxm3",
+    "*/lxm3/lxm3",
+]
+
+[tool.coverage.run]
+omit = [
+    "lxm3/_vendor/*",
+    "tests/*",
+    "conftest.py",
+    "lxm3/xm_cluster/execution/utils.py",
+]
+
+[tool.coverage.report]
+exclude_lines = [
+    "no cov",
+    "if __name__ == .__main__.:",
+    "if TYPE_CHECKING:",
+]
+
+[tool.pyright]
+include = [
+    "lxm3",
+]
+exclude = [
+    "**/node_modules",
+    "**/__pycache__",
+    "lxm3/xm",
+    "lxm3/_vendor",
+]
+reportMissingImports = true
+reportMissingTypeStubs = false
+pythonVersion = "3.9"
+pythonPlatform = "Linux"
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+testpaths = [
+    "tests",
+    "lxm3/_vendor",
+]
+filterwarnings = [
+    "ignore:cannot collect test class 'TestError':pytest.PytestCollectionWarning",
+]
