@@ -1,0 +1,12 @@
+README.md
+setup.py
+app/__init__.py
+app/__main__.py
+app/application.py
+app/email_in_validate.py
+email_in_validate.egg-info/PKG-INFO
+email_in_validate.egg-info/SOURCES.txt
+email_in_validate.egg-info/dependency_links.txt
+email_in_validate.egg-info/entry_points.txt
+email_in_validate.egg-info/requires.txt
+email_in_validate.egg-info/top_level.txt
