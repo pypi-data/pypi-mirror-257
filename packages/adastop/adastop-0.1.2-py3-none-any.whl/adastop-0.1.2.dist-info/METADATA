@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: adastop
+Version: 0.1.2
+License: MIT
+License-File: LICENSE
+Requires-Dist: Click
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: pandas
+Requires-Dist: tabulate
+
