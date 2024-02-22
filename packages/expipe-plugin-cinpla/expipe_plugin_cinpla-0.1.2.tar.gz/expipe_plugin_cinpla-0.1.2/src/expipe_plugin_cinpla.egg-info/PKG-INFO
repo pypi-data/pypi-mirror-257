@@ -1,0 +1,100 @@
+Metadata-Version: 2.1
+Name: expipe_plugin_cinpla
+Version: 0.1.2
+Summary: Expipe plugins for the CINPLA lab.
+Author-email: Mikkel Lepperod <mikkel@simula.no>, Alessio Buccino <alessiop.buccino@gmail.com>
+Project-URL: homepage, https://github.com/CINPLA/expipe-plugin-cinpla
+Project-URL: repository, https://github.com/CINPLA/expipe-plugin-cinpla
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: expipe>=0.6.0
+Requires-Dist: neuroconv>=0.4.6
+Requires-Dist: pyopenephys>=1.2.0
+Requires-Dist: spikeinterface[full,widgets]>=0.100.0
+Requires-Dist: pynwb>=2.5.0
+Requires-Dist: neuroconv>=0.4.6
+Requires-Dist: ipywidgets>=8.1.1
+Requires-Dist: nwbwidgets>=0.11.3
+Requires-Dist: tbb>=2021.11.0
+Requires-Dist: pynapple>=0.5.1
+Requires-Dist: spython>=0.3.13
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
+Requires-Dist: pytest-dependency; extra == "dev"
+Requires-Dist: black; extra == "dev"
+Provides-Extra: test
+Requires-Dist: pytest; extra == "test"
+Requires-Dist: pytest-cov; extra == "test"
+Requires-Dist: pytest-dependency; extra == "test"
+Requires-Dist: mountainsort5; extra == "test"
+Provides-Extra: docs
+Requires-Dist: sphinx-gallery; extra == "docs"
+Requires-Dist: sphinx_rtd_theme; extra == "docs"
+
+
+# Expipe plugin CINPLA
+
+Expipe plugin for CINPLA laboratory
+
+
+## Installation
+
+You can install the package with pip:
+
+```bash
+>>> pip install expipe-plugin-cinpla
+```
+
+or from sources:
+
+```bash
+git clone
+cd expipe-plugin-cinpla
+pip install -e .
+```
+
+## Usage
+
+The starting point is a valid `expipe` project. Refer to the [expipe docs]() to read more on how
+to create one.
+
+The recommended usage is via Jupyter Notebook / Lab, using the interactive widgets to Register, Process,
+Curate, and View your actions.
+
+To launch the interactive browser, you can run:
+```python
+from expipe_plugin_cinpla import display_browser
+
+project_path = "path-to-my-project"
+
+display_browser(project_path)
+
+```
+
+![alt text](docs/images/browser.png)
+
+
+
+## Updating old projects
+
+The current version uses Neurodata Without Borders as backend instead of Exdir. If you have an existing
+project created with the old version, you can convert it to a new project as follows:
+
+```python
+from expipe_plugin_cinpla import convert_old_project
+
+old_project_path = "path-to-old-project"
+new_project_path = "path-to-new-project"
+
+probe_path = "path-to-probe-path.json" # see probes/ folder
+
+convert_old_project(old_project_path, new_project_path, probe_path)
+```
+
+To check out other options, use `convert_old_project?`
+
