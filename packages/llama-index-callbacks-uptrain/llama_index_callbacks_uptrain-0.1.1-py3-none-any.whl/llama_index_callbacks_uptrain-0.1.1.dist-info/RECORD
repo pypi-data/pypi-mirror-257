@@ -1,0 +1,5 @@
+llama_index/callbacks/uptrain/__init__.py,sha256=u0DtpE564fG1CU2ro0DTXrB0pN7I5m1XKlpRN4cBMLQ,108
+llama_index/callbacks/uptrain/base.py,sha256=SBWgbo6gF6wuGScEJY0QhpdpX1eQMD85HqjFxjj003k,12523
+llama_index_callbacks_uptrain-0.1.1.dist-info/METADATA,sha256=IFf_e3UUREgZFcjhNiV6pWSLMP2Ak3693vja5ZP-WK0,3100
+llama_index_callbacks_uptrain-0.1.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+llama_index_callbacks_uptrain-0.1.1.dist-info/RECORD,,
