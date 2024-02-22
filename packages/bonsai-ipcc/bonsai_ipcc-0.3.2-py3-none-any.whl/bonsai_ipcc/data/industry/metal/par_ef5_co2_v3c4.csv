@@ -1,0 +1,6 @@
+year,region,sinterprocess_type,property,value,unit
+2019,World,undefined,def,0.21,t/t
+2019,World,undefined,min,0.189,t/t
+2019,World,undefined,max,0.231,t/t
+2019,World,undefined,abs_min,0.0,t/t
+2019,World,undefined,abs_max,inf,t/t

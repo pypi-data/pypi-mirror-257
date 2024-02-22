@@ -1,0 +1,6 @@
+code,description
+dummy,place holder for empty tables
+direct_smelting,lead production from direct smelting
+imperial_smelting,lead production from imperial smelting furnace
+secondary,lead production from secondary materials
+default,mixture of 80 percent imperial smelt furnace and 20 percent direct smelting as default production

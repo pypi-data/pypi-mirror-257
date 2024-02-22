@@ -1,0 +1,5 @@
+code,description
+dummy,place holder for empty tables
+waelz_kiln,zinc production from walz kiln process
+pyrometeallurgical,zinc production from pyrometeallurgical process (imperial smelting furnace)
+default,mixture of 60 percent imperial smelt furnace and 40 percent waelz-kiln process as default production
