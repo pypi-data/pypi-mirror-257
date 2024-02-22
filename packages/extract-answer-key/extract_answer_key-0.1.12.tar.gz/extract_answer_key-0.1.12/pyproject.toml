@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "extract-answer-key"
+version = "0.1.12"
+description = "Added multiple correct answer support  "
+authors = ["vaibhavblayer <vaibhavblayer@gmail.com>"]
+readme = "README.md"
+packages = [{include = "extract_answer_key"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+click = "^8.1.7"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry.scripts]
+extract-answer-key = 'extract_answer_key.main:main'
+
