@@ -1,0 +1,9 @@
+README.md
+setup.py
+LexiClean.egg-info/PKG-INFO
+LexiClean.egg-info/SOURCES.txt
+LexiClean.egg-info/dependency_links.txt
+LexiClean.egg-info/requires.txt
+LexiClean.egg-info/top_level.txt
+lexiclean/__init__.py
+lexiclean/main.py
