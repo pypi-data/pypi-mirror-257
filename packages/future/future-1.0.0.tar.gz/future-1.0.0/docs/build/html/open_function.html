@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>open() &#8212; Python-Future  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/jinja.css?v=85659ec6" />
+    <link rel="stylesheet" href="_static/my-styles.css" type="text/css" />
+    <script src="_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="icon" href="_static/python-future-icon-32.ico"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+ 
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-19344199-2']);
+  _gaq.push(['_trackPageview']);
+</script>
+
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Python-Future  documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">open()</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="open">
+<span id="open-function"></span><h1>open()<a class="headerlink" href="#open" title="Link to this heading">¶</a></h1>
+<p>The Python 3 builtin <a class="reference external" href="https://docs.python.org/3/library/functions.html#open" title="(in Python v3.12)"><code class="xref py py-func docutils literal notranslate"><span class="pre">open()</span></code></a> function for opening files returns file
+contents as (unicode) strings unless the binary (<code class="docutils literal notranslate"><span class="pre">b</span></code>) flag is passed, as in:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>in which case its methods like <code class="xref py py-func docutils literal notranslate"><span class="pre">read()</span></code> return Py3 <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytes" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bytes</span></code></a> objects.</p>
+<p>On Py2 with <code class="docutils literal notranslate"><span class="pre">future</span></code> installed, the <a class="reference external" href="https://docs.python.org/3/library/builtins.html#module-builtins" title="(in Python v3.12)"><code class="xref py py-mod docutils literal notranslate"><span class="pre">builtins</span></code></a> module provides an
+<code class="docutils literal notranslate"><span class="pre">open</span></code> function that is mostly compatible with that on Python 3 (e.g. it
+offers keyword arguments like <code class="docutils literal notranslate"><span class="pre">encoding</span></code>). This maps to the <code class="docutils literal notranslate"><span class="pre">open</span></code> backport
+available in the standard library <a class="reference external" href="https://docs.python.org/3/library/io.html#module-io" title="(in Python v3.12)"><code class="xref py py-mod docutils literal notranslate"><span class="pre">io</span></code></a> module on Py2.7.</p>
+<p>One difference to be aware of between the Python 3 <code class="docutils literal notranslate"><span class="pre">open</span></code> and
+<code class="docutils literal notranslate"><span class="pre">future.builtins.open</span></code> on Python 2 is that the return types of methods such
+as <code class="xref py py-func docutils literal notranslate"><span class="pre">read()</span></code> from the file object that <code class="docutils literal notranslate"><span class="pre">open</span></code> returns are not
+automatically cast from native bytes or unicode strings on Python 2 to the
+corresponding <code class="docutils literal notranslate"><span class="pre">future.builtins.bytes</span></code> or <code class="docutils literal notranslate"><span class="pre">future.builtins.str</span></code> types. If you
+need the returned data to behave the exactly same way on Py2 as on Py3, you can
+cast it explicitly as follows:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">unicode_literals</span>
+<span class="kn">from</span> <span class="nn">builtins</span> <span class="kn">import</span> <span class="nb">open</span><span class="p">,</span> <span class="nb">bytes</span>
+
+<span class="n">data</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;image.png&#39;</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+<span class="c1"># On Py2, data is a standard 8-bit str with loose Unicode coercion.</span>
+<span class="c1"># data + u&#39;&#39; would likely raise a UnicodeDecodeError</span>
+
+<span class="n">data</span> <span class="o">=</span> <span class="nb">bytes</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<span class="c1"># Now it behaves like a Py3 bytes object...</span>
+
+<span class="k">assert</span> <span class="n">data</span><span class="p">[:</span><span class="mi">4</span><span class="p">]</span> <span class="o">==</span> <span class="sa">b</span><span class="s1">&#39;</span><span class="se">\x89</span><span class="s1">PNG&#39;</span>
+<span class="k">assert</span> <span class="n">data</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="o">==</span> <span class="mi">13</span>     <span class="c1"># integer</span>
+<span class="c1"># Raises TypeError:</span>
+<span class="c1"># data + u&#39;&#39;</span>
+</pre></div>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+  <span id="sidebar-top"></span>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  
+    
+            <p class="logo"><a href="index.html">
+              <img class="logo" src="_static/python-future-logo-textless-transparent.png" alt="Logo"/>
+            </a></p>
+  
+<!--<h3>Python-Future</h3>
+<p>-->
+  <h4>Easy, clean, reliable Python 2/3 compatibility</h4>
+  <a href="https://python-future.org/#contents">Table of Contents</a>
+<!--
+</p>
+<h3>Other Formats</h3>
+<p>
+  You can download the documentation in other formats as well:
+</p>
+<ul>
+  <li><a href="http://jinja.pocoo.org/docs/jinja-docs.pdf">as PDF</a>
+  <li><a href="http://jinja.pocoo.org/docs/jinja-docs.zip">as zipped HTML</a>
+</ul>
+-->
+<!--<h3>Useful Links</h3>
+<ul>
+  <li><a href="https://pypi.org/project/future/">on PyPI</a></li>
+  <li><a href="https://github.com/PythonCharmers/python-future">on GitHub</a></li>
+</ul>
+--><ul>
+<li class="toctree-l1"><a class="reference internal" href="whatsnew.html">What’s New</a></li>
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview: Easy, clean, reliable Python 2/3 compatibility</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quick-start guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="compatible_idioms.html">Cheat Sheet: Writing Python 2-3 compatible code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="imports.html">Imports</a></li>
+<li class="toctree-l1"><a class="reference internal" href="what_else.html">What else you need to know</a></li>
+<li class="toctree-l1"><a class="reference internal" href="automatic_conversion.html">Automatic conversion to Py2/3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">Frequently Asked Questions (FAQ)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stdlib_incompatibilities.html">Standard library incompatibilities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="older_interfaces.html">Older interfaces</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changes in previous versions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="credits.html">Licensing and credits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference.html">API Reference (in progress)</a></li>
+</ul>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+  
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2013-2019, Python Charmers Pty Ltd, Australia.
+    </div>
+  <script src="_static/version_warning_offset.js"></script>
+
+<div class="footer">
+<script type="text/javascript">
+  (function() {
+    var ga = document.createElement('script');
+    ga.src = ('https:' == document.location.protocol ?
+              'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    ga.setAttribute('async', 'true');
+    document.documentElement.firstChild.appendChild(ga);
+  })();
+</script>
+</div>
+
+  </body>
+</html>

@@ -1,0 +1,1356 @@
+
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Changes in previous versions &#8212; Python-Future  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/jinja.css?v=85659ec6" />
+    <link rel="stylesheet" href="_static/my-styles.css" type="text/css" />
+    <script src="_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="icon" href="_static/python-future-icon-32.ico"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Licensing and credits" href="credits.html" />
+    <link rel="prev" title="Older interfaces" href="older_interfaces.html" />
+ 
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-19344199-2']);
+  _gaq.push(['_trackPageview']);
+</script>
+
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="credits.html" title="Licensing and credits"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="older_interfaces.html" title="Older interfaces"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Python-Future  documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Changes in previous versions</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="changes-in-previous-versions">
+<span id="whats-old"></span><h1>Changes in previous versions<a class="headerlink" href="#changes-in-previous-versions" title="Link to this heading">¶</a></h1>
+<p>Changes in the most recent major version are here: <a class="reference internal" href="whatsnew.html#whats-new"><span class="std std-ref">What’s New</span></a>.</p>
+<section id="changes-in-version-0-18-3-2023-01-13">
+<h2>Changes in version 0.18.3 (2023-01-13)<a class="headerlink" href="#changes-in-version-0-18-3-2023-01-13" title="Link to this heading">¶</a></h2>
+<p>This is a minor bug-fix release containing a number of fixes:</p>
+<ul class="simple">
+<li><p>Backport fix for bpo-38804 (c91d70b)</p></li>
+<li><p>Fix bug in fix_print.py fixer (dffc579)</p></li>
+<li><p>Fix bug in fix_raise.py fixer (3401099)</p></li>
+<li><p>Fix newint bool in py3 (fe645ba)</p></li>
+<li><p>Fix bug in super() with metaclasses (6e27aac)</p></li>
+<li><p>docs: fix simple typo, reqest -&gt; request (974eb1f)</p></li>
+<li><p>Correct __eq__ (c780bf5)</p></li>
+<li><p>Pass if lint fails (2abe00d)</p></li>
+<li><p>Update docker image and parcel out to constant variable.  Add comment to update version constant (45cf382)</p></li>
+<li><p>fix order (f96a219)</p></li>
+<li><p>Add flake8 to image (046ff18)</p></li>
+<li><p>Make lint.sh executable (58cc984)</p></li>
+<li><p>Add docker push to optimize CI (01e8440)</p></li>
+<li><p>Build System (42b3025)</p></li>
+<li><p>Add docs build status badge to README.md (3f40bd7)</p></li>
+<li><p>Use same docs requirements in tox (18ecc5a)</p></li>
+<li><p>Add docs/requirements.txt (5f9893f)</p></li>
+<li><p>Add PY37_PLUS, PY38_PLUS, and PY39_PLUS (bee0247)</p></li>
+<li><p>fix 2.6 test, better comment (ddedcb9)</p></li>
+<li><p>fix 2.6 test (3f1ff7e)</p></li>
+<li><p>remove nan test (4dbded1)</p></li>
+<li><p>include list test values (e3f1a12)</p></li>
+<li><p>fix other python2 test issues (c051026)</p></li>
+<li><p>fix missing subTest (f006cad)</p></li>
+<li><p>import from old imp library on older python versions (fc84fa8)</p></li>
+<li><p>replace fstrings with format for python 3.4,3.5 (4a687ea)</p></li>
+<li><p>minor style/spelling fixes (8302d8c)</p></li>
+<li><p>improve cmp function, add unittest (0d95a40)</p></li>
+<li><p>Pin typing==3.7.4.1 for Python 3.3 compatiblity (1a48f1b)</p></li>
+<li><p>Fix various py26 unit test failures (9ca5a14)</p></li>
+<li><p>Add initial contributing guide with docs build instruction (e55f915)</p></li>
+<li><p>Add docs building to tox.ini (3ee9e7f)</p></li>
+<li><p>Support NumPy’s specialized int types in builtins.round (b4b54f0)</p></li>
+<li><p>Added r””” to the docstring to avoid warnings in python3 (5f94572)</p></li>
+<li><p>Add __subclasscheck__ for past.types.basestring (c9bc0ff)</p></li>
+<li><p>Correct example in README (681e78c)</p></li>
+<li><p>Add simple documentation (6c6e3ae)</p></li>
+<li><p>Add pre-commit hooks (a9c6a37)</p></li>
+<li><p>Handling of __next__ and next by future.utils.get_next was reversed (52b0ff9)</p></li>
+<li><p>Add a test for our fix (461d77e)</p></li>
+<li><p>Compare headers to correct definition of str (3eaa8fd)</p></li>
+<li><p>#322 Add support for negative ndigits in round; additionally, fixing a bug so that it handles passing in Decimal properly (a4911b9)</p></li>
+<li><p>Add tkFileDialog to future.movers.tkinter (f6a6549)</p></li>
+<li><p>Sort before comparing dicts in TestChainMap (6126997)</p></li>
+<li><p>Fix typo (4dfa099)</p></li>
+<li><p>Fix formatting in “What’s new” (1663dfa)</p></li>
+<li><p>Fix typo (4236061)</p></li>
+<li><p>Avoid DeprecationWarning caused by invalid escape (e4b7fa1)</p></li>
+<li><p>Fixup broken link to external django documentation re: porting to Python 3 and unicode_literals (d87713e)</p></li>
+<li><p>Fixed newdict checking version every time (99030ec)</p></li>
+<li><p>Add count from 2.7 to 2.6 (1b8ef51)</p></li>
+</ul>
+</section>
+<section id="changes-in-version-0-18-2-2019-10-30">
+<h2>Changes in version 0.18.2 (2019-10-30)<a class="headerlink" href="#changes-in-version-0-18-2-2019-10-30" title="Link to this heading">¶</a></h2>
+<p>This is a minor bug-fix release containing a number of fixes:</p>
+<ul class="simple">
+<li><p>Fix min/max functions with generators, and ‘None’ default (PR #514)</p></li>
+<li><p>Use BaseException in raise_() (PR #515)</p></li>
+<li><p>Fix builtins.round() for Decimals (Issue #501)</p></li>
+<li><p>Fix raise_from() to prevent failures with immutable classes (PR #518)</p></li>
+<li><p>Make FixInput idempotent (Issue #427)</p></li>
+<li><p>Fix type in newround (PR #521)</p></li>
+<li><p>Support mimetype guessing in urllib2 for Py3.8+ (Issue #508)</p></li>
+</ul>
+<p>Python 3.8 is not yet officially supported.</p>
+</section>
+<section id="changes-in-version-0-18-1-2019-10-09">
+<h2>Changes in version 0.18.1 (2019-10-09)<a class="headerlink" href="#changes-in-version-0-18-1-2019-10-09" title="Link to this heading">¶</a></h2>
+<p>This is a minor bug-fix release containing a fix for raise_()
+when passed an exception that’s not an Exception (e.g. BaseException
+subclasses)</p>
+</section>
+<section id="changes-in-version-0-18-0-2019-10-09">
+<h2>Changes in version 0.18.0 (2019-10-09)<a class="headerlink" href="#changes-in-version-0-18-0-2019-10-09" title="Link to this heading">¶</a></h2>
+<p>This is a major bug-fix and feature release, including:</p>
+<ul class="simple">
+<li><p>Fix collections.abc import for py38+</p></li>
+<li><p>Remove import for isnewbytes() function, reducing CPU cost significantly</p></li>
+<li><p>Fix bug with importing past.translation when importing past which breaks zipped python installations</p></li>
+<li><p>Fix an issue with copyreg import under Py3 that results in unexposed stdlib functionality</p></li>
+<li><p>Export and document types in future.utils</p></li>
+<li><p>Update behavior of newstr.__eq__() to match str.__eq__() as per reference docs</p></li>
+<li><p>Fix raising and the raising fixer to handle cases where the syntax is ambiguous</p></li>
+<li><p>Allow “default” parameter in min() and max() (Issue #334)</p></li>
+<li><p>Implement __hash__() in newstr (Issue #454)</p></li>
+<li><p>Future proof some version checks to handle the fact that Py4 won’t be a major breaking release</p></li>
+<li><p>Fix urllib.request imports for Python 3.8 compatibility (Issue #447)</p></li>
+<li><p>Fix future import ordering (Issue #445)</p></li>
+<li><p>Fixed bug in fix_division_safe fixture (Issue #434)</p></li>
+<li><p>Do not globally destroy re.ASCII in PY3</p></li>
+<li><p>Fix a bug in email.Message.set_boundary() (Issue #429)</p></li>
+<li><p>Implement format_map() in str</p></li>
+<li><p>Implement readinto() for socket.fp</p></li>
+</ul>
+<p>As well as a number of corrections to a variety of documentation, and updates to
+test infrastructure.</p>
+</section>
+<section id="changes-in-version-0-17-1-2018-10-30">
+<h2>Changes in version 0.17.1 (2018-10-30)<a class="headerlink" href="#changes-in-version-0-17-1-2018-10-30" title="Link to this heading">¶</a></h2>
+<p>This release address a packaging error because of an erroneous declaration that
+any built wheels are universal.</p>
+</section>
+<section id="changes-in-version-0-17-0-2018-10-19">
+<h2>Changes in version 0.17.0 (2018-10-19)<a class="headerlink" href="#changes-in-version-0-17-0-2018-10-19" title="Link to this heading">¶</a></h2>
+<p>This is a major bug-fix release, including:</p>
+<ul class="simple">
+<li><p>Fix <code class="docutils literal notranslate"><span class="pre">from</span> <span class="pre">collections</span> <span class="pre">import</span> <span class="pre">ChainMap</span></code> after install_aliases() (issue #226)</p></li>
+<li><p>Fix multiple import from <code class="docutils literal notranslate"><span class="pre">__future__</span></code> bug in futurize (issue #113)</p></li>
+<li><p>Add support for proper %s formatting of newbytes</p></li>
+<li><p>Properly implement iterator protocol for newrange object</p></li>
+<li><p>Fix <code class="docutils literal notranslate"><span class="pre">past.translation</span></code> on read-only file systems</p></li>
+<li><p>Fix Tkinter import bug introduced in Python 2.7.4 (issue #262)</p></li>
+<li><p>Correct TypeError to ValueError in a specific edge case for newrange</p></li>
+<li><p>Support inequality tests between newstrs and newbytes</p></li>
+<li><p>Add type check to __get__ in newsuper</p></li>
+<li><p>Fix fix_divsion_safe to support better conversion of complex expressions, and
+skip obvious float division.</p></li>
+</ul>
+<p>As well as a number of corrections to a variety of documentation, and updates to
+test infrastructure.</p>
+</section>
+<section id="changes-in-version-0-16-0-2016-10-27">
+<h2>Changes in version 0.16.0 (2016-10-27)<a class="headerlink" href="#changes-in-version-0-16-0-2016-10-27" title="Link to this heading">¶</a></h2>
+<p>This release removes the <code class="docutils literal notranslate"><span class="pre">configparser</span></code> package as an alias for
+<code class="docutils literal notranslate"><span class="pre">ConfigParser</span></code> on Py2 to improve compatibility with the backported
+<cite>configparser package &lt;https://pypi.org/project/configparser/&gt;</cite>. Previously
+<code class="docutils literal notranslate"><span class="pre">python-future</span></code> and the PyPI <code class="docutils literal notranslate"><span class="pre">configparser</span></code> backport clashed, causing
+various compatibility issues. (Issues #118, #181)</p>
+<p>If your code previously relied on <code class="docutils literal notranslate"><span class="pre">configparser</span></code> being supplied by
+<code class="docutils literal notranslate"><span class="pre">python-future</span></code>, the recommended upgrade path is to run <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span>
+<span class="pre">configparser</span></code> or add <code class="docutils literal notranslate"><span class="pre">configparser</span></code> to your <code class="docutils literal notranslate"><span class="pre">requirements.txt</span></code> file.</p>
+<p>Note that, if you are upgrading <code class="docutils literal notranslate"><span class="pre">future</span></code> with <code class="docutils literal notranslate"><span class="pre">pip</span></code>, you may need to
+uninstall the old version of future or manually remove the
+<code class="docutils literal notranslate"><span class="pre">site-packages/future-0.15.2-py2.7.egg</span></code> folder for this change to take
+effect on your system.</p>
+<p>This releases also fixes these bugs:</p>
+<ul class="simple">
+<li><p>Fix <code class="docutils literal notranslate"><span class="pre">newbytes</span></code> constructor bug. (Issue #171)</p></li>
+<li><p>Fix semantics of <code class="docutils literal notranslate"><span class="pre">bool()</span></code> with <code class="docutils literal notranslate"><span class="pre">newobject</span></code>. (Issue #211)</p></li>
+<li><p>Fix <code class="docutils literal notranslate"><span class="pre">standard_library.install_aliases()</span></code> on PyPy. (Issue #205)</p></li>
+<li><p>Fix assertRaises for <code class="docutils literal notranslate"><span class="pre">pow</span></code> and <code class="docutils literal notranslate"><span class="pre">compile`</span></code> on Python 3.5. (Issue #183)</p></li>
+<li><p>Fix return argument of <code class="docutils literal notranslate"><span class="pre">future.utils.ensure_new_type</span></code> if conversion to
+new type does not exist. (Issue #185)</p></li>
+<li><p>Add missing <code class="docutils literal notranslate"><span class="pre">cmp_to_key</span></code> for Py2.6. (Issue #189)</p></li>
+<li><p>Allow the <code class="docutils literal notranslate"><span class="pre">old_div</span></code> fixer to be disabled. (Issue #190)</p></li>
+<li><p>Improve compatibility with Google App Engine. (Issue #231)</p></li>
+<li><p>Add some missing imports to the <code class="docutils literal notranslate"><span class="pre">tkinter</span></code> and <code class="docutils literal notranslate"><span class="pre">tkinter.filedialog</span></code>
+package namespaces. (Issues #212 and #233)</p></li>
+<li><p>More complete implementation of <code class="docutils literal notranslate"><span class="pre">raise_from</span></code> on PY3. (Issues #141,
+#213 and #235, fix provided by Varriount)</p></li>
+</ul>
+</section>
+<section id="changes-in-version-0-15-2-2015-09-11">
+<h2>Changes in version 0.15.2 (2015-09-11)<a class="headerlink" href="#changes-in-version-0-15-2-2015-09-11" title="Link to this heading">¶</a></h2>
+<p>This is a minor bug-fix release:</p>
+<ul class="simple">
+<li><p>Fix <code class="docutils literal notranslate"><span class="pre">socket.create_connection()</span></code> backport on Py2.6 (issue #162)</p></li>
+<li><p>Add more tests of <code class="docutils literal notranslate"><span class="pre">urllib.request</span></code> etc.</p></li>
+<li><p>Fix <code class="docutils literal notranslate"><span class="pre">newsuper()</span></code> calls from the <code class="docutils literal notranslate"><span class="pre">__init__</span></code> method of PyQt subclassses
+(issue #160, thanks to Christopher Arndt)</p></li>
+</ul>
+</section>
+<section id="changes-in-version-0-15-1-2015-09-09">
+<h2>Changes in version 0.15.1 (2015-09-09)<a class="headerlink" href="#changes-in-version-0-15-1-2015-09-09" title="Link to this heading">¶</a></h2>
+<p>This is a minor bug-fix release:</p>
+<ul class="simple">
+<li><p>Use 3-argument <code class="docutils literal notranslate"><span class="pre">socket.create_connection()</span></code> backport to restore Py2.6
+compatibility in <code class="docutils literal notranslate"><span class="pre">urllib.request.urlopen()</span></code> (issue #162)</p></li>
+<li><p>Remove breakpoint in <code class="docutils literal notranslate"><span class="pre">future.backports.http.client</span></code> triggered on certain
+data (issue #164)</p></li>
+<li><p>Move <code class="docutils literal notranslate"><span class="pre">exec</span></code> fixer to stage 1 of <code class="docutils literal notranslate"><span class="pre">futurize</span></code> because the forward-compatible <code class="docutils literal notranslate"><span class="pre">exec(a,</span> <span class="pre">b)</span></code>
+idiom is supported in Python 2.6 and 2.7. See
+<a class="reference external" href="https://docs.python.org/2/reference/simple_stmts.html#exec">https://docs.python.org/2/reference/simple_stmts.html#exec</a>.</p></li>
+</ul>
+</section>
+<section id="changes-in-version-0-15-0-2015-07-25">
+<h2>Changes in version 0.15.0 (2015-07-25)<a class="headerlink" href="#changes-in-version-0-15-0-2015-07-25" title="Link to this heading">¶</a></h2>
+<p>This release fixes compatibility bugs with CherryPy’s Py2/3 compat layer and
+the latest version of the <code class="docutils literal notranslate"><span class="pre">urllib3</span></code> package. It also adds some additional
+backports for Py2.6 and Py2.7 from Py3.4’s standard library.</p>
+<p>New features:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">install_aliases()</span></code> now exposes full backports of the Py3 urllib submodules
+(<code class="docutils literal notranslate"><span class="pre">parse</span></code>, <code class="docutils literal notranslate"><span class="pre">request</span></code> etc.) from <code class="docutils literal notranslate"><span class="pre">future.backports.urllib</span></code> as submodules
+of <code class="docutils literal notranslate"><span class="pre">urllib</span></code> on Py2.  This implies, for example, that
+<code class="docutils literal notranslate"><span class="pre">urllib.parse.unquote</span></code> now takes an optional encoding argument as it does
+on Py3. This improves compatibility with CherryPy’s Py2/3 compat layer (issue
+#158).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">tkinter.ttk</span></code> support (issue #151)</p></li>
+<li><p>Backport of <code class="docutils literal notranslate"><span class="pre">collections.ChainMap</span></code> (issue #150)</p></li>
+<li><p>Backport of <code class="docutils literal notranslate"><span class="pre">itertools.count</span></code> for Py2.6 (issue #152)</p></li>
+<li><p>Enable and document support for the <code class="docutils literal notranslate"><span class="pre">surrogateescape</span></code> error handler for <code class="docutils literal notranslate"><span class="pre">newstr</span></code> and <code class="docutils literal notranslate"><span class="pre">newbytes</span></code> objects on Py2.x (issue #116). This feature is currently in alpha.</p></li>
+<li><p>Add constants to <code class="docutils literal notranslate"><span class="pre">http.client</span></code> such as <code class="docutils literal notranslate"><span class="pre">HTTP_PORT</span></code> and <code class="docutils literal notranslate"><span class="pre">BAD_REQUEST</span></code> (issue #137)</p></li>
+<li><p>Backport of <code class="docutils literal notranslate"><span class="pre">reprlib.recursive_repr</span></code> to Py2</p></li>
+</ul>
+<p>Bug fixes:</p>
+<ul class="simple">
+<li><p>Add <code class="docutils literal notranslate"><span class="pre">HTTPMessage</span></code> to <code class="docutils literal notranslate"><span class="pre">http.client</span></code>, which is missing from <code class="docutils literal notranslate"><span class="pre">httplib.__all__</span></code> on Python &lt;= 2.7.10. This restores compatibility with the latest <code class="docutils literal notranslate"><span class="pre">urllib3</span></code> package (issue #159, thanks to Waldemar Kornewald)</p></li>
+<li><p>Expand newint.__divmod__ and newint.__rdivmod__ to fall back to &lt;type ‘long’&gt;
+implementations where appropriate (issue #146 - thanks to Matt Bogosian)</p></li>
+<li><p>Fix newrange slicing for some slice/range combos (issue #132, thanks to Brad Walker)</p></li>
+<li><p>Small doc fixes (thanks to Michael Joseph and Tim Tröndle)</p></li>
+<li><p>Improve robustness of test suite against opening .pyc files as text on Py2</p></li>
+<li><p>Update backports of <code class="docutils literal notranslate"><span class="pre">Counter</span></code> and <code class="docutils literal notranslate"><span class="pre">OrderedDict</span></code> to use the newer
+implementations from Py3.4. This fixes <code class="docutils literal notranslate"><span class="pre">.copy()</span></code> preserving subclasses etc.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">futurize</span></code> no longer breaks working Py2 code by changing <code class="docutils literal notranslate"><span class="pre">basestring</span></code> to
+<code class="docutils literal notranslate"><span class="pre">str</span></code>. Instead it imports the <code class="docutils literal notranslate"><span class="pre">basestring</span></code> forward-port from
+<code class="docutils literal notranslate"><span class="pre">past.builtins</span></code> (issues #127 and #156)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">future.utils</span></code>: add <code class="docutils literal notranslate"><span class="pre">string_types</span></code> etc. and update docs (issue #126)</p></li>
+</ul>
+</section>
+<section id="changes-in-version-0-14-3-2014-12-15">
+<span id="whats-new-0-14-x"></span><h2>Changes in version 0.14.3 (2014-12-15)<a class="headerlink" href="#changes-in-version-0-14-3-2014-12-15" title="Link to this heading">¶</a></h2>
+<p>This is a bug-fix release:</p>
+<ul class="simple">
+<li><p>Expose contents of <code class="docutils literal notranslate"><span class="pre">thread</span></code> (not <code class="docutils literal notranslate"><span class="pre">dummy_thread</span></code>) as <code class="docutils literal notranslate"><span class="pre">_thread</span></code> on Py2 (Issue #124)</p></li>
+<li><p>Add signed support for <code class="docutils literal notranslate"><span class="pre">newint.to_bytes()</span></code> (Issue #128)</p></li>
+<li><p>Fix <code class="docutils literal notranslate"><span class="pre">OrderedDict.clear()</span></code> on Py2.6 (Issue #125)</p></li>
+<li><p>Improve <code class="docutils literal notranslate"><span class="pre">newrange</span></code>: equality and slicing, start/stop/step properties, refactoring (Issues #129, #130)</p></li>
+<li><p>Minor doc updates</p></li>
+</ul>
+</section>
+<section id="changes-in-version-0-14-2-2014-11-21">
+<h2>Changes in version 0.14.2 (2014-11-21)<a class="headerlink" href="#changes-in-version-0-14-2-2014-11-21" title="Link to this heading">¶</a></h2>
+<p>This is a bug-fix release:</p>
+<ul class="simple">
+<li><p>Speed up importing of <code class="docutils literal notranslate"><span class="pre">past.translation</span></code> (Issue #117)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">html.escape()</span></code>: replace function with the more robust one from Py3.4</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">futurize</span></code>: avoid displacing encoding comments by <code class="docutils literal notranslate"><span class="pre">__future__</span></code> imports (Issues #97, #10, #121)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">futurize</span></code>: don’t swallow exit code (Issue #119)</p></li>
+<li><p>Packaging: don’t forcibly remove the old build dir in <code class="docutils literal notranslate"><span class="pre">setup.py</span></code> (Issue #108)</p></li>
+<li><p>Docs: update further docs and tests to refer to <code class="docutils literal notranslate"><span class="pre">install_aliases()</span></code> instead of
+<code class="docutils literal notranslate"><span class="pre">install_hooks()</span></code></p></li>
+<li><p>Docs: fix <code class="docutils literal notranslate"><span class="pre">iteritems</span></code> import error in cheat sheet (Issue #120)</p></li>
+<li><p>Tests: don’t rely on presence of <code class="docutils literal notranslate"><span class="pre">test.test_support</span></code> on Py2 or <code class="docutils literal notranslate"><span class="pre">test.support</span></code> on Py3 (Issue #109)</p></li>
+<li><p>Tests: don’t override existing <code class="docutils literal notranslate"><span class="pre">PYTHONPATH</span></code> for tests (PR #111)</p></li>
+</ul>
+</section>
+<section id="changes-in-version-0-14-1-2014-10-02">
+<h2>Changes in version 0.14.1 (2014-10-02)<a class="headerlink" href="#changes-in-version-0-14-1-2014-10-02" title="Link to this heading">¶</a></h2>
+<p>This is a minor bug-fix release:</p>
+<ul class="simple">
+<li><p>Docs: add a missing template file for building docs (Issue #108)</p></li>
+<li><p>Tests: fix a bug in error handling while reporting failed script runs (Issue #109)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">install_aliases()</span></code>: don’t assume that the <code class="docutils literal notranslate"><span class="pre">test.test_support</span></code> module always
+exists on Py2 (Issue #109)</p></li>
+</ul>
+</section>
+<section id="changes-in-version-0-14-0-2014-10-02">
+<h2>Changes in version 0.14.0 (2014-10-02)<a class="headerlink" href="#changes-in-version-0-14-0-2014-10-02" title="Link to this heading">¶</a></h2>
+<p>This is a major new release that offers a cleaner interface for most imports in
+Python 2/3 compatible code.</p>
+<p>Instead of this interface:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">future.builtins</span> <span class="kn">import</span> <span class="nb">str</span><span class="p">,</span> <span class="nb">open</span><span class="p">,</span> <span class="nb">range</span><span class="p">,</span> <span class="nb">dict</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">future.standard_library</span> <span class="kn">import</span> <span class="n">hooks</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="n">hooks</span><span class="p">():</span>
+<span class="gp">... </span>    <span class="kn">import</span> <span class="nn">queue</span>
+<span class="gp">... </span>    <span class="kn">import</span> <span class="nn">configparser</span>
+<span class="gp">... </span>    <span class="kn">import</span> <span class="nn">tkinter.dialog</span>
+<span class="gp">... </span>    <span class="c1"># etc.</span>
+</pre></div>
+</div>
+<p>You can now use the following interface for much Python 2/3 compatible code:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Alias for future.builtins on Py2:</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">builtins</span> <span class="kn">import</span> <span class="nb">str</span><span class="p">,</span> <span class="nb">open</span><span class="p">,</span> <span class="nb">range</span><span class="p">,</span> <span class="nb">dict</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Alias for future.moves.* on Py2:</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">queue</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">configparser</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">tkinter.dialog</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">etc</span><span class="o">.</span>
+</pre></div>
+</div>
+<p>Notice that the above code will run on Python 3 even without the presence of the
+<code class="docutils literal notranslate"><span class="pre">future</span></code> package. Of the 44 standard library modules that were refactored with
+PEP 3108, 30 are supported with direct imports in this manner. (These are listed
+here: <a class="reference internal" href="standard_library_imports.html#direct-imports"><span class="std std-ref">Direct imports</span></a>.)</p>
+<p>The other 14 standard library modules that kept the same top-level names in
+Py3.x are not supported with this direct import interface on Py2. These include
+the 5 modules in the Py3 <code class="docutils literal notranslate"><span class="pre">urllib</span></code> package. These modules are accessible through
+the following interface (as well as the interfaces offered in previous versions
+of <code class="docutils literal notranslate"><span class="pre">python-future</span></code>):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">future.standard_library</span> <span class="kn">import</span> <span class="n">install_aliases</span>
+<span class="n">install_aliases</span><span class="p">()</span>
+
+<span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">UserDict</span><span class="p">,</span> <span class="n">UserList</span><span class="p">,</span> <span class="n">UserString</span>
+<span class="kn">import</span> <span class="nn">dbm.gnu</span>
+<span class="kn">from</span> <span class="nn">itertools</span> <span class="kn">import</span> <span class="n">filterfalse</span><span class="p">,</span> <span class="n">zip_longest</span>
+<span class="kn">from</span> <span class="nn">subprocess</span> <span class="kn">import</span> <span class="n">getoutput</span><span class="p">,</span> <span class="n">getstatusoutput</span>
+<span class="kn">from</span> <span class="nn">sys</span> <span class="kn">import</span> <span class="n">intern</span>
+<span class="kn">import</span> <span class="nn">test.support</span>
+<span class="kn">from</span> <span class="nn">urllib.request</span> <span class="kn">import</span> <span class="n">urlopen</span>
+<span class="kn">from</span> <span class="nn">urllib.parse</span> <span class="kn">import</span> <span class="n">urlparse</span>
+<span class="c1"># etc.</span>
+<span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">Counter</span><span class="p">,</span> <span class="n">OrderedDict</span>     <span class="c1"># backported to Py2.6</span>
+</pre></div>
+</div>
+<p>The complete list of packages supported with this interface is here:
+<a class="reference internal" href="standard_library_imports.html#list-standard-library-refactored"><span class="std std-ref">Aliased imports</span></a>.</p>
+<p>For more information on these and other interfaces to the standard library, see
+<a class="reference internal" href="standard_library_imports.html#standard-library-imports"><span class="std std-ref">Standard library imports</span></a>.</p>
+<section id="bug-fixes">
+<h3>Bug fixes<a class="headerlink" href="#bug-fixes" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>This release expands the <code class="docutils literal notranslate"><span class="pre">future.moves</span></code> package to include most of the remaining
+modules that were moved in the standard library reorganization (PEP 3108).
+(Issue #104)</p></li>
+<li><p>This release also removes the broken <code class="docutils literal notranslate"><span class="pre">--doctests_only</span></code> option from the <code class="docutils literal notranslate"><span class="pre">futurize</span></code>
+and <code class="docutils literal notranslate"><span class="pre">pasteurize</span></code> scripts for now. (Issue #103)</p></li>
+</ul>
+</section>
+<section id="internal-cleanups">
+<h3>Internal cleanups<a class="headerlink" href="#internal-cleanups" title="Link to this heading">¶</a></h3>
+<p>The project folder structure has changed. Top-level packages are now in a
+<code class="docutils literal notranslate"><span class="pre">src</span></code> folder and the tests have been moved into a project-level <code class="docutils literal notranslate"><span class="pre">tests</span></code>
+folder.</p>
+<p>The following deprecated internal modules have been removed (Issue #80):</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">future.utils.encoding</span></code> and <code class="docutils literal notranslate"><span class="pre">future.utils.six</span></code>.</p></li>
+</ul>
+</section>
+<section id="deprecations">
+<h3>Deprecations<a class="headerlink" href="#deprecations" title="Link to this heading">¶</a></h3>
+<p>The following internal functions have been deprecated and will be removed in a future release:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">future.standard_library.scrub_py2_sys_modules</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">future.standard_library.scrub_future_sys_modules</span></code></p></li>
+</ul>
+</section>
+</section>
+<section id="changes-in-version-0-13-1-2014-09-23">
+<span id="whats-new-0-13-x"></span><h2>Changes in version 0.13.1 (2014-09-23)<a class="headerlink" href="#changes-in-version-0-13-1-2014-09-23" title="Link to this heading">¶</a></h2>
+<p>This is a bug-fix release:</p>
+<ul class="simple">
+<li><p>Fix (multiple) inheritance of <code class="docutils literal notranslate"><span class="pre">future.builtins.object</span></code> with metaclasses (Issues #91, #96)</p></li>
+<li><p>Fix <code class="docutils literal notranslate"><span class="pre">futurize</span></code>’s refactoring of <code class="docutils literal notranslate"><span class="pre">urllib</span></code> imports (Issue #94)</p></li>
+<li><p>Fix <code class="docutils literal notranslate"><span class="pre">futurize</span> <span class="pre">--all-imports</span></code> (Issue #101)</p></li>
+<li><p>Fix <code class="docutils literal notranslate"><span class="pre">futurize</span> <span class="pre">--output-dir</span></code> logging (Issue #102)</p></li>
+<li><p>Doc formatting fix (Issues #98, #100)</p></li>
+</ul>
+</section>
+<section id="changes-in-version-0-13-0-2014-08-13">
+<h2>Changes in version 0.13.0 (2014-08-13)<a class="headerlink" href="#changes-in-version-0-13-0-2014-08-13" title="Link to this heading">¶</a></h2>
+<p>This is mostly a clean-up release. It adds some small new compatibility features
+and fixes several bugs.</p>
+<section id="id1">
+<h3>Deprecations<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h3>
+<p>The following unused internal modules are now deprecated. They will be removed in a
+future release:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">future.utils.encoding</span></code> and <code class="docutils literal notranslate"><span class="pre">future.utils.six</span></code>.</p></li>
+</ul>
+<p>(Issue #80). See <a class="reference external" href="http://fedoraproject.org/wiki/Packaging:No_Bundled_Libraries">here</a>
+for the rationale for unbundling them.</p>
+</section>
+<section id="new-features">
+<h3>New features<a class="headerlink" href="#new-features" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Docs: Add <a class="reference internal" href="compatible_idioms.html#compatible-idioms"><span class="std std-ref">Cheat Sheet: Writing Python 2-3 compatible code</span></a> from Ed Schofield’s PyConAU 2014 talk.</p></li>
+<li><p>Add <code class="docutils literal notranslate"><span class="pre">newint.to_bytes()</span></code> and <code class="docutils literal notranslate"><span class="pre">newint.from_bytes()</span></code>. (Issue #85)</p></li>
+<li><p>Add <code class="docutils literal notranslate"><span class="pre">future.utils.raise_from</span></code> as an equivalent to Py3’s <code class="docutils literal notranslate"><span class="pre">raise</span> <span class="pre">...</span> <span class="pre">from</span>
+<span class="pre">...</span></code> syntax. (Issue #86)</p></li>
+<li><p>Add <code class="docutils literal notranslate"><span class="pre">past.builtins.oct()</span></code> function.</p></li>
+<li><p>Add backports for Python 2.6 of <code class="docutils literal notranslate"><span class="pre">subprocess.check_output()</span></code>,
+<code class="docutils literal notranslate"><span class="pre">itertools.combinations_with_replacement()</span></code>, and <code class="docutils literal notranslate"><span class="pre">functools.cmp_to_key()</span></code>.</p></li>
+</ul>
+</section>
+<section id="id2">
+<h3>Bug fixes<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Use a private logger instead of the global logger in
+<code class="docutils literal notranslate"><span class="pre">future.standard_library</span></code> (Issue #82). This restores compatibility of the
+standard library hooks with <code class="docutils literal notranslate"><span class="pre">flask</span></code>. (Issue #79)</p></li>
+<li><p>Stage 1 of <code class="docutils literal notranslate"><span class="pre">futurize</span></code> no longer renames <code class="docutils literal notranslate"><span class="pre">next</span></code> methods to <code class="docutils literal notranslate"><span class="pre">__next__</span></code>
+(Issue #81). It still converts <code class="docutils literal notranslate"><span class="pre">obj.next()</span></code> method calls to
+<code class="docutils literal notranslate"><span class="pre">next(obj)</span></code> correctly.</p></li>
+<li><p>Prevent introduction of a second set of parentheses in <code class="docutils literal notranslate"><span class="pre">print()</span></code> calls in
+some further cases.</p></li>
+<li><p>Fix <code class="docutils literal notranslate"><span class="pre">isinstance</span></code> checks for subclasses of future types. (Issue #89)</p></li>
+<li><p>Be explicit about encoding file contents as UTF-8 in unit tests. (Issue #63)
+Useful for building RPMs and in other environments where <code class="docutils literal notranslate"><span class="pre">LANG=C</span></code>.</p></li>
+<li><p>Fix for 3-argument <code class="docutils literal notranslate"><span class="pre">pow(x,</span> <span class="pre">y,</span> <span class="pre">z)</span></code> with <code class="docutils literal notranslate"><span class="pre">newint</span></code> arguments. (Thanks to &#64;str4d.)
+(Issue #87)</p></li>
+</ul>
+</section>
+</section>
+<section id="changes-in-version-0-12-4-2014-07-18">
+<span id="whats-new-0-12-4"></span><h2>Changes in version 0.12.4 (2014-07-18)<a class="headerlink" href="#changes-in-version-0-12-4-2014-07-18" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>Fix upcasting behaviour of <code class="docutils literal notranslate"><span class="pre">newint</span></code>. (Issue #76)</p></li>
+</ul>
+</section>
+<section id="changes-in-version-0-12-3-2014-06-19">
+<span id="whats-new-0-12-3"></span><h2>Changes in version 0.12.3 (2014-06-19)<a class="headerlink" href="#changes-in-version-0-12-3-2014-06-19" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>Add “official Python 3.4 support”: Py3.4 is now listed among the PyPI Trove
+classifiers and the tests now run successfully on Py3.4. (Issue #67)</p></li>
+<li><p>Add backports of <code class="docutils literal notranslate"><span class="pre">collections.OrderedDict</span></code> and
+<code class="docutils literal notranslate"><span class="pre">collections.Counter</span></code> for Python 2.6. (Issue #52)</p></li>
+<li><p>Add <code class="docutils literal notranslate"><span class="pre">--version</span></code> option for <code class="docutils literal notranslate"><span class="pre">futurize</span></code> and <code class="docutils literal notranslate"><span class="pre">pasteurize</span></code> scripts.
+(Issue #57)</p></li>
+<li><p>Fix <code class="docutils literal notranslate"><span class="pre">future.utils.ensure_new_type</span></code> with <code class="docutils literal notranslate"><span class="pre">long</span></code> input. (Issue #65)</p></li>
+<li><p>Remove some false alarms on checks for ambiguous fixer names with
+<code class="docutils literal notranslate"><span class="pre">futurize</span> <span class="pre">-f</span> <span class="pre">...</span></code>.</p></li>
+<li><dl class="simple">
+<dt>Testing fixes:</dt><dd><ul>
+<li><p>Don’t hard-code Python interpreter command in tests. (Issue #62)</p></li>
+<li><p>Fix deprecated <code class="docutils literal notranslate"><span class="pre">unittest</span></code> usage in Py3. (Issue #62)</p></li>
+<li><p>Be explicit about encoding temporary file contents as UTF-8 for
+when <code class="docutils literal notranslate"><span class="pre">LANG=C</span></code> (e.g., when building an RPM). (Issue #63)</p></li>
+<li><p>All undecorated tests are now passing again on Python 2.6, 2.7, 3.3,
+and 3.4 (thanks to Elliott Sales de Andrade).</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Docs:</dt><dd><ul>
+<li><p>Add list of fixers used by <code class="docutils literal notranslate"><span class="pre">futurize</span></code>. (Issue #58)</p></li>
+<li><p>Add list of contributors to the Credits page.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</section>
+<section id="changes-in-version-0-12-2-2014-05-25">
+<span id="whats-new-0-12-2"></span><h2>Changes in version 0.12.2 (2014-05-25)<a class="headerlink" href="#changes-in-version-0-12-2-2014-05-25" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>Add <code class="docutils literal notranslate"><span class="pre">bytes.maketrans()</span></code> method. (Issue #51)</p></li>
+<li><p>Add support for Python versions between 2.7.0 and 2.7.3 (inclusive).
+(Issue #53)</p></li>
+<li><p>Bug fix for <code class="docutils literal notranslate"><span class="pre">newlist(newlist([1,</span> <span class="pre">2,</span> <span class="pre">3]))</span></code>. (Issue #50)</p></li>
+</ul>
+</section>
+<section id="changes-in-version-0-12-1-2014-05-14">
+<span id="whats-new-0-12-1"></span><h2>Changes in version 0.12.1 (2014-05-14)<a class="headerlink" href="#changes-in-version-0-12-1-2014-05-14" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>Python 2.6 support: <code class="docutils literal notranslate"><span class="pre">future.standard_library</span></code> now isolates the <code class="docutils literal notranslate"><span class="pre">importlib</span></code>
+dependency to one function (<code class="docutils literal notranslate"><span class="pre">import_</span></code>) so the <code class="docutils literal notranslate"><span class="pre">importlib</span></code> backport may
+not be needed.</p></li>
+<li><p>Doc updates</p></li>
+</ul>
+</section>
+<section id="changes-in-version-0-12-0-2014-05-06">
+<span id="whats-new-0-12"></span><h2>Changes in version 0.12.0 (2014-05-06)<a class="headerlink" href="#changes-in-version-0-12-0-2014-05-06" title="Link to this heading">¶</a></h2>
+<p>The major new feature in this version is improvements in the support for the
+reorganized standard library (PEP 3108) and compatibility of the import
+mechanism with 3rd-party modules.</p>
+<section id="more-robust-standard-library-import-hooks">
+<h3>More robust standard-library import hooks<a class="headerlink" href="#more-robust-standard-library-import-hooks" title="Link to this heading">¶</a></h3>
+<p><strong>Note: backwards-incompatible change:</strong> As previously announced (see
+<a class="reference internal" href="#deprecated-auto-import-hooks"><span class="std std-ref">Deprecated feature: auto-installation of standard-library import hooks</span></a>), the import hooks must now be enabled
+explicitly, as follows:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">future</span> <span class="kn">import</span> <span class="n">standard_library</span>
+<span class="k">with</span> <span class="n">standard_library</span><span class="o">.</span><span class="n">hooks</span><span class="p">():</span>
+    <span class="kn">import</span> <span class="nn">html.parser</span>
+    <span class="kn">import</span> <span class="nn">http.client</span>
+    <span class="o">...</span>
+</pre></div>
+</div>
+<p>This now causes these modules to be imported from <code class="docutils literal notranslate"><span class="pre">future.moves</span></code>, a new
+package that provides wrappers over the native Python 2 standard library with
+the new Python 3 organization. As a consequence, the import hooks provided in
+<code class="docutils literal notranslate"><span class="pre">future.standard_library</span></code> are now fully compatible with the <a class="reference external" href="http://python-requests.org">Requests library</a>.</p>
+<p>The functional interface with <code class="docutils literal notranslate"><span class="pre">install_hooks()</span></code> is still supported for
+backwards compatibility:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">future</span> <span class="kn">import</span> <span class="n">standard_library</span>
+<span class="n">standard_library</span><span class="o">.</span><span class="n">install_hooks</span><span class="p">():</span>
+
+<span class="kn">import</span> <span class="nn">html.parser</span>
+<span class="kn">import</span> <span class="nn">http.client</span>
+<span class="o">...</span>
+<span class="n">standard_library</span><span class="o">.</span><span class="n">remove_hooks</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Explicit installation of import hooks allows finer-grained control
+over whether they are enabled for other imported modules that provide their own
+Python 2/3 compatibility layer. This also improves compatibility of <code class="docutils literal notranslate"><span class="pre">future</span></code>
+with tools like <code class="docutils literal notranslate"><span class="pre">py2exe</span></code>.</p>
+</section>
+<section id="newobject-base-object-defines-fallback-py2-compatible-special-methods">
+<h3><code class="docutils literal notranslate"><span class="pre">newobject</span></code> base object defines fallback Py2-compatible special methods<a class="headerlink" href="#newobject-base-object-defines-fallback-py2-compatible-special-methods" title="Link to this heading">¶</a></h3>
+<p>There is a new <code class="docutils literal notranslate"><span class="pre">future.types.newobject</span></code> base class (available as
+<code class="docutils literal notranslate"><span class="pre">future.builtins.object</span></code>) that can streamline Py2/3 compatible code by
+providing fallback Py2-compatible special methods for its subclasses. It
+currently provides <code class="docutils literal notranslate"><span class="pre">next()</span></code> and <code class="docutils literal notranslate"><span class="pre">__nonzero__()</span></code> as fallback methods on Py2
+when its subclasses define the corresponding Py3-style <code class="docutils literal notranslate"><span class="pre">__next__()</span></code> and
+<code class="docutils literal notranslate"><span class="pre">__bool__()</span></code> methods.</p>
+<p>This obviates the need to add certain compatibility hacks or decorators to the
+code such as the <code class="docutils literal notranslate"><span class="pre">&#64;implements_iterator</span></code> decorator for classes that define a
+Py3-style <code class="docutils literal notranslate"><span class="pre">__next__</span></code> method.</p>
+<p>In this example, the code defines a Py3-style iterator with a <code class="docutils literal notranslate"><span class="pre">__next__</span></code>
+method. The <code class="docutils literal notranslate"><span class="pre">object</span></code> class defines a <code class="docutils literal notranslate"><span class="pre">next</span></code> method for Python 2 that maps
+to <code class="docutils literal notranslate"><span class="pre">__next__</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">future.builtins</span> <span class="kn">import</span> <span class="nb">object</span>
+
+<span class="k">class</span> <span class="nc">Upper</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">iterable</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_iter</span> <span class="o">=</span> <span class="nb">iter</span><span class="p">(</span><span class="n">iterable</span><span class="p">)</span>
+    <span class="k">def</span> <span class="fm">__next__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>                 <span class="c1"># note the Py3 interface</span>
+        <span class="k">return</span> <span class="nb">next</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_iter</span><span class="p">)</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+    <span class="k">def</span> <span class="fm">__iter__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span>
+
+<span class="k">assert</span> <span class="nb">list</span><span class="p">(</span><span class="n">Upper</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">))</span> <span class="o">==</span> <span class="nb">list</span><span class="p">(</span><span class="s1">&#39;HELLO&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">newobject</span></code> defines other Py2-compatible special methods similarly:
+currently these include <code class="docutils literal notranslate"><span class="pre">__nonzero__</span></code> (mapped to <code class="docutils literal notranslate"><span class="pre">__bool__</span></code>) and
+<code class="docutils literal notranslate"><span class="pre">__long__</span></code> (mapped to <code class="docutils literal notranslate"><span class="pre">__int__</span></code>).</p>
+<p>Inheriting from <code class="docutils literal notranslate"><span class="pre">newobject</span></code> on Python 2 is safe even if your class defines
+its own Python 2-style <code class="docutils literal notranslate"><span class="pre">__nonzero__</span></code> and <code class="docutils literal notranslate"><span class="pre">next</span></code> and <code class="docutils literal notranslate"><span class="pre">__long__</span></code> methods.
+Your custom methods will simply override those on the base class.</p>
+<p>On Python 3, as usual, <code class="docutils literal notranslate"><span class="pre">future.builtins.object</span></code> simply refers to <code class="docutils literal notranslate"><span class="pre">builtins.object</span></code>.</p>
+</section>
+<section id="past-builtins-module-improved">
+<h3><code class="docutils literal notranslate"><span class="pre">past.builtins</span></code> module improved<a class="headerlink" href="#past-builtins-module-improved" title="Link to this heading">¶</a></h3>
+<p>The <code class="docutils literal notranslate"><span class="pre">past.builtins</span></code> module is much more compatible with the corresponding
+builtins on Python 2; many more of the Py2 unit tests pass on Py3. For example,
+functions like <code class="docutils literal notranslate"><span class="pre">map()</span></code> and <code class="docutils literal notranslate"><span class="pre">filter()</span></code> now behave as they do on Py2 with with
+<code class="docutils literal notranslate"><span class="pre">None</span></code> as the first argument.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">past.builtins</span></code> module has also been extended to add Py3 support for
+additional Py2 constructs that are not adequately handled by <code class="docutils literal notranslate"><span class="pre">lib2to3</span></code> (see
+Issue #37). This includes new <code class="docutils literal notranslate"><span class="pre">execfile()</span></code> and <code class="docutils literal notranslate"><span class="pre">cmp()</span></code> functions.
+<code class="docutils literal notranslate"><span class="pre">futurize</span></code> now invokes imports of these functions from <code class="docutils literal notranslate"><span class="pre">past.builtins</span></code>.</p>
+</section>
+<section id="surrogateescape-error-handler">
+<h3><code class="docutils literal notranslate"><span class="pre">surrogateescape</span></code> error handler<a class="headerlink" href="#surrogateescape-error-handler" title="Link to this heading">¶</a></h3>
+<p>The <code class="docutils literal notranslate"><span class="pre">newstr</span></code> type (<code class="docutils literal notranslate"><span class="pre">future.builtins.str</span></code>) now supports a backport of the
+Py3.x <code class="docutils literal notranslate"><span class="pre">'surrogateescape'</span></code> error handler for preserving high-bit
+characters when encoding and decoding strings with unknown encodings.</p>
+</section>
+<section id="newlist-type">
+<h3><code class="docutils literal notranslate"><span class="pre">newlist</span></code> type<a class="headerlink" href="#newlist-type" title="Link to this heading">¶</a></h3>
+<p>There is a new <code class="docutils literal notranslate"><span class="pre">list</span></code> type in <code class="docutils literal notranslate"><span class="pre">future.builtins</span></code> that offers <code class="docutils literal notranslate"><span class="pre">.copy()</span></code> and
+<code class="docutils literal notranslate"><span class="pre">.clear()</span></code> methods like the <code class="docutils literal notranslate"><span class="pre">list</span></code> type in Python 3.</p>
+</section>
+<section id="listvalues-and-listitems">
+<h3><code class="docutils literal notranslate"><span class="pre">listvalues</span></code> and <code class="docutils literal notranslate"><span class="pre">listitems</span></code><a class="headerlink" href="#listvalues-and-listitems" title="Link to this heading">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">future.utils</span></code> now contains helper functions <code class="docutils literal notranslate"><span class="pre">listvalues</span></code> and
+<code class="docutils literal notranslate"><span class="pre">listitems</span></code>, which provide Python 2-style list snapshotting semantics for
+dictionaries in both Python 2 and Python 3.</p>
+<p>These came out of the discussion around Nick Coghlan’s now-withdrawn PEP 469.</p>
+<p>There is no corresponding <code class="docutils literal notranslate"><span class="pre">listkeys(d)</span></code> function; use <code class="docutils literal notranslate"><span class="pre">list(d)</span></code> instead.</p>
+</section>
+<section id="tests">
+<h3>Tests<a class="headerlink" href="#tests" title="Link to this heading">¶</a></h3>
+<p>The number of unit tests has increased from 600 to over 800. Most of the new
+tests come from Python 3.3’s test suite.</p>
+</section>
+<section id="refactoring-of-future-standard-library-future-backports">
+<h3>Refactoring of <code class="docutils literal notranslate"><span class="pre">future.standard_library.*</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">future.backports</span></code><a class="headerlink" href="#refactoring-of-future-standard-library-future-backports" title="Link to this heading">¶</a></h3>
+<p>The backported standard library modules have been moved to <code class="docutils literal notranslate"><span class="pre">future.backports</span></code>
+to make the distinction clearer between these and the new <code class="docutils literal notranslate"><span class="pre">future.moves</span></code>
+package.</p>
+</section>
+<section id="backported-http-server-and-urllib-modules">
+<h3>Backported <code class="docutils literal notranslate"><span class="pre">http.server</span></code> and <code class="docutils literal notranslate"><span class="pre">urllib</span></code> modules<a class="headerlink" href="#backported-http-server-and-urllib-modules" title="Link to this heading">¶</a></h3>
+<p>Alpha versions of backports of the <code class="docutils literal notranslate"><span class="pre">http.server</span></code> and <code class="docutils literal notranslate"><span class="pre">urllib</span></code> module from
+Python 3.3’s standard library are now provided in <code class="docutils literal notranslate"><span class="pre">future.backports</span></code>.</p>
+<p>Use them like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">future.backports.urllib.request</span> <span class="kn">import</span> <span class="n">Request</span>    <span class="c1"># etc.</span>
+<span class="kn">from</span> <span class="nn">future.backports.http</span> <span class="kn">import</span> <span class="n">server</span> <span class="k">as</span> <span class="n">http_server</span>
+</pre></div>
+</div>
+<p>Or with this new interface:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">future.standard_library</span> <span class="kn">import</span> <span class="n">import_</span><span class="p">,</span> <span class="n">from_import</span>
+
+<span class="n">Request</span> <span class="o">=</span> <span class="n">from_import</span><span class="p">(</span><span class="s1">&#39;urllib.request&#39;</span><span class="p">,</span> <span class="s1">&#39;Request&#39;</span><span class="p">,</span> <span class="n">backport</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">http</span> <span class="o">=</span> <span class="n">import_</span><span class="p">(</span><span class="s1">&#39;http.server&#39;</span><span class="p">,</span> <span class="n">backport</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="internal-refactoring">
+<h3>Internal refactoring<a class="headerlink" href="#internal-refactoring" title="Link to this heading">¶</a></h3>
+<p>The <code class="docutils literal notranslate"><span class="pre">future.builtins.types</span></code> module has been moved to <code class="docutils literal notranslate"><span class="pre">future.types</span></code>.
+Likewise, <code class="docutils literal notranslate"><span class="pre">past.builtins.types</span></code> has been moved to <code class="docutils literal notranslate"><span class="pre">past.types</span></code>. The only
+user-visible effect of this is to change <code class="docutils literal notranslate"><span class="pre">repr(type(obj))</span></code> for instances
+of these types. For example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">future.builtins</span> <span class="kn">import</span> <span class="nb">bytes</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">bytes</span><span class="p">(</span><span class="sa">b</span><span class="s1">&#39;abc&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">type</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+<span class="go">future.types.newbytes.newbytes</span>
+</pre></div>
+</div>
+<p>Instead of:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">type</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>           <span class="c1"># prior to v0.12</span>
+<span class="go">future.builtins.types.newbytes.newbytes</span>
+</pre></div>
+</div>
+</section>
+<section id="id3">
+<h3>Bug fixes<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h3>
+<p>Many small improvements and fixes have been made across the project. Some highlights are:</p>
+<ul class="simple">
+<li><p>Fixes and updates from Python 3.3.5 have been included in the backported
+standard library modules.</p></li>
+<li><p>Scrubbing of the <code class="docutils literal notranslate"><span class="pre">sys.modules</span></code> cache performed by <code class="docutils literal notranslate"><span class="pre">remove_hooks()</span></code> (also
+called by the <code class="docutils literal notranslate"><span class="pre">suspend_hooks</span></code> and <code class="docutils literal notranslate"><span class="pre">hooks</span></code> context managers) is now more
+conservative.</p></li>
+</ul>
+<ul class="simple">
+<li><p>The <code class="docutils literal notranslate"><span class="pre">fix_next</span></code> and <code class="docutils literal notranslate"><span class="pre">fix_reduce</span></code> fixers have been moved to stage 1 of
+<code class="docutils literal notranslate"><span class="pre">futurize</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">futurize</span></code>: Shebang lines such as <code class="docutils literal notranslate"><span class="pre">#!/usr/bin/env</span> <span class="pre">python</span></code> and source code
+file encoding declarations like <code class="docutils literal notranslate"><span class="pre">#</span> <span class="pre">-*-</span> <span class="pre">coding=utf-8</span> <span class="pre">-*-</span></code> are no longer occasionally
+displaced by <code class="docutils literal notranslate"><span class="pre">from</span> <span class="pre">__future__</span> <span class="pre">import</span> <span class="pre">...</span></code> statements. (Issue #10)</p></li>
+<li><p>Improved compatibility with <code class="docutils literal notranslate"><span class="pre">py2exe</span></code> (<a class="reference external" href="https://github.com/PythonCharmers/python-future/issues/31">Issue #31</a>).</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">future.utils.bytes_to_native_str</span></code> function now returns a platform-native string
+object and <code class="docutils literal notranslate"><span class="pre">future.utils.native_str_to_bytes</span></code> returns a <code class="docutils literal notranslate"><span class="pre">newbytes</span></code> object on Py2.
+(<a class="reference external" href="https://github.com/PythonCharmers/python-future/issues/47">Issue #47</a>).</p></li>
+<li><p>The backported <code class="docutils literal notranslate"><span class="pre">http.client</span></code> module and related modules use other new
+backported modules such as <code class="docutils literal notranslate"><span class="pre">email</span></code>. As a result they are more compliant
+with the Python 3.3 equivalents.</p></li>
+</ul>
+</section>
+</section>
+<section id="changes-in-version-0-11-4-2014-05-25">
+<span id="whats-new-0-11-4"></span><h2>Changes in version 0.11.4 (2014-05-25)<a class="headerlink" href="#changes-in-version-0-11-4-2014-05-25" title="Link to this heading">¶</a></h2>
+<p>This release contains various small improvements and fixes:</p>
+<ul class="simple">
+<li><p>This release restores Python 2.6 compatibility. (Issue #42)</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">fix_absolute_import</span></code> fixer now supports Cython <code class="docutils literal notranslate"><span class="pre">.pyx</span></code> modules. (Issue
+#35)</p></li>
+<li><p>Right-division with <code class="docutils literal notranslate"><span class="pre">newint</span></code> objects is fixed. (Issue #38)</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">fix_dict</span></code> fixer has been moved to stage2 of <code class="docutils literal notranslate"><span class="pre">futurize</span></code>.</p></li>
+<li><p>Calls to <code class="docutils literal notranslate"><span class="pre">bytes(string,</span> <span class="pre">encoding[,</span> <span class="pre">errors])</span></code> now work with <code class="docutils literal notranslate"><span class="pre">encoding</span></code> and
+<code class="docutils literal notranslate"><span class="pre">errors</span></code> passed as positional arguments. Previously this only worked if
+<code class="docutils literal notranslate"><span class="pre">encoding</span></code> and <code class="docutils literal notranslate"><span class="pre">errors</span></code> were passed as keyword arguments.</p></li>
+<li><p>The 0-argument <code class="docutils literal notranslate"><span class="pre">super()</span></code> function now works from inside static methods such
+as <code class="docutils literal notranslate"><span class="pre">__new__</span></code>. (Issue #36)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">future.utils.native(d)</span></code> calls now work for <code class="docutils literal notranslate"><span class="pre">future.builtins.dict</span></code> objects.</p></li>
+</ul>
+</section>
+<section id="changes-in-version-0-11-3-2014-02-27">
+<span id="whats-new-0-11-3"></span><h2>Changes in version 0.11.3 (2014-02-27)<a class="headerlink" href="#changes-in-version-0-11-3-2014-02-27" title="Link to this heading">¶</a></h2>
+<p>This release has improvements in the standard library import hooks mechanism and
+its compatibility with 3rd-party modules:</p>
+<section id="improved-compatibility-with-requests">
+<h3>Improved compatibility with <code class="docutils literal notranslate"><span class="pre">requests</span></code><a class="headerlink" href="#improved-compatibility-with-requests" title="Link to this heading">¶</a></h3>
+<p>The <code class="docutils literal notranslate"><span class="pre">__exit__</span></code> function of the <code class="docutils literal notranslate"><span class="pre">hooks</span></code> context manager and the
+<code class="docutils literal notranslate"><span class="pre">remove_hooks</span></code> function both now remove submodules of
+<code class="docutils literal notranslate"><span class="pre">future.standard_library</span></code> from the <code class="docutils literal notranslate"><span class="pre">sys.modules</span></code> cache. Therefore this code
+is now possible on Python 2 and 3:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">future</span> <span class="kn">import</span> <span class="n">standard_library</span>
+<span class="n">standard_library</span><span class="o">.</span><span class="n">install_hooks</span><span class="p">()</span>
+<span class="kn">import</span> <span class="nn">http.client</span>
+<span class="n">standard_library</span><span class="o">.</span><span class="n">remove_hooks</span><span class="p">()</span>
+<span class="kn">import</span> <span class="nn">requests</span>
+
+<span class="n">data</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;http://www.google.com&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Previously, this required manually removing <code class="docutils literal notranslate"><span class="pre">http</span></code> and <code class="docutils literal notranslate"><span class="pre">http.client</span></code> from
+<code class="docutils literal notranslate"><span class="pre">sys.modules</span></code> before importing <code class="docutils literal notranslate"><span class="pre">requests</span></code> on Python 2.x. (Issue #19)</p>
+<p>This change should also improve the compatibility of the standard library hooks
+with any other module that provides its own Python 2/3 compatibility code.</p>
+<p>Note that the situation will improve further in version 0.12; import hooks will
+require an explicit function call or the <code class="docutils literal notranslate"><span class="pre">hooks</span></code> context manager.</p>
+</section>
+<section id="conversion-scripts-explicitly-install-import-hooks">
+<h3>Conversion scripts explicitly install import hooks<a class="headerlink" href="#conversion-scripts-explicitly-install-import-hooks" title="Link to this heading">¶</a></h3>
+<p>The <code class="docutils literal notranslate"><span class="pre">futurize</span></code> and <code class="docutils literal notranslate"><span class="pre">pasteurize</span></code> scripts now add an explicit call to
+<code class="docutils literal notranslate"><span class="pre">install_hooks()</span></code> to install the standard library import hooks. These scripts
+now add these two lines:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">future</span> <span class="kn">import</span> <span class="n">standard_library</span>
+<span class="n">standard_library</span><span class="o">.</span><span class="n">install_hooks</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>instead of just the first one. The next major version of <code class="docutils literal notranslate"><span class="pre">future</span></code> (0.12) will
+require the explicit call or use of the <code class="docutils literal notranslate"><span class="pre">hooks</span></code> context manager. This will
+allow finer-grained control over whether import hooks are enabled for other
+imported modules, such as <code class="docutils literal notranslate"><span class="pre">requests</span></code>, which provide their own Python 2/3
+compatibility code.</p>
+</section>
+<section id="futurize-script-no-longer-adds-unicode-literals-by-default">
+<h3><code class="docutils literal notranslate"><span class="pre">futurize</span></code> script no longer adds <code class="docutils literal notranslate"><span class="pre">unicode_literals</span></code> by default<a class="headerlink" href="#futurize-script-no-longer-adds-unicode-literals-by-default" title="Link to this heading">¶</a></h3>
+<p>There is a new <code class="docutils literal notranslate"><span class="pre">--unicode-literals</span></code> flag to <code class="docutils literal notranslate"><span class="pre">futurize</span></code> that adds the
+import:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">unicode_literals</span>
+</pre></div>
+</div>
+<p>to the top of each converted module. Without this flag, <code class="docutils literal notranslate"><span class="pre">futurize</span></code> now no
+longer adds this import. (Issue #22)</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">pasteurize</span></code> script for converting from Py3 to Py2/3 still adds
+<code class="docutils literal notranslate"><span class="pre">unicode_literals</span></code>. (See the comments in Issue #22 for an explanation.)</p>
+</section>
+</section>
+<section id="changes-in-version-0-11-2014-01-28">
+<span id="whats-new-0-11"></span><h2>Changes in version 0.11 (2014-01-28)<a class="headerlink" href="#changes-in-version-0-11-2014-01-28" title="Link to this heading">¶</a></h2>
+<p>There are several major new features in version 0.11.</p>
+<section id="past-package">
+<h3><code class="docutils literal notranslate"><span class="pre">past</span></code> package<a class="headerlink" href="#past-package" title="Link to this heading">¶</a></h3>
+<p>The python-future project now provides a <code class="docutils literal notranslate"><span class="pre">past</span></code> package in addition to the
+<code class="docutils literal notranslate"><span class="pre">future</span></code> package. Whereas <code class="docutils literal notranslate"><span class="pre">future</span></code> provides improved compatibility with
+Python 3 code to Python 2, <code class="docutils literal notranslate"><span class="pre">past</span></code> provides support for using and interacting
+with Python 2 code from Python 3. The structure reflects that of <code class="docutils literal notranslate"><span class="pre">future</span></code>,
+with <code class="docutils literal notranslate"><span class="pre">past.builtins</span></code> and <code class="docutils literal notranslate"><span class="pre">past.utils</span></code>. There is also a new
+<code class="docutils literal notranslate"><span class="pre">past.translation</span></code> package that provides transparent translation of Python 2
+code to Python 3. (See below.)</p>
+<p>One purpose of <code class="docutils literal notranslate"><span class="pre">past</span></code> is to ease module-by-module upgrades to
+codebases from Python 2. Another is to help with enabling Python 2 libraries to
+support Python 3 without breaking the API they currently provide. (For example,
+user code may expect these libraries to pass them Python 2’s 8-bit strings,
+rather than Python 3’s <code class="docutils literal notranslate"><span class="pre">bytes</span></code> object.) A third purpose is to help migrate
+projects to Python 3 even if one or more dependencies are still on Python 2.</p>
+<p>Currently <code class="docutils literal notranslate"><span class="pre">past.builtins</span></code> provides forward-ports of Python 2’s <code class="docutils literal notranslate"><span class="pre">str</span></code> and
+<code class="docutils literal notranslate"><span class="pre">dict</span></code> objects, <code class="docutils literal notranslate"><span class="pre">basestring</span></code>, and list-producing iterator functions.  In
+later releases, <code class="docutils literal notranslate"><span class="pre">past.builtins</span></code> will be used internally by the
+<code class="docutils literal notranslate"><span class="pre">past.translation</span></code> package to help with importing and using old Python 2
+modules in a Python 3 environment.</p>
+</section>
+<section id="auto-translation-of-python-2-modules-upon-import">
+<h3>Auto-translation of Python 2 modules upon import<a class="headerlink" href="#auto-translation-of-python-2-modules-upon-import" title="Link to this heading">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">past</span></code> provides an experimental <code class="docutils literal notranslate"><span class="pre">translation</span></code> package to help
+with importing and using old Python 2 modules in a Python 3 environment.</p>
+<p>This is implemented using import hooks that attempt to automatically
+translate Python 2 modules to Python 3 syntax and semantics upon import. Use
+it like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ pip3 install plotrique==0.2.5-7 --no-compile   # to ignore SyntaxErrors
+$ python3
+</pre></div>
+</div>
+<p>Then pass in a whitelist of module name prefixes to the
+<code class="docutils literal notranslate"><span class="pre">past.translation.autotranslate()</span></code> function. Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">past.translation</span> <span class="kn">import</span> <span class="n">autotranslate</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">autotranslate</span><span class="p">([</span><span class="s1">&#39;plotrique&#39;</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">plotrique</span>
+</pre></div>
+</div>
+<p>This is intended to help you migrate to Python 3 without the need for all
+your code’s dependencies to support Python 3 yet. It should be used as a
+last resort; ideally Python 2-only dependencies should be ported
+properly to a Python 2/3 compatible codebase using a tool like
+<code class="docutils literal notranslate"><span class="pre">futurize</span></code> and the changes should be pushed to the upstream project.</p>
+<p>For more information, see <a class="reference internal" href="translation.html#translation"><span class="std std-ref">Using Python 2-only dependencies on Python 3</span></a>.</p>
+</section>
+<section id="separate-pasteurize-script">
+<h3>Separate <code class="docutils literal notranslate"><span class="pre">pasteurize</span></code> script<a class="headerlink" href="#separate-pasteurize-script" title="Link to this heading">¶</a></h3>
+<p>The functionality from <code class="docutils literal notranslate"><span class="pre">futurize</span> <span class="pre">--from3</span></code> is now in a separate script called
+<code class="docutils literal notranslate"><span class="pre">pasteurize</span></code>. Use <code class="docutils literal notranslate"><span class="pre">pasteurize</span></code> when converting from Python 3 code to Python
+2/3 compatible source. For more information, see <a class="reference internal" href="pasteurize.html#backwards-conversion"><span class="std std-ref">pasteurize: Py3 to Py2/3</span></a>.</p>
+</section>
+<section id="pow">
+<h3><code class="docutils literal notranslate"><span class="pre">pow()</span></code><a class="headerlink" href="#pow" title="Link to this heading">¶</a></h3>
+<p>There is now a <code class="docutils literal notranslate"><span class="pre">pow()</span></code> function in <code class="docutils literal notranslate"><span class="pre">future.builtins.misc</span></code> that behaves like
+the Python 3 <code class="docutils literal notranslate"><span class="pre">pow()</span></code> function when raising a negative number to a fractional
+power (returning a complex number).</p>
+</section>
+<section id="input-no-longer-disabled-globally-on-py2">
+<h3><code class="docutils literal notranslate"><span class="pre">input()</span></code> no longer disabled globally on Py2<a class="headerlink" href="#input-no-longer-disabled-globally-on-py2" title="Link to this heading">¶</a></h3>
+<p>Previous versions of <code class="docutils literal notranslate"><span class="pre">future</span></code> deleted the <code class="docutils literal notranslate"><span class="pre">input()</span></code> function from
+<code class="docutils literal notranslate"><span class="pre">__builtin__</span></code> on Python 2 as a security measure. This was because
+Python 2’s <code class="docutils literal notranslate"><span class="pre">input()</span></code> function allows arbitrary code execution and could
+present a security vulnerability on Python 2 if someone expects Python 3
+semantics but forgets to import <code class="docutils literal notranslate"><span class="pre">input</span></code> from <code class="docutils literal notranslate"><span class="pre">future.builtins</span></code>. This
+behaviour has been reverted, in the interests of broadening the
+compatibility of <code class="docutils literal notranslate"><span class="pre">future</span></code> with other Python 2 modules.</p>
+<p>Please remember to import <code class="docutils literal notranslate"><span class="pre">input</span></code> from <code class="docutils literal notranslate"><span class="pre">future.builtins</span></code> if you use
+<code class="docutils literal notranslate"><span class="pre">input()</span></code> in a Python 2/3 compatible codebase.</p>
+</section>
+<section id="deprecated-feature-auto-installation-of-standard-library-import-hooks">
+<span id="deprecated-auto-import-hooks"></span><h3>Deprecated feature: auto-installation of standard-library import hooks<a class="headerlink" href="#deprecated-feature-auto-installation-of-standard-library-import-hooks" title="Link to this heading">¶</a></h3>
+<p>Previous versions of <code class="docutils literal notranslate"><span class="pre">python-future</span></code> installed import hooks automatically upon
+importing the <code class="docutils literal notranslate"><span class="pre">standard_library</span></code> module from <code class="docutils literal notranslate"><span class="pre">future</span></code>. This has been
+deprecated in order to improve robustness and compatibility with modules like
+<code class="docutils literal notranslate"><span class="pre">requests</span></code> that already perform their own single-source Python 2/3
+compatibility.</p>
+<p>As of v0.12, importing <code class="docutils literal notranslate"><span class="pre">future.standard_library</span></code>
+will no longer install import hooks by default. Instead, please install the
+import hooks explicitly as follows:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">future</span> <span class="kn">import</span> <span class="n">standard_library</span>
+<span class="n">standard_library</span><span class="o">.</span><span class="n">install_hooks</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>And uninstall them after your import statements using:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">standard_library</span><span class="o">.</span><span class="n">remove_hooks</span><span class="p">()</span>
+</pre></div>
+</div>
+<p><em>Note</em>: This is a backward-incompatible change.</p>
+</section>
+<section id="internal-changes">
+<h3>Internal changes<a class="headerlink" href="#internal-changes" title="Link to this heading">¶</a></h3>
+<p>The internal <code class="docutils literal notranslate"><span class="pre">future.builtins.backports</span></code> module has been renamed to
+<code class="docutils literal notranslate"><span class="pre">future.builtins.types</span></code>. This will change the <code class="docutils literal notranslate"><span class="pre">repr</span></code> of <code class="docutils literal notranslate"><span class="pre">future</span></code>
+types but not their use.</p>
+</section>
+</section>
+<section id="changes-in-version-0-10-2-2014-01-11">
+<span id="whats-new-0-10-2"></span><h2>Changes in version 0.10.2 (2014-01-11)<a class="headerlink" href="#changes-in-version-0-10-2-2014-01-11" title="Link to this heading">¶</a></h2>
+<section id="new-context-manager-interface-to-standard-library-hooks">
+<h3>New context-manager interface to <code class="docutils literal notranslate"><span class="pre">standard_library.hooks</span></code><a class="headerlink" href="#new-context-manager-interface-to-standard-library-hooks" title="Link to this heading">¶</a></h3>
+<p>There is a new context manager <code class="docutils literal notranslate"><span class="pre">future.standard_library.hooks</span></code>. Use it like
+this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">future</span> <span class="kn">import</span> <span class="n">standard_library</span>
+<span class="k">with</span> <span class="n">standard_library</span><span class="o">.</span><span class="n">hooks</span><span class="p">():</span>
+    <span class="kn">import</span> <span class="nn">queue</span>
+    <span class="kn">import</span> <span class="nn">configserver</span>
+    <span class="kn">from</span> <span class="nn">http.client</span> <span class="kn">import</span> <span class="n">HTTPConnection</span>
+    <span class="c1"># etc.</span>
+</pre></div>
+</div>
+<p>If not using this context manager, it is now encouraged to add an explicit call to
+<code class="docutils literal notranslate"><span class="pre">standard_library.install_hooks()</span></code> as follows:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">future</span> <span class="kn">import</span> <span class="n">standard_library</span>
+<span class="n">standard_library</span><span class="o">.</span><span class="n">install_hooks</span><span class="p">()</span>
+
+<span class="kn">import</span> <span class="nn">queue</span>
+<span class="kn">import</span> <span class="nn">html</span>
+<span class="kn">import</span> <span class="nn">http.client</span>
+<span class="c1"># etc.</span>
+</pre></div>
+</div>
+<p>And to remove the hooks afterwards with:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">standard_library</span><span class="o">.</span><span class="n">remove_hooks</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>The functions <code class="docutils literal notranslate"><span class="pre">install_hooks()</span></code> and <code class="docutils literal notranslate"><span class="pre">remove_hooks()</span></code> were previously
+called <code class="docutils literal notranslate"><span class="pre">enable_hooks()</span></code> and <code class="docutils literal notranslate"><span class="pre">disable_hooks()</span></code>. The old names are
+deprecated (but are still available as aliases).</p>
+<p>As usual, this feature has no effect on Python 3.</p>
+</section>
+</section>
+<section id="changes-in-version-0-10-0-2013-12-02">
+<span id="whats-new-0-10"></span><h2>Changes in version 0.10.0 (2013-12-02)<a class="headerlink" href="#changes-in-version-0-10-0-2013-12-02" title="Link to this heading">¶</a></h2>
+<section id="backported-dict-type">
+<h3>Backported <code class="docutils literal notranslate"><span class="pre">dict</span></code> type<a class="headerlink" href="#backported-dict-type" title="Link to this heading">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">future.builtins</span></code> now provides a Python 2 <code class="docutils literal notranslate"><span class="pre">dict</span></code> subclass whose
+<code class="xref py py-func docutils literal notranslate"><span class="pre">keys()</span></code>, <code class="xref py py-func docutils literal notranslate"><span class="pre">values()</span></code>, and <code class="xref py py-func docutils literal notranslate"><span class="pre">items()</span></code> methods produce
+memory-efficient iterators. On Python 2.7, these also have the same set-like
+view behaviour as on Python 3. This can streamline code needing to iterate
+over large dictionaries. For example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">print_function</span>
+<span class="kn">from</span> <span class="nn">future.builtins</span> <span class="kn">import</span> <span class="nb">dict</span><span class="p">,</span> <span class="nb">range</span>
+
+<span class="n">squares</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">({</span><span class="n">i</span><span class="p">:</span> <span class="n">i</span><span class="o">**</span><span class="mi">2</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="o">**</span><span class="mi">7</span><span class="p">)})</span>
+
+<span class="k">assert</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">d</span><span class="o">.</span><span class="n">items</span><span class="p">(),</span> <span class="nb">list</span><span class="p">)</span>
+<span class="c1"># Because items() is memory-efficient, so is this:</span>
+<span class="n">square_roots</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">((</span><span class="n">i_squared</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">i_squared</span><span class="p">)</span> <span class="ow">in</span> <span class="n">squares</span><span class="o">.</span><span class="n">items</span><span class="p">())</span>
+</pre></div>
+</div>
+<p>For more information, see <a class="reference internal" href="what_else.html#dict-object"><span class="std std-ref">dict</span></a>.</p>
+</section>
+<section id="utility-functions-raise-and-exec">
+<h3>Utility functions <code class="docutils literal notranslate"><span class="pre">raise_</span></code> and <code class="docutils literal notranslate"><span class="pre">exec_</span></code><a class="headerlink" href="#utility-functions-raise-and-exec" title="Link to this heading">¶</a></h3>
+<p>The functions <code class="docutils literal notranslate"><span class="pre">raise_with_traceback()</span></code> and <code class="docutils literal notranslate"><span class="pre">raise_()</span></code> were
+added to <code class="docutils literal notranslate"><span class="pre">future.utils</span></code> to offer either the Python 3.x or Python 2.x
+behaviour for raising exceptions. Thanks to Joel Tratner for the
+contribution of these. <code class="docutils literal notranslate"><span class="pre">future.utils.reraise()</span></code> is now deprecated.</p>
+<p>A portable <code class="docutils literal notranslate"><span class="pre">exec_()</span></code> function has been added to <code class="docutils literal notranslate"><span class="pre">future.utils</span></code> from
+<code class="docutils literal notranslate"><span class="pre">six</span></code>.</p>
+</section>
+<section id="bugfixes">
+<h3>Bugfixes<a class="headerlink" href="#bugfixes" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Fixed <code class="docutils literal notranslate"><span class="pre">newint.__divmod__</span></code></p></li>
+<li><p>Improved robustness of installing and removing import hooks in <a class="reference internal" href="reference.html#module-future.standard_library" title="future.standard_library"><code class="xref py py-mod docutils literal notranslate"><span class="pre">future.standard_library</span></code></a></p></li>
+<li><p>v0.10.1: Fixed broken <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">future</span></code> on Py3</p></li>
+</ul>
+</section>
+</section>
+<section id="changes-in-version-0-9-2013-11-06">
+<span id="whats-new-0-9"></span><h2>Changes in version 0.9 (2013-11-06)<a class="headerlink" href="#changes-in-version-0-9-2013-11-06" title="Link to this heading">¶</a></h2>
+<section id="isinstance-checks-are-supported-natively-with-backported-types">
+<h3><code class="docutils literal notranslate"><span class="pre">isinstance</span></code> checks are supported natively with backported types<a class="headerlink" href="#isinstance-checks-are-supported-natively-with-backported-types" title="Link to this heading">¶</a></h3>
+<p>The <code class="docutils literal notranslate"><span class="pre">isinstance</span></code> function is no longer redefined in <code class="docutils literal notranslate"><span class="pre">future.builtins</span></code>
+to operate with the backported <code class="docutils literal notranslate"><span class="pre">int</span></code>, <code class="docutils literal notranslate"><span class="pre">bytes</span></code> and <code class="docutils literal notranslate"><span class="pre">str</span></code>.
+<code class="docutils literal notranslate"><span class="pre">isinstance</span></code> checks with the backported types now work correctly by
+default; we achieve this through overriding the <code class="docutils literal notranslate"><span class="pre">__instancecheck__</span></code>
+method of metaclasses of the backported types.</p>
+<p>For more information, see <a class="reference internal" href="what_else.html#isinstance-calls"><span class="std std-ref">isinstance</span></a>.</p>
+</section>
+<section id="futurize-minimal-imports-by-default">
+<h3><code class="docutils literal notranslate"><span class="pre">futurize</span></code>: minimal imports by default<a class="headerlink" href="#futurize-minimal-imports-by-default" title="Link to this heading">¶</a></h3>
+<p>By default, the <code class="docutils literal notranslate"><span class="pre">futurize</span></code> script now only adds the minimal set of
+imports deemed necessary.</p>
+<p>There is now an <code class="docutils literal notranslate"><span class="pre">--all-imports</span></code> option to the <code class="docutils literal notranslate"><span class="pre">futurize</span></code> script which
+gives the previous behaviour, which is to add all <code class="docutils literal notranslate"><span class="pre">__future__</span></code> imports
+and <code class="docutils literal notranslate"><span class="pre">from</span> <span class="pre">future.builtins</span> <span class="pre">import</span> <span class="pre">*</span></code> imports to every module. (This even
+applies to an empty <code class="docutils literal notranslate"><span class="pre">__init__.py</span></code> file.)</p>
+</section>
+<section id="looser-type-checking-for-the-backported-str-object">
+<h3>Looser type-checking for the backported <code class="docutils literal notranslate"><span class="pre">str</span></code> object<a class="headerlink" href="#looser-type-checking-for-the-backported-str-object" title="Link to this heading">¶</a></h3>
+<p>Now the <code class="docutils literal notranslate"><span class="pre">future.builtins.str</span></code> object behaves more like the Python 2
+<code class="docutils literal notranslate"><span class="pre">unicode</span></code> object with regard to type-checking. This is to work around some
+bugs / sloppiness in the Python 2 standard library involving mixing of
+byte-strings and unicode strings, such as <code class="docutils literal notranslate"><span class="pre">os.path.join</span></code> in <code class="docutils literal notranslate"><span class="pre">posixpath.py</span></code>.</p>
+<p><code class="docutils literal notranslate"><span class="pre">future.builtins.str</span></code> still raises the expected <code class="docutils literal notranslate"><span class="pre">TypeError</span></code> exceptions from
+Python 3 when attempting to mix it with <code class="docutils literal notranslate"><span class="pre">future.builtins.bytes</span></code>.</p>
+</section>
+<section id="suspend-hooks-context-manager-added-to-future-standard-library">
+<h3><code class="docutils literal notranslate"><span class="pre">suspend_hooks()</span></code> context manager added to <code class="docutils literal notranslate"><span class="pre">future.standard_library</span></code><a class="headerlink" href="#suspend-hooks-context-manager-added-to-future-standard-library" title="Link to this heading">¶</a></h3>
+<p>Pychecker (as of v0.6.1)’s <code class="docutils literal notranslate"><span class="pre">checker.py</span></code> attempts to import the <code class="docutils literal notranslate"><span class="pre">builtins</span></code>
+module as a way of determining whether Python 3 is running. Since this
+succeeds when <code class="docutils literal notranslate"><span class="pre">from</span> <span class="pre">future</span> <span class="pre">import</span> <span class="pre">standard_library</span></code> is in effect, this
+check does not work and pychecker sets the wrong value for its internal <code class="docutils literal notranslate"><span class="pre">PY2</span></code>
+flag is set.</p>
+<p>To work around this, <code class="docutils literal notranslate"><span class="pre">future</span></code> now provides a context manager called
+<code class="docutils literal notranslate"><span class="pre">suspend_hooks</span></code> that can be used as follows:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">future</span> <span class="kn">import</span> <span class="n">standard_library</span>
+<span class="o">...</span>
+<span class="k">with</span> <span class="n">standard_library</span><span class="o">.</span><span class="n">suspend_hooks</span><span class="p">():</span>
+    <span class="kn">from</span> <span class="nn">pychecker.checker</span> <span class="kn">import</span> <span class="n">Checker</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="changes-in-version-0-8-2013-10-28">
+<span id="whats-new-0-8"></span><h2>Changes in version 0.8 (2013-10-28)<a class="headerlink" href="#changes-in-version-0-8-2013-10-28" title="Link to this heading">¶</a></h2>
+<section id="python-2-6-support">
+<h3>Python 2.6 support<a class="headerlink" href="#python-2-6-support" title="Link to this heading">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">future</span></code> now includes support for Python 2.6.</p>
+<p>To run the <code class="docutils literal notranslate"><span class="pre">future</span></code> test suite on Python 2.6, this additional package is needed:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">unittest2</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">http.server</span></code> also requires the <code class="docutils literal notranslate"><span class="pre">argparse</span></code> package:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">argparse</span>
+</pre></div>
+</div>
+</section>
+<section id="unused-modules-removed">
+<h3>Unused modules removed<a class="headerlink" href="#unused-modules-removed" title="Link to this heading">¶</a></h3>
+<p>The <code class="docutils literal notranslate"><span class="pre">future.six</span></code> module has been removed. <code class="docutils literal notranslate"><span class="pre">future</span></code> doesn’t require <code class="docutils literal notranslate"><span class="pre">six</span></code>
+(and hasn’t since version 0.3). If you need support for Python versions before
+2.6, <code class="docutils literal notranslate"><span class="pre">six</span></code> is the best option. <code class="docutils literal notranslate"><span class="pre">future</span></code> and <code class="docutils literal notranslate"><span class="pre">six</span></code> can be installed
+alongside each other easily if needed.</p>
+<p>The unused <code class="docutils literal notranslate"><span class="pre">hacks</span></code> module has also been removed from the source tree.</p>
+</section>
+<section id="isinstance-added-to-future-builtins-v0-8-2">
+<h3><code class="docutils literal notranslate"><span class="pre">isinstance()</span></code> added to <a class="reference internal" href="reference.html#module-future.builtins" title="future.builtins"><code class="xref py py-mod docutils literal notranslate"><span class="pre">future.builtins</span></code></a> (v0.8.2)<a class="headerlink" href="#isinstance-added-to-future-builtins-v0-8-2" title="Link to this heading">¶</a></h3>
+<p>It is now possible to use <code class="docutils literal notranslate"><span class="pre">isinstance()</span></code> calls normally after importing <code class="docutils literal notranslate"><span class="pre">isinstance</span></code> from
+<code class="docutils literal notranslate"><span class="pre">future.builtins</span></code>. On Python 2, this is specially defined to be compatible with
+<code class="docutils literal notranslate"><span class="pre">future</span></code>’s backported <code class="docutils literal notranslate"><span class="pre">int</span></code>, <code class="docutils literal notranslate"><span class="pre">str</span></code>, and <code class="docutils literal notranslate"><span class="pre">bytes</span></code> types, as well as
+handling Python 2’s <code class="docutils literal notranslate"><span class="pre">int</span></code>/<code class="docutils literal notranslate"><span class="pre">long</span></code> distinction.</p>
+<p>The result is that code that uses <code class="docutils literal notranslate"><span class="pre">isinstance</span></code> to perform type-checking of
+ints, strings, and bytes should now work identically on Python 2 as on Python 3.</p>
+<p>The utility functions <code class="docutils literal notranslate"><span class="pre">isint</span></code>, <code class="docutils literal notranslate"><span class="pre">istext</span></code>, and <code class="docutils literal notranslate"><span class="pre">isbytes</span></code> provided before for
+compatible type-checking across Python 2 and 3 in <a class="reference internal" href="reference.html#module-future.utils" title="future.utils"><code class="xref py py-mod docutils literal notranslate"><span class="pre">future.utils</span></code></a> are now
+deprecated.</p>
+</section>
+</section>
+<section id="summary-of-all-changes">
+<span id="changelog"></span><h2>Summary of all changes<a class="headerlink" href="#summary-of-all-changes" title="Link to this heading">¶</a></h2>
+<dl>
+<dt>v0.15.0:</dt><dd><ul class="simple">
+<li><p>Full backports of <code class="docutils literal notranslate"><span class="pre">urllib.parse</span></code> and other <code class="docutils literal notranslate"><span class="pre">urllib</span></code> submodules are exposed by <code class="docutils literal notranslate"><span class="pre">install_aliases()</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">tkinter.ttk</span></code> support</p></li>
+<li><p>Initial <code class="docutils literal notranslate"><span class="pre">surrogateescape</span></code> support</p></li>
+<li><p>Additional backports: <code class="docutils literal notranslate"><span class="pre">collections</span></code>, <code class="docutils literal notranslate"><span class="pre">http</span></code> constants, etc.</p></li>
+<li><p>Bug fixes</p></li>
+</ul>
+</dd>
+<dt>v0.14.3:</dt><dd><ul class="simple">
+<li><p>Bug fixes</p></li>
+</ul>
+</dd>
+<dt>v0.14.2:</dt><dd><ul class="simple">
+<li><p>Bug fixes</p></li>
+</ul>
+</dd>
+<dt>v0.14.1:</dt><dd><ul class="simple">
+<li><p>Bug fixes</p></li>
+</ul>
+</dd>
+<dt>v0.14.0:</dt><dd><ul class="simple">
+<li><p>New top-level <code class="docutils literal notranslate"><span class="pre">builtins</span></code> package on Py2 for cleaner imports. Equivalent to
+<code class="docutils literal notranslate"><span class="pre">future.builtins</span></code></p></li>
+<li><p>New top-level packages on Py2 with the same names as Py3 standard modules:
+<code class="docutils literal notranslate"><span class="pre">configparser</span></code>, <code class="docutils literal notranslate"><span class="pre">copyreg</span></code>, <code class="docutils literal notranslate"><span class="pre">html</span></code>, <code class="docutils literal notranslate"><span class="pre">http</span></code>, <code class="docutils literal notranslate"><span class="pre">xmlrpc</span></code>, <code class="docutils literal notranslate"><span class="pre">winreg</span></code></p></li>
+</ul>
+</dd>
+<dt>v0.13.1:</dt><dd><ul class="simple">
+<li><p>Bug fixes</p></li>
+</ul>
+</dd>
+<dt>v0.13.0:</dt><dd><ul class="simple">
+<li><p>Cheat sheet for writing Python 2/3 compatible code</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">to_int</span></code> and <code class="docutils literal notranslate"><span class="pre">from_int</span></code> methods for <code class="docutils literal notranslate"><span class="pre">newbytes</span></code></p></li>
+<li><p>Bug fixes</p></li>
+</ul>
+</dd>
+<dt>v0.12.0:</dt><dd><ul class="simple">
+<li><p>Add <code class="docutils literal notranslate"><span class="pre">newobject</span></code> and <code class="docutils literal notranslate"><span class="pre">newlist</span></code> types</p></li>
+<li><p>Improve compatibility of import hooks with <code class="docutils literal notranslate"><span class="pre">Requests</span></code>, <code class="docutils literal notranslate"><span class="pre">py2exe</span></code></p></li>
+<li><p>No more auto-installation of import hooks by <code class="docutils literal notranslate"><span class="pre">future.standard_library</span></code></p></li>
+<li><p>New <code class="docutils literal notranslate"><span class="pre">future.moves</span></code> package</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">past.builtins</span></code> improved</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">newstr.encode(...,</span> <span class="pre">errors='surrogateescape')</span></code> supported</p></li>
+<li><p>Refactoring: <code class="docutils literal notranslate"><span class="pre">future.standard_library</span></code> submodules -&gt; <code class="docutils literal notranslate"><span class="pre">future.backports</span></code></p></li>
+<li><p>Refactoring: <code class="docutils literal notranslate"><span class="pre">future.builtins.types</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">future.types</span></code></p></li>
+<li><p>Refactoring: <code class="docutils literal notranslate"><span class="pre">past.builtins.types</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">past.types</span></code></p></li>
+<li><p>New <code class="docutils literal notranslate"><span class="pre">listvalues</span></code> and <code class="docutils literal notranslate"><span class="pre">listitems</span></code> functions in <code class="docutils literal notranslate"><span class="pre">future.utils</span></code></p></li>
+<li><p>Many bug fixes to <code class="docutils literal notranslate"><span class="pre">futurize</span></code>, <code class="docutils literal notranslate"><span class="pre">future.builtins</span></code>, etc.</p></li>
+</ul>
+</dd>
+<dt>v0.11.4:</dt><dd><ul class="simple">
+<li><p>Restore Py2.6 compatibility</p></li>
+</ul>
+</dd>
+<dt>v0.11.3:</dt><dd><ul class="simple">
+<li><p>The <code class="docutils literal notranslate"><span class="pre">futurize</span></code> and <code class="docutils literal notranslate"><span class="pre">pasteurize</span></code> scripts add an explicit call to
+<code class="docutils literal notranslate"><span class="pre">future.standard_library.install_hooks()</span></code> whenever modules affected by
+PEP 3108 are imported.</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">future.builtins.bytes</span></code> constructor now accepts <code class="docutils literal notranslate"><span class="pre">frozenset</span></code>
+objects as on Py3.</p></li>
+</ul>
+</dd>
+<dt>v0.11.2:</dt><dd><ul class="simple">
+<li><p>The <code class="docutils literal notranslate"><span class="pre">past.translation.autotranslate</span></code> feature now finds modules to import
+more robustly and works with Python eggs.</p></li>
+</ul>
+</dd>
+<dt>v0.11.1:</dt><dd><ul class="simple">
+<li><p>Update to <code class="docutils literal notranslate"><span class="pre">requirements_py26.txt</span></code> for Python 2.6. Small updates to
+docs and tests.</p></li>
+</ul>
+</dd>
+<dt>v0.11:</dt><dd><ul class="simple">
+<li><p>New <code class="docutils literal notranslate"><span class="pre">past</span></code> package with <code class="docutils literal notranslate"><span class="pre">past.builtins</span></code> and <code class="docutils literal notranslate"><span class="pre">past.translation</span></code>
+modules.</p></li>
+</ul>
+</dd>
+<dt>v0.10.2:</dt><dd><ul class="simple">
+<li><p>Improvements to stdlib hooks. New context manager:
+<code class="docutils literal notranslate"><span class="pre">future.standard_library.hooks()</span></code>.</p></li>
+<li><p>New <code class="docutils literal notranslate"><span class="pre">raise_</span></code> and <code class="docutils literal notranslate"><span class="pre">raise_with_traceback</span></code> functions in <code class="docutils literal notranslate"><span class="pre">future.utils</span></code>.</p></li>
+</ul>
+</dd>
+<dt>v0.10:</dt><dd><ul class="simple">
+<li><p>New backported <code class="docutils literal notranslate"><span class="pre">dict</span></code> object with set-like <code class="docutils literal notranslate"><span class="pre">keys</span></code>, <code class="docutils literal notranslate"><span class="pre">values</span></code>, <code class="docutils literal notranslate"><span class="pre">items</span></code></p></li>
+</ul>
+</dd>
+<dt>v0.9:</dt><dd><ul class="simple">
+<li><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#isinstance" title="(in Python v3.12)"><code class="xref py py-func docutils literal notranslate"><span class="pre">isinstance()</span></code></a> hack removed in favour of <code class="docutils literal notranslate"><span class="pre">__instancecheck__</span></code> on the
+metaclasses of the backported types</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">futurize</span></code> now only adds necessary imports by default</p></li>
+<li><p>Looser type-checking by <code class="docutils literal notranslate"><span class="pre">future.builtins.str</span></code> when combining with Py2
+native byte-strings.</p></li>
+</ul>
+</dd>
+<dt>v0.8.3:</dt><dd><ul class="simple">
+<li><p>New <code class="docutils literal notranslate"><span class="pre">--all-imports</span></code> option to <code class="docutils literal notranslate"><span class="pre">futurize</span></code></p></li>
+<li><p>Fix bug with <code class="docutils literal notranslate"><span class="pre">str.encode()</span></code> with encoding as a non-keyword arg</p></li>
+</ul>
+</dd>
+<dt>v0.8.2:</dt><dd><ul class="simple">
+<li><p>New <code class="docutils literal notranslate"><span class="pre">isinstance</span></code> function in <a class="reference internal" href="reference.html#module-future.builtins" title="future.builtins"><code class="xref py py-mod docutils literal notranslate"><span class="pre">future.builtins</span></code></a>. This obviates
+and deprecates the utility functions for type-checking in <a class="reference internal" href="reference.html#module-future.utils" title="future.utils"><code class="xref py py-mod docutils literal notranslate"><span class="pre">future.utils</span></code></a>.</p></li>
+</ul>
+</dd>
+<dt>v0.8.1:</dt><dd><ul class="simple">
+<li><p>Backported <code class="docutils literal notranslate"><span class="pre">socketserver.py</span></code>. Fixes sporadic test failures with
+<code class="docutils literal notranslate"><span class="pre">http.server</span></code> (related to threading and old-style classes used in Py2.7’s
+<code class="docutils literal notranslate"><span class="pre">SocketServer.py</span></code>).</p></li>
+<li><p>Move a few more safe <code class="docutils literal notranslate"><span class="pre">futurize</span></code> fixes from stage2 to stage1</p></li>
+<li><p>Bug fixes to <a class="reference internal" href="reference.html#module-future.utils" title="future.utils"><code class="xref py py-mod docutils literal notranslate"><span class="pre">future.utils</span></code></a></p></li>
+</ul>
+</dd>
+<dt>v0.8:</dt><dd><ul class="simple">
+<li><p>Added Python 2.6 support</p></li>
+<li><p>Removed unused modules: <code class="xref py py-mod docutils literal notranslate"><span class="pre">future.six</span></code> and <code class="xref py py-mod docutils literal notranslate"><span class="pre">future.hacks</span></code></p></li>
+<li><p>Removed undocumented functions from <a class="reference internal" href="reference.html#module-future.utils" title="future.utils"><code class="xref py py-mod docutils literal notranslate"><span class="pre">future.utils</span></code></a></p></li>
+</ul>
+</dd>
+<dt>v0.7:</dt><dd><ul class="simple">
+<li><p>Added a backported Py3-like <code class="docutils literal notranslate"><span class="pre">int</span></code> object (inherits from <code class="docutils literal notranslate"><span class="pre">long</span></code>).</p></li>
+<li><p>Added utility functions for type-checking and docs about
+<code class="docutils literal notranslate"><span class="pre">isinstance</span></code> uses/alternatives.</p></li>
+<li><p>Fixes and stricter type-checking for <code class="docutils literal notranslate"><span class="pre">bytes</span></code> and <code class="docutils literal notranslate"><span class="pre">str</span></code> objects</p></li>
+<li><p>Added many more tests for the <code class="docutils literal notranslate"><span class="pre">futurize</span></code> script</p></li>
+<li><p>We no longer disable obsolete Py2 builtins by default with <code class="docutils literal notranslate"><span class="pre">from</span>
+<span class="pre">future.builtins</span> <span class="pre">import</span> <span class="pre">*</span></code>. Use <code class="docutils literal notranslate"><span class="pre">from</span> <span class="pre">future.builtins.disabled</span>
+<span class="pre">import</span> <span class="pre">*</span></code> instead.</p></li>
+</ul>
+</dd>
+<dt>v0.6:</dt><dd><ul class="simple">
+<li><p>Added a backported Py3-like <code class="docutils literal notranslate"><span class="pre">str</span></code> object (inherits from Py2’s <code class="docutils literal notranslate"><span class="pre">unicode</span></code>)</p></li>
+<li><p>Removed support for the form <code class="docutils literal notranslate"><span class="pre">from</span> <span class="pre">future</span> <span class="pre">import</span> <span class="pre">*</span></code>; use <code class="docutils literal notranslate"><span class="pre">from</span> <span class="pre">future.builtins</span> <span class="pre">import</span> <span class="pre">*</span></code> instead</p></li>
+</ul>
+</dd>
+<dt>v0.5.3:</dt><dd><ul class="simple">
+<li><p>Doc improvements</p></li>
+</ul>
+</dd>
+<dt>v0.5.2:</dt><dd><ul class="simple">
+<li><p>Add lots of docs and a Sphinx project</p></li>
+</ul>
+</dd>
+<dt>v0.5.1:</dt><dd><ul class="simple">
+<li><p>Upgraded included <code class="docutils literal notranslate"><span class="pre">six</span></code> module (included as <code class="docutils literal notranslate"><span class="pre">future.utils.six</span></code>) to v1.4.1</p></li>
+<li><p><a class="reference external" href="https://docs.python.org/3/library/http.server.html#module-http.server" title="(in Python v3.12)"><code class="xref py py-mod docutils literal notranslate"><span class="pre">http.server</span></code></a> module backported</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">bytes.split()</span></code> and <code class="docutils literal notranslate"><span class="pre">.rsplit()</span></code> bugfixes</p></li>
+</ul>
+</dd>
+<dt>v0.5.0:</dt><dd><ul class="simple">
+<li><p>Added backported Py3-like <code class="docutils literal notranslate"><span class="pre">bytes</span></code> object</p></li>
+</ul>
+</dd>
+<dt>v0.4.2:</dt><dd><ul class="simple">
+<li><p>Various fixes</p></li>
+</ul>
+</dd>
+<dt>v0.4.1:</dt><dd><ul class="simple">
+<li><p>Added <a class="reference external" href="https://docs.python.org/3/library/functions.html#open" title="(in Python v3.12)"><code class="xref py py-func docutils literal notranslate"><span class="pre">open()</span></code></a> (from <a class="reference external" href="https://docs.python.org/3/library/io.html#module-io" title="(in Python v3.12)"><code class="xref py py-mod docutils literal notranslate"><span class="pre">io</span></code></a> module on Py2)</p></li>
+<li><p>Improved docs</p></li>
+</ul>
+</dd>
+<dt>v0.4.0:</dt><dd><ul class="simple">
+<li><p>Added various useful compatibility functions to <a class="reference internal" href="reference.html#module-future.utils" title="future.utils"><code class="xref py py-mod docutils literal notranslate"><span class="pre">future.utils</span></code></a></p></li>
+<li><p>Reorganized package: moved all builtins to <a class="reference internal" href="reference.html#module-future.builtins" title="future.builtins"><code class="xref py py-mod docutils literal notranslate"><span class="pre">future.builtins</span></code></a>; moved
+all stdlib things to <code class="docutils literal notranslate"><span class="pre">future.standard_library</span></code></p></li>
+<li><p>Renamed <code class="docutils literal notranslate"><span class="pre">python-futurize</span></code> console script to <code class="docutils literal notranslate"><span class="pre">futurize</span></code></p></li>
+<li><p>Moved <code class="docutils literal notranslate"><span class="pre">future.six</span></code> to <code class="docutils literal notranslate"><span class="pre">future.utils.six</span></code> and pulled the most relevant
+definitions to <a class="reference internal" href="reference.html#module-future.utils" title="future.utils"><code class="xref py py-mod docutils literal notranslate"><span class="pre">future.utils</span></code></a>.</p></li>
+<li><p>More improvements to “Py3 to both” conversion (<code class="docutils literal notranslate"><span class="pre">futurize.py</span> <span class="pre">--from3</span></code>)</p></li>
+</ul>
+</dd>
+<dt>v0.3.5:</dt><dd><ul class="simple">
+<li><p>Fixed broken package setup (“package directory ‘libfuturize/tests’ does not exist”)</p></li>
+</ul>
+</dd>
+<dt>v0.3.4:</dt><dd><ul class="simple">
+<li><p>Added <code class="docutils literal notranslate"><span class="pre">itertools.zip_longest</span></code></p></li>
+<li><p>Updated <code class="docutils literal notranslate"><span class="pre">2to3_backcompat</span></code> tests to use <code class="docutils literal notranslate"><span class="pre">futurize.py</span></code></p></li>
+<li><p>Improved <code class="docutils literal notranslate"><span class="pre">libfuturize</span></code> fixers: correct order of imports; add imports only when necessary (except <code class="docutils literal notranslate"><span class="pre">absolute_import</span></code> currently)</p></li>
+</ul>
+</dd>
+<dt>v0.3.3:</dt><dd><ul class="simple">
+<li><p>Added <code class="docutils literal notranslate"><span class="pre">python-futurize</span></code> console script</p></li>
+<li><p>Added <code class="docutils literal notranslate"><span class="pre">itertools.filterfalse</span></code></p></li>
+<li><p>Removed docs about unfinished backports (<code class="docutils literal notranslate"><span class="pre">urllib</span></code> etc.)</p></li>
+<li><p>Removed old Py2 syntax in some files that breaks py3 <code class="docutils literal notranslate"><span class="pre">setup.py</span> <span class="pre">install</span></code></p></li>
+</ul>
+</dd>
+<dt>v0.3.2:</dt><dd><ul class="simple">
+<li><p>Added <code class="docutils literal notranslate"><span class="pre">test.support</span></code> module</p></li>
+<li><p>Added <code class="docutils literal notranslate"><span class="pre">UserList</span></code>, <code class="docutils literal notranslate"><span class="pre">UserString</span></code>, <code class="docutils literal notranslate"><span class="pre">UserDict</span></code> classes to <code class="docutils literal notranslate"><span class="pre">collections</span></code> module</p></li>
+<li><p>Removed <code class="docutils literal notranslate"><span class="pre">int</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">long</span></code> mapping</p></li>
+<li><p>Added backported <code class="docutils literal notranslate"><span class="pre">_markupbase.py</span></code> etc. with new-style classes to fix travis-ci build problems</p></li>
+<li><p>Added working <code class="docutils literal notranslate"><span class="pre">html</span></code> and <code class="docutils literal notranslate"><span class="pre">http.client</span></code> backported modules</p></li>
+</ul>
+</dd>
+<dt>v0.3.0:</dt><dd><ul class="simple">
+<li><p>Generalized import hooks to allow dotted imports</p></li>
+<li><p>Added backports of <code class="docutils literal notranslate"><span class="pre">urllib</span></code>, <code class="docutils literal notranslate"><span class="pre">html</span></code>, <code class="docutils literal notranslate"><span class="pre">http</span></code> modules from Py3.3 stdlib using <code class="docutils literal notranslate"><span class="pre">future</span></code></p></li>
+<li><p>Added <code class="docutils literal notranslate"><span class="pre">futurize</span></code> script for automatically turning Py2 or Py3 modules into
+cross-platform Py3 modules</p></li>
+<li><p>Renamed <code class="docutils literal notranslate"><span class="pre">future.standard_library_renames</span></code> to
+<code class="docutils literal notranslate"><span class="pre">future.standard_library</span></code>. (No longer just renames, but backports too.)</p></li>
+</ul>
+</dd>
+<dt>v0.2.2.1:</dt><dd><ul class="simple">
+<li><p>Small bug fixes to get tests passing on travis-ci.org</p></li>
+</ul>
+</dd>
+<dt>v0.2.1:</dt><dd><ul class="simple">
+<li><p>Small bug fixes</p></li>
+</ul>
+</dd>
+<dt>v0.2.0:</dt><dd><ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">Features</span></code> module renamed to <code class="docutils literal notranslate"><span class="pre">modified_builtins</span></code></p></li>
+<li><p>New functions added: <a class="reference external" href="https://docs.python.org/3/library/functions.html#round" title="(in Python v3.12)"><code class="xref py py-func docutils literal notranslate"><span class="pre">round()</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#input" title="(in Python v3.12)"><code class="xref py py-func docutils literal notranslate"><span class="pre">input()</span></code></a></p></li>
+<li><p>No more namespace pollution as a policy:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">future</span> <span class="kn">import</span> <span class="o">*</span>
+</pre></div>
+</div>
+<p>should have no effect on Python 3. On Python 2, it only shadows the
+builtins; it doesn’t introduce any new names.</p>
+</li>
+<li><p>End-to-end tests with Python 2 code and <code class="docutils literal notranslate"><span class="pre">2to3</span></code> now work</p></li>
+</ul>
+</dd>
+<dt>v0.1.0:</dt><dd><ul class="simple">
+<li><p>first version with tests!</p></li>
+<li><p>removed the inspect-module magic</p></li>
+</ul>
+</dd>
+<dt>v0.0.x:</dt><dd><ul class="simple">
+<li><p>initial releases. Use at your peril.</p></li>
+</ul>
+</dd>
+</dl>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+  <span id="sidebar-top"></span>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  
+    
+            <p class="logo"><a href="index.html">
+              <img class="logo" src="_static/python-future-logo-textless-transparent.png" alt="Logo"/>
+            </a></p>
+  
+<!--<h3>Python-Future</h3>
+<p>-->
+  <h4>Easy, clean, reliable Python 2/3 compatibility</h4>
+  <a href="https://python-future.org/#contents">Table of Contents</a>
+<!--
+</p>
+<h3>Other Formats</h3>
+<p>
+  You can download the documentation in other formats as well:
+</p>
+<ul>
+  <li><a href="http://jinja.pocoo.org/docs/jinja-docs.pdf">as PDF</a>
+  <li><a href="http://jinja.pocoo.org/docs/jinja-docs.zip">as zipped HTML</a>
+</ul>
+-->
+<!--<h3>Useful Links</h3>
+<ul>
+  <li><a href="https://pypi.org/project/future/">on PyPI</a></li>
+  <li><a href="https://github.com/PythonCharmers/python-future">on GitHub</a></li>
+</ul>
+--><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="whatsnew.html">What’s New</a></li>
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview: Easy, clean, reliable Python 2/3 compatibility</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quick-start guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="compatible_idioms.html">Cheat Sheet: Writing Python 2-3 compatible code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="imports.html">Imports</a></li>
+<li class="toctree-l1"><a class="reference internal" href="what_else.html">What else you need to know</a></li>
+<li class="toctree-l1"><a class="reference internal" href="automatic_conversion.html">Automatic conversion to Py2/3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">Frequently Asked Questions (FAQ)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stdlib_incompatibilities.html">Standard library incompatibilities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="older_interfaces.html">Older interfaces</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Changes in previous versions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#changes-in-version-0-18-3-2023-01-13">Changes in version 0.18.3 (2023-01-13)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#changes-in-version-0-18-2-2019-10-30">Changes in version 0.18.2 (2019-10-30)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#changes-in-version-0-18-1-2019-10-09">Changes in version 0.18.1 (2019-10-09)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#changes-in-version-0-18-0-2019-10-09">Changes in version 0.18.0 (2019-10-09)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#changes-in-version-0-17-1-2018-10-30">Changes in version 0.17.1 (2018-10-30)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#changes-in-version-0-17-0-2018-10-19">Changes in version 0.17.0 (2018-10-19)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#changes-in-version-0-16-0-2016-10-27">Changes in version 0.16.0 (2016-10-27)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#changes-in-version-0-15-2-2015-09-11">Changes in version 0.15.2 (2015-09-11)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#changes-in-version-0-15-1-2015-09-09">Changes in version 0.15.1 (2015-09-09)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#changes-in-version-0-15-0-2015-07-25">Changes in version 0.15.0 (2015-07-25)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#changes-in-version-0-14-3-2014-12-15">Changes in version 0.14.3 (2014-12-15)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#changes-in-version-0-14-2-2014-11-21">Changes in version 0.14.2 (2014-11-21)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#changes-in-version-0-14-1-2014-10-02">Changes in version 0.14.1 (2014-10-02)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#changes-in-version-0-14-0-2014-10-02">Changes in version 0.14.0 (2014-10-02)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#changes-in-version-0-13-1-2014-09-23">Changes in version 0.13.1 (2014-09-23)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#changes-in-version-0-13-0-2014-08-13">Changes in version 0.13.0 (2014-08-13)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#changes-in-version-0-12-4-2014-07-18">Changes in version 0.12.4 (2014-07-18)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#changes-in-version-0-12-3-2014-06-19">Changes in version 0.12.3 (2014-06-19)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#changes-in-version-0-12-2-2014-05-25">Changes in version 0.12.2 (2014-05-25)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#changes-in-version-0-12-1-2014-05-14">Changes in version 0.12.1 (2014-05-14)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#changes-in-version-0-12-0-2014-05-06">Changes in version 0.12.0 (2014-05-06)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#changes-in-version-0-11-4-2014-05-25">Changes in version 0.11.4 (2014-05-25)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#changes-in-version-0-11-3-2014-02-27">Changes in version 0.11.3 (2014-02-27)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#changes-in-version-0-11-2014-01-28">Changes in version 0.11 (2014-01-28)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#changes-in-version-0-10-2-2014-01-11">Changes in version 0.10.2 (2014-01-11)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#changes-in-version-0-10-0-2013-12-02">Changes in version 0.10.0 (2013-12-02)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#changes-in-version-0-9-2013-11-06">Changes in version 0.9 (2013-11-06)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#changes-in-version-0-8-2013-10-28">Changes in version 0.8 (2013-10-28)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#summary-of-all-changes">Summary of all changes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="credits.html">Licensing and credits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference.html">API Reference (in progress)</a></li>
+</ul>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+  
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2013-2019, Python Charmers Pty Ltd, Australia.
+    </div>
+  <script src="_static/version_warning_offset.js"></script>
+
+<div class="footer">
+<script type="text/javascript">
+  (function() {
+    var ga = document.createElement('script');
+    ga.src = ('https:' == document.location.protocol ?
+              'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    ga.setAttribute('async', 'true');
+    document.documentElement.firstChild.appendChild(ga);
+  })();
+</script>
+</div>
+
+  </body>
+</html>

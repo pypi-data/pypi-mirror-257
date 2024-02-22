@@ -1,0 +1,1557 @@
+
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cheat Sheet: Writing Python 2-3 compatible code &#8212; Python-Future  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/jinja.css?v=85659ec6" />
+    <link rel="stylesheet" href="_static/my-styles.css" type="text/css" />
+    <script src="_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="icon" href="_static/python-future-icon-32.ico"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Imports" href="imports.html" />
+    <link rel="prev" title="Quick-start guide" href="quickstart.html" />
+ 
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-19344199-2']);
+  _gaq.push(['_trackPageview']);
+</script>
+
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="imports.html" title="Imports"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="quickstart.html" title="Quick-start guide"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Python-Future  documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Cheat Sheet: Writing Python 2-3 compatible code</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="cheat-sheet-writing-python-2-3-compatible-code">
+<span id="compatible-idioms"></span><h1>Cheat Sheet: Writing Python 2-3 compatible code<a class="headerlink" href="#cheat-sheet-writing-python-2-3-compatible-code" title="Link to this heading">¶</a></h1>
+<ul class="simple">
+<li><p><strong>Copyright (c):</strong> 2013-2024 Python Charmers, Australia.</p></li>
+<li><p><strong>Author:</strong> Ed Schofield.</p></li>
+<li><p><strong>Licence:</strong> Creative Commons Attribution.</p></li>
+</ul>
+<p>A PDF version is here: <a class="reference external" href="https://python-future.org/compatible_idioms.pdf">https://python-future.org/compatible_idioms.pdf</a></p>
+<p>This notebook shows you idioms for writing future-proof code that is
+compatible with both versions of Python: 2 and 3. It accompanies Ed
+Schofield’s talk at PyCon AU 2014, “Writing 2/3 compatible code”. (The
+video is here: <a class="reference external" href="https://www.youtube.com/watch?v=KOqk8j11aAI&amp;t=10m14s">https://www.youtube.com/watch?v=KOqk8j11aAI&amp;t=10m14s</a>.)</p>
+<p>Minimum versions:</p>
+<ul class="simple">
+<li><p>Python 2: 2.7+</p></li>
+<li><p>Python 3: 3.4+</p></li>
+</ul>
+<section id="setup">
+<h2>Setup<a class="headerlink" href="#setup" title="Link to this heading">¶</a></h2>
+<p>The imports below refer to these <code class="docutils literal notranslate"><span class="pre">pip</span></code>-installable packages on PyPI:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">future</span>        <span class="c1"># pip install future</span>
+<span class="kn">import</span> <span class="nn">builtins</span>      <span class="c1"># pip install future</span>
+<span class="kn">import</span> <span class="nn">past</span>          <span class="c1"># pip install future</span>
+<span class="kn">import</span> <span class="nn">six</span>           <span class="c1"># pip install six</span>
+</pre></div>
+</div>
+<p>The following scripts are also <code class="docutils literal notranslate"><span class="pre">pip</span></code>-installable:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">futurize</span>             <span class="c1"># pip install future</span>
+<span class="n">pasteurize</span>           <span class="c1"># pip install future</span>
+</pre></div>
+</div>
+<p>See <a class="reference external" href="https://python-future.org">https://python-future.org</a> and <a class="reference external" href="https://pythonhosted.org/six/">https://pythonhosted.org/six/</a> for more
+information.</p>
+</section>
+<section id="essential-syntax-differences">
+<h2>Essential syntax differences<a class="headerlink" href="#essential-syntax-differences" title="Link to this heading">¶</a></h2>
+<section id="print">
+<h3>print<a class="headerlink" href="#print" title="Link to this heading">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 only:</span>
+<span class="nb">print</span> <span class="s1">&#39;Hello&#39;</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 and 3:</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Hello&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>To print multiple strings, import <code class="docutils literal notranslate"><span class="pre">print_function</span></code> to prevent Py2 from
+interpreting it as a tuple:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 only:</span>
+<span class="nb">print</span> <span class="s1">&#39;Hello&#39;</span><span class="p">,</span> <span class="s1">&#39;Guido&#39;</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 and 3:</span>
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">print_function</span>    <span class="c1"># (at top of module)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Hello&#39;</span><span class="p">,</span> <span class="s1">&#39;Guido&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 only:</span>
+<span class="nb">print</span> <span class="o">&gt;&gt;</span> <span class="n">sys</span><span class="o">.</span><span class="n">stderr</span><span class="p">,</span> <span class="s1">&#39;Hello&#39;</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 and 3:</span>
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">print_function</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Hello&#39;</span><span class="p">,</span> <span class="n">file</span><span class="o">=</span><span class="n">sys</span><span class="o">.</span><span class="n">stderr</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 only:</span>
+<span class="nb">print</span> <span class="s1">&#39;Hello&#39;</span><span class="p">,</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 and 3:</span>
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">print_function</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Hello&#39;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="raising-exceptions">
+<h3>Raising exceptions<a class="headerlink" href="#raising-exceptions" title="Link to this heading">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 only:</span>
+<span class="k">raise</span> <span class="ne">ValueError</span><span class="p">,</span> <span class="s2">&quot;dodgy value&quot;</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 and 3:</span>
+<span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;dodgy value&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Raising exceptions with a traceback:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 only:</span>
+<span class="n">traceback</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">exc_info</span><span class="p">()[</span><span class="mi">2</span><span class="p">]</span>
+<span class="k">raise</span> <span class="ne">ValueError</span><span class="p">,</span> <span class="s2">&quot;dodgy value&quot;</span><span class="p">,</span> <span class="n">traceback</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 3 only:</span>
+<span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;dodgy value&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">with_traceback</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 and 3: option 1</span>
+<span class="kn">from</span> <span class="nn">six</span> <span class="kn">import</span> <span class="n">reraise</span> <span class="k">as</span> <span class="n">raise_</span>
+<span class="c1"># or</span>
+<span class="kn">from</span> <span class="nn">future.utils</span> <span class="kn">import</span> <span class="n">raise_</span>
+
+<span class="n">traceback</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">exc_info</span><span class="p">()[</span><span class="mi">2</span><span class="p">]</span>
+<span class="n">raise_</span><span class="p">(</span><span class="ne">ValueError</span><span class="p">,</span> <span class="s2">&quot;dodgy value&quot;</span><span class="p">,</span> <span class="n">traceback</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 and 3: option 2</span>
+<span class="kn">from</span> <span class="nn">future.utils</span> <span class="kn">import</span> <span class="n">raise_with_traceback</span>
+
+<span class="n">raise_with_traceback</span><span class="p">(</span><span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;dodgy value&quot;</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>Exception chaining (PEP 3134):</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Setup:</span>
+<span class="k">class</span> <span class="nc">DatabaseError</span><span class="p">(</span><span class="ne">Exception</span><span class="p">):</span>
+    <span class="k">pass</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 3 only</span>
+<span class="k">class</span> <span class="nc">FileDatabase</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filename</span><span class="p">):</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">IOError</span> <span class="k">as</span> <span class="n">exc</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">DatabaseError</span><span class="p">(</span><span class="s1">&#39;failed to open&#39;</span><span class="p">)</span> <span class="kn">from</span> <span class="nn">exc</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 and 3:</span>
+<span class="kn">from</span> <span class="nn">future.utils</span> <span class="kn">import</span> <span class="n">raise_from</span>
+
+<span class="k">class</span> <span class="nc">FileDatabase</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filename</span><span class="p">):</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">IOError</span> <span class="k">as</span> <span class="n">exc</span><span class="p">:</span>
+            <span class="n">raise_from</span><span class="p">(</span><span class="n">DatabaseError</span><span class="p">(</span><span class="s1">&#39;failed to open&#39;</span><span class="p">),</span> <span class="n">exc</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Testing the above:</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">fd</span> <span class="o">=</span> <span class="n">FileDatabase</span><span class="p">(</span><span class="s1">&#39;non_existent_file.txt&#39;</span><span class="p">)</span>
+<span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+    <span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">e</span><span class="o">.</span><span class="n">__cause__</span><span class="p">,</span> <span class="ne">IOError</span><span class="p">)</span>    <span class="c1"># FileNotFoundError on Py3.3+ inherits from IOError</span>
+</pre></div>
+</div>
+</section>
+<section id="catching-exceptions">
+<h3>Catching exceptions<a class="headerlink" href="#catching-exceptions" title="Link to this heading">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 only:</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="o">...</span>
+<span class="k">except</span> <span class="ne">ValueError</span><span class="p">,</span> <span class="n">e</span><span class="p">:</span>
+    <span class="o">...</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 and 3:</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="o">...</span>
+<span class="k">except</span> <span class="ne">ValueError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+    <span class="o">...</span>
+</pre></div>
+</div>
+</section>
+<section id="division">
+<h3>Division<a class="headerlink" href="#division" title="Link to this heading">¶</a></h3>
+<p>Integer division (rounding down):</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 only:</span>
+<span class="k">assert</span> <span class="mi">2</span> <span class="o">/</span> <span class="mi">3</span> <span class="o">==</span> <span class="mi">0</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 and 3:</span>
+<span class="k">assert</span> <span class="mi">2</span> <span class="o">//</span> <span class="mi">3</span> <span class="o">==</span> <span class="mi">0</span>
+</pre></div>
+</div>
+<p>“True division” (float division):</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 3 only:</span>
+<span class="k">assert</span> <span class="mi">3</span> <span class="o">/</span> <span class="mi">2</span> <span class="o">==</span> <span class="mf">1.5</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 and 3:</span>
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">division</span>    <span class="c1"># (at top of module)</span>
+
+<span class="k">assert</span> <span class="mi">3</span> <span class="o">/</span> <span class="mi">2</span> <span class="o">==</span> <span class="mf">1.5</span>
+</pre></div>
+</div>
+<p>“Old division” (i.e. compatible with Py2 behaviour):</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 only:</span>
+<span class="n">a</span> <span class="o">=</span> <span class="n">b</span> <span class="o">/</span> <span class="n">c</span>            <span class="c1"># with any types</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 and 3:</span>
+<span class="kn">from</span> <span class="nn">past.utils</span> <span class="kn">import</span> <span class="n">old_div</span>
+
+<span class="n">a</span> <span class="o">=</span> <span class="n">old_div</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">)</span>    <span class="c1"># always same as / on Py2</span>
+</pre></div>
+</div>
+</section>
+<section id="long-integers">
+<h3>Long integers<a class="headerlink" href="#long-integers" title="Link to this heading">¶</a></h3>
+<p>Short integers are gone in Python 3 and <code class="docutils literal notranslate"><span class="pre">long</span></code> has become <code class="docutils literal notranslate"><span class="pre">int</span></code>
+(without the trailing <code class="docutils literal notranslate"><span class="pre">L</span></code> in the <code class="docutils literal notranslate"><span class="pre">repr</span></code>).</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 only</span>
+<span class="n">k</span> <span class="o">=</span> <span class="mi">9223372036854775808</span><span class="n">L</span>
+
+<span class="c1"># Python 2 and 3:</span>
+<span class="n">k</span> <span class="o">=</span> <span class="mi">9223372036854775808</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 only</span>
+<span class="n">bigint</span> <span class="o">=</span> <span class="mi">1</span><span class="n">L</span>
+
+<span class="c1"># Python 2 and 3</span>
+<span class="kn">from</span> <span class="nn">builtins</span> <span class="kn">import</span> <span class="nb">int</span>
+<span class="n">bigint</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>To test whether a value is an integer (of any kind):</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 only:</span>
+<span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="n">long</span><span class="p">)):</span>
+    <span class="o">...</span>
+
+<span class="c1"># Python 3 only:</span>
+<span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="nb">int</span><span class="p">):</span>
+    <span class="o">...</span>
+
+<span class="c1"># Python 2 and 3: option 1</span>
+<span class="kn">from</span> <span class="nn">builtins</span> <span class="kn">import</span> <span class="nb">int</span>    <span class="c1"># subclass of long on Py2</span>
+
+<span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="nb">int</span><span class="p">):</span>             <span class="c1"># matches both int and long on Py2</span>
+    <span class="o">...</span>
+
+<span class="c1"># Python 2 and 3: option 2</span>
+<span class="kn">from</span> <span class="nn">past.builtins</span> <span class="kn">import</span> <span class="n">long</span>
+
+<span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="n">long</span><span class="p">)):</span>
+    <span class="o">...</span>
+</pre></div>
+</div>
+</section>
+<section id="octal-constants">
+<h3>Octal constants<a class="headerlink" href="#octal-constants" title="Link to this heading">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="mi">0644</span>     <span class="c1"># Python 2 only</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="mo">0o644</span>    <span class="c1"># Python 2 and 3</span>
+</pre></div>
+</div>
+</section>
+<section id="backtick-repr">
+<h3>Backtick repr<a class="headerlink" href="#backtick-repr" title="Link to this heading">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="err">`</span><span class="n">x</span><span class="err">`</span>      <span class="c1"># Python 2 only</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">repr</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>  <span class="c1"># Python 2 and 3</span>
+</pre></div>
+</div>
+</section>
+<section id="metaclasses">
+<h3>Metaclasses<a class="headerlink" href="#metaclasses" title="Link to this heading">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">BaseForm</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="k">pass</span>
+
+<span class="k">class</span> <span class="nc">FormType</span><span class="p">(</span><span class="nb">type</span><span class="p">):</span>
+    <span class="k">pass</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 only:</span>
+<span class="k">class</span> <span class="nc">Form</span><span class="p">(</span><span class="n">BaseForm</span><span class="p">):</span>
+    <span class="n">__metaclass__</span> <span class="o">=</span> <span class="n">FormType</span>
+    <span class="k">pass</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 3 only:</span>
+<span class="k">class</span> <span class="nc">Form</span><span class="p">(</span><span class="n">BaseForm</span><span class="p">,</span> <span class="n">metaclass</span><span class="o">=</span><span class="n">FormType</span><span class="p">):</span>
+    <span class="k">pass</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 and 3:</span>
+<span class="kn">from</span> <span class="nn">six</span> <span class="kn">import</span> <span class="n">with_metaclass</span>
+<span class="c1"># or</span>
+<span class="kn">from</span> <span class="nn">future.utils</span> <span class="kn">import</span> <span class="n">with_metaclass</span>
+
+<span class="k">class</span> <span class="nc">Form</span><span class="p">(</span><span class="n">with_metaclass</span><span class="p">(</span><span class="n">FormType</span><span class="p">,</span> <span class="n">BaseForm</span><span class="p">)):</span>
+    <span class="k">pass</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="strings-and-bytes">
+<h2>Strings and bytes<a class="headerlink" href="#strings-and-bytes" title="Link to this heading">¶</a></h2>
+<section id="unicode-text-string-literals">
+<h3>Unicode (text) string literals<a class="headerlink" href="#unicode-text-string-literals" title="Link to this heading">¶</a></h3>
+<p>If you are upgrading an existing Python 2 codebase, it may be preferable
+to mark up all string literals as unicode explicitly with <code class="docutils literal notranslate"><span class="pre">u</span></code>
+prefixes:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 only</span>
+<span class="n">s1</span> <span class="o">=</span> <span class="s1">&#39;The Zen of Python&#39;</span>
+<span class="n">s2</span> <span class="o">=</span> <span class="sa">u</span><span class="s1">&#39;きたないのよりきれいな方がいい</span><span class="se">\n</span><span class="s1">&#39;</span>
+
+<span class="c1"># Python 2 and 3</span>
+<span class="n">s1</span> <span class="o">=</span> <span class="sa">u</span><span class="s1">&#39;The Zen of Python&#39;</span>
+<span class="n">s2</span> <span class="o">=</span> <span class="sa">u</span><span class="s1">&#39;きたないのよりきれいな方がいい</span><span class="se">\n</span><span class="s1">&#39;</span>
+</pre></div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">futurize</span></code> and <code class="docutils literal notranslate"><span class="pre">python-modernize</span></code> tools do not currently offer
+an option to do this automatically.</p>
+<p>If you are writing code for a new project or new codebase, you can use
+this idiom to make all string literals in a module unicode strings:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 and 3</span>
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">unicode_literals</span>    <span class="c1"># at top of module</span>
+
+<span class="n">s1</span> <span class="o">=</span> <span class="s1">&#39;The Zen of Python&#39;</span>
+<span class="n">s2</span> <span class="o">=</span> <span class="s1">&#39;きたないのよりきれいな方がいい</span><span class="se">\n</span><span class="s1">&#39;</span>
+</pre></div>
+</div>
+<p>See <a class="reference external" href="https://python-future.org/unicode_literals.html">https://python-future.org/unicode_literals.html</a> for more discussion
+on which style to use.</p>
+</section>
+<section id="byte-string-literals">
+<h3>Byte-string literals<a class="headerlink" href="#byte-string-literals" title="Link to this heading">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 only</span>
+<span class="n">s</span> <span class="o">=</span> <span class="s1">&#39;This must be a byte-string&#39;</span>
+
+<span class="c1"># Python 2 and 3</span>
+<span class="n">s</span> <span class="o">=</span> <span class="sa">b</span><span class="s1">&#39;This must be a byte-string&#39;</span>
+</pre></div>
+</div>
+<p>To loop over a byte-string with possible high-bit characters, obtaining
+each character as a byte-string of length 1:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 only:</span>
+<span class="k">for</span> <span class="n">bytechar</span> <span class="ow">in</span> <span class="s1">&#39;byte-string with high-bit chars like </span><span class="se">\xf9</span><span class="s1">&#39;</span><span class="p">:</span>
+    <span class="o">...</span>
+
+<span class="c1"># Python 3 only:</span>
+<span class="k">for</span> <span class="n">myint</span> <span class="ow">in</span> <span class="sa">b</span><span class="s1">&#39;byte-string with high-bit chars like </span><span class="se">\xf9</span><span class="s1">&#39;</span><span class="p">:</span>
+    <span class="n">bytechar</span> <span class="o">=</span> <span class="nb">bytes</span><span class="p">([</span><span class="n">myint</span><span class="p">])</span>
+
+<span class="c1"># Python 2 and 3:</span>
+<span class="kn">from</span> <span class="nn">builtins</span> <span class="kn">import</span> <span class="nb">bytes</span>
+<span class="k">for</span> <span class="n">myint</span> <span class="ow">in</span> <span class="nb">bytes</span><span class="p">(</span><span class="sa">b</span><span class="s1">&#39;byte-string with high-bit chars like </span><span class="se">\xf9</span><span class="s1">&#39;</span><span class="p">):</span>
+    <span class="n">bytechar</span> <span class="o">=</span> <span class="nb">bytes</span><span class="p">([</span><span class="n">myint</span><span class="p">])</span>
+</pre></div>
+</div>
+<p>As an alternative, <code class="docutils literal notranslate"><span class="pre">chr()</span></code> and <code class="docutils literal notranslate"><span class="pre">.encode('latin-1')</span></code> can be used to
+convert an int into a 1-char byte string:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 3 only:</span>
+<span class="k">for</span> <span class="n">myint</span> <span class="ow">in</span> <span class="sa">b</span><span class="s1">&#39;byte-string with high-bit chars like </span><span class="se">\xf9</span><span class="s1">&#39;</span><span class="p">:</span>
+    <span class="n">char</span> <span class="o">=</span> <span class="nb">chr</span><span class="p">(</span><span class="n">myint</span><span class="p">)</span>    <span class="c1"># returns a unicode string</span>
+    <span class="n">bytechar</span> <span class="o">=</span> <span class="n">char</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s1">&#39;latin-1&#39;</span><span class="p">)</span>
+
+<span class="c1"># Python 2 and 3:</span>
+<span class="kn">from</span> <span class="nn">builtins</span> <span class="kn">import</span> <span class="nb">bytes</span><span class="p">,</span> <span class="nb">chr</span>
+<span class="k">for</span> <span class="n">myint</span> <span class="ow">in</span> <span class="nb">bytes</span><span class="p">(</span><span class="sa">b</span><span class="s1">&#39;byte-string with high-bit chars like </span><span class="se">\xf9</span><span class="s1">&#39;</span><span class="p">):</span>
+    <span class="n">char</span> <span class="o">=</span> <span class="nb">chr</span><span class="p">(</span><span class="n">myint</span><span class="p">)</span>    <span class="c1"># returns a unicode string</span>
+    <span class="n">bytechar</span> <span class="o">=</span> <span class="n">char</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s1">&#39;latin-1&#39;</span><span class="p">)</span>    <span class="c1"># forces returning a byte str</span>
+</pre></div>
+</div>
+</section>
+<section id="basestring">
+<h3>basestring<a class="headerlink" href="#basestring" title="Link to this heading">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 only:</span>
+<span class="n">a</span> <span class="o">=</span> <span class="sa">u</span><span class="s1">&#39;abc&#39;</span>
+<span class="n">b</span> <span class="o">=</span> <span class="s1">&#39;def&#39;</span>
+<span class="k">assert</span> <span class="p">(</span><span class="nb">isinstance</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">basestring</span><span class="p">)</span> <span class="ow">and</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="n">basestring</span><span class="p">))</span>
+
+<span class="c1"># Python 2 and 3: alternative 1</span>
+<span class="kn">from</span> <span class="nn">past.builtins</span> <span class="kn">import</span> <span class="n">basestring</span>    <span class="c1"># pip install future</span>
+
+<span class="n">a</span> <span class="o">=</span> <span class="sa">u</span><span class="s1">&#39;abc&#39;</span>
+<span class="n">b</span> <span class="o">=</span> <span class="sa">b</span><span class="s1">&#39;def&#39;</span>
+<span class="k">assert</span> <span class="p">(</span><span class="nb">isinstance</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">basestring</span><span class="p">)</span> <span class="ow">and</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="n">basestring</span><span class="p">))</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 and 3: alternative 2: refactor the code to avoid considering</span>
+<span class="c1"># byte-strings as strings.</span>
+
+<span class="kn">from</span> <span class="nn">builtins</span> <span class="kn">import</span> <span class="nb">str</span>
+<span class="n">a</span> <span class="o">=</span> <span class="sa">u</span><span class="s1">&#39;abc&#39;</span>
+<span class="n">b</span> <span class="o">=</span> <span class="sa">b</span><span class="s1">&#39;def&#39;</span>
+<span class="n">c</span> <span class="o">=</span> <span class="n">b</span><span class="o">.</span><span class="n">decode</span><span class="p">()</span>
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="nb">str</span><span class="p">)</span> <span class="ow">and</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="nb">str</span><span class="p">)</span>
+<span class="c1"># ...</span>
+</pre></div>
+</div>
+</section>
+<section id="unicode">
+<h3>unicode<a class="headerlink" href="#unicode" title="Link to this heading">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 only:</span>
+<span class="n">templates</span> <span class="o">=</span> <span class="p">[</span><span class="sa">u</span><span class="s2">&quot;blog/blog_post_detail_</span><span class="si">%s</span><span class="s2">.html&quot;</span> <span class="o">%</span> <span class="n">unicode</span><span class="p">(</span><span class="n">slug</span><span class="p">)]</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 and 3: alternative 1</span>
+<span class="kn">from</span> <span class="nn">builtins</span> <span class="kn">import</span> <span class="nb">str</span>
+<span class="n">templates</span> <span class="o">=</span> <span class="p">[</span><span class="sa">u</span><span class="s2">&quot;blog/blog_post_detail_</span><span class="si">%s</span><span class="s2">.html&quot;</span> <span class="o">%</span> <span class="nb">str</span><span class="p">(</span><span class="n">slug</span><span class="p">)]</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 and 3: alternative 2</span>
+<span class="kn">from</span> <span class="nn">builtins</span> <span class="kn">import</span> <span class="nb">str</span> <span class="k">as</span> <span class="n">text</span>
+<span class="n">templates</span> <span class="o">=</span> <span class="p">[</span><span class="sa">u</span><span class="s2">&quot;blog/blog_post_detail_</span><span class="si">%s</span><span class="s2">.html&quot;</span> <span class="o">%</span> <span class="n">text</span><span class="p">(</span><span class="n">slug</span><span class="p">)]</span>
+</pre></div>
+</div>
+</section>
+<section id="stringio">
+<h3>StringIO<a class="headerlink" href="#stringio" title="Link to this heading">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 only:</span>
+<span class="kn">from</span> <span class="nn">StringIO</span> <span class="kn">import</span> <span class="n">StringIO</span>
+<span class="c1"># or:</span>
+<span class="kn">from</span> <span class="nn">cStringIO</span> <span class="kn">import</span> <span class="n">StringIO</span>
+
+<span class="c1"># Python 2 and 3:</span>
+<span class="kn">from</span> <span class="nn">io</span> <span class="kn">import</span> <span class="n">BytesIO</span>     <span class="c1"># for handling byte strings</span>
+<span class="kn">from</span> <span class="nn">io</span> <span class="kn">import</span> <span class="n">StringIO</span>    <span class="c1"># for handling unicode strings</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="imports-relative-to-a-package">
+<h2>Imports relative to a package<a class="headerlink" href="#imports-relative-to-a-package" title="Link to this heading">¶</a></h2>
+<p>Suppose the package is:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mypackage</span><span class="o">/</span>
+    <span class="fm">__init__</span><span class="o">.</span><span class="n">py</span>
+    <span class="n">submodule1</span><span class="o">.</span><span class="n">py</span>
+    <span class="n">submodule2</span><span class="o">.</span><span class="n">py</span>
+</pre></div>
+</div>
+<p>and the code below is in <code class="docutils literal notranslate"><span class="pre">submodule1.py</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 only:</span>
+<span class="kn">import</span> <span class="nn">submodule2</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 and 3:</span>
+<span class="kn">from</span> <span class="nn">.</span> <span class="kn">import</span> <span class="n">submodule2</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 and 3:</span>
+<span class="c1"># To make Py2 code safer (more like Py3) by preventing</span>
+<span class="c1"># implicit relative imports, you can also add this to the top:</span>
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">absolute_import</span>
+</pre></div>
+</div>
+</section>
+<section id="dictionaries">
+<h2>Dictionaries<a class="headerlink" href="#dictionaries" title="Link to this heading">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">heights</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;Fred&#39;</span><span class="p">:</span> <span class="mi">175</span><span class="p">,</span> <span class="s1">&#39;Anne&#39;</span><span class="p">:</span> <span class="mi">166</span><span class="p">,</span> <span class="s1">&#39;Joe&#39;</span><span class="p">:</span> <span class="mi">192</span><span class="p">}</span>
+</pre></div>
+</div>
+<section id="iterating-through-dict-keys-values-items">
+<h3>Iterating through <code class="docutils literal notranslate"><span class="pre">dict</span></code> keys/values/items<a class="headerlink" href="#iterating-through-dict-keys-values-items" title="Link to this heading">¶</a></h3>
+<p>Iterable dict keys:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 only:</span>
+<span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">heights</span><span class="o">.</span><span class="n">iterkeys</span><span class="p">():</span>
+    <span class="o">...</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 and 3:</span>
+<span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">heights</span><span class="p">:</span>
+    <span class="o">...</span>
+</pre></div>
+</div>
+<p>Iterable dict values:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 only:</span>
+<span class="k">for</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">heights</span><span class="o">.</span><span class="n">itervalues</span><span class="p">():</span>
+    <span class="o">...</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Idiomatic Python 3</span>
+<span class="k">for</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">heights</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>    <span class="c1"># extra memory overhead on Py2</span>
+    <span class="o">...</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 and 3: option 1</span>
+<span class="kn">from</span> <span class="nn">builtins</span> <span class="kn">import</span> <span class="nb">dict</span>
+
+<span class="n">heights</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">Fred</span><span class="o">=</span><span class="mi">175</span><span class="p">,</span> <span class="n">Anne</span><span class="o">=</span><span class="mi">166</span><span class="p">,</span> <span class="n">Joe</span><span class="o">=</span><span class="mi">192</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">heights</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>    <span class="c1"># efficient on Py2 and Py3</span>
+    <span class="o">...</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 and 3: option 2</span>
+<span class="kn">from</span> <span class="nn">future.utils</span> <span class="kn">import</span> <span class="n">itervalues</span>
+<span class="c1"># or</span>
+<span class="kn">from</span> <span class="nn">six</span> <span class="kn">import</span> <span class="n">itervalues</span>
+
+<span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">itervalues</span><span class="p">(</span><span class="n">heights</span><span class="p">):</span>
+    <span class="o">...</span>
+</pre></div>
+</div>
+<p>Iterable dict items:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 only:</span>
+<span class="k">for</span> <span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span> <span class="ow">in</span> <span class="n">heights</span><span class="o">.</span><span class="n">iteritems</span><span class="p">():</span>
+    <span class="o">...</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 and 3: option 1</span>
+<span class="k">for</span> <span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span> <span class="ow">in</span> <span class="n">heights</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>    <span class="c1"># inefficient on Py2</span>
+    <span class="o">...</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 and 3: option 2</span>
+<span class="kn">from</span> <span class="nn">future.utils</span> <span class="kn">import</span> <span class="n">viewitems</span>
+
+<span class="k">for</span> <span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span> <span class="ow">in</span> <span class="n">viewitems</span><span class="p">(</span><span class="n">heights</span><span class="p">):</span>   <span class="c1"># also behaves like a set</span>
+    <span class="o">...</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 and 3: option 3</span>
+<span class="kn">from</span> <span class="nn">future.utils</span> <span class="kn">import</span> <span class="n">iteritems</span>
+<span class="c1"># or</span>
+<span class="kn">from</span> <span class="nn">six</span> <span class="kn">import</span> <span class="n">iteritems</span>
+
+<span class="k">for</span> <span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span> <span class="ow">in</span> <span class="n">iteritems</span><span class="p">(</span><span class="n">heights</span><span class="p">):</span>
+    <span class="o">...</span>
+</pre></div>
+</div>
+</section>
+<section id="dict-keys-values-items-as-a-list">
+<h3>dict keys/values/items as a list<a class="headerlink" href="#dict-keys-values-items-as-a-list" title="Link to this heading">¶</a></h3>
+<p>dict keys as a list:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 only:</span>
+<span class="n">keylist</span> <span class="o">=</span> <span class="n">heights</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">keylist</span><span class="p">,</span> <span class="nb">list</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 and 3:</span>
+<span class="n">keylist</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">heights</span><span class="p">)</span>
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">keylist</span><span class="p">,</span> <span class="nb">list</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>dict values as a list:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 only:</span>
+<span class="n">heights</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;Fred&#39;</span><span class="p">:</span> <span class="mi">175</span><span class="p">,</span> <span class="s1">&#39;Anne&#39;</span><span class="p">:</span> <span class="mi">166</span><span class="p">,</span> <span class="s1">&#39;Joe&#39;</span><span class="p">:</span> <span class="mi">192</span><span class="p">}</span>
+<span class="n">valuelist</span> <span class="o">=</span> <span class="n">heights</span><span class="o">.</span><span class="n">values</span><span class="p">()</span>
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">valuelist</span><span class="p">,</span> <span class="nb">list</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 and 3: option 1</span>
+<span class="n">valuelist</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">heights</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>    <span class="c1"># inefficient on Py2</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 and 3: option 2</span>
+<span class="kn">from</span> <span class="nn">builtins</span> <span class="kn">import</span> <span class="nb">dict</span>
+
+<span class="n">heights</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">Fred</span><span class="o">=</span><span class="mi">175</span><span class="p">,</span> <span class="n">Anne</span><span class="o">=</span><span class="mi">166</span><span class="p">,</span> <span class="n">Joe</span><span class="o">=</span><span class="mi">192</span><span class="p">)</span>
+<span class="n">valuelist</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">heights</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 and 3: option 3</span>
+<span class="kn">from</span> <span class="nn">future.utils</span> <span class="kn">import</span> <span class="n">listvalues</span>
+
+<span class="n">valuelist</span> <span class="o">=</span> <span class="n">listvalues</span><span class="p">(</span><span class="n">heights</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 and 3: option 4</span>
+<span class="kn">from</span> <span class="nn">future.utils</span> <span class="kn">import</span> <span class="n">itervalues</span>
+<span class="c1"># or</span>
+<span class="kn">from</span> <span class="nn">six</span> <span class="kn">import</span> <span class="n">itervalues</span>
+
+<span class="n">valuelist</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">itervalues</span><span class="p">(</span><span class="n">heights</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>dict items as a list:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 and 3: option 1</span>
+<span class="n">itemlist</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">heights</span><span class="o">.</span><span class="n">items</span><span class="p">())</span>    <span class="c1"># inefficient on Py2</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 and 3: option 2</span>
+<span class="kn">from</span> <span class="nn">future.utils</span> <span class="kn">import</span> <span class="n">listitems</span>
+
+<span class="n">itemlist</span> <span class="o">=</span> <span class="n">listitems</span><span class="p">(</span><span class="n">heights</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 and 3: option 3</span>
+<span class="kn">from</span> <span class="nn">future.utils</span> <span class="kn">import</span> <span class="n">iteritems</span>
+<span class="c1"># or</span>
+<span class="kn">from</span> <span class="nn">six</span> <span class="kn">import</span> <span class="n">iteritems</span>
+
+<span class="n">itemlist</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">iteritems</span><span class="p">(</span><span class="n">heights</span><span class="p">))</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="custom-class-behaviour">
+<h2>Custom class behaviour<a class="headerlink" href="#custom-class-behaviour" title="Link to this heading">¶</a></h2>
+<section id="custom-iterators">
+<h3>Custom iterators<a class="headerlink" href="#custom-iterators" title="Link to this heading">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 only</span>
+<span class="k">class</span> <span class="nc">Upper</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">iterable</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_iter</span> <span class="o">=</span> <span class="nb">iter</span><span class="p">(</span><span class="n">iterable</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">next</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>          <span class="c1"># Py2-style</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_iter</span><span class="o">.</span><span class="n">next</span><span class="p">()</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+    <span class="k">def</span> <span class="fm">__iter__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span>
+
+<span class="n">itr</span> <span class="o">=</span> <span class="n">Upper</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">)</span>
+<span class="k">assert</span> <span class="n">itr</span><span class="o">.</span><span class="n">next</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;H&#39;</span>     <span class="c1"># Py2-style</span>
+<span class="k">assert</span> <span class="nb">list</span><span class="p">(</span><span class="n">itr</span><span class="p">)</span> <span class="o">==</span> <span class="nb">list</span><span class="p">(</span><span class="s1">&#39;ELLO&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 and 3: option 1</span>
+<span class="kn">from</span> <span class="nn">builtins</span> <span class="kn">import</span> <span class="nb">object</span>
+
+<span class="k">class</span> <span class="nc">Upper</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">iterable</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_iter</span> <span class="o">=</span> <span class="nb">iter</span><span class="p">(</span><span class="n">iterable</span><span class="p">)</span>
+    <span class="k">def</span> <span class="fm">__next__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>      <span class="c1"># Py3-style iterator interface</span>
+        <span class="k">return</span> <span class="nb">next</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_iter</span><span class="p">)</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>  <span class="c1"># builtin next() function calls</span>
+    <span class="k">def</span> <span class="fm">__iter__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span>
+
+<span class="n">itr</span> <span class="o">=</span> <span class="n">Upper</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">)</span>
+<span class="k">assert</span> <span class="nb">next</span><span class="p">(</span><span class="n">itr</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;H&#39;</span>      <span class="c1"># compatible style</span>
+<span class="k">assert</span> <span class="nb">list</span><span class="p">(</span><span class="n">itr</span><span class="p">)</span> <span class="o">==</span> <span class="nb">list</span><span class="p">(</span><span class="s1">&#39;ELLO&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 and 3: option 2</span>
+<span class="kn">from</span> <span class="nn">future.utils</span> <span class="kn">import</span> <span class="n">implements_iterator</span>
+
+<span class="nd">@implements_iterator</span>
+<span class="k">class</span> <span class="nc">Upper</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">iterable</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_iter</span> <span class="o">=</span> <span class="nb">iter</span><span class="p">(</span><span class="n">iterable</span><span class="p">)</span>
+    <span class="k">def</span> <span class="fm">__next__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>                  <span class="c1"># Py3-style iterator interface</span>
+        <span class="k">return</span> <span class="nb">next</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_iter</span><span class="p">)</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>  <span class="c1"># builtin next() function calls</span>
+    <span class="k">def</span> <span class="fm">__iter__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span>
+
+<span class="n">itr</span> <span class="o">=</span> <span class="n">Upper</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">)</span>
+<span class="k">assert</span> <span class="nb">next</span><span class="p">(</span><span class="n">itr</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;H&#39;</span>
+<span class="k">assert</span> <span class="nb">list</span><span class="p">(</span><span class="n">itr</span><span class="p">)</span> <span class="o">==</span> <span class="nb">list</span><span class="p">(</span><span class="s1">&#39;ELLO&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="custom-str-methods">
+<h3>Custom <code class="docutils literal notranslate"><span class="pre">__str__</span></code> methods<a class="headerlink" href="#custom-str-methods" title="Link to this heading">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 only:</span>
+<span class="k">class</span> <span class="nc">MyClass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">__unicode__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s1">&#39;Unicode string: </span><span class="se">\u5b54\u5b50</span><span class="s1">&#39;</span>
+    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">unicode</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span>
+
+<span class="n">a</span> <span class="o">=</span> <span class="n">MyClass</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>    <span class="c1"># prints encoded string</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 and 3:</span>
+<span class="kn">from</span> <span class="nn">future.utils</span> <span class="kn">import</span> <span class="n">python_2_unicode_compatible</span>
+
+<span class="nd">@python_2_unicode_compatible</span>
+<span class="k">class</span> <span class="nc">MyClass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="sa">u</span><span class="s1">&#39;Unicode string: </span><span class="se">\u5b54\u5b50</span><span class="s1">&#39;</span>
+
+<span class="n">a</span> <span class="o">=</span> <span class="n">MyClass</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>    <span class="c1"># prints string encoded as utf-8 on Py2</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Unicode</span> <span class="n">string</span><span class="p">:</span> <span class="n">孔子</span>
+</pre></div>
+</div>
+</section>
+<section id="custom-nonzero-vs-bool-method">
+<h3>Custom <code class="docutils literal notranslate"><span class="pre">__nonzero__</span></code> vs <code class="docutils literal notranslate"><span class="pre">__bool__</span></code> method:<a class="headerlink" href="#custom-nonzero-vs-bool-method" title="Link to this heading">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 only:</span>
+<span class="k">class</span> <span class="nc">AllOrNothing</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">l</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">l</span> <span class="o">=</span> <span class="n">l</span>
+    <span class="k">def</span> <span class="nf">__nonzero__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="nb">all</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">l</span><span class="p">)</span>
+
+<span class="n">container</span> <span class="o">=</span> <span class="n">AllOrNothing</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">200</span><span class="p">])</span>
+<span class="k">assert</span> <span class="ow">not</span> <span class="nb">bool</span><span class="p">(</span><span class="n">container</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 and 3:</span>
+<span class="kn">from</span> <span class="nn">builtins</span> <span class="kn">import</span> <span class="nb">object</span>
+
+<span class="k">class</span> <span class="nc">AllOrNothing</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">l</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">l</span> <span class="o">=</span> <span class="n">l</span>
+    <span class="k">def</span> <span class="fm">__bool__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="nb">all</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">l</span><span class="p">)</span>
+
+<span class="n">container</span> <span class="o">=</span> <span class="n">AllOrNothing</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">200</span><span class="p">])</span>
+<span class="k">assert</span> <span class="ow">not</span> <span class="nb">bool</span><span class="p">(</span><span class="n">container</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="lists-versus-iterators">
+<h2>Lists versus iterators<a class="headerlink" href="#lists-versus-iterators" title="Link to this heading">¶</a></h2>
+<section id="xrange">
+<h3>xrange<a class="headerlink" href="#xrange" title="Link to this heading">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 only:</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">xrange</span><span class="p">(</span><span class="mi">10</span><span class="o">**</span><span class="mi">8</span><span class="p">):</span>
+    <span class="o">...</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 and 3: forward-compatible</span>
+<span class="kn">from</span> <span class="nn">builtins</span> <span class="kn">import</span> <span class="nb">range</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="o">**</span><span class="mi">8</span><span class="p">):</span>
+    <span class="o">...</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 and 3: backward-compatible</span>
+<span class="kn">from</span> <span class="nn">past.builtins</span> <span class="kn">import</span> <span class="n">xrange</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">xrange</span><span class="p">(</span><span class="mi">10</span><span class="o">**</span><span class="mi">8</span><span class="p">):</span>
+    <span class="o">...</span>
+</pre></div>
+</div>
+</section>
+<section id="range">
+<h3>range<a class="headerlink" href="#range" title="Link to this heading">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 only</span>
+<span class="n">mylist</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="k">assert</span> <span class="n">mylist</span> <span class="o">==</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 and 3: forward-compatible: option 1</span>
+<span class="n">mylist</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>            <span class="c1"># copies memory on Py2</span>
+<span class="k">assert</span> <span class="n">mylist</span> <span class="o">==</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 and 3: forward-compatible: option 2</span>
+<span class="kn">from</span> <span class="nn">builtins</span> <span class="kn">import</span> <span class="nb">range</span>
+
+<span class="n">mylist</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
+<span class="k">assert</span> <span class="n">mylist</span> <span class="o">==</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 and 3: option 3</span>
+<span class="kn">from</span> <span class="nn">future.utils</span> <span class="kn">import</span> <span class="n">lrange</span>
+
+<span class="n">mylist</span> <span class="o">=</span> <span class="n">lrange</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="k">assert</span> <span class="n">mylist</span> <span class="o">==</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 and 3: backward compatible</span>
+<span class="kn">from</span> <span class="nn">past.builtins</span> <span class="kn">import</span> <span class="nb">range</span>
+
+<span class="n">mylist</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="k">assert</span> <span class="n">mylist</span> <span class="o">==</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+</pre></div>
+</div>
+</section>
+<section id="map">
+<h3>map<a class="headerlink" href="#map" title="Link to this heading">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 only:</span>
+<span class="n">mynewlist</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">myoldlist</span><span class="p">)</span>
+<span class="k">assert</span> <span class="n">mynewlist</span> <span class="o">==</span> <span class="p">[</span><span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">myoldlist</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 and 3: option 1</span>
+<span class="c1"># Idiomatic Py3, but inefficient on Py2</span>
+<span class="n">mynewlist</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">myoldlist</span><span class="p">))</span>
+<span class="k">assert</span> <span class="n">mynewlist</span> <span class="o">==</span> <span class="p">[</span><span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">myoldlist</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 and 3: option 2</span>
+<span class="kn">from</span> <span class="nn">builtins</span> <span class="kn">import</span> <span class="nb">map</span>
+
+<span class="n">mynewlist</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">myoldlist</span><span class="p">))</span>
+<span class="k">assert</span> <span class="n">mynewlist</span> <span class="o">==</span> <span class="p">[</span><span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">myoldlist</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 and 3: option 3</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="kn">import</span> <span class="nn">itertools.imap</span> <span class="k">as</span> <span class="nn">map</span>
+<span class="k">except</span> <span class="ne">ImportError</span><span class="p">:</span>
+    <span class="k">pass</span>
+
+<span class="n">mynewlist</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">myoldlist</span><span class="p">))</span>    <span class="c1"># inefficient on Py2</span>
+<span class="k">assert</span> <span class="n">mynewlist</span> <span class="o">==</span> <span class="p">[</span><span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">myoldlist</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 and 3: option 4</span>
+<span class="kn">from</span> <span class="nn">future.utils</span> <span class="kn">import</span> <span class="n">lmap</span>
+
+<span class="n">mynewlist</span> <span class="o">=</span> <span class="n">lmap</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">myoldlist</span><span class="p">)</span>
+<span class="k">assert</span> <span class="n">mynewlist</span> <span class="o">==</span> <span class="p">[</span><span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">myoldlist</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 and 3: option 5</span>
+<span class="kn">from</span> <span class="nn">past.builtins</span> <span class="kn">import</span> <span class="nb">map</span>
+
+<span class="n">mynewlist</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">myoldlist</span><span class="p">)</span>
+<span class="k">assert</span> <span class="n">mynewlist</span> <span class="o">==</span> <span class="p">[</span><span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">myoldlist</span><span class="p">]</span>
+</pre></div>
+</div>
+</section>
+<section id="imap">
+<h3>imap<a class="headerlink" href="#imap" title="Link to this heading">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 only:</span>
+<span class="kn">from</span> <span class="nn">itertools</span> <span class="kn">import</span> <span class="n">imap</span>
+
+<span class="n">myiter</span> <span class="o">=</span> <span class="n">imap</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="n">myoldlist</span><span class="p">)</span>
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">myiter</span><span class="p">,</span> <span class="nb">iter</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 3 only:</span>
+<span class="n">myiter</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="n">myoldlist</span><span class="p">)</span>
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">myiter</span><span class="p">,</span> <span class="nb">iter</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 and 3: option 1</span>
+<span class="kn">from</span> <span class="nn">builtins</span> <span class="kn">import</span> <span class="nb">map</span>
+
+<span class="n">myiter</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="n">myoldlist</span><span class="p">)</span>
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">myiter</span><span class="p">,</span> <span class="nb">iter</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 and 3: option 2</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="kn">import</span> <span class="nn">itertools.imap</span> <span class="k">as</span> <span class="nn">map</span>
+<span class="k">except</span> <span class="ne">ImportError</span><span class="p">:</span>
+    <span class="k">pass</span>
+
+<span class="n">myiter</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="n">myoldlist</span><span class="p">)</span>
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">myiter</span><span class="p">,</span> <span class="nb">iter</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 and 3: option 3</span>
+<span class="kn">from</span> <span class="nn">six.moves</span> <span class="kn">import</span> <span class="nb">map</span>
+
+<span class="n">myiter</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="n">myoldlist</span><span class="p">)</span>
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">myiter</span><span class="p">,</span> <span class="nb">iter</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="zip-izip">
+<h3>zip, izip<a class="headerlink" href="#zip-izip" title="Link to this heading">¶</a></h3>
+<p>As above with <code class="docutils literal notranslate"><span class="pre">zip</span></code> and <code class="docutils literal notranslate"><span class="pre">itertools.izip</span></code>.</p>
+</section>
+<section id="filter-ifilter">
+<h3>filter, ifilter<a class="headerlink" href="#filter-ifilter" title="Link to this heading">¶</a></h3>
+<p>As above with <code class="docutils literal notranslate"><span class="pre">filter</span></code> and <code class="docutils literal notranslate"><span class="pre">itertools.ifilter</span></code> too.</p>
+</section>
+</section>
+<section id="other-builtins">
+<h2>Other builtins<a class="headerlink" href="#other-builtins" title="Link to this heading">¶</a></h2>
+<section id="file-io-with-open">
+<h3>File IO with open()<a class="headerlink" href="#file-io-with-open" title="Link to this heading">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 only</span>
+<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;myfile.txt&#39;</span><span class="p">)</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>              <span class="c1"># as a byte string</span>
+<span class="n">text</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span>
+
+<span class="c1"># Python 2 and 3: alternative 1</span>
+<span class="kn">from</span> <span class="nn">io</span> <span class="kn">import</span> <span class="nb">open</span>
+<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;myfile.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">)</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>              <span class="c1"># as bytes</span>
+<span class="n">text</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span>  <span class="c1"># unicode, not bytes</span>
+
+<span class="c1"># Python 2 and 3: alternative 2</span>
+<span class="kn">from</span> <span class="nn">io</span> <span class="kn">import</span> <span class="nb">open</span>
+<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;myfile.txt&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span>
+<span class="n">text</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>    <span class="c1"># unicode, not bytes</span>
+</pre></div>
+</div>
+</section>
+<section id="reduce">
+<h3>reduce()<a class="headerlink" href="#reduce" title="Link to this heading">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 only:</span>
+<span class="k">assert</span> <span class="n">reduce</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">:</span> <span class="n">x</span><span class="o">+</span><span class="n">y</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">])</span> <span class="o">==</span> <span class="mi">1</span><span class="o">+</span><span class="mi">2</span><span class="o">+</span><span class="mi">3</span><span class="o">+</span><span class="mi">4</span><span class="o">+</span><span class="mi">5</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 and 3:</span>
+<span class="kn">from</span> <span class="nn">functools</span> <span class="kn">import</span> <span class="n">reduce</span>
+
+<span class="k">assert</span> <span class="n">reduce</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">:</span> <span class="n">x</span><span class="o">+</span><span class="n">y</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">])</span> <span class="o">==</span> <span class="mi">1</span><span class="o">+</span><span class="mi">2</span><span class="o">+</span><span class="mi">3</span><span class="o">+</span><span class="mi">4</span><span class="o">+</span><span class="mi">5</span>
+</pre></div>
+</div>
+</section>
+<section id="raw-input">
+<h3>raw_input()<a class="headerlink" href="#raw-input" title="Link to this heading">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 only:</span>
+<span class="n">name</span> <span class="o">=</span> <span class="n">raw_input</span><span class="p">(</span><span class="s1">&#39;What is your name? &#39;</span><span class="p">)</span>
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="nb">str</span><span class="p">)</span>    <span class="c1"># native str</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 and 3:</span>
+<span class="kn">from</span> <span class="nn">builtins</span> <span class="kn">import</span> <span class="nb">input</span>
+
+<span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;What is your name? &#39;</span><span class="p">)</span>
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="nb">str</span><span class="p">)</span>    <span class="c1"># native str on Py2 and Py3</span>
+</pre></div>
+</div>
+</section>
+<section id="input">
+<h3>input()<a class="headerlink" href="#input" title="Link to this heading">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 only:</span>
+<span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Type something safe please: &quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 and 3</span>
+<span class="kn">from</span> <span class="nn">builtins</span> <span class="kn">import</span> <span class="nb">input</span>
+<span class="nb">eval</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Type something safe please: &quot;</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>Warning: using either of these is <strong>unsafe</strong> with untrusted input.</p>
+</section>
+<section id="file">
+<h3>file()<a class="headerlink" href="#file" title="Link to this heading">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 only:</span>
+<span class="n">f</span> <span class="o">=</span> <span class="n">file</span><span class="p">(</span><span class="n">pathname</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 and 3:</span>
+<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">pathname</span><span class="p">)</span>
+
+<span class="c1"># But preferably, use this:</span>
+<span class="kn">from</span> <span class="nn">io</span> <span class="kn">import</span> <span class="nb">open</span>
+<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">pathname</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">)</span>   <span class="c1"># if f.read() should return bytes</span>
+<span class="c1"># or</span>
+<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">pathname</span><span class="p">,</span> <span class="s1">&#39;rt&#39;</span><span class="p">)</span>   <span class="c1"># if f.read() should return unicode text</span>
+</pre></div>
+</div>
+</section>
+<section id="exec">
+<h3>exec<a class="headerlink" href="#exec" title="Link to this heading">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 only:</span>
+<span class="n">exec</span> <span class="s1">&#39;x = 10&#39;</span>
+
+<span class="c1"># Python 2 and 3:</span>
+<span class="n">exec</span><span class="p">(</span><span class="s1">&#39;x = 10&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 only:</span>
+<span class="n">g</span> <span class="o">=</span> <span class="nb">globals</span><span class="p">()</span>
+<span class="n">exec</span> <span class="s1">&#39;x = 10&#39;</span> <span class="ow">in</span> <span class="n">g</span>
+
+<span class="c1"># Python 2 and 3:</span>
+<span class="n">g</span> <span class="o">=</span> <span class="nb">globals</span><span class="p">()</span>
+<span class="n">exec</span><span class="p">(</span><span class="s1">&#39;x = 10&#39;</span><span class="p">,</span> <span class="n">g</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 only:</span>
+<span class="n">l</span> <span class="o">=</span> <span class="nb">locals</span><span class="p">()</span>
+<span class="n">exec</span> <span class="s1">&#39;x = 10&#39;</span> <span class="ow">in</span> <span class="n">g</span><span class="p">,</span> <span class="n">l</span>
+
+<span class="c1"># Python 2 and 3:</span>
+<span class="n">exec</span><span class="p">(</span><span class="s1">&#39;x = 10&#39;</span><span class="p">,</span> <span class="n">g</span><span class="p">,</span> <span class="n">l</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="execfile">
+<h3>execfile()<a class="headerlink" href="#execfile" title="Link to this heading">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 only:</span>
+<span class="n">execfile</span><span class="p">(</span><span class="s1">&#39;myfile.py&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 and 3: alternative 1</span>
+<span class="kn">from</span> <span class="nn">past.builtins</span> <span class="kn">import</span> <span class="n">execfile</span>
+
+<span class="n">execfile</span><span class="p">(</span><span class="s1">&#39;myfile.py&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 and 3: alternative 2</span>
+<span class="n">exec</span><span class="p">(</span><span class="nb">compile</span><span class="p">(</span><span class="nb">open</span><span class="p">(</span><span class="s1">&#39;myfile.py&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()))</span>
+
+<span class="c1"># This can sometimes cause this:</span>
+<span class="c1">#     SyntaxError: function ... uses import * and bare exec ...</span>
+<span class="c1"># See https://github.com/PythonCharmers/python-future/issues/37</span>
+</pre></div>
+</div>
+</section>
+<section id="unichr">
+<h3>unichr()<a class="headerlink" href="#unichr" title="Link to this heading">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 only:</span>
+<span class="k">assert</span> <span class="n">unichr</span><span class="p">(</span><span class="mi">8364</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;€&#39;</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 3 only:</span>
+<span class="k">assert</span> <span class="nb">chr</span><span class="p">(</span><span class="mi">8364</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;€&#39;</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 and 3:</span>
+<span class="kn">from</span> <span class="nn">builtins</span> <span class="kn">import</span> <span class="nb">chr</span>
+<span class="k">assert</span> <span class="nb">chr</span><span class="p">(</span><span class="mi">8364</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;€&#39;</span>
+</pre></div>
+</div>
+</section>
+<section id="intern">
+<h3>intern()<a class="headerlink" href="#intern" title="Link to this heading">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 only:</span>
+<span class="n">intern</span><span class="p">(</span><span class="s1">&#39;mystring&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 3 only:</span>
+<span class="kn">from</span> <span class="nn">sys</span> <span class="kn">import</span> <span class="n">intern</span>
+<span class="n">intern</span><span class="p">(</span><span class="s1">&#39;mystring&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 and 3: alternative 1</span>
+<span class="kn">from</span> <span class="nn">past.builtins</span> <span class="kn">import</span> <span class="n">intern</span>
+<span class="n">intern</span><span class="p">(</span><span class="s1">&#39;mystring&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 and 3: alternative 2</span>
+<span class="kn">from</span> <span class="nn">six.moves</span> <span class="kn">import</span> <span class="n">intern</span>
+<span class="n">intern</span><span class="p">(</span><span class="s1">&#39;mystring&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 and 3: alternative 3</span>
+<span class="kn">from</span> <span class="nn">future.standard_library</span> <span class="kn">import</span> <span class="n">install_aliases</span>
+<span class="n">install_aliases</span><span class="p">()</span>
+<span class="kn">from</span> <span class="nn">sys</span> <span class="kn">import</span> <span class="n">intern</span>
+<span class="n">intern</span><span class="p">(</span><span class="s1">&#39;mystring&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 and 3: alternative 2</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="kn">from</span> <span class="nn">sys</span> <span class="kn">import</span> <span class="n">intern</span>
+<span class="k">except</span> <span class="ne">ImportError</span><span class="p">:</span>
+    <span class="k">pass</span>
+<span class="n">intern</span><span class="p">(</span><span class="s1">&#39;mystring&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="apply">
+<h3>apply()<a class="headerlink" href="#apply" title="Link to this heading">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">args</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">)</span>
+<span class="n">kwargs</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;kwarg1&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">}</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 only:</span>
+<span class="n">apply</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">args</span><span class="p">,</span> <span class="n">kwargs</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 and 3: alternative 1</span>
+<span class="n">f</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 and 3: alternative 2</span>
+<span class="kn">from</span> <span class="nn">past.builtins</span> <span class="kn">import</span> <span class="n">apply</span>
+<span class="n">apply</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">args</span><span class="p">,</span> <span class="n">kwargs</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="chr">
+<h3>chr()<a class="headerlink" href="#chr" title="Link to this heading">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 only:</span>
+<span class="k">assert</span> <span class="nb">chr</span><span class="p">(</span><span class="mi">64</span><span class="p">)</span> <span class="o">==</span> <span class="sa">b</span><span class="s1">&#39;@&#39;</span>
+<span class="k">assert</span> <span class="nb">chr</span><span class="p">(</span><span class="mi">200</span><span class="p">)</span> <span class="o">==</span> <span class="sa">b</span><span class="s1">&#39;</span><span class="se">\xc8</span><span class="s1">&#39;</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 3 only: option 1</span>
+<span class="k">assert</span> <span class="nb">chr</span><span class="p">(</span><span class="mi">64</span><span class="p">)</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s1">&#39;latin-1&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="sa">b</span><span class="s1">&#39;@&#39;</span>
+<span class="k">assert</span> <span class="nb">chr</span><span class="p">(</span><span class="mh">0xc8</span><span class="p">)</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s1">&#39;latin-1&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="sa">b</span><span class="s1">&#39;</span><span class="se">\xc8</span><span class="s1">&#39;</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 and 3: option 1</span>
+<span class="kn">from</span> <span class="nn">builtins</span> <span class="kn">import</span> <span class="nb">chr</span>
+
+<span class="k">assert</span> <span class="nb">chr</span><span class="p">(</span><span class="mi">64</span><span class="p">)</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s1">&#39;latin-1&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="sa">b</span><span class="s1">&#39;@&#39;</span>
+<span class="k">assert</span> <span class="nb">chr</span><span class="p">(</span><span class="mh">0xc8</span><span class="p">)</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s1">&#39;latin-1&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="sa">b</span><span class="s1">&#39;</span><span class="se">\xc8</span><span class="s1">&#39;</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 3 only: option 2</span>
+<span class="k">assert</span> <span class="nb">bytes</span><span class="p">([</span><span class="mi">64</span><span class="p">])</span> <span class="o">==</span> <span class="sa">b</span><span class="s1">&#39;@&#39;</span>
+<span class="k">assert</span> <span class="nb">bytes</span><span class="p">([</span><span class="mh">0xc8</span><span class="p">])</span> <span class="o">==</span> <span class="sa">b</span><span class="s1">&#39;</span><span class="se">\xc8</span><span class="s1">&#39;</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 and 3: option 2</span>
+<span class="kn">from</span> <span class="nn">builtins</span> <span class="kn">import</span> <span class="nb">bytes</span>
+
+<span class="k">assert</span> <span class="nb">bytes</span><span class="p">([</span><span class="mi">64</span><span class="p">])</span> <span class="o">==</span> <span class="sa">b</span><span class="s1">&#39;@&#39;</span>
+<span class="k">assert</span> <span class="nb">bytes</span><span class="p">([</span><span class="mh">0xc8</span><span class="p">])</span> <span class="o">==</span> <span class="sa">b</span><span class="s1">&#39;</span><span class="se">\xc8</span><span class="s1">&#39;</span>
+</pre></div>
+</div>
+</section>
+<section id="cmp">
+<h3>cmp()<a class="headerlink" href="#cmp" title="Link to this heading">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 only:</span>
+<span class="k">assert</span> <span class="n">cmp</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">cmp</span><span class="p">(</span><span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;a&#39;</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">cmp</span><span class="p">(</span><span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 and 3: alternative 1</span>
+<span class="kn">from</span> <span class="nn">past.builtins</span> <span class="kn">import</span> <span class="n">cmp</span>
+<span class="k">assert</span> <span class="n">cmp</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">cmp</span><span class="p">(</span><span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;a&#39;</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">cmp</span><span class="p">(</span><span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 and 3: alternative 2</span>
+<span class="n">cmp</span> <span class="o">=</span> <span class="k">lambda</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span> <span class="p">(</span><span class="n">x</span> <span class="o">&gt;</span> <span class="n">y</span><span class="p">)</span> <span class="o">-</span> <span class="p">(</span><span class="n">x</span> <span class="o">&lt;</span> <span class="n">y</span><span class="p">)</span>
+<span class="k">assert</span> <span class="n">cmp</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">cmp</span><span class="p">(</span><span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;a&#39;</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">cmp</span><span class="p">(</span><span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span>
+</pre></div>
+</div>
+</section>
+<section id="reload">
+<h3>reload()<a class="headerlink" href="#reload" title="Link to this heading">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 only:</span>
+<span class="n">reload</span><span class="p">(</span><span class="n">mymodule</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 and 3</span>
+<span class="kn">from</span> <span class="nn">imp</span> <span class="kn">import</span> <span class="n">reload</span>
+<span class="n">reload</span><span class="p">(</span><span class="n">mymodule</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="standard-library">
+<h2>Standard library<a class="headerlink" href="#standard-library" title="Link to this heading">¶</a></h2>
+<section id="dbm-modules">
+<h3>dbm modules<a class="headerlink" href="#dbm-modules" title="Link to this heading">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 only</span>
+<span class="kn">import</span> <span class="nn">anydbm</span>
+<span class="kn">import</span> <span class="nn">whichdb</span>
+<span class="kn">import</span> <span class="nn">dbm</span>
+<span class="kn">import</span> <span class="nn">dumbdbm</span>
+<span class="kn">import</span> <span class="nn">gdbm</span>
+
+<span class="c1"># Python 2 and 3: alternative 1</span>
+<span class="kn">from</span> <span class="nn">future</span> <span class="kn">import</span> <span class="n">standard_library</span>
+<span class="n">standard_library</span><span class="o">.</span><span class="n">install_aliases</span><span class="p">()</span>
+
+<span class="kn">import</span> <span class="nn">dbm</span>
+<span class="kn">import</span> <span class="nn">dbm.ndbm</span>
+<span class="kn">import</span> <span class="nn">dbm.dumb</span>
+<span class="kn">import</span> <span class="nn">dbm.gnu</span>
+
+<span class="c1"># Python 2 and 3: alternative 2</span>
+<span class="kn">from</span> <span class="nn">future.moves</span> <span class="kn">import</span> <span class="n">dbm</span>
+<span class="kn">from</span> <span class="nn">future.moves.dbm</span> <span class="kn">import</span> <span class="n">dumb</span>
+<span class="kn">from</span> <span class="nn">future.moves.dbm</span> <span class="kn">import</span> <span class="n">ndbm</span>
+<span class="kn">from</span> <span class="nn">future.moves.dbm</span> <span class="kn">import</span> <span class="n">gnu</span>
+
+<span class="c1"># Python 2 and 3: alternative 3</span>
+<span class="kn">from</span> <span class="nn">six.moves</span> <span class="kn">import</span> <span class="n">dbm_gnu</span>
+<span class="c1"># (others not supported)</span>
+</pre></div>
+</div>
+</section>
+<section id="commands-subprocess-modules">
+<h3>commands / subprocess modules<a class="headerlink" href="#commands-subprocess-modules" title="Link to this heading">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 only</span>
+<span class="kn">from</span> <span class="nn">commands</span> <span class="kn">import</span> <span class="n">getoutput</span><span class="p">,</span> <span class="n">getstatusoutput</span>
+
+<span class="c1"># Python 2 and 3</span>
+<span class="kn">from</span> <span class="nn">future</span> <span class="kn">import</span> <span class="n">standard_library</span>
+<span class="n">standard_library</span><span class="o">.</span><span class="n">install_aliases</span><span class="p">()</span>
+
+<span class="kn">from</span> <span class="nn">subprocess</span> <span class="kn">import</span> <span class="n">getoutput</span><span class="p">,</span> <span class="n">getstatusoutput</span>
+</pre></div>
+</div>
+</section>
+<section id="stringio-module">
+<h3>StringIO module<a class="headerlink" href="#stringio-module" title="Link to this heading">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 only</span>
+<span class="kn">from</span> <span class="nn">StringIO</span> <span class="kn">import</span> <span class="n">StringIO</span>
+<span class="kn">from</span> <span class="nn">cStringIO</span> <span class="kn">import</span> <span class="n">StringIO</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 and 3</span>
+<span class="kn">from</span> <span class="nn">io</span> <span class="kn">import</span> <span class="n">BytesIO</span>
+<span class="c1"># and refactor StringIO() calls to BytesIO() if passing byte-strings</span>
+</pre></div>
+</div>
+</section>
+<section id="http-module">
+<h3>http module<a class="headerlink" href="#http-module" title="Link to this heading">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 only:</span>
+<span class="kn">import</span> <span class="nn">httplib</span>
+<span class="kn">import</span> <span class="nn">Cookie</span>
+<span class="kn">import</span> <span class="nn">cookielib</span>
+<span class="kn">import</span> <span class="nn">BaseHTTPServer</span>
+<span class="kn">import</span> <span class="nn">SimpleHTTPServer</span>
+<span class="kn">import</span> <span class="nn">CGIHttpServer</span>
+
+<span class="c1"># Python 2 and 3 (after ``pip install future``):</span>
+<span class="kn">import</span> <span class="nn">http.client</span>
+<span class="kn">import</span> <span class="nn">http.cookies</span>
+<span class="kn">import</span> <span class="nn">http.cookiejar</span>
+<span class="kn">import</span> <span class="nn">http.server</span>
+</pre></div>
+</div>
+</section>
+<section id="xmlrpc-module">
+<h3>xmlrpc module<a class="headerlink" href="#xmlrpc-module" title="Link to this heading">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 only:</span>
+<span class="kn">import</span> <span class="nn">DocXMLRPCServer</span>
+<span class="kn">import</span> <span class="nn">SimpleXMLRPCServer</span>
+
+<span class="c1"># Python 2 and 3 (after ``pip install future``):</span>
+<span class="kn">import</span> <span class="nn">xmlrpc.server</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 only:</span>
+<span class="kn">import</span> <span class="nn">xmlrpclib</span>
+
+<span class="c1"># Python 2 and 3 (after ``pip install future``):</span>
+<span class="kn">import</span> <span class="nn">xmlrpc.client</span>
+</pre></div>
+</div>
+</section>
+<section id="html-escaping-and-entities">
+<h3>html escaping and entities<a class="headerlink" href="#html-escaping-and-entities" title="Link to this heading">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 and 3:</span>
+<span class="kn">from</span> <span class="nn">cgi</span> <span class="kn">import</span> <span class="n">escape</span>
+
+<span class="c1"># Safer (Python 2 and 3, after ``pip install future``):</span>
+<span class="kn">from</span> <span class="nn">html</span> <span class="kn">import</span> <span class="n">escape</span>
+
+<span class="c1"># Python 2 only:</span>
+<span class="kn">from</span> <span class="nn">htmlentitydefs</span> <span class="kn">import</span> <span class="n">codepoint2name</span><span class="p">,</span> <span class="n">entitydefs</span><span class="p">,</span> <span class="n">name2codepoint</span>
+
+<span class="c1"># Python 2 and 3 (after ``pip install future``):</span>
+<span class="kn">from</span> <span class="nn">html.entities</span> <span class="kn">import</span> <span class="n">codepoint2name</span><span class="p">,</span> <span class="n">entitydefs</span><span class="p">,</span> <span class="n">name2codepoint</span>
+</pre></div>
+</div>
+</section>
+<section id="html-parsing">
+<h3>html parsing<a class="headerlink" href="#html-parsing" title="Link to this heading">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 only:</span>
+<span class="kn">from</span> <span class="nn">HTMLParser</span> <span class="kn">import</span> <span class="n">HTMLParser</span>
+
+<span class="c1"># Python 2 and 3 (after ``pip install future``)</span>
+<span class="kn">from</span> <span class="nn">html.parser</span> <span class="kn">import</span> <span class="n">HTMLParser</span>
+
+<span class="c1"># Python 2 and 3 (alternative 2):</span>
+<span class="kn">from</span> <span class="nn">future.moves.html.parser</span> <span class="kn">import</span> <span class="n">HTMLParser</span>
+</pre></div>
+</div>
+</section>
+<section id="urllib-module">
+<h3>urllib module<a class="headerlink" href="#urllib-module" title="Link to this heading">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">urllib</span></code> is the hardest module to use from Python 2/3 compatible code.
+You might want to switch to Requests (<a class="reference external" href="http://python-requests.org">http://python-requests.org</a>) instead.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 only:</span>
+<span class="kn">from</span> <span class="nn">urlparse</span> <span class="kn">import</span> <span class="n">urlparse</span>
+<span class="kn">from</span> <span class="nn">urllib</span> <span class="kn">import</span> <span class="n">urlencode</span>
+<span class="kn">from</span> <span class="nn">urllib2</span> <span class="kn">import</span> <span class="n">urlopen</span><span class="p">,</span> <span class="n">Request</span><span class="p">,</span> <span class="n">HTTPError</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 3 only:</span>
+<span class="kn">from</span> <span class="nn">urllib.parse</span> <span class="kn">import</span> <span class="n">urlparse</span><span class="p">,</span> <span class="n">urlencode</span>
+<span class="kn">from</span> <span class="nn">urllib.request</span> <span class="kn">import</span> <span class="n">urlopen</span><span class="p">,</span> <span class="n">Request</span>
+<span class="kn">from</span> <span class="nn">urllib.error</span> <span class="kn">import</span> <span class="n">HTTPError</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 and 3: easiest option</span>
+<span class="kn">from</span> <span class="nn">future.standard_library</span> <span class="kn">import</span> <span class="n">install_aliases</span>
+<span class="n">install_aliases</span><span class="p">()</span>
+
+<span class="kn">from</span> <span class="nn">urllib.parse</span> <span class="kn">import</span> <span class="n">urlparse</span><span class="p">,</span> <span class="n">urlencode</span>
+<span class="kn">from</span> <span class="nn">urllib.request</span> <span class="kn">import</span> <span class="n">urlopen</span><span class="p">,</span> <span class="n">Request</span>
+<span class="kn">from</span> <span class="nn">urllib.error</span> <span class="kn">import</span> <span class="n">HTTPError</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 and 3: alternative 2</span>
+<span class="kn">from</span> <span class="nn">future.standard_library</span> <span class="kn">import</span> <span class="n">hooks</span>
+
+<span class="k">with</span> <span class="n">hooks</span><span class="p">():</span>
+    <span class="kn">from</span> <span class="nn">urllib.parse</span> <span class="kn">import</span> <span class="n">urlparse</span><span class="p">,</span> <span class="n">urlencode</span>
+    <span class="kn">from</span> <span class="nn">urllib.request</span> <span class="kn">import</span> <span class="n">urlopen</span><span class="p">,</span> <span class="n">Request</span>
+    <span class="kn">from</span> <span class="nn">urllib.error</span> <span class="kn">import</span> <span class="n">HTTPError</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 and 3: alternative 3</span>
+<span class="kn">from</span> <span class="nn">future.moves.urllib.parse</span> <span class="kn">import</span> <span class="n">urlparse</span><span class="p">,</span> <span class="n">urlencode</span>
+<span class="kn">from</span> <span class="nn">future.moves.urllib.request</span> <span class="kn">import</span> <span class="n">urlopen</span><span class="p">,</span> <span class="n">Request</span>
+<span class="kn">from</span> <span class="nn">future.moves.urllib.error</span> <span class="kn">import</span> <span class="n">HTTPError</span>
+<span class="c1"># or</span>
+<span class="kn">from</span> <span class="nn">six.moves.urllib.parse</span> <span class="kn">import</span> <span class="n">urlparse</span><span class="p">,</span> <span class="n">urlencode</span>
+<span class="kn">from</span> <span class="nn">six.moves.urllib.request</span> <span class="kn">import</span> <span class="n">urlopen</span>
+<span class="kn">from</span> <span class="nn">six.moves.urllib.error</span> <span class="kn">import</span> <span class="n">HTTPError</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 and 3: alternative 4</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="kn">from</span> <span class="nn">urllib.parse</span> <span class="kn">import</span> <span class="n">urlparse</span><span class="p">,</span> <span class="n">urlencode</span>
+    <span class="kn">from</span> <span class="nn">urllib.request</span> <span class="kn">import</span> <span class="n">urlopen</span><span class="p">,</span> <span class="n">Request</span>
+    <span class="kn">from</span> <span class="nn">urllib.error</span> <span class="kn">import</span> <span class="n">HTTPError</span>
+<span class="k">except</span> <span class="ne">ImportError</span><span class="p">:</span>
+    <span class="kn">from</span> <span class="nn">urlparse</span> <span class="kn">import</span> <span class="n">urlparse</span>
+    <span class="kn">from</span> <span class="nn">urllib</span> <span class="kn">import</span> <span class="n">urlencode</span>
+    <span class="kn">from</span> <span class="nn">urllib2</span> <span class="kn">import</span> <span class="n">urlopen</span><span class="p">,</span> <span class="n">Request</span><span class="p">,</span> <span class="n">HTTPError</span>
+</pre></div>
+</div>
+</section>
+<section id="tkinter">
+<h3>Tkinter<a class="headerlink" href="#tkinter" title="Link to this heading">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 only:</span>
+<span class="kn">import</span> <span class="nn">Tkinter</span>
+<span class="kn">import</span> <span class="nn">Dialog</span>
+<span class="kn">import</span> <span class="nn">FileDialog</span>
+<span class="kn">import</span> <span class="nn">ScrolledText</span>
+<span class="kn">import</span> <span class="nn">SimpleDialog</span>
+<span class="kn">import</span> <span class="nn">Tix</span>
+<span class="kn">import</span> <span class="nn">Tkconstants</span>
+<span class="kn">import</span> <span class="nn">Tkdnd</span>
+<span class="kn">import</span> <span class="nn">tkColorChooser</span>
+<span class="kn">import</span> <span class="nn">tkCommonDialog</span>
+<span class="kn">import</span> <span class="nn">tkFileDialog</span>
+<span class="kn">import</span> <span class="nn">tkFont</span>
+<span class="kn">import</span> <span class="nn">tkMessageBox</span>
+<span class="kn">import</span> <span class="nn">tkSimpleDialog</span>
+<span class="kn">import</span> <span class="nn">ttk</span>
+
+<span class="c1"># Python 2 and 3 (after ``pip install future``):</span>
+<span class="kn">import</span> <span class="nn">tkinter</span>
+<span class="kn">import</span> <span class="nn">tkinter.dialog</span>
+<span class="kn">import</span> <span class="nn">tkinter.filedialog</span>
+<span class="kn">import</span> <span class="nn">tkinter.scrolledtext</span>
+<span class="kn">import</span> <span class="nn">tkinter.simpledialog</span>
+<span class="kn">import</span> <span class="nn">tkinter.tix</span>
+<span class="kn">import</span> <span class="nn">tkinter.constants</span>
+<span class="kn">import</span> <span class="nn">tkinter.dnd</span>
+<span class="kn">import</span> <span class="nn">tkinter.colorchooser</span>
+<span class="kn">import</span> <span class="nn">tkinter.commondialog</span>
+<span class="kn">import</span> <span class="nn">tkinter.filedialog</span>
+<span class="kn">import</span> <span class="nn">tkinter.font</span>
+<span class="kn">import</span> <span class="nn">tkinter.messagebox</span>
+<span class="kn">import</span> <span class="nn">tkinter.simpledialog</span>
+<span class="kn">import</span> <span class="nn">tkinter.ttk</span>
+</pre></div>
+</div>
+</section>
+<section id="socketserver">
+<h3>socketserver<a class="headerlink" href="#socketserver" title="Link to this heading">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 only:</span>
+<span class="kn">import</span> <span class="nn">SocketServer</span>
+
+<span class="c1"># Python 2 and 3 (after ``pip install future``):</span>
+<span class="kn">import</span> <span class="nn">socketserver</span>
+</pre></div>
+</div>
+</section>
+<section id="copy-reg-copyreg">
+<h3>copy_reg, copyreg<a class="headerlink" href="#copy-reg-copyreg" title="Link to this heading">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 only:</span>
+<span class="kn">import</span> <span class="nn">copy_reg</span>
+
+<span class="c1"># Python 2 and 3 (after ``pip install future``):</span>
+<span class="kn">import</span> <span class="nn">copyreg</span>
+</pre></div>
+</div>
+</section>
+<section id="configparser">
+<h3>configparser<a class="headerlink" href="#configparser" title="Link to this heading">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 only:</span>
+<span class="kn">from</span> <span class="nn">ConfigParser</span> <span class="kn">import</span> <span class="n">ConfigParser</span>
+
+<span class="c1"># Python 2 and 3 (after ``pip install configparser``):</span>
+<span class="kn">from</span> <span class="nn">configparser</span> <span class="kn">import</span> <span class="n">ConfigParser</span>
+</pre></div>
+</div>
+</section>
+<section id="queue">
+<h3>queue<a class="headerlink" href="#queue" title="Link to this heading">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 only:</span>
+<span class="kn">from</span> <span class="nn">Queue</span> <span class="kn">import</span> <span class="n">Queue</span><span class="p">,</span> <span class="n">heapq</span><span class="p">,</span> <span class="n">deque</span>
+
+<span class="c1"># Python 2 and 3 (after ``pip install future``):</span>
+<span class="kn">from</span> <span class="nn">queue</span> <span class="kn">import</span> <span class="n">Queue</span><span class="p">,</span> <span class="n">heapq</span><span class="p">,</span> <span class="n">deque</span>
+</pre></div>
+</div>
+</section>
+<section id="repr-reprlib">
+<h3>repr, reprlib<a class="headerlink" href="#repr-reprlib" title="Link to this heading">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 only:</span>
+<span class="kn">from</span> <span class="nn">repr</span> <span class="kn">import</span> <span class="n">aRepr</span><span class="p">,</span> <span class="nb">repr</span>
+
+<span class="c1"># Python 2 and 3 (after ``pip install future``):</span>
+<span class="kn">from</span> <span class="nn">reprlib</span> <span class="kn">import</span> <span class="n">aRepr</span><span class="p">,</span> <span class="nb">repr</span>
+</pre></div>
+</div>
+</section>
+<section id="userdict-userlist-userstring">
+<h3>UserDict, UserList, UserString<a class="headerlink" href="#userdict-userlist-userstring" title="Link to this heading">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 only:</span>
+<span class="kn">from</span> <span class="nn">UserDict</span> <span class="kn">import</span> <span class="n">UserDict</span>
+<span class="kn">from</span> <span class="nn">UserList</span> <span class="kn">import</span> <span class="n">UserList</span>
+<span class="kn">from</span> <span class="nn">UserString</span> <span class="kn">import</span> <span class="n">UserString</span>
+
+<span class="c1"># Python 3 only:</span>
+<span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">UserDict</span><span class="p">,</span> <span class="n">UserList</span><span class="p">,</span> <span class="n">UserString</span>
+
+<span class="c1"># Python 2 and 3: alternative 1</span>
+<span class="kn">from</span> <span class="nn">future.moves.collections</span> <span class="kn">import</span> <span class="n">UserDict</span><span class="p">,</span> <span class="n">UserList</span><span class="p">,</span> <span class="n">UserString</span>
+
+<span class="c1"># Python 2 and 3: alternative 2</span>
+<span class="kn">from</span> <span class="nn">six.moves</span> <span class="kn">import</span> <span class="n">UserDict</span><span class="p">,</span> <span class="n">UserList</span><span class="p">,</span> <span class="n">UserString</span>
+
+<span class="c1"># Python 2 and 3: alternative 3</span>
+<span class="kn">from</span> <span class="nn">future.standard_library</span> <span class="kn">import</span> <span class="n">install_aliases</span>
+<span class="n">install_aliases</span><span class="p">()</span>
+<span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">UserDict</span><span class="p">,</span> <span class="n">UserList</span><span class="p">,</span> <span class="n">UserString</span>
+</pre></div>
+</div>
+</section>
+<section id="itertools-filterfalse-zip-longest">
+<h3>itertools: filterfalse, zip_longest<a class="headerlink" href="#itertools-filterfalse-zip-longest" title="Link to this heading">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python 2 only:</span>
+<span class="kn">from</span> <span class="nn">itertools</span> <span class="kn">import</span> <span class="n">ifilterfalse</span><span class="p">,</span> <span class="n">izip_longest</span>
+
+<span class="c1"># Python 3 only:</span>
+<span class="kn">from</span> <span class="nn">itertools</span> <span class="kn">import</span> <span class="n">filterfalse</span><span class="p">,</span> <span class="n">zip_longest</span>
+
+<span class="c1"># Python 2 and 3: alternative 1</span>
+<span class="kn">from</span> <span class="nn">future.moves.itertools</span> <span class="kn">import</span> <span class="n">filterfalse</span><span class="p">,</span> <span class="n">zip_longest</span>
+
+<span class="c1"># Python 2 and 3: alternative 2</span>
+<span class="kn">from</span> <span class="nn">six.moves</span> <span class="kn">import</span> <span class="n">filterfalse</span><span class="p">,</span> <span class="n">zip_longest</span>
+
+<span class="c1"># Python 2 and 3: alternative 3</span>
+<span class="kn">from</span> <span class="nn">future.standard_library</span> <span class="kn">import</span> <span class="n">install_aliases</span>
+<span class="n">install_aliases</span><span class="p">()</span>
+<span class="kn">from</span> <span class="nn">itertools</span> <span class="kn">import</span> <span class="n">filterfalse</span><span class="p">,</span> <span class="n">zip_longest</span>
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+  <span id="sidebar-top"></span>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  
+    
+            <p class="logo"><a href="index.html">
+              <img class="logo" src="_static/python-future-logo-textless-transparent.png" alt="Logo"/>
+            </a></p>
+  
+<!--<h3>Python-Future</h3>
+<p>-->
+  <h4>Easy, clean, reliable Python 2/3 compatibility</h4>
+  <a href="https://python-future.org/#contents">Table of Contents</a>
+<!--
+</p>
+<h3>Other Formats</h3>
+<p>
+  You can download the documentation in other formats as well:
+</p>
+<ul>
+  <li><a href="http://jinja.pocoo.org/docs/jinja-docs.pdf">as PDF</a>
+  <li><a href="http://jinja.pocoo.org/docs/jinja-docs.zip">as zipped HTML</a>
+</ul>
+-->
+<!--<h3>Useful Links</h3>
+<ul>
+  <li><a href="https://pypi.org/project/future/">on PyPI</a></li>
+  <li><a href="https://github.com/PythonCharmers/python-future">on GitHub</a></li>
+</ul>
+--><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="whatsnew.html">What’s New</a></li>
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview: Easy, clean, reliable Python 2/3 compatibility</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quick-start guide</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Cheat Sheet: Writing Python 2-3 compatible code</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#setup">Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#essential-syntax-differences">Essential syntax differences</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#strings-and-bytes">Strings and bytes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#imports-relative-to-a-package">Imports relative to a package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#dictionaries">Dictionaries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#custom-class-behaviour">Custom class behaviour</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#lists-versus-iterators">Lists versus iterators</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#other-builtins">Other builtins</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#standard-library">Standard library</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="imports.html">Imports</a></li>
+<li class="toctree-l1"><a class="reference internal" href="what_else.html">What else you need to know</a></li>
+<li class="toctree-l1"><a class="reference internal" href="automatic_conversion.html">Automatic conversion to Py2/3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">Frequently Asked Questions (FAQ)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stdlib_incompatibilities.html">Standard library incompatibilities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="older_interfaces.html">Older interfaces</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changes in previous versions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="credits.html">Licensing and credits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference.html">API Reference (in progress)</a></li>
+</ul>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+  
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2013-2019, Python Charmers Pty Ltd, Australia.
+    </div>
+  <script src="_static/version_warning_offset.js"></script>
+
+<div class="footer">
+<script type="text/javascript">
+  (function() {
+    var ga = document.createElement('script');
+    ga.src = ('https:' == document.location.protocol ?
+              'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    ga.setAttribute('async', 'true');
+    document.documentElement.firstChild.appendChild(ga);
+  })();
+</script>
+</div>
+
+  </body>
+</html>

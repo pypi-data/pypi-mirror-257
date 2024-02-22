@@ -1,0 +1,1210 @@
+
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>API Reference (in progress) &#8212; Python-Future  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/jinja.css?v=85659ec6" />
+    <link rel="stylesheet" href="_static/my-styles.css" type="text/css" />
+    <script src="_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="icon" href="_static/python-future-icon-32.ico"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Licensing and credits" href="credits.html" />
+ 
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-19344199-2']);
+  _gaq.push(['_trackPageview']);
+</script>
+
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="credits.html" title="Licensing and credits"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Python-Future  documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">API Reference (in progress)</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="api-reference-in-progress">
+<h1>API Reference (in progress)<a class="headerlink" href="#api-reference-in-progress" title="Link to this heading">¶</a></h1>
+<p><strong>NOTE: This page is still a work in progress… We need to go through our
+docstrings and make them sphinx-compliant, and figure out how to improve
+formatting with the sphinx-bootstrap-theme plugin. Pull requests would be
+very welcome.</strong></p>
+<nav class="contents local" id="contents">
+<ul class="simple">
+<li><p><a class="reference internal" href="#module-future.builtins" id="id7">future.builtins Interface</a></p></li>
+<li><p><a class="reference internal" href="#module-future.types" id="id8">Backported types from Python 3</a></p>
+<ul>
+<li><p><a class="reference internal" href="#for-more-information" id="id9">For more information:</a></p></li>
+<li><p><a class="reference internal" href="#range" id="id10">range()</a></p></li>
+<li><p><a class="reference internal" href="#super" id="id11">super()</a></p></li>
+<li><p><a class="reference internal" href="#round" id="id12">round()</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#module-future.standard_library" id="id13">future.standard_library Interface</a></p>
+<ul>
+<li><p><a class="reference internal" href="#limitations" id="id14">Limitations</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#module-future.utils" id="id15">future.utils Interface</a></p></li>
+<li><p><a class="reference internal" href="#module-past.builtins" id="id16">past.builtins Interface</a></p></li>
+<li><p><a class="reference internal" href="#module-past.types" id="id17">Forward-ported types from Python 2</a></p></li>
+</ul>
+</nav>
+<section id="module-future.builtins">
+<span id="future-builtins-interface"></span><h2><a class="toc-backref" href="#id7" role="doc-backlink">future.builtins Interface</a><a class="headerlink" href="#module-future.builtins" title="Link to this heading">¶</a></h2>
+<p>A module that brings in equivalents of the new and modified Python 3
+builtins into Py2. Has no effect on Py3.</p>
+<p>See the docs <a class="reference external" href="http://python-future.org/what-else.html">here</a>
+(<code class="docutils literal notranslate"><span class="pre">docs/what-else.rst</span></code>) for more information.</p>
+</section>
+<section id="module-future.types">
+<span id="backported-types-from-python-3"></span><h2><a class="toc-backref" href="#id8" role="doc-backlink">Backported types from Python 3</a><a class="headerlink" href="#module-future.types" title="Link to this heading">¶</a></h2>
+<p>This module contains backports the data types that were significantly changed
+in the transition from Python 2 to Python 3.</p>
+<ul class="simple">
+<li><p>an implementation of Python 3’s bytes object (pure Python subclass of
+Python 2’s builtin 8-bit str type)</p></li>
+<li><p>an implementation of Python 3’s str object (pure Python subclass of
+Python 2’s builtin unicode type)</p></li>
+<li><p>a backport of the range iterator from Py3 with slicing support</p></li>
+</ul>
+<p>It is used as follows:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">division</span><span class="p">,</span> <span class="n">absolute_import</span><span class="p">,</span> <span class="n">print_function</span>
+<span class="kn">from</span> <span class="nn">builtins</span> <span class="kn">import</span> <span class="nb">bytes</span><span class="p">,</span> <span class="nb">dict</span><span class="p">,</span> <span class="nb">int</span><span class="p">,</span> <span class="nb">range</span><span class="p">,</span> <span class="nb">str</span>
+</pre></div>
+</div>
+<p>to bring in the new semantics for these functions from Python 3. And
+then, for example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">b</span> <span class="o">=</span> <span class="nb">bytes</span><span class="p">(</span><span class="sa">b</span><span class="s1">&#39;ABCD&#39;</span><span class="p">)</span>
+<span class="k">assert</span> <span class="nb">list</span><span class="p">(</span><span class="n">b</span><span class="p">)</span> <span class="o">==</span> <span class="p">[</span><span class="mi">65</span><span class="p">,</span> <span class="mi">66</span><span class="p">,</span> <span class="mi">67</span><span class="p">,</span> <span class="mi">68</span><span class="p">]</span>
+<span class="k">assert</span> <span class="nb">repr</span><span class="p">(</span><span class="n">b</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;b&#39;ABCD&#39;&quot;</span>
+<span class="k">assert</span> <span class="p">[</span><span class="mi">65</span><span class="p">,</span> <span class="mi">66</span><span class="p">]</span> <span class="ow">in</span> <span class="n">b</span>
+
+<span class="c1"># These raise TypeErrors:</span>
+<span class="c1"># b + u&#39;EFGH&#39;</span>
+<span class="c1"># b.split(u&#39;B&#39;)</span>
+<span class="c1"># bytes(b&#39;,&#39;).join([u&#39;Fred&#39;, u&#39;Bill&#39;])</span>
+
+
+<span class="n">s</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="sa">u</span><span class="s1">&#39;ABCD&#39;</span><span class="p">)</span>
+
+<span class="c1"># These raise TypeErrors:</span>
+<span class="c1"># s.join([b&#39;Fred&#39;, b&#39;Bill&#39;])</span>
+<span class="c1"># s.startswith(b&#39;A&#39;)</span>
+<span class="c1"># b&#39;B&#39; in s</span>
+<span class="c1"># s.find(b&#39;A&#39;)</span>
+<span class="c1"># s.replace(u&#39;A&#39;, b&#39;a&#39;)</span>
+
+<span class="c1"># This raises an AttributeError:</span>
+<span class="c1"># s.decode(&#39;utf-8&#39;)</span>
+
+<span class="k">assert</span> <span class="nb">repr</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;ABCD&#39;</span>      <span class="c1"># consistent repr with Py3 (no u prefix)</span>
+
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="o">**</span><span class="mi">11</span><span class="p">)[:</span><span class="mi">10</span><span class="p">]:</span>
+    <span class="k">pass</span>
+</pre></div>
+</div>
+<p>and:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">VerboseList</span><span class="p">(</span><span class="nb">list</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">append</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">item</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Adding an item&#39;</span><span class="p">)</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>        <span class="c1"># new simpler super() function</span>
+</pre></div>
+</div>
+<section id="for-more-information">
+<h3><a class="toc-backref" href="#id9" role="doc-backlink">For more information:</a><a class="headerlink" href="#for-more-information" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>future.types.newbytes</p></li>
+<li><p>future.types.newdict</p></li>
+<li><p>future.types.newint</p></li>
+<li><p>future.types.newobject</p></li>
+<li><p>future.types.newrange</p></li>
+<li><p>future.types.newstr</p></li>
+</ul>
+<section id="notes">
+<h4>Notes<a class="headerlink" href="#notes" title="Link to this heading">¶</a></h4>
+</section>
+</section>
+<section id="range">
+<h3><a class="toc-backref" href="#id10" role="doc-backlink">range()</a><a class="headerlink" href="#range" title="Link to this heading">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">range</span></code> is a custom class that backports the slicing behaviour from
+Python 3 (based on the <code class="docutils literal notranslate"><span class="pre">xrange</span></code> module by Dan Crosta). See the
+<code class="docutils literal notranslate"><span class="pre">newrange</span></code> module docstring for more details.</p>
+</section>
+<section id="super">
+<h3><a class="toc-backref" href="#id11" role="doc-backlink">super()</a><a class="headerlink" href="#super" title="Link to this heading">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">super()</span></code> is based on Ryan Kelly’s <code class="docutils literal notranslate"><span class="pre">magicsuper</span></code> module. See the
+<code class="docutils literal notranslate"><span class="pre">newsuper</span></code> module docstring for more details.</p>
+</section>
+<section id="round">
+<h3><a class="toc-backref" href="#id12" role="doc-backlink">round()</a><a class="headerlink" href="#round" title="Link to this heading">¶</a></h3>
+<p>Python 3 modifies the behaviour of <code class="docutils literal notranslate"><span class="pre">round()</span></code> to use “Banker’s Rounding”.
+See <a class="reference external" href="http://stackoverflow.com/a/10825998">http://stackoverflow.com/a/10825998</a>. See the <code class="docutils literal notranslate"><span class="pre">newround</span></code> module
+docstring for more details.</p>
+</section>
+</section>
+<section id="module-future.standard_library">
+<span id="future-standard-library-interface"></span><h2><a class="toc-backref" href="#id13" role="doc-backlink">future.standard_library Interface</a><a class="headerlink" href="#module-future.standard_library" title="Link to this heading">¶</a></h2>
+<p>Python 3 reorganized the standard library (PEP 3108). This module exposes
+several standard library modules to Python 2 under their new Python 3
+names.</p>
+<p>It is designed to be used as follows:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">future</span> <span class="kn">import</span> <span class="n">standard_library</span>
+<span class="n">standard_library</span><span class="o">.</span><span class="n">install_aliases</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>And then these normal Py3 imports work on both Py3 and Py2:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">builtins</span>
+<span class="kn">import</span> <span class="nn">copyreg</span>
+<span class="kn">import</span> <span class="nn">queue</span>
+<span class="kn">import</span> <span class="nn">reprlib</span>
+<span class="kn">import</span> <span class="nn">socketserver</span>
+<span class="kn">import</span> <span class="nn">winreg</span>    <span class="c1"># on Windows only</span>
+<span class="kn">import</span> <span class="nn">test.support</span>
+<span class="kn">import</span> <span class="nn">html</span><span class="o">,</span> <span class="nn">html.parser</span><span class="o">,</span> <span class="nn">html.entities</span>
+<span class="kn">import</span> <span class="nn">http</span><span class="o">,</span> <span class="nn">http.client</span><span class="o">,</span> <span class="nn">http.server</span>
+<span class="kn">import</span> <span class="nn">http.cookies</span><span class="o">,</span> <span class="nn">http.cookiejar</span>
+<span class="kn">import</span> <span class="nn">urllib.parse</span><span class="o">,</span> <span class="nn">urllib.request</span><span class="o">,</span> <span class="nn">urllib.response</span><span class="o">,</span> <span class="nn">urllib.error</span><span class="o">,</span> <span class="nn">urllib.robotparser</span>
+<span class="kn">import</span> <span class="nn">xmlrpc.client</span><span class="o">,</span> <span class="nn">xmlrpc.server</span>
+
+<span class="kn">import</span> <span class="nn">_thread</span>
+<span class="kn">import</span> <span class="nn">_dummy_thread</span>
+<span class="kn">import</span> <span class="nn">_markupbase</span>
+
+<span class="kn">from</span> <span class="nn">itertools</span> <span class="kn">import</span> <span class="n">filterfalse</span><span class="p">,</span> <span class="n">zip_longest</span>
+<span class="kn">from</span> <span class="nn">sys</span> <span class="kn">import</span> <span class="n">intern</span>
+<span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">UserDict</span><span class="p">,</span> <span class="n">UserList</span><span class="p">,</span> <span class="n">UserString</span>
+<span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">OrderedDict</span><span class="p">,</span> <span class="n">Counter</span><span class="p">,</span> <span class="n">ChainMap</span>     <span class="c1"># even on Py2.6</span>
+<span class="kn">from</span> <span class="nn">subprocess</span> <span class="kn">import</span> <span class="n">getoutput</span><span class="p">,</span> <span class="n">getstatusoutput</span>
+<span class="kn">from</span> <span class="nn">subprocess</span> <span class="kn">import</span> <span class="n">check_output</span>              <span class="c1"># even on Py2.6</span>
+</pre></div>
+</div>
+<p>(The renamed modules and functions are still available under their old
+names on Python 2.)</p>
+<p>This is a cleaner alternative to this idiom (see
+<a class="reference external" href="http://docs.pythonsprints.com/python3_porting/py-porting.html">http://docs.pythonsprints.com/python3_porting/py-porting.html</a>):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">try</span><span class="p">:</span>
+    <span class="kn">import</span> <span class="nn">queue</span>
+<span class="k">except</span> <span class="ne">ImportError</span><span class="p">:</span>
+    <span class="kn">import</span> <span class="nn">Queue</span> <span class="k">as</span> <span class="nn">queue</span>
+</pre></div>
+</div>
+<section id="limitations">
+<h3><a class="toc-backref" href="#id14" role="doc-backlink">Limitations</a><a class="headerlink" href="#limitations" title="Link to this heading">¶</a></h3>
+<p>We don’t currently support these modules, but would like to:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">dbm</span>
+<span class="kn">import</span> <span class="nn">dbm.dumb</span>
+<span class="kn">import</span> <span class="nn">dbm.gnu</span>
+<span class="kn">import</span> <span class="nn">collections.abc</span>  <span class="c1"># on Py33</span>
+<span class="kn">import</span> <span class="nn">pickle</span>     <span class="c1"># should (optionally) bring in cPickle on Python 2</span>
+</pre></div>
+</div>
+</section>
+<dl class="py class">
+<dt class="sig sig-object py" id="future.standard_library.RenameImport">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">future.standard_library.</span></span><span class="sig-name descname"><span class="pre">RenameImport</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">old_to_new</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/future/standard_library.html#RenameImport"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#future.standard_library.RenameImport" title="Link to this definition">¶</a></dt>
+<dd><p>A class for import hooks mapping Py3 module names etc. to the Py2 equivalents.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="future.standard_library.cache_py2_modules">
+<span class="sig-prename descclassname"><span class="pre">future.standard_library.</span></span><span class="sig-name descname"><span class="pre">cache_py2_modules</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/future/standard_library.html#cache_py2_modules"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#future.standard_library.cache_py2_modules" title="Link to this definition">¶</a></dt>
+<dd><p>Currently this function is unneeded, as we are not attempting to provide import hooks
+for modules with ambiguous names: email, urllib, pickle.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="future.standard_library.detect_hooks">
+<span class="sig-prename descclassname"><span class="pre">future.standard_library.</span></span><span class="sig-name descname"><span class="pre">detect_hooks</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/future/standard_library.html#detect_hooks"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#future.standard_library.detect_hooks" title="Link to this definition">¶</a></dt>
+<dd><p>Returns True if the import hooks are installed, False if not.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="future.standard_library.disable_hooks">
+<span class="sig-prename descclassname"><span class="pre">future.standard_library.</span></span><span class="sig-name descname"><span class="pre">disable_hooks</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/future/standard_library.html#disable_hooks"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#future.standard_library.disable_hooks" title="Link to this definition">¶</a></dt>
+<dd><p>Deprecated. Use remove_hooks() instead. This will be removed by
+<code class="docutils literal notranslate"><span class="pre">future</span></code> v1.0.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="future.standard_library.enable_hooks">
+<span class="sig-prename descclassname"><span class="pre">future.standard_library.</span></span><span class="sig-name descname"><span class="pre">enable_hooks</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/future/standard_library.html#enable_hooks"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#future.standard_library.enable_hooks" title="Link to this definition">¶</a></dt>
+<dd><p>Deprecated. Use install_hooks() instead. This will be removed by
+<code class="docutils literal notranslate"><span class="pre">future</span></code> v1.0.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="future.standard_library.exclude_local_folder_imports">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">future.standard_library.</span></span><span class="sig-name descname"><span class="pre">exclude_local_folder_imports</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/future/standard_library.html#exclude_local_folder_imports"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#future.standard_library.exclude_local_folder_imports" title="Link to this definition">¶</a></dt>
+<dd><p>A context-manager that prevents standard library modules like configparser
+from being imported from the local python-future source folder on Py3.</p>
+<p>(This was need prior to v0.16.0 because the presence of a configparser
+folder would otherwise have prevented setuptools from running on Py3. Maybe
+it’s not needed any more?)</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="future.standard_library.from_import">
+<span class="sig-prename descclassname"><span class="pre">future.standard_library.</span></span><span class="sig-name descname"><span class="pre">from_import</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">module_name</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">symbol_names</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/future/standard_library.html#from_import"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#future.standard_library.from_import" title="Link to this definition">¶</a></dt>
+<dd><dl>
+<dt>Example use:</dt><dd><div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">HTTPConnection</span> <span class="o">=</span> <span class="n">from_import</span><span class="p">(</span><span class="s1">&#39;http.client&#39;</span><span class="p">,</span> <span class="s1">&#39;HTTPConnection&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">HTTPServer</span> <span class="o">=</span> <span class="n">from_import</span><span class="p">(</span><span class="s1">&#39;http.server&#39;</span><span class="p">,</span> <span class="s1">&#39;HTTPServer&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">urlopen</span><span class="p">,</span> <span class="n">urlparse</span> <span class="o">=</span> <span class="n">from_import</span><span class="p">(</span><span class="s1">&#39;urllib.request&#39;</span><span class="p">,</span> <span class="s1">&#39;urlopen&#39;</span><span class="p">,</span> <span class="s1">&#39;urlparse&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+<p>Equivalent to this on Py3:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">module_name</span> <span class="kn">import</span> <span class="n">symbol_names</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">symbol_names</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="o">...</span>
+</pre></div>
+</div>
+<p>and this on Py2:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">future.moves.module_name</span> <span class="kn">import</span> <span class="n">symbol_names</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="o">...</span>
+</pre></div>
+</div>
+<p>or:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">future.backports.module_name</span> <span class="kn">import</span> <span class="n">symbol_names</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="o">...</span>
+</pre></div>
+</div>
+<p>except that it also handles dotted module names such as <code class="docutils literal notranslate"><span class="pre">http.client</span></code>.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="future.standard_library.hooks">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">future.standard_library.</span></span><span class="sig-name descname"><span class="pre">hooks</span></span><a class="reference internal" href="_modules/future/standard_library.html#hooks"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#future.standard_library.hooks" title="Link to this definition">¶</a></dt>
+<dd><p>Acts as a context manager. Saves the state of sys.modules and restores it
+after the ‘with’ block.</p>
+<p>Use like this:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">future</span> <span class="kn">import</span> <span class="n">standard_library</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="n">standard_library</span><span class="o">.</span><span class="n">hooks</span><span class="p">():</span>
+<span class="gp">... </span>    <span class="kn">import</span> <span class="nn">http.client</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">requests</span>
+</pre></div>
+</div>
+<p>For this to work, http.client will be scrubbed from sys.modules after the
+‘with’ block. That way the modules imported in the ‘with’ block will
+continue to be accessible in the current namespace but not from any
+imported modules (like requests).</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="future.standard_library.import_">
+<span class="sig-prename descclassname"><span class="pre">future.standard_library.</span></span><span class="sig-name descname"><span class="pre">import_</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">module_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">backport</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/future/standard_library.html#import_"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#future.standard_library.import_" title="Link to this definition">¶</a></dt>
+<dd><p>Pass a (potentially dotted) module name of a Python 3 standard library
+module. This function imports the module compatibly on Py2 and Py3 and
+returns the top-level module.</p>
+<dl>
+<dt>Example use:</dt><dd><div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">http</span> <span class="o">=</span> <span class="n">import_</span><span class="p">(</span><span class="s1">&#39;http.client&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">http</span> <span class="o">=</span> <span class="n">import_</span><span class="p">(</span><span class="s1">&#39;http.server&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">urllib</span> <span class="o">=</span> <span class="n">import_</span><span class="p">(</span><span class="s1">&#39;urllib.request&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd>
+<dt>Then:</dt><dd><div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">conn</span> <span class="o">=</span> <span class="n">http</span><span class="o">.</span><span class="n">client</span><span class="o">.</span><span class="n">HTTPConnection</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">response</span> <span class="o">=</span> <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="s1">&#39;http://mywebsite.com&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># etc.</span>
+</pre></div>
+</div>
+</dd>
+<dt>Use as follows:</dt><dd><div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">package_name</span> <span class="o">=</span> <span class="n">import_</span><span class="p">(</span><span class="n">module_name</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+<p>On Py3, equivalent to this:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">module_name</span>
+</pre></div>
+</div>
+<p>On Py2, equivalent to this if backport=False:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">future.moves</span> <span class="kn">import</span> <span class="n">module_name</span>
+</pre></div>
+</div>
+<p>or to this if backport=True:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">future.backports</span> <span class="kn">import</span> <span class="n">module_name</span>
+</pre></div>
+</div>
+<p>except that it also handles dotted module names such as <code class="docutils literal notranslate"><span class="pre">http.client</span></code>
+The effect then is like this:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">future.backports</span> <span class="kn">import</span> <span class="n">module</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">future.backports.module</span> <span class="kn">import</span> <span class="n">submodule</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">module</span><span class="o">.</span><span class="n">submodule</span> <span class="o">=</span> <span class="n">submodule</span>
+</pre></div>
+</div>
+<p>Note that this would be a SyntaxError in Python:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">future.backports</span> <span class="kn">import</span> <span class="n">http</span><span class="o">.</span><span class="n">client</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="future.standard_library.install_aliases">
+<span class="sig-prename descclassname"><span class="pre">future.standard_library.</span></span><span class="sig-name descname"><span class="pre">install_aliases</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/future/standard_library.html#install_aliases"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#future.standard_library.install_aliases" title="Link to this definition">¶</a></dt>
+<dd><p>Monkey-patches the standard library in Py2.6/7 to provide
+aliases for better Py3 compatibility.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="future.standard_library.install_hooks">
+<span class="sig-prename descclassname"><span class="pre">future.standard_library.</span></span><span class="sig-name descname"><span class="pre">install_hooks</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/future/standard_library.html#install_hooks"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#future.standard_library.install_hooks" title="Link to this definition">¶</a></dt>
+<dd><p>This function installs the future.standard_library import hook into
+sys.meta_path.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="future.standard_library.is_py2_stdlib_module">
+<span class="sig-prename descclassname"><span class="pre">future.standard_library.</span></span><span class="sig-name descname"><span class="pre">is_py2_stdlib_module</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">m</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/future/standard_library.html#is_py2_stdlib_module"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#future.standard_library.is_py2_stdlib_module" title="Link to this definition">¶</a></dt>
+<dd><p>Tries to infer whether the module m is from the Python 2 standard library.
+This may not be reliable on all systems.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="future.standard_library.remove_hooks">
+<span class="sig-prename descclassname"><span class="pre">future.standard_library.</span></span><span class="sig-name descname"><span class="pre">remove_hooks</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">scrub_sys_modules</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/future/standard_library.html#remove_hooks"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#future.standard_library.remove_hooks" title="Link to this definition">¶</a></dt>
+<dd><p>This function removes the import hook from sys.meta_path.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="future.standard_library.restore_sys_modules">
+<span class="sig-prename descclassname"><span class="pre">future.standard_library.</span></span><span class="sig-name descname"><span class="pre">restore_sys_modules</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">scrubbed</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/future/standard_library.html#restore_sys_modules"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#future.standard_library.restore_sys_modules" title="Link to this definition">¶</a></dt>
+<dd><p>Add any previously scrubbed modules back to the sys.modules cache,
+but only if it’s safe to do so.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="future.standard_library.scrub_future_sys_modules">
+<span class="sig-prename descclassname"><span class="pre">future.standard_library.</span></span><span class="sig-name descname"><span class="pre">scrub_future_sys_modules</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/future/standard_library.html#scrub_future_sys_modules"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#future.standard_library.scrub_future_sys_modules" title="Link to this definition">¶</a></dt>
+<dd><p>Deprecated.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="future.standard_library.scrub_py2_sys_modules">
+<span class="sig-prename descclassname"><span class="pre">future.standard_library.</span></span><span class="sig-name descname"><span class="pre">scrub_py2_sys_modules</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/future/standard_library.html#scrub_py2_sys_modules"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#future.standard_library.scrub_py2_sys_modules" title="Link to this definition">¶</a></dt>
+<dd><p>Removes any Python 2 standard library modules from <code class="docutils literal notranslate"><span class="pre">sys.modules</span></code> that
+would interfere with Py3-style imports using import hooks. Examples are
+modules with the same names (like urllib or email).</p>
+<p>(Note that currently import hooks are disabled for modules like these
+with ambiguous names anyway …)</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="future.standard_library.suspend_hooks">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">future.standard_library.</span></span><span class="sig-name descname"><span class="pre">suspend_hooks</span></span><a class="reference internal" href="_modules/future/standard_library.html#suspend_hooks"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#future.standard_library.suspend_hooks" title="Link to this definition">¶</a></dt>
+<dd><p>Acts as a context manager. Use like this:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">future</span> <span class="kn">import</span> <span class="n">standard_library</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">standard_library</span><span class="o">.</span><span class="n">install_hooks</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">http.client</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># ...</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="n">standard_library</span><span class="o">.</span><span class="n">suspend_hooks</span><span class="p">():</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="kn">import</span> <span class="nn">requests</span>     <span class="c1"># incompatible with ``future``&#39;s standard library hooks</span>
+</pre></div>
+</div>
+<p>If the hooks were disabled before the context, they are not installed when
+the context is left.</p>
+</dd></dl>
+
+</section>
+<section id="module-future.utils">
+<span id="future-utils-interface"></span><h2><a class="toc-backref" href="#id15" role="doc-backlink">future.utils Interface</a><a class="headerlink" href="#module-future.utils" title="Link to this heading">¶</a></h2>
+<p>A selection of cross-compatible functions for Python 2 and 3.</p>
+<p>This module exports useful functions for 2/3 compatible code:</p>
+<blockquote>
+<div><ul>
+<li><p>bind_method: binds functions to classes</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">native_str_to_bytes</span></code> and <code class="docutils literal notranslate"><span class="pre">bytes_to_native_str</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">native_str</span></code>: always equal to the native platform string object (because
+this may be shadowed by imports from future.builtins)</p></li>
+<li><p>lists: lrange(), lmap(), lzip(), lfilter()</p></li>
+<li><dl>
+<dt>iterable method compatibility:</dt><dd><ul class="simple">
+<li><p>iteritems, iterkeys, itervalues</p></li>
+<li><p>viewitems, viewkeys, viewvalues</p></li>
+</ul>
+<p>These use the original method if available, otherwise they use items,
+keys, values.</p>
+</dd>
+</dl>
+</li>
+<li><p>types:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>text_type: unicode in Python 2, str in Python 3</p></li>
+<li><p>string_types: basestring in Python 2, str in Python 3</p></li>
+<li><p>binary_type: str in Python 2, bytes in Python 3</p></li>
+<li><p>integer_types: (int, long) in Python 2, int in Python 3</p></li>
+<li><p>class_types: (type, types.ClassType) in Python 2, type in Python 3</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><dl class="simple">
+<dt>bchr(c):</dt><dd><p>Take an integer and make a 1-character byte string</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>bord(c)</dt><dd><p>Take the result of indexing on a byte string and make an integer</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>tobytes(s)</dt><dd><p>Take a text string, a byte string, or a sequence of characters taken
+from a byte string, and make a byte string.</p>
+</dd>
+</dl>
+</li>
+<li><p>raise_from()</p></li>
+<li><p>raise_with_traceback()</p></li>
+</ul>
+</div></blockquote>
+<p>This module also defines these decorators:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">python_2_unicode_compatible</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">with_metaclass</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">implements_iterator</span></code></p></li>
+</ul>
+</div></blockquote>
+<p>Some of the functions in this module come from the following sources:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Jinja2 (BSD licensed: see
+<a class="reference external" href="https://github.com/mitsuhiko/jinja2/blob/master/LICENSE">https://github.com/mitsuhiko/jinja2/blob/master/LICENSE</a>)</p></li>
+<li><p>Pandas compatibility module pandas.compat</p></li>
+<li><p>six.py by Benjamin Peterson</p></li>
+<li><p>Django</p></li>
+</ul>
+</div></blockquote>
+<dl class="py function">
+<dt class="sig sig-object py" id="future.utils.as_native_str">
+<span class="sig-prename descclassname"><span class="pre">future.utils.</span></span><span class="sig-name descname"><span class="pre">as_native_str</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">encoding</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'utf-8'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/future/utils.html#as_native_str"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#future.utils.as_native_str" title="Link to this definition">¶</a></dt>
+<dd><p>A decorator to turn a function or method call that returns text, i.e.
+unicode, into one that returns a native platform str.</p>
+<p>Use it as a decorator like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">unicode_literals</span>
+
+<span class="k">class</span> <span class="nc">MyClass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="nd">@as_native_str</span><span class="p">(</span><span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;ascii&#39;</span><span class="p">)</span>
+    <span class="k">def</span> <span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="nb">next</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_iter</span><span class="p">)</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="future.utils.binary_type">
+<span class="sig-prename descclassname"><span class="pre">future.utils.</span></span><span class="sig-name descname"><span class="pre">binary_type</span></span><a class="headerlink" href="#future.utils.binary_type" title="Link to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytes" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bytes</span></code></a></p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="future.utils.bind_method">
+<span class="sig-prename descclassname"><span class="pre">future.utils.</span></span><span class="sig-name descname"><span class="pre">bind_method</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cls</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">func</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/future/utils.html#bind_method"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#future.utils.bind_method" title="Link to this definition">¶</a></dt>
+<dd><p>Bind a method to class, python 2 and python 3 compatible.</p>
+<section id="parameters">
+<h3>Parameters<a class="headerlink" href="#parameters" title="Link to this heading">¶</a></h3>
+<dl class="simple">
+<dt>cls<span class="classifier">type</span></dt><dd><p>class to receive bound method</p>
+</dd>
+<dt>name<span class="classifier">basestring</span></dt><dd><p>name of method on class instance</p>
+</dd>
+<dt>func<span class="classifier">function</span></dt><dd><p>function to be bound as method</p>
+</dd>
+</dl>
+</section>
+<section id="returns">
+<h3>Returns<a class="headerlink" href="#returns" title="Link to this heading">¶</a></h3>
+<p>None</p>
+</section>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="future.utils.exec_">
+<span class="sig-prename descclassname"><span class="pre">future.utils.</span></span><span class="sig-name descname"><span class="pre">exec_</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">source</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">globals</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">locals</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">/</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">closure</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#future.utils.exec_" title="Link to this definition">¶</a></dt>
+<dd><p>Execute the given source in the context of globals and locals.</p>
+<p>The source may be a string representing one or more Python statements
+or a code object as returned by compile().
+The globals must be a dictionary and locals can be any mapping,
+defaulting to the current globals and locals.
+If only globals is given, locals defaults to it.
+The closure must be a tuple of cellvars, and can only be used
+when source is a code object requiring exactly that many cellvars.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="future.utils.implements_iterator">
+<span class="sig-prename descclassname"><span class="pre">future.utils.</span></span><span class="sig-name descname"><span class="pre">implements_iterator</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cls</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/future/utils.html#implements_iterator"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#future.utils.implements_iterator" title="Link to this definition">¶</a></dt>
+<dd><p>From jinja2/_compat.py. License: BSD.</p>
+<p>Use as a decorator like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@implements_iterator</span>
+<span class="k">class</span> <span class="nc">UppercasingIterator</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">iterable</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_iter</span> <span class="o">=</span> <span class="nb">iter</span><span class="p">(</span><span class="n">iterable</span><span class="p">)</span>
+    <span class="k">def</span> <span class="fm">__iter__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span>
+    <span class="k">def</span> <span class="fm">__next__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="nb">next</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_iter</span><span class="p">)</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="future.utils.is_new_style">
+<span class="sig-prename descclassname"><span class="pre">future.utils.</span></span><span class="sig-name descname"><span class="pre">is_new_style</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cls</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/future/utils.html#is_new_style"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#future.utils.is_new_style" title="Link to this definition">¶</a></dt>
+<dd><p>Python 2.7 has both new-style and old-style classes. Old-style classes can
+be pesky in some circumstances, such as when using inheritance.  Use this
+function to test for whether a class is new-style. (Python 3 only has
+new-style classes.)</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="future.utils.isbytes">
+<span class="sig-prename descclassname"><span class="pre">future.utils.</span></span><span class="sig-name descname"><span class="pre">isbytes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/future/utils.html#isbytes"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#future.utils.isbytes" title="Link to this definition">¶</a></dt>
+<dd><dl>
+<dt>Deprecated. Use::</dt><dd><div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">isinstance</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="nb">bytes</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd>
+<dt>after this import:</dt><dd><div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">future.builtins</span> <span class="kn">import</span> <span class="nb">bytes</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="future.utils.isidentifier">
+<span class="sig-prename descclassname"><span class="pre">future.utils.</span></span><span class="sig-name descname"><span class="pre">isidentifier</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">s</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dotted</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/future/utils.html#isidentifier"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#future.utils.isidentifier" title="Link to this definition">¶</a></dt>
+<dd><p>A function equivalent to the str.isidentifier method on Py3</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="future.utils.isint">
+<span class="sig-prename descclassname"><span class="pre">future.utils.</span></span><span class="sig-name descname"><span class="pre">isint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/future/utils.html#isint"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#future.utils.isint" title="Link to this definition">¶</a></dt>
+<dd><p>Deprecated. Tests whether an object is a Py3 <code class="docutils literal notranslate"><span class="pre">int</span></code> or either a Py2 <code class="docutils literal notranslate"><span class="pre">int</span></code> or
+<code class="docutils literal notranslate"><span class="pre">long</span></code>.</p>
+<p>Instead of using this function, you can use:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">future.builtins</span> <span class="kn">import</span> <span class="nb">int</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">isinstance</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="nb">int</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The following idiom is equivalent:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">numbers</span> <span class="kn">import</span> <span class="n">Integral</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">isinstance</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="n">Integral</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="future.utils.isnewbytes">
+<span class="sig-prename descclassname"><span class="pre">future.utils.</span></span><span class="sig-name descname"><span class="pre">isnewbytes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/future/utils.html#isnewbytes"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#future.utils.isnewbytes" title="Link to this definition">¶</a></dt>
+<dd><p>Equivalent to the result of <code class="docutils literal notranslate"><span class="pre">type(obj)</span>&#160; <span class="pre">==</span> <span class="pre">type(newbytes)</span></code>
+in other words, it is REALLY a newbytes instance, not a Py2 native str
+object?</p>
+<p>Note that this does not cover subclasses of newbytes, and it is not
+equivalent to ininstance(obj, newbytes)</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="future.utils.istext">
+<span class="sig-prename descclassname"><span class="pre">future.utils.</span></span><span class="sig-name descname"><span class="pre">istext</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/future/utils.html#istext"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#future.utils.istext" title="Link to this definition">¶</a></dt>
+<dd><dl>
+<dt>Deprecated. Use::</dt><dd><div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">isinstance</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="nb">str</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd>
+<dt>after this import:</dt><dd><div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">future.builtins</span> <span class="kn">import</span> <span class="nb">str</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="future.utils.iteritems">
+<span class="sig-prename descclassname"><span class="pre">future.utils.</span></span><span class="sig-name descname"><span class="pre">iteritems</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/future/utils.html#iteritems"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#future.utils.iteritems" title="Link to this definition">¶</a></dt>
+<dd><p>Use this only if compatibility with Python versions before 2.7 is
+required. Otherwise, prefer viewitems().</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="future.utils.iterkeys">
+<span class="sig-prename descclassname"><span class="pre">future.utils.</span></span><span class="sig-name descname"><span class="pre">iterkeys</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/future/utils.html#iterkeys"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#future.utils.iterkeys" title="Link to this definition">¶</a></dt>
+<dd><p>Use this only if compatibility with Python versions before 2.7 is
+required. Otherwise, prefer viewkeys().</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="future.utils.itervalues">
+<span class="sig-prename descclassname"><span class="pre">future.utils.</span></span><span class="sig-name descname"><span class="pre">itervalues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/future/utils.html#itervalues"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#future.utils.itervalues" title="Link to this definition">¶</a></dt>
+<dd><p>Use this only if compatibility with Python versions before 2.7 is
+required. Otherwise, prefer viewvalues().</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="future.utils.native">
+<span class="sig-prename descclassname"><span class="pre">future.utils.</span></span><span class="sig-name descname"><span class="pre">native</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/future/utils.html#native"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#future.utils.native" title="Link to this definition">¶</a></dt>
+<dd><p>On Py3, this is a no-op: native(obj) -&gt; obj</p>
+<p>On Py2, returns the corresponding native Py2 types that are
+superclasses for backported objects from Py3:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">builtins</span> <span class="kn">import</span> <span class="nb">str</span><span class="p">,</span> <span class="nb">bytes</span><span class="p">,</span> <span class="nb">int</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">native</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="sa">u</span><span class="s1">&#39;ABC&#39;</span><span class="p">))</span>
+<span class="go">u&#39;ABC&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">type</span><span class="p">(</span><span class="n">native</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="sa">u</span><span class="s1">&#39;ABC&#39;</span><span class="p">)))</span>
+<span class="go">unicode</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">native</span><span class="p">(</span><span class="nb">bytes</span><span class="p">(</span><span class="sa">b</span><span class="s1">&#39;ABC&#39;</span><span class="p">))</span>
+<span class="go">b&#39;ABC&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">type</span><span class="p">(</span><span class="n">native</span><span class="p">(</span><span class="nb">bytes</span><span class="p">(</span><span class="sa">b</span><span class="s1">&#39;ABC&#39;</span><span class="p">)))</span>
+<span class="go">bytes</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">native</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="mi">10</span><span class="o">**</span><span class="mi">20</span><span class="p">))</span>
+<span class="go">100000000000000000000L</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">type</span><span class="p">(</span><span class="n">native</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="mi">10</span><span class="o">**</span><span class="mi">20</span><span class="p">)))</span>
+<span class="go">long</span>
+</pre></div>
+</div>
+<p>Existing native types on Py2 will be returned unchanged:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">type</span><span class="p">(</span><span class="n">native</span><span class="p">(</span><span class="sa">u</span><span class="s1">&#39;ABC&#39;</span><span class="p">))</span>
+<span class="go">unicode</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="future.utils.native_bytes">
+<span class="sig-prename descclassname"><span class="pre">future.utils.</span></span><span class="sig-name descname"><span class="pre">native_bytes</span></span><a class="headerlink" href="#future.utils.native_bytes" title="Link to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytes" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bytes</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="future.utils.native_str">
+<span class="sig-prename descclassname"><span class="pre">future.utils.</span></span><span class="sig-name descname"><span class="pre">native_str</span></span><a class="headerlink" href="#future.utils.native_str" title="Link to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a></p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="future.utils.native_str_to_bytes">
+<span class="sig-prename descclassname"><span class="pre">future.utils.</span></span><span class="sig-name descname"><span class="pre">native_str_to_bytes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">s</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">encoding</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'utf-8'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/future/utils.html#native_str_to_bytes"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#future.utils.native_str_to_bytes" title="Link to this definition">¶</a></dt>
+<dd><p>On Py3, returns an encoded string.
+On Py2, returns a newbytes type, ignoring the <code class="docutils literal notranslate"><span class="pre">encoding</span></code> argument.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="future.utils.old_div">
+<span class="sig-prename descclassname"><span class="pre">future.utils.</span></span><span class="sig-name descname"><span class="pre">old_div</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/future/utils.html#old_div"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#future.utils.old_div" title="Link to this definition">¶</a></dt>
+<dd><p>DEPRECATED: import <code class="docutils literal notranslate"><span class="pre">old_div</span></code> from <code class="docutils literal notranslate"><span class="pre">past.utils</span></code> instead.</p>
+<p>Equivalent to <code class="docutils literal notranslate"><span class="pre">a</span> <span class="pre">/</span> <span class="pre">b</span></code> on Python 2 without <code class="docutils literal notranslate"><span class="pre">from</span> <span class="pre">__future__</span> <span class="pre">import</span>
+<span class="pre">division</span></code>.</p>
+<p>TODO: generalize this to other objects (like arrays etc.)</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="future.utils.python_2_unicode_compatible">
+<span class="sig-prename descclassname"><span class="pre">future.utils.</span></span><span class="sig-name descname"><span class="pre">python_2_unicode_compatible</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cls</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/future/utils.html#python_2_unicode_compatible"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#future.utils.python_2_unicode_compatible" title="Link to this definition">¶</a></dt>
+<dd><p>A decorator that defines __unicode__ and __str__ methods under Python
+2. Under Python 3, this decorator is a no-op.</p>
+<p>To support Python 2 and 3 with a single code base, define a __str__
+method returning unicode text and apply this decorator to the class, like
+this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">future.utils</span> <span class="kn">import</span> <span class="n">python_2_unicode_compatible</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nd">@python_2_unicode_compatible</span>
+<span class="gp">... </span><span class="k">class</span> <span class="nc">MyClass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+<span class="gp">... </span>    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="gp">... </span>        <span class="k">return</span> <span class="sa">u</span><span class="s1">&#39;Unicode string: 孔子&#39;</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">=</span> <span class="n">MyClass</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Then, after this import:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">future.builtins</span> <span class="kn">import</span> <span class="nb">str</span>
+</pre></div>
+</div>
+<p>the following is <code class="docutils literal notranslate"><span class="pre">True</span></code> on both Python 3 and 2:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">str</span><span class="p">(</span><span class="n">a</span><span class="p">)</span> <span class="o">==</span> <span class="n">a</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>True</p>
+<p>and, on a Unicode-enabled terminal with the right fonts, these both print the
+Chinese characters for Confucius:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>The implementation comes from django.utils.encoding.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="future.utils.raise_">
+<span class="sig-prename descclassname"><span class="pre">future.utils.</span></span><span class="sig-name descname"><span class="pre">raise_</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tb</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/future/utils.html#raise_"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#future.utils.raise_" title="Link to this definition">¶</a></dt>
+<dd><p>A function that matches the Python 2.x <code class="docutils literal notranslate"><span class="pre">raise</span></code> statement. This
+allows re-raising exceptions with the cls value and traceback on
+Python 2 and 3.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="future.utils.raise_with_traceback">
+<span class="sig-prename descclassname"><span class="pre">future.utils.</span></span><span class="sig-name descname"><span class="pre">raise_with_traceback</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">exc</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">traceback</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">Ellipsis</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/future/utils.html#raise_with_traceback"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#future.utils.raise_with_traceback" title="Link to this definition">¶</a></dt>
+<dd><p>Raise exception with existing traceback.
+If traceback is not passed, uses sys.exc_info() to get traceback.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="future.utils.reraise">
+<span class="sig-prename descclassname"><span class="pre">future.utils.</span></span><span class="sig-name descname"><span class="pre">reraise</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tb</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#future.utils.reraise" title="Link to this definition">¶</a></dt>
+<dd><p>A function that matches the Python 2.x <code class="docutils literal notranslate"><span class="pre">raise</span></code> statement. This
+allows re-raising exceptions with the cls value and traceback on
+Python 2 and 3.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="future.utils.text_type">
+<span class="sig-prename descclassname"><span class="pre">future.utils.</span></span><span class="sig-name descname"><span class="pre">text_type</span></span><a class="headerlink" href="#future.utils.text_type" title="Link to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a></p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="future.utils.tobytes">
+<span class="sig-prename descclassname"><span class="pre">future.utils.</span></span><span class="sig-name descname"><span class="pre">tobytes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">s</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/future/utils.html#tobytes"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#future.utils.tobytes" title="Link to this definition">¶</a></dt>
+<dd><p>Encodes to latin-1 (where the first 256 chars are the same as
+ASCII.)</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="future.utils.viewitems">
+<span class="sig-prename descclassname"><span class="pre">future.utils.</span></span><span class="sig-name descname"><span class="pre">viewitems</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/future/utils.html#viewitems"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#future.utils.viewitems" title="Link to this definition">¶</a></dt>
+<dd><p>Function for iterating over dictionary items with the same set-like
+behaviour on Py2.7 as on Py3.</p>
+<p>Passes kwargs to method.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="future.utils.viewkeys">
+<span class="sig-prename descclassname"><span class="pre">future.utils.</span></span><span class="sig-name descname"><span class="pre">viewkeys</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/future/utils.html#viewkeys"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#future.utils.viewkeys" title="Link to this definition">¶</a></dt>
+<dd><p>Function for iterating over dictionary keys with the same set-like
+behaviour on Py2.7 as on Py3.</p>
+<p>Passes kwargs to method.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="future.utils.viewvalues">
+<span class="sig-prename descclassname"><span class="pre">future.utils.</span></span><span class="sig-name descname"><span class="pre">viewvalues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/future/utils.html#viewvalues"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#future.utils.viewvalues" title="Link to this definition">¶</a></dt>
+<dd><p>Function for iterating over dictionary values with the same set-like
+behaviour on Py2.7 as on Py3.</p>
+<p>Passes kwargs to method.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="future.utils.with_metaclass">
+<span class="sig-prename descclassname"><span class="pre">future.utils.</span></span><span class="sig-name descname"><span class="pre">with_metaclass</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">meta</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">bases</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/future/utils.html#with_metaclass"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#future.utils.with_metaclass" title="Link to this definition">¶</a></dt>
+<dd><p>Function from jinja2/_compat.py. License: BSD.</p>
+<p>Use it like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">BaseForm</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="k">pass</span>
+
+<span class="k">class</span> <span class="nc">FormType</span><span class="p">(</span><span class="nb">type</span><span class="p">):</span>
+    <span class="k">pass</span>
+
+<span class="k">class</span> <span class="nc">Form</span><span class="p">(</span><span class="n">with_metaclass</span><span class="p">(</span><span class="n">FormType</span><span class="p">,</span> <span class="n">BaseForm</span><span class="p">)):</span>
+    <span class="k">pass</span>
+</pre></div>
+</div>
+<p>This requires a bit of explanation: the basic idea is to make a
+dummy metaclass for one level of class instantiation that replaces
+itself with the actual metaclass.  Because of internal type checks
+we also need to make sure that we downgrade the custom metaclass
+for one level to something closer to type (that’s why __call__ and
+__init__ comes back from type etc.).</p>
+<p>This has the advantage over six.with_metaclass of not introducing
+dummy classes into the final MRO.</p>
+</dd></dl>
+
+</section>
+<section id="module-past.builtins">
+<span id="past-builtins-interface"></span><h2><a class="toc-backref" href="#id16" role="doc-backlink">past.builtins Interface</a><a class="headerlink" href="#module-past.builtins" title="Link to this heading">¶</a></h2>
+<p>A resurrection of some old functions from Python 2 for use in Python 3. These
+should be used sparingly, to help with porting efforts, since code using them
+is no longer standard Python 3 code.</p>
+<p>This module provides the following:</p>
+<ol class="arabic simple">
+<li><p>Implementations of these builtin functions which have no equivalent on Py3:</p></li>
+</ol>
+<ul class="simple">
+<li><p>apply</p></li>
+<li><p>chr</p></li>
+<li><p>cmp</p></li>
+<li><p>execfile</p></li>
+</ul>
+<ol class="arabic simple" start="2">
+<li><p>Aliases:</p></li>
+</ol>
+<ul class="simple">
+<li><p>intern &lt;- sys.intern</p></li>
+<li><p>raw_input &lt;- input</p></li>
+<li><p>reduce &lt;- functools.reduce</p></li>
+<li><p>reload &lt;- imp.reload</p></li>
+<li><p>unichr &lt;- chr</p></li>
+<li><p>unicode &lt;- str</p></li>
+<li><p>xrange &lt;- range</p></li>
+</ul>
+<ol class="arabic simple" start="3">
+<li><p>List-producing versions of the corresponding Python 3 iterator-producing functions:</p></li>
+</ol>
+<ul class="simple">
+<li><p>filter</p></li>
+<li><p>map</p></li>
+<li><p>range</p></li>
+<li><p>zip</p></li>
+</ul>
+<ol class="arabic simple" start="4">
+<li><p>Forward-ported Py2 types:</p></li>
+</ol>
+<ul class="simple">
+<li><p>basestring</p></li>
+<li><p>dict</p></li>
+<li><p>str</p></li>
+<li><p>long</p></li>
+<li><p>unicode</p></li>
+</ul>
+<dl class="py class">
+<dt class="sig sig-object py" id="past.builtins.basestring">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">past.builtins.</span></span><span class="sig-name descname"><span class="pre">basestring</span></span><a class="reference internal" href="_modules/past/types/basestring.html#basestring"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#past.builtins.basestring" title="Link to this definition">¶</a></dt>
+<dd><p>A minimal backport of the Python 2 basestring type to Py3</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="past.builtins.chr">
+<span class="sig-prename descclassname"><span class="pre">past.builtins.</span></span><span class="sig-name descname"><span class="pre">chr</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">i</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/past/builtins/misc.html#chr"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#past.builtins.chr" title="Link to this definition">¶</a></dt>
+<dd><p>Return a byte-string of one character with ordinal i; 0 &lt;= i &lt;= 256</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="past.builtins.cmp">
+<span class="sig-prename descclassname"><span class="pre">past.builtins.</span></span><span class="sig-name descname"><span class="pre">cmp</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">integer</span></span></span><a class="reference internal" href="_modules/past/builtins/misc.html#cmp"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#past.builtins.cmp" title="Link to this definition">¶</a></dt>
+<dd><p>Return negative if x&lt;y, zero if x==y, positive if x&gt;y.
+Python2 had looser comparison allowing cmp None and non Numerical types and collections.
+Try to match the old behavior</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="past.builtins.dict">
+<span class="sig-prename descclassname"><span class="pre">past.builtins.</span></span><span class="sig-name descname"><span class="pre">dict</span></span><a class="headerlink" href="#past.builtins.dict" title="Link to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#past.types.olddict" title="past.types.olddict.olddict"><code class="xref py py-class docutils literal notranslate"><span class="pre">olddict</span></code></a></p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="past.builtins.execfile">
+<span class="sig-prename descclassname"><span class="pre">past.builtins.</span></span><span class="sig-name descname"><span class="pre">execfile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">myglobals</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mylocals</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/past/builtins/misc.html#execfile"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#past.builtins.execfile" title="Link to this definition">¶</a></dt>
+<dd><p>Read and execute a Python script from a file in the given namespaces.
+The globals and locals are dictionaries, defaulting to the current
+globals and locals. If only globals is given, locals defaults to it.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="past.builtins.filter">
+<span class="sig-prename descclassname"><span class="pre">past.builtins.</span></span><span class="sig-name descname"><span class="pre">filter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">function</span> <span class="pre">or</span> <span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sequence</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list,</span> <span class="pre">tuple,</span> <span class="pre">or</span> <span class="pre">string</span></span></span><a class="headerlink" href="#past.builtins.filter" title="Link to this definition">¶</a></dt>
+<dd><p>Return those items of sequence for which function(item) is true.
+If function is None, return the items that are true.  If sequence
+is a tuple or string, return the same type, else return a list.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="past.builtins.intern">
+<span class="sig-prename descclassname"><span class="pre">past.builtins.</span></span><span class="sig-name descname"><span class="pre">intern</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">string</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">/</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#past.builtins.intern" title="Link to this definition">¶</a></dt>
+<dd><p><a href="#id1"><span class="problematic" id="id2">``</span></a>Intern’’ the given string.</p>
+<p>This enters the string in the (global) table of interned strings whose
+purpose is to speed up dictionary lookups. Return the string itself or
+the previously interned string object with the same value.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="past.builtins.long">
+<span class="sig-prename descclassname"><span class="pre">past.builtins.</span></span><span class="sig-name descname"><span class="pre">long</span></span><a class="headerlink" href="#past.builtins.long" title="Link to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a></p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="past.builtins.map">
+<span class="sig-prename descclassname"><span class="pre">past.builtins.</span></span><span class="sig-name descname"><span class="pre">map</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">function</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sequence</span></span></em><span class="optional">[</span>, <em class="sig-param"><span class="n"><span class="pre">sequence</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">...</span></span></em><span class="optional">]</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.12)"><span class="pre">list</span></a></span></span><a class="headerlink" href="#past.builtins.map" title="Link to this definition">¶</a></dt>
+<dd><p>Return a list of the results of applying the function to the
+items of the argument sequence(s).  If more than one sequence is
+given, the function is called with an argument list consisting of
+the corresponding item of each sequence, substituting None for
+missing values when not all sequences have the same length.  If
+the function is None, return a list of the items of the sequence
+(or a list of tuples if more than one sequence).</p>
+<p>Test cases:
+&gt;&gt;&gt; oldmap(None, ‘hello world’)
+[‘h’, ‘e’, ‘l’, ‘l’, ‘o’, ‘ ‘, ‘w’, ‘o’, ‘r’, ‘l’, ‘d’]</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">oldmap</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">))</span>
+<span class="go">[0, 1, 2, 3]</span>
+</pre></div>
+</div>
+<p>More test cases are in test_past.test_builtins.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="past.builtins.raw_input">
+<span class="sig-prename descclassname"><span class="pre">past.builtins.</span></span><span class="sig-name descname"><span class="pre">raw_input</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">prompt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">/</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#past.builtins.raw_input" title="Link to this definition">¶</a></dt>
+<dd><p>Read a string from standard input.  The trailing newline is stripped.</p>
+<p>The prompt string, if given, is printed to standard output without a
+trailing newline before reading input.</p>
+<p>If the user hits EOF (<a href="#id3"><span class="problematic" id="id4">*</span></a>nix: Ctrl-D, Windows: Ctrl-Z+Return), raise EOFError.
+On <a href="#id5"><span class="problematic" id="id6">*</span></a>nix systems, readline is used if available.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="past.builtins.reduce">
+<span class="sig-prename descclassname"><span class="pre">past.builtins.</span></span><span class="sig-name descname"><span class="pre">reduce</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">function</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">iterable</span></span></em><span class="optional">[</span>, <em class="sig-param"><span class="n"><span class="pre">initial</span></span></em><span class="optional">]</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">value</span></span></span><a class="headerlink" href="#past.builtins.reduce" title="Link to this definition">¶</a></dt>
+<dd><p>Apply a function of two arguments cumulatively to the items of a sequence
+or iterable, from left to right, so as to reduce the iterable to a single
+value.  For example, reduce(lambda x, y: x+y, [1, 2, 3, 4, 5]) calculates
+((((1+2)+3)+4)+5).  If initial is present, it is placed before the items
+of the iterable in the calculation, and serves as a default when the
+iterable is empty.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="past.builtins.reload">
+<span class="sig-prename descclassname"><span class="pre">past.builtins.</span></span><span class="sig-name descname"><span class="pre">reload</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">module</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/importlib.html#reload"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#past.builtins.reload" title="Link to this definition">¶</a></dt>
+<dd><p>Reload the module and return it.</p>
+<p>The module must have been successfully imported before.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="past.builtins.str">
+<span class="sig-prename descclassname"><span class="pre">past.builtins.</span></span><span class="sig-name descname"><span class="pre">str</span></span><a class="headerlink" href="#past.builtins.str" title="Link to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#past.types.oldstr" title="past.types.oldstr.oldstr"><code class="xref py py-class docutils literal notranslate"><span class="pre">oldstr</span></code></a></p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="past.builtins.unichr">
+<span class="sig-prename descclassname"><span class="pre">past.builtins.</span></span><span class="sig-name descname"><span class="pre">unichr</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">i</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#past.builtins.unichr" title="Link to this definition">¶</a></dt>
+<dd><p>Return a byte-string of one character with ordinal i; 0 &lt;= i &lt;= 256</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="past.builtins.unicode">
+<span class="sig-prename descclassname"><span class="pre">past.builtins.</span></span><span class="sig-name descname"><span class="pre">unicode</span></span><a class="headerlink" href="#past.builtins.unicode" title="Link to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#past.builtins.str" title="past.builtins.str"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="past.builtins.xrange">
+<span class="sig-prename descclassname"><span class="pre">past.builtins.</span></span><span class="sig-name descname"><span class="pre">xrange</span></span><a class="headerlink" href="#past.builtins.xrange" title="Link to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#range" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">range</span></code></a></p>
+</dd></dl>
+
+</section>
+<section id="module-past.types">
+<span id="forward-ported-types-from-python-2"></span><h2><a class="toc-backref" href="#id17" role="doc-backlink">Forward-ported types from Python 2</a><a class="headerlink" href="#module-past.types" title="Link to this heading">¶</a></h2>
+<p>Forward-ports of types from Python 2 for use with Python 3:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">basestring</span></code>: equivalent to <code class="docutils literal notranslate"><span class="pre">(str,</span> <span class="pre">bytes)</span></code> in <code class="docutils literal notranslate"><span class="pre">isinstance</span></code> checks</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">dict</span></code>: with list-producing .keys() etc. methods</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">str</span></code>: bytes-like, but iterating over them doesn’t product integers</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">long</span></code>: alias of Py3 int with <code class="docutils literal notranslate"><span class="pre">L</span></code> suffix in the <code class="docutils literal notranslate"><span class="pre">repr</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">unicode</span></code>: alias of Py3 str with <code class="docutils literal notranslate"><span class="pre">u</span></code> prefix in the <code class="docutils literal notranslate"><span class="pre">repr</span></code></p></li>
+</ul>
+<dl class="py class">
+<dt class="sig sig-object py" id="past.types.basestring">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">past.types.</span></span><span class="sig-name descname"><span class="pre">basestring</span></span><a class="reference internal" href="_modules/past/types/basestring.html#basestring"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#past.types.basestring" title="Link to this definition">¶</a></dt>
+<dd><p>A minimal backport of the Python 2 basestring type to Py3</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="past.types.long">
+<span class="sig-prename descclassname"><span class="pre">past.types.</span></span><span class="sig-name descname"><span class="pre">long</span></span><a class="headerlink" href="#past.types.long" title="Link to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="past.types.olddict">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">past.types.</span></span><span class="sig-name descname"><span class="pre">olddict</span></span><a class="reference internal" href="_modules/past/types/olddict.html#olddict"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#past.types.olddict" title="Link to this definition">¶</a></dt>
+<dd><p>A backport of the Python 3 dict object to Py2</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="past.types.olddict.has_key">
+<span class="sig-name descname"><span class="pre">has_key</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">k</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">True</span> <span class="pre">if</span> <span class="pre">D</span> <span class="pre">has</span> <span class="pre">a</span> <span class="pre">key</span> <span class="pre">k,</span> <span class="pre">else</span> <span class="pre">False</span></span></span><a class="reference internal" href="_modules/past/types/olddict.html#olddict.has_key"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#past.types.olddict.has_key" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="past.types.olddict.items">
+<span class="sig-name descname"><span class="pre">items</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">a</span> <span class="pre">set-like</span> <span class="pre">object</span> <span class="pre">providing</span> <span class="pre">a</span> <span class="pre">view</span> <span class="pre">on</span> <span class="pre">D's</span> <span class="pre">items</span></span></span><a class="reference internal" href="_modules/past/types/olddict.html#olddict.items"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#past.types.olddict.items" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="past.types.olddict.iteritems">
+<span class="sig-name descname"><span class="pre">iteritems</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#past.types.olddict.iteritems" title="Link to this definition">¶</a></dt>
+<dd><p>D.items() -&gt; a set-like object providing a view on D’s items</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="past.types.olddict.iterkeys">
+<span class="sig-name descname"><span class="pre">iterkeys</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#past.types.olddict.iterkeys" title="Link to this definition">¶</a></dt>
+<dd><p>D.keys() -&gt; a set-like object providing a view on D’s keys</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="past.types.olddict.itervalues">
+<span class="sig-name descname"><span class="pre">itervalues</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#past.types.olddict.itervalues" title="Link to this definition">¶</a></dt>
+<dd><p>D.values() -&gt; an object providing a view on D’s values</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="past.types.olddict.keys">
+<span class="sig-name descname"><span class="pre">keys</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">a</span> <span class="pre">set-like</span> <span class="pre">object</span> <span class="pre">providing</span> <span class="pre">a</span> <span class="pre">view</span> <span class="pre">on</span> <span class="pre">D's</span> <span class="pre">keys</span></span></span><a class="reference internal" href="_modules/past/types/olddict.html#olddict.keys"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#past.types.olddict.keys" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="past.types.olddict.values">
+<span class="sig-name descname"><span class="pre">values</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">an</span> <span class="pre">object</span> <span class="pre">providing</span> <span class="pre">a</span> <span class="pre">view</span> <span class="pre">on</span> <span class="pre">D's</span> <span class="pre">values</span></span></span><a class="reference internal" href="_modules/past/types/olddict.html#olddict.values"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#past.types.olddict.values" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="past.types.olddict.viewitems">
+<span class="sig-name descname"><span class="pre">viewitems</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#past.types.olddict.viewitems" title="Link to this definition">¶</a></dt>
+<dd><p>D.items() -&gt; a set-like object providing a view on D’s items</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="past.types.olddict.viewkeys">
+<span class="sig-name descname"><span class="pre">viewkeys</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#past.types.olddict.viewkeys" title="Link to this definition">¶</a></dt>
+<dd><p>D.keys() -&gt; a set-like object providing a view on D’s keys</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="past.types.olddict.viewvalues">
+<span class="sig-name descname"><span class="pre">viewvalues</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#past.types.olddict.viewvalues" title="Link to this definition">¶</a></dt>
+<dd><p>D.values() -&gt; an object providing a view on D’s values</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="past.types.oldstr">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">past.types.</span></span><span class="sig-name descname"><span class="pre">oldstr</span></span><a class="reference internal" href="_modules/past/types/oldstr.html#oldstr"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#past.types.oldstr" title="Link to this definition">¶</a></dt>
+<dd><p>A forward port of the Python 2 8-bit string object to Py3</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="past.types.unicode">
+<span class="sig-prename descclassname"><span class="pre">past.types.</span></span><span class="sig-name descname"><span class="pre">unicode</span></span><a class="headerlink" href="#past.types.unicode" title="Link to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a></p>
+</dd></dl>
+
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+  <span id="sidebar-top"></span>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  
+    
+            <p class="logo"><a href="index.html">
+              <img class="logo" src="_static/python-future-logo-textless-transparent.png" alt="Logo"/>
+            </a></p>
+  
+<!--<h3>Python-Future</h3>
+<p>-->
+  <h4>Easy, clean, reliable Python 2/3 compatibility</h4>
+  <a href="https://python-future.org/#contents">Table of Contents</a>
+<!--
+</p>
+<h3>Other Formats</h3>
+<p>
+  You can download the documentation in other formats as well:
+</p>
+<ul>
+  <li><a href="http://jinja.pocoo.org/docs/jinja-docs.pdf">as PDF</a>
+  <li><a href="http://jinja.pocoo.org/docs/jinja-docs.zip">as zipped HTML</a>
+</ul>
+-->
+<!--<h3>Useful Links</h3>
+<ul>
+  <li><a href="https://pypi.org/project/future/">on PyPI</a></li>
+  <li><a href="https://github.com/PythonCharmers/python-future">on GitHub</a></li>
+</ul>
+--><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="whatsnew.html">What’s New</a></li>
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview: Easy, clean, reliable Python 2/3 compatibility</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quick-start guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="compatible_idioms.html">Cheat Sheet: Writing Python 2-3 compatible code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="imports.html">Imports</a></li>
+<li class="toctree-l1"><a class="reference internal" href="what_else.html">What else you need to know</a></li>
+<li class="toctree-l1"><a class="reference internal" href="automatic_conversion.html">Automatic conversion to Py2/3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">Frequently Asked Questions (FAQ)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stdlib_incompatibilities.html">Standard library incompatibilities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="older_interfaces.html">Older interfaces</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changes in previous versions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="credits.html">Licensing and credits</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">API Reference (in progress)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#module-future.builtins">future.builtins Interface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-future.types">Backported types from Python 3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-future.standard_library">future.standard_library Interface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-future.utils">future.utils Interface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-past.builtins">past.builtins Interface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-past.types">Forward-ported types from Python 2</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+  
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2013-2019, Python Charmers Pty Ltd, Australia.
+    </div>
+  <script src="_static/version_warning_offset.js"></script>
+
+<div class="footer">
+<script type="text/javascript">
+  (function() {
+    var ga = document.createElement('script');
+    ga.src = ('https:' == document.location.protocol ?
+              'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    ga.setAttribute('async', 'true');
+    document.documentElement.firstChild.appendChild(ga);
+  })();
+</script>
+</div>
+
+  </body>
+</html>

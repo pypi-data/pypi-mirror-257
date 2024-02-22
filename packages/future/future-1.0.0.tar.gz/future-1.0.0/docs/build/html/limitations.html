@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>limitations of the future module and differences between Py2 and Py3 that are not (yet) handled &#8212; Python-Future  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/jinja.css?v=85659ec6" />
+    <link rel="stylesheet" href="_static/my-styles.css" type="text/css" />
+    <script src="_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="icon" href="_static/python-future-icon-32.ico"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+ 
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-19344199-2']);
+  _gaq.push(['_trackPageview']);
+</script>
+
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Python-Future  documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">limitations of the <code class="docutils literal notranslate"><span class="pre">future</span></code> module and differences between Py2 and Py3 that are not (yet) handled</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="limitations-of-the-future-module-and-differences-between-py2-and-py3-that-are-not-yet-handled">
+<h1>limitations of the <code class="docutils literal notranslate"><span class="pre">future</span></code> module and differences between Py2 and Py3 that are not (yet) handled<a class="headerlink" href="#limitations-of-the-future-module-and-differences-between-py2-and-py3-that-are-not-yet-handled" title="Link to this heading">¶</a></h1>
+<p>The following attributes on functions in Python 3 are not provided in Python
+2.7:</p>
+<p>__func__: see six.get_method_function()
+__self__: see six.get_method_self()
+__self__.__class__</p>
+<section id="limitations-of-the-futurize-script">
+<h2>Limitations of the <code class="docutils literal notranslate"><span class="pre">futurize</span></code> script<a class="headerlink" href="#limitations-of-the-futurize-script" title="Link to this heading">¶</a></h2>
+<p>The <code class="docutils literal notranslate"><span class="pre">futurize</span></code> script is not yet mature; like <code class="docutils literal notranslate"><span class="pre">2to3</span></code>, on which it is based,
+it makes mistakes. Nevertheless, it should be useful for automatically
+performing a lot of the repetitive code-substitution tasks when porting from
+Py2 to Py2/3.</p>
+<p>Some new Python 3.3 features that cause SyntaxErrors on earlier versions
+are not currently handled by the <code class="docutils literal notranslate"><span class="pre">futurize</span></code> script. This includes:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">yield</span> <span class="pre">...</span> <span class="pre">from</span></code> syntax for generators in Py3.3</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">raise</span> <span class="pre">...</span> <span class="pre">from</span></code> syntax for exceptions. (This is simple to fix
+manually by creating a temporary variable.)</p></li>
+</ul>
+<p>Also:</p>
+<ul>
+<li><p>Usage of <code class="docutils literal notranslate"><span class="pre">file('myfile',</span> <span class="pre">'w')</span></code> as a synonym for <code class="docutils literal notranslate"><span class="pre">open</span></code> doesn’t seem
+to be converted currently.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">isinstance(var,</span> <span class="pre">basestring)</span></code> should sometimes be converted to
+<code class="docutils literal notranslate"><span class="pre">isinstance(var,</span> <span class="pre">str)</span> <span class="pre">or</span> <span class="pre">isinstance(var,</span> <span class="pre">bytes)</span></code>, or sometimes simply
+<code class="docutils literal notranslate"><span class="pre">isinstance(var,</span> <span class="pre">str)</span></code>, depending on the context. Currently it is always
+converted to <code class="docutils literal notranslate"><span class="pre">isinstance(var,</span> <span class="pre">str)</span></code>.</p></li>
+<li><p>Caveats with bytes indexing!:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="sa">b</span><span class="s1">&#39;</span><span class="se">\x00</span><span class="s1">&#39;</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">!=</span> <span class="mi">0</span>
+<span class="sa">b</span><span class="s1">&#39;</span><span class="se">\x01</span><span class="s1">&#39;</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">!=</span> <span class="mi">1</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">futurize</span></code> does not yet wrap all byte-string literals in a <code class="docutils literal notranslate"><span class="pre">bytes()</span></code>
+call. This is on the to-do list. See <a class="reference internal" href="what_else.html#bytes-object"><span class="std std-ref">bytes</span></a> for more information.</p>
+</li>
+</ul>
+</section>
+<section id="notes">
+<h2>Notes<a class="headerlink" href="#notes" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>Ensure you are using new-style classes on Py2. Py3 doesn’t require
+inheritance from <code class="docutils literal notranslate"><span class="pre">object</span></code> for this, but Py2 does. <code class="docutils literal notranslate"><span class="pre">pasteurize</span></code>
+adds this back in automatically, but ensure you do this too
+when writing your classes, otherwise weird breakage when e.g. calling
+<code class="docutils literal notranslate"><span class="pre">super()</span></code> may occur.</p></li>
+</ul>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+  <span id="sidebar-top"></span>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  
+    
+            <p class="logo"><a href="index.html">
+              <img class="logo" src="_static/python-future-logo-textless-transparent.png" alt="Logo"/>
+            </a></p>
+  
+<!--<h3>Python-Future</h3>
+<p>-->
+  <h4>Easy, clean, reliable Python 2/3 compatibility</h4>
+  <a href="https://python-future.org/#contents">Table of Contents</a>
+<!--
+</p>
+<h3>Other Formats</h3>
+<p>
+  You can download the documentation in other formats as well:
+</p>
+<ul>
+  <li><a href="http://jinja.pocoo.org/docs/jinja-docs.pdf">as PDF</a>
+  <li><a href="http://jinja.pocoo.org/docs/jinja-docs.zip">as zipped HTML</a>
+</ul>
+-->
+<!--<h3>Useful Links</h3>
+<ul>
+  <li><a href="https://pypi.org/project/future/">on PyPI</a></li>
+  <li><a href="https://github.com/PythonCharmers/python-future">on GitHub</a></li>
+</ul>
+--><ul>
+<li class="toctree-l1"><a class="reference internal" href="whatsnew.html">What’s New</a></li>
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview: Easy, clean, reliable Python 2/3 compatibility</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quick-start guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="compatible_idioms.html">Cheat Sheet: Writing Python 2-3 compatible code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="imports.html">Imports</a></li>
+<li class="toctree-l1"><a class="reference internal" href="what_else.html">What else you need to know</a></li>
+<li class="toctree-l1"><a class="reference internal" href="automatic_conversion.html">Automatic conversion to Py2/3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">Frequently Asked Questions (FAQ)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stdlib_incompatibilities.html">Standard library incompatibilities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="older_interfaces.html">Older interfaces</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changes in previous versions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="credits.html">Licensing and credits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference.html">API Reference (in progress)</a></li>
+</ul>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+  
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2013-2019, Python Charmers Pty Ltd, Australia.
+    </div>
+  <script src="_static/version_warning_offset.js"></script>
+
+<div class="footer">
+<script type="text/javascript">
+  (function() {
+    var ga = document.createElement('script');
+    ga.src = ('https:' == document.location.protocol ?
+              'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    ga.setAttribute('async', 'true');
+    document.documentElement.firstChild.appendChild(ga);
+  })();
+</script>
+</div>
+
+  </body>
+</html>

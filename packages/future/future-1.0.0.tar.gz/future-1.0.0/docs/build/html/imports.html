@@ -1,0 +1,663 @@
+
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Imports &#8212; Python-Future  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/jinja.css?v=85659ec6" />
+    <link rel="stylesheet" href="_static/my-styles.css" type="text/css" />
+    <script src="_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="icon" href="_static/python-future-icon-32.ico"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="What else you need to know" href="what_else.html" />
+    <link rel="prev" title="Cheat Sheet: Writing Python 2-3 compatible code" href="compatible_idioms.html" />
+ 
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-19344199-2']);
+  _gaq.push(['_trackPageview']);
+</script>
+
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="what_else.html" title="What else you need to know"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="compatible_idioms.html" title="Cheat Sheet: Writing Python 2-3 compatible code"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Python-Future  documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Imports</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="imports">
+<span id="id1"></span><h1>Imports<a class="headerlink" href="#imports" title="Link to this heading">¶</a></h1>
+<section id="future-imports">
+<span id="id2"></span><h2>__future__ imports<a class="headerlink" href="#future-imports" title="Link to this heading">¶</a></h2>
+<p>To write a Python 2/3 compatible codebase, the first step is to add this line
+to the top of each module:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">absolute_import</span><span class="p">,</span> <span class="n">division</span><span class="p">,</span> <span class="n">print_function</span>
+</pre></div>
+</div>
+<p>For guidelines about whether to import <code class="docutils literal notranslate"><span class="pre">unicode_literals</span></code> too, see below
+(<a class="reference internal" href="unicode_literals.html#unicode-literals"><span class="std std-ref">Should I import unicode_literals?</span></a>).</p>
+<p>For more information about the <code class="docutils literal notranslate"><span class="pre">__future__</span></code> imports, which are a
+standard feature of Python, see the following docs:</p>
+<ul class="simple">
+<li><p>absolute_import: <a class="reference external" href="http://www.python.org/dev/peps/pep-0328">PEP 328: Imports: Multi-Line and Absolute/Relative</a></p></li>
+<li><p>division: <a class="reference external" href="http://www.python.org/dev/peps/pep-0238">PEP 238: Changing the Division Operator</a></p></li>
+<li><p>print_function: <a class="reference external" href="http://www.python.org/dev/peps/pep-3105">PEP 3105: Make print a function</a></p></li>
+<li><p>unicode_literals: <a class="reference external" href="http://www.python.org/dev/peps/pep-3112">PEP 3112: Bytes literals in Python 3000</a></p></li>
+</ul>
+<p>These are all available in Python 2.7 and up, and enabled by default in Python 3.x.</p>
+</section>
+<section id="imports-of-builtins">
+<span id="builtins-imports"></span><h2>Imports of builtins<a class="headerlink" href="#imports-of-builtins" title="Link to this heading">¶</a></h2>
+<section id="implicit-imports">
+<span id="star-imports"></span><h3>Implicit imports<a class="headerlink" href="#implicit-imports" title="Link to this heading">¶</a></h3>
+<p>If you don’t mind namespace pollution, the easiest way to provide Py2/3
+compatibility for new code using <code class="docutils literal notranslate"><span class="pre">future</span></code> is to include the following imports
+at the top of every module:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">builtins</span> <span class="kn">import</span> <span class="o">*</span>
+</pre></div>
+</div>
+<p>On Python 3, this has no effect. (It shadows builtins with globals of the same
+names.)</p>
+<p>On Python 2, this import line shadows 18 builtins (listed below) to
+provide their Python 3 semantics.</p>
+</section>
+<section id="explicit-imports">
+<span id="id3"></span><h3>Explicit imports<a class="headerlink" href="#explicit-imports" title="Link to this heading">¶</a></h3>
+<p>Explicit forms of the imports are often preferred and are necessary for using
+certain automated code-analysis tools.</p>
+<p>The complete set of imports of builtins from <code class="docutils literal notranslate"><span class="pre">future</span></code> is:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">builtins</span> <span class="kn">import</span> <span class="p">(</span><span class="n">ascii</span><span class="p">,</span> <span class="nb">bytes</span><span class="p">,</span> <span class="nb">chr</span><span class="p">,</span> <span class="nb">dict</span><span class="p">,</span> <span class="nb">filter</span><span class="p">,</span> <span class="nb">hex</span><span class="p">,</span> <span class="nb">input</span><span class="p">,</span>
+                      <span class="nb">int</span><span class="p">,</span> <span class="nb">map</span><span class="p">,</span> <span class="nb">next</span><span class="p">,</span> <span class="nb">oct</span><span class="p">,</span> <span class="nb">open</span><span class="p">,</span> <span class="nb">pow</span><span class="p">,</span> <span class="nb">range</span><span class="p">,</span> <span class="nb">round</span><span class="p">,</span>
+                      <span class="nb">str</span><span class="p">,</span> <span class="nb">super</span><span class="p">,</span> <span class="nb">zip</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>These are also available under the <code class="docutils literal notranslate"><span class="pre">future.builtins</span></code> namespace for backward compatibility.</p>
+<p>Importing only some of the builtins is cleaner but increases the risk of
+introducing Py2/3 portability bugs as your code evolves over time. For example,
+be aware of forgetting to import <code class="docutils literal notranslate"><span class="pre">input</span></code>, which could expose a security
+vulnerability on Python 2 if Python 3’s semantics are expected.</p>
+<p>The internal API is currently as follows:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">future.types</span> <span class="kn">import</span> <span class="nb">bytes</span><span class="p">,</span> <span class="nb">dict</span><span class="p">,</span> <span class="nb">int</span><span class="p">,</span> <span class="nb">range</span><span class="p">,</span> <span class="nb">str</span>
+<span class="kn">from</span> <span class="nn">future.builtins.misc</span> <span class="kn">import</span> <span class="p">(</span><span class="n">ascii</span><span class="p">,</span> <span class="nb">chr</span><span class="p">,</span> <span class="nb">hex</span><span class="p">,</span> <span class="nb">input</span><span class="p">,</span> <span class="nb">next</span><span class="p">,</span>
+                                  <span class="nb">oct</span><span class="p">,</span> <span class="nb">open</span><span class="p">,</span> <span class="nb">pow</span><span class="p">,</span> <span class="nb">round</span><span class="p">,</span> <span class="nb">super</span><span class="p">)</span>
+<span class="kn">from</span> <span class="nn">future.builtins.iterators</span> <span class="kn">import</span> <span class="nb">filter</span><span class="p">,</span> <span class="nb">map</span><span class="p">,</span> <span class="nb">zip</span>
+</pre></div>
+</div>
+<p>Please note that this internal API is evolving and may not be stable between
+different versions of <code class="docutils literal notranslate"><span class="pre">future</span></code>. To understand the details of the backported
+builtins on Python 2, see the docs for these modules.</p>
+<p>For more information on what the backported types provide, see <a class="reference internal" href="what_else.html#what-else"><span class="std std-ref">What else you need to know</span></a>.</p>
+<section id="obsolete-python-2-builtins">
+<span id="obsolete-builtins"></span><h4>Obsolete Python 2 builtins<a class="headerlink" href="#obsolete-python-2-builtins" title="Link to this heading">¶</a></h4>
+<p>Twelve Python 2 builtins have been removed from Python 3. To aid with
+porting code to Python 3 module by module, you can use the following
+import to cause a <code class="docutils literal notranslate"><span class="pre">NameError</span></code> exception to be raised on Python 2 when any
+of the obsolete builtins is used, just as would occur on Python 3:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">future.builtins.disabled</span> <span class="kn">import</span> <span class="o">*</span>
+</pre></div>
+</div>
+<p>This is equivalent to:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">future.builtins.disabled</span> <span class="kn">import</span> <span class="p">(</span><span class="n">apply</span><span class="p">,</span> <span class="n">cmp</span><span class="p">,</span> <span class="n">coerce</span><span class="p">,</span> <span class="n">execfile</span><span class="p">,</span>
+                             <span class="n">file</span><span class="p">,</span> <span class="n">long</span><span class="p">,</span> <span class="n">raw_input</span><span class="p">,</span> <span class="n">reduce</span><span class="p">,</span> <span class="n">reload</span><span class="p">,</span>
+                             <span class="n">unicode</span><span class="p">,</span> <span class="n">xrange</span><span class="p">,</span> <span class="n">StandardError</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Running <code class="docutils literal notranslate"><span class="pre">futurize</span></code> over code that uses these Python 2 builtins does not
+import the disabled versions; instead, it replaces them with their
+equivalent Python 3 forms and then adds <code class="docutils literal notranslate"><span class="pre">future</span></code> imports to resurrect
+Python 2 support, as described in <a class="reference internal" href="futurize.html#forwards-conversion-stage2"><span class="std std-ref">Stage 2: Py3-style code with wrappers for Py2</span></a>.</p>
+</section>
+</section>
+</section>
+<section id="standard-library-imports">
+<span id="id4"></span><h2>Standard library imports<a class="headerlink" href="#standard-library-imports" title="Link to this heading">¶</a></h2>
+<p><code class="xref py py-mod docutils literal notranslate"><span class="pre">future</span></code> supports the standard library reorganization (PEP 3108) through
+several mechanisms.</p>
+<section id="direct-imports">
+<span id="id5"></span><h3>Direct imports<a class="headerlink" href="#direct-imports" title="Link to this heading">¶</a></h3>
+<p>As of version 0.14, the <code class="docutils literal notranslate"><span class="pre">future</span></code> package comes with top-level packages for
+Python 2.x that provide access to the reorganized standard library modules
+under their Python 3.x names.</p>
+<p>Direct imports are the preferred mechanism for accessing the renamed standard
+library modules in Python 2/3 compatible code. For example, the following clean
+Python 3 code runs unchanged on Python 2 after installing <code class="docutils literal notranslate"><span class="pre">future</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Alias for future.builtins on Py2:</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">builtins</span> <span class="kn">import</span> <span class="nb">str</span><span class="p">,</span> <span class="nb">open</span><span class="p">,</span> <span class="nb">range</span><span class="p">,</span> <span class="nb">dict</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Top-level packages with Py3 names provided on Py2:</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">queue</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">tkinter.dialog</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">etc</span><span class="o">.</span>
+</pre></div>
+</div>
+<p>Notice that this code actually runs on Python 3 without the presence of the
+<code class="docutils literal notranslate"><span class="pre">future</span></code> package.</p>
+<p>Of the 44 modules that were refactored with PEP 3108 (standard library
+reorganization), 29 are supported with direct imports in the above manner. The
+complete list is here:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">### Renamed modules:</span>
+
+<span class="kn">import</span> <span class="nn">builtins</span>
+
+<span class="kn">import</span> <span class="nn">copyreg</span>
+
+<span class="kn">import</span> <span class="nn">html</span>
+<span class="kn">import</span> <span class="nn">html.entities</span>
+<span class="kn">import</span> <span class="nn">html.parser</span>
+
+<span class="kn">import</span> <span class="nn">http.client</span>
+<span class="kn">import</span> <span class="nn">http.cookies</span>
+<span class="kn">import</span> <span class="nn">http.cookiejar</span>
+<span class="kn">import</span> <span class="nn">http.server</span>
+
+<span class="kn">import</span> <span class="nn">queue</span>
+
+<span class="kn">import</span> <span class="nn">reprlib</span>
+
+<span class="kn">import</span> <span class="nn">socketserver</span>
+
+<span class="kn">from</span> <span class="nn">tkinter</span> <span class="kn">import</span> <span class="n">colorchooser</span>
+<span class="kn">from</span> <span class="nn">tkinter</span> <span class="kn">import</span> <span class="n">commondialog</span>
+<span class="kn">from</span> <span class="nn">tkinter</span> <span class="kn">import</span> <span class="n">constants</span>
+<span class="kn">from</span> <span class="nn">tkinter</span> <span class="kn">import</span> <span class="n">dialog</span>
+<span class="kn">from</span> <span class="nn">tkinter</span> <span class="kn">import</span> <span class="n">dnd</span>
+<span class="kn">from</span> <span class="nn">tkinter</span> <span class="kn">import</span> <span class="n">filedialog</span>
+<span class="kn">from</span> <span class="nn">tkinter</span> <span class="kn">import</span> <span class="n">font</span>
+<span class="kn">from</span> <span class="nn">tkinter</span> <span class="kn">import</span> <span class="n">messagebox</span>
+<span class="kn">from</span> <span class="nn">tkinter</span> <span class="kn">import</span> <span class="n">scrolledtext</span>
+<span class="kn">from</span> <span class="nn">tkinter</span> <span class="kn">import</span> <span class="n">simpledialog</span>
+<span class="kn">from</span> <span class="nn">tkinter</span> <span class="kn">import</span> <span class="n">tix</span>
+<span class="kn">from</span> <span class="nn">tkinter</span> <span class="kn">import</span> <span class="n">ttk</span>
+
+<span class="kn">import</span> <span class="nn">winreg</span>                    <span class="c1"># Windows only</span>
+
+<span class="kn">import</span> <span class="nn">xmlrpc.client</span>
+<span class="kn">import</span> <span class="nn">xmlrpc.server</span>
+
+<span class="kn">import</span> <span class="nn">_dummy_thread</span>
+<span class="kn">import</span> <span class="nn">_markupbase</span>
+<span class="kn">import</span> <span class="nn">_thread</span>
+</pre></div>
+</div>
+<p>Note that, as of v0.16.0, <code class="docutils literal notranslate"><span class="pre">python-future</span></code> no longer includes an alias for the
+<code class="docutils literal notranslate"><span class="pre">configparser</span></code> module because a full backport exists (see <a class="reference external" href="https://pypi.org/project/configparser/">https://pypi.org/project/configparser/</a>).</p>
+</section>
+<section id="aliased-imports">
+<span id="list-standard-library-refactored"></span><h3>Aliased imports<a class="headerlink" href="#aliased-imports" title="Link to this heading">¶</a></h3>
+<p>The following 14 modules were refactored or extended from Python 2.7 to 3.x
+but were neither renamed in Py3.x nor were the new APIs backported to Py2.x.
+This precludes compatibility interfaces that work out-of-the-box. Instead, the
+<code class="docutils literal notranslate"><span class="pre">future</span></code> package makes the Python 3.x APIs available on Python 2.x as
+follows:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">future.standard_library</span> <span class="kn">import</span> <span class="n">install_aliases</span>
+<span class="n">install_aliases</span><span class="p">()</span>
+
+<span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">UserDict</span><span class="p">,</span> <span class="n">UserList</span><span class="p">,</span> <span class="n">UserString</span>
+
+<span class="kn">import</span> <span class="nn">urllib.parse</span>
+<span class="kn">import</span> <span class="nn">urllib.request</span>
+<span class="kn">import</span> <span class="nn">urllib.response</span>
+<span class="kn">import</span> <span class="nn">urllib.robotparser</span>
+<span class="kn">import</span> <span class="nn">urllib.error</span>
+
+<span class="kn">import</span> <span class="nn">dbm</span>
+<span class="kn">import</span> <span class="nn">dbm.dumb</span>
+<span class="kn">import</span> <span class="nn">dbm.gnu</span>                <span class="c1"># requires Python dbm support</span>
+<span class="kn">import</span> <span class="nn">dbm.ndbm</span>               <span class="c1"># requires Python dbm support</span>
+
+<span class="kn">from</span> <span class="nn">itertools</span> <span class="kn">import</span> <span class="n">filterfalse</span><span class="p">,</span> <span class="n">zip_longest</span>
+
+<span class="kn">from</span> <span class="nn">subprocess</span> <span class="kn">import</span> <span class="n">getoutput</span><span class="p">,</span> <span class="n">getstatusoutput</span>
+
+<span class="kn">from</span> <span class="nn">sys</span> <span class="kn">import</span> <span class="n">intern</span>
+
+<span class="kn">import</span> <span class="nn">test.support</span>
+</pre></div>
+</div>
+<p>The newly exposed <code class="docutils literal notranslate"><span class="pre">urllib</span></code> submodules are backports of those from Py3.x.
+This means, for example, that <code class="docutils literal notranslate"><span class="pre">urllib.parse.unquote()</span></code> now exists and takes
+an optional <code class="docutils literal notranslate"><span class="pre">encoding</span></code> argument on Py2.x as it does on Py3.x.</p>
+<p><strong>Limitation:</strong> Note that the <code class="docutils literal notranslate"><span class="pre">http</span></code>-based backports do not currently support
+HTTPS (as of 2015-09-11) because the SSL support changed considerably in Python
+3.x. If you need HTTPS support, please use this idiom for now:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">future.moves.urllib.request</span> <span class="kn">import</span> <span class="n">urlopen</span>
+</pre></div>
+</div>
+<p>Backports also exist of the following features from Python 3.4:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">math.ceil</span></code> returns an int on Py3</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">collections.ChainMap</span></code>     (for 2.7)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">reprlib.recursive_repr</span></code>   (for 2.7)</p></li>
+</ul>
+<p>These can then be imported on Python 2.7+ as follows:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">future.standard_library</span> <span class="kn">import</span> <span class="n">install_aliases</span>
+<span class="n">install_aliases</span><span class="p">()</span>
+
+<span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">ceil</span>      <span class="c1"># now returns an int</span>
+<span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">ChainMap</span>
+<span class="kn">from</span> <span class="nn">reprlib</span> <span class="kn">import</span> <span class="n">recursive_repr</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="external-standard-library-backports">
+<h2>External standard-library backports<a class="headerlink" href="#external-standard-library-backports" title="Link to this heading">¶</a></h2>
+<p>Backports of the following modules from the Python 3.x standard library are
+available independently of the python-future project:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">enum</span>                       <span class="c1"># pip install enum34</span>
+<span class="kn">import</span> <span class="nn">singledispatch</span>             <span class="c1"># pip install singledispatch</span>
+<span class="kn">import</span> <span class="nn">pathlib</span>                    <span class="c1"># pip install pathlib</span>
+</pre></div>
+</div>
+<p>A few modules from Python 3.4 are also available in the <code class="docutils literal notranslate"><span class="pre">backports</span></code>
+package namespace after <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">backports.lzma</span></code> etc.:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">backports</span> <span class="kn">import</span> <span class="n">lzma</span>
+<span class="kn">from</span> <span class="nn">backports</span> <span class="kn">import</span> <span class="n">functools_lru_cache</span> <span class="k">as</span> <span class="n">lru_cache</span>
+</pre></div>
+</div>
+</section>
+<section id="included-full-backports">
+<h2>Included full backports<a class="headerlink" href="#included-full-backports" title="Link to this heading">¶</a></h2>
+<p>Alpha-quality full backports of the following modules from Python 3.3’s
+standard library to Python 2.x are also available in <code class="docutils literal notranslate"><span class="pre">future.backports</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">http</span><span class="o">.</span><span class="n">client</span>
+<span class="n">http</span><span class="o">.</span><span class="n">server</span>
+<span class="n">html</span><span class="o">.</span><span class="n">entities</span>
+<span class="n">html</span><span class="o">.</span><span class="n">parser</span>
+<span class="n">urllib</span>
+<span class="n">xmlrpc</span><span class="o">.</span><span class="n">client</span>
+<span class="n">xmlrpc</span><span class="o">.</span><span class="n">server</span>
+</pre></div>
+</div>
+<p>The goal for these modules, unlike the modules in the <code class="docutils literal notranslate"><span class="pre">future.moves</span></code> package
+or top-level namespace, is to backport new functionality introduced in Python
+3.3.</p>
+<p>If you need the full backport of one of these packages, please open an issue <a class="reference external" href="https://github.com/PythonCharmers/python-future">here</a>.</p>
+</section>
+<section id="using-python-2-only-dependencies-on-python-3">
+<span id="translation"></span><h2>Using Python 2-only dependencies on Python 3<a class="headerlink" href="#using-python-2-only-dependencies-on-python-3" title="Link to this heading">¶</a></h2>
+<p>The <code class="docutils literal notranslate"><span class="pre">past</span></code> module provides an experimental <code class="docutils literal notranslate"><span class="pre">translation</span></code> package to help
+with importing and using old Python 2 modules in a Python 3 environment.</p>
+<p>This is implemented using PEP 414 import hooks together with fixers from
+<code class="docutils literal notranslate"><span class="pre">lib2to3</span></code> and <code class="docutils literal notranslate"><span class="pre">libfuturize</span></code> (included with <code class="docutils literal notranslate"><span class="pre">python-future</span></code>) that
+attempt to automatically translate Python 2 code to Python 3 code with equivalent
+semantics upon import.</p>
+<p><em>Note</em> This feature is still in alpha and needs further development to support a
+full range of real-world Python 2 modules. Also be aware that the API for
+this package might change considerably in later versions.</p>
+<p>Here is how to use it:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ pip3 install plotrique==0.2.5-7 --no-compile   # to ignore SyntaxErrors
+$ python3
+</pre></div>
+</div>
+<p>Then pass in a whitelist of module name prefixes to the
+<code class="docutils literal notranslate"><span class="pre">past.translation.autotranslate()</span></code> function. Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">past.translation</span> <span class="kn">import</span> <span class="n">autotranslate</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">autotranslate</span><span class="p">([</span><span class="s1">&#39;plotrique&#39;</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">plotrique</span>
+</pre></div>
+</div>
+<p>Here is another example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">past.translation</span> <span class="kn">import</span> <span class="n">install_hooks</span><span class="p">,</span> <span class="n">remove_hooks</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">install_hooks</span><span class="p">([</span><span class="s1">&#39;mypy2module&#39;</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">mypy2module</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">remove_hooks</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>This will translate, import and run Python 2 code such as the following:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">### File: mypy2module.py</span>
+
+<span class="c1"># Print statements are translated transparently to functions:</span>
+<span class="nb">print</span> <span class="s1">&#39;Hello from a print statement&#39;</span>
+
+<span class="c1"># xrange() is translated to Py3&#39;s range():</span>
+<span class="n">total</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">xrange</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+    <span class="n">total</span> <span class="o">+=</span> <span class="n">i</span>
+<span class="nb">print</span> <span class="s1">&#39;Total is: </span><span class="si">%d</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">total</span>
+
+<span class="c1"># Dictionary methods like .keys() and .items() are supported and</span>
+<span class="c1"># return lists as on Python 2:</span>
+<span class="n">d</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">}</span>
+<span class="k">assert</span> <span class="n">d</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span> <span class="o">==</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">]</span>
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">d</span><span class="o">.</span><span class="n">items</span><span class="p">(),</span> <span class="nb">list</span><span class="p">)</span>
+
+<span class="c1"># Functions like range, reduce, map, filter also return lists:</span>
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">),</span> <span class="nb">list</span><span class="p">)</span>
+
+<span class="c1"># The exec statement is supported:</span>
+<span class="n">exec</span> <span class="s1">&#39;total += 1&#39;</span>
+<span class="nb">print</span> <span class="s1">&#39;Total is now: </span><span class="si">%d</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">total</span>
+
+<span class="c1"># Long integers are supported:</span>
+<span class="n">k</span> <span class="o">=</span> <span class="mi">1234983424324</span><span class="n">L</span>
+<span class="nb">print</span> <span class="s1">&#39;k + 1 = </span><span class="si">%d</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">k</span>
+
+<span class="c1"># Most renamed standard library modules are supported:</span>
+<span class="kn">import</span> <span class="nn">ConfigParser</span>
+<span class="kn">import</span> <span class="nn">HTMLParser</span>
+<span class="kn">import</span> <span class="nn">urllib</span>
+</pre></div>
+</div>
+<p>The attributes of the module are then accessible normally from Python 3.
+For example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># This Python 3 code works</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">type</span><span class="p">(</span><span class="n">mypy2module</span><span class="o">.</span><span class="n">d</span><span class="p">)</span>
+<span class="n">builtins</span><span class="o">.</span><span class="n">dict</span>
+</pre></div>
+</div>
+<p>This is a standard Python 3 data type, so, when called from Python 3 code,
+<code class="docutils literal notranslate"><span class="pre">keys()</span></code> returns a view, not a list:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">type</span><span class="p">(</span><span class="n">mypy2module</span><span class="o">.</span><span class="n">d</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+<span class="go">builtins.dict_keys</span>
+</pre></div>
+</div>
+<ul class="simple" id="translation-limitations">
+<li><p>It currently requires a newline at the end of the module or it throws a
+<code class="docutils literal notranslate"><span class="pre">ParseError</span></code>.</p></li>
+<li><p>This only works with pure-Python modules. C extension modules and Cython code
+are not supported.</p></li>
+<li><p>The biggest hurdle to automatic translation is likely to be ambiguity
+about byte-strings and text (unicode strings) in the Python 2 code. If the
+<code class="docutils literal notranslate"><span class="pre">past.autotranslate</span></code> feature fails because of this, you could try
+running <code class="docutils literal notranslate"><span class="pre">futurize</span></code> over the code and adding a <code class="docutils literal notranslate"><span class="pre">b''</span></code> or <code class="docutils literal notranslate"><span class="pre">u''</span></code> prefix to
+the relevant string literals. To convert between byte-strings and text (unicode
+strings), add an <code class="docutils literal notranslate"><span class="pre">.encode</span></code> or <code class="docutils literal notranslate"><span class="pre">.decode</span></code> method call. If this succeeds,
+please push your patches upstream to the package maintainers.</p></li>
+<li><p>Otherwise, the source translation feature offered by the <code class="docutils literal notranslate"><span class="pre">past.translation</span></code>
+package has similar limitations to the <code class="docutils literal notranslate"><span class="pre">futurize</span></code> script (see
+<a class="reference internal" href="conversion_limitations.html#futurize-limitations"><span class="std std-ref">Known limitations</span></a>). Help developing and testing this feature further
+would be particularly welcome.</p></li>
+</ul>
+<p>Please report any bugs you find on the <code class="docutils literal notranslate"><span class="pre">python-future</span></code> <a class="reference external" href="https://github.com/PythonCharmers/python-future/">bug tracker</a>.</p>
+</section>
+<section id="should-i-import-unicode-literals">
+<span id="unicode-literals"></span><h2>Should I import unicode_literals?<a class="headerlink" href="#should-i-import-unicode-literals" title="Link to this heading">¶</a></h2>
+<p>The <code class="docutils literal notranslate"><span class="pre">future</span></code> package can be used with or without <code class="docutils literal notranslate"><span class="pre">unicode_literals</span></code>
+imports.</p>
+<p>In general, it is more compelling to use <code class="docutils literal notranslate"><span class="pre">unicode_literals</span></code> when
+back-porting new or existing Python 3 code to Python 2/3 than when porting
+existing Python 2 code to 2/3. In the latter case, explicitly marking up all
+unicode string literals with <code class="docutils literal notranslate"><span class="pre">u''</span></code> prefixes would help to avoid
+unintentionally changing the existing Python 2 API. However, if changing the
+existing Python 2 API is not a concern, using <code class="docutils literal notranslate"><span class="pre">unicode_literals</span></code> may speed up
+the porting process.</p>
+<p>This section summarizes the benefits and drawbacks of using
+<code class="docutils literal notranslate"><span class="pre">unicode_literals</span></code>. To avoid confusion, we recommend using
+<code class="docutils literal notranslate"><span class="pre">unicode_literals</span></code> everywhere across a code-base or not at all, instead of
+turning on for only some modules.</p>
+<section id="benefits">
+<h3>Benefits<a class="headerlink" href="#benefits" title="Link to this heading">¶</a></h3>
+<ol class="arabic simple">
+<li><p>String literals are unicode on Python 3. Making them unicode on Python 2
+leads to more consistency of your string types across the two
+runtimes. This can make it easier to understand and debug your code.</p></li>
+<li><p>Code without <code class="docutils literal notranslate"><span class="pre">u''</span></code> prefixes is cleaner, one of the claimed advantages
+of Python 3. Even though some unicode strings would require a function
+call to invert them to native strings for some Python 2 APIs (see
+<a class="reference internal" href="stdlib_incompatibilities.html#stdlib-incompatibilities"><span class="std std-ref">Standard library incompatibilities</span></a>), the incidence of these function calls
+would usually be much lower than the incidence of <code class="docutils literal notranslate"><span class="pre">u''</span></code> prefixes for text
+strings in the absence of <code class="docutils literal notranslate"><span class="pre">unicode_literals</span></code>.</p></li>
+<li><p>The diff when porting to a Python 2/3-compatible codebase may be smaller,
+less noisy, and easier to review with <code class="docutils literal notranslate"><span class="pre">unicode_literals</span></code> than if an
+explicit <code class="docutils literal notranslate"><span class="pre">u''</span></code> prefix is added to every unadorned string literal.</p></li>
+<li><p>If support for Python 3.2 is required (e.g. for Ubuntu 12.04 LTS or
+Debian wheezy), <code class="docutils literal notranslate"><span class="pre">u''</span></code> prefixes are a <code class="docutils literal notranslate"><span class="pre">SyntaxError</span></code>, making
+<code class="docutils literal notranslate"><span class="pre">unicode_literals</span></code> the only option for a Python 2/3 compatible
+codebase. [However, note that <code class="docutils literal notranslate"><span class="pre">future</span></code> doesn’t support Python 3.0-3.2.]</p></li>
+</ol>
+</section>
+<section id="drawbacks">
+<h3>Drawbacks<a class="headerlink" href="#drawbacks" title="Link to this heading">¶</a></h3>
+<ol class="arabic simple">
+<li><p>Adding <code class="docutils literal notranslate"><span class="pre">unicode_literals</span></code> to a module amounts to a “global flag day” for
+that module, changing the data types of all strings in the module at once.
+Cautious developers may prefer an incremental approach. (See
+<a class="reference external" href="http://lwn.net/Articles/165039/">here</a> for an excellent article
+describing the superiority of an incremental patch-set in the the case
+of the Linux kernel.)</p></li>
+</ol>
+<ol class="arabic" start="2">
+<li><p>Changing to <code class="docutils literal notranslate"><span class="pre">unicode_literals</span></code> will likely introduce regressions on
+Python 2 that require an initial investment of time to find and fix. The
+APIs may be changed in subtle ways that are not immediately obvious.</p>
+<p>An example on Python 2:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">### Module: mypaths.py</span>
+
+<span class="o">...</span>
+<span class="k">def</span> <span class="nf">unix_style_path</span><span class="p">(</span><span class="n">path</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">path</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\\</span><span class="s1">&#39;</span><span class="p">,</span> <span class="s1">&#39;/&#39;</span><span class="p">)</span>
+<span class="o">...</span>
+
+<span class="c1">### User code:</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="n">path1</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">Users</span><span class="se">\\</span><span class="s1">Ed&#39;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">unix_style_path</span><span class="p">(</span><span class="n">path1</span><span class="p">)</span>
+<span class="s1">&#39;/Users/ed&#39;</span>
+</pre></div>
+</div>
+<p>On Python 2, adding a <code class="docutils literal notranslate"><span class="pre">unicode_literals</span></code> import to <code class="docutils literal notranslate"><span class="pre">mypaths.py</span></code> would
+change the return type of the <code class="docutils literal notranslate"><span class="pre">unix_style_path</span></code> function from <code class="docutils literal notranslate"><span class="pre">str</span></code> to
+<code class="docutils literal notranslate"><span class="pre">unicode</span></code> in the user code, which is difficult to anticipate and probably
+unintended.</p>
+<p>The counter-argument is that this code is broken, in a portability
+sense; we see this from Python 3 raising a <code class="docutils literal notranslate"><span class="pre">TypeError</span></code> upon passing the
+function a byte-string. The code needs to be changed to make explicit
+whether the <code class="docutils literal notranslate"><span class="pre">path</span></code> argument is to be a byte string or a unicode string.</p>
+</li>
+<li><p>With <code class="docutils literal notranslate"><span class="pre">unicode_literals</span></code> in effect, there is no way to specify a native
+string literal (<code class="docutils literal notranslate"><span class="pre">str</span></code> type on both platforms). This can be worked around as follows:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">unicode_literals</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="o">...</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">future.utils</span> <span class="kn">import</span> <span class="n">bytes_to_native_str</span> <span class="k">as</span> <span class="n">n</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="n">n</span><span class="p">(</span><span class="sa">b</span><span class="s1">&#39;ABCD&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">s</span>
+<span class="go">&#39;ABCD&#39;  # on both Py2 and Py3</span>
+</pre></div>
+</div>
+<p>although this incurs a performance penalty (a function call and, on Py3,
+a <code class="docutils literal notranslate"><span class="pre">decode</span></code> method call.)</p>
+<p>This is a little awkward because various Python library APIs (standard
+and non-standard) require a native string to be passed on both Py2
+and Py3. (See <a class="reference internal" href="stdlib_incompatibilities.html#stdlib-incompatibilities"><span class="std std-ref">Standard library incompatibilities</span></a> for some examples. WSGI
+dictionaries are another.)</p>
+</li>
+</ol>
+<ol class="arabic" start="3">
+<li><p>If a codebase already explicitly marks up all text with <code class="docutils literal notranslate"><span class="pre">u''</span></code> prefixes,
+and if support for Python versions 3.0-3.2 can be dropped, then
+removing the existing <code class="docutils literal notranslate"><span class="pre">u''</span></code> prefixes and replacing these with
+<code class="docutils literal notranslate"><span class="pre">unicode_literals</span></code> imports (the porting approach Django used) would
+introduce more noise into the patch and make it more difficult to review.
+However, note that the <code class="docutils literal notranslate"><span class="pre">futurize</span></code> script takes advantage of PEP 414 and
+does not remove explicit <code class="docutils literal notranslate"><span class="pre">u''</span></code> prefixes that already exist.</p></li>
+<li><p>Turning on <code class="docutils literal notranslate"><span class="pre">unicode_literals</span></code> converts even docstrings to unicode, but
+Pydoc breaks with unicode docstrings containing non-ASCII characters for
+Python versions &lt; 2.7.7. (<a class="reference external" href="http://bugs.python.org/issue1065986#msg207403">Fix
+committed</a> in Jan 2014.):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">def</span> <span class="nf">f</span><span class="p">():</span>
+<span class="gp">... </span>    <span class="sa">u</span><span class="s2">&quot;Author: Martin von Löwis&quot;</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">help</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+
+<span class="go">/Users/schofield/Install/anaconda/python.app/Contents/lib/python2.7/pydoc.pyc in pipepager(text, cmd)</span>
+<span class="go">   1376     pipe = os.popen(cmd, &#39;w&#39;)</span>
+<span class="go">   1377     try:</span>
+<span class="go">-&gt; 1378         pipe.write(text)</span>
+<span class="go">   1379         pipe.close()</span>
+<span class="go">   1380     except IOError:</span>
+
+<span class="go">UnicodeEncodeError: &#39;ascii&#39; codec can&#39;t encode character u&#39;\xf6&#39; in position 71: ordinal not in range(128)</span>
+</pre></div>
+</div>
+</li>
+</ol>
+<p>See <a class="reference external" href="http://stackoverflow.com/questions/809796/any-gotchas-using-unicode-literals-in-python-2-6">this Stack Overflow thread</a>
+for other gotchas.</p>
+</section>
+<section id="others-perspectives">
+<h3>Others’ perspectives<a class="headerlink" href="#others-perspectives" title="Link to this heading">¶</a></h3>
+<p>Django recommends importing <code class="docutils literal notranslate"><span class="pre">unicode_literals</span></code> as its top <a class="reference external" href="https://docs.djangoproject.com/en/1.11/topics/python3/#unicode-literals">porting tip</a> for
+migrating Django extension modules to Python 3.  The following <a class="reference external" href="https://groups.google.com/forum/#!topic/django-developers/2ddIWdicbNY">quote</a> is
+from Aymeric Augustin on 23 August 2012 regarding why he chose
+<code class="docutils literal notranslate"><span class="pre">unicode_literals</span></code> for the port of Django to a Python 2/3-compatible
+codebase.:</p>
+<blockquote>
+<div><p>“… I’d like to explain why this PEP [PEP 414, which allows explicit
+<code class="docutils literal notranslate"><span class="pre">u''</span></code> prefixes for unicode literals on Python 3.3+] is at odds with
+the porting philosophy I’ve applied to Django, and why I would have
+vetoed taking advantage of it.</p>
+<p>“I believe that aiming for a Python 2 codebase with Python 3
+compatibility hacks is a counter-productive way to port a project. You
+end up with all the drawbacks of Python 2 (including the legacy <cite>u</cite>
+prefixes) and none of the advantages Python 3 (especially the sane
+string handling).</p>
+<p>“Working to write Python 3 code, with legacy compatibility for Python
+2, is much more rewarding. Of course it takes more effort, but the
+results are much cleaner and much more maintainable. It’s really about
+looking towards the future or towards the past.</p>
+<p>“I understand the reasons why PEP 414 was proposed and why it was
+accepted. It makes sense for legacy software that is minimally
+maintained. I hope nobody puts Django in this category!”</p>
+</div></blockquote>
+<blockquote>
+<div><p>“There are so many subtle problems that <code class="docutils literal notranslate"><span class="pre">unicode_literals</span></code> causes.
+For instance lots of people accidentally introduce unicode into
+filenames and that seems to work, until they are using it on a system
+where there are unicode characters in the filesystem path.”</p>
+<p class="attribution">—Armin Ronacher</p>
+</div></blockquote>
+<blockquote>
+<div><p>“+1 from me for avoiding the unicode_literals future, as it can have
+very strange side effects in Python 2…. This is one of the key
+reasons I backed Armin’s PEP 414.”</p>
+<p class="attribution">—Nick Coghlan</p>
+</div></blockquote>
+<blockquote>
+<div><p>“Yeah, one of the nuisances of the WSGI spec is that the header values
+IIRC are the str or StringType on both py2 and py3. With
+unicode_literals this causes hard-to-spot bugs, as some WSGI servers
+might be more tolerant than others, but usually using unicode in python
+2 for WSGI headers will cause the response to fail.”</p>
+<p class="attribution">—Antti Haapala</p>
+</div></blockquote>
+</section>
+</section>
+<section id="next-steps">
+<h2>Next steps<a class="headerlink" href="#next-steps" title="Link to this heading">¶</a></h2>
+<p>See <a class="reference internal" href="what_else.html#what-else"><span class="std std-ref">What else you need to know</span></a>.</p>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+  <span id="sidebar-top"></span>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  
+    
+            <p class="logo"><a href="index.html">
+              <img class="logo" src="_static/python-future-logo-textless-transparent.png" alt="Logo"/>
+            </a></p>
+  
+<!--<h3>Python-Future</h3>
+<p>-->
+  <h4>Easy, clean, reliable Python 2/3 compatibility</h4>
+  <a href="https://python-future.org/#contents">Table of Contents</a>
+<!--
+</p>
+<h3>Other Formats</h3>
+<p>
+  You can download the documentation in other formats as well:
+</p>
+<ul>
+  <li><a href="http://jinja.pocoo.org/docs/jinja-docs.pdf">as PDF</a>
+  <li><a href="http://jinja.pocoo.org/docs/jinja-docs.zip">as zipped HTML</a>
+</ul>
+-->
+<!--<h3>Useful Links</h3>
+<ul>
+  <li><a href="https://pypi.org/project/future/">on PyPI</a></li>
+  <li><a href="https://github.com/PythonCharmers/python-future">on GitHub</a></li>
+</ul>
+--><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="whatsnew.html">What’s New</a></li>
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview: Easy, clean, reliable Python 2/3 compatibility</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quick-start guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="compatible_idioms.html">Cheat Sheet: Writing Python 2-3 compatible code</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Imports</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#future-imports">__future__ imports</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#imports-of-builtins">Imports of builtins</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#standard-library-imports">Standard library imports</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#external-standard-library-backports">External standard-library backports</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#included-full-backports">Included full backports</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#using-python-2-only-dependencies-on-python-3">Using Python 2-only dependencies on Python 3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#should-i-import-unicode-literals">Should I import unicode_literals?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#next-steps">Next steps</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="what_else.html">What else you need to know</a></li>
+<li class="toctree-l1"><a class="reference internal" href="automatic_conversion.html">Automatic conversion to Py2/3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">Frequently Asked Questions (FAQ)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stdlib_incompatibilities.html">Standard library incompatibilities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="older_interfaces.html">Older interfaces</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changes in previous versions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="credits.html">Licensing and credits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference.html">API Reference (in progress)</a></li>
+</ul>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+  
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2013-2019, Python Charmers Pty Ltd, Australia.
+    </div>
+  <script src="_static/version_warning_offset.js"></script>
+
+<div class="footer">
+<script type="text/javascript">
+  (function() {
+    var ga = document.createElement('script');
+    ga.src = ('https:' == document.location.protocol ?
+              'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    ga.setAttribute('async', 'true');
+    document.documentElement.firstChild.appendChild(ga);
+  })();
+</script>
+</div>
+
+  </body>
+</html>

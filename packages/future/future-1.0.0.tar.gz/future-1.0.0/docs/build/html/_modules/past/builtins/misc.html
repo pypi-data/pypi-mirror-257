@@ -1,0 +1,293 @@
+
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>past.builtins.misc &#8212; Python-Future  documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/jinja.css?v=85659ec6" />
+    <link rel="stylesheet" href="../../../_static/my-styles.css" type="text/css" />
+    <script src="../../../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="icon" href="../../../_static/python-future-icon-32.ico"/>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+ 
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-19344199-2']);
+  _gaq.push(['_trackPageview']);
+</script>
+
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">Python-Future  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../index.html" accesskey="U">Module code</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">past.builtins.misc</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for past.builtins.misc</h1><div class="highlight"><pre>
+<span></span><span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">unicode_literals</span>
+
+<span class="kn">import</span> <span class="nn">inspect</span>
+<span class="kn">import</span> <span class="nn">math</span>
+<span class="kn">import</span> <span class="nn">numbers</span>
+
+<span class="kn">from</span> <span class="nn">future.utils</span> <span class="kn">import</span> <span class="n">PY2</span><span class="p">,</span> <span class="n">PY3</span><span class="p">,</span> <span class="n">exec_</span>
+
+<span class="k">if</span> <span class="n">PY2</span><span class="p">:</span>
+    <span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">Mapping</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="kn">from</span> <span class="nn">collections.abc</span> <span class="kn">import</span> <span class="n">Mapping</span>
+
+<span class="k">if</span> <span class="n">PY3</span><span class="p">:</span>
+    <span class="kn">import</span> <span class="nn">builtins</span>
+    <span class="kn">from</span> <span class="nn">collections.abc</span> <span class="kn">import</span> <span class="n">Mapping</span>
+
+    <span class="k">def</span> <span class="nf">apply</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kw</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">f</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kw</span><span class="p">)</span>
+
+    <span class="kn">from</span> <span class="nn">past.builtins</span> <span class="kn">import</span> <span class="nb">str</span> <span class="k">as</span> <span class="n">oldstr</span>
+
+<div class="viewcode-block" id="chr">
+<a class="viewcode-back" href="../../../reference.html#past.builtins.chr">[docs]</a>
+    <span class="k">def</span> <span class="nf">chr</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Return a byte-string of one character with ordinal i; 0 &lt;= i &lt;= 256</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">oldstr</span><span class="p">(</span><span class="nb">bytes</span><span class="p">((</span><span class="n">i</span><span class="p">,)))</span></div>
+
+
+<div class="viewcode-block" id="cmp">
+<a class="viewcode-back" href="../../../reference.html#past.builtins.cmp">[docs]</a>
+    <span class="k">def</span> <span class="nf">cmp</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        cmp(x, y) -&gt; integer</span>
+
+<span class="sd">        Return negative if x&lt;y, zero if x==y, positive if x&gt;y.</span>
+<span class="sd">        Python2 had looser comparison allowing cmp None and non Numerical types and collections.</span>
+<span class="sd">        Try to match the old behavior</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="nb">set</span><span class="p">)</span> <span class="ow">and</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="nb">set</span><span class="p">):</span>
+            <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s1">&#39;cannot compare sets using cmp()&#39;</span><span class="p">,)</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">numbers</span><span class="o">.</span><span class="n">Number</span><span class="p">)</span> <span class="ow">and</span> <span class="n">math</span><span class="o">.</span><span class="n">isnan</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+                <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">numbers</span><span class="o">.</span><span class="n">Number</span><span class="p">):</span>
+                    <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s1">&#39;cannot compare float(&quot;nan&quot;), </span><span class="si">{type_y}</span><span class="s1"> with cmp&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">type_y</span><span class="o">=</span><span class="nb">type</span><span class="p">(</span><span class="n">y</span><span class="p">)))</span>
+                <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="nb">int</span><span class="p">):</span>
+                    <span class="k">return</span> <span class="mi">1</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">numbers</span><span class="o">.</span><span class="n">Number</span><span class="p">)</span> <span class="ow">and</span> <span class="n">math</span><span class="o">.</span><span class="n">isnan</span><span class="p">(</span><span class="n">y</span><span class="p">):</span>
+                <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">numbers</span><span class="o">.</span><span class="n">Number</span><span class="p">):</span>
+                    <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s1">&#39;cannot compare </span><span class="si">{type_x}</span><span class="s1">, float(&quot;nan&quot;) with cmp&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">type_x</span><span class="o">=</span><span class="nb">type</span><span class="p">(</span><span class="n">x</span><span class="p">)))</span>
+                <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="nb">int</span><span class="p">):</span>
+                    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="k">return</span> <span class="mi">1</span>
+            <span class="k">return</span> <span class="p">(</span><span class="n">x</span> <span class="o">&gt;</span> <span class="n">y</span><span class="p">)</span> <span class="o">-</span> <span class="p">(</span><span class="n">x</span> <span class="o">&lt;</span> <span class="n">y</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">TypeError</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="n">y</span><span class="p">:</span>
+                <span class="k">return</span> <span class="mi">0</span>
+            <span class="n">type_order</span> <span class="o">=</span> <span class="p">[</span>
+                <span class="nb">type</span><span class="p">(</span><span class="kc">None</span><span class="p">),</span>
+                <span class="n">numbers</span><span class="o">.</span><span class="n">Number</span><span class="p">,</span>
+                <span class="nb">dict</span><span class="p">,</span> <span class="nb">list</span><span class="p">,</span>
+                <span class="nb">set</span><span class="p">,</span>
+                <span class="p">(</span><span class="nb">str</span><span class="p">,</span> <span class="nb">bytes</span><span class="p">),</span>
+            <span class="p">]</span>
+            <span class="n">x_type_index</span> <span class="o">=</span> <span class="n">y_type_index</span> <span class="o">=</span> <span class="kc">None</span>
+            <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">type_match</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">type_order</span><span class="p">):</span>
+                <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">type_match</span><span class="p">):</span>
+                    <span class="n">x_type_index</span> <span class="o">=</span> <span class="n">i</span>
+                <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">type_match</span><span class="p">):</span>
+                    <span class="n">y_type_index</span> <span class="o">=</span> <span class="n">i</span>
+            <span class="k">if</span> <span class="n">cmp</span><span class="p">(</span><span class="n">x_type_index</span><span class="p">,</span> <span class="n">y_type_index</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="nb">bytes</span><span class="p">)</span> <span class="ow">and</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
+                    <span class="k">return</span> <span class="n">cmp</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;ascii&#39;</span><span class="p">),</span> <span class="n">y</span><span class="p">)</span>
+                <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="nb">bytes</span><span class="p">)</span> <span class="ow">and</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
+                    <span class="k">return</span> <span class="n">cmp</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;ascii&#39;</span><span class="p">))</span>
+                <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="nb">list</span><span class="p">):</span>
+                    <span class="c1"># if both arguments are lists take the comparison of the first non equal value</span>
+                    <span class="k">for</span> <span class="n">x_elem</span><span class="p">,</span> <span class="n">y_elem</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+                        <span class="n">elem_cmp_val</span> <span class="o">=</span> <span class="n">cmp</span><span class="p">(</span><span class="n">x_elem</span><span class="p">,</span> <span class="n">y_elem</span><span class="p">)</span>
+                        <span class="k">if</span> <span class="n">elem_cmp_val</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+                            <span class="k">return</span> <span class="n">elem_cmp_val</span>
+                    <span class="c1"># if all elements are equal, return equal/0</span>
+                    <span class="k">return</span> <span class="mi">0</span>
+                <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="nb">dict</span><span class="p">):</span>
+                    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">!=</span> <span class="nb">len</span><span class="p">(</span><span class="n">y</span><span class="p">):</span>
+                        <span class="k">return</span> <span class="n">cmp</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">y</span><span class="p">))</span>
+                    <span class="k">else</span><span class="p">:</span>
+                        <span class="n">x_key</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">a</span> <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">x</span> <span class="k">if</span> <span class="n">a</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">y</span> <span class="ow">or</span> <span class="n">x</span><span class="p">[</span><span class="n">a</span><span class="p">]</span> <span class="o">!=</span> <span class="n">y</span><span class="p">[</span><span class="n">a</span><span class="p">])</span>
+                        <span class="n">y_key</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">b</span> <span class="k">for</span> <span class="n">b</span> <span class="ow">in</span> <span class="n">y</span> <span class="k">if</span> <span class="n">b</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">x</span> <span class="ow">or</span> <span class="n">x</span><span class="p">[</span><span class="n">b</span><span class="p">]</span> <span class="o">!=</span> <span class="n">y</span><span class="p">[</span><span class="n">b</span><span class="p">])</span>
+                        <span class="k">if</span> <span class="n">x_key</span> <span class="o">!=</span> <span class="n">y_key</span><span class="p">:</span>
+                            <span class="k">return</span> <span class="n">cmp</span><span class="p">(</span><span class="n">x_key</span><span class="p">,</span> <span class="n">y_key</span><span class="p">)</span>
+                        <span class="k">else</span><span class="p">:</span>
+                            <span class="k">return</span> <span class="n">cmp</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="n">x_key</span><span class="p">],</span> <span class="n">y</span><span class="p">[</span><span class="n">y_key</span><span class="p">])</span>
+            <span class="k">return</span> <span class="n">cmp</span><span class="p">(</span><span class="n">x_type_index</span><span class="p">,</span> <span class="n">y_type_index</span><span class="p">)</span></div>
+
+
+    <span class="kn">from</span> <span class="nn">sys</span> <span class="kn">import</span> <span class="n">intern</span>
+
+    <span class="k">def</span> <span class="nf">oct</span><span class="p">(</span><span class="n">number</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;oct(number) -&gt; string</span>
+
+<span class="sd">        Return the octal representation of an integer</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="s1">&#39;0&#39;</span> <span class="o">+</span> <span class="n">builtins</span><span class="o">.</span><span class="n">oct</span><span class="p">(</span><span class="n">number</span><span class="p">)[</span><span class="mi">2</span><span class="p">:]</span>
+
+    <span class="n">raw_input</span> <span class="o">=</span> <span class="nb">input</span>
+
+    <span class="k">try</span><span class="p">:</span>
+        <span class="kn">from</span> <span class="nn">importlib</span> <span class="kn">import</span> <span class="n">reload</span>
+    <span class="k">except</span> <span class="ne">ImportError</span><span class="p">:</span>
+        <span class="c1"># for python2, python3 &lt;= 3.4</span>
+        <span class="kn">from</span> <span class="nn">imp</span> <span class="kn">import</span> <span class="n">reload</span>
+
+    <span class="n">unicode</span> <span class="o">=</span> <span class="nb">str</span>
+    <span class="n">unichr</span> <span class="o">=</span> <span class="nb">chr</span>
+    <span class="n">xrange</span> <span class="o">=</span> <span class="nb">range</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="kn">import</span> <span class="nn">__builtin__</span>
+    <span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">Mapping</span>
+    <span class="n">apply</span> <span class="o">=</span> <span class="n">__builtin__</span><span class="o">.</span><span class="n">apply</span>
+    <span class="nb">chr</span> <span class="o">=</span> <span class="n">__builtin__</span><span class="o">.</span><span class="n">chr</span>
+    <span class="n">cmp</span> <span class="o">=</span> <span class="n">__builtin__</span><span class="o">.</span><span class="n">cmp</span>
+    <span class="n">execfile</span> <span class="o">=</span> <span class="n">__builtin__</span><span class="o">.</span><span class="n">execfile</span>
+    <span class="n">intern</span> <span class="o">=</span> <span class="n">__builtin__</span><span class="o">.</span><span class="n">intern</span>
+    <span class="nb">oct</span> <span class="o">=</span> <span class="n">__builtin__</span><span class="o">.</span><span class="n">oct</span>
+    <span class="n">raw_input</span> <span class="o">=</span> <span class="n">__builtin__</span><span class="o">.</span><span class="n">raw_input</span>
+    <span class="n">reload</span> <span class="o">=</span> <span class="n">__builtin__</span><span class="o">.</span><span class="n">reload</span>
+    <span class="n">unicode</span> <span class="o">=</span> <span class="n">__builtin__</span><span class="o">.</span><span class="n">unicode</span>
+    <span class="n">unichr</span> <span class="o">=</span> <span class="n">__builtin__</span><span class="o">.</span><span class="n">unichr</span>
+    <span class="n">xrange</span> <span class="o">=</span> <span class="n">__builtin__</span><span class="o">.</span><span class="n">xrange</span>
+
+
+<span class="k">if</span> <span class="n">PY3</span><span class="p">:</span>
+<div class="viewcode-block" id="execfile">
+<a class="viewcode-back" href="../../../reference.html#past.builtins.execfile">[docs]</a>
+    <span class="k">def</span> <span class="nf">execfile</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">myglobals</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">mylocals</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Read and execute a Python script from a file in the given namespaces.</span>
+<span class="sd">        The globals and locals are dictionaries, defaulting to the current</span>
+<span class="sd">        globals and locals. If only globals is given, locals defaults to it.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">myglobals</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="c1"># There seems to be no alternative to frame hacking here.</span>
+            <span class="n">caller_frame</span> <span class="o">=</span> <span class="n">inspect</span><span class="o">.</span><span class="n">stack</span><span class="p">()[</span><span class="mi">1</span><span class="p">]</span>
+            <span class="n">myglobals</span> <span class="o">=</span> <span class="n">caller_frame</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">f_globals</span>
+            <span class="n">mylocals</span> <span class="o">=</span> <span class="n">caller_frame</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">f_locals</span>
+        <span class="k">elif</span> <span class="n">mylocals</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="c1"># Only if myglobals is given do we set mylocals to it.</span>
+            <span class="n">mylocals</span> <span class="o">=</span> <span class="n">myglobals</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">myglobals</span><span class="p">,</span> <span class="n">Mapping</span><span class="p">):</span>
+            <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s1">&#39;globals must be a mapping&#39;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">mylocals</span><span class="p">,</span> <span class="n">Mapping</span><span class="p">):</span>
+            <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s1">&#39;locals must be a mapping&#39;</span><span class="p">)</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s2">&quot;rb&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">fin</span><span class="p">:</span>
+            <span class="n">source</span> <span class="o">=</span> <span class="n">fin</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+        <span class="n">code</span> <span class="o">=</span> <span class="nb">compile</span><span class="p">(</span><span class="n">source</span><span class="p">,</span> <span class="n">filename</span><span class="p">,</span> <span class="s2">&quot;exec&quot;</span><span class="p">)</span>
+        <span class="n">exec_</span><span class="p">(</span><span class="n">code</span><span class="p">,</span> <span class="n">myglobals</span><span class="p">,</span> <span class="n">mylocals</span><span class="p">)</span></div>
+
+
+
+<span class="k">if</span> <span class="n">PY3</span><span class="p">:</span>
+    <span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;apply&#39;</span><span class="p">,</span> <span class="s1">&#39;chr&#39;</span><span class="p">,</span> <span class="s1">&#39;cmp&#39;</span><span class="p">,</span> <span class="s1">&#39;execfile&#39;</span><span class="p">,</span> <span class="s1">&#39;intern&#39;</span><span class="p">,</span> <span class="s1">&#39;raw_input&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;reload&#39;</span><span class="p">,</span> <span class="s1">&#39;unichr&#39;</span><span class="p">,</span> <span class="s1">&#39;unicode&#39;</span><span class="p">,</span> <span class="s1">&#39;xrange&#39;</span><span class="p">]</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="n">__all__</span> <span class="o">=</span> <span class="p">[]</span>
+</pre></div>
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+  <span id="sidebar-top"></span>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  
+    
+            <p class="logo"><a href="../../../index.html">
+              <img class="logo" src="../../../_static/python-future-logo-textless-transparent.png" alt="Logo"/>
+            </a></p>
+  
+<!--<h3>Python-Future</h3>
+<p>-->
+  <h4>Easy, clean, reliable Python 2/3 compatibility</h4>
+  <a href="https://python-future.org/#contents">Table of Contents</a>
+<!--
+</p>
+<h3>Other Formats</h3>
+<p>
+  You can download the documentation in other formats as well:
+</p>
+<ul>
+  <li><a href="http://jinja.pocoo.org/docs/jinja-docs.pdf">as PDF</a>
+  <li><a href="http://jinja.pocoo.org/docs/jinja-docs.zip">as zipped HTML</a>
+</ul>
+-->
+<!--<h3>Useful Links</h3>
+<ul>
+  <li><a href="https://pypi.org/project/future/">on PyPI</a></li>
+  <li><a href="https://github.com/PythonCharmers/python-future">on GitHub</a></li>
+</ul>
+--><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../whatsnew.html">What’s New</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../overview.html">Overview: Easy, clean, reliable Python 2/3 compatibility</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../quickstart.html">Quick-start guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../compatible_idioms.html">Cheat Sheet: Writing Python 2-3 compatible code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../imports.html">Imports</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../what_else.html">What else you need to know</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../automatic_conversion.html">Automatic conversion to Py2/3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../faq.html">Frequently Asked Questions (FAQ)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../stdlib_incompatibilities.html">Standard library incompatibilities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../older_interfaces.html">Older interfaces</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../changelog.html">Changes in previous versions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../credits.html">Licensing and credits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../reference.html">API Reference (in progress)</a></li>
+</ul>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+  
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2013-2019, Python Charmers Pty Ltd, Australia.
+    </div>
+  <script src="../../../_static/version_warning_offset.js"></script>
+
+<div class="footer">
+<script type="text/javascript">
+  (function() {
+    var ga = document.createElement('script');
+    ga.src = ('https:' == document.location.protocol ?
+              'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    ga.setAttribute('async', 'true');
+    document.documentElement.firstChild.appendChild(ga);
+  })();
+</script>
+</div>
+
+  </body>
+</html>

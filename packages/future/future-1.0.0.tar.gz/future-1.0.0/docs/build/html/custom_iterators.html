@@ -1,0 +1,211 @@
+
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Custom iterators &#8212; Python-Future  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/jinja.css?v=85659ec6" />
+    <link rel="stylesheet" href="_static/my-styles.css" type="text/css" />
+    <script src="_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="icon" href="_static/python-future-icon-32.ico"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+ 
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-19344199-2']);
+  _gaq.push(['_trackPageview']);
+</script>
+
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Python-Future  documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Custom iterators</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="custom-iterators">
+<span id="id1"></span><h1>Custom iterators<a class="headerlink" href="#custom-iterators" title="Link to this heading">¶</a></h1>
+<p>If you define your own iterators, there is an incompatibility in the method name
+to retrieve the next item across Py3 and Py2. On Python 3 it is <code class="docutils literal notranslate"><span class="pre">__next__</span></code>,
+whereas on Python 2 it is <code class="docutils literal notranslate"><span class="pre">next</span></code>.</p>
+<p>The most elegant solution to this is to derive your custom iterator class from
+<code class="docutils literal notranslate"><span class="pre">builtins.object</span></code> and define a <code class="docutils literal notranslate"><span class="pre">__next__</span></code> method as you normally
+would on Python 3. On Python 2, <code class="docutils literal notranslate"><span class="pre">object</span></code> then refers to the
+<code class="docutils literal notranslate"><span class="pre">future.types.newobject</span></code> base class, which provides a fallback <code class="docutils literal notranslate"><span class="pre">next</span></code>
+method that calls your <code class="docutils literal notranslate"><span class="pre">__next__</span></code>. Use it as follows:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">builtins</span> <span class="kn">import</span> <span class="nb">object</span>
+
+<span class="k">class</span> <span class="nc">Upper</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">iterable</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_iter</span> <span class="o">=</span> <span class="nb">iter</span><span class="p">(</span><span class="n">iterable</span><span class="p">)</span>
+    <span class="k">def</span> <span class="fm">__next__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>                 <span class="c1"># Py3-style iterator interface</span>
+        <span class="k">return</span> <span class="nb">next</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_iter</span><span class="p">)</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+    <span class="k">def</span> <span class="fm">__iter__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span>
+
+<span class="n">itr</span> <span class="o">=</span> <span class="n">Upper</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">)</span>
+<span class="k">assert</span> <span class="nb">next</span><span class="p">(</span><span class="n">itr</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;H&#39;</span>
+<span class="k">assert</span> <span class="nb">next</span><span class="p">(</span><span class="n">itr</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;E&#39;</span>
+<span class="k">assert</span> <span class="nb">list</span><span class="p">(</span><span class="n">itr</span><span class="p">)</span> <span class="o">==</span> <span class="nb">list</span><span class="p">(</span><span class="s1">&#39;LLO&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>You can use this approach unless you are defining a custom iterator as a
+subclass of a base class defined elsewhere that does not derive from
+<code class="docutils literal notranslate"><span class="pre">newobject</span></code>.  In that case, you can provide compatibility across
+Python 2 and Python 3 using the <code class="docutils literal notranslate"><span class="pre">next</span></code> function from <code class="docutils literal notranslate"><span class="pre">future.builtins</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">builtins</span> <span class="kn">import</span> <span class="nb">next</span>
+
+<span class="kn">from</span> <span class="nn">some_module</span> <span class="kn">import</span> <span class="n">some_base_class</span>
+
+<span class="k">class</span> <span class="nc">Upper2</span><span class="p">(</span><span class="n">some_base_class</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">iterable</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_iter</span> <span class="o">=</span> <span class="nb">iter</span><span class="p">(</span><span class="n">iterable</span><span class="p">)</span>
+    <span class="k">def</span> <span class="fm">__next__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>                 <span class="c1"># Py3-style iterator interface</span>
+        <span class="k">return</span> <span class="nb">next</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_iter</span><span class="p">)</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+    <span class="k">def</span> <span class="fm">__iter__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span>
+
+<span class="n">itr2</span> <span class="o">=</span> <span class="n">Upper2</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">)</span>
+<span class="k">assert</span> <span class="nb">next</span><span class="p">(</span><span class="n">itr2</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;H&#39;</span>
+<span class="k">assert</span> <span class="nb">next</span><span class="p">(</span><span class="n">itr2</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;E&#39;</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">next()</span></code> also works with regular Python 2 iterators with a <code class="docutils literal notranslate"><span class="pre">.next</span></code> method:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">itr3</span> <span class="o">=</span> <span class="nb">iter</span><span class="p">([</span><span class="s1">&#39;one&#39;</span><span class="p">,</span> <span class="s1">&#39;three&#39;</span><span class="p">,</span> <span class="s1">&#39;five&#39;</span><span class="p">])</span>
+<span class="k">assert</span> <span class="s1">&#39;next&#39;</span> <span class="ow">in</span> <span class="nb">dir</span><span class="p">(</span><span class="n">itr3</span><span class="p">)</span>
+<span class="k">assert</span> <span class="nb">next</span><span class="p">(</span><span class="n">itr3</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;one&#39;</span>
+</pre></div>
+</div>
+<p>This approach is feasible whenever your code calls the <code class="docutils literal notranslate"><span class="pre">next()</span></code> function
+explicitly. If you consume the iterator implicitly in a <code class="docutils literal notranslate"><span class="pre">for</span></code> loop or
+<code class="docutils literal notranslate"><span class="pre">list()</span></code> call or by some other means, the <code class="docutils literal notranslate"><span class="pre">future.builtins.next</span></code> function
+will not help; the third assertion below would fail on Python 2:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">itr2</span> <span class="o">=</span> <span class="n">Upper2</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">)</span>
+
+<span class="k">assert</span> <span class="nb">next</span><span class="p">(</span><span class="n">itr2</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;H&#39;</span>
+<span class="k">assert</span> <span class="nb">next</span><span class="p">(</span><span class="n">itr2</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;E&#39;</span>
+<span class="k">assert</span> <span class="nb">list</span><span class="p">(</span><span class="n">itr2</span><span class="p">)</span> <span class="o">==</span> <span class="nb">list</span><span class="p">(</span><span class="s1">&#39;LLO&#39;</span><span class="p">)</span>      <span class="c1"># fails because Py2 implicitly looks</span>
+                                      <span class="c1"># for a ``next`` method.</span>
+</pre></div>
+</div>
+<p>Instead, you can use a decorator called <code class="docutils literal notranslate"><span class="pre">implements_iterator</span></code> from
+<code class="docutils literal notranslate"><span class="pre">future.utils</span></code> to allow Py3-style iterators to work identically on Py2, even
+if they don’t inherit from <code class="docutils literal notranslate"><span class="pre">future.builtins.object</span></code>. Use it as follows:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">future.utils</span> <span class="kn">import</span> <span class="n">implements_iterator</span>
+
+<span class="n">Upper2</span> <span class="o">=</span> <span class="n">implements_iterator</span><span class="p">(</span><span class="n">Upper2</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">Upper2</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">)))</span>
+<span class="c1"># prints [&#39;H&#39;, &#39;E&#39;, &#39;L&#39;, &#39;L&#39;, &#39;O&#39;]</span>
+</pre></div>
+</div>
+<p>This can of course also be used with the <code class="docutils literal notranslate"><span class="pre">&#64;</span></code> decorator syntax when defining
+the iterator as follows:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@implements_iterator</span>
+<span class="k">class</span> <span class="nc">Upper2</span><span class="p">(</span><span class="n">some_base_class</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">iterable</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_iter</span> <span class="o">=</span> <span class="nb">iter</span><span class="p">(</span><span class="n">iterable</span><span class="p">)</span>
+    <span class="k">def</span> <span class="fm">__next__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>                 <span class="c1"># note the Py3 interface</span>
+        <span class="k">return</span> <span class="nb">next</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_iter</span><span class="p">)</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+    <span class="k">def</span> <span class="fm">__iter__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span>
+</pre></div>
+</div>
+<p>On Python 3, as usual, this decorator does nothing.</p>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+  <span id="sidebar-top"></span>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  
+    
+            <p class="logo"><a href="index.html">
+              <img class="logo" src="_static/python-future-logo-textless-transparent.png" alt="Logo"/>
+            </a></p>
+  
+<!--<h3>Python-Future</h3>
+<p>-->
+  <h4>Easy, clean, reliable Python 2/3 compatibility</h4>
+  <a href="https://python-future.org/#contents">Table of Contents</a>
+<!--
+</p>
+<h3>Other Formats</h3>
+<p>
+  You can download the documentation in other formats as well:
+</p>
+<ul>
+  <li><a href="http://jinja.pocoo.org/docs/jinja-docs.pdf">as PDF</a>
+  <li><a href="http://jinja.pocoo.org/docs/jinja-docs.zip">as zipped HTML</a>
+</ul>
+-->
+<!--<h3>Useful Links</h3>
+<ul>
+  <li><a href="https://pypi.org/project/future/">on PyPI</a></li>
+  <li><a href="https://github.com/PythonCharmers/python-future">on GitHub</a></li>
+</ul>
+--><ul>
+<li class="toctree-l1"><a class="reference internal" href="whatsnew.html">What’s New</a></li>
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview: Easy, clean, reliable Python 2/3 compatibility</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quick-start guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="compatible_idioms.html">Cheat Sheet: Writing Python 2-3 compatible code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="imports.html">Imports</a></li>
+<li class="toctree-l1"><a class="reference internal" href="what_else.html">What else you need to know</a></li>
+<li class="toctree-l1"><a class="reference internal" href="automatic_conversion.html">Automatic conversion to Py2/3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">Frequently Asked Questions (FAQ)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stdlib_incompatibilities.html">Standard library incompatibilities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="older_interfaces.html">Older interfaces</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changes in previous versions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="credits.html">Licensing and credits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference.html">API Reference (in progress)</a></li>
+</ul>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+  
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2013-2019, Python Charmers Pty Ltd, Australia.
+    </div>
+  <script src="_static/version_warning_offset.js"></script>
+
+<div class="footer">
+<script type="text/javascript">
+  (function() {
+    var ga = document.createElement('script');
+    ga.src = ('https:' == document.location.protocol ?
+              'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    ga.setAttribute('async', 'true');
+    document.documentElement.firstChild.appendChild(ga);
+  })();
+</script>
+</div>
+
+  </body>
+</html>

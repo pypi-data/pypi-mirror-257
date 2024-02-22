@@ -1,0 +1,234 @@
+
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>past.types.olddict &#8212; Python-Future  documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/jinja.css?v=85659ec6" />
+    <link rel="stylesheet" href="../../../_static/my-styles.css" type="text/css" />
+    <script src="../../../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="icon" href="../../../_static/python-future-icon-32.ico"/>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+ 
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-19344199-2']);
+  _gaq.push(['_trackPageview']);
+</script>
+
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">Python-Future  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../index.html" accesskey="U">Module code</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">past.types.olddict</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for past.types.olddict</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">A dict subclass for Python 3 that behaves like Python 2&#39;s dict</span>
+
+<span class="sd">Example use:</span>
+
+<span class="sd">&gt;&gt;&gt; from past.builtins import dict</span>
+<span class="sd">&gt;&gt;&gt; d1 = dict()    # instead of {} for an empty dict</span>
+<span class="sd">&gt;&gt;&gt; d2 = dict(key1=&#39;value1&#39;, key2=&#39;value2&#39;)</span>
+
+<span class="sd">The keys, values and items methods now return lists on Python 3.x and there are</span>
+<span class="sd">methods for iterkeys, itervalues, iteritems, and viewkeys etc.</span>
+
+<span class="sd">&gt;&gt;&gt; for d in (d1, d2):</span>
+<span class="sd">...     assert isinstance(d.keys(), list)</span>
+<span class="sd">...     assert isinstance(d.values(), list)</span>
+<span class="sd">...     assert isinstance(d.items(), list)</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">import</span> <span class="nn">sys</span>
+
+<span class="kn">from</span> <span class="nn">past.utils</span> <span class="kn">import</span> <span class="n">with_metaclass</span>
+
+
+<span class="n">_builtin_dict</span> <span class="o">=</span> <span class="nb">dict</span>
+<span class="n">ver</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">version_info</span><span class="p">[:</span><span class="mi">2</span><span class="p">]</span>
+
+
+<span class="k">class</span> <span class="nc">BaseOldDict</span><span class="p">(</span><span class="nb">type</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__instancecheck__</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">instance</span><span class="p">):</span>
+        <span class="k">return</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">instance</span><span class="p">,</span> <span class="n">_builtin_dict</span><span class="p">)</span>
+
+
+<div class="viewcode-block" id="olddict">
+<a class="viewcode-back" href="../../../reference.html#past.builtins.olddict">[docs]</a>
+<span class="k">class</span> <span class="nc">olddict</span><span class="p">(</span><span class="n">with_metaclass</span><span class="p">(</span><span class="n">BaseOldDict</span><span class="p">,</span> <span class="n">_builtin_dict</span><span class="p">)):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    A backport of the Python 3 dict object to Py2</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">iterkeys</span> <span class="o">=</span> <span class="n">_builtin_dict</span><span class="o">.</span><span class="n">keys</span>
+    <span class="n">viewkeys</span> <span class="o">=</span> <span class="n">_builtin_dict</span><span class="o">.</span><span class="n">keys</span>
+
+<div class="viewcode-block" id="olddict.keys">
+<a class="viewcode-back" href="../../../reference.html#past.builtins.olddict.keys">[docs]</a>
+    <span class="k">def</span> <span class="nf">keys</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="nb">list</span><span class="p">(</span><span class="nb">super</span><span class="p">(</span><span class="n">olddict</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span></div>
+
+
+    <span class="n">itervalues</span> <span class="o">=</span> <span class="n">_builtin_dict</span><span class="o">.</span><span class="n">values</span>
+    <span class="n">viewvalues</span> <span class="o">=</span> <span class="n">_builtin_dict</span><span class="o">.</span><span class="n">values</span>
+
+<div class="viewcode-block" id="olddict.values">
+<a class="viewcode-back" href="../../../reference.html#past.builtins.olddict.values">[docs]</a>
+    <span class="k">def</span> <span class="nf">values</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="nb">list</span><span class="p">(</span><span class="nb">super</span><span class="p">(</span><span class="n">olddict</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">values</span><span class="p">())</span></div>
+
+
+    <span class="n">iteritems</span> <span class="o">=</span> <span class="n">_builtin_dict</span><span class="o">.</span><span class="n">items</span>
+    <span class="n">viewitems</span> <span class="o">=</span> <span class="n">_builtin_dict</span><span class="o">.</span><span class="n">items</span>
+
+<div class="viewcode-block" id="olddict.items">
+<a class="viewcode-back" href="../../../reference.html#past.builtins.olddict.items">[docs]</a>
+    <span class="k">def</span> <span class="nf">items</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="nb">list</span><span class="p">(</span><span class="nb">super</span><span class="p">(</span><span class="n">olddict</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">items</span><span class="p">())</span></div>
+
+
+<div class="viewcode-block" id="olddict.has_key">
+<a class="viewcode-back" href="../../../reference.html#past.builtins.olddict.has_key">[docs]</a>
+    <span class="k">def</span> <span class="nf">has_key</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">k</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        D.has_key(k) -&gt; True if D has a key k, else False</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">k</span> <span class="ow">in</span> <span class="bp">self</span></div>
+
+
+    <span class="c1"># def __new__(cls, *args, **kwargs):</span>
+    <span class="c1">#     &quot;&quot;&quot;</span>
+    <span class="c1">#     dict() -&gt; new empty dictionary</span>
+    <span class="c1">#     dict(mapping) -&gt; new dictionary initialized from a mapping object&#39;s</span>
+    <span class="c1">#         (key, value) pairs</span>
+    <span class="c1">#     dict(iterable) -&gt; new dictionary initialized as if via:</span>
+    <span class="c1">#         d = {}</span>
+    <span class="c1">#         for k, v in iterable:</span>
+    <span class="c1">#             d[k] = v</span>
+    <span class="c1">#     dict(**kwargs) -&gt; new dictionary initialized with the name=value pairs</span>
+    <span class="c1">#         in the keyword argument list.  For example:  dict(one=1, two=2)</span>
+
+    <span class="c1">#     &quot;&quot;&quot;</span>
+    <span class="c1">#</span>
+    <span class="c1">#     if len(args) == 0:</span>
+    <span class="c1">#         return super(olddict, cls).__new__(cls)</span>
+    <span class="c1">#     # Was: elif isinstance(args[0], newbytes):</span>
+    <span class="c1">#     # We use type() instead of the above because we&#39;re redefining</span>
+    <span class="c1">#     # this to be True for all unicode string subclasses. Warning:</span>
+    <span class="c1">#     # This may render newstr un-subclassable.</span>
+    <span class="c1">#     elif type(args[0]) == olddict:</span>
+    <span class="c1">#         return args[0]</span>
+    <span class="c1">#     # elif isinstance(args[0], _builtin_dict):</span>
+    <span class="c1">#     #     value = args[0]</span>
+    <span class="c1">#     else:</span>
+    <span class="c1">#         value = args[0]</span>
+    <span class="c1">#     return super(olddict, cls).__new__(cls, value)</span>
+
+    <span class="k">def</span> <span class="nf">__native__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Hook for the past.utils.native() function</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="nb">super</span><span class="p">(</span><span class="n">oldbytes</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span></div>
+
+
+
+<span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;olddict&#39;</span><span class="p">]</span>
+</pre></div>
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+  <span id="sidebar-top"></span>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  
+    
+            <p class="logo"><a href="../../../index.html">
+              <img class="logo" src="../../../_static/python-future-logo-textless-transparent.png" alt="Logo"/>
+            </a></p>
+  
+<!--<h3>Python-Future</h3>
+<p>-->
+  <h4>Easy, clean, reliable Python 2/3 compatibility</h4>
+  <a href="https://python-future.org/#contents">Table of Contents</a>
+<!--
+</p>
+<h3>Other Formats</h3>
+<p>
+  You can download the documentation in other formats as well:
+</p>
+<ul>
+  <li><a href="http://jinja.pocoo.org/docs/jinja-docs.pdf">as PDF</a>
+  <li><a href="http://jinja.pocoo.org/docs/jinja-docs.zip">as zipped HTML</a>
+</ul>
+-->
+<!--<h3>Useful Links</h3>
+<ul>
+  <li><a href="https://pypi.org/project/future/">on PyPI</a></li>
+  <li><a href="https://github.com/PythonCharmers/python-future">on GitHub</a></li>
+</ul>
+--><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../whatsnew.html">What’s New</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../overview.html">Overview: Easy, clean, reliable Python 2/3 compatibility</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../quickstart.html">Quick-start guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../compatible_idioms.html">Cheat Sheet: Writing Python 2-3 compatible code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../imports.html">Imports</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../what_else.html">What else you need to know</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../automatic_conversion.html">Automatic conversion to Py2/3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../faq.html">Frequently Asked Questions (FAQ)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../stdlib_incompatibilities.html">Standard library incompatibilities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../older_interfaces.html">Older interfaces</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../changelog.html">Changes in previous versions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../credits.html">Licensing and credits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../reference.html">API Reference (in progress)</a></li>
+</ul>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+  
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2013-2019, Python Charmers Pty Ltd, Australia.
+    </div>
+  <script src="../../../_static/version_warning_offset.js"></script>
+
+<div class="footer">
+<script type="text/javascript">
+  (function() {
+    var ga = document.createElement('script');
+    ga.src = ('https:' == document.location.protocol ?
+              'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    ga.setAttribute('async', 'true');
+    document.documentElement.firstChild.appendChild(ga);
+  })();
+</script>
+</div>
+
+  </body>
+</html>

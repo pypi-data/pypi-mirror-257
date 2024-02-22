@@ -1,0 +1,221 @@
+
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Using Python 2-only dependencies on Python 3 &#8212; Python-Future  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/jinja.css?v=85659ec6" />
+    <link rel="stylesheet" href="_static/my-styles.css" type="text/css" />
+    <script src="_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="icon" href="_static/python-future-icon-32.ico"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+ 
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-19344199-2']);
+  _gaq.push(['_trackPageview']);
+</script>
+
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Python-Future  documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Using Python 2-only dependencies on Python 3</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="using-python-2-only-dependencies-on-python-3">
+<span id="translation"></span><h1>Using Python 2-only dependencies on Python 3<a class="headerlink" href="#using-python-2-only-dependencies-on-python-3" title="Link to this heading">¶</a></h1>
+<p>The <code class="docutils literal notranslate"><span class="pre">past</span></code> module provides an experimental <code class="docutils literal notranslate"><span class="pre">translation</span></code> package to help
+with importing and using old Python 2 modules in a Python 3 environment.</p>
+<p>This is implemented using PEP 414 import hooks together with fixers from
+<code class="docutils literal notranslate"><span class="pre">lib2to3</span></code> and <code class="docutils literal notranslate"><span class="pre">libfuturize</span></code> (included with <code class="docutils literal notranslate"><span class="pre">python-future</span></code>) that
+attempt to automatically translate Python 2 code to Python 3 code with equivalent
+semantics upon import.</p>
+<p><em>Note</em> This feature is still in alpha and needs further development to support a
+full range of real-world Python 2 modules. Also be aware that the API for
+this package might change considerably in later versions.</p>
+<p>Here is how to use it:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ pip3 install plotrique==0.2.5-7 --no-compile   # to ignore SyntaxErrors
+$ python3
+</pre></div>
+</div>
+<p>Then pass in a whitelist of module name prefixes to the
+<code class="docutils literal notranslate"><span class="pre">past.translation.autotranslate()</span></code> function. Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">past.translation</span> <span class="kn">import</span> <span class="n">autotranslate</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">autotranslate</span><span class="p">([</span><span class="s1">&#39;plotrique&#39;</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">plotrique</span>
+</pre></div>
+</div>
+<p>Here is another example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">past.translation</span> <span class="kn">import</span> <span class="n">install_hooks</span><span class="p">,</span> <span class="n">remove_hooks</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">install_hooks</span><span class="p">([</span><span class="s1">&#39;mypy2module&#39;</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">mypy2module</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">remove_hooks</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>This will translate, import and run Python 2 code such as the following:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">### File: mypy2module.py</span>
+
+<span class="c1"># Print statements are translated transparently to functions:</span>
+<span class="nb">print</span> <span class="s1">&#39;Hello from a print statement&#39;</span>
+
+<span class="c1"># xrange() is translated to Py3&#39;s range():</span>
+<span class="n">total</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">xrange</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+    <span class="n">total</span> <span class="o">+=</span> <span class="n">i</span>
+<span class="nb">print</span> <span class="s1">&#39;Total is: </span><span class="si">%d</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">total</span>
+
+<span class="c1"># Dictionary methods like .keys() and .items() are supported and</span>
+<span class="c1"># return lists as on Python 2:</span>
+<span class="n">d</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">}</span>
+<span class="k">assert</span> <span class="n">d</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span> <span class="o">==</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">]</span>
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">d</span><span class="o">.</span><span class="n">items</span><span class="p">(),</span> <span class="nb">list</span><span class="p">)</span>
+
+<span class="c1"># Functions like range, reduce, map, filter also return lists:</span>
+<span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">),</span> <span class="nb">list</span><span class="p">)</span>
+
+<span class="c1"># The exec statement is supported:</span>
+<span class="n">exec</span> <span class="s1">&#39;total += 1&#39;</span>
+<span class="nb">print</span> <span class="s1">&#39;Total is now: </span><span class="si">%d</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">total</span>
+
+<span class="c1"># Long integers are supported:</span>
+<span class="n">k</span> <span class="o">=</span> <span class="mi">1234983424324</span><span class="n">L</span>
+<span class="nb">print</span> <span class="s1">&#39;k + 1 = </span><span class="si">%d</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">k</span>
+
+<span class="c1"># Most renamed standard library modules are supported:</span>
+<span class="kn">import</span> <span class="nn">ConfigParser</span>
+<span class="kn">import</span> <span class="nn">HTMLParser</span>
+<span class="kn">import</span> <span class="nn">urllib</span>
+</pre></div>
+</div>
+<p>The attributes of the module are then accessible normally from Python 3.
+For example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># This Python 3 code works</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">type</span><span class="p">(</span><span class="n">mypy2module</span><span class="o">.</span><span class="n">d</span><span class="p">)</span>
+<span class="n">builtins</span><span class="o">.</span><span class="n">dict</span>
+</pre></div>
+</div>
+<p>This is a standard Python 3 data type, so, when called from Python 3 code,
+<code class="docutils literal notranslate"><span class="pre">keys()</span></code> returns a view, not a list:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">type</span><span class="p">(</span><span class="n">mypy2module</span><span class="o">.</span><span class="n">d</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+<span class="go">builtins.dict_keys</span>
+</pre></div>
+</div>
+<section id="known-limitations-of-past-translation">
+<span id="translation-limitations"></span><h2>Known limitations of <code class="docutils literal notranslate"><span class="pre">past.translation</span></code><a class="headerlink" href="#known-limitations-of-past-translation" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>It currently requires a newline at the end of the module or it throws a
+<code class="docutils literal notranslate"><span class="pre">ParseError</span></code>.</p></li>
+<li><p>This only works with pure-Python modules. C extension modules and Cython code
+are not supported.</p></li>
+<li><p>The biggest hurdle to automatic translation is likely to be ambiguity
+about byte-strings and text (unicode strings) in the Python 2 code. If the
+<code class="docutils literal notranslate"><span class="pre">past.autotranslate</span></code> feature fails because of this, you could try
+running <code class="docutils literal notranslate"><span class="pre">futurize</span></code> over the code and adding a <code class="docutils literal notranslate"><span class="pre">b''</span></code> or <code class="docutils literal notranslate"><span class="pre">u''</span></code> prefix to
+the relevant string literals. To convert between byte-strings and text (unicode
+strings), add an <code class="docutils literal notranslate"><span class="pre">.encode</span></code> or <code class="docutils literal notranslate"><span class="pre">.decode</span></code> method call. If this succeeds,
+please push your patches upstream to the package maintainers.</p></li>
+<li><p>Otherwise, the source translation feature offered by the <code class="docutils literal notranslate"><span class="pre">past.translation</span></code>
+package has similar limitations to the <code class="docutils literal notranslate"><span class="pre">futurize</span></code> script (see
+<a class="reference internal" href="conversion_limitations.html#futurize-limitations"><span class="std std-ref">Known limitations</span></a>). Help developing and testing this feature further
+would be particularly welcome.</p></li>
+</ul>
+<p>Please report any bugs you find on the <code class="docutils literal notranslate"><span class="pre">python-future</span></code> <a class="reference external" href="https://github.com/PythonCharmers/python-future/">bug tracker</a>.</p>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+  <span id="sidebar-top"></span>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  
+    
+            <p class="logo"><a href="index.html">
+              <img class="logo" src="_static/python-future-logo-textless-transparent.png" alt="Logo"/>
+            </a></p>
+  
+<!--<h3>Python-Future</h3>
+<p>-->
+  <h4>Easy, clean, reliable Python 2/3 compatibility</h4>
+  <a href="https://python-future.org/#contents">Table of Contents</a>
+<!--
+</p>
+<h3>Other Formats</h3>
+<p>
+  You can download the documentation in other formats as well:
+</p>
+<ul>
+  <li><a href="http://jinja.pocoo.org/docs/jinja-docs.pdf">as PDF</a>
+  <li><a href="http://jinja.pocoo.org/docs/jinja-docs.zip">as zipped HTML</a>
+</ul>
+-->
+<!--<h3>Useful Links</h3>
+<ul>
+  <li><a href="https://pypi.org/project/future/">on PyPI</a></li>
+  <li><a href="https://github.com/PythonCharmers/python-future">on GitHub</a></li>
+</ul>
+--><ul>
+<li class="toctree-l1"><a class="reference internal" href="whatsnew.html">What’s New</a></li>
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview: Easy, clean, reliable Python 2/3 compatibility</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quick-start guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="compatible_idioms.html">Cheat Sheet: Writing Python 2-3 compatible code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="imports.html">Imports</a></li>
+<li class="toctree-l1"><a class="reference internal" href="what_else.html">What else you need to know</a></li>
+<li class="toctree-l1"><a class="reference internal" href="automatic_conversion.html">Automatic conversion to Py2/3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">Frequently Asked Questions (FAQ)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stdlib_incompatibilities.html">Standard library incompatibilities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="older_interfaces.html">Older interfaces</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changes in previous versions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="credits.html">Licensing and credits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference.html">API Reference (in progress)</a></li>
+</ul>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+  
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2013-2019, Python Charmers Pty Ltd, Australia.
+    </div>
+  <script src="_static/version_warning_offset.js"></script>
+
+<div class="footer">
+<script type="text/javascript">
+  (function() {
+    var ga = document.createElement('script');
+    ga.src = ('https:' == document.location.protocol ?
+              'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    ga.setAttribute('async', 'true');
+    document.documentElement.firstChild.appendChild(ga);
+  })();
+</script>
+</div>
+
+  </body>
+</html>

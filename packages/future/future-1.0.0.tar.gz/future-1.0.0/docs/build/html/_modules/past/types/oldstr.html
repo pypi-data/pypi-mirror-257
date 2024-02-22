@@ -1,0 +1,261 @@
+
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>past.types.oldstr &#8212; Python-Future  documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/jinja.css?v=85659ec6" />
+    <link rel="stylesheet" href="../../../_static/my-styles.css" type="text/css" />
+    <script src="../../../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="icon" href="../../../_static/python-future-icon-32.ico"/>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+ 
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-19344199-2']);
+  _gaq.push(['_trackPageview']);
+</script>
+
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">Python-Future  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../index.html" accesskey="U">Module code</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">past.types.oldstr</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for past.types.oldstr</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Pure-Python implementation of a Python 2-like str object for Python 3.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">from</span> <span class="nn">numbers</span> <span class="kn">import</span> <span class="n">Integral</span>
+
+<span class="kn">from</span> <span class="nn">past.utils</span> <span class="kn">import</span> <span class="n">PY2</span><span class="p">,</span> <span class="n">with_metaclass</span>
+
+<span class="k">if</span> <span class="n">PY2</span><span class="p">:</span>
+    <span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">Iterable</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="kn">from</span> <span class="nn">collections.abc</span> <span class="kn">import</span> <span class="n">Iterable</span>
+
+<span class="n">_builtin_bytes</span> <span class="o">=</span> <span class="nb">bytes</span>
+
+
+<span class="k">class</span> <span class="nc">BaseOldStr</span><span class="p">(</span><span class="nb">type</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__instancecheck__</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">instance</span><span class="p">):</span>
+        <span class="k">return</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">instance</span><span class="p">,</span> <span class="n">_builtin_bytes</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">unescape</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+<span class="w">    </span><span class="sa">r</span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Interprets strings with escape sequences</span>
+
+<span class="sd">    Example:</span>
+<span class="sd">    &gt;&gt;&gt; s = unescape(r&#39;abc\\def&#39;)   # i.e. &#39;abc\\\\def&#39;</span>
+<span class="sd">    &gt;&gt;&gt; print(s)</span>
+<span class="sd">    &#39;abc\def&#39;</span>
+<span class="sd">    &gt;&gt;&gt; s2 = unescape(&#39;abc\\ndef&#39;)</span>
+<span class="sd">    &gt;&gt;&gt; len(s2)</span>
+<span class="sd">    8</span>
+<span class="sd">    &gt;&gt;&gt; print(s2)</span>
+<span class="sd">    abc</span>
+<span class="sd">    def</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">s</span><span class="o">.</span><span class="n">encode</span><span class="p">()</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;unicode_escape&#39;</span><span class="p">)</span>
+
+
+<div class="viewcode-block" id="oldstr">
+<a class="viewcode-back" href="../../../reference.html#past.builtins.oldstr">[docs]</a>
+<span class="k">class</span> <span class="nc">oldstr</span><span class="p">(</span><span class="n">with_metaclass</span><span class="p">(</span><span class="n">BaseOldStr</span><span class="p">,</span> <span class="n">_builtin_bytes</span><span class="p">)):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    A forward port of the Python 2 8-bit string object to Py3</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># Python 2 strings have no __iter__ method:</span>
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="fm">__iter__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">raise</span> <span class="ne">AttributeError</span>
+
+    <span class="k">def</span> <span class="fm">__dir__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="p">[</span><span class="n">thing</span> <span class="k">for</span> <span class="n">thing</span> <span class="ow">in</span> <span class="nb">dir</span><span class="p">(</span><span class="n">_builtin_bytes</span><span class="p">)</span> <span class="k">if</span> <span class="n">thing</span> <span class="o">!=</span> <span class="s1">&#39;__iter__&#39;</span><span class="p">]</span>
+
+    <span class="c1"># def __new__(cls, *args, **kwargs):</span>
+    <span class="c1">#     &quot;&quot;&quot;</span>
+    <span class="c1">#     From the Py3 bytes docstring:</span>
+
+    <span class="c1">#     bytes(iterable_of_ints) -&gt; bytes</span>
+    <span class="c1">#     bytes(string, encoding[, errors]) -&gt; bytes</span>
+    <span class="c1">#     bytes(bytes_or_buffer) -&gt; immutable copy of bytes_or_buffer</span>
+    <span class="c1">#     bytes(int) -&gt; bytes object of size given by the parameter initialized with null bytes</span>
+    <span class="c1">#     bytes() -&gt; empty bytes object</span>
+    <span class="c1">#</span>
+    <span class="c1">#     Construct an immutable array of bytes from:</span>
+    <span class="c1">#       - an iterable yielding integers in range(256)</span>
+    <span class="c1">#       - a text string encoded using the specified encoding</span>
+    <span class="c1">#       - any object implementing the buffer API.</span>
+    <span class="c1">#       - an integer</span>
+    <span class="c1">#     &quot;&quot;&quot;</span>
+    <span class="c1">#</span>
+    <span class="c1">#     if len(args) == 0:</span>
+    <span class="c1">#         return super(newbytes, cls).__new__(cls)</span>
+    <span class="c1">#     # Was: elif isinstance(args[0], newbytes):</span>
+    <span class="c1">#     # We use type() instead of the above because we&#39;re redefining</span>
+    <span class="c1">#     # this to be True for all unicode string subclasses. Warning:</span>
+    <span class="c1">#     # This may render newstr un-subclassable.</span>
+    <span class="c1">#     elif type(args[0]) == newbytes:</span>
+    <span class="c1">#         return args[0]</span>
+    <span class="c1">#     elif isinstance(args[0], _builtin_bytes):</span>
+    <span class="c1">#         value = args[0]</span>
+    <span class="c1">#     elif isinstance(args[0], unicode):</span>
+    <span class="c1">#         if &#39;encoding&#39; not in kwargs:</span>
+    <span class="c1">#             raise TypeError(&#39;unicode string argument without an encoding&#39;)</span>
+    <span class="c1">#         ###</span>
+    <span class="c1">#         # Was:   value = args[0].encode(**kwargs)</span>
+    <span class="c1">#         # Python 2.6 string encode() method doesn&#39;t take kwargs:</span>
+    <span class="c1">#         # Use this instead:</span>
+    <span class="c1">#         newargs = [kwargs[&#39;encoding&#39;]]</span>
+    <span class="c1">#         if &#39;errors&#39; in kwargs:</span>
+    <span class="c1">#             newargs.append(kwargs[&#39;errors&#39;])</span>
+    <span class="c1">#         value = args[0].encode(*newargs)</span>
+    <span class="c1">#         ###</span>
+    <span class="c1">#     elif isinstance(args[0], Iterable):</span>
+    <span class="c1">#         if len(args[0]) == 0:</span>
+    <span class="c1">#             # What is this?</span>
+    <span class="c1">#             raise ValueError(&#39;unknown argument type&#39;)</span>
+    <span class="c1">#         elif len(args[0]) &gt; 0 and isinstance(args[0][0], Integral):</span>
+    <span class="c1">#             # It&#39;s a list of integers</span>
+    <span class="c1">#             value = b&#39;&#39;.join([chr(x) for x in args[0]])</span>
+    <span class="c1">#         else:</span>
+    <span class="c1">#             raise ValueError(&#39;item cannot be interpreted as an integer&#39;)</span>
+    <span class="c1">#     elif isinstance(args[0], Integral):</span>
+    <span class="c1">#         if args[0] &lt; 0:</span>
+    <span class="c1">#             raise ValueError(&#39;negative count&#39;)</span>
+    <span class="c1">#         value = b&#39;\x00&#39; * args[0]</span>
+    <span class="c1">#     else:</span>
+    <span class="c1">#         value = args[0]</span>
+    <span class="c1">#     return super(newbytes, cls).__new__(cls, value)</span>
+
+    <span class="k">def</span> <span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">s</span> <span class="o">=</span> <span class="nb">super</span><span class="p">(</span><span class="n">oldstr</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__repr__</span><span class="p">()</span>   <span class="c1"># e.g. b&#39;abc&#39; on Py3, b&#39;abc&#39; on Py3</span>
+        <span class="k">return</span> <span class="n">s</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
+
+    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">s</span> <span class="o">=</span> <span class="nb">super</span><span class="p">(</span><span class="n">oldstr</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__str__</span><span class="p">()</span>   <span class="c1"># e.g. &quot;b&#39;abc&#39;&quot; or &quot;b&#39;abc\\ndef&#39;</span>
+        <span class="c1"># TODO: fix this:</span>
+        <span class="k">assert</span> <span class="n">s</span><span class="p">[:</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;b&#39;&quot;</span> <span class="ow">and</span> <span class="n">s</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;&#39;&quot;</span>
+        <span class="k">return</span> <span class="n">unescape</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>            <span class="c1"># e.g. &#39;abc&#39;    or &#39;abc\ndef&#39;</span>
+
+    <span class="k">def</span> <span class="fm">__getitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">Integral</span><span class="p">):</span>
+            <span class="k">return</span> <span class="nb">super</span><span class="p">(</span><span class="n">oldstr</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__getitem__</span><span class="p">(</span><span class="nb">slice</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">y</span><span class="o">+</span><span class="mi">1</span><span class="p">))</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="nb">super</span><span class="p">(</span><span class="n">oldstr</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__getitem__</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">__getslice__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="fm">__getitem__</span><span class="p">(</span><span class="nb">slice</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">))</span>
+
+    <span class="k">def</span> <span class="fm">__contains__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">):</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="nb">int</span><span class="p">):</span>
+            <span class="k">return</span> <span class="kc">False</span>
+
+    <span class="k">def</span> <span class="nf">__native__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="nb">bytes</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span></div>
+
+
+
+<span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;oldstr&#39;</span><span class="p">]</span>
+</pre></div>
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+  <span id="sidebar-top"></span>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  
+    
+            <p class="logo"><a href="../../../index.html">
+              <img class="logo" src="../../../_static/python-future-logo-textless-transparent.png" alt="Logo"/>
+            </a></p>
+  
+<!--<h3>Python-Future</h3>
+<p>-->
+  <h4>Easy, clean, reliable Python 2/3 compatibility</h4>
+  <a href="https://python-future.org/#contents">Table of Contents</a>
+<!--
+</p>
+<h3>Other Formats</h3>
+<p>
+  You can download the documentation in other formats as well:
+</p>
+<ul>
+  <li><a href="http://jinja.pocoo.org/docs/jinja-docs.pdf">as PDF</a>
+  <li><a href="http://jinja.pocoo.org/docs/jinja-docs.zip">as zipped HTML</a>
+</ul>
+-->
+<!--<h3>Useful Links</h3>
+<ul>
+  <li><a href="https://pypi.org/project/future/">on PyPI</a></li>
+  <li><a href="https://github.com/PythonCharmers/python-future">on GitHub</a></li>
+</ul>
+--><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../whatsnew.html">What’s New</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../overview.html">Overview: Easy, clean, reliable Python 2/3 compatibility</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../quickstart.html">Quick-start guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../compatible_idioms.html">Cheat Sheet: Writing Python 2-3 compatible code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../imports.html">Imports</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../what_else.html">What else you need to know</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../automatic_conversion.html">Automatic conversion to Py2/3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../faq.html">Frequently Asked Questions (FAQ)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../stdlib_incompatibilities.html">Standard library incompatibilities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../older_interfaces.html">Older interfaces</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../changelog.html">Changes in previous versions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../credits.html">Licensing and credits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../reference.html">API Reference (in progress)</a></li>
+</ul>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+  
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2013-2019, Python Charmers Pty Ltd, Australia.
+    </div>
+  <script src="../../../_static/version_warning_offset.js"></script>
+
+<div class="footer">
+<script type="text/javascript">
+  (function() {
+    var ga = document.createElement('script');
+    ga.src = ('https:' == document.location.protocol ?
+              'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    ga.setAttribute('async', 'true');
+    document.documentElement.firstChild.appendChild(ga);
+  })();
+</script>
+</div>
+
+  </body>
+</html>

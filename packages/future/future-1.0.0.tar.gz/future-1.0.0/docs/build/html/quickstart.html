@@ -1,0 +1,311 @@
+
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Quick-start guide &#8212; Python-Future  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/jinja.css?v=85659ec6" />
+    <link rel="stylesheet" href="_static/my-styles.css" type="text/css" />
+    <script src="_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="icon" href="_static/python-future-icon-32.ico"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Cheat Sheet: Writing Python 2-3 compatible code" href="compatible_idioms.html" />
+    <link rel="prev" title="Overview: Easy, clean, reliable Python 2/3 compatibility" href="overview.html" />
+ 
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-19344199-2']);
+  _gaq.push(['_trackPageview']);
+</script>
+
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="compatible_idioms.html" title="Cheat Sheet: Writing Python 2-3 compatible code"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="overview.html" title="Overview: Easy, clean, reliable Python 2/3 compatibility"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Python-Future  documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Quick-start guide</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="quick-start-guide">
+<span id="quickstart-guide"></span><h1>Quick-start guide<a class="headerlink" href="#quick-start-guide" title="Link to this heading">¶</a></h1>
+<p>You can use <code class="docutils literal notranslate"><span class="pre">future</span></code> to help to port your code from Python 2 to Python 3
+today – and still have it run on Python 2.</p>
+<p>If you already have Python 3 code, you can instead use <code class="docutils literal notranslate"><span class="pre">future</span></code> to
+offer Python 2 compatibility with almost no extra work.</p>
+<section id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Link to this heading">¶</a></h2>
+<p>To install the latest stable version, type:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">future</span>
+</pre></div>
+</div>
+<p>If you would prefer the latest development version, it is available <a class="reference external" href="https://github.com/PythonCharmers/python-future">here</a>.</p>
+</section>
+<section id="if-you-are-writing-code-from-scratch">
+<h2>If you are writing code from scratch<a class="headerlink" href="#if-you-are-writing-code-from-scratch" title="Link to this heading">¶</a></h2>
+<p>The easiest way is to start each new module with these lines:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="p">(</span><span class="n">absolute_import</span><span class="p">,</span> <span class="n">division</span><span class="p">,</span>
+                        <span class="n">print_function</span><span class="p">,</span> <span class="n">unicode_literals</span><span class="p">)</span>
+<span class="kn">from</span> <span class="nn">builtins</span> <span class="kn">import</span> <span class="o">*</span>
+</pre></div>
+</div>
+<p>Then write standard Python 3 code. The <code class="xref py py-mod docutils literal notranslate"><span class="pre">future</span></code> package will
+provide support for running your code on Python 2.7, and 3.4+ mostly
+unchanged.</p>
+<ul class="simple">
+<li><p>For explicit import forms, see <a class="reference internal" href="imports.html#explicit-imports"><span class="std std-ref">Explicit imports</span></a>.</p></li>
+<li><p>For more details, see <a class="reference internal" href="what_else.html#what-else"><span class="std std-ref">What else you need to know</span></a>.</p></li>
+<li><p>For a cheat sheet, see <a class="reference internal" href="compatible_idioms.html#compatible-idioms"><span class="std std-ref">Cheat Sheet: Writing Python 2-3 compatible code</span></a>.</p></li>
+</ul>
+</section>
+<section id="to-convert-existing-python-3-code">
+<h2>To convert existing Python 3 code<a class="headerlink" href="#to-convert-existing-python-3-code" title="Link to this heading">¶</a></h2>
+<p>To offer backward compatibility with Python 2 from your Python 3 code,
+you can use the <code class="docutils literal notranslate"><span class="pre">pasteurize</span></code> script. This adds these lines at the top of each
+module:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">absolute_import</span>
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">division</span>
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">print_function</span>
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">unicode_literals</span>
+
+<span class="kn">from</span> <span class="nn">builtins</span> <span class="kn">import</span> <span class="nb">open</span>
+<span class="kn">from</span> <span class="nn">builtins</span> <span class="kn">import</span> <span class="nb">str</span>
+<span class="c1"># etc., as needed</span>
+
+<span class="kn">from</span> <span class="nn">future</span> <span class="kn">import</span> <span class="n">standard_library</span>
+<span class="n">standard_library</span><span class="o">.</span><span class="n">install_aliases</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>and converts several Python 3-only constructs (like keyword-only arguments) to a
+form compatible with both Py3 and Py2. Most remaining Python 3 code should
+simply work on Python 2.</p>
+<p>See <a class="reference internal" href="pasteurize.html#backwards-conversion"><span class="std std-ref">pasteurize: Py3 to Py2/3</span></a> for more details.</p>
+</section>
+<section id="to-convert-existing-python-2-code">
+<h2>To convert existing Python 2 code<a class="headerlink" href="#to-convert-existing-python-2-code" title="Link to this heading">¶</a></h2>
+<p>The <code class="docutils literal notranslate"><span class="pre">futurize</span></code> script passes Python 2 code through all the appropriate fixers
+to turn it into valid Python 3 code, and then adds <code class="docutils literal notranslate"><span class="pre">__future__</span></code> and
+<code class="docutils literal notranslate"><span class="pre">future</span></code> package imports to re-enable compatibility with Python 2.</p>
+<p>For example, running <code class="docutils literal notranslate"><span class="pre">futurize</span></code> turns this Python 2 code:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">ConfigParser</span>                 <span class="c1"># Py2 module name</span>
+
+<span class="k">class</span> <span class="nc">Upper</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">iterable</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_iter</span> <span class="o">=</span> <span class="nb">iter</span><span class="p">(</span><span class="n">iterable</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">next</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>                 <span class="c1"># Py2-style iterator interface</span>
+        <span class="k">return</span> <span class="nb">next</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_iter</span><span class="p">)</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+    <span class="k">def</span> <span class="fm">__iter__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span>
+
+<span class="n">itr</span> <span class="o">=</span> <span class="n">Upper</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">)</span>
+<span class="nb">print</span> <span class="nb">next</span><span class="p">(</span><span class="n">itr</span><span class="p">),</span>
+<span class="k">for</span> <span class="n">letter</span> <span class="ow">in</span> <span class="n">itr</span><span class="p">:</span>
+    <span class="nb">print</span> <span class="n">letter</span><span class="p">,</span>                   <span class="c1"># Py2-style print statement</span>
+</pre></div>
+</div>
+<p>into this code which runs on both Py2 and Py3:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">print_function</span>
+<span class="kn">from</span> <span class="nn">future</span> <span class="kn">import</span> <span class="n">standard_library</span>
+<span class="n">standard_library</span><span class="o">.</span><span class="n">install_aliases</span><span class="p">()</span>
+<span class="kn">from</span> <span class="nn">future.builtins</span> <span class="kn">import</span> <span class="nb">next</span>
+<span class="kn">from</span> <span class="nn">future.builtins</span> <span class="kn">import</span> <span class="nb">object</span>
+<span class="kn">import</span> <span class="nn">configparser</span>                 <span class="c1"># Py3-style import</span>
+
+<span class="k">class</span> <span class="nc">Upper</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">iterable</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_iter</span> <span class="o">=</span> <span class="nb">iter</span><span class="p">(</span><span class="n">iterable</span><span class="p">)</span>
+    <span class="k">def</span> <span class="fm">__next__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>             <span class="c1"># Py3-style iterator interface</span>
+        <span class="k">return</span> <span class="nb">next</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_iter</span><span class="p">)</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+    <span class="k">def</span> <span class="fm">__iter__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span>
+
+<span class="n">itr</span> <span class="o">=</span> <span class="n">Upper</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">next</span><span class="p">(</span><span class="n">itr</span><span class="p">),</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39; &#39;</span><span class="p">)</span>           <span class="c1"># Py3-style print function</span>
+<span class="k">for</span> <span class="n">letter</span> <span class="ow">in</span> <span class="n">itr</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">letter</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>To write out all the changes to your Python files that <code class="docutils literal notranslate"><span class="pre">futurize</span></code> suggests,
+use the <code class="docutils literal notranslate"><span class="pre">-w</span></code> flag.</p>
+<p>For complex projects, it is probably best to divide the porting into two stages.
+Stage 1 is for “safe” changes that modernize the code but do not break Python
+2.7 compatibility or introduce a dependency on the <code class="docutils literal notranslate"><span class="pre">future</span></code> package. Stage 2
+is to complete the process.</p>
+<p>See <a class="reference internal" href="futurize.html#forwards-conversion-stage1"><span class="std std-ref">Stage 1: “safe” fixes</span></a> and <a class="reference internal" href="futurize.html#forwards-conversion-stage2"><span class="std std-ref">Stage 2: Py3-style code with wrappers for Py2</span></a> for more details.</p>
+</section>
+<section id="standard-library-reorganization">
+<span id="standard-library"></span><h2>Standard library reorganization<a class="headerlink" href="#standard-library-reorganization" title="Link to this heading">¶</a></h2>
+<p><code class="xref py py-mod docutils literal notranslate"><span class="pre">future</span></code> supports the standard library reorganization (PEP 3108) via
+one of several mechanisms, allowing most moved standard library modules
+to be accessed under their Python 3 names and locations in Python 2:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">future</span> <span class="kn">import</span> <span class="n">standard_library</span>
+<span class="n">standard_library</span><span class="o">.</span><span class="n">install_aliases</span><span class="p">()</span>
+
+<span class="c1"># Then these Py3-style imports work on both Python 2 and Python 3:</span>
+<span class="kn">import</span> <span class="nn">socketserver</span>
+<span class="kn">import</span> <span class="nn">queue</span>
+<span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">UserDict</span><span class="p">,</span> <span class="n">UserList</span><span class="p">,</span> <span class="n">UserString</span>
+<span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">ChainMap</span>  <span class="c1"># even on Py2.7</span>
+<span class="kn">from</span> <span class="nn">itertools</span> <span class="kn">import</span> <span class="n">filterfalse</span><span class="p">,</span> <span class="n">zip_longest</span>
+
+<span class="kn">import</span> <span class="nn">html</span>
+<span class="kn">import</span> <span class="nn">html.entities</span>
+<span class="kn">import</span> <span class="nn">html.parser</span>
+
+<span class="kn">import</span> <span class="nn">http</span>
+<span class="kn">import</span> <span class="nn">http.client</span>
+<span class="kn">import</span> <span class="nn">http.server</span>
+<span class="kn">import</span> <span class="nn">http.cookies</span>
+<span class="kn">import</span> <span class="nn">http.cookiejar</span>
+
+<span class="kn">import</span> <span class="nn">urllib.request</span>
+<span class="kn">import</span> <span class="nn">urllib.parse</span>
+<span class="kn">import</span> <span class="nn">urllib.response</span>
+<span class="kn">import</span> <span class="nn">urllib.error</span>
+<span class="kn">import</span> <span class="nn">urllib.robotparser</span>
+
+<span class="kn">import</span> <span class="nn">xmlrpc.client</span>
+<span class="kn">import</span> <span class="nn">xmlrpc.server</span>
+</pre></div>
+</div>
+<p>and others. For a complete list, see <a class="reference internal" href="standard_library_imports.html#direct-imports"><span class="std std-ref">Direct imports</span></a>.</p>
+</section>
+<section id="python-2-only-dependencies">
+<span id="py2-dependencies"></span><h2>Python 2-only dependencies<a class="headerlink" href="#python-2-only-dependencies" title="Link to this heading">¶</a></h2>
+<p>If you have dependencies that support only Python 2, you may be able to use the
+<code class="docutils literal notranslate"><span class="pre">past</span></code> module to automatically translate these Python 2 modules to Python 3
+upon import. First, install the Python 2-only package into your Python 3
+environment:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ pip3 install mypackagename --no-compile   # to ignore SyntaxErrors
+</pre></div>
+</div>
+<p>(or use <code class="docutils literal notranslate"><span class="pre">pip</span></code> if this points to your Py3 environment.)</p>
+<p>Then add the following code at the top of your (Py3 or Py2/3-compatible)
+code:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">past.translation</span> <span class="kn">import</span> <span class="n">autotranslate</span>
+<span class="n">autotranslate</span><span class="p">([</span><span class="s1">&#39;mypackagename&#39;</span><span class="p">])</span>
+<span class="kn">import</span> <span class="nn">mypackagename</span>
+</pre></div>
+</div>
+<p>This feature is experimental, and we would appreciate your feedback on
+how well this works or doesn’t work for you. Please file an issue <a class="reference external" href="https://github.com/PythonCharmers/python-future">here</a>.</p>
+<p>For more information on the automatic translation feature, see <a class="reference internal" href="translation.html#translation"><span class="std std-ref">Using Python 2-only dependencies on Python 3</span></a>.</p>
+</section>
+<section id="next-steps">
+<h2>Next steps<a class="headerlink" href="#next-steps" title="Link to this heading">¶</a></h2>
+<p>For more information about writing Py2/3-compatible code, see:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="compatible_idioms.html#compatible-idioms"><span class="std std-ref">Cheat Sheet: Writing Python 2-3 compatible code</span></a></p></li>
+<li><p><a class="reference internal" href="what_else.html#what-else"><span class="std std-ref">What else you need to know</span></a>.</p></li>
+</ul>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+  <span id="sidebar-top"></span>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  
+    
+            <p class="logo"><a href="index.html">
+              <img class="logo" src="_static/python-future-logo-textless-transparent.png" alt="Logo"/>
+            </a></p>
+  
+<!--<h3>Python-Future</h3>
+<p>-->
+  <h4>Easy, clean, reliable Python 2/3 compatibility</h4>
+  <a href="https://python-future.org/#contents">Table of Contents</a>
+<!--
+</p>
+<h3>Other Formats</h3>
+<p>
+  You can download the documentation in other formats as well:
+</p>
+<ul>
+  <li><a href="http://jinja.pocoo.org/docs/jinja-docs.pdf">as PDF</a>
+  <li><a href="http://jinja.pocoo.org/docs/jinja-docs.zip">as zipped HTML</a>
+</ul>
+-->
+<!--<h3>Useful Links</h3>
+<ul>
+  <li><a href="https://pypi.org/project/future/">on PyPI</a></li>
+  <li><a href="https://github.com/PythonCharmers/python-future">on GitHub</a></li>
+</ul>
+--><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="whatsnew.html">What’s New</a></li>
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview: Easy, clean, reliable Python 2/3 compatibility</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Quick-start guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#if-you-are-writing-code-from-scratch">If you are writing code from scratch</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#to-convert-existing-python-3-code">To convert existing Python 3 code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#to-convert-existing-python-2-code">To convert existing Python 2 code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#standard-library-reorganization">Standard library reorganization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#python-2-only-dependencies">Python 2-only dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#next-steps">Next steps</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="compatible_idioms.html">Cheat Sheet: Writing Python 2-3 compatible code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="imports.html">Imports</a></li>
+<li class="toctree-l1"><a class="reference internal" href="what_else.html">What else you need to know</a></li>
+<li class="toctree-l1"><a class="reference internal" href="automatic_conversion.html">Automatic conversion to Py2/3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">Frequently Asked Questions (FAQ)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stdlib_incompatibilities.html">Standard library incompatibilities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="older_interfaces.html">Older interfaces</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changes in previous versions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="credits.html">Licensing and credits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference.html">API Reference (in progress)</a></li>
+</ul>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+  
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2013-2019, Python Charmers Pty Ltd, Australia.
+    </div>
+  <script src="_static/version_warning_offset.js"></script>
+
+<div class="footer">
+<script type="text/javascript">
+  (function() {
+    var ga = document.createElement('script');
+    ga.src = ('https:' == document.location.protocol ?
+              'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    ga.setAttribute('async', 'true');
+    document.documentElement.firstChild.appendChild(ga);
+  })();
+</script>
+</div>
+
+  </body>
+</html>

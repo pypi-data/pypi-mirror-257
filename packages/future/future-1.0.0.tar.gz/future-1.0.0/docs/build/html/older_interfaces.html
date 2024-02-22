@@ -1,0 +1,236 @@
+
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Older interfaces &#8212; Python-Future  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/jinja.css?v=85659ec6" />
+    <link rel="stylesheet" href="_static/my-styles.css" type="text/css" />
+    <script src="_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="icon" href="_static/python-future-icon-32.ico"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Changes in previous versions" href="changelog.html" />
+    <link rel="prev" title="Standard library incompatibilities" href="stdlib_incompatibilities.html" />
+ 
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-19344199-2']);
+  _gaq.push(['_trackPageview']);
+</script>
+
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="changelog.html" title="Changes in previous versions"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="stdlib_incompatibilities.html" title="Standard library incompatibilities"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Python-Future  documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Older interfaces</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="older-interfaces">
+<span id="older-standard-library-interfaces"></span><h1>Older interfaces<a class="headerlink" href="#older-interfaces" title="Link to this heading">¶</a></h1>
+<p>In addition to the direct and <code class="docutils literal notranslate"><span class="pre">install_aliases()</span></code> interfaces (described in
+<a class="reference internal" href="standard_library_imports.html#standard-library-imports"><span class="std std-ref">Standard library imports</span></a>), <code class="docutils literal notranslate"><span class="pre">future</span></code> supports four other interfaces to
+the reorganized standard library. This is largely for historical reasons (for
+versions prior to 0.14).</p>
+<section id="future-moves-interface">
+<h2><code class="docutils literal notranslate"><span class="pre">future.moves</span></code> interface<a class="headerlink" href="#future-moves-interface" title="Link to this heading">¶</a></h2>
+<p>The <code class="docutils literal notranslate"><span class="pre">future.moves</span></code> interface avoids import hooks. It may therefore be more
+robust, at the cost of less idiomatic code. Use it as follows:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">future.moves</span> <span class="kn">import</span> <span class="n">queue</span>
+<span class="kn">from</span> <span class="nn">future.moves</span> <span class="kn">import</span> <span class="n">socketserver</span>
+<span class="kn">from</span> <span class="nn">future.moves.http.client</span> <span class="kn">import</span> <span class="n">HTTPConnection</span>
+<span class="c1"># etc.</span>
+</pre></div>
+</div>
+<p>If you wish to achieve the effect of a two-level import such as this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">http.client</span>
+</pre></div>
+</div>
+<p>portably on both Python 2 and Python 3, note that Python currently does not
+support syntax like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">future.moves</span> <span class="kn">import</span> <span class="n">http</span><span class="o">.</span><span class="n">client</span>
+</pre></div>
+</div>
+<p>One workaround is to replace the dot with an underscore:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">future.moves.http.client</span> <span class="k">as</span> <span class="nn">http_client</span>
+</pre></div>
+</div>
+<section id="comparing-future-moves-and-six-moves">
+<h3>Comparing future.moves and six.moves<a class="headerlink" href="#comparing-future-moves-and-six-moves" title="Link to this heading">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">future.moves</span></code> and <code class="docutils literal notranslate"><span class="pre">six.moves</span></code> provide a similar Python 3-style
+interface to the native standard library module definitions.</p>
+<p>The major difference is that the <code class="docutils literal notranslate"><span class="pre">future.moves</span></code> package is a real Python package
+(<code class="docutils literal notranslate"><span class="pre">future/moves/__init__.py</span></code>) with real modules provided as <code class="docutils literal notranslate"><span class="pre">.py</span></code> files, whereas
+<code class="docutils literal notranslate"><span class="pre">six.moves</span></code> constructs fake <code class="docutils literal notranslate"><span class="pre">_LazyModule</span></code> module objects within the Python
+code and injects them into the <code class="docutils literal notranslate"><span class="pre">sys.modules</span></code> cache.</p>
+<p>The advantage of <code class="docutils literal notranslate"><span class="pre">six.moves</span></code> is that the code fits in a single module that can be
+copied into a project that seeks to eliminate external dependencies.</p>
+<p>The advantage of <code class="docutils literal notranslate"><span class="pre">future.moves</span></code> is that it is likely to be more robust in the
+face of magic like Django’s auto-reloader and tools like <code class="docutils literal notranslate"><span class="pre">py2exe</span></code> and
+<code class="docutils literal notranslate"><span class="pre">cx_freeze</span></code>. See issues #51, #53, #56, and #63 in the <code class="docutils literal notranslate"><span class="pre">six</span></code> project for
+more detail of bugs related to the <code class="docutils literal notranslate"><span class="pre">six.moves</span></code> approach.</p>
+</section>
+</section>
+<section id="import-and-from-import-functions">
+<h2><code class="docutils literal notranslate"><span class="pre">import_</span></code> and <code class="docutils literal notranslate"><span class="pre">from_import</span></code> functions<a class="headerlink" href="#import-and-from-import-functions" title="Link to this heading">¶</a></h2>
+<p>The functional interface is to use the <code class="docutils literal notranslate"><span class="pre">import_</span></code> and <code class="docutils literal notranslate"><span class="pre">from_import</span></code>
+functions from <code class="docutils literal notranslate"><span class="pre">future.standard_library</span></code> as follows:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">future.standard_library</span> <span class="kn">import</span> <span class="n">import_</span><span class="p">,</span> <span class="n">from_import</span>
+
+<span class="n">http</span> <span class="o">=</span> <span class="n">import_</span><span class="p">(</span><span class="s1">&#39;http.client&#39;</span><span class="p">)</span>
+<span class="n">urllib</span> <span class="o">=</span> <span class="n">import_</span><span class="p">(</span><span class="s1">&#39;urllib.request&#39;</span><span class="p">)</span>
+
+<span class="n">urlopen</span><span class="p">,</span> <span class="n">urlsplit</span> <span class="o">=</span> <span class="n">from_import</span><span class="p">(</span><span class="s1">&#39;urllib.request&#39;</span><span class="p">,</span> <span class="s1">&#39;urlopen&#39;</span><span class="p">,</span> <span class="s1">&#39;urlsplit&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>This interface also works with two-level imports.</p>
+</section>
+<section id="context-manager-for-import-hooks">
+<h2>Context-manager for import hooks<a class="headerlink" href="#context-manager-for-import-hooks" title="Link to this heading">¶</a></h2>
+<p>The context-manager interface is via a context-manager called <code class="docutils literal notranslate"><span class="pre">hooks</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">future.standard_library</span> <span class="kn">import</span> <span class="n">hooks</span>
+<span class="k">with</span> <span class="n">hooks</span><span class="p">():</span>
+    <span class="kn">import</span> <span class="nn">socketserver</span>
+    <span class="kn">import</span> <span class="nn">queue</span>
+    <span class="kn">import</span> <span class="nn">configparser</span>
+    <span class="kn">import</span> <span class="nn">test.support</span>
+    <span class="kn">import</span> <span class="nn">html.parser</span>
+    <span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">UserList</span>
+    <span class="kn">from</span> <span class="nn">itertools</span> <span class="kn">import</span> <span class="n">filterfalse</span><span class="p">,</span> <span class="n">zip_longest</span>
+    <span class="kn">from</span> <span class="nn">http.client</span> <span class="kn">import</span> <span class="n">HttpConnection</span>
+    <span class="kn">import</span> <span class="nn">urllib.request</span>
+    <span class="c1"># and other moved modules and definitions</span>
+</pre></div>
+</div>
+<p>This interface is straightforward and effective, using PEP 302 import
+hooks. However, there are reports that this sometimes leads to problems
+(see issue #238). Until this is resolved, it is probably safer to use direct
+imports or one of the other import mechanisms listed above.</p>
+</section>
+<section id="install-hooks-call-deprecated">
+<h2>install_hooks() call (deprecated)<a class="headerlink" href="#install-hooks-call-deprecated" title="Link to this heading">¶</a></h2>
+<p>The last interface to the reorganized standard library is via a call to
+<code class="docutils literal notranslate"><span class="pre">install_hooks()</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">future</span> <span class="kn">import</span> <span class="n">standard_library</span>
+<span class="n">standard_library</span><span class="o">.</span><span class="n">install_hooks</span><span class="p">()</span>
+
+<span class="kn">import</span> <span class="nn">urllib</span>
+<span class="n">f</span> <span class="o">=</span> <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="s1">&#39;http://www.python.org/&#39;</span><span class="p">)</span>
+
+<span class="n">standard_library</span><span class="o">.</span><span class="n">remove_hooks</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>If you use this interface, it is recommended to disable the import hooks again
+after use by calling <code class="docutils literal notranslate"><span class="pre">remove_hooks()</span></code>, in order to prevent the futurized
+modules from being invoked inadvertently by other modules. (Python does not
+automatically disable import hooks at the end of a module, but keeps them
+active for the life of a process unless removed.)</p>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+  <span id="sidebar-top"></span>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  
+    
+            <p class="logo"><a href="index.html">
+              <img class="logo" src="_static/python-future-logo-textless-transparent.png" alt="Logo"/>
+            </a></p>
+  
+<!--<h3>Python-Future</h3>
+<p>-->
+  <h4>Easy, clean, reliable Python 2/3 compatibility</h4>
+  <a href="https://python-future.org/#contents">Table of Contents</a>
+<!--
+</p>
+<h3>Other Formats</h3>
+<p>
+  You can download the documentation in other formats as well:
+</p>
+<ul>
+  <li><a href="http://jinja.pocoo.org/docs/jinja-docs.pdf">as PDF</a>
+  <li><a href="http://jinja.pocoo.org/docs/jinja-docs.zip">as zipped HTML</a>
+</ul>
+-->
+<!--<h3>Useful Links</h3>
+<ul>
+  <li><a href="https://pypi.org/project/future/">on PyPI</a></li>
+  <li><a href="https://github.com/PythonCharmers/python-future">on GitHub</a></li>
+</ul>
+--><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="whatsnew.html">What’s New</a></li>
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview: Easy, clean, reliable Python 2/3 compatibility</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quick-start guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="compatible_idioms.html">Cheat Sheet: Writing Python 2-3 compatible code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="imports.html">Imports</a></li>
+<li class="toctree-l1"><a class="reference internal" href="what_else.html">What else you need to know</a></li>
+<li class="toctree-l1"><a class="reference internal" href="automatic_conversion.html">Automatic conversion to Py2/3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">Frequently Asked Questions (FAQ)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stdlib_incompatibilities.html">Standard library incompatibilities</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Older interfaces</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#future-moves-interface"><code class="docutils literal notranslate"><span class="pre">future.moves</span></code> interface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#import-and-from-import-functions"><code class="docutils literal notranslate"><span class="pre">import_</span></code> and <code class="docutils literal notranslate"><span class="pre">from_import</span></code> functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#context-manager-for-import-hooks">Context-manager for import hooks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#install-hooks-call-deprecated">install_hooks() call (deprecated)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changes in previous versions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="credits.html">Licensing and credits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference.html">API Reference (in progress)</a></li>
+</ul>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+  
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2013-2019, Python Charmers Pty Ltd, Australia.
+    </div>
+  <script src="_static/version_warning_offset.js"></script>
+
+<div class="footer">
+<script type="text/javascript">
+  (function() {
+    var ga = document.createElement('script');
+    ga.src = ('https:' == document.location.protocol ?
+              'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    ga.setAttribute('async', 'true');
+    document.documentElement.firstChild.appendChild(ga);
+  })();
+</script>
+</div>
+
+  </body>
+</html>

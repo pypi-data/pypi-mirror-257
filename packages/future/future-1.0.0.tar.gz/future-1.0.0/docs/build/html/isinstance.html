@@ -1,0 +1,226 @@
+
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>isinstance &#8212; Python-Future  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/jinja.css?v=85659ec6" />
+    <link rel="stylesheet" href="_static/my-styles.css" type="text/css" />
+    <script src="_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="icon" href="_static/python-future-icon-32.ico"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+ 
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-19344199-2']);
+  _gaq.push(['_trackPageview']);
+</script>
+
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Python-Future  documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">isinstance</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="isinstance">
+<span id="isinstance-calls"></span><h1>isinstance<a class="headerlink" href="#isinstance" title="Link to this heading">¶</a></h1>
+<p>The following tests all pass on Python 3:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="mi">2</span><span class="o">**</span><span class="mi">62</span><span class="p">,</span> <span class="nb">int</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="mi">2</span><span class="o">**</span><span class="mi">63</span><span class="p">,</span> <span class="nb">int</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="sa">b</span><span class="s1">&#39;my byte-string&#39;</span><span class="p">,</span> <span class="nb">bytes</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="sa">u</span><span class="s1">&#39;unicode string 1&#39;</span><span class="p">,</span> <span class="nb">str</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="s1">&#39;unicode string 2&#39;</span><span class="p">,</span> <span class="nb">str</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>However, two of these normally fail on Python 2:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="mi">2</span><span class="o">**</span><span class="mi">63</span><span class="p">,</span> <span class="nb">int</span><span class="p">)</span>
+<span class="gt">Traceback (most recent call last):</span>
+  File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
+<span class="gr">AssertionError</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="sa">u</span><span class="s1">&#39;my unicode string&#39;</span><span class="p">,</span> <span class="nb">str</span><span class="p">)</span>
+<span class="gt">Traceback (most recent call last):</span>
+  File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
+<span class="gr">AssertionError</span>
+</pre></div>
+</div>
+<p>And if this import is in effect on Python 2:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">unicode_literals</span>
+</pre></div>
+</div>
+<p>then the fifth test fails too:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="s1">&#39;unicode string 2&#39;</span><span class="p">,</span> <span class="nb">str</span><span class="p">)</span>
+<span class="gt">Traceback (most recent call last):</span>
+  File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
+<span class="gr">AssertionError</span>
+</pre></div>
+</div>
+<p>After importing the builtins from <code class="docutils literal notranslate"><span class="pre">future</span></code>, all these tests pass on
+Python 2 as on Python 3:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">builtins</span> <span class="kn">import</span> <span class="nb">bytes</span><span class="p">,</span> <span class="nb">int</span><span class="p">,</span> <span class="nb">str</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="nb">int</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="mi">10</span><span class="o">**</span><span class="mi">100</span><span class="p">,</span> <span class="nb">int</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="sa">b</span><span class="s1">&#39;my byte-string&#39;</span><span class="p">,</span> <span class="nb">bytes</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="sa">u</span><span class="s1">&#39;unicode string 1&#39;</span><span class="p">,</span> <span class="nb">str</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>However, note that the last test requires that <code class="docutils literal notranslate"><span class="pre">unicode_literals</span></code> be imported to succeed.:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">unicode_literals</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="s1">&#39;unicode string 2&#39;</span><span class="p">,</span> <span class="nb">str</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>This works because the backported types <code class="docutils literal notranslate"><span class="pre">int</span></code>, <code class="docutils literal notranslate"><span class="pre">bytes</span></code> and <code class="docutils literal notranslate"><span class="pre">str</span></code>
+(and others) have metaclasses that override <code class="docutils literal notranslate"><span class="pre">__instancecheck__</span></code>. See <a class="reference external" href="http://www.python.org/dev/peps/pep-3119/#overloading-isinstance-and-issubclass">PEP 3119</a>
+for details.</p>
+</section>
+<section id="passing-data-to-from-python-2-libraries">
+<h1>Passing data to/from Python 2 libraries<a class="headerlink" href="#passing-data-to-from-python-2-libraries" title="Link to this heading">¶</a></h1>
+<p>If you are passing any of the backported types (<code class="docutils literal notranslate"><span class="pre">bytes</span></code>, <code class="docutils literal notranslate"><span class="pre">int</span></code>, <code class="docutils literal notranslate"><span class="pre">dict,</span>
+<span class="pre">``str</span></code>) into brittle library code that performs type-checks using <code class="docutils literal notranslate"><span class="pre">type()</span></code>,
+rather than <code class="docutils literal notranslate"><span class="pre">isinstance()</span></code>, or requires that you pass Python 2’s native types
+(rather than subclasses) for some other reason, it may be necessary to upcast
+the types from <code class="docutils literal notranslate"><span class="pre">future</span></code> to their native superclasses on Py2.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">native</span></code> function in <code class="docutils literal notranslate"><span class="pre">future.utils</span></code> is provided for this. Here is how
+to use it. (The output showing is from Py2):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">builtins</span> <span class="kn">import</span> <span class="nb">int</span><span class="p">,</span> <span class="nb">bytes</span><span class="p">,</span> <span class="nb">str</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">future.utils</span> <span class="kn">import</span> <span class="n">native</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="mi">10</span><span class="o">**</span><span class="mi">20</span><span class="p">)</span>     <span class="c1"># Py3-like long int</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span>
+<span class="go">100000000000000000000</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="go">future.types.newint.newint</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">native</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="go">100000000000000000000L</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">type</span><span class="p">(</span><span class="n">native</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
+<span class="go">long</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">b</span> <span class="o">=</span> <span class="nb">bytes</span><span class="p">(</span><span class="sa">b</span><span class="s1">&#39;ABC&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">type</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+<span class="go">future.types.newbytes.newbytes</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">native</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+<span class="go">&#39;ABC&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">type</span><span class="p">(</span><span class="n">native</span><span class="p">(</span><span class="n">b</span><span class="p">))</span>
+<span class="go">str</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="sa">u</span><span class="s1">&#39;ABC&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">type</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<span class="go">future.types.newstr.newstr</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">native</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<span class="go">u&#39;ABC&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">type</span><span class="p">(</span><span class="n">native</span><span class="p">(</span><span class="n">s</span><span class="p">))</span>
+<span class="go">unicode</span>
+</pre></div>
+</div>
+<p>On Py3, the <code class="xref py py-func docutils literal notranslate"><span class="pre">native()</span></code> function is a no-op.</p>
+</section>
+<section id="native-string-type">
+<h1>Native string type<a class="headerlink" href="#native-string-type" title="Link to this heading">¶</a></h1>
+<p>Some library code, include standard library code like the <code class="docutils literal notranslate"><span class="pre">array.array()</span></code>
+constructor, require native strings on Python 2 and Python 3. This means that
+there is no simple way to pass the appropriate string type when the
+<code class="docutils literal notranslate"><span class="pre">unicode_literals</span></code> import from <code class="docutils literal notranslate"><span class="pre">__future__</span></code> is in effect.</p>
+<p>The objects <code class="docutils literal notranslate"><span class="pre">native_str</span></code> and <code class="docutils literal notranslate"><span class="pre">native_bytes</span></code> are available in
+<code class="docutils literal notranslate"><span class="pre">future.utils</span></code> for this case. These are equivalent to the <code class="docutils literal notranslate"><span class="pre">str</span></code> and
+<code class="docutils literal notranslate"><span class="pre">bytes</span></code> objects in <code class="docutils literal notranslate"><span class="pre">__builtin__</span></code> on Python 2 or in <code class="docutils literal notranslate"><span class="pre">builtins</span></code> on Python 3.</p>
+<p>The functions <code class="docutils literal notranslate"><span class="pre">native_str_to_bytes</span></code> and <code class="docutils literal notranslate"><span class="pre">bytes_to_native_str</span></code> are also
+available for more explicit conversions.</p>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+  <span id="sidebar-top"></span>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  
+    
+            <p class="logo"><a href="index.html">
+              <img class="logo" src="_static/python-future-logo-textless-transparent.png" alt="Logo"/>
+            </a></p>
+  
+<!--<h3>Python-Future</h3>
+<p>-->
+  <h4>Easy, clean, reliable Python 2/3 compatibility</h4>
+  <a href="https://python-future.org/#contents">Table of Contents</a>
+<!--
+</p>
+<h3>Other Formats</h3>
+<p>
+  You can download the documentation in other formats as well:
+</p>
+<ul>
+  <li><a href="http://jinja.pocoo.org/docs/jinja-docs.pdf">as PDF</a>
+  <li><a href="http://jinja.pocoo.org/docs/jinja-docs.zip">as zipped HTML</a>
+</ul>
+-->
+<!--<h3>Useful Links</h3>
+<ul>
+  <li><a href="https://pypi.org/project/future/">on PyPI</a></li>
+  <li><a href="https://github.com/PythonCharmers/python-future">on GitHub</a></li>
+</ul>
+--><ul>
+<li class="toctree-l1"><a class="reference internal" href="whatsnew.html">What’s New</a></li>
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview: Easy, clean, reliable Python 2/3 compatibility</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quick-start guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="compatible_idioms.html">Cheat Sheet: Writing Python 2-3 compatible code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="imports.html">Imports</a></li>
+<li class="toctree-l1"><a class="reference internal" href="what_else.html">What else you need to know</a></li>
+<li class="toctree-l1"><a class="reference internal" href="automatic_conversion.html">Automatic conversion to Py2/3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">Frequently Asked Questions (FAQ)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stdlib_incompatibilities.html">Standard library incompatibilities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="older_interfaces.html">Older interfaces</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changes in previous versions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="credits.html">Licensing and credits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference.html">API Reference (in progress)</a></li>
+</ul>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+  
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2013-2019, Python Charmers Pty Ltd, Australia.
+    </div>
+  <script src="_static/version_warning_offset.js"></script>
+
+<div class="footer">
+<script type="text/javascript">
+  (function() {
+    var ga = document.createElement('script');
+    ga.src = ('https:' == document.location.protocol ?
+              'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    ga.setAttribute('async', 'true');
+    document.documentElement.firstChild.appendChild(ga);
+  })();
+</script>
+</div>
+
+  </body>
+</html>

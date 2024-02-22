@@ -1,0 +1,286 @@
+
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Standard library imports &#8212; Python-Future  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/jinja.css?v=85659ec6" />
+    <link rel="stylesheet" href="_static/my-styles.css" type="text/css" />
+    <script src="_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="icon" href="_static/python-future-icon-32.ico"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+ 
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-19344199-2']);
+  _gaq.push(['_trackPageview']);
+</script>
+
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Python-Future  documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Standard library imports</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="standard-library-imports">
+<span id="id1"></span><h1>Standard library imports<a class="headerlink" href="#standard-library-imports" title="Link to this heading">¶</a></h1>
+<p><code class="xref py py-mod docutils literal notranslate"><span class="pre">future</span></code> supports the standard library reorganization (PEP 3108) through
+several mechanisms.</p>
+<section id="direct-imports">
+<span id="id2"></span><h2>Direct imports<a class="headerlink" href="#direct-imports" title="Link to this heading">¶</a></h2>
+<p>As of version 0.14, the <code class="docutils literal notranslate"><span class="pre">future</span></code> package comes with top-level packages for
+Python 2.x that provide access to the reorganized standard library modules
+under their Python 3.x names.</p>
+<p>Direct imports are the preferred mechanism for accessing the renamed standard
+library modules in Python 2/3 compatible code. For example, the following clean
+Python 3 code runs unchanged on Python 2 after installing <code class="docutils literal notranslate"><span class="pre">future</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Alias for future.builtins on Py2:</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">builtins</span> <span class="kn">import</span> <span class="nb">str</span><span class="p">,</span> <span class="nb">open</span><span class="p">,</span> <span class="nb">range</span><span class="p">,</span> <span class="nb">dict</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Top-level packages with Py3 names provided on Py2:</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">queue</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">tkinter.dialog</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">etc</span><span class="o">.</span>
+</pre></div>
+</div>
+<p>Notice that this code actually runs on Python 3 without the presence of the
+<code class="docutils literal notranslate"><span class="pre">future</span></code> package.</p>
+<p>Of the 44 modules that were refactored with PEP 3108 (standard library
+reorganization), 29 are supported with direct imports in the above manner. The
+complete list is here:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">### Renamed modules:</span>
+
+<span class="kn">import</span> <span class="nn">builtins</span>
+
+<span class="kn">import</span> <span class="nn">copyreg</span>
+
+<span class="kn">import</span> <span class="nn">html</span>
+<span class="kn">import</span> <span class="nn">html.entities</span>
+<span class="kn">import</span> <span class="nn">html.parser</span>
+
+<span class="kn">import</span> <span class="nn">http.client</span>
+<span class="kn">import</span> <span class="nn">http.cookies</span>
+<span class="kn">import</span> <span class="nn">http.cookiejar</span>
+<span class="kn">import</span> <span class="nn">http.server</span>
+
+<span class="kn">import</span> <span class="nn">queue</span>
+
+<span class="kn">import</span> <span class="nn">reprlib</span>
+
+<span class="kn">import</span> <span class="nn">socketserver</span>
+
+<span class="kn">from</span> <span class="nn">tkinter</span> <span class="kn">import</span> <span class="n">colorchooser</span>
+<span class="kn">from</span> <span class="nn">tkinter</span> <span class="kn">import</span> <span class="n">commondialog</span>
+<span class="kn">from</span> <span class="nn">tkinter</span> <span class="kn">import</span> <span class="n">constants</span>
+<span class="kn">from</span> <span class="nn">tkinter</span> <span class="kn">import</span> <span class="n">dialog</span>
+<span class="kn">from</span> <span class="nn">tkinter</span> <span class="kn">import</span> <span class="n">dnd</span>
+<span class="kn">from</span> <span class="nn">tkinter</span> <span class="kn">import</span> <span class="n">filedialog</span>
+<span class="kn">from</span> <span class="nn">tkinter</span> <span class="kn">import</span> <span class="n">font</span>
+<span class="kn">from</span> <span class="nn">tkinter</span> <span class="kn">import</span> <span class="n">messagebox</span>
+<span class="kn">from</span> <span class="nn">tkinter</span> <span class="kn">import</span> <span class="n">scrolledtext</span>
+<span class="kn">from</span> <span class="nn">tkinter</span> <span class="kn">import</span> <span class="n">simpledialog</span>
+<span class="kn">from</span> <span class="nn">tkinter</span> <span class="kn">import</span> <span class="n">tix</span>
+<span class="kn">from</span> <span class="nn">tkinter</span> <span class="kn">import</span> <span class="n">ttk</span>
+
+<span class="kn">import</span> <span class="nn">winreg</span>                    <span class="c1"># Windows only</span>
+
+<span class="kn">import</span> <span class="nn">xmlrpc.client</span>
+<span class="kn">import</span> <span class="nn">xmlrpc.server</span>
+
+<span class="kn">import</span> <span class="nn">_dummy_thread</span>
+<span class="kn">import</span> <span class="nn">_markupbase</span>
+<span class="kn">import</span> <span class="nn">_thread</span>
+</pre></div>
+</div>
+<p>Note that, as of v0.16.0, <code class="docutils literal notranslate"><span class="pre">python-future</span></code> no longer includes an alias for the
+<code class="docutils literal notranslate"><span class="pre">configparser</span></code> module because a full backport exists (see <a class="reference external" href="https://pypi.org/project/configparser/">https://pypi.org/project/configparser/</a>).</p>
+</section>
+<section id="aliased-imports">
+<span id="list-standard-library-refactored"></span><h2>Aliased imports<a class="headerlink" href="#aliased-imports" title="Link to this heading">¶</a></h2>
+<p>The following 14 modules were refactored or extended from Python 2.7 to 3.x
+but were neither renamed in Py3.x nor were the new APIs backported to Py2.x.
+This precludes compatibility interfaces that work out-of-the-box. Instead, the
+<code class="docutils literal notranslate"><span class="pre">future</span></code> package makes the Python 3.x APIs available on Python 2.x as
+follows:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">future.standard_library</span> <span class="kn">import</span> <span class="n">install_aliases</span>
+<span class="n">install_aliases</span><span class="p">()</span>
+
+<span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">UserDict</span><span class="p">,</span> <span class="n">UserList</span><span class="p">,</span> <span class="n">UserString</span>
+
+<span class="kn">import</span> <span class="nn">urllib.parse</span>
+<span class="kn">import</span> <span class="nn">urllib.request</span>
+<span class="kn">import</span> <span class="nn">urllib.response</span>
+<span class="kn">import</span> <span class="nn">urllib.robotparser</span>
+<span class="kn">import</span> <span class="nn">urllib.error</span>
+
+<span class="kn">import</span> <span class="nn">dbm</span>
+<span class="kn">import</span> <span class="nn">dbm.dumb</span>
+<span class="kn">import</span> <span class="nn">dbm.gnu</span>                <span class="c1"># requires Python dbm support</span>
+<span class="kn">import</span> <span class="nn">dbm.ndbm</span>               <span class="c1"># requires Python dbm support</span>
+
+<span class="kn">from</span> <span class="nn">itertools</span> <span class="kn">import</span> <span class="n">filterfalse</span><span class="p">,</span> <span class="n">zip_longest</span>
+
+<span class="kn">from</span> <span class="nn">subprocess</span> <span class="kn">import</span> <span class="n">getoutput</span><span class="p">,</span> <span class="n">getstatusoutput</span>
+
+<span class="kn">from</span> <span class="nn">sys</span> <span class="kn">import</span> <span class="n">intern</span>
+
+<span class="kn">import</span> <span class="nn">test.support</span>
+</pre></div>
+</div>
+<p>The newly exposed <code class="docutils literal notranslate"><span class="pre">urllib</span></code> submodules are backports of those from Py3.x.
+This means, for example, that <code class="docutils literal notranslate"><span class="pre">urllib.parse.unquote()</span></code> now exists and takes
+an optional <code class="docutils literal notranslate"><span class="pre">encoding</span></code> argument on Py2.x as it does on Py3.x.</p>
+<p><strong>Limitation:</strong> Note that the <code class="docutils literal notranslate"><span class="pre">http</span></code>-based backports do not currently support
+HTTPS (as of 2015-09-11) because the SSL support changed considerably in Python
+3.x. If you need HTTPS support, please use this idiom for now:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">future.moves.urllib.request</span> <span class="kn">import</span> <span class="n">urlopen</span>
+</pre></div>
+</div>
+<p>Backports also exist of the following features from Python 3.4:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">math.ceil</span></code> returns an int on Py3</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">collections.ChainMap</span></code>     (for 2.7)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">reprlib.recursive_repr</span></code>   (for 2.7)</p></li>
+</ul>
+<p>These can then be imported on Python 2.7+ as follows:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">future.standard_library</span> <span class="kn">import</span> <span class="n">install_aliases</span>
+<span class="n">install_aliases</span><span class="p">()</span>
+
+<span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">ceil</span>      <span class="c1"># now returns an int</span>
+<span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">ChainMap</span>
+<span class="kn">from</span> <span class="nn">reprlib</span> <span class="kn">import</span> <span class="n">recursive_repr</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="external-standard-library-backports">
+<h1>External standard-library backports<a class="headerlink" href="#external-standard-library-backports" title="Link to this heading">¶</a></h1>
+<p>Backports of the following modules from the Python 3.x standard library are
+available independently of the python-future project:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">enum</span>                       <span class="c1"># pip install enum34</span>
+<span class="kn">import</span> <span class="nn">singledispatch</span>             <span class="c1"># pip install singledispatch</span>
+<span class="kn">import</span> <span class="nn">pathlib</span>                    <span class="c1"># pip install pathlib</span>
+</pre></div>
+</div>
+<p>A few modules from Python 3.4 are also available in the <code class="docutils literal notranslate"><span class="pre">backports</span></code>
+package namespace after <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">backports.lzma</span></code> etc.:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">backports</span> <span class="kn">import</span> <span class="n">lzma</span>
+<span class="kn">from</span> <span class="nn">backports</span> <span class="kn">import</span> <span class="n">functools_lru_cache</span> <span class="k">as</span> <span class="n">lru_cache</span>
+</pre></div>
+</div>
+</section>
+<section id="included-full-backports">
+<h1>Included full backports<a class="headerlink" href="#included-full-backports" title="Link to this heading">¶</a></h1>
+<p>Alpha-quality full backports of the following modules from Python 3.3’s
+standard library to Python 2.x are also available in <code class="docutils literal notranslate"><span class="pre">future.backports</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">http</span><span class="o">.</span><span class="n">client</span>
+<span class="n">http</span><span class="o">.</span><span class="n">server</span>
+<span class="n">html</span><span class="o">.</span><span class="n">entities</span>
+<span class="n">html</span><span class="o">.</span><span class="n">parser</span>
+<span class="n">urllib</span>
+<span class="n">xmlrpc</span><span class="o">.</span><span class="n">client</span>
+<span class="n">xmlrpc</span><span class="o">.</span><span class="n">server</span>
+</pre></div>
+</div>
+<p>The goal for these modules, unlike the modules in the <code class="docutils literal notranslate"><span class="pre">future.moves</span></code> package
+or top-level namespace, is to backport new functionality introduced in Python
+3.3.</p>
+<p>If you need the full backport of one of these packages, please open an issue <a class="reference external" href="https://github.com/PythonCharmers/python-future">here</a>.</p>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+  <span id="sidebar-top"></span>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  
+    
+            <p class="logo"><a href="index.html">
+              <img class="logo" src="_static/python-future-logo-textless-transparent.png" alt="Logo"/>
+            </a></p>
+  
+<!--<h3>Python-Future</h3>
+<p>-->
+  <h4>Easy, clean, reliable Python 2/3 compatibility</h4>
+  <a href="https://python-future.org/#contents">Table of Contents</a>
+<!--
+</p>
+<h3>Other Formats</h3>
+<p>
+  You can download the documentation in other formats as well:
+</p>
+<ul>
+  <li><a href="http://jinja.pocoo.org/docs/jinja-docs.pdf">as PDF</a>
+  <li><a href="http://jinja.pocoo.org/docs/jinja-docs.zip">as zipped HTML</a>
+</ul>
+-->
+<!--<h3>Useful Links</h3>
+<ul>
+  <li><a href="https://pypi.org/project/future/">on PyPI</a></li>
+  <li><a href="https://github.com/PythonCharmers/python-future">on GitHub</a></li>
+</ul>
+--><ul>
+<li class="toctree-l1"><a class="reference internal" href="whatsnew.html">What’s New</a></li>
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview: Easy, clean, reliable Python 2/3 compatibility</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quick-start guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="compatible_idioms.html">Cheat Sheet: Writing Python 2-3 compatible code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="imports.html">Imports</a></li>
+<li class="toctree-l1"><a class="reference internal" href="what_else.html">What else you need to know</a></li>
+<li class="toctree-l1"><a class="reference internal" href="automatic_conversion.html">Automatic conversion to Py2/3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">Frequently Asked Questions (FAQ)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stdlib_incompatibilities.html">Standard library incompatibilities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="older_interfaces.html">Older interfaces</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changes in previous versions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="credits.html">Licensing and credits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference.html">API Reference (in progress)</a></li>
+</ul>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+  
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2013-2019, Python Charmers Pty Ltd, Australia.
+    </div>
+  <script src="_static/version_warning_offset.js"></script>
+
+<div class="footer">
+<script type="text/javascript">
+  (function() {
+    var ga = document.createElement('script');
+    ga.src = ('https:' == document.location.protocol ?
+              'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    ga.setAttribute('async', 'true');
+    document.documentElement.firstChild.appendChild(ga);
+  })();
+</script>
+</div>
+
+  </body>
+</html>

@@ -1,0 +1,208 @@
+
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>dict &#8212; Python-Future  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/jinja.css?v=85659ec6" />
+    <link rel="stylesheet" href="_static/my-styles.css" type="text/css" />
+    <script src="_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="icon" href="_static/python-future-icon-32.ico"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+ 
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-19344199-2']);
+  _gaq.push(['_trackPageview']);
+</script>
+
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Python-Future  documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">dict</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="dict">
+<span id="dict-object"></span><h1>dict<a class="headerlink" href="#dict" title="Link to this heading">¶</a></h1>
+<p>Python 3 dictionaries have <code class="docutils literal notranslate"><span class="pre">.keys()</span></code>, <code class="docutils literal notranslate"><span class="pre">.values()</span></code>, and <code class="docutils literal notranslate"><span class="pre">.items()</span></code>
+methods which return memory-efficient set-like iterator objects, not lists.
+(See <a class="reference external" href="http://www.python.org/dev/peps/pep-3106/">PEP 3106</a>.)</p>
+<p>If your dictionaries are small, performance is not critical, and you don’t need
+the set-like behaviour of iterator objects from Python 3, you can of course
+stick with standard Python 3 code in your Py2/3 compatible codebase:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Assuming d is a native dict ...</span>
+
+<span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">d</span><span class="p">:</span>
+    <span class="c1"># code here</span>
+
+<span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">d</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="c1"># code here</span>
+
+<span class="k">for</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">d</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
+    <span class="c1"># code here</span>
+</pre></div>
+</div>
+<p>In this case there will be memory overhead of list creation on Py2 for each
+call to <code class="docutils literal notranslate"><span class="pre">items</span></code>, <code class="docutils literal notranslate"><span class="pre">values</span></code> or <code class="docutils literal notranslate"><span class="pre">keys</span></code>.</p>
+<p>For improved efficiency, <code class="docutils literal notranslate"><span class="pre">future.builtins</span></code> (aliased to <code class="docutils literal notranslate"><span class="pre">builtins</span></code>) provides
+a Python 2 <code class="docutils literal notranslate"><span class="pre">dict</span></code> subclass whose <code class="xref py py-func docutils literal notranslate"><span class="pre">keys()</span></code>, <code class="xref py py-func docutils literal notranslate"><span class="pre">values()</span></code>, and
+<code class="xref py py-func docutils literal notranslate"><span class="pre">items()</span></code> methods return iterators on all versions of Python &gt;= 2.7. On
+Python 2.7, these iterators also have the same set-like view behaviour as
+dictionaries in Python 3. This can streamline code that iterates over large
+dictionaries. For example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">print_function</span>
+<span class="kn">from</span> <span class="nn">builtins</span> <span class="kn">import</span> <span class="nb">dict</span><span class="p">,</span> <span class="nb">range</span>
+
+<span class="c1"># Memory-efficient construction:</span>
+<span class="n">d</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">((</span><span class="n">i</span><span class="p">,</span> <span class="n">i</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="o">**</span><span class="mi">7</span><span class="p">))</span>
+
+<span class="k">assert</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">d</span><span class="o">.</span><span class="n">items</span><span class="p">(),</span> <span class="nb">list</span><span class="p">)</span>
+
+<span class="c1"># Because items() is memory-efficient, so is this:</span>
+<span class="n">d2</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">((</span><span class="n">v</span><span class="p">,</span> <span class="n">k</span><span class="p">)</span> <span class="k">for</span> <span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="n">v</span><span class="p">)</span> <span class="ow">in</span> <span class="n">d</span><span class="o">.</span><span class="n">items</span><span class="p">())</span>
+</pre></div>
+</div>
+<p>As usual, on Python 3 <code class="docutils literal notranslate"><span class="pre">dict</span></code> imported from either <code class="docutils literal notranslate"><span class="pre">builtins</span></code> or
+<code class="docutils literal notranslate"><span class="pre">future.builtins</span></code> is just the built-in <code class="docutils literal notranslate"><span class="pre">dict</span></code> class.</p>
+<section id="memory-efficiency-and-alternatives">
+<h2>Memory-efficiency and alternatives<a class="headerlink" href="#memory-efficiency-and-alternatives" title="Link to this heading">¶</a></h2>
+<p>If you already have large native dictionaries, the downside to wrapping them in
+a <code class="docutils literal notranslate"><span class="pre">dict</span></code> call is that memory is copied (on both Py3 and on Py2). For
+example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># This allocates and then frees a large amount of temporary memory:</span>
+<span class="n">d</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">({</span><span class="n">i</span><span class="p">:</span> <span class="n">i</span><span class="o">**</span><span class="mi">2</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="o">**</span><span class="mi">7</span><span class="p">)})</span>
+</pre></div>
+</div>
+<p>If dictionary methods like <code class="docutils literal notranslate"><span class="pre">values</span></code> and <code class="docutils literal notranslate"><span class="pre">items</span></code> are called only once, this
+obviously negates the memory benefits offered by the overridden methods through
+not creating temporary lists.</p>
+<p>The memory-efficient (and CPU-efficient) alternatives are:</p>
+<ul>
+<li><p>to construct a dictionary from an iterator. The above line could use a
+generator like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">d</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">((</span><span class="n">i</span><span class="p">,</span> <span class="n">i</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="o">**</span><span class="mi">7</span><span class="p">))</span>
+</pre></div>
+</div>
+</li>
+<li><p>to construct an empty dictionary with a <code class="docutils literal notranslate"><span class="pre">dict()</span></code> call using
+<code class="docutils literal notranslate"><span class="pre">builtins.dict</span></code> (rather than <code class="docutils literal notranslate"><span class="pre">{}</span></code>) and then update it;</p></li>
+<li><p>to use the <code class="docutils literal notranslate"><span class="pre">viewitems</span></code> etc. functions from <a class="reference internal" href="reference.html#module-future.utils" title="future.utils"><code class="xref py py-mod docutils literal notranslate"><span class="pre">future.utils</span></code></a>, passing in
+regular dictionaries:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">future.utils</span> <span class="kn">import</span> <span class="n">viewkeys</span><span class="p">,</span> <span class="n">viewvalues</span><span class="p">,</span> <span class="n">viewitems</span>
+
+<span class="k">for</span> <span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span> <span class="ow">in</span> <span class="n">viewitems</span><span class="p">(</span><span class="n">hugedictionary</span><span class="p">):</span>
+    <span class="c1"># some code here</span>
+
+<span class="c1"># Set intersection:</span>
+<span class="n">d</span> <span class="o">=</span> <span class="p">{</span><span class="n">i</span><span class="o">**</span><span class="mi">2</span><span class="p">:</span> <span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1000</span><span class="p">)}</span>
+<span class="n">both</span> <span class="o">=</span> <span class="n">viewkeys</span><span class="p">(</span><span class="n">d</span><span class="p">)</span> <span class="o">&amp;</span> <span class="nb">set</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1000</span><span class="p">,</span> <span class="mi">7</span><span class="p">))</span>
+
+<span class="c1"># Set union:</span>
+<span class="n">both</span> <span class="o">=</span> <span class="n">viewvalues</span><span class="p">(</span><span class="n">d1</span><span class="p">)</span> <span class="o">|</span> <span class="n">viewvalues</span><span class="p">(</span><span class="n">d2</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+</ul>
+<p>For compatibility, the functions <code class="docutils literal notranslate"><span class="pre">iteritems</span></code> etc. are also available in
+<a class="reference internal" href="reference.html#module-future.utils" title="future.utils"><code class="xref py py-mod docutils literal notranslate"><span class="pre">future.utils</span></code></a>. These are equivalent to the functions of the same names in
+<code class="docutils literal notranslate"><span class="pre">six</span></code>, which is equivalent to calling the <code class="docutils literal notranslate"><span class="pre">iteritems</span></code> etc. methods on
+Python 2, or to calling <code class="docutils literal notranslate"><span class="pre">items</span></code> etc. on Python 3.</p>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+  <span id="sidebar-top"></span>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  
+    
+            <p class="logo"><a href="index.html">
+              <img class="logo" src="_static/python-future-logo-textless-transparent.png" alt="Logo"/>
+            </a></p>
+  
+<!--<h3>Python-Future</h3>
+<p>-->
+  <h4>Easy, clean, reliable Python 2/3 compatibility</h4>
+  <a href="https://python-future.org/#contents">Table of Contents</a>
+<!--
+</p>
+<h3>Other Formats</h3>
+<p>
+  You can download the documentation in other formats as well:
+</p>
+<ul>
+  <li><a href="http://jinja.pocoo.org/docs/jinja-docs.pdf">as PDF</a>
+  <li><a href="http://jinja.pocoo.org/docs/jinja-docs.zip">as zipped HTML</a>
+</ul>
+-->
+<!--<h3>Useful Links</h3>
+<ul>
+  <li><a href="https://pypi.org/project/future/">on PyPI</a></li>
+  <li><a href="https://github.com/PythonCharmers/python-future">on GitHub</a></li>
+</ul>
+--><ul>
+<li class="toctree-l1"><a class="reference internal" href="whatsnew.html">What’s New</a></li>
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview: Easy, clean, reliable Python 2/3 compatibility</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quick-start guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="compatible_idioms.html">Cheat Sheet: Writing Python 2-3 compatible code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="imports.html">Imports</a></li>
+<li class="toctree-l1"><a class="reference internal" href="what_else.html">What else you need to know</a></li>
+<li class="toctree-l1"><a class="reference internal" href="automatic_conversion.html">Automatic conversion to Py2/3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">Frequently Asked Questions (FAQ)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stdlib_incompatibilities.html">Standard library incompatibilities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="older_interfaces.html">Older interfaces</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changes in previous versions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="credits.html">Licensing and credits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference.html">API Reference (in progress)</a></li>
+</ul>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+  
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2013-2019, Python Charmers Pty Ltd, Australia.
+    </div>
+  <script src="_static/version_warning_offset.js"></script>
+
+<div class="footer">
+<script type="text/javascript">
+  (function() {
+    var ga = document.createElement('script');
+    ga.src = ('https:' == document.location.protocol ?
+              'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    ga.setAttribute('async', 'true');
+    document.documentElement.firstChild.appendChild(ga);
+  })();
+</script>
+</div>
+
+  </body>
+</html>

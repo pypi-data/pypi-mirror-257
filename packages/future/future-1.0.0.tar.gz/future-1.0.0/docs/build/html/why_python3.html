@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Why Python 3? &#8212; Python-Future  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/jinja.css?v=85659ec6" />
+    <link rel="stylesheet" href="_static/my-styles.css" type="text/css" />
+    <script src="_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="icon" href="_static/python-future-icon-32.ico"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+ 
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-19344199-2']);
+  _gaq.push(['_trackPageview']);
+</script>
+
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Python-Future  documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Why Python 3?</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="why-python-3">
+<span id="why-python3"></span><h1>Why Python 3?<a class="headerlink" href="#why-python-3" title="Link to this heading">¶</a></h1>
+<ul class="simple">
+<li><p>Python 2.7 is the final Python 2.x release. Python 3.x is the future.
+The Python ecosystem needs to consolidate. A split or schism between
+different incompatible versions is not healthy for growing the
+community.</p></li>
+<li><p>Function annotations</p></li>
+<li><p>Decimal module 100x faster. As fast as floats.</p></li>
+<li><p>Easier to learn. (Less cruft in language and stdlib, more consistency, better docstrings, etc.)</p></li>
+<li><p>Much safer handling of unicode text and encodings: fewer bugs.</p></li>
+<li><p>More memory efficiency (shared dict keys (PEP 412) and space-efficient
+Unicode representation (PEP 393))</p></li>
+<li><p>Exception chaining</p></li>
+</ul>
+<section id="why-are-unicode-strings-better-on-python-3">
+<h2>Why are Unicode strings better on Python 3?<a class="headerlink" href="#why-are-unicode-strings-better-on-python-3" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>it is not the default string type (you have to prefix the string
+with a u to get Unicode);</p></li>
+<li><p>it is missing some functionality, e.g. casefold;</p></li>
+<li><p>there are two distinct implementations, narrow builds and wide builds;</p></li>
+<li><p>wide builds take up to four times more memory per string as needed;</p></li>
+<li><p>narrow builds take up to two times more memory per string as needed;</p></li>
+<li><p>worse, narrow builds have very naive (possibly even “broken”)
+handling of code points in the Supplementary Multilingual Planes.</p></li>
+</ul>
+<p>The unicode string type in Python 3 is better because:</p>
+<ul class="simple">
+<li><p>it is the default string type;</p></li>
+<li><p>it includes more functionality;</p></li>
+<li><p>starting in Python 3.3, it gets rid of the distinction between
+narrow and wide builds;</p></li>
+<li><p>which reduces the memory overhead of strings by up to a factor
+of four in many cases;</p></li>
+<li><p>and fixes the issue of SMP code points.</p></li>
+</ul>
+<p>(quote from a mailing list post by Steve D’Aprano on 2014-01-17).</p>
+</section>
+<section id="new-features">
+<h2>New features<a class="headerlink" href="#new-features" title="Link to this heading">¶</a></h2>
+<section id="standard-library">
+<h3>Standard library:<a class="headerlink" href="#standard-library" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>SSL contexts in http.client</p></li>
+<li></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="non-arguments-for-python-3">
+<h1>Non-arguments for Python 3<a class="headerlink" href="#non-arguments-for-python-3" title="Link to this heading">¶</a></h1>
+<ul class="simple">
+<li></li>
+</ul>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+  <span id="sidebar-top"></span>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  
+    
+            <p class="logo"><a href="index.html">
+              <img class="logo" src="_static/python-future-logo-textless-transparent.png" alt="Logo"/>
+            </a></p>
+  
+<!--<h3>Python-Future</h3>
+<p>-->
+  <h4>Easy, clean, reliable Python 2/3 compatibility</h4>
+  <a href="https://python-future.org/#contents">Table of Contents</a>
+<!--
+</p>
+<h3>Other Formats</h3>
+<p>
+  You can download the documentation in other formats as well:
+</p>
+<ul>
+  <li><a href="http://jinja.pocoo.org/docs/jinja-docs.pdf">as PDF</a>
+  <li><a href="http://jinja.pocoo.org/docs/jinja-docs.zip">as zipped HTML</a>
+</ul>
+-->
+<!--<h3>Useful Links</h3>
+<ul>
+  <li><a href="https://pypi.org/project/future/">on PyPI</a></li>
+  <li><a href="https://github.com/PythonCharmers/python-future">on GitHub</a></li>
+</ul>
+--><ul>
+<li class="toctree-l1"><a class="reference internal" href="whatsnew.html">What’s New</a></li>
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview: Easy, clean, reliable Python 2/3 compatibility</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quick-start guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="compatible_idioms.html">Cheat Sheet: Writing Python 2-3 compatible code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="imports.html">Imports</a></li>
+<li class="toctree-l1"><a class="reference internal" href="what_else.html">What else you need to know</a></li>
+<li class="toctree-l1"><a class="reference internal" href="automatic_conversion.html">Automatic conversion to Py2/3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">Frequently Asked Questions (FAQ)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stdlib_incompatibilities.html">Standard library incompatibilities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="older_interfaces.html">Older interfaces</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changes in previous versions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="credits.html">Licensing and credits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference.html">API Reference (in progress)</a></li>
+</ul>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+  
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2013-2019, Python Charmers Pty Ltd, Australia.
+    </div>
+  <script src="_static/version_warning_offset.js"></script>
+
+<div class="footer">
+<script type="text/javascript">
+  (function() {
+    var ga = document.createElement('script');
+    ga.src = ('https:' == document.location.protocol ?
+              'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    ga.setAttribute('async', 'true');
+    document.documentElement.firstChild.appendChild(ga);
+  })();
+</script>
+</div>
+
+  </body>
+</html>

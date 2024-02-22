@@ -1,0 +1,752 @@
+
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>What else you need to know &#8212; Python-Future  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/jinja.css?v=85659ec6" />
+    <link rel="stylesheet" href="_static/my-styles.css" type="text/css" />
+    <script src="_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="icon" href="_static/python-future-icon-32.ico"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Automatic conversion to Py2/3" href="automatic_conversion.html" />
+    <link rel="prev" title="Imports" href="imports.html" />
+ 
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-19344199-2']);
+  _gaq.push(['_trackPageview']);
+</script>
+
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="automatic_conversion.html" title="Automatic conversion to Py2/3"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="imports.html" title="Imports"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Python-Future  documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">What else you need to know</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="what-else-you-need-to-know">
+<span id="what-else"></span><h1>What else you need to know<a class="headerlink" href="#what-else-you-need-to-know" title="Link to this heading">¶</a></h1>
+<p>The following points are important to know about when writing Python 2/3
+compatible code.</p>
+<section id="bytes">
+<span id="bytes-object"></span><span id="what-else-essentials"></span><h2>bytes<a class="headerlink" href="#bytes" title="Link to this heading">¶</a></h2>
+<p>Handling <code class="docutils literal notranslate"><span class="pre">bytes</span></code> consistently and correctly has traditionally been one
+of the most difficult tasks in writing a Py2/3 compatible codebase. This
+is because the Python 2 <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytes" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bytes</span></code></a> object is simply an alias for
+Python 2’s <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, rather than a true implementation of the Python
+3 <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytes" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bytes</span></code></a> object, which is substantially different.</p>
+<p><code class="xref py py-mod docutils literal notranslate"><span class="pre">future</span></code> contains a backport of the <code class="xref py py-mod docutils literal notranslate"><span class="pre">bytes</span></code> object from Python 3
+which passes most of the Python 3 tests for <code class="xref py py-mod docutils literal notranslate"><span class="pre">bytes</span></code>. (See
+<code class="docutils literal notranslate"><span class="pre">tests/test_future/test_bytes.py</span></code> in the source tree.) You can use it as
+follows:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">builtins</span> <span class="kn">import</span> <span class="nb">bytes</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">b</span> <span class="o">=</span> <span class="nb">bytes</span><span class="p">(</span><span class="sa">b</span><span class="s1">&#39;ABCD&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>On Py3, this is simply the builtin <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytes" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bytes</span></code></a> object. On Py2, this
+object is a subclass of Python 2’s <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a> that enforces the same
+strict separation of unicode strings and byte strings as Python 3’s
+<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytes" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bytes</span></code></a> object:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">b</span> <span class="o">+</span> <span class="sa">u</span><span class="s1">&#39;EFGH&#39;</span>      <span class="c1"># TypeError</span>
+<span class="gt">Traceback (most recent call last):</span>
+  File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
+<span class="gr">TypeError</span>: <span class="n">argument can&#39;t be unicode string</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">bytes</span><span class="p">(</span><span class="sa">b</span><span class="s1">&#39;,&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="sa">u</span><span class="s1">&#39;Fred&#39;</span><span class="p">,</span> <span class="sa">u</span><span class="s1">&#39;Bill&#39;</span><span class="p">])</span>
+<span class="gt">Traceback (most recent call last):</span>
+  File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
+<span class="gr">TypeError</span>: <span class="n">sequence item 0: expected bytes, found unicode string</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">b</span> <span class="o">==</span> <span class="sa">u</span><span class="s1">&#39;ABCD&#39;</span>
+<span class="go">False</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">b</span> <span class="o">&lt;</span> <span class="sa">u</span><span class="s1">&#39;abc&#39;</span>
+<span class="gt">Traceback (most recent call last):</span>
+  File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
+<span class="gr">TypeError</span>: <span class="n">unorderable types: bytes() and &lt;type &#39;unicode&#39;&gt;</span>
+</pre></div>
+</div>
+<p>In most other ways, these <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytes" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bytes</span></code></a> objects have identical
+behaviours to Python 3’s <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytes" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bytes</span></code></a>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">b</span> <span class="o">=</span> <span class="nb">bytes</span><span class="p">(</span><span class="sa">b</span><span class="s1">&#39;ABCD&#39;</span><span class="p">)</span>
+<span class="k">assert</span> <span class="nb">list</span><span class="p">(</span><span class="n">b</span><span class="p">)</span> <span class="o">==</span> <span class="p">[</span><span class="mi">65</span><span class="p">,</span> <span class="mi">66</span><span class="p">,</span> <span class="mi">67</span><span class="p">,</span> <span class="mi">68</span><span class="p">]</span>
+<span class="k">assert</span> <span class="nb">repr</span><span class="p">(</span><span class="n">b</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;b&#39;ABCD&#39;&quot;</span>
+<span class="k">assert</span> <span class="n">b</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="sa">b</span><span class="s1">&#39;B&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="p">[</span><span class="sa">b</span><span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="sa">b</span><span class="s1">&#39;CD&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>Currently the easiest way to ensure identical behaviour of byte-strings
+in a Py2/3 codebase is to wrap all byte-string literals <code class="docutils literal notranslate"><span class="pre">b'...'</span></code> in a
+<code class="xref py py-func docutils literal notranslate"><span class="pre">bytes()</span></code> call as follows:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">builtins</span> <span class="kn">import</span> <span class="nb">bytes</span>
+
+<span class="c1"># ...</span>
+
+<span class="n">b</span> <span class="o">=</span> <span class="nb">bytes</span><span class="p">(</span><span class="sa">b</span><span class="s1">&#39;This is my bytestring&#39;</span><span class="p">)</span>
+
+<span class="c1"># ...</span>
+</pre></div>
+</div>
+<p>This is not perfect, but it is superior to manually debugging and fixing
+code incompatibilities caused by the many differences between Py3 bytes
+and Py2 strings.</p>
+<p>The <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytes" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bytes</span></code></a> type from <a class="reference external" href="https://docs.python.org/3/library/builtins.html#module-builtins" title="(in Python v3.12)"><code class="xref py py-mod docutils literal notranslate"><span class="pre">builtins</span></code></a> also provides support for the
+<code class="docutils literal notranslate"><span class="pre">surrogateescape</span></code> error handler on Python 2.x. Here is an example that works
+identically on Python 2.x and 3.x:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">builtins</span> <span class="kn">import</span> <span class="nb">bytes</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">b</span> <span class="o">=</span> <span class="nb">bytes</span><span class="p">(</span><span class="sa">b</span><span class="s1">&#39;</span><span class="se">\xff</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">b</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">,</span> <span class="s1">&#39;surrogateescape&#39;</span><span class="p">)</span>
+<span class="go">&#39;\udcc3&#39;</span>
+</pre></div>
+</div>
+<p>This feature is in alpha. Please leave feedback <a class="reference external" href="https://github.com/PythonCharmers/python-future/issues">here</a> about whether this
+works for you.</p>
+</section>
+<section id="str">
+<span id="str-object"></span><h2>str<a class="headerlink" href="#str" title="Link to this heading">¶</a></h2>
+<p>The <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a> object in Python 3 is quite similar but not identical to the
+Python 2 <code class="xref py py-class docutils literal notranslate"><span class="pre">unicode</span></code> object.</p>
+<p>The major difference is the stricter type-checking of Py3’s <code class="docutils literal notranslate"><span class="pre">str</span></code> that
+enforces a distinction between unicode strings and byte-strings, such as when
+comparing, concatenating, joining, or replacing parts of strings.</p>
+<p>There are also other differences, such as the <code class="docutils literal notranslate"><span class="pre">repr</span></code> of unicode strings in
+Py2 having a <code class="docutils literal notranslate"><span class="pre">u'...'</span></code> prefix, versus simply <code class="docutils literal notranslate"><span class="pre">'...'</span></code>, and the removal of
+the <code class="xref py py-func docutils literal notranslate"><span class="pre">str.decode()</span></code> method in Py3.</p>
+<p><code class="xref py py-mod docutils literal notranslate"><span class="pre">future</span></code> contains a <code class="xref py py-class docutils literal notranslate"><span class="pre">newstr</span></code> type that is a backport of the
+<code class="xref py py-mod docutils literal notranslate"><span class="pre">str</span></code> object from Python 3. This inherits from the Python 2
+<code class="xref py py-class docutils literal notranslate"><span class="pre">unicode</span></code> class but has customizations to improve compatibility with
+Python 3’s <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a> object. You can use it as follows:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">unicode_literals</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">builtins</span> <span class="kn">import</span> <span class="nb">str</span>
+</pre></div>
+</div>
+<p>On Py2, this gives us:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">str</span>
+<span class="go">future.types.newstr.newstr</span>
+</pre></div>
+</div>
+<p>(On Py3, it is simply the usual builtin <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a> object.)</p>
+<p>Then, for example, the following code has the same effect on Py2 as on Py3:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="sa">u</span><span class="s1">&#39;ABCD&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">assert</span> <span class="n">s</span> <span class="o">!=</span> <span class="sa">b</span><span class="s1">&#39;ABCD&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">),</span> <span class="nb">bytes</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">b</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">),</span> <span class="nb">str</span><span class="p">)</span>
+
+<span class="go">These raise TypeErrors:</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">bytes</span><span class="p">(</span><span class="sa">b</span><span class="s1">&#39;B&#39;</span><span class="p">)</span> <span class="ow">in</span> <span class="n">s</span>
+<span class="gt">Traceback (most recent call last):</span>
+  File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
+<span class="gr">TypeError</span>: <span class="n">&#39;in &lt;string&gt;&#39; requires string as left operand, not &lt;type &#39;str&#39;&gt;</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">s</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="nb">bytes</span><span class="p">(</span><span class="sa">b</span><span class="s1">&#39;A&#39;</span><span class="p">))</span>
+<span class="gt">Traceback (most recent call last):</span>
+  File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
+<span class="gr">TypeError</span>: <span class="n">argument can&#39;t be &lt;type &#39;str&#39;&gt;</span>
+</pre></div>
+</div>
+<p>Various other operations that mix strings and bytes or other types are
+permitted on Py2 with the <code class="xref py py-class docutils literal notranslate"><span class="pre">newstr</span></code> class even though they
+are illegal with Python 3. For example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s2</span> <span class="o">=</span> <span class="sa">b</span><span class="s1">&#39;/&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="s1">&#39;ABCD&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">s2</span>
+<span class="go">&#39;/ABCD&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">type</span><span class="p">(</span><span class="n">s2</span><span class="p">)</span>
+<span class="go">future.types.newstr.newstr</span>
+</pre></div>
+</div>
+<p>This is allowed for compatibility with parts of the Python 2 standard
+library and various third-party libraries that mix byte-strings and unicode
+strings loosely. One example is <code class="docutils literal notranslate"><span class="pre">os.path.join</span></code> on Python 2, which
+attempts to add the byte-string <code class="docutils literal notranslate"><span class="pre">b'/'</span></code> to its arguments, whether or not
+they are unicode. (See <code class="docutils literal notranslate"><span class="pre">posixpath.py</span></code>.) Another example is the
+<code class="xref py py-func docutils literal notranslate"><span class="pre">escape()</span></code> function in Django 1.4’s <code class="xref py py-mod docutils literal notranslate"><span class="pre">django.utils.html</span></code>.</p>
+<p>In most other ways, these <code class="xref py py-class docutils literal notranslate"><span class="pre">builtins.str</span></code> objects on Py2 have the
+same behaviours as Python 3’s <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="s1">&#39;ABCD&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">assert</span> <span class="nb">repr</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;ABCD&#39;</span>      <span class="c1"># consistent repr with Py3 (no u prefix)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">assert</span> <span class="nb">list</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="o">==</span> <span class="p">[</span><span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="s1">&#39;B&#39;</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">,</span> <span class="s1">&#39;D&#39;</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">assert</span> <span class="n">s</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;B&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="p">[</span><span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="s1">&#39;CD&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>The <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a> type from <a class="reference external" href="https://docs.python.org/3/library/builtins.html#module-builtins" title="(in Python v3.12)"><code class="xref py py-mod docutils literal notranslate"><span class="pre">builtins</span></code></a> also provides support for the
+<code class="docutils literal notranslate"><span class="pre">surrogateescape</span></code> error handler on Python 2.x. Here is an example that works
+identically on Python 2.x and 3.x:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">builtins</span> <span class="kn">import</span> <span class="nb">str</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="sa">u</span><span class="s1">&#39;</span><span class="se">\udcff</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">s</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">,</span> <span class="s1">&#39;surrogateescape&#39;</span><span class="p">)</span>
+<span class="go">b&#39;\xff&#39;</span>
+</pre></div>
+</div>
+<p>This feature is in alpha. Please leave feedback <a class="reference external" href="https://github.com/PythonCharmers/python-future/issues">here</a> about whether this
+works for you.</p>
+</section>
+<section id="dict">
+<span id="dict-object"></span><h2>dict<a class="headerlink" href="#dict" title="Link to this heading">¶</a></h2>
+<p>Python 3 dictionaries have <code class="docutils literal notranslate"><span class="pre">.keys()</span></code>, <code class="docutils literal notranslate"><span class="pre">.values()</span></code>, and <code class="docutils literal notranslate"><span class="pre">.items()</span></code>
+methods which return memory-efficient set-like iterator objects, not lists.
+(See <a class="reference external" href="http://www.python.org/dev/peps/pep-3106/">PEP 3106</a>.)</p>
+<p>If your dictionaries are small, performance is not critical, and you don’t need
+the set-like behaviour of iterator objects from Python 3, you can of course
+stick with standard Python 3 code in your Py2/3 compatible codebase:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Assuming d is a native dict ...</span>
+
+<span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">d</span><span class="p">:</span>
+    <span class="c1"># code here</span>
+
+<span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">d</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="c1"># code here</span>
+
+<span class="k">for</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">d</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
+    <span class="c1"># code here</span>
+</pre></div>
+</div>
+<p>In this case there will be memory overhead of list creation on Py2 for each
+call to <code class="docutils literal notranslate"><span class="pre">items</span></code>, <code class="docutils literal notranslate"><span class="pre">values</span></code> or <code class="docutils literal notranslate"><span class="pre">keys</span></code>.</p>
+<p>For improved efficiency, <code class="docutils literal notranslate"><span class="pre">future.builtins</span></code> (aliased to <code class="docutils literal notranslate"><span class="pre">builtins</span></code>) provides
+a Python 2 <code class="docutils literal notranslate"><span class="pre">dict</span></code> subclass whose <code class="xref py py-func docutils literal notranslate"><span class="pre">keys()</span></code>, <code class="xref py py-func docutils literal notranslate"><span class="pre">values()</span></code>, and
+<code class="xref py py-func docutils literal notranslate"><span class="pre">items()</span></code> methods return iterators on all versions of Python &gt;= 2.7. On
+Python 2.7, these iterators also have the same set-like view behaviour as
+dictionaries in Python 3. This can streamline code that iterates over large
+dictionaries. For example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">print_function</span>
+<span class="kn">from</span> <span class="nn">builtins</span> <span class="kn">import</span> <span class="nb">dict</span><span class="p">,</span> <span class="nb">range</span>
+
+<span class="c1"># Memory-efficient construction:</span>
+<span class="n">d</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">((</span><span class="n">i</span><span class="p">,</span> <span class="n">i</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="o">**</span><span class="mi">7</span><span class="p">))</span>
+
+<span class="k">assert</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">d</span><span class="o">.</span><span class="n">items</span><span class="p">(),</span> <span class="nb">list</span><span class="p">)</span>
+
+<span class="c1"># Because items() is memory-efficient, so is this:</span>
+<span class="n">d2</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">((</span><span class="n">v</span><span class="p">,</span> <span class="n">k</span><span class="p">)</span> <span class="k">for</span> <span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="n">v</span><span class="p">)</span> <span class="ow">in</span> <span class="n">d</span><span class="o">.</span><span class="n">items</span><span class="p">())</span>
+</pre></div>
+</div>
+<p>As usual, on Python 3 <code class="docutils literal notranslate"><span class="pre">dict</span></code> imported from either <code class="docutils literal notranslate"><span class="pre">builtins</span></code> or
+<code class="docutils literal notranslate"><span class="pre">future.builtins</span></code> is just the built-in <code class="docutils literal notranslate"><span class="pre">dict</span></code> class.</p>
+<section id="memory-efficiency-and-alternatives">
+<h3>Memory-efficiency and alternatives<a class="headerlink" href="#memory-efficiency-and-alternatives" title="Link to this heading">¶</a></h3>
+<p>If you already have large native dictionaries, the downside to wrapping them in
+a <code class="docutils literal notranslate"><span class="pre">dict</span></code> call is that memory is copied (on both Py3 and on Py2). For
+example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># This allocates and then frees a large amount of temporary memory:</span>
+<span class="n">d</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">({</span><span class="n">i</span><span class="p">:</span> <span class="n">i</span><span class="o">**</span><span class="mi">2</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="o">**</span><span class="mi">7</span><span class="p">)})</span>
+</pre></div>
+</div>
+<p>If dictionary methods like <code class="docutils literal notranslate"><span class="pre">values</span></code> and <code class="docutils literal notranslate"><span class="pre">items</span></code> are called only once, this
+obviously negates the memory benefits offered by the overridden methods through
+not creating temporary lists.</p>
+<p>The memory-efficient (and CPU-efficient) alternatives are:</p>
+<ul>
+<li><p>to construct a dictionary from an iterator. The above line could use a
+generator like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">d</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">((</span><span class="n">i</span><span class="p">,</span> <span class="n">i</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="o">**</span><span class="mi">7</span><span class="p">))</span>
+</pre></div>
+</div>
+</li>
+<li><p>to construct an empty dictionary with a <code class="docutils literal notranslate"><span class="pre">dict()</span></code> call using
+<code class="docutils literal notranslate"><span class="pre">builtins.dict</span></code> (rather than <code class="docutils literal notranslate"><span class="pre">{}</span></code>) and then update it;</p></li>
+<li><p>to use the <code class="docutils literal notranslate"><span class="pre">viewitems</span></code> etc. functions from <a class="reference internal" href="reference.html#module-future.utils" title="future.utils"><code class="xref py py-mod docutils literal notranslate"><span class="pre">future.utils</span></code></a>, passing in
+regular dictionaries:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">future.utils</span> <span class="kn">import</span> <span class="n">viewkeys</span><span class="p">,</span> <span class="n">viewvalues</span><span class="p">,</span> <span class="n">viewitems</span>
+
+<span class="k">for</span> <span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span> <span class="ow">in</span> <span class="n">viewitems</span><span class="p">(</span><span class="n">hugedictionary</span><span class="p">):</span>
+    <span class="c1"># some code here</span>
+
+<span class="c1"># Set intersection:</span>
+<span class="n">d</span> <span class="o">=</span> <span class="p">{</span><span class="n">i</span><span class="o">**</span><span class="mi">2</span><span class="p">:</span> <span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1000</span><span class="p">)}</span>
+<span class="n">both</span> <span class="o">=</span> <span class="n">viewkeys</span><span class="p">(</span><span class="n">d</span><span class="p">)</span> <span class="o">&amp;</span> <span class="nb">set</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1000</span><span class="p">,</span> <span class="mi">7</span><span class="p">))</span>
+
+<span class="c1"># Set union:</span>
+<span class="n">both</span> <span class="o">=</span> <span class="n">viewvalues</span><span class="p">(</span><span class="n">d1</span><span class="p">)</span> <span class="o">|</span> <span class="n">viewvalues</span><span class="p">(</span><span class="n">d2</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+</ul>
+<p>For compatibility, the functions <code class="docutils literal notranslate"><span class="pre">iteritems</span></code> etc. are also available in
+<a class="reference internal" href="reference.html#module-future.utils" title="future.utils"><code class="xref py py-mod docutils literal notranslate"><span class="pre">future.utils</span></code></a>. These are equivalent to the functions of the same names in
+<code class="docutils literal notranslate"><span class="pre">six</span></code>, which is equivalent to calling the <code class="docutils literal notranslate"><span class="pre">iteritems</span></code> etc. methods on
+Python 2, or to calling <code class="docutils literal notranslate"><span class="pre">items</span></code> etc. on Python 3.</p>
+</section>
+</section>
+<section id="int">
+<span id="int-object"></span><h2>int<a class="headerlink" href="#int" title="Link to this heading">¶</a></h2>
+<p>Python 3’s <code class="docutils literal notranslate"><span class="pre">int</span></code> type is very similar to Python 2’s <code class="docutils literal notranslate"><span class="pre">long</span></code>, except
+for the representation (which omits the <code class="docutils literal notranslate"><span class="pre">L</span></code> suffix in Python 2). Python
+2’s usual (short) integers have been removed from Python 3, as has the
+<code class="docutils literal notranslate"><span class="pre">long</span></code> builtin name.</p>
+<p>Python 3:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="mi">2</span><span class="o">**</span><span class="mi">64</span>
+<span class="go">18446744073709551616</span>
+</pre></div>
+</div>
+<p>Python 2:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="mi">2</span><span class="o">**</span><span class="mi">64</span>
+<span class="go">18446744073709551616L</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">future</span></code> includes a backport of Python 3’s <code class="docutils literal notranslate"><span class="pre">int</span></code> that
+is a subclass of Python 2’s <code class="docutils literal notranslate"><span class="pre">long</span></code> with the same representation
+behaviour as Python 3’s <code class="docutils literal notranslate"><span class="pre">int</span></code>. To ensure an integer is long compatibly with
+both Py3 and Py2, cast it like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">builtins</span> <span class="kn">import</span> <span class="nb">int</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">must_be_a_long_integer</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="mi">1234</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The backported <code class="docutils literal notranslate"><span class="pre">int</span></code> object helps with writing doctests and simplifies code
+that deals with <code class="docutils literal notranslate"><span class="pre">long</span></code> and <code class="docutils literal notranslate"><span class="pre">int</span></code> as special cases on Py2. An example is the
+following code from <code class="docutils literal notranslate"><span class="pre">xlwt-future</span></code> (called by the <code class="docutils literal notranslate"><span class="pre">xlwt.antlr.BitSet</span></code> class)
+for writing out Excel <code class="docutils literal notranslate"><span class="pre">.xls</span></code> spreadsheets. With <code class="docutils literal notranslate"><span class="pre">future</span></code>, the code is:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">builtins</span> <span class="kn">import</span> <span class="nb">int</span>
+
+<span class="k">def</span> <span class="nf">longify</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Turns data (an int or long, or a list of ints or longs) into a</span>
+<span class="sd">    list of longs.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">data</span><span class="p">:</span>
+        <span class="k">return</span> <span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="mi">0</span><span class="p">)]</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="nb">list</span><span class="p">):</span>
+        <span class="k">return</span> <span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">data</span><span class="p">)]</span>
+    <span class="k">return</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="n">data</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>Without <code class="docutils literal notranslate"><span class="pre">future</span></code> (or with <code class="docutils literal notranslate"><span class="pre">future</span></code> &lt; 0.7), this might be:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">longify</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Turns data (an int or long, or a list of ints or longs) into a</span>
+<span class="sd">    list of longs.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">data</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">PY3</span><span class="p">:</span>
+            <span class="k">return</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="p">[</span><span class="n">long</span><span class="p">(</span><span class="mi">0</span><span class="p">)]</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">data</span><span class="p">,</span><span class="nb">list</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">PY3</span><span class="p">:</span>
+            <span class="k">return</span> <span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">data</span><span class="p">)]</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="p">[</span><span class="n">long</span><span class="p">(</span><span class="n">data</span><span class="p">)]</span>
+    <span class="k">if</span> <span class="n">PY3</span><span class="p">:</span>
+        <span class="k">return</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="n">data</span><span class="p">))</span>   <span class="c1"># same as returning data, but with up-front typechecking</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="n">long</span><span class="p">,</span> <span class="n">data</span><span class="p">))</span>
+</pre></div>
+</div>
+</section>
+<section id="isinstance">
+<span id="isinstance-calls"></span><h2>isinstance<a class="headerlink" href="#isinstance" title="Link to this heading">¶</a></h2>
+<p>The following tests all pass on Python 3:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="mi">2</span><span class="o">**</span><span class="mi">62</span><span class="p">,</span> <span class="nb">int</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="mi">2</span><span class="o">**</span><span class="mi">63</span><span class="p">,</span> <span class="nb">int</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="sa">b</span><span class="s1">&#39;my byte-string&#39;</span><span class="p">,</span> <span class="nb">bytes</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="sa">u</span><span class="s1">&#39;unicode string 1&#39;</span><span class="p">,</span> <span class="nb">str</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="s1">&#39;unicode string 2&#39;</span><span class="p">,</span> <span class="nb">str</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>However, two of these normally fail on Python 2:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="mi">2</span><span class="o">**</span><span class="mi">63</span><span class="p">,</span> <span class="nb">int</span><span class="p">)</span>
+<span class="gt">Traceback (most recent call last):</span>
+  File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
+<span class="gr">AssertionError</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="sa">u</span><span class="s1">&#39;my unicode string&#39;</span><span class="p">,</span> <span class="nb">str</span><span class="p">)</span>
+<span class="gt">Traceback (most recent call last):</span>
+  File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
+<span class="gr">AssertionError</span>
+</pre></div>
+</div>
+<p>And if this import is in effect on Python 2:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">unicode_literals</span>
+</pre></div>
+</div>
+<p>then the fifth test fails too:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="s1">&#39;unicode string 2&#39;</span><span class="p">,</span> <span class="nb">str</span><span class="p">)</span>
+<span class="gt">Traceback (most recent call last):</span>
+  File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
+<span class="gr">AssertionError</span>
+</pre></div>
+</div>
+<p>After importing the builtins from <code class="docutils literal notranslate"><span class="pre">future</span></code>, all these tests pass on
+Python 2 as on Python 3:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">builtins</span> <span class="kn">import</span> <span class="nb">bytes</span><span class="p">,</span> <span class="nb">int</span><span class="p">,</span> <span class="nb">str</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="nb">int</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="mi">10</span><span class="o">**</span><span class="mi">100</span><span class="p">,</span> <span class="nb">int</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="sa">b</span><span class="s1">&#39;my byte-string&#39;</span><span class="p">,</span> <span class="nb">bytes</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="sa">u</span><span class="s1">&#39;unicode string 1&#39;</span><span class="p">,</span> <span class="nb">str</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>However, note that the last test requires that <code class="docutils literal notranslate"><span class="pre">unicode_literals</span></code> be imported to succeed.:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">unicode_literals</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span><span class="s1">&#39;unicode string 2&#39;</span><span class="p">,</span> <span class="nb">str</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>This works because the backported types <code class="docutils literal notranslate"><span class="pre">int</span></code>, <code class="docutils literal notranslate"><span class="pre">bytes</span></code> and <code class="docutils literal notranslate"><span class="pre">str</span></code>
+(and others) have metaclasses that override <code class="docutils literal notranslate"><span class="pre">__instancecheck__</span></code>. See <a class="reference external" href="http://www.python.org/dev/peps/pep-3119/#overloading-isinstance-and-issubclass">PEP 3119</a>
+for details.</p>
+</section>
+<section id="passing-data-to-from-python-2-libraries">
+<h2>Passing data to/from Python 2 libraries<a class="headerlink" href="#passing-data-to-from-python-2-libraries" title="Link to this heading">¶</a></h2>
+<p>If you are passing any of the backported types (<code class="docutils literal notranslate"><span class="pre">bytes</span></code>, <code class="docutils literal notranslate"><span class="pre">int</span></code>, <code class="docutils literal notranslate"><span class="pre">dict,</span>
+<span class="pre">``str</span></code>) into brittle library code that performs type-checks using <code class="docutils literal notranslate"><span class="pre">type()</span></code>,
+rather than <code class="docutils literal notranslate"><span class="pre">isinstance()</span></code>, or requires that you pass Python 2’s native types
+(rather than subclasses) for some other reason, it may be necessary to upcast
+the types from <code class="docutils literal notranslate"><span class="pre">future</span></code> to their native superclasses on Py2.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">native</span></code> function in <code class="docutils literal notranslate"><span class="pre">future.utils</span></code> is provided for this. Here is how
+to use it. (The output showing is from Py2):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">builtins</span> <span class="kn">import</span> <span class="nb">int</span><span class="p">,</span> <span class="nb">bytes</span><span class="p">,</span> <span class="nb">str</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">future.utils</span> <span class="kn">import</span> <span class="n">native</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="mi">10</span><span class="o">**</span><span class="mi">20</span><span class="p">)</span>     <span class="c1"># Py3-like long int</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span>
+<span class="go">100000000000000000000</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="go">future.types.newint.newint</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">native</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="go">100000000000000000000L</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">type</span><span class="p">(</span><span class="n">native</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
+<span class="go">long</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">b</span> <span class="o">=</span> <span class="nb">bytes</span><span class="p">(</span><span class="sa">b</span><span class="s1">&#39;ABC&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">type</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+<span class="go">future.types.newbytes.newbytes</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">native</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+<span class="go">&#39;ABC&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">type</span><span class="p">(</span><span class="n">native</span><span class="p">(</span><span class="n">b</span><span class="p">))</span>
+<span class="go">str</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="sa">u</span><span class="s1">&#39;ABC&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">type</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<span class="go">future.types.newstr.newstr</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">native</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<span class="go">u&#39;ABC&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">type</span><span class="p">(</span><span class="n">native</span><span class="p">(</span><span class="n">s</span><span class="p">))</span>
+<span class="go">unicode</span>
+</pre></div>
+</div>
+<p>On Py3, the <code class="xref py py-func docutils literal notranslate"><span class="pre">native()</span></code> function is a no-op.</p>
+</section>
+<section id="native-string-type">
+<h2>Native string type<a class="headerlink" href="#native-string-type" title="Link to this heading">¶</a></h2>
+<p>Some library code, include standard library code like the <code class="docutils literal notranslate"><span class="pre">array.array()</span></code>
+constructor, require native strings on Python 2 and Python 3. This means that
+there is no simple way to pass the appropriate string type when the
+<code class="docutils literal notranslate"><span class="pre">unicode_literals</span></code> import from <code class="docutils literal notranslate"><span class="pre">__future__</span></code> is in effect.</p>
+<p>The objects <code class="docutils literal notranslate"><span class="pre">native_str</span></code> and <code class="docutils literal notranslate"><span class="pre">native_bytes</span></code> are available in
+<code class="docutils literal notranslate"><span class="pre">future.utils</span></code> for this case. These are equivalent to the <code class="docutils literal notranslate"><span class="pre">str</span></code> and
+<code class="docutils literal notranslate"><span class="pre">bytes</span></code> objects in <code class="docutils literal notranslate"><span class="pre">__builtin__</span></code> on Python 2 or in <code class="docutils literal notranslate"><span class="pre">builtins</span></code> on Python 3.</p>
+<p>The functions <code class="docutils literal notranslate"><span class="pre">native_str_to_bytes</span></code> and <code class="docutils literal notranslate"><span class="pre">bytes_to_native_str</span></code> are also
+available for more explicit conversions.</p>
+</section>
+<section id="open">
+<span id="open-function"></span><h2>open()<a class="headerlink" href="#open" title="Link to this heading">¶</a></h2>
+<p>The Python 3 builtin <a class="reference external" href="https://docs.python.org/3/library/functions.html#open" title="(in Python v3.12)"><code class="xref py py-func docutils literal notranslate"><span class="pre">open()</span></code></a> function for opening files returns file
+contents as (unicode) strings unless the binary (<code class="docutils literal notranslate"><span class="pre">b</span></code>) flag is passed, as in:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>in which case its methods like <code class="xref py py-func docutils literal notranslate"><span class="pre">read()</span></code> return Py3 <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytes" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bytes</span></code></a> objects.</p>
+<p>On Py2 with <code class="docutils literal notranslate"><span class="pre">future</span></code> installed, the <a class="reference external" href="https://docs.python.org/3/library/builtins.html#module-builtins" title="(in Python v3.12)"><code class="xref py py-mod docutils literal notranslate"><span class="pre">builtins</span></code></a> module provides an
+<code class="docutils literal notranslate"><span class="pre">open</span></code> function that is mostly compatible with that on Python 3 (e.g. it
+offers keyword arguments like <code class="docutils literal notranslate"><span class="pre">encoding</span></code>). This maps to the <code class="docutils literal notranslate"><span class="pre">open</span></code> backport
+available in the standard library <a class="reference external" href="https://docs.python.org/3/library/io.html#module-io" title="(in Python v3.12)"><code class="xref py py-mod docutils literal notranslate"><span class="pre">io</span></code></a> module on Py2.7.</p>
+<p>One difference to be aware of between the Python 3 <code class="docutils literal notranslate"><span class="pre">open</span></code> and
+<code class="docutils literal notranslate"><span class="pre">future.builtins.open</span></code> on Python 2 is that the return types of methods such
+as <code class="xref py py-func docutils literal notranslate"><span class="pre">read()</span></code> from the file object that <code class="docutils literal notranslate"><span class="pre">open</span></code> returns are not
+automatically cast from native bytes or unicode strings on Python 2 to the
+corresponding <code class="docutils literal notranslate"><span class="pre">future.builtins.bytes</span></code> or <code class="docutils literal notranslate"><span class="pre">future.builtins.str</span></code> types. If you
+need the returned data to behave the exactly same way on Py2 as on Py3, you can
+cast it explicitly as follows:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">unicode_literals</span>
+<span class="kn">from</span> <span class="nn">builtins</span> <span class="kn">import</span> <span class="nb">open</span><span class="p">,</span> <span class="nb">bytes</span>
+
+<span class="n">data</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;image.png&#39;</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+<span class="c1"># On Py2, data is a standard 8-bit str with loose Unicode coercion.</span>
+<span class="c1"># data + u&#39;&#39; would likely raise a UnicodeDecodeError</span>
+
+<span class="n">data</span> <span class="o">=</span> <span class="nb">bytes</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<span class="c1"># Now it behaves like a Py3 bytes object...</span>
+
+<span class="k">assert</span> <span class="n">data</span><span class="p">[:</span><span class="mi">4</span><span class="p">]</span> <span class="o">==</span> <span class="sa">b</span><span class="s1">&#39;</span><span class="se">\x89</span><span class="s1">PNG&#39;</span>
+<span class="k">assert</span> <span class="n">data</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="o">==</span> <span class="mi">13</span>     <span class="c1"># integer</span>
+<span class="c1"># Raises TypeError:</span>
+<span class="c1"># data + u&#39;&#39;</span>
+</pre></div>
+</div>
+</section>
+<section id="custom-str-methods">
+<span id="id2"></span><h2>Custom __str__ methods<a class="headerlink" href="#custom-str-methods" title="Link to this heading">¶</a></h2>
+<p>If you define a custom <code class="docutils literal notranslate"><span class="pre">__str__</span></code> method for any of your classes,
+functions like <code class="docutils literal notranslate"><span class="pre">print()</span></code> expect <code class="docutils literal notranslate"><span class="pre">__str__</span></code> on Py2 to return a byte
+string, whereas on Py3 they expect a (unicode) string.</p>
+<p>Use the following decorator to map the <code class="docutils literal notranslate"><span class="pre">__str__</span></code> to <code class="docutils literal notranslate"><span class="pre">__unicode__</span></code> on
+Py2 and define <code class="docutils literal notranslate"><span class="pre">__str__</span></code> to encode it as utf-8:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">future.utils</span> <span class="kn">import</span> <span class="n">python_2_unicode_compatible</span>
+
+<span class="nd">@python_2_unicode_compatible</span>
+<span class="k">class</span> <span class="nc">MyClass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="sa">u</span><span class="s1">&#39;Unicode string: </span><span class="se">\u5b54\u5b50</span><span class="s1">&#39;</span>
+<span class="n">a</span> <span class="o">=</span> <span class="n">MyClass</span><span class="p">()</span>
+
+<span class="c1"># This then prints the name of a Chinese philosopher:</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>This decorator is identical to the decorator of the same name in
+<code class="xref py py-mod docutils literal notranslate"><span class="pre">django.utils.encoding</span></code>.</p>
+<p>This decorator is a no-op on Python 3.</p>
+</section>
+<section id="custom-iterators">
+<span id="id3"></span><h2>Custom iterators<a class="headerlink" href="#custom-iterators" title="Link to this heading">¶</a></h2>
+<p>If you define your own iterators, there is an incompatibility in the method name
+to retrieve the next item across Py3 and Py2. On Python 3 it is <code class="docutils literal notranslate"><span class="pre">__next__</span></code>,
+whereas on Python 2 it is <code class="docutils literal notranslate"><span class="pre">next</span></code>.</p>
+<p>The most elegant solution to this is to derive your custom iterator class from
+<code class="docutils literal notranslate"><span class="pre">builtins.object</span></code> and define a <code class="docutils literal notranslate"><span class="pre">__next__</span></code> method as you normally
+would on Python 3. On Python 2, <code class="docutils literal notranslate"><span class="pre">object</span></code> then refers to the
+<code class="docutils literal notranslate"><span class="pre">future.types.newobject</span></code> base class, which provides a fallback <code class="docutils literal notranslate"><span class="pre">next</span></code>
+method that calls your <code class="docutils literal notranslate"><span class="pre">__next__</span></code>. Use it as follows:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">builtins</span> <span class="kn">import</span> <span class="nb">object</span>
+
+<span class="k">class</span> <span class="nc">Upper</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">iterable</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_iter</span> <span class="o">=</span> <span class="nb">iter</span><span class="p">(</span><span class="n">iterable</span><span class="p">)</span>
+    <span class="k">def</span> <span class="fm">__next__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>                 <span class="c1"># Py3-style iterator interface</span>
+        <span class="k">return</span> <span class="nb">next</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_iter</span><span class="p">)</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+    <span class="k">def</span> <span class="fm">__iter__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span>
+
+<span class="n">itr</span> <span class="o">=</span> <span class="n">Upper</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">)</span>
+<span class="k">assert</span> <span class="nb">next</span><span class="p">(</span><span class="n">itr</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;H&#39;</span>
+<span class="k">assert</span> <span class="nb">next</span><span class="p">(</span><span class="n">itr</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;E&#39;</span>
+<span class="k">assert</span> <span class="nb">list</span><span class="p">(</span><span class="n">itr</span><span class="p">)</span> <span class="o">==</span> <span class="nb">list</span><span class="p">(</span><span class="s1">&#39;LLO&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>You can use this approach unless you are defining a custom iterator as a
+subclass of a base class defined elsewhere that does not derive from
+<code class="docutils literal notranslate"><span class="pre">newobject</span></code>.  In that case, you can provide compatibility across
+Python 2 and Python 3 using the <code class="docutils literal notranslate"><span class="pre">next</span></code> function from <code class="docutils literal notranslate"><span class="pre">future.builtins</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">builtins</span> <span class="kn">import</span> <span class="nb">next</span>
+
+<span class="kn">from</span> <span class="nn">some_module</span> <span class="kn">import</span> <span class="n">some_base_class</span>
+
+<span class="k">class</span> <span class="nc">Upper2</span><span class="p">(</span><span class="n">some_base_class</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">iterable</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_iter</span> <span class="o">=</span> <span class="nb">iter</span><span class="p">(</span><span class="n">iterable</span><span class="p">)</span>
+    <span class="k">def</span> <span class="fm">__next__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>                 <span class="c1"># Py3-style iterator interface</span>
+        <span class="k">return</span> <span class="nb">next</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_iter</span><span class="p">)</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+    <span class="k">def</span> <span class="fm">__iter__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span>
+
+<span class="n">itr2</span> <span class="o">=</span> <span class="n">Upper2</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">)</span>
+<span class="k">assert</span> <span class="nb">next</span><span class="p">(</span><span class="n">itr2</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;H&#39;</span>
+<span class="k">assert</span> <span class="nb">next</span><span class="p">(</span><span class="n">itr2</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;E&#39;</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">next()</span></code> also works with regular Python 2 iterators with a <code class="docutils literal notranslate"><span class="pre">.next</span></code> method:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">itr3</span> <span class="o">=</span> <span class="nb">iter</span><span class="p">([</span><span class="s1">&#39;one&#39;</span><span class="p">,</span> <span class="s1">&#39;three&#39;</span><span class="p">,</span> <span class="s1">&#39;five&#39;</span><span class="p">])</span>
+<span class="k">assert</span> <span class="s1">&#39;next&#39;</span> <span class="ow">in</span> <span class="nb">dir</span><span class="p">(</span><span class="n">itr3</span><span class="p">)</span>
+<span class="k">assert</span> <span class="nb">next</span><span class="p">(</span><span class="n">itr3</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;one&#39;</span>
+</pre></div>
+</div>
+<p>This approach is feasible whenever your code calls the <code class="docutils literal notranslate"><span class="pre">next()</span></code> function
+explicitly. If you consume the iterator implicitly in a <code class="docutils literal notranslate"><span class="pre">for</span></code> loop or
+<code class="docutils literal notranslate"><span class="pre">list()</span></code> call or by some other means, the <code class="docutils literal notranslate"><span class="pre">future.builtins.next</span></code> function
+will not help; the third assertion below would fail on Python 2:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">itr2</span> <span class="o">=</span> <span class="n">Upper2</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">)</span>
+
+<span class="k">assert</span> <span class="nb">next</span><span class="p">(</span><span class="n">itr2</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;H&#39;</span>
+<span class="k">assert</span> <span class="nb">next</span><span class="p">(</span><span class="n">itr2</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;E&#39;</span>
+<span class="k">assert</span> <span class="nb">list</span><span class="p">(</span><span class="n">itr2</span><span class="p">)</span> <span class="o">==</span> <span class="nb">list</span><span class="p">(</span><span class="s1">&#39;LLO&#39;</span><span class="p">)</span>      <span class="c1"># fails because Py2 implicitly looks</span>
+                                      <span class="c1"># for a ``next`` method.</span>
+</pre></div>
+</div>
+<p>Instead, you can use a decorator called <code class="docutils literal notranslate"><span class="pre">implements_iterator</span></code> from
+<code class="docutils literal notranslate"><span class="pre">future.utils</span></code> to allow Py3-style iterators to work identically on Py2, even
+if they don’t inherit from <code class="docutils literal notranslate"><span class="pre">future.builtins.object</span></code>. Use it as follows:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">future.utils</span> <span class="kn">import</span> <span class="n">implements_iterator</span>
+
+<span class="n">Upper2</span> <span class="o">=</span> <span class="n">implements_iterator</span><span class="p">(</span><span class="n">Upper2</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">Upper2</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">)))</span>
+<span class="c1"># prints [&#39;H&#39;, &#39;E&#39;, &#39;L&#39;, &#39;L&#39;, &#39;O&#39;]</span>
+</pre></div>
+</div>
+<p>This can of course also be used with the <code class="docutils literal notranslate"><span class="pre">&#64;</span></code> decorator syntax when defining
+the iterator as follows:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@implements_iterator</span>
+<span class="k">class</span> <span class="nc">Upper2</span><span class="p">(</span><span class="n">some_base_class</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">iterable</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_iter</span> <span class="o">=</span> <span class="nb">iter</span><span class="p">(</span><span class="n">iterable</span><span class="p">)</span>
+    <span class="k">def</span> <span class="fm">__next__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>                 <span class="c1"># note the Py3 interface</span>
+        <span class="k">return</span> <span class="nb">next</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_iter</span><span class="p">)</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+    <span class="k">def</span> <span class="fm">__iter__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span>
+</pre></div>
+</div>
+<p>On Python 3, as usual, this decorator does nothing.</p>
+</section>
+<section id="binding-a-method-to-a-class">
+<span id="bind-method"></span><span id="what-else-advanced"></span><h2>Binding a method to a class<a class="headerlink" href="#binding-a-method-to-a-class" title="Link to this heading">¶</a></h2>
+<p>Python 2 draws a distinction between bound and unbound methods, whereas
+in Python 3 this distinction is gone: unbound methods have been removed
+from the language. To bind a method to a class compatibly across Python
+3 and Python 2, you can use the <code class="xref py py-func docutils literal notranslate"><span class="pre">bind_method()</span></code> helper function:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">future.utils</span> <span class="kn">import</span> <span class="n">bind_method</span>
+
+<span class="k">class</span> <span class="nc">Greeter</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="k">pass</span>
+
+<span class="k">def</span> <span class="nf">greet</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">message</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
+
+<span class="n">bind_method</span><span class="p">(</span><span class="n">Greeter</span><span class="p">,</span> <span class="s1">&#39;greet&#39;</span><span class="p">,</span> <span class="n">greet</span><span class="p">)</span>
+
+<span class="n">g</span> <span class="o">=</span> <span class="n">Greeter</span><span class="p">()</span>
+<span class="n">g</span><span class="o">.</span><span class="n">greet</span><span class="p">(</span><span class="s1">&#39;Hi!&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>On Python 3, calling <code class="docutils literal notranslate"><span class="pre">bind_method(cls,</span> <span class="pre">name,</span> <span class="pre">func)</span></code> is equivalent to
+calling <code class="docutils literal notranslate"><span class="pre">setattr(cls,</span> <span class="pre">name,</span> <span class="pre">func)</span></code>. On Python 2 it is equivalent to:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">types</span>
+<span class="nb">setattr</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">types</span><span class="o">.</span><span class="n">MethodType</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="bp">cls</span><span class="p">))</span>
+</pre></div>
+</div>
+</section>
+<section id="metaclasses">
+<h2>Metaclasses<a class="headerlink" href="#metaclasses" title="Link to this heading">¶</a></h2>
+<p>Python 3 and Python 2 syntax for metaclasses are incompatible.
+<code class="docutils literal notranslate"><span class="pre">future</span></code> provides a function (from <code class="docutils literal notranslate"><span class="pre">jinja2/_compat.py</span></code>) called
+<code class="xref py py-func docutils literal notranslate"><span class="pre">with_metaclass()</span></code> that can assist with specifying metaclasses
+portably across Py3 and Py2. Use it like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">future.utils</span> <span class="kn">import</span> <span class="n">with_metaclass</span>
+
+<span class="k">class</span> <span class="nc">BaseForm</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="k">pass</span>
+
+<span class="k">class</span> <span class="nc">FormType</span><span class="p">(</span><span class="nb">type</span><span class="p">):</span>
+    <span class="k">pass</span>
+
+<span class="k">class</span> <span class="nc">Form</span><span class="p">(</span><span class="n">with_metaclass</span><span class="p">(</span><span class="n">FormType</span><span class="p">,</span> <span class="n">BaseForm</span><span class="p">)):</span>
+    <span class="k">pass</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+  <span id="sidebar-top"></span>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  
+    
+            <p class="logo"><a href="index.html">
+              <img class="logo" src="_static/python-future-logo-textless-transparent.png" alt="Logo"/>
+            </a></p>
+  
+<!--<h3>Python-Future</h3>
+<p>-->
+  <h4>Easy, clean, reliable Python 2/3 compatibility</h4>
+  <a href="https://python-future.org/#contents">Table of Contents</a>
+<!--
+</p>
+<h3>Other Formats</h3>
+<p>
+  You can download the documentation in other formats as well:
+</p>
+<ul>
+  <li><a href="http://jinja.pocoo.org/docs/jinja-docs.pdf">as PDF</a>
+  <li><a href="http://jinja.pocoo.org/docs/jinja-docs.zip">as zipped HTML</a>
+</ul>
+-->
+<!--<h3>Useful Links</h3>
+<ul>
+  <li><a href="https://pypi.org/project/future/">on PyPI</a></li>
+  <li><a href="https://github.com/PythonCharmers/python-future">on GitHub</a></li>
+</ul>
+--><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="whatsnew.html">What’s New</a></li>
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview: Easy, clean, reliable Python 2/3 compatibility</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quick-start guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="compatible_idioms.html">Cheat Sheet: Writing Python 2-3 compatible code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="imports.html">Imports</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">What else you need to know</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#bytes">bytes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#str">str</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#dict">dict</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#int">int</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#isinstance">isinstance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#passing-data-to-from-python-2-libraries">Passing data to/from Python 2 libraries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#native-string-type">Native string type</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#open">open()</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#custom-str-methods">Custom __str__ methods</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#custom-iterators">Custom iterators</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#binding-a-method-to-a-class">Binding a method to a class</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#metaclasses">Metaclasses</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="automatic_conversion.html">Automatic conversion to Py2/3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">Frequently Asked Questions (FAQ)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stdlib_incompatibilities.html">Standard library incompatibilities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="older_interfaces.html">Older interfaces</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changes in previous versions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="credits.html">Licensing and credits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference.html">API Reference (in progress)</a></li>
+</ul>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+  
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2013-2019, Python Charmers Pty Ltd, Australia.
+    </div>
+  <script src="_static/version_warning_offset.js"></script>
+
+<div class="footer">
+<script type="text/javascript">
+  (function() {
+    var ga = document.createElement('script');
+    ga.src = ('https:' == document.location.protocol ?
+              'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    ga.setAttribute('async', 'true');
+    document.documentElement.firstChild.appendChild(ga);
+  })();
+</script>
+</div>
+
+  </body>
+</html>
