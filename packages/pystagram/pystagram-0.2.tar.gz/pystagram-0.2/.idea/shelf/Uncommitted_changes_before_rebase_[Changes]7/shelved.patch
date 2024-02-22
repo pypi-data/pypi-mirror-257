@@ -1,0 +1,24 @@
+Index: pystagram/graph_api/components/fields/media_fields.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>from enum import unique\n\nfrom pystagram.graph_api.components.fields.fields import Fields\n\n\n@unique\nclass MediaFields(Fields):\n    CAPTION = \"caption\"\n    CHILDREN = \"children\"\n    COMMENTS_COUNT = \"comments_count\"\n    # COPYRIGHT_CHECK_INFORMATION = \"copyright_check_information\"\n    ID = \"id\"\n    IG_ID = \"ig_id\"\n    IS_COMMENT_ENABLED = \"is_comment_enabled\"\n    IS_SHARED_TO_FEED = \"is_shared_to_feed\"\n    LIKE_COUNT = \"like_count\"\n    MEDIA_PRODUCT_TYPE = \"media_product_type\"\n    MEDIA_TYPE = \"media_type\"\n    MEDIA_URL = \"media_url\"\n    OWNER = \"owner\"\n    PERMALINK = \"permalink\"\n    SHORTCODE = \"shortcode\"\n    THUMBNAIL_URL = \"thumbnail_url\"\n    TIMESTAMP = \"timestamp\"\n    USERNAME = \"username\"\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/pystagram/graph_api/components/fields/media_fields.py b/pystagram/graph_api/components/fields/media_fields.py
+--- a/pystagram/graph_api/components/fields/media_fields.py	(revision 186cb21274870f9520630005100c047c2ce9a7d4)
++++ b/pystagram/graph_api/components/fields/media_fields.py	(date 1708512732958)
+@@ -8,7 +8,7 @@
+     CAPTION = "caption"
+     CHILDREN = "children"
+     COMMENTS_COUNT = "comments_count"
+-    # COPYRIGHT_CHECK_INFORMATION = "copyright_check_information"
++    COPYRIGHT_CHECK_INFORMATION_STATUS = "copyright_check_information.status"
+     ID = "id"
+     IG_ID = "ig_id"
+     IS_COMMENT_ENABLED = "is_comment_enabled"
+@@ -23,3 +23,4 @@
+     THUMBNAIL_URL = "thumbnail_url"
+     TIMESTAMP = "timestamp"
+     USERNAME = "username"
++    VIDEO_TITLE = "video_title"

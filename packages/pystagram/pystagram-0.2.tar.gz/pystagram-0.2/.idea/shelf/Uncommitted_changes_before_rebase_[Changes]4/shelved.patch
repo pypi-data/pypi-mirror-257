@@ -1,0 +1,45 @@
+Index: pystagram/graph_api/components/fields/media_fields.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>from enum import unique\n\nfrom pystagram.graph_api.components.fields.fields import Fields\n\n\n@unique\nclass MediaFields(Fields):\n    CAPTION = \"caption\"\n    CHILDREN = \"children\"\n    COMMENTS_COUNT = \"comments_count\"\n    COPYRIGHT_CHECK_INFORMATION_STATUS = \"copyright_check_information.status\"\n    ID = \"id\"\n    IG_ID = \"ig_id\"\n    IS_COMMENT_ENABLED = \"is_comment_enabled\"\n    IS_SHARED_TO_FEED = \"is_shared_to_feed\"\n    LIKE_COUNT = \"like_count\"\n    MEDIA_PRODUCT_TYPE = \"media_product_type\"\n    MEDIA_TYPE = \"media_type\"\n    MEDIA_URL = \"media_url\"\n    OWNER = \"owner\"\n    PERMALINK = \"permalink\"\n    SHORTCODE = \"shortcode\"\n    THUMBNAIL_URL = \"thumbnail_url\"\n    TIMESTAMP = \"timestamp\"\n    USERNAME = \"username\"\n    VIDEO_TITLE = \"video_title\"\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/pystagram/graph_api/components/fields/media_fields.py b/pystagram/graph_api/components/fields/media_fields.py
+--- a/pystagram/graph_api/components/fields/media_fields.py	(revision 8606babe6b01d6b6c6c0b46161ac968a6ef274c8)
++++ b/pystagram/graph_api/components/fields/media_fields.py	(date 1708510423686)
+@@ -8,7 +8,7 @@
+     CAPTION = "caption"
+     CHILDREN = "children"
+     COMMENTS_COUNT = "comments_count"
+-    COPYRIGHT_CHECK_INFORMATION_STATUS = "copyright_check_information.status"
++    # COPYRIGHT_CHECK_INFORMATION = "copyright_check_information"
+     ID = "id"
+     IG_ID = "ig_id"
+     IS_COMMENT_ENABLED = "is_comment_enabled"
+@@ -23,4 +23,3 @@
+     THUMBNAIL_URL = "thumbnail_url"
+     TIMESTAMP = "timestamp"
+     USERNAME = "username"
+-    VIDEO_TITLE = "video_title"
+Index: pystagram/graph_api/graph_api.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>\"\"\"\n**Instagram Graph API**\nThe `Instagram Graph API <https://developers.facebook.com/docs/instagram-api>`_ allows users of your app to access data\nin their `Instagram Business <https://business.instagram.com/>`_ and `Instagram Creator <https://help.instagram.com/2358103564437429>`_ accounts.\nThe API can be used to get and publish their media, manage and reply to comments on their media,\nidentify media where they have been @mentioned by components Instagram users, find hashtagged media,\nand get basic metadata and metrics about components Instagram Businesses and Creators.\n\"\"\"\n\nfrom typing import Optional\n\nfrom pystagram.graph_api.components.fields.account_fields import AccountFields\nfrom pystagram.graph_api.endpoints.comment.comment import Comment\nfrom pystagram.graph_api.endpoints.container.container import Container\nfrom pystagram.graph_api.endpoints.hashtag.hashtag import Hashtag\nfrom pystagram.graph_api.endpoints.hashtag_search.hashtag_search import HashtagSearch\nfrom pystagram.graph_api.endpoints.me.me import Me\nfrom pystagram.graph_api.endpoints.media.media import Media\nfrom pystagram.graph_api.endpoints.oauth.oauth import Oauth\nfrom pystagram.graph_api.endpoints.user.user import User\nfrom pystagram.helpers.api_client.base_api_client import PystagramBaseApiClient\n\n\nclass PystagramGraphApi(PystagramBaseApiClient):\n    \"\"\" Client for making requests to the Instagram Graph API.\n    It extends the :class:`pystagram.helpers.api_client.base_api_client.InstagramBaseApiClient` class.\n    :param app_id: The app ID of the Instagram app.\n    :type app_id: int    :param app_secret: The app secret of the Instagram app.\n    :type app_secret: str    :param access_token: The access token of the Instagram app, defaults to None\n    :type access_token: str, optional    :param base_uri: The base URL of the Instagram Graph API, defaults to BASE_URI\n    :type base_uri: str, optional    :param api_version: The version of the Instagram Graph API, defaults to API_VERSION\n    :type api_version: str, optional\n    \"\"\"\n\n    BASE_URI: str = \"graph.facebook.com\"\n    \"\"\" The base URL of the Instagram Graph API.\"\"\"\n    API_VERSION: str = \"v18.0\"\n    \"\"\" The version of the Instagram Graph API.\"\"\"\n\n    MAX_PAGES: int = None\n    \"\"\" The maximum number of pages to get from paginated endpoints, defaults to None (no limit).\"\"\"\n\n    def __init__(\n        self,\n        app_id: int,\n        app_secret: str,\n        access_token: Optional[str] = None,\n        base_uri: Optional[str] = BASE_URI,\n        api_version: Optional[str] = API_VERSION,\n    ):\n        \"\"\" Initialize the Instagram Graph API client.\"\"\"\n        super().__init__(f\"https://{base_uri}/{api_version}\")\n        self.app_id = app_id\n        self.app_secret = app_secret\n        self._access_token = access_token\n        self._user_id = None\n\n    def get_user_id(self):\n        \"\"\" Get the user ID of the Instagram user.\n\n        :return: The user ID of the Instagram user.\n        :rtype: str\n        \"\"\"\n        return (\n            self.me.accounts.get(\n                fields=[AccountFields.INSTAGRAM_BUSINESS_ACCOUNT],\n                access_token=self._access_token,\n            )\n            .data.get(\"data\", list(dict()))[0]\n            .get(\"instagram_business_account\", dict())\n            .get(\"id\", 0)\n        )\n\n    @property\n    def user_id(self):\n        \"\"\" The user ID of the Instagram user.\n        The user id is fetched from the Instagram Graph API if it is not already set.\n        \"\"\"\n        return self._user_id or self.get_user_id()\n\n    @property\n    def oauth(self):\n        \"\"\" The `OAuth` node of the Instagram Graph API.\n        See the :class:`pystagram.graph_api.endpoints.oauth.oauth.Oauth` class for additional details.\n        \"\"\"\n        return Oauth(self)\n\n    @property\n    def me(self):\n        \"\"\" The `Me` node of the Instagram Graph API.\n        See the :class:`pystagram.graph_api.endpoints.me.me.Me` class for additional details.\n        \"\"\"\n        return Me(self)\n\n    @property\n    def comment(self):\n        \"\"\" The `Comment` node of the Instagram Graph API.\n        See the :class:`pystagram.graph_api.endpoints.comment.comment.Comment` class for additional details.\n        \"\"\"\n        return Comment(self)\n\n    @property\n    def container(self):\n        \"\"\" The `Container` node of the Instagram Graph API.\n        See the :class:`pystagram.graph_api.endpoints.container.container.Container` class for additional details.\n        \"\"\"\n        return Container(self)\n\n    @property\n    def hashtag_search(self):\n        \"\"\" The `HashtagSearch` node of the Instagram Graph API.\n        See the :class:`pystagram.graph_api.endpoints.hashtag_search.HashtagSearch` class for additional details.\n        \"\"\"\n        return HashtagSearch(self)\n\n    @property\n    def hashtag(self):\n        \"\"\" The `Hashtag` node of the Instagram Graph API.\n        See the :class:`pystagram.graph_api.endpoints.hashtag.hashtag.Hashtag` class for additional details.\n        \"\"\"\n        return Hashtag(self)\n\n    @property\n    def media(self):\n        \"\"\" The `Media` node of the Instagram Graph API.\n        See the :class:`pystagram.graph_api.endpoints.media.media.Media` class for additional details.\n        \"\"\"\n        return Media(self)\n\n    @property\n    def user(self):\n        \"\"\" The `User` node of the Instagram Graph API.\n        See the :class:`pystagram.graph_api.endpoints.user.user.User` class for additional details.\n        \"\"\"\n        return User(self)\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/pystagram/graph_api/graph_api.py b/pystagram/graph_api/graph_api.py
+--- a/pystagram/graph_api/graph_api.py	(revision 8606babe6b01d6b6c6c0b46161ac968a6ef274c8)
++++ b/pystagram/graph_api/graph_api.py	(date 1708510423705)
+@@ -67,8 +67,8 @@
+                 access_token=self._access_token,
+             )
+             .data.get("data", list(dict()))[0]
+-            .get("instagram_business_account", dict())
+-            .get("id", 0)
++            .get(AccountFields.INSTAGRAM_BUSINESS_ACCOUNT, dict())
++            .get(AccountFields.ID, 0)
+         )
+ 
+     @property
