@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: koinapy
+Version: 0.0.1
+Summary: Python client to communicate with Koina.
+Author: Ludwig Lautenbacher
+Author-email: Ludwig.Lautenbacher@tum.de
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: tqdm (>=4.66.2,<5.0.0)
+Requires-Dist: tritonclient (>=2.42.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+Python package to access Koina server
