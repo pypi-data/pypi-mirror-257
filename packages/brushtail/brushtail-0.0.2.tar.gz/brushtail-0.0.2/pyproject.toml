@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=65.5"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "brushtail"
+version = "0.0.2"
+dependencies = ['requests', 'selenium', 'beautifulsoup4']
+authors = [
+  { name="Ethan Vellacott" },
+]
+description = "A small python framework for making simple, maintainable web scraping scripts."
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+[project.urls]
+Homepage = "https://github.com/EthanVellacott/brushtail"
+Issues = "https://github.com/EthanVellacott/brushtail/issues"
