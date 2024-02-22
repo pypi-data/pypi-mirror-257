@@ -1,0 +1,2 @@
+[vdk.plugin.run]
+vdk-smarter = vdk.plugin.smarter.openai_plugin_entry

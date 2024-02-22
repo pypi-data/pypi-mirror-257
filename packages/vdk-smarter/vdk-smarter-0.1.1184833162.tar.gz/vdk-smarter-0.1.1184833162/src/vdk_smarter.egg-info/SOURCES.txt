@@ -1,0 +1,10 @@
+README.md
+setup.py
+src/vdk/plugin/smarter/openai_plugin_entry.py
+src/vdk_smarter.egg-info/PKG-INFO
+src/vdk_smarter.egg-info/SOURCES.txt
+src/vdk_smarter.egg-info/dependency_links.txt
+src/vdk_smarter.egg-info/entry_points.txt
+src/vdk_smarter.egg-info/requires.txt
+src/vdk_smarter.egg-info/top_level.txt
+tests/test_sql_review.py
