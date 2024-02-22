@@ -1,0 +1,12 @@
+datalad_cds/__init__.py,sha256=AD5ndpwHNEROIUrwznkZhviilZtZeTZcRsxl_0z24sE,956
+datalad_cds/_version.py,sha256=FDLw2uuh8JbAS0kCUMXvFVHaUVBUl_qa7X6hSxXJfSM,497
+datalad_cds/cds_remote.py,sha256=K_UiGcPIfER9zf6UzAihJ604kq_cYZ2Bz9kyKZi-0X8,2432
+datalad_cds/compat.py,sha256=8YkJkYU75hKRc-GAp_RJ88pzpA-5VmruIQ5n5zYkh9w,269
+datalad_cds/download_cds.py,sha256=yoiGrLLropxQOmewpSt_1hK0Uj3u3HL8QLzE2eqa9z8,4701
+datalad_cds/spec.py,sha256=hMdtpF6FtNp6ElZ6sgHr6D20Svf-4DmeEakFSYWuDDI,1371
+datalad_cds-0.0.1.dist-info/LICENSE,sha256=lmGB0Aq-4_Ay71v0ThT2gI0vqCz5hlzjB5359u9UPts,1300
+datalad_cds-0.0.1.dist-info/METADATA,sha256=zYPfF0NHmSidOeqXik1GFH5N_DL7-Ze3xjwJF0K9t_c,6191
+datalad_cds-0.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+datalad_cds-0.0.1.dist-info/entry_points.txt,sha256=BscYcOmrW7Yga7ms_OK0CgrcOiu1Vd28RuRRhlm8ppw,132
+datalad_cds-0.0.1.dist-info/top_level.txt,sha256=LTlsOZOI3wjjkTxCWd183DxseV09vqKxBcpqJ8XdrAA,12
+datalad_cds-0.0.1.dist-info/RECORD,,
