@@ -1,0 +1,5 @@
+llama_index/callbacks/wandb/__init__.py,sha256=qE2rhJ8PyyzwZkhnfJDOA5r_EzvoVOh6m74Vw46a9_w,102
+llama_index/callbacks/wandb/base.py,sha256=m2KScz7bwoa2xmScC7E6Bmd0CyvKTJ0PH7ZpruHUhp0,21449
+llama_index_callbacks_wandb-0.1.2.dist-info/METADATA,sha256=xEoalGAxxEpNl6XlDbQ2lqFMmiK--CVifI-kgHQXCgA,701
+llama_index_callbacks_wandb-0.1.2.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+llama_index_callbacks_wandb-0.1.2.dist-info/RECORD,,
