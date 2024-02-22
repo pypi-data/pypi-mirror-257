@@ -1,0 +1,8 @@
+README.md
+setup.py
+voltaire_hello/__init__.py
+voltaire_hello/main.py
+voltaire_hello.egg-info/PKG-INFO
+voltaire_hello.egg-info/SOURCES.txt
+voltaire_hello.egg-info/dependency_links.txt
+voltaire_hello.egg-info/top_level.txt
