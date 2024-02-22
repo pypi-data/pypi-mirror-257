@@ -1,0 +1,113 @@
+Metadata-Version: 2.1
+Name: EnhancerAI
+Version: 0.0.1
+Summary: A deep learning toolkit for investigating the gene regulatory code
+Project-URL: Documentation, https://EnhancerAI.readthedocs.io/
+Project-URL: Source, https://github.com/aertslab/EnhancerAI/
+Project-URL: Home-page, https://github.com/aertslab/EnhancerAI/
+Author: Lukas Mahieu
+Maintainer-email: Lukas Mahieu <lukas.mahieu@kuleuven.be>
+License: MIT License
+        
+        Copyright (c) 2024, Lukas Mahieu
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+License-File: LICENSE
+Requires-Python: >=3.9
+Requires-Dist: anndata
+Requires-Dist: pandas
+Requires-Dist: session-info
+Provides-Extra: dev
+Requires-Dist: pre-commit; extra == 'dev'
+Requires-Dist: twine>=4.0.2; extra == 'dev'
+Provides-Extra: doc
+Requires-Dist: docutils!=0.18.*,!=0.19.*,>=0.8; extra == 'doc'
+Requires-Dist: ipykernel; extra == 'doc'
+Requires-Dist: ipython; extra == 'doc'
+Requires-Dist: myst-nb; extra == 'doc'
+Requires-Dist: pandas; extra == 'doc'
+Requires-Dist: sphinx-autodoc-typehints; extra == 'doc'
+Requires-Dist: sphinx-book-theme>=1.0.0; extra == 'doc'
+Requires-Dist: sphinx-copybutton; extra == 'doc'
+Requires-Dist: sphinx>=4; extra == 'doc'
+Requires-Dist: sphinxcontrib-bibtex>=1.0.0; extra == 'doc'
+Requires-Dist: sphinxext-opengraph; extra == 'doc'
+Provides-Extra: test
+Requires-Dist: coverage; extra == 'test'
+Requires-Dist: pytest; extra == 'test'
+Description-Content-Type: text/markdown
+
+# EnhancerAI
+
+[![Tests][badge-tests]][link-tests]
+[![Documentation][badge-docs]][link-docs]
+
+[badge-tests]: https://img.shields.io/github/actions/workflow/status/LukasMahieu/EnhancerAI/test.yaml?branch=main
+[link-tests]: https://github.com/aertslab/EnhancerAI//actions/workflows/test.yml
+[badge-docs]: https://img.shields.io/readthedocs/EnhancerAI
+
+A deep learning toolkit for investigating the gene regulatory code
+
+**IN PROGRESS, NOT RELEASED YET**
+
+## Getting started
+
+Please refer to the [documentation][link-docs]. In particular, the
+
+-   [API documentation][link-api].
+
+## Installation
+
+You need to have Python 3.9 or newer installed on your system. If you don't have
+Python installed, we recommend installing [Mambaforge](https://github.com/conda-forge/miniforge#mambaforge).
+
+There are several alternative options to install EnhancerAI:
+
+<!--
+1) Install the latest release of `EnhancerAI` from `PyPI <https://pypi.org/project/EnhancerAI/>`_:
+
+```bash
+pip install EnhancerAI
+```
+-->
+
+1. Install the latest development version:
+
+```bash
+pip install git+https://github.com/aertslab/EnhancerAI/.git@main
+```
+
+## Release notes
+
+See the [changelog][changelog].
+
+## Contact
+
+For questions and help requests, you can reach out in the [scverse discourse][scverse-discourse].
+If you found a bug, please use the [issue tracker][issue-tracker].
+
+## Citation
+
+> t.b.a
+
+[scverse-discourse]: https://discourse.scverse.org/
+[issue-tracker]: https://github.com/LukasMahieu/EnhancerAI/issues
+[changelog]: https://EnhancerAI.readthedocs.io/latest/changelog.html
+[link-docs]: https://EnhancerAI.readthedocs.io
+[link-api]: https://EnhancerAI.readthedocs.io/latest/api.html
