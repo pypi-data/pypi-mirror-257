@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: brushtail
+Version: 0.0.2
+Summary: A small python framework for making simple, maintainable web scraping scripts.
+Home-page: https://github.com/EthanVellacott/brushtail
+Author: Ethan Vellacott
+License: Copyright (c) 2018 The Python Packaging Authority
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Project-URL: Homepage, https://github.com/EthanVellacott/brushtail
+Project-URL: Issues, https://github.com/EthanVellacott/brushtail/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: selenium
+Requires-Dist: beautifulsoup4
+
+# Brushtail 
+
+A simple way to structure web scraping; using chained functions to express dense workflow simply.
+
+In development, with a short roadmap to version 1. 
+
+
+## Background
+I find some of the structure of webscraping a little tedious; it can require many repetetive steps, and scripts often need to change as websites change. 
+
+Thus, a solution which can chain steps together, with a goal of creating more easily disposible (or fixable) scraping scripts. 
+
+The drawback of chaining things in this fashion is that by connecting many failure points, the overall script may fail easily; but that isn't an issue for my use cases.
+
+
+## Roadmap
+- Clearer comments and typing
+- Code examples 
+
+
