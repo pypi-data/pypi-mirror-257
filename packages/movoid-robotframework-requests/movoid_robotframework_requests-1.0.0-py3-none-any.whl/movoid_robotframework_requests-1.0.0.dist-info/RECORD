@@ -1,0 +1,11 @@
+RobotFrameworkRequests/__init__.py,sha256=dyyqXb3OQJjx-Q8W96_ieh-38NST5DhLftoF0UL_3Xw,391
+RobotFrameworkRequests/lib/__init__.py,sha256=2D3B8L4r52JEFj8Erj2D-7ndfjTlfpENar0_AAN2j0c,267
+RobotFrameworkRequests/lib/requests.py,sha256=lahAWZJbc-kq0S9jFRyjFxTHiHOMOuUaao9M_TIpl4s,2802
+RobotFrameworkRequests/lib/type.py,sha256=CB_T14T4qXCHRXIfNu7iojUBXOQH10nGu-t1aqjjZSE,1705
+RobotFrameworkRequests/main/__init__.py,sha256=b3i13cLIeg0pz_5be2Y5-etX-OByVZnKoufpVFvlTps,275
+RobotFrameworkRequests/main/action.py,sha256=ldnTO8hgnqrQQMRc7MA5OdQ4Lu7JH0_RQh3MwWPWKIY,262
+RobotFrameworkRequests/main/common.py,sha256=GzNs_l6Acbqf5gXSjrIy07K6WjRpg2-8Zk4MyToEybU,269
+movoid_robotframework_requests-1.0.0.dist-info/METADATA,sha256=v09unWKrQ1ZxUYVUVSWUtckBRXI1LBZF2aGBCjV2ou8,363
+movoid_robotframework_requests-1.0.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+movoid_robotframework_requests-1.0.0.dist-info/top_level.txt,sha256=R_I9STnYw0SRsDr74vtAdVDPpVcSjHpcbvNrJ3BGYPY,23
+movoid_robotframework_requests-1.0.0.dist-info/RECORD,,
