@@ -1,0 +1,9 @@
+opsys_eol_ps/__init__.py,sha256=DYFhqM9V40mJN1qHNNDYjWJqgkqx-utaaiyTb7VhKdw,98
+opsys_eol_ps/eol_ps.py,sha256=DmJJxEHXeRyNfVNXWDm0JY09LRg62o5I1yZjX96IMTs,3410
+test/__init__.py,sha256=6-29uVD_zSb9cN63QXYIj56H_2UmESe3EshnZTVknCY,75
+test/test_eol_ps.py,sha256=8GUPrJ93M_7L3cyFozZhI67XBsdUTt5on6xQ_fLS0BQ,4328
+opsys_eol_ps-0.0.0.dist-info/LICENSE,sha256=4mT_lp7iCFlMUtNrV3g-_f4HZNeYjhDSH7HBDmBmxxs,1073
+opsys_eol_ps-0.0.0.dist-info/METADATA,sha256=TyFkf4_ZNfYu2WipJpY8eoRUo5CGEinZniuTk_lGrBM,346
+opsys_eol_ps-0.0.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+opsys_eol_ps-0.0.0.dist-info/top_level.txt,sha256=FInmBRqYDJhFGjn4K09zAIOA4oZIdlSKSGXSWGKaj6o,18
+opsys_eol_ps-0.0.0.dist-info/RECORD,,
