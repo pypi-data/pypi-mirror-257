@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "NNEngine"
+version = "0.0.1"
+authors = [
+  { name="Jay Singh", email="neuronode.data@gmail.com" },
+]
+description = '''The NNEngine is an advanced visual processing model that offers a comprehensive development environment for creating visually immersive experiences, the NNEngine has been extensively trained to generate high-quality humanoid graphics with remarkable realism.
+WebSite : https://nn-engine.web.app/'''
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"WebApp" = 'https://nn-engine.web.app/'
