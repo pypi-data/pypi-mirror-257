@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+baidu_translate/__init__.py
+baidu_translate/api.py
+baidu_translate/domain.py
+baidu_translate/errors.py
+baidu_translate/languages.py
+baidu_translate/models.py
+baidu_translate/sign.py
+baidu_translate/utils.py
+baidu_translate_api.egg-info/PKG-INFO
+baidu_translate_api.egg-info/SOURCES.txt
+baidu_translate_api.egg-info/dependency_links.txt
+baidu_translate_api.egg-info/not-zip-safe
+baidu_translate_api.egg-info/requires.txt
+baidu_translate_api.egg-info/top_level.txt
