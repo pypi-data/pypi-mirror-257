@@ -1,0 +1,7 @@
+setup.py
+test-nep-spell-synthetic-datautils/__init__.py
+test-nep-spell-synthetic-datautils/test_datautils.py
+test_nep_spell_synthetic_datautils.egg-info/PKG-INFO
+test_nep_spell_synthetic_datautils.egg-info/SOURCES.txt
+test_nep_spell_synthetic_datautils.egg-info/dependency_links.txt
+test_nep_spell_synthetic_datautils.egg-info/top_level.txt
