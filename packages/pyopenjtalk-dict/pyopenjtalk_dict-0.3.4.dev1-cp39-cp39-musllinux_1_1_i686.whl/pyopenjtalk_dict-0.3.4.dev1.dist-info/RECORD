@@ -1,0 +1,15 @@
+pyopenjtalk/openjtalk.cpython-39-i386-linux-gnu.so,sha256=puTco5mECTyxs4Ed6UfUJSnAhkHINv7nlYENk82U1sI,19618737
+pyopenjtalk/htsengine.cpython-39-i386-linux-gnu.so,sha256=yjBxgTZW0SGNcBKB03eVvjO-GJwQImpJXQBRGdq9yF4,806449
+pyopenjtalk/__init__.py,sha256=bjO39y-_v4fU0oxDoewYmnSQ-2UomWP9T8k-flYTrpQ,8384
+pyopenjtalk/utils.py,sha256=7s9Q2_w9Mpzl80gQ1V7jWVG35Gfb0U_yjmGKRmLtXPo,835
+pyopenjtalk/version.py,sha256=Zk41m1VkLVarGAKE7BQH5GAfaRk3HUSeejVrxLpmu9A,27
+pyopenjtalk/htsvoice/README.md,sha256=-yfJC1ZNcmpujB4DyBJ1MQLGkrCObIbkpO25cFDpdt0,100
+pyopenjtalk/htsvoice/mei_normal.htsvoice,sha256=875JpoOJBKbCGHkLZOB8PoPBiG6ZXcooS0E8qrGRhN4,862503
+pyopenjtalk/htsvoice/LICENSE_mei_normal.htsvoice,sha256=r4oFts4o5RNlj98EgPNtv0nL6HjSVx2X3QF-gFLHE5E,2870
+pyopenjtalk_dict-0.3.4.dev1.dist-info/WHEEL,sha256=dWv0stqL2Ni-zh35huG_Ph1bgNPfURtAXWnpc-5H5qs,109
+pyopenjtalk_dict-0.3.4.dev1.dist-info/METADATA,sha256=y2rGqKA2JUpYrFxxbZXuledEjRkm6XnKGJ4uoDpcsqg,8542
+pyopenjtalk_dict-0.3.4.dev1.dist-info/LICENSE.md,sha256=w4CDpNUcHqhuCLMwOphNDCNxjFrCFAWK9wWBTTD0u1s,1177
+pyopenjtalk_dict-0.3.4.dev1.dist-info/top_level.txt,sha256=S7eQayVhEioHtm7lS-oG8mteALqSBd5DR9HJjfJnHO0,12
+pyopenjtalk_dict-0.3.4.dev1.dist-info/RECORD,,
+pyopenjtalk_dict.libs/libstdc++-8baf04f9.so.6.0.28,sha256=yrzOxg1heyJ9Y-43YCLLn04Cpl_A68FN0D2Q1iBTMcY,2428961
+pyopenjtalk_dict.libs/libgcc_s-8b50eaaa.so.1,sha256=WXj_FYQE1MDIyb-nN8siUALdxit6NHma0p9UxemQV8o,101649
