@@ -1,0 +1,29 @@
+Cringelord End-User License Agreement (EULA)
+
+IMPORTANT: PLEASE READ THIS LICENSE CAREFULLY BEFORE USING THIS SOFTWARE.
+
+1. License
+HeerlijkeHeer ("Licensor") hereby grants you ("User") a non-exclusive, non-transferable, limited license to use Cringelord ("Software") free of charge. Use of the Software under this license is restricted to non-commercial purposes. The Software is licensed, not sold, to you for use under the terms of this license.
+
+2. Restrictions
+You may NOT:
+
+Modify, translate, adapt, or otherwise create derivative works or improvements, whether patentable or not, of the Software.
+Reverse engineer, disassemble, decompile, decode, or otherwise attempt to derive or gain access to the source code of the Software.
+Rent, lease, lend, sell, sublicense, assign, distribute, publish, transfer, or otherwise make available the Software, or any features or functionality of the Software, to any third party for any reason.
+Remove, delete, efface, alter, obscure, translate, combine, supplement, or otherwise change any trademarks, terms of the licensing or copyright notices, proprietary rights, or other symbols, notices, or marks on or relating to any copy of the Software.
+
+3. Intellectual Property
+The Software is the intellectual property of HeerlijkeHeer, and the structure, organization, and code are the valuable trade secrets and confidential information of HeerlijkeHeer. The Software is licensed, not sold.
+
+4. Disclaimer of Warranty
+THE SOFTWARE IS PROVIDED "AS IS," WITH ALL FAULTS, AND WITHOUT WARRANTY OF ANY KIND. HeerlijkeHeer EXPRESSLY DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
+
+5. Limitation of Liability
+IN NO EVENT WILL HeerlijkeHeer BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+6. Termination
+This license is effective until terminated. You may terminate it at any time by destroying the Software, together with all copies thereof. This license will also terminate if you fail to comply with any term or condition of this Agreement. Upon such termination, you agree to destroy the Software, together with all copies thereof.
+
+
+Copyright (C) 2024 HeerlijkeHeer. All rights reserved.
