@@ -1,0 +1,14 @@
+speedups/psycopg_array.cpython-38-darwin.so,sha256=Zqm1A2lKE6qUWVdKWw8ZGGWi4KP9mGNwP6-BpHK0EZY,253688
+speedups/psycopg_array.pyi,sha256=TUgMa8NaDUcz7vrZAxK0gk3CankxPc5IqlzCUrvSCag,371
+speedups/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+speedups/hton.h,sha256=kaAtFF3a8rYTGYf5UKwGnftRuyhOb5RjdnA30L6XV68,4989
+speedups/psycopg_loaders.py,sha256=8St_nYALeTvQcpIAEkcrUmz5stAL4XmA95w1GIELMgw,2958
+speedups/__about__.py,sha256=DScY-ZA7BnVykYgvdKxKTKMVQ79gPzltWxuYcb4y2dU,445
+speedups/psycopg_array.c,sha256=1lHyIY5sAY_5Nnteo2weQcURq47dGfP2h7Frjqc1W2Q,1373199
+speedups/hton.pxd,sha256=vRytwOP2ChKrLwKQdcZt1OFQvRJio743YemIDMRtno8,1018
+speedups/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+speedups/psycopg_array.pyx,sha256=uvKPuiWXKVv_Po2FTK9KgUizcTv2Ce7Zisy4MhVXfuw,2053
+speedups-1.4.0.dist-info/RECORD,,
+speedups-1.4.0.dist-info/WHEEL,sha256=wt_0D7ETubDJ-d2If9gFyi_RXCxFIy3PzOgckP8MsJY,109
+speedups-1.4.0.dist-info/top_level.txt,sha256=1p6Vul_eK-gWPkzn9QqOp-yni8-6AS_mrJTNAmX6Nf0,9
+speedups-1.4.0.dist-info/METADATA,sha256=sRdth3gwiQdl1FHV2gZoUdc5JSVCDhdxHtuFLH3qnuQ,3692
