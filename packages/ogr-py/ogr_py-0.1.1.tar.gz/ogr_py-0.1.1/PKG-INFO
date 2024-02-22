@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: ogr-py
+Version: 0.1.1
+Summary: A set of utilities to study the Optimal Golomb Ruler problem
+License: MIT
+Author: Evan Voyles
+Author-email: evan.voyles@etu.sorbonne-universite.fr
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: altair-viewer (>=0.4.0,<0.5.0)
+Requires-Dist: appdirs (>=1.4.4,<2.0.0)
+Requires-Dist: ogr-rust (>=0.1.2,<0.2.0)
+Requires-Dist: polars (>=0.20.1,<0.21.0)
