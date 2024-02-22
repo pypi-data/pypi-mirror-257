@@ -1,0 +1,8 @@
+run/
+NOTES.md
+main.spec
+dist
+build
+__main__.spec
+.venv
+.system_pyside
