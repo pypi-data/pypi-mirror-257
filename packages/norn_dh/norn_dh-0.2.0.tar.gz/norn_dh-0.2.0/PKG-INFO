@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: norn_dh
+Version: 0.2.0
+Summary: 
+License: MIT
+Author: Lars Magne Tungland
+Author-email: larsmtungland@gmail.com
+Requires-Python: >=3.10,<3.13
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: beautifulsoup4 (>=4.12.2,<5.0.0)
+Requires-Dist: dhlab (>=2.26.5,<3.0.0)
+Requires-Dist: flask (>=3.0.0,<4.0.0)
+Requires-Dist: lxml (>=4.9.3,<5.0.0)
+Requires-Dist: openpyxl (>=3.1.2,<4.0.0)
+Requires-Dist: pandas (>=2.1.2,<3.0.0)
+Requires-Dist: pymongo (>=4.6.1,<5.0.0)
+Requires-Dist: python-dotenv (>=1.0.1,<2.0.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Requires-Dist: scikit-learn (>=1.3.2,<2.0.0)
+Requires-Dist: scipy (>=1.11.4,<2.0.0)
+Requires-Dist: tqdm (>=4.66.1,<5.0.0)
+Description-Content-Type: text/markdown
+
+# README
+
+NORN  
+
+
+## Data
+
+- Konsensuskorpuset (`konsensuskorpus_master.xlsx`) inneholder manuelt kuraterte rader med metadata om bøker fra 1800-tallslitteraturen som omtales i Litteraturhistoriske verk som "nasjonalromantiske". 
+- `Data/1800-1839_metadata.xlsx` inneholder metadata om 101 verk som ble publisert fra 1800 og før 1840.
+- `Data/1840-1869_metadata.xlsx` inneholder metadata om 239 verk som ble publisert fra 1840, før 1870.
+
+### Prosessering 
+
+Dataprossesseringen er dokumentert i notebooks i repoet. 
+
+- `do_analysis.ipynb` aggregerer opp annotasjonene i konsensuskorpuset. 
+- `add_imagination_metadata.ipynb` henter inn URN-lister for delkorpusene og legger til metadata. 
+
