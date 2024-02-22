@@ -1,0 +1,10 @@
+News
+====
+
+0.0.2
+-----
+
+*Release date: 21-Feb-2024*
+
+* Add documentation.
+
