@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "bird_python"
+version = "0.1.2"
+description = "API wrapper for MessageBird written in Python"
+authors = ["Gearplug Team <apps@gearplug.io>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "bird_python"}]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+requests = "^2.26.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
