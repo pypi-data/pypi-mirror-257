@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: PdmModule
+Version: 0.0.7
+Summary: Predictive Maintenance Module for applying a modified Xgboost and Pair detection Techniques in streaming data.
+Project-URL: Homepage, https://github.com/agiannoul/PdMmodule
+Project-URL: Issues, https://github.com/agiannoul/PdMmodule/issues
+Project-URL: documentation, https://pd-mmodule.vercel.app/
+Author-email: Apostolos Giannoulidis <agiannous@csd.auth.gr>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+Predictive Maintenance Module for applying a modified Xgboost and Pair detection Techniques in streaming data.
+
+Documentation: [https://pd-mmodule.vercel.app/](https://pd-mmodule.vercel.app/)
