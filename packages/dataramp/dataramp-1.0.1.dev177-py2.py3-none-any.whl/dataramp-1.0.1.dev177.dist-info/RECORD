@@ -1,0 +1,13 @@
+dataramp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dataramp/core.py,sha256=fliaTr7dqxYgXWRg4YSCi_t3W5U78vOM05SucHOH_Iw,4892
+dataramp/create_project.py,sha256=_wn3p4d3mpYjnTADEuUeTmMu5hp1kc75eyvAvkKWdhY,4920
+dataramp/eval.py,sha256=iB7DvM51GWY8x6Ns8lP7uLnChOEoltmvP_oNrKv-ZMo,74
+dataramp/models.py,sha256=inslxeZNucnKnS5ptTZrqctYVvlnn9LrWRSsEDf_ad0,3570
+dataramp/outlier.py,sha256=ycTVuux--90J73j3LITes4EvoGeygiou-OmK9Pz7Cr8,3727
+dataramp/utils.py,sha256=RHL-fPeirHAOXT6wmCQd7fYEluLqX-0QhhF8YKSJfCc,15789
+dataramp/version.py,sha256=trAmByGs1Ce6xeKk23w6aC-8S6BtJqZa9rnh9nrYD8Y,29
+dataramp-1.0.1.dev177.dist-info/LICENSE.txt,sha256=hjCWq6LBewX1RbeThICRaor1AeYn524muYmasuRUfwk,1067
+dataramp-1.0.1.dev177.dist-info/METADATA,sha256=mDtZYB-4fVqONCPt_AOTFdXlyTKQHHssdb2ngcLNsgQ,4404
+dataramp-1.0.1.dev177.dist-info/WHEEL,sha256=-G_t0oGuE7UD0DrSpVZnq1hHMBV9DD2XkS5v7XpmTnk,110
+dataramp-1.0.1.dev177.dist-info/top_level.txt,sha256=3FTGC-830ucWlRZ_a7nWukXRHEOxzNdyOvZYMuP_KGc,9
+dataramp-1.0.1.dev177.dist-info/RECORD,,
