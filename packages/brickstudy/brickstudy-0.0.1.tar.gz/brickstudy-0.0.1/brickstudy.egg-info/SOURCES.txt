@@ -1,0 +1,10 @@
+LICENSE.md
+README.md
+setup.py
+brickstudy/foundation.py
+brickstudy.egg-info/PKG-INFO
+brickstudy.egg-info/SOURCES.txt
+brickstudy.egg-info/dependency_links.txt
+brickstudy.egg-info/not-zip-safe
+brickstudy.egg-info/requires.txt
+brickstudy.egg-info/top_level.txt

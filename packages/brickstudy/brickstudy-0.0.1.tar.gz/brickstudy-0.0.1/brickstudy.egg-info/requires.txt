@@ -1,0 +1,17 @@
+pyxdf
+pandas
+scipy
+matplotlib
+scikit-learn
+SimpleITK
+seaborn
+imageio<=2.31.5
+scikit-image
+
+[dev]
+pytest
+codestyle
+isort
+wheel
+jupyter
+ipympl
