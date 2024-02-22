@@ -1,0 +1,17 @@
+jupyterlab_theme_toggler/__init__.py,sha256=FJKnZuWg2EFgm3w-3R84YQ7Xn_oVZc7zrAGyjVO-ROQ,167
+jupyterlab_theme_toggler/_version.py,sha256=Y5SHlIXuXAzscWObrzxD1FAWP3sbr0Gm3wiDKpFPtvs,171
+jupyterlab_theme_toggler-1.0.0.data/data/share/jupyter/labextensions/jupyterlab-theme-toggler/package.json,sha256=KeirC3ylYFCJwKwjo-FIfecmOnVCeNTSA8XflM-NglQ,3374
+jupyterlab_theme_toggler-1.0.0.data/data/share/jupyter/labextensions/jupyterlab-theme-toggler/schemas/jupyterlab-theme-toggler/package.json.orig,sha256=jlhe_mKTEQWKNQBIW1tAGO05_V2O_CiX6B3gBudHuN4,3556
+jupyterlab_theme_toggler-1.0.0.data/data/share/jupyter/labextensions/jupyterlab-theme-toggler/schemas/jupyterlab-theme-toggler/plugin.json,sha256=wxZUUUzybmFbnpI7o2-rTuejRDC_vf80Eo7w5IJxYuI,272
+jupyterlab_theme_toggler-1.0.0.data/data/share/jupyter/labextensions/jupyterlab-theme-toggler/static/563.2f559df498e587276339.js,sha256=BrUZFsijjAA4MdVr94RElR_RxVw5hoUJB5Hwh7-pk_c,733808
+jupyterlab_theme_toggler-1.0.0.data/data/share/jupyter/labextensions/jupyterlab-theme-toggler/static/563.2f559df498e587276339.js.LICENSE.txt,sha256=0xLsY-QQYZ-7_w7QSvepG6EbAXm5b5l7y7x9IueOJ8s,1216
+jupyterlab_theme_toggler-1.0.0.data/data/share/jupyter/labextensions/jupyterlab-theme-toggler/static/608.a20d646958f971436771.js,sha256=og1kaVj5cUNncWnq5xishrSqtJ7Yl2lrtLuNuThkY4c,438446
+jupyterlab_theme_toggler-1.0.0.data/data/share/jupyter/labextensions/jupyterlab-theme-toggler/static/789.c7eee2235cc74ef156cd.js,sha256=x-7iI1zHTvFWzXvWlvX2L5pM1bpmxWcx2I57vk4IcHk,4359
+jupyterlab_theme_toggler-1.0.0.data/data/share/jupyter/labextensions/jupyterlab-theme-toggler/static/remoteEntry.660a17ec35190dfd4d0d.js,sha256=ZgoX7DUZDf1NDcxqxQn83tuqhkZW5sZxL4Ld0oIZuxY,7309
+jupyterlab_theme_toggler-1.0.0.data/data/share/jupyter/labextensions/jupyterlab-theme-toggler/static/style.js,sha256=-CQt0ZTPaCTvrRiLcznxflAbfvIKlOVzjOos-muaXQ8,118
+jupyterlab_theme_toggler-1.0.0.data/data/share/jupyter/labextensions/jupyterlab-theme-toggler/static/third-party-licenses.json,sha256=mJhie2GjcPzQlAr_hWoiydFj0W1cUChNAtPL9oIb7Og,84274
+jupyterlab_theme_toggler-1.0.0.data/data/share/jupyter/labextensions/jupyterlab-theme-toggler/install.json,sha256=bltOwNWZhGpQxKje80H1oduMNyieVvvOlLGqp4w_ZtY,202
+jupyterlab_theme_toggler-1.0.0.dist-info/METADATA,sha256=5zCtAucNwuINrZhjucdxwuZhUreK1rBKe-v_qLN3zaw,5908
+jupyterlab_theme_toggler-1.0.0.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+jupyterlab_theme_toggler-1.0.0.dist-info/licenses/LICENSE,sha256=cFETqAPbZPAiaEvqn0VLRRJXDSFKqa57Xnj54qNlk1Y,1538
+jupyterlab_theme_toggler-1.0.0.dist-info/RECORD,,
