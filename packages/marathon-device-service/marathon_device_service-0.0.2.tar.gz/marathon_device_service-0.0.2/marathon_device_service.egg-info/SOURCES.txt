@@ -1,0 +1,9 @@
+README.md
+setup.py
+marathon_device_service/__init__.py
+marathon_device_service/service.py
+marathon_device_service.egg-info/PKG-INFO
+marathon_device_service.egg-info/SOURCES.txt
+marathon_device_service.egg-info/dependency_links.txt
+marathon_device_service.egg-info/requires.txt
+marathon_device_service.egg-info/top_level.txt
