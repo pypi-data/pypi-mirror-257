@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+suaidoc/scripts/__init__.py
+suaidoc/scripts/replace.py
+suaidoc/scripts/update_md.py
+suaidoc/suaidoc.egg-info/PKG-INFO
+suaidoc/suaidoc.egg-info/SOURCES.txt
+suaidoc/suaidoc.egg-info/dependency_links.txt
+suaidoc/suaidoc.egg-info/entry_points.txt
+suaidoc/suaidoc.egg-info/requires.txt
+suaidoc/suaidoc.egg-info/top_level.txt
+suaidoc/templates/__init__.py
