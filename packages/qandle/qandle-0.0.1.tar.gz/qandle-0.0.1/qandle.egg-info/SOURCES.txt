@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.py
+qandle/__init__.py
+qandle.egg-info/PKG-INFO
+qandle.egg-info/SOURCES.txt
+qandle.egg-info/dependency_links.txt
+qandle.egg-info/requires.txt
+qandle.egg-info/top_level.txt

@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: qandle
+Version: 0.0.1
+Summary: short description
+Home-page: https://github.com/yourusername/qandle
+Author: Gerhard Stenzel
+Author-email: gerhard.stenzel@ifi.lmu.de
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: GPU :: NVIDIA CUDA
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Programming Language :: Python
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: torch>=1.10
+Requires-Dist: qW_Map>=0.1.2
+Requires-Dist: networkx>=3.2
+Requires-Dist: einops>=0.7
+
+# QANDLE

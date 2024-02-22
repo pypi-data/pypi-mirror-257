@@ -1,0 +1,4 @@
+torch>=1.10
+qW_Map>=0.1.2
+networkx>=3.2
+einops>=0.7
