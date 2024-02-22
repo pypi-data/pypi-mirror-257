@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "wallet_tests_school_au"
+version = "0.1.0"
+description = ""
+authors = ["Bruce Smith <bruce@batman.com>"]
+readme = "README.md"
+packages = [{include = "wallet_tests_school_au"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
