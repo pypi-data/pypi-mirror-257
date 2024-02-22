@@ -1,0 +1,10 @@
+kk_plugins/__init__.py,sha256=hgQDu0c1MWJliX0il4seK1VjPgToPZWfiCjYCf6RXBI,48
+kk_plugins/account.py,sha256=cnlCtkZl1tkhSasQ0V9xRrgxG8C1GT99l-079lye9UQ,2089
+kk_plugins/cmd.py,sha256=ezD51MrV31vKhpBuQZ87apwTbJdUHa0zIZ1evqLc7Uw,483
+kk_plugins/compress.py,sha256=p3nHRGuJT10LhoGOUUkK39My2jsD4TQADX4_Nk2YXuo,2103
+kk_plugins/excel.py,sha256=oWwH8tb5Wa4FAzo34e9B66RgT97tynb3u7AlY5B7OyE,7339
+kk_plugins/project.py,sha256=7hCdg6LgmwaFCE_NA9nAfpqdOQY3knsdHwWjkIJ-Ys0,3217
+kk_plugins-0.1.240117.2.dist-info/METADATA,sha256=JCtckE5V_mnJ7TF5piTSIZz9fw-RdBv6H8h3x2lV0ps,835
+kk_plugins-0.1.240117.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+kk_plugins-0.1.240117.2.dist-info/top_level.txt,sha256=cmzocX1d6aznX2yJl8pqFE8TrxRvaL-m_PwbvryBybI,11
+kk_plugins-0.1.240117.2.dist-info/RECORD,,
