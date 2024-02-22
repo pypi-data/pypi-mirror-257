@@ -1,0 +1,12 @@
+NeuroBCL-0.1.1.dist-info/DESCRIPTION.rst,sha256=wdTEchvBtnlhbHUEZSx8cIzvdBajxWnlzz5xtvh2hKM,1555
+NeuroBCL-0.1.1.dist-info/METADATA,sha256=wtI7JHqnqPs2u6GdjUhC7_wWg6CdhCSw91ekbzV8RNs,2042
+NeuroBCL-0.1.1.dist-info/RECORD,,
+NeuroBCL-0.1.1.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+NeuroBCL-0.1.1.dist-info/metadata.json,sha256=cB4x3xa1XLnZngXw8-uvwoqBpI9nZMXTK94RTyS84s4,675
+NeuroBCL-0.1.1.dist-info/top_level.txt,sha256=0bLYRjNkLpltXcs9Xxl_X4QkFacsyKED9j27XLO5t-8,9
+neurobcl/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+neurobcl/main.py,sha256=kv_AOtMwvjRsyY0MP9XYufmanCnp_0mcxtXncTvMsFo,2282
+neurobcl/base/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+neurobcl/base/model.py,sha256=RVRPlLDGLoeffNWpjFRb1PAMT5l9i4d4hFLhuppugtQ,11554
+neurobcl/trainers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+neurobcl/trainers/dictionary_trainer.py,sha256=3hBYyeNTZOTT1p06nKg9OLScz_X_8YH5n5Jl4uvBhSg,3410
