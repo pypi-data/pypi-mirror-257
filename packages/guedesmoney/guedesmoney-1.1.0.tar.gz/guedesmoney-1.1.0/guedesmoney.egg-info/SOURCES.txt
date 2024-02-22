@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+guedesmoney.egg-info/PKG-INFO
+guedesmoney.egg-info/SOURCES.txt
+guedesmoney.egg-info/dependency_links.txt
+guedesmoney.egg-info/entry_points.txt
+guedesmoney.egg-info/requires.txt
+guedesmoney.egg-info/top_level.txt
+src/__init__.py
+src/controllers.py
+src/main.py
+src/utils.py
