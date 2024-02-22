@@ -1,0 +1,7 @@
+setup.py
+nepspell_datautils/__init__.py
+nepspell_datautils/datautils.py
+nepspell_datautils.egg-info/PKG-INFO
+nepspell_datautils.egg-info/SOURCES.txt
+nepspell_datautils.egg-info/dependency_links.txt
+nepspell_datautils.egg-info/top_level.txt
