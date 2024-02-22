@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: opsys-electrical-cabinet
+Version: 0.0.0
+Summary: python package for the electrical cabinet
+Home-page: https://bitbucket.org/opsys_tech/opsys_electrical_cabinet/src/master/
+Download-URL: https://bitbucket.org/opsys_tech/opsys_electrical_cabinet/src/master/
+Author: nerya.lifshitz
+Author-email: nerya.lifshitz@opsys-tech.com
+License-File: LICENSE
+
