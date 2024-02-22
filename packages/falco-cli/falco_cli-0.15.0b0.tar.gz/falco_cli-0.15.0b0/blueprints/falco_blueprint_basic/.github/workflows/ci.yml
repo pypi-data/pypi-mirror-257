@@ -1,0 +1,43 @@
+name: CI
+
+on:
+  pull_request:
+    branches: ['master', 'main']
+
+  push:
+    branches: ['master', 'main']
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install falco
+        run: |
+          pip install falco-cli
+
+      - name: Checkout Code Repository
+        uses: actions/checkout@v4
+
+      - name: Generate a project
+        run: falco start-project test-project -b /home/runner/work/falco_blueprint_basic/falco_blueprint_basic
+        working-directory: ./
+
+      - name: Install hatch
+        run: |
+          pip install hatch
+
+      - name: Sync .env
+        run: |
+          cd test_project && hatch run falco sync-dotenv
+
+      - name: Run django checks
+        run: |
+          cd test_project && hatch run python manage.py check --fail-level WARNING
+
+
