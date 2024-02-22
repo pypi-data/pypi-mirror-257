@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: cogflow
+Version: 0.8
+Summary: cog modules
+Author: Sai_kireeti
+Author-email: sai.kireeti@hiro-microdatacenters.nl
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: mlflow[extras]
+Requires-Dist: kfp[extras] ==1.8.22
+Requires-Dist: tensorflow[extras]
+Requires-Dist: boto3[extras]
+Requires-Dist: tenacity[extras]
+Requires-Dist: pandas[extras]
+Requires-Dist: numpy[extras]
+Requires-Dist: kubernetes[extras]
+Requires-Dist: minio[extras]
+Requires-Dist: scikit-learn[extras]
+Requires-Dist: awscli[extras]
+Requires-Dist: s3fs[extras]
+Requires-Dist: setuptools[extras]
+Requires-Dist: kserve[extras]
+
