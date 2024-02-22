@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/brushtail/__init__.py
+src/brushtail/browser.py
+src/brushtail/checkpoints.py
+src/brushtail.egg-info/PKG-INFO
+src/brushtail.egg-info/SOURCES.txt
+src/brushtail.egg-info/dependency_links.txt
+src/brushtail.egg-info/requires.txt
+src/brushtail.egg-info/top_level.txt
