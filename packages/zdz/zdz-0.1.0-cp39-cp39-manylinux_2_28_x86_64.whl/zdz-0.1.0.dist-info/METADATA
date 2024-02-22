@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: zdz
+Version: 0.1.0
+License-File: LICENSE
+Summary: utils tools for zdz
+Keywords: zdz,tools
+Author: zdz
+Author-email: doge.py@gmail.com
+Maintainer-email: zdz <doge.py@gmail.com>
+License: Apache-2.0
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+# zdz
+
+```
+python3 -m venv .venv
+source ./.venv/bin/activate
+pip install maturin
+
+maturin build --strip -r  // -v
+
+pip3 install --debug xxx.whl
+```
