@@ -1,0 +1,5 @@
+[asphalt.components]
+remote_terminals = txl_remote_terminals.components:RemoteTerminalsComponent
+
+[txl.components]
+remote_terminals = txl_remote_terminals.components:RemoteTerminalsComponent
