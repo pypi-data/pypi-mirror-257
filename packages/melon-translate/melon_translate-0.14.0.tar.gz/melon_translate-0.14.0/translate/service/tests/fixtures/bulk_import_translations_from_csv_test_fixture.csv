@@ -1,0 +1,11 @@
+language,key,views,context,translation,translation_plural
+
+fr,general_password,translation_center,XXX,L'utilisateur n'existe pas,L'utilisateur n'existe pas
+
+en,general_project_creation,translation_center_frontend,XXX,Project,Projects
+
+fr,admin_open_offers_rejected,"translation_center,translation_center_common",XXX,CSV creation testing,CSV creation testings
+
+en,admin_history,"translation_center,custom",XXX,History,History
+
+de,general_test_performances,translation_center_frontend,XXX,_TESTPerformances_,_TESTDESINFECTION_
