@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: pymldd
+Version: 0.0.1
+Summary: A Python library for solving combinatorial optimization using Multivalued  Decision Diagrams and Machine Learning
+Home-page: https://github.com/AIM-BENMHAMED/pymldd
+Author: Abdelouahed Ben Mhamed
+Author-email: a.benmhamed@intelligentica.net
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# pymldd
+My longest description goes here.
+
+# Installation
+
+Installation instructions go here.
+
+# Usage
+
+Examples here.
+
+# Documentation
+
+Documentation sources here.
+
+# License
+
+My license here.
