@@ -1,0 +1,16 @@
+hdxms_datasets/__init__.py,sha256=QYyaQaA8MHHohWYU5bfMEkg1QNNrLKvlpMk8PkizpCw,601
+hdxms_datasets/__version__.py,sha256=oS7q_SaLYW6LdKSVfg18DWLBKZ6ypP-74R7B2_ybJMs,875
+hdxms_datasets/_version.py,sha256=zBVX2byWL6NrFlwjvahpnvSqDsdtebZW0K9WM_cj20U,411
+hdxms_datasets/datasets.py,sha256=AA63285WVxTPPSsAscIO1mSIxbwiKHLQNonqIHyVpKo,8407
+hdxms_datasets/datavault.py,sha256=_1QBxp7pqOL4b-EUTPdMUlT0BtgIiUAnbTCVzveILRU,5057
+hdxms_datasets/process.py,sha256=1x_9AaibLbi7zyPG4mEPwbOUIGgpgEqUszFj0xmI3GE,4112
+hdxms_datasets/reader.py,sha256=RJ0kF_yCzCy6lf6JkqfT9Sp5bZuoblJpRPC4c90k0E4,1215
+hdxms_datasets/template/CITATION.cff,sha256=8jfykYh_xQKF_sRkAW7YydJT0Pu9CMaebobLQNmLaBM,290
+hdxms_datasets/template/hdx_spec.yaml,sha256=PvWe2i5PzBQOwnJ-J3eGrgz_FDPDmUXPUaUQADvJ9l0,2439
+hdxms_datasets/template/metadata.yaml,sha256=t6X2JKlyFAGpXZABznk5bHzFNzQRdXbD4QYYYoT8M7s,658
+hdxms_datasets/template/data/data_file.csv,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hdxms_datasets-0.1.5.dist-info/METADATA,sha256=2ptrBR_jiPJcv8Je6-sAjF9YO1KNRXvZ1gAQJ4tDFpM,1881
+hdxms_datasets-0.1.5.dist-info/WHEEL,sha256=TJPnKdtrSue7xZ_AVGkp9YXcvDrobsjBds1du3Nx6dc,87
+hdxms_datasets-0.1.5.dist-info/licenses/AUTHORS.rst,sha256=SsZT-X_4zIbmq2hDYIEn0DMBR9-qS-so2L734Cc_FXU,156
+hdxms_datasets-0.1.5.dist-info/licenses/LICENSE,sha256=s-9O91aKZxvUPjgoQ-NR5Nus8i8bwn9KaWLm5lsPWKE,1073
+hdxms_datasets-0.1.5.dist-info/RECORD,,
