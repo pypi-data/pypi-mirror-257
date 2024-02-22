@@ -1,0 +1,9 @@
+click
+pyobjc-framework-Vision
+opencv-python
+pyserde<0.14
+
+[test]
+pre-commit
+pytest
+cogapp
