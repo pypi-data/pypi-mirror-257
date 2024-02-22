@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+daisypy_vis.egg-info/PKG-INFO
+daisypy_vis.egg-info/SOURCES.txt
+daisypy_vis.egg-info/dependency_links.txt
+daisypy_vis.egg-info/requires.txt
+daisypy_vis.egg-info/top_level.txt
