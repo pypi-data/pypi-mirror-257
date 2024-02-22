@@ -1,0 +1,10 @@
+mss
+websockets>=11
+
+[dev]
+black
+sphinx
+sphinx_markdown_builder
+sphinx_autodoc_typehints
+furo
+pygments
