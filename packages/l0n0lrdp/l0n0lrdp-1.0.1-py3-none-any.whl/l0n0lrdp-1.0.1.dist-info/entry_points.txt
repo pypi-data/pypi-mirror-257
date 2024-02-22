@@ -1,0 +1,2 @@
+[console_scripts]
+l0n0lrdp = l0n0lrdp.server:start_server
