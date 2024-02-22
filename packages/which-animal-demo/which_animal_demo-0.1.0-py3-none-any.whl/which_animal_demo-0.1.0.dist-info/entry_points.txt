@@ -1,0 +1,3 @@
+[console_scripts]
+which-animal=which_animal_demo.which_animal:main
+
