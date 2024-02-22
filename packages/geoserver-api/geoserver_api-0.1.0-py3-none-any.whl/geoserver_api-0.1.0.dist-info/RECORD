@@ -1,0 +1,5 @@
+geoserver_api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+geoserver_api/client.py,sha256=4bcw84JyFFLg6s0X2taSTmkyYhEV3PDsHmWfJ2LGVLQ,5692
+geoserver_api-0.1.0.dist-info/METADATA,sha256=ePzY0P4cZKolAur8c1RZ5NkEsmodonJKGLeM1VAEek0,2657
+geoserver_api-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+geoserver_api-0.1.0.dist-info/RECORD,,
