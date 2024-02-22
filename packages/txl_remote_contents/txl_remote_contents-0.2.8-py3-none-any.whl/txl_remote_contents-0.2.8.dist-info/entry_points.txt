@@ -1,0 +1,5 @@
+[asphalt.components]
+remote_contents = txl_remote_contents.components:RemoteContentsComponent
+
+[txl.components]
+remote_contents = txl_remote_contents.components:RemoteContentsComponent
