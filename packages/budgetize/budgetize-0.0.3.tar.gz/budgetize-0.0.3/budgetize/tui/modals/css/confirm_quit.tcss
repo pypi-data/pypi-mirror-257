@@ -1,0 +1,20 @@
+#yes-button #no-button {
+    margin: 0 1;
+}
+
+ConfirmQuit {
+    align: center middle;
+}
+
+#question {
+    margin-top: 3;
+}
+
+#dialog {
+    height: 12;
+    width: 62;
+}
+
+Horizontal {
+    margin-top: 1;
+}

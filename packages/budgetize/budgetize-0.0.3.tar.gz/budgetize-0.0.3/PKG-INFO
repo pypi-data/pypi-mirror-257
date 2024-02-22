@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: budgetize
+Version: 0.0.3
+Summary: A Terminal User Interface (TUI) to create budgets, track your incomes/expenses and manage your finances.
+Project-URL: Homepage, https://github.com/fer-hnndz/budgetize
+Project-URL: Issues, https://github.com/fer-hnndz/budgetize/issues
+Author-email: Jorge Hernández <jfernandohernandez28@gmail.com>
+License-File: LICENSE
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Requires-Dist: arrow
+Requires-Dist: requests
+Requires-Dist: sqlalchemy
+Requires-Dist: textual
+Description-Content-Type: text/markdown
+
+# Budgetize
+A Terminal User Interface (TUI) that allows you to manage your finances.
+
+**✨ Features**
+- Manage various accounts by adding income/expense transactions.
+- Visualize your monthly balance
+- Generate reports of your finances. **(planned to add in the future.)**
+
+# ⚙ Installation
+
+There's plans in the future to distribute Budgetize as compiled binaries.\
+For now, you can install Budgetize from PyPi:
+
+```bash
+pip install budgetize
+budgetize
+```
+
+# 🗺 Roadmap
+You may check the project's roadmap in the open projects.\
+[**Go To Projects**](https://github.com/fer-hnndz/budgetize/projects?query=is%3Aopen)
+
+# Contributing
+
+You may check the contributing guide [here](docs/CONTRIBUTING.md)
+
+# License
+Budgetize uses the [General Public License v3](LICENSE)
+
+# 🔧 Built With
+- [Textual](https://textual.textualize.io/) - TUI framework
+- [SQLAlchemy](https://www.sqlalchemy.org/) - ORM toolkit to store user's data
