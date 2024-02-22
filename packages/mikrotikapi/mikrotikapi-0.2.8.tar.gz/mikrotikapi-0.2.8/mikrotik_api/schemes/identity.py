@@ -1,0 +1,1 @@
+from pydantic import BaseModel, Fieldclass IdentityScheme(BaseModel):    name: str    @staticmethod    def api_patch():        return "/rest/system/identity"    class Config:        populate_by_name = True
