@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "pvv"
+version = "0.1.0"
+description = "Minimal Python decorator to enforce type validation from type hints"
+authors = ["mianfg <hello@mianfg.me>"]
+readme = "README.md"
+license = "MIT"
+repository = "https://github.com/mianfg/pvv"
+documentation = "https://github.com/mianfg/pvv/README.md"
+keywords = ["typing", "validator", "decorator", "validate"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    
+    "Intended Audience :: Developers",
+    "Intended Audience :: Information Technology",
+    "Intended Audience :: System Administrators",
+    "Programming Language :: Python",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
