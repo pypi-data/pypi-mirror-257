@@ -1,0 +1,5 @@
+[console_scripts]
+compare-page-xml-texts = pero_ocr.user_scripts.compare_page_xml_texts:main
+merge-ocr-results = pero_ocr.user_scripts.merge_ocr_results:main
+parse-folder = pero_ocr.user_scripts.parse_folder:main
+select-embed-id = pero_ocr.user_scripts.select_embed_id:main
