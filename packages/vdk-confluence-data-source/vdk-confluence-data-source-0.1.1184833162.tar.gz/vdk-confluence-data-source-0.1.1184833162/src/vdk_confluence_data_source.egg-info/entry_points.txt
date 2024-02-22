@@ -1,0 +1,2 @@
+[vdk.plugin.run]
+vdk-confluence-data-source = vdk.plugin.confluence_data_source.plugin_entry

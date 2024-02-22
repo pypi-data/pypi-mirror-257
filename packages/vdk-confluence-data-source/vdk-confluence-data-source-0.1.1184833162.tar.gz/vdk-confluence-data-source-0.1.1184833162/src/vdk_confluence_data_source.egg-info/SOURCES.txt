@@ -1,0 +1,11 @@
+README.md
+setup.py
+src/vdk/plugin/confluence_data_source/data_source.py
+src/vdk/plugin/confluence_data_source/plugin_entry.py
+src/vdk_confluence_data_source.egg-info/PKG-INFO
+src/vdk_confluence_data_source.egg-info/SOURCES.txt
+src/vdk_confluence_data_source.egg-info/dependency_links.txt
+src/vdk_confluence_data_source.egg-info/entry_points.txt
+src/vdk_confluence_data_source.egg-info/requires.txt
+src/vdk_confluence_data_source.egg-info/top_level.txt
+tests/test_ingest_confluence_data_source_plugin.py
