@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>录屏</title>
+  </head>
+  <body>
+    <div>
+      <label>我的ID</label>
+      <input type="number" id="my_id" value="0" readonly />
+    </div>
+    <ol id="id_list"></ol>
+    <div>
+      <video id="video-desktop" controls width="100%"></video>
+    </div>
+  </body>
+
+  <script>
+    let signal_socket = new WebSocket("ws://" + window.location.host + "/ws");
+    signal_socket.onopen = () => {
+      console.log("连接成功");
+    };
+    let on_msg_fns = new Set();
+    signal_socket.onmessage = (e) => {
+      for (const fn of on_msg_fns) {
+        fn(e);
+      }
+    };
+    signal_socket.onclose = () => {};
+    async function wait_msg(ret_type) {
+      let msg_resolve;
+      function on_msg(e) {
+        let ret_msg = JSON.parse(e.data);
+        switch (ret_msg.type) {
+          case ret_type:
+            msg_resolve(ret_msg);
+            break;
+        }
+      }
+      on_msg_fns.add(on_msg);
+      let ret_msg = await new Promise((resolve, reject) => {
+        msg_resolve = resolve;
+      });
+      on_msg_fns.delete(on_msg);
+      return ret_msg;
+    }
+    let send_msg = (send_msg) => {
+      signal_socket.send(JSON.stringify(send_msg));
+    };
+
+    async function wait_forever(ret_type, fn) {
+      while (true) {
+        let msg = await wait_msg(ret_type);
+        await fn(msg);
+      }
+    }
+  </script>
+  <script>
+    function makeRTCPeerConnection() {
+      const configuration = {};
+      const peerConnection = new RTCPeerConnection(configuration);
+      return peerConnection;
+    }
+
+    function create_candidate_promise(peerConnection) {
+      let candidate_resolve;
+      peerConnection.onicecandidate = (e) => candidate_resolve(e.candidate);
+      let candidate_promise = new Promise((resolve) => {
+        candidate_resolve = resolve;
+      });
+      return candidate_promise;
+    }
+
+    function configure_vedio(peerConnection) {
+      let video = document.getElementById("video-desktop");
+      let video_stream = new MediaStream();
+      video.srcObject = video_stream;
+      peerConnection.ontrack = (e) => {
+        video_stream.addTrack(e.track);
+      };
+      video.play();
+    }
+  </script>
+  <script>
+    let my_id = null;
+    let target_id = null;
+    function get_target_id() {
+      return Number(target_id);
+    }
+    function set_target_id(id) {
+      target_id = id;
+    }
+
+    wait_msg("id").then((msg) => {
+      my_id = msg.id;
+      document.getElementById("my_id").value = msg.id;
+      send_msg = (send_msg, broadcast = false) => {
+        send_msg.from = my_id;
+        if (!broadcast) {
+          send_msg.target_id = get_target_id();
+        } else {
+          send_msg.target_id = -1;
+        }
+        signal_socket.send(JSON.stringify(send_msg));
+      };
+    });
+
+    let ids = [];
+    let video_peers = {};
+    function update_video_peers() {
+      let remove_list = [];
+      for (const key in video_peers) {
+        if (ids.indexOf(Number(key)) == -1) {
+          remove_list.push(key);
+        }
+      }
+      for (const key of remove_list) {
+        peer = video_peers[key];
+        peer.close();
+        delete video_peers[key];
+        console.log("删除", key);
+      }
+    }
+
+    function update_id_list() {
+      let id_list = document.getElementById("id_list");
+      id_list.innerHTML = "";
+      for (const id of ids) {
+        if (id == my_id) {
+          continue;
+        }
+        let li = document.createElement("li");
+        let id_element = document.createElement("button");
+        id_element.innerText = "点击观看" + String(id) + "号目标";
+        id_element.onclick = (e) => {
+          set_target_id(id);
+          call_display("call_display");
+        };
+        li.appendChild(id_element);
+        id_list.appendChild(li);
+      }
+    }
+
+    wait_forever("id_list", async (msg) => {
+      ids = msg.ids;
+      update_video_peers();
+      update_id_list();
+    });
+
+    async function offer_video(msg, stream) {
+      set_target_id(msg.from);
+      let peerConnection = makeRTCPeerConnection();
+      video_peers[msg.from] = peerConnection;
+      let candidate_promise = create_candidate_promise(peerConnection);
+      stream.getTracks().forEach((track) => {
+        peerConnection.addTrack(track);
+      });
+      // 创建offer
+      const offer = await peerConnection.createOffer();
+      // 配置LocalDescription
+      await peerConnection.setLocalDescription(offer);
+      // 发送offer, 等待对方应答
+      send_msg({ type: "call_display_ret", offer });
+      let answer_msg = await wait_msg("answer");
+      console.log(answer_msg);
+      // 获取目标user
+      let target_user = answer_msg.user;
+      // 配置RemoteDescription
+      await peerConnection.setRemoteDescription(answer_msg.answer);
+      // 从coturn 获取 candidate
+      let candidate = await candidate_promise;
+      console.log(candidate);
+      // 发送candidate， 等待目标candidate
+      send_msg({ type: "candidate", candidate });
+      let target_candidate = await wait_msg("candidate");
+      await peerConnection.addIceCandidate(target_candidate.candidate);
+    }
+
+    let display_video = null;
+    wait_forever("call_display", async (msg) => {
+      let pre_peer = video_peers[msg.from]
+      if(pre_peer){
+        pre_peer.close()
+        delete video_peers[msg.from]
+      }
+
+      if (display_video == null) {
+        display_video = await navigator.mediaDevices.getDisplayMedia({
+          video: {
+            frameRate: {
+              ideal: 60,
+              max: 120,
+            },
+          },
+          audio: true,
+        });
+      }
+      await offer_video(msg, display_video);
+    });
+
+    async function call_display(media_type) {
+      send_msg({ type: media_type });
+      let call_display_ret = await wait_msg("call_display_ret");
+      set_target_id(call_display_ret.from);
+      let peerConnection = makeRTCPeerConnection();
+      let candidate_promise = create_candidate_promise(peerConnection);
+      configure_vedio(peerConnection);
+      // 配置RemoteDescription
+      await peerConnection.setRemoteDescription(call_display_ret.offer);
+      // 创建应答answer
+      const answer = await peerConnection.createAnswer();
+      // 配置LocalDescription
+      await peerConnection.setLocalDescription(answer);
+      // 发送应答，并等待目标candidate
+      send_msg({ type: "answer", answer });
+      let target_candidate = await wait_msg("candidate");
+      // 配置candidate
+      await peerConnection.addIceCandidate(target_candidate.candidate);
+      // 从coturn 获取 candidate
+      let candidate = await candidate_promise;
+      send_msg({ type: "candidate", candidate });
+    }
+  </script>
+</html>
