@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: laravel_queue
+Version: 0.0.2
+Summary: Reads from a Laravel queue
+Author-email: 2NDNATURE <info@2ndnaturewater.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: phpserialize
+Description-Content-Type: text/markdown
+
+# Laravel Queue Reading for Python
