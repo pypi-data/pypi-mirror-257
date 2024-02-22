@@ -1,0 +1,9 @@
+LICENSE.text
+README.md
+pyproject.toml
+src/NNEngine.egg-info/PKG-INFO
+src/NNEngine.egg-info/SOURCES.txt
+src/NNEngine.egg-info/dependency_links.txt
+src/NNEngine.egg-info/top_level.txt
+src/nnengine/Debug.py
+src/nnengine/__init__.py
