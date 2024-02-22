@@ -1,0 +1,11 @@
+bird_python/__init__.py,sha256=mLtRypBYzp0HjLM4JGaxtKj523FMew5xWhVMwZL3NTg,39
+bird_python/base.py,sha256=dZChOW4U0iCpzStdSDCX4duX_QGRY7SsmUZA2deetDE,276
+bird_python/client.py,sha256=y9ioarVfKFPNCBQBK0drQzukoNbygOVfeNHq4dPgUwo,5092
+bird_python/error.py,sha256=V4ufnbDdTh82rBq0rRZNgvdpe_xHAQDIobnfPNt-qeo,530
+bird_python/exceptions.py,sha256=r_KN8MAIDkLV8J0LU4cvdWKAsVAnTpySrmzsKFIOypE,360
+bird_python/http_client.py,sha256=xhQihgIXEoqEb778syW_M1YgdSIjajKzV1JEss2jhdU,1942
+bird_python/serde.py,sha256=tMlh91zoX5AKPiKhR1bE4xrTbv8jSfBs_JWCGZ2yFUw,242
+bird_python-0.1.2.dist-info/LICENSE,sha256=o_PuvwySWoxWmQI1-hv9VQF5uTB2LcAxFhcyapk3J8M,1086
+bird_python-0.1.2.dist-info/METADATA,sha256=Qm2Oazl4BrPScL-QFiAILlxuR0U4Mj-jDLVs9fcjlkI,5814
+bird_python-0.1.2.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+bird_python-0.1.2.dist-info/RECORD,,
