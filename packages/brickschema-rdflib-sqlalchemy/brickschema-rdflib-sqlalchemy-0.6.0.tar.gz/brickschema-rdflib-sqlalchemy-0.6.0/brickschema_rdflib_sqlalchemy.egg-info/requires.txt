@@ -1,0 +1,4 @@
+alembic>=0.8.8
+rdflib<8,>=6
+six>=1.10.0
+SQLAlchemy>=2.0.23
