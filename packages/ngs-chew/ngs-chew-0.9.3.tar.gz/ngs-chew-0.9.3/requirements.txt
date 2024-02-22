@@ -1,0 +1,12 @@
+attrs
+cattrs
+click
+logzero
+numpy
+pandas
+plotly
+pyarrow
+pysam
+scipy
+tqdm
+vcfpy
