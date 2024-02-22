@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: socaity
+Version: 0.0.0
+Summary: Interface for hosted AI models. Generative AI: text2voice, voice2voice, face2face, etc.Supports local host and remote endpoints.
+Author: SocAIty
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: tqdm
+Requires-Dist: librosa
+Requires-Dist: soundfile
+
