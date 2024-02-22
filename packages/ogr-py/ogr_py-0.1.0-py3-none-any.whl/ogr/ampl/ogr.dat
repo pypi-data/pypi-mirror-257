@@ -1,0 +1,3 @@
+# Specify the order and an upper bound for ogr.
+param order := 4;
+param upper_bound := 100;

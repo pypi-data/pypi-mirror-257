@@ -1,0 +1,7 @@
+[console_scripts]
+gen=run:generate_rulers
+ogr=ogr_main:main
+ruler=ogr.exploration:main
+solve=ogr.scripts:solve
+solve_demo=run:solve
+
