@@ -1,0 +1,17 @@
+keras>=3
+numpy
+scipy
+packaging
+
+[recommended]
+grid2op
+pandas
+tqdm
+scikit-learn
+tensorflow
+
+[test]
+grid2op
+pandas
+tqdm
+scikit-learn
