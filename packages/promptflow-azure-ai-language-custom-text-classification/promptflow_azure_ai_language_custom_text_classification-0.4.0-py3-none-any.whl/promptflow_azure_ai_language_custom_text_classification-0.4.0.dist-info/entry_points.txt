@@ -1,0 +1,3 @@
+[package_tools]
+custom_text_classification=custom_text_classification_tool.tools.utils:list_package_tools
+
