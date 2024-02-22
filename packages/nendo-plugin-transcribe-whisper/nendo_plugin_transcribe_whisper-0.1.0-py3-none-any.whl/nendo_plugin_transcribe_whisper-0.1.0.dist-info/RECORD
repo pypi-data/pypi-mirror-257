@@ -1,0 +1,7 @@
+nendo_plugin_transcribe_whisper/__init__.py,sha256=ZGSgYzyRcUl9jzdnTdL73Gibc4wfK-vB0WcNbTaoRrQ,213
+nendo_plugin_transcribe_whisper/config.py,sha256=qPOq-XLfg0XqQzn6QhD3Kx6gdhY0KUNnTEHlwQKOoEc,511
+nendo_plugin_transcribe_whisper/plugin.py,sha256=lgwBoRYodi23yVFrosMg4kMlqM2gn7n5z9VBQh7XTqo,3795
+nendo_plugin_transcribe_whisper-0.1.0.dist-info/LICENSE,sha256=WFtPUEsCEmStk9TDnodbMyCpU205jkPFH1wxFD9LIKk,1066
+nendo_plugin_transcribe_whisper-0.1.0.dist-info/METADATA,sha256=SZ8O1VCD-cR4RZGPIp9ISXBj7EYybJODenUagU1vtR8,3057
+nendo_plugin_transcribe_whisper-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+nendo_plugin_transcribe_whisper-0.1.0.dist-info/RECORD,,
