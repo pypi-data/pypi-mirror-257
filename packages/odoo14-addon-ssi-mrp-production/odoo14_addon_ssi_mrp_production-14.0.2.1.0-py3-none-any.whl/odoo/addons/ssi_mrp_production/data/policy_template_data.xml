@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2024 OpenSynergy Indonesia
+     Copyright 2024 PT. Simetri Sinergi Indonesia
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl-3.0-standalone.html). -->
+<odoo>
+<data noupdate="1">
+<record id="policy_template_mrp_production" model="policy.template">
+    <field name="name">Standard</field>
+    <field name="model_id" ref="mrp.model_mrp_production" />
+    <field
+                name="state_field_id"
+                search="[('model_id.model','=','mrp.production'),('name','=','state')]"
+            />
+    <field name="sequence" eval="100" />
+    <field name="python_code">result=True</field>
+</record>
+<record id="policy_template_mrp_production_validate" model="policy.template_detail">
+    <field name="template_id" ref="policy_template_mrp_production" />
+    <field
+                name="field_id"
+                search="[('model_id.model','=','mrp.production'),('name','=','validate_ok')]"
+            />
+    <field name="restrict_state" eval="1" />
+    <field
+                name="state_ids"
+                search="[('field_id.model_id.model','=','mrp.production'),('value','in',['confirmed', 'progress'])]"
+            />
+    <field name="restrict_user" eval="1" />
+    <field name="computation_method">use_group</field>
+    <field
+                name="group_ids"
+                eval="[(6,0,[ref('ssi_mrp_production.manufacture_order_validator_group')])]"
+            />
+    <field name="restrict_additional" eval="1" />
+    <field name="additional_python_code">result = document.qty_producing</field>
+</record>
+<record id="policy_template_mrp_production_mark_done" model="policy.template_detail">
+    <field name="template_id" ref="policy_template_mrp_production" />
+    <field
+                name="field_id"
+                search="[('model_id.model','=','mrp.production'),('name','=','mark_done_ok')]"
+            />
+    <field name="restrict_state" eval="0" />
+    <field name="state_ids" eval="[(6,0,[])]" />
+    <field name="restrict_user" eval="1" />
+    <field name="computation_method">use_group</field>
+    <field
+                name="group_ids"
+                eval="[(6,0,[ref('ssi_mrp_production.manufacture_order_user_group')])]"
+            />
+    <field name="restrict_additional" eval="1" />
+    <field
+                name="additional_python_code"
+            >result = (document.state in ('confirmed', 'progress') and document.qty_producing) or document.state == 'to_close'</field>
+</record>
+<record id="policy_template_mrp_production_confirm" model="policy.template_detail">
+    <field name="template_id" ref="policy_template_mrp_production" />
+    <field
+                name="field_id"
+                search="[('model_id.model','=','mrp.production'),('name','=','confirm_ok')]"
+            />
+    <field name="restrict_state" eval="1" />
+    <field
+                name="state_ids"
+                search="[('field_id.model_id.model','=','mrp.production'),('value','in',['draft'])]"
+            />
+    <field name="restrict_user" eval="1" />
+    <field name="computation_method">use_group</field>
+    <field
+                name="group_ids"
+                eval="[(6,0,[ref('ssi_mrp_production.manufacture_order_validator_group')])]"
+            />
+    <field name="restrict_additional" eval="0" />
+    <field name="additional_python_code">result = True</field>
+</record>
+<record id="policy_template_mrp_production_plan" model="policy.template_detail">
+    <field name="template_id" ref="policy_template_mrp_production" />
+    <field
+                name="field_id"
+                search="[('model_id.model','=','mrp.production'),('name','=','plan_ok')]"
+            />
+    <field name="restrict_state" eval="1" />
+    <field
+                name="state_ids"
+                search="[('field_id.model_id.model','=','mrp.production'),('value','in',['confirmed', 'progress', 'to_close'])]"
+            />
+    <field name="restrict_user" eval="1" />
+    <field name="computation_method">use_group</field>
+    <field
+                name="group_ids"
+                eval="[(6,0,[ref('ssi_mrp_production.manufacture_order_user_group')])]"
+            />
+    <field name="restrict_additional" eval="1" />
+    <field
+                name="additional_python_code"
+            >result = document.workorder_ids and not document.is_planned</field>
+</record>
+<record id="policy_template_mrp_production_unplan" model="policy.template_detail">
+    <field name="template_id" ref="policy_template_mrp_production" />
+    <field
+                name="field_id"
+                search="[('model_id.model','=','mrp.production'),('name','=','unplan_ok')]"
+            />
+    <field name="restrict_state" eval="0" />
+    <field name="state_ids" eval="[(6,0,[])]" />
+    <field name="restrict_user" eval="1" />
+    <field name="computation_method">use_group</field>
+    <field
+                name="group_ids"
+                eval="[(6,0,[ref('ssi_mrp_production.manufacture_order_user_group')])]"
+            />
+    <field name="restrict_additional" eval="1" />
+    <field name="additional_python_code">result = document.is_planned</field>
+</record>
+<record
+            id="policy_template_mrp_production_check_availability"
+            model="policy.template_detail"
+        >
+    <field name="template_id" ref="policy_template_mrp_production" />
+    <field
+                name="field_id"
+                search="[('model_id.model','=','mrp.production'),('name','=','check_availability_ok')]"
+            />
+    <field name="restrict_state" eval="1" />
+    <field
+                name="state_ids"
+                search="[('field_id.model_id.model','=','mrp.production'),('value','in',['confirmed', 'progress', 'to_close'])]"
+            />
+    <field name="restrict_user" eval="1" />
+    <field name="computation_method">use_group</field>
+    <field
+                name="group_ids"
+                eval="[(6,0,[ref('ssi_mrp_production.manufacture_order_user_group')])]"
+            />
+    <field name="restrict_additional" eval="1" />
+    <field name="additional_python_code">result = document.reserve_visible</field>
+</record>
+<record id="policy_template_mrp_production_unreserve" model="policy.template_detail">
+    <field name="template_id" ref="policy_template_mrp_production" />
+    <field
+                name="field_id"
+                search="[('model_id.model','=','mrp.production'),('name','=','unreserve_ok')]"
+            />
+    <field name="restrict_state" eval="0" />
+    <field name="state_ids" eval="[(6,0,[])]" />
+    <field name="restrict_user" eval="1" />
+    <field name="computation_method">use_group</field>
+    <field
+                name="group_ids"
+                eval="[(6,0,[ref('ssi_mrp_production.manufacture_order_user_group')])]"
+            />
+    <field name="restrict_additional" eval="1" />
+    <field name="additional_python_code">result = document.unreserve_visible</field>
+</record>
+<record id="policy_template_mrp_production_scrap" model="policy.template_detail">
+    <field name="template_id" ref="policy_template_mrp_production" />
+    <field
+                name="field_id"
+                search="[('model_id.model','=','mrp.production'),('name','=','scrap_ok')]"
+            />
+    <field name="restrict_state" eval="1" />
+    <field
+                name="state_ids"
+                search="[('field_id.model_id.model','=','mrp.production'),('value','in',['confirmed', 'progress', 'to_close', 'done'])]"
+            />
+    <field name="restrict_user" eval="1" />
+    <field name="computation_method">use_group</field>
+    <field
+                name="group_ids"
+                eval="[(6,0,[ref('ssi_mrp_production.manufacture_order_user_group')])]"
+            />
+    <field name="restrict_additional" eval="0" />
+    <field name="additional_python_code">result = True</field>
+</record>
+<record id="policy_template_mrp_production_lock" model="policy.template_detail">
+    <field name="template_id" ref="policy_template_mrp_production" />
+    <field
+                name="field_id"
+                search="[('model_id.model','=','mrp.production'),('name','=','lock_ok')]"
+            />
+    <field name="restrict_state" eval="0" />
+    <field name="state_ids" eval="[(6,0,[])]" />
+    <field name="restrict_user" eval="1" />
+    <field name="computation_method">use_group</field>
+    <field
+                name="group_ids"
+                eval="[(6,0,[ref('ssi_mrp_production.manufacture_order_user_group')])]"
+            />
+    <field name="restrict_additional" eval="1" />
+    <field
+                name="additional_python_code"
+            >result = document.show_lock and not document.is_locked</field>
+</record>
+<record id="policy_template_mrp_production_unlock" model="policy.template_detail">
+    <field name="template_id" ref="policy_template_mrp_production" />
+    <field
+                name="field_id"
+                search="[('model_id.model','=','mrp.production'),('name','=','unlock_ok')]"
+            />
+    <field name="restrict_state" eval="0" />
+    <field name="state_ids" eval="[(6,0,[])]" />
+    <field name="restrict_user" eval="1" />
+    <field name="computation_method">use_group</field>
+    <field
+                name="group_ids"
+                eval="[(6,0,[ref('ssi_mrp_production.manufacture_order_user_group')])]"
+            />
+    <field name="restrict_additional" eval="1" />
+    <field
+                name="additional_python_code"
+            >result = document.show_lock and document.is_locked</field>
+</record>
+<record id="policy_template_mrp_production_cancel" model="policy.template_detail">
+    <field name="template_id" ref="policy_template_mrp_production" />
+    <field
+                name="field_id"
+                search="[('model_id.model','=','mrp.production'),('name','=','cancel_ok')]"
+            />
+    <field name="restrict_state" eval="1" />
+    <field
+                name="state_ids"
+                search="[('field_id.model_id.model','=','mrp.production'),('value','in',['confirmed', 'progress', 'to_close', 'done'])]"
+            />
+    <field name="restrict_user" eval="1" />
+    <field name="computation_method">use_group</field>
+    <field
+                name="group_ids"
+                eval="[(6,0,[ref('ssi_mrp_production.manufacture_order_validator_group')])]"
+            />
+    <field name="restrict_additional" eval="1" />
+    <field name="additional_python_code">result = False
+if not document.confirm_cancel:
+    result = True</field>
+</record>
+<record
+            id="policy_template_mrp_production_cancel_confirm"
+            model="policy.template_detail"
+        >
+    <field name="template_id" ref="policy_template_mrp_production" />
+    <field
+                name="field_id"
+                search="[('model_id.model','=','mrp.production'),('name','=','cancel_confirm_ok')]"
+            />
+    <field name="restrict_state" eval="1" />
+    <field
+                name="state_ids"
+                search="[('field_id.model_id.model','=','mrp.production'),('value','in',['confirmed', 'progress', 'to_close', 'done'])]"
+            />
+    <field name="restrict_user" eval="1" />
+    <field name="computation_method">use_group</field>
+    <field
+                name="group_ids"
+                eval="[(6,0,[ref('ssi_mrp_production.manufacture_order_validator_group')])]"
+            />
+    <field name="restrict_additional" eval="1" />
+    <field name="additional_python_code">result = False
+if document.confirm_cancel:
+    result = True</field>
+</record>
+<record id="policy_template_mrp_production_unbulid" model="policy.template_detail">
+    <field name="template_id" ref="policy_template_mrp_production" />
+    <field
+                name="field_id"
+                search="[('model_id.model','=','mrp.production'),('name','=','unbuild_ok')]"
+            />
+    <field name="restrict_state" eval="1" />
+    <field
+                name="state_ids"
+                search="[('field_id.model_id.model','=','mrp.production'),('value','in',['done'])]"
+            />
+    <field name="restrict_user" eval="1" />
+    <field name="computation_method">use_group</field>
+    <field
+                name="group_ids"
+                eval="[(6,0,[ref('ssi_mrp_production.manufacture_order_user_group')])]"
+            />
+    <field name="restrict_additional" eval="0" />
+    <field name="additional_python_code">result = True</field>
+</record>
+</data>
+</odoo>

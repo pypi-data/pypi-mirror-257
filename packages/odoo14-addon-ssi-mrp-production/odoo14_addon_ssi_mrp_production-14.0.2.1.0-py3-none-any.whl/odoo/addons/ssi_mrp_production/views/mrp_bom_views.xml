@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2023 OpenSynergy Indonesia
+     Copyright 2023 PT. Simetri Sinergi Indonesia
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+<odoo>
+<record id="mrp.menu_mrp_bom_form_action" model="ir.ui.menu">
+    <field name="parent_id" ref="mrp.menu_mrp_configuration" />
+    <field name="sequence" eval="110" />
+    <field name="groups_id" eval="[(6, 0, [ref('bill_of_material_group')])]" />
+</record>
+</odoo>

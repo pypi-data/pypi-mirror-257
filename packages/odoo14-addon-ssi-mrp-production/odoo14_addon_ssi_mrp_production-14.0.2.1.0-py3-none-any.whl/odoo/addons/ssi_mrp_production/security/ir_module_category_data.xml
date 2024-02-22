@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2022 OpenSynergy Indonesia
+     Copyright 2022 PT. Simetri Sinergi Indonesia
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+<odoo>
+<record id="manufacture_module_category" model="ir.module.category">
+    <field name="name">Manufacture</field>
+</record>
+
+<record id="manufacture_workflow_module_category" model="ir.module.category">
+    <field name="name">Manufacture - Workflow</field>
+    <field name="parent_id" ref="manufacture_module_category" />
+</record>
+
+<record id="manufacture_data_ownership_module_category" model="ir.module.category">
+    <field name="name">Manufacture - Data Ownership</field>
+    <field name="parent_id" ref="manufacture_module_category" />
+</record>
+
+
+<record id="manufacture_configurator_module_category" model="ir.module.category">
+    <field name="name">Manufacture - Configurator</field>
+    <field name="parent_id" ref="manufacture_module_category" />
+</record>
+
+<record id="manufacture_wizard_module_category" model="ir.module.category">
+    <field name="name">Manufacture - Wizard</field>
+    <field name="parent_id" ref="manufacture_module_category" />
+</record>
+
+<record id="manufacture_report_module_category" model="ir.module.category">
+    <field name="name">Manufacture - Report</field>
+    <field name="parent_id" ref="manufacture_module_category" />
+</record>
+
+<!-- Manufacture Order-->
+<record id="manufacture_order_module_category" model="ir.module.category">
+    <field name="name">Manufacture Order</field>
+    <field name="parent_id" ref="manufacture_workflow_module_category" />
+</record>
+
+<record
+        id="manufacture_order_data_ownership_module_category"
+        model="ir.module.category"
+    >
+    <field name="name">Manufacture Order</field>
+    <field name="parent_id" ref="manufacture_data_ownership_module_category" />
+</record>
+
+<!-- Unbuild Order-->
+<record id="unbuild_order_module_category" model="ir.module.category">
+    <field name="name">Unbuild Order</field>
+    <field name="parent_id" ref="manufacture_workflow_module_category" />
+</record>
+
+<record id="unbuild_order_data_ownership_module_category" model="ir.module.category">
+    <field name="name">Unbuild Order</field>
+    <field name="parent_id" ref="manufacture_data_ownership_module_category" />
+</record>
+</odoo>
