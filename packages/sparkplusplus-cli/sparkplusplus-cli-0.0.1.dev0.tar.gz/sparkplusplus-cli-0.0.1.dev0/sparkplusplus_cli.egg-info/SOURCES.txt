@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+sparkplusplus_cli.egg-info/PKG-INFO
+sparkplusplus_cli.egg-info/SOURCES.txt
+sparkplusplus_cli.egg-info/dependency_links.txt
+sparkplusplus_cli.egg-info/entry_points.txt
+sparkplusplus_cli.egg-info/requires.txt
+sparkplusplus_cli.egg-info/top_level.txt
+spp/__init__.py
+spp/cli.py
+spp/version.py
+tests/test_cli.py
+tests/test_example.py
