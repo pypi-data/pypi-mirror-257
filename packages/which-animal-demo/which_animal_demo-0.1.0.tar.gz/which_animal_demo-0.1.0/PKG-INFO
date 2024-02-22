@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: which-animal-demo
+Version: 0.1.0
+Summary: 
+Author: the
+Author-email: the@illumina.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: lunardate (>=0.1.5,<0.2.0)
+Description-Content-Type: text/markdown
+
+# Which Animal?
+Find out what's your animal on a lunar calendar!
+`which-animal` is a simple CLI tool written in Python.
+
+## Installation
+```shell
+pip install which-animal
+```
+
+## Usage
+Type `which-animal` followed by your birthday in a `mm-yy-dd` format:
+```shell
+$ which-animal 1994-05-06
+>>> Dog
+```
+

@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "which-animal-demo"
+version = "0.1.0"
+description = ""
+authors = ["the <the@illumina.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+lunardate = "^0.1.5"
+
+[tool.poetry.scripts]
+which-animal = "which_animal_demo.which_animal:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
