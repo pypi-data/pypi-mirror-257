@@ -1,0 +1,12 @@
+football_game/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+football_game/__main__.py,sha256=aPfbrLHRmI-5SDFo2WqRGcvJKdThzPaNNxoCS3P0DSY,2238
+football_game/schemas/__init__.py,sha256=FphVB6Dq2iJni-xDz0pfSub8BRVA2XfHaMYIbgaYwaQ,515
+football_game/schemas/_player.py,sha256=2g6MBn-8wzzvVALWQ1uga2vnsgHM7IxJhDMx7Rzam10,1958
+football_game/schemas/_team.py,sha256=LUS0H-wLdtg9B8iq8BlnhSrvYNfbtt7GA40bHPECIMQ,1578
+football_game/schemas/_trainer.py,sha256=RCI-LvBQLp_WSDoP870Xvtxioan7HtoCWmOpWWV133M,1731
+football_game/schemas/players.csv,sha256=h5gOi2HU23EgceCMmtLEQ5AqgaIDKpszh2xDD3sbKCg,338
+football_game/schemas/teams.csv,sha256=PqN1Pv79RwPaaoD5UCoRny8UEVUXyNs61au3OZbB3p0,75
+football_game/schemas/trainers.csv,sha256=fzHJELu4R7ttL1I6wBWp-BAtsQsqJCf10mEY6W6VVSM,91
+football_game-0.1.6.dist-info/METADATA,sha256=IpEiJ0zEAxMJ4NUzM_A63jKNb5_ww3Ny5z0wLSCOTTc,662
+football_game-0.1.6.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+football_game-0.1.6.dist-info/RECORD,,
