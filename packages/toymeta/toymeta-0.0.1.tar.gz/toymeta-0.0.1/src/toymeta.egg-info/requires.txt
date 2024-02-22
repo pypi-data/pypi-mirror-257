@@ -1,0 +1,6 @@
+gymnasium>=0.29.0
+
+[dev]
+ruff>=0.1.6
+pre-commit>=3.3.3
+pyright>=1.1.347

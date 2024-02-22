@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/toymeta/__init__.py
+src/toymeta/dark_key_door.py
+src/toymeta/dark_room.py
+src/toymeta.egg-info/PKG-INFO
+src/toymeta.egg-info/SOURCES.txt
+src/toymeta.egg-info/dependency_links.txt
+src/toymeta.egg-info/requires.txt
+src/toymeta.egg-info/top_level.txt
