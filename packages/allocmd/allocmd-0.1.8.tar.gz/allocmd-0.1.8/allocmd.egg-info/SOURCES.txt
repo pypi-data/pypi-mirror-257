@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+allocmd.egg-info/PKG-INFO
+allocmd.egg-info/SOURCES.txt
+allocmd.egg-info/dependency_links.txt
+allocmd.egg-info/entry_points.txt
+allocmd.egg-info/requires.txt
+allocmd.egg-info/top_level.txt
