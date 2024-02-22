@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: NNEngine
+Version: 0.0.6
+Summary: The NNEngine is an advanced visual processing model that offers a comprehensive development environment for creating visually immersive experiences, the NNEngine has been extensively trained to generate high-quality humanoid graphics with remarkable realism.
+Author-email: Jay Singh <neuronode.data@gmail.com>
+Project-URL: WebApp, https://nn-engine.web.app/
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.text
+
