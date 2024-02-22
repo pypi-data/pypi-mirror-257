@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: HrushikeshPatilSum
+Version: 0.0.1
+Summary: A very basic package with Sum function
+Home-page: 
+Author: Hrushikesh Patil
+Author-email: hrushi6161@gmail.com
+License: MIT
+Keywords: sum
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE.txt
+
+This is very Simple package containing sum funciton.
+
+Change Log
+============
+0.0.1   (21/02/2024)
+----------------------
+-First Release
