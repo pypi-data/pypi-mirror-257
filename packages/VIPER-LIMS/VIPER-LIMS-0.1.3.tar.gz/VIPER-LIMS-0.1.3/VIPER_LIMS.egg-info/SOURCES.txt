@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+VIPER_LIMS/VIPER_Installer.py
+VIPER_LIMS/__init__.py
+VIPER_LIMS.egg-info/PKG-INFO
+VIPER_LIMS.egg-info/SOURCES.txt
+VIPER_LIMS.egg-info/dependency_links.txt
+VIPER_LIMS.egg-info/top_level.txt
