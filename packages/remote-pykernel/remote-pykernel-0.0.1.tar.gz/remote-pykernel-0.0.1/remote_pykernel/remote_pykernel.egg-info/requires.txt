@@ -1,0 +1,4 @@
+jupyterlab
+ipykernel
+tornado
+remote_ipykernel_interrupt

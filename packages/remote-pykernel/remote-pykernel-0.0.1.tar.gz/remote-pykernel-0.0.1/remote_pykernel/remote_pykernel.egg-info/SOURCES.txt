@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+remote_pykernel/remote_pykernel.egg-info/PKG-INFO
+remote_pykernel/remote_pykernel.egg-info/SOURCES.txt
+remote_pykernel/remote_pykernel.egg-info/dependency_links.txt
+remote_pykernel/remote_pykernel.egg-info/requires.txt
+remote_pykernel/remote_pykernel.egg-info/top_level.txt
