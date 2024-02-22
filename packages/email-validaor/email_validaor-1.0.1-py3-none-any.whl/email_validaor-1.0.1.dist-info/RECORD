@@ -1,0 +1,9 @@
+app/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+app/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+app/application.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+app/email_validator.py,sha256=r0WX0qZG6EVTajx001haAIugaggjZTuyW_EuR8TnVOM,400
+email_validaor-1.0.1.dist-info/METADATA,sha256=tnHm2zuW0oPbUuqTXntJmcs5EKqQGo1InO_p3lL0t3U,466
+email_validaor-1.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+email_validaor-1.0.1.dist-info/entry_points.txt,sha256=3qLRvpirjXMvqSQJsFRTvOwuWK8n5u7a3fFmAp7yYeU,41
+email_validaor-1.0.1.dist-info/top_level.txt,sha256=E422K1txTqfPGH_oBJ7M6SoqGYwphgXgD9JvuuOeKt8,20
+email_validaor-1.0.1.dist-info/RECORD,,
