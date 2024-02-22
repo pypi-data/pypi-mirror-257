@@ -1,0 +1,2 @@
+[console_scripts]
+pymldd-hello = pymldd:hello
