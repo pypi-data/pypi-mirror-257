@@ -1,0 +1,5 @@
+[asphalt.components]
+launcher = txl_launcher.components:LauncherComponent
+
+[txl.components]
+launcher = txl_launcher.components:LauncherComponent
