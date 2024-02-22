@@ -1,0 +1,5 @@
+setup.py
+tradingcornerstone.egg-info/PKG-INFO
+tradingcornerstone.egg-info/SOURCES.txt
+tradingcornerstone.egg-info/dependency_links.txt
+tradingcornerstone.egg-info/top_level.txt
