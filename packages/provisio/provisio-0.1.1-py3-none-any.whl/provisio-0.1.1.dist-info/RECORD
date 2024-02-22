@@ -1,0 +1,7 @@
+provisio/__init__.py,sha256=UtZGD4yOEY2NLEkWE9_ySQ4CRR6d39gpLFzxOk4LAiY,104
+provisio/provisio.py,sha256=xVt7XCw4WSJVWlkHz19RQFJKUT5D2X0oZdZD_6hjq8E,1829
+provisio/provision_logic.py,sha256=m5J87JHhqq-r7kGz2Xtq3OWcCAR1Oeu4R96Srvceroc,13118
+provisio/utils.py,sha256=Cl_WvweeZa9UajL6dRXzuQtvZXmN_xDdtDqsgd51WIc,3405
+provisio-0.1.1.dist-info/METADATA,sha256=usu7egm5oyPyqIQbgrewc2o2woAA7aVleFw-4Cc6fXo,1708
+provisio-0.1.1.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+provisio-0.1.1.dist-info/RECORD,,
