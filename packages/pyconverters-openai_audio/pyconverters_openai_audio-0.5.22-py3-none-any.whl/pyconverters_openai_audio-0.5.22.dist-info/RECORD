@@ -1,0 +1,7 @@
+pyconverters_openai_audio/__init__.py,sha256=ppryFsuKIkCAz2YN28fAxWZLdRt_z-MkL3QmDlqyGqw,51
+pyconverters_openai_audio/openai_audio.py,sha256=E1z51Ahvl286KQYhpHhS5APAYfDG0_6U0ghkrIxFZ2w,8452
+pyconverters_openai_audio/openai_utils.py,sha256=BqgbXpNNZrIxOOGYozJu6DE7jCAp7A_MipmW9XcGlfw,2582
+pyconverters_openai_audio-0.5.22.dist-info/entry_points.txt,sha256=3mL-lrR16ksr7tNOHTQoTE1bymjzOklidpiBPs3mCsE,273
+pyconverters_openai_audio-0.5.22.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+pyconverters_openai_audio-0.5.22.dist-info/METADATA,sha256=4oCp4kncu6H-oB0HUnPglV5CFLirI2sQTo9bMAiub-0,2609
+pyconverters_openai_audio-0.5.22.dist-info/RECORD,,
