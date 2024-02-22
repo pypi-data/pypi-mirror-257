@@ -1,0 +1,3 @@
+[console_scripts]
+nr-ops=nr_ops.main:run
+
