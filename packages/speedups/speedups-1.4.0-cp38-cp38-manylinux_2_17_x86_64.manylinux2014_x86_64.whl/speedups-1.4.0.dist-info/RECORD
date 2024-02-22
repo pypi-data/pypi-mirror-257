@@ -1,0 +1,14 @@
+speedups/psycopg_array.cpython-38-x86_64-linux-gnu.so,sha256=K60uSjAN8maG8p_vZmmD3muMXfvgzdPoD5D8acxihsA,2030616
+speedups/psycopg_array.pyx,sha256=uvKPuiWXKVv_Po2FTK9KgUizcTv2Ce7Zisy4MhVXfuw,2053
+speedups/psycopg_array.c,sha256=hCflImUP4ySLmsDvxvYgCCqoNMeKWWQ65TiRTt2Zqz0,1365243
+speedups/hton.pxd,sha256=vRytwOP2ChKrLwKQdcZt1OFQvRJio743YemIDMRtno8,1018
+speedups/psycopg_loaders.py,sha256=8St_nYALeTvQcpIAEkcrUmz5stAL4XmA95w1GIELMgw,2958
+speedups/psycopg_array.pyi,sha256=TUgMa8NaDUcz7vrZAxK0gk3CankxPc5IqlzCUrvSCag,371
+speedups/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+speedups/__about__.py,sha256=DScY-ZA7BnVykYgvdKxKTKMVQ79gPzltWxuYcb4y2dU,445
+speedups/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+speedups/hton.h,sha256=kaAtFF3a8rYTGYf5UKwGnftRuyhOb5RjdnA30L6XV68,4989
+speedups-1.4.0.dist-info/METADATA,sha256=sRdth3gwiQdl1FHV2gZoUdc5JSVCDhdxHtuFLH3qnuQ,3692
+speedups-1.4.0.dist-info/top_level.txt,sha256=1p6Vul_eK-gWPkzn9QqOp-yni8-6AS_mrJTNAmX6Nf0,9
+speedups-1.4.0.dist-info/WHEEL,sha256=zTDqV7OR0em6fvysya0bwC-51Mb7EQ0x5PBJySRF2iQ,148
+speedups-1.4.0.dist-info/RECORD,,
