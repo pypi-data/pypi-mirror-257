@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: cringelord
+Version: 0.1.9
+Summary:     Environment-sensitive configuration management tool that allows you use     the same code with different configurations.      You'll no longer need if-else statements or multiple files (one for each     environment) to get your code working in multiple environments. 
+Project-URL: Documentation, https://cringelord-heerlijkeheer-806eb581859167e3efa6c9df4ab5e4bf17987f.gitlab.io/
+Project-URL: Repository, https://gitlab.com/HeerlijkeHeer/cringelord
+Author-email: Thomas Vanhelden <thomas.vanhelden@cegeka.com>
+License: MIT License
+Requires-Python: >=3.9
+Requires-Dist: bump2version>=1.0.1
+Requires-Dist: click>=8.1.7
+Requires-Dist: mkdocs-git-authors-plugin>=0.7.2
+Requires-Dist: mkdocs-git-revision-date-localized-plugin>=1.2.4
+Requires-Dist: mkdocs-material>=9.5.10
+Requires-Dist: pydantic-yaml>=1.2.1
+Requires-Dist: pydantic>=2.6.1
+Requires-Dist: pyyaml>=6.0.1
+Description-Content-Type: text/markdown
+
+# Cringelord
+
+Coming soon.
