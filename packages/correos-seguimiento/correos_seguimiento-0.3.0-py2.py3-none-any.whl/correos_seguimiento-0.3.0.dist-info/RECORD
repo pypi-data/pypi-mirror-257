@@ -1,0 +1,10 @@
+correos_seguimiento/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+correos_seguimiento/errors.py,sha256=zhVzqEnb6nUNy2LEHyhgNc1GumKWCpw0zCcabyXvRnE,274
+correos_seguimiento/responses/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+correos_seguimiento/responses/shipment.py,sha256=l3NBHfiAA1rXk11BCzMh1eQ2lL5ZVH7ZS6uh-ZscIhs,1102
+correos_seguimiento/services/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+correos_seguimiento/services/shipment.py,sha256=rWYcHhsDHAGAzQrR6dYRR9gWZVs8-iAQVkQUqws-oHs,1298
+correos_seguimiento-0.3.0.dist-info/METADATA,sha256=Xy9krN8NhlADLpaO85_vqXw8PQS6vn9Mp5xTCox8F88,4806
+correos_seguimiento-0.3.0.dist-info/WHEEL,sha256=iYlv5fX357PQyRT2o6tw1bN-YcKFFHKqB_LwHO5wP-g,110
+correos_seguimiento-0.3.0.dist-info/top_level.txt,sha256=wNgqs_SOX2G4hng74qM0y9TZkbiSx7Tf4HWcs4BhFFM,20
+correos_seguimiento-0.3.0.dist-info/RECORD,,
