@@ -1,0 +1,17 @@
+numpy
+opencv-python
+lxml
+lmdb
+levenshtein
+scipy
+numba
+torch>=2.0.1
+torchvision>=0.15.2
+brnolm>=0.3.0
+scikit-learn
+scikit-image
+shapely
+safe-gpu>=1.5.1
+pyamg
+imgaug
+arabic_reshaper
