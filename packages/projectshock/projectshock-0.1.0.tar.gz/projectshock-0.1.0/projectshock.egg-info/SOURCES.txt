@@ -1,0 +1,5 @@
+setup.py
+projectshock.egg-info/PKG-INFO
+projectshock.egg-info/SOURCES.txt
+projectshock.egg-info/dependency_links.txt
+projectshock.egg-info/top_level.txt
