@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "promptflow-azure-ai-language-custom-text-classification"
+version = "0.5.0"
+description = "Use Azure AI Language to generate abstractive summaries of documents."
+authors = ["Federico Rapetti <f.rapetti@reply.it>"]
+readme = "README.md"
+license = "MIT"
+packages = [
+    { include = "custom_text_classification_tool", from = "." },
+    { include = "tests", from = "." }
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+promptflow = "^1.5.0"
+requests = "^2.31.0"
+ruamel-yaml = "^0.18.6"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0.1"
+wheel = "^0.42.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.plugins.package_tools]
+custom_text_classification = "custom_text_classification_tool.tools.utils:list_package_tools"

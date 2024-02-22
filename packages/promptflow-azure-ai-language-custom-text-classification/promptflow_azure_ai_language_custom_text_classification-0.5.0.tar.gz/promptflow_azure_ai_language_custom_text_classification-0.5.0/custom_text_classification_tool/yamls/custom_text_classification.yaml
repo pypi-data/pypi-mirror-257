@@ -1,0 +1,32 @@
+custom_text_classification_tool.tools.custom_text_classification.classify_text:
+  function: classify_text
+  inputs:
+    connection:
+      type:
+      - CustomConnection
+    document:
+      type:
+        - object
+    project_name:
+      type:
+        - string
+    deployment_name:
+      type:
+        - string
+    max_retries:
+      default: 5
+      type:
+        - int
+    max_wait:
+      default: 60
+      type:
+        - int
+    parse_response:
+      default: False
+      type:
+        - bool
+  module: custom_text_classification_tool.tools.custom_text_classification
+  name: Custom Text Classification
+  description: Use Azure AI with a custom text classification model to classify text
+  type: python
+  category: azure_ai_language
