@@ -1,0 +1,43 @@
+# Test config where the settings are represented by a list of key/value pairs.
+
+metadata:
+  author: Thomas Vanhelden
+  company: Cegeka
+
+environment_config:
+  environment1:
+    name: Environment_1
+    description: Environment Number 1
+    aliases:
+      - env1
+      - env_1
+    settings:
+      environment1_int_setting: 12345
+      environment1_str_setting: "environment1_str_value"
+      environment1_list_setting:
+        - 10
+        - "list"
+      environment1_bool_setting: True
+      environment1_float_setting: 1234.5
+      environment1_dict_setting:
+        first_key: first_value
+        second_key: second_value
+      environment1_nested_setting:
+        - nested: list
+          of:
+            dictionary: values
+            with:
+              - another
+              - list
+  environment2:
+    name: environment_2
+    description: Environment number 2
+    aliases:
+      - env2
+      - env_2
+    settings:
+      environment2_setting: "Only simple string setting for environment2"
+
+general_config:
+  general_setting1: "general_value1"
+  general_setting2: "general_setting2"
