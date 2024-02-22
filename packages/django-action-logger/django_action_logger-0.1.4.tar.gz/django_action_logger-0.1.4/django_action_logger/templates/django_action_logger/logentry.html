@@ -1,0 +1,11 @@
+<span title="{{ object.message }}">{{ object.action_time|time }}</span> - {{ object.user }}
+{% if object.metadata.type %}[{{ object.metadata.type }}]{% endif %}
+{% if object.metadata.natural_key %}({{ object.metadata.natural_key }}){% endif %}
+:
+{% if object.content_type and object.content_object %}
+    {% if object.content_object.get_absolute_url %}
+        <a href="{{ object.content_object.get_absolute_url }}">{{ object.content_object }}</a>
+    {% else %}
+        {{ object.content_object }}
+    {% endif %}
+{% endif %}
