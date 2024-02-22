@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+test/__init__.py
+test/test_clustering.py
+work_set_clustering/__init__.py
+work_set_clustering/clustering.py
+work_set_clustering/lib.py
+work_set_clustering.egg-info/PKG-INFO
+work_set_clustering.egg-info/SOURCES.txt
+work_set_clustering.egg-info/dependency_links.txt
+work_set_clustering.egg-info/top_level.txt
