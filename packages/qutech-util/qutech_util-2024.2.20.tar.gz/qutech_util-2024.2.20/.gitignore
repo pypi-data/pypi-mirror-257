@@ -1,0 +1,9 @@
+/**/__pycache__/**
+*.egg-info
+/.idea/*
+/.fleet/*
+/.spyproject/*
+/doc/build/**
+/doc/source/_autogen/**
+/dist/
+.pytest_cache
