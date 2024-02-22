@@ -1,0 +1,27 @@
+title: Quick Settings
+type: container
+children:
+  tdp:
+    title: TDP
+    hint: >-
+      Controls all Ryzen SMU settings through preset curves.
+    type: int
+    step: 1
+    unit: W
+
+  boost:
+    title: Allow Boost
+    type: bool
+    default: True
+
+  apply:
+    title: Apply TDP
+    type: action
+
+  status:
+    title: TDP Status
+    type: display
+    # For translation
+    choices:
+      uninit: Not Set
+      init: Set
