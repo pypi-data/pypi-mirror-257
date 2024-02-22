@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+requirements/base.txt
+requirements/dev.txt
+src/bryn_python_boilerplate.egg-info/PKG-INFO
+src/bryn_python_boilerplate.egg-info/SOURCES.txt
+src/bryn_python_boilerplate.egg-info/dependency_links.txt
+src/bryn_python_boilerplate.egg-info/entry_points.txt
+src/bryn_python_boilerplate.egg-info/requires.txt
+src/bryn_python_boilerplate.egg-info/top_level.txt
+src/python_boilerplate/__init__.py
+src/python_boilerplate/cli.py
+src/python_boilerplate/core.py
+tests/test_100_memory_profiling.py
+tests/test_cli.py
+tests/test_core.py

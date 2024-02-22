@@ -1,0 +1,122 @@
+
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+# opts:
+# `--strict-markers` - Raise error on unexpected pytest markers being used (add new markers to `markers` config)
+# `-n2` - parallelise over two threads (uses pytest-xdist)
+# `--nbmake --nbmake-kernel=python_boilerplate` - test example notebooks using the "python_boilerplate" notebook kernel (uses nbmake)
+# `--cov --cov-report=xml --cov-config=pyproject.toml` - generate coverage report for tests (uses pytest-cov; call `--no-cov` in CLI to switch off; `--cov-config` include to avoid bug)
+# `-m 'not high_mem'` - Do not run tests marked as consuming large amounts of memory (call `-m "high_mem"` in CLI to invert this; only `high_mem` marked tests will be run)
+# `-p no:memray` - Do not use the memray memory profiling plugin (call `-p memray` in CLI to switch on memory profiling)
+addopts = "-rav --strict-markers -n2 --nbmake --nbmake-kernel=python_boilerplate --cov --cov-report=xml --cov-config=pyproject.toml -m 'not high_mem' -p no:memray"
+testpaths = ["tests", "examples"]
+
+# to mark a test, decorate it with `@pytest.mark.[marker-name]`
+markers = ["high_mem", "limit_memory"]
+filterwarnings = [
+    # https://github.com/pytest-dev/pytest-xdist/issues/825
+    "ignore:The --rsyncdir command line argument and rsyncdirs config variable are deprecated.:DeprecationWarning",
+]
+
+[tool.coverage.run]
+branch = true
+source = ["src/"]
+
+[tool.coverage.report]
+fail_under = 89
+
+[tool.coverage.html]
+directory = "reports/coverage"
+
+[tool.coverage.xml]
+output = "reports/coverage/coverage.xml"
+
+[tool.black]
+line-length = 100
+skip-magic-trailing-comma = true
+
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "Q"]
+
+ignore = [
+    "E501", # line too long: Black will handle this.
+    "D1",   # Ignore missing docstrings in public functions/modules. There are just too many of them missing...
+]
+
+# Exclude a variety of commonly ignored directories.
+exclude = [".*", "__pypackages__", "build", "dist", "venv", "reports/"]
+
+# Allow unused variables when underscore-prefixed.
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+
+pydocstyle = {convention = "google"}
+
+# Unlike Flake8, default to a complexity level of 10.
+mccabe = {max-complexity = 10}
+
+# Ignore `E402` (import violations) and `F401` (unused imports) in all `__init__.py` files
+per-file-ignores = {"__init__.py" = ["E402", "F401"]}
+
+flake8-quotes = {docstring-quotes = "double"}
+
+# Ignore `E402` for all notebooks
+[tool.nbqa.addopts]
+ruff = ["--extend-ignore=E402"]
+
+[tool.ruff.flake8-quotes]
+docstring-quotes = "double"
+
+[tool.setuptools.packages.find]
+include = ["python_boilerplate*"]
+where = ["src"]
+
+[tool.setuptools.package-data]
+
+# Add file globs from the source code directory if they include non-py files that should be packaged
+# E.g. "fixtures/**/*"
+python_boilerplate = []
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3",
+]
+
+name = "bryn_python_boilerplate"
+authors = [
+    { name = "Bryn Pickering", email = "17178478+brynpickering@users.noreply.github.com" },
+]
+maintainers = []
+description = "Python Boilerplate contains all the boilerplate you need to create a Python package."
+readme = "README.md"
+requires-python = ">=3.8"
+keywords = ["python_boilerplate"]
+license = { text = "MIT" }
+dynamic = ["dependencies", "optional-dependencies", "version"]
+
+[tool.setuptools.dynamic]
+dependencies = { file = ["requirements/base.txt"] }
+version = { attr = "python_boilerplate.__version__" }
+
+[project.scripts]
+python_boilerplate = "python_boilerplate.cli:cli"
+
+[tool.setuptools.dynamic.optional-dependencies]
+dev = { file = ["requirements/dev.txt"] }
+
+[project.urls]
+repository = "https://github.com/brynpickering/python_boilerplate"
+documentation = "https://brynpickering.github.io/python_boilerplate"
+changelog = "https://github.com/brynpickering/python_boilerplate/blob/main/CHANGELOG.md"
